@@ -1,7 +1,7 @@
 {
-  "status": "PREPARED_NOT_EXECUTED",
+  "status": "CPU_VALIDATION_PREPARED_NOT_EXECUTED",
   "script": "analysis/validate_reverse_feedback.py",
-  "script_sha256": "cd3740fe8fc577948382863faaafd140d58402cc095c1aed716d5ee6342af870",
+  "script_sha256": "36b0a4818994ae45146a40ac8f6e09f64e7ceb458044344c7fac2be5c0e02cd8",
   "syntax_target": "Python 3.7",
   "syntax_check_exit_code": 0,
   "native_gpu_execution": false,
@@ -9,6 +9,6 @@
   "adamw_recipient_update_observed": false,
   "strict_reload_observed": false,
   "performance_result": false,
-  "execution_constraint": "Only after frozen campaigns finish and an authorized GPU is free; not inserted into existing queues",
+  "execution_constraint": "CUDA only after frozen campaigns finish and an authorized GPU is free. Explicit CPU mode may run independently with CUDA disabled and four threads after resource/warm-environment preflight; not inserted into existing queues.",
   "preparation_note": "First uv invocation omitted the python command and failed before compilation; corrected invocation completed the Python3.7 AST and compile checks. No neural execution occurred."
 }

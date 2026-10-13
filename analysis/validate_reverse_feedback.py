@@ -1,11 +1,14 @@
 """Audit real E4 feedback gradients and an AdamW step; never a performance result."""
 import argparse
+import datetime
 import hashlib
 import json
 import os
 from pathlib import Path
 import random
+import time
 
+import cv2
 import numpy as np
 import torch
 
@@ -43,22 +46,32 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--checkpoint', required=True)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--device', choices=['cuda', 'cpu'], default='cuda')
     args = parser.parse_args()
-    assert os.environ['CUDA_VISIBLE_DEVICES'] in ['2', '3']
+    if args.device == 'cuda':
+        assert os.environ['CUDA_VISIBLE_DEVICES'] in ['2', '3']
+    else:
+        assert os.environ['CUDA_VISIBLE_DEVICES'] == ''
+    device = torch.device(args.device)
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=False)
     checkpoint = Path(args.checkpoint)
+    started = time.time()
+    print('PROBE_START ' + json.dumps(dict(pid=os.getpid(), device=args.device,
+        checkpoint=str(checkpoint), cuda_visible_devices=os.environ['CUDA_VISIBLE_DEVICES'],
+        started_utc=datetime.datetime.utcnow().isoformat() + 'Z')), flush=True)
     saved = torch.load(str(checkpoint), map_location='cpu')
     config = saved['config']
     assert config['stage'] == 'E4' and config['repair']
     assert config['reverse_weight'] == 0 and saved['updates'] > 0
-    torch.set_num_threads(1)
+    torch.set_num_threads(4 if args.device == 'cpu' else 1)
+    cv2.setNumThreads(1)
     seed(config['seed'])
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     model = MissingTrackerModel(build_cadtrack(cfg, training=False), repair=True,
                                width=config['repair_width'], repair_layer=config['repair_layer'])
     model.load_state_dict(saved['model'], strict=True)
-    model.cuda().train()
+    model.to(device).train()
     fix_bn(model)
     seed(config['seed'])
     # Eight predeclared real training batches; no artificial gate override.
@@ -69,12 +82,15 @@ def main():
                   checkpoint_sha256=sha(checkpoint),
                   seed=config['seed'], native_margin=config['reverse_margin'],
                   probe_reverse_weight=.02, maximum_batches=8, batches=[],
+                  device=args.device, cpu_threads=torch.get_num_threads(),
+                  cv2_threads=cv2.getNumThreads(),
+                  cuda_visible_devices=os.environ['CUDA_VISIBLE_DEVICES'],
                   update_scope='one microbatch gradient, without training accumulation')
     parameters = {name: p for name, p in model.named_parameters() if p.requires_grad}
     for index, data in enumerate(loader):
-        templates = [image.cuda() for image in data['template_images']]
-        searches = [image.cuda() for image in data['search_images']]
-        boxes = data['search_anno'].cuda()
+        templates = [image.to(device) for image in data['template_images']]
+        searches = [image.to(device) for image in data['search_images']]
+        boxes = data['search_anno'].to(device)
         available, patch = sample_masks(templates, searches, config)
         complete = model(templates, searches)
         missing = model(templates, searches, available, patch)
@@ -83,7 +99,9 @@ def main():
         reliable = (loss_m.detach() + config['reverse_margin'] < loss_c.detach()).to(loss_c.dtype)
         report['batches'].append(dict(batch=index, reliable=reliable.cpu().tolist(),
             task_c=loss_c.detach().cpu().tolist(), task_m=loss_m.detach().cpu().tolist(),
+            seconds=time.time() - started,
             search_sha256=hashlib.sha256(data['search_images'].numpy().tobytes()).hexdigest()))
+        print('PROBE_BATCH ' + json.dumps(report['batches'][-1]), flush=True)
         if reliable.sum() == 0:
             del complete, missing, loss_c, loss_m
             continue
@@ -160,7 +178,7 @@ def main():
             reloaded = MissingTrackerModel(build_cadtrack(cfg, training=False), repair=True,
                 width=config['repair_width'], repair_layer=config['repair_layer'])
             reloaded.load_state_dict(torch.load(str(artifact), map_location='cpu')['model'], strict=True)
-            restored = reloaded.cuda().eval()(templates, searches, available, patch)
+            restored = reloaded.to(device).eval()(templates, searches, available, patch)
             errors = {key: max(float((a[key] - b[key]).abs().max()) for a, b in zip(expected, restored))
                       for key in ['pred_boxes', 'score_map', 'size_map', 'offset_map']}
             assert max(errors.values()) == 0, errors
@@ -171,6 +189,7 @@ def main():
     report['source_sha256'] = {str(path): hashlib.sha256(path.read_bytes()).hexdigest()
         for path in [Path(__file__), Path('miss_rgbt/model.py'), Path('miss_rgbt/objectives.py'),
                      Path('miss_rgbt/train.py'), Path('miss_rgbt/data.py')]}
+    report['seconds'] = time.time() - started
     (output / 'report.json').write_text(json.dumps(report, indent=2))
     print(json.dumps(report), flush=True)
 

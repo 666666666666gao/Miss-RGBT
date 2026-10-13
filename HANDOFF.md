@@ -150,3 +150,9 @@ research 技能显式要求的后台任务完成两套时序源码核查：DiMP/
 已准备 analysis/validate_reverse_feedback.py；仅通过Python3.7 AST/compile检查，尚未GPU/真实数据执行，reports/reverse_gradient_probe/preparation.json明确PREPARED_NOT_EXECUTED。第一次uv命令漏写python，启动阶段失败，改正后语法检查exit0；一次文档补丁上下文不匹配，在读取实际行文本后成功应用，没有改变科学文件。探针使用既有训练后E4 checkpoint、原生mask与最多八个固定seed训练batch；真实可靠门没有触发时只记未触发。触发后测M目标detach、C响应梯度、共享baseline反向梯度，对照同一已保存AdamW状态的零/0.02反向项单microbatch更新，并保存/严格重载。单microbatch机械检查不代替有效batch8完整训练，不加入当前队列，只能在冻结campaign完成且GPU空闲后运行。
 
 反向项在C全模态路径不会直接给R梯度；但全局梯度裁剪可能因baseline梯度改变而间接改变R更新，所以探针分别报告直接梯度与实际更新差异。当前E3/E4继续reverse_weight=0，E5未实施正式训练，三个有效模块与最终目标仍未证明。full20预计10月15日得分、23:10唯一节点采集计划不变。
+
+## 2026-10-13 19:22 CPU 原生参数路径检查准备
+为在GPU冻结排队期间取得真实实现证据，反向探针增加显式 --device cpu（默认仍cuda），只改analysis/下独立检查脚本，不改训练/模型/配置/队列。CUDA模式仍须等冻结campaign完成与GPU空闲；CPU模式明确CUDA_VISIBLE_DEVICES为空、四个CPU线程，不是GPU失败后的fallback。
+CPU预检11:21:59Z实际：64个逻辑核，242907279360字节MemAvailable，固定E4 epoch01文件1241526375字节存在；既有Python3.7.16/Torch1.12.1+cu113、环境spec哈希cc6cd075不变。32x32 CPU矩阵见证有限且非空，PyTorch optimizer.load_state_dict 源码实际deepcopy输入状态，配对CPU更新不需追加复制兼容逻辑。仅检查资源、已保存首轮权重metadata和CPU kernel，未查询当前NN进度/GPU状态。
+最早epoch01仅供真实train样本上的梯度/AdamW/严格重载机械检查，不用于Test选epoch或代替最终epoch20评估。CPU与CUDA随机引擎不同，实际batch输入SHA和gate须记录。CPU4线程资源小于已知64核，预检可用内存远大于约17GB原生训练激活；预计探针数分钟至十分钟，最多8个固定batch，不改门限或人为翻gate。
+此节记录的是启动前准备，尚无真实gate/更新/严格重载通过结果；GPU运行和三个有效模块仍未证明。预检reports/reverse_gradient_probe/cpu_preflight.json，CPU命令与限制见docs/MODULE_EVIDENCE_PROTOCOL.md。原23:10唯一训练采集观察器和20轮队列不变。

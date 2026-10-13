@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-13T11:21:59.225356Z",
+  "cpu_count": 64,
+  "mem_available_bytes": 242907279360,
+  "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/e4_seed2027/epoch01.pth.tar",
+  "checkpoint_bytes": 1241526375,
+  "checkpoint_mtime": 1791882568.5964267,
+  "python": "3.7.16",
+  "torch": "1.12.1+cu113",
+  "visible_cuda": "",
+  "cpu_witness_shape": [
+    32,
+    32
+  ],
+  "cpu_witness_value": 3.016477346420288,
+  "optimizer_load_state_copies_input": true,
+  "scope": "CPU resource/kernel and fixed first E4 checkpoint metadata only; no training-progress or GPU query",
+  "unchanged_env_spec_hash": "cc6cd075"
+}
