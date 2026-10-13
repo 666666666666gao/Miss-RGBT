@@ -71,6 +71,7 @@ def main():
     (output / 'source_sha256.json').write_text(json.dumps(source, indent=2))
     start = time.time()
     updates = 0
+    first_update_inputs = []
     assert len(loader) % config['accumulation'] == 0
     with (output / 'steps.jsonl').open('w') as log:
         for epoch in range(1, config['epochs'] + 1):
@@ -80,6 +81,8 @@ def main():
                 searches = [image.cuda() for image in data['search_images']]
                 boxes = data['search_anno'].cuda()
                 first_input_sha256 = hashlib.sha256(data['search_images'].numpy().tobytes()).hexdigest() if updates == 0 else None
+                if updates == 0:
+                    first_update_inputs.append(first_input_sha256)
                 available, patch = sample_masks(templates, searches, config)
                 complete = model(templates, searches)
                 missing = model(templates, searches, available, patch)
@@ -98,6 +101,7 @@ def main():
                         microbatch=config['microbatch'], accumulation=config['accumulation'])
                     if updates == 1:
                         status['input_sha256'] = first_input_sha256
+                        status['input_sha256_microbatches'] = first_update_inputs
                     log.write(json.dumps(status) + '\n')
                     log.flush()
                     if updates % 25 == 0 or updates == 1:

@@ -30,3 +30,13 @@
 | 2026-10-13 | /run-experiment | reports/method_native_validation.log | implementation | 真实核验及下一步入口，未宣称完整训练效果 |
 | 2026-10-13 | /run-experiment | reports/method_native_validation_import_failure.log | implementation | 真实核验及下一步入口，未宣称完整训练效果 |
 | 2026-10-13 | /run-experiment | reports/environment_validation.md | implementation | 真实核验及下一步入口，未宣称完整训练效果 |
+| 2026-10-13 | /run-experiment | scripts/run_campaign.py | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | scripts/evaluate_model.py | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | scripts/validate_tracker.py | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | scripts/summarize_speed.py | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | reports/paired_speed_smoke.json | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | reports/baseline_integrity.json | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | reports/tracker_native_validation.json | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | docs/CAMPAIGN_20261013.md | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | docs/THIRD_PARTY.md | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | docs/CADTrack_LICENSE | implementation | 实测检查、冻结预算与来源；正式结果待完成 |

@@ -1,0 +1,9 @@
+{
+  "scope": "native tracker equivalence on 10 complete tracking frames + 2 missing inference checks; not benchmark",
+  "training_sequence": "2up",
+  "checkpoint": "checkpoints/e4_speed_smoke_seed2027/smoke.pth.tar",
+  "complete_bbox_max_difference": 0.0,
+  "missing_states_finite": true,
+  "single_view_inference": true,
+  "template_availability_length": 2
+}

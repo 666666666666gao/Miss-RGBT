@@ -25,4 +25,5 @@ CUDA_VISIBLE_DEVICES=2 conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --conf
 
 `--max-steps` 仅是 smoke。配置中的预算当前为候选，正式启动另写运行记录。权重、环境、数据、大体积原始结果不提交 GitHub。
 
-[研究计划](refine-logs/EXPERIMENT_PLAN.md)和[近邻来源](docs/RELATED_WORK.md)说明对照及信息限制。保留原[baseline README](docs/BASELINE_ORIGINAL_README.md)。新代码未复制近邻论文实现；原工程未见许可证文件，需进一步核对作者公开仓库许可。
+[研究计划](refine-logs/EXPERIMENT_PLAN.md)和[近邻来源](docs/RELATED_WORK.md)说明对照及信息限制。保留原[baseline README](docs/BASELINE_ORIGINAL_README.md)。新代码未复制近邻论文实现；已保留官方 MIT 许可证，来源见 [代码说明](docs/THIRD_PARTY.md)。
+
