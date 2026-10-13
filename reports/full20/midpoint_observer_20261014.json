@@ -1,0 +1,16 @@
+{
+  "owner": {
+    "observer_python_pid": 49524,
+    "observer_parent_pid": 28232,
+    "deadline_utc": "2026-10-14T09:00:00+00:00",
+    "started_utc": "2026-10-13T19:13:48.017144+00:00",
+    "scope": "single read-only full20 diagnostic near epoch10; no earlier remote query"
+  },
+  "native_session": 14398,
+  "policy": "One read-only NN intake at the predicted epoch10 node; no earlier NN query.",
+  "last_nn_intake": "reports/full20/runtime_20261014_0240.json",
+  "output": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/full20_midpoint_intake.json",
+  "source_sha256": "37cd13eb3ee4375299941f9765f51324386a74988bbecc967c6516e550b0c1c1",
+  "launch_observed": true,
+  "expected_final": "2026-10-15 morning BJT; estimate from first5 runtime, not a result"
+}

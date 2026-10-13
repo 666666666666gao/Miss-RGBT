@@ -1,0 +1,8 @@
+{
+  "external_snapshots_byte_verified": 31,
+  "local_snapshots_byte_verified": 20,
+  "doc_sha256": "fbb4d38b735f8fc9ffe49755ce37a01bc4610831672b728b7da76096ad72f1a0",
+  "reference_definitions": 52,
+  "cached_line_ranges_verified": 38,
+  "scope": "Deterministic local source identity and link-range checks; no external execution or performance claim."
+}

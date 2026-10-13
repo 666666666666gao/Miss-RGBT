@@ -1,0 +1,23 @@
+--- Git4c473fa helper
+
++++ actual deployed helper
+
+@@ -5,6 +5,7 @@
+
+ import torch
+ 
+ from lib.config.cadtrack.config import cfg, update_config_from_file
++from lib.train.actors.cadtrack import CADTRACKActor
+ from lib.utils.focal_loss import FocalLoss
+ from lib.utils.box_ops import giou_loss
+ from miss_rgbt.objectives import task_loss
+@@ -12,7 +13,7 @@
+
+ 
+ torch.manual_seed(2027)
+ update_config_from_file('experiments/cadtrack/cadtrack.yaml')
+-# Validate with the native primitives on CPU.
++# Native actor uses .cuda() internally; use native primitives on CPU instead.
+ from lib.utils.box_ops import box_cxcywh_to_xyxy, box_xywh_to_xyxy
+ from lib.utils.heapmap_utils import generate_heatmap
+ 

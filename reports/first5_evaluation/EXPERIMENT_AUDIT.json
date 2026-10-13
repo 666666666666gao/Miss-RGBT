@@ -1,0 +1,924 @@
+{
+  "audit_skill": "experiment-audit",
+  "date": "2026-10-14",
+  "generated_at": "2026-10-13T19:24:41.545717Z",
+  "project": "Miss-RGBT",
+  "verdict": "WARN",
+  "overall_verdict": "WARN",
+  "integrity_status": "warn",
+  "reason_code": "reproducible_first5_metrics_with_provenance_and_scope_limits",
+  "summary": "All four first5 evaluations and both E0 controls reproduce exactly from raw bboxes and real annotation GT. Auxiliary source discrepancy is nonmaterial. Checkpoint binary identity and upstream official-toolkit equivalence remain unavailable; evidence does not establish full20 completion, universal repair benefit, complete-input improvement or three effective modules. Current document and aggregation follow-up passes: all 20 recorded values and 10 repair deltas agree; one configuration-comparison wording error was corrected.",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "max",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "reviewer_configuration_source": ".aris/traces/experiment-audit/2026-10-14_run01/001-first5.request.json",
+  "routing_attestation": "Requested/configured route recorded; separate backend telemetry not inspected.",
+  "agent_id": "/root/first5_integrity_audit",
+  "verdict_id": "first5-integrity-2026-10-14",
+  "trace_path": ".aris/traces/experiment-audit/2026-10-14_run01/",
+  "git_head_at_audit": "ba4cb84ef2ac8b14229d8ba62beb3e542b1e2ee7",
+  "path_aliases": {
+    "PROJECT": "C:\\Users\\gb\\projects\\Miss-RGBT",
+    "PKG": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\first5_metric_package\\rgbt",
+    "RAW": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\first5_evaluation_raw"
+  },
+  "audit_method": "Fresh reviewer read primary artifacts and Git objects directly. Deterministic local file/metric checks only; no SSH, process/GPU query, neural run, checkpoint load or writes outside the two reports.",
+  "checks": {
+    "gt_provenance": {
+      "status": "WARN",
+      "classification": "real_gt",
+      "details": "All 713 annotation files match the frozen pre-first5 E0 inventory and both toolkit snapshots. No evaluation GT is prediction-derived. Actual recorded rgbt toolkit execution is confirmed; upstream author-reference/official equivalence is unavailable. Native LasHeR handling assigns error -1 to 1260 frames with any GT coordinate <=0, giving automatic PR/NPR successes and SR failures; this contributes 0.5568053864558151 pp to macro PR/NPR versus same-denominator failure treatment and is common to all methods.",
+      "evidence": [
+        "scripts/evaluate_model.py:29-58",
+        "scripts/evaluate_model.py:79-99",
+        "scripts/evaluate_complete.py:45-89",
+        "reports/e0/evaluate_miss.py:44-87",
+        "PKG/dataset/basedataset.py:9-24",
+        "PKG/dataset/lasher_dataset.py:12-20",
+        "PKG/dataset/rgbt234_dataset.py:13-20",
+        "PKG/metrics/metrics.py:266-272",
+        "PKG/metrics/metrics.py:309-315",
+        "PKG/metrics/metrics.py:351-357",
+        "HANDOFF.md:120"
+      ]
+    },
+    "score_normalization": {
+      "status": "PASS",
+      "details": "No performance denominator uses prediction max/min/mean. Fixed-threshold fractions are macro-averaged; SR/MSR use 21 IoU thresholds; NPR normalizes centers by GT width/height at threshold 0.2; IoU uses geometric union; score*100 is percentage conversion. RGBT234 maximum metrics choose between two annotation coordinate systems.",
+      "evidence": [
+        "scripts/evaluate_model.py:129-146",
+        "scripts/evaluate_complete.py:169-174",
+        "reports/e0/evaluate_miss.py:167-172",
+        "PKG/utils.py:117-158",
+        "PKG/utils.py:161-185",
+        "PKG/metrics/metrics.py:28-44",
+        "PKG/metrics/metrics.py:62-80",
+        "PKG/metrics/metrics.py:327-361",
+        "PKG/dataset/basedataset.py:19-24"
+      ]
+    },
+    "result_existence": {
+      "status": "WARN",
+      "details": "All first5 bboxes, receipts, scalar scores and complete curves match; all 20 first5 scores and ten E0 scores reproduce exactly. Four source manifests are identical; 102/103 match Git 4c473fa and the sole auxiliary helper mismatch is nonmaterial to inference/scoring. Epoch05 recorded paths/hashes are consistent across conditions, but actual checkpoint binary rehash and metadata/state_dict loading are UNAVAILABLE. The per-evaluation Python-source manifest omits YAML; earlier campaign/E0 YAML seals and Git do match. No phantom numeric result or score mismatch found.",
+      "evidence": [
+        "reports/e3_complete/run.json:2-4",
+        "reports/e3_miss/run.json:2-4",
+        "reports/e4_complete/run.json:2-4",
+        "reports/e4_miss/run.json:2-4",
+        "scripts/evaluate_model.py:94-118",
+        "miss_rgbt/tracker.py:14-25",
+        "reports/first5_evaluation/collection.json:3-57",
+        "reports/first5_evaluation/source_difference.json:2-15",
+        "reports/first5_evaluation/source_snapshots/scripts/validate_focal_normalization.py:7-17",
+        "scripts/validate_focal_normalization.py:7-16",
+        "reports/full20/runtime_20261014_0240.json:113-146",
+        "reports/full20/runtime_20261014_0240.json:378-469"
+      ]
+    },
+    "dead_code": {
+      "status": "PASS",
+      "details": "All five claimed benchmark metrics are dispatched, saved as scalar scores and per-sequence curves, and independently reproduced. Generic library metrics for other datasets are outside the claims. The full20 aggregator is explicitly prepared/unexecuted, not a result.",
+      "evidence": [
+        "scripts/evaluate_model.py:129-146",
+        "scripts/evaluate_complete.py:169-174",
+        "scripts/evaluate_complete.py:209-213",
+        "reports/e0/evaluate_miss.py:167-172",
+        "reports/e0/evaluate_miss.py:214-218",
+        "PKG/dataset/lasher_dataset.py:63-120",
+        "PKG/dataset/rgbt234_dataset.py:53-120",
+        "analysis/build_full20_comparison.py:61-100",
+        "HANDOFF.md:28"
+      ]
+    },
+    "scope": {
+      "status": "WARN",
+      "details": "Two models; one training seed 2027; five fine-tuning epochs, 100000 sampled train examples and 12500 updates each. Four complete/Miss evaluations each cover 479 sequences and 337353 frames. Full20 is only a dated RUNNING snapshot at 675/50000 updates per model. No E2 KD control, equal-parameter repair control or E5 performance result is supplied. Both models regress on all complete-input metrics versus E0; E4-E3 is mixed on Miss datasets. One seed is insufficient for statistical stability. Test failure analysis has informed research, as disclosed. Current observer registration schedules one diagnostic at 2026-10-14 17:00 BJT / 09:00 UTC; it does not constitute a newer NN observation or a live process check.",
+      "evidence": [
+        "reports/first5_training/e3/run_config.json:2-28",
+        "reports/first5_training/e4/run_config.json:2-28",
+        "reports/first5_training/e3/steps.jsonl:12500",
+        "reports/first5_training/e4/steps.jsonl:12500",
+        "miss_rgbt/train.py:87-107",
+        "miss_rgbt/objectives.py:41-53",
+        "scripts/run_campaign.py:81-90",
+        "configs/e3_full20.json:18-33",
+        "configs/e4_full20.json:18-33",
+        "reports/full20/runtime_20261014_0240.json:238-362",
+        "EXPERIMENT_TRACKER.md:12-20",
+        "docs/MODULE_EVIDENCE_PROTOCOL.md:7-11",
+        "docs/MODULE_EVIDENCE_PROTOCOL.md:55",
+        "HANDOFF.md:179",
+        "lib/train/dataset/lasher.py:61-74",
+        "HANDOFF.md:26",
+        "reports/full20/midpoint_observer_20261014.json:3-15"
+      ]
+    },
+    "eval_type": {
+      "status": "PASS",
+      "classifications": {
+        "e0": "real_gt",
+        "e0_complete": "real_gt",
+        "e3_complete": "real_gt",
+        "e3_miss": "real_gt",
+        "e4_complete": "real_gt",
+        "e4_miss": "real_gt",
+        "focal_normalization_helper": "simulation_only"
+      },
+      "details": "Published sensor-absence masks do not make dataset GT a proxy. The focal helper is synthetic arithmetic only. Teacher-response KL is a training objective, not evaluation GT. The unexecuted full20 aggregator has no evaluation to classify.",
+      "evidence": [
+        "scripts/evaluate_model.py:42-56",
+        "scripts/evaluate_model.py:129-146",
+        "scripts/evaluate_complete.py:65-83",
+        "reports/e0/evaluate_miss.py:64-81",
+        "miss_rgbt/objectives.py:8-38",
+        "scripts/validate_focal_normalization.py:19-36"
+      ]
+    },
+    "document_aggregation": {
+      "status": "PASS",
+      "details": "All 20 first5 JSON metric rows, E0 deltas and relative changes, 10 E4-E3 deltas, 20 CSV rows, six-decimal Markdown tables, eight strict targets and 30 HANDOFF values match previously verified data. All 23 aggregation input hashes match. Six original metric files, full20 aggregation helper and dated runtime snapshot are unchanged. README byte-equality overstatement was corrected to parsed JSON equality. No raw rescoring or live query repeated.",
+      "evidence": [
+        "analysis/build_first5_comparison.py:23-58",
+        "analysis/build_first5_comparison.py:60-62",
+        "reports/first5_evaluation/comparison.json",
+        "reports/first5_evaluation/comparison.csv",
+        "reports/first5_evaluation/RESULTS.md:9-35",
+        "reports/first5_evaluation/RESULTS.md:41-63",
+        "reports/first5_evaluation/README.md:5",
+        "HANDOFF.md:13-19",
+        "EXPERIMENT_TRACKER.md:13-20"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Four first5 full-sequence evaluations exist and recorded scores reproduce.",
+      "impact": "supported",
+      "qualifier": "Artifact/metric claim; checkpoint binaries were not independently available."
+    },
+    {
+      "id": "C2",
+      "claim": "E3/E4 improve recorded Miss scores versus E0.",
+      "impact": "supported_with_qualifier",
+      "qualifier": "Single seed, five fine-tuning epochs, fixed masks, recorded toolkit; not an isolated causal module effect."
+    },
+    {
+      "id": "C3",
+      "claim": "E4 repair generally improves missing-modality tracking.",
+      "impact": "unsupported",
+      "qualifier": "All three LasHeR-Miss metrics decline versus E3; both RGBT234-Miss metrics rise; equal-parameter control absent."
+    },
+    {
+      "id": "C4",
+      "claim": "Forward distillation has an isolated causal benefit.",
+      "impact": "unsupported",
+      "qualifier": "E3-E0 also changes training exposure, masking and dual task supervision; no E2 control."
+    },
+    {
+      "id": "C5",
+      "claim": "Reverse feedback is effective in these performance runs.",
+      "impact": "unsupported",
+      "qualifier": "reverse_weight=0 in both executed configurations; nonzero diagnostic fields do not show reverse optimization."
+    },
+    {
+      "id": "C6",
+      "claim": "Complete-input ability is improved or preserved at E0 level.",
+      "impact": "unsupported",
+      "qualifier": "Both models are below E0 on all five complete-input metrics."
+    },
+    {
+      "id": "C7",
+      "claim": "All four strict Miss targets are achieved.",
+      "impact": "unsupported",
+      "qualifier": "E3 exceeds only LasHeR SR>54.4, 1/4 targets; E4 exceeds 0/4."
+    },
+    {
+      "id": "C8",
+      "claim": "Full20 training/evaluation or three effective paper modules are complete.",
+      "impact": "unsupported",
+      "qualifier": "Supplied snapshot is epoch1/update675; tracker keeps full20 RUNNING and modules UNPROVEN."
+    }
+  ],
+  "recorded_checkpoint_identities": {
+    "e3": {
+      "path": "/home/gaob/Miss-RGBT/checkpoints/e3_seed2027/epoch05.pth.tar",
+      "sha256": "acd8543a0c68cbac66e62d6625571aa55c601a415652c4cb5535a4b950e81fa4",
+      "epoch_from_path_and_controller": 5,
+      "binary_reverification": "UNAVAILABLE"
+    },
+    "e4": {
+      "path": "/home/gaob/Miss-RGBT/checkpoints/e4_seed2027/epoch05.pth.tar",
+      "sha256": "edd94537b2697a4dbe0bf9e2d62c5653827ca1e2dc3da9bb7e6a8d09927b0f5c",
+      "epoch_from_path_and_controller": 5,
+      "binary_reverification": "UNAVAILABLE"
+    },
+    "e0": {
+      "path": "/data2/zhouy/CADTrack-main/baseline/checkpoints/train/cadtrack/cadtrack/CADTrack_ep0020.pth.tar",
+      "sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+      "epoch_from_record": 20,
+      "binary_reverification": "UNAVAILABLE"
+    }
+  },
+  "metrics": {
+    "e0": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 63.47250706301003,
+        "NPR": 58.58185056215868,
+        "SR": 50.583148589078256
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 82.79481455539279,
+        "MSR": 59.57443513369343
+      }
+    },
+    "e0_complete": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 75.63650288717686,
+        "NPR": 71.77283680562866,
+        "SR": 60.125713676122736
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.67713392128344,
+        "MSR": 66.8452283301532
+      }
+    },
+    "e3_complete": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.3887951135025,
+        "NPR": 70.73282952822298,
+        "SR": 59.20044958559259
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.25113228339285,
+        "MSR": 66.11871965007794
+      }
+    },
+    "e3_miss": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 69.03209135210281,
+        "NPR": 64.01723074531542,
+        "SR": 54.83585431288509
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 85.22405184524293,
+        "MSR": 61.48663157345009
+      }
+    },
+    "e4_complete": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 75.30210640185967,
+        "NPR": 71.6700148421111,
+        "SR": 59.8397405460653
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.29469382628285,
+        "MSR": 66.2232806751
+      }
+    },
+    "e4_miss": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 68.46101143387759,
+        "NPR": 63.37212347817008,
+        "SR": 54.36302520007273
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 85.61327484415948,
+        "MSR": 61.79704049963527
+      }
+    }
+  },
+  "delta_vs_e0_pp": {
+    "e3_complete": {
+      "LasHeR": {
+        "PR": -1.2477077736743638,
+        "NPR": -1.040007277405678,
+        "SR": -0.925264090530149
+      },
+      "RGBT234": {
+        "MPR": -0.4260016378905931,
+        "MSR": -0.7265086800752698
+      }
+    },
+    "e3_miss": {
+      "LasHeR-Miss": {
+        "PR": 5.559584289092783,
+        "NPR": 5.435380183156738,
+        "SR": 4.252705723806834
+      },
+      "RGBT234-Miss": {
+        "MPR": 2.4292372898501355,
+        "MSR": 1.9121964397566629
+      }
+    },
+    "e4_complete": {
+      "LasHeR": {
+        "PR": -0.33439648531718547,
+        "NPR": -0.10282196351755601,
+        "SR": -0.2859731300574353
+      },
+      "RGBT234": {
+        "MPR": -0.3824400950005895,
+        "MSR": -0.621947655053205
+      }
+    },
+    "e4_miss": {
+      "LasHeR-Miss": {
+        "PR": 4.98850437086756,
+        "NPR": 4.7902729160114035,
+        "SR": 3.779876610994471
+      },
+      "RGBT234-Miss": {
+        "MPR": 2.818460288766687,
+        "MSR": 2.2226053659418454
+      }
+    }
+  },
+  "e4_minus_e3_pp": {
+    "complete": {
+      "LasHeR": {
+        "PR": 0.9133112883571783,
+        "NPR": 0.9371853138881221,
+        "SR": 0.6392909604727137
+      },
+      "RGBT234": {
+        "MPR": 0.04356154289000358,
+        "MSR": 0.10456102502206477
+      }
+    },
+    "miss": {
+      "LasHeR-Miss": {
+        "PR": -0.5710799182252231,
+        "NPR": -0.6451072671453346,
+        "SR": -0.47282911281236295
+      },
+      "RGBT234-Miss": {
+        "MPR": 0.38922299891655143,
+        "MSR": 0.31040892618518257
+      }
+    }
+  },
+  "strict_target_checks": {
+    "e3_miss": {
+      "LasHeR-Miss": {
+        "PR": {
+          "target": 69.3,
+          "actual": 69.03209135210281,
+          "strictly_exceeded": false
+        },
+        "SR": {
+          "target": 54.4,
+          "actual": 54.83585431288509,
+          "strictly_exceeded": true
+        }
+      },
+      "RGBT234-Miss": {
+        "MPR": {
+          "target": 88.1,
+          "actual": 85.22405184524293,
+          "strictly_exceeded": false
+        },
+        "MSR": {
+          "target": 64.3,
+          "actual": 61.48663157345009,
+          "strictly_exceeded": false
+        }
+      }
+    },
+    "e4_miss": {
+      "LasHeR-Miss": {
+        "PR": {
+          "target": 69.3,
+          "actual": 68.46101143387759,
+          "strictly_exceeded": false
+        },
+        "SR": {
+          "target": 54.4,
+          "actual": 54.36302520007273,
+          "strictly_exceeded": false
+        }
+      },
+      "RGBT234-Miss": {
+        "MPR": {
+          "target": 88.1,
+          "actual": 85.61327484415948,
+          "strictly_exceeded": false
+        },
+        "MSR": {
+          "target": 64.3,
+          "actual": 61.79704049963527,
+          "strictly_exceeded": false
+        }
+      }
+    }
+  },
+  "deterministic_checks": {
+    "ground_truth": {
+      "annotation_files": 713,
+      "hash_mismatches": 0,
+      "all_shapes_match": true,
+      "finite": true,
+      "inventory_identical_to_git_370f2158_and_58fe581": true,
+      "advancedredcup_frames": 1411,
+      "LasHeR_any_coordinate_nonpositive_frames": 1260,
+      "LasHeR_macro_PR_NPR_contribution_pp": 0.5568053864558151
+    },
+    "package": {
+      "original_manifest_files": 728,
+      "metadata_manifest_files": 1239,
+      "all_hashes_match": true,
+      "all_1967_files_identical_to_prior_toolkit": true,
+      "metadata_manifest": "reports/first5_evaluation/metric_metadata_manifest.json",
+      "default_constructor_sequences": {
+        "LasHeR": 245,
+        "RGBT234": 234
+      },
+      "initial_missing_metadata_error_resolved": true
+    },
+    "raw_first5": {
+      "evaluations": 4,
+      "sequences_each": 479,
+      "frames_each": 337353,
+      "bbox_files": 1916,
+      "individual_receipts": 1916,
+      "frame_predictions": 1349412,
+      "hash_mismatches": 0,
+      "nonfinite_values": 0,
+      "nonpositive_predicted_sizes": 0,
+      "first_gt_mismatches": 0,
+      "report_files_byte_identical": 24
+    },
+    "baseline_controls": {
+      "evaluations": 2,
+      "bbox_files": 958,
+      "individual_receipts": 958,
+      "frame_predictions": 674706,
+      "hash_mismatches": 0,
+      "nonfinite_values": 0,
+      "nonpositive_predicted_sizes": 0
+    },
+    "scoring": {
+      "first5_default_dataset_entrypoints": "PASS",
+      "first5_scores": 20,
+      "first5_max_metric_difference_pp": 0.0,
+      "first5_max_curve_difference": 0.0,
+      "baseline_scores": 10,
+      "baseline_max_metric_difference_pp": 0.0,
+      "baseline_max_curve_difference": 0.0,
+      "curves": "Every per-sequence array element compared, exact equality.",
+      "baseline_strategy": "Unmodified same-package core metric classes and BaseRGBTDataet with earlier toolkit sequence lists; those list bytes subsequently matched actual metadata manifests.",
+      "raw_and_baseline_native_session": 39493,
+      "raw_and_baseline_exit_code": 0,
+      "default_package_native_session": 22716,
+      "default_package_exit_code": 0,
+      "default_package_scoring_seconds": 225.9704074859619
+    },
+    "masks": {
+      "hashes_match": true,
+      "LasHeR_states_00_01_10_11": [
+        33743,
+        56020,
+        43390,
+        87550
+      ],
+      "RGBT234_states_00_01_10_11": [
+        18766,
+        24800,
+        25651,
+        47433
+      ],
+      "first_frame_override": "complete",
+      "first_mask_incomplete_sequences": {
+        "LasHeR": 34,
+        "RGBT234": 31
+      },
+      "matching_prefix_frames_including_initial_per_model": 53506,
+      "matching_prefix_frames_excluding_initial_per_model": 53027,
+      "both_missing_hold_frames_verified_per_model": 52493,
+      "violations": 0
+    },
+    "training": {
+      "seed": 2027,
+      "models": 2,
+      "epochs_each": 5,
+      "sampled_examples_each": 100000,
+      "updates_each": 12500,
+      "continuous_update_indices": true,
+      "rows_per_epoch": 2500,
+      "finite_numeric_logs": true,
+      "epoch_summary_max_difference": 0.0,
+      "logged_loss_scope": "Last accumulation microbatch, not full-train population mean.",
+      "first_two_search_microbatch_hashes_match": true,
+      "train_sequences": 882,
+      "val_sequences": 97,
+      "test_sequences": 245,
+      "split_name_intersections": 0,
+      "source_files_each": 92,
+      "source_git": "58fe5819c6e82770a5a36025924f5a05030ac7cc",
+      "source_mismatches": 0,
+      "stored_configs_equal_executed_git": true,
+      "current_config_additions": [
+        "checkpoint_epochs",
+        "source_version_file"
+      ],
+      "stored_config_equality_scope": "Parsed JSON object equality, not raw file byte equality.",
+      "stored_config_bytes_equal_executed_git": false
+    },
+    "evaluation_source": {
+      "four_manifests_identical": true,
+      "files_each": 103,
+      "matching_git_4c473fa": 102,
+      "mismatch": "scripts/validate_focal_normalization.py",
+      "deployed_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+      "git_current_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+      "differences": [
+        "extra unused CADTRACKActor import",
+        "comment change"
+      ],
+      "remaining_AST_identical": true,
+      "helper_importers_in_project_source": 0,
+      "impact": "No formal inference/scoring path effect; not an exact all-files Git snapshot.",
+      "git_native_session": 43178,
+      "git_exit_code": 0
+    },
+    "yaml": {
+      "sha256": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+      "earlier_campaign_E0_and_git_match": true,
+      "per_evaluation_manifest_contains_yaml": false
+    },
+    "runtime_snapshot": {
+      "observed_utc": "2026-10-13T18:40:11.715913Z",
+      "first5_evaluation_exit_codes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "first5_training_exit_codes": [
+        0,
+        0
+      ],
+      "metrics_equal_reports": true,
+      "full20_at_snapshot": "FULL20_E3_E4_RUNNING",
+      "full20_last_updates": {
+        "e3": 675,
+        "e4": 675
+      },
+      "live_state_not_queried": true
+    },
+    "archives": {
+      "first5_evaluations_20261014_v1.tar.gz": {
+        "sha256": "4eb2c98fae4eff6dbdbb01496bbd396e2eece3c04ec5848b7c270836e509de6d",
+        "bytes": 42689425,
+        "hash_verified_against_manifest": true,
+        "contained_files_byte_hash_verified": 3856,
+        "mismatches": 0
+      },
+      "first5_training_records_20261013_v1.tar.gz": {
+        "sha256": "af6aceb3f0d5633d9432cc9bb042f4a5e67b7a446b15afac3b925710792546e3",
+        "bytes": 1547796,
+        "hash_verified_against_manifest": true,
+        "contained_files_byte_hash_verified": 10,
+        "mismatches": 0
+      },
+      "first5_metric_package_20261014_v1.tar.gz": {
+        "sha256": "f2468a146d2861a0693aad23d600ca1dae8f9862c6e7a32f146092acbd5e0dae",
+        "bytes": 1364791,
+        "hash_verified_against_manifest": true,
+        "contained_files_byte_hash_verified": 728,
+        "mismatches": 0
+      },
+      "first5_metric_metadata_20261014_v1.tar.gz": {
+        "sha256": "800bb8b5503147cf5b7f65614df06be6cef066365f8fae085056abc575b34ec7",
+        "bytes": 29871,
+        "hash_verified_against_manifest": true,
+        "contained_files_byte_hash_verified": 1239,
+        "mismatches": 0
+      }
+    }
+  },
+  "unavailable_checks": [
+    {
+      "check": "Independent checkpoint binary rehash and epoch/update/config/state_dict load",
+      "status": "UNAVAILABLE",
+      "reason": "Checkpoint binaries absent from audited local project and supplied result/training bundles. Consistent recorded hashes/paths are not direct binary verification."
+    },
+    {
+      "check": "Upstream official benchmark evaluator equivalence",
+      "status": "UNAVAILABLE",
+      "reason": "Local package snapshots/citations do not establish an author release, commit or distribution provenance."
+    }
+  ],
+  "execution_notes": [
+    {
+      "check": "Interpreter discovery",
+      "status": "RESOLVED",
+      "initial_errors": [
+        "E:/Scripts/python.exe: No pyvenv.cfg",
+        "E:/python.exe: NumPy unavailable"
+      ],
+      "resolution": "Used existing E:/anaconda/python.exe, Python3.7.6/NumPy1.21.6, -B; no install."
+    },
+    {
+      "check": "Default toolkit initialization",
+      "status": "RESOLVED",
+      "initial_error": "Initial package lacked lashertest.txt and attributes; default LasHeR() failed.",
+      "resolution": "Supplemental 1239-file actual metadata manifest/archive verified; default constructors and four full metric/curve recomputations passed."
+    },
+    {
+      "check": "Report write",
+      "status": "RESOLVED",
+      "initial_error": "Combined shell command rejected before execution by Windows length limit, os error 206.",
+      "resolution": "Wrote Markdown via apply_patch, JSON in a separate shorter command."
+    },
+    {
+      "check": "Follow-up Markdown table comparison",
+      "status": "RESOLVED",
+      "initial_error": "First independent checker expected a literal pp suffix inside numeric cells; actual table declares units in the introduction. Assertion failed before any write, not from a numeric mismatch.",
+      "failed_chunk": "b82d0e",
+      "resolution": "Directly read literal table format, corrected comparison assertions; all deterministic summary checks passed, chunk df9d41 exit0."
+    }
+  ],
+  "action_items": [
+    {
+      "priority": "P1",
+      "action": "Label first5 fixed epoch05/seed2027/five fine-tuning epochs; preserve negative complete deltas and mixed repair effect."
+    },
+    {
+      "priority": "P1",
+      "action": "Bind retained checkpoint bytes and embedded epoch/update/config to recorded hashes before claiming independently verified identity."
+    },
+    {
+      "priority": "P2",
+      "action": "Name recorded rgbt protocol and GT conventions; establish upstream provenance before asserting official equivalence."
+    },
+    {
+      "priority": "P2",
+      "action": "Retain both package manifests/archives and auxiliary snapshot; include inference configuration bytes in future execution records."
+    },
+    {
+      "priority": "P2",
+      "action": "Keep full20 and isolated module effectiveness unproven until completed results and existing specified controls are available."
+    }
+  ],
+  "audited_input_hashes": {
+    "scripts/evaluate_model.py": "sha256:7052d791da8800e666f0d7fad1d132ed9b3a5dba2a10eaffe5cecc501517b726",
+    "scripts/evaluate_complete.py": "sha256:8bdb1e036288d6a7f8e3ea7cb3e06cea125bac029d22ff84f30eff724c017029",
+    "scripts/run_campaign.py": "sha256:2f6ead827059ee44c4bdf951449b2a82395b2be83f23f002c0963e200765c1ef",
+    "scripts/validate_focal_normalization.py": "sha256:d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+    "miss_rgbt/model.py": "sha256:af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+    "miss_rgbt/tracker.py": "sha256:87fb7630552085a3afd6be9855b6c0d47e39db34440209f2861b2cb73d113bd1",
+    "miss_rgbt/objectives.py": "sha256:ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+    "miss_rgbt/train.py": "sha256:699cacbe782b707cc483b9fe3e781e4645898f977f424fbc91c9cf2f453d9b16",
+    "miss_rgbt/data.py": "sha256:78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "analysis/build_full20_comparison.py": "sha256:73009e89a1f2ca679f98389b7ca54ff57efb6822d3c09c2725df883081f80751",
+    "configs/e3.json": "sha256:c1f940e77501686a08311e95c40a300534735eca3d769f0e2be6fbaa94546260",
+    "configs/e4.json": "sha256:6eeeab201583035dd2d02793feaf8fa5ccf645184020d3dec8f046aaca96a604",
+    "configs/e3_full20.json": "sha256:d5bb0880ff4c998006335aa953c4d1c55762af8bdb1f1ba583c3f12367907dde",
+    "configs/e4_full20.json": "sha256:68ed2a71da7f9a4c77209dc4d79e34df4f83d6c65c9d33027ce8a155e5c9c621",
+    "experiments/cadtrack/cadtrack.yaml": "sha256:462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+    "lib/train/dataset/lasher.py": "sha256:e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+    "lib/train/data_specs/lasher_train.txt": "sha256:27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846",
+    "lib/train/data_specs/lasher_val.txt": "sha256:ff5767e1e2522b87d31b898eb949949478c1dabc3b2cef2754a43c65e089016a",
+    "lib/train/data_specs/lasher_all.txt": "sha256:db1d62562d533c5383d089933857bea46add53a3648c8f96d122e23db00a55b7",
+    "EXPERIMENT_TRACKER.md": "sha256:e1dcfdabed8bad99c65365e3f1a292d7559b62d93508c67b71fdbed7ba826381",
+    "HANDOFF.md": "sha256:109ad89881a2a8db690235fe0f6f2ff662585a7650703e625b5361fd0b4ca8c4",
+    "docs/MODULE_EVIDENCE_PROTOCOL.md": "sha256:a804d24881bbb43e06de016177a7cea4696df864a6c1694763563cf9bb66eede",
+    "reports/e0/inventory.json": "sha256:2b3278b5f35ac322f83961a649720d433a91c61a53b5a7e045dcef1fc4f3ec83",
+    "reports/e0/metrics.json": "sha256:c386ee68228c6837583d63af00750e060caa80ceb5fa1f29eab214668ccba16a",
+    "reports/e0/completed.json": "sha256:9cda83f4146ad090f8d33377f19dea765430ff45c59064bc5d524a6f927d068d",
+    "reports/e0/checkpoint_metadata.json": "sha256:11582846a8e708fb3b4fe2f5e2bc849a4c7b166684b431067c9990ef85c7ea62",
+    "reports/e0/source_sha256.json": "sha256:e9e7491d58c52abf0ec1ba12adec1c9b0c021ef0035a0dfd653a53e2a2afadae",
+    "reports/e0/evaluate_miss.py": "sha256:2a59fdd8f648a93c8468cfd571763b2b54f2b27629072ca028896797de8392ff",
+    "reports/e0_complete/metrics.json": "sha256:aad0e6eb0a65ac54eb708b0bf0e4e8b2cb408fba3e0bed7c8ab7230ee9733979",
+    "reports/e0_complete/completed.json": "sha256:ce3de18e97df72d23203f713006b27f0cb0a0b8a40559484faad94cb64330fe5",
+    "reports/first5_training/collection.json": "sha256:07ae3572ac211032a0c820ec5d006777aaba6d80bf7b036411c9fbbe54c32928",
+    "reports/first5_training/summary.json": "sha256:72d9e1594a50cf839ecdc2f8cf4ec8b148bc267e7860fe7c133e46a5ce5f599b",
+    "reports/full20/runtime_20261014_0240.json": "sha256:eb09a910530a485d2482405740963889fcf6efe1d3626162494dab77ac6430d9",
+    "reports/first5_evaluation/collection.json": "sha256:7ef1a8f45a94871e4e888205d0b53912faec47b3160166f206c5f71748f09712",
+    "reports/first5_evaluation/source_difference.json": "sha256:2ab97c6318dab5fd67994c612c3649348993bcff1ce379feb99d2086702e8ece",
+    "reports/first5_evaluation/auxiliary_source.diff": "sha256:c9b278a81339f7f29c393a0fcc7c891041e16d5a5e941b4591cdd6f1909946f2",
+    "reports/first5_evaluation/source_snapshots/scripts/validate_focal_normalization.py": "sha256:cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+    "reports/first5_evaluation/metric_package_manifest.json": "sha256:64f8e781ca931d39f299ff002b57421b14794a47ebf243d7b8dde620a5782585",
+    "reports/first5_evaluation/metric_metadata_manifest.json": "sha256:308b301a2bc2f7526a63ba884cafd34cd817e2e54ee84104a6a77b79f84a8be4",
+    ".aris/traces/experiment-audit/2026-10-14_run01/001-first5.request.json": "sha256:e0c710eb21d307038515f42aa2cb29d792585eab868f9228752e0cfa7ccfcc73",
+    "reports/e3_complete/all_receipts.json": "sha256:ef95c0285de4651935bfe7424418d9206590a1460656b3f99df9f64b345ee8ae",
+    "reports/e3_complete/completed.json": "sha256:b098a58d3b4471976a20b6ea4f0db910f986fa5558e1aefbe6289d46631ea4f2",
+    "reports/e3_complete/LasHeR_curves.json": "sha256:0cc52651e9f82644d733670b0a58d52817d61100c9fbaa79dc28186b46cf1752",
+    "reports/e3_complete/metrics.json": "sha256:414701ee1b8450bdb691ffaecc87a62bc3998cea4ef2a601280e999703f4bd0a",
+    "reports/e3_complete/RGBT234_curves.json": "sha256:f9fd89f9a4f43ab7fa162582646cea8da554a02b9761ed9b2e7fb5bc13cdbaeb",
+    "reports/e3_complete/run.json": "sha256:d723172be8ea0db7de5982ca9907681ffc027ce0a33fa9839bc1c3f59a6199e4",
+    "reports/e3_miss/all_receipts.json": "sha256:60c5d75a2c0e426847365d10b23ffb18f2a5df70e246e9a06ccab72e337d54c7",
+    "reports/e3_miss/completed.json": "sha256:5df55f7b8bbbc63dc652191e4ae4464547e85f4a463e1d9c1a2b83981ff3fdde",
+    "reports/e3_miss/LasHeR-Miss_curves.json": "sha256:7305095b86571ec4f4c172180781bc0a393fd8ef8a55021b215c0ea7ba859dd6",
+    "reports/e3_miss/metrics.json": "sha256:e898a4600b58d05337c0a93ed7a85300da0dd371be8ec115cd6b51d2a51c331d",
+    "reports/e3_miss/RGBT234-Miss_curves.json": "sha256:c03b3a10b9b71c552834f929d1a7fe2c5f0a1d2458ac30b2fabc832a69c21b6b",
+    "reports/e3_miss/run.json": "sha256:bc5cb88af156ba88fe231986d88969f1fb44c3f5843ad6b5726ed89f654fdaa5",
+    "reports/e4_complete/all_receipts.json": "sha256:c8d9280c96f2925d634b485ab5c76b518f0232292b94cfdab1d305f56e06a403",
+    "reports/e4_complete/completed.json": "sha256:aa62a5ce6f16a6775ce719c4fdbb90d314eae748553eef5272fbc977445d8365",
+    "reports/e4_complete/LasHeR_curves.json": "sha256:e913008c2c01846503e832409c0500abb143b8b2e392efc47e5c5bc70ac812d6",
+    "reports/e4_complete/metrics.json": "sha256:12c164321122f04994181b8639a3485f0629bf6fe8e84ae0b5b46b2ec8efe11f",
+    "reports/e4_complete/RGBT234_curves.json": "sha256:a0bc50ed41493e2bfe49c71083315d95b48a6fa34633374843089b789e4341f7",
+    "reports/e4_complete/run.json": "sha256:5492cce9f36d8b2f49f9228631206cfcd3be803b1c683c228613bfecb2a3bfcb",
+    "reports/e4_miss/all_receipts.json": "sha256:1c112ad857bbe4afcd5e9a389ef083997eb4138530f089f3a5324a224b26abce",
+    "reports/e4_miss/completed.json": "sha256:8985cc749b98de0bf342b6ce90a9a1693afb1c2c45059720b8d36e6d88340cb0",
+    "reports/e4_miss/LasHeR-Miss_curves.json": "sha256:a4bc4e634b74ec5d4df7d1996ee4a613c96da40132dfb6a2f0c9bb22e2e79a61",
+    "reports/e4_miss/metrics.json": "sha256:095fa6d2199471d164147af77f6488213c5a0952ffbdc6e2ef96a65cc8a7a444",
+    "reports/e4_miss/RGBT234-Miss_curves.json": "sha256:41708399b4de47d6786c9fdc078358dc0d3fcc1316f84acd409ddac80f2f8364",
+    "reports/e4_miss/run.json": "sha256:0c9da8e0b8042502afaaf02375b808c252fdcccc93aa655f1c8a2b8b7a282612",
+    "reports/first5_training/e3/completed.json": "sha256:bf754b22ab870311914d0731b9469fb22f4914294e36b8f05389968d4f3ecb09",
+    "reports/first5_training/e3/run_config.json": "sha256:6a3d5a261dd978ce05cbc4a8f9c50b27933f1c7161834ea1d3b5e0c7f74c4748",
+    "reports/first5_training/e3/source_sha256.json": "sha256:1438696366f52407c870357f8b8cf99b13a7becedb568ca609b9464ee9c63b9c",
+    "reports/first5_training/e3/source_version.txt": "sha256:82b433efc4944ea8b8cb073302d0e2d82abedc82587711602388f2c1b69f5441",
+    "reports/first5_training/e3/steps.jsonl": "sha256:2acfa799268e6cc20e1831cc70d389e8d29bd50cc9b82267b772fed16323440f",
+    "reports/first5_training/e4/completed.json": "sha256:741af6dd095c09ca2fd8fc4bae30e3f382099fc725deb136adfe4b6995200434",
+    "reports/first5_training/e4/run_config.json": "sha256:031be76f901913559d8b04cdd9551156bf4f33f48b4fbbf2de20d725401ec6f2",
+    "reports/first5_training/e4/source_sha256.json": "sha256:1438696366f52407c870357f8b8cf99b13a7becedb568ca609b9464ee9c63b9c",
+    "reports/first5_training/e4/source_version.txt": "sha256:82b433efc4944ea8b8cb073302d0e2d82abedc82587711602388f2c1b69f5441",
+    "reports/first5_training/e4/steps.jsonl": "sha256:d37dc3d27eb59370c6bf46fb625e2aa6109b8c3705d8b598c1b129fcc79504ad",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/utils.py": "sha256:e027df4694ca9cc23fad375780df27efc3a0b9c58b30021a4aeee17773b296f2",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/__init__.py": "sha256:73b199fb056e71ebe556775a73635bf2374be645deb5350c220bfe1bdd5bb0ee",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/basedataset.py": "sha256:fdf3dc0c7f71d39209e1028e78ef24796fd1c9daa6d7cb002269bb3ecadd4484",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/gtot_dataset.py": "sha256:4a3ad14b76574b5d4cf91117b5b430372fd45367799ff95d67ad16ea31cca6ab",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/lasher_dataset.py": "sha256:f86bd578c9b30e4eb35c407e3c44c16d3133ac6c72a0a50a2391051d06727e0b",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/rgbt210_dataset.py": "sha256:c2b57debd6ee99192d47900f5f6f3becad066194375bf4a7697e3d1eef0ebdd4",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/rgbt234_dataset.py": "sha256:7bc3372318842d94c0328ff685cef7b8d5e74153e91d401268fc222f586a5948",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/__init__.py": "sha256:54d87433cef47eb5a49871ed1132e72b65a0ce07ea2a4c6b240c8212182f5f06",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/base.py": "sha256:e6d5108a443948ad1dc09dabf4b23490e46483a8906843057527a210c13a2a63",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py": "sha256:9ae628c82201a00002cbef8a62c78746eb26acbd8c226304a4cd78e9223d2382",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/__init__.py": "sha256:bfe07fdfffa1e251f2bfe01de32794a8ce8a7ecd1ef4f543a6def2050610fb7d",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/vis/draw_utils.py": "sha256:9b49b0cb5bdfcdea032ebd2fb4e91dd0c76aeef9b772ead4fc31682fe934bbfd",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/vis/plot.py": "sha256:2906ed791f5f26da2cb963affe055aaf52bee93f7feb7de9c28baff766507122",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/vis/radar.py": "sha256:01d6c162176568fabe0041ba6bd49ab3b6b3a1bd8473c627b80b854346d83353",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/vis/__init__.py": "sha256:aada1520fd718236e772601b015fd19a7b417ff2f58aebdf8d7cd3e56e23bdd0",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/gt_file/LasHeR/lashertest.txt": "sha256:07ceb239eea9a4d471f94a7943fe49dfca423d7570b83e6d573665c1645f1505",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/gt_file/RGBT234/attr_txt/SequencesName.txt": "sha256:185236d50e14796cc384ad3293f69ed9d61847ef4a2ded68527e98e270f6314c",
+    ".aris/traces/experiment-audit/20261013/temporary/masks/missing_results_lasher245.json": "sha256:f3af5aca22494af4ea91b5ebe6fe16874d2d95b8a01d883a22d4c005c7af3d5b",
+    ".aris/traces/experiment-audit/20261013/temporary/masks/missing_results_rgbt234.json": "sha256:8941b526d457f7db3bc7b6d6538f8201b6f4bc4c88d491917b22340ee6db0fe3",
+    ".aris/traces/experiment-audit/20261013/temporary/baseline_original/run_receipts.json": "sha256:d67c1416f91c990fc0b254695d622f0f1b61c5f2a9749fc1452517a03ba9b1bc",
+    ".aris/traces/experiment-audit/20261013/temporary/baseline_original/LasHeR-Miss_curves.json": "sha256:45c08b3d7b4db05f9c37cb7422047ffef603f5da4230f691a6e2d4710313ccb7",
+    ".aris/traces/experiment-audit/20261013/temporary/baseline_original/RGBT234-Miss_curves.json": "sha256:c9150fe170e6ba10f3a1342d3a56b5ae62235e9c2877cd3490f3fb299fa0e811",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/paired_baseline_intake/e0_complete_20261013/run_receipts.json": "sha256:41ab604db3e285be7cba9771a3f8a40130eb01f89e82e6e047a141a66a201917",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/paired_baseline_intake/e0_complete_20261013/inventory.json": "sha256:11709d00e7990bf575fd6de346753e854ead940abd02e94846de283baa4bc20c",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/paired_baseline_intake/e0_complete_20261013/source_sha256.json": "sha256:e9e7491d58c52abf0ec1ba12adec1c9b0c021ef0035a0dfd653a53e2a2afadae",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/source_sha256.json": "sha256:6b9eb81194cedcd5f20e94ef8d1d936c88db6817acdc6e6c75de64463e31a521",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_evaluations_20261014_v1.tar.gz": "sha256:4eb2c98fae4eff6dbdbb01496bbd396e2eece3c04ec5848b7c270836e509de6d",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_training_records_20261013_v1.tar.gz": "sha256:af6aceb3f0d5633d9432cc9bb042f4a5e67b7a446b15afac3b925710792546e3",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package_20261014_v1.tar.gz": "sha256:f2468a146d2861a0693aad23d600ca1dae8f9862c6e7a32f146092acbd5e0dae",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_metadata_20261014_v1.tar.gz": "sha256:800bb8b5503147cf5b7f65614df06be6cef066365f8fae085056abc575b34ec7",
+    "analysis/build_first5_comparison.py": "sha256:8c2eddf4e8ae2ad9be0a7dbd645e96e9c1f56ed967bc02c10b56a2a0b4180a4a",
+    "reports/first5_evaluation/comparison.json": "sha256:509fecbac0bfdf1fcb2de3566d29c9e401922ae023f6f457f76267f53c2ae667",
+    "reports/first5_evaluation/comparison.csv": "sha256:e403f3bb4b5aa1a6edd21d44bda428c5f94a4d949f9129d1d2c4703597df3449",
+    "reports/first5_evaluation/RESULTS.md": "sha256:bb41255683fca182029eae1048f56f17cf0a3f42a88be6a67d9db985f6077845",
+    "reports/first5_evaluation/README.md": "sha256:e4888bfee2f489a5a4d36d160d9e0caa988f131801441a38d97b7f05665111b0",
+    "reports/full20/midpoint_observer_20261014.json": "sha256:c010bb1e40657033e2557702b5f740b32c9e603144b6d0d3e45ef9126f5502f6"
+  },
+  "followup_review": {
+    "status": "PASS",
+    "source_metric_files_unchanged": 6,
+    "json_metric_rows": 20,
+    "json_repair_deltas": 10,
+    "csv_metric_rows": 20,
+    "markdown_model_metric_values": 20,
+    "markdown_baseline_metric_values": 10,
+    "markdown_repair_deltas": 10,
+    "markdown_strict_targets": 8,
+    "handoff_metric_values": 30,
+    "strict_targets_passed": {
+      "E3": 1,
+      "E4": 0
+    },
+    "max_abs_numeric_difference": 0,
+    "comparison_input_hashes_checked": 23,
+    "config_checks": {
+      "e3": {
+        "semantic_equal": true,
+        "byte_equal": false,
+        "saved_bytes": 708,
+        "git_bytes": 738,
+        "saved_sha256": "6a3d5a261dd978ce05cbc4a8f9c50b27933f1c7161834ea1d3b5e0c7f74c4748",
+        "git_sha256": "f6b47723d183bd338c6a58e495a75bae691e1d75e32c015bca1bce6abd958930"
+      },
+      "e4": {
+        "semantic_equal": true,
+        "byte_equal": false,
+        "saved_bytes": 707,
+        "git_bytes": 737,
+        "saved_sha256": "031be76f901913559d8b04cdd9551156bf4f33f48b4fbbf2de20d725401ec6f2",
+        "git_sha256": "329f9d9007d5830c6854e88dddbfea18dae43d1b4b5863823d5fcdda494c778e"
+      }
+    },
+    "observer_registration": {
+      "owner": {
+        "observer_python_pid": 49524,
+        "observer_parent_pid": 28232,
+        "deadline_utc": "2026-10-14T09:00:00+00:00",
+        "started_utc": "2026-10-13T19:13:48.017144+00:00",
+        "scope": "single read-only full20 diagnostic near epoch10; no earlier remote query"
+      },
+      "native_session": 14398,
+      "policy": "One read-only NN intake at the predicted epoch10 node; no earlier NN query.",
+      "last_nn_intake": "reports/full20/runtime_20261014_0240.json",
+      "output": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/full20_midpoint_intake.json",
+      "source_sha256": "37cd13eb3ee4375299941f9765f51324386a74988bbecc967c6516e550b0c1c1",
+      "launch_observed": true,
+      "expected_final": "2026-10-15 morning BJT; estimate from first5 runtime, not a result"
+    },
+    "input_sha256": {
+      "HANDOFF.md": "109ad89881a2a8db690235fe0f6f2ff662585a7650703e625b5361fd0b4ca8c4",
+      "EXPERIMENT_TRACKER.md": "e1dcfdabed8bad99c65365e3f1a292d7559b62d93508c67b71fdbed7ba826381",
+      "analysis/build_first5_comparison.py": "8c2eddf4e8ae2ad9be0a7dbd645e96e9c1f56ed967bc02c10b56a2a0b4180a4a",
+      "reports/first5_evaluation/comparison.json": "509fecbac0bfdf1fcb2de3566d29c9e401922ae023f6f457f76267f53c2ae667",
+      "reports/first5_evaluation/comparison.csv": "e403f3bb4b5aa1a6edd21d44bda428c5f94a4d949f9129d1d2c4703597df3449",
+      "reports/first5_evaluation/RESULTS.md": "bb41255683fca182029eae1048f56f17cf0a3f42a88be6a67d9db985f6077845",
+      "reports/first5_evaluation/README.md": "e4888bfee2f489a5a4d36d160d9e0caa988f131801441a38d97b7f05665111b0",
+      "reports/full20/midpoint_observer_20261014.json": "c010bb1e40657033e2557702b5f740b32c9e603144b6d0d3e45ef9126f5502f6"
+    },
+    "verdict": "PASS",
+    "scope": "Current documentation and deterministic summary arithmetic only. Prior raw bbox and package metric recomputation results retained; no repeat scoring.",
+    "evidence_chunk": "df9d41",
+    "reviewer_model": "gpt-6-astra",
+    "reviewer_reasoning": "max",
+    "review_independence": "same-family",
+    "acceptance_status": "provisional",
+    "helper_and_runtime_hashes_unchanged": true,
+    "helper_and_runtime_check_chunk": "d933b1",
+    "live_process_or_training_query_performed": false,
+    "raw_scoring_repeated": false,
+    "production_aggregator_executed": false,
+    "observer_timestamp_note": "Receipt started_utc converts to 2026-10-14 03:13:48.017144 BJT; HANDOFF:26 and tracker:20 give launch/birth 03:13:47. These recorded timestamps differ by 1.017144 seconds; process birth and liveness were not checked. Schedule and recorded PIDs/session agree. Registration is not a new NN intake.",
+    "citation_revisions": [
+      {
+        "old": "HANDOFF.md:15",
+        "current": "HANDOFF.md:28",
+        "topic": "full20 aggregation remains prepared"
+      },
+      {
+        "old": "HANDOFF.md:107",
+        "current": "HANDOFF.md:120",
+        "topic": "native LasHeR invalid-GT rule"
+      },
+      {
+        "old": "HANDOFF.md:166",
+        "current": "HANDOFF.md:179",
+        "topic": "test-informed research disclosure"
+      },
+      {
+        "old": "EXPERIMENT_TRACKER.md:20",
+        "current": "EXPERIMENT_TRACKER.md:20",
+        "topic": "current observer now points to Oct14 17:00 BJT; previous stale-text criticism withdrawn"
+      }
+    ],
+    "resolved_findings": [
+      {
+        "status": "RESOLVED",
+        "check": "README historical configuration comparison wording",
+        "initial_claim": "README.md:5 said historical configuration checking was byte-for-byte.",
+        "finding": "Saved and Git configuration files have equal parsed JSON objects but different raw bytes and SHA256 hashes.",
+        "correction": "Parent corrected README.md:5 to state parsed JSON equality and separate recorded hashes; current file directly re-read.",
+        "current_evidence": "reports/first5_evaluation/README.md:5"
+      }
+    ],
+    "reviewed_at": "2026-10-13T19:35:53.896480Z",
+    "prior_audit_generated_at": "2026-10-13T19:24:41.545717Z",
+    "input_revisions": [
+      {
+        "path": "HANDOFF.md",
+        "previous_sha256": "sha256:46b57b9c1342506d51a7c6b3307d504742069652c53a7f8f0d867958a7e7acf1",
+        "current_sha256": "sha256:109ad89881a2a8db690235fe0f6f2ff662585a7650703e625b5361fd0b4ca8c4"
+      },
+      {
+        "path": "EXPERIMENT_TRACKER.md",
+        "previous_sha256": "sha256:2f974af9ffaaeee3257ffc98d3190cd34634dd50c461fd95d5c8d9fe8bb8b5db",
+        "current_sha256": "sha256:e1dcfdabed8bad99c65365e3f1a292d7559b62d93508c67b71fdbed7ba826381"
+      }
+    ]
+  },
+  "updated_at": "2026-10-13T19:35:53.896480Z"
+}

@@ -1,0 +1,62 @@
+{
+  "e3_complete_20261013": {
+    "source_file_count": 103,
+    "mismatches": [
+      {
+        "path": "scripts/validate_focal_normalization.py",
+        "recorded_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+        "git_blob_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_equals_recorded": false,
+        "local_normalized_equals_git": true,
+        "local_crlf_count": 0,
+        "git_crlf_count": 0
+      }
+    ]
+  },
+  "e3_miss_20261013": {
+    "source_file_count": 103,
+    "mismatches": [
+      {
+        "path": "scripts/validate_focal_normalization.py",
+        "recorded_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+        "git_blob_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_equals_recorded": false,
+        "local_normalized_equals_git": true,
+        "local_crlf_count": 0,
+        "git_crlf_count": 0
+      }
+    ]
+  },
+  "e4_complete_20261013": {
+    "source_file_count": 103,
+    "mismatches": [
+      {
+        "path": "scripts/validate_focal_normalization.py",
+        "recorded_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+        "git_blob_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_equals_recorded": false,
+        "local_normalized_equals_git": true,
+        "local_crlf_count": 0,
+        "git_crlf_count": 0
+      }
+    ]
+  },
+  "e4_miss_20261013": {
+    "source_file_count": 103,
+    "mismatches": [
+      {
+        "path": "scripts/validate_focal_normalization.py",
+        "recorded_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+        "git_blob_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+        "local_equals_recorded": false,
+        "local_normalized_equals_git": true,
+        "local_crlf_count": 0,
+        "git_crlf_count": 0
+      }
+    ]
+  }
+}

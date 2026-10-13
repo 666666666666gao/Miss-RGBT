@@ -1,0 +1,58 @@
+{
+  "groups": {
+    "e3_complete": {
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 3167.1156051158905
+      },
+      "checkpoint_sha256": "acd8543a0c68cbac66e62d6625571aa55c601a415652c4cb5535a4b950e81fa4",
+      "bbox_files": 479,
+      "receipt_files": 479
+    },
+    "e3_miss": {
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 2680.070345401764
+      },
+      "checkpoint_sha256": "acd8543a0c68cbac66e62d6625571aa55c601a415652c4cb5535a4b950e81fa4",
+      "bbox_files": 479,
+      "receipt_files": 479
+    },
+    "e4_complete": {
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 3189.8531336784363
+      },
+      "checkpoint_sha256": "edd94537b2697a4dbe0bf9e2d62c5653827ca1e2dc3da9bb7e6a8d09927b0f5c",
+      "bbox_files": 479,
+      "receipt_files": 479
+    },
+    "e4_miss": {
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 2709.7383964061737
+      },
+      "checkpoint_sha256": "edd94537b2697a4dbe0bf9e2d62c5653827ca1e2dc3da9bb7e6a8d09927b0f5c",
+      "bbox_files": 479,
+      "receipt_files": 479
+    }
+  },
+  "checkpoint_sha256": {
+    "e3": "acd8543a0c68cbac66e62d6625571aa55c601a415652c4cb5535a4b950e81fa4",
+    "e4": "edd94537b2697a4dbe0bf9e2d62c5653827ca1e2dc3da9bb7e6a8d09927b0f5c"
+  },
+  "archive": "/home/gaob/Miss-RGBT/logs/first5_evaluations_20261014_v1.tar.gz",
+  "archive_bytes": 42689425,
+  "archive_sha256": "4eb2c98fae4eff6dbdbb01496bbd396e2eece3c04ec5848b7c270836e509de6d",
+  "local_raw_root": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\first5_evaluation_raw",
+  "source_files_per_group": 103,
+  "source_files_matching_git_4c473fa": 102,
+  "actual_auxiliary_source_snapshot": "reports/first5_evaluation/source_snapshots/scripts/validate_focal_normalization.py",
+  "actual_auxiliary_source_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+  "all_four_source_manifests_identical": true,
+  "scope": "closed first5 evaluations; source provenance includes deployed auxiliary-script snapshot, not an exact all-files 4c473fa claim"
+}

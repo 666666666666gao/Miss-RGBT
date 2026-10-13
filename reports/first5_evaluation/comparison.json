@@ -1,0 +1,488 @@
+{
+  "scope": "Recorded final epoch05; 12500 updates each; four full evaluations; single seed. This aggregation does not independently rescore bbox files or locally hash checkpoint bytes. Not the running final epoch20 results; no E5 optimization or three-module efficacy claim.",
+  "baselines": {
+    "complete": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 75.63650288717686,
+        "NPR": 71.77283680562866,
+        "SR": 60.125713676122736
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.67713392128344,
+        "MSR": 66.8452283301532
+      }
+    },
+    "miss": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 63.47250706301003,
+        "NPR": 58.58185056215868,
+        "SR": 50.583148589078256
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 82.79481455539279,
+        "MSR": 59.57443513369343
+      }
+    }
+  },
+  "models": {
+    "e3": {
+      "training": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25992.219589948654
+      },
+      "config": {
+        "stage": "E3",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 5,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 5,
+        "clip_grad_norm": 0.1,
+        "output": "checkpoints/e3_seed2027"
+      },
+      "evaluations": {
+        "complete": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 74.3887951135025,
+            "NPR": 70.73282952822298,
+            "SR": 59.20044958559259
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 90.25113228339285,
+            "MSR": 66.11871965007794
+          }
+        },
+        "miss": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 69.03209135210281,
+            "NPR": 64.01723074531542,
+            "SR": 54.83585431288509
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 85.22405184524293,
+            "MSR": 61.48663157345009
+          }
+        }
+      }
+    },
+    "e4": {
+      "training": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25118.12800717354
+      },
+      "config": {
+        "stage": "E4",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+        "repair": true,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 5,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 5,
+        "clip_grad_norm": 0.1,
+        "output": "checkpoints/e4_seed2027"
+      },
+      "evaluations": {
+        "complete": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 75.30210640185967,
+            "NPR": 71.6700148421111,
+            "SR": 59.8397405460653
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 90.29469382628285,
+            "MSR": 66.2232806751
+          }
+        },
+        "miss": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 68.46101143387759,
+            "NPR": 63.37212347817008,
+            "SR": 54.36302520007273
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 85.61327484415948,
+            "MSR": 61.79704049963527
+          }
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 74.3887951135025,
+      "baseline": 75.63650288717686,
+      "delta_pp": -1.2477077736743638,
+      "relative_change_percent": -1.6496106060528821,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 70.73282952822298,
+      "baseline": 71.77283680562866,
+      "delta_pp": -1.040007277405678,
+      "relative_change_percent": -1.4490262941984167,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 59.20044958559259,
+      "baseline": 60.125713676122736,
+      "delta_pp": -0.925264090530149,
+      "relative_change_percent": -1.5388825079303667,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E3",
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.25113228339285,
+      "baseline": 90.67713392128344,
+      "delta_pp": -0.4260016378905931,
+      "relative_change_percent": -0.4698005103032964,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "experiment": "E3",
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 66.11871965007794,
+      "baseline": 66.8452283301532,
+      "delta_pp": -0.7265086800752698,
+      "relative_change_percent": -1.0868519686805365,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 69.03209135210281,
+      "baseline": 63.47250706301003,
+      "delta_pp": 5.559584289092783,
+      "relative_change_percent": 8.7590431611181,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 69.3,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 64.01723074531542,
+      "baseline": 58.58185056215868,
+      "delta_pp": 5.435380183156738,
+      "relative_change_percent": 9.278266444296582,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E3",
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 54.83585431288509,
+      "baseline": 50.583148589078256,
+      "delta_pp": 4.252705723806834,
+      "relative_change_percent": 8.407356683852344,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 54.4,
+      "target_exceeded": true
+    },
+    {
+      "experiment": "E3",
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 85.22405184524293,
+      "baseline": 82.79481455539279,
+      "delta_pp": 2.4292372898501355,
+      "relative_change_percent": 2.934045209105319,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 88.1,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E3",
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 61.48663157345009,
+      "baseline": 59.57443513369343,
+      "delta_pp": 1.9121964397566629,
+      "relative_change_percent": 3.2097600849515815,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 64.3,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 75.30210640185967,
+      "baseline": 75.63650288717686,
+      "delta_pp": -0.33439648531718547,
+      "relative_change_percent": -0.4421099238498477,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 71.6700148421111,
+      "baseline": 71.77283680562866,
+      "delta_pp": -0.10282196351755601,
+      "relative_change_percent": -0.14326027518741238,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 59.8397405460653,
+      "baseline": 60.125713676122736,
+      "delta_pp": -0.2859731300574353,
+      "relative_change_percent": -0.4756253399300633,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E4",
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.29469382628285,
+      "baseline": 90.67713392128344,
+      "delta_pp": -0.3824400950005895,
+      "relative_change_percent": -0.42176023707651,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "experiment": "E4",
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 66.2232806751,
+      "baseline": 66.8452283301532,
+      "delta_pp": -0.621947655053205,
+      "relative_change_percent": -0.9304293972658191,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 68.46101143387759,
+      "baseline": 63.47250706301003,
+      "delta_pp": 4.98850437086756,
+      "relative_change_percent": 7.859315161311343,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 69.3,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 63.37212347817008,
+      "baseline": 58.58185056215868,
+      "delta_pp": 4.7902729160114035,
+      "relative_change_percent": 8.177059737859683,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "experiment": "E4",
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 54.36302520007273,
+      "baseline": 50.583148589078256,
+      "delta_pp": 3.779876610994471,
+      "relative_change_percent": 7.472600493300667,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 54.4,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E4",
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 85.61327484415948,
+      "baseline": 82.79481455539279,
+      "delta_pp": 2.818460288766687,
+      "relative_change_percent": 3.40415073564907,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 88.1,
+      "target_exceeded": false
+    },
+    {
+      "experiment": "E4",
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 61.79704049963527,
+      "baseline": 59.57443513369343,
+      "delta_pp": 2.2226053659418454,
+      "relative_change_percent": 3.7308039278156913,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 64.3,
+      "target_exceeded": false
+    }
+  ],
+  "repair_deltas": [
+    {
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "delta_e4_minus_e3_pp": 0.9133112883571783
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "delta_e4_minus_e3_pp": 0.9371853138881221
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "delta_e4_minus_e3_pp": 0.6392909604727137
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "delta_e4_minus_e3_pp": 0.04356154289000358
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "delta_e4_minus_e3_pp": 0.10456102502206477
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "delta_e4_minus_e3_pp": -0.5710799182252231
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "delta_e4_minus_e3_pp": -0.6451072671453346
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "delta_e4_minus_e3_pp": -0.47282911281236295
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "delta_e4_minus_e3_pp": 0.38922299891655143
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "delta_e4_minus_e3_pp": 0.31040892618518257
+    }
+  ],
+  "input_sha256": {
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e0_complete\\completed.json": "ce3de18e97df72d23203f713006b27f0cb0a0b8a40559484faad94cb64330fe5",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e0_complete\\metrics.json": "aad0e6eb0a65ac54eb708b0bf0e4e8b2cb408fba3e0bed7c8ab7230ee9733979",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e0\\completed.json": "9cda83f4146ad090f8d33377f19dea765430ff45c59064bc5d524a6f927d068d",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e0\\metrics.json": "c386ee68228c6837583d63af00750e060caa80ceb5fa1f29eab214668ccba16a",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\first5_evaluation\\collection.json": "7ef1a8f45a94871e4e888205d0b53912faec47b3160166f206c5f71748f09712",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\first5_training\\e3\\completed.json": "bf754b22ab870311914d0731b9469fb22f4914294e36b8f05389968d4f3ecb09",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\first5_training\\e3\\run_config.json": "6a3d5a261dd978ce05cbc4a8f9c50b27933f1c7161834ea1d3b5e0c7f74c4748",
+    "git:58fe5819c6e82770a5a36025924f5a05030ac7cc:configs/e3.json": "f6b47723d183bd338c6a58e495a75bae691e1d75e32c015bca1bce6abd958930",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_complete\\run.json": "d723172be8ea0db7de5982ca9907681ffc027ce0a33fa9839bc1c3f59a6199e4",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_complete\\completed.json": "b098a58d3b4471976a20b6ea4f0db910f986fa5558e1aefbe6289d46631ea4f2",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_complete\\metrics.json": "414701ee1b8450bdb691ffaecc87a62bc3998cea4ef2a601280e999703f4bd0a",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_miss\\run.json": "bc5cb88af156ba88fe231986d88969f1fb44c3f5843ad6b5726ed89f654fdaa5",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_miss\\completed.json": "5df55f7b8bbbc63dc652191e4ae4464547e85f4a463e1d9c1a2b83981ff3fdde",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e3_miss\\metrics.json": "e898a4600b58d05337c0a93ed7a85300da0dd371be8ec115cd6b51d2a51c331d",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\first5_training\\e4\\completed.json": "741af6dd095c09ca2fd8fc4bae30e3f382099fc725deb136adfe4b6995200434",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\first5_training\\e4\\run_config.json": "031be76f901913559d8b04cdd9551156bf4f33f48b4fbbf2de20d725401ec6f2",
+    "git:58fe5819c6e82770a5a36025924f5a05030ac7cc:configs/e4.json": "329f9d9007d5830c6854e88dddbfea18dae43d1b4b5863823d5fcdda494c778e",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_complete\\run.json": "5492cce9f36d8b2f49f9228631206cfcd3be803b1c683c228613bfecb2a3bfcb",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_complete\\completed.json": "aa62a5ce6f16a6775ce719c4fdbb90d314eae748553eef5272fbc977445d8365",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_complete\\metrics.json": "12c164321122f04994181b8639a3485f0629bf6fe8e84ae0b5b46b2ec8efe11f",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_miss\\run.json": "0c9da8e0b8042502afaaf02375b808c252fdcccc93aa655f1c8a2b8b7a282612",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_miss\\completed.json": "8985cc749b98de0bf342b6ce90a9a1693afb1c2c45059720b8d36e6d88340cb0",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e4_miss\\metrics.json": "095fa6d2199471d164147af77f6488213c5a0952ffbdc6e2ef96a65cc8a7a444"
+  }
+}

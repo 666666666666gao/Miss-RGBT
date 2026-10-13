@@ -1,0 +1,485 @@
+{
+  "recorded_at": "2026-10-13T19:10:57.989636+00:00",
+  "scope": "Primary source and local input snapshot identity only; no experiment-integrity verdict.",
+  "remote_ref_lookup": "git ls-remote --symref <official repo URL> HEAD",
+  "repositories": {
+    "OSTrack": [
+      "botaoye/OSTrack",
+      "main",
+      "33b5e12586216b7fd0e95d255bd01ba44cbec759"
+    ],
+    "MixFormer": [
+      "MCG-NJU/MixFormer",
+      "main",
+      "8b87088f45af02c614a277176c63181261e93de3"
+    ],
+    "PCGrad": [
+      "tianheyu927/PCGrad",
+      "master",
+      "c5fbd7c856526373828074f06875230f7f3ee79e"
+    ]
+  },
+  "external_snapshots": [
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "commit.patch",
+      "bytes": 3554,
+      "sha256": "eb39acc3bb22652f86ec50c4f2a08d9b3e3165c24aba626d1b045dd30cc658cf",
+      "git_blob_sha1": "b6bee9511d73450d5bd81d6e1b19d4dd02e7d0f4",
+      "source_url": "https://github.com/botaoye/OSTrack/commit/33b5e12586216b7fd0e95d255bd01ba44cbec759.patch"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "experiments/ostrack/vitb_256_mae_ce_32x4_ep300.yaml",
+      "bytes": 1592,
+      "sha256": "3513e8fdc8ed3179b290e1870b979b46293fd51ac180ed55f185dc7a166fb71d",
+      "git_blob_sha1": "304dd49b4ff1b124444adbf86e91426229a20ac8",
+      "remote_tree_blob_sha1": "304dd49b4ff1b124444adbf86e91426229a20ac8",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/experiments/ostrack/vitb_256_mae_ce_32x4_ep300.yaml"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "git-tree.json",
+      "bytes": 40582,
+      "sha256": "6b0626d6eb6d8e652a5672e33e58ee3538e9a64c9e336624d7074636c7bad0b0",
+      "git_blob_sha1": "3a9976c077a7e40b26617d34265da84037248cc6",
+      "source_url": "https://api.github.com/repos/botaoye/OSTrack/git/trees/33b5e12586216b7fd0e95d255bd01ba44cbec759?recursive=1"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "lib/models/layers/attn_blocks.py",
+      "bytes": 5938,
+      "sha256": "3b5c243f552172cd34e71f75eebd73c8a6d2e0e6683d04062faf5b7737432646",
+      "git_blob_sha1": "75eacd597e913d46f9a3eaf20b287b7b31afc4e1",
+      "remote_tree_blob_sha1": "75eacd597e913d46f9a3eaf20b287b7b31afc4e1",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/lib/models/layers/attn_blocks.py"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "lib/models/ostrack/vit_ce.py",
+      "bytes": 9245,
+      "sha256": "6c5d9d5324bf2b10efce6e9518d4e15016034189238c986a8bc20d320a7693d9",
+      "git_blob_sha1": "94b4ffc40b36c4e01d6aff13fea94e641fa0fd92",
+      "remote_tree_blob_sha1": "94b4ffc40b36c4e01d6aff13fea94e641fa0fd92",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/lib/models/ostrack/vit_ce.py"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "lib/test/tracker/ostrack.py",
+      "bytes": 7539,
+      "sha256": "b3219345547efd089bd41b48d69c00668d07d4bcd253ec5aaa039e6a75e4b939",
+      "git_blob_sha1": "3674779a73c9ee762349f96e676a9b588fad56aa",
+      "remote_tree_blob_sha1": "3674779a73c9ee762349f96e676a9b588fad56aa",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/lib/test/tracker/ostrack.py"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "lib/train/actors/ostrack.py",
+      "bytes": 5316,
+      "sha256": "bee9d3728c77b89644b3c7b00cc3e8fe21609499b073b294552b1a8abc183fda",
+      "git_blob_sha1": "36d13417c912356b6cf92cc87c0e26d2de52e151",
+      "remote_tree_blob_sha1": "36d13417c912356b6cf92cc87c0e26d2de52e151",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/lib/train/actors/ostrack.py"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "lib/utils/ce_utils.py",
+      "bytes": 3379,
+      "sha256": "ba0c7320089d044ee4193076590ee3859577de66f865887ba659ab5922b655fd",
+      "git_blob_sha1": "d4bfac3a61ee94035aa6d2ab28628fb49ac7b5df",
+      "remote_tree_blob_sha1": "d4bfac3a61ee94035aa6d2ab28628fb49ac7b5df",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/lib/utils/ce_utils.py"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "df741d4d87b34417b33b75e45855f67151680b2bc30adddb1659d5fb7f1b0654",
+      "git_blob_sha1": "d59bbc27cc406570e6fb25b87ec4ad20fdd318d6",
+      "remote_tree_blob_sha1": "d59bbc27cc406570e6fb25b87ec4ad20fdd318d6",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/LICENSE"
+    },
+    {
+      "repository": "botaoye/OSTrack",
+      "default_branch": "main",
+      "commit": "33b5e12586216b7fd0e95d255bd01ba44cbec759",
+      "path": "README.md",
+      "bytes": 8443,
+      "sha256": "d9b52d8c031babd8b0abccba9b054787a00d8a00b4ac7721120b1452540f9218",
+      "git_blob_sha1": "f2d116ebae644c1bb1aa156c3be2f0669d7551f4",
+      "remote_tree_blob_sha1": "f2d116ebae644c1bb1aa156c3be2f0669d7551f4",
+      "source_url": "https://raw.githubusercontent.com/botaoye/OSTrack/33b5e12586216b7fd0e95d255bd01ba44cbec759/README.md"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "commit.patch",
+      "bytes": 917,
+      "sha256": "56e2cd1cfe5b8965fd229cb6298f8c442ba039a03ed4b5d1b52506b178d888da",
+      "git_blob_sha1": "e27eba60406769ccc9cf92047d1206c9cc83497d",
+      "source_url": "https://github.com/MCG-NJU/MixFormer/commit/8b87088f45af02c614a277176c63181261e93de3.patch"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "experiments/mixformer_cvt_online/baseline.yaml",
+      "bytes": 2287,
+      "sha256": "6da98d4c4c76889d0649c67f3bc7abb06fa9562122e8a1f6488cb0a254ee6803",
+      "git_blob_sha1": "90ad66f9da37a5def4574578f982919043efe543",
+      "remote_tree_blob_sha1": "90ad66f9da37a5def4574578f982919043efe543",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/experiments/mixformer_cvt_online/baseline.yaml"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "external/PreciseRoIPooling/LICENSE",
+      "bytes": 1068,
+      "sha256": "59ab000b2b5f64e7fd8ccb998406c3c8a893abf1c8ccc2be23a4b1d7f88143bb",
+      "git_blob_sha1": "b1d20a6bad1d2beb2f8d90acfe91d04cc1cccb53",
+      "remote_tree_blob_sha1": "b1d20a6bad1d2beb2f8d90acfe91d04cc1cccb53",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/external/PreciseRoIPooling/LICENSE"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "git-tree.json",
+      "bytes": 121719,
+      "sha256": "b203970e1103a3bb8dd5b346c3c08efe0b3180cad826b016a39d7fb6e91292f3",
+      "git_blob_sha1": "5a615e9633c4382ab66b3a17fd4d7077eb383ef8",
+      "source_url": "https://api.github.com/repos/MCG-NJU/MixFormer/git/trees/8b87088f45af02c614a277176c63181261e93de3?recursive=1"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/models/mixformer_cvt/mixformer_online.py",
+      "bytes": 31571,
+      "sha256": "c1626b0f517b2b9b00e19a2e448fb373e59f7ba557ee586a824c45243856ee52",
+      "git_blob_sha1": "8245a135a5ca849fe8635cbffe2826310a7e0421",
+      "remote_tree_blob_sha1": "8245a135a5ca849fe8635cbffe2826310a7e0421",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/models/mixformer_cvt/mixformer_online.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/models/mixformer_cvt/score_decoder.py",
+      "bytes": 3046,
+      "sha256": "66239b062e8bce2db60fa910726c9bf2fdfa08949e3d1929f59e712bf4c7982d",
+      "git_blob_sha1": "9c7a4970eac10267ab226a3d8bc664e87d86ff81",
+      "remote_tree_blob_sha1": "9c7a4970eac10267ab226a3d8bc664e87d86ff81",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/models/mixformer_cvt/score_decoder.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/test/tracker/mixformer_cvt_online.py",
+      "bytes": 10611,
+      "sha256": "ef998ed7f48bb9e0851fc9c572e9dd15c57f48a55a6834ef054c0aa4ae045e6d",
+      "git_blob_sha1": "b3577a14406899c0f3048bb5c391096c9c50f04b",
+      "remote_tree_blob_sha1": "b3577a14406899c0f3048bb5c391096c9c50f04b",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/test/tracker/mixformer_cvt_online.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/train/actors/mixformer.py",
+      "bytes": 3997,
+      "sha256": "7547675e51c50eb1237ab9312c0b4ca98fd4266bc3b98251136a8d9b1e29fc4c",
+      "git_blob_sha1": "1c011c4c10c74780f0e3b11f1a605ca735fceaec",
+      "remote_tree_blob_sha1": "1c011c4c10c74780f0e3b11f1a605ca735fceaec",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/train/actors/mixformer.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/train/base_functions.py",
+      "bytes": 12825,
+      "sha256": "d564fa711f8fcff1fb435618d60281ed19ebfef39075fa4bd35f1da77383ef82",
+      "git_blob_sha1": "bae9bb428dc1ce215827a22f93ce37945f45305f",
+      "remote_tree_blob_sha1": "bae9bb428dc1ce215827a22f93ce37945f45305f",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/train/base_functions.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/train/data/sampler.py",
+      "bytes": 17631,
+      "sha256": "45641f0dad7fa4d86aab57a39baddc7461c18f6eeff9cf934d4573e92ea05865",
+      "git_blob_sha1": "58e124f6654606f0d0a346815e015b51f5b3430b",
+      "remote_tree_blob_sha1": "58e124f6654606f0d0a346815e015b51f5b3430b",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/train/data/sampler.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "lib/train/train_script_mixformer.py",
+      "bytes": 4630,
+      "sha256": "a00a549ebc4155b4d9e3c4fbd2df759794b08262bc480d2034dc513f295c703f",
+      "git_blob_sha1": "b9693e8aa79204f3f340ddca9ddfec53e235ed9c",
+      "remote_tree_blob_sha1": "b9693e8aa79204f3f340ddca9ddfec53e235ed9c",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/lib/train/train_script_mixformer.py"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "LICENSE",
+      "bytes": 1076,
+      "sha256": "4e36337e19f193ea9c8bab6ec3eea38454bdd78135a2e682ed87bdf4c0abab60",
+      "git_blob_sha1": "0aa985b44c554baf9b94433f11c2b383dbb46ab6",
+      "remote_tree_blob_sha1": "0aa985b44c554baf9b94433f11c2b383dbb46ab6",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/LICENSE"
+    },
+    {
+      "repository": "MCG-NJU/MixFormer",
+      "default_branch": "main",
+      "commit": "8b87088f45af02c614a277176c63181261e93de3",
+      "path": "README.md",
+      "bytes": 7818,
+      "sha256": "7215d070470679c89d1b7bf2052c748f96d901c45c898376e548ea5d5ab3c3e7",
+      "git_blob_sha1": "5d64613f5416f98edec5896cc7b1a22e943601fd",
+      "remote_tree_blob_sha1": "5d64613f5416f98edec5896cc7b1a22e943601fd",
+      "source_url": "https://raw.githubusercontent.com/MCG-NJU/MixFormer/8b87088f45af02c614a277176c63181261e93de3/README.md"
+    },
+    {
+      "repository": "tianheyu927/PCGrad",
+      "default_branch": "master",
+      "commit": "c5fbd7c856526373828074f06875230f7f3ee79e",
+      "path": "commit.patch",
+      "bytes": 1089,
+      "sha256": "aad377b6852924d5cc5eba25a0198ea7504e3fdd5fcdd1993d60b97d6d044ba5",
+      "git_blob_sha1": "17e86916d37ac41b4d4409999e77ddf1ef040d56",
+      "source_url": "https://github.com/tianheyu927/PCGrad/commit/c5fbd7c856526373828074f06875230f7f3ee79e.patch"
+    },
+    {
+      "repository": "tianheyu927/PCGrad",
+      "default_branch": "master",
+      "commit": "c5fbd7c856526373828074f06875230f7f3ee79e",
+      "path": "git-tree.json",
+      "bytes": 842,
+      "sha256": "ef75d169ebc39d5d6143217bcd233e4901137954ec9614e5d58fcad1bc87e61e",
+      "git_blob_sha1": "d324bc3c6432be7d8dee0868986ad9483e3e768f",
+      "source_url": "https://api.github.com/repos/tianheyu927/PCGrad/git/trees/c5fbd7c856526373828074f06875230f7f3ee79e?recursive=1"
+    },
+    {
+      "repository": "tianheyu927/PCGrad",
+      "default_branch": "master",
+      "commit": "c5fbd7c856526373828074f06875230f7f3ee79e",
+      "path": "LICENSE",
+      "bytes": 1066,
+      "sha256": "40d9fc5e5284230fbbaab409b147923daa39c9400194ab45a5fdeac3de948ceb",
+      "git_blob_sha1": "0c2c0c09101a109dcaf23a4300ad2f98bfb309bf",
+      "remote_tree_blob_sha1": "0c2c0c09101a109dcaf23a4300ad2f98bfb309bf",
+      "source_url": "https://raw.githubusercontent.com/tianheyu927/PCGrad/c5fbd7c856526373828074f06875230f7f3ee79e/LICENSE"
+    },
+    {
+      "repository": "tianheyu927/PCGrad",
+      "default_branch": "master",
+      "commit": "c5fbd7c856526373828074f06875230f7f3ee79e",
+      "path": "PCGrad_tf.py",
+      "bytes": 3782,
+      "sha256": "1bd41ed5b6ed0cb745f2b2d7892336acb318323f057c29f077be4c6ce6a4d179",
+      "git_blob_sha1": "6ca0b8faff31b4714ff3007269c453ee6db603a2",
+      "remote_tree_blob_sha1": "6ca0b8faff31b4714ff3007269c453ee6db603a2",
+      "source_url": "https://raw.githubusercontent.com/tianheyu927/PCGrad/c5fbd7c856526373828074f06875230f7f3ee79e/PCGrad_tf.py"
+    },
+    {
+      "repository": "tianheyu927/PCGrad",
+      "default_branch": "master",
+      "commit": "c5fbd7c856526373828074f06875230f7f3ee79e",
+      "path": "README.md",
+      "bytes": 1795,
+      "sha256": "c7a1a5caba9da682f2c0bc3cd4b628a827cde3e6241db79630b176c8f8bdcc66",
+      "git_blob_sha1": "7597da7e5c9f0ed75a99c7143506fbd8f52b3cd7",
+      "remote_tree_blob_sha1": "7597da7e5c9f0ed75a99c7143506fbd8f52b3cd7",
+      "source_url": "https://raw.githubusercontent.com/tianheyu927/PCGrad/c5fbd7c856526373828074f06875230f7f3ee79e/README.md"
+    },
+    {
+      "path": "papers/2001.06782v4.pdf",
+      "source_url": "https://arxiv.org/pdf/2001.06782v4",
+      "bytes": 3646651,
+      "sha256": "4b960b81a001f376e8cb551c61c5578129dd99a9d1ff147be5ea56b9e578cbdf",
+      "git_blob_sha1": "c9072336da928a37f97ca7d1ce2908e290674e8a"
+    },
+    {
+      "path": "papers/2203.11082v2.pdf",
+      "source_url": "https://arxiv.org/pdf/2203.11082v2",
+      "bytes": 2842466,
+      "sha256": "00426f22cde799fe6f12fd1800245cd92fd83f982dce2b82fce95d5eac0e644d",
+      "git_blob_sha1": "ed9d908db739098a37b1f88afeb83bf2e3f68b53"
+    },
+    {
+      "path": "papers/2203.11991v4.pdf",
+      "source_url": "https://arxiv.org/pdf/2203.11991v4",
+      "bytes": 2665471,
+      "sha256": "b0b8069bedbbdd6842a21ac749e2ca6d0abbcb49f855bc2ecc5b95b128dc3198",
+      "git_blob_sha1": "7ee04de9f3cd6507316f91702090fb53bb10ad83"
+    }
+  ],
+  "local_inputs": [
+    {
+      "path": "miss_rgbt/model.py",
+      "bytes": 4138,
+      "sha256": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+      "git_blob_sha1": "ba15b5284a9947620388a8063bfed24abe736656",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/miss_rgbt/model.py"
+    },
+    {
+      "path": "miss_rgbt/objectives.py",
+      "bytes": 2641,
+      "sha256": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+      "git_blob_sha1": "f60baa7fc9d77dfeaaf33ae2c8c8eec015723dfd",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/miss_rgbt/objectives.py"
+    },
+    {
+      "path": "miss_rgbt/tracker.py",
+      "bytes": 3290,
+      "sha256": "87fb7630552085a3afd6be9855b6c0d47e39db34440209f2861b2cb73d113bd1",
+      "git_blob_sha1": "08365523f694056ff97b55b46845aacf1204f90e",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/miss_rgbt/tracker.py"
+    },
+    {
+      "path": "miss_rgbt/train.py",
+      "bytes": 6405,
+      "sha256": "699cacbe782b707cc483b9fe3e781e4645898f977f424fbc91c9cf2f453d9b16",
+      "git_blob_sha1": "f7b29d8bec0d3548ebb9944272b9e67e22153e84",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/miss_rgbt/train.py"
+    },
+    {
+      "path": "lib/models/cadtrack/vit_care.py",
+      "bytes": 17010,
+      "sha256": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+      "git_blob_sha1": "da6edb799b67cdb293bb56716f4701b1301e5e8b",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/lib/models/cadtrack/vit_care.py"
+    },
+    {
+      "path": "lib/models/cadtrack/cadtrack.py",
+      "bytes": 6637,
+      "sha256": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+      "git_blob_sha1": "a3b3a48d3a1502e695cba4b440cdcc4ca4fdf40a",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/lib/models/cadtrack/cadtrack.py"
+    },
+    {
+      "path": "configs/e3.json",
+      "bytes": 841,
+      "sha256": "c1f940e77501686a08311e95c40a300534735eca3d769f0e2be6fbaa94546260",
+      "git_blob_sha1": "2ca45aa70c70e2c86eee53f36cf84e64348ed048",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/configs/e3.json"
+    },
+    {
+      "path": "configs/e4.json",
+      "bytes": 840,
+      "sha256": "6eeeab201583035dd2d02793feaf8fa5ccf645184020d3dec8f046aaca96a604",
+      "git_blob_sha1": "15733691821e9e601068ebdd329258218f7ff216",
+      "local_frozen_commit": "4c473fa5291b42cdd1969ea3d74161e92e142445",
+      "source_url": "https://github.com/666666666666gao/Miss-RGBT/blob/4c473fa5291b42cdd1969ea3d74161e92e142445/configs/e4.json"
+    },
+    {
+      "path": "reports/e3_complete/metrics.json",
+      "bytes": 274,
+      "sha256": "414701ee1b8450bdb691ffaecc87a62bc3998cea4ef2a601280e999703f4bd0a",
+      "git_blob_sha1": "459f5d2b8526f6ebae4aa6cbcf7c9fecbb0496d5"
+    },
+    {
+      "path": "reports/e3_complete/completed.json",
+      "bytes": 75,
+      "sha256": "b098a58d3b4471976a20b6ea4f0db910f986fa5558e1aefbe6289d46631ea4f2",
+      "git_blob_sha1": "6ff279b2bb925490d3d3ddba02b305d4b7f3dd61"
+    },
+    {
+      "path": "reports/e3_complete/run.json",
+      "bytes": 11069,
+      "sha256": "d723172be8ea0db7de5982ca9907681ffc027ce0a33fa9839bc1c3f59a6199e4",
+      "git_blob_sha1": "cb577d9b2ec6d3838224dcde548a47b9c8e2344e"
+    },
+    {
+      "path": "reports/e3_miss/metrics.json",
+      "bytes": 285,
+      "sha256": "e898a4600b58d05337c0a93ed7a85300da0dd371be8ec115cd6b51d2a51c331d",
+      "git_blob_sha1": "b13027c0de2064126dfacc716290af3ef29446bd"
+    },
+    {
+      "path": "reports/e3_miss/completed.json",
+      "bytes": 74,
+      "sha256": "5df55f7b8bbbc63dc652191e4ae4464547e85f4a463e1d9c1a2b83981ff3fdde",
+      "git_blob_sha1": "e4e647f87c60089061a81f0399e09e9997222c63"
+    },
+    {
+      "path": "reports/e3_miss/run.json",
+      "bytes": 11065,
+      "sha256": "bc5cb88af156ba88fe231986d88969f1fb44c3f5843ad6b5726ed89f654fdaa5",
+      "git_blob_sha1": "4bb4a7efa27dbb5927674657b6709069022dcb1a"
+    },
+    {
+      "path": "reports/e4_complete/metrics.json",
+      "bytes": 269,
+      "sha256": "12c164321122f04994181b8639a3485f0629bf6fe8e84ae0b5b46b2ec8efe11f",
+      "git_blob_sha1": "bce8decf94a7ec141f2f49d0e15f16a7207e42f3"
+    },
+    {
+      "path": "reports/e4_complete/completed.json",
+      "bytes": 75,
+      "sha256": "aa62a5ce6f16a6775ce719c4fdbb90d314eae748553eef5272fbc977445d8365",
+      "git_blob_sha1": "01eb31b3253c30e8a4a3b6446c72e2a3c58b962b"
+    },
+    {
+      "path": "reports/e4_complete/run.json",
+      "bytes": 11069,
+      "sha256": "5492cce9f36d8b2f49f9228631206cfcd3be803b1c683c228613bfecb2a3bfcb",
+      "git_blob_sha1": "3a039648cc930436f67eae0eecc05585828420ea"
+    },
+    {
+      "path": "reports/e4_miss/metrics.json",
+      "bytes": 285,
+      "sha256": "095fa6d2199471d164147af77f6488213c5a0952ffbdc6e2ef96a65cc8a7a444",
+      "git_blob_sha1": "e167c547b237850114591f042fab9aeebebd3849"
+    },
+    {
+      "path": "reports/e4_miss/completed.json",
+      "bytes": 75,
+      "sha256": "8985cc749b98de0bf342b6ce90a9a1693afb1c2c45059720b8d36e6d88340cb0",
+      "git_blob_sha1": "e440faa33cc1e5d2de7ffdc19e9b37e954b78921"
+    },
+    {
+      "path": "reports/e4_miss/run.json",
+      "bytes": 11065,
+      "sha256": "0c9da8e0b8042502afaaf02375b808c252fdcccc93aa655f1c8a2b8b7a282612",
+      "git_blob_sha1": "63d677f38873654f710d81c71dd21c579d0bd240"
+    }
+  ]
+}
