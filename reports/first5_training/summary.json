@@ -1,0 +1,125 @@
+{
+  "scope": "closed first5 training; logged final accumulation microbatch statistics, not full-train population means or evaluation metrics",
+  "new_method_evaluation_metrics_available_at_intake": false,
+  "models": {
+    "e3": {
+      "completed": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25992.219589948654
+      },
+      "logged_updates": 12500,
+      "all_logged_losses_finite": true,
+      "seconds_per_update": 2.0793775671958925,
+      "peak_gpu_bytes": 17285506048,
+      "reverse_weight": 0.0,
+      "first_update_search_microbatch_sha256": [
+        "39ee5d86a8a9803ca780dc08db2f9d0e786f56b4d1121299b12ebf6132d94c9f",
+        "7b2f929dedd6883b52622f1098e7eabdc8f653a9342040c09a5130e9b9d92a0e"
+      ],
+      "epoch_logged_means": {
+        "1": {
+          "task_c": 2.9549284862995147,
+          "task_m": 4.1033083779335024,
+          "kd_forward": 0.6932152689754963,
+          "kd_reverse": 0.07286937144584954,
+          "reverse_fraction": 0.1523,
+          "loss": 7.127558388423919
+        },
+        "2": {
+          "task_c": 2.9072642540693283,
+          "task_m": 3.9021958624839783,
+          "kd_forward": 0.6061198955386877,
+          "kd_reverse": 0.0673751733098179,
+          "reverse_fraction": 0.1584,
+          "loss": 6.87007211470604
+        },
+        "3": {
+          "task_c": 2.829342237973213,
+          "task_m": 3.821927434325218,
+          "kd_forward": 0.600331691467762,
+          "kd_reverse": 0.06342857167683542,
+          "reverse_fraction": 0.1561,
+          "loss": 6.711302847862243
+        },
+        "4": {
+          "task_c": 2.8422143738746644,
+          "task_m": 3.7971623779296877,
+          "kd_forward": 0.619070175716281,
+          "kd_reverse": 0.0641915872629732,
+          "reverse_fraction": 0.1587,
+          "loss": 6.701283769655228
+        },
+        "5": {
+          "task_c": 2.7614035429000854,
+          "task_m": 3.715941264343262,
+          "kd_forward": 0.6246319560915232,
+          "kd_reverse": 0.06760096773098921,
+          "reverse_fraction": 0.1589,
+          "loss": 6.539808005332946
+        }
+      },
+      "steps_sha256": "2acfa799268e6cc20e1831cc70d389e8d29bd50cc9b82267b772fed16323440f"
+    },
+    "e4": {
+      "completed": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25118.12800717354
+      },
+      "logged_updates": 12500,
+      "all_logged_losses_finite": true,
+      "seconds_per_update": 2.009450240573883,
+      "peak_gpu_bytes": 17476413440,
+      "reverse_weight": 0.0,
+      "first_update_search_microbatch_sha256": [
+        "39ee5d86a8a9803ca780dc08db2f9d0e786f56b4d1121299b12ebf6132d94c9f",
+        "7b2f929dedd6883b52622f1098e7eabdc8f653a9342040c09a5130e9b9d92a0e"
+      ],
+      "epoch_logged_means": {
+        "1": {
+          "task_c": 2.9525720381975176,
+          "task_m": 4.092996617460251,
+          "kd_forward": 0.6884849988281727,
+          "kd_reverse": 0.07011159311458469,
+          "reverse_fraction": 0.1507,
+          "loss": 7.1144171646595
+        },
+        "2": {
+          "task_c": 2.8974170679330826,
+          "task_m": 3.8955387422084806,
+          "kd_forward": 0.5669869411557913,
+          "kd_reverse": 0.06233179038502276,
+          "reverse_fraction": 0.1586,
+          "loss": 6.8496545042991634
+        },
+        "3": {
+          "task_c": 2.8196439595460894,
+          "task_m": 3.812373079562187,
+          "kd_forward": 0.5417536316126585,
+          "kd_reverse": 0.05601774743404239,
+          "reverse_fraction": 0.1558,
+          "loss": 6.686192392587662
+        },
+        "4": {
+          "task_c": 2.8322346369028093,
+          "task_m": 3.784985429906845,
+          "kd_forward": 0.5587235097020864,
+          "kd_reverse": 0.057498102256283164,
+          "reverse_fraction": 0.16,
+          "loss": 6.6730924163341525
+        },
+        "5": {
+          "task_c": 2.752841854476929,
+          "task_m": 3.7071606266498565,
+          "kd_forward": 0.5615294506400823,
+          "kd_reverse": 0.058736803167313334,
+          "reverse_fraction": 0.1565,
+          "loss": 6.516155432415008
+        }
+      },
+      "steps_sha256": "d37dc3d27eb59370c6bf46fb625e2aa6109b8c3705d8b598c1b129fcc79504ad"
+    }
+  },
+  "first_update_search_input_alignment_verified": true
+}

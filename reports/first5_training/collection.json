@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "e3": {
+      "completed": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25992.219589948654
+      },
+      "source_version": "58fe5819c6e82770a5a36025924f5a05030ac7cc",
+      "source_files": 92
+    },
+    "e4": {
+      "completed": {
+        "epochs": 5,
+        "updates": 12500,
+        "seconds": 25118.12800717354
+      },
+      "source_version": "58fe5819c6e82770a5a36025924f5a05030ac7cc",
+      "source_files": 92
+    }
+  },
+  "manifest": {
+    "reports/first5_training/e3/completed.json": "bf754b22ab870311914d0731b9469fb22f4914294e36b8f05389968d4f3ecb09",
+    "reports/first5_training/e3/run_config.json": "6a3d5a261dd978ce05cbc4a8f9c50b27933f1c7161834ea1d3b5e0c7f74c4748",
+    "reports/first5_training/e3/source_version.txt": "82b433efc4944ea8b8cb073302d0e2d82abedc82587711602388f2c1b69f5441",
+    "reports/first5_training/e3/source_sha256.json": "1438696366f52407c870357f8b8cf99b13a7becedb568ca609b9464ee9c63b9c",
+    "reports/first5_training/e3/steps.jsonl": "2acfa799268e6cc20e1831cc70d389e8d29bd50cc9b82267b772fed16323440f",
+    "reports/first5_training/e4/completed.json": "741af6dd095c09ca2fd8fc4bae30e3f382099fc725deb136adfe4b6995200434",
+    "reports/first5_training/e4/run_config.json": "031be76f901913559d8b04cdd9551156bf4f33f48b4fbbf2de20d725401ec6f2",
+    "reports/first5_training/e4/source_version.txt": "82b433efc4944ea8b8cb073302d0e2d82abedc82587711602388f2c1b69f5441",
+    "reports/first5_training/e4/source_sha256.json": "1438696366f52407c870357f8b8cf99b13a7becedb568ca609b9464ee9c63b9c",
+    "reports/first5_training/e4/steps.jsonl": "d37dc3d27eb59370c6bf46fb625e2aa6109b8c3705d8b598c1b129fcc79504ad"
+  },
+  "archive": "/home/gaob/Miss-RGBT/logs/first5_training_records_20261013_v1.tar.gz",
+  "archive_sha256": "af6aceb3f0d5633d9432cc9bb042f4a5e67b7a446b15afac3b925710792546e3",
+  "archive_bytes": 1547796,
+  "local_files_and_executed_git_source_verified": true
+}

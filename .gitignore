@@ -10,3 +10,4 @@ __pycache__/
 *.pth.tar
 *.tar.gz
 /private/
+/reports/first5_training/*/steps.jsonl
