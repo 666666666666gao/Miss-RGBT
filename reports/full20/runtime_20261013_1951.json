@@ -1,0 +1,188 @@
+{
+  "observed_utc": "2026-10-13T11:51:15.008305Z",
+  "campaigns": {
+    "campaign_20261013_v1": {
+      "status": {
+        "stage": "FORMAL_E3_E4_RUNNING",
+        "controller_pid": 3294032
+      },
+      "controller_running": true,
+      "e0_complete_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_complete.py",
+          "run"
+        ],
+        "pid": 3294054,
+        "cuda_visible_devices": "2,3",
+        "started_utc": "2026-10-13T06:50:39.105410Z",
+        "running_at_observation": false
+      },
+      "e3_train_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e3.json"
+        ],
+        "pid": 3442177,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-13T07:45:39.041404Z",
+        "running_at_observation": true,
+        "actual_cuda_environment": [
+          "CUDA_VISIBLE_DEVICES=2"
+        ]
+      },
+      "e4_train_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e4.json"
+        ],
+        "pid": 3442178,
+        "cuda_visible_devices": "3",
+        "started_utc": "2026-10-13T07:45:39.043568Z",
+        "running_at_observation": true,
+        "actual_cuda_environment": [
+          "CUDA_VISIBLE_DEVICES=3"
+        ]
+      },
+      "e0_complete_exit": {
+        "pid": 3294054,
+        "exit_code": 0,
+        "ended_utc": "2026-10-13T07:45:39.024827Z"
+      },
+      "e3_train_last_logged_updates": [
+        {
+          "task_c": 1.7157373428344727,
+          "task_m": 1.867872953414917,
+          "kd_forward": 0.23978468775749207,
+          "kd_reverse": 0.0,
+          "reverse_fraction": 0.0,
+          "epoch": 3,
+          "update": 7000,
+          "loss": 3.607588768005371,
+          "seconds": 14610.977732896805,
+          "peak_gpu_bytes": 17285506048,
+          "microbatch": 4,
+          "accumulation": 2
+        },
+        {
+          "task_c": 5.274895668029785,
+          "task_m": 5.856996059417725,
+          "kd_forward": 0.45280104875564575,
+          "kd_reverse": 0.331925630569458,
+          "reverse_fraction": 0.5,
+          "epoch": 3,
+          "update": 7025,
+          "loss": 11.17717170715332,
+          "seconds": 14661.840535402298,
+          "peak_gpu_bytes": 17285506048,
+          "microbatch": 4,
+          "accumulation": 2
+        },
+        {
+          "task_c": 2.0217700004577637,
+          "task_m": 2.1873650550842285,
+          "kd_forward": 0.36741477251052856,
+          "kd_reverse": 0.032147813588380814,
+          "reverse_fraction": 0.25,
+          "epoch": 3,
+          "update": 7050,
+          "loss": 4.245876312255859,
+          "seconds": 14712.78737783432,
+          "peak_gpu_bytes": 17285506048,
+          "microbatch": 4,
+          "accumulation": 2
+        }
+      ],
+      "e4_train_last_logged_updates": [
+        {
+          "task_c": 1.6262671947479248,
+          "task_m": 1.543707013130188,
+          "kd_forward": 0.30789148807525635,
+          "kd_reverse": 0.3278332054615021,
+          "reverse_fraction": 0.5,
+          "epoch": 3,
+          "update": 7250,
+          "loss": 3.200763463973999,
+          "seconds": 14583.30730009079,
+          "peak_gpu_bytes": 17476413440,
+          "microbatch": 4,
+          "accumulation": 2
+        },
+        {
+          "task_c": 2.3399689197540283,
+          "task_m": 2.1208767890930176,
+          "kd_forward": 0.19245260953903198,
+          "kd_reverse": 0.028109868988394737,
+          "reverse_fraction": 0.25,
+          "epoch": 3,
+          "update": 7275,
+          "loss": 4.480091094970703,
+          "seconds": 14633.535418748856,
+          "peak_gpu_bytes": 17476413440,
+          "microbatch": 4,
+          "accumulation": 2
+        },
+        {
+          "task_c": 2.0815792083740234,
+          "task_m": 3.4624099731445312,
+          "kd_forward": 0.24202080070972443,
+          "kd_reverse": 0.022503254935145378,
+          "reverse_fraction": 0.25,
+          "epoch": 3,
+          "update": 7300,
+          "loss": 5.568191051483154,
+          "seconds": 14683.795487642288,
+          "peak_gpu_bytes": 17476413440,
+          "microbatch": 4,
+          "accumulation": 2
+        }
+      ]
+    },
+    "full20_20261013_v1": {
+      "status": {
+        "stage": "WAITING_FIRST_CAMPAIGN",
+        "controller_pid": 3623093
+      },
+      "controller_running": true
+    }
+  },
+  "completed_training": {},
+  "formal_metrics": {
+    "e0": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 63.47250706301003,
+        "NPR": 58.58185056215868,
+        "SR": 50.583148589078256
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 82.79481455539279,
+        "MSR": 59.57443513369343
+      }
+    },
+    "e0_complete": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 75.63650288717686,
+        "NPR": 71.77283680562866,
+        "SR": 60.125713676122736
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.67713392128344,
+        "MSR": 66.8452283301532
+      }
+    }
+  }
+}

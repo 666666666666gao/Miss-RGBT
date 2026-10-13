@@ -1,14 +1,17 @@
 {
-  "status": "CPU_VALIDATION_PREPARED_NOT_EXECUTED",
+  "status": "CPU_DIRECTION_AND_UPDATE_VERIFIED",
   "script": "analysis/validate_reverse_feedback.py",
   "script_sha256": "36b0a4818994ae45146a40ac8f6e09f64e7ceb458044344c7fac2be5c0e02cd8",
   "syntax_target": "Python 3.7",
   "syntax_check_exit_code": 0,
   "native_gpu_execution": false,
-  "real_reliability_gate_observed": false,
-  "adamw_recipient_update_observed": false,
-  "strict_reload_observed": false,
+  "real_reliability_gate_observed": true,
+  "adamw_recipient_update_observed": true,
+  "strict_reload_observed": true,
   "performance_result": false,
   "execution_constraint": "CUDA only after frozen campaigns finish and an authorized GPU is free. Explicit CPU mode may run independently with CUDA disabled and four threads after resource/warm-environment preflight; not inserted into existing queues.",
-  "preparation_note": "First uv invocation omitted the python command and failed before compilation; corrected invocation completed the Python3.7 AST and compile checks. No neural execution occurred."
+  "preparation_note": "First uv invocation omitted the python command and failed before compilation; corrected invocation completed Python3.7 AST and compile checks. Subsequently the explicit CPU real-data probe completed; see result_report. No GPU probe or E5 accuracy evaluation occurred.",
+  "result_report": "reports/cpu_reverse_probe_ep01_seed2027_v1/report.json",
+  "executed_device": "cpu",
+  "completed_utc": "2026-10-13T11:39:19.184831Z"
 }

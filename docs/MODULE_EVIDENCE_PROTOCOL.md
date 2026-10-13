@@ -27,7 +27,7 @@
 3. 当前C全可用时R被零门控，反向项不更新修复器，进入共享baseline。冻结所有baseline、只保留R，会让该方向没有有效受体。共享参数更新也会影响下一次M；detach不等于保护另一视图参数。
 4. 真正执行非零反向项的更新、保存和严格重载；与reverse_weight=0的同输入控制比较参数变化。先证明实现，再用完整训练与指标判断收益。
 
-原生探针在 [`analysis/validate_reverse_feedback.py`](../analysis/validate_reverse_feedback.py)，支持显式选择 CPU 或 CUDA，默认仍为 CUDA。GPU/完整性能验证尚未完成，不能称为反向反馈模块有效。它读取既有训练后 E4 checkpoint，固定 seed 和最多八个 train batch，保留实际可靠性门；没有样本触发时明确记录未触发。触发后检查 M 响应目标无梯度、C 响应有梯度、反向参数梯度只进入共享 baseline，并与零反向项比较同一原生 AdamW 状态的一次更新及严格重载。更新仅使用一个 microbatch，是方向和优化器实现检查，不能替代有效 batch8 的正式训练或性能实验。
+原生探针在 [`analysis/validate_reverse_feedback.py`](../analysis/validate_reverse_feedback.py)，支持显式选择 CPU 或 CUDA，默认仍为 CUDA。固定 E4 epoch01、seed2027 的 [CPU 实现检查](../reports/cpu_reverse_probe_ep01_seed2027_v1/README.md)已于19:39退出0：第三个真实 train microbatch 有1个样本触发原可靠门，M目标断梯度、C接收梯度、梯度分解、同一AdamW的非零更新差异和严格重载均通过。GPU/完整性能验证尚未完成，不能称为反向反馈模块有效。更新仅使用一个 microbatch，不能替代有效 batch8 的正式训练或性能实验。
 
 全局梯度裁剪还可能间接改变修复模块的更新幅度：反向项使共享 baseline 梯度改变，整体范数与统一裁剪系数也可能变化。因此应分别报告“R 的直接反向梯度为零”和“R 相对零反向项的实际更新差异”，不能要求后者必然为零。探针不加入当前训练/排队流程。CUDA 检查待当前冻结实验完成且 GPU 空闲时运行；CPU 检查可独立使用四个线程，在明确关闭 CUDA、核验内存和既有环境后执行，不能据此声称 GPU 或正式训练已通过。
 

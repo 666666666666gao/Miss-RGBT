@@ -1,0 +1,41 @@
+{
+  "observed_utc": "2026-10-13T11:46:46.206595Z",
+  "launch": {
+    "supervisor_pid": 4131787,
+    "source_commit": "e8621c84827bd3f268faf1c284310188278e4547",
+    "started_utc": "2026-10-13T11:36:02.745715Z",
+    "directory": "/home/gaob/Miss-RGBT/logs/cpu_reverse_probe_ep01_20261013_v1",
+    "output": "/home/gaob/Miss-RGBT/reports/cpu_reverse_probe_ep01_seed2027_v1",
+    "script_sha256": "36b0a4818994ae45146a40ac8f6e09f64e7ceb458044344c7fac2be5c0e02cd8",
+    "frozen_scientific_files_verified": 110,
+    "server_static_files_verified": true,
+    "cpu_threads": 4,
+    "cuda_visible_devices": "",
+    "scope": "CPU-only real-data mechanics; no existing neural progress or GPU query"
+  },
+  "worker": {
+    "pid": 4131789,
+    "command": [
+      "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+      "-u",
+      "analysis/validate_reverse_feedback.py",
+      "--device",
+      "cpu",
+      "--checkpoint",
+      "checkpoints/e4_seed2027/epoch01.pth.tar",
+      "--output",
+      "reports/cpu_reverse_probe_ep01_seed2027_v1"
+    ],
+    "started_utc": "2026-10-13T11:36:02.781053Z",
+    "cuda_visible_devices": "",
+    "cpu_threads": 4
+  },
+  "supervisor_live": false,
+  "worker_live": false,
+  "exit": {
+    "pid": 4131789,
+    "exit_code": 0,
+    "seconds": 196.40505146980286,
+    "ended_utc": "2026-10-13T11:39:19.184831Z"
+  }
+}

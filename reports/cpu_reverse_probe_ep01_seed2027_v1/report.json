@@ -1,0 +1,112 @@
+{
+  "scope": "real-data gradient and optimizer audit, not E5 accuracy",
+  "checkpoint": "checkpoints/e4_seed2027/epoch01.pth.tar",
+  "checkpoint_bytes": 1241526375,
+  "checkpoint_sha256": "02bde2c552e03adc4c785e498e8f4d7e336aa57f72b136ede99c8013cdf7b152",
+  "seed": 2027,
+  "native_margin": 0.1,
+  "probe_reverse_weight": 0.02,
+  "maximum_batches": 8,
+  "batches": [
+    {
+      "batch": 0,
+      "reliable": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "task_c": [
+        7.748657703399658,
+        1.41434645652771,
+        1.06071138381958,
+        4.652998447418213
+      ],
+      "task_m": [
+        12.396484375,
+        1.7840478420257568,
+        1.3373346328735352,
+        5.895823001861572
+      ],
+      "seconds": 29.633201599121094,
+      "search_sha256": "98e5c1a7a96b93d130fb37d2d99b330ce5a14b729b45fc3aa2f08efbc16f092c"
+    },
+    {
+      "batch": 1,
+      "reliable": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "task_c": [
+        3.413959503173828,
+        10.78300666809082,
+        0.5839999914169312,
+        7.485563278198242
+      ],
+      "task_m": [
+        3.4519612789154053,
+        13.233784675598145,
+        0.4970420300960541,
+        7.554455280303955
+      ],
+      "seconds": 49.76257276535034,
+      "search_sha256": "61150809aff8751c8b7dfcf00df117b265fb4b1a0ac0a892e76d795e936bc384"
+    },
+    {
+      "batch": 2,
+      "reliable": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "task_c": [
+        3.586374282836914,
+        2.8399291038513184,
+        2.664247512817383,
+        0.5856382846832275
+      ],
+      "task_m": [
+        4.1884260177612305,
+        2.6639485359191895,
+        2.698721408843994,
+        0.5926639437675476
+      ],
+      "seconds": 70.25026440620422,
+      "search_sha256": "99cf41c5a9fbe46a10145b947f554b8277b3342deddf41bc4ef4855f52c2d668"
+    }
+  ],
+  "device": "cpu",
+  "cpu_threads": 4,
+  "cv2_threads": 1,
+  "cuda_visible_devices": "",
+  "update_scope": "one microbatch gradient, without training accumulation",
+  "status": "DIRECTION_AND_UPDATE_VERIFIED",
+  "selected_batch": 2,
+  "missing_target_gradient_absent": true,
+  "complete_response_gradient_nonzero": true,
+  "repair_direct_reverse_gradient_zero": true,
+  "gradient_decomposition_verified": true,
+  "recipient": "baseline.decode_fuse_search.0.weight",
+  "recipient_reverse_gradient_l1": 726.4940185546875,
+  "recipient_update_difference_from_reverse_zero": 4.4330954551696777e-7,
+  "repair_update_difference_from_reverse_zero": 7.450580596923828e-9,
+  "optimizer_source": "existing E4 AdamW state; identical state before both steps",
+  "strict_reload_max_difference": {
+    "pred_boxes": 0,
+    "score_map": 0,
+    "size_map": 0,
+    "offset_map": 0
+  },
+  "probe_checkpoint_sha256": "4d22fbb89e567fc9a414e6fb6fe89f21b59d4c647838a2db0a71215e1bd16683",
+  "source_sha256": {
+    "analysis/validate_reverse_feedback.py": "36b0a4818994ae45146a40ac8f6e09f64e7ceb458044344c7fac2be5c0e02cd8",
+    "miss_rgbt/model.py": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+    "miss_rgbt/objectives.py": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+    "miss_rgbt/train.py": "699cacbe782b707cc483b9fe3e781e4645898f977f424fbc91c9cf2f453d9b16",
+    "miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd"
+  },
+  "seconds": 191.24479866027832
+}
