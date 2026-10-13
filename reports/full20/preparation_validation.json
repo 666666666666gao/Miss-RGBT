@@ -1,0 +1,13 @@
+{
+  "scope": "syntax/configuration only; no GPU or performance test",
+  "passed": true,
+  "python37_ast": true,
+  "optimizer_updates_per_model": 50000,
+  "paired_config_equal_except": [
+    "stage",
+    "repair",
+    "output"
+  ],
+  "initial_compile_failure": "SyntaxError: unmatched closing parenthesis at run_full_training.py line41; fixed before deployment",
+  "computational_change": "no task/model/optimizer/sampler changes; checkpoint retention and version-file source only"
+}

@@ -69,7 +69,7 @@ def main():
               for folder in ['miss_rgbt', 'lib'] for p in sorted(Path(folder).rglob('*.py'))}
     (output / 'run_config.json').write_text(json.dumps(config, indent=2))
     (output / 'source_sha256.json').write_text(json.dumps(source, indent=2))
-    (output / 'source_version.txt').write_text(Path('reports/FORMAL_TRAIN_SOURCE_VERSION.txt').read_text())
+    (output / 'source_version.txt').write_text(Path(config['source_version_file']).read_text())
     start = time.time()
     updates = 0
     first_update_inputs = []
@@ -113,8 +113,9 @@ def main():
                         print('SMOKE_COMPLETE ' + str(updates), flush=True)
                         return
             scheduler.step()
-            torch.save(dict(model=model.state_dict(), config=config, epoch=epoch,
-                updates=updates, optimizer=optimizer.state_dict()), str(output / ('epoch%02d.pth.tar' % epoch)))
+            if epoch in config['checkpoint_epochs']:
+                torch.save(dict(model=model.state_dict(), config=config, epoch=epoch,
+                    updates=updates, optimizer=optimizer.state_dict()), str(output / ('epoch%02d.pth.tar' % epoch)))
     (output / 'completed.json').write_text(json.dumps(dict(epochs=config['epochs'], updates=updates,
                                                           seconds=time.time() - start)))
 

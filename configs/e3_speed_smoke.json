@@ -25,5 +25,13 @@
   "weight_decay": 0.0001,
   "lr_drop_epoch": 5,
   "clip_grad_norm": 0.1,
-  "output": "checkpoints/e3_speed_smoke_seed2027"
+  "output": "checkpoints/e3_speed_smoke_seed2027",
+  "checkpoint_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "source_version_file": "reports/FORMAL_TRAIN_SOURCE_VERSION.txt"
 }

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-m",
+    "miss_rgbt.train",
+    "--config",
+    "configs/e3.json"
+  ],
+  "pid": 3442177,
+  "cuda_visible_devices": "2",
+  "started_utc": "2026-10-13T07:45:39.041404Z"
+}

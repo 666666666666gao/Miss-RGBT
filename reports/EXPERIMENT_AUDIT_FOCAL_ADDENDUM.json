@@ -1,0 +1,252 @@
+{
+  "audit_skill": "experiment-audit",
+  "report_type": "focal_normalization_addendum",
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T08:39:14.517Z",
+  "auditor": "gpt-6-astra-max",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "max",
+  "reviewer_family": "openai",
+  "executor_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "agent_id": "/root/audit_miss_baseline",
+  "verdict_id": "/root/audit_miss_baseline/focal-addendum",
+  "verdict": "WARN",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "historical_loss_contract_corrected_existing_scope_limits_retained",
+  "summary": "Revised per-sample focal contributions average to native batch normalization. Saved CPU synthetic cases agree within the declared tolerance. The prior audit and all its WARN history remain unchanged; this is not new model or benchmark performance evidence.",
+  "original_reports": {
+    "markdown": {
+      "path": "reports/EXPERIMENT_AUDIT.md",
+      "sha256": "c5d66bf9955e3f34cbee88b68687c72311fa8bae42722e89bafba5638e90bc0a"
+    },
+    "json": {
+      "path": "reports/EXPERIMENT_AUDIT.json",
+      "sha256": "82737b6e5c6a43c186716f24630c5276c35dc48687d8945d9320026077cc4ac0"
+    },
+    "byte_equal_to_commit": "58fe5819c6e82770a5a36025924f5a05030ac7cc",
+    "overwritten_by_addendum": false
+  },
+  "trace_path": ".aris/traces/experiment-audit/20261013/",
+  "input_snapshot": ".aris/traces/experiment-audit/20261013/temporary/focal_addendum_inputs_v2/manifest.json",
+  "input_snapshot_at": "2026-10-13T07:16:30.091848+00:00",
+  "audited_input_hashes": {
+    "miss_rgbt/objectives.py": "sha256:ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+    "miss_rgbt/train.py": "sha256:c16c5376045a80876bec084aa040deb65a65aa7ae4dce3daed8e76151d331ffb",
+    "scripts/validate_focal_normalization.py": "sha256:d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+    "reports/focal_normalization_validation.json": "sha256:01d3a371a7ad6e10769fbb67fcf6a0e7db0af8466e211ce0c27d1d2a8681671d",
+    "reports/FORMAL_TRAIN_SOURCE_VERSION.txt": "sha256:94327d319c129677bb8206eaa25b640044e0248192014b5471e64ada7a2eaf86",
+    "reports/SOURCE_VERSION.txt": "sha256:99a837d22b580fcb158d55aa137d962e0fb5a6d83d47e0d4c744451bc34f08df",
+    "lib/utils/focal_loss.py": "sha256:11ccd7a16af34a3f54bd36191f086f7b0d85e95669e07bc072deb6226b40a965",
+    "lib/utils/heapmap_utils.py": "sha256:cc5ddbc0d65cad55f1a727f43e1d9966caa17a10c043a10586d0a13c1d4f3d4d",
+    "lib/models/layers/head.py": "sha256:958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+    "reports/method_native_validation.json": "sha256:d789959fa36dfbb22ca6d90fefd02a1f850b963821d2a4af8a5cb53739a52f46",
+    "scripts/validate_method.py": "sha256:1e3bf092971459d4047c629614b61c6f4f157e97a3b6bbd76c9b27147c9c8546",
+    "reports/EXPERIMENT_AUDIT.md": "sha256:c5d66bf9955e3f34cbee88b68687c72311fa8bae42722e89bafba5638e90bc0a",
+    "reports/EXPERIMENT_AUDIT.json": "sha256:82737b6e5c6a43c186716f24630c5276c35dc48687d8945d9320026077cc4ac0"
+  },
+  "historical_input_hashes": {
+    "miss_rgbt/objectives.py": {
+      "sha256": "7f00f945e48b1e44cce4e914746b1d0df8101d70ff3068022763aa6b16bae5bc",
+      "bytes": 2618,
+      "path": ".aris/traces/experiment-audit/20261013/temporary/final_inputs/miss_rgbt/objectives.py"
+    },
+    "miss_rgbt/train.py": {
+      "sha256": "611f972f82ecfbd5b3662295ca8973ee2cea500d66b29e3ec46b693924abaaa6",
+      "bytes": 6248,
+      "path": ".aris/traces/experiment-audit/20261013/temporary/final_inputs/miss_rgbt/train.py"
+    }
+  },
+  "source_versions": {
+    "formal_training": "58fe5819c6e82770a5a36025924f5a05030ac7cc",
+    "controller_e0": "370f215814320d048a5c33974b64052126a8a1fd"
+  },
+  "execution_scope": {
+    "new_gpu_runs": 0,
+    "new_neural_network_runs": 0,
+    "training_status_polls": 0,
+    "new_dataset_or_benchmark_evaluations": 0,
+    "new_focal_test_executions_by_reviewer": 0,
+    "author_code_edits_by_reviewer": 0,
+    "checks_performed": "Direct full source read of changed loss, training entry and arithmetic validator; saved-case arithmetic consistency; AST parsing; current and historical hashes; read-only local Git blob identity.",
+    "runtime_evidence_limit": "The existing CPU arithmetic JSON was read and checked. No independent runtime replay or standalone CPU exit/stdout receipt was supplied in this addendum scope."
+  },
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Fixed literal synthetic boxes and random score tensors form a loss arithmetic test. They are explicitly not dataset ground truth, a trained model output, or benchmark performance.",
+      "evidence": [
+        "scripts/validate_focal_normalization.py:19",
+        "scripts/validate_focal_normalization.py:20",
+        "scripts/validate_focal_normalization.py:23",
+        "scripts/validate_focal_normalization.py:25",
+        "reports/focal_normalization_validation.json:2"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "The denominator is max(sum of target positive indicators across the forward batch, 1). It is not a model prediction statistic. With a_i the nonnegative focal numerator, p_i the target positive count and batch size B, new contribution B*a_i/max(sum p_i,1) has mean sum a_i/max(sum p_i,1), the native focal loss including all-empty targets. This statement uses the native score head domain clipped into [1e-4,1-1e-4].",
+      "evidence": [
+        "miss_rgbt/objectives.py:18",
+        "miss_rgbt/objectives.py:24",
+        "lib/utils/focal_loss.py:26",
+        "lib/utils/focal_loss.py:30",
+        "lib/models/layers/head.py:176"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "All three saved case names, positive counts and numbers exist. Their absolute differences and declared allclose tolerance are internally consistent. Current loss, train entry, arithmetic validator and result JSON match the four Git blobs at the independent formal-training pin byte-for-byte.",
+      "evidence": [
+        "reports/focal_normalization_validation.json:4",
+        "reports/focal_normalization_validation.json:13",
+        "reports/focal_normalization_validation.json:22",
+        ".aris/traces/experiment-audit/20261013/temporary/focal_addendum_inputs_v2/manifest.json"
+      ]
+    },
+    "dead_code": {
+      "status": "warn",
+      "details": "The validator has top-level native FocalLoss and task_loss calls, assertion, serialization and print. The saved case fields correspond to these calls. This review did not freshly execute them and does not elevate a saved JSON alone into an independently witnessed process-exit claim.",
+      "evidence": [
+        "scripts/validate_focal_normalization.py:30",
+        "scripts/validate_focal_normalization.py:31",
+        "scripts/validate_focal_normalization.py:33",
+        "scripts/validate_focal_normalization.py:36"
+      ]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "Three synthetic CPU forward-value checks at B=2 do not establish trained-model accuracy, dataset-wide frequency of empty targets, gradient equality, long-run stability, or new completed training. Historical real-data native evidence remains the recorded batch and one optimizer update, with zero reverse_fraction.",
+      "evidence": [
+        "scripts/validate_focal_normalization.py:20",
+        "scripts/validate_focal_normalization.py:25",
+        "reports/method_native_validation.json:2",
+        "reports/method_native_validation.json:27",
+        "reports/method_native_validation.json:35"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "classification": "synthetic_arithmetic_validation",
+      "performance_evaluation": false,
+      "benchmark_taxonomy": "not_applicable",
+      "details": "This is an arithmetic unit check, not synthetic_proxy tracking, simulation_only, or real_gt performance. The prior E0 real_gt classification is unchanged."
+    }
+  },
+  "finding": {
+    "id": "W6",
+    "historical_status": "WARN",
+    "current_state": "loss_normalization_contract_corrected",
+    "historical_problem": "Prior a_i/max(p_i,1) followed by a batch mean agrees with native global-positive normalization when each sample has one positive. For a B=2 batch with positive counts [1,0] or [0,0], its focal component is half the native value. This is a silent loss-scale mismatch, not an observed training crash.",
+    "historical_evidence": [
+      ".aris/traces/experiment-audit/20261013/temporary/final_inputs/miss_rgbt/objectives.py:24",
+      "lib/utils/focal_loss.py:26",
+      "lib/utils/focal_loss.py:30"
+    ],
+    "reachability_evidence": [
+      "lib/utils/heapmap_utils.py:85",
+      "lib/utils/heapmap_utils.py:93",
+      "scripts/validate_focal_normalization.py:21"
+    ],
+    "correction_evidence": [
+      "miss_rgbt/objectives.py:24",
+      "scripts/validate_focal_normalization.py:30",
+      "scripts/validate_focal_normalization.py:33"
+    ],
+    "impact_limit": "The audit does not establish that mixed or empty heatmaps occurred in the historical native batch, speed smoke, or any formal training. The earlier native loss match was a narrow sample check, not proof of all-target normalization equivalence."
+  },
+  "saved_cpu_cases": {
+    "one_positive_each": {
+      "native": 164.86196899414062,
+      "per_sample_mean": 164.8619842529297,
+      "absolute_difference": 0.0000152587890625,
+      "positive_peaks": [
+        1,
+        1
+      ]
+    },
+    "mixed_empty_target": {
+      "native": 335.012451171875,
+      "per_sample_mean": 335.012451171875,
+      "absolute_difference": 0,
+      "positive_peaks": [
+        1,
+        0
+      ]
+    },
+    "all_empty_targets": {
+      "native": 297.9494934082031,
+      "per_sample_mean": 297.9494934082031,
+      "absolute_difference": 0,
+      "positive_peaks": [
+        0,
+        0
+      ]
+    }
+  },
+  "saved_cpu_tolerance": {
+    "atol": 0.00002,
+    "rtol": 0.000001
+  },
+  "native_evidence_version_boundary": {
+    "preserved_sha256": "d789959fa36dfbb22ca6d90fefd02a1f850b963821d2a4af8a5cb53739a52f46",
+    "claims_unchanged": "Historical native output equality, one optimizer update and gradient/reload checks remain evidence about their recorded execution only. They are not fresh validation of the revised source.",
+    "prior_audit_source_snapshot_at": "2026-10-13T07:02:52.092228+00:00",
+    "prior_source_hash_match_counts_are_historical": true
+  },
+  "source_pinning": {
+    "status": "pass",
+    "formal_pin_evidence": "reports/FORMAL_TRAIN_SOURCE_VERSION.txt:1",
+    "controller_pin_evidence": "reports/SOURCE_VERSION.txt:1",
+    "training_write_evidence": "miss_rgbt/train.py:68",
+    "version_write_evidence": "miss_rgbt/train.py:72",
+    "compared_current_blobs": 4,
+    "compared_prior_source_blobs": 2,
+    "details": "The formal training pin differs intentionally from controller/E0. train.py writes current source hashes and the formal-version text at startup. Source identity does not prove a run started or completed. No runtime state was queried."
+  },
+  "preserved_history": [
+    "W1 speed input identity narrowed",
+    "W2 first transition labels corrected",
+    "W3 native LasHeR invalid-GT convention disclosed",
+    "W4 archive path corrected",
+    "W5 launch ID narrative corrected",
+    "L1 native validation coverage limits",
+    "L2 unsupported reverse feedback/module efficacy"
+  ],
+  "historical_auditor_failures": [
+    {
+      "tool": "exec_command",
+      "script": ".aris/traces/experiment-audit/20261013/temporary/collect_focal_addendum_snapshot.py",
+      "first_exit_code": 1,
+      "error": "FileNotFoundError: reviewer used lib/models/cadtrack/head.py; rg found actual lib/models/layers/head.py.",
+      "preservation": "Original tool request/response and patch are retained; partial first snapshot remains under temporary/focal_addendum_inputs/. Corrected collection completed with exit 0 under focal_addendum_inputs_v2/."
+    }
+  ],
+  "claims": [
+    {
+      "id": "F1",
+      "claim": "Revised per-sample focal mean has the native per-forward-batch denominator, including mixed/all-empty targets",
+      "impact": "supported",
+      "basis": "source algebra plus three saved forward-value cases"
+    },
+    {
+      "id": "F2",
+      "claim": "The historical native test proved general focal equivalence",
+      "impact": "unsupported"
+    },
+    {
+      "id": "F3",
+      "claim": "Formal training source equals the independently named 58fe581 pin",
+      "impact": "supported_with_scope",
+      "qualifier": "Four current files match Git blobs; no run-start or completion inference."
+    },
+    {
+      "id": "F4",
+      "claim": "This correction demonstrates tracking performance improvement or completed new-method evaluation",
+      "impact": "unsupported"
+    }
+  ]
+}
+
