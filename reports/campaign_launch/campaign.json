@@ -1,0 +1,31 @@
+{
+  "source_version": "370f215814320d048a5c33974b64052126a8a1fd",
+  "started_utc": "2026-10-13T06:50:39.102842Z",
+  "admitted_gpus": [
+    {
+      "index": 2,
+      "uuid": "GPU-317a373d-4b7f-7b64-176a-9a62cf9f9407",
+      "memory_used_mib": 12
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a9c68382-2377-c377-0faf-e01063f64bec",
+      "memory_used_mib": 12
+    }
+  ],
+  "formal_budget_per_model": {
+    "epochs": 5,
+    "samples_per_epoch": 20000,
+    "effective_batch": 8,
+    "optimizer_updates": 12500,
+    "seed": 2027
+  },
+  "sequence": [
+    "E0 complete",
+    "E3/E4 concurrent train",
+    "E3 complete",
+    "E3 miss",
+    "E4 complete",
+    "E4 miss"
+  ]
+}

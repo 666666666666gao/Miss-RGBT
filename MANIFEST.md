@@ -40,3 +40,12 @@
 | 2026-10-13 | /run-experiment | docs/CAMPAIGN_20261013.md | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
 | 2026-10-13 | /run-experiment | docs/THIRD_PARTY.md | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
 | 2026-10-13 | /run-experiment | docs/CADTrack_LICENSE | implementation | 实测检查、冻结预算与来源；正式结果待完成 |
+| 2026-10-13 | /run-experiment | reports/SOURCE_VERSION.txt | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/campaign_launch/campaign.json | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/campaign_launch/e0_complete_launch.json | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/campaign_launch/source_sha256.json | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/campaign_launch/status.json | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/e0/missing_state_diagnostics.json | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | reports/e0/MISSING_DIAGNOSTICS.md | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | scripts/analyze_missing_states.py | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /run-experiment | docs/HANDOFF_20261013_launch.md | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |

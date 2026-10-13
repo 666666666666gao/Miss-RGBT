@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "scripts/evaluate_complete.py",
+    "run"
+  ],
+  "pid": 3294054,
+  "cuda_visible_devices": "2,3",
+  "started_utc": "2026-10-13T06:50:39.105410Z"
+}

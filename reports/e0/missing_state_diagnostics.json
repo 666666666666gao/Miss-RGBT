@@ -1,0 +1,89 @@
+{
+  "scope": "descriptive raw continuous bbox diagnostics; first frames excluded; frame-weighted, not official PR/SR; test data not a training target",
+  "results": {
+    "LasHeR-Miss": {
+      "states": {
+        "00": {
+          "frames": 33737,
+          "frame_precision_at_20_pct": 46.969202952248274,
+          "frame_mean_iou_pct": 39.48225248128316,
+          "frame_success_at_0_5_pct": 46.40898716542669
+        },
+        "01": {
+          "frames": 56005,
+          "frame_precision_at_20_pct": 44.52995268279618,
+          "frame_mean_iou_pct": 38.69718165161537,
+          "frame_success_at_0_5_pct": 46.01731988215338
+        },
+        "10": {
+          "frames": 43377,
+          "frame_precision_at_20_pct": 51.10772990294395,
+          "frame_mean_iou_pct": 43.265684933964096,
+          "frame_success_at_0_5_pct": 51.25527353205616
+        },
+        "11": {
+          "frames": 87339,
+          "frame_precision_at_20_pct": 58.55803249407481,
+          "frame_mean_iou_pct": 48.18332830415493,
+          "frame_success_at_0_5_pct": 57.02263593583622
+        }
+      },
+      "transitions": {
+        "changed": {
+          "frames": 52379,
+          "frame_precision_at_20_pct": 53.741003073750925,
+          "frame_mean_iou_pct": 44.89187804518872,
+          "frame_success_at_0_5_pct": 53.37826228068501
+        },
+        "stable": {
+          "frames": 168079,
+          "frame_precision_at_20_pct": 51.13607291809209,
+          "frame_mean_iou_pct": 43.032598101892425,
+          "frame_success_at_0_5_pct": 50.872506380928016
+        }
+      }
+    },
+    "RGBT234-Miss": {
+      "states": {
+        "00": {
+          "frames": 18756,
+          "frame_precision_at_20_pct": 76.59415653657497,
+          "frame_mean_iou_pct": 52.88777355863034,
+          "frame_success_at_0_5_pct": 64.74194924290893
+        },
+        "01": {
+          "frames": 24790,
+          "frame_precision_at_20_pct": 73.98951189995967,
+          "frame_mean_iou_pct": 48.96809752906104,
+          "frame_success_at_0_5_pct": 59.41105284388867
+        },
+        "10": {
+          "frames": 25640,
+          "frame_precision_at_20_pct": 78.52574102964118,
+          "frame_mean_iou_pct": 57.14750869376013,
+          "frame_success_at_0_5_pct": 69.40717628705148
+        },
+        "11": {
+          "frames": 47230,
+          "frame_precision_at_20_pct": 90.94219775566378,
+          "frame_mean_iou_pct": 69.77720865385328,
+          "frame_success_at_0_5_pct": 85.77810713529537
+        }
+      },
+      "transitions": {
+        "changed": {
+          "frames": 29601,
+          "frame_precision_at_20_pct": 81.38914225870748,
+          "frame_mean_iou_pct": 58.01654723567143,
+          "frame_success_at_0_5_pct": 71.86581534407621
+        },
+        "stable": {
+          "frames": 86815,
+          "frame_precision_at_20_pct": 82.5917180210793,
+          "frame_mean_iou_pct": 60.46621081054523,
+          "frame_success_at_0_5_pct": 73.61285492138455
+        }
+      }
+    }
+  }
+}
