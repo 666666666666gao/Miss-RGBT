@@ -125,3 +125,17 @@ CPU诊断首跟踪帧的previous状态已修正为真实完整初始化[1,1]，�
 唯一下一节点观察器uv37852/python38240，实际启动17:09:59，计划23:10北京时间（15:10Z）只读收集；本地等待300秒，不在节点前查询NN训练/评估进度。不启动第二个观察器；原第一次2536/3232已退出。
 
 结果索引reports/EXPERIMENT_STATUS.md、METRICS_SUMMARY.csv。所有新E3/E4完整/Miss指标尚待训练与337353帧评估；三个有效贡献和性能目标均未完成，后续须核验补偿提升，再做有选择的M→C完整训练及对应消融。
+
+## 2026-10-13离线同帧诊断与源码核查
+
+本轮没有新增NN、改变冻结模型/config或查询当前训练进度。离线逐项核对1675个输入哈希，对479序列完整/Miss预测配对，确认首次缺失前53027帧bbox完全一致。排除初始帧/无效GT后，LasHeR当前11帧的按帧精度20px差-8.9812pp，RGBT234-1.8629pp；真正经历缺失后恢复的54822/26353帧，差-14.2370/-3.3317pp。这是连续坐标、按帧描述，不替代正式PR/SR。
+
+按原生4倍搜索区域公式，从上一框计算几何支持：LasHeR恢复帧有6035/54822（11.0084%）完整crop含GT中心而缺失crop不含；其中5536（10.0981%）完整crop与GT有交集而缺失crop无交集。RGBT234对应768（2.9143%）/684（2.5955%）。已发现具体的历史搜索区域偏移问题；没有读取图像，不把几何交集等同目标外观可见，没有证明GT重置/模板干预可以挽回多少部署指标。两模态返回后误差不必自动消失，局部补偿也不能默认crop仍包含目标。
+
+报告reports/e0_paired_diagnostics_v1/README.md、paired_diagnostics.json、sequence_deltas.csv、search_support.json、SVG/PNG；离线工具在analysis/。首CPU运行误用bbox_sha256，实际旧E0为result_sha256，失败后按实际字段修正、退出0；没有加兼容fallback或重跑跟踪。
+
+research技能要求的独立background研究由gpt-6-astra/max完成，仅源码研究，不是外部仓库运行复现/独立性能审计。SDSTrack、SMML、RobustSeg固定commit、许可证及精确调用位置均记录docs/OPEN_SOURCE_FINDINGS_20261013.md。已核实RobustSeg CVPR2026正式页、官方附源码ZIP与MIT；旧repo404但RobustSeg/RMMSS可读。该反馈脚本第二optimizer仍绑定student而非teacher，且冻结/损失/LR与论文不同，不能照搬后声称反馈已复现。SMML关键loss源码缺失、未见许可证；SDSTrack的双端特征MSE不是固定教师空间响应KL。
+
+本项目RGB/TIR主干共享，R只在mask位置激活；C完整输入时R零门控。因此未来M→C梯度接收的是共享baseline，不是修复器；不能冻结全部baseline后期待该项有效。E5启动前需真实训练样本可靠性触发、独立梯度/实际参数更新和严格重载，再做完整训练。E3/E4当前reverse_weight0，三个贡献仍UNPROVEN。具体三项消融、参数/训练量控制和信息限制已写docs/MODULE_EVIDENCE_PROTOCOL.md，不按Test诊断调当前frozen配置。
+
+唯一23:10节点观察器python38240/uv37852已再次CIM确认仍活；节点前无remote NN进度查询、无重复observer/训练启动。等待真实指标后再判断当前R能否缓解上述历史损伤。

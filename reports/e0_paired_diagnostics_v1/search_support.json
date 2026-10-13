@@ -1,0 +1,262 @@
+{
+  "scope": "offline geometric search-support diagnosis; no NN/images; first/invalid GT excluded; no current search crop is counted for both-missing hold frames; crop/GT intersection is not a guarantee of visible target pixels; not official metrics",
+  "native_formula": "sample_target: ceil(sqrt(previous_w*previous_h)*4), round(previous_center-side/2)",
+  "config_sha256": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+  "paired_input_manifest_sha256": "9b41c836d00bc3f8ebd1fb16f043b1bcd2bacdb6e5921b3928459d320bbb9af4",
+  "results": {
+    "LasHeR-Miss": {
+      "states": {
+        "01": {
+          "frames": 55534,
+          "full_center_inside_frames": 50343,
+          "missing_center_inside_frames": 47610,
+          "lost_center_support_frames": 4618,
+          "lost_center_support_pct": 8.31562646306767,
+          "full_box_overlap_frames": 51601,
+          "missing_box_overlap_frames": 49112,
+          "lost_all_gt_box_overlap_frames": 3906,
+          "lost_all_gt_box_overlap_pct": 7.0335290092555915
+        },
+        "10": {
+          "frames": 43233,
+          "full_center_inside_frames": 36437,
+          "missing_center_inside_frames": 36094,
+          "lost_center_support_frames": 2391,
+          "lost_center_support_pct": 5.530497536603983,
+          "full_box_overlap_frames": 37223,
+          "missing_box_overlap_frames": 36892,
+          "lost_all_gt_box_overlap_frames": 2056,
+          "lost_all_gt_box_overlap_pct": 4.755626489024587
+        },
+        "11": {
+          "frames": 86904,
+          "full_center_inside_frames": 76037,
+          "missing_center_inside_frames": 74593,
+          "lost_center_support_frames": 6035,
+          "lost_center_support_pct": 6.944444444444445,
+          "full_box_overlap_frames": 77900,
+          "missing_box_overlap_frames": 76450,
+          "lost_all_gt_box_overlap_frames": 5536,
+          "lost_all_gt_box_overlap_pct": 6.37024762956826
+        }
+      },
+      "histories": {
+        "11_before_first_missing": {
+          "frames": 32082,
+          "full_center_inside_frames": 30797,
+          "missing_center_inside_frames": 30797,
+          "lost_center_support_frames": 0,
+          "lost_center_support_pct": 0.0,
+          "full_box_overlap_frames": 31230,
+          "missing_box_overlap_frames": 31230,
+          "lost_all_gt_box_overlap_frames": 0,
+          "lost_all_gt_box_overlap_pct": 0.0
+        },
+        "11_return_1": {
+          "frames": 7932,
+          "full_center_inside_frames": 7181,
+          "missing_center_inside_frames": 6805,
+          "lost_center_support_frames": 622,
+          "lost_center_support_pct": 7.8416540595057995,
+          "full_box_overlap_frames": 7336,
+          "missing_box_overlap_frames": 6924,
+          "lost_all_gt_box_overlap_frames": 599,
+          "lost_all_gt_box_overlap_pct": 7.551689359556228
+        },
+        "11_return_21_plus": {
+          "frames": 33756,
+          "full_center_inside_frames": 26415,
+          "missing_center_inside_frames": 25924,
+          "lost_center_support_frames": 4328,
+          "lost_center_support_pct": 12.821424339376703,
+          "full_box_overlap_frames": 27439,
+          "missing_box_overlap_frames": 26955,
+          "lost_all_gt_box_overlap_frames": 3891,
+          "lost_all_gt_box_overlap_pct": 11.52683967294703
+        },
+        "11_return_2_5": {
+          "frames": 8899,
+          "full_center_inside_frames": 8027,
+          "missing_center_inside_frames": 7593,
+          "lost_center_support_frames": 699,
+          "lost_center_support_pct": 7.854815147769411,
+          "full_box_overlap_frames": 8187,
+          "missing_box_overlap_frames": 7759,
+          "lost_all_gt_box_overlap_frames": 679,
+          "lost_all_gt_box_overlap_pct": 7.630070794471289
+        },
+        "11_return_6_20": {
+          "frames": 4235,
+          "full_center_inside_frames": 3617,
+          "missing_center_inside_frames": 3474,
+          "lost_center_support_frames": 386,
+          "lost_center_support_pct": 9.11452184179457,
+          "full_box_overlap_frames": 3708,
+          "missing_box_overlap_frames": 3582,
+          "lost_all_gt_box_overlap_frames": 367,
+          "lost_all_gt_box_overlap_pct": 8.665879574970484
+        },
+        "current_01": {
+          "frames": 55534,
+          "full_center_inside_frames": 50343,
+          "missing_center_inside_frames": 47610,
+          "lost_center_support_frames": 4618,
+          "lost_center_support_pct": 8.31562646306767,
+          "full_box_overlap_frames": 51601,
+          "missing_box_overlap_frames": 49112,
+          "lost_all_gt_box_overlap_frames": 3906,
+          "lost_all_gt_box_overlap_pct": 7.0335290092555915
+        },
+        "current_10": {
+          "frames": 43233,
+          "full_center_inside_frames": 36437,
+          "missing_center_inside_frames": 36094,
+          "lost_center_support_frames": 2391,
+          "lost_center_support_pct": 5.530497536603983,
+          "full_box_overlap_frames": 37223,
+          "missing_box_overlap_frames": 36892,
+          "lost_all_gt_box_overlap_frames": 2056,
+          "lost_all_gt_box_overlap_pct": 4.755626489024587
+        }
+      },
+      "restored_currently_complete": {
+        "frames": 54822,
+        "full_center_inside_frames": 45240,
+        "missing_center_inside_frames": 43796,
+        "lost_center_support_frames": 6035,
+        "lost_center_support_pct": 11.00835431031338,
+        "full_box_overlap_frames": 46670,
+        "missing_box_overlap_frames": 45220,
+        "lost_all_gt_box_overlap_frames": 5536,
+        "lost_all_gt_box_overlap_pct": 10.09813578490387
+      }
+    },
+    "RGBT234-Miss": {
+      "states": {
+        "01": {
+          "frames": 24428,
+          "full_center_inside_frames": 22940,
+          "missing_center_inside_frames": 22679,
+          "lost_center_support_frames": 833,
+          "lost_center_support_pct": 3.41002128704765,
+          "full_box_overlap_frames": 23025,
+          "missing_box_overlap_frames": 22933,
+          "lost_all_gt_box_overlap_frames": 637,
+          "lost_all_gt_box_overlap_pct": 2.6076633371540856
+        },
+        "10": {
+          "frames": 25434,
+          "full_center_inside_frames": 23576,
+          "missing_center_inside_frames": 23083,
+          "lost_center_support_frames": 1381,
+          "lost_center_support_pct": 5.429739718487064,
+          "full_box_overlap_frames": 23691,
+          "missing_box_overlap_frames": 23327,
+          "lost_all_gt_box_overlap_frames": 1220,
+          "lost_all_gt_box_overlap_pct": 4.796728788236219
+        },
+        "11": {
+          "frames": 47130,
+          "full_center_inside_frames": 45852,
+          "missing_center_inside_frames": 45669,
+          "lost_center_support_frames": 768,
+          "lost_center_support_pct": 1.6295353278166773,
+          "full_box_overlap_frames": 45999,
+          "missing_box_overlap_frames": 45843,
+          "lost_all_gt_box_overlap_frames": 684,
+          "lost_all_gt_box_overlap_pct": 1.451304901336728
+        }
+      },
+      "histories": {
+        "11_before_first_missing": {
+          "frames": 20777,
+          "full_center_inside_frames": 20713,
+          "missing_center_inside_frames": 20713,
+          "lost_center_support_frames": 0,
+          "lost_center_support_pct": 0.0,
+          "full_box_overlap_frames": 20717,
+          "missing_box_overlap_frames": 20717,
+          "lost_all_gt_box_overlap_frames": 0,
+          "lost_all_gt_box_overlap_pct": 0.0
+        },
+        "11_return_1": {
+          "frames": 4407,
+          "full_center_inside_frames": 4316,
+          "missing_center_inside_frames": 4307,
+          "lost_center_support_frames": 40,
+          "lost_center_support_pct": 0.9076469253460404,
+          "full_box_overlap_frames": 4326,
+          "missing_box_overlap_frames": 4319,
+          "lost_all_gt_box_overlap_frames": 29,
+          "lost_all_gt_box_overlap_pct": 0.6580440208758793
+        },
+        "11_return_21_plus": {
+          "frames": 14089,
+          "full_center_inside_frames": 13245,
+          "missing_center_inside_frames": 13121,
+          "lost_center_support_frames": 518,
+          "lost_center_support_pct": 3.676627155937256,
+          "full_box_overlap_frames": 13338,
+          "missing_box_overlap_frames": 13251,
+          "lost_all_gt_box_overlap_frames": 455,
+          "lost_all_gt_box_overlap_pct": 3.229469799134076
+        },
+        "11_return_2_5": {
+          "frames": 4808,
+          "full_center_inside_frames": 4737,
+          "missing_center_inside_frames": 4708,
+          "lost_center_support_frames": 69,
+          "lost_center_support_pct": 1.4351081530782028,
+          "full_box_overlap_frames": 4750,
+          "missing_box_overlap_frames": 4720,
+          "lost_all_gt_box_overlap_frames": 60,
+          "lost_all_gt_box_overlap_pct": 1.2479201331114809
+        },
+        "11_return_6_20": {
+          "frames": 3049,
+          "full_center_inside_frames": 2841,
+          "missing_center_inside_frames": 2820,
+          "lost_center_support_frames": 141,
+          "lost_center_support_pct": 4.624467038373237,
+          "full_box_overlap_frames": 2868,
+          "missing_box_overlap_frames": 2836,
+          "lost_all_gt_box_overlap_frames": 140,
+          "lost_all_gt_box_overlap_pct": 4.591669399803214
+        },
+        "current_01": {
+          "frames": 24428,
+          "full_center_inside_frames": 22940,
+          "missing_center_inside_frames": 22679,
+          "lost_center_support_frames": 833,
+          "lost_center_support_pct": 3.41002128704765,
+          "full_box_overlap_frames": 23025,
+          "missing_box_overlap_frames": 22933,
+          "lost_all_gt_box_overlap_frames": 637,
+          "lost_all_gt_box_overlap_pct": 2.6076633371540856
+        },
+        "current_10": {
+          "frames": 25434,
+          "full_center_inside_frames": 23576,
+          "missing_center_inside_frames": 23083,
+          "lost_center_support_frames": 1381,
+          "lost_center_support_pct": 5.429739718487064,
+          "full_box_overlap_frames": 23691,
+          "missing_box_overlap_frames": 23327,
+          "lost_all_gt_box_overlap_frames": 1220,
+          "lost_all_gt_box_overlap_pct": 4.796728788236219
+        }
+      },
+      "restored_currently_complete": {
+        "frames": 26353,
+        "full_center_inside_frames": 25139,
+        "missing_center_inside_frames": 24956,
+        "lost_center_support_frames": 768,
+        "lost_center_support_pct": 2.9142792091981935,
+        "full_box_overlap_frames": 25282,
+        "missing_box_overlap_frames": 25126,
+        "lost_all_gt_box_overlap_frames": 684,
+        "lost_all_gt_box_overlap_pct": 2.595529920692141
+      }
+    }
+  }
+}

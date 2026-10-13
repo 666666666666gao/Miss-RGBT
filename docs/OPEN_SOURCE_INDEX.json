@@ -1,0 +1,60 @@
+{
+  "checked_utc": "2026-10-13T09:32:53.438374+00:00",
+  "method": "read-only primary sources; selective pinned raw files; no network training/inference executed",
+  "repositories": [
+    {
+      "repository": "hoqolo/SDSTrack",
+      "commit_sha": "822d9852fee66bdd6d9df4dcb679eebecd85e91c",
+      "commit_date_utc": "2024-06-30T04:13:58Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "downloaded_files": 20,
+      "verified_bytes": 116282
+    },
+    {
+      "repository": "banbooliang/SMML",
+      "commit_sha": "d40154138dc0e7cc0ab7e7413ee4e51332b3ca8f",
+      "commit_date_utc": "2025-07-11T01:47:41Z",
+      "license": null,
+      "downloaded_files": 18,
+      "verified_bytes": 102101
+    },
+    {
+      "repository": "RobustSeg/RMMSS",
+      "commit_sha": "fda61fc603e0d110f96db79c52a531aa604f5fc6",
+      "commit_date_utc": "2025-11-20T02:25:06Z",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "downloaded_files": 18,
+      "verified_bytes": 98392
+    }
+  ],
+  "conference_artifacts": [
+    {
+      "file": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_source_research_20261013\\RobustSeg\\conference_paper_response.bin",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tan_Towards_Robust_Multi-Modal_Semantic_Segmentation_with_Teacher-Student_Framework_and_Hybrid_CVPR_2026_paper.pdf",
+      "bytes": 1480542,
+      "sha256": "b582fdac5b46df50539a4664c3b09fc3e7f0041e218cdecc6ba9506d582e242e",
+      "http_status": 200,
+      "last_modified_supplement_utc": null
+    },
+    {
+      "file": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_source_research_20261013\\RobustSeg\\conference_supplemental.zip",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Tan_Towards_Robust_Multi-Modal_CVPR_2026_supplemental.zip",
+      "bytes": 6791928,
+      "sha256": "88fc78746d40fdebdeabaa459f9415eb7ea33466a4f610c5a3a5e738a4be37fc",
+      "http_status": 200,
+      "last_modified_supplement_utc": "2026-04-30T19:05:58Z"
+    }
+  ]
+}
