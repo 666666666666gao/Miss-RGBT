@@ -1,0 +1,13 @@
+{
+  "base": "conda python3.7.16 + pytorch1.12.1+cu113",
+  "system_pkgs": [],
+  "pip_phases": [["torch==1.12.1+cu113", "numpy==1.21.5", "timm==0.9.12", "opencv-python==4.8.1.78", "PyYAML==6.0.1"]],
+  "env": {"OMP_NUM_THREADS": "1", "MKL_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "WANDB_MODE": "disabled"},
+  "run_commands": [],
+  "weight_dirs": {"cadtrack_epoch20": {"path": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar", "source": "existing /data2/zhouy/CADTrack-main epoch20; strict net loader", "gated": false}},
+  "smoke": {
+    "import_names": ["torch", "numpy", "timm", "cv2", "yaml", "rgbt"],
+    "gpu_tests": [{"cmd": "CUDA_VISIBLE_DEVICES=2 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python scripts/environment_witness.py", "expect": "^WITNESS "}],
+    "cli_checks": []
+  }
+}

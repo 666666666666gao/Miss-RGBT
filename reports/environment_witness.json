@@ -1,0 +1,15 @@
+{
+  "spec_hash": "cc6cd075",
+  "torch": "1.12.1+cu113",
+  "numpy": "1.21.5",
+  "timm": "0.9.12",
+  "cv2": "4.8.1",
+  "yaml": "6.0.1",
+  "device": "NVIDIA GeForce RTX 3090",
+  "shape": [
+    32,
+    32
+  ],
+  "value": 31.01445198059082,
+  "finite": true
+}

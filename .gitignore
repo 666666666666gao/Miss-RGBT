@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+conda-envs/
+checkpoints/
+data/
+logs/
+results/
+.aris/
+*.pth
+*.pth.tar
+*.tar.gz
+private/
