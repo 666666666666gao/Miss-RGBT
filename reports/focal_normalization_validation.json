@@ -1,0 +1,32 @@
+{
+  "scope": "CPU synthetic loss arithmetic only; no model, dataset or metric result",
+  "cases": {
+    "one_positive_each": {
+      "native": 164.86196899414062,
+      "per_sample_mean": 164.8619842529297,
+      "absolute_difference": 1.52587890625e-05,
+      "positive_peaks": [
+        1,
+        1
+      ]
+    },
+    "mixed_empty_target": {
+      "native": 335.012451171875,
+      "per_sample_mean": 335.012451171875,
+      "absolute_difference": 0.0,
+      "positive_peaks": [
+        1,
+        0
+      ]
+    },
+    "all_empty_targets": {
+      "native": 297.9494934082031,
+      "per_sample_mean": 297.9494934082031,
+      "absolute_difference": 0.0,
+      "positive_peaks": [
+        0,
+        0
+      ]
+    }
+  }
+}

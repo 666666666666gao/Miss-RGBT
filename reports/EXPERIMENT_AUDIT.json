@@ -1,0 +1,410 @@
+{
+  "audit_skill": "experiment-audit",
+  "verdict": "WARN",
+  "reason_code": "bounded_native_evidence_and_toolkit_semantics_with_resolved_record_errors",
+  "summary": "E0 两项 real_gt 基线的全部 479 序列、337353 帧及五项指标/所有曲线独立 CPU 重算一致。未发现模型生成 GT、自身预测统计归一化或虚构 E0 结果。速度哈希范围、首切换标签、归档路径和源码短 ID 错误已保留原记录并核查修订。新方法只有有限 native/smoke 证据，尚不能据本审查主张正式成绩、三个模块有效或反向反馈有效。",
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T07:06:19.253Z",
+  "auditor": "gpt-6-astra-max",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "max",
+  "reviewer_family": "openai",
+  "executor_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "agent_id": "/root/audit_miss_baseline",
+  "verdict_id": "/root/audit_miss_baseline/20261013",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "trace_path": ".aris/traces/experiment-audit/20261013/",
+  "final_input_snapshot_at": "2026-10-13T07:02:52.092228+00:00",
+  "audited_input_hashes": {
+    "EXPERIMENT_TRACKER.md": "sha256:75a83c667d17c38aadec0827986aaeca1217eaa6ba37d9f61567efa2b8e9ad29",
+    "HANDOFF.md": "sha256:62bf887483b2abd6467b154c7addd9609911744ace94cade73685d1d0fbc3810",
+    "README.md": "sha256:cbb986184198b86aee630884584b0583adc706d99274df3fcd0dc3e5d0a5eed1",
+    "configs/e3.json": "sha256:f6b47723d183bd338c6a58e495a75bae691e1d75e32c015bca1bce6abd958930",
+    "configs/e4.json": "sha256:329f9d9007d5830c6854e88dddbfea18dae43d1b4b5863823d5fcdda494c778e",
+    "lib/train/data_specs/lasher_train.txt": "sha256:27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846",
+    "lib/train/data_specs/lasher_val.txt": "sha256:ff5767e1e2522b87d31b898eb949949478c1dabc3b2cef2754a43c65e089016a",
+    "miss_rgbt/data.py": "sha256:78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "miss_rgbt/model.py": "sha256:af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+    "miss_rgbt/objectives.py": "sha256:7f00f945e48b1e44cce4e914746b1d0df8101d70ff3068022763aa6b16bae5bc",
+    "miss_rgbt/tracker.py": "sha256:87fb7630552085a3afd6be9855b6c0d47e39db34440209f2861b2cb73d113bd1",
+    "miss_rgbt/train.py": "sha256:611f972f82ecfbd5b3662295ca8973ee2cea500d66b29e3ec46b693924abaaa6",
+    "refine-logs/EXPERIMENT_PLAN.md": "sha256:058aafece37308a240f7c13551705331148e66e65a05f1f6cf2f15397d290b0a",
+    "reports/SOURCE_VERSION.txt": "sha256:99a837d22b580fcb158d55aa137d962e0fb5a6d83d47e0d4c744451bc34f08df",
+    "reports/baseline_integrity.json": "sha256:f59dc396bc4aedda2f2bfbe3ccb5150f9c1be6c0d3117ed7cbbfc79b6d61c8e1",
+    "reports/e0/MISSING_DIAGNOSTICS.md": "sha256:11edea282a91f63d201ebd2bad89a738fdab8aa875e9b28a2eaa7584178c0b2a",
+    "reports/e0/MISSING_DIAGNOSTICS_before_first_transition_fix.md": "sha256:1c2e9992d3f67f6bc12f59b4a4ff9ac47fa3381cf89bce19f349751caa494cd2",
+    "reports/e0/RESULTS.md": "sha256:bda99e1e977addf0484885340dc38401867eed1f20f419f6e3cf7751b0556faf",
+    "reports/e0/completed.json": "sha256:9cda83f4146ad090f8d33377f19dea765430ff45c59064bc5d524a6f927d068d",
+    "reports/e0/evaluate_miss.py": "sha256:2a59fdd8f648a93c8468cfd571763b2b54f2b27629072ca028896797de8392ff",
+    "reports/e0/evaluate_miss_initial2workers.py": "sha256:dbed9c7c6d0d122f375751164df0ea6ec767bc5d1f93673b477c4daeb9839a3c",
+    "reports/e0/inventory.json": "sha256:2b3278b5f35ac322f83961a649720d433a91c61a53b5a7e045dcef1fc4f3ec83",
+    "reports/e0/metrics.json": "sha256:c386ee68228c6837583d63af00750e060caa80ceb5fa1f29eab214668ccba16a",
+    "reports/e0/missing_state_diagnostics.json": "sha256:5c8f1050da66e0d3b398fbf2e907267bc55265f09c1126816fce93d649283488",
+    "reports/e0/missing_state_diagnostics_before_first_transition_fix.json": "sha256:78f0dcd3630283171121d39b3e00a5a3a903328b9a214de70436c71cf6daa878",
+    "reports/e0/source_sha256.json": "sha256:e9e7491d58c52abf0ec1ba12adec1c9b0c021ef0035a0dfd653a53e2a2afadae",
+    "reports/environment_validation.md": "sha256:2cd5b74c95e4eaf2c0013c5be69683409f826635a53907d51776afd6af3cb3ed",
+    "reports/environment_witness.json": "sha256:7cc19783781b16003a52093e262531c1b3149b43b26c915ab0e522d0897a036e",
+    "reports/method_native_validation.json": "sha256:d789959fa36dfbb22ca6d90fefd02a1f850b963821d2a4af8a5cb53739a52f46",
+    "reports/method_native_validation.log": "sha256:60ab93ad9989c7fc2315bf742f701ba84a1e0f28c12cec2e76bdf97d31394db6",
+    "reports/method_native_validation_import_failure.log": "sha256:aed08bd8dfecaf3ea916dfcb93d865765f202bc1e484391981b8cbd8b4b92d2d",
+    "reports/paired_speed_smoke.json": "sha256:e9de2f92bfae87c4e9dc3ba70a0e894b82bea9a1bfd3abfa9dc62e0b61edfbc8",
+    "reports/tracker_native_validation.json": "sha256:51c7ce3114b523635d791bd79e3843688cf265674b85b12d92515e80d015c4d7",
+    "scripts/analyze_missing_states.py": "sha256:7e9714fe6e014aa0728efbce89800a0f86ffc8527fca23e7c5be6a3c6da51380",
+    "scripts/evaluate_complete.py": "sha256:8bdb1e036288d6a7f8e3ea7cb3e06cea125bac029d22ff84f30eff724c017029",
+    "scripts/evaluate_model.py": "sha256:7052d791da8800e666f0d7fad1d132ed9b3a5dba2a10eaffe5cecc501517b726",
+    "scripts/run_campaign.py": "sha256:2f6ead827059ee44c4bdf951449b2a82395b2be83f23f002c0963e200765c1ef",
+    "scripts/summarize_speed.py": "sha256:977a82148f9635905b87c9053c2f8161fab11ac0e50bc969d166f1d00895478f",
+    "scripts/validate_method.py": "sha256:1e3bf092971459d4047c629614b61c6f4f157e97a3b6bbd76c9b27147c9c8546",
+    "scripts/validate_tracker.py": "sha256:4f4d30a61998154edd8ce7fdbffdeb631152d921ca4d0f6ea92666c59ca4c971",
+    "scripts/verify_baseline.py": "sha256:2811eb2f150b923fa007fe047d990978ed12fa371b5732c05b80098784bf3c0d",
+    "C:/Users/gb/.codex_tmp/cadtrack_miss_ep20_20261013/baseline_raw_results.tar.gz": "sha256:85b302508ce56b7e688c0f8c21f58a6dd07fd883ea8f57db5bf99a47bae3dc0a"
+  },
+  "initial_input_manifest": ".aris/traces/experiment-audit/20261013/temporary/inputs/manifest.json",
+  "revision_input_manifest": ".aris/traces/experiment-audit/20261013/temporary/revision1/manifest.json",
+  "final_input_manifest": ".aris/traces/experiment-audit/20261013/temporary/final_inputs/manifest.json",
+  "execution_scope": {
+    "new_gpu_runs": 0,
+    "new_neural_network_runs": 0,
+    "training_status_polls": 0,
+    "author_code_edits_by_reviewer": 0,
+    "read_only_cpu_remote_checks": true,
+    "archive_extraction_root": ".aris/traces/experiment-audit/20261013/temporary/baseline_original",
+    "campaign_status_source": "saved 2026-10-13T06:50:39Z launch artifacts only; no fresh runtime status query"
+  },
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "Dataset/toolkit annotation files are read independently of predictions. All 713 GT hashes agree with inventory and old/new installations; all 479 raw bbox initial rows equal dataset first GT. Model run_sequence uses no later-frame GT.",
+      "evidence": [
+        "reports/e0/evaluate_miss.py:64",
+        "reports/e0/evaluate_miss.py:80",
+        "reports/e0/evaluate_miss.py:122",
+        "scripts/evaluate_complete.py:65",
+        "scripts/evaluate_model.py:42",
+        ".aris/traces/experiment-audit/20261013/temporary/remote_readonly_audit.stdout",
+        ".aris/traces/experiment-audit/20261013/temporary/archive_verification.json"
+      ]
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "PR/MPR use fixed per-sequence frame counts and then equal sequence means; NPR divides coordinates by GT width/height; SR/MSR use fixed overlap thresholds. Standard IoU union is not prediction-statistic score rescaling. No self-max/min/mean score normalization found.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:28",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:62",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:290",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:332",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/utils.py:117"
+      ]
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "479 bbox files and 479 per-sequence receipts, 479 unique merged receipts, full shapes/finiteness, saved metrics and curves all match. Original initial run exited 143 after 2 DONE records; resumed run exited 0 after 477 DONE records. Speed and state diagnostic reports independently rechecked; historical record errors retained.",
+      "evidence": [
+        "reports/e0/metrics.json:2",
+        "reports/e0/completed.json:2",
+        "EXPERIMENT_TRACKER.md:6",
+        ".aris/traces/experiment-audit/20261013/temporary/baseline_original/run_initial2workers.log:5",
+        ".aris/traces/experiment-audit/20261013/temporary/baseline_original/run.log:511",
+        ".aris/traces/experiment-audit/20261013/temporary/archive_verification.json",
+        ".aris/traces/experiment-audit/20261013/temporary/auxiliary_verification.json"
+      ]
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "E0 run calls evaluate after collecting results, writes actual curves/metrics, and archived logs contain the same values. New evaluate_model metrics are reachable but only source-reviewed; no completed method benchmark claimed. Existing native/speed/diagnostic reports are narrower evidence classes.",
+      "evidence": [
+        "reports/e0/evaluate_miss.py:167",
+        "reports/e0/evaluate_miss.py:213",
+        "scripts/evaluate_complete.py:210",
+        "scripts/evaluate_model.py:125",
+        "scripts/evaluate_model.py:137",
+        "scripts/validate_method.py:70",
+        "scripts/analyze_missing_states.py:48"
+      ]
+    },
+    "scope": {
+      "status": "warn",
+      "details": "E0 covers 245 LasHeR and 234 RGBT234 sequences for one checkpoint and one fixed missing-mask set. The method evidence is batch2 one-update validation, 25 updates per E3/E4 speed configuration, and 10 complete tracking frames plus 2 missing checks. No new-method full benchmark or E5 nonzero reverse gradient is established.",
+      "evidence": [
+        "reports/method_native_validation.json:2",
+        "reports/method_native_validation.json:27",
+        "reports/method_native_validation.json:34",
+        "reports/paired_speed_smoke.json:3",
+        "reports/tracker_native_validation.json:2",
+        "EXPERIMENT_TRACKER.md:11",
+        "EXPERIMENT_TRACKER.md:14"
+      ]
+    },
+    "eval_type": {
+      "status": "pass",
+      "classification": "real_gt",
+      "details": "E0 benchmark and state diagnostics use dataset GT. Missingness is synthetically imposed by fixed published masks, but the labels remain real_gt. Teacher response KD is a training objective, not the benchmark ground truth. Native validation is supervised engineering validation; environment witness is not a model-performance evaluation."
+    },
+    "missing_information_legality": {
+      "status": "pass",
+      "assurance_scope": "source audit plus limited saved native evidence",
+      "details": "Unobserved values are removed after non-overlapping patch projection and before Transformer blocks. LocalRepair receives only M-stream states/availability. C appears only as stopped-gradient response-loss target; reverse reliability uses training GT only. Inference uses one saved model and retains availability for stored templates. All 52493 post-initialization both-missing outputs exactly hold previous boxes.",
+      "evidence": [
+        "miss_rgbt/model.py:20",
+        "miss_rgbt/model.py:54",
+        "miss_rgbt/model.py:67",
+        "lib/models/layers/patch_embed.py:20",
+        "miss_rgbt/objectives.py:29",
+        "miss_rgbt/objectives.py:41",
+        "miss_rgbt/tracker.py:41",
+        "miss_rgbt/tracker.py:53",
+        "scripts/evaluate_model.py:84"
+      ]
+    },
+    "training_source": {
+      "status": "pass",
+      "assurance_scope": "bounded static review and existing short native execution only",
+      "details": "No demonstrated training-stopping source defect found in audited E3/E4 path. 103 Python files parse; 105 campaign hashes match. Native loss/optimizer/finite-gradient/reload records and 25-update smoke records are coherent. train882/val97/test245 sequence names are disjoint. This is not full training stability or convergence evidence.",
+      "evidence": [
+        "miss_rgbt/data.py:13",
+        "miss_rgbt/data.py:52",
+        "miss_rgbt/train.py:58",
+        "miss_rgbt/train.py:83",
+        "miss_rgbt/train.py:89",
+        ".aris/traces/experiment-audit/20261013/temporary/auxiliary_verification.json"
+      ]
+    }
+  },
+  "deterministic_results": {
+    "verification_status": "PASS",
+    "sequences": 479,
+    "frames": 337353,
+    "gt_files": 713,
+    "source_files": 87,
+    "campaign_source_files": 105,
+    "python_ast_files": 103,
+    "archived_prediction_receipts_sha256_exact": 479,
+    "official_metric_replay_max_error": 0,
+    "official_curve_replay_max_error": 0,
+    "independent_geometry_curve_max_error": 0,
+    "metrics": {
+      "LasHeR-Miss": {
+        "PR": 63.47250706301003,
+        "NPR": 58.58185056215868,
+        "SR": 50.583148589078256
+      },
+      "RGBT234-Miss": {
+        "MPR": 82.79481455539279,
+        "MSR": 59.57443513369343
+      }
+    },
+    "checkpoint": {
+      "sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+      "bytes": 1236922039
+    },
+    "archive": {
+      "sha256": "85b302508ce56b7e688c0f8c21f58a6dd07fd883ea8f57db5bf99a47bae3dc0a",
+      "bytes": 10248037
+    },
+    "lasher_toolkit_invalid_coordinate_frames": 1260,
+    "lasher_nonpositive_size_frames": 533,
+    "lasher_pr_npr_auto_success_percentage_points": 0.5568053864558152,
+    "both_missing_post_init_exact_hold": 52493,
+    "initial_mask_overridden_to_complete": {
+      "LasHeR": 34,
+      "RGBT234": 31
+    },
+    "datasets_report": ".aris/traces/experiment-audit/20261013/temporary/archive_verification.json",
+    "remote_file_report": ".aris/traces/experiment-audit/20261013/temporary/remote_readonly_audit.stdout",
+    "auxiliary_report": ".aris/traces/experiment-audit/20261013/temporary/auxiliary_verification.json"
+  },
+  "findings": [
+    {
+      "id": "W1",
+      "status": "WARN",
+      "current_state": "resolved_by_claim_narrowing",
+      "issue": "Original speed field overstated complete first effective-update input identity; only its last microbatch search_images were hashed.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/temporary/inputs/miss_rgbt/train.py:82",
+        ".aris/traces/experiment-audit/20261013/temporary/inputs/scripts/summarize_speed.py:19"
+      ],
+      "resolution_evidence": [
+        "scripts/summarize_speed.py:19",
+        "reports/paired_speed_smoke.json:50",
+        "miss_rgbt/train.py:83",
+        "miss_rgbt/train.py:104"
+      ],
+      "remaining_limit": "New search-microbatch list still omits templates and masks; it does not retrospectively establish complete smoke-input identity."
+    },
+    {
+      "id": "W2",
+      "status": "WARN",
+      "current_state": "resolved_by_cpu_recomputation",
+      "issue": "First transition used original mask[0] although executed initialization is complete, reversing labels for 24 LasHeR and 19 RGBT234 sequences.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/temporary/revision1/scripts/analyze_missing_states.py:40"
+      ],
+      "resolution_evidence": [
+        "scripts/analyze_missing_states.py:40",
+        "reports/e0/MISSING_DIAGNOSTICS.md:20",
+        ".aris/traces/experiment-audit/20261013/temporary/auxiliary_verification.json"
+      ],
+      "corrected_changed_frames": {
+        "LasHeR": 52383,
+        "RGBT234": 29598
+      },
+      "state_metrics_unchanged": true,
+      "corrected_values_exactly_recomputed": true
+    },
+    {
+      "id": "W3",
+      "status": "WARN",
+      "current_state": "disclosed_native_protocol_semantics",
+      "issue": "Installed LasHeR PR/NPR mark any GT coordinate <=0 as distance -1, causing automatic precision success; SR marks the same rows failures.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:266",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:309",
+        ".aris/traces/experiment-audit/20261013/temporary/toolkit_old/rgbt/metrics/metrics.py:351"
+      ],
+      "resolution_evidence": [
+        "reports/e0/RESULTS.md:30"
+      ],
+      "remaining_limit": "Preserve this same native rule for all methods; automatic contribution is not learned model improvement."
+    },
+    {
+      "id": "W4",
+      "status": "WARN",
+      "current_state": "resolved_documentation",
+      "issue": "Original RESULTS.md claimed the local archive was in reports/e0; actual verified archive is under C:/Users/gb/.codex_tmp/cadtrack_miss_ep20_20261013.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/temporary/inputs/reports/e0/RESULTS.md:28"
+      ],
+      "resolution_evidence": [
+        "reports/e0/RESULTS.md:28"
+      ]
+    },
+    {
+      "id": "W5",
+      "status": "WARN",
+      "current_state": "resolved_documentation",
+      "issue": "Intermediate narrative used short source ID 370f215a, inconsistent with saved source version 370f215814320d048a5c33974b64052126a8a1fd.",
+      "resolution_evidence": [
+        "HANDOFF.md:74",
+        "EXPERIMENT_TRACKER.md:16",
+        "reports/SOURCE_VERSION.txt:1",
+        ".aris/traces/experiment-audit/20261013/temporary/revision1/launch/campaign.json:2"
+      ],
+      "remaining_limit": "Audit checked saved launch records only, not later runtime status.",
+      "evidence": [
+        ".aris/traces/experiment-audit/20261013/035-tool.json"
+      ]
+    },
+    {
+      "id": "L1",
+      "status": "WARN",
+      "current_state": "evidence_limit",
+      "issue": "Native test checks unseen RGB perturbations only; missing TIR checks prove finite outputs only. It does not record template-update branch execution, independent process reload, all-parameter nonzero gradients, or full benchmark validity.",
+      "evidence": [
+        "scripts/validate_method.py:50",
+        "scripts/validate_method.py:73",
+        "scripts/validate_method.py:88",
+        "scripts/validate_tracker.py:40",
+        "scripts/validate_tracker.py:46"
+      ]
+    },
+    {
+      "id": "L2",
+      "status": "WARN",
+      "current_state": "evidence_limit",
+      "issue": "Native reverse_fraction and reverse KD contribution are zero. E3/E4 reverse_weight is zero. E5 usefulness, sparse necessary-token selection, real complete-feature restoration, and three effective contributions remain unproven.",
+      "evidence": [
+        "reports/method_native_validation.json:34",
+        "configs/e3.json:10",
+        "configs/e4.json:10",
+        "miss_rgbt/model.py:54",
+        "refine-logs/EXPERIMENT_PLAN.md:31",
+        "HANDOFF.md:80"
+      ]
+    }
+  ],
+  "historical_failures": [
+    {
+      "kind": "execution",
+      "artifact": ".aris/traces/experiment-audit/20261013/temporary/baseline_original/exit_code_initial2workers.txt",
+      "exit_code": 143,
+      "details": "Initial two-worker run terminated after two completed sequences; resumed exit 0 retained."
+    },
+    {
+      "kind": "author_native_import",
+      "artifact": "reports/method_native_validation_import_failure.log",
+      "details": "ModuleNotFoundError lib.train.loss before training; current import is lib.utils.focal_loss."
+    },
+    {
+      "kind": "auditor_tool_environment",
+      "details": "PATH python failed No pyvenv.cfg; E:/python.exe had no numpy. Existing E:/anaconda/python.exe numpy1.21.6 used for CPU replay; no environment modified."
+    },
+    {
+      "kind": "auditor_verifier",
+      "artifact": ".aris/traces/experiment-audit/20261013/temporary/remote_readonly_audit_v1.stderr",
+      "details": "Initial verifier bincount rejected floating mask dtype; fixed verifier explicitly used uint8, old code/stderr retained."
+    },
+    {
+      "kind": "auditor_verifier",
+      "artifact": ".aris/traces/experiment-audit/20261013/temporary/verify_auxiliary_v1.py:78",
+      "details": "Initial verifier incorrectly expected formal 12500 updates from the 25-update smoke config; corrected to separately read formal config. Original nonzero tool response retained."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Reported E0 two-dataset metrics derive from real GT and all archived sequences",
+      "impact": "supported"
+    },
+    {
+      "id": "C2",
+      "claim": "Missing branch has legal input information under audited implementation",
+      "impact": "supported_with_scope",
+      "qualifier": "Source proof and narrow native evidence; no new complete benchmark."
+    },
+    {
+      "id": "C3",
+      "claim": "Speed smoke completed 25 updates per model and measured about 1.96s/update after first",
+      "impact": "supported",
+      "qualifier": "Full training duration remains an extrapolation."
+    },
+    {
+      "id": "C4",
+      "claim": "Complete first effective-update inputs proven identical",
+      "impact": "unsupported",
+      "qualifier": "Only last search microbatch was proven; original field narrowed."
+    },
+    {
+      "id": "C5",
+      "claim": "Native reverse feedback is effective",
+      "impact": "unsupported",
+      "qualifier": "No selected reverse sample in recorded native batch."
+    },
+    {
+      "id": "C6",
+      "claim": "New method achieves benchmark gains or three effective modules",
+      "impact": "unsupported",
+      "qualifier": "Formal completed model results and ablations absent from audited evidence."
+    },
+    {
+      "id": "C7",
+      "claim": "All modality switches cause lower tracking performance",
+      "impact": "unsupported",
+      "qualifier": "Descriptive transition direction differs by dataset; corrected report appropriately avoids causal claim."
+    }
+  ],
+  "action_items": [
+    "Continue already-authorized work without treating this source audit as new model performance; accept new scores only from actual completed full-evaluation artifacts.",
+    "Retain identical GT/mask/toolkit rules and disclose the LasHeR invalid-coordinate precision behavior in later paired comparisons.",
+    "Keep speed-input identity limited to the hashed tensors; complete fairness or missing-modality invariance claims require their own concrete evidence.",
+    "Treat E5, necessity of task tokens, module efficacy, and full training stability as pending; use train/val evidence for changes and preserve negative results."
+  ],
+  "trace_capture_notes": [
+    "Execution command arguments and returned responses, including failures and yielded-session completions, are preserved as numbered tool JSON records.",
+    "Large source-read tool returns that the tool itself truncated are saved exactly as returned; full audited input bytes, installed toolkit source, verifier scripts, raw stdout/stderr, and original archive extraction are preserved under temporary.",
+    "Trace-writing operations are omitted from their own recursive trace. Native reviewer spawn/parent-message routing is owned by the parent; canonical reviewer ID is recorded here.",
+    "Fresh reviewer judged files directly. Subsequent source revisions were compared against retained initial bytes and independently recomputed, rather than accepted from author explanations."
+  ]
+}

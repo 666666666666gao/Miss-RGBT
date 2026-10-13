@@ -49,3 +49,7 @@
 | 2026-10-13 | /run-experiment | reports/e0/MISSING_DIAGNOSTICS.md | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
 | 2026-10-13 | /run-experiment | scripts/analyze_missing_states.py | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
 | 2026-10-13 | /run-experiment | docs/HANDOFF_20261013_launch.md | implementation | 实际启动、冻结源版本、CPU描述诊断；新最终结果待完成 |
+| 2026-10-13 | /experiment-audit | reports/e0/missing_state_diagnostics_before_first_transition_fix.json | review | 初始化切换标签修正前真实历史；不覆盖原记录 |
+| 2026-10-13 | /experiment-audit | reports/e0/MISSING_DIAGNOSTICS_before_first_transition_fix.md | review | 初始化切换标签修正前真实历史；不覆盖原记录 |
+| 2026-10-13 | /run-experiment | scripts/validate_focal_normalization.py | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |
+| 2026-10-13 | /run-experiment | reports/focal_normalization_validation.json | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |

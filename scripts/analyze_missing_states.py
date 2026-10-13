@@ -37,7 +37,8 @@ for dataset, spec in inventory['datasets'].items():
         for i in range(1, len(mask)):
             state = ''.join(str(int(x)) for x in mask[i])
             grouped[state].append((error[i], iou[i]))
-            changed = not np.array_equal(mask[i], mask[i - 1])
+            previous = [1, 1] if i == 1 else mask[i - 1]
+            changed = not np.array_equal(mask[i], previous)
             transition['changed' if changed else 'stable'].append((error[i], iou[i]))
     def describe(values):
         a = np.asarray(values)

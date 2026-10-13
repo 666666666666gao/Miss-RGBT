@@ -21,7 +21,7 @@ def task_loss(outputs, boxes, cfg):
         positive_term = score.log() * (1 - score).pow(2) * positive
         negative_term = (1 - score).log() * score.pow(2) * (1 - gt).pow(4) * negative
         positives = positive.sum(-1)
-        focal = -(positive_term.sum(-1) + negative_term.sum(-1)) / positives.clamp_min(1)
+        focal = -(positive_term.sum(-1) + negative_term.sum(-1)) * score.shape[0] / positives.sum().clamp_min(1)
         losses.append(2 * (1 - giou) + 5 * l1 + focal)
     return torch.stack(losses).sum(0)
 

@@ -69,6 +69,7 @@ def main():
               for folder in ['miss_rgbt', 'lib'] for p in sorted(Path(folder).rglob('*.py'))}
     (output / 'run_config.json').write_text(json.dumps(config, indent=2))
     (output / 'source_sha256.json').write_text(json.dumps(source, indent=2))
+    (output / 'source_version.txt').write_text(Path('reports/FORMAL_TRAIN_SOURCE_VERSION.txt').read_text())
     start = time.time()
     updates = 0
     first_update_inputs = []
