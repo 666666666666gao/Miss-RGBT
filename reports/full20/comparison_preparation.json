@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED_REAL_BASELINE_READER_VERIFIED",
+  "script": "analysis/build_full20_comparison.py",
+  "script_sha256": "73009e89a1f2ca679f98389b7ca54ff57efb6822d3c09c2725df883081f80751",
+  "syntax_target": "Python3.7",
+  "syntax_check_exit_code": 0,
+  "real_baseline_metric_groups_verified": 4,
+  "real_baseline_input_files_verified": 4,
+  "final_e3_e4_aggregation_executed": false,
+  "new_method_metrics_available": false,
+  "prepared_utc": "2026-10-13T12:06:43Z",
+  "execution_guide": "docs/FULL20_RESULTS.md"
+}
