@@ -1,0 +1,27 @@
+{
+  "pid": 3623093,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "scripts/run_full_training.py"
+  ],
+  "queued_utc": "2026-10-13T09:06:34.530566Z",
+  "deploy_sha256": {
+    "HANDOFF.md": "468f2d3d7ee8b4388cc8760fb1be99c898094355522726c7400a58625e5bb3e7",
+    "README.md": "95e171af998030fe66c6b2dd7ff7826a88aeb896f558a6931763df30a0590fd6",
+    "refine-logs/EXPERIMENT_PLAN.md": "607876a56aaa8942c2678576e05fe2734127733c62fc6393989f2d9d116c7879",
+    "miss_rgbt/train.py": "699cacbe782b707cc483b9fe3e781e4645898f977f424fbc91c9cf2f453d9b16",
+    "scripts/run_full_training.py": "375d5434a42ecd78a39866927a8e83d2555d4d1940177b68a1994c82ae851f89",
+    "reports/FULL20_SOURCE_VERSION.txt": "a7f0521190948d867a25cd66ecdb45261af2491f3f224da767165663bd9ef1e3",
+    "reports/FORMAL_TRAIN_SOURCE_VERSION.txt": "94327d319c129677bb8206eaa25b640044e0248192014b5471e64ada7a2eaf86",
+    "reports/EXPERIMENT_AUDIT_FOCAL_ADDENDUM.json": "6d714900721b56e0dd438fdc0b02b5c6817c81c3c95c16ae5f20d86a7b9d07a0",
+    "reports/EXPERIMENT_AUDIT_FOCAL_ADDENDUM.md": "25d91f9be5cbc3043c438ed29349b5f3fd27df30e22d7e4dd209a200307d3eb3",
+    "reports/full20/preparation_validation.json": "eeb416722246ee440121e17b000d4bd3fc587a11dbae4414ce9898b8e64fd14e",
+    "configs/e3.json": "c1f940e77501686a08311e95c40a300534735eca3d769f0e2be6fbaa94546260",
+    "configs/e3_full20.json": "d5bb0880ff4c998006335aa953c4d1c55762af8bdb1f1ba583c3f12367907dde",
+    "configs/e3_speed_smoke.json": "7f40b2ccefb4b378076bcd5300bfeb86302a156af4fbb3bce3a14b9a69ab91fd",
+    "configs/e4.json": "6eeeab201583035dd2d02793feaf8fa5ccf645184020d3dec8f046aaca96a604",
+    "configs/e4_full20.json": "68ed2a71da7f9a4c77209dc4d79e34df4f83d6c65c9d33027ce8a155e5c9c621",
+    "configs/e4_speed_smoke.json": "84661bce3568193c785a86a50ec54d727877caca52e9025a37efb22b8537e5c6"
+  },
+  "scope": "queued; not full20 training started"
+}

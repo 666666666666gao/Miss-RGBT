@@ -113,3 +113,15 @@ CPU诊断首跟踪帧的previous状态已修正为真实完整初始化[1,1]，�
 20轮预计每项约28～30小时，两卡并行；之后4组完整/Miss全量评估约4～6小时。首轮尚余约6小时训练和约4～6小时评估，因此本次20轮最终成绩预计2026-10-15上午到下午，以真实速度修正。控制器排队收据与实际启动另记，不能仅凭配置存在宣称训练完成。最终成绩固定用epoch20，不根据Test选轮次。后续只在预计诊断/完成节点收集，必要轮询300秒。
 
 旧16:05只读Windows观察器实际SSH退出255（banner exchange），原始first_checkpoint_intake.json保留；当前已独立SSH成功核验真实运行，旧观察器无活进程，不把观察器通信失败写成训练失败。
+
+## 完整20轮接续实际排队：2026-10-13 17:06:34
+
+`logs/full20_20261013_v1`控制器pid3623093，09:08:32Z实际仍活、状态WAITING_FIRST_CAMPAIGN；当前没有20轮子训练进程，不称已开始20轮。冻结完整训练科学/执行源码4c473fa，训练/配置/脚本部署逐文件SHA一致；源码解析Python3.7与配对预算检查通过，仅属配置与语法检查。初次语法检查多一个右括号，已在部署前修正，错误写入preparation_validation.json。
+
+未来train.py仅增加按config保存指定轮次和选择版本文件；当下5轮进程保持其原58fe581代码。20轮的model.py、objectives.py、采样与optimizer计算没有修改。前述C/M都有真实task监督，E3/E4没有启用reverse_weight，因此不把reverse_fraction非零误称为反向指导有效。
+
+完整E0原始479bbox/479收据及所有曲线与配置已归档回本地，13,708,364字节，SHA256 eff683ac725fad93d5c3de02e0fc5a5dde46a081aae49f551dd707f901081951；本地/服务器一致。Windows.codex_tmp为目录联接，Python实际路径D:\Program Files\UserCache\gb\codex_tmp\miss_rgbt_campaign_20261013\e0_complete_raw_results_20261013.tar.gz，可继续从C:\Users\gb\.codex_tmp\miss_rgbt_campaign_20261013访问。首归档检查误把E0的results目录当bbox目录，assert退出1；修正后479/479及归档SHA核验成功，原失败transport保留。没有因此改模型或重跑NN。
+
+唯一下一节点观察器uv37852/python38240，实际启动17:09:59，计划23:10北京时间（15:10Z）只读收集；本地等待300秒，不在节点前查询NN训练/评估进度。不启动第二个观察器；原第一次2536/3232已退出。
+
+结果索引reports/EXPERIMENT_STATUS.md、METRICS_SUMMARY.csv。所有新E3/E4完整/Miss指标尚待训练与337353帧评估；三个有效贡献和性能目标均未完成，后续须核验补偿提升，再做有选择的M→C完整训练及对应消融。
