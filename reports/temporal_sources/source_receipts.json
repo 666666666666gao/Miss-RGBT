@@ -1,0 +1,159 @@
+{
+  "checked_at_utc": "2026-10-13T10:14:23.756161+00:00",
+  "api_limit": "Unauthenticated GitHub repository API returned 403 rate limit exceeded. Pinned HEAD obtained by git ls-remote; raw reads use that SHA.",
+  "files": [
+    {
+      "repo": "visionml/pytracking",
+      "commit": "7eb9e74bd3d40e29dbcec444902237da13de247b",
+      "path": "pytracking/parameter/dimp/dimp50.py",
+      "url": "https://raw.githubusercontent.com/visionml/pytracking/7eb9e74bd3d40e29dbcec444902237da13de247b/pytracking/parameter/dimp/dimp50.py",
+      "bytes": 2102,
+      "sha256": "b1a4d352e117be2f7868e42f56b5426fe8274c34edce2aed86c4294481568086",
+      "git_blob_sha1": "201f2db310d9278c04857bcf99a074abfcf22912"
+    },
+    {
+      "repo": "visionml/pytracking",
+      "commit": "7eb9e74bd3d40e29dbcec444902237da13de247b",
+      "path": "pytracking/tracker/dimp/dimp.py",
+      "url": "https://raw.githubusercontent.com/visionml/pytracking/7eb9e74bd3d40e29dbcec444902237da13de247b/pytracking/tracker/dimp/dimp.py",
+      "bytes": 41011,
+      "sha256": "564f40ef8fc8f93afde9335aaed9676c3d29b478e6481c4d702f6e324f1c0b88",
+      "git_blob_sha1": "3d52467f3e59bb447c798f9c5d1af890a84a8123"
+    },
+    {
+      "repo": "visionml/pytracking",
+      "commit": "7eb9e74bd3d40e29dbcec444902237da13de247b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/visionml/pytracking/7eb9e74bd3d40e29dbcec444902237da13de247b/README.md",
+      "bytes": 13122,
+      "sha256": "bc6c718e5d0783063ef012c9af8fc3907e87043be59384ecc7956a7e006302b1",
+      "git_blob_sha1": "4bcf0b5a9ffbd3fc63d0b4dab60db852e8096806"
+    },
+    {
+      "repo": "visionml/pytracking",
+      "commit": "7eb9e74bd3d40e29dbcec444902237da13de247b",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/visionml/pytracking/7eb9e74bd3d40e29dbcec444902237da13de247b/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "LICENSE_cctorch",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE_cctorch",
+      "bytes": 1566,
+      "sha256": "687d4f65ffe399358b170e22572564a16689e496f85a79dc5385fccf6bbc9558",
+      "git_blob_sha1": "23da14a65aad4c5bac18061b80ae6040bb7d2c8c"
+    },
+    {
+      "repo": "visionml/pytracking",
+      "commit": "7eb9e74bd3d40e29dbcec444902237da13de247b",
+      "path": "pytracking/features/preprocessing.py",
+      "url": "https://raw.githubusercontent.com/visionml/pytracking/7eb9e74bd3d40e29dbcec444902237da13de247b/pytracking/features/preprocessing.py",
+      "bytes": 5075,
+      "sha256": "20f03d1f6a208fe723f98b577414acda30f5763b26ff5852fd929af64368e303",
+      "git_blob_sha1": "add1d2721558999de1edc448133412f3ebe15165"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/README.md",
+      "bytes": 16249,
+      "sha256": "eea69ee1042fb30933c5ca5019fbf0f6f9366cec5e792109281b5023a4f1589c",
+      "git_blob_sha1": "85a7eb958bced5495ff990c2bcbe7d99662c660f"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/sam2_video_predictor.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/sam2_video_predictor.py",
+      "bytes": 58921,
+      "sha256": "912555920a77f72ded07839efa33fcceecc79f3523abbec783f0be46ee2c55c2",
+      "git_blob_sha1": "5a7e1a01c4d6e89db0453ce982ea8a31b16651c8"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/modeling/sam2_base.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/modeling/sam2_base.py",
+      "bytes": 46983,
+      "sha256": "69a46b44e8625f509791352bd09beaafe589cd7d872721384e63d37f9fdc6e41",
+      "git_blob_sha1": "d9f4e515b0d161942bf2bb64560056b3efbe6dac"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/modeling/sam2_utils.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/modeling/sam2_utils.py",
+      "bytes": 13173,
+      "sha256": "e35bbf13bc2e544a0272cd3f9539af38a752676ac3cd744be31cd8220afee804",
+      "git_blob_sha1": "e16caae3a9a49e451b2d03d1ee60c47f8e9ed23c"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/modeling/sam/mask_decoder.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/modeling/sam/mask_decoder.py",
+      "bytes": 12657,
+      "sha256": "ca3523c58365574faddf1bfb54f374e4b4beba05127185ea2b17d22b916e099a",
+      "git_blob_sha1": "9bebc0366b2703ffcb80a44bfd19cce8339b4fed"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/utils/misc.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/utils/misc.py",
+      "bytes": 13090,
+      "sha256": "01600c01c161cd079d7106fb1d4da845cf91aa31ab2bcecaf8cb151b6d6d20a2",
+      "git_blob_sha1": "b65ee825732ff85137805be650edd4cbe8e6f6d4"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/configs/sam2.1/sam2.1_hiera_l.yaml",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/configs/sam2.1/sam2.1_hiera_l.yaml",
+      "bytes": 3798,
+      "sha256": "1dbd6cb6dfebeaf588c7006ee222c6efbfa9049a7ad472a3cdfb2f5d919e8107",
+      "git_blob_sha1": "23073ea7a95901be656b3c6d1a66ce8736ab7ad3"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/build_sam.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/build_sam.py",
+      "bytes": 6405,
+      "sha256": "856d64d71e44407401297b551884fb4cd1aba8082de0ff5fc60fac3dd42f094d",
+      "git_blob_sha1": "3a3bef1e566d86c3ba0fd75f425530bc6505e9bf"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "sam2/modeling/memory_encoder.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/sam2/modeling/memory_encoder.py",
+      "bytes": 5657,
+      "sha256": "73f7089ae5fdacdfcaaf3deca1ca6d9f84d89e7deb9cf97589622a9ef17ba42f",
+      "git_blob_sha1": "f60202dfaba87232c3870fb2101b5322a119d985"
+    },
+    {
+      "repo": "facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "path": "training/loss_fns.py",
+      "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/training/loss_fns.py",
+      "bytes": 12378,
+      "sha256": "457d7bd5c90fbab7c1a9012abc01e7f5c6583289bf51e366dea0a22f04e6ef38",
+      "git_blob_sha1": "d281b1a9c059771ee0ae3a4d4426f1e445178110"
+    }
+  ]
+}

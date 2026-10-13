@@ -139,3 +139,14 @@ research技能要求的独立background研究由gpt-6-astra/max完成，仅源�
 本项目RGB/TIR主干共享，R只在mask位置激活；C完整输入时R零门控。因此未来M→C梯度接收的是共享baseline，不是修复器；不能冻结全部baseline后期待该项有效。E5启动前需真实训练样本可靠性触发、独立梯度/实际参数更新和严格重载，再做完整训练。E3/E4当前reverse_weight0，三个贡献仍UNPROVEN。具体三项消融、参数/训练量控制和信息限制已写docs/MODULE_EVIDENCE_PROTOCOL.md，不按Test诊断调当前frozen配置。
 
 唯一23:10节点观察器python38240/uv37852已再次CIM确认仍活；节点前无remote NN进度查询、无重复observer/训练启动。等待真实指标后再判断当前R能否缓解上述历史损伤。
+
+## 2026-10-13 时序源码与反向原生探针准备
+上一 goal turn 的实际进展为 da05cfb 的15份静态诊断/研究记录完成 GitHub、Desktop 和服务器逐文件 SHA 同步。本轮未查询远程 NN/GPU，不改冻结科学文件，已通过本地 CIM 再次确认唯一23:10观察器同 PID/出生时间仍活；当前远程训练事实仍引用17:08实况，不能将静态同步写成训练健康的新检查。
+
+research 技能显式要求的后台任务完成两套时序源码核查：DiMP/pytracking 固定7eb9e74bd3d40e29dbcec444902237da13de247b，GPLv3；SAM2固定2b90b9f5ceec907a1c18123530e92e794ad901a4，Apache2。DiMP 默认 uncertain 仍更新位置/尺度，只停分类器记忆学习；not_found 才停定位提交，没有自动扩域。SAM2 presence<=0抑制mask并替换pointer，但空间memory仍编码保存，默认按时序读取；全帧1024编码依赖目标conditioning，不能视为无条件身份重定位。17份来源文件的本地SHA256/blob SHA1和29个行号链接已复查，未验证远端tree、未运行外部代码。笔记 docs/TEMPORAL_STATE_SOURCE_FINDINGS_20261013.md，收据 reports/temporal_sources/。
+
+当前 Hann 加权最大响应并非经过presence标签校准的目标存在概率。模板写入、位置/尺度提交和扩域观察是不同干预，须在train/val分别固定/消融并计推理成本，不能把拒写记忆当成裁剪外恢复。Test失败分析已参与研究问题的形成，公开Test不能再被说成完全未见的开发外证据；冻结当前实验不变，未来门限/预算仅由train/val确定。
+
+已准备 analysis/validate_reverse_feedback.py；仅通过Python3.7 AST/compile检查，尚未GPU/真实数据执行，reports/reverse_gradient_probe/preparation.json明确PREPARED_NOT_EXECUTED。第一次uv命令漏写python，启动阶段失败，改正后语法检查exit0；一次文档补丁上下文不匹配，在读取实际行文本后成功应用，没有改变科学文件。探针使用既有训练后E4 checkpoint、原生mask与最多八个固定seed训练batch；真实可靠门没有触发时只记未触发。触发后测M目标detach、C响应梯度、共享baseline反向梯度，对照同一已保存AdamW状态的零/0.02反向项单microbatch更新，并保存/严格重载。单microbatch机械检查不代替有效batch8完整训练，不加入当前队列，只能在冻结campaign完成且GPU空闲后运行。
+
+反向项在C全模态路径不会直接给R梯度；但全局梯度裁剪可能因baseline梯度改变而间接改变R更新，所以探针分别报告直接梯度与实际更新差异。当前E3/E4继续reverse_weight=0，E5未实施正式训练，三个有效模块与最终目标仍未证明。full20预计10月15日得分、23:10唯一节点采集计划不变。

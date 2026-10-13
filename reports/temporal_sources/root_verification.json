@@ -1,0 +1,8 @@
+{
+  "scope": "root verification of local pinned-source receipts and cited line ranges",
+  "local_files_verified": 17,
+  "line_links_verified": 29,
+  "upstream_git_tree_verified": false,
+  "neural_execution": false,
+  "note_sha256": "8161fadb7f1e5dc65b108951e85cd1643d195aed646480722c3927e4a88a59a7"
+}

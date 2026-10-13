@@ -19,3 +19,5 @@
 
 原始 native 的反向可靠比例为0，不能据该单步证明反向反馈实际发挥作用。E5尚未训练。
 
+
+2026-10-13 时序源码核查完成（DiMP/SAM2固定提交，仅静态，不是新效果）；反向梯度/AdamW/严格重载探针准备完成，仅Python3.7语法检查，状态PREPARED_NOT_EXECUTED。当前冻结训练及队列未改变。下一次远程指标采集仍为23:10 BJT唯一观察器；当前NN事实引用17:08。来源笔记见docs/TEMPORAL_STATE_SOURCE_FINDINGS_20261013.md；探针见analysis/validate_reverse_feedback.py，执行约束和证据范围见docs/MODULE_EVIDENCE_PROTOCOL.md。
