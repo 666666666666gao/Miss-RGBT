@@ -1,0 +1,21 @@
+{
+  "owner": {
+    "observer_python_pid": 46272,
+    "observer_parent_pid": 54936,
+    "deadline_utc": "2026-10-15T03:00:00+00:00",
+    "started_utc": "2026-10-14T09:02:52.723759+00:00",
+    "scope": "single read-only intake near estimated final full20 evaluation completion; no earlier remote query"
+  },
+  "native_session": 90047,
+  "prior_midpoint_observer_exit_code": 0,
+  "last_nn_intake": "reports/full20/runtime_20261014_1700.json",
+  "output": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/full20_final_intake.json",
+  "source_sha256": "1df4a7fc52f04d28ae59875dab44839b1ab0587106156ec3ff393849067cd06d",
+  "launch_verified_from_cim": {
+    "python_pid": 46272,
+    "parent_uv_pid": 54936,
+    "python_birth_bjt": "2026-10-14T17:02:52.417163+08:00",
+    "uv_birth_bjt": "2026-10-14T17:02:52.036858+08:00"
+  },
+  "policy": "One intake near estimated final evaluation completion at Oct15 11:00 BJT; no earlier NN query."
+}
