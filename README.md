@@ -6,6 +6,8 @@
 
 14:10实际核对：[E0-availability零训练全量对照](reports/e0_availability_20261015_v1/RESULTS.md)已完成，完整指标等于E0、Miss指标下降；E0-FT/GPU2和E2/GPU3已启动，各20轮/50000更新，固定末轮评估。[资源采样](profile_output/attribution_20261015_1410/README.md)支持每卡一项训练；下一必要诊断为10月16日04:22北京时间，按实际吞吐估算。详见[交接](HANDOFF.md)和[执行协议](docs/ATTRIBUTION_CONTROLS_20261015.md)。BN控制在独立分支准备，当前科学源码不变；A/B/C仍待完整验证。
 
+模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
+
 | 原始E0 epoch20 实测 | PR / MPR | NPR | SR / MSR |
 |---|---:|---:|---:|
 | LasHeR-Miss，245序列 | 63.472507 | 58.581851 | 50.583149 |

@@ -26,6 +26,7 @@
 | A任务效用补偿 | ISOLATED_IMPLEMENTED，CPU原生检查exit0 | 原E0，新增596357参数；一个真实元组两次更新，39BN/主任务RNG/不可见输入/重载检查 | reports/task_utility_cpu_20261015_v1；执行源码a229afc、分支f6cead7；不是GPU或正式20轮成绩 |
 | E0-availability | DONE，两项全评估exit0 | 0更新、完整/Miss共958序列运行/674706帧 | reports/e0_availability_20261015_v1；完整相等、Miss下降；审计WARN |
 | E0-FT/E2-full20 | RUNNING，14:10证据 | 各20轮/50000更新；截面2825/1529更新 | reports/attribution_runtime_20261015_1410.json；固定末轮指标待产出 |
+| 模板U0/U1/U2 | ISOLATED_IMPLEMENTED，未NN/正式运行 | Python3.12/3.7各9项stdlib stub控制流检查通过 | reports/template_controls_preparation_20261015；23c6b46，仅准备，不改当前队列 |
 | E5 选择性反馈 | TODO | E4有效后再做 | 未验证 |
 | 三个有效论文模块 | UNPROVEN | 需要主结果和消融 | 不能据 native PASS 宣称成立 |
 
