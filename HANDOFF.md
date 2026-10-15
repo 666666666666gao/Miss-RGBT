@@ -14,7 +14,15 @@ v1控制器在任何NN启动前触发磁盘准入失败，home实际只剩922402
 
 最终20轮独立审计状态：WARN，same-family/provisional。审计报告及输入SHA、复算范围见reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md/json。后续本交接的变化是实际运行与用户策略更新，不扩大该次审计的输入字节范围；科学结果、冻结源码、原始轨迹与训练记录不变。
 
+## 评分公开来源与开发划分更正：2026-10-15 15:15
+
+静态核查已完成，见docs/SCORING_PROVENANCE_FINDINGS_20261015.md。本地持有的1967个评分包文件逐字节匹配公开PyPI rgbt1.0.1 wheel，评测后安装包清单3556项路径/哈希也全部匹配；新增公开发行字节不扩大原审计当时实际持有的安装副本范围，不追认为启动前封存。评分代码可追溯至opacity-black/RGBT_toolkit，不能据此称数据集作者官方工具箱，作者网盘工具箱压缩包仍未取得；与SCDT实际评分实现严格等价尚未认证。已有指标、活动评分源码/环境及训练均未改动。
+
+作者Protocol2固定名单为train979/test245；本地静态集合比较确认当前train882与val97合起来恰好等于作者train979，当前Test245集合与作者相同。882/97称项目沿用的开发划分；现行refine-logs/EXPERIMENT_PLAN.md已去掉“官方882/97”表述，历史冻结快照保留。用户授权的数据集专用内部参数配置继续有效，原E0历史训练暴露及RGBT234独立开发协议边界见下节。下一NN观察仍为10月16日04:22的原61699，本轮不提前查询或改调度。
+
 ## 2026-10-15 本地离线定位复核与开发数据准备
+
+15:06新增原E0保存元数据的只读CPU核验，原权重SHA仍为d20c8641。settings保存cfg_file路径、batchsize8和fix_bn=true，stats有train/val；未保存完整cfg或序列名单/哈希，net_info和constructor为None。因此当前train882与val97名称独立已确认，但val97未被原E0训练使用的历史独立性尚未认证。详见reports/development_data_20261015/README.md和e0_saved_training_metadata.json。没有NN前向、GPU或活动训练进度查询；数据集专用内部参数策略不变，尚未选参。
 
 此段为12:30离线工作记录，当时不运行NN、不读实时训练日志或GPU状态，仅掌握11:40启动收据。后续14:10实际进度及新观察节点见顶节。两份CPU分析及完整表格见analysis/diagnose_full20_localization.py、analysis/decompose_rgbt234_sequence_weights.py与reports/full20_localization_diagnostics_20261015_v2/README.md；独立复核见同目录DIAGNOSTIC_AUDIT.md/json。初始审计WARN及原证据保留；字段含义限定已由同一审计员窄范围复核PASS（仅该项），表格数值与科学输出未变，见审计追加记录。same-family/provisional不变。
 

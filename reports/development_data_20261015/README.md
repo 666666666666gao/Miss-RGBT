@@ -4,8 +4,16 @@
 
 train882、val97、Test245的序列名无交集。此项不是图像内容去重或当年训练运行期划分见证；没有读取图片字节，也没有检查传感器时间戳。当前源数据在`/data2/wangwj/dataset/LasHeR-0428/trainingset`，本次没有修改数据、训练划分或正在运行的实验。
 
+与作者仓库固定提交`c7ca5dbc96eed90b2b0b7dccc5014d1e611b8399`逐名单核对：当前train882与val97的并集恰好等于作者[Protocol2 train979](https://github.com/BUGPLEASEOUT/LasHeR/blob/c7ca5dbc96eed90b2b0b7dccc5014d1e611b8399/List_for_Protocol2/trainingsetList.txt)的名称集合；当前Test245与[作者test245](https://github.com/BUGPLEASEOUT/LasHeR/blob/c7ca5dbc96eed90b2b0b7dccc5014d1e611b8399/List_for_Protocol2/testingsetList.txt)集合相同。作者两个文件SHA256分别为`ac02d9c820b445b3d7532ed62470ac8f01c09571ff0fb2f1643bdc4fe1f91dcb`、`16eef326975aacccb94a7e133e8ef0aceb734ece4264caf6f82bc94442c20e46`。882/97是项目沿用的训练/开发划分，不称作者单列的官方划分；当前实验名单未改。历史计划快照中的“官方train882/val97”措辞保留原件，现行计划已更正。
+
 标注中有534行至少一个坐标非正，其中260行宽或高非正。不能把坐标非正统一解释为目标消失，也不能悄悄删帧。正式开发评估前须固定无效标注的计分与状态标签含义，并披露原评分包的处理方式；两种输入条件及所有候选使用相同规则。
 
 已保存97份原始GT和两份原始划分文件，99个成员逐项SHA256核验。归档251010字节，SHA256为`f1966b4b874e7c04e5c005a604ba119bdf8f4d1c2b568b4430db1612dae0df56`，在服务器`/data2/gaob/Miss-RGBT/development/val97_annotation_snapshot_20261015_v1.tar.gz`及本机私有暂存中保留。Git只发布帧数、文件名范围及哈希清单，不发布标注归档。
 
 本次未生成缺失mask、运行验证模型、选择门限/宽度/层数，也未建立RGBT234独立开发协议。后续模块内部配置选择仍需实际验证；数据准备完成不能写成验证实验完成。
+
+## 原始E0保存的训练元数据
+
+15:06北京时间实际只读CPU加载原始E0，流式核验SHA256仍为`d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8`，内部epoch20、net_type=CADTrack。保存的settings含配置文件路径`/data2/wangwj/CADTrack-main/experiments/cadtrack/cadtrack.yaml`、batchsize=8、fix_bn=true；stats有train和val两组。完整筛选记录见[e0_saved_training_metadata.json](e0_saved_training_metadata.json)。没有执行神经网络前向、GPU查询或训练进度读取。
+
+该检查点没有保存完整cfg、训练/验证序列名单或对应哈希，net_info和constructor均为None。保存一个配置路径及train/val统计，不足以证明当年实际使用了哪一份划分，也不能证明原始预训练文件的来源。当前源码YAML中的LasHeR_train/LasHeR_val同样只是已封存源码内容，不能追溯替代当年的运行见证。因此，目前仅确认val97与本轮适配train882的序列名不重叠，尚未独立认证它未被原始E0训练使用；后续报告需保留此边界，不把选参数据的独立性写得超出证据。

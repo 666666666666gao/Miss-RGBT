@@ -34,7 +34,7 @@ LasHeR-Miss NPR=58.581851，作为次要指标。完整 LasHeR 和 RGBT234 另�
 
 ## 数据与训练冻结项
 
-- LasHeR 官方 train882 / val97 开发划分；test245 不进入训练、超参数选择或可靠性学习。
+- LasHeR 沿用本项目 train882 / val97 开发划分；二者名称集合的并集等于作者 Protocol2 的 train979，test245 与作者测试名单集合相同。882/97不是作者单列的官方划分，原E0历史训练暴露边界见[开发数据记录](../reports/development_data_20261015/README.md)。test245 不进入训练、超参数选择或可靠性学习。
 - 从同一 epoch20 严格加载；seed2027 首轮固定，不挑选失败种子。
 - 保留 baseline 图像处理、GIoU×2、L1×5、focal×1、AdamW；新增损失先从小权重开始，具体值随运行配置归档。
 - 先真实 GPU 单步、梯度有限、优化器更新、保存严格重载、无教师推理、关闭新增机制的 baseline 等价检查，再决定正式预算。

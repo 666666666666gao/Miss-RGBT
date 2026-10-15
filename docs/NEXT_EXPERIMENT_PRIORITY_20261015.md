@@ -23,7 +23,7 @@ train882/val97确定门限、K和搜索预算；Test失败分析已参与方向�
 
 ## Baseline来源更正
 
-用户确认E0是去掉CADTrack论文三个模块后训练出的baseline；用户说明DropMoE是CADTrack主干来源，原DropMoE文件暂未提供。本轮直接加载CADTrack_ep0020.pth.tar（SHA d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8），没有另加载DropMoE文件。当前YAML仍有OSTrack路径，但本轮build_cadtrack(training=False)后严格加载E0状态，不用该字段另载预训练；残留字段不能证明baseline最初训练的预训练文件来源。三个模块具体名称后续按原论文核对，不凭未执行分支名虚造。
+用户确认E0是去掉CADTrack论文三个模块后训练出的baseline；保留的[作者README](BASELINE_ORIGINAL_README.md)将三个模块列为Mamba-based Feature Interaction（MFI）、Contextual Aggregation Module（CAM）和Deformable Alignment Module（DAM）。用户说明DropMoE是CADTrack主干来源，原DropMoE文件暂未提供。本轮直接加载CADTrack_ep0020.pth.tar（SHA d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8），没有另加载DropMoE文件。当前YAML仍有OSTrack路径，但本轮build_cadtrack(training=False)后严格加载E0状态，不用该字段另载预训练；残留字段不能证明baseline最初训练的预训练文件来源。
 
 ## 用户授权的数据集专用模块配置
 
@@ -34,3 +34,5 @@ train882/val97确定门限、K和搜索预算；Test失败分析已参与方向�
 当前已确认LasHeR val97。RGBT234尚未指定独立开发/验证集；正式对其单独选参之前，先核实可用开发数据和协议。公开Test已有失败分析需披露，不能把同一Test上的最优参数选择写成独立验证。E3的LasHeR最好与E4的RGBT234最好仍不是一套模型。
 
 2026-10-15 12:14已完成[LasHeR val97只读数据清点](../reports/development_data_20261015/README.md)：97序列、54646帧，split序列名无交集；未生成开发mask或运行模型，不能记作验证完成。534行非正坐标与260行非正宽/高需在正式开发评分及状态监督协议中明确处理。当前[冻结末轮离线复核](../reports/full20_localization_diagnostics_20261015_v2/README.md)使用的是已参与失效分析的Test，只用于问题定位，不能据此选择每数据集内部参数。
+
+15:06实际CPU读取原E0的保存元数据：只有cfg_file路径和train/val统计，没有完整cfg、序列名单及其哈希，不能据此认证val97未被原E0训练使用。当前适配的train882/val97名称独立已经核对，原始E0的历史训练划分独立性仍需分开说明，见同一开发数据记录。未改变开发划分、活动实验或选参规则。

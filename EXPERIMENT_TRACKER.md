@@ -19,6 +19,8 @@
 | 归因存储准入 | DONE | v1在NN前失败；只迁移两份本轮短检查权重，SHA核验 | reports/attribution_storage_20261015.json；新正式权重写data2，旧权重未动 |
 | 冻结末轮定位/权重复核 | DONE，离线CPU | 63框质量组、63共同命中组、54crop组；不增加NN结果 | reports/full20_localization_diagnostics_20261015_v2；原主指标不变、初始审计WARN及后续限定保留 |
 | LasHeR val97静态准备 | DONE，12:14只读快照 | 97序列/54646帧，99份split/GT哈希核验 | reports/development_data_20261015；未运行验证、生成mask或完成选参 |
+| E0保存训练元数据 | DONE，15:06只读CPU加载 | epoch20及原SHA；保存配置路径、train/val统计，无完整cfg或split名单 | reports/development_data_20261015/e0_saved_training_metadata.json；不认证原E0的历史开发集独立性 |
+| 评分器公开来源核查 | DONE，仅静态文本/发行字节 | 本地1967文件及评测后3556项清单对应rgbt1.0.1发行包 | docs/SCORING_PROVENANCE_FINDINGS_20261015.md；不认证作者工具箱/SCDT严格等价，不改原指标 |
 | BN冻结CPU机械检查 | DONE，17.408秒退出0 | E3/E4真实模型13个BN子模块；allbn 39缓冲不变、affine更新 | 独立准备提交71f46eb；不是GPU任务前向或完整训练 |
 | E3/E4-allbn-full20 | PREPARED，未启动 | 配置/预检/队列在独立分支；须先完成阶段1 | reports/bn_controls_preparation_20261015.json；当前活动科学源码未改 |
 | E0-availability | DONE，两项全评估exit0 | 0更新、完整/Miss共958序列运行/674706帧 | reports/e0_availability_20261015_v1；完整相等、Miss下降；审计WARN |
