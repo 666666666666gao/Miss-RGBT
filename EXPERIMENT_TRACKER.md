@@ -23,6 +23,7 @@
 | 评分器公开来源核查 | DONE，仅静态文本/发行字节 | 本地1967文件及评测后3556项清单对应rgbt1.0.1发行包 | docs/SCORING_PROVENANCE_FINDINGS_20261015.md；不认证作者工具箱/SCDT严格等价，不改原指标 |
 | BN冻结CPU机械检查 | DONE，17.408秒退出0 | E3/E4真实模型13个BN子模块；allbn 39缓冲不变、affine更新 | 独立准备提交71f46eb；不是GPU任务前向或完整训练 |
 | E3/E4-allbn-full20 | PREPARED，未启动 | 配置/预检/队列在独立分支；须先完成阶段1 | reports/bn_controls_preparation_20261015.json；当前活动科学源码未改 |
+| A任务效用补偿 | ISOLATED_IMPLEMENTED，CPU原生检查exit0 | 原E0，新增596357参数；一个真实元组两次更新，39BN/主任务RNG/不可见输入/重载检查 | reports/task_utility_cpu_20261015_v1；执行源码a229afc、分支f6cead7；不是GPU或正式20轮成绩 |
 | E0-availability | DONE，两项全评估exit0 | 0更新、完整/Miss共958序列运行/674706帧 | reports/e0_availability_20261015_v1；完整相等、Miss下降；审计WARN |
 | E0-FT/E2-full20 | RUNNING，14:10证据 | 各20轮/50000更新；截面2825/1529更新 | reports/attribution_runtime_20261015_1410.json；固定末轮指标待产出 |
 | E5 选择性反馈 | TODO | E4有效后再做 | 未验证 |

@@ -30,3 +30,5 @@ cat logs/attribution_20261015_v2/status.json
 [研究计划](refine-logs/EXPERIMENT_PLAN.md)和[近邻来源](docs/RELATED_WORK.md)说明对照及信息限制。保留原[baseline README](docs/BASELINE_ORIGINAL_README.md)。新代码未复制近邻论文实现；已保留官方 MIT 许可证，来源见 [代码说明](docs/THIRD_PARTY.md)。
 
 冻结末轮的[定位、搜索区域及序列权重复核](reports/full20_localization_diagnostics_20261015_v2/README.md)已完成离线计算和独立数值复算；这不增加新的主指标或模块有效性结论。[LasHeR val97清点](reports/development_data_20261015/README.md)已完成，后续模块内部参数须在独立开发协议下选择；同数据集完整/Miss固定同一配置和权重。
+
+[模块A隔离准备](https://github.com/666666666666gao/Miss-RGBT/tree/f6cead72d19a2544236cbcba2a7a86d2f15ce80f)已实现任务效用区域选择与补偿/细化，[真实数据CPU检查](reports/task_utility_cpu_20261015_v1/README.md)通过两次AdamW更新及状态/重载检查。当前main的科学源码保持冻结，A尚无GPU或完整20轮结果；B/C及三个有效贡献仍待验证。

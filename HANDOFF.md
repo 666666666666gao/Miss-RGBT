@@ -20,6 +20,16 @@ v1控制器在任何NN启动前触发磁盘准入失败，home实际只剩922402
 
 作者Protocol2固定名单为train979/test245；本地静态集合比较确认当前train882与val97合起来恰好等于作者train979，当前Test245集合与作者相同。882/97称项目沿用的开发划分；现行refine-logs/EXPERIMENT_PLAN.md已去掉“官方882/97”表述，历史冻结快照保留。用户授权的数据集专用内部参数配置继续有效，原E0历史训练暴露及RGBT234独立开发协议边界见下节。下一NN观察仍为10月16日04:22的原61699，本轮不提前查询或改调度。
 
+## 模块A隔离实现与CPU实证：2026-10-15 22:39—22:41
+
+正式归因/BN次序不改。独立分支prepare/task-utility-20261015，当前f6cead72d19a2544236cbcba2a7a86d2f15ce80f，已推送源码、四种选择策略的完整预算配置及真实CPU报告；未合入/部署活动main。实现TaskUtilityRepair：第6块后、16个区域中默认选4区64个搜索token，缺失补偿和已有观测的系数受限细化；只用本视图及初始模板中心/背景线索，残差零初始化。selector以单区域修正开/关定位损失差为训练目标，不读取C分支激活，不声称真实特征恢复。all/random/similarity/utility参数量相同，all的修正计算更多；数据集内部宽度/深度/K仍需开发验证，默认值未据Test选取。
+
+实际CPU执行源码a229afc898ef98c2c63afc7c0b30ac1fc0c75e7c，106文件部署逐SHA核验，独立目录/data2/gaob/Miss-RGBT/prepared/task_utility_20261015_v1。PyTorch1.12.1+cu113、Torch两线程、OpenCV无工作线程、loader0，八项单元检查和约100.678秒native均exit0；原始E0 SHA仍d20c8641。一个真实元组（两模板/三搜索、microbatch1）重复两次AdamW更新，新增596357参数，总103734794。delta与selector梯度有限非零且参数改变；39个BN运行缓冲不变。初始化完整baseline、探针/无探针主输出及RNG、更新后不可见RGB扰动、保存到新实例严格重载的四输出误差均0；完整输入细化路径已有非零输出影响。第二次单样本探针相对效用6.1547937e-5只是微小局部干预值，不是任务性能提升。
+
+实际源/日志摘要与范围见reports/task_utility_cpu_20261015_v1；检查权重epoch0/updates2、1243903793字节，SHA46040b331136c1b2f128cadcd0521928655cff8036619dc13135a94d4d35a43f，仅留隔离data2，不混作epoch20正式模型。原native66843已真实exit0并消费，不再等待或重启它。当前规范后续只补充全局裁剪耦合说明；NN源仍与实际a229afc完全相同，旧执行包保留。直接辅助梯度分离不保证AdamW步幅隔离或完整精度不降。
+
+正式main训练入口/有效batch8、GPU原生检查、20轮/50000更新和四套全量指标尚未执行，普通投影容量对照及A/B/C性能仍待完成。main的miss_rgbt/lib/scripts/configs/experiments仍与dfc989e一致；当前GPU队列、环境及评分未改，没有提前读其进度。唯一正式观察器仍为native61699/python65768，10月16日04:22:40.141988北京时间才收取；期间新增CPU检查已结束，不再存在额外NN预检任务。
+
 ## 2026-10-15 本地离线定位复核与开发数据准备
 
 15:06新增原E0保存元数据的只读CPU核验，原权重SHA仍为d20c8641。settings保存cfg_file路径、batchsize8和fix_bn=true，stats有train/val；未保存完整cfg或序列名单/哈希，net_info和constructor为None。因此当前train882与val97名称独立已确认，但val97未被原E0训练使用的历史独立性尚未认证。详见reports/development_data_20261015/README.md和e0_saved_training_metadata.json。没有NN前向、GPU或活动训练进度查询；数据集专用内部参数策略不变，尚未选参。
