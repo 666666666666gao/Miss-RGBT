@@ -1,0 +1,41 @@
+{
+  "status": "PREPARED_NOT_FORMALLY_LAUNCHED",
+  "commit": "71f46ebeedf1e80c992f34ce811795f8cd56ac7f",
+  "branch": "prepare/bn-freeze-20261015",
+  "manifest": {
+    "miss_rgbt/train.py": "64cb819db8e634a36a7ec8a20059c9124f281e3c7c9fb0a0091f44cc45a7f089",
+    "configs/e3_allbn_full20.json": "0c7f5452a43a4a062af575eed6ccdef8f7faeb84744551e8149e25ad19895785",
+    "configs/e4_allbn_full20.json": "db2ec690c46191030d38026b1375884ae93a4d5e898bf5fbdffd2d310e3191b0",
+    "scripts/validate_bn_freeze.py": "62ed54cb94101673f239eb9c72b5ed47dfcaf08c0cb2f404708ada06cbdbc526",
+    "scripts/validate_bn_training.py": "999547f0dcc7a81db20904c66ebebe9a032df9f25ffa23ad9c2b2f523045a32d",
+    "scripts/run_bn_controls.py": "8fc50cccc606a9e1334373536f8a83700520a73df96e47b1b6208bab7fbfb456",
+    "docs/BN_FREEZE_CONTROLS_PREPARED_20261015.md": "6b81406a86e0120771d976f8b1d72233a9b7326e722de5e99aedca6a4c0307eb",
+    "reports/cpu_bn_witness_20261015_v1/completed.json": "d974b14c5831d640aa136d2ba1be172107486631ade4a32381bfbcb2ae4192a3"
+  },
+  "cpu_witness_seconds": 17.40833592414856,
+  "scope": "CPU BN-module mechanics passed; no full-task GPU preflight, training or performance result.",
+  "recorded_utc": "2026-10-15T04:42:56.241839+00:00",
+  "prepared_branch_url": "https://github.com/666666666666gao/Miss-RGBT/tree/71f46ebeedf1e80c992f34ce811795f8cd56ac7f",
+  "actual_cpu_witness": {
+    "remote_root": "/data2/gaob/Miss-RGBT/prepared/bn_freeze_20261015_v1",
+    "original_checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+    "env_spec_sha256": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+    "seconds": 17.40833592414856,
+    "bn_modules_per_model": 13,
+    "all_frozen_buffers_per_model": 39,
+    "head_only_fusion_counter_increment": 1,
+    "all_bn_counter_increment": 0,
+    "affine_gradients_and_updates_verified": true,
+    "non_bn_training_modes_preserved": true,
+    "source_archive_sha256": "0d148b9529e5431559d9767ecbe07847b1b647cffbf6bad2de9d6ce682efbd9c",
+    "report_path": "reports/cpu_bn_witness_20261015_v1/completed.json"
+  },
+  "pending": [
+    "Phase1 full training/evaluations and attribution",
+    "Record actual phase2 scientific commit/deploy after phase1 ends",
+    "Two-update real task GPU preflight on each assigned card",
+    "E3/E4 independent full20 training and fixed final-checkpoint complete/Miss evaluations",
+    "Compare complete and missing metrics; no BN-efficacy claim is established"
+  ],
+  "active_project_science": "Unchanged vs dfc989e; preparation branch not merged or deployed into the active project."
+}

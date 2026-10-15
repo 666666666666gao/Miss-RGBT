@@ -19,6 +19,8 @@
 | 归因存储准入 | DONE | v1在NN前失败；只迁移两份本轮短检查权重，SHA核验 | reports/attribution_storage_20261015.json；新正式权重写data2，旧权重未动 |
 | 冻结末轮定位/权重复核 | DONE，离线CPU | 63框质量组、63共同命中组、54crop组；不增加NN结果 | reports/full20_localization_diagnostics_20261015_v2；原主指标不变、初始审计WARN及后续限定保留 |
 | LasHeR val97静态准备 | DONE，12:14只读快照 | 97序列/54646帧，99份split/GT哈希核验 | reports/development_data_20261015；未运行验证、生成mask或完成选参 |
+| BN冻结CPU机械检查 | DONE，17.408秒退出0 | E3/E4真实模型13个BN子模块；allbn 39缓冲不变、affine更新 | 独立准备提交71f46eb；不是GPU任务前向或完整训练 |
+| E3/E4-allbn-full20 | PREPARED，未启动 | 配置/预检/队列在独立分支；须先完成阶段1 | reports/bn_controls_preparation_20261015.json；当前活动科学源码未改 |
 | E0-availability | RUNNING，11:40:32启动收据 | 先完整，再Miss，各479序列/337353帧 | 控制器3796810，初始评估3796928；不是已完成结果 |
 | E0-FT/E2-full20 | QUEUED | 各20轮/50000更新，等待E0-availability两条件结束 | 科学版本dfc989e；GPU2/3各一训练，固定epoch20全指标 |
 | E5 选择性反馈 | TODO | E4有效后再做 | 未验证 |
