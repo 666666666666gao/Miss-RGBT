@@ -1,0 +1,1960 @@
+{
+  "dataset": "LasHeR validation97",
+  "data_root": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+  "sequences": 97,
+  "visible_frames": 54646,
+  "thermal_frames": 54646,
+  "annotation_rows": 54646,
+  "sequence_details": [
+    {
+      "name": "boywalkinginsnow3",
+      "visible_frames": 565,
+      "thermal_frames": 565,
+      "annotation_rows": 565,
+      "framecounts_match": true,
+      "gt_sha256": "93e7451d33ff9d5f23f32eadfa0dacffb64cd54dca1300a120351d69bf3ad292",
+      "gt_member": "annotations/boywalkinginsnow3/init.txt",
+      "nonpositive_coordinate_rows": 12,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v564.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i564.jpg"
+      ]
+    },
+    {
+      "name": "leftdrillmasterstanding",
+      "visible_frames": 2192,
+      "thermal_frames": 2192,
+      "annotation_rows": 2192,
+      "framecounts_match": true,
+      "gt_sha256": "8403dcb22b002d659c4c386c85363d4582433a92efa124eac17cf447a93e2534",
+      "gt_member": "annotations/leftdrillmasterstanding/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v2191.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i2191.jpg"
+      ]
+    },
+    {
+      "name": "leftgirlunderthelamp",
+      "visible_frames": 258,
+      "thermal_frames": 258,
+      "annotation_rows": 258,
+      "framecounts_match": true,
+      "gt_sha256": "98859218d448621fbb3c7502be923b6735074f7d692b01e44b103b6efd19a602",
+      "gt_member": "annotations/leftgirlunderthelamp/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v257.jpg"
+      ],
+      "thermal_first_last": [
+        "v000.jpg",
+        "v257.jpg"
+      ]
+    },
+    {
+      "name": "girlridesbike",
+      "visible_frames": 175,
+      "thermal_frames": 175,
+      "annotation_rows": 175,
+      "framecounts_match": true,
+      "gt_sha256": "ad7129738ab02f550ca5371d2832c8b89f166475c162401120f34e4191103efd",
+      "gt_member": "annotations/girlridesbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i174.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i174.jpg"
+      ]
+    },
+    {
+      "name": "midboyplayingphone",
+      "visible_frames": 329,
+      "thermal_frames": 329,
+      "annotation_rows": 329,
+      "framecounts_match": true,
+      "gt_sha256": "f3411a5d6cb9d3711d14d3df4b84b1cb2286853ca60e27f17de631dc6f22ec9f",
+      "gt_member": "annotations/midboyplayingphone/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 1,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v328.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i328.jpg"
+      ]
+    },
+    {
+      "name": "boywithumbrella",
+      "visible_frames": 909,
+      "thermal_frames": 909,
+      "annotation_rows": 909,
+      "framecounts_match": true,
+      "gt_sha256": "7457feff67aea706ac455b361d9e0485575195fa5ca6544f41bb8af6e4c7eb42",
+      "gt_member": "annotations/boywithumbrella/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i908.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i908.jpg"
+      ]
+    },
+    {
+      "name": "manrun",
+      "visible_frames": 61,
+      "thermal_frames": 61,
+      "annotation_rows": 61,
+      "framecounts_match": true,
+      "gt_sha256": "01695de87b1fd0aad2b9d8be5687ca624ca25678c67266c4b717a909047f150f",
+      "gt_member": "annotations/manrun/init.txt",
+      "nonpositive_coordinate_rows": 2,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v60.jpg"
+      ],
+      "thermal_first_last": [
+        "i00.jpg",
+        "i60.jpg"
+      ]
+    },
+    {
+      "name": "ab_pingpongball",
+      "visible_frames": 113,
+      "thermal_frames": 113,
+      "annotation_rows": 113,
+      "framecounts_match": true,
+      "gt_sha256": "ddf075de5b5fb22256a179c7d8d2a397983b1713a16f19db86554ff85aa5674b",
+      "gt_member": "annotations/ab_pingpongball/init.txt",
+      "nonpositive_coordinate_rows": 26,
+      "nonpositive_size_rows": 25,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v112.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i112.jpg"
+      ]
+    },
+    {
+      "name": "whitecarturnl",
+      "visible_frames": 69,
+      "thermal_frames": 69,
+      "annotation_rows": 69,
+      "framecounts_match": true,
+      "gt_sha256": "1120f0c8a824a4a87fae12c5c98aec64eb0df79405429310efbaa02597d31e41",
+      "gt_member": "annotations/whitecarturnl/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000069.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000069.jpg"
+      ]
+    },
+    {
+      "name": "girltakemoto",
+      "visible_frames": 122,
+      "thermal_frames": 122,
+      "annotation_rows": 122,
+      "framecounts_match": true,
+      "gt_sha256": "881779742f686b925c5c004d69475e103392ffdcaa0a1a67dcfeca9d5a037000",
+      "gt_member": "annotations/girltakemoto/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v121.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i121.jpg"
+      ]
+    },
+    {
+      "name": "rightgirlatbike",
+      "visible_frames": 350,
+      "thermal_frames": 350,
+      "annotation_rows": 350,
+      "framecounts_match": true,
+      "gt_sha256": "a4b847453cbdba7c6dfbf1fad1ebf5629b77346e21944aae073c407a9ffecf58",
+      "gt_member": "annotations/rightgirlatbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i349.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i349.jpg"
+      ]
+    },
+    {
+      "name": "easy_blackboy",
+      "visible_frames": 451,
+      "thermal_frames": 451,
+      "annotation_rows": 451,
+      "framecounts_match": true,
+      "gt_sha256": "81a0492b2c61527e3247f78e323d9e6a5a798f7991f064b95e5d5bc6c07ba04b",
+      "gt_member": "annotations/easy_blackboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000451.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000451.jpg"
+      ]
+    },
+    {
+      "name": "man_with_black_clothes2",
+      "visible_frames": 269,
+      "thermal_frames": 269,
+      "annotation_rows": 269,
+      "framecounts_match": true,
+      "gt_sha256": "774768dfb366b162815cc3acf50ea33a9ba7bac378373472d2271382cf4cd3c5",
+      "gt_member": "annotations/man_with_black_clothes2/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000269.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000269.jpg"
+      ]
+    },
+    {
+      "name": "7runone",
+      "visible_frames": 104,
+      "thermal_frames": 104,
+      "annotation_rows": 104,
+      "framecounts_match": true,
+      "gt_sha256": "150a9558868ab80206ccf66b059690813768601fb7e54089eea8c4a73f24c1be",
+      "gt_member": "annotations/7runone/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v103.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i103.jpg"
+      ]
+    },
+    {
+      "name": "turnblkbike",
+      "visible_frames": 150,
+      "thermal_frames": 150,
+      "annotation_rows": 150,
+      "framecounts_match": true,
+      "gt_sha256": "23a054534d4bca2a294693805f379cae440e10c8d852a0bf666e6e3bafb94621",
+      "gt_member": "annotations/turnblkbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i149.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i149.jpg"
+      ]
+    },
+    {
+      "name": "motobesidescar",
+      "visible_frames": 139,
+      "thermal_frames": 139,
+      "annotation_rows": 139,
+      "framecounts_match": true,
+      "gt_sha256": "d7b980aaae447050553c136424755e3a440bc7200ff384ae81eaa9828e6e87a4",
+      "gt_member": "annotations/motobesidescar/init.txt",
+      "nonpositive_coordinate_rows": 19,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000139.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000139.jpg"
+      ]
+    },
+    {
+      "name": "bikeafterwhitecar",
+      "visible_frames": 181,
+      "thermal_frames": 181,
+      "annotation_rows": 181,
+      "framecounts_match": true,
+      "gt_sha256": "c489d13789ad860c4eb61888e399b481421b880734b7676f2fcc12574ec4d557",
+      "gt_member": "annotations/bikeafterwhitecar/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v180.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i180.jpg"
+      ]
+    },
+    {
+      "name": "2runsix",
+      "visible_frames": 123,
+      "thermal_frames": 123,
+      "annotation_rows": 123,
+      "framecounts_match": true,
+      "gt_sha256": "4e8db924f698e84b561d824a6e32d5c63201b857e44b8e4153f2b03597ef48f4",
+      "gt_member": "annotations/2runsix/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v122.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i122.jpg"
+      ]
+    },
+    {
+      "name": "rightboy_1227",
+      "visible_frames": 525,
+      "thermal_frames": 525,
+      "annotation_rows": 525,
+      "framecounts_match": true,
+      "gt_sha256": "8292e45fa63c28d3d200e98a7bd83762d35988fe2e9a594d56f0b8d63a1eaf9e",
+      "gt_member": "annotations/rightboy_1227/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v524.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i524.jpg"
+      ]
+    },
+    {
+      "name": "whitesuvcome",
+      "visible_frames": 83,
+      "thermal_frames": 83,
+      "annotation_rows": 83,
+      "framecounts_match": true,
+      "gt_sha256": "bc799c4d7dec74a67e9a43b59b4fe26c0b5f4bfcf22d49557a3f083b3b118bb2",
+      "gt_member": "annotations/whitesuvcome/init.txt",
+      "nonpositive_coordinate_rows": 2,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000083.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000083.jpg"
+      ]
+    },
+    {
+      "name": "AQrightofcomingmotos",
+      "visible_frames": 64,
+      "thermal_frames": 64,
+      "annotation_rows": 64,
+      "framecounts_match": true,
+      "gt_sha256": "3bf101f975987339ba68a2f25c7eb0b20ac1433653ce53b83b208524150e4e40",
+      "gt_member": "annotations/AQrightofcomingmotos/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v63.jpg"
+      ],
+      "thermal_first_last": [
+        "v00.jpg",
+        "v63.jpg"
+      ]
+    },
+    {
+      "name": "7one",
+      "visible_frames": 106,
+      "thermal_frames": 106,
+      "annotation_rows": 106,
+      "framecounts_match": true,
+      "gt_sha256": "612826938f122a4246a3bba1372f517d20661dfe8d1266635a1cb68760b9e609",
+      "gt_member": "annotations/7one/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v105.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i105.jpg"
+      ]
+    },
+    {
+      "name": "blackman_0115",
+      "visible_frames": 316,
+      "thermal_frames": 316,
+      "annotation_rows": 316,
+      "framecounts_match": true,
+      "gt_sha256": "3359ed1e85dde7bb12b6f9bf25a157a7d28bfd85ba5dcb20f589a55802fd9e93",
+      "gt_member": "annotations/blackman_0115/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v315.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i315.jpg"
+      ]
+    },
+    {
+      "name": "rightmirrornotshining",
+      "visible_frames": 984,
+      "thermal_frames": 984,
+      "annotation_rows": 984,
+      "framecounts_match": true,
+      "gt_sha256": "8f1085253fbe081d8c2e75b3df4bcffbed31e5ba70a54ff5ddfcd90cdaf699c9",
+      "gt_member": "annotations/rightmirrornotshining/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v983.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i983.jpg"
+      ]
+    },
+    {
+      "name": "AQmanfromdarktrees",
+      "visible_frames": 324,
+      "thermal_frames": 324,
+      "annotation_rows": 324,
+      "framecounts_match": true,
+      "gt_sha256": "3612fa001d32b92e8b8a52e223c2721977cf5175307410df58aa46afaa545a74",
+      "gt_member": "annotations/AQmanfromdarktrees/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i323.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i323.jpg"
+      ]
+    },
+    {
+      "name": "bikeboy128",
+      "visible_frames": 128,
+      "thermal_frames": 128,
+      "annotation_rows": 128,
+      "framecounts_match": true,
+      "gt_sha256": "7c846a7070d5c0692367c927fd00b06ee3329022610502fa2ae94875d95b8c15",
+      "gt_member": "annotations/bikeboy128/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v127.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i127.jpg"
+      ]
+    },
+    {
+      "name": "orangegirl",
+      "visible_frames": 329,
+      "thermal_frames": 329,
+      "annotation_rows": 329,
+      "framecounts_match": true,
+      "gt_sha256": "9623765e4a4852f4661893586a6f4ddac4296f2e52372c3fed5b81c346e5625a",
+      "gt_member": "annotations/orangegirl/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 1,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v328.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i328.jpg"
+      ]
+    },
+    {
+      "name": "girlturnbike",
+      "visible_frames": 111,
+      "thermal_frames": 111,
+      "annotation_rows": 111,
+      "framecounts_match": true,
+      "gt_sha256": "e33f3bb6d5239c5a3051740d2ae800043cf0a0cab8f05e2f5a73e4ff7c4e38ef",
+      "gt_member": "annotations/girlturnbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i110.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i110.jpg"
+      ]
+    },
+    {
+      "name": "blackman2",
+      "visible_frames": 71,
+      "thermal_frames": 71,
+      "annotation_rows": 71,
+      "framecounts_match": true,
+      "gt_sha256": "92e89b2f5cc5dc0a3621ee1a853c04a6d1649ee9475dc7351821d6642b72d70b",
+      "gt_member": "annotations/blackman2/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000071.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000071.jpg"
+      ]
+    },
+    {
+      "name": "blackcarback",
+      "visible_frames": 63,
+      "thermal_frames": 63,
+      "annotation_rows": 63,
+      "framecounts_match": true,
+      "gt_sha256": "cf931c392594e6b74ba9ec16c35ef4b7923bd05166eb292b1845f39ebdaa46c9",
+      "gt_member": "annotations/blackcarback/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i00.jpg",
+        "i62.jpg"
+      ],
+      "thermal_first_last": [
+        "i00.jpg",
+        "i62.jpg"
+      ]
+    },
+    {
+      "name": "rightof2cupsattached",
+      "visible_frames": 4857,
+      "thermal_frames": 4857,
+      "annotation_rows": 4857,
+      "framecounts_match": true,
+      "gt_sha256": "40efae02b378ab809b33e9f1a5cc4c72d3b4cf2c5c2ab77438fbd8799a4a930e",
+      "gt_member": "annotations/rightof2cupsattached/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00001.jpg",
+        "v04857.jpg"
+      ],
+      "thermal_first_last": [
+        "i00001.jpg",
+        "i04857.jpg"
+      ]
+    },
+    {
+      "name": "whitecar2west",
+      "visible_frames": 122,
+      "thermal_frames": 122,
+      "annotation_rows": 122,
+      "framecounts_match": true,
+      "gt_sha256": "09b493784179ef5c53d18ad728bbf9113af50ace14671ad984ab1d96072e609c",
+      "gt_member": "annotations/whitecar2west/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i121.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i121.jpg"
+      ]
+    },
+    {
+      "name": "hatboy`shead",
+      "visible_frames": 1251,
+      "thermal_frames": 1251,
+      "annotation_rows": 1251,
+      "framecounts_match": true,
+      "gt_sha256": "99384c9d494f8c97d80bc1ad63090ee90455bc7e31a967cbce1a58063bccbca8",
+      "gt_member": "annotations/hatboy`shead/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1250.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1250.jpg"
+      ]
+    },
+    {
+      "name": "whitebetweenblackandblue",
+      "visible_frames": 928,
+      "thermal_frames": 928,
+      "annotation_rows": 928,
+      "framecounts_match": true,
+      "gt_sha256": "331de3fec3b3500db16950a7cef1ec511ee052e34e7584433081dbcb9453b1f1",
+      "gt_member": "annotations/whitebetweenblackandblue/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v927.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i927.jpg"
+      ]
+    },
+    {
+      "name": "2rdcarcome",
+      "visible_frames": 154,
+      "thermal_frames": 154,
+      "annotation_rows": 154,
+      "framecounts_match": true,
+      "gt_sha256": "3fbd73b8ecd06d2e0af535acc428db02801fc9f229e89a0473623ca295d637ff",
+      "gt_member": "annotations/2rdcarcome/init.txt",
+      "nonpositive_coordinate_rows": 3,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000154.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000154.jpg"
+      ]
+    },
+    {
+      "name": "whitemancome",
+      "visible_frames": 348,
+      "thermal_frames": 348,
+      "annotation_rows": 348,
+      "framecounts_match": true,
+      "gt_sha256": "a32a2c3a81f6d917a92484f363b3d3063c4c72c1b04732ef8c063c3bdfd682dc",
+      "gt_member": "annotations/whitemancome/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i347.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i347.jpg"
+      ]
+    },
+    {
+      "name": "nearmangotoD",
+      "visible_frames": 143,
+      "thermal_frames": 143,
+      "annotation_rows": 143,
+      "framecounts_match": true,
+      "gt_sha256": "5b4c1c1065e44866f8dca55496c525ad97810a5b6092e6d1dd941a170097a520",
+      "gt_member": "annotations/nearmangotoD/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i142.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i142.jpg"
+      ]
+    },
+    {
+      "name": "farmanrightwhitesmallhouse",
+      "visible_frames": 347,
+      "thermal_frames": 347,
+      "annotation_rows": 347,
+      "framecounts_match": true,
+      "gt_sha256": "4fa57798c0abc27b94b1298ef98ef7f2baae1adc5c1ac6d5df3270cbfc16f579",
+      "gt_member": "annotations/farmanrightwhitesmallhouse/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v346.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i346.jpg"
+      ]
+    },
+    {
+      "name": "lightmotocoming",
+      "visible_frames": 81,
+      "thermal_frames": 81,
+      "annotation_rows": 81,
+      "framecounts_match": true,
+      "gt_sha256": "0b18ed7c2dcb10c1f27ad308b8a18a39cf373d3621981dfc96dd268ce4142513",
+      "gt_member": "annotations/lightmotocoming/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v80.jpg"
+      ],
+      "thermal_first_last": [
+        "v00.jpg",
+        "v80.jpg"
+      ]
+    },
+    {
+      "name": "boymototakesgirl",
+      "visible_frames": 258,
+      "thermal_frames": 258,
+      "annotation_rows": 258,
+      "framecounts_match": true,
+      "gt_sha256": "f9d3c6b95e191b90f4d17d947730d2aa49219c96b8fa9b4342a787243caa5678",
+      "gt_member": "annotations/boymototakesgirl/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 1,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v257.jpg"
+      ],
+      "thermal_first_last": [
+        "v000.jpg",
+        "v257.jpg"
+      ]
+    },
+    {
+      "name": "leftblackboy",
+      "visible_frames": 215,
+      "thermal_frames": 215,
+      "annotation_rows": 215,
+      "framecounts_match": true,
+      "gt_sha256": "4443d81f3315f393efc8fd7b9c8a6d34c328c01d7c933f240e94886318cbaf8b",
+      "gt_member": "annotations/leftblackboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000215.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000215.jpg"
+      ]
+    },
+    {
+      "name": "righttallholdball",
+      "visible_frames": 1056,
+      "thermal_frames": 1056,
+      "annotation_rows": 1056,
+      "framecounts_match": true,
+      "gt_sha256": "7519ea19cfb78547b8aad0eb0085276789960e65fe49477539be690db0cfa924",
+      "gt_member": "annotations/righttallholdball/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1055.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1055.jpg"
+      ]
+    },
+    {
+      "name": "blackcarcome",
+      "visible_frames": 130,
+      "thermal_frames": 130,
+      "annotation_rows": 130,
+      "framecounts_match": true,
+      "gt_sha256": "253110a79a06d282c7382350537fee5e4d4b5edbdd80d8982a6d2f3a1d284f7d",
+      "gt_member": "annotations/blackcarcome/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000130.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000130.jpg"
+      ]
+    },
+    {
+      "name": "twolinefirstone-gai",
+      "visible_frames": 2148,
+      "thermal_frames": 2148,
+      "annotation_rows": 2148,
+      "framecounts_match": true,
+      "gt_sha256": "9ec678dbf8b773a012bdec3dfa752e4240928ea006da953acd6ace6ae47134e8",
+      "gt_member": "annotations/twolinefirstone-gai/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v2147.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i2147.jpg"
+      ]
+    },
+    {
+      "name": "lowerfoam2throw",
+      "visible_frames": 76,
+      "thermal_frames": 76,
+      "annotation_rows": 76,
+      "framecounts_match": true,
+      "gt_sha256": "a809ec4744942f335bc994d96c92338be0cc8abcd465bff6fb159f492752aabb",
+      "gt_member": "annotations/lowerfoam2throw/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v75.jpg"
+      ],
+      "thermal_first_last": [
+        "i00.jpg",
+        "i75.jpg"
+      ]
+    },
+    {
+      "name": "Awhitecargo",
+      "visible_frames": 78,
+      "thermal_frames": 78,
+      "annotation_rows": 78,
+      "framecounts_match": true,
+      "gt_sha256": "b921966e153f2cc58b2f151f893fc8e77342c508d7d817add826b7a9fac9b13b",
+      "gt_member": "annotations/Awhitecargo/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i00.jpg",
+        "i77.jpg"
+      ],
+      "thermal_first_last": [
+        "i00.jpg",
+        "i77.jpg"
+      ]
+    },
+    {
+      "name": "car2north3",
+      "visible_frames": 265,
+      "thermal_frames": 265,
+      "annotation_rows": 265,
+      "framecounts_match": true,
+      "gt_sha256": "c51c79c3df7d80176a0d322f8d05ae86683dde8b0cc310fe44c40b1e7584e4b0",
+      "gt_member": "annotations/car2north3/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000265.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000265.jpg"
+      ]
+    },
+    {
+      "name": "rightfirstboy-ly",
+      "visible_frames": 701,
+      "thermal_frames": 701,
+      "annotation_rows": 701,
+      "framecounts_match": true,
+      "gt_sha256": "85071f5f64beefdc175e1ca0a59284664ca8197c6bccdcbfa5fb5946a47ae44b",
+      "gt_member": "annotations/rightfirstboy-ly/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v700.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i700.jpg"
+      ]
+    },
+    {
+      "name": "girltakingplate",
+      "visible_frames": 741,
+      "thermal_frames": 741,
+      "annotation_rows": 741,
+      "framecounts_match": true,
+      "gt_sha256": "3b9ddd83a01f9fd7626ad1ec5b2fda3927524e1512241575ca4aadf9361edcd1",
+      "gt_member": "annotations/girltakingplate/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v740.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i740.jpg"
+      ]
+    },
+    {
+      "name": "left2ndgreenboy",
+      "visible_frames": 304,
+      "thermal_frames": 304,
+      "annotation_rows": 304,
+      "framecounts_match": true,
+      "gt_sha256": "4a38b3d22459013ab7662d8d4182c96588256d39d3f3a04c4bcb8e3ebe5ed6db",
+      "gt_member": "annotations/left2ndgreenboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v303.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i303.jpg"
+      ]
+    },
+    {
+      "name": "ab_bolster",
+      "visible_frames": 8406,
+      "thermal_frames": 8406,
+      "annotation_rows": 8406,
+      "framecounts_match": true,
+      "gt_sha256": "cc60aff62a8808e74fbb21d98f89c2ac7edf79d29503ec55d86aa1f3b1263c79",
+      "gt_member": "annotations/ab_bolster/init.txt",
+      "nonpositive_coordinate_rows": 17,
+      "nonpositive_size_rows": 12,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00001.jpg",
+        "v08406.jpg"
+      ],
+      "thermal_first_last": [
+        "i00001.jpg",
+        "i08406.jpg"
+      ]
+    },
+    {
+      "name": "9hatboy",
+      "visible_frames": 897,
+      "thermal_frames": 897,
+      "annotation_rows": 897,
+      "framecounts_match": true,
+      "gt_sha256": "a3f25452fbb49aacb8cb9aafd3aae4e1b1bb23024da9c3d044b547cfd256f5c3",
+      "gt_member": "annotations/9hatboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v896.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i896.jpg"
+      ]
+    },
+    {
+      "name": "whitecarturn2",
+      "visible_frames": 115,
+      "thermal_frames": 115,
+      "annotation_rows": 115,
+      "framecounts_match": true,
+      "gt_sha256": "45d65361d7201cd89961a6169595ae9beda746ab6bdb96edfa12fd572f8decde",
+      "gt_member": "annotations/whitecarturn2/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000115.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000115.jpg"
+      ]
+    },
+    {
+      "name": "midboyblue",
+      "visible_frames": 2700,
+      "thermal_frames": 2700,
+      "annotation_rows": 2700,
+      "framecounts_match": true,
+      "gt_sha256": "4679190a654b8955226df5d20f7fe92cbb78e02fe40432fa68117434e4fbb00b",
+      "gt_member": "annotations/midboyblue/init.txt",
+      "nonpositive_coordinate_rows": 191,
+      "nonpositive_size_rows": 191,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v2699.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i2699.jpg"
+      ]
+    },
+    {
+      "name": "basketboywhite",
+      "visible_frames": 195,
+      "thermal_frames": 195,
+      "annotation_rows": 195,
+      "framecounts_match": true,
+      "gt_sha256": "7dbe2e3122aa5ce31c304e63858569d612641f3059404a06e448ca018edf02d4",
+      "gt_member": "annotations/basketboywhite/init.txt",
+      "nonpositive_coordinate_rows": 2,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000195.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000195.jpg"
+      ]
+    },
+    {
+      "name": "nightmototurn",
+      "visible_frames": 110,
+      "thermal_frames": 110,
+      "annotation_rows": 110,
+      "framecounts_match": true,
+      "gt_sha256": "e3883725baf6a0c6570e77a67d7f6ec5ecc68124ee9bdd39640f8dc820402ea4",
+      "gt_member": "annotations/nightmototurn/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i109.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i109.jpg"
+      ]
+    },
+    {
+      "name": "girlbike",
+      "visible_frames": 109,
+      "thermal_frames": 109,
+      "annotation_rows": 109,
+      "framecounts_match": true,
+      "gt_sha256": "63700d331cb453c74ce55bacdf1f3d01b70005b9115564e73c3e8a5a32aa6614",
+      "gt_member": "annotations/girlbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000109.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000109.jpg"
+      ]
+    },
+    {
+      "name": "mantoground",
+      "visible_frames": 93,
+      "thermal_frames": 93,
+      "annotation_rows": 93,
+      "framecounts_match": true,
+      "gt_sha256": "3f5c838de906497fd6848ad12290c2db3cf59b39f46fdefb8562791befdcd8a5",
+      "gt_member": "annotations/mantoground/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i00.jpg",
+        "i92.jpg"
+      ],
+      "thermal_first_last": [
+        "i00.jpg",
+        "i92.jpg"
+      ]
+    },
+    {
+      "name": "pickuptheyellowbook",
+      "visible_frames": 302,
+      "thermal_frames": 302,
+      "annotation_rows": 302,
+      "framecounts_match": true,
+      "gt_sha256": "895e140379ae23d90e18e738b779310da211d303a25ce4eeede167bf4561a8e3",
+      "gt_member": "annotations/pickuptheyellowbook/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v301.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i301.jpg"
+      ]
+    },
+    {
+      "name": "8lastone",
+      "visible_frames": 150,
+      "thermal_frames": 150,
+      "annotation_rows": 150,
+      "framecounts_match": true,
+      "gt_sha256": "8079bd3e71597429487ae1e75482741494b8951d475818f223ff6bb7dc72f375",
+      "gt_member": "annotations/8lastone/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v149.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i149.jpg"
+      ]
+    },
+    {
+      "name": "AQbikeback",
+      "visible_frames": 115,
+      "thermal_frames": 115,
+      "annotation_rows": 115,
+      "framecounts_match": true,
+      "gt_sha256": "6d52cd6fc2336b6f4e345d81714cf31a0dbb7a2032c589fe96a66e167a2651ab",
+      "gt_member": "annotations/AQbikeback/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v114.jpg"
+      ],
+      "thermal_first_last": [
+        "v000.jpg",
+        "v114.jpg"
+      ]
+    },
+    {
+      "name": "girlsquattingbesidesleftbar",
+      "visible_frames": 1465,
+      "thermal_frames": 1465,
+      "annotation_rows": 1465,
+      "framecounts_match": true,
+      "gt_sha256": "8e78009fb7205cb5c14ce94d34ed9d654759f744dbd0b2dfe86da39ecc98fba4",
+      "gt_member": "annotations/girlsquattingbesidesleftbar/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1464.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1464.jpg"
+      ]
+    },
+    {
+      "name": "blkbikefromnorth",
+      "visible_frames": 270,
+      "thermal_frames": 270,
+      "annotation_rows": 270,
+      "framecounts_match": true,
+      "gt_sha256": "71a3c4aeb9e4c7aadca86ad9e70ba1fb723f764c9ace0cc18d97f01377ac70bb",
+      "gt_member": "annotations/blkbikefromnorth/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000270.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000270.jpg"
+      ]
+    },
+    {
+      "name": "whitecar",
+      "visible_frames": 275,
+      "thermal_frames": 275,
+      "annotation_rows": 275,
+      "framecounts_match": true,
+      "gt_sha256": "6c9e560a9deb75357579760e6480f2ed22a8b91e0ffdcfbc8b928cb088575676",
+      "gt_member": "annotations/whitecar/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 1,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000275.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000275.jpg"
+      ]
+    },
+    {
+      "name": "Amidredgirl",
+      "visible_frames": 688,
+      "thermal_frames": 688,
+      "annotation_rows": 688,
+      "framecounts_match": true,
+      "gt_sha256": "bebb9795d2df04fdc49949dcf3915d9fce93d901094c5cc8d9e75ed842ca15f5",
+      "gt_member": "annotations/Amidredgirl/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v687.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i687.jpg"
+      ]
+    },
+    {
+      "name": "blackbag",
+      "visible_frames": 210,
+      "thermal_frames": 210,
+      "annotation_rows": 210,
+      "framecounts_match": true,
+      "gt_sha256": "e6e44beb5c37062464910c201fd4debe903c95f8b302f30f7da39abbc1f33b88",
+      "gt_member": "annotations/blackbag/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000210.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000210.jpg"
+      ]
+    },
+    {
+      "name": "AQblkgirlbike",
+      "visible_frames": 231,
+      "thermal_frames": 231,
+      "annotation_rows": 231,
+      "framecounts_match": true,
+      "gt_sha256": "33f7417fb93f033f4f080d489de7de0c3f6ecef47e7fa0288940da1b8004057d",
+      "gt_member": "annotations/AQblkgirlbike/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i230.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i230.jpg"
+      ]
+    },
+    {
+      "name": "manwithyellowumbrella",
+      "visible_frames": 906,
+      "thermal_frames": 906,
+      "annotation_rows": 906,
+      "framecounts_match": true,
+      "gt_sha256": "006d2714ae0c8ad0bb6c21291d03e06b8fe326decd0b6acb6f445277ffd22b00",
+      "gt_member": "annotations/manwithyellowumbrella/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000906.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000906.jpg"
+      ]
+    },
+    {
+      "name": "browncar2north",
+      "visible_frames": 202,
+      "thermal_frames": 202,
+      "annotation_rows": 202,
+      "framecounts_match": true,
+      "gt_sha256": "f1032f825de2c925a64f19bfc075de8d38b7c9641f580eb56a47f9620d64a96f",
+      "gt_member": "annotations/browncar2north/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i201.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i201.jpg"
+      ]
+    },
+    {
+      "name": "carstop",
+      "visible_frames": 296,
+      "thermal_frames": 296,
+      "annotation_rows": 296,
+      "framecounts_match": true,
+      "gt_sha256": "559a7a27bb5a057ecd1707505b3663fdd965cd221b574c679040f221507a6e6f",
+      "gt_member": "annotations/carstop/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000296.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000296.jpg"
+      ]
+    },
+    {
+      "name": "whiteboywithbag",
+      "visible_frames": 257,
+      "thermal_frames": 257,
+      "annotation_rows": 257,
+      "framecounts_match": true,
+      "gt_sha256": "18d43e11a4f5e702e570d6522c622f46ca0d88a0139e663c762e8f7892107f26",
+      "gt_member": "annotations/whiteboywithbag/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000257.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000257.jpg"
+      ]
+    },
+    {
+      "name": "theleftestrunningboy",
+      "visible_frames": 200,
+      "thermal_frames": 200,
+      "annotation_rows": 200,
+      "framecounts_match": true,
+      "gt_sha256": "a82b33af02df29943b758c687c2f1c83244ff81d9c3248017687e134218c17db",
+      "gt_member": "annotations/theleftestrunningboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v199.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i199.jpg"
+      ]
+    },
+    {
+      "name": "girlafterglassdoor2",
+      "visible_frames": 885,
+      "thermal_frames": 885,
+      "annotation_rows": 885,
+      "framecounts_match": true,
+      "gt_sha256": "cb24604e76c7f0b2245bafc73f73139536468556d2fff393afb429abbe8c9923",
+      "gt_member": "annotations/girlafterglassdoor2/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v884.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i884.jpg"
+      ]
+    },
+    {
+      "name": "rightmirrorlikesky",
+      "visible_frames": 1266,
+      "thermal_frames": 1266,
+      "annotation_rows": 1266,
+      "framecounts_match": true,
+      "gt_sha256": "bcefe72ec12c62ddf341ee40dd36f1daee4e96e43a8f0d671f1309340303b59b",
+      "gt_member": "annotations/rightmirrorlikesky/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1265.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1265.jpg"
+      ]
+    },
+    {
+      "name": "redgirl1497",
+      "visible_frames": 1497,
+      "thermal_frames": 1497,
+      "annotation_rows": 1497,
+      "framecounts_match": true,
+      "gt_sha256": "e5761775eee634895dd29ea803f613107ca13ef1f448e5ec4addca44d0e0733d",
+      "gt_member": "annotations/redgirl1497/init.txt",
+      "nonpositive_coordinate_rows": 36,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1496.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1496.jpg"
+      ]
+    },
+    {
+      "name": "midboy",
+      "visible_frames": 121,
+      "thermal_frames": 121,
+      "annotation_rows": 121,
+      "framecounts_match": true,
+      "gt_sha256": "65ec49cb61390558d580e80a9096424ef7783609f828db06e26a4c4aea6a5a02",
+      "gt_member": "annotations/midboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v120.jpg"
+      ],
+      "thermal_first_last": [
+        "v000.jpg",
+        "v120.jpg"
+      ]
+    },
+    {
+      "name": "folderatlefthand",
+      "visible_frames": 783,
+      "thermal_frames": 783,
+      "annotation_rows": 783,
+      "framecounts_match": true,
+      "gt_sha256": "1e69d2f53fc314274fe34fcf2f2618ab6fe444f850911bb9c49ef07b6a2b62cf",
+      "gt_member": "annotations/folderatlefthand/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v782.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i782.jpg"
+      ]
+    },
+    {
+      "name": "bikecome",
+      "visible_frames": 177,
+      "thermal_frames": 177,
+      "annotation_rows": 177,
+      "framecounts_match": true,
+      "gt_sha256": "7373982c90c286d3d49079e8b5f374b6a57459ad33bdc8366b3639ea13521fda",
+      "gt_member": "annotations/bikecome/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i176.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i176.jpg"
+      ]
+    },
+    {
+      "name": "leftfallenchair_inf_white",
+      "visible_frames": 725,
+      "thermal_frames": 725,
+      "annotation_rows": 725,
+      "framecounts_match": true,
+      "gt_sha256": "ebc3be51ed4317c8ece9c58e4451c5f91f6e681780018f4890209fd3ce38e4f8",
+      "gt_member": "annotations/leftfallenchair_inf_white/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v724.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i724.jpg"
+      ]
+    },
+    {
+      "name": "Agirlrideback",
+      "visible_frames": 98,
+      "thermal_frames": 98,
+      "annotation_rows": 98,
+      "framecounts_match": true,
+      "gt_sha256": "3edd93728ec30efc1e168a057e53549f46c07eb55ebb96609a7c636096ac02b2",
+      "gt_member": "annotations/Agirlrideback/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v97.jpg"
+      ],
+      "thermal_first_last": [
+        "v00.jpg",
+        "v97.jpg"
+      ]
+    },
+    {
+      "name": "rightgirl",
+      "visible_frames": 498,
+      "thermal_frames": 498,
+      "annotation_rows": 498,
+      "framecounts_match": true,
+      "gt_sha256": "52ff80845633272b2b188e0895c233d1fe1f0172e29a418a5cc328a2294ec984",
+      "gt_member": "annotations/rightgirl/init.txt",
+      "nonpositive_coordinate_rows": 2,
+      "nonpositive_size_rows": 2,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v497.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i497.jpg"
+      ]
+    },
+    {
+      "name": "belowrightwhiteboy",
+      "visible_frames": 1129,
+      "thermal_frames": 1129,
+      "annotation_rows": 1129,
+      "framecounts_match": true,
+      "gt_sha256": "685ca09d311823e35025c7c6520b211d1f7b85cc1f2d65346d88691886a4a899",
+      "gt_member": "annotations/belowrightwhiteboy/init.txt",
+      "nonpositive_coordinate_rows": 46,
+      "nonpositive_size_rows": 25,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v0000.jpg",
+        "v1128.jpg"
+      ],
+      "thermal_first_last": [
+        "i0000.jpg",
+        "i1128.jpg"
+      ]
+    },
+    {
+      "name": "moto2north1",
+      "visible_frames": 228,
+      "thermal_frames": 228,
+      "annotation_rows": 228,
+      "framecounts_match": true,
+      "gt_sha256": "bdc27141a3276bfc21b126d34c748b0cb925be5ba0866035ae6b70cdb68fc7dd",
+      "gt_member": "annotations/moto2north1/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000228.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000228.jpg"
+      ]
+    },
+    {
+      "name": "truckk",
+      "visible_frames": 80,
+      "thermal_frames": 80,
+      "annotation_rows": 80,
+      "framecounts_match": true,
+      "gt_sha256": "2888458fa04e8ffddc6aadbf044466b6c9e50d291190c891e4e41de5caf31f99",
+      "gt_member": "annotations/truckk/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000001.jpg",
+        "v000080.jpg"
+      ],
+      "thermal_first_last": [
+        "i000001.jpg",
+        "i000080.jpg"
+      ]
+    },
+    {
+      "name": "highright2ndboy",
+      "visible_frames": 787,
+      "thermal_frames": 787,
+      "annotation_rows": 787,
+      "framecounts_match": true,
+      "gt_sha256": "aff41357d873da0491186b8dc3f6afc10767508aa8c40f2c79fe354c814e3f56",
+      "gt_member": "annotations/highright2ndboy/init.txt",
+      "nonpositive_coordinate_rows": 9,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v786.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i786.jpg"
+      ]
+    },
+    {
+      "name": "girl`sheadoncall",
+      "visible_frames": 690,
+      "thermal_frames": 690,
+      "annotation_rows": 690,
+      "framecounts_match": true,
+      "gt_sha256": "e7323bcdcc90666b781e91d62f9607aef378d5706c521e0c171ff6780aac81e3",
+      "gt_member": "annotations/girl`sheadoncall/init.txt",
+      "nonpositive_coordinate_rows": 4,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v689.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i689.jpg"
+      ]
+    },
+    {
+      "name": "whiteboy",
+      "visible_frames": 304,
+      "thermal_frames": 304,
+      "annotation_rows": 304,
+      "framecounts_match": true,
+      "gt_sha256": "cd60e9458db9b5ef8d632f9f76a3344adedb162669ef4a634ef7762557e9c770",
+      "gt_member": "annotations/whiteboy/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000304.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000304.jpg"
+      ]
+    },
+    {
+      "name": "truckwhite",
+      "visible_frames": 149,
+      "thermal_frames": 149,
+      "annotation_rows": 149,
+      "framecounts_match": true,
+      "gt_sha256": "e46bfb902b8f32979b896a91a85fa8c2f6fd2ccf2301112bc615c4597fb6e70c",
+      "gt_member": "annotations/truckwhite/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000149.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000149.jpg"
+      ]
+    },
+    {
+      "name": "AQgirlbiketurns",
+      "visible_frames": 81,
+      "thermal_frames": 81,
+      "annotation_rows": 81,
+      "framecounts_match": true,
+      "gt_sha256": "1ae137290494edf0f05cfa9572058e91a80d3905799bc0b5203f60d981709e8f",
+      "gt_member": "annotations/AQgirlbiketurns/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v00.jpg",
+        "v80.jpg"
+      ],
+      "thermal_first_last": [
+        "v00.jpg",
+        "v80.jpg"
+      ]
+    },
+    {
+      "name": "left2ndboy",
+      "visible_frames": 626,
+      "thermal_frames": 626,
+      "annotation_rows": 626,
+      "framecounts_match": true,
+      "gt_sha256": "cfc0e3daace9f9620860ca8db00eee807be5231d753364a95493ad6bb300e41e",
+      "gt_member": "annotations/left2ndboy/init.txt",
+      "nonpositive_coordinate_rows": 8,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v625.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i625.jpg"
+      ]
+    },
+    {
+      "name": "whitegirl2right",
+      "visible_frames": 403,
+      "thermal_frames": 403,
+      "annotation_rows": 403,
+      "framecounts_match": true,
+      "gt_sha256": "82bfaa4216159188367adb023c931050507f5c09e90fb9b03442b470d69eecdd",
+      "gt_member": "annotations/whitegirl2right/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v402.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i402.jpg"
+      ]
+    },
+    {
+      "name": "rightboywithwhite",
+      "visible_frames": 350,
+      "thermal_frames": 350,
+      "annotation_rows": 350,
+      "framecounts_match": true,
+      "gt_sha256": "cee00fd1d1e729f32fba2f2b079b16b4101b4fee4abf9ba384c93176baeaf11d",
+      "gt_member": "annotations/rightboywithwhite/init.txt",
+      "nonpositive_coordinate_rows": 139,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v349.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i349.jpg"
+      ]
+    },
+    {
+      "name": "girlplayingphone",
+      "visible_frames": 265,
+      "thermal_frames": 265,
+      "annotation_rows": 265,
+      "framecounts_match": true,
+      "gt_sha256": "27d19b905bd4e92e91515f391531dbf1366041d375d5bfa7e9a753490f8d79f0",
+      "gt_member": "annotations/girlplayingphone/init.txt",
+      "nonpositive_coordinate_rows": 1,
+      "nonpositive_size_rows": 1,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "i000.jpg",
+        "i264.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i264.jpg"
+      ]
+    },
+    {
+      "name": "girlumbrella",
+      "visible_frames": 97,
+      "thermal_frames": 97,
+      "annotation_rows": 97,
+      "framecounts_match": true,
+      "gt_sha256": "0f89f7e95ec470b0481d75bf96de2c96f8570213db427fe1a6f8a6e46a6e01ef",
+      "gt_member": "annotations/girlumbrella/init.txt",
+      "nonpositive_coordinate_rows": 4,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000097.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000097.jpg"
+      ]
+    },
+    {
+      "name": "truck",
+      "visible_frames": 78,
+      "thermal_frames": 78,
+      "annotation_rows": 78,
+      "framecounts_match": true,
+      "gt_sha256": "7fd8fe320dffca16bed38e08bba29d6cb7ddffae59a13f047c1cee8cd076e0fe",
+      "gt_member": "annotations/truck/init.txt",
+      "nonpositive_coordinate_rows": 5,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "000001.jpg",
+        "000078.jpg"
+      ],
+      "thermal_first_last": [
+        "000001.jpg",
+        "000078.jpg"
+      ]
+    },
+    {
+      "name": "manfarbesidespool",
+      "visible_frames": 340,
+      "thermal_frames": 340,
+      "annotation_rows": 340,
+      "framecounts_match": true,
+      "gt_sha256": "8b2b716871d2581c3dfe97b43703b5e42c403600cc18bc46050d145b178d3830",
+      "gt_member": "annotations/manfarbesidespool/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v339.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i339.jpg"
+      ]
+    },
+    {
+      "name": "dotat43",
+      "visible_frames": 930,
+      "thermal_frames": 930,
+      "annotation_rows": 930,
+      "framecounts_match": true,
+      "gt_sha256": "407e1b266d267ddf4f709193112a83d05db84a48ef499be3dfec36adbc429e34",
+      "gt_member": "annotations/dotat43/init.txt",
+      "nonpositive_coordinate_rows": 0,
+      "nonpositive_size_rows": 0,
+      "initial_size_positive": true,
+      "visible_first_last": [
+        "v000.jpg",
+        "v929.jpg"
+      ],
+      "thermal_first_last": [
+        "i000.jpg",
+        "i929.jpg"
+      ]
+    }
+  ],
+  "split_sha256": {
+    "lasher_train.txt": "27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846",
+    "lasher_val.txt": "ff5767e1e2522b87d31b898eb949949478c1dabc3b2cef2754a43c65e089016a"
+  },
+  "train_val_test_name_disjoint": true,
+  "archive": "/data2/gaob/Miss-RGBT/development/val97_annotation_snapshot_20261015_v1.tar.gz",
+  "archive_bytes": 251010,
+  "archive_sha256": "f1966b4b874e7c04e5c005a604ba119bdf8f4d1c2b568b4430db1612dae0df56",
+  "snapshot_time_epoch": 1792037649.2841597,
+  "scope": "Read-only current development annotations and image filename counts. No model/progress/GPU query, images read or mask generation. Split bytes are a new snapshot, not retroactive full20 runtime attestation."
+}

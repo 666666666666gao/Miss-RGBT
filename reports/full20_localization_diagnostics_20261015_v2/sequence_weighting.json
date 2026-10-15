@@ -1,0 +1,60 @@
+{
+  "scope": "Aggregation diagnosis of the same installed-toolkit MSR curves; benchmark MSR remains the equal-sequence mean. Frame-weighted numbers are diagnostics, never replacement primary scores. All 234 sequences and all 21 thresholds retained. Quartiles use sequence lengths only; no parameter selection from test results.",
+  "e3_msr_macro": 60.87276506879559,
+  "e4_msr_macro": 60.806573359933246,
+  "official_protocol_delta_pp": -0.06619170886234438,
+  "diagnostic_frame_weighted_e3": 60.552282979201124,
+  "diagnostic_frame_weighted_e4": 61.13583573163514,
+  "diagnostic_frame_weighted_delta_pp": 0.5835527524340202,
+  "weighting_difference_pp": 0.6497444612963647,
+  "improved_sequences": 109,
+  "harmed_sequences": 123,
+  "tied_sequences": 2,
+  "length_quartiles": [
+    {
+      "length_quartile": 1,
+      "sequences": 59,
+      "frames": 7856,
+      "minimum_length": 45,
+      "maximum_length": 210,
+      "mean_delta_pp": -0.6554416920481583,
+      "macro_contribution_pp": -0.1652609394480399
+    },
+    {
+      "length_quartile": 2,
+      "sequences": 59,
+      "frames": 16464,
+      "minimum_length": 211,
+      "maximum_length": 375,
+      "mean_delta_pp": -0.7706241628960919,
+      "macro_contribution_pp": -0.19430267355072403
+    },
+    {
+      "length_quartile": 3,
+      "sequences": 58,
+      "frames": 27435,
+      "minimum_length": 379,
+      "maximum_length": 597,
+      "mean_delta_pp": 0.30893606038820187,
+      "macro_contribution_pp": 0.07657389530989618
+    },
+    {
+      "length_quartile": 4,
+      "sequences": 58,
+      "frames": 64895,
+      "minimum_length": 598,
+      "maximum_length": 4140,
+      "mean_delta_pp": 0.8746678287139046,
+      "macro_contribution_pp": 0.21679800882652336
+    }
+  ],
+  "inputs": {
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\analysis\\decompose_rgbt234_sequence_weights.py": "f5c7503e758fc0a8764d3b4be5229f0d0ef4278bc6915db9db17fcbcc956a6d0",
+    "C:\\Users\\gb\\projects\\Miss-RGBT\\reports\\e0\\inventory.json": "2b3278b5f35ac322f83961a649720d433a91c61a53b5a7e045dcef1fc4f3ec83",
+    "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\first5_metric_package\\rgbt\\gt_file\\RGBT234\\attr_txt\\SequencesName.txt": "185236d50e14796cc384ad3293f69ed9d61847ef4a2ded68527e98e270f6314c",
+    "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\full20_closed_raw\\results\\e3_full20_miss_20261013\\RGBT234-Miss_curves.json": "aba2d1d7abe3370fda6a002be3cbb20e1e5cc2a434f8bfa1fceb9062dc07c9f8",
+    "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\full20_closed_raw\\results\\e3_full20_miss_20261013\\metrics.json": "2de49f22f5ca5e5abfc3a0243f237e1d95b611773a066c66c1cfbfd40ad5db68",
+    "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\full20_closed_raw\\results\\e4_full20_miss_20261013\\RGBT234-Miss_curves.json": "f5bb57f683fd7c74d8c5897abe0c956a337d694c161214b86a6150af39382013",
+    "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\full20_closed_raw\\results\\e4_full20_miss_20261013\\metrics.json": "90878ffa59ac10ef1b45792aa8e700f6c0d4587e5fb89571709674c9a8f1a40d"
+  }
+}
