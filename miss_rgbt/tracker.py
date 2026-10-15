@@ -8,10 +8,18 @@ from lib.models.cadtrack import build_cadtrack
 from miss_rgbt.model import MissingTrackerModel
 
 
+def template_update_allowed(policy, frame_id, interval, confidence, threshold, available):
+    return (policy != 'off' and frame_id % interval == 0 and confidence > threshold
+            and (policy != 'complete_only' or bool(available[0] and available[1])))
+
+
 class MissingTracker:
     """Native crop/window/update logic with explicit template availability."""
 
-    def __init__(self, cfg, checkpoint):
+    def __init__(self, cfg, checkpoint, template_policy='current', update_audit=False):
+        assert template_policy in ['off', 'current', 'complete_only']
+        self.template_policy = template_policy
+        self.update_audit = update_audit
         saved = torch.load(checkpoint, map_location='cpu')
         config = saved['config']
         self.cfg = cfg
@@ -32,6 +40,8 @@ class MissingTracker:
         self.availability = [torch.ones(1, 2, device='cuda') for _ in self.templates]
         self.state = info['init_bbox']
         self.frame_id = 0
+        self.last_template_write = 0
+        self.last_template_available = [1, 1]
 
     def track(self, image, available):
         self.frame_id += 1
@@ -50,11 +60,21 @@ class MissingTracker:
             box = [cx + cx_prev - half - .5 * w, cy + cy_prev - half - .5 * h, w, h]
             self.state = clip_box(box, image.shape[0], image.shape[1], margin=10)
             confidence = float(response.max())
-        if self.num_template > 1 and self.frame_id % self.cfg.TEST.UPDATE_INTERVALS == 0 and confidence > self.cfg.TEST.UPDATE_THRESHOLD:
+        write_template = self.num_template > 1 and template_update_allowed(
+            self.template_policy, self.frame_id, self.cfg.TEST.UPDATE_INTERVALS,
+            confidence, self.cfg.TEST.UPDATE_THRESHOLD, available)
+        if self.update_audit:
+            self.last_update_event = dict(track_call=self.frame_id, confidence=confidence,
+                available=[int(value) for value in available], template_written=write_template,
+                template_age_before=self.frame_id - self.last_template_write,
+                previous_template_available=list(self.last_template_available))
+        if write_template:
             crop, _, _ = sample_target(image, self.state, self.cfg.TEST.TEMPLATE_FACTOR,
                                        output_sz=self.cfg.TEST.TEMPLATE_SIZE)
             self.templates.append(self.preprocessor.process(crop))
             self.availability.append(observed)
             self.templates.pop(1)
             self.availability.pop(1)
+            self.last_template_write = self.frame_id
+            self.last_template_available = [int(value) for value in available]
         return dict(target_bbox=self.state, best_score=confidence)
