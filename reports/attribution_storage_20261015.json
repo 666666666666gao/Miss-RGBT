@@ -1,0 +1,28 @@
+{
+  "moves": [
+    {
+      "source": "/home/gaob/Miss-RGBT/checkpoints/e0_ft_attribution_smoke_seed2027/smoke.pth.tar",
+      "destination": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_attribution_smoke_seed2027/smoke.pth.tar",
+      "sha256": "01aa8bdba6f030b7ca46c8b4635b05fa85723143bea4cef48ad78cfb3d2c744e",
+      "bytes": 1236735527,
+      "symlink_verified": true
+    },
+    {
+      "source": "/home/gaob/Miss-RGBT/checkpoints/e2_attribution_smoke_seed2027/smoke.pth.tar",
+      "destination": "/data2/gaob/Miss-RGBT/checkpoints/e2_attribution_smoke_seed2027/smoke.pth.tar",
+      "sha256": "d0eb25b434c979dd24c8bb13b63aa50f0ceac23c2394618871363ca1c099865c",
+      "bytes": 1236735527,
+      "symlink_verified": true
+    }
+  ],
+  "home_free_before": 922226688,
+  "home_free_after": 3395690496,
+  "data2_free_after": 1033078231040,
+  "time_epoch": 1792035412.673884,
+  "failed_controller_log": "Traceback (most recent call last):\n  File \"scripts/run_attribution_controls.py\", line 115, in <module>\n    main()\n  File \"scripts/run_attribution_controls.py\", line 74, in main\n    assert shutil.disk_usage(str(ROOT)).free > 10 * 1024 ** 3\nAssertionError\n",
+  "failed_controller_log_sha256": "89d1ba429625b1f966417f081f414e049a6a339aa0ed33bd723d78dfaf52b631",
+  "failed_controller_records": [
+    "source_sha256.json"
+  ],
+  "scope": "Only two new smoke checkpoint files relocated after byte verification. E0 and all historical E3/E4 weights stay at their original paths. New full20 controls will write to data2."
+}

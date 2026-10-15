@@ -15,7 +15,7 @@ from package_e0_availability import sha
 
 
 ROOT = campaign.ROOT
-campaign.RUN = ROOT / 'logs/attribution_20261015_v1'
+campaign.RUN = ROOT / 'logs/attribution_20261015_v2'
 
 
 def state(stage):
@@ -71,7 +71,9 @@ def main():
     for row in rows:
         gpu, used = [int(value.strip()) for value in row.split(',')]
         assert gpu in [2, 3] and used < 300, row
-    assert shutil.disk_usage(str(ROOT)).free > 10 * 1024 ** 3
+    assert shutil.disk_usage(str(ROOT)).free > 1024 ** 3
+    for config in configs.values():
+        assert shutil.disk_usage(str(Path(config['output']).parent)).free > 10 * 1024 ** 3
     campaign.write('campaign.json', dict(source_version=(ROOT / 'reports/ATTRIBUTION_SOURCE_VERSION.txt').read_text().strip(),
         started_utc=datetime.datetime.utcnow().isoformat() + 'Z', configs=configs,
         formal_budget_per_model=dict(epochs=20, sampled_tuples_per_epoch=20000,

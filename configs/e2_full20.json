@@ -25,7 +25,7 @@
   "weight_decay": 0.0001,
   "lr_drop_epoch": 10,
   "clip_grad_norm": 0.1,
-  "output": "checkpoints/e2_full20_seed2027",
+  "output": "/data2/gaob/Miss-RGBT/checkpoints/e2_full20_seed2027",
   "checkpoint_epochs": [
     10,
     20
