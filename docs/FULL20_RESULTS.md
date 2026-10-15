@@ -22,6 +22,6 @@ LasHeR报告PR、NPR、SR；RGBT234报告MPR、MSR。Miss严格目标为LasHeR P
 
 实际结果见../reports/full20_comparison_20261013_v1/RESULTS.md及同目录JSON/CSV。两模型各20轮/50000更新，四组全量评估共1916次序列运行/1349412帧。脚本读取服务器实际最终权重、训练记录及完整bbox回执，已成功验证全部范围与哈希；原始记录及实际部署源码已经独立归档。该汇总为CPU分析，不重新执行模型。
 
-严格Miss目标E3达到0/4、E4达到1/4；完整输入均低于E0。E5尚未正式训练，不能据本轮宣称反向反馈有效或三个论文模块成立。独立审计状态以同目录EXPERIMENT_AUDIT.md/json实际文件为准。checkpoint_metadata.json给出服务器实际CPU读取证据；本机未下载原始权重字节，不能将其写成独立本地二进制验证。
+严格Miss目标E3达到0/4、E4达到1/4；完整输入均低于E0。E5尚未正式训练，不能据本轮宣称反向反馈有效或三个论文模块成立。独立审计已生成：WARN，same-family/provisional；范围、复算证据和限制以同目录EXPERIMENT_AUDIT.md/json为准。checkpoint_metadata.json给出服务器实际CPU读取证据；本机未下载原始权重字节，不能将其写成独立本地二进制验证。
 
 完成后仍需独立实验审计、同预算E2/E5与容量对照，才能判断三个论文组件是否有效。单seed主结果不证明统计稳定性。

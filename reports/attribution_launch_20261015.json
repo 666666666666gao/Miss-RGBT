@@ -1,0 +1,39 @@
+{
+  "controller_pid": 3796810,
+  "controller_cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python scripts/run_attribution_controls.py ",
+  "source_version": "dfc989e952014a6d5f2d22eb330428992489e175",
+  "status": {
+    "stage": "E0_AVAILABILITY_COMPLETE_RUNNING",
+    "controller_pid": 3796810,
+    "updated_utc": "2026-10-15T03:40:32.032585Z"
+  },
+  "initial_evaluation": {
+    "command": [
+      "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+      "scripts/evaluate_model.py",
+      "--checkpoint",
+      "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+      "--output",
+      "/home/gaob/Miss-RGBT/results/e0_availability_complete_20261015",
+      "--condition",
+      "complete",
+      "--gpus",
+      "2,3"
+    ],
+    "pid": 3796928,
+    "cuda_visible_devices": "2,3",
+    "started_utc": "2026-10-15T03:40:32.043815Z"
+  },
+  "started_time_epoch": 1792035639.950507,
+  "preflight_terminal_exit_codes": {
+    "e0_ft": 0,
+    "e2": 0
+  },
+  "sequence": [
+    "E0 availability complete",
+    "E0 availability miss",
+    "E0-FT GPU2 and E2 GPU3 full20",
+    "E0-FT complete/miss GPU2",
+    "E2 complete/miss GPU2,3"
+  ]
+}

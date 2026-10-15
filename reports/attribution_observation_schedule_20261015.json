@@ -1,0 +1,16 @@
+{
+  "pid": 24136,
+  "parent_pid": 4552,
+  "command": [
+    "C:\\Users\\gb\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+    "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\wait_attribution_first_node.py"
+  ],
+  "started_utc": "2026-10-15T03:42:22.137525+00:00",
+  "deadline_epoch": 1792044639.950507,
+  "deadline_bjt": "2026-10-15T14:10:39.950507+08:00",
+  "controller_pid": 3796810,
+  "scope": "One passive first diagnostic after expected E0-availability evaluations and initial training; no earlier remote query.",
+  "native_session": 48256,
+  "local_wait_policy": "Do not join or query NN before the deadline. No duplicate observer.",
+  "note": "This is a passive observer launch record, not a subsequent controller-progress check."
+}
