@@ -58,22 +58,23 @@ def prepare(condition):
     return sorted(jobs, key=lambda x: x['frames'], reverse=True), inventory
 
 
-def worker_init(checkpoint, output):
-    global TRACKER, READ_FRAME, TORCH, ROOT
-    assert os.environ['CUDA_VISIBLE_DEVICES'] == '2,3'
+def worker_init(checkpoint, output, physical_gpus):
+    global TRACKER, READ_FRAME, TORCH, ROOT, PHYSICAL_GPUS
+    PHYSICAL_GPUS = physical_gpus
+    assert os.environ['CUDA_VISIBLE_DEVICES'] == ','.join(str(gpu) for gpu in physical_gpus)
     import cv2
     import torch
     from lib.config.cadtrack.config import cfg, update_config_from_file
     from lib.train.dataset.depth_utils import get_x_frame
     from miss_rgbt.tracker import MissingTracker
-    device = (mp.current_process()._identity[0] - 1) % 2
+    device = (mp.current_process()._identity[0] - 1) % len(physical_gpus)
     torch.cuda.set_device(device)
     torch.set_num_threads(1)
     cv2.setNumThreads(1)
     update_config_from_file(str(PROJECT / 'experiments/cadtrack/cadtrack.yaml'))
     TRACKER = MissingTracker(cfg, checkpoint)
     READ_FRAME, TORCH, ROOT = get_x_frame, torch, Path(output)
-    print('WORKER_READY pid={} physical_gpu={}'.format(os.getpid(), device + 2), flush=True)
+    print('WORKER_READY pid={} physical_gpu={}'.format(os.getpid(), physical_gpus[device]), flush=True)
 
 
 def sequence(job):
@@ -94,7 +95,7 @@ def sequence(job):
     path = ROOT / 'bbox' / job['dataset'] / (job['sequence'] + '.txt')
     np.savetxt(str(path), boxes)
     receipt = dict(dataset=job['dataset'], sequence=job['sequence'], frames=job['frames'],
-                   seconds=time.time() - start, physical_gpu=TORCH.cuda.current_device() + 2,
+                   seconds=time.time() - start, physical_gpu=PHYSICAL_GPUS[TORCH.cuda.current_device()],
                    bbox_sha256=sha(path))
     save(ROOT / 'receipts' / job['dataset'] / (job['sequence'] + '.json'), receipt)
     print('DONE ' + json.dumps(receipt), flush=True)
@@ -106,6 +107,7 @@ def main():
     parser.add_argument('--checkpoint', required=True)
     parser.add_argument('--output', required=True)
     parser.add_argument('--condition', choices=['complete', 'miss'], required=True)
+    parser.add_argument('--gpus', choices=['2', '3', '2,3'], default='2,3')
     args = parser.parse_args()
     output = Path(args.output).resolve()
     output.mkdir(parents=True, exist_ok=False)
@@ -113,15 +115,17 @@ def main():
     checkpoint = str(Path(args.checkpoint).resolve())
     hashes = {str(p.relative_to(PROJECT)): sha(p) for folder in ['miss_rgbt', 'lib', 'scripts']
               for p in sorted((PROJECT / folder).rglob('*.py'))}
+    physical_gpus = [int(gpu) for gpu in args.gpus.split(',')]
+    workers = 4 * len(physical_gpus)
     save(output / 'run.json', dict(checkpoint=checkpoint, checkpoint_sha256=sha(checkpoint),
-        condition=args.condition, workers=8, physical_gpus=[2, 3], source_sha256=hashes,
+        condition=args.condition, workers=workers, physical_gpus=physical_gpus, source_sha256=hashes,
         frames=337353, sequences=479, protocol='fixed published masks; first frame complete; both missing hold; trained single-view inference; all frames scored'))
     for name in inventory['datasets']:
         (output / 'bbox' / name).mkdir(parents=True)
         (output / 'receipts' / name).mkdir(parents=True)
     started = time.time()
     mp.set_start_method('spawn', force=True)
-    with mp.Pool(8, initializer=worker_init, initargs=(checkpoint, str(output))) as pool:
+    with mp.Pool(workers, initializer=worker_init, initargs=(checkpoint, str(output), physical_gpus)) as pool:
         receipts = list(pool.imap_unordered(sequence, jobs, chunksize=1))
     assert len(receipts) == 479
     save(output / 'all_receipts.json', receipts)

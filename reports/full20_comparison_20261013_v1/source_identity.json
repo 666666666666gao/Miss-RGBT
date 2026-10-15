@@ -1,0 +1,11 @@
+{
+  "recorded_files": 104,
+  "python_files": 103,
+  "differences": {
+    "scripts/validate_focal_normalization.py": {
+      "git_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+      "deployed_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d"
+    }
+  },
+  "scope": "Actual deployed source snapshot retained in the closed archive; one auxiliary exception to Git 4c473fa."
+}

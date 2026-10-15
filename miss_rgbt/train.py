@@ -11,7 +11,7 @@ import torch
 from lib.config.cadtrack.config import cfg, update_config_from_file
 from miss_rgbt.data import make_loader
 from miss_rgbt.model import load_pretrained
-from miss_rgbt.objectives import training_loss
+from miss_rgbt.objectives import task_loss, training_loss
 
 
 def sample_masks(templates, searches, config):
@@ -39,7 +39,9 @@ def main():
     parser.add_argument('--max-steps', type=int)
     args = parser.parse_args()
     config = json.loads(Path(args.config).read_text())
-    assert config['stage'] in ['E2', 'E3', 'E4', 'E5']
+    assert config['stage'] in ['E0-FT', 'E2', 'E3', 'E4', 'E5']
+    if config['stage'] == 'E0-FT':
+        assert not config['repair'] and config['forward_weight'] == config['reverse_weight'] == 0
     seed = config['seed']
     random.seed(seed)
     np.random.seed(seed)
@@ -84,11 +86,16 @@ def main():
                 first_input_sha256 = hashlib.sha256(data['search_images'].numpy().tobytes()).hexdigest() if updates == 0 else None
                 if updates == 0:
                     first_update_inputs.append(first_input_sha256)
-                available, patch = sample_masks(templates, searches, config)
-                complete = model(templates, searches)
-                missing = model(templates, searches, available, patch)
-                loss, status = training_loss(complete, missing, boxes, cfg,
-                    config['forward_weight'], config['reverse_weight'], config['reverse_margin'])
+                if config['stage'] == 'E0-FT':
+                    complete = model(templates, searches)
+                    loss = task_loss(complete, boxes, cfg).mean()
+                    status = dict(task_c=float(loss.detach()))
+                else:
+                    available, patch = sample_masks(templates, searches, config)
+                    complete = model(templates, searches)
+                    missing = model(templates, searches, available, patch)
+                    loss, status = training_loss(complete, missing, boxes, cfg,
+                        config['forward_weight'], config['reverse_weight'], config['reverse_margin'])
                 assert torch.isfinite(loss), status
                 (loss / config['accumulation']).backward()
                 if (index + 1) % config['accumulation'] == 0:

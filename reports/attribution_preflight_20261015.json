@@ -1,0 +1,103 @@
+{
+  "results": {
+    "e0_ft": {
+      "exit_code": 0,
+      "pid": 3764404,
+      "witness": {
+        "stage": "e0_ft",
+        "updates": 2,
+        "optimizer_update_and_strict_reload": true,
+        "changed_state_keys": 212,
+        "fusion_bn_count_increment": 12,
+        "unchanged_head_bn_buffers": 36,
+        "peak_gpu_bytes": 9551390208,
+        "last_training_seconds": 7.887629270553589,
+        "physical_gpu": 2,
+        "inference_receipts": [
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_0",
+            "frames": 3,
+            "seconds": 3.2417335510253906,
+            "physical_gpu": 2,
+            "bbox_sha256": "f6ffdcdf0db7078527355c7319b974edffb1c98a16af0afee0f701a6cfba634a"
+          },
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_1",
+            "frames": 3,
+            "seconds": 0.070648193359375,
+            "physical_gpu": 2,
+            "bbox_sha256": "63a292b6c4d88019f94895adea34ebd065d0f1ecfc6e983c88abc4c5ebe54c25"
+          },
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_2",
+            "frames": 3,
+            "seconds": 0.0670309066772461,
+            "physical_gpu": 2,
+            "bbox_sha256": "e8796898d17e54e0dd7a6b827ab37cada798100fe4a70d9864d897af52910e0d"
+          }
+        ],
+        "scope": "Two real updates plus complete/RGB-missing/TIR-missing train-sequence inference on one physical card; not formal training or benchmark."
+      }
+    },
+    "e2": {
+      "exit_code": 0,
+      "pid": 3764405,
+      "witness": {
+        "stage": "e2",
+        "updates": 2,
+        "optimizer_update_and_strict_reload": true,
+        "changed_state_keys": 212,
+        "fusion_bn_count_increment": 24,
+        "unchanged_head_bn_buffers": 36,
+        "peak_gpu_bytes": 17284329984,
+        "last_training_seconds": 9.370074033737183,
+        "physical_gpu": 3,
+        "inference_receipts": [
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_0",
+            "frames": 3,
+            "seconds": 3.2489137649536133,
+            "physical_gpu": 3,
+            "bbox_sha256": "f6ffdcdf0db7078527355c7319b974edffb1c98a16af0afee0f701a6cfba634a"
+          },
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_1",
+            "frames": 3,
+            "seconds": 0.060219526290893555,
+            "physical_gpu": 3,
+            "bbox_sha256": "63a292b6c4d88019f94895adea34ebd065d0f1ecfc6e983c88abc4c5ebe54c25"
+          },
+          {
+            "dataset": "LasHeR-Miss",
+            "sequence": "train_2up_2",
+            "frames": 3,
+            "seconds": 0.10081768035888672,
+            "physical_gpu": 3,
+            "bbox_sha256": "e8796898d17e54e0dd7a6b827ab37cada798100fe4a70d9864d897af52910e0d"
+          }
+        ],
+        "scope": "Two real updates plus complete/RGB-missing/TIR-missing train-sequence inference on one physical card; not formal training or benchmark."
+      }
+    }
+  },
+  "admission": [
+    "2, 12, 24576, 0",
+    "3, 12, 24576, 0"
+  ],
+  "env_spec_sha256": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+  "source_sha256": {
+    "miss_rgbt/train.py": "f88b638f61bc40a0f1fa2bc7618efa9ed41c25dbafd8bd3a4f3439a154b28d17",
+    "scripts/evaluate_model.py": "dae7e9036612cf474f336988ebca927371209e756e3e539ed2eeaaaac2d547e5",
+    "scripts/package_e0_availability.py": "4202a3ff63d02b7f68994040c5c4b6c2e436385b51449683e8b61095358c8b67",
+    "scripts/run_attribution_controls.py": "1815e62f86a222f7e46791934151edf5b828029829d7db9e5a087c9412262c2d",
+    "scripts/validate_attribution.py": "a865d0b45a579412f67b73150609158976afe8fae46d621d5d9434c1860fe3bc",
+    "configs/e0_ft_full20.json": "f86127b7043d0be42eff5f5c1df8db219d65e6721c04e748978c4dbce835c6ad",
+    "configs/e2_full20.json": "ff6db5c5f98dcfab00a89c549f9c6b5698b296cb85d386bca58d534e0671864e"
+  },
+  "time_epoch": 1792034812.4860377
+}
