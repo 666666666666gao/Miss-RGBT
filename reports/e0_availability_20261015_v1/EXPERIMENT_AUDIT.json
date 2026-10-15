@@ -1,0 +1,689 @@
+{
+  "audit_skill": "experiment-audit",
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T06:49:19.574173+00:00",
+  "verdict": "WARN",
+  "overall_verdict": "warn",
+  "integrity_status": "warn",
+  "reason_code": "numerically_reproduced_with_provenance_scoring_and_scope_limits",
+  "summary": "All recorded new and original scores/curves reproduce exactly. Qualified descriptive control accepted numerically; semantic review remains provisional and provenance limits remain explicit.",
+  "numeric_reproduction": {
+    "status": "PASS",
+    "acceptance_status": "accepted",
+    "core_counted_checks": 209037,
+    "new_curve_cells": 93966,
+    "original_curve_cells": 93966,
+    "curve_unequal_cells": 0,
+    "raw_metrics": 20,
+    "max_scalar_error": 0.0,
+    "scalar_acceptance_tolerance": 1e-12,
+    "max_curve_error": 0.0,
+    "curve_acceptance_tolerance": 0.0,
+    "additional_assertions": 4,
+    "native_script_exit_code": 0,
+    "new_neural_executions": 0
+  },
+  "blockers": [],
+  "blocker_count": 0,
+  "scope_of_no_blockers": "No blocker to retaining the qualified installed-scorer descriptive comparison; not approval of unsupported broader claims.",
+  "agent_id": "/root/e0_availability_integrity_audit",
+  "verdict_id": "e0_availability_20261015_v1_fresh_audit",
+  "executor_family": "openai",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "max",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "routing_attestation": "UNATTESTED_REQUEST_METADATA_ONLY",
+  "routing_note": "Model/effort are requested native spawn metadata, not independently observed backend attestation. Fresh fork_turns=none. No other reviewer model or overlay was used.",
+  "context_note": "Followed user session instructions to read SOUL, USER and daily notes; home MEMORY.md was not read. Judgments and calculations were made from the supplied primary artifacts.",
+  "trace_path": "C:/Users/gb/projects/Miss-RGBT/.aris/traces/experiment-audit/2026-10-15_availability_run01",
+  "private_audit_path": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_independent_audit_20261015",
+  "checks": {
+    "A_gt_provenance": {
+      "status": "WARN",
+      "deterministic_status": "PASS",
+      "details": "713 external dataset GT files, both mask files, sequence lists and 257 instantiated attribute metadata files are locally present and match supplied inventory/collection hashes. All claimed 245 LasHeR plus 234 RGBT234 sequences are covered. Application code passes only first-frame GT into inference, uses available sensor paths thereafter, and holds both-missing frames. No generated reference or future-GT inference path was found.",
+      "limits": [
+        "GT and image upstream authenticity is not independently established by self-consistent hashes. Image bytes and checkpoint binaries were not supplied to this audit.",
+        "The local package snapshot matches a post-evaluation installed-package hash observation; it is not a pre-launch upstream attestation.",
+        "Complete first-frame initialization overrides masks in 65 sequences, including 16 whose published first-frame state is both missing; this is the explicitly recorded protocol, not an undisclosed exception."
+      ],
+      "evidence": [
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 29
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 49
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 80
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/tracker.py",
+          "line": 27
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/tracker.py",
+          "line": 36
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/model.py",
+          "line": 49
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/lasher_dataset.py",
+          "line": 12
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/rgbt234_dataset.py",
+          "line": 13
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/collection.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/collection.json",
+          "line": 2182
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/collection.json",
+          "line": 5740
+        }
+      ]
+    },
+    "B_score_semantics": {
+      "status": "WARN",
+      "deterministic_status": "PASS",
+      "details": "Independent NumPy arithmetic reproduces all 93,966 new and 93,966 original per-sequence curve cells exactly, in installed sequence-file order; all 20 primary metrics have zero observed error. All 10 comparison rows/deltas and 4 strict-target decisions match. No model-output-based normalization is present.",
+      "limits": [
+        "LasHeR invalid GT means any x/y/w/h <= 0 after float32 load and rounding. The installed scorer assigns distance -1, counting these frames as PR/NPR successes; SR assigns overlap -1, counting them as failures. 1,260 frames satisfy this rule, including one first frame. The denominator retains all frames.",
+        "SR/MSR are unweighted means over 21 sampled threshold cells and sequences, not a trapezoidal integral or frame-weighted metric. NPR uses ground-truth width/height and representative threshold 0.20.",
+        "Exact score/curve equality does not imply exact trajectory equality. Complete input has 254/479 exact arrays and bytes, maximum absolute raw difference 2.6147972675971687e-12; only 478 rounded float32 arrays are equal."
+      ],
+      "evidence": [
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/utils.py",
+          "line": 30
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/basedataset.py",
+          "line": 19
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/basedataset.py",
+          "line": 77
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/utils.py",
+          "line": 117
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/utils.py",
+          "line": 121
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/utils.py",
+          "line": 161
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py",
+          "line": 23
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py",
+          "line": 57
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py",
+          "line": 246
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py",
+          "line": 290
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/metrics/metrics.py",
+          "line": 332
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/analysis/build_e0_availability_comparison.py",
+          "line": 54
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/analysis/build_full20_comparison.py",
+          "line": 14
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/comparison.json",
+          "line": 137
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/RESULTS.md",
+          "line": 18
+        }
+      ]
+    },
+    "C_existence_identity": {
+      "status": "WARN",
+      "deterministic_status": "PASS",
+      "details": "Verified 2,057 closed archive members against extracted bytes, 2,056 collection hashes, 115 archived source/config hashes, 106 per-run source bindings each, and 1,939 producer input hashes. Verified all 958 new plus 958 original bbox/receipt bindings, exact coverage, finite shapes, first-frame GT identity, logs and complete-trajectory comparison. Two new launches have matching PID/condition/checkpoint bindings and exit 0 records. Each new log has 8 worker-ready and 479 matching DONE lines; final stdout metrics equal metric files.",
+      "limits": [
+        "The 250-state-key equality and zero-update claim are supported by packaging source and executed metadata, with consistent original/package hash strings; tensors were not loaded or independently compared by this reviewer.",
+        "1,967 local package files match the 3,556-entry remote manifest. The 1,589 extra paths are all GT-tree files and remain metadata-only.",
+        "The two local collection/aggregation exit-1 events are preserved in a retrospective ledger. Separate contemporaneous native terminal receipts were not supplied; the remote transport exit 0 does not attest to those local failures."
+      ],
+      "evidence": [
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/packaging.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/package_e0_availability.py",
+          "line": 23
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/run_attribution_controls.py",
+          "line": 64
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/run_campaign.py",
+          "line": 22
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/run_campaign.py",
+          "line": 34
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/collection.json",
+          "line": 123
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/results/e0_availability_complete_20261015/run.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/results/e0_availability_miss_20261015/run.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/records/e0_availability_complete_exit.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/records/e0_availability_miss_exit.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/collect_e0_availability_closed.py",
+          "line": 65
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_package_coverage.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_collection_failures.json",
+          "line": 3
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_collection_failures.json",
+          "line": 15
+        }
+      ]
+    },
+    "D_executed_paths": {
+      "status": "PASS",
+      "deterministic_status": "PASS",
+      "details": "Actual evidence identifies evaluate_model.main -> prepare/worker_init/sequence -> MissingTracker -> MissingTrackerModel -> unchanged CADTrack backbone blocks/head; evaluator then registers bbox files in rgbt.LasHeR/RGBT234 and calls PR_LasHeR, NPR, SR_LasHeR, MPR and MSR. Numeric execution is independently corroborated by every output curve cell. Optional repair is disabled, patch_keep is absent, and no KD/training call occurs on this inference path. Generic PR/SR, GTOT/RGBT210 metrics, cross_layer candidate elimination, alternative pretraining loads and training dataset classes are not the generators of the claimed scores.",
+      "limits": [
+        "Static application-source review and consistent native output records are not an instrumented runtime trace or authentication of external PyTorch/timm/OpenCV binaries.",
+        "The inherited evaluate_model docstring and run protocol say trained single model/single-view inference; for this checkpoint the explicit packaging/controller records establish zero-update evaluation of an already-trained E0."
+      ],
+      "evidence": [
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/run_attribution_controls.py",
+          "line": 91
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 61
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 128
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 133
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/tracker.py",
+          "line": 14
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/model.py",
+          "line": 28
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/model.py",
+          "line": 67
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/lib/models/cadtrack/vit_care.py",
+          "line": 57
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/lib/models/cadtrack/cadtrack.py",
+          "line": 73
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/lib/models/layers/head.py",
+          "line": 129
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/lasher_dataset.py",
+          "line": 63
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/rgbt234_dataset.py",
+          "line": 53
+        }
+      ]
+    },
+    "E_scope": {
+      "status": "WARN",
+      "deterministic_status": "PASS",
+      "details": "Supports a descriptive zero-update availability-aware inference-path control using one original E0 epoch20 checkpoint: two full conditions, 958 sequence-runs and 674,706 output frame rows. Complete five-metric equality and five adverse missing-input deltas are retained. Current RESULTS.md appropriately disclaims isolated module attribution and stronger conclusions.",
+      "limits": [
+        "This is not a new training result, multi-seed robustness estimate or evidence of three effective paper modules.",
+        "The intervention changes both unobserved patch-embedding handling and historical-template availability; it is not a one-line causal intervention.",
+        "Metadata and launch files for E0-FT/E2 do not demonstrate their completion. BN or KD efficacy and E0-FT/E2 final metrics are outside this closed control.",
+        "Recorded seconds include multiprocessing/evaluation overhead and missing-frame holds; they are not a matched per-frame deployment latency benchmark."
+      ],
+      "evidence": [
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/comparison.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/RESULTS.md",
+          "line": 3
+        },
+        {
+          "file": "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/RESULTS.md",
+          "line": 20
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/tracker.py",
+          "line": 53
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/miss_rgbt/model.py",
+          "line": 57
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/run_attribution_controls.py",
+          "line": 97
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/records/e0_ft_full20_train_launch.json",
+          "line": 2
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/records/e2_full20_train_launch.json",
+          "line": 2
+        }
+      ]
+    },
+    "F_evaluation_type": {
+      "status": "PASS",
+      "classification": "real_gt",
+      "details": "Real-GT OPE on provided LasHeR/RGBT234 annotation copies. Published-mask sensor absence is simulated, but the reference remains independently stored dataset annotations, not synthetic/model/self-supervised targets. The classification does not authenticate upstream annotation/image/checkpoint provenance.",
+      "evidence": [
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 32
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/source/scripts/evaluate_model.py",
+          "line": 42
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/basedataset.py",
+          "line": 9
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/lasher_dataset.py",
+          "line": 12
+        },
+        {
+          "file": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/first5_metric_package/rgbt/dataset/rgbt234_dataset.py",
+          "line": 13
+        }
+      ]
+    }
+  },
+  "evaluation_type": "real_gt",
+  "rows": [
+    {
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 75.63650288717686,
+      "baseline": 75.63650288717686,
+      "delta_pp": 0.0,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 71.77283680562866,
+      "baseline": 71.77283680562866,
+      "delta_pp": 0.0,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 60.125713676122736,
+      "baseline": 60.125713676122736,
+      "delta_pp": 0.0,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.67713392128344,
+      "baseline": 90.67713392128344,
+      "delta_pp": 0.0,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 66.8452283301532,
+      "baseline": 66.8452283301532,
+      "delta_pp": 0.0,
+      "sequences": 234,
+      "frames": 116650
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 61.31402929240802,
+      "baseline": 63.47250706301003,
+      "delta_pp": -2.158477770602005,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 69.3,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 56.80622972561172,
+      "baseline": 58.58185056215868,
+      "delta_pp": -1.7756208365469561,
+      "sequences": 245,
+      "frames": 220703
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 49.224669599421524,
+      "baseline": 50.583148589078256,
+      "delta_pp": -1.3584789896567315,
+      "sequences": 245,
+      "frames": 220703,
+      "strict_target": 54.4,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 79.94120202733964,
+      "baseline": 82.79481455539279,
+      "delta_pp": -2.853612528053148,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 88.1,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 58.034248028785605,
+      "baseline": 59.57443513369343,
+      "delta_pp": -1.5401871049078224,
+      "sequences": 234,
+      "frames": 116650,
+      "strict_target": 64.3,
+      "target_exceeded": false
+    }
+  ],
+  "complete_trajectory_comparison": {
+    "sequences": 479,
+    "frames": 337353,
+    "exact_arrays": 254,
+    "exact_bytes": 254,
+    "rounded_float32_equal": 478,
+    "max_abs_error": 2.6147972675971687e-12
+  },
+  "mask_details": {
+    "LasHeR": {
+      "sequences": 245,
+      "frames": 220703,
+      "states_00_01_10_11": [
+        33743,
+        56020,
+        43390,
+        87550
+      ],
+      "first_frame_mask_states": {
+        "[1, 1]": 211,
+        "[0, 1]": 15,
+        "[1, 0]": 13,
+        "[0, 0]": 6
+      },
+      "invalid_gt_frames": 1260,
+      "fractional_gt_coordinates": 0
+    },
+    "RGBT234": {
+      "sequences": 234,
+      "frames": 116650,
+      "states_00_01_10_11": [
+        18766,
+        24800,
+        25651,
+        47433
+      ],
+      "first_frame_mask_states": {
+        "[1, 1]": 203,
+        "[0, 1]": 10,
+        "[1, 0]": 11,
+        "[0, 0]": 10
+      },
+      "invalid_gt_frames": 0,
+      "fractional_gt_coordinates": 0
+    }
+  },
+  "both_missing_holds_excluding_first": 52493,
+  "package_coverage": {
+    "remote_metadata_files": 3556,
+    "local_byte_verified_files": 1967,
+    "metadata_only_extra_gt_files": 1589,
+    "all_claimed_gt_files": 713,
+    "local_overlap_mismatches": 0,
+    "attribute_metadata_files": 257
+  },
+  "artifact_counts": {
+    "closed_archive_members": 2057,
+    "collection_file_hashes": 2056,
+    "source_manifest_entries": 115,
+    "source_entries_per_run": 106,
+    "producer_input_hashes": 1939,
+    "new_bbox_receipts": 958,
+    "original_bbox_receipts": 958,
+    "old_complete_tar_members": 966,
+    "old_miss_tar_members": 973
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Two complete full evaluations with 958 sequence-runs and 674706 output frame rows",
+      "impact": "supported",
+      "basis": "958 matching individual/aggregate/log receipts; all trajectory shapes and run/completed/exit bindings verified"
+    },
+    {
+      "id": "C2",
+      "claim": "All five complete-input primary metrics equal original E0",
+      "impact": "supported",
+      "basis": "All five raw scores and all 46983 complete curve cells equal; 254 arrays/bytes exact, remaining raw differences <= 2.6147972675971687e-12"
+    },
+    {
+      "id": "C3",
+      "claim": "All five missing-input metrics decrease and strict targets are 0/4",
+      "impact": "supported",
+      "basis": "Independent GT/trajectory reconstruction of new and original results"
+    },
+    {
+      "id": "C4",
+      "claim": "Identical E0 tensors and zero optimizer updates",
+      "impact": "needs_qualifier",
+      "basis": "Consistent packaging witness and source; no independent reviewer checkpoint binary/tensor comparison"
+    },
+    {
+      "id": "C5",
+      "claim": "Upstream official evaluator or all 3556 package files authenticated locally",
+      "impact": "unsupported",
+      "basis": "Installed implementation only; 1589 extra files remain remote hash metadata"
+    },
+    {
+      "id": "C6",
+      "claim": "Three effective modules, isolated masking/KD/repair efficacy, statistical robustness or completed E0-FT/E2",
+      "impact": "unsupported",
+      "basis": "Single zero-update inference-path control does not identify these effects"
+    },
+    {
+      "id": "C7",
+      "claim": "All 479 complete trajectories are byte-identical or all score-input rounded arrays are identical",
+      "impact": "unsupported",
+      "basis": "254 byte-identical; 478 rounded-array-identical; all aggregate and sequence curves nevertheless exactly equal"
+    }
+  ],
+  "action_items": [
+    "Retain the negative missing-input deltas, strict 0/4 result, whole-path intervention wording and exact-versus-tolerance distinction.",
+    "State the installed scorer float32/rounding, first-frame, invalid-GT and threshold-mean conventions alongside absolute scores; do not label upstream official equivalence authenticated.",
+    "Keep identical-tensor and local failure-history claims tied to their packaging/retrospective witnesses. Stronger claims require independently accessible original evidence, not a fresh reenactment.",
+    "Do not infer component efficacy, robust gains, matched latency or E0-FT/E2 completion from this control. No additional neural execution is needed to preserve this audit verdict."
+  ],
+  "historical_failures": {
+    "baseline_initial_two_workers": {
+      "exit_code": 143,
+      "log_marker": "Terminated",
+      "completed_sequence_receipts": 2,
+      "resumed_exit_code": 0,
+      "resumed_new_sequence_receipts": 477,
+      "all_479_combined_receipts_verified": true
+    },
+    "local_collection_and_aggregation": [
+      {
+        "operation": "Initial local closure after successful remote collection/SCP/extraction",
+        "native_session": 13166,
+        "native_exit_code": 1,
+        "remote_collection_exit_code": 0,
+        "observed_utc": "2026-10-15T06:25:03.046117+00:00",
+        "error": "FileNotFoundError: earlier local package archive lacks gt_file/GTOT/SequencesName.txt",
+        "stage": "After all 2056 copied-file hashes were verified; initial package-wide subset assumption was incorrect.",
+        "disposition": "Preserved original archive/transport/raw output. Compared exact path sets:1967 overlap files all match;1589 extra GT-tree files metadata only. All713 claimed-dataset GT and all earlier package source/metadata bytes present. No test, NN evaluation or remote collector rerun.",
+        "original_script": "collect_e0_availability_closed.py",
+        "coverage_record": "e0_availability_package_coverage.json"
+      },
+      {
+        "operation": "Initial local recorded-metric aggregation",
+        "exit_code": 1,
+        "observed_utc": "2026-10-15T06:27:30.959185+00:00",
+        "error": "AssertionError at initial curve-to-metric consistency check: PR/NPR/MPR use threshold column20, not the mean of all precision thresholds.",
+        "writes_before_failure": 0,
+        "neural_runs": 0,
+        "initial_source": "build_e0_availability_comparison_initial_failed.py",
+        "initial_source_sha256": "16613bbbed307988a42b915604aa57f27e9c16abc607b10d4fb97e4021347059",
+        "disposition": "Inspected archived installed metrics.py. Corrected only reduction: column20 for PR/NPR/MPR, all21 threshold cells for SR/MSR; retain same raw curves, scores and original output directory."
+      }
+    ],
+    "local_failure_provenance_limit": {
+      "parent_message": "No separate contemporaneous local terminal-receipt files were saved for session 13166 or the initial builder assertion. Both exit 1 observations were returned in the conversation; the failure ledger was materialized afterward. Remote transport exit 0 establishes only remote collection success.",
+      "record_type": "executor statement during this audit, not independent terminal attestation"
+    },
+    "remote_collection_transport_exit_code": 0
+  },
+  "auditor_failures": [
+    {
+      "command": "python -",
+      "exit_code": 1,
+      "error": "No pyvenv.cfg file",
+      "resolved_interpreter": "E:/Scripts/python.exe",
+      "effect": "No audit computation executed; inputs untouched"
+    },
+    {
+      "command": "C:/Users/gb/.local/bin/python3.12.exe -c import sys,numpy",
+      "exit_code": 1,
+      "error": "ModuleNotFoundError: No module named numpy",
+      "effect": "Interpreter dependency probe only; no package install; inputs untouched"
+    },
+    {
+      "command": "Read-only interpreter/path discovery using rg --files and Get-ChildItem over candidate directories",
+      "exit_code": 1,
+      "error": "Some candidate directories were absent; Get-ChildItem used ErrorAction SilentlyContinue",
+      "effect": "Discovery only; no evidence mutation"
+    }
+  ],
+  "preservation": {
+    "input_count_before": 4049,
+    "input_count_after": 4049,
+    "changed_count": 0,
+    "before_manifest": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\e0_availability_independent_audit_20261015\\input_seal_before.json",
+    "before_manifest_sha256": "921a92d109e58e4f5dd3376789bb05a2d32bea63efc50a560a95d0346a0c57ea",
+    "after_manifest": "C:\\Users\\gb\\.codex_tmp\\miss_rgbt_campaign_20261013\\e0_availability_independent_audit_20261015\\input_seal_after.json",
+    "after_manifest_sha256": "dd70b7bf19c9ac2f2e120111f0a55f9055ccc0ad7be09af5353c33d9145f2d04",
+    "raw_source_metrics_trajectories_author_prose_modified": false
+  },
+  "audited_input_hashes": {
+    "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/comparison.json": "sha256:2f6b01dd2f680741357b7c548e2b1377687234cb873b334e60e9df9d0f24318e",
+    "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/comparison.csv": "sha256:b8f8078c588367eeb00fa625b3092d044ccfcded8049719ebd2c836d6ad88406",
+    "C:/Users/gb/projects/Miss-RGBT/reports/e0_availability_20261015_v1/RESULTS.md": "sha256:3a5ae46863fd02e0da019e057350a91ffba0f55aef9c2b981199c59988f8f191",
+    "C:/Users/gb/projects/Miss-RGBT/analysis/build_e0_availability_comparison.py": "sha256:9bd47145ecd26edfa687a2b50f083639fcb141cbcf916b9ac1003f8ced6822be",
+    "C:/Users/gb/projects/Miss-RGBT/analysis/build_full20_comparison.py": "sha256:73009e89a1f2ca679f98389b7ca54ff57efb6822d3c09c2725df883081f80751",
+    "C:/Users/gb/projects/Miss-RGBT/reports/e0/inventory.json": "sha256:2b3278b5f35ac322f83961a649720d433a91c61a53b5a7e045dcef1fc4f3ec83",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/collection.json": "sha256:a26a7f9a09c2964be03b5e185a5473120df8673533873463e4537e1354362a90",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/packaging.json": "sha256:c0ef264e664d6c9973fdd04f3e430e20073670c45e9a17e93cfe6dda9cbfa9ea",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_raw/records/source_sha256.json": "sha256:be048436161a90a104c8a68cec4e626b5c49f4fa940846f7aea27523f7bdeb5c",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_availability_closed_20261015_v1.tar.gz": "sha256:866913d2025a9de4ebd4a354a5fd1e4254d4b12063f73bdce5e203e677594189",
+    "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/e0_complete_raw_results_20261013.tar.gz": "sha256:eff683ac725fad93d5c3de02e0fc5a5dde46a081aae49f551dd707f901081951",
+    "C:/Users/gb/.codex_tmp/cadtrack_miss_ep20_20261013/baseline_raw_results.tar.gz": "sha256:85b302508ce56b7e688c0f8c21f58a6dd07fd883ea8f57db5bf99a47bae3dc0a",
+    "C:/Users/gb/projects/Miss-RGBT/.aris/traces/experiment-audit/2026-10-15_availability_run01/001-availability.request.json": "sha256:c77695a956439a2f9650c0d5fa3d85151def494d4a0b4d9f05cb297a35bcf656",
+    "C:/Users/gb/projects/Miss-RGBT/.aris/traces/experiment-audit/2026-10-15_availability_run01/run.meta.json": "sha256:de1efda4253aa37bfa9b894a8f3c58a8f529196a5182b92eb9d5bbc019a09079"
+  },
+  "deterministic_trace_hashes": {
+    "audit_common.py": "4ef747f6fb63854293bbd26331fb9bb5a3aca90b93fe50101425305f1cf9ecb8",
+    "run_independent.py": "0bfe86ff1d4a9309605ec97d553f1338a5b6d6508b067a3ced9c0a9146971b08",
+    "run_independent.native.log": "9e71e763111077839d082577e916f21694661d9dd7e771ba4c8ff014b07d7958",
+    "deterministic_results.json": "9e71e763111077839d082577e916f21694661d9dd7e771ba4c8ff014b07d7958",
+    "complete_trajectory_comparison.json": "c8fff7ada9c777dbedb05824a781c4b478e087b2e3abdcfd6fd80b8d528c5655",
+    "supplementary.py": "fa9c897226952aaa5641e9cb4fd43a5498fce508c757d7878a4586d07584b773",
+    "supplementary_results.json": "acd380699fb02721575fd2bf2e2d0c7ab60c5666c5f0c2ca861ee9512e935d00",
+    "archived_import_closure.json": "dfc06a7daf1258963c8b02d3b1b430cd296360a672e3edd1000eccd53d0451c4",
+    "final_checks.py": "f41e158f2e21173a63f9219b82dce2de6cfb7a6fe400e9582eae52c36c18c649",
+    "final_checks.native.log": "8912b7fe62f0134b075c3d8004447656ecb427d3a3e349be6c219a1d6847fc61",
+    "final_checks.json": "b38b168ac8706422ca6bb2688759a1679b6561f9438d07a9f73f34e73dc0336c"
+  },
+  "output_hash_note": "Report output SHA256 values are written after serialization to private output_seals.json and returned verbatim to the parent, avoiding self-referential hashes."
+}

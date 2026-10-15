@@ -1,0 +1,51 @@
+{
+  "scope": "One60-second nominal sample,6 GPU/RAM point observations and5 CPU intervals; no temperature/power/other-GPU query, no training instrumentation, no same-GPU concurrency trial. nvidia-smi utilization is activity percentage, not a measured FLOP/s saturation claim. Allocated peak excludes extra CUDA/runtime overhead and is already above current free memory.",
+  "start_utc": "2026-10-15T06:11:25.362925Z",
+  "end_utc": "2026-10-15T06:12:25.694628Z",
+  "source_profile": "profile_output/resources_20261015_1410.json",
+  "source_training_intake": "C:/Users/gb/.codex_tmp/miss_rgbt_campaign_20261013/attribution_first_intake.json",
+  "gpus": [
+    {
+      "physical_gpu": 2,
+      "total_gib": 24,
+      "used_gib_mean": 11.1884765625,
+      "free_gib_min": 12.5009765625,
+      "utilization_percent_mean": 85.16666666666667,
+      "utilization_percent_min": 81,
+      "utilization_percent_max": 88,
+      "next_dual_view_allocated_peak_gib": 16.098381996154785,
+      "free_minus_allocated_peak_gib": -3.597405433654785,
+      "next_required_dual_view_training_fits_current_free_memory": false
+    },
+    {
+      "physical_gpu": 3,
+      "total_gib": 24,
+      "used_gib_mean": 18.6708984375,
+      "free_gib_min": 5.0185546875,
+      "utilization_percent_mean": 99.16666666666667,
+      "utilization_percent_min": 95,
+      "utilization_percent_max": 100,
+      "next_dual_view_allocated_peak_gib": 16.098381996154785,
+      "free_minus_allocated_peak_gib": -11.079827308654785,
+      "next_required_dual_view_training_fits_current_free_memory": false
+    }
+  ],
+  "host": {
+    "logical_cpu_count": 64,
+    "cpu_busy_percent_interval_mean": 35.48385932348676,
+    "cpu_iowait_percent_interval_mean": 0.625579636750919,
+    "available_ram_gib_min": 233.96339416503906,
+    "available_ram_gib_mean": 233.98979314168295,
+    "load_average_last": [
+      32.78,
+      28.19,
+      33.07
+    ]
+  },
+  "decision": "Keep one formal training per physical GPU2/3, two simultaneous jobs total. No additional required dual-view training fits observed free memory. CPU/RAM aggregate headroom does not resolve GPU memory admission.",
+  "same_gpu_parallel_speedup_or_slowdown_measured": false,
+  "training_rates": {
+    "e0_ft": 0.9174729440883296,
+    "e2": 0.49857765711011953
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "prior_observer_native_session": 48256,
+  "prior_observer_exit_code": 0,
+  "prior_observer_consumed": true,
+  "next_observer_native_session": 61699,
+  "owner": {
+    "pid": 65768,
+    "parent_pid": 64100,
+    "command": [
+      "C:\\Users\\gb\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\wait_attribution_ft_node.py"
+    ],
+    "started_utc": "2026-10-15T06:23:13.829502+00:00",
+    "deadline_epoch": 1792095760.1419878,
+    "deadline_bjt": "2026-10-16T04:22:40.141988+08:00",
+    "controller_pid": 3796810,
+    "source_intake_sha256": "3789ab2233c01925a0d6c69255496b93941b67a2579d126b151e2f6fd5462f4e",
+    "expected_e0_ft_end_epoch": 1792096060.1419878,
+    "expected_e2_end_epoch": 1792141860.311855,
+    "scope": "One passive observation 300 seconds before projected E0-FT training finish, based on actual 14:10 throughput. Prior observer terminal and consumed; no earlier remote query."
+  },
+  "source_runtime_sha256": "3789ab2233c01925a0d6c69255496b93941b67a2579d126b151e2f6fd5462f4e",
+  "estimate_scope": "Recent200 updates at the actual14:10 snapshot; forecast only, not training/evaluation completion."
+}

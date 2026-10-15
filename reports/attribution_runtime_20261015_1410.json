@@ -1,0 +1,145 @@
+{
+  "observed_time_epoch": 1792044641.694283,
+  "status": {
+    "stage": "E0_FT_E2_FULL20_RUNNING",
+    "controller_pid": 3796810,
+    "updated_utc": "2026-10-15T05:19:03.712951Z"
+  },
+  "controller_cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python scripts/run_attribution_controls.py ",
+  "controller_running": true,
+  "training": {
+    "e0_ft": {
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027",
+      "exists": true,
+      "last": {
+        "task_c": 0.840136706829071,
+        "epoch": 2,
+        "update": 2825,
+        "loss": 0.840136706829071,
+        "seconds": 3089.0481848716736,
+        "peak_gpu_bytes": 9551390208,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_updates_per_second": 0.9174729440883296,
+      "estimated_training_end_epoch": 1792096060.1419878
+    },
+    "e2": {
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e2_full20_seed2027",
+      "exists": true,
+      "last": {
+        "task_c": 4.375225067138672,
+        "task_m": 5.685023307800293,
+        "kd_forward": 0.8863611817359924,
+        "kd_reverse": 0.2190408706665039,
+        "reverse_fraction": 0.25,
+        "epoch": 1,
+        "update": 1529,
+        "loss": 10.060248374938965,
+        "seconds": 3088.489721059799,
+        "peak_gpu_bytes": 17285506048,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_updates_per_second": 0.49857765711011953,
+      "estimated_training_end_epoch": 1792141860.311855
+    }
+  },
+  "exits": {
+    "e0_availability_miss_exit": {
+      "pid": 3934106,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T05:19:03.696132Z"
+    },
+    "e0_availability_complete_exit": {
+      "pid": 3796928,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T04:33:26.561170Z"
+    }
+  },
+  "evaluations": {
+    "e0_availability_complete": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_availability_complete_20261015",
+          "--condition",
+          "complete",
+          "--gpus",
+          "2,3"
+        ],
+        "pid": 3796928,
+        "cuda_visible_devices": "2,3",
+        "started_utc": "2026-10-15T03:40:32.043815Z"
+      },
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 3165.044476032257
+      },
+      "metrics": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 75.63650288717686,
+          "NPR": 71.77283680562866,
+          "SR": 60.125713676122736
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 90.67713392128344,
+          "MSR": 66.8452283301532
+        }
+      }
+    },
+    "e0_availability_miss": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_availability_miss_20261015",
+          "--condition",
+          "miss",
+          "--gpus",
+          "2,3"
+        ],
+        "pid": 3934106,
+        "cuda_visible_devices": "2,3",
+        "started_utc": "2026-10-15T04:33:33.171895Z"
+      },
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 2719.443680047989
+      },
+      "metrics": {
+        "LasHeR-Miss": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 61.31402929240802,
+          "NPR": 56.80622972561172,
+          "SR": 49.224669599421524
+        },
+        "RGBT234-Miss": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 79.94120202733964,
+          "MSR": 58.034248028785605
+        }
+      }
+    }
+  },
+  "e0_complete_pair": {
+    "identical_sequences": 254,
+    "max_abs_bbox_difference": 2.6147972675971687e-12,
+    "sha256": "b040eab16110db6e1ed09f2db3a0c96e942c8b280ff3247db350ae482247a9ba"
+  }
+}

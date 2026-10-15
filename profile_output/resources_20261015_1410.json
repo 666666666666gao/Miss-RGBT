@@ -1,0 +1,216 @@
+{
+  "logical_cpu_count": 64,
+  "sample_count": 6,
+  "nominal_duration_seconds": 60,
+  "samples": [
+    {
+      "sample": 0,
+      "observed_utc": "2026-10-15T06:11:25.362925Z",
+      "load_average": [
+        14.92,
+        25.22,
+        32.52
+      ],
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251255853056
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 88,
+          "memory_util_percent": 37
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 95,
+          "memory_util_percent": 40
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "observed_utc": "2026-10-15T06:11:37.431459Z",
+      "load_average": [
+        19.22,
+        25.77,
+        32.63
+      ],
+      "cpu_busy_percent": 36.042874530487246,
+      "cpu_iowait_percent": 0.6569906686385112,
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251216281600
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 82,
+          "memory_util_percent": 35
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 100,
+          "memory_util_percent": 42
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "observed_utc": "2026-10-15T06:11:49.498530Z",
+      "load_average": [
+        20.0,
+        25.67,
+        32.49
+      ],
+      "cpu_busy_percent": 35.518962722852514,
+      "cpu_iowait_percent": 0.6223662884927067,
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251254083584
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 81,
+          "memory_util_percent": 34
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 100,
+          "memory_util_percent": 42
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "observed_utc": "2026-10-15T06:12:01.567884Z",
+      "load_average": [
+        22.04,
+        25.96,
+        32.51
+      ],
+      "cpu_busy_percent": 35.07948681285828,
+      "cpu_iowait_percent": 0.5667416256125619,
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251240280064
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 88,
+          "memory_util_percent": 34
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 100,
+          "memory_util_percent": 41
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "observed_utc": "2026-10-15T06:12:13.654781Z",
+      "load_average": [
+        25.74,
+        26.64,
+        32.66
+      ],
+      "cpu_busy_percent": 34.733754158044995,
+      "cpu_iowait_percent": 0.5474213572906572,
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251244441600
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 84,
+          "memory_util_percent": 32
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 100,
+          "memory_util_percent": 42
+        }
+      ]
+    },
+    {
+      "sample": 5,
+      "observed_utc": "2026-10-15T06:12:25.694628Z",
+      "load_average": [
+        32.78,
+        28.19,
+        33.07
+      ],
+      "cpu_busy_percent": 36.04421839319078,
+      "cpu_iowait_percent": 0.7343782437201578,
+      "host_memory_bytes": {
+        "MemTotal": 270090502144,
+        "MemAvailable": 251256823808
+      },
+      "gpus": [
+        {
+          "physical_gpu": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 11457,
+          "free_mib": 12801,
+          "gpu_util_percent": 88,
+          "memory_util_percent": 32
+        },
+        {
+          "physical_gpu": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "total_mib": 24576,
+          "used_mib": 19119,
+          "free_mib": 5139,
+          "gpu_util_percent": 100,
+          "memory_util_percent": 41
+        }
+      ]
+    }
+  ],
+  "scope": "Requested GPU2/3 memory/utilization and aggregate CPU/RAM only. No temperature, power, other GPU, task progress, or neural execution."
+}
