@@ -1,0 +1,630 @@
+{
+  "scope": "CPU-only direct calls to the 13 BN modules in the actual checkpoint-initialized E3/E4 model. One tiny input and one BN-affine AdamW update per mode; no image, task-model forward, GPU, formal training or benchmark.",
+  "torch_version": "1.12.1+cu113",
+  "logical_torch_threads": 1,
+  "source_sha256": {
+    "miss_rgbt/train.py": "64cb819db8e634a36a7ec8a20059c9124f281e3c7c9fb0a0091f44cc45a7f089",
+    "scripts/validate_bn_freeze.py": "62ed54cb94101673f239eb9c72b5ed47dfcaf08c0cb2f404708ada06cbdbc526",
+    "experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+  },
+  "records": [
+    {
+      "config": "configs/e3_allbn_full20.json",
+      "config_sha256": "0c7f5452a43a4a062af575eed6ccdef8f7faeb84744551e8149e25ad19895785",
+      "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+      "repair": false,
+      "bn_modules": 13,
+      "total_parameters": 103138437,
+      "state_keys": 250,
+      "cases": [
+        {
+          "scope": "head_only_default",
+          "all_non_bn_modules_training": true,
+          "modules": [
+            {
+              "name": "baseline.box_head.conv1_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.09466475248336792,
+                "bias": 0.10892125219106674
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.27742940187454224,
+                "bias": 0.22270417213439941
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.37361419200897217,
+                "bias": 0.3139362633228302
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.3041492700576782,
+                "bias": 0.4001041352748871
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.10622824728488922,
+                "bias": 0.11776988208293915
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.5051888823509216,
+                "bias": 0.30389195680618286
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.0146805047988892,
+                "bias": 0.5047677159309387
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.360042005777359,
+                "bias": 0.3393290042877197
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.1248525083065033,
+                "bias": 0.12613409757614136
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6376423835754395,
+                "bias": 0.32306012511253357
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6719310283660889,
+                "bias": 0.3859265148639679
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.29529765248298645,
+                "bias": 0.3201731741428375
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.decode_fuse_search.1",
+              "training": true,
+              "counter_increment": 1,
+              "running_buffers_unchanged": false,
+              "affine_grad_norm": {
+                "weight": 0.07157603651285172,
+                "bias": 0.03494548425078392
+              },
+              "affine_updated": true
+            }
+          ]
+        },
+        {
+          "scope": "all_bn",
+          "all_non_bn_modules_training": true,
+          "modules": [
+            {
+              "name": "baseline.box_head.conv1_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.09466475248336792,
+                "bias": 0.10892125219106674
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.27742940187454224,
+                "bias": 0.22270417213439941
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.37361419200897217,
+                "bias": 0.3139362633228302
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.3041492700576782,
+                "bias": 0.4001041352748871
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.10622824728488922,
+                "bias": 0.11776988208293915
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.5051888823509216,
+                "bias": 0.30389195680618286
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.0146805047988892,
+                "bias": 0.5047677159309387
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.360042005777359,
+                "bias": 0.3393290042877197
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.1248525083065033,
+                "bias": 0.12613409757614136
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6376423835754395,
+                "bias": 0.32306012511253357
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6719310283660889,
+                "bias": 0.3859265148639679
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.29529765248298645,
+                "bias": 0.3201731741428375
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.decode_fuse_search.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.607556939125061,
+                "bias": 0.23645822703838348
+              },
+              "affine_updated": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "config": "configs/e4_allbn_full20.json",
+      "config_sha256": "db2ec690c46191030d38026b1375884ae93a4d5e898bf5fbdffd2d310e3191b0",
+      "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+      "repair": true,
+      "bn_modules": 13,
+      "total_parameters": 103536903,
+      "state_keys": 258,
+      "cases": [
+        {
+          "scope": "head_only_default",
+          "all_non_bn_modules_training": true,
+          "modules": [
+            {
+              "name": "baseline.box_head.conv1_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.09466475248336792,
+                "bias": 0.10892125219106674
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.27742940187454224,
+                "bias": 0.22270417213439941
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.37361419200897217,
+                "bias": 0.3139362633228302
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.3041492700576782,
+                "bias": 0.4001041352748871
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.10622824728488922,
+                "bias": 0.11776988208293915
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.5051888823509216,
+                "bias": 0.30389195680618286
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.0146805047988892,
+                "bias": 0.5047677159309387
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.360042005777359,
+                "bias": 0.3393290042877197
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.1248525083065033,
+                "bias": 0.12613409757614136
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6376423835754395,
+                "bias": 0.32306012511253357
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6719310283660889,
+                "bias": 0.3859265148639679
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.29529765248298645,
+                "bias": 0.3201731741428375
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.decode_fuse_search.1",
+              "training": true,
+              "counter_increment": 1,
+              "running_buffers_unchanged": false,
+              "affine_grad_norm": {
+                "weight": 0.07157603651285172,
+                "bias": 0.03494548425078392
+              },
+              "affine_updated": true
+            }
+          ]
+        },
+        {
+          "scope": "all_bn",
+          "all_non_bn_modules_training": true,
+          "modules": [
+            {
+              "name": "baseline.box_head.conv1_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.09466475248336792,
+                "bias": 0.10892125219106674
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.27742940187454224,
+                "bias": 0.22270417213439941
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.37361419200897217,
+                "bias": 0.3139362633228302
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_ctr.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.3041492700576782,
+                "bias": 0.4001041352748871
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.10622824728488922,
+                "bias": 0.11776988208293915
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.5051888823509216,
+                "bias": 0.30389195680618286
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.0146805047988892,
+                "bias": 0.5047677159309387
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_offset.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.360042005777359,
+                "bias": 0.3393290042877197
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv1_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.1248525083065033,
+                "bias": 0.12613409757614136
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv2_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6376423835754395,
+                "bias": 0.32306012511253357
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv3_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.6719310283660889,
+                "bias": 0.3859265148639679
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.box_head.conv4_size.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 0.29529765248298645,
+                "bias": 0.3201731741428375
+              },
+              "affine_updated": true
+            },
+            {
+              "name": "baseline.decode_fuse_search.1",
+              "training": false,
+              "counter_increment": 0,
+              "running_buffers_unchanged": true,
+              "affine_grad_norm": {
+                "weight": 1.607556939125061,
+                "bias": 0.23645822703838348
+              },
+              "affine_updated": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
