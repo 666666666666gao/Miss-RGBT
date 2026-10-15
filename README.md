@@ -4,7 +4,7 @@
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。
 
-14:10实际核对：[E0-availability零训练全量对照](reports/e0_availability_20261015_v1/RESULTS.md)已完成，完整指标等于E0、Miss指标下降；E0-FT/GPU2和E2/GPU3已启动，各20轮/50000更新，固定末轮评估。[资源采样](profile_output/attribution_20261015_1410/README.md)支持每卡一项训练；下一必要诊断为10月16日04:22北京时间，按实际吞吐估算。详见[交接](HANDOFF.md)和[执行协议](docs/ATTRIBUTION_CONTROLS_20261015.md)。BN控制在独立分支准备，当前科学源码不变；A/B/C仍待完整验证。
+14:10实际核对：[E0-availability零训练全量对照](reports/e0_availability_20261015_v1/RESULTS.md)已完成，完整指标等于E0、Miss指标下降；E0-FT/GPU2和E2/GPU3已启动，各20轮/50000更新，固定末轮评估。[资源采样](profile_output/attribution_20261015_1410/README.md)支持每卡一项训练；新04:24实际节点确认E0-FT已20轮/50000更新exit0并在GPU2评估；E2为26975/50000更新继续GPU3训练，尚无最终成绩。下一必要节点为10月16日07:35北京时间，按全量评估历史耗时估算。详见[交接](HANDOFF.md)和[执行协议](docs/ATTRIBUTION_CONTROLS_20261015.md)。BN控制在独立分支准备，当前科学源码不变；A/B/C仍待完整验证。
 
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 

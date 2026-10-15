@@ -1,0 +1,22 @@
+{
+  "pid": 37108,
+  "parent_pid": 36308,
+  "command": [
+    "C:\\Users\\gb\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+    "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\wait_attribution_eval_node_20261016.py"
+  ],
+  "started_utc": "2026-10-15T20:25:47.178688+00:00",
+  "plan": {
+    "deadline_epoch": 1792107332.9557812,
+    "deadline_utc": "2026-10-15T23:35:32.955781+00:00",
+    "deadline_bjt": "2026-10-16T07:35:32.955781+08:00",
+    "estimated_ft_evaluation_end_epoch": 1792107632.9557812,
+    "estimated_e2_training_end_epoch": 1792142176.1273742,
+    "estimate_basis": "Previous E0-availability whole-dataset complete3165.044476s + miss2719.443680s on GPUs2,3, multiplied by2 for FT GPU2 only. Forecast, not measured scaling or completion.",
+    "source_intake_sha256": "7211233d9ca32ffb3337def49e2a7a090d60f580b9983265182ffad8dcd5769d",
+    "original_native61699": "Unavailable after deadline, actual original exit unknown; local PID65768/parent64100 absent, no receipt. Single due-node read-only recovery completed0; training was not restarted.",
+    "policy": "One detached hidden local observer. No remote queries before deadline; once-only collection. No retries or training launches."
+  },
+  "plan_sha256": "e01f12c8f6c32cef1a268a53210944f136e93d8bfd3b479d40b90466060a0f2a",
+  "probe_sha256": "ca0f367ae1316a27e9455766d81b1c2d1a936790ebcd67efb7fbf04609840c67"
+}

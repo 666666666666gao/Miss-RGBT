@@ -25,12 +25,13 @@
 | E3/E4-allbn-full20 | PREPARED，未启动 | 配置/预检/队列在独立分支；须先完成阶段1 | reports/bn_controls_preparation_20261015.json；当前活动科学源码未改 |
 | A任务效用补偿 | ISOLATED_IMPLEMENTED，CPU原生检查exit0 | 原E0，新增596357参数；一个真实元组两次更新，39BN/主任务RNG/不可见输入/重载检查 | reports/task_utility_cpu_20261015_v1；执行源码a229afc、分支f6cead7；不是GPU或正式20轮成绩 |
 | E0-availability | DONE，两项全评估exit0 | 0更新、完整/Miss共958序列运行/674706帧 | reports/e0_availability_20261015_v1；完整相等、Miss下降；审计WARN |
-| E0-FT/E2-full20 | RUNNING，14:10证据 | 各20轮/50000更新；截面2825/1529更新 | reports/attribution_runtime_20261015_1410.json；固定末轮指标待产出 |
+| E0-FT-full20 | 训练DONE，04:24证据；评估RUNNING | 20轮/50000更新exit0；固定末轮完整评估启动GPU2 | reports/attribution_runtime_20261016_0424.json；完整/Miss最终指标待产出 |
+| E2-full20 | RUNNING，04:24证据 | epoch11/update26975/50000，GPU3，近期日志有限 | 同一快照；完成时间仅估计、无最终指标 |
 | 模板U0/U1/U2 | ISOLATED_IMPLEMENTED，未NN/正式运行 | Python3.12/3.7各9项stdlib stub控制流检查通过 | reports/template_controls_preparation_20261015；23c6b46，仅准备，不改当前队列 |
 | E5 选择性反馈 | TODO | E4有效后再做 | 未验证 |
 | 三个有效论文模块 | UNPROVEN | 需要主结果和消融 | 不能据 native PASS 宣称成立 |
 
-当前14:10证据：原3294032/3623093已完成；新归因控制器3796810仍运行。E0-availability两项全评估均exit0，完整五项指标等于E0、Miss五项下降。E0-FT/GPU2与E2/GPU3于13:19实际启动，14:10分别2825/50000和1529/50000更新。原观察器48256已完成消费；唯一后续观察器61699/python65768于10月16日04:22:40.141988北京时间采集，之前不查询NN/GPU。科学源码保持dfc989e；BN准备分支71f46eb未正式训练，A/B/C有效性仍未证实。
+历史14:10证据（现由上方04:24记录更新）：原3294032/3623093已完成；新归因控制器3796810仍运行。E0-availability两项全评估均exit0，完整五项指标等于E0、Miss五项下降。E0-FT/GPU2与E2/GPU3于13:19实际启动，14:10分别2825/50000和1529/50000更新。原观察器48256已完成消费；唯一后续观察器61699/python65768于10月16日04:22:40.141988北京时间采集，之前不查询NN/GPU。科学源码保持dfc989e；BN准备分支71f46eb未正式训练，A/B/C有效性仍未证实。
 
 原始 native 的反向可靠比例为0，不能据该单步证明反向反馈实际发挥作用。E5尚未训练。
 
