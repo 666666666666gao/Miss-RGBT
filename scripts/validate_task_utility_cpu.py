@@ -6,6 +6,7 @@ from pathlib import Path
 import random
 import time
 
+import cv2
 import numpy as np
 import torch
 
@@ -43,6 +44,7 @@ def main():
     np.random.seed(config['seed'])
     torch.manual_seed(config['seed'])
     torch.set_num_threads(args.threads)
+    cv2.setNumThreads(0)
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     sources = {str(path): hashlib.sha256(path.read_bytes()).hexdigest()
                for folder in ['miss_rgbt', 'lib'] for path in sorted(Path(folder).rglob('*.py'))}
