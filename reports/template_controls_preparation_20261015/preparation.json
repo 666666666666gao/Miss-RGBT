@@ -1,0 +1,53 @@
+{
+  "status": "ISOLATED_IMPLEMENTED_STDLIB_CHECKED_NOT_FORMAL",
+  "source_commit": "23c6b4682ca29029aef8b12f4667919168ae4fc1",
+  "native_nn_execution": false,
+  "formal_tracking_runs": 0,
+  "new_metrics": false,
+  "scientific_changes": [
+    "Optional template write policies and optional diagnostics only; neural architecture/parameters unchanged."
+  ],
+  "source_archive_sha256": "79e74ab91e7b2d8c93b42648d432f2d7f913a25d73b3d540dca33a490af56272",
+  "source_sha256": {
+    "miss_rgbt/tracker.py": "3a58375caed7cec744933e0e7ee462874ca550098fe9f170b3fb973d5dcbc620",
+    "scripts/evaluate_model.py": "61793b85d428caccdbd23c8e2fbf9d2549f4a7ea0adde6222947d662d15de2f5",
+    "tests/test_template_controls.py": "fa8e1a0431c583e114b0eb9fada247bd9172f059ea6e191db32e5889e06a12ae",
+    "docs/TEMPLATE_UPDATE_CONTROLS_20261015.md": "49dd37152bd55a52a7049832225fa64f9704ad8febe83de46bc160c8df42e01d"
+  },
+  "policies": {
+    "U0": "off; keep both template slots",
+    "U1": "current: track-call interval5, strict confidence>.65",
+    "U2": "U1 plus current both-modalities availability"
+  },
+  "audit": "Per noninitial video frame: effective track_call, availability, confidence, write decision, template ages and previous availability; includes both-missing hold events.",
+  "validation": {
+    "local_python": "3.12",
+    "target_python": "3.7.16",
+    "tests": 9,
+    "boundary_combinations": 3240,
+    "policy_assertions": 9720,
+    "target_subprocess_seconds": 0.15952396392822266,
+    "neural_outputs": "stubbed",
+    "actual_source_methods": "AST-loaded tracker.initialize/track and evaluate_model.sequence",
+    "source_review": "Self-review using code-review-excellence; not an independent audit"
+  },
+  "unchanged": {
+    "active_main_scientific_source": "dfc989e952014a6d5f2d22eb330428992489e175",
+    "formal_queue": true,
+    "original_observer": true,
+    "environment": true,
+    "datasets": true,
+    "scorer": true
+  },
+  "formal_admission": [
+    "Finish E0-FT/E2 training and full metrics, then BN attribution.",
+    "Deploy isolated source, bind checkpoints/scorer/GT/masks and actual capacity.",
+    "Check real NN U1 parity with frozen entry before fresh full-sequence U0/U1/U2."
+  ],
+  "limitations": [
+    "No real NN equivalence, CUDA, multiprocessing initializer or complete benchmark execution in these tests.",
+    "U2 cannot improve all-complete inputs over identical U1.",
+    "No diagnosed template future utility or identity calibration.",
+    "External sandbox Template_Update_Trial_NOT_DEPLOYED.zip not locally available/read; its 14 tests are not claimed here."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source_commit": "23c6b4682ca29029aef8b12f4667919168ae4fc1",
+  "source_sha256": {
+    "miss_rgbt/tracker.py": "3a58375caed7cec744933e0e7ee462874ca550098fe9f170b3fb973d5dcbc620",
+    "scripts/evaluate_model.py": "61793b85d428caccdbd23c8e2fbf9d2549f4a7ea0adde6222947d662d15de2f5",
+    "tests/test_template_controls.py": "fa8e1a0431c583e114b0eb9fada247bd9172f059ea6e191db32e5889e06a12ae",
+    "docs/TEMPLATE_UPDATE_CONTROLS_20261015.md": "49dd37152bd55a52a7049832225fa64f9704ad8febe83de46bc160c8df42e01d"
+  },
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "executable": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+  "remote_directory": "/data2/gaob/Miss-RGBT/prepared/template_controls_20261015_v1",
+  "observed_epoch": 1792082838.2723517,
+  "seconds": 0.15952396392822266,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_actual_sequence_control_flow_holds_without_advancing_update_clock (test_template_controls.TemplateControlsTest) ... ok\ntest_audit_does_not_change_stubbed_tracking (test_template_controls.TemplateControlsTest) ... ok\ntest_complete_only_equals_current_for_complete_stream (test_template_controls.TemplateControlsTest) ... ok\ntest_complete_only_skips_partial_without_delayed_write (test_template_controls.TemplateControlsTest) ... ok\ntest_current_matches_legacy_rule_exhaustively (test_template_controls.TemplateControlsTest) ... ok\ntest_current_writes_missing_availability_and_preserves_initial (test_template_controls.TemplateControlsTest) ... ok\ntest_interval_override_and_sequence_reset (test_template_controls.TemplateControlsTest) ... ok\ntest_off_keeps_two_slots_but_still_commits_position (test_template_controls.TemplateControlsTest) ... ok\ntest_threshold_equality_is_not_a_write (test_template_controls.TemplateControlsTest) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.059s\n\nOK\n",
+  "scope": "Stdlib control-flow tests only. Stub neural outputs. No Torch import, GPU query, NN execution, formal job/status/log query or metrics."
+}
