@@ -3,6 +3,7 @@ from torch import nn
 
 from lib.models.cadtrack import build_cadtrack
 from lib.models.cadtrack.vit_care import recover_tokens
+from miss_rgbt.task_utility import TaskUtilityRepair
 
 
 class LocalRepair(nn.Module):
@@ -25,29 +26,43 @@ class LocalRepair(nn.Module):
 
 
 class MissingTrackerModel(nn.Module):
-    def __init__(self, baseline, repair=False, width=128, repair_layer=6):
+    def __init__(self, baseline, repair=False, width=128, repair_layer=6, task_utility=None):
         super().__init__()
         self.baseline = baseline
         self.repair_layer = repair_layer
         self.repair = LocalRepair(baseline.backbone.embed_dim, width) if repair else None
+        self.utility_repair = None
+        if task_utility is not None:
+            assert not repair and repair_layer == 6
+            self.utility_repair = TaskUtilityRepair(baseline.backbone.embed_dim,
+                int(baseline.backbone.pos_embed_x.shape[1] ** .5),
+                int(baseline.backbone.pos_embed_z.shape[1] ** .5), **task_utility)
 
-    def forward(self, template, search, availability=None, patch_keep=None):
+    def forward(self, template, search, availability=None, patch_keep=None, utility_probe=None):
         """availability: templates then search, each [B,2], 1 means observed."""
         batch = search[0].shape[0]
         if availability is None:
             availability = [search[0].new_ones(batch, 2) for _ in template + search]
+        if utility_probe is not None:
+            assert self.utility_repair is not None
+            assert 0 <= utility_probe['search_index'] < len(search)
         output = []
         for index, image in enumerate(search):
             keep = None if patch_keep is None else patch_keep[index]
-            features = self.forward_tokens(template, image,
-                                           availability[:len(template)] + [availability[len(template) + index]], keep)
+            regions = (utility_probe['regions'] if utility_probe is not None and
+                       index == utility_probe['search_index'] else None)
+            features, auxiliary = self.forward_tokens(template, image,
+                availability[:len(template)] + [availability[len(template) + index]], keep, regions)
             out = self.baseline.forward_head(features)
             out.update(attn=None, track_query_before=None, backbone_feat=None)
+            out.update(auxiliary)
             output.append(out)
         return output
 
-    def forward_tokens(self, template, search, availability, patch_keep):
+    def forward_tokens(self, template, search, availability, patch_keep, probe_regions=None):
         backbone = self.baseline.backbone
+        lens_z = len(template) * backbone.pos_embed_z.shape[1]
+        lens_x = backbone.pos_embed_x.shape[1]
         rgb, tir, mask = [], [], []
         for index, image in enumerate(template + [search]):
             pos = backbone.pos_embed_z if index < len(template) else backbone.pos_embed_x
@@ -64,17 +79,48 @@ class MissingTrackerModel(nn.Module):
         rgb = torch.cat([query, rgb], 1)
         tir = torch.cat([query, tir], 1)
         mask = torch.cat([search.new_ones(search.shape[0], 1, 2), torch.cat(mask, 1)], 1)
+        auxiliary = {}
         for index, block in enumerate(backbone.blocks):
             rgb, tir = block(rgb, tir)
             if self.repair is not None and index + 1 == self.repair_layer:
                 rgb, tir = self.repair(rgb, tir, mask)
-        lens_z = len(template) * backbone.pos_embed_z.shape[1]
-        lens_x = backbone.pos_embed_x.shape[1]
+            if self.utility_repair is not None and index + 1 == self.repair_layer:
+                before_r, before_t = rgb, tir
+                rgb, tir, auxiliary = self.utility_repair(rgb, tir, mask)
+                context = auxiliary.pop('context')
+                if probe_regions is not None:
+                    auxiliary['utility_probe'] = self.counterfactual_outputs(
+                        before_r, before_t, mask, context, probe_regions, lens_z, lens_x)
+        return self.finish_features(rgb, tir, lens_z, lens_x), auxiliary
+
+    def finish_features(self, rgb, tir, lens_z, lens_x):
+        backbone = self.baseline.backbone
         rgb = recover_tokens(rgb, lens_z, lens_x, mode=backbone.cat_mode)
         tir = recover_tokens(tir, lens_z, lens_x, mode=backbone.cat_mode)
         features = backbone.norm(torch.cat([rgb, tir], 1))
         rgb, tir = features.chunk(2, 1)
         return torch.cat([rgb[:, -lens_x:], tir[:, -lens_x:]], -1)
+
+    def predict_tail(self, rgb, tir, lens_z, lens_x):
+        for block in self.baseline.backbone.blocks[self.repair_layer:]:
+            rgb, tir = block(rgb, tir)
+        return self.baseline.forward_head(self.finish_features(rgb, tir, lens_z, lens_x))
+
+    def counterfactual_outputs(self, rgb, tir, mask, context, regions, lens_z, lens_x):
+        assert all(not module.training for module in self.baseline.modules()
+                   if isinstance(module, nn.BatchNorm2d)), 'Utility probes require frozen BN statistics'
+        devices = [rgb.device.index] if rgb.is_cuda else []
+        with torch.no_grad(), torch.random.fork_rng(devices=devices):
+            cpu_state = torch.get_rng_state()
+            cuda_state = torch.cuda.get_rng_state(rgb.device) if rgb.is_cuda else None
+            off = self.predict_tail(rgb.detach(), tir.detach(), lens_z, lens_x)
+            torch.set_rng_state(cpu_state)
+            if rgb.is_cuda:
+                torch.cuda.set_rng_state(cuda_state, rgb.device)
+            on_r, on_t, _ = self.utility_repair.apply_regions(
+                rgb.detach(), tir.detach(), mask, context.detach(), regions)
+            on = self.predict_tail(on_r, on_t, lens_z, lens_x)
+        return dict(off=off, on=on, regions=regions)
 
 
 def load_pretrained(cfg, checkpoint, **kwargs):

@@ -11,7 +11,7 @@ import torch
 from lib.config.cadtrack.config import cfg, update_config_from_file
 from miss_rgbt.data import make_loader
 from miss_rgbt.model import load_pretrained
-from miss_rgbt.objectives import task_loss, training_loss
+from miss_rgbt.objectives import task_loss, training_loss, utility_supervision
 
 
 def sample_masks(templates, searches, config):
@@ -40,7 +40,12 @@ def main():
     parser.add_argument('--max-steps', type=int)
     args = parser.parse_args()
     config = json.loads(Path(args.config).read_text())
-    assert config['stage'] in ['E0-FT', 'E2', 'E3', 'E4', 'E5']
+    assert config['stage'] in ['E0-FT', 'E2', 'E3', 'E4', 'E5', 'A']
+    is_utility = config['stage'] == 'A'
+    if is_utility:
+        assert not config['repair'] and config['freeze_all_bn']
+        assert config['utility_probe_interval'] >= 1
+        assert config['utility_weight'] >= 0 and config['task_utility'] is not None
     if config['stage'] == 'E0-FT':
         assert not config['repair'] and config['forward_weight'] == config['reverse_weight'] == 0
     seed = config['seed']
@@ -51,7 +56,8 @@ def main():
     torch.set_num_threads(1)
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     model = load_pretrained(cfg, config['checkpoint'], repair=config['repair'],
-        width=config['repair_width'], repair_layer=config['repair_layer']).cuda().train()
+        width=config['repair_width'], repair_layer=config['repair_layer'],
+        task_utility=config.get('task_utility')).cuda().train()
     fix_bn(model, config.get('freeze_all_bn', False))
     # Repair construction consumes RNG; restore the shared data/mask/drop-path seed.
     random.seed(seed)
@@ -76,6 +82,9 @@ def main():
     start = time.time()
     updates = 0
     first_update_inputs = []
+    if is_utility:
+        probe_generator = torch.Generator().manual_seed(seed)
+        utility_records, utility_calls, update_loss_sum = [], 0, 0.
     assert len(loader) % config['accumulation'] == 0
     with (output / 'steps.jsonl').open('w') as log:
         for epoch in range(1, config['epochs'] + 1):
@@ -93,10 +102,28 @@ def main():
                     status = dict(task_c=float(loss.detach()))
                 else:
                     available, patch = sample_masks(templates, searches, config)
-                    complete = model(templates, searches)
-                    missing = model(templates, searches, available, patch)
+                    probe, probe_view = None, None
+                    microstep = (epoch - 1) * len(loader) + index
+                    if is_utility and microstep % config['utility_probe_interval'] == 0:
+                        probe_id = microstep // config['utility_probe_interval']
+                        probe_view = 'C' if probe_id % 2 == 0 else 'M'
+                        regions = torch.randint(model.utility_repair.region_tokens.shape[0],
+                            (searches[0].shape[0], 1), generator=probe_generator).to(searches[0].device)
+                        probe = dict(search_index=(probe_id // 2) % len(searches), regions=regions)
+                    complete = model(templates, searches, utility_probe=probe if probe_view == 'C' else None)
+                    missing = model(templates, searches, available, patch,
+                                    utility_probe=probe if probe_view == 'M' else None)
                     loss, status = training_loss(complete, missing, boxes, cfg,
                         config['forward_weight'], config['reverse_weight'], config['reverse_margin'])
+                    if probe is not None:
+                        auxiliary, record = utility_supervision(
+                            complete if probe_view == 'C' else missing, boxes, cfg)
+                        loss = loss + config['utility_weight'] * auxiliary
+                        record['view'] = probe_view
+                        utility_records.append(record)
+                        utility_calls += 1
+                    if is_utility:
+                        update_loss_sum += float(loss.detach())
                 assert torch.isfinite(loss), status
                 (loss / config['accumulation']).backward()
                 if (index + 1) % config['accumulation'] == 0:
@@ -111,6 +138,11 @@ def main():
                     if updates == 1:
                         status['input_sha256'] = first_input_sha256
                         status['input_sha256_microbatches'] = first_update_inputs
+                    if is_utility:
+                        status.update(utility_probes=utility_records, utility_probe_calls=utility_calls,
+                            update_loss_mean=update_loss_sum / config['accumulation'],
+                            selected_tokens_per_search=complete[0]['utility_tokens'].shape[1])
+                        utility_records, update_loss_sum = [], 0.
                     log.write(json.dumps(status) + '\n')
                     log.flush()
                     if updates % 25 == 0 or updates == 1:

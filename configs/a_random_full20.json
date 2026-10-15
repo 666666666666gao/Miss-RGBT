@@ -1,0 +1,46 @@
+{
+  "stage": "A",
+  "seed": 2027,
+  "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+  "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+  "repair": false,
+  "repair_width": 128,
+  "repair_layer": 6,
+  "forward_weight": 0.1,
+  "reverse_weight": 0.0,
+  "reverse_margin": 0.1,
+  "patch_mask_probability": 0.1,
+  "complete_rgb_missing_tir_missing_probability": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "microbatch": 4,
+  "accumulation": 2,
+  "samples_per_epoch": 20000,
+  "epochs": 20,
+  "workers": 4,
+  "learning_rate": 0.0001,
+  "backbone_multiplier": 0.1,
+  "weight_decay": 0.0001,
+  "lr_drop_epoch": 10,
+  "clip_grad_norm": 0.1,
+  "output": "/data2/gaob/Miss-RGBT/checkpoints/a_random_full20_seed2027",
+  "checkpoint_epochs": [
+    10,
+    20
+  ],
+  "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+  "freeze_all_bn": true,
+  "task_utility": {
+    "width": 128,
+    "depth": 1,
+    "region_grid": 4,
+    "selected_regions": 4,
+    "refinement_limit": 0.1,
+    "selection": "random",
+    "selection_seed": 2027
+  },
+  "utility_probe_interval": 4,
+  "utility_weight": 0.1
+}
