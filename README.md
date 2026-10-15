@@ -1,5 +1,7 @@
 # Miss-RGBT
 
+此分支为模块A隔离准备：任务效用区域选择、缺失补偿及已观测细化在第6块后实现，四种选择策略配置已准备。[真实数据CPU检查](reports/task_utility_cpu_20261015_v1/README.md)完成两次更新、BN/RNG/不可见输入独立性及严格重载检查；GPU和完整训练尚未执行。当前正式队列、最新成绩与观察时间见[main交接文档](https://github.com/666666666666gao/Miss-RGBT/blob/main/HANDOFF.md)。本分支不直接替换活动项目。
+
 基于用户确认的“去掉CADTrack论文三个模块后训练得到的epoch20 baseline”，研究完整与缺失视图的共享模型训练。DropMoE是用户说明的CADTrack主干来源，本轮直接加载该baseline的epoch20训练权重，没有另载DropMoE原始文件。首版方案 A：独立缺失前向、局部任务特征补偿、C→M响应蒸馏及待验证的选择性M→C反馈。
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。

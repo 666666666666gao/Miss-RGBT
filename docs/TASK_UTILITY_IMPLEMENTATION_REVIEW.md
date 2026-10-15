@@ -8,7 +8,7 @@
 - 探针必须固定所有BN统计，且on/off重放同一后半段RNG；fork_rng退出后恢复主任务RNG。random对照另有持久化RNG缓冲，序列初始化时重置，不更改数据/mask的全局随机序列。
 - correction只gather所选位置；all为256、其他模式默认64个token，探针额外16个。主干和选择器仍稠密；随机对照的CPU/GPU状态传输及额外探针成本不能从速度报告扣掉。
 - 同一A模块的四份配置只差选择方式和输出路径；width/depth/监督/训练量相同。旧E4与A有多处机制变化，不能拿两者差值单独归因效用选择。
-- 八项本地PyTorch1.13.1+cpu单元检查已通过；Python compile与Git whitespace检查已通过。目标环境1.12.1/Python3.7仍需实际CPU native检查，不用本地版本替代目标版本验证。
+- 八项本地PyTorch1.13.1+cpu单元检查已通过；Python compile与Git whitespace检查已通过。目标环境PyTorch1.12.1/Python3.7随后也完成八项单元检查及真实数据CPU native，约100.678秒exit0；实际证据见[检查报告](../reports/task_utility_cpu_20261015_v1/README.md)，不以本地版本替代目标版本。
 - CPU native脚本限制Torch两线程、OpenCV无工作线程、数据loader零worker，只重用一个真实训练元组做两次更新。它不分配GPU，不读取现有训练进度，不改当前环境/评分/队列。
 
 复核未发现需扩大范围的防御分支或异常吞噬需求。正式GPU检查、完整训练和指标仍未完成；本分支保持隔离，不因单元检查通过而进入正式队列。

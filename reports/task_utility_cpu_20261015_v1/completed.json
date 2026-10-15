@@ -1,0 +1,280 @@
+{
+  "exit_code": 0,
+  "owner": {
+    "pid": 843774,
+    "command": [
+      "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+      "-m",
+      "scripts.validate_task_utility_cpu",
+      "--config",
+      "configs/a_utility_full20.json",
+      "--output",
+      "/data2/gaob/Miss-RGBT/prepared/task_utility_20261015_v1/cpu_native_v1",
+      "--threads",
+      "2"
+    ],
+    "started_epoch": 1792075153.0256343,
+    "source_commit": "a229afc898ef98c2c63afc7c0b30ac1fc0c75e7c",
+    "scope": "CPU only; existing GPU training queue and observer not read or changed."
+  },
+  "elapsed_seconds": 100.6776692867279,
+  "source_files": 106,
+  "unit_exit_code": 0,
+  "unit_stderr": "test_correction_mlp_receives_actual_selected_budget (test_task_utility.TaskUtilityTests) ... ok\ntest_only_selected_search_tokens_change_with_observed_refinement (test_task_utility.TaskUtilityTests) ... ok\ntest_random_selection_owns_rng_and_strict_reload_restores_next_draw (test_task_utility.TaskUtilityTests) ... ok\ntest_real_adamw_updates_correction_and_supervised_selector (test_task_utility.TaskUtilityTests) ... ok\ntest_signed_benefit_targets_stop_gradients (test_task_utility.TaskUtilityTests) ... ok\ntest_utility_auxiliary_does_not_reshape_backbone_context (test_task_utility.TaskUtilityTests) ... ok\ntest_zero_initialization_and_region_partition (test_task_utility.TaskUtilityTests) ... ok\ntest_zero_refinement_limit_preserves_observed_positions (test_task_utility.TaskUtilityTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.142s\n\nOK\n",
+  "native_stderr": "/data2/gaob/Miss-RGBT/prepared/task_utility_20261015_v1/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').\n  idx_y = idx // self.feat_sz\n",
+  "environment_spec_sha256_before": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+  "environment_spec_sha256_after": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+  "native_report": {
+    "scope": "CPU implementation validation: one actual training tuple reused for two updates; no benchmark or GPU claim",
+    "torch_version": "1.12.1+cu113",
+    "threads": 2,
+    "config": {
+      "stage": "A",
+      "seed": 2027,
+      "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+      "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+      "repair": false,
+      "repair_width": 128,
+      "repair_layer": 6,
+      "forward_weight": 0.1,
+      "reverse_weight": 0.0,
+      "reverse_margin": 0.1,
+      "patch_mask_probability": 0.1,
+      "complete_rgb_missing_tir_missing_probability": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "microbatch": 4,
+      "accumulation": 2,
+      "samples_per_epoch": 20000,
+      "epochs": 20,
+      "workers": 4,
+      "learning_rate": 0.0001,
+      "backbone_multiplier": 0.1,
+      "weight_decay": 0.0001,
+      "lr_drop_epoch": 10,
+      "clip_grad_norm": 0.1,
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/a_utility_full20_seed2027",
+      "checkpoint_epochs": [
+        10,
+        20
+      ],
+      "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+      "freeze_all_bn": true,
+      "task_utility": {
+        "width": 128,
+        "depth": 1,
+        "region_grid": 4,
+        "selected_regions": 4,
+        "refinement_limit": 0.1,
+        "selection": "utility",
+        "selection_seed": 2027
+      },
+      "utility_probe_interval": 4,
+      "utility_weight": 0.1
+    },
+    "baseline_checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+    "templates": [
+      2,
+      1,
+      6,
+      128,
+      128
+    ],
+    "searches": [
+      3,
+      1,
+      6,
+      256,
+      256
+    ],
+    "input_sha256": {
+      "template_images": "bb8f7f279f552a8ef729b2350a42f49f4f7cb1e77246044d8a37ad1462ad6c08",
+      "search_images": "4d5b800b7bc063d857be041c8f6af315eef1a66e8bd0958ad343f08ec37a0952",
+      "search_anno": "9976b43c8a06798f16d0a06afc467283f8983c5ba6917c96d4b862f6d3252ba8"
+    },
+    "module_parameters": 596357,
+    "total_parameters": 103734794,
+    "zero_initialized_complete_parity": {
+      "pred_boxes": 0.0,
+      "score_map": 0.0,
+      "size_map": 0.0,
+      "offset_map": 0.0
+    },
+    "probe_preserves_main_forward_and_rng": {
+      "pred_boxes": 0.0,
+      "score_map": 0.0,
+      "size_map": 0.0,
+      "offset_map": 0.0
+    },
+    "zero_initialized_paired_probe_parity": {
+      "pred_boxes": 0.0,
+      "score_map": 0.0,
+      "size_map": 0.0,
+      "offset_map": 0.0
+    },
+    "updates": [
+      {
+        "search_index": 0,
+        "regions": [
+          0
+        ],
+        "loss_off": 0.655913233757019,
+        "loss_on": 0.655913233757019,
+        "target_mean": 0.0,
+        "beneficial_fraction": 0.0,
+        "prediction_mean": 0.04186724126338959,
+        "utility_loss": 0.0008764329249970615,
+        "update": 1,
+        "view": "C",
+        "loss": 10.201909065246582,
+        "delta_gradient_l1": 32.196800231933594,
+        "selector_gradient_l1": 0.09329311549663544,
+        "status": {
+          "task_c": 2.2921173572540283,
+          "task_m": 7.814105987548828,
+          "kd_forward": 0.955986738204956,
+          "kd_reverse": 0.0,
+          "reverse_fraction": 0.0
+        }
+      },
+      {
+        "search_index": 1,
+        "regions": [
+          1
+        ],
+        "loss_off": 2.0259480476379395,
+        "loss_on": 2.0258233547210693,
+        "target_mean": 6.154793663881719e-05,
+        "beneficial_fraction": 1.0,
+        "prediction_mean": -0.09837144613265991,
+        "utility_loss": 0.00484452722594142,
+        "update": 2,
+        "view": "M",
+        "loss": 4.652539253234863,
+        "delta_gradient_l1": 84.88268280029297,
+        "selector_gradient_l1": 0.25910645723342896,
+        "status": {
+          "task_c": 1.041299819946289,
+          "task_m": 3.490818738937378,
+          "kd_forward": 1.1993592977523804,
+          "kd_reverse": 0.0,
+          "reverse_fraction": 0.0
+        }
+      }
+    ],
+    "update_seconds": 53.24958038330078,
+    "all_39_bn_buffers_unchanged": true,
+    "correction_input_shapes": [
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        16,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ],
+      [
+        1,
+        16,
+        1540
+      ],
+      [
+        1,
+        64,
+        1540
+      ]
+    ],
+    "trained_unobserved_rgb_perturbation_parity": {
+      "pred_boxes": 0.0,
+      "score_map": 0.0,
+      "size_map": 0.0,
+      "offset_map": 0.0
+    },
+    "trained_complete_refinement_path_difference": {
+      "pred_boxes": 1.043081283569336e-06,
+      "score_map": 1.6510486602783203e-05,
+      "size_map": 0.00015532970428466797,
+      "offset_map": 0.00016498565673828125
+    },
+    "strict_reload_parity": {
+      "pred_boxes": 0.0,
+      "score_map": 0.0,
+      "size_map": 0.0,
+      "offset_map": 0.0
+    },
+    "status": "CPU_NATIVE_PASS",
+    "checkpoint_bytes": 1243903793,
+    "checkpoint_sha256": "46040b331136c1b2f128cadcd0521928655cff8036619dc13135a94d4d35a43f",
+    "checkpoint_epoch": 0,
+    "checkpoint_updates": 2
+  }
+}
