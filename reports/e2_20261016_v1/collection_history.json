@@ -1,0 +1,10 @@
+{
+  "first_collection_exit_code": 1,
+  "first_failure": "FT-derived collector expected physical_gpus [2]; E2 actual [2,3]. Failed before CPU reload/archive creation.",
+  "correction": "Only strict expected GPU list and distinct attempt/transport names corrected in v2; no NN rerun, source/results untouched.",
+  "second_native_session": 48725,
+  "second_native_exit_code": 0,
+  "second_native_consumed": true,
+  "archive": "e2_closed_20261016_v1.tar.gz",
+  "archive_sha256": "7621ac9d07039e67d5fb04b332149051d118355a09b0408a384d95bcb65989eb"
+}

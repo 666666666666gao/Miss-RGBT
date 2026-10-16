@@ -1,0 +1,32 @@
+{
+  "initial_source_deploy": {
+    "status": "FAILED_BEFORE_CONTROLLER",
+    "reason": "120-file post-extraction manifest found one stale CPU validation helper; exact diff was unused import/comment only.",
+    "path": "scripts/validate_focal_normalization.py",
+    "old_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+    "expected_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c",
+    "transport_exit": 1,
+    "resume_exit": 0,
+    "nn_steps": 0
+  },
+  "v1_controller": {
+    "status": "FAILED_BEFORE_PREFLIGHT",
+    "pid": 1752683,
+    "reason": "AttributeError: 'str' object has no attribute 'open'; existing sha helper requires Path.",
+    "run": "logs/bn_freeze_full20_v1",
+    "real_nn_steps": 0,
+    "original_log_retained": true
+  },
+  "v2_correction": {
+    "commit": "1f1929afe4de032f9726a210e53b6b22fb850eea",
+    "changed": "Path argument and new v2 run-directory references only; no model/loss/config science change.",
+    "controller_pid": 1753089,
+    "native_preflights": "Both2actualupdates/exit0,39buffersstable,affineupdated,strictreload.",
+    "full_training": "Actually started physicalGPU2/3; final results pending."
+  },
+  "private_transports": {
+    "bn_controls_deploy_transport_20261016.json": "eaba7b8c9ed72e27df39568d24b04803e9a666a4fa62705231b959aa3bcceb0e",
+    "bn_controls_deploy_resume_transport_20261016.json": "e197bcebcc454ee378be9307aabe72090d7f12751c83279196311902d34b9ca5",
+    "bn_controls_deploy_v2_transport_20261016.json": "d3928c53d0c7bcd1965b8658b7821d71d1dd8783af90f2648719f29b8885b5f2"
+  }
+}

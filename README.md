@@ -4,7 +4,9 @@
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。
 
-2026-10-16：[E0-FT完整20轮与四套指标](reports/e0_ft_20261016_v1/README.md)已完成，审计WARN、数值复算一致；完整五项均低于E0，说明完整退化在仅完整继续训练时也出现，原因仍待归因。E2于17:03实际完成20轮/50000更新exit0，固定末轮全量评估GPU2、3已启动；下一必要节点18:39北京时间，此前不查询NN/GPU。长等待的本地观察进程丢失已记录，后续按绝对节点直接采集，不重启NN。详见[交接](HANDOFF.md)。[E0-availability](reports/e0_availability_20261015_v1/RESULTS.md)及E3/E4原指标保留；[资源采样](profile_output/attribution_20261015_1410/README.md)支持训练每卡一项。BN、A及模板控制源码均保持隔离，未正式启用。
+2026-10-16：[E0-FT](reports/e0_ft_20261016_v1/README.md)与[E2完整20轮四套指标及独立审计](reports/e2_20261016_v1/README.md)均已完成，10项E2指标和93966曲线值复算误差0；审计WARN、same-family/provisional。E2相对FT的Miss五项提高、完整四项下降，完整五项仍低于E0，不支持缺失学习提升完整能力。最新[60值汇总CSV](reports/METRICS_SUMMARY.csv)及[实验状态](reports/EXPERIMENT_STATUS.md)已更新。
+
+[全部BN运行统计冻结对照](reports/bn_controls_20261016_v2/README.md)已通过两项真实两步检查，于19:05分别在GPU2/3开始完整20轮；执行源码1f1929afe4de032f9726a210e53b6b22fb850eea，暂无BN最终成绩。控制器初始Path类型错误及源码校验差异均已保留并修正，未改变模型/损失/预算。下一绝对节点2026-10-17T09:13:58.786314+08:00，此前不查NN/GPU，不另建本地长观察器。每卡一个训练任务。详见[当前交接](HANDOFF.md)。A及模板控制仍隔离。
 
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 
@@ -23,8 +25,8 @@
 cd /home/gaob/Miss-RGBT
 export PYTHONPATH=. OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
 # 在预定诊断节点只读查看；不重复启动现有队列。
-cat reports/ATTRIBUTION_SOURCE_VERSION.txt
-cat logs/attribution_20261015_v2/status.json
+cat reports/BN_FREEZE_SOURCE_VERSION.txt
+cat logs/bn_freeze_full20_v2/status.json
 ```
 
 已完成的完整训练配置为`configs/e3_full20.json`、`configs/e4_full20.json`：每项20轮×20000采样元组、有效batch8、50000更新、seed2027、第10轮降学习率，固定末轮。科学执行版本4c473fa及实际部署源码已独立归档，不能把当前工作树当作当时执行字节。原E0/E3/E4权重仍在原位置；新增归因训练检查点写到`/data2/gaob/Miss-RGBT/checkpoints`，项目与环境仍在`/home/gaob/Miss-RGBT`。权重、环境、数据、大体积原始结果不提交GitHub。

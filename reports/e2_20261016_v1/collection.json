@@ -1,0 +1,14 @@
+{
+  "archive": "/data2/gaob/Miss-RGBT/records/e2_closed_20261016_v1.tar.gz",
+  "archive_sha256": "7621ac9d07039e67d5fb04b332149051d118355a09b0408a384d95bcb65989eb",
+  "bytes": 25107850,
+  "members": 2067,
+  "package_files": 3556,
+  "local_archive": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\e2_closed_20261016_v1.tar.gz",
+  "raw_root": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\e2_closed_raw",
+  "copied_members_verified": 2066,
+  "locally_held_runtime_package_files_verified": 1967,
+  "installed_hashes_matching_public_wheel": 3556,
+  "installed_files_not_held": 1589,
+  "verification_scope": "Actual held1967 installed files and public-release correspondence for3556 installed hashes; no full installed-file possession/startup seal or author-toolbox equivalence claim."
+}

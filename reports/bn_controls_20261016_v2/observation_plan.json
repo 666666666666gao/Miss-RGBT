@@ -1,0 +1,17 @@
+{
+  "based_on_observation_epoch": 1792148910.320124,
+  "based_on_observation_bjt": "2026-10-16T19:08:30.320124+08:00",
+  "deadline_epoch": 1792199638.7863135,
+  "deadline_bjt": "2026-10-17T09:13:58.786314+08:00",
+  "estimated_train_end_epoch": 1792249908.848678,
+  "estimated_train_end_bjt": "2026-10-17T23:11:48.848678+08:00",
+  "midpoint_rule": "Forecast both models reaching update25000 plus300seconds to allow epoch10 save; estimates from first70/72 updates, not measured completion.",
+  "purpose": "At the node inspect actual training logs/source/child processes and available epoch10 BN buffers; revise end forecast from measured progress.",
+  "observer_mode": "Root absolute-time wait then one direct SSH; no auxiliary long local timer, no pre-node training/GPU/log/process query.",
+  "near_node_recheck_seconds": [
+    180,
+    300
+  ],
+  "no_mutations": "No active source/config/module/template/mask/training changes during the frozen BN campaign.",
+  "expected_evaluation": "After both full20 finish, fixed epoch20, E3 complete/Miss then E4 complete/Miss, each condition479sequences337353frames; no Test epoch selection."
+}

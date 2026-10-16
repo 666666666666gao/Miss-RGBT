@@ -1,0 +1,26 @@
+{
+  "scientific_commit": "1f1929afe4de032f9726a210e53b6b22fb850eea",
+  "controller_pid": 1753089,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "scripts/run_bn_controls.py"
+  ],
+  "controller_cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u scripts/run_bn_controls.py ",
+  "launched_epoch": 1792148722.0146878,
+  "started_utc": "2026-10-16T11:05:22.015162Z",
+  "source_files_verified": 120,
+  "changed_files": [
+    "scripts/run_bn_controls.py",
+    "scripts/validate_bn_training.py"
+  ],
+  "env_spec_sha256": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+  "env_spec_canonical_hash": "cc6cd0758ddfada251f1ee312b4169ad14c8140bd44085340615ec6fec079a4f",
+  "admission_gpu_memory": [
+    "2, 12",
+    "3, 12"
+  ],
+  "initial_observation_epoch": 1792148902.0146878,
+  "preceding_controller_failure": "v1 failed before preflight/training, original directory/log/launch retained.",
+  "scope": "Actual v2 controller launch after exact source verification. Real task preflight and full training not yet claimed."
+}

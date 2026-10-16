@@ -1,0 +1,52 @@
+{
+  "observed_epoch": 1792148647.071154,
+  "observed_utc": "2026-10-16T11:04:07.071156Z",
+  "controller": {
+    "pid": 1752683,
+    "present": false,
+    "cmdline": null
+  },
+  "status": null,
+  "campaign": null,
+  "completed": null,
+  "stages": {
+    "e3": {
+      "preflight": null,
+      "preflight_exit": null,
+      "training_launch": null,
+      "training_exit": null,
+      "training_rows": 0,
+      "last_training_row": null,
+      "recent_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": null,
+      "completed": null
+    },
+    "e4": {
+      "preflight": null,
+      "preflight_exit": null,
+      "training_launch": null,
+      "training_exit": null,
+      "training_rows": 0,
+      "last_training_row": null,
+      "recent_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": null,
+      "completed": null
+    }
+  },
+  "source_120_match": true,
+  "startup_data_seal_entries": 4445,
+  "gpu_memory_utilization": [
+    "2, 12, 24576, 0",
+    "3, 12, 24576, 0"
+  ],
+  "controller_log_tail": [
+    "Traceback (most recent call last):",
+    "  File \"scripts/run_bn_controls.py\", line 140, in <module>",
+    "    main()",
+    "  File \"scripts/run_bn_controls.py\", line 93, in main",
+    "    assert sha(configs['e3']['checkpoint']) == 'd20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8'",
+    "  File \"/home/gaob/Miss-RGBT/scripts/package_e0_availability.py\", line 12, in sha",
+    "    with path.open('rb') as stream:",
+    "AttributeError: 'str' object has no attribute 'open'"
+  ]
+}

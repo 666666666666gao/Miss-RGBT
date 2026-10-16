@@ -1,0 +1,35 @@
+{
+  "scientific_commit": "656b140e9a67d030b5354643be306d04d833b6ec",
+  "controller_pid": 1752683,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "scripts/run_bn_controls.py"
+  ],
+  "controller_cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u scripts/run_bn_controls.py ",
+  "launched_epoch": 1792148455.1595385,
+  "started_utc": "2026-10-16T11:00:55.160142Z",
+  "source_files_verified": 120,
+  "changed_files": [
+    "miss_rgbt/train.py",
+    "configs/e3_allbn_full20.json",
+    "configs/e4_allbn_full20.json",
+    "scripts/validate_bn_freeze.py",
+    "scripts/validate_bn_training.py",
+    "scripts/run_bn_controls.py"
+  ],
+  "corrected_stale_helper": {
+    "path": "scripts/validate_focal_normalization.py",
+    "old_sha256": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+    "new_sha256": "d3658557019c1eea4dce7476dd49572170386cab1fce59ae17ce244ee4055c1c"
+  },
+  "env_spec_sha256": "161d7f5b5215512cf6981faed7ecdd9e4e571f4361709052d58fe3b1e6761d11",
+  "env_spec_canonical_hash": "cc6cd0758ddfada251f1ee312b4169ad14c8140bd44085340615ec6fec079a4f",
+  "env_mode": "Warm existing conda reused; no install/rebuild/environment-doc change.",
+  "admission_gpu_memory": [
+    "2, 12",
+    "3, 12"
+  ],
+  "initial_observation_epoch": 1792148635.1595385,
+  "scope": "Actual detached controller launched after exact 120-file verification. No preflight/full-training success claimed until observed."
+}

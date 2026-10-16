@@ -1,0 +1,241 @@
+{
+  "observed_epoch": 1792148910.320124,
+  "observed_utc": "2026-10-16T11:08:30.320126Z",
+  "controller": {
+    "pid": 1753089,
+    "present": true,
+    "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u scripts/run_bn_controls.py "
+  },
+  "status": {
+    "stage": "E3_E4_ALLBN_FULL20_RUNNING",
+    "controller_pid": 1753089,
+    "updated_utc": "2026-10-16T11:05:55.809810Z"
+  },
+  "campaign": {
+    "source_version": "1f1929afe4de032f9726a210e53b6b22fb850eea",
+    "configs": {
+      "e3": {
+        "stage": "E3",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/data2/gaob/Miss-RGBT/checkpoints/e3_allbn_full20_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/BN_FREEZE_SOURCE_VERSION.txt",
+        "freeze_all_bn": true
+      },
+      "e4": {
+        "stage": "E4",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+        "repair": true,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/data2/gaob/Miss-RGBT/checkpoints/e4_allbn_full20_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/BN_FREEZE_SOURCE_VERSION.txt",
+        "freeze_all_bn": true
+      }
+    },
+    "started_utc": "2026-10-16T11:05:28.265020Z",
+    "formal_budget_per_model": {
+      "epochs": 20,
+      "sampled_tuples_per_epoch": 20000,
+      "effective_batch": 8,
+      "optimizer_updates": 50000,
+      "seed": 2027
+    },
+    "evaluation_epoch": 20,
+    "selection": "Fixed final epoch; same weight for complete/Miss; no test selection.",
+    "bn_policy": "All 13 BatchNorm2d running statistics fixed; affine remains trainable; other module training modes unchanged.",
+    "admission_gpus": [
+      "2, 12",
+      "3, 12"
+    ]
+  },
+  "completed": null,
+  "stages": {
+    "e3": {
+      "preflight": {
+        "stage": "e3",
+        "physical_gpu": 2,
+        "updates": 2,
+        "all_bn_buffers_unchanged": 39,
+        "changed_state_keys": 209,
+        "fusion_bn_affine_updated": true,
+        "strict_reload": true,
+        "peak_gpu_bytes": 17284299264,
+        "seconds": 9.35566782951355,
+        "source_sha256": {
+          "miss_rgbt/train.py": "64cb819db8e634a36a7ec8a20059c9124f281e3c7c9fb0a0091f44cc45a7f089",
+          "miss_rgbt/model.py": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+          "miss_rgbt/objectives.py": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+          "scripts/validate_bn_training.py": "030e500fac8048bc26e677ee528534a8d96e7d0c674eaeae830a39f9774731a3"
+        },
+        "scope": "Two actual task updates; all 39 BN running buffers unchanged and affine parameters still train. Fresh E0 initialization; this smoke checkpoint is not used for formal training or benchmark results."
+      },
+      "preflight_exit": {
+        "pid": 1753164,
+        "exit_code": 0,
+        "ended_utc": "2026-10-16T11:05:55.797109Z"
+      },
+      "training_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e3_allbn_full20.json"
+        ],
+        "pid": 1754012,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-16T11:05:55.829062Z"
+      },
+      "training_exit": null,
+      "process": {
+        "pid": 1754012,
+        "present": true,
+        "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --config configs/e3_allbn_full20.json "
+      },
+      "training_rows": 70,
+      "last_training_row": {
+        "task_c": 2.4022138118743896,
+        "task_m": 4.466034889221191,
+        "kd_forward": 0.3209429681301117,
+        "kd_reverse": 0.0,
+        "reverse_fraction": 0.0,
+        "epoch": 1,
+        "update": 70,
+        "loss": 6.900343418121338,
+        "seconds": 146.72287607192993,
+        "peak_gpu_bytes": 17285475328,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": 0.4943636379143671,
+      "completed": null
+    },
+    "e4": {
+      "preflight": {
+        "stage": "e4",
+        "physical_gpu": 3,
+        "updates": 2,
+        "all_bn_buffers_unchanged": 39,
+        "changed_state_keys": 217,
+        "fusion_bn_affine_updated": true,
+        "strict_reload": true,
+        "peak_gpu_bytes": 17475564032,
+        "seconds": 9.224250793457031,
+        "source_sha256": {
+          "miss_rgbt/train.py": "64cb819db8e634a36a7ec8a20059c9124f281e3c7c9fb0a0091f44cc45a7f089",
+          "miss_rgbt/model.py": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+          "miss_rgbt/objectives.py": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+          "scripts/validate_bn_training.py": "030e500fac8048bc26e677ee528534a8d96e7d0c674eaeae830a39f9774731a3"
+        },
+        "scope": "Two actual task updates; all 39 BN running buffers unchanged and affine parameters still train. Fresh E0 initialization; this smoke checkpoint is not used for formal training or benchmark results."
+      },
+      "preflight_exit": {
+        "pid": 1753165,
+        "exit_code": 0,
+        "ended_utc": "2026-10-16T11:05:55.798039Z"
+      },
+      "training_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e4_allbn_full20.json"
+        ],
+        "pid": 1754013,
+        "cuda_visible_devices": "3",
+        "started_utc": "2026-10-16T11:05:55.843529Z"
+      },
+      "training_exit": null,
+      "process": {
+        "pid": 1754013,
+        "present": true,
+        "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --config configs/e4_allbn_full20.json "
+      },
+      "training_rows": 72,
+      "last_training_row": {
+        "task_c": 1.5513434410095215,
+        "task_m": 3.748135566711426,
+        "kd_forward": 0.9464595913887024,
+        "kd_reverse": 0.0,
+        "reverse_fraction": 0.0,
+        "epoch": 1,
+        "update": 72,
+        "loss": 5.394124984741211,
+        "seconds": 147.44154167175293,
+        "peak_gpu_bytes": 17476382720,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": 0.5064832035977835,
+      "completed": null
+    }
+  },
+  "source_120_match": true,
+  "startup_data_seal_entries": 4445,
+  "gpu_memory_utilization": [
+    "2, 19093, 24576, 100",
+    "3, 19307, 24576, 89"
+  ],
+  "controller_log_tail": [
+    "LAUNCHED e3_bn_preflight pid=1753164 CUDA=2",
+    "LAUNCHED e4_bn_preflight pid=1753165 CUDA=3",
+    "LAUNCHED e3_allbn_full20_train pid=1754012 CUDA=2",
+    "LAUNCHED e4_allbn_full20_train pid=1754013 CUDA=3"
+  ]
+}
