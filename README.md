@@ -4,7 +4,7 @@
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。
 
-2026-10-16：[E0-FT完整20轮与四套指标](reports/e0_ft_20261016_v1/README.md)已完成，审计WARN、数值复算一致；完整五项均低于E0，说明完整退化在仅完整继续训练时也出现，原因仍待归因。E2最后07:42为32964/50000更新，仍按冻结配置运行；下一必要节点17:02北京时间，此前不查询NN/GPU。详见[交接](HANDOFF.md)。[E0-availability](reports/e0_availability_20261015_v1/RESULTS.md)及E3/E4原指标保留；[资源采样](profile_output/attribution_20261015_1410/README.md)支持训练每卡一项。BN、A及模板控制源码均保持隔离，未正式启用。
+2026-10-16：[E0-FT完整20轮与四套指标](reports/e0_ft_20261016_v1/README.md)已完成，审计WARN、数值复算一致；完整五项均低于E0，说明完整退化在仅完整继续训练时也出现，原因仍待归因。E2于17:03实际完成20轮/50000更新exit0，固定末轮全量评估GPU2、3已启动；下一必要节点18:39北京时间，此前不查询NN/GPU。长等待的本地观察进程丢失已记录，后续按绝对节点直接采集，不重启NN。详见[交接](HANDOFF.md)。[E0-availability](reports/e0_availability_20261015_v1/RESULTS.md)及E3/E4原指标保留；[资源采样](profile_output/attribution_20261015_1410/README.md)支持训练每卡一项。BN、A及模板控制源码均保持隔离，未正式启用。
 
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 

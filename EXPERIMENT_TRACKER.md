@@ -26,7 +26,7 @@
 | A任务效用补偿 | ISOLATED_IMPLEMENTED，CPU原生检查exit0 | 原E0，新增596357参数；一个真实元组两次更新，39BN/主任务RNG/不可见输入/重载检查 | reports/task_utility_cpu_20261015_v1；执行源码a229afc、分支f6cead7；不是GPU或正式20轮成绩 |
 | E0-availability | DONE，两项全评估exit0 | 0更新、完整/Miss共958序列运行/674706帧 | reports/e0_availability_20261015_v1；完整相等、Miss下降；审计WARN |
 | E0-FT-full20 | DONE，07:48闭环，08:12审计WARN | 20轮/50000更新exit0；四套完整指标，958序列运行674706帧 | reports/e0_ft_20261016_v1；10指标独立复算误差0，单seed/协议等限制保留 |
-| E2-full20 | RUNNING，07:42证据 | epoch14/update32964/50000，GPU3，近期日志有限 | reports/attribution_runtime_20261016_0742.json；17:02下一观察，无最终指标 |
+| E2-full20 | 训练DONE，17:03 exit0；评估RUNNING | 20轮/50000更新，固定末轮完整评估GPU2、3已启动 | reports/attribution_runtime_20261016_1703.json；18:39下一观察，最终10指标待产出 |
 | 模板U0/U1/U2 | ISOLATED_IMPLEMENTED，未NN/正式运行 | Python3.12/3.7各9项stdlib stub控制流检查通过 | reports/template_controls_preparation_20261015；23c6b46，仅准备，不改当前队列 |
 | E5 选择性反馈 | TODO | E4有效后再做 | 未验证 |
 | 三个有效论文模块 | UNPROVEN | 需要主结果和消融 | 不能据 native PASS 宣称成立 |

@@ -1,0 +1,18 @@
+{
+  "deadline_epoch": 1792147166.12565,
+  "deadline_utc": "2026-10-16T10:39:26.125650+00:00",
+  "deadline_bjt": "2026-10-16T18:39:26.125650+08:00",
+  "expected_e2_evaluation_end_epoch": 1792147466.12565,
+  "estimated_duration_seconds": 6045.092783808708,
+  "estimate_basis": "FT actual same-adapter single-GPU complete6560.437171s + miss5529.748397s divided by2 for E2 physicalGPUs2,3. Forecast, not measured E2 scaling/performance.",
+  "source_intake_sha256": "048f6187058adecd8416335f3c0464b6237ee44a64e223c1f42bc0d80876af47",
+  "observer_mode": "No auxiliary background process. Root waits to this absolute node then makes one direct read-only observation. No early NN/GPU/process/log query, no NN restart.",
+  "old_local_owner43188": {
+    "pid_absent_at_due": true,
+    "receipt_absent": true,
+    "actual_exit_code": null,
+    "original_owner_file": "attribution_e2_end_observer_owner_20261016.json",
+    "retired": true
+  },
+  "stage": "E2 training complete20/50000; full evaluation running, final metrics pending"
+}
