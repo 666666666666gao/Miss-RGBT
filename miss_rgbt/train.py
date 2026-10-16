@@ -27,8 +27,9 @@ def sample_masks(templates, searches, config):
     return available, patch
 
 
-def fix_bn(model):
-    for module in model.baseline.box_head.modules():
+def fix_bn(model, freeze_all=False):
+    target = model if freeze_all else model.baseline.box_head
+    for module in target.modules():
         if isinstance(module, torch.nn.BatchNorm2d):
             module.eval()
 
@@ -51,7 +52,7 @@ def main():
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     model = load_pretrained(cfg, config['checkpoint'], repair=config['repair'],
         width=config['repair_width'], repair_layer=config['repair_layer']).cuda().train()
-    fix_bn(model)
+    fix_bn(model, config.get('freeze_all_bn', False))
     # Repair construction consumes RNG; restore the shared data/mask/drop-path seed.
     random.seed(seed)
     np.random.seed(seed)
