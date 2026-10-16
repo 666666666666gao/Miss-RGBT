@@ -17,7 +17,7 @@ from package_e0_availability import sha
 
 
 ROOT = campaign.ROOT
-campaign.RUN = ROOT/'logs/bn_freeze_full20_v1'
+campaign.RUN = ROOT/'logs/bn_freeze_full20_v2'
 
 
 def state(stage):
@@ -90,7 +90,7 @@ def main():
     campaign.write('source_sha256.json', hashes)
     assert configs['e3']['dataset'] == configs['e4']['dataset']
     campaign.write('data_sha256.json', data_seals(configs['e3']['dataset']))
-    assert sha(configs['e3']['checkpoint']) == 'd20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8'
+    assert sha(Path(configs['e3']['checkpoint'])) == 'd20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8'
     assert configs['e3']['checkpoint'] == configs['e4']['checkpoint']
     rows = subprocess.check_output(['nvidia-smi','-i','2,3','--query-gpu=index,memory.used',
         '--format=csv,noheader,nounits'],universal_newlines=True).splitlines()

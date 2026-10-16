@@ -27,7 +27,7 @@ def main():
     config = json.loads((root/'configs'/(args.stage+'_allbn_full20.json')).read_text())
     assert config['freeze_all_bn'] is True
     config['output'] = '/data2/gaob/Miss-RGBT/checkpoints/'+args.stage+'_bn_preflight_seed2027'
-    logroot = root/'logs/bn_freeze_full20_v1'/('preflight_'+args.stage)
+    logroot = root/'logs/bn_freeze_full20_v2'/('preflight_'+args.stage)
     logroot.mkdir(parents=True, exist_ok=False)
     path = logroot/'config.json'
     path.write_text(json.dumps(config, indent=2))
