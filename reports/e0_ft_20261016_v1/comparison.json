@@ -1,0 +1,907 @@
+{
+  "scope": "Recorded metrics aggregation, closed FT final20/50000, fixed seed2027. Bbox hashes/row counts/finite values verified; this producer does not independently reconstruct metrics from GT. Fresh audit pending.",
+  "collection_sha256": "70883d15cb7aec8ba41a44ddbd3796b1c5dcf79df19d35aa60bb35388ad354e5",
+  "checkpoint_metadata": {
+    "epoch": 20,
+    "updates": 50000,
+    "config": {
+      "stage": "E0-FT",
+      "seed": 2027,
+      "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+      "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+      "repair": false,
+      "repair_width": 128,
+      "repair_layer": 6,
+      "forward_weight": 0.0,
+      "reverse_weight": 0.0,
+      "reverse_margin": 0.1,
+      "patch_mask_probability": 0.1,
+      "complete_rgb_missing_tir_missing_probability": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "microbatch": 4,
+      "accumulation": 2,
+      "samples_per_epoch": 20000,
+      "epochs": 20,
+      "workers": 4,
+      "learning_rate": 0.0001,
+      "backbone_multiplier": 0.1,
+      "weight_decay": 0.0001,
+      "lr_drop_epoch": 10,
+      "clip_grad_norm": 0.1,
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027",
+      "checkpoint_epochs": [
+        10,
+        20
+      ],
+      "source_version_file": "reports/ATTRIBUTION_SOURCE_VERSION.txt"
+    },
+    "checkpoint_sha256": "0f276f65f360e8a744a76ae0f32bba2f41bbc62e8956b59c883e6f87485c57a8",
+    "original_checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+    "model_state_keys": 250,
+    "strict_reload": true,
+    "all_state_values_finite": true,
+    "bn_buffer_differences_from_e0": {
+      "baseline.box_head.conv1_ctr.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -2.4664146264585725,
+        "final_mean": -2.4664146264585725,
+        "initial_sha256": "542e8b36a25cc886fdc2099dba1dd59635ba0cab8d8c496de451f176e3ab5f7f",
+        "final_sha256": "542e8b36a25cc886fdc2099dba1dd59635ba0cab8d8c496de451f176e3ab5f7f"
+      },
+      "baseline.box_head.conv1_ctr.1.running_var": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 63.928960740566254,
+        "final_mean": 63.928960740566254,
+        "initial_sha256": "6af61fb217ee5c569c1acd956a9ad4dac50f6b05bfdf085e09d0141cbf066fce",
+        "final_sha256": "6af61fb217ee5c569c1acd956a9ad4dac50f6b05bfdf085e09d0141cbf066fce"
+      },
+      "baseline.box_head.conv1_ctr.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv2_ctr.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -6.171059364020948,
+        "final_mean": -6.171059364020948,
+        "initial_sha256": "1eefc5118983573729323f983d0fe45823b31b2dd1e768f74ec911b76e368c72",
+        "final_sha256": "1eefc5118983573729323f983d0fe45823b31b2dd1e768f74ec911b76e368c72"
+      },
+      "baseline.box_head.conv2_ctr.1.running_var": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 102.1563309431076,
+        "final_mean": 102.1563309431076,
+        "initial_sha256": "06b907fc1fe88c462d2dca2dd415aec4583db9d4271766429c85d8e301210b46",
+        "final_sha256": "06b907fc1fe88c462d2dca2dd415aec4583db9d4271766429c85d8e301210b46"
+      },
+      "baseline.box_head.conv2_ctr.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv3_ctr.1.running_mean": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -3.273094498552382,
+        "final_mean": -3.273094498552382,
+        "initial_sha256": "28ed084efaea8367907cd2908a756991240595fb55b4765c53f8aea4394c9ac2",
+        "final_sha256": "28ed084efaea8367907cd2908a756991240595fb55b4765c53f8aea4394c9ac2"
+      },
+      "baseline.box_head.conv3_ctr.1.running_var": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 61.59145659208298,
+        "final_mean": 61.59145659208298,
+        "initial_sha256": "5804a59368303bade66d6a2c9ef4cef349d644e8800134ee35f4b71be89ced53",
+        "final_sha256": "5804a59368303bade66d6a2c9ef4cef349d644e8800134ee35f4b71be89ced53"
+      },
+      "baseline.box_head.conv3_ctr.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv4_ctr.1.running_mean": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -0.6123602092266083,
+        "final_mean": -0.6123602092266083,
+        "initial_sha256": "13ac39e1aae64cf6a8409618ba385d8620403f1c7af8f387f74b451f0398ef86",
+        "final_sha256": "13ac39e1aae64cf6a8409618ba385d8620403f1c7af8f387f74b451f0398ef86"
+      },
+      "baseline.box_head.conv4_ctr.1.running_var": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 78.24115312099457,
+        "final_mean": 78.24115312099457,
+        "initial_sha256": "82aeeb25c11ff1af00dc04f122e965f9cfb3581a8c416c918f6e0c2e96f422aa",
+        "final_sha256": "82aeeb25c11ff1af00dc04f122e965f9cfb3581a8c416c918f6e0c2e96f422aa"
+      },
+      "baseline.box_head.conv4_ctr.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv1_offset.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -2.6063657769700512,
+        "final_mean": -2.6063657769700512,
+        "initial_sha256": "b26009c394a7f1a31ee916eb18c8df2931f6ade6fa91dba8e4e1e7ede7d59c70",
+        "final_sha256": "b26009c394a7f1a31ee916eb18c8df2931f6ade6fa91dba8e4e1e7ede7d59c70"
+      },
+      "baseline.box_head.conv1_offset.1.running_var": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 59.073796421289444,
+        "final_mean": 59.073796421289444,
+        "initial_sha256": "af587d515d460de94631404bbdf124f316b0c4b5abb894b97062e5cae4fa2e45",
+        "final_sha256": "af587d515d460de94631404bbdf124f316b0c4b5abb894b97062e5cae4fa2e45"
+      },
+      "baseline.box_head.conv1_offset.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv2_offset.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -10.056819791905582,
+        "final_mean": -10.056819791905582,
+        "initial_sha256": "033a0c3870e22cb352cae33a804bb3ece28f1d63f21863de30ba0fe4d3e8e9ae",
+        "final_sha256": "033a0c3870e22cb352cae33a804bb3ece28f1d63f21863de30ba0fe4d3e8e9ae"
+      },
+      "baseline.box_head.conv2_offset.1.running_var": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 99.13614270091057,
+        "final_mean": 99.13614270091057,
+        "initial_sha256": "8a694fea98970261b011e0c7074af489281d4f5358a18316fc2e0d802005710f",
+        "final_sha256": "8a694fea98970261b011e0c7074af489281d4f5358a18316fc2e0d802005710f"
+      },
+      "baseline.box_head.conv2_offset.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv3_offset.1.running_mean": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -9.895509587600827,
+        "final_mean": -9.895509587600827,
+        "initial_sha256": "db9a1a4377f3d83cd9ecfbbbcd61f043e859fccd19abb8f293a80bfbf7c75bb1",
+        "final_sha256": "db9a1a4377f3d83cd9ecfbbbcd61f043e859fccd19abb8f293a80bfbf7c75bb1"
+      },
+      "baseline.box_head.conv3_offset.1.running_var": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 81.42370656132698,
+        "final_mean": 81.42370656132698,
+        "initial_sha256": "9b5bd563f7a067b34d4d061e1851add3e8db88242043cba99911374377bac11b",
+        "final_sha256": "9b5bd563f7a067b34d4d061e1851add3e8db88242043cba99911374377bac11b"
+      },
+      "baseline.box_head.conv3_offset.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv4_offset.1.running_mean": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 0.13514426723122597,
+        "final_mean": 0.13514426723122597,
+        "initial_sha256": "f43b293d13db4468f5580dac786353eaf111b49a87db3015a4cfcbbe007f4c3d",
+        "final_sha256": "f43b293d13db4468f5580dac786353eaf111b49a87db3015a4cfcbbe007f4c3d"
+      },
+      "baseline.box_head.conv4_offset.1.running_var": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 98.76866063475609,
+        "final_mean": 98.76866063475609,
+        "initial_sha256": "f5df35edec989e685a4ba935a31bb13d2349ac802d419a8da320a6e1b0ea8b7f",
+        "final_sha256": "f5df35edec989e685a4ba935a31bb13d2349ac802d419a8da320a6e1b0ea8b7f"
+      },
+      "baseline.box_head.conv4_offset.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv1_size.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -3.544164825754706,
+        "final_mean": -3.544164825754706,
+        "initial_sha256": "aa1a3f48ed0d984358504bbc52d44a3e56a30ac98b3458c3c9e3feb40a2dddfb",
+        "final_sha256": "aa1a3f48ed0d984358504bbc52d44a3e56a30ac98b3458c3c9e3feb40a2dddfb"
+      },
+      "baseline.box_head.conv1_size.1.running_var": {
+        "shape": [
+          256
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 57.014961540699005,
+        "final_mean": 57.014961540699005,
+        "initial_sha256": "0f0b597e97905e204723c8b4082884c11c731c5503013995f2815f812964bebd",
+        "final_sha256": "0f0b597e97905e204723c8b4082884c11c731c5503013995f2815f812964bebd"
+      },
+      "baseline.box_head.conv1_size.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv2_size.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -7.09594694111729,
+        "final_mean": -7.09594694111729,
+        "initial_sha256": "512994be6dc62c4acc67f457b98b2fe348ab2b55b0bbf13fd40fbbf6b1ef55f5",
+        "final_sha256": "512994be6dc62c4acc67f457b98b2fe348ab2b55b0bbf13fd40fbbf6b1ef55f5"
+      },
+      "baseline.box_head.conv2_size.1.running_var": {
+        "shape": [
+          128
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 65.3199273198843,
+        "final_mean": 65.3199273198843,
+        "initial_sha256": "26695de0e09072ab382c688fd24fbdbe0db7c5fc1eac1e8226a8445b7dc69be3",
+        "final_sha256": "26695de0e09072ab382c688fd24fbdbe0db7c5fc1eac1e8226a8445b7dc69be3"
+      },
+      "baseline.box_head.conv2_size.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv3_size.1.running_mean": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -0.9557226072065532,
+        "final_mean": -0.9557226072065532,
+        "initial_sha256": "096a00dae5bb51179ebdd02c145d1a878bb986498e25d4c2f47a64810198e84b",
+        "final_sha256": "096a00dae5bb51179ebdd02c145d1a878bb986498e25d4c2f47a64810198e84b"
+      },
+      "baseline.box_head.conv3_size.1.running_var": {
+        "shape": [
+          64
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 121.67962884902954,
+        "final_mean": 121.67962884902954,
+        "initial_sha256": "adc6a7a9adb16ff9bf4e067a42ddcb6b63e4fe67d87060fa72e14dd68cd70808",
+        "final_sha256": "adc6a7a9adb16ff9bf4e067a42ddcb6b63e4fe67d87060fa72e14dd68cd70808"
+      },
+      "baseline.box_head.conv3_size.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.box_head.conv4_size.1.running_mean": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": -0.8026684504002333,
+        "final_mean": -0.8026684504002333,
+        "initial_sha256": "16894c071ae83085448ae550287b720dce0442042ae0284d427d524816c28a41",
+        "final_sha256": "16894c071ae83085448ae550287b720dce0442042ae0284d427d524816c28a41"
+      },
+      "baseline.box_head.conv4_size.1.running_var": {
+        "shape": [
+          32
+        ],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 182.0734659433365,
+        "final_mean": 182.0734659433365,
+        "initial_sha256": "373bfb5abaf7d6d16df71a1d24d727a4ac67b46a93d5d567d1443696c27d9fca",
+        "final_sha256": "373bfb5abaf7d6d16df71a1d24d727a4ac67b46a93d5d567d1443696c27d9fca"
+      },
+      "baseline.box_head.conv4_size.1.num_batches_tracked": {
+        "shape": [],
+        "equal": true,
+        "max_abs_change": 0.0,
+        "initial_mean": 140400.0,
+        "final_mean": 140400.0,
+        "initial_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb",
+        "final_sha256": "155653a6d519d66ade7615d2c095dcd5186d86438b7f16b05db5d1a1eddef9cb"
+      },
+      "baseline.decode_fuse_search.1.running_mean": {
+        "shape": [
+          768
+        ],
+        "equal": false,
+        "max_abs_change": 4.43547248840332,
+        "initial_mean": -0.2527484158963489,
+        "final_mean": -0.6357125109737751,
+        "initial_sha256": "221881fd58814306c67f745796d3c45210b56da6c69835e32a249f2bb0476abb",
+        "final_sha256": "9b4c94243d0bf3740e2713231bf3e17d76ce41d3e1dbcf19df969f5843805c07"
+      },
+      "baseline.decode_fuse_search.1.running_var": {
+        "shape": [
+          768
+        ],
+        "equal": false,
+        "max_abs_change": 14.973179817199707,
+        "initial_mean": 0.9435049702879041,
+        "final_mean": 3.963481488482406,
+        "initial_sha256": "027f68451624d024965aca029d1729e0098bea4352faf11688a11213103dbd0b",
+        "final_sha256": "3b652f9ad482125e298ee05c2879af5383f76d7b5d9faf3ceca2372bcc6f156d"
+      },
+      "baseline.decode_fuse_search.1.num_batches_tracked": {
+        "shape": [],
+        "equal": false,
+        "max_abs_change": 300000.0,
+        "initial_mean": 37500.0,
+        "final_mean": 337500.0,
+        "initial_sha256": "45d4a1d295f7407e95ad577dcabf96bfa8e966512be07d8f81c8d1eb3abafa03",
+        "final_sha256": "5481b4050ec14e628e08a503958e80cb1688814b258691e76307d5b16cde88d5"
+      }
+    },
+    "scope": "Parent CPU hash/reload/BN metadata only. No forward, optimizer update or independent binary audit."
+  },
+  "training": {
+    "completed": {
+      "epochs": 20,
+      "updates": 50000,
+      "seconds": 54309.54099178314
+    },
+    "config": {
+      "stage": "E0-FT",
+      "seed": 2027,
+      "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+      "dataset": "/data2/wangwj/dataset/LasHeR-0428/trainingset",
+      "repair": false,
+      "repair_width": 128,
+      "repair_layer": 6,
+      "forward_weight": 0.0,
+      "reverse_weight": 0.0,
+      "reverse_margin": 0.1,
+      "patch_mask_probability": 0.1,
+      "complete_rgb_missing_tir_missing_probability": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "microbatch": 4,
+      "accumulation": 2,
+      "samples_per_epoch": 20000,
+      "epochs": 20,
+      "workers": 4,
+      "learning_rate": 0.0001,
+      "backbone_multiplier": 0.1,
+      "weight_decay": 0.0001,
+      "lr_drop_epoch": 10,
+      "clip_grad_norm": 0.1,
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027",
+      "checkpoint_epochs": [
+        10,
+        20
+      ],
+      "source_version_file": "reports/ATTRIBUTION_SOURCE_VERSION.txt"
+    },
+    "log_updates_verified": 50000,
+    "log_loss_scope": "Per-update log stores the last accumulation microbatch, not the average over all microbatches."
+  },
+  "conditions": {
+    "complete": {
+      "metrics": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 74.41425929140433,
+          "NPR": 70.65898621267472,
+          "SR": 59.3155152432876
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 90.47816920177041,
+          "MSR": 65.7458375997636
+        }
+      },
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 6560.437170743942
+      },
+      "exit": {
+        "pid": 1028715,
+        "exit_code": 0,
+        "ended_utc": "2026-10-15T22:13:56.858502Z"
+      },
+      "receipts_verified": 479,
+      "run": {
+        "checkpoint": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch20.pth.tar",
+        "checkpoint_sha256": "0f276f65f360e8a744a76ae0f32bba2f41bbc62e8956b59c883e6f87485c57a8",
+        "condition": "complete",
+        "workers": 4,
+        "physical_gpus": [
+          2
+        ],
+        "source_sha256": {
+          "miss_rgbt/__init__.py": "7e9a1007fb76a2460b19806183f82550c31de32c4dac4746c74ac8691c1fae4f",
+          "miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+          "miss_rgbt/model.py": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+          "miss_rgbt/objectives.py": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+          "miss_rgbt/tracker.py": "87fb7630552085a3afd6be9855b6c0d47e39db34440209f2861b2cb73d113bd1",
+          "miss_rgbt/train.py": "f88b638f61bc40a0f1fa2bc7618efa9ed41c25dbafd8bd3a4f3439a154b28d17",
+          "lib/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/config/cadtrack/config.py": "8a1dfa9bf4f500be0bf64b205c0772605ac8e2617dbb13705215423fc5884e56",
+          "lib/models/__init__.py": "65c27110a13c7f4ea45b7449e4cfc5e8e978dc78c03dd0e06e82668d8d56772d",
+          "lib/models/cadtrack/__init__.py": "90f89fa6e3fb10a85f2d344052296acbbfae153a293eec78640635654845dc88",
+          "lib/models/cadtrack/base_backbone.py": "c091912a9372ba5c14b01952b165a1642c40bb33ce53f0e1d7a4e094e1b117f0",
+          "lib/models/cadtrack/cadtrack.py": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+          "lib/models/cadtrack/utils.py": "557ce8e3d352e3ec69b2d21fcb0f8c18703b3152eff6f3f2e1a7470585e634ea",
+          "lib/models/cadtrack/vit_care.py": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+          "lib/models/layers/CDA_Module.py": "637c9d4859cf4b0eeef91dde7495d6cf97d3471a86a5c0ba2c904c542f452d68",
+          "lib/models/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/models/layers/adapter.py": "af082f7c8b07f9df4f650f96ae6d699bf7cabc89032d364885b84eb060e62bf0",
+          "lib/models/layers/attn.py": "4b70c16a4900e554eb573cac6050efbbe91666d1d9352a610173bb13b64163a3",
+          "lib/models/layers/attn_blocks.py": "43d830e603bad33041df42b04b1afd31f18df5acbb25659b1b80ee4e8723f9f2",
+          "lib/models/layers/cross_layer.py": "5008a012c53aaa0f5b7bb567b95b6118cef138644be9955e566cdf8c298d114e",
+          "lib/models/layers/frozen_bn.py": "6398d16294268830ede7992e616d7176ae484759f86fb977a6b73fccb86e8db8",
+          "lib/models/layers/head.py": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+          "lib/models/layers/mamba.py": "c671e339dd8f7417591864bd9829acd7837beb6ecba0ccac44b830efeed39f08",
+          "lib/models/layers/patch_embed.py": "2259b7703f008748167dd65d12ac28a496235d1f20a1d5c84a3aa0da9c8c0499",
+          "lib/models/layers/rpe.py": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94",
+          "lib/test/evaluation/__init__.py": "dfe5bf11d4976f7607e605856ce03c7f58c66820252f54555b218ff8ded09d6e",
+          "lib/test/evaluation/data.py": "fa7dfc5570f65bda637ef0d824b7af07f4dd9ee58cd64078c937e1822d839d76",
+          "lib/test/evaluation/datasets.py": "7dc85f9f6c4b350d67f71e59f32d785ebe496da759200aa1e77a065146cdb6c0",
+          "lib/test/evaluation/environment.py": "09c0725aa4b29d8f9880d8a01095ca14e4fedf1b5abf803fb31ddb93c638f61e",
+          "lib/test/evaluation/lasherdataset.py": "74fbe5165b1caca6118d1b6d0ab0cf249871a602815379d0fa2483eca03208c0",
+          "lib/test/evaluation/local.py": "56bdab11ae3c137e9d953fa56388382921ffc380ca94a06c7612424fb333a706",
+          "lib/test/evaluation/running.py": "3f0241b65b4f09391a03b8dbd30fdcb76017f10b8579baa209a9306d9d0bdd87",
+          "lib/test/evaluation/tracker.py": "ed63402cc27fcb866994f420724dedcd3b3094cdba3620bf7c8726b0b136d7c5",
+          "lib/test/evaluation/vtuavdataset.py": "c710124450ca03b775c61b932266ce400330288c8d671cf94b7bb7004cf5802c",
+          "lib/test/parameter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/test/parameter/cadtrack.py": "6e3810e341f05788f0c44b5145a3db7f0b0251d4a375845a838009ca38559612",
+          "lib/test/tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/test/tracker/basetracker.py": "f9bc6bbfb1a8f677f86e4f1eda024d89baaf454498a5f1321f1421df67a7aa36",
+          "lib/test/tracker/cadtrack.py": "6e0863824a890d6a16b9da5a7b5acd3e9f7bad3c4dd37f0a818c63aa38e433f2",
+          "lib/test/tracker/data_utils.py": "873337d0419ecfdd08b64123cdc22a4936ccdd6af98a092bc2106c32cf401fe5",
+          "lib/test/tracker/vis_utils.py": "47ba468532b9b849022f23d8025d113300708457ae1dfdcc00ead96cbaf088bb",
+          "lib/test/utils/__init__.py": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+          "lib/test/utils/_init_paths.py": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+          "lib/test/utils/hann.py": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+          "lib/test/utils/load_text.py": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+          "lib/test/utils/params.py": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+          "lib/train/__init__.py": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+          "lib/train/_init_paths.py": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+          "lib/train/actors/__init__.py": "40d17d1e1f7fb20b7104bee934268afd3ff600b0d86dec540ad8d84e784a9eb3",
+          "lib/train/actors/base_actor.py": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+          "lib/train/actors/cadtrack.py": "aa4694b540883903eb8c638c29e6d37205ee8d09885d91c3a6e1ccb3f4985279",
+          "lib/train/admin/__init__.py": "01eca534fc2197f7f71028a91ec684a684b5fe2cb8f5c9cb86fc62072a9f85a5",
+          "lib/train/admin/environment.py": "881e678e0cb5afba6b1c52975d7e60c5822d62be4454d26882ae23c8e8af2634",
+          "lib/train/admin/local.py": "0531ab69ad5081107b669794ba7dd518c5848b4509a0c318b163118dd08ba00a",
+          "lib/train/admin/multigpu.py": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+          "lib/train/admin/settings.py": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+          "lib/train/admin/stats.py": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+          "lib/train/admin/tensorboard.py": "023080fef9e85c37360dda5dded64e79ff976baab1c8a2617b05b9e97415dbec",
+          "lib/train/base_functions.py": "ac8be5762a0876499802977a77b45b1a3299a1c8b4566fa626d8b2237037ca21",
+          "lib/train/data/__init__.py": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+          "lib/train/data/bounding_box_utils.py": "d32aa112a2dbfb9c7130a9c8ae06558dd47ecf9bba33e46a447f9b7507321a61",
+          "lib/train/data/image_loader.py": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+          "lib/train/data/loader.py": "318c729bd3bdc26c39806864430e6bb302c7d7847f296dcc6d21e142185a2639",
+          "lib/train/data/processing.py": "b761856eeb2a9d558d1b8928e5f108eeb6d3da3d8deb0578a57864badcdc30ca",
+          "lib/train/data/processing_utils.py": "7aca916f5e5f62e1865fbd322ffb63dc08197c544a241938b6c822d4bfb89bf6",
+          "lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+          "lib/train/data/transforms.py": "9a7db0eb86a6aa351bb53d0373a07e2a93d14ec0c8b7fa8987811733cdae360a",
+          "lib/train/data/wandb_logger.py": "8ab545f24f09c34b2e043b29911a11c9e0fcb0610c3ea2b3b37c66dedcb84758",
+          "lib/train/dataset/__init__.py": "6a16289148d0ccdfcd2c3a776fc3b445d94dce413ff9b001f250289367ae3885",
+          "lib/train/dataset/base_image_dataset.py": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+          "lib/train/dataset/base_video_dataset.py": "84084446399d659a4026ff5bd6e58dd7ea5e4b76cc1c371969641c4f1ff68496",
+          "lib/train/dataset/depth_utils.py": "8a84889685aeafec86add59c017aadf237df6815ea4d935f909c31f35587d493",
+          "lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+          "lib/train/dataset/vtuav.py": "458e90f1a20de7bb157a442b2f18b7847594f5e289b07762fb0b390b920d8715",
+          "lib/train/run_training.py": "0ff5582efe6964769e8ccc6b8097edcd3a47394df4d9235e4a18484a9bf5c247",
+          "lib/train/train_script.py": "95baaf5466854f7c0ad6e622dcb166cf22dc7e07f8c8ab94e08c740f4e7fbc36",
+          "lib/train/trainers/__init__.py": "84d98401c971a9d84a4aed4529695588c724834ed139ec8a76ed93c80fd8753e",
+          "lib/train/trainers/base_trainer.py": "a415736ed45a08875b629af0676145f48a9e715333113ca344989702c347f984",
+          "lib/train/trainers/ltr_trainer.py": "172074b64f49d3a0d0737e7fa716b519a431b10e839627cfa403fa95c1a92b40",
+          "lib/utils/__init__.py": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+          "lib/utils/box_ops.py": "cee9d309a9c4a6c5f00fab575719bc7bf8d865127c91b10d4fb233996a111fbc",
+          "lib/utils/ce_utils.py": "513f12ba31150f8b2a15ed89b719967ec3c4de0659620675bd58b7c9cb052868",
+          "lib/utils/focal_loss.py": "11ccd7a16af34a3f54bd36191f086f7b0d85e95669e07bc072deb6226b40a965",
+          "lib/utils/heapmap_utils.py": "cc5ddbc0d65cad55f1a727f43e1d9966caa17a10c043a10586d0a13c1d4f3d4d",
+          "lib/utils/lmdb_utils.py": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+          "lib/utils/merge.py": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+          "lib/utils/misc.py": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+          "lib/utils/tensor.py": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+          "lib/vis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/vis/plotting.py": "7b36771b8d5e622bf069e43b0a1adf7290063e9c7d632a7b2220c23247d49a48",
+          "lib/vis/utils.py": "bb942c58c22d9bbea1a2e596d40871501027330c55ba5a7a28a889687f128aae",
+          "lib/vis/visdom_cus.py": "8ad65740ac78aaddad82dc2a40fc8a292745d9b69a88116a1ca6075e963c14f1",
+          "scripts/analyze_missing_states.py": "7e9714fe6e014aa0728efbce89800a0f86ffc8527fca23e7c5be6a3c6da51380",
+          "scripts/environment_witness.py": "44384ae9e5b87ccce92bcc5e5e4293cdddbd227012421ed49f3634408cc8ce38",
+          "scripts/evaluate_complete.py": "8bdb1e036288d6a7f8e3ea7cb3e06cea125bac029d22ff84f30eff724c017029",
+          "scripts/evaluate_model.py": "dae7e9036612cf474f336988ebca927371209e756e3e539ed2eeaaaac2d547e5",
+          "scripts/package_e0_availability.py": "4202a3ff63d02b7f68994040c5c4b6c2e436385b51449683e8b61095358c8b67",
+          "scripts/run_attribution_controls.py": "306fe5dfa85a01405ab276c107b67e5e7cacb39dfcd56bd95b60f403bb9c0f9d",
+          "scripts/run_campaign.py": "2f6ead827059ee44c4bdf951449b2a82395b2be83f23f002c0963e200765c1ef",
+          "scripts/run_full_training.py": "375d5434a42ecd78a39866927a8e83d2555d4d1940177b68a1994c82ae851f89",
+          "scripts/summarize_speed.py": "977a82148f9635905b87c9053c2f8161fab11ac0e50bc969d166f1d00895478f",
+          "scripts/validate_attribution.py": "a865d0b45a579412f67b73150609158976afe8fae46d621d5d9434c1860fe3bc",
+          "scripts/validate_focal_normalization.py": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+          "scripts/validate_method.py": "1e3bf092971459d4047c629614b61c6f4f157e97a3b6bbd76c9b27147c9c8546",
+          "scripts/validate_tracker.py": "4f4d30a61998154edd8ce7fdbffdeb631152d921ca4d0f6ea92666c59ca4c971",
+          "scripts/verify_baseline.py": "2811eb2f150b923fa007fe047d990978ed12fa371b5732c05b80098784bf3c0d"
+        },
+        "frames": 337353,
+        "sequences": 479,
+        "protocol": "fixed published masks; first frame complete; both missing hold; trained single-view inference; all frames scored"
+      }
+    },
+    "miss": {
+      "metrics": {
+        "LasHeR-Miss": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 61.20560685428508,
+          "NPR": 56.998677859610794,
+          "SR": 48.978096877859194
+        },
+        "RGBT234-Miss": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 78.43479435638233,
+          "MSR": 56.04776279104392
+        }
+      },
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 5529.748396873474
+      },
+      "exit": {
+        "pid": 1070888,
+        "exit_code": 0,
+        "ended_utc": "2026-10-15T23:46:19.619966Z"
+      },
+      "receipts_verified": 479,
+      "run": {
+        "checkpoint": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch20.pth.tar",
+        "checkpoint_sha256": "0f276f65f360e8a744a76ae0f32bba2f41bbc62e8956b59c883e6f87485c57a8",
+        "condition": "miss",
+        "workers": 4,
+        "physical_gpus": [
+          2
+        ],
+        "source_sha256": {
+          "miss_rgbt/__init__.py": "7e9a1007fb76a2460b19806183f82550c31de32c4dac4746c74ac8691c1fae4f",
+          "miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+          "miss_rgbt/model.py": "af1e5c110546c266e9839dbdae498ca68984b3c0c1f16bcaa3e246b92501b049",
+          "miss_rgbt/objectives.py": "ea899e4727c2e1c85c26b1995deb2d96b59ea94b188e9953b1531511c9a6c24b",
+          "miss_rgbt/tracker.py": "87fb7630552085a3afd6be9855b6c0d47e39db34440209f2861b2cb73d113bd1",
+          "miss_rgbt/train.py": "f88b638f61bc40a0f1fa2bc7618efa9ed41c25dbafd8bd3a4f3439a154b28d17",
+          "lib/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/config/cadtrack/config.py": "8a1dfa9bf4f500be0bf64b205c0772605ac8e2617dbb13705215423fc5884e56",
+          "lib/models/__init__.py": "65c27110a13c7f4ea45b7449e4cfc5e8e978dc78c03dd0e06e82668d8d56772d",
+          "lib/models/cadtrack/__init__.py": "90f89fa6e3fb10a85f2d344052296acbbfae153a293eec78640635654845dc88",
+          "lib/models/cadtrack/base_backbone.py": "c091912a9372ba5c14b01952b165a1642c40bb33ce53f0e1d7a4e094e1b117f0",
+          "lib/models/cadtrack/cadtrack.py": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+          "lib/models/cadtrack/utils.py": "557ce8e3d352e3ec69b2d21fcb0f8c18703b3152eff6f3f2e1a7470585e634ea",
+          "lib/models/cadtrack/vit_care.py": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+          "lib/models/layers/CDA_Module.py": "637c9d4859cf4b0eeef91dde7495d6cf97d3471a86a5c0ba2c904c542f452d68",
+          "lib/models/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/models/layers/adapter.py": "af082f7c8b07f9df4f650f96ae6d699bf7cabc89032d364885b84eb060e62bf0",
+          "lib/models/layers/attn.py": "4b70c16a4900e554eb573cac6050efbbe91666d1d9352a610173bb13b64163a3",
+          "lib/models/layers/attn_blocks.py": "43d830e603bad33041df42b04b1afd31f18df5acbb25659b1b80ee4e8723f9f2",
+          "lib/models/layers/cross_layer.py": "5008a012c53aaa0f5b7bb567b95b6118cef138644be9955e566cdf8c298d114e",
+          "lib/models/layers/frozen_bn.py": "6398d16294268830ede7992e616d7176ae484759f86fb977a6b73fccb86e8db8",
+          "lib/models/layers/head.py": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+          "lib/models/layers/mamba.py": "c671e339dd8f7417591864bd9829acd7837beb6ecba0ccac44b830efeed39f08",
+          "lib/models/layers/patch_embed.py": "2259b7703f008748167dd65d12ac28a496235d1f20a1d5c84a3aa0da9c8c0499",
+          "lib/models/layers/rpe.py": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94",
+          "lib/test/evaluation/__init__.py": "dfe5bf11d4976f7607e605856ce03c7f58c66820252f54555b218ff8ded09d6e",
+          "lib/test/evaluation/data.py": "fa7dfc5570f65bda637ef0d824b7af07f4dd9ee58cd64078c937e1822d839d76",
+          "lib/test/evaluation/datasets.py": "7dc85f9f6c4b350d67f71e59f32d785ebe496da759200aa1e77a065146cdb6c0",
+          "lib/test/evaluation/environment.py": "09c0725aa4b29d8f9880d8a01095ca14e4fedf1b5abf803fb31ddb93c638f61e",
+          "lib/test/evaluation/lasherdataset.py": "74fbe5165b1caca6118d1b6d0ab0cf249871a602815379d0fa2483eca03208c0",
+          "lib/test/evaluation/local.py": "56bdab11ae3c137e9d953fa56388382921ffc380ca94a06c7612424fb333a706",
+          "lib/test/evaluation/running.py": "3f0241b65b4f09391a03b8dbd30fdcb76017f10b8579baa209a9306d9d0bdd87",
+          "lib/test/evaluation/tracker.py": "ed63402cc27fcb866994f420724dedcd3b3094cdba3620bf7c8726b0b136d7c5",
+          "lib/test/evaluation/vtuavdataset.py": "c710124450ca03b775c61b932266ce400330288c8d671cf94b7bb7004cf5802c",
+          "lib/test/parameter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/test/parameter/cadtrack.py": "6e3810e341f05788f0c44b5145a3db7f0b0251d4a375845a838009ca38559612",
+          "lib/test/tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/test/tracker/basetracker.py": "f9bc6bbfb1a8f677f86e4f1eda024d89baaf454498a5f1321f1421df67a7aa36",
+          "lib/test/tracker/cadtrack.py": "6e0863824a890d6a16b9da5a7b5acd3e9f7bad3c4dd37f0a818c63aa38e433f2",
+          "lib/test/tracker/data_utils.py": "873337d0419ecfdd08b64123cdc22a4936ccdd6af98a092bc2106c32cf401fe5",
+          "lib/test/tracker/vis_utils.py": "47ba468532b9b849022f23d8025d113300708457ae1dfdcc00ead96cbaf088bb",
+          "lib/test/utils/__init__.py": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+          "lib/test/utils/_init_paths.py": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+          "lib/test/utils/hann.py": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+          "lib/test/utils/load_text.py": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+          "lib/test/utils/params.py": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+          "lib/train/__init__.py": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+          "lib/train/_init_paths.py": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+          "lib/train/actors/__init__.py": "40d17d1e1f7fb20b7104bee934268afd3ff600b0d86dec540ad8d84e784a9eb3",
+          "lib/train/actors/base_actor.py": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+          "lib/train/actors/cadtrack.py": "aa4694b540883903eb8c638c29e6d37205ee8d09885d91c3a6e1ccb3f4985279",
+          "lib/train/admin/__init__.py": "01eca534fc2197f7f71028a91ec684a684b5fe2cb8f5c9cb86fc62072a9f85a5",
+          "lib/train/admin/environment.py": "881e678e0cb5afba6b1c52975d7e60c5822d62be4454d26882ae23c8e8af2634",
+          "lib/train/admin/local.py": "0531ab69ad5081107b669794ba7dd518c5848b4509a0c318b163118dd08ba00a",
+          "lib/train/admin/multigpu.py": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+          "lib/train/admin/settings.py": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+          "lib/train/admin/stats.py": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+          "lib/train/admin/tensorboard.py": "023080fef9e85c37360dda5dded64e79ff976baab1c8a2617b05b9e97415dbec",
+          "lib/train/base_functions.py": "ac8be5762a0876499802977a77b45b1a3299a1c8b4566fa626d8b2237037ca21",
+          "lib/train/data/__init__.py": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+          "lib/train/data/bounding_box_utils.py": "d32aa112a2dbfb9c7130a9c8ae06558dd47ecf9bba33e46a447f9b7507321a61",
+          "lib/train/data/image_loader.py": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+          "lib/train/data/loader.py": "318c729bd3bdc26c39806864430e6bb302c7d7847f296dcc6d21e142185a2639",
+          "lib/train/data/processing.py": "b761856eeb2a9d558d1b8928e5f108eeb6d3da3d8deb0578a57864badcdc30ca",
+          "lib/train/data/processing_utils.py": "7aca916f5e5f62e1865fbd322ffb63dc08197c544a241938b6c822d4bfb89bf6",
+          "lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+          "lib/train/data/transforms.py": "9a7db0eb86a6aa351bb53d0373a07e2a93d14ec0c8b7fa8987811733cdae360a",
+          "lib/train/data/wandb_logger.py": "8ab545f24f09c34b2e043b29911a11c9e0fcb0610c3ea2b3b37c66dedcb84758",
+          "lib/train/dataset/__init__.py": "6a16289148d0ccdfcd2c3a776fc3b445d94dce413ff9b001f250289367ae3885",
+          "lib/train/dataset/base_image_dataset.py": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+          "lib/train/dataset/base_video_dataset.py": "84084446399d659a4026ff5bd6e58dd7ea5e4b76cc1c371969641c4f1ff68496",
+          "lib/train/dataset/depth_utils.py": "8a84889685aeafec86add59c017aadf237df6815ea4d935f909c31f35587d493",
+          "lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+          "lib/train/dataset/vtuav.py": "458e90f1a20de7bb157a442b2f18b7847594f5e289b07762fb0b390b920d8715",
+          "lib/train/run_training.py": "0ff5582efe6964769e8ccc6b8097edcd3a47394df4d9235e4a18484a9bf5c247",
+          "lib/train/train_script.py": "95baaf5466854f7c0ad6e622dcb166cf22dc7e07f8c8ab94e08c740f4e7fbc36",
+          "lib/train/trainers/__init__.py": "84d98401c971a9d84a4aed4529695588c724834ed139ec8a76ed93c80fd8753e",
+          "lib/train/trainers/base_trainer.py": "a415736ed45a08875b629af0676145f48a9e715333113ca344989702c347f984",
+          "lib/train/trainers/ltr_trainer.py": "172074b64f49d3a0d0737e7fa716b519a431b10e839627cfa403fa95c1a92b40",
+          "lib/utils/__init__.py": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+          "lib/utils/box_ops.py": "cee9d309a9c4a6c5f00fab575719bc7bf8d865127c91b10d4fb233996a111fbc",
+          "lib/utils/ce_utils.py": "513f12ba31150f8b2a15ed89b719967ec3c4de0659620675bd58b7c9cb052868",
+          "lib/utils/focal_loss.py": "11ccd7a16af34a3f54bd36191f086f7b0d85e95669e07bc072deb6226b40a965",
+          "lib/utils/heapmap_utils.py": "cc5ddbc0d65cad55f1a727f43e1d9966caa17a10c043a10586d0a13c1d4f3d4d",
+          "lib/utils/lmdb_utils.py": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+          "lib/utils/merge.py": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+          "lib/utils/misc.py": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+          "lib/utils/tensor.py": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+          "lib/vis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lib/vis/plotting.py": "7b36771b8d5e622bf069e43b0a1adf7290063e9c7d632a7b2220c23247d49a48",
+          "lib/vis/utils.py": "bb942c58c22d9bbea1a2e596d40871501027330c55ba5a7a28a889687f128aae",
+          "lib/vis/visdom_cus.py": "8ad65740ac78aaddad82dc2a40fc8a292745d9b69a88116a1ca6075e963c14f1",
+          "scripts/analyze_missing_states.py": "7e9714fe6e014aa0728efbce89800a0f86ffc8527fca23e7c5be6a3c6da51380",
+          "scripts/environment_witness.py": "44384ae9e5b87ccce92bcc5e5e4293cdddbd227012421ed49f3634408cc8ce38",
+          "scripts/evaluate_complete.py": "8bdb1e036288d6a7f8e3ea7cb3e06cea125bac029d22ff84f30eff724c017029",
+          "scripts/evaluate_model.py": "dae7e9036612cf474f336988ebca927371209e756e3e539ed2eeaaaac2d547e5",
+          "scripts/package_e0_availability.py": "4202a3ff63d02b7f68994040c5c4b6c2e436385b51449683e8b61095358c8b67",
+          "scripts/run_attribution_controls.py": "306fe5dfa85a01405ab276c107b67e5e7cacb39dfcd56bd95b60f403bb9c0f9d",
+          "scripts/run_campaign.py": "2f6ead827059ee44c4bdf951449b2a82395b2be83f23f002c0963e200765c1ef",
+          "scripts/run_full_training.py": "375d5434a42ecd78a39866927a8e83d2555d4d1940177b68a1994c82ae851f89",
+          "scripts/summarize_speed.py": "977a82148f9635905b87c9053c2f8161fab11ac0e50bc969d166f1d00895478f",
+          "scripts/validate_attribution.py": "a865d0b45a579412f67b73150609158976afe8fae46d621d5d9434c1860fe3bc",
+          "scripts/validate_focal_normalization.py": "cef46a7788dc7a055b0cff6cb7661278864497435d06bc7a677507b805627f0d",
+          "scripts/validate_method.py": "1e3bf092971459d4047c629614b61c6f4f157e97a3b6bbd76c9b27147c9c8546",
+          "scripts/validate_tracker.py": "4f4d30a61998154edd8ce7fdbffdeb631152d921ca4d0f6ea92666c59ca4c971",
+          "scripts/verify_baseline.py": "2811eb2f150b923fa007fe047d990978ed12fa371b5732c05b80098784bf3c0d"
+        },
+        "frames": 337353,
+        "sequences": 479,
+        "protocol": "fixed published masks; first frame complete; both missing hold; trained single-view inference; all frames scored"
+      }
+    }
+  },
+  "rows": [
+    {
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 74.41425929140433,
+      "original_e0": 75.63650288717686,
+      "delta_original_e0_pp": -1.2222435957725253,
+      "zero_update_availability": 75.63650288717686,
+      "delta_availability_pp": -1.2222435957725253
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 70.65898621267472,
+      "original_e0": 71.77283680562866,
+      "delta_original_e0_pp": -1.1138505929539377,
+      "zero_update_availability": 71.77283680562866,
+      "delta_availability_pp": -1.1138505929539377
+    },
+    {
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 59.3155152432876,
+      "original_e0": 60.125713676122736,
+      "delta_original_e0_pp": -0.8101984328351364,
+      "zero_update_availability": 60.125713676122736,
+      "delta_availability_pp": -0.8101984328351364
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.47816920177041,
+      "original_e0": 90.67713392128344,
+      "delta_original_e0_pp": -0.19896471951302885,
+      "zero_update_availability": 90.67713392128344,
+      "delta_availability_pp": -0.19896471951302885
+    },
+    {
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 65.7458375997636,
+      "original_e0": 66.8452283301532,
+      "delta_original_e0_pp": -1.099390730389601,
+      "zero_update_availability": 66.8452283301532,
+      "delta_availability_pp": -1.099390730389601
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 61.20560685428508,
+      "original_e0": 63.47250706301003,
+      "delta_original_e0_pp": -2.266900208724948,
+      "zero_update_availability": 61.31402929240802,
+      "delta_availability_pp": -0.10842243812294328,
+      "strict_target": 69.3,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 56.998677859610794,
+      "original_e0": 58.58185056215868,
+      "delta_original_e0_pp": -1.5831727025478841,
+      "zero_update_availability": 56.80622972561172,
+      "delta_availability_pp": 0.192448133999072
+    },
+    {
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 48.978096877859194,
+      "original_e0": 50.583148589078256,
+      "delta_original_e0_pp": -1.6050517112190619,
+      "zero_update_availability": 49.224669599421524,
+      "delta_availability_pp": -0.24657272156233034,
+      "strict_target": 54.4,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 78.43479435638233,
+      "original_e0": 82.79481455539279,
+      "delta_original_e0_pp": -4.360020199010464,
+      "zero_update_availability": 79.94120202733964,
+      "delta_availability_pp": -1.5064076709573158,
+      "strict_target": 88.1,
+      "target_exceeded": false
+    },
+    {
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 56.04776279104392,
+      "original_e0": 59.57443513369343,
+      "delta_original_e0_pp": -3.526672342649505,
+      "zero_update_availability": 58.034248028785605,
+      "delta_availability_pp": -1.9864852377416824,
+      "strict_target": 64.3,
+      "target_exceeded": false
+    }
+  ],
+  "control_input_hashes": {
+    "reports\\e0_complete\\metrics.json": "aad0e6eb0a65ac54eb708b0bf0e4e8b2cb408fba3e0bed7c8ab7230ee9733979",
+    "reports\\e0\\metrics.json": "c386ee68228c6837583d63af00750e060caa80ceb5fa1f29eab214668ccba16a",
+    "reports\\e0_availability_20261015_v1\\comparison.json": "2f6b01dd2f680741357b7c548e2b1377687234cb873b334e60e9df9d0f24318e"
+  },
+  "installed_package_files": 3556,
+  "mask_sha256": {
+    "/data2/wangwj/Modality-missing-RGBT-Tracking-main/LasHeR245-Miss/missing_results_lasher245.json": "f3af5aca22494af4ea91b5ebe6fe16874d2d95b8a01d883a22d4c005c7af3d5b",
+    "/data2/wangwj/Modality-missing-RGBT-Tracking-main/RGBT234-Miss/missing_results_rgbt234.json": "8941b526d457f7db3bc7b6d6538f8201b6f4bc4c88d491917b22340ee6db0fe3"
+  },
+  "post_evaluation_seals": true,
+  "e2_final_metrics_available": false,
+  "efficacy_claim": false
+}

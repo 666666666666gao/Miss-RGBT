@@ -1,0 +1,300 @@
+{
+  "observed_epoch": 1792107334.0826743,
+  "status": {
+    "stage": "E0_FT_FULL20_MISS_RUNNING",
+    "controller_pid": 3796810,
+    "updated_utc": "2026-10-15T22:13:56.870452Z"
+  },
+  "controller": {
+    "pid": 3796810,
+    "running": true,
+    "command": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python scripts/run_attribution_controls.py ",
+    "cuda_visible_devices": [
+      "CUDA_VISIBLE_DEVICES="
+    ]
+  },
+  "training": {
+    "e0_ft": {
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027",
+      "exists": true,
+      "last": {
+        "task_c": 2.2999777793884277,
+        "epoch": 20,
+        "update": 50000,
+        "loss": 2.2999777793884277,
+        "seconds": 54307.17263627052,
+        "peak_gpu_bytes": 9551390208,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_logged_numeric_fields_finite": true,
+      "recent_updates_per_second": 0.9312987686820027,
+      "completed": {
+        "epochs": 20,
+        "updates": 50000,
+        "seconds": 54309.54099178314
+      },
+      "checkpoint_epoch10": {
+        "path": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch10.pth.tar",
+        "bytes": 1236735591
+      },
+      "checkpoint_epoch20": {
+        "path": "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch20.pth.tar",
+        "bytes": 1236735591
+      }
+    },
+    "e2": {
+      "output": "/data2/gaob/Miss-RGBT/checkpoints/e2_full20_seed2027",
+      "exists": true,
+      "last": {
+        "task_c": 1.39005708694458,
+        "task_m": 1.6840835809707642,
+        "kd_forward": 0.6046719551086426,
+        "kd_reverse": 0.0,
+        "reverse_fraction": 0.0,
+        "epoch": 14,
+        "update": 32742,
+        "loss": 3.0741405487060547,
+        "seconds": 65781.16172266006,
+        "peak_gpu_bytes": 17285506048,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "recent_logged_numeric_fields_finite": true,
+      "recent_updates_per_second": 0.5035602954939717,
+      "estimated_training_end_epoch": 1792141607.3284726,
+      "checkpoint_epoch10": {
+        "path": "/data2/gaob/Miss-RGBT/checkpoints/e2_full20_seed2027/epoch10.pth.tar",
+        "bytes": 1236735527
+      }
+    }
+  },
+  "exits": {
+    "e0_ft_full20_complete_exit": {
+      "pid": 1028715,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T22:13:56.858502Z"
+    },
+    "e0_availability_miss_exit": {
+      "pid": 3934106,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T05:19:03.696132Z"
+    },
+    "e0_availability_complete_exit": {
+      "pid": 3796928,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T04:33:26.561170Z"
+    },
+    "e0_ft_full20_train_exit": {
+      "pid": 4063196,
+      "exit_code": 0,
+      "ended_utc": "2026-10-15T20:24:23.956727Z"
+    }
+  },
+  "evaluations": {
+    "e0_ft_full20_miss": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_ft_full20_miss_20261015",
+          "--condition",
+          "miss",
+          "--gpus",
+          "2"
+        ],
+        "pid": 1070888,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-15T22:13:56.884048Z"
+      },
+      "sequence_receipts": 270
+    },
+    "e0_availability_complete": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_availability_complete_20261015",
+          "--condition",
+          "complete",
+          "--gpus",
+          "2,3"
+        ],
+        "pid": 3796928,
+        "cuda_visible_devices": "2,3",
+        "started_utc": "2026-10-15T03:40:32.043815Z"
+      },
+      "sequence_receipts": 479,
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 3165.044476032257
+      },
+      "metrics": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 75.63650288717686,
+          "NPR": 71.77283680562866,
+          "SR": 60.125713676122736
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 90.67713392128344,
+          "MSR": 66.8452283301532
+        }
+      }
+    },
+    "e0_availability_miss": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_availability_miss_20261015",
+          "--condition",
+          "miss",
+          "--gpus",
+          "2,3"
+        ],
+        "pid": 3934106,
+        "cuda_visible_devices": "2,3",
+        "started_utc": "2026-10-15T04:33:33.171895Z"
+      },
+      "sequence_receipts": 479,
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 2719.443680047989
+      },
+      "metrics": {
+        "LasHeR-Miss": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 61.31402929240802,
+          "NPR": 56.80622972561172,
+          "SR": 49.224669599421524
+        },
+        "RGBT234-Miss": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 79.94120202733964,
+          "MSR": 58.034248028785605
+        }
+      }
+    },
+    "e0_ft_full20_complete": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "scripts/evaluate_model.py",
+          "--checkpoint",
+          "/data2/gaob/Miss-RGBT/checkpoints/e0_ft_full20_seed2027/epoch20.pth.tar",
+          "--output",
+          "/home/gaob/Miss-RGBT/results/e0_ft_full20_complete_20261015",
+          "--condition",
+          "complete",
+          "--gpus",
+          "2"
+        ],
+        "pid": 1028715,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-15T20:24:23.979469Z"
+      },
+      "sequence_receipts": 479,
+      "completed": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 6560.437170743942
+      },
+      "metrics": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 74.41425929140433,
+          "NPR": 70.65898621267472,
+          "SR": 59.3155152432876
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 90.47816920177041,
+          "MSR": 65.7458375997636
+        }
+      }
+    }
+  },
+  "training_processes": {
+    "e0_ft": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e0_ft_full20.json"
+        ],
+        "pid": 4063196,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-15T05:19:03.727776Z"
+      },
+      "process": {
+        "pid": 4063196,
+        "running": false
+      }
+    },
+    "e2": {
+      "launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e2_full20.json"
+        ],
+        "pid": 4063197,
+        "cuda_visible_devices": "3",
+        "started_utc": "2026-10-15T05:19:03.740354Z"
+      },
+      "process": {
+        "pid": 4063197,
+        "running": true,
+        "command": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --config configs/e2_full20.json ",
+        "cuda_visible_devices": [
+          "CUDA_VISIBLE_DEVICES=3"
+        ]
+      }
+    }
+  },
+  "observer_owner": {
+    "pid": 37108,
+    "parent_pid": 36308,
+    "command": [
+      "C:\\Users\\gb\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\wait_attribution_eval_node_20261016.py"
+    ],
+    "started_utc": "2026-10-15T20:25:47.178688+00:00",
+    "plan": {
+      "deadline_epoch": 1792107332.9557812,
+      "deadline_utc": "2026-10-15T23:35:32.955781+00:00",
+      "deadline_bjt": "2026-10-16T07:35:32.955781+08:00",
+      "estimated_ft_evaluation_end_epoch": 1792107632.9557812,
+      "estimated_e2_training_end_epoch": 1792142176.1273742,
+      "estimate_basis": "Previous E0-availability whole-dataset complete3165.044476s + miss2719.443680s on GPUs2,3, multiplied by2 for FT GPU2 only. Forecast, not measured scaling or completion.",
+      "source_intake_sha256": "7211233d9ca32ffb3337def49e2a7a090d60f580b9983265182ffad8dcd5769d",
+      "original_native61699": "Unavailable after deadline, actual original exit unknown; local PID65768/parent64100 absent, no receipt. Single due-node read-only recovery completed0; training was not restarted.",
+      "policy": "One detached hidden local observer. No remote queries before deadline; once-only collection. No retries or training launches."
+    },
+    "plan_sha256": "e01f12c8f6c32cef1a268a53210944f136e93d8bfd3b479d40b90466060a0f2a",
+    "probe_sha256": "ca0f367ae1316a27e9455766d81b1c2d1a936790ebcd67efb7fbf04609840c67"
+  }
+}

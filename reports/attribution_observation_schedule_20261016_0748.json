@@ -1,0 +1,26 @@
+{
+  "pid": 43188,
+  "parent_pid": 39960,
+  "command": [
+    "C:\\Users\\gb\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+    "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\wait_attribution_e2_end_node_20261016.py"
+  ],
+  "started_utc": "2026-10-15T23:49:44.860271+00:00",
+  "plan": {
+    "deadline_epoch": 1792141328.6213841,
+    "deadline_utc": "2026-10-16T09:02:08.621384+00:00",
+    "deadline_bjt": "2026-10-16T17:02:08.621384+08:00",
+    "estimated_e2_training_end_epoch": 1792141628.6213841,
+    "estimate_basis": "Actual07:42:54BJT E2 update32964/50000, recent200 rate0.503235558609494 updates/s; next observation300s before estimated training end. FT full metrics actualclosed separately07:48.",
+    "source_intake_sha256": "35c8d4abe265ceef1e98c069a9dffcccae7e096909245a409331d931d9d4eef3",
+    "ft_terminal_sha256": "ab14f5302de7fd08f1849181587e1f8fc3f6813c9c98e7d520aa2b21fb3e6e30",
+    "previous_observer": {
+      "pid": 38200,
+      "receipt_delivered": true,
+      "ssh_exit_code": 0
+    },
+    "policy": "One detached hidden local observer; no remote metric/GPU/process query before deadline. Once-only collection, no auto training launch/retry."
+  },
+  "plan_sha256": "2bb8d4251cd4f700100519ce60a77d39723345bd2938b3911d14475687d5ca77",
+  "probe_sha256": "ca0f367ae1316a27e9455766d81b1c2d1a936790ebcd67efb7fbf04609840c67"
+}

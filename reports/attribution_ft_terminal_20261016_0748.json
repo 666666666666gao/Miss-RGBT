@@ -1,0 +1,62 @@
+{
+  "observed_epoch": 1792108126.689515,
+  "conditions": {
+    "complete": {
+      "sequence_receipts": 479,
+      "completed.json": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 6560.437170743942
+      },
+      "metrics.json": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 74.41425929140433,
+          "NPR": 70.65898621267472,
+          "SR": 59.3155152432876
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 90.47816920177041,
+          "MSR": 65.7458375997636
+        }
+      },
+      "exit": {
+        "pid": 1028715,
+        "exit_code": 0,
+        "ended_utc": "2026-10-15T22:13:56.858502Z"
+      }
+    },
+    "miss": {
+      "sequence_receipts": 479,
+      "completed.json": {
+        "sequences": 479,
+        "frames": 337353,
+        "seconds": 5529.748396873474
+      },
+      "metrics.json": {
+        "LasHeR-Miss": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 61.20560685428508,
+          "NPR": 56.998677859610794,
+          "SR": 48.978096877859194
+        },
+        "RGBT234-Miss": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 78.43479435638233,
+          "MSR": 56.04776279104392
+        }
+      },
+      "exit": {
+        "pid": 1070888,
+        "exit_code": 0,
+        "ended_utc": "2026-10-15T23:46:19.619966Z"
+      }
+    }
+  },
+  "ready": true
+}

@@ -1,0 +1,20 @@
+{
+  "archive": "/data2/gaob/Miss-RGBT/records/e0_ft_closed_20261016_v1.tar.gz",
+  "archive_sha256": "e2e45f8d39645e8125115fdd6507fd40d0fb3f61848c682c65fee189dbdbbcb8",
+  "bytes": 23505178,
+  "members": 2065,
+  "package_files": 3556,
+  "local_archive": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\e0_ft_closed_20261016_v1.tar.gz",
+  "raw_root": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\e0_ft_closed_raw",
+  "copied_members_verified": 2064,
+  "locally_held_runtime_package_files_verified": 1967,
+  "installed_hashes_matching_public_wheel": 3556,
+  "installed_files_not_held": 1589,
+  "public_wheel_sha256": "00209d49c5f0a93d6fc931df056162a9c852adaad436ae6d80189b6e143060be",
+  "first_collector_native_session": 43560,
+  "first_collector_local_exit_code": 1,
+  "remote_collection_exit_code": 0,
+  "first_local_failure": "Incorrectly required the earlier1967-file subset to contain all3556 installed-package paths; missing unrelated GTOT/SequencesName.txt. No source or result discrepancy found.",
+  "correction": "Local-only resumption: all archive2064 payload members reverified; held1967 actual runtime files matched; all3556 installed hashes matched existing public wheel. No SSH/NN/recollection.",
+  "scope": "Post-evaluation manifest and public-release correspondence, not full installed-file possession, startup sealing or author/SCDT certification."
+}
