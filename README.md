@@ -6,7 +6,7 @@
 
 2026-10-16：[E0-FT](reports/e0_ft_20261016_v1/README.md)与[E2完整20轮四套指标及独立审计](reports/e2_20261016_v1/README.md)均已完成，10项E2指标和93966曲线值复算误差0；审计WARN、same-family/provisional。E2相对FT的Miss五项提高、完整四项下降，完整五项仍低于E0，不支持缺失学习提升完整能力。最新[60值汇总CSV](reports/METRICS_SUMMARY.csv)及[实验状态](reports/EXPERIMENT_STATUS.md)已更新。
 
-[全部BN运行统计冻结对照](reports/bn_controls_20261016_v2/README.md)于10月17日09:22实况过半：E3/E4分别epoch11/update25033/25702，原GPU2/3子进程存活。两项epoch10保存权重的39个BN运行缓冲均与E0完全相同，affine已更新、状态有限；不是最终任务成绩。原网络、模块和训练配置不变。下一唯一节点2026-10-17T23:32:52.214791+08:00，按实际中点速率预计较慢模型训练结束前300秒检查；此前不查NN/GPU，不另建长观察器。详见[当前交接](HANDOFF.md)。A及模板控制仍隔离。
+[全部BN运行统计冻结对照](reports/bn_controls_20261016_v2/README.md)已完成20轮及四套全量评估。E3-allBN指标为LasHeR-Miss 69.337978/55.175799、RGBT234-Miss 85.063210/60.325720；E4-allBN为68.422283/54.499880、83.975517/60.033254。E3仅达到LasHeR-Miss两项目标，RGBT234和完整输入目标仍未达成。39个BN运行缓冲均与E0相同；这项实验是归因对照，不是新模块。原始归档、失败历史和差值见交接文档。
 
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 

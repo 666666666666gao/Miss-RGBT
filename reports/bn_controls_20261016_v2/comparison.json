@@ -1,0 +1,393 @@
+{
+  "scope": "Final E3/E4 all-BN running-statistics control; fixed epoch20, seed2027, 50000 updates, four full evaluations.",
+  "source_commit": "1f1929afe4de032f9726a210e53b6b22fb850eea",
+  "archive_sha256": "725421555b99d2b701bcd53a1ad427104e05640797eef049524de561537fe709",
+  "archive_bytes": 49771216,
+  "archive_members": 4015,
+  "evaluations": {
+    "E3_allBN": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.38013680875959,
+        "NPR": 70.56343826269374,
+        "SR": 59.4279861207664
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.57657020456928,
+        "MSR": 65.53056466892852
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 69.33797804352328,
+        "NPR": 64.22588436835026,
+        "SR": 55.1757994994895
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 85.06321006679312,
+        "MSR": 60.325719787266785
+      }
+    },
+    "E4_allBN": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.08202890649879,
+        "NPR": 70.39898562233459,
+        "SR": 59.207784564599706
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.36065338242643,
+        "MSR": 65.35091935984613
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 68.42228284062595,
+        "NPR": 63.30514796894961,
+        "SR": 54.49988007069023
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 83.97551689584894,
+        "MSR": 60.033253760520736
+      }
+    }
+  },
+  "e0": {
+    "LasHeR": {
+      "PR": 75.63650288717686,
+      "NPR": 71.77283680562866,
+      "SR": 60.125713676122736
+    },
+    "RGBT234": {
+      "MPR": 90.67713392128344,
+      "MSR": 66.8452283301532
+    },
+    "LasHeR-Miss": {
+      "PR": 63.47250706301003,
+      "NPR": 58.58185056215868,
+      "SR": 50.583148589078256
+    },
+    "RGBT234-Miss": {
+      "MPR": 82.79481455539279,
+      "MSR": 59.57443513369343
+    }
+  },
+  "original_e3": {
+    "LasHeR": {
+      "PR": 74.63868810421462,
+      "NPR": 71.00626562406624,
+      "SR": 59.54191315074747
+    },
+    "RGBT234": {
+      "MPR": 90.3649755138486,
+      "MSR": 65.57762418380388
+    },
+    "LasHeR-Miss": {
+      "PR": 68.18079073891064,
+      "NPR": 63.34452755137383,
+      "SR": 54.36210888261665
+    },
+    "RGBT234-Miss": {
+      "MPR": 85.08565042169145,
+      "MSR": 60.87276506879557
+    }
+  },
+  "original_e4": {
+    "LasHeR": {
+      "PR": 74.38627771130557,
+      "NPR": 70.63563312770015,
+      "SR": 59.3322842213131
+    },
+    "RGBT234": {
+      "MPR": 89.89009579245821,
+      "MSR": 65.4221372890501
+    },
+    "LasHeR-Miss": {
+      "PR": 69.21768283607496,
+      "NPR": 64.28173301848769,
+      "SR": 55.04723939587417
+    },
+    "RGBT234-Miss": {
+      "MPR": 85.15446018713158,
+      "MSR": 60.806573359933246
+    }
+  },
+  "rows": [
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 74.38013680875959,
+      "e0": 75.63650288717686,
+      "delta_e0_pp": -1.2563660784172725,
+      "e3": 74.63868810421462,
+      "delta_e3_pp": -0.2585512954550353,
+      "e4": 74.38627771130557,
+      "delta_e4_pp": -0.006140902545979543
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 70.56343826269374,
+      "e0": 71.77283680562866,
+      "delta_e0_pp": -1.2093985429349203,
+      "e3": 71.00626562406624,
+      "delta_e3_pp": -0.4428273613725082,
+      "e4": 70.63563312770015,
+      "delta_e4_pp": -0.07219486500640926
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 59.4279861207664,
+      "e0": 60.125713676122736,
+      "delta_e0_pp": -0.6977275553563373,
+      "e3": 59.54191315074747,
+      "delta_e3_pp": -0.1139270299810704,
+      "e4": 59.3322842213131,
+      "delta_e4_pp": 0.09570189945329588
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.57657020456928,
+      "e0": 90.67713392128344,
+      "delta_e0_pp": -0.10056371671416287,
+      "e3": 90.3649755138486,
+      "delta_e3_pp": 0.21159469072067338,
+      "e4": 89.89009579245821,
+      "delta_e4_pp": 0.6864744121110675
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 65.53056466892852,
+      "e0": 66.8452283301532,
+      "delta_e0_pp": -1.3146636612246851,
+      "e3": 65.57762418380388,
+      "delta_e3_pp": -0.04705951487535742,
+      "e4": 65.4221372890501,
+      "delta_e4_pp": 0.10842737987842099
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 69.33797804352328,
+      "e0": 63.47250706301003,
+      "delta_e0_pp": 5.865470980513251,
+      "e3": 68.18079073891064,
+      "delta_e3_pp": 1.1571873046126342,
+      "e4": 69.21768283607496,
+      "delta_e4_pp": 0.12029520744832212
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 64.22588436835026,
+      "e0": 58.58185056215868,
+      "delta_e0_pp": 5.644033806191587,
+      "e3": 63.34452755137383,
+      "delta_e3_pp": 0.8813568169764352,
+      "e4": 64.28173301848769,
+      "delta_e4_pp": -0.055848650137420464
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 55.1757994994895,
+      "e0": 50.583148589078256,
+      "delta_e0_pp": 4.592650910411244,
+      "e3": 54.36210888261665,
+      "delta_e3_pp": 0.8136906168728473,
+      "e4": 55.04723939587417,
+      "delta_e4_pp": 0.1285601036153281
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 85.06321006679312,
+      "e0": 82.79481455539279,
+      "delta_e0_pp": 2.2683955114003282,
+      "e3": 85.08565042169145,
+      "delta_e3_pp": -0.022440354898336068,
+      "e4": 85.15446018713158,
+      "delta_e4_pp": -0.09125012033845792
+    },
+    {
+      "model": "E3_allBN",
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 60.325719787266785,
+      "e0": 59.57443513369343,
+      "delta_e0_pp": 0.7512846535733573,
+      "e3": 60.87276506879557,
+      "delta_e3_pp": -0.5470452815287885,
+      "e4": 60.806573359933246,
+      "delta_e4_pp": -0.48085357266646156
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR",
+      "metric": "PR",
+      "value": 74.08202890649879,
+      "e0": 75.63650288717686,
+      "delta_e0_pp": -1.5544739806780683,
+      "e3": 74.63868810421462,
+      "delta_e3_pp": -0.5566591977158311,
+      "e4": 74.38627771130557,
+      "delta_e4_pp": -0.3042488048067753
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR",
+      "metric": "NPR",
+      "value": 70.39898562233459,
+      "e0": 71.77283680562866,
+      "delta_e0_pp": -1.3738511832940645,
+      "e3": 71.00626562406624,
+      "delta_e3_pp": -0.6072800017316524,
+      "e4": 70.63563312770015,
+      "delta_e4_pp": -0.23664750536555346
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR",
+      "metric": "SR",
+      "value": 59.207784564599706,
+      "e0": 60.125713676122736,
+      "delta_e0_pp": -0.9179291115230299,
+      "e3": 59.54191315074747,
+      "delta_e3_pp": -0.334128586147763,
+      "e4": 59.3322842213131,
+      "delta_e4_pp": -0.12449965671339669
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "RGBT234",
+      "metric": "MPR",
+      "value": 90.36065338242643,
+      "e0": 90.67713392128344,
+      "delta_e0_pp": -0.31648053885700733,
+      "e3": 90.3649755138486,
+      "delta_e3_pp": -0.004322131422171083,
+      "e4": 89.89009579245821,
+      "delta_e4_pp": 0.47055758996822306
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "RGBT234",
+      "metric": "MSR",
+      "value": 65.35091935984613,
+      "e0": 66.8452283301532,
+      "delta_e0_pp": -1.494308970307074,
+      "e3": 65.57762418380388,
+      "delta_e3_pp": -0.22670482395774627,
+      "e4": 65.4221372890501,
+      "delta_e4_pp": -0.07121792920396786
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "PR",
+      "value": 68.42228284062595,
+      "e0": 63.47250706301003,
+      "delta_e0_pp": 4.949775777615926,
+      "e3": 68.18079073891064,
+      "delta_e3_pp": 0.2414921017153091,
+      "e4": 69.21768283607496,
+      "delta_e4_pp": -0.795399995449003
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "NPR",
+      "value": 63.30514796894961,
+      "e0": 58.58185056215868,
+      "delta_e0_pp": 4.723297406790934,
+      "e3": 63.34452755137383,
+      "delta_e3_pp": -0.039379582424217574,
+      "e4": 64.28173301848769,
+      "delta_e4_pp": -0.9765850495380732
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "LasHeR-Miss",
+      "metric": "SR",
+      "value": 54.49988007069023,
+      "e0": 50.583148589078256,
+      "delta_e0_pp": 3.9167314816119756,
+      "e3": 54.36210888261665,
+      "delta_e3_pp": 0.1377711880735788,
+      "e4": 55.04723939587417,
+      "delta_e4_pp": -0.5473593251839404
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "RGBT234-Miss",
+      "metric": "MPR",
+      "value": 83.97551689584894,
+      "e0": 82.79481455539279,
+      "delta_e0_pp": 1.1807023404561505,
+      "e3": 85.08565042169145,
+      "delta_e3_pp": -1.1101335258425138,
+      "e4": 85.15446018713158,
+      "delta_e4_pp": -1.1789432912826356
+    },
+    {
+      "model": "E4_allBN",
+      "dataset": "RGBT234-Miss",
+      "metric": "MSR",
+      "value": 60.033253760520736,
+      "e0": 59.57443513369343,
+      "delta_e0_pp": 0.4588186268273091,
+      "e3": 60.87276506879557,
+      "delta_e3_pp": -0.8395113082748367,
+      "e4": 60.806573359933246,
+      "delta_e4_pp": -0.7733195994125097
+    }
+  ],
+  "checkpoint_metadata": {
+    "e3": {
+      "completed": {
+        "epochs": 20,
+        "updates": 50000,
+        "seconds": 102915.16153764725
+      },
+      "checkpoint": "/data2/gaob/Miss-RGBT/checkpoints/e3_allbn_full20_seed2027/epoch20.pth.tar",
+      "checkpoint_sha256": "7fb07e8aac7fbbbf41b59760b55a8b8ee5440d6b5cbae46b9edea622e9d64884",
+      "all_bn_buffers_equal_initial": 39,
+      "strict_reload": true
+    },
+    "e4": {
+      "completed": {
+        "epochs": 20,
+        "updates": 50000,
+        "seconds": 100193.46302986145
+      },
+      "checkpoint": "/data2/gaob/Miss-RGBT/checkpoints/e4_allbn_full20_seed2027/epoch20.pth.tar",
+      "checkpoint_sha256": "ac8adff3403ef83832524afd79ca5073ff64b27e7c2f49fb3d801622717cce21",
+      "all_bn_buffers_equal_initial": 39,
+      "strict_reload": true
+    }
+  },
+  "integrity_scope": "Parent collection verifies raw hashes, sequence counts, receipts, exit0, finite training logs, source120, strict CPU reload and 39 BN buffers. No fresh independent scorer reconstruction was run for this control; public scorer/provenance limitations remain those documented for E2.",
+  "result_limits": "All-BN running-statistic freezing is a single-seed attribution control. It does not by itself prove BN causality for earlier drops, missing-training transfer, or the three proposed research modules."
+}

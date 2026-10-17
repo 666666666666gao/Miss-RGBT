@@ -1,0 +1,14 @@
+{
+  "archive": "/data2/gaob/Miss-RGBT/records/bn_freeze_closed_20261018_v5.tar.gz",
+  "archive_sha256": "725421555b99d2b701bcd53a1ad427104e05640797eef049524de561537fe709",
+  "bytes": 49771216,
+  "members": 4015,
+  "package_files": 3556,
+  "local_archive": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\bn_freeze_closed_20261018_v5.tar.gz",
+  "raw_root": "D:\\Program Files\\UserCache\\gb\\codex_tmp\\miss_rgbt_campaign_20261013\\bn_freeze_closed_raw_20261018_v5",
+  "copied_members_verified": 4014,
+  "locally_held_runtime_package_files_verified": 1967,
+  "installed_hashes_matching_public_wheel": 3556,
+  "installed_files_not_held": 1589,
+  "verification_scope": "Actual held1967 installed files and public-release correspondence for3556 installed hashes; no full installed-file possession/startup seal or author-toolbox equivalence claim."
+}
