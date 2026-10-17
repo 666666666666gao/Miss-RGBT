@@ -1,0 +1,23 @@
+{
+  "based_on_observation_epoch": 1792200142.2089937,
+  "based_on_observation_bjt": "2026-10-17T09:22:22.208994+08:00",
+  "deadline_epoch": 1792251172.2147908,
+  "deadline_bjt": "2026-10-17T23:32:52.214791+08:00",
+  "estimated_train_end_epochs": {
+    "e3": 1792251472.2147908,
+    "e4": 1792248683.9046113
+  },
+  "estimated_train_end_bjt": {
+    "e3": "2026-10-17T23:37:52.214791+08:00",
+    "e4": "2026-10-17T22:51:23.904611+08:00"
+  },
+  "calculation": "Recent200-update throughput at genuine midpoint, forecast both full50000 complete, observe300seconds before slower model end. Estimates only.",
+  "purpose": "Verify actual train completion or near completion on original controller/children, then fixed-final evaluation state; no early neural progress queries.",
+  "observer_mode": "Root absolute-time wait, one direct SSH at node; no auxiliary local long observer or duplicate jobs.",
+  "near_completion_recheck_seconds": [
+    180,
+    300
+  ],
+  "frozen": "Original source1f1929afe4de032f9726a210e53b6b22fb850eea/configs/modules/BN/masks/templates remain unchanged.",
+  "next": "If still far from completion revise from actual rate. If training is done inspect existing four full evals; never restart on an observation timeout."
+}

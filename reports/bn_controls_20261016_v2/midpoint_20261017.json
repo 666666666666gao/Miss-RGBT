@@ -1,0 +1,128 @@
+{
+  "observed_epoch": 1792199655.2633321,
+  "observed_utc": "2026-10-17T01:14:15.263336Z",
+  "controller": {
+    "pid": 1753089,
+    "present": true,
+    "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u scripts/run_bn_controls.py ",
+    "cuda_visible_devices": [
+      "CUDA_VISIBLE_DEVICES="
+    ]
+  },
+  "status": {
+    "stage": "E3_E4_ALLBN_FULL20_RUNNING",
+    "controller_pid": 1753089,
+    "updated_utc": "2026-10-16T11:05:55.809810Z"
+  },
+  "completed": null,
+  "source_version": "1f1929afe4de032f9726a210e53b6b22fb850eea",
+  "stages": {
+    "e3": {
+      "process": {
+        "pid": 1754012,
+        "present": true,
+        "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --config configs/e3_allbn_full20.json ",
+        "cuda_visible_devices": [
+          "CUDA_VISIBLE_DEVICES=2"
+        ]
+      },
+      "training_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e3_allbn_full20.json"
+        ],
+        "pid": 1754012,
+        "cuda_visible_devices": "2",
+        "started_utc": "2026-10-16T11:05:55.829062Z"
+      },
+      "training_exit": null,
+      "completed": null,
+      "training_rows": 24796,
+      "last_training_row": {
+        "task_c": 1.6700537204742432,
+        "task_m": 1.8935515880584717,
+        "kd_forward": 0.2787480652332306,
+        "kd_reverse": 0.06573298573493958,
+        "reverse_fraction": 0.25,
+        "epoch": 10,
+        "update": 24796,
+        "loss": 3.591480016708374,
+        "seconds": 50896.892008543015,
+        "peak_gpu_bytes": 17285475328,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "all_recorded_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": 0.49044275398562265,
+      "epoch10_file_exists": false,
+      "epoch10_save_finished_by_training_log": false
+    },
+    "e4": {
+      "process": {
+        "pid": 1754013,
+        "present": true,
+        "cmdline": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -m miss_rgbt.train --config configs/e4_allbn_full20.json ",
+        "cuda_visible_devices": [
+          "CUDA_VISIBLE_DEVICES=3"
+        ]
+      },
+      "training_launch": {
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-m",
+          "miss_rgbt.train",
+          "--config",
+          "configs/e4_allbn_full20.json"
+        ],
+        "pid": 1754013,
+        "cuda_visible_devices": "3",
+        "started_utc": "2026-10-16T11:05:55.843529Z"
+      },
+      "training_exit": null,
+      "completed": null,
+      "training_rows": 25455,
+      "last_training_row": {
+        "task_c": 2.725039482116699,
+        "task_m": 3.0439839363098145,
+        "kd_forward": 0.28173327445983887,
+        "kd_reverse": 0.05619026720523834,
+        "reverse_fraction": 0.25,
+        "epoch": 11,
+        "update": 25455,
+        "loss": 5.797196865081787,
+        "seconds": 50897.12093734741,
+        "peak_gpu_bytes": 17476382720,
+        "microbatch": 4,
+        "accumulation": 2
+      },
+      "all_recorded_numeric_fields_finite": true,
+      "recent_rate_updates_per_second": 0.5013259513732112,
+      "epoch10_file_exists": true,
+      "epoch10_save_finished_by_training_log": true,
+      "epoch10_cpu_check": {
+        "epoch": 10,
+        "updates": 25000,
+        "checkpoint_sha256": "3a5a7ee3ea7bf357072739a0fbafc516aa39ca60b4d39e55762dad221ac62950",
+        "model_state_keys": 258,
+        "all_state_values_finite": true,
+        "all_bn_buffers_equal_original": 39,
+        "fusion_affine_changed": true,
+        "scope": "Parent CPU saved-state/BN buffer comparison only; no forward, update, test evaluation or independent binary audit."
+      }
+    }
+  },
+  "source_120_match": true,
+  "gpu_memory_utilization": [
+    "2, 19093, 24576, 91",
+    "3, 19307, 24576, 100"
+  ],
+  "controller_log_tail": [
+    "LAUNCHED e3_bn_preflight pid=1753164 CUDA=2",
+    "LAUNCHED e4_bn_preflight pid=1753165 CUDA=3",
+    "LAUNCHED e3_allbn_full20_train pid=1754012 CUDA=2",
+    "LAUNCHED e4_allbn_full20_train pid=1754013 CUDA=3"
+  ]
+}
