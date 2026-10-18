@@ -1,0 +1,233 @@
+{
+  "scope": "Fixed E3/E4 all-BN epoch20 weights; complete/Miss full trajectories under U0/U1/U2 template policies.",
+  "policies": {
+    "U0": "off",
+    "U1": "current interval5 threshold0.65",
+    "U2": "complete_only interval5 threshold0.65"
+  },
+  "results": {
+    "E3-U0": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 71.08634337138838,
+        "NPR": 67.0021798389838,
+        "SR": 56.608090002472075
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 88.30835585579943,
+        "MSR": 64.78397218303991
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 64.59740604663997,
+        "NPR": 59.44362086049577,
+        "SR": 51.530382542325945
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 82.16573693426214,
+        "MSR": 58.71104976075918
+      }
+    },
+    "E3-U1": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.38013680875959,
+        "NPR": 70.56343826269374,
+        "SR": 59.4279861207664
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.57657020456928,
+        "MSR": 65.53056466892852
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 69.33797804352328,
+        "NPR": 64.22588436835026,
+        "SR": 55.1757994994895
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 85.06321006679312,
+        "MSR": 60.325719787266785
+      }
+    },
+    "E3-U2": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 67.75433985673428,
+        "NPR": 62.603335781334835,
+        "SR": 53.88158694492221
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 84.83072147362194,
+        "MSR": 60.18683125860528
+      },
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 71.08634337138838,
+        "NPR": 67.0021798389838,
+        "SR": 56.608090002472075
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 88.30835585579943,
+        "MSR": 64.78397218303991
+      }
+    },
+    "E4-U0": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 70.99148694312663,
+        "NPR": 67.0573671568222,
+        "SR": 56.56136360388723
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 88.50834643298846,
+        "MSR": 65.20809334069104
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 64.11858842531358,
+        "NPR": 58.854459899776614,
+        "SR": 51.09561226268309
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 81.48181191532096,
+        "MSR": 58.57037192304433
+      }
+    },
+    "E4-U1": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.08202890649879,
+        "NPR": 70.39898562233459,
+        "SR": 59.207784564599706
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.36065338242643,
+        "MSR": 65.35091935984613
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 68.42228284062595,
+        "NPR": 63.30514796894961,
+        "SR": 54.49988007069023
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 83.97551689584894,
+        "MSR": 60.033253760520736
+      }
+    },
+    "E4-U2": {
+      "LasHeR": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 74.08202890649879,
+        "NPR": 70.39898562233459,
+        "SR": 59.207784564599706
+      },
+      "RGBT234": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 90.36065338242643,
+        "MSR": 65.35091935984613
+      },
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 67.4529612014985,
+        "NPR": 62.45618220745385,
+        "SR": 53.650288827437464
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 83.41495788331376,
+        "MSR": 59.60799575760179
+      }
+    }
+  },
+  "audit_summary": {
+    "E3-U0": {
+      "template_writes": 0,
+      "trace_events": 336874,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u0_complete"
+    },
+    "E3-U1": {
+      "template_writes": 0,
+      "trace_events": 0,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u1_parity_complete"
+    },
+    "E3-U2": {
+      "template_writes": 18381,
+      "trace_events": 336874,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u2_miss"
+    },
+    "E4-U0": {
+      "template_writes": 0,
+      "trace_events": 336874,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u0_complete"
+    },
+    "E4-U1": {
+      "template_writes": 0,
+      "trace_events": 336874,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u0_complete"
+    },
+    "E4-U2": {
+      "template_writes": 47475,
+      "trace_events": 336874,
+      "sequence_receipts": 479,
+      "bbox_files": 479,
+      "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u2_complete"
+    }
+  },
+  "u1_parity": {
+    "files": 479,
+    "equal": 479,
+    "mismatches": []
+  },
+  "source_commit": "fa8f4929ee267c43a51484af5cd6384dc548d4c8",
+  "isolated_overlay": {
+    "miss_rgbt/tracker.py": "3a58375caed7cec744933e0e7ee462874ca550098fe9f170b3fb973d5dcbc620",
+    "scripts/evaluate_model.py": "61793b85d428caccdbd23c8e2fbf9d2549f4a7ea0adde6222947d662d15de2f5"
+  },
+  "limits": "U1 E3 complete was exact trajectory parity against formal E3-allBN complete output (479/479 SHA). U2 complete has matching aggregate metrics to U1 for E4; no separate raw parity claim. All U0/U2 runs are full 479-sequence evaluations with audit traces. No training or network change."
+}

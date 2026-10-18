@@ -1,0 +1,44 @@
+{
+  "E3-U0": {
+    "template_writes": 0,
+    "trace_events": 336874,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u0_complete"
+  },
+  "E3-U1": {
+    "template_writes": 0,
+    "trace_events": 0,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u1_parity_complete"
+  },
+  "E3-U2": {
+    "template_writes": 18381,
+    "trace_events": 336874,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e3_u2_miss"
+  },
+  "E4-U0": {
+    "template_writes": 0,
+    "trace_events": 336874,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u0_complete"
+  },
+  "E4-U1": {
+    "template_writes": 0,
+    "trace_events": 336874,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u0_complete"
+  },
+  "E4-U2": {
+    "template_writes": 47475,
+    "trace_events": 336874,
+    "sequence_receipts": 479,
+    "bbox_files": 479,
+    "remote_output": "/data2/gaob/Miss-RGBT/template_eval_runs_20261018/e4_u2_complete"
+  }
+}

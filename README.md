@@ -8,6 +8,8 @@
 
 [全部BN运行统计冻结对照](reports/bn_controls_20261016_v2/README.md)已完成20轮及四套全量评估。E3-allBN指标为LasHeR-Miss 69.337978/55.175799、RGBT234-Miss 85.063210/60.325720；E4-allBN为68.422283/54.499880、83.975517/60.033254。E3仅达到LasHeR-Miss两项目标，RGBT234和完整输入目标仍未达成。39个BN运行缓冲均与E0相同；这项实验是归因对照，不是新模块。原始归档、失败历史和差值见交接文档。
 
+模板 U0/U1/U2 固定权重全轨迹对照已完成：[结果](reports/template_controls_20261018_v1/RESULTS.md)。E3/E4 的 U1 原生入口核对通过；缺失条件下当前 U1 优于关闭写入和 complete-only 写入，但 RGBT234-Miss 仍未达标。
+
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 
 | 原始E0 epoch20 实测 | PR / MPR | NPR | SR / MSR |
