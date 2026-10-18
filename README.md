@@ -10,6 +10,8 @@
 
 模板 U0/U1/U2 固定权重全轨迹对照已完成：[结果](reports/template_controls_20261018_v1/RESULTS.md)。E3/E4 的 U1 原生入口核对通过；缺失条件下当前 U1 优于关闭写入和 complete-only 写入，但 RGBT234-Miss 仍未达标。
 
+RGBT234数据边界已核查：服务器只有234个测试序列，没有独立开发目录，因此当前结果冻结，不按测试分数挑内部参数。见[开发边界](docs/RGBT234_DEVELOPMENT_BOUNDARY_20261018.md)。
+
 模板更新已经在E0/E3/E4中启用。[隔离U0/U1/U2对照](docs/TEMPLATE_UPDATE_CONTROLS_20261015.md)及9项目标Python逻辑检查已准备，尚无NN/正式指标；按归因→BN→模板对照/有限调优→必要时A/B的次序，不改变现有训练。
 
 | 原始E0 epoch20 实测 | PR / MPR | NPR | SR / MSR |
