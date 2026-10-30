@@ -1,4 +1,5 @@
 """Fixed-budget spatial proposals at observed previous and initialization scales."""
+import argparse
 import datetime
 import json
 import os
@@ -61,9 +62,13 @@ def summarize(rows):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", default=str(OUTPUT))
+    args = parser.parse_args()
+    output = Path(args.output)
     torch.set_num_threads(4)
     cv2.setNumThreads(1)
-    OUTPUT.mkdir(exist_ok=False)
+    output.mkdir(exist_ok=False)
     source_path = ROOT / "reports/server28-global-proposals-20261030/report.json"
     source = json.loads(source_path.read_text())
     protocol_path = ROOT / "development/recovery_val97_20261030/protocol.json"
@@ -79,13 +84,14 @@ def main():
         protocol="Same46 points as global audit. Native crop plus5x5 image cell centers "
                  "at previous predicted box size and initialization box size,51 crops. "
                  "All native-resolution crops. Initial templates, unchanged Hann/head. "
-                 "CPU minibatch8; chunked native prediction checked against prior audit.",
+                 "CPU minibatch8; chunked native prediction checked against prior audit. "
+                 "Decode the same head outputs with and without Hann; no extra proposals.",
         scope="No current GT generates proposals, chooses frames or ranks responses. "
               "GT only labels predictions after inference. Fixed budget does not guarantee "
               "full-image coverage. One-step audit, not closed-loop recovery, trigger "
               "calibration, final PR/SR, validated module or novelty.",
     )
-    (OUTPUT / "launch.json").write_text(json.dumps(launch, indent=2) + "\n")
+    (output / "launch.json").write_text(json.dumps(launch, indent=2) + "\n")
     started, rows, inputs = time.time(), [], {}
     for observation in source["observations"]:
         name, index = observation["sequence"], observation["frame"]
@@ -130,6 +136,8 @@ def main():
                 response = tracker.window * out["score_map"]
                 predicted = tracker.network.baseline.box_head.cal_bbox(
                     response, out["size_map"], out["offset_map"]).view(count, 4)
+                raw_predicted = tracker.network.baseline.box_head.cal_bbox(
+                    out["score_map"], out["size_map"], out["offset_map"]).view(count, 4)
             for offset, proposal in enumerate(chunk):
                 crop_box = proposal["box"]
                 cx, cy, box_width, box_height = (
@@ -139,9 +147,18 @@ def main():
                     cx + crop_box[0] + crop_box[2] / 2. - half - box_width / 2.,
                     cy + crop_box[1] + crop_box[3] / 2. - half - box_height / 2.,
                     box_width, box_height], height, width, margin=10)
-                assert np.isfinite(box).all()
+                raw_cx, raw_cy, raw_width, raw_height = (
+                    raw_predicted[offset] * cfg.TEST.SEARCH_SIZE / factors[offset]).tolist()
+                raw_box = clip_box([
+                    raw_cx + crop_box[0] + crop_box[2] / 2. - half - raw_width / 2.,
+                    raw_cy + crop_box[1] + crop_box[3] / 2. - half - raw_height / 2.,
+                    raw_width, raw_height], height, width, margin=10)
+                assert np.isfinite(box).all() and np.isfinite(raw_box).all()
                 candidates.append(dict(scale=proposal["scale"], crop_box=crop_box, bbox=box,
                                        confidence=float(response[offset].max()),
+                                       raw_bbox=raw_box, raw_confidence=float(out["score_map"][offset].max()),
+                                       raw_diagnostic=geometry(crop_box, gt[index].tolist(),
+                                                               raw_box, cfg.TEST.SEARCH_FACTOR),
                                        diagnostic=geometry(crop_box, gt[index].tolist(),
                                                            box, cfg.TEST.SEARCH_FACTOR)))
         old_native = observation["candidates"][0]["hann_bbox"]
@@ -150,7 +167,7 @@ def main():
         assert np.allclose(old_native, candidates[0]["bbox"], rtol=1e-4, atol=.05)
         rows.append(dict(sequence=name, frame=index, available=available, candidates=candidates,
                          native_vs_prior_max_bbox_difference=difference))
-        (OUTPUT / "report.json").write_text(json.dumps(dict(launch=launch, observations=rows),
+        (output / "report.json").write_text(json.dumps(dict(launch=launch, observations=rows),
                                                       indent=2) + "\n")
         print("PROGRESS " + json.dumps(dict(sequence=name, frame=index, observations=len(rows),
                                             seconds=time.time() - started)), flush=True)
@@ -159,8 +176,8 @@ def main():
                   per_sequence={name: summarize([row for row in rows if row["sequence"] == name])
                                 for name in inputs},
                   seconds=time.time() - started)
-    (OUTPUT / "analysis.json").write_text(json.dumps(result, indent=2) + "\n")
-    (OUTPUT / "completed.json").write_text(json.dumps(
+    (output / "analysis.json").write_text(json.dumps(result, indent=2) + "\n")
+    (output / "completed.json").write_text(json.dumps(
         dict(observations=len(rows), candidates=len(rows) * 51, seconds=result["seconds"]),
         indent=2) + "\n")
     print("COMPLETE " + json.dumps(result["summary"]), flush=True)

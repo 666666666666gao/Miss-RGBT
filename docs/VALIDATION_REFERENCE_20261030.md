@@ -1,5 +1,39 @@
 # Fixed-input validation reference
 
+## Completed Results
+
+Worker4024185 completed both128-sample references in1114.01seconds.
+At17:42:16Z its process was absent, the log endedCOMPLETE, and
+completed.json/report.json were present. Both models used the same CPU,
+cached inputs, batch size and task-loss implementation.
+
+| Reference | Complete11 | MissingRGB01 | MissingTIR10 | Three-state mean |
+|---|---:|---:|---:|---:|
+| Availability-aware E0 | 4.412175 | 6.750802 | 5.062622 | 5.408533 |
+| Historical A utility20 | 4.398898 | 5.788143 | 4.799574 | 4.995538 |
+
+Historical A lowers this sampled mean loss by7.636%; most absolute
+improvement comes from missingRGB01. Complete loss changes only0.013278.
+This is local task-loss evidence, not a causal contribution test or
+long-term tracking improvement. Historical A did not consistently improve
+complete official scores over E0; the task-loss proxy cannot replace
+trajectory validation.
+
+Candidate epoch1 GPU means are5.041177 utility and4.980912 random.
+These are numerically close to the historical CPU reference; CPU/GPU
+equivalence has not been established, and one epoch cannot prove
+convergence or selector superiority. Keep the existing stopping and
+last-five full-trajectory validation protocol.
+
+E0 checkpoint SHA256:
+d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8.
+Historical A checkpoint SHA256:
+c4aabefb495344b6d5e6e17655ac20fd51c4e2dec575843133096b319e047db3.
+Full batch receipts and hashes copied to
+outputs/server28-validation-reference-20261030.
+
+## Launch History
+
 CPU worker4024185 launched on SSH2028 at17:22:36Z on2026-10-30.
 Source: audit_validation_reference28.py, launch_validation_reference28.py.
 Output: reports/server28-validation-reference-20261030 and sibling log.

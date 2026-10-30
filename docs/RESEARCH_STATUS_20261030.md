@@ -12,12 +12,18 @@ is0/3and0/4. Ranking alone cannot fix the8center-covered points without a
 successful candidate. Do not promote this fixed-grid selector or infer a
 closed-loop gain. See docs/NATIVE_GRID_AUDIT_20261030.md.
 
-Separate CPU reference worker4024185 is evaluating exact128cached candidate
-validation inputs on E0 and historicalA20. Input hash matches both training
-jobs. E0 completed with mean task loss5.408533 (11/01/10:
-4.412175/6.750802/5.062622); historicalA20 still pending at17:37UTC.
-This is a development task-loss reference, not PR/SR or CPU/GPU numerical
-equivalence. No stopping protocol changed. See docs/VALIDATION_REFERENCE_20261030.md.
+Separate CPU reference worker4024185 completed exact128cached candidate
+validation inputs for both models in1114.01s, terminal verified17:42UTC.
+Mean E0/historicalA20 task loss5.408533/4.995538 (7.636% reduction).
+E0 states11/01/10=4.412175/6.750802/5.062622; historicalA20=
+4.398898/5.788143/4.799574. Complete improvement is small. This is a
+development task-loss reference, not PR/SR or CPU/GPU numerical equivalence.
+No stopping protocol changed. See docs/VALIDATION_REFERENCE_20261030.md.
+
+CPU worker4063222 now controls raw/Hann decoding on the identical51proposals
+and46points. Same score/size/offset outputs, no learned or GT-based selector.
+This separates a remaining decoder confound; no live training/tracker edit.
+Results pending. See docs/NATIVE_GRID_DECODE_20261030.md.
 
 ## Oracle Crop Diagnostic, 17:07 UTC
 
