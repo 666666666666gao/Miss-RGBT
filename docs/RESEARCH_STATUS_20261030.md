@@ -1,5 +1,16 @@
 # Miss-RGBT evidence and remaining targets
 
+## Native-Scale Spatial Audit, 17:14 UTC
+
+CPU worker4006613 is running a fixed51crop proposal audit: native crop plus
+5x5image centers at previous predicted size and initial size, same46points.
+Current GT does not generate proposals or choose samples. Firstpoint29.35s;
+estimated finish17:35-17:38Z. Geometry over3924fullcohort observed validframes
+restores909/1505unsupported overlaps and744targetcenters. Initialscale adds
+only21overlaps/16centers beyond previousscale at double proposal count.
+These are geometric diagnostics, not proposal quality or recovery gains;
+neural result pending. See docs/NATIVE_GRID_AUDIT_20261030.md.
+
 ## Oracle Crop Diagnostic, 17:07 UTC
 
 CPU GT-guided diagnostic completed45points/135crops in73.88s. Of12

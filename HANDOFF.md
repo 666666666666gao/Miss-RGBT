@@ -11,6 +11,17 @@ CPU8次真实更新完成，只训练现有LocalRepair，baseline参数与缓冲
 
 ## 2026-10-30 Global/coarse proposal audit completed
 
+Next CPU audit4006613 is RUNNING: fixed native crop+5x5centers using
+previous/initial box sizes=51crops, same46observations as global audit.
+No current GT generates proposals or selects frames.4threads/chunk8.
+Live17:13:15Z, first observation29.35s; estimate20-25min total, check near
+17:35-17:38Z with180-300s spacing, not busy polling. Outputreports/
+server28-native-grid-20261030 and siblinglog; docs/NATIVE_GRID_AUDIT_20261030.md.
+All3924observedvalid fullcohort geometricunion restores909/1505 cropoverlaps,
+744centers;previousscalealone888overlaps/728centers. Puregeometrynotquality;
+initialscaleaddsonly21/16atdoubleproposalcount. Runningprotocolunchanged.
+Neuraloutcomespending;4GPUtrainingjobsunchanged,250W allcards.
+
 Follow-up CPU GT-crop diagnostic3991543 COMPLETE73.88s,45points135crops.
 Native unsupported12: GTcenter+previous size reachesIoU>=.5 on6,
 GTcenter+true size on10, GTcenter+coarse tile size on0. Existing global raw
