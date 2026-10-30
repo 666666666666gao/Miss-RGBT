@@ -793,3 +793,16 @@ Historical A utility20 LasHeR-Miss evaluation PID4138772 reached5/479
 sequence receipts; no complete metrics yet. Snapshot:
 docs/SERVER28_LIVE_SNAPSHOT_20261030_1901Z.md.
 
+## Candidate evaluator provenance
+
+The candidate launch receipt contains the pre-`7085616` SHA for
+`evaluate_candidate_official28.py`; the server/current branch now match at
+SHA256
+`bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1`.
+Commit `7085616` postdates launch and changes only GPU selection, worker-count
+and limited-smoke CLI handling, not tracking or metrics. The unchanged
+campaign controller invokes it only after last-five val97 selection/cleanup.
+Current evaluator use will record its actual SHA in `run.json`. This
+provenance delta does not justify restarting active jobs. Audit:
+docs/CANDIDATE_EVALUATOR_SOURCE_AUDIT_20261030.md.
+
