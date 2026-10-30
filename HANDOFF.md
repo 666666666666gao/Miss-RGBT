@@ -819,3 +819,14 @@ sorted longest first. GPU0-3 temperatures84/80/79/73C; all power limits
 250W and target temperature85C. Snapshot:
 docs/SERVER28_LIVE_SNAPSHOT_20261030_1910Z.md.
 
+## 2026-10-30 19:20 UTC live check
+
+Fixed20 utility/random remain live at10775/11125 updates, epoch5, finite.
+Batch10 candidates remain live at utility4775/random4900, epoch3, finite;
+only epoch1/2 fixed128 task-loss validations are complete. Estimated next
+random/utility boundaries are20:17/20:26UTC. Historical A utility20 Miss
+evaluation remains live at12/479 receipts and79206 frames, all completed on
+LasHeR-Miss. First12 receipt throughput gives a rough full-evaluation ETA of
+22:08UTC. GPU0-3 temperatures were84/80/79/75C, limits250W. Snapshot:
+docs/SERVER28_LIVE_SNAPSHOT_20261030_1920Z.md.
+
