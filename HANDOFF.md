@@ -825,8 +825,8 @@ Fixed20 utility/random remain live at10775/11125 updates, epoch5, finite.
 Batch10 candidates remain live at utility4775/random4900, epoch3, finite;
 only epoch1/2 fixed128 task-loss validations are complete. Estimated next
 random/utility boundaries are20:17/20:26UTC. Historical A utility20 Miss
-evaluation remains live at12/479 receipts and79206 frames, all completed on
-LasHeR-Miss. First12 receipt throughput gives a rough full-evaluation ETA of
+evaluation remains live at12/479 receipts and79206 frames (11 LasHeR-Miss,
+1 RGBT234-Miss; corrected from receipt paths). First12 receipt throughput gives a rough full-evaluation ETA of
 22:08UTC. GPU0-3 temperatures were84/80/79/75C, limits250W. Snapshot:
 docs/SERVER28_LIVE_SNAPSHOT_20261030_1920Z.md.
 
@@ -838,4 +838,25 @@ epoch3 validation is pending. Historical A utility20 Miss evaluation reached
 No complete metrics exist. Rough remaining full-eval estimate is2h47m at
 observed worker throughput. GPU0-3 are84/80/79/76C, target85C and power
 limit250W. Snapshot: docs/SERVER28_LIVE_SNAPSHOT_20261030_1924Z.md.
+
+## Protected six-epoch CPU pilot launched
+
+PID61899 launched2026-10-30T19:31:47Z and was verified live at19:32:58Z,
+CPU337%, RSS1.2GB. Source compiled under the existing Python3.7 environment.
+Input manifest exists; initial reference losses precede the first updates.
+Output reports/server28-protected-sixepoch-20261030, sibling.log.
+
+Fixed six epochs/192 updates, effectivebatch4/LR1e-4, four CPU threads.
+Baseline frozen/eval; existing LocalRepair only. Train882 is partitioned by
+sequence (every fifth sequence reserved for development); dev16 uses fixed
+validation transforms, heldoutval32 never selects an epoch. Finalfive epochs
+2..6 selected by mean01/10 development task loss, ties earlier. Retain one
+small branch snapshot after exact complete-output/baseline-state checks;
+record size/hash before deleting the other four. Protocol:
+docs/PROTECTED_SIXEPOCH_PROTOCOL_20261030.md.
+
+Estimated45-75minutes from launch, pending measured update throughput.
+No PR/SR, convergence, novelty, or new module benefit established. Original
+GPU jobs remain live and unchanged. Historical19:20 snapshot attribution
+corrected:12 total receipts included11 LasHeR-Miss plusRGBT234-Miss man7.
 

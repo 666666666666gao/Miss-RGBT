@@ -11,8 +11,9 @@ projects the next random/utility epoch boundaries near20:17/20:26 UTC.
 
 Historical A utility20 LasHeR-Miss evaluation PID4138772 remains live with
 one worker on each of GPUs0/1. There are12/479 total receipts and79206
-completed frames, all receipts from LasHeR-Miss. No complete metric result
-exists.
+completed frames:11 LasHeR-Miss and1 RGBT234-Miss (`man7`). No complete
+metric result exists. Dataset attribution corrected after inspecting the
+per-dataset receipt paths; the total count/frame sum is unchanged.
 
 The first12 receipts aggregate6160.9 worker-seconds over79206 frames,
 12.86 frames per worker-second. At two workers this projects roughly2h47m
