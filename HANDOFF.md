@@ -830,3 +830,12 @@ LasHeR-Miss. First12 receipt throughput gives a rough full-evaluation ETA of
 22:08UTC. GPU0-3 temperatures were84/80/79/75C, limits250W. Snapshot:
 docs/SERVER28_LIVE_SNAPSHOT_20261030_1920Z.md.
 
+## 2026-10-30 19:24 UTC incremental
+
+All jobs remain live. Batch10 candidates are epoch3, updates4825/4975, finite;
+epoch3 validation is pending. Historical A utility20 Miss evaluation reached
+13/479 receipts and82856 frames:12 LasHeR-Miss,1 RGBT234-Miss (`man7`).
+No complete metrics exist. Rough remaining full-eval estimate is2h47m at
+observed worker throughput. GPU0-3 are84/80/79/76C, target85C and power
+limit250W. Snapshot: docs/SERVER28_LIVE_SNAPSHOT_20261030_1924Z.md.
+
