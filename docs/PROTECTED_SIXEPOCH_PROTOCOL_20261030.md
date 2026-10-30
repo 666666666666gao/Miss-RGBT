@@ -47,3 +47,20 @@ the estimated milestone at180-300 second intervals.
 Output: `/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030`.
 Log: the sibling `.log` file. Launch through `launch_protected_sixepoch28.py`;
 the exclusive output/log creation prevents accidentally overwriting this run.
+
+## Verified Launch
+
+PID61899 started2026-10-30T19:31:47Z. At19:36:17Z the same process was live,
+CPU377%, RSS3.6GB, and had completed3 finite updates with finite gradient
+norms. Updates1/2/3 used availability01/10/01 and task losses
+5.872172/2.717501/4.297597. Update2/3 intervals were9.06/8.53 seconds.
+The initial reference/sample stage took approximately4 minutes; this is
+expected computation before the optimizer updates.
+
+The persisted input manifest confirms705 training,177 development and97
+val sequences with zero pairwise intersections,8 development batches and
+16 heldout batches at batch2. These are sampled-tuple controls; E0 pretraining
+exposure to val97 remains uncertified, so this does not establish an entirely
+unseen benchmark evaluation. Main GPU training/evaluation processes remained
+live. The next combined observation is planned near20:11 UTC, with180-300
+second checks near actual completion or epoch boundaries.
