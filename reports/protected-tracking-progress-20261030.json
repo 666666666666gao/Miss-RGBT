@@ -127,6 +127,62 @@
         "unsupported_observed_frames": 0,
         "bbox_sha256": "b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e",
         "trace_sha256": "e2a096ea6ebb2135e30c98b94f39b5b6d170b16e4f7ff90a6e7ce867ec086da1"
+      },
+      "alternating_outage": {
+        "frames": 176,
+        "scored_frames": 175,
+        "PR20": 94.28571428571428,
+        "SR": 61.795918367346935,
+        "mean_iou": 0.6242709241815164,
+        "track_calls": 159,
+        "holds": 16,
+        "observed_valid_frames": 159,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "1167e38373429efbfebc7b6c9aa2fad378ffa864b9ed0ea42a1d3a3b8f050fa7",
+        "trace_sha256": "2bffcccd516cafd45b4f875c51ec8564de7ba900e906e4bef3ff78293be66069"
+      }
+    },
+    "comingboy'shead": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 100.0,
+        "SR": 80.11204481792717,
+        "mean_iou": 0.8159279215245975,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "1af9a86ecbe9dcf4ee0a5df553c815ee511ea65506e77893a61144137a3a7d5b",
+        "trace_sha256": "5c379b318031dcda46c4dd248871bc8a6375939e6f6bdef8c0b581c84787329d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 88.62745098039215,
+        "SR": 72.60504201680672,
+        "mean_iou": 0.735849584221288,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "a495e13a5e5dc12b5efeb33a42bbcaaac4b55708b13c60633ba59ac7457d5e4d",
+        "trace_sha256": "964ba07b8249fa36dcdf4e01517f662a102f68642f88f5ba130406f5b46c23e2"
+      }
+    },
+    "wanderingly_1202": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 98.82352941176471,
+        "SR": 88.79551820728291,
+        "mean_iou": 0.9089440130186397,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
+        "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
       }
     }
   }

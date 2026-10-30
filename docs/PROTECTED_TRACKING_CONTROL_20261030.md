@@ -144,3 +144,17 @@ complete2up versus1.4 minutes for E0/2up), so the initial completion
 estimate no longer applies. Continue checking only near observed completion
 milestones, with180-300 second intervals; do not add a competing CPU/GPU
 job. Progress receipt: `tracking_progress.json`.
+
+By20:39:48Z the selected branch had completed both conditions on2up and
+comingboy'shead, plus complete onwanderingly_1202. All three complete
+trajectories match E0 bbox SHA exactly. Paired alternating-outage differences
+for the first two are heterogeneous:
+
+| Sequence | E0 PR20/SR | Selected repair PR20/SR | Difference, pp |
+|---|---:|---:|---:|
+| 2up | 96.5714 / 60.2449 | 94.2857 / 61.7959 | -2.2857 / +1.5510 |
+| comingboy'shead | 88.6275 / 72.0822 | 88.6275 / 72.6050 | 0 / +0.5229 |
+
+Only two of four outage pairs are complete. The sequence-specific results
+are mixed and not evidence of a general gain. Repair arm is slower: roughly
+15-22 minutes per completed sequence-condition in the observed samples.
