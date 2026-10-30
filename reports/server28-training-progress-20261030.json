@@ -1,0 +1,41 @@
+{
+  "observed_utc": "2026-10-30T18:42:56.299966+00:00",
+  "models": {
+    "utility": {
+      "pid": 3453478,
+      "live_command": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u -m miss_rgbt.train --config configs/a_utility_full20.json ",
+      "recorded_updates": 10032,
+      "last_update": 10032,
+      "epoch": 5,
+      "all_recorded_loss_fields_finite": true,
+      "recent_updates": 100,
+      "recent_seconds_per_update": 2.9768180437762326,
+      "estimated_remaining_hours": 33.04929543712457,
+      "estimated_completion_utc": "2026-11-01T03:45:53.763540+00:00",
+      "last_update_mean_loss": 4.441497325897217,
+      "peak_gpu_bytes": 17501814272
+    },
+    "random": {
+      "pid": 3453479,
+      "live_command": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u -m miss_rgbt.train --config configs/a_random_full20.json ",
+      "recorded_updates": 10435,
+      "last_update": 10435,
+      "epoch": 5,
+      "all_recorded_loss_fields_finite": true,
+      "recent_updates": 100,
+      "recent_seconds_per_update": 3.141855225418553,
+      "estimated_remaining_hours": 34.52986166491252,
+      "estimated_completion_utc": "2026-11-01T05:14:43.801960+00:00",
+      "last_update_mean_loss": 5.305203557014465,
+      "peak_gpu_bytes": 17501814272
+    }
+  },
+  "evaluation": {
+    "pid": 3463984,
+    "live_command": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u /home/gaob/Miss-RGBT/evaluate_after_training28.py ",
+    "status": {
+      "stage": "WAITING_FOR_TRAINING",
+      "pid": 3463984
+    }
+  }
+}

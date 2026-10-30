@@ -44,11 +44,25 @@ At18:29UTC the evaluator was alive with0 full-run sequence receipts; no
 metrics yet. Smoke throughput suggests roughly4h for this run. The initial
 four-worker OOM output is preserved.
 
-Candidate GPU2/3 jobs are epoch2, updates3817/3931 at18:29UTC. Recent
-3.216/3.103seconds per update predicts next boundaries18:39/18:33UTC.
-Only epoch1 fixed128 task-loss validations exist; convergence is unproven.
-Fixed20 GPU0/1 utility/random are epoch4/5, updates9783/10195, finite;
-latest100 speed2.859/2.936s/update estimates completion Nov1 02:25/02:57UTC.
+## Training Update, 18:42 UTC
+
+Candidate GPU2/3 utility/random are at epoch2 update4053 and epoch3
+update4176; recent speeds3.453/3.115seconds per update project boundaries
+20:34/20:17UTC. Both fixed128 task-loss means worsened from epoch1 to epoch2:
+utility5.041177->5.119562 (+1.55%), random4.980912->5.094764 (+2.29%).
+Epoch2 state losses utility11/01/10=4.397491/5.935633/5.025561;
+random=4.346727/5.995276/4.942290. Inputs and first update hashes match.
+This is a non-monotonic early proxy, not a convergence or tracking result.
+Registered post-LR-drop stopping has not activated; continue without
+changing training.
+
+Fixed20 GPU0/1 utility/random are epoch5 at10032/10435 updates, finite.
+Latest100 rates2.977/3.142s/update project completion Nov1 03:46/05:15UTC,
+before queued full evaluation.
+
+Historical A Miss evaluation PID4138772 remains live with2/479 sequence
+receipts at18:42UTC; it is the separate historical reference, not a new
+candidate. One worker per GPU0/1; the failed4-worker attempt is preserved.
 
 ## Oracle Crop Diagnostic, 17:07 UTC
 

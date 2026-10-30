@@ -99,3 +99,29 @@ Controller polls are300 seconds; no automatic failure restart.
 
 The separate epoch-validation-plan document is a proposed read-only review;
 this launch document describes the actual implemented boundary.
+
+## Epoch 2 Observation, 2026-10-30 18:42 UTC
+
+Both runs used the same hashed128 validation tuples. Fixed task-loss means:
+
+| Candidate | Epoch1 | Epoch2 | Epoch2 states11/01/10 |
+|---|---:|---:|---|
+| Utility | 5.041177 | 5.119562 | 4.397491 / 5.935633 / 5.025561 |
+| Random | 4.980912 | 5.094764 | 4.346727 / 5.995276 / 4.942290 |
+
+Both means worsened versus epoch1 (utility+1.55%, random+2.29%). Random
+remains numerically lower by0.024798, but this small cached task loss is
+not a tracking metric and CPU/GPU loss equivalence is not assumed. This is
+no evidence of convergence or utility-selector benefit. Do not stop early:
+the registered stopping reference starts after the epoch10 LR drop, with
+earliest stopping at epoch14 after3 stale epochs. No full val97 checkpoint
+has yet been selected.
+
+At18:42:11UTC utility/random were at epoch2 update4053 and epoch3 update4176;
+recorded losses were finite. Recent speed3.453/3.115s/update predicted next
+boundaries20:34/20:17UTC. GPU0/1 fixed20 utility/random were at epoch5,
+10032/10435 updates, all logged loss fields finite; 100-update speed
+2.977/3.142s estimated completion Nov1 03:46/05:15UTC before evaluation.
+Historical A Miss fill-in evaluation is separately running with one worker
+on each of GPU0/1; at18:42UTC it had2/479 sequence receipts. These times and
+task losses are progress indicators only, not final benchmark evidence.
