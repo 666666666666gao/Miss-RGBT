@@ -1,6 +1,32 @@
 # Miss-RGBT evidence and remaining targets
 
-## Latest Update, 16:31 UTC
+## Latest Update, 16:55 UTC
+
+Both candidates completed epoch1 and continued epoch2 at2062/2117 updates.
+Fixed128-sample mean validation task loss utility/random:5.041177/4.980912.
+States11/01/10 utility:4.379604/5.839105/4.904822; random:
+4.317632/5.787514/4.837589. Identical cached validation inputs, finite losses.
+First validation receipts arrived5342.69/5177.07s after training start
+(89.04/86.28min, before checkpoint saving). Epoch01 checkpoints exist.
+This is a task-loss proxy, not PR/SR or convergence evidence.
+Recent throughput at250W suggests epoch2 boundaries18:46/18:33Z,
+still subject to changing speed. Temperatures84/81/79/76C at16:55Z.
+Earlier snapshots below are retained as dated history.
+
+### Selector Objective Control
+
+See the detailed report below: pairwise loss showed a small
+aggregation-sensitive result, insufficient for promotion.
+
+### Recovery Proposal Audit
+
+Fixed CPU audit of46 points/11 proposals each on first8 val sequences.
+Whole-frame/coarse proposals restored crop-target overlap at12/12 native
+no-support points, but GT-oracle best IoU stayed below0.5 at all12 and had
+mean0.601 overall vs native0.565. Hann peak selection mean IoU0.547;
+raw peak without Hann0.422, with12 drops>0.1. Coverage alone does not
+recover identity/localization; no recovery module promoted. See
+docs/GLOBAL_PROPOSAL_AUDIT_20261030.md and raw reports.
 
 All four training jobs continue with finite recorded key losses. Fixed20
 GPU0/1 utility6951/random7429 of50000; adaptive batch10 GPU2/3 utility1561/
@@ -19,6 +45,13 @@ State10 raw loss worsens; pairwise ranking accuracy is only50.49%.
 No consistent improvement or module promotion. Selected heads and raw
 evidence retained. See docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md.
 Overall targets and three validated contributions remain incomplete.
+
+At16:48Z, all four GPU power limits were250W; temperatures0-3 were
+84/81/80/75C. This is a live hardware snapshot, not proof of a persistent
+setting. Candidate utility/random were1937/1988 updates, epoch1, finite
+logged losses and estimated first boundaries16:51:50/16:49:08Z; completed
+epoch validation was still empty. Fixed utility/random remained6951/7429
+at last inspector sample16:31Z; refresh before relying on those counts.
 
 Date: 2026-10-30. Authoritative source: SSH2028, /home/gaob/Miss-RGBT.
 

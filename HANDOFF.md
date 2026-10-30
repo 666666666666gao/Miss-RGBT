@@ -9,6 +9,24 @@ CPU8次真实更新完成，只训练现有LocalRepair，baseline参数与缓冲
 另记录普通RankNet排序基线的固定allRank源码与许可，未复制/安装/修改在跑训练。
 16:15Z四路训练worker仍存活，候选1195/1224更新，首轮验证待完成。
 
+## 2026-10-30 Global/coarse proposal audit completed
+
+Latest16:55:34Z: candidate utility/random epoch1 validation completed,
+mean loss5.041177/4.980912, epoch01 weights exist, epoch2updates2062/2117.
+One epoch is not convergence or PR/SR evidence. AllGPU250W temperatures
+84/81/79/76C. Next epoch estimated18:46/18:33Z at current speed.
+GitHub branch codex/server28-research carries server28 scripts/source/docs;
+do not overwrite the frozen running runtime when syncing.
+
+CPU fixed-proposal audit on46points/first8val sequences,11crops per point.
+Whole/tile proposals restore GT crop support12/12 native failures but oracle
+candidate IoU remains<.5 on all12. MeanIoU native/Hann-oracle/Hann-score/
+raw-score=.565/.601/.547/.422; raw response has12 drops>.1. Coverage alone
+does not recover identity/localization; no recovery module promoted.
+Full details docs/GLOBAL_PROPOSAL_AUDIT_20261030.md; raw reports/
+server28-global-proposals-20261030. Worker3946665 completed normally in
+343.02s; all GPU training and frozen runtime unchanged.
+
 ## 2026-10-30 Selector objective control completed
 
 Completed452.37s: regression stops45/select45, pairwise stops30/select26,

@@ -3,6 +3,7 @@ from torch.nn import functional as F
 
 from lib.utils.box_ops import box_cxcywh_to_xyxy, box_xywh_to_xyxy, generalized_box_iou
 from lib.utils.heapmap_utils import generate_heatmap
+from miss_rgbt.task_utility import utility_targets
 
 
 def task_loss(outputs, boxes, cfg):
@@ -51,3 +52,19 @@ def training_loss(complete, missing, boxes, cfg, forward_weight=0., reverse_weig
                       kd_forward=float(kd_forward.mean().detach()),
                       kd_reverse=float((reliable * kd_reverse).mean().detach()),
                       reverse_fraction=float(reliable.mean()))
+
+
+def utility_supervision(outputs, boxes, cfg):
+    probes = [(index, out) for index, out in enumerate(outputs) if 'utility_probe' in out]
+    assert len(probes) == 1
+    index, out = probes[0]
+    probe = out['utility_probe']
+    loss_off = task_loss([probe['off']], boxes[index:index + 1], cfg)
+    loss_on = task_loss([probe['on']], boxes[index:index + 1], cfg)
+    target = utility_targets(loss_off, loss_on)
+    prediction = out['utility_logits'].gather(1, probe['regions']).squeeze(1)
+    loss = F.smooth_l1_loss(prediction, target)
+    return loss, dict(search_index=index, regions=probe['regions'].flatten().tolist(),
+        loss_off=float(loss_off.mean()), loss_on=float(loss_on.mean()),
+        target_mean=float(target.mean()), beneficial_fraction=float((target > 0).float().mean()),
+        prediction_mean=float(prediction.detach().mean()), utility_loss=float(loss.detach()))

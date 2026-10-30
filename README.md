@@ -1,5 +1,31 @@
 # Miss-RGBT
 
+## Server28 Research Update, 2026-10-30
+
+The migrated project runs at `/home/gaob/Miss-RGBT` on SSH `2028`.
+GPU0/1 run the fixed20 A utility/random pair; GPU2/3 run the separate
+batch10/LR1.25e-4 candidates. At16:55UTC the candidates completed epoch1
+validation and entered epoch2. A single epoch does not prove convergence.
+Candidate final5 weights will receive full val97 paired tracking; its
+mean SR selects one weight before official complete/Miss evaluation.
+Each candidate evaluator uses4 workers on its assigned GPU.
+
+The server28 standalone entrypoints in the repository root expect the
+existing frozen runtime at `runtime/task_utility_20261018` and protocol
+assets under `development/recovery_val97_20261030`. They are server-specific
+experiment scripts, not a self-contained installation or portable launcher.
+The `miss_rgbt/` snapshot and A configs match the frozen server28 code.
+Training data, pretrained weights, runtime assets and raw outputs stay on
+the server; publication of source does not establish benchmark gains.
+
+See [current evidence](docs/RESEARCH_STATUS_20261030.md),
+[candidate protocol](docs/CANDIDATE_TRAINING_LAUNCH_20261030.md),
+[selector control](docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md), and
+[global proposal failure audit](docs/GLOBAL_PROPOSAL_AUDIT_20261030.md).
+The requested baseline gains, all four Miss thresholds and three validated
+paper contributions remain incomplete. Older dated entries below describe
+the earlier server25 state.
+
 基于用户确认的“去掉CADTrack论文三个模块后训练得到的epoch20 baseline”，研究完整与缺失视图的共享模型训练。DropMoE是用户说明的CADTrack主干来源，本轮直接加载该baseline的epoch20训练权重，没有另载DropMoE原始文件。首版方案 A：独立缺失前向、局部任务特征补偿、C→M响应蒸馏及待验证的选择性M→C反馈。
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。
