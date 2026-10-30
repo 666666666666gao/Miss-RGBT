@@ -97,3 +97,20 @@ Runner SHA256:
 b340708f391ef41bf47ee3b03a4933af5c293248951a3d18180776c5ad4f5f32.
 This proves the bounded zero-branch entry comparison, not GPU parity,
 trained-branch benefit, later missing-template behavior or benchmark gain.
+
+## Selected-Branch Run In Progress
+
+The branch pilot completed normally at2026-10-30T20:17:09Z. Its preregistered
+development selection chose epoch3 of192updates; report SHA256
+6730fc3ceacddd2316de175d1cc2e60724ce23a43fa441215b9bbd678fcfdc8d.
+Queue PID96513 verified the six histories, selected-file SHA, four cleanup
+receipts, unchanged baseline, and bitwise complete-output checks before
+loading it.
+
+At20:19:59Z the same queue process remained live. It had completed E0 on
+2up for complete (PR20 97.1429, SR62.4762) and alternating outage
+(PR20 96.5714, SR60.2449); 16 both-missing holds and159 tracker calls in
+the outage condition. These are single-sequence CPU development observations,
+not a reported paired gain; selected-branch comparison remains pending.
+The next observed sequence was not yet complete at that check. Do not
+extrapolate these values to the four-sequence cohort or official metrics.

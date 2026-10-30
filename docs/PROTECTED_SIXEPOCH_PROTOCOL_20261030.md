@@ -83,3 +83,42 @@ No additional GPU job was started. Current CPU throughput supports the
 next combined observation near20:11UTC; final heldout checking may extend
 completion to approximately20:20UTC. Neither convergence nor the benchmark
 targets are established.
+
+## Completed Result
+
+PID61899 exited normally after192 optimizer updates in2584.97 seconds.
+Development histories for epochs1..6 are:
+
+| Epoch | Updates | Mean missing-state task loss |
+|---:|---:|---:|
+| 1 | 32 | 4.051320 |
+| 2 | 64 | 3.967925 |
+| 3 | 96 | 3.912870 |
+| 4 | 128 | 4.015621 |
+| 5 | 160 | 3.957024 |
+| 6 | 192 | 3.917524 |
+
+The registered final-five window was epochs2..6. Epoch3 was selected,
+with development score3.912870 versus its private initial development
+reference4.115627. Selected branch SHA256:
+`6730fc3ceacddd2316de175d1cc2e60724ce23a43fa441215b9bbd678fcfdc8d`.
+Its file is1,597,391 bytes. Exactly one branch checkpoint remains;
+the other four final-window snapshots have per-file size/SHA cleanup
+receipts and are absent. Baseline state remained unchanged, baseline
+gradients were absent, and sampled complete11 outputs were bitwise
+identical.
+
+After the registered development selection, the32 fixed val97 heldout
+tuples showed task-loss deltas11/01/10 of0/-0.188141/-0.363297. These are
+not PR/SR or closed-loop metrics; historical E0 exposure to val97 also
+remains uncertified. Do not use them to tune the branch or claim a
+benchmark gain. The fixed CPU tracking control is now running on
+train882 development sequences and retains real template availability
+history.
+
+Authoritative artifacts:
+
+- `reports/server28-protected-sixepoch-20261030/report.json`
+- `reports/server28-protected-sixepoch-20261030/development_history.json`
+- `reports/server28-protected-sixepoch-20261030/completed.json`
+- `reports/server28-protected-sixepoch-20261030/repair_epoch03.pth`
