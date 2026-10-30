@@ -855,6 +855,14 @@ no completed metrics receipt. All GPUs remain under250W configured limits;
 temperatures were83/79/77/75C at05:13UTC. Fixed20 GPU0/1 jobs are still
 running. Do not restart or add GPU processes.
 
+At05:46UTC all monitored trainers and historical evaluator were still live.
+Batch10 utility/random were at epoch4 updates7525/7750; the random run was
+about250updates from its epoch boundary and utility about475updates away.
+This observed progress is slower than the prior 40-minute estimate; check
+near the random boundary. Historical Miss receipts reached353/479
+(179 LasHeR-Miss,174 RGBT234-Miss), still without final metrics. GPU0-3
+temperatures were83/79/78/75C with250W limits.
+
 ## Protected six-epoch CPU pilot launched
 
 PID61899 launched2026-10-30T19:31:47Z and was verified live at19:32:58Z,

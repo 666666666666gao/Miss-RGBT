@@ -114,6 +114,13 @@ Historical A utility20 official Miss evaluation PID4138772 was live with
 receipt existed yet. GPU0/1 fixed20 utility/random training was also live.
 No jobs were restarted or added.
 
+At05:46UTC both candidate trainers and the historical evaluator remained
+live. Batch10 utility/random had reached epoch4 updates7525/7750, about
+475/250updates from their next epoch boundaries. Progress was slower than
+the earlier estimate, so the next check is scheduled near the random
+boundary. Historical Miss receipts reached353/479 (179 LasHeR-Miss,
+174 RGBT234-Miss), with no final metrics receipt.
+
 ## Epoch 2 Observation, 2026-10-30 18:42 UTC
 
 Both runs used the same hashed128 validation tuples. Fixed task-loss means:
