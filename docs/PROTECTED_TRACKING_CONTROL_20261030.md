@@ -122,3 +122,25 @@ the initial25-40minute post-pilot estimate was optimistic. Re-estimate after
 the E0 pass from measured outage and bike2north durations. Keep the single
 CPU process and do not raise concurrency while the GPU campaigns use host
 resources. The selected-branch comparison remains pending.
+
+At20:31:55Z the E0 pass had completed all four sequences in both conditions.
+Their unweighted four-sequence macro PR20/SR are:
+
+| Condition | PR20 | SR |
+|---|---:|---:|
+| Complete | 98.991597 | 78.587389 |
+| Alternating outage | 89.414603 | 71.045377 |
+
+These are from four short train882 development videos, not a benchmark or
+LasHeR-Miss estimate. The selected branch then completed its first full
+sequence condition, E0/repair complete on2up, with identical bbox SHA
+`b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e`.
+This confirms equality on that one complete trajectory; remaining selected
+conditions and the paired aggregate are still running.
+
+At20:31:55Z PID96513 had run40:30 total. Selected-branch tracking on the
+same CPU is materially slower than the E0 pass (about15.1 minutes for
+complete2up versus1.4 minutes for E0/2up), so the initial completion
+estimate no longer applies. Continue checking only near observed completion
+milestones, with180-300 second intervals; do not add a competing CPU/GPU
+job. Progress receipt: `tracking_progress.json`.
