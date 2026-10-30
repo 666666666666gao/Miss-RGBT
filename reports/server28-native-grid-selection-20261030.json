@@ -1,0 +1,179 @@
+{
+  "report_sha256": "8c80fa876762e8a12e8258b0a59ae4f579a48907b5457f3b96e001a98d6540c2",
+  "source_sha256": "0c0fec5cc36aa41d29dfe2ce9b91fa2b57e7366e1a7071d7860afaf2bd28e8bd",
+  "scope": "Post-hoc diagnostic of the preregistered51 proposals at46 fixed points. GT labels coverage and IoU only; no new selector or threshold fitted. Not an independent validation, closed-loop benefit or benchmark score.",
+  "aggregate": {
+    "observations": 45,
+    "all": {
+      "observations": 45,
+      "coverage": 42,
+      "center_coverage": 42,
+      "selected_support": 31,
+      "oracle_success": 33,
+      "actual_success": 28,
+      "selected_native": 27,
+      "localization_failure_despite_center_coverage": 9,
+      "selection_failure_despite_oracle_success": 5,
+      "harms_over_point_one": 5,
+      "selected_scales": {
+        "native": 27,
+        "previous": 12,
+        "initial": 6
+      },
+      "mean_native_iou": 0.5645174193139394,
+      "mean_selected_iou": 0.4850036565605491,
+      "mean_oracle_iou": 0.6476749607808625
+    },
+    "native_unsupported": {
+      "observations": 12,
+      "coverage": 9,
+      "center_coverage": 9,
+      "selected_support": 1,
+      "oracle_success": 1,
+      "actual_success": 1,
+      "selected_native": 6,
+      "localization_failure_despite_center_coverage": 8,
+      "selection_failure_despite_oracle_success": 0,
+      "harms_over_point_one": 0,
+      "selected_scales": {
+        "native": 6,
+        "previous": 5,
+        "initial": 1
+      },
+      "mean_native_iou": 0.0,
+      "mean_selected_iou": 0.05484094610918658,
+      "mean_oracle_iou": 0.19682825054992517
+    }
+  },
+  "per_state": {
+    "11": {
+      "observations": 16,
+      "all": {
+        "observations": 16,
+        "coverage": 15,
+        "center_coverage": 15,
+        "selected_support": 11,
+        "oracle_success": 12,
+        "actual_success": 10,
+        "selected_native": 8,
+        "localization_failure_despite_center_coverage": 3,
+        "selection_failure_despite_oracle_success": 2,
+        "harms_over_point_one": 2,
+        "selected_scales": {
+          "native": 8,
+          "previous": 5,
+          "initial": 3
+        },
+        "mean_native_iou": 0.5702795974902282,
+        "mean_selected_iou": 0.4969444325990188,
+        "mean_oracle_iou": 0.6531719317321154
+      },
+      "native_unsupported": {
+        "observations": 5,
+        "coverage": 4,
+        "center_coverage": 4,
+        "selected_support": 1,
+        "oracle_success": 1,
+        "actual_success": 1,
+        "selected_native": 2,
+        "localization_failure_despite_center_coverage": 3,
+        "selection_failure_despite_oracle_success": 0,
+        "harms_over_point_one": 0,
+        "selected_scales": {
+          "native": 2,
+          "previous": 3,
+          "initial": 0
+        },
+        "mean_native_iou": 0.0,
+        "mean_selected_iou": 0.1316182706620478,
+        "mean_oracle_iou": 0.18583538610503395
+      }
+    },
+    "01": {
+      "observations": 15,
+      "all": {
+        "observations": 15,
+        "coverage": 14,
+        "center_coverage": 14,
+        "selected_support": 10,
+        "oracle_success": 11,
+        "actual_success": 9,
+        "selected_native": 10,
+        "localization_failure_despite_center_coverage": 3,
+        "selection_failure_despite_oracle_success": 2,
+        "harms_over_point_one": 2,
+        "selected_scales": {
+          "native": 10,
+          "previous": 3,
+          "initial": 2
+        },
+        "mean_native_iou": 0.5638717110449097,
+        "mean_selected_iou": 0.4600197084246258,
+        "mean_oracle_iou": 0.6426528607635261
+      },
+      "native_unsupported": {
+        "observations": 3,
+        "coverage": 2,
+        "center_coverage": 2,
+        "selected_support": 0,
+        "oracle_success": 0,
+        "actual_success": 0,
+        "selected_native": 2,
+        "localization_failure_despite_center_coverage": 2,
+        "selection_failure_despite_oracle_success": 0,
+        "harms_over_point_one": 0,
+        "selected_scales": {
+          "native": 2,
+          "previous": 0,
+          "initial": 1
+        },
+        "mean_native_iou": 0.0,
+        "mean_selected_iou": 0.0,
+        "mean_oracle_iou": 0.15031879123396535
+      }
+    },
+    "10": {
+      "observations": 14,
+      "all": {
+        "observations": 14,
+        "coverage": 13,
+        "center_coverage": 13,
+        "selected_support": 10,
+        "oracle_success": 10,
+        "actual_success": 9,
+        "selected_native": 9,
+        "localization_failure_despite_center_coverage": 3,
+        "selection_failure_despite_oracle_success": 1,
+        "harms_over_point_one": 1,
+        "selected_scales": {
+          "native": 9,
+          "previous": 4,
+          "initial": 1
+        },
+        "mean_native_iou": 0.5586239031149979,
+        "mean_selected_iou": 0.49812557123364437,
+        "mean_oracle_iou": 0.6467735297122907
+      },
+      "native_unsupported": {
+        "observations": 4,
+        "coverage": 3,
+        "center_coverage": 3,
+        "selected_support": 0,
+        "oracle_success": 0,
+        "actual_success": 0,
+        "selected_native": 2,
+        "localization_failure_despite_center_coverage": 3,
+        "selection_failure_despite_oracle_success": 0,
+        "harms_over_point_one": 0,
+        "selected_scales": {
+          "native": 2,
+          "previous": 2,
+          "initial": 0
+        },
+        "mean_native_iou": 0.0,
+        "mean_selected_iou": 0.0,
+        "mean_oracle_iou": 0.2454514255930092
+      }
+    }
+  }
+}

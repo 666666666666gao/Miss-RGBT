@@ -1,15 +1,23 @@
 # Miss-RGBT evidence and remaining targets
 
-## Native-Scale Spatial Audit, 17:14 UTC
+## Native-Scale Spatial Audit, Complete
 
-CPU worker4006613 is running a fixed51crop proposal audit: native crop plus
-5x5image centers at previous predicted size and initial size, same46points.
-Current GT does not generate proposals or choose samples. Firstpoint29.35s;
-estimated finish17:35-17:38Z. Geometry over3924fullcohort observed validframes
-restores909/1505unsupported overlaps and744targetcenters. Initialscale adds
-only21overlaps/16centers beyond previousscale at double proposal count.
-These are geometric diagnostics, not proposal quality or recovery gains;
-neural result pending. See docs/NATIVE_GRID_AUDIT_20261030.md.
+CPU worker4006613 completed46points/2346candidates in1314.66s; terminal
+verified17:37UTC. Same51fixed proposals, no currentGT generates proposals.
+Across45validpoints, native/oracle/actualHann meanIoU:
+0.564517/0.647675/0.485004; IoU>=.5 counts32/33/28, actual5harms>.1.
+Among12nativeunsupported points,9regain center coverage but only1has an
+oracle successful localization, in complete11. Missing01/10 oracle success
+is0/3and0/4. Ranking alone cannot fix the8center-covered points without a
+successful candidate. Do not promote this fixed-grid selector or infer a
+closed-loop gain. See docs/NATIVE_GRID_AUDIT_20261030.md.
+
+Separate CPU reference worker4024185 is evaluating exact128cached candidate
+validation inputs on E0 and historicalA20. Input hash matches both training
+jobs. E0 completed with mean task loss5.408533 (11/01/10:
+4.412175/6.750802/5.062622); historicalA20 still pending at17:37UTC.
+This is a development task-loss reference, not PR/SR or CPU/GPU numerical
+equivalence. No stopping protocol changed. See docs/VALIDATION_REFERENCE_20261030.md.
 
 ## Oracle Crop Diagnostic, 17:07 UTC
 

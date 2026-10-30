@@ -1,0 +1,275 @@
+{
+  "summary": {
+    "observations": 46,
+    "valid": 45,
+    "native": {
+      "mean_iou": 0.5645174193139394,
+      "iou_at_least_half": 32,
+      "harms_over_point_one": 0
+    },
+    "oracle": {
+      "mean_iou": 0.6476749607808625,
+      "iou_at_least_half": 33,
+      "harms_over_point_one": 0
+    },
+    "hann": {
+      "mean_iou": 0.4850036565605491,
+      "iou_at_least_half": 28,
+      "harms_over_point_one": 5
+    },
+    "native_unsupported": 12,
+    "previous": {
+      "unsupported_support_restored": 9,
+      "unsupported_center_restored": 9,
+      "unsupported_oracle_iou_half": 1
+    },
+    "initial": {
+      "unsupported_support_restored": 8,
+      "unsupported_center_restored": 5,
+      "unsupported_oracle_iou_half": 1
+    }
+  },
+  "per_sequence": {
+    "boywalkinginsnow3": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.8152282266312342,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.8563104485480219,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.8099307767543701,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "native_unsupported": 0,
+      "previous": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "leftdrillmasterstanding": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.0,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.021542215113004276,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.0,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "native_unsupported": 6,
+      "previous": {
+        "unsupported_support_restored": 3,
+        "unsupported_center_restored": 3,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 3,
+        "unsupported_center_restored": 1,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "leftgirlunderthelamp": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.44195598821277726,
+        "iou_at_least_half": 4,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.6567022218478974,
+        "iou_at_least_half": 5,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.540081746682139,
+        "iou_at_least_half": 5,
+        "harms_over_point_one": 0
+      },
+      "native_unsupported": 2,
+      "previous": {
+        "unsupported_support_restored": 2,
+        "unsupported_center_restored": 2,
+        "unsupported_oracle_iou_half": 1
+      },
+      "initial": {
+        "unsupported_support_restored": 2,
+        "unsupported_center_restored": 2,
+        "unsupported_oracle_iou_half": 1
+      }
+    },
+    "girlridesbike": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.7487209707644616,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.7844029953762176,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.5944550369114601,
+        "iou_at_least_half": 5,
+        "harms_over_point_one": 1
+      },
+      "native_unsupported": 0,
+      "previous": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "midboyplayingphone": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.839752681328325,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.8808247694063578,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.43071004073615243,
+        "iou_at_least_half": 3,
+        "harms_over_point_one": 3
+      },
+      "native_unsupported": 0,
+      "previous": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "boywithumbrella": {
+      "observations": 6,
+      "valid": 6,
+      "native": {
+        "mean_iou": 0.818019175888658,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.848183857186192,
+        "iou_at_least_half": 6,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.6899249996940925,
+        "iou_at_least_half": 5,
+        "harms_over_point_one": 1
+      },
+      "native_unsupported": 0,
+      "previous": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "manrun": {
+      "observations": 4,
+      "valid": 4,
+      "native": {
+        "mean_iou": 0.8553054030436328,
+        "iou_at_least_half": 4,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.9492513054535059,
+        "iou_at_least_half": 4,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.8586372351388567,
+        "iou_at_least_half": 4,
+        "harms_over_point_one": 0
+      },
+      "native_unsupported": 0,
+      "previous": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 0,
+        "unsupported_center_restored": 0,
+        "unsupported_oracle_iou_half": 0
+      }
+    },
+    "ab_pingpongball": {
+      "observations": 6,
+      "valid": 5,
+      "native": {
+        "mean_iou": 0.0,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "oracle": {
+        "mean_iou": 0.21211379369172761,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "hann": {
+        "mean_iou": 0.0,
+        "iou_at_least_half": 0,
+        "harms_over_point_one": 0
+      },
+      "native_unsupported": 4,
+      "previous": {
+        "unsupported_support_restored": 4,
+        "unsupported_center_restored": 4,
+        "unsupported_oracle_iou_half": 0
+      },
+      "initial": {
+        "unsupported_support_restored": 3,
+        "unsupported_center_restored": 2,
+        "unsupported_oracle_iou_half": 0
+      }
+    }
+  },
+  "seconds": 1314.6566910743713
+}

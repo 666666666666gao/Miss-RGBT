@@ -34,6 +34,48 @@ Do not promote solely from oracle improvement.
 
 ## Execution
 
+Completed normally after1314.66seconds (21.91minutes),46observations,
+2346candidates. Worker4006613 was absent at17:37Z; final log reports COMPLETE,
+and completed.json/report.json/analysis.json exist. All native candidate
+boxes matched the previous audit exactly (maximum bbox difference0pixels).
+
+| Rule | Mean IoU,45 valid points | IoU>=0.5 | Drops>0.1 versus native |
+|---|---:|---:|---:|
+| Native | 0.564517 | 32 | 0 |
+| GT-oracle across51 candidates | 0.647675 | 33 | 0 |
+| Actual maximum Hann peak | 0.485004 | 28 | 5 |
+
+Of12native unsupported points, the union restores overlap and center
+coverage at9, but only1has any candidate reachingIoU>=0.5. That success is
+in complete11; neither missing state01 nor10 has an oracle success among
+their3and4unsupported points. Actual selection also succeeds at that same
+single complete point. Of9points with center coverage,8still lack a
+successful localization. A better ranker alone cannot produce IoU>=0.5
+at those8points from the present candidate boxes.
+
+Across all45points,5have an oracle success but actual selection fails.
+Coverage, candidate localization and ranking all have distinct limitations;
+these counts do not isolate their causes. Fixed-grid center offsets, scale,
+context and the native center prior remain confounded. This is not proof
+that localization can never recover outside the native crop. No grid
+budget, selector or threshold was tuned from these results.
+
+Do not integrate the51-crop peak selector as a recovery module: it harms
+average localization in this fixed diagnostic and provides no successful
+missing-state recovery at the selected unsupported points. Prior GTcenter
+diagnostics provide an upper bound only; current GT cannot generate a
+deployable proposal. Next recovery changes need better localized candidates
+and preservation of native tracking before an acceptance-only experiment.
+
+Raw evidence copied to outputs/server28-native-grid-20261030. Additional
+selection_analysis.json separates coverage, candidate ceiling and actual
+selection overall and per availability. Its analyzer is
+analyze_native_grid_selection28.py, run after completion, no neural changes.
+Raw report SHA256:
+8c80fa876762e8a12e8258b0a59ae4f579a48907b5457f3b96e001a98d6540c2.
+
+### Launch History
+
 CPU worker4006613 launched on SSH2028 at approximately17:12Z;
 Python3.7 syntax check passed. Verified live at17:13:15Z, CPU363%,
 RSS about1GB, first observation completed29.35s after model initialization.
@@ -52,7 +94,7 @@ and a normal terminal process state. Results pending.
 ## Full-Trajectory Geometry
 
 The exact same5x5 rules were evaluated geometrically over3924 observed
-valid frames in the existing fixed8 GPU outage cohort:
+valid frames in the existing fixed8 CPU outage cohort:
 
 | Scale rule | Restored overlap among1505 unsupported frames | Restored target center |
 |---|---:|---:|

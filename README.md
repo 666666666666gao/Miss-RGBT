@@ -22,6 +22,11 @@ See [current evidence](docs/RESEARCH_STATUS_20261030.md),
 [candidate protocol](docs/CANDIDATE_TRAINING_LAUNCH_20261030.md),
 [selector control](docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md), and
 [global proposal failure audit](docs/GLOBAL_PROPOSAL_AUDIT_20261030.md).
+The completed [native-scale grid audit](docs/NATIVE_GRID_AUDIT_20261030.md)
+also rejects direct peak-based grid recovery: mean IoU fell0.565to0.485,
+and none of the7unsupported missing-state points had an oracle success.
+These fixed-point diagnostics guide development; they are not benchmark
+scores or evidence of a validated recovery module.
 The requested baseline gains, all four Miss thresholds and three validated
 paper contributions remain incomplete. Older dated entries below describe
 the earlier server25 state.
