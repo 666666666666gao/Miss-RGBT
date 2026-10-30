@@ -183,6 +183,34 @@
         "unsupported_observed_frames": 0,
         "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
         "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 86.27450980392157,
+        "SR": 79.6451914098973,
+        "mean_iou": 0.8123960772147063,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "dc14ee64993ba33130924181ac02466c547036b07ea9c1556041d94b8a66d6d1",
+        "trace_sha256": "5f350146dcaad4058d984a0185e8bdf58c60fca3a398ca2f595a9b12317b9fa1"
+      }
+    },
+    "bike2north": {
+      "complete": {
+        "frames": 150,
+        "scored_frames": 149,
+        "PR20": 100.0,
+        "SR": 82.9658037711729,
+        "mean_iou": 0.8476632212727824,
+        "track_calls": 149,
+        "holds": 0,
+        "observed_valid_frames": 149,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "aa183cda14b62dd14d0dae4f56f64670d248f2430c167753a787dc743c02247a",
+        "trace_sha256": "476ccfbbf1d7ac8cc291a3d8c9e0b51a3343b174f803c640212f4d6b007b2e6e"
       }
     }
   }

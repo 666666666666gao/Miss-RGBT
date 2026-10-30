@@ -158,3 +158,13 @@ for the first two are heterogeneous:
 Only two of four outage pairs are complete. The sequence-specific results
 are mixed and not evidence of a general gain. Repair arm is slower: roughly
 15-22 minutes per completed sequence-condition in the observed samples.
+
+At20:42:37Z the selected repair had completed all four complete conditions
+and alternating outage on3/4 sequences. Every complete box SHA matches E0.
+The third outage pair (`wanderingly_1202`) adds PR+0.3922pp and SR-0.2054pp;
+the three completed outage-pair mean differences are PR-0.6312pp and
+SR+0.6228pp. These still mix signs and omit bike2north, so they do not
+support a general gain. Only the final bike2north outage condition remains
+in this paired control. The process was live and GPU training remained
+active; continue to the measured final condition rather than terminate on
+an intermediate mean.
