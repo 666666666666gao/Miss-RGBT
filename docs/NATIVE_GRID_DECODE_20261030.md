@@ -16,17 +16,19 @@ raw_confidence and raw_diagnostic alongside the original Hann fields.
 Completed prior outputs are preserved. Source hashes distinguish revisions.
 This is an explicit controlled experiment, not a change to live tracking.
 
-CPU worker4063222 launched on SSH2028 using four threads and CUDA disabled.
-Source audit_native_grid28.py; launcher launch_native_grid_decode28.py.
-Output reports/server28-native-grid-decode-20261030 and sibling log.
-Python3.7 compilation passed. Estimate about22minutes from the completed
-identical-budget audit; replace with actual launch timestamp and throughput.
-Check near completion with180-300seconds spacing.
+CPU worker4063222 launched17:44:20Z on SSH2028 using four threads and CUDA
+disabled. Source audit_native_grid28.py; launcher
+launch_native_grid_decode28.py. Python3.7 compilation passed.
+At18:02:12Z it was live, elapsed17:58, the same46-point audit at36/46.
+Elapsed is already longer than the prior21.91minute run's expected remaining;
+re-estimate using recent point cadence and inspect near completion with
+180-300seconds spacing. Do not start duplicate work.
 
-Launch receipt started17:44:20Z. Verified live17:45:57Z, elapsed1:43,
-CPU383%, RSS1.05GB;3observations completed87.35s after initialization.
-Expected completion18:06-18:09Z. Inspect near that milestone, not repeatedly
-before it. All four training PIDs were also live at17:45:57Z.
+Launch receipt started17:44:20Z. At17:45:57Z, elapsed1:43, CPU383%,
+RSS1.05GB;3observations completed87.35s after initialization. Later
+progress at18:02:12Z was36/46; the initial finish estimate was optimistic.
+Use recent point cadence from the server log to estimate its remaining time.
+All four training PIDs were live18:02:12Z.
 Analyzer asserts matching observation identity/crop boxes and all valid
 Hann bbox coordinates against the completed prior report before reporting
 raw comparisons (rtol1e-4/atol0.05pixels).
@@ -50,3 +52,18 @@ deployment or parameter tuning on these46points.
 
 No recovery gain, novelty, final benchmark score or validated paper module
 has been established by this pending control.
+
+## Completed, 2026-10-30
+
+Worker4063222 completed46 observations/2346 candidates in1355.57seconds;
+process is absent and completed.json/report.json are present.
+The analyzer confirmed every valid Hann bbox matches the earlier run with
+maximum coordinate difference0pixels. Raw-score selected meanIoU is
+0.431677, versus Hann-selected0.485004 and native0.564517. Raw peak causes
+11 drops>0.1IoU versus native; Hann causes5. Raw oracle mean0.656347 versus
+Hann oracle0.647675, just0.008672 higher, with the same33/45 predictions
+atIoU>=0.5. In native-unsupported points, both decoders have just1/12
+oracle successes. Removing Hann is not a useful recovery path; this
+experiment does not identify which candidate representation/regression
+component limits localization. See
+docs/NATIVE_GRID_AUDIT_20261030.md and raw selection_analysis.json.

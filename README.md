@@ -27,6 +27,12 @@ also rejects direct peak-based grid recovery: mean IoU fell0.565to0.485,
 and none of the7unsupported missing-state points had an oracle success.
 These fixed-point diagnostics guide development; they are not benchmark
 scores or evidence of a validated recovery module.
+The paired [raw/Hann decode control](docs/NATIVE_GRID_DECODE_20261030.md)
+shows that dropping Hann worsens peak-selection mean IoU further to0.432,
+so the observed failure is not explained by Hann weighting alone.
+The [historical-A evaluation recovery](docs/HISTORICAL_A_MISS_RECOVERY_20261030.md)
+records an OOM from four concurrent workers on one occupied GPU, a passing
+two-GPU smoke, and the replacement full Miss evaluation at one worker/GPU.
 The requested baseline gains, all four Miss thresholds and three validated
 paper contributions remain incomplete. Older dated entries below describe
 the earlier server25 state.

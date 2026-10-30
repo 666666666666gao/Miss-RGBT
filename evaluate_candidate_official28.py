@@ -109,20 +109,28 @@ def main():
     parser.add_argument('--checkpoint', required=True)
     parser.add_argument('--output', required=True)
     parser.add_argument('--condition', choices=['complete', 'miss'], required=True)
-    parser.add_argument('--gpus', choices=['2', '3'], required=True)
+    parser.add_argument('--gpus', choices=['0', '1', '2', '3', '0,1', '2,3'], required=True)
+    parser.add_argument('--workers-per-gpu', type=int, default=4)
+    parser.add_argument('--limit', type=int)
     args = parser.parse_args()
+    assert args.workers_per_gpu >= 1
     output = Path(args.output).resolve()
     output.mkdir(parents=True, exist_ok=False)
     jobs, inventory = prepare(args.condition)
+    if args.limit is not None:
+        assert args.limit >= 1
+        jobs = jobs[:args.limit]
     checkpoint = str(Path(args.checkpoint).resolve())
     hashes = {str(p.relative_to(PROJECT)): sha(p) for folder in ['miss_rgbt', 'lib', 'scripts']
               for p in sorted((PROJECT / folder).rglob('*.py'))}
     physical_gpus = [int(gpu) for gpu in args.gpus.split(',')]
-    workers = 4 * len(physical_gpus)
+    workers = args.workers_per_gpu * len(physical_gpus)
     save(output / 'run.json', dict(checkpoint=checkpoint, checkpoint_sha256=sha(checkpoint),
         standalone_evaluator_sha256=sha(__file__),
         condition=args.condition, workers=workers, physical_gpus=physical_gpus, source_sha256=hashes,
-        frames=337353, sequences=479, protocol='fixed published masks; first frame complete; both missing hold; trained single-view inference; all frames scored'))
+        workers_per_gpu=args.workers_per_gpu, frames=sum(job['frames'] for job in jobs),
+        sequences=len(jobs), limit=args.limit,
+        protocol='fixed published masks; first frame complete; both missing hold; trained single-view inference; all frames scored'))
     for name in inventory['datasets']:
         (output / 'bbox' / name).mkdir(parents=True)
         (output / 'receipts' / name).mkdir(parents=True)
@@ -130,7 +138,16 @@ def main():
     mp.set_start_method('spawn', force=True)
     with mp.Pool(workers, initializer=worker_init, initargs=(checkpoint, str(output), physical_gpus)) as pool:
         receipts = list(pool.imap_unordered(sequence, jobs, chunksize=1))
-    assert len(receipts) == 479
+    assert len(receipts) == len(jobs)
+    if args.limit is not None:
+        save(output / 'smoke_completed.json', dict(
+            sequences=len(receipts), frames=sum(item['frames'] for item in receipts),
+            workers=workers, physical_gpus=physical_gpus,
+            scope='Execution smoke only; subset is not a benchmark result.'))
+        print(json.dumps(dict(smoke_sequences=len(receipts), workers=workers,
+                              physical_gpus=physical_gpus)), flush=True)
+        return
+    assert len(receipts) == 479 and sum(item['frames'] for item in receipts) == 337353
     save(output / 'all_receipts.json', receipts)
     metrics = {}
     for name, cls, keys in [('LasHeR-Miss', rgbt.LasHeR, ['PR', 'NPR', 'SR']),

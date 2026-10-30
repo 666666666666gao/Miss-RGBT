@@ -74,6 +74,39 @@ analyze_native_grid_selection28.py, run after completion, no neural changes.
 Raw report SHA256:
 8c80fa876762e8a12e8258b0a59ae4f579a48907b5457f3b96e001a98d6540c2.
 
+## Raw-Score Versus Hann Decode Control
+
+The paired rerun completed46/46 observations and2346candidates in
+1355.57seconds. Before comparing raw selection, the analyzer verified the
+same observation order and crop boxes and checked every valid Hann-decoded
+bbox against the prior report: maximum coordinate difference0pixels.
+The raw rerun report SHA256 is
+5e894005819fc257c86666c03b365cf9d68ba5047e8060a4c804a28eb694ce19.
+
+| Decode and selector | Mean IoU | IoU>=0.5 | Drops>0.1 vs native |
+|---|---:|---:|---:|
+| Native Hann | 0.564517 | 32/45 | 0 |
+| Candidate peak selected with Hann | 0.485004 | 28/45 | 5 |
+| Candidate peak selected without Hann | 0.431677 | 23/45 | 11 |
+| Hann GT-oracle ceiling | 0.647675 | 33/45 | 0 |
+| Raw-score GT-oracle ceiling | 0.656347 | 33/45 | 0 |
+
+Removing Hann changes candidate ranking but does not improve it: raw peak
+selection is worse by0.053326 mean IoU versus Hann selection and0.132840
+versus native. The raw oracle ceiling is only0.008672 above Hann oracle;
+the unsupported-state raw oracle still succeeds at only1/12 points, no
+better than Hann. Therefore the window is not the sole cause. The remaining
+gap is shared by candidate coverage/localization and unreliable response
+ranking; these one-step fixed points do not isolate a causal mechanism.
+Do not remove Hann or use raw peak as a recovery selector from this audit.
+
+The exact same score/size/offset outputs were decoded both ways. This
+controlled diagnostic establishes that the observed failures are not
+explained by Hann weighting alone, but it does not show that any particular
+representation, regression head or candidate strategy is causal.
+Full comparison is in
+outputs/server28-native-grid-decode-20261030/selection_analysis.json.
+
 ### Launch History
 
 CPU worker4006613 launched on SSH2028 at approximately17:12Z;

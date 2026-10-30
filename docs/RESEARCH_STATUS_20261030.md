@@ -20,10 +20,35 @@ E0 states11/01/10=4.412175/6.750802/5.062622; historicalA20=
 development task-loss reference, not PR/SR or CPU/GPU numerical equivalence.
 No stopping protocol changed. See docs/VALIDATION_REFERENCE_20261030.md.
 
-CPU worker4063222 now controls raw/Hann decoding on the identical51proposals
-and46points. Same score/size/offset outputs, no learned or GT-based selector.
-This separates a remaining decoder confound; no live training/tracker edit.
-Results pending. See docs/NATIVE_GRID_DECODE_20261030.md.
+CPU worker4063222 completed46points/2346candidates in1355.57s. Same
+Hann-decoded boxes as the earlier run (max difference0px). Hann/raw peak
+selection meanIoU .485004/.431677 vs native .564517; harms>0.1 are5/11.
+Oracle ceilings .647675/.656347; unsupported-state oracle success1/12 for
+both. Hann removal does not fix candidate ranking or localization. No live
+tracker change or module promotion. See docs/NATIVE_GRID_DECODE_20261030.md.
+
+Historical A full official Miss scoring was attempted concurrently on
+GPU1 but failed during four-worker model loading with CUDA OOM (only
+5.75/11.75MiB free at the failed allocation); the later cuDNN error is
+secondary. A measured single inference worker used500MB peak allocated and
+completed one565-frame sequence in52.04s on GPU1 alongside training.
+Evaluator now supports configurable workers and sequence-limited smoke.
+Two-GPU smoke completed2long official sequences/22546frames: ``blkboy`shead``
+12862frames on GPU1 and `boyshead9684`9684frames on GPU0. Both receipts
+contain finite boxes. The first controller stopped on an incorrect
+aggregate-receipt assumption; corrected controller PID4138770 verified the
+two per-sequence receipts and launched the complete historical A Miss
+evaluation, PID4138772, one worker per GPU, output
+results/server28_historical_a_20261030/miss_single_worker_per_gpu.
+At18:29UTC the evaluator was alive with0 full-run sequence receipts; no
+metrics yet. Smoke throughput suggests roughly4h for this run. The initial
+four-worker OOM output is preserved.
+
+Candidate GPU2/3 jobs are epoch2, updates3817/3931 at18:29UTC. Recent
+3.216/3.103seconds per update predicts next boundaries18:39/18:33UTC.
+Only epoch1 fixed128 task-loss validations exist; convergence is unproven.
+Fixed20 GPU0/1 utility/random are epoch4/5, updates9783/10195, finite;
+latest100 speed2.859/2.936s/update estimates completion Nov1 02:25/02:57UTC.
 
 ## Oracle Crop Diagnostic, 17:07 UTC
 
