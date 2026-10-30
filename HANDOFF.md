@@ -914,3 +914,9 @@ utility remains epoch4 at update7825. The four GPUs are still occupied,
 temperatures83/80/78/76C and limits250W. Do not infer GPU availability from
 the completed evaluation alone.
 
+At06:19UTC all four trainers were still live. Both batch10 candidates are
+now in epoch5, utility/random updates8125/8375; the epoch5 boundary proxy
+has not yet appeared. Each reported peak allocation21118406144bytes.
+Fixed20 utility/random are in epoch6 at14300/14525 updates. GPUs0-3 remain
+occupied; temperatures84/80/79/76C with250W limits.
+

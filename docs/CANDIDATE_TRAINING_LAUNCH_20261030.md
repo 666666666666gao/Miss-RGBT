@@ -157,3 +157,9 @@ threshold by0.221376pp; LasHeR-Miss PR is0.734826pp short, RGBT234-Miss
 MPR3.135647pp short and MSR3.788714pp short. This is not a complete-input
 evaluation or the active batch10 candidate. All official sequence receipts
 and curves are archived under `reports/historical-a-miss-20261031/`.
+
+At06:19UTC batch10 utility/random were both in epoch5 at updates8125/8375.
+The fixed-tuple epoch5 validation had not appeared. Both reported peak
+allocated memory21118406144bytes. Fixed20 GPU0/1 training remained active
+at epoch6 updates14300/14525, so all four GPUs remained occupied after the
+historical evaluation completed.
