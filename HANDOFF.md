@@ -839,6 +839,22 @@ No complete metrics exist. Rough remaining full-eval estimate is2h47m at
 observed worker throughput. GPU0-3 are84/80/79/76C, target85C and power
 limit250W. Snapshot: docs/SERVER28_LIVE_SNAPSHOT_20261030_1924Z.md.
 
+## 2026-10-31 05:14 UTC live GPU snapshot
+
+All four GPU campaigns remain live. GPU2/3 batch10 utility/random candidates
+are at epoch4 updates6925/7125; finite step logs continue and peak allocated
+memory is21118406144bytes each. Epoch4 validation has not appeared yet.
+Recent throughput puts the utility epoch boundary roughly40minutes away;
+check near that boundary rather than polling frequently. The registered
+early-stop rule starts after the epoch10 LR drop and requires3 stale epochs,
+so epoch4 is not a convergence decision.
+
+Historical A utility20 official Miss evaluation PID4138772 remains live
+with175/479 sequence receipts (103 LasHeR-Miss,72 RGBT234-Miss). There is
+no completed metrics receipt. All GPUs remain under250W configured limits;
+temperatures were83/79/77/75C at05:13UTC. Fixed20 GPU0/1 jobs are still
+running. Do not restart or add GPU processes.
+
 ## Protected six-epoch CPU pilot launched
 
 PID61899 launched2026-10-30T19:31:47Z and was verified live at19:32:58Z,

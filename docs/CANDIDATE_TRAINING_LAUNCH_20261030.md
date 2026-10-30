@@ -100,6 +100,20 @@ Controller polls are300 seconds; no automatic failure restart.
 The separate epoch-validation-plan document is a proposed read-only review;
 this launch document describes the actual implemented boundary.
 
+## Live State, 2026-10-31 05:14 UTC
+
+The batch10 utility/random trainers on GPU2/3 were both live at epoch4,
+updates6925/7125. Their step losses were finite and peak allocated memory
+was21118406144bytes on each GPU. The epoch4 validation boundary had not
+completed; based on observed throughput, utility was roughly40minutes from
+that boundary. No convergence judgment is supported before the registered
+post-LR-drop stopping window.
+
+Historical A utility20 official Miss evaluation PID4138772 was live with
+175/479 receipts:103 LasHeR-Miss and72 RGBT234-Miss. No aggregate metrics
+receipt existed yet. GPU0/1 fixed20 utility/random training was also live.
+No jobs were restarted or added.
+
 ## Epoch 2 Observation, 2026-10-30 18:42 UTC
 
 Both runs used the same hashed128 validation tuples. Fixed task-loss means:
