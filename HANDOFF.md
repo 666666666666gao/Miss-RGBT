@@ -806,3 +806,16 @@ Current evaluator use will record its actual SHA in `run.json`. This
 provenance delta does not justify restarting active jobs. Audit:
 docs/CANDIDATE_EVALUATOR_SOURCE_AUDIT_20261030.md.
 
+## 2026-10-30 19:10 UTC live check
+
+All five jobs remain live. Fixed20 utility/random are at updates10625/10975,
+epoch5, finite. Batch10 utility/random are at4600/4750, epoch3, finite;
+only epoch1/2 fixed128 task-loss validations exist, and only epoch01/02
+checkpoints have completed. Historical A utility20 LasHeR-Miss evaluation
+PID4138772 has8/479 receipts and62941 completed frames, all on LasHeR-Miss.
+No complete metrics exist. First8 receipt throughput projects about3.1h
+remaining for the337353-frame evaluation, but this is rough because jobs are
+sorted longest first. GPU0-3 temperatures84/80/79/73C; all power limits
+250W and target temperature85C. Snapshot:
+docs/SERVER28_LIVE_SNAPSHOT_20261030_1910Z.md.
+
