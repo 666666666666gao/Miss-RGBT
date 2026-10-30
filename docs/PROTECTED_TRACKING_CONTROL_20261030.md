@@ -114,3 +114,11 @@ the outage condition. These are single-sequence CPU development observations,
 not a reported paired gain; selected-branch comparison remains pending.
 The next observed sequence was not yet complete at that check. Do not
 extrapolate these values to the four-sequence cohort or official metrics.
+
+At20:27:29Z, the queue remained live and had completed E0 on the first two
+sequences in both conditions and the third sequence in complete condition.
+Observed runtimes ranged from86.59 to544.99seconds per sequence-condition;
+the initial25-40minute post-pilot estimate was optimistic. Re-estimate after
+the E0 pass from measured outage and bike2north durations. Keep the single
+CPU process and do not raise concurrency while the GPU campaigns use host
+resources. The selected-branch comparison remains pending.

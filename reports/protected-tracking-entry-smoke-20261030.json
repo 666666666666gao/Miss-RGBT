@@ -1,0 +1,59 @@
+{
+  "status": "ZERO_REPAIR_TRACKING_ENTRY_PARITY_PASSED",
+  "frames_per_condition": 33,
+  "sequence": "2up",
+  "model_conditions": 4,
+  "results": {
+    "False": {
+      "complete": {
+        "frames": 33,
+        "scored_frames": 32,
+        "PR20": 100.0,
+        "SR": 67.55952380952381,
+        "mean_iou": 0.6801121211533382,
+        "track_calls": 32,
+        "holds": 0,
+        "observed_valid_frames": 32,
+        "unsupported_observed_frames": 0
+      },
+      "alternating_outage": {
+        "frames": 33,
+        "scored_frames": 32,
+        "PR20": 100.0,
+        "SR": 67.55952380952381,
+        "mean_iou": 0.6799291968293109,
+        "track_calls": 32,
+        "holds": 0,
+        "observed_valid_frames": 32,
+        "unsupported_observed_frames": 0
+      }
+    },
+    "True": {
+      "complete": {
+        "frames": 33,
+        "scored_frames": 32,
+        "PR20": 100.0,
+        "SR": 67.55952380952381,
+        "mean_iou": 0.6801121211533382,
+        "track_calls": 32,
+        "holds": 0,
+        "observed_valid_frames": 32,
+        "unsupported_observed_frames": 0
+      },
+      "alternating_outage": {
+        "frames": 33,
+        "scored_frames": 32,
+        "PR20": 100.0,
+        "SR": 67.55952380952381,
+        "mean_iou": 0.6799291968293109,
+        "track_calls": 32,
+        "holds": 0,
+        "observed_valid_frames": 32,
+        "unsupported_observed_frames": 0
+      }
+    }
+  },
+  "seconds": 73.00093364715576,
+  "runner_sha256": "b340708f391ef41bf47ee3b03a4933af5c293248951a3d18180776c5ad4f5f32",
+  "scope": "Numerical entry smoke on first33 frames, including first missing search observation. Not selected-repair or benchmark evidence."
+}

@@ -1,0 +1,95 @@
+{
+  "launch": {
+    "pid": 61899,
+    "started_utc": "2026-10-30T19:31:47.496661Z",
+    "device": "cpu",
+    "cpu_threads": 4,
+    "epochs": 6,
+    "updates_per_epoch": 32,
+    "effective_batch": 4,
+    "learning_rate": 0.0001,
+    "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+    "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+    },
+    "selection": "Lowest development mean 01/10 task loss among epochs2..6; ties earlier",
+    "scope": "Existing LocalRepair CPU pilot, not a new contribution or tracking metric"
+  },
+  "selected": {
+    "epoch": 3,
+    "updates": 96,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.53538604080677,
+        "10": 3.2903538048267365
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 3.9128699228167534
+    }
+  },
+  "retained": "/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030/repair_epoch03.pth",
+  "retained_sha256": "6730fc3ceacddd2316de175d1cc2e60724ce23a43fa441215b9bbd678fcfdc8d",
+  "initial_development": {
+    "task_loss": {
+      "11": 2.98817241191864,
+      "01": 4.718643486499786,
+      "10": 3.512610375881195
+    },
+    "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+    "selection_score": 4.115626931190491
+  },
+  "initial_heldout": {
+    "task_loss": {
+      "11": 2.8850730285048485,
+      "01": 4.529110640287399,
+      "10": 4.138867847621441
+    },
+    "complete_outputs_sha256": "5df9bd2dfd2dd8f9c86cef4cb5834db259d30a368e347481ffe95cbda98f66bb",
+    "selection_score": 4.33398924395442
+  },
+  "selected_heldout": {
+    "task_loss": {
+      "11": 2.8850730285048485,
+      "01": 4.340969517827034,
+      "10": 3.7755705937743187
+    },
+    "complete_outputs_sha256": "5df9bd2dfd2dd8f9c86cef4cb5834db259d30a368e347481ffe95cbda98f66bb",
+    "selection_score": 4.058270055800676
+  },
+  "heldout_loss_delta": {
+    "11": 0.0,
+    "01": -0.1881411224603653,
+    "10": -0.3632972538471222
+  },
+  "baseline_state_unchanged": true,
+  "complete_outputs_bitwise_equal": true,
+  "updates": 192,
+  "cleanup": [
+    {
+      "path": "/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030/repair_epoch02.pth",
+      "bytes": 1597391,
+      "sha256": "91c50f9ac87543bddb07e334ddcfaa214430541abcbe18b2f49fa704298f1eff"
+    },
+    {
+      "path": "/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030/repair_epoch04.pth",
+      "bytes": 1597391,
+      "sha256": "8dc49d71d13730ca02934963aace16a0819d69f7fa9f583c257162e3cfe8ed92"
+    },
+    {
+      "path": "/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030/repair_epoch05.pth",
+      "bytes": 1597391,
+      "sha256": "edb0f87bd4ad3a5b7e7a98600a29e9002d0250384dfd4d846f25e68463a952ed"
+    },
+    {
+      "path": "/home/gaob/Miss-RGBT/reports/server28-protected-sixepoch-20261030/repair_epoch06.pth",
+      "bytes": 1597391,
+      "sha256": "643c6311a038f8bb0efbdc08bb83244eaeebc4102c00a3bdc16ea9a838dd385b"
+    }
+  ],
+  "seconds": 2584.971428632736
+}

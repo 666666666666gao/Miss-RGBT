@@ -1,0 +1,83 @@
+{
+  "pid": 96513,
+  "started_utc": "2026-10-30T19:51:26.170240Z",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "pilot_pid": 61899,
+  "poll_seconds": 300,
+  "cohort": [
+    {
+      "name": "2up",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/2up",
+      "video_frames": 176,
+      "evaluated_frames": 176,
+      "gt_sha256": "2e2edfe5618b0ad25bbe1b60d5f2d6d50a48ea5ce494e754af0a4a6c6de7994d"
+    },
+    {
+      "name": "comingboy'shead",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/comingboy'shead",
+      "video_frames": 256,
+      "evaluated_frames": 256,
+      "gt_sha256": "d2c2ce6fa13d8e753ce5fb051d3b81492a83003e50ffd144d9fc28cff5ec8faf"
+    },
+    {
+      "name": "wanderingly_1202",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/wanderingly_1202",
+      "video_frames": 256,
+      "evaluated_frames": 256,
+      "gt_sha256": "269a8dfaac60691c2077c028693292788186ac2fc8cb141a3939819129b03ccb"
+    },
+    {
+      "name": "bike2north",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike2north",
+      "video_frames": 150,
+      "evaluated_frames": 150,
+      "gt_sha256": "a180a85da70d1ae4af599c7ac6b593009b76f265e1b87d1c697d3704da2a970a"
+    }
+  ],
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "conditions": [
+    "complete",
+    "alternating_outage"
+  ],
+  "pattern": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "frame_block": 32,
+  "models": [
+    "E0",
+    "selected_repair"
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/evaluate_protected_development28.py": "b340708f391ef41bf47ee3b03a4933af5c293248951a3d18180776c5ad4f5f32",
+    "/home/gaob/Miss-RGBT/cpu_diagnostic_tracker.py": "cae1ef91b909c2f43718453ebbbba8d36887d07aa79edc15e1bff799709d8b14",
+    "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+  },
+  "scope": "First4 train882 development sequences, at most257 frames each. Descriptive CPU tracking control; not official Miss metrics, full sequences, full development set or an unseen test. No checkpoint or parameter selection from tracking outcomes."
+}
