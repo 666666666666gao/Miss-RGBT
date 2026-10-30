@@ -1,5 +1,222 @@
 # Miss-RGBT 交接文档
 
+## 2026-10-30 分支保护控制实验
+
+CPU8次真实更新完成，只训练现有LocalRepair，baseline参数与缓冲区哈希完全不变；
+全11输入的score/size/offset图与预测框逐元素一致。8个训练/8个验证tuple；
+验证01损失下降0.00284952、10上升0.00021687，无稳定收益或完整训练收敛证据。
+不涵盖缺失动态模板历史，不作为新模块。详见docs/PROTECTED_ADAPTATION_AUDIT_20261030.md。
+另记录普通RankNet排序基线的固定allRank源码与许可，未复制/安装/修改在跑训练。
+16:15Z四路训练worker仍存活，候选1195/1224更新，首轮验证待完成。
+
+## 2026-10-30 Selector objective control completed
+
+Completed452.37s: regression stops45/select45, pairwise stops30/select26,
+other4 final heads per objective cleaned with receipts. Heldout4tuples/state,
+pairwise rawjointmean3.767578 vsregression3.774773/native3.769790.
+Againstnativewins5/ties1/loses6;state10worse. Normalizedbenefitpairwise
+0.0074%vsnative0.0681%;aggregation-sensitive,rankingaccuracy50.49%.
+No promotion/fulltracker/benchmarkgain. Rawlabels/features/report/analysis/
+selectedheads retained and copied locally; docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md.
+Latest16:31:14Z fixedutility6951/random7429, candidates1561/1601 firstepoch;
+allrecordedkeylossesfinite,noepochvalidationyet. Allfourtrainingjobscontinue.
+
+User explicitly authorizes single-GPU concurrent evaluation/data collection.
+Candidate val97 and official evaluators already use4workers/GPU after the
+assigned training releases memory; measure full-run occupancy/throughput.
+
+CPU PID3918799 runs matched frozen-feature SmoothL1 utility regression and
+ordinary pairwise ranking controls. Train16/development4 from train882;
+heldout4 val97 sequences, one causal tuple/state,11/01/10,16regions.
+Development chooses each objective's best final5, then heldout actual joint
+task loss compares selected4/native/random/single-region-oracle4.
+This is a small offline control, not a new module or benchmark improvement.
+At16:27:56Z all48train and12development slates were labeled, heldout pending.
+Output reports/server28-selector-objective-control-20261030; sibling .log.
+Protocol docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md.
+
+At16:24:36Z GPU0/1 utility6786/random7254 of50000, finite losses;
+GPU2/3 utility1409/random1444 of2000 first-epoch updates, finite losses,
+22710MiB each. First epoch boundaries estimated16:50:21/16:48:05Z before
+validation/save overhead. No epoch validation yet. Controllers and automatic
+evaluation3463984 remain live. All four jobs continue; no frozen source edits.
+
+## 2026-10-30 Wider-candidate audit completed
+
+CPUfixed9crop audit completed35observations/315proposals in207.81s,
+first2observed37stride perstate/sequence, initialtemplates only.
+Centerbatch vsactualsingleCPU maxbboxdifference3.05e-5pixels.
+MeanIoUcenter/oracle/Hann/raw/cosine/pilothead:
+.708827/.723872/.722725/.688270/.575025/.605296.
+Cosine/head harm7/6frames>0.1IoU; notpromoted. Only2sampledcenter
+zerooverlap, neitherrestoredby9crops. Earlysamplinglimitsdriftclaims.
+All3924GPUcohortobservedvalidframes geometric9cropunion restoresoverlap
+150/1505unsupportedframes(9.97%),center116(7.71%).
+Medianrequiredgridradius6=>169native-sizecrops, severelydominatedbylongseq.
+No recoverymodule/closedloopgain established. See docs/WIDER_SEARCH_AUDIT_20261030.md.
+16:05:12 UTC 核验：GPU0/1 固定训练更新6306/6745；GPU2/3 候选更新963/987，记录损失均有限。候选首轮边界预计16:48～16:51 UTC，尚无逐轮验证结果。自动评估控制器3463984仍在等待。
+
+## 2026-10-30 Independent-anchor rejection evidence
+
+IndependentCPU crop descriptors and cyclic wrong-anchor controls were tested.
+Easywronganchors fail as identity evidence:92.3%lowIoU predictedcandidates
+still favor ownanchor. Sameframe fixedoffset backgrounds beat even oracleGT
+target crops often. Initial64stride aliases32frame outage schedule; explicit
+37stride correction covers11/01/10 (57/22/23observedoutagerows), targettop1
+84.2/68.2/73.9%. All raw experiments preserved; no thresholds selected.
+FrozenMLPranker pilot trained24trainseq/dev8trainseq, heldout8valseq:
+71/24/22groups; stops30/select26oflast5; heldout11/01/10=18/16/17of22
+versuscosine18/17/16. No consistentgain; not deployed in tracker.
+Selectedhead retained, other4 removed withreceipts.
+See docs/INDEPENDENT_ANCHOR_AUDIT_20261030.md and reports/server28-anchor-ranker-pilot-20261030.
+At15:49:48Z fixed0/1updates5924/6340, candidates2/3updates611/625, finite.
+No overalltarget/module completion; wait for firstcandidateepoch validation.
+
+## 2026-10-30 Larger-batch adaptive candidates launched
+
+GPU2 utility controller3816049/train3816056 and GPU3 random
+controller3816050/train3816057 now train effective batch10 (micro5/accum2),
+LR1.25e-4. At15:24:15Z each had24 finite updates, identical cached128 val
+input hash and initial training-input hashes,22710/24576MiB occupancy100%.
+Separate trainer/evaluators preserve the original GPU0/1 frozen campaign.
+Each epoch checks a fixed val97 tuple loss proxy; LR-drop reference resets
+at11,3 consecutive <0.2% improvements trigger stop earliest14/max20.
+Rolling final5 epochs all receive full paired val97 tracking; mean macroSR
+selects one common checkpoint, then other4 are cleaned with receipts and
+selected checkpoint receives official complete/Miss evaluation.
+No official test selection. This is best of last5, not full training history.
+Not yet evidence of convergence, target attainment or three new modules.
+Pipeline smoke6short epochs/12updates and1sequence real tracking passed.
+See docs/CANDIDATE_TRAINING_LAUNCH_20261030.md and
+reports/server28-candidates-20261030/verified-launch.json.
+Next useful milestone firstepoch about80-90min from15:23Z; controllers poll300s.
+
+## 2026-10-30 GPU2/3 diagnostic and training update
+
+User authorized physical GPU2/3; server AGENTS/compute ledger now allow0-3.
+Fixed8 native GPU consistency diagnostic completed complete/GPU2 in177.76s
+and alternating-outage/GPU3 in156.35s,4602 video frames each. Both released
+their GPUs. Read-only context/response hooks preserved native tracker rules;
+all8 common31-frame prefixes matched exactly. Low available layer6 similarity
+AUC complete/outage=.478631/.765269, versus Hann=.564110/.835098 and
+raw=.570248/.845034. This does not justify a universal trigger. Layer6
+initial-template tokens are jointly contextualized, not independent identity
+evidence. No threshold or recovery intervention selected; frozen runtime
+unchanged. See docs/GPU_CONSISTENCY_AUDIT_20261030.md and
+reports/server28-val97-gpu-consistency-20261030.
+
+At15:07:17Z utility4866/random5217 of50000 were live with finite recorded
+key losses; evaluator3463984 remains waiting300s. ETA October31 21:10/19:16
+UTC (November1 05:10/03:16 Beijing). Overall research goal remains incomplete.
+
+## 2026-10-30 28号机正式训练启动
+
+2026-10-30独立CPU真实更新诊断完成：从历史A utility epoch20同一模型/AdamW状态出发，完整任务、完整+缺失、完整+缺失+正向KD各执行一次有效batch8更新，另8个train882元组只观察损失；耗时291.25秒，无GPU、无冻结科学源码修改。完整训练模式损失变化分别-0.001934886/-0.001088679/-0.001071393，额外样本变化-1.6868e-5/+5.1856e-6/+5.8413e-6。原始总梯度对完整梯度内积197.184/268.855/269.584，额外任务方向差值也为正，当前样本不能支持直接以负梯度冲突解释最终退化。实际改善受联合任务影响，但额外样本变化很小、未重复验证，不能称显著退化或模块有效。详见`docs/COMPLETE_TASK_UPDATE_AUDIT_20261030.md`及`reports/server28-task-interference-20261030/report.json`。暂不向当前训练添加梯度投影。
+
+2026-10-30T12:58:40Z活进程核验：utility1612/50000、random1740/50000，全部已记录关键损失有限；评估控制器仍真实等待。最近100步2.369/2.200秒每更新，暂估美国东部10月31日16:48/14:28训练完成。25号机源目录只读复查仍仅A完整模态两组metrics，未发现遗漏的A Miss结果。
+
+恢复诊断准备新增：`development/recovery_val97_20261030/protocol.json`及完整、RGB中断、TIR中断、交替中断四份固定mask，97序列/54646帧。每32视频帧切换预先固定状态，不读取测试mask或模型得分选周期；交替条件包含7546双缺失帧。独立入口`evaluate_val97_recovery28.py`可记录真实闭环框、Hann响应、动态模板真实替换、crop支持及离线GT IoU；没有向模型传入非首帧GT，也没有改冻结训练/评估入口。尚未执行此入口的神经网络诊断，不能称B模块已有效。
+
+目标Python3.7语法/CLI检查通过；100组原生crop比较及100组原生IoU比较通过。首检查脚本误用IoU返回维度，按实际一维接口修正后通过，无fallback。宽高非正260帧保留轨迹、开发几何/IoU标签为空。协议限制、未认证的E0验证集暴露边界、实际验证范围见`docs/VAL97_RECOVERY_PROTOCOL_20261030.md`，两份实际报告位于`reports/server28-val97-recovery-preparation.json`及`reports/server28-recovery-geometry-validation.json`。
+
+research技能要求的背景研究完成KeepTrack/GlobalTrack固定提交源码核查，结果见`docs/RECOVERY_SOURCE_REVIEW_20261030.md`。没有发现可直接移植且同时满足许可、局部可靠性/扩域搜索/原目标核验分离的完整实现；只借鉴机制问题，不复制不明许可或GPL实现。候选为有限扩域提案加独立固定初始模板接受，但当前只是假设，固定模板分数仍可能误认相似目标，需要错模板与同候选集对照，不作身份保证或新颖性声明。
+
+按用户“迁移了之后开始训练”要求，2026-10-30 11:54:37 UTC（美国东部07:54:37）启动现有 A utility/random 完整20轮配对配置。控制器 PID3453475，utility/GPU0 PID3453478，random/GPU1 PID3453479。两组均已完成真实首次优化器更新，损失有限，首update两份 microbatch 输入哈希一致，峰值分配显存16652186112字节。不是仅创建配置或迁移 smoke。
+
+固定预算：每组20轮×20000样本、microbatch4×累积2、50000次更新、seed2027；从相同 baseline epoch20 权重独立开始，冻结全部BN，reverse_weight=0，不因日志出现 kd_reverse 就称反向反馈已参与优化。沿用已有配置，本次属于28号机同配置训练，不是新方法改进或已达标证据。
+
+- 运行副本：`/home/gaob/Miss-RGBT/runtime/task_utility_20261018`。
+- 日志与启动/退出收据：`/home/gaob/Miss-RGBT/logs/server28_a_full20_20261030`。
+- utility输出：`/home/gaob/Miss-RGBT/runs/server28/a_utility_full20_seed2027`。
+- random输出：`/home/gaob/Miss-RGBT/runs/server28/a_random_full20_seed2027`。
+- 配置：`configs/a_utility_full20.json`、`configs/a_random_full20.json`。
+- 环境规格哈希81051614未变，运行源码哈希已保存于控制器日志目录。
+
+保存epoch10/20，最终固定epoch20评价，不按Test选轮次。25号机已有结果和权重保留；本次尚无最终模型或四套完整/Miss指标。训练控制器只负责训练与退出记录。
+
+随后已启动独立评估控制器PID3463984，等待两组训练均exit0及20轮/50000更新完成记录，再核对冻结源码哈希和GPU0/1空闲，依次运行utility完整/Miss、random完整/Miss四组全量评估。每组必须479序列/337353帧完成。等待间隔300秒，不自动重启失败任务。评估队列及收据：`logs/server28_a_evaluation_20261030`；结果：`results/server28_20261030`。
+
+训练集文件/标注清点已通过：train882/459435帧、val97/54646帧，RGB/TIR数量与init.txt行数无缺项，划分无序列交集。宽高非正标注分别1314/260行，既有dataset可见性筛选将其排除；未据此修改数据或训练逻辑。此检查没有全量解码图像，也不能证明原E0未见val97。证据：`reports/server28-training-data-audit.json`。
+
+2026-10-30T12:04:34Z实查活进程命令行：utility247/50000，random268/50000；已记录loss/taskC/taskM/update_loss_mean全部有限。最近100步每更新2.370/2.200秒，暂估美国东部10月31日16:49/14:28结束，届时才能启动全量评估。独立评估控制器仍在真实等待。快照：`reports/server28-training-progress-20261030.json`。研究证据及缺口：`docs/RESEARCH_STATUS_20261030.md`。
+
+启动后约2分钟实查：utility update51/50000、125.85秒，random update56/50000、124.93秒；两卡利用率100%，显存约19332/19300MiB，日志损失有限。以启动早期平均速度估计训练约31～35小时，仅作暂估，后续按实测修正。启动SSH已断开，控制器和两组训练仍存活，后台运行确认。
+
+## 2026-10-30 迁移到服务器28
+
+日期：2026-10-30。
+
+## 目录和运行入口
+
+- SSH：`2028`，用户：`gaob`。
+- 项目：`/home/gaob/Miss-RGBT`。
+- Conda 环境：`/home/gaob/Miss-RGBT/conda-envs/miss_rgbt`。
+- 物理 GPU：`0,1`。
+- 最新 A 实验运行副本：`/home/gaob/Miss-RGBT/runtime/task_utility_20261018`。
+- 原25号机 data2 实验资产：`/home/gaob/Miss-RGBT/artifacts/server25-data2`。
+- 原25号机文件保留，未删除。
+
+```bash
+ssh 2028
+source /home/gaob/Miss-RGBT/server28-env.sh
+cd /home/gaob/Miss-RGBT/runtime/task_utility_20261018
+python scripts/evaluate_model.py --help
+```
+
+需要 Conda 环境激活时：
+
+```bash
+source /home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/activate
+```
+
+## 验证和修正
+
+- home 源目录103419个文件已核对清单，无文件缺失。
+- 原 home 下模型、脚本、配置和权重242项 SHA256 校验通过。
+- data2 全量归档14287个文件 SHA256 全部通过，文件数一致；项目总量约49GB。
+- Python3.7.16 / Torch1.12.1+cu113 / NumPy1.21.5 / timm0.9.12 / OpenCV4.8.1 / PyYAML6.0.1。
+- GPU0、GPU1 固定种子 CUDA 矩阵检查均通过，结果 `31.01445198059082`。
+- utility/random epoch20 均严格重载通过，20轮、50000更新，模型张量有限。
+- utility/GPU0、random/GPU1 各完成 LasHeR `10runone` 前两帧真实跟踪检查，输出有限。该检查不计作完整评估。
+- 28号机 glibc2.43 加载旧 Torch 曾报可执行栈错误。只修改 `libtorch_cpu.so` 的 ELF GNU_STACK 标记，从7改为6，偏移124；未修改模型或损失。
+- 库修改前 SHA256：`db0f9b299cf9144912fc46166c1f8ceb772391e5e22efd03a4a7cb0ba41284bf`。
+- 库修改后 SHA256：`1a1de1d8fded88c2e708536c5c6a56ef3962df6dddbf1e5ef9f4de52403a6ce1`。
+- 运行副本的评估参数由 GPU2/3 改为 GPU0/1；原始归档和 checkpoint 内配置保留历史路径。
+- 环境规格哈希更新为 `81051614`，记录在 `.aris/compute/2028.md`。
+
+## 数据状态
+
+LasHeR 测试集使用 `/data/wangwj/dataset/LasHeR/testingset`，245条序列、220703帧，RGB/TIR 文件数量全部匹配原实验。训练配置指向 `/data/wangwj/dataset/LasHeR/trainingset`；未在本次迁移中重新核验全部训练图像。
+
+LasHeR/RGBT234 缺失 mask 均与原实验 SHA256 一致。
+
+RGBT234 已从25号机 `/data2/wangwj/dataset/RGBT234` 迁移至28号机 `/data/gb/RGBT234`，约7.8GB、234011个文件，全部 SHA256 与源端清单一致。运行副本 `reports/e0/inventory.json` 的数据路径已更新为 `/data/gb/RGBT234/RGB_T234`。
+
+RGBT234 的234条序列、116650帧均已核对，RGB/TIR 数量无缺项。实际评估入口 `scripts/evaluate_model.py` 的完整模态和 Miss 数据预检均通过：479条序列、337353帧，标注哈希、标注形状和缺失 mask 均匹配。当前数据已具备完整评估条件。
+
+校验记录：
+
+- `reports/server28-rgbt234-sha-check.log`：234011个文件 SHA256 全部通过。
+- `reports/server28-data-readiness.json`：两套数据均无不完整序列，mask 哈希匹配。
+- `reports/server28-evaluation-data-preflight.json`：完整模态和 Miss 的全量数据预检。
+
+utility 在物理 GPU0、random 在物理 GPU1 均完成 RGBT234 `afterrain` 前两帧真实跟踪，输出框有限。记录位于 `reports/server28-rgbt234-tracking-smoke-a_utility_full20_seed2027.json` 和 `reports/server28-rgbt234-tracking-smoke-a_random_full20_seed2027.json`，仅为迁移检查，不计作完整评估。
+
+## 已有 A 实验状态
+
+两项训练均已完成20轮、50000更新，完整模态评估已完成；目前未找到 A 实验 Miss 评估完成记录。
+
+| 模型 | LasHeR PR/NPR/SR | RGBT234 MPR/MSR |
+|---|---|---|
+| utility | 75.100912 / 71.359539 / 60.004465 | 91.450712 / 66.197862 |
+| random | 73.388636 / 70.127102 / 58.778041 | 90.297337 / 65.145811 |
+
+以上是25号机已完成的原始结果，非28号机重跑结果。
+
+本次未启动新的正式训练、正式评估或 GitHub 推送。
+
+
+
 ## 2026-10-19 清理记录
 
 已删除四个不再引用的 smoke/preflight 测试权重目录，并删除旧的 `docs/HANDOFF_20261013_launch.md`。正式 E0-FT、E2、E3-allBN、E4-allBN 权重、A 当前训练目录和原始审计证据均保留。当前项目与桌面只保留这一份正式交接文档。
@@ -435,3 +652,53 @@ epoch10文件已保存：E3 1236735527字节、E4 1241526503字节。这次只�
 2026-10-15用户补充授权：在保持骨干和模块组合不变的前提下，可按数据集调模块内部参数/层数，而非学习率或batch。后续允许不同数据集的修复宽度/内部深度、选择位置数量和门控/恢复预算配置；独立验证选定后，同一数据集完整/Miss共用固定配置，记录对应权重、参数量及成本，不能把不同配置冒称同一统一模型。当前20轮仍不改。当前确认的开发集是LasHeR val97，RGBT234独立开发协议待核实；具体规则已补docs/NEXT_EXPERIMENT_PRIORITY_20261015.md。
 
 \r\n
+## 2026-10-30 CPU prefix diagnostic completed
+
+Real CPU neural tracking passed all four fixed conditions on historical A
+utility epoch20, boywalkinginsnow3 first257 frames;575.93s, CUDA disabled,
+4 threads. Separate CPU port preserves native tracking/template rules.
+Complete/RGB-outage/TIR-outage/alternating meanIoU:
+0.796168/0.799209/0.766971/0.716680. Alternating had32 both-missing
+holds and224 tracker calls. All finite/common-prefix/template/hold checks
+passed; no observed target center outside crop or zero crop intersection.
+No crop escape reproduced here; no recovery/module gain established.
+Not full-val97, official benchmark scores, or CPU/GPU equivalence.
+Report: docs/VAL97_CPU_PREFIX_AUDIT_20261030.md.
+Evidence: reports/server28-val97-cpu-prefix-20261030.
+
+Training snapshot13:13:37Z: GPU0 utility1990/50000, GPU1 random2144/50000,
+logged key losses finite; evaluator3463984 waiting every300s. Training
+and frozen runtime unchanged. Overall research goal remains incomplete.
+
+2026-10-30T13:24:34Z: fixed first8 val97 full-sequence CPU comparison
+started as PID3608927; complete versus alternating,4602 frames/condition.
+Historical A utility20,4 CPU threads/CUDA disabled, expected80-95min.
+Live process and actual frame256 log verified13:27Z. Outputs:
+reports/server28-val97-cpu-cohort8-20261030, sibling .log.
+Launch protocol: docs/VAL97_CPU_COHORT8_LAUNCH_20261030.md.
+Do not restart while live; no cohort results established at this snapshot.
+Prior optimizer-state alias concern was not reproduced on actual Torch1.12.1;
+step/exp_avg/exp_avg_sq all distinct and saved values unchanged after update.
+
+## Utility selector audit completed
+
+Four fixed val97 search tuples/state,16 region interventions each for11/01/10.
+Pooled Spearman predicted score vs single-region actual task-loss gain:
+-.058/-.136/+.456. Native top4 normalized loss reduction:
+-.020%/+.082%/+.356%, versus seeded random +.094%/+.110%/+.156%;
+offline oracle +.326%/+.384%/+.554%. N=4/state with high variation;
+only preliminary10 signal, no general selector efficacy. Do not change live
+training or tune on this probe.
+Report: docs/UTILITY_RANKING_AUDIT_20261030.md.
+
+At14:39:41Z CPU fixed8 trajectory cohort completed normally, PID3608927,
+elapsed4507s. Across3924 observed valid pairs:836 outage-only crop-support
+losses,670 both-crop losses,6 complete-only losses (all6 in ab_pingpongball).
+Rates38.38% outage vs17.23% complete; weighted paired IoU delta-.119095.
+Only2/8 sequences have outage-only loss;6 have none. ab_pingpongball is
+poor in both conditions and has26 invalid GT frames. Low-Hann score AUC for
+no crop/GT overlap .837 outage vs .553 complete; raw .847/.559, not a
+universal/calibrated trigger. Investigate response plus template consistency,
+with threshold calibrated on train882. Not official metrics/module proof.
+Report: docs/VAL97_CPU_COHORT8_LAUNCH_20261030.md.
+
