@@ -168,3 +168,26 @@ support a general gain. Only the final bike2north outage condition remains
 in this paired control. The process was live and GPU training remained
 active; continue to the measured final condition rather than terminate on
 an intermediate mean.
+
+## Paired Run Completed
+
+The CPU queue completed normally after1632.39seconds, covering all four
+train882 development sequences (838 frames per model-condition) for E0 and
+the selected LocalRepair branch. The equal-sequence macro is:
+
+| Condition | Model | PR20 | SR | Mean IoU |
+|---|---|---:|---:|---:|
+| Complete | E0 | 98.991597 | 78.587389 | 0.801064 |
+| Complete | Selected repair | 98.991597 | 78.587389 | 0.801064 |
+| Alternating outage | E0 | 89.414603 | 71.045377 | 0.721076 |
+| Alternating outage | Selected repair | 90.954637 | 72.631065 | 0.737957 |
+
+Selected-minus-E0 outage macro is +1.540033pp PR20 and +1.585688pp SR.
+All four complete-condition bbox arrays are bitwise-identical to E0. The
+outage effects vary by sequence and include regressions; the aggregate is
+only four short development videos and must not be presented as official
+LasHeR-Miss, test-set generalization, or proof of a paper contribution.
+The experiment selected the branch checkpoint using development task loss,
+not tracking outcomes. Full per-sequence metrics, traces, and hashes are in
+`reports/protected-tracking-report-20261030.json`; the completion receipt is
+`reports/protected-tracking-completed-20261030.json`.

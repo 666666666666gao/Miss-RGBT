@@ -1,0 +1,356 @@
+{
+  "launch": {
+    "pid": 96513,
+    "started_utc": "2026-10-30T19:51:26.170240Z",
+    "device": "cpu",
+    "cpu_threads": 4,
+    "pilot_pid": 61899,
+    "poll_seconds": 300,
+    "cohort": [
+      {
+        "name": "2up",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/2up",
+        "video_frames": 176,
+        "evaluated_frames": 176,
+        "gt_sha256": "2e2edfe5618b0ad25bbe1b60d5f2d6d50a48ea5ce494e754af0a4a6c6de7994d"
+      },
+      {
+        "name": "comingboy'shead",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/comingboy'shead",
+        "video_frames": 256,
+        "evaluated_frames": 256,
+        "gt_sha256": "d2c2ce6fa13d8e753ce5fb051d3b81492a83003e50ffd144d9fc28cff5ec8faf"
+      },
+      {
+        "name": "wanderingly_1202",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/wanderingly_1202",
+        "video_frames": 256,
+        "evaluated_frames": 256,
+        "gt_sha256": "269a8dfaac60691c2077c028693292788186ac2fc8cb141a3939819129b03ccb"
+      },
+      {
+        "name": "bike2north",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike2north",
+        "video_frames": 150,
+        "evaluated_frames": 150,
+        "gt_sha256": "a180a85da70d1ae4af599c7ac6b593009b76f265e1b87d1c697d3704da2a970a"
+      }
+    ],
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "conditions": [
+      "complete",
+      "alternating_outage"
+    ],
+    "pattern": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "frame_block": 32,
+    "models": [
+      "E0",
+      "selected_repair"
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/evaluate_protected_development28.py": "b340708f391ef41bf47ee3b03a4933af5c293248951a3d18180776c5ad4f5f32",
+      "/home/gaob/Miss-RGBT/cpu_diagnostic_tracker.py": "cae1ef91b909c2f43718453ebbbba8d36887d07aa79edc15e1bff799709d8b14",
+      "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+      "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+    },
+    "scope": "First4 train882 development sequences, at most257 frames each. Descriptive CPU tracking control; not official Miss metrics, full sequences, full development set or an unseen test. No checkpoint or parameter selection from tracking outcomes."
+  },
+  "pilot_selected_epoch": 3,
+  "records": {
+    "E0": {
+      "2up": {
+        "complete": {
+          "frames": 176,
+          "scored_frames": 175,
+          "PR20": 97.14285714285714,
+          "SR": 62.476190476190474,
+          "mean_iou": 0.6317210585467816,
+          "track_calls": 175,
+          "holds": 0,
+          "observed_valid_frames": 175,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e",
+          "trace_sha256": "e2a096ea6ebb2135e30c98b94f39b5b6d170b16e4f7ff90a6e7ce867ec086da1"
+        },
+        "alternating_outage": {
+          "frames": 176,
+          "scored_frames": 175,
+          "PR20": 96.57142857142857,
+          "SR": 60.244897959183675,
+          "mean_iou": 0.6061899207116292,
+          "track_calls": 159,
+          "holds": 16,
+          "observed_valid_frames": 159,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "48847fa7f00fbb1732767dbf640accd271853180b0a36e63553b1ca41447fceb",
+          "trace_sha256": "a4c7924353b4a8813d1695e5af9c21690a11489e4a98cbf53aae5f52e4fdcd39"
+        }
+      },
+      "comingboy'shead": {
+        "complete": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 100.0,
+          "SR": 80.11204481792717,
+          "mean_iou": 0.8159279215245975,
+          "track_calls": 255,
+          "holds": 0,
+          "observed_valid_frames": 255,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "1af9a86ecbe9dcf4ee0a5df553c815ee511ea65506e77893a61144137a3a7d5b",
+          "trace_sha256": "5c379b318031dcda46c4dd248871bc8a6375939e6f6bdef8c0b581c84787329d"
+        },
+        "alternating_outage": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 88.62745098039215,
+          "SR": 72.08216619981326,
+          "mean_iou": 0.7318979912430428,
+          "track_calls": 223,
+          "holds": 32,
+          "observed_valid_frames": 223,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "fe3b65b34f19d230983a2f65143e92d34fe0f3bdc6a9227ad5cec83284660d66",
+          "trace_sha256": "d7ee2048ba35bb197afd9923d5242c9d2580c0f72e04f4c023c3dc7329ededf4"
+        }
+      },
+      "wanderingly_1202": {
+        "complete": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 98.82352941176471,
+          "SR": 88.79551820728291,
+          "mean_iou": 0.9089440130186397,
+          "track_calls": 255,
+          "holds": 0,
+          "observed_valid_frames": 255,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
+          "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
+        },
+        "alternating_outage": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 85.88235294117646,
+          "SR": 79.85060690943044,
+          "mean_iou": 0.815274578611724,
+          "track_calls": 223,
+          "holds": 32,
+          "observed_valid_frames": 223,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "54b35618b017514641f4c42ba7ea97fe6bd124cf5aa6654ef0bed4ec7ae9262d",
+          "trace_sha256": "f5e16b561ade28d1e1d25fc0bd850ecf1ec8ae24c9b5fb9607015f1378401a88"
+        }
+      },
+      "bike2north": {
+        "complete": {
+          "frames": 150,
+          "scored_frames": 149,
+          "PR20": 100.0,
+          "SR": 82.9658037711729,
+          "mean_iou": 0.8476632212727824,
+          "track_calls": 149,
+          "holds": 0,
+          "observed_valid_frames": 149,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "aa183cda14b62dd14d0dae4f56f64670d248f2430c167753a787dc743c02247a",
+          "trace_sha256": "476ccfbbf1d7ac8cc291a3d8c9e0b51a3343b174f803c640212f4d6b007b2e6e"
+        },
+        "alternating_outage": {
+          "frames": 150,
+          "scored_frames": 149,
+          "PR20": 86.57718120805369,
+          "SR": 72.00383509108342,
+          "mean_iou": 0.7309430669188339,
+          "track_calls": 149,
+          "holds": 0,
+          "observed_valid_frames": 149,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "6c7fbbc3d53ecbf9816b2d9b26232c4a8e596b91289ef24690104bb82a22d1ae",
+          "trace_sha256": "5dfe037cb53dae9e6476e626ac84f073a6facae55407ed0d901d6d663608f7a1"
+        }
+      }
+    },
+    "selected_repair": {
+      "2up": {
+        "complete": {
+          "frames": 176,
+          "scored_frames": 175,
+          "PR20": 97.14285714285714,
+          "SR": 62.476190476190474,
+          "mean_iou": 0.6317210585467816,
+          "track_calls": 175,
+          "holds": 0,
+          "observed_valid_frames": 175,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e",
+          "trace_sha256": "e2a096ea6ebb2135e30c98b94f39b5b6d170b16e4f7ff90a6e7ce867ec086da1"
+        },
+        "alternating_outage": {
+          "frames": 176,
+          "scored_frames": 175,
+          "PR20": 94.28571428571428,
+          "SR": 61.795918367346935,
+          "mean_iou": 0.6242709241815164,
+          "track_calls": 159,
+          "holds": 16,
+          "observed_valid_frames": 159,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "1167e38373429efbfebc7b6c9aa2fad378ffa864b9ed0ea42a1d3a3b8f050fa7",
+          "trace_sha256": "2bffcccd516cafd45b4f875c51ec8564de7ba900e906e4bef3ff78293be66069"
+        }
+      },
+      "comingboy'shead": {
+        "complete": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 100.0,
+          "SR": 80.11204481792717,
+          "mean_iou": 0.8159279215245975,
+          "track_calls": 255,
+          "holds": 0,
+          "observed_valid_frames": 255,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "1af9a86ecbe9dcf4ee0a5df553c815ee511ea65506e77893a61144137a3a7d5b",
+          "trace_sha256": "5c379b318031dcda46c4dd248871bc8a6375939e6f6bdef8c0b581c84787329d"
+        },
+        "alternating_outage": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 88.62745098039215,
+          "SR": 72.60504201680672,
+          "mean_iou": 0.735849584221288,
+          "track_calls": 223,
+          "holds": 32,
+          "observed_valid_frames": 223,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "a495e13a5e5dc12b5efeb33a42bbcaaac4b55708b13c60633ba59ac7457d5e4d",
+          "trace_sha256": "964ba07b8249fa36dcdf4e01517f662a102f68642f88f5ba130406f5b46c23e2"
+        }
+      },
+      "wanderingly_1202": {
+        "complete": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 98.82352941176471,
+          "SR": 88.79551820728291,
+          "mean_iou": 0.9089440130186397,
+          "track_calls": 255,
+          "holds": 0,
+          "observed_valid_frames": 255,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
+          "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
+        },
+        "alternating_outage": {
+          "frames": 256,
+          "scored_frames": 255,
+          "PR20": 86.27450980392157,
+          "SR": 79.6451914098973,
+          "mean_iou": 0.8123960772147063,
+          "track_calls": 223,
+          "holds": 32,
+          "observed_valid_frames": 223,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "dc14ee64993ba33130924181ac02466c547036b07ea9c1556041d94b8a66d6d1",
+          "trace_sha256": "5f350146dcaad4058d984a0185e8bdf58c60fca3a398ca2f595a9b12317b9fa1"
+        }
+      },
+      "bike2north": {
+        "complete": {
+          "frames": 150,
+          "scored_frames": 149,
+          "PR20": 100.0,
+          "SR": 82.9658037711729,
+          "mean_iou": 0.8476632212727824,
+          "track_calls": 149,
+          "holds": 0,
+          "observed_valid_frames": 149,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "aa183cda14b62dd14d0dae4f56f64670d248f2430c167753a787dc743c02247a",
+          "trace_sha256": "476ccfbbf1d7ac8cc291a3d8c9e0b51a3343b174f803c640212f4d6b007b2e6e"
+        },
+        "alternating_outage": {
+          "frames": 150,
+          "scored_frames": 149,
+          "PR20": 94.63087248322147,
+          "SR": 76.47810802173218,
+          "mean_iou": 0.7793120691715214,
+          "track_calls": 149,
+          "holds": 0,
+          "observed_valid_frames": 149,
+          "unsupported_observed_frames": 0,
+          "bbox_sha256": "530275f7914c0d7e4ed31244f0b00531f7868c9774946502eef9801d66803db4",
+          "trace_sha256": "4ae33f6d59b9d04ddfa11fe4b2bedd4a33723d2b6030b6382d8302a1f64ba26a"
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "complete": {
+      "E0": {
+        "PR20": 98.99159663865547,
+        "SR": 78.58738931814337,
+        "mean_iou": 0.8010640535907003
+      },
+      "selected_repair": {
+        "PR20": 98.99159663865547,
+        "SR": 78.58738931814337,
+        "mean_iou": 0.8010640535907003
+      },
+      "selected_minus_E0": {
+        "PR20": 0.0,
+        "SR": 0.0,
+        "mean_iou": 0.0
+      }
+    },
+    "alternating_outage": {
+      "E0": {
+        "PR20": 89.41460342526271,
+        "SR": 71.0453765398777,
+        "mean_iou": 0.7210763893713075
+      },
+      "selected_repair": {
+        "PR20": 90.95463688831238,
+        "SR": 72.63106495394578,
+        "mean_iou": 0.7379571636972581
+      },
+      "selected_minus_E0": {
+        "PR20": 1.5400334630496673,
+        "SR": 1.5856884140680876,
+        "mean_iou": 0.016880774325950587
+      }
+    }
+  },
+  "complete_predictions_bitwise_equal": true,
+  "complete_prefix_before_outage_bitwise_equal": true,
+  "baseline_state_unchanged": true,
+  "seconds": 1632.3946733474731
+}
