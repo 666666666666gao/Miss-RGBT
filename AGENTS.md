@@ -1,6 +1,6 @@
 # Miss-RGBT 工作约定
 
-- 项目位于 2025 服务器 `/home/gaob/Miss-RGBT`；只使用物理 GPU2、3。
+- 项目位于 2028 服务器 `/home/gaob/Miss-RGBT`；用户于2026-10-30追加授权物理 GPU2、3，现在可使用 GPU0、1、2、3；启动前核对占用。
 - 不抢占其他项目，不读取或控制温度、功率。
 - 独立 conda 环境：`/home/gaob/Miss-RGBT/conda-envs/miss_rgbt`。
 - `lib/`、`experiments/cadtrack/` 保留实际 epoch20 baseline；新方法放在 `miss_rgbt/`。

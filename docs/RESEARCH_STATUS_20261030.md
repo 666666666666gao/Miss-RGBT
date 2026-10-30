@@ -1,5 +1,17 @@
 # Miss-RGBT evidence and remaining targets
 
+## Oracle Crop Diagnostic, 17:07 UTC
+
+CPU GT-guided diagnostic completed45points/135crops in73.88s. Of12
+native unsupported points, GTcenter+previous size restoresIoU>=.5 at6,
+GTcenter+true size at10, GTcenter+coarse tile size at0. Existing raw global
+oracle also0/12. Target median shortside searchpixels30.14/43.98/10.67.
+Center/scale/context/Hann effects interact; no deployable recovery/novelty
+or official gain. This narrows a concrete bottleneck before further recovery
+design. See docs/ORACLE_CROP_AUDIT_20261030.md. Existing four GPU trainings
+unchanged. Source and development evidence are attached to draft GitHub PR1,
+branch codex/server28-research; not merged into default main.
+
 ## Latest Update, 16:55 UTC
 
 Both candidates completed epoch1 and continued epoch2 at2062/2117 updates.

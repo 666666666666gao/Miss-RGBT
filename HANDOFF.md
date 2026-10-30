@@ -11,6 +11,31 @@ CPU8次真实更新完成，只训练现有LocalRepair，baseline参数与缓冲
 
 ## 2026-10-30 Global/coarse proposal audit completed
 
+Follow-up CPU GT-crop diagnostic3991543 COMPLETE73.88s,45points135crops.
+Native unsupported12: GTcenter+previous size reachesIoU>=.5 on6,
+GTcenter+true size on10, GTcenter+coarse tile size on0. Existing global raw
+oracle also0/12. Median target shortside searchpixels30.14/43.98/10.67.
+Center/scale/context/Hann changes are confounded; no sole-cause or deployable
+recovery claim. Next larger support must preserve resolution and separately
+test acceptance. Raw reports/server28-oracle-crop-20261030 copied locally.
+Draft GitHub PR1 created for codex/server28-research; main not merged.
+
+Launch history: PID3991543 launched17:03Z; live17:04:10Z,
+6/45points completed. Same fixed global-audit points; three GT-centered
+crops retain previous size/use true GT size/use prior half-image tile size.
+These use current GT and cannot be deployed or reported as recovery scores.
+Also recomputes raw-response oracle from existing proposals. Output
+reports/server28-oracle-crop-20261030; sibling .log; no GPU training changes.
+Protocol docs/ORACLE_CROP_AUDIT_20261030.md. Wait for terminal receipts.
+
+GitHub synchronization verified: branch codex/server28-research commit
+f4b0f185888007dc76c108ad3d2e25677e28d44e. Working tree clean, remote ref
+matches. model.py/objectives.py/task_utility.py SHA256 matches frozen server
+runtime. This publishes existing running A implementation, not a new change
+to active experiments. Default main was not merged.
+At17:00:29Z fixed GPU0/1 utility7675/random8158 updates, epoch4, recorded
+key losses finite; evaluation controller3463984 live and waiting.
+
 Latest16:55:34Z: candidate utility/random epoch1 validation completed,
 mean loss5.041177/4.980912, epoch01 weights exist, epoch2updates2062/2117.
 One epoch is not convergence or PR/SR evidence. AllGPU250W temperatures
