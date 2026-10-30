@@ -64,3 +64,22 @@ exposure to val97 remains uncertified, so this does not establish an entirely
 unseen benchmark evaluation. Main GPU training/evaluation processes remained
 live. The next combined observation is planned near20:11 UTC, with180-300
 second checks near actual completion or epoch boundaries.
+
+## First Development Observation
+
+At2026-10-30T19:46:15Z PID61899 was live and update59 of192 was
+recorded in epoch2. Epoch1 completed32 updates; fixed development task
+losses11/01/10 were2.9881724119/4.6337577999/3.4688829631, with missing-state
+mean4.0513203815. Complete-output SHA256 matched the pretraining reference:
+e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50.
+The initial loss reference remains private until development selection.
+These absolute losses therefore establish neither improvement nor regression.
+Epoch1 is outside the registered final-five selection window.
+
+All four original GPU trainers, both candidate controllers, and historical
+Miss evaluator4138772 remained live. GPU0..3 temperatures were83/80/78/76C,
+power caps250W, memory21607/21575/22710/22710MiB, utilization100/96/100/100%.
+No additional GPU job was started. Current CPU throughput supports the
+next combined observation near20:11UTC; final heldout checking may extend
+completion to approximately20:20UTC. Neither convergence nor the benchmark
+targets are established.
