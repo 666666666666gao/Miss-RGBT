@@ -756,3 +756,28 @@ universal/calibrated trigger. Investigate response plus template consistency,
 with threshold calibrated on train882. Not official metrics/module proof.
 Report: docs/VAL97_CPU_COHORT8_LAUNCH_20261030.md.
 
+## 2026-10-30 18:52 UTC server28 live state
+
+Four RTX 3090s report target temperature85C and power limit250W; current
+temperatures were84/80/79/75C on GPUs0-3. Existing jobs occupy all four GPUs.
+
+Fixed20 utility/random training on GPUs0/1 remains live, epoch5; latest
+observed log updates were10200/10600 and recorded loss fields finite. Its
+evaluation controller is still waiting for both jobs to exit.
+
+Batch10 utility/random candidates on GPUs2/3 remain live, epoch3, latest
+observed updates4250/4375, finite losses, peak allocated memory
+21118406144 bytes per process. Only epoch1/2 fixed128 task-loss validations
+are recorded; epoch3 validation is pending. These are not tracking metrics
+or convergence proof. Final selection still requires full val97 tracking
+over the last five epochs.
+
+Historical A utility20 LasHeR-Miss evaluation PID4138772 is live with one
+worker per GPU0/1. Four of479 sequence receipts are present (`blkboy`shead`,
+`boyshead9684`, `midredboy`, `broom`); no complete metrics yet. Preserve all
+jobs and continue checks every180-300 seconds, nearer candidate epoch
+boundaries estimated20:16-20:26 UTC from the18:49 launch receipt.
+
+Snapshot detail: docs/SERVER28_LIVE_SNAPSHOT_20261030_1852Z.md. Overall
+benchmark targets and three validated contributions remain unproven.
+
