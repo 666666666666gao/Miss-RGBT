@@ -920,3 +920,9 @@ has not yet appeared. Each reported peak allocation21118406144bytes.
 Fixed20 utility/random are in epoch6 at14300/14525 updates. GPUs0-3 remain
 occupied; temperatures84/80/79/76C with250W limits.
 
+At07:29UTC all four trainers remain live. Batch10 utility/random are at
+epoch5 updates9450/9750, with no epoch5 validation yet; their next
+boundaries are roughly11/5minutes away at observed throughput. Fixed20
+utility/random are in epoch7. All GPUs remain occupied, temperatures
+83/80/79/76C and configured power limits250W.
+
