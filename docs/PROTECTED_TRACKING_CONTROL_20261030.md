@@ -1,0 +1,99 @@
+# Frozen E0 / Selected LocalRepair Tracking Control
+
+This follows the fixed six-epoch CPU branch pilot. It tests the selected
+branch in closed-loop tracking rather than assuming sampled task loss
+predicts tracking quality. It is a control using existing LocalRepair,
+not a new module or evidence of novelty.
+
+## Fixed Before Execution
+
+- CPU only, four threads, no modification to frozen formal runtime.
+- Wait for existing pilot PID61899 at300-second intervals. No restart.
+  Continue only after its successful192-update completion, all six
+  development records, final-five selection, unchanged complete outputs,
+  unchanged baseline, selected branch SHA and four-weight cleanup checks.
+- First four names in the pilot's177-sequence development partition, in
+  stored order. Evaluate the first257 video frames, or the entire sequence
+  if shorter. These sequences are disjoint from the705 pilot-training and97
+  heldout sequences. The development partition selected the branch epoch;
+  these are descriptive development results, not an unseen test.
+- E0 availability-aware wrapper versus the same frozen E0 plus selected
+  LocalRepair. Restore raw E0 strictly for each model; only the selected
+  branch's state differs. No composite weight export is required.
+- Complete observations versus fixed32-frame blocks
+  `11,01,11,10,11,00`, repeating. Both-missing frames hold the previous
+  box without a network call or template update.
+- Reuse the existing CPU tracker crop, Hann decoding and native dynamic
+  template policy. Do not inject GT after first-frame initialization.
+- Record every box and observed crop-support diagnostic. Check complete
+  boxes match E0 bitwise across each evaluated prefix, both models match
+  for the first32 complete frames of the outage schedule, and baseline
+  parameter/buffer hashes remain unchanged.
+- Development macro PR20 and SR use the existing metric definitions:
+  center error <=20px; mean success at21 thresholds0..1 withIoU>threshold;
+  exclude initialization and nonpositive-size GT. Include both-missing
+  holds in scored frames. Also report meanIoU and lost-support counts.
+- No tracking-based epoch selection, parameter adjustment or checkpoint
+  cleanup. The six-epoch pilot remains the sole selection authority.
+
+## Scope and Timing
+
+At most4112 video frames across four model/condition combinations.
+Based on the earlier fixed8 CPU cohort, estimate30-45 minutes after
+the pilot finishes, depending on actual selected sequence lengths.
+Check near the estimated completion, with180-300 second observations.
+
+This is neither full-sequence/full-development validation, official
+LasHeR/RGBT234/Miss evaluation, GPU equivalence nor proof of convergence.
+Complete-output equality is tested on complete histories; mixed histories
+may diverge after outage and are part of the tracking comparison.
+
+Runner: `evaluate_protected_development28.py`.
+Launcher: `launch_protected_tracking28.py`.
+Output: `/home/gaob/Miss-RGBT/reports/server28-protected-tracking-development-20261030`.
+Log: the sibling `.log` file.
+
+## Verified Queue and Actual Cohort
+
+PID96513 started2026-10-30T19:51:26Z. At19:51:34Z its live command
+line and launch record were checked; it was sleeping while the original
+pilot61899 remained live. Both files compiled with the server Python3.7;
+deployed runner/launcher SHA256 matched local sources. No tracking result
+exists yet, and successful syntax/queue checks do not establish numerical
+tracking correctness.
+
+The fixed first-four development sequence selection produced:
+
+| Sequence | Total frames | Evaluated frames |
+|---|---:|---:|
+| 2up | 176 | 176 |
+| comingboy'shead | 256 | 256 |
+| wanderingly_1202 | 256 | 256 |
+| bike2north | 150 | 150 |
+| Total per model/condition | 838 | 838 |
+
+All four happen to fit within the predeclared257-frame budget, so the
+actual experiment covers these four sequences in full,3352 video frames
+across two models and two conditions. The launch scope's conservative
+"not full sequences" wording describes the budgeted general protocol;
+the actual frame counts above establish full coverage of this small cohort,
+not full177-sequence development or97-sequence validation. Revised runtime
+estimate25-40 minutes after the pilot ends. The selected repair itself
+has not yet been loaded or evaluated.
+
+## Numerical Entry Verification
+
+`verify_protected_tracking_entry28.py` completed successfully on server
+Python3.7/Torch1.12.1 in73.00 seconds. On the first33 frames of2up,
+including the first missing-search frame, E0 and E0+zero-initialized repair
+produced bitwise identical boxes in both conditions. All four tracks had
+32 neural calls, finite boxes, and unchanged baseline state hashes.
+The script asserts equality of the entire box arrays, not just matching
+aggregate metrics. No selected trained branch was used.
+
+Receipt: `reports/server28-protected-tracking-entry-smoke-20261030.json`;
+local copy: `outputs/protected-tracking-entry-smoke-20261030.json`.
+Runner SHA256:
+b340708f391ef41bf47ee3b03a4933af5c293248951a3d18180776c5ad4f5f32.
+This proves the bounded zero-branch entry comparison, not GPU parity,
+trained-branch benefit, later missing-template behavior or benchmark gain.
