@@ -892,3 +892,25 @@ E0 pretrainingvalexposure remains uncertified. Nextcombinedcheck20:11UTC,
 near mainrandomcandidate boundary and potential CPUcompletion. Do not
 restart while live; resultsstillpending.
 
+## 2026-10-31 05:56 UTC historical A Miss evaluation completed
+
+PID4138772 exited after writing metrics and completion receipts for all479
+sequences/337353frames; the two dataset directories contain245 and234
+sequence receipts. Runtime was12528.71seconds. Historical A utility20 scores:
+LasHeR-Miss PR/SR68.565174/54.621376; RGBT234-Miss MPR/MSR84.964353/
+60.511286. Against E0 Miss baseline the deltas are+5.092667/+4.038228 and
++2.169539/+0.936850pp. It clears LasHeR-Miss SR by0.221376pp, but misses
+LasHeR-Miss PR by0.734826pp, RGBT234-Miss MPR by3.135647pp and MSR by
+3.788714pp. These are not complete-input results and do not establish the
+requested approximately+2 complete-input gain. This is the historical
+utility20 checkpoint, not either active batch10 candidate. Exact metrics,
+all receipts, curves and run manifest are archived in
+reports/historical-a-miss-20261031/.
+
+At06:02UTC the historical evaluation was no longer running. The four GPU
+trainers remain active: fixed20 utility/random on GPU0/1 and batch10
+utility/random on GPU2/3. Batch10 random has entered epoch5 at update8050;
+utility remains epoch4 at update7825. The four GPUs are still occupied,
+temperatures83/80/78/76C and limits250W. Do not infer GPU availability from
+the completed evaluation alone.
+

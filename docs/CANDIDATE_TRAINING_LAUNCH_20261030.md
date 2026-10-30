@@ -146,3 +146,14 @@ boundaries20:34/20:17UTC. GPU0/1 fixed20 utility/random were at epoch5,
 Historical A Miss fill-in evaluation is separately running with one worker
 on each of GPU0/1; at18:42UTC it had2/479 sequence receipts. These times and
 task losses are progress indicators only, not final benchmark evidence.
+
+## Historical A Miss result, 2026-10-31 05:56 UTC
+
+The historical utility20 checkpoint completed all479 sequences/337353
+frames in12528.71seconds. Its Miss metrics are LasHeR PR/SR68.565174/
+54.621376 and RGBT234 MPR/MSR84.964353/60.511286. E0 deltas are
++5.092667/+4.038228 and+2.169539/+0.936850pp. LasHeR-Miss SR passes its
+threshold by0.221376pp; LasHeR-Miss PR is0.734826pp short, RGBT234-Miss
+MPR3.135647pp short and MSR3.788714pp short. This is not a complete-input
+evaluation or the active batch10 candidate. All official sequence receipts
+and curves are archived under `reports/historical-a-miss-20261031/`.
