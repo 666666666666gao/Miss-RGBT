@@ -1,0 +1,66 @@
+{
+  "observed_utc": "2026-10-31T05:25:42.027300Z",
+  "fixed_budget": {
+    "utility": {
+      "epochs": 20,
+      "checkpoint_epochs": [
+        10,
+        20
+      ],
+      "evaluation_epoch": 20,
+      "last_five_selection": false,
+      "saved_weights_now": []
+    },
+    "random": {
+      "epochs": 20,
+      "checkpoint_epochs": [
+        10,
+        20
+      ],
+      "evaluation_epoch": 20,
+      "last_five_selection": false,
+      "saved_weights_now": []
+    }
+  },
+  "adaptive_candidates": {
+    "utility": {
+      "controller_pid": 3816049,
+      "training_pid": 3816056,
+      "effective_batch": 10,
+      "learning_rate": 0.000125,
+      "early_stop_min_epochs": 12,
+      "patience": 3,
+      "drop_epoch": 10,
+      "last_five_selection": true,
+      "selection_rule": "Highest mean complete/alternating-outage macro validation SR among final5 epochs; ties choose earlier epoch",
+      "current_source_matches_launch": {
+        "train_candidates28.py": true,
+        "candidate_validation28.py": true,
+        "evaluate_candidate_val97_28.py": true,
+        "candidate_campaign28.py": true,
+        "evaluate_candidate_official28.py": false
+      }
+    },
+    "random": {
+      "controller_pid": 3816050,
+      "training_pid": 3816057,
+      "effective_batch": 10,
+      "learning_rate": 0.000125,
+      "early_stop_min_epochs": 12,
+      "patience": 3,
+      "drop_epoch": 10,
+      "last_five_selection": true,
+      "selection_rule": "Highest mean complete/alternating-outage macro validation SR among final5 epochs; ties choose earlier epoch",
+      "current_source_matches_launch": {
+        "train_candidates28.py": true,
+        "candidate_validation28.py": true,
+        "evaluate_candidate_val97_28.py": true,
+        "candidate_campaign28.py": true,
+        "evaluate_candidate_official28.py": false
+      }
+    }
+  },
+  "fixed_evaluation_controller_source_sha256": "b0f91914a219109f679424e3692c21ace5a66a16ac7730c6ea010783fba3f912",
+  "fixed_controller_actual_process": "PID     ELAPSED STAT COMMAND\n3463984    17:25:44 S    /home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u /home/gaob/Miss-RGBT/evaluate_after_training28.py",
+  "scope": "Lifecycle/config/source audit only, not convergence, final metrics or proof that future jobs will complete. Fixed20 controls do not implement final-five selection; that requirement is implemented by adaptive candidate campaigns."
+}

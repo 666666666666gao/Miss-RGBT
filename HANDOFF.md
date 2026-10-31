@@ -1303,3 +1303,16 @@ equalityacrossruns. Do noteditactiveevaluator/controller/analyzerhashes.
 docs/AVAILABILITY_VELOCITY_CONTROL_20261031.md containslimits/protocol.
 Reused16videos, notfreshreplication/officialscore/validatedmodule.
 
+## 2026-10-31 13:25 UTC+08 - Lifecycle scope verified
+
+Actualfixed20configscheckpoint_epochs[10,20], evaluate_after_training28.py
+usesonlyepoch20. They DO NOT performfinal5selection. Final5requirement
+isimplementedbybatch10adaptivecandidatecampaigns, notallfourruns.
+Noepoch16-19exist/willbesavedbyunchangedfixedconfigs;donotclaimotherwise.
+Training/controllers/validation sourcehashescandidatematchlaunch;official
+evaluatorknownprovenancechangealreadydocumented20261030audit.
+Archivedexactlivefixedqueueevaluate_after_training28.py inGitHub without
+changingservercopy, SHAb0f91914a219109f679424e3692c21ace5a66a16ac7730c6ea010783fba3f912.
+docs/TRAINING_LIFECYCLE_AUDIT_20261031.md andreportreceiptclarifyallstages.
+Futurecandidatefinal5eval/selection/cleanup/officialscoresstillpending.
+
