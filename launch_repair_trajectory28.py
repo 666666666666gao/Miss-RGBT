@@ -7,11 +7,11 @@ import subprocess
 import sys
 
 root = Path("/home/gaob/Miss-RGBT")
-receipt = root / "reports/server28-repair-trajectory-launch-20261031.json"
+receipt = root / "reports/server28-repair-trajectory-retry-launch-20261031.json"
 assert not receipt.exists()
-assert not (root / "reports/server28-repair-trajectory8-20261031").exists()
+assert not (root / "reports/server28-repair-trajectory8-retry-20261031").exists()
 command = [sys.executable, "-u", str(root / "run_repair_trajectory28.py"), "--mode", "controller"]
-with (root / "reports/server28-repair-trajectory8-20261031.log").open("xb") as log:
+with (root / "reports/server28-repair-trajectory8-retry-20261031.log").open("xb") as log:
     process = subprocess.Popen(command, cwd=str(root), stdout=log,
                                stderr=subprocess.STDOUT, start_new_session=True,
                                env=dict(os.environ, OMP_NUM_THREADS="1", MKL_NUM_THREADS="1",

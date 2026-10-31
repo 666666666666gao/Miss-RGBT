@@ -1916,3 +1916,8 @@ At20:22 the preceding state-template worker command lines342898/342899
 were verified actual. Preserve both experiment source sets and registered
 epoch6 checkpoints until their respective analyses complete.
 
+Correction20:38 UTC+08: first queue PID366251 failed before GPU allocation
+because witness used relative `__file__` and launcher absolute path. Failure
+log/receipt retained. Corrected absolute-path witness passes, and retry
+controller393144 is alive/waiting on342664; no retry GPU worker started.
+

@@ -16,9 +16,9 @@ from run_state_template28 import runtime, images, frame_image, flags_for, read, 
 
 ROOT = Path("/home/gaob/Miss-RGBT")
 RUNTIME = ROOT / "runtime/task_utility_20261018"
-OUTPUT = ROOT / "reports/server28-repair-trajectory8-20261031"
+OUTPUT = ROOT / "reports/server28-repair-trajectory8-retry-20261031"
 PREVIOUS = ROOT / "reports/server28-state-template8-20261031"
-WITNESS = ROOT / "reports/server28-repair-trajectory-entry-20261031.json"
+WITNESS = ROOT / "reports/server28-repair-trajectory-retry-entry-20261031.json"
 ARMS = ["native", "sham", "off"]
 CONDITIONS = ["complete", "block32_outage"]
 MODELS = ["utility", "random"]
@@ -26,7 +26,7 @@ MODELS = ["utility", "random"]
 
 def sources():
     return {str(path): sha(path) for path in [
-        Path(__file__), ROOT / "run_state_template28.py", ROOT / "cpu_diagnostic_tracker.py",
+        Path(__file__).resolve(), ROOT / "run_state_template28.py", ROOT / "cpu_diagnostic_tracker.py",
         ROOT / "evaluate_blind_motion28.py", ROOT / "analyze_epoch05_health28.py",
         ROOT / "evaluate_val97_recovery28.py",
         RUNTIME / "miss_rgbt/model.py", RUNTIME / "miss_rgbt/task_utility.py",

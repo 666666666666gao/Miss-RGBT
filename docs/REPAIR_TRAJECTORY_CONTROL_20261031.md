@@ -65,7 +65,7 @@ New isolated entrypoints: `run_repair_trajectory28.py` and
 `launch_repair_trajectory28.py`. They import unchanged helpers from the
 registered state-template runner; keep both experiments' dependencies
 unchanged through final analysis.
-Output `reports/server28-repair-trajectory8-20261031`, sibling `.log`.
+Output `reports/server28-repair-trajectory8-retry-20261031`, sibling `.log`.
 
 Controller waits on the actual preceding state-template controller PID
 every300seconds. Its exit must be followed by the verified48trajectory
@@ -83,12 +83,22 @@ Python3.7 compilation passed. The seven-call-per-model/arm CPU witness
 confirms native/sham trajectory identity, off/directly-disabled-module
 identity, restored selector RNG and unchanged frozen-network digest.
 
-Controller366251 registered at20:21:15 UTC+08. It waits on the actual
+The first CPU witness passed, but controller366251 exited before GPU
+allocation. The witness recorded `__file__` as a relative path when directly
+invoked, while the launcher uses an absolute script path; exact manifest
+comparison therefore failed on the path key. The original launch receipt
+and failure log are preserved; no GPU worker or output directory was created.
+The corrected `sources()` resolves its own path before hashing, and the retry
+uses a distinct output/launch path.
+
+The retry controller waits on the actual
 state-template controller PID342664 every300seconds. No repair-control
 GPU workers start until that process exits, its full48-trajectory report
 hash and completion receipt agree, and GPU0/1 each have at least3000MiB
 free. Source SHA256
-`1ebb46e1f68d66af53d0d4ffccd8d0116a3db5735dc36044827a4b28a1458aa3`.
-Witness SHA256
-`e9f3bb9d5125e6dcdecde3700a2ef5bd346aa4213d44c5799fb319dc6406dbbb0`.
+must be read from the retry witness and launch receipt.
 Queue and sources remain frozen through final analysis.
+Retry controller393144 registered at20:37:03 UTC+08. At20:37:58 it was
+verified alive and waiting on controller342664; no repair-control GPU
+workers exist. The retry CPU witness passes parity/frozen-state checks,
+and its absolute self-source path/hash matches the current source.

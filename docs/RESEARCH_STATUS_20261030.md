@@ -31,6 +31,10 @@ fresh development76..83. It will not launch GPU workers until the preceding
 48 trajectories and analyzer complete. See
 REPAIR_TRAJECTORY_CONTROL_20261031.md. The matched checkpoint weights remain
 protected by the original-weight cleanup inventory.
+The first queue-controller attempt failed before allocation due to relative
+versus absolute `__file__` in its source manifest; its log is preserved.
+Corrected retry controller393144 is actually alive/waiting on template
+controller342664, with no GPU workers started.
 The completed observed-copy control worsens6of8noncomplete mean-loss
 cells, so copying is not promoted. The template-coverage paired pilot
 improves selected mean loss only0.19%, with3of6missing-search cells worse.
