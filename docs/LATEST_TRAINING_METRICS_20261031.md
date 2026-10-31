@@ -1,8 +1,8 @@
 # Recent Training Metrics
 
-Verified server state: 2026-10-31 17:59:33 UTC+08 (05:59:33 EDT).
-Cached validation updated through18:13 UTC+08; the training snapshot below
-remains the explicitly timestamped17:59:33 observation.
+Verified server state: 2026-10-31 18:44:59 UTC+08 (06:44:59 EDT).
+Training steps and validation histories were read directly from all four
+recovery run directories. All four trainer processes were verified alive.
 
 ## Live Recovery Training
 
@@ -11,30 +11,56 @@ and their controllers are alive. Model and optimizer were restored from
 verified checkpoints, but original RNG state was unavailable; this is not
 bitwise uninterrupted continuation.
 
-Progress snapshot at 17:59:33 UTC+08:
+Progress snapshot at 18:44:59 UTC+08:
 
 | GPU | Run | Current epoch | Total updates | Completed checkpoint epoch |
 |---|---|---:|---:|---:|
-| 0 | Fixed Utility, effective batch8 | 11 | 26598 | 10 |
-| 1 | Fixed Random, effective batch8 | 11 | 26749 | 10 |
-| 2 | Candidate Utility, effective batch10 | 10 | 19687 | 9 |
-| 3 | Candidate Random, effective batch10 | 11 | 21720 | 10 |
+| 0 | Fixed Utility, effective batch8 | 11 | 27499 | 10 |
+| 1 | Fixed Random, effective batch8 | 12 | 27593 | 11 |
+| 2 | Candidate Utility, effective batch10 | 11 | 20740 | 10 |
+| 3 | Candidate Random, effective batch10 | 12 | 22791 | 11 |
 
-Means over the latest100 logged updates, collected at17:59:33:
+Means over the latest100 logged records, collected at18:44:59.
+Logging is sparse; these are not necessarily100 consecutive updates.
 task_c/task_m/KD columns are logged microbatch terms; update_loss_mean is
 the mean update objective. These columns are not an additive decomposition.
 All five recorded loss fields were finite over every recovered logged update.
 
 | Run | update_loss_mean | task_c | task_m | KD forward | KD reverse |
 |---|---:|---:|---:|---:|---:|
-| Fixed Utility | 5.785116 | 2.532332 | 3.362975 | 0.598257 | 0.067988 |
-| Fixed Random | 5.753347 | 2.409846 | 3.260267 | 0.603756 | 0.057157 |
-| Candidate Utility | 6.020692 | 2.532831 | 3.416879 | 0.681238 | 0.069590 |
-| Candidate Random | 5.737769 | 2.346651 | 3.282969 | 0.645740 | 0.079484 |
+| Fixed Utility | 5.881230 | 2.576569 | 3.425462 | 0.607230 | 0.064264 |
+| Fixed Random | 5.884656 | 2.459552 | 3.474240 | 0.629053 | 0.047347 |
+| Candidate Utility | 5.713097 | 2.380517 | 3.167563 | 0.601034 | 0.070413 |
+| Candidate Random | 5.786517 | 2.297556 | 3.193426 | 0.645160 | 0.073039 |
 
 These training losses are not tracking precision, nor sufficient evidence of
-convergence. All four trainer processes were verified alive at17:58:41.
-Recent seconds/update were2.5272/2.5601/2.5588/2.5065 respectively.
+convergence. All four trainer processes were verified alive at18:44:21.
+Recent seconds/update were2.2771/2.4980/2.6014/2.5634 respectively.
+
+Fixed batch8 Random has also completed epoch11 cached validation:
+11/01/10 losses4.222112/5.883677/4.789905, mean4.965231
+(128 tuples, update27500). This belongs to a different batch configuration
+from the candidate history below.
+
+At19:07:02 UTC+08 both fixed batch8 models have completed epoch11
+validation on128tuples:
+
+| Model | Both available | TIR only | RGB only | Mean |
+|---|---:|---:|---:|---:|
+| Fixed Utility epoch11 | 4.155397 | 5.794388 | 4.734656 | 4.894814 |
+| Fixed Random epoch11 | 4.222112 | 5.883677 | 4.789905 | 4.965231 |
+
+Utility is lower on all three proxy states; this does not replace tracking
+evaluation or establish convergence. Recovered histories currently contain
+one validation entry each, not eleven new entries.
+Full downloaded/server SHA256 matches:
+Utility `47a29672de633aad726b4ed8072a037d37405b9ad28e28bc074f5b64349fd4ef`;
+Random `4df5c6adfbaa9eff8bf9b2a1b3138cf8d9b4196064ef4dd6f2331f999cc72d41`.
+At19:07:02 actual live trainers recorded fixedUtility12/update28072,
+fixedRandom12/28169, candidateUtility11/21249, candidateRandom12/23306.
+The earlier training-loss average table remains timestamped18:44:59.
+All four independent final verifiers and original cleanup waiter were
+also confirmed alive from their actual process command lines.
 
 ## Current Campaign: Completed Epoch5 Development Tracking
 

@@ -1755,3 +1755,67 @@ final18:40-18:55+08includingparent300sdelay,reviseearlier19:00-20:00.
 CandidateU11/update20181,R12/22222;nextvalidation~19:30-19:50+08.
 Do notpollrepeatedlybeforethosemilestones;allregisteredvideosretained.
 
+## 2026-10-31 18:34 UTC+08 - Observed-copy ordinary control running on CPU
+
+Newaudit_observed_copy28.py compiledPython3.7andPID220773launched;
+registration18:31:17actualalive18:31:53at360%CPU/RSS~1GiB. Nofinalresult.
+FrozenE0,nooptimization/GPUallocation;seed1702,batch4,16tuplesfromexisting
+705trainpopulation(disjoint177dev/97heldout),valmodetransforms. Initial
+templatecomplete,dynamic/search11/01/10ninecells,all3searches. Twoarms:
+nativeorcopyotherobservedstreamfeaturesonlytounavailablepositionsatblock6.
+Nosyntheticcompletefeatures/teacher/learnedgate/GTselection. GTconstructs
+ordinaryofflinecropsandscoresloss;notclosedloop. Checkfullhistorybitwise
+equality,unchangedobservedpositionsatintervention,frozenmodel,finiteoutputs.
+Separatearithmetic/token-count/source/hashanalysisafter18fullarm-cells.
+NotPRSR/novelmoduleevidence,andnocurrenttraining/registeredGPUsourcechanges.
+Source13ee19f1f82b0d8966c0ab2c2a63039a4b56063c25d1fa470231d2294127b431;
+registrationcdf8f129b1352a3e9b4127dca2d1a2ef591dfdbce566ebc690f3eb90ec4de40d;
+input52a5ac3b48bea5224dfbf46f53276b718041e1159fd889d1d5a9be0c37a5c7c9.
+Outputreports/server28-observed-copy-20261031,docOBSERVED_COPY_CONTROL.
+Preservesourceuntilfinalanalysis;provisional18:36-18:46thenrefinefirstbatch.
+READMEtopnowexplicitOct31recovery/newmetricsinsteadstaleepoch1snapshot.
+Gapfinal18:40-18:55,candidatevalidation19:30-19:50+08;goalactive.
+
+## 2026-10-31 19:05 UTC+08 - Completed controls and mechanism evidence
+
+Observed-copy CPU completed360.60s,18arm-cells/16tuples/all3searches.
+Six of eight noncomplete cells worsen; reject unconditional observed copy.
+Frozen-state/observed-position/complete equality passed.
+Report014156689a47ab34cc750fc55e4b9caa9215019fb30daaadab8a42790658e229;
+analysis188752b5ab8326a1c214b4865650165ed224d0b1ded7d9fa075e689514d51a43.
+Downloaded hashes equal completion receipts. No PR/SR/module claim.
+
+Gap controller72348/workers168995/168996 terminal at18:46:36, final64/64
+verified. Report2ff1cb19cb250aeb4cc6f98d6b440de1b6f32633c246206cfb23375617c61ebd.
+Geometry-native SR block1/32/128 +4.083916/+.949828/-4.805974;
+intervals[-1.532030,11.896272]/[.493879,1.251953]/[-12.499397,2.405965].
+Block128 history/exposure differs; not isolated cache-age effect.
+New audit_gap_mechanism28.py executed zero model calls/all64traces:
+reportae238e608c5f05739012810f542a529161d9e1375e388645a48e3960f359c8d3.
+Same geometry-history block128TIR center-raw SR-1.046317,
+scale addition+2.264695; RGB-.313900/+.591450,3exposed videos.
+Cannot attribute whole regression to scale staleness alone; no gate selected.
+Details/full tables in CALIBRATION_GAP_CONTROL_20261031.md.
+
+CMNeXt official DELIVER pinnedb3a76c33a7b22098b7285d845f22c910abc5cb16
+source/blob/license review completed, no integration/execution. Sigmoid
+residual weighting then elementwise max, not modality argmax; FRM updates
+both streams; no inspected availability-token/complete-identity contract.
+DocCMNEXT_SOURCE_REVIEW_20261031.md; ordinary selection/fusion prior art.
+
+Latest metrics snapshot18:44:59: fixedU11/27499,R12/27593,
+candidateU11/20740,R12/22791; all recorded five loss fields finite.
+New fixedRandom11validationmean4.965231 states4.222112/5.883677/4.789905.
+No convergence/current official results/final5selection/three modules proven.
+Candidate next validation~19:30-19:50+08. Original cleanup197828live18:46:36;
+registered12originalweights protected pending independent final checks.
+
+19:07:02 verified all4trainer cmdlines,4verifiers128343..128346 and cleanup197828
+live. FixedU12/28072,R12/28169,candidateU11/21249,R12/23306.
+New fixedUtility11validation4.894813754906257,states11/01/10=
+4.155396767/5.794388473/4.734656025; fixedRandom11mean4.965231249729793.
+These are batch8 proxies, not batch10 PRSR/convergence. Download/server
+history hashes match: U47a29672de633aad726b4ed8072a037d37405b9ad28e28bc074f5b64349fd4ef,
+R4df5c6adfbaa9eff8bf9b2a1b3138cf8d9b4196064ef4dd6f2331f999cc72d41.
+Next candidate boundaries approximately19:37-19:45+08 using latest update rate.
+

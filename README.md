@@ -1,14 +1,34 @@
 # Miss-RGBT
 
-## Server28 Research Update, 2026-10-30
+## Server28 Research Update, 2026-10-31
 
 The migrated project runs at `/home/gaob/Miss-RGBT` on SSH `2028`.
-GPU0/1 run the fixed20 A utility/random pair; GPU2/3 run the separate
-batch10/LR1.25e-4 candidates. At16:55UTC the candidates completed epoch1
-validation and entered epoch2. A single epoch does not prove convergence.
-Candidate final5 weights will receive full val97 paired tracking; its
-mean SR selects one weight before official complete/Miss evaluation.
-Each candidate evaluator uses4 workers on its assigned GPU.
+Four trainers were restored after server reboots: GPU0/1 run fixed20
+Utility/Random and GPU2/3 run batch10/LR1.25e-4 candidates. At18:20 UTC+08
+the candidates were in epochs11/12; no convergence is established.
+Each campaign evaluates its final5 weights on all97validation videos in
+complete and synthetic-outage conditions, selects one common weight by
+mean SR, then evaluates official complete/Miss datasets. These stages
+remain pending. Recovery restores model/AdamW and the scheduler epoch,
+but missing original RNG state prevents bitwise uninterrupted continuation.
+
+The latest completed full97 tracking check uses batch10 epoch5 weights:
+Utility PR20/SR79.596578/64.472777 complete and70.868974/56.749288 outage;
+Random80.667388/65.321675 and71.457491/57.152398. Utility is below Random,
+and paired-video difference intervals include zero. These are development
+scores, not the current campaign's official benchmark scores.
+
+See [latest full metrics](docs/LATEST_TRAINING_METRICS_20261031.md),
+[verified repair intervention](docs/CANDIDATE_REPAIR_INTERVENTION_20261031.md),
+[completed geometry control](docs/SPATIAL_CALIBRATION_RESULT_20261031.md),
+[completed gap control](docs/CALIBRATION_GAP_CONTROL_20261031.md), and
+[original-weight cleanup queue](docs/ORIGINAL_WEIGHT_CLEANUP_20261031.md).
+The CPU [observed-copy control](docs/OBSERVED_COPY_CONTROL_20261031.md)
+completed with6of8noncomplete loss cells worsening. The gap control found
+geometry SR+0.949828points at block32 but-4.805974at block128 on four fresh
+videos; unconditional correction is not supported as a general solution.
+The bounded [CMNeXt source review](docs/CMNEXT_SOURCE_REVIEW_20261031.md)
+records relevant selection/fusion prior art and adaptation limits.
 
 The server28 standalone entrypoints in the repository root expect the
 existing frozen runtime at `runtime/task_utility_20261018` and protocol

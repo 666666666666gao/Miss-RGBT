@@ -1,0 +1,11 @@
+{
+  "pid": 220773,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/audit_observed_copy28.py",
+    "--mode",
+    "run"
+  ],
+  "source_sha256": "13ee19f1f82b0d8966c0ab2c2a63039a4b56063c25d1fa470231d2294127b431"
+}
