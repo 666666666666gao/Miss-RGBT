@@ -1,4 +1,5 @@
 """Single-GPU matched closed-loop constant-velocity development control."""
+import argparse
 import datetime
 import hashlib
 import json
@@ -34,10 +35,16 @@ def network_digest(network):
 
 
 def main():
-    os.environ.update(CUDA_VISIBLE_DEVICES="0", OMP_NUM_THREADS="1",
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gpu", choices=["0", "1"], default="0")
+    parser.add_argument("--cohort-spec", type=Path)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    output = args.output
+    os.environ.update(CUDA_VISIBLE_DEVICES=args.gpu, OMP_NUM_THREADS="1",
                       MKL_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1")
     free = subprocess.check_output([
-        "nvidia-smi", "--id=0", "--query-gpu=memory.free",
+        "nvidia-smi", "--id=" + args.gpu, "--query-gpu=memory.free",
         "--format=csv,noheader,nounits"], universal_newlines=True)
     assert int(free.strip()) >= 3000, free
     import torch
@@ -46,7 +53,7 @@ def main():
     from lib.train.dataset.depth_utils import get_x_frame
     from miss_rgbt.tracker import MissingTracker
     torch.set_num_threads(1)
-    OUTPUT.mkdir(exist_ok=False)
+    output.mkdir(exist_ok=False)
     checkpoint = ROOT / "checkpoints/e0_availability/epoch20.pth.tar"
     packaged = json.loads(checkpoint.with_suffix(".json").read_text())
     assert sha(checkpoint) == packaged["packaged_sha256"]
@@ -55,8 +62,18 @@ def main():
     manifest_path = ROOT / "reports/server28-protected-sixepoch-20261030/inputs.json"
     manifest = json.loads(manifest_path.read_text())
     assert sha(manifest_path) == original["launch"]["input_manifest_sha256"]
-    cohort = original["launch"]["cohort"]
-    assert [item["name"] for item in cohort] == manifest["development_sequences"][:4]
+    if args.cohort_spec is None:
+        cohort = original["launch"]["cohort"]
+        assert [item["name"] for item in cohort] == manifest["development_sequences"][:4]
+    else:
+        spec = json.loads(args.cohort_spec.read_text())
+        assert spec["input_manifest_sha256"] == sha(manifest_path)
+        assert len(spec["development_indices"]) == len(set(spec["development_indices"])) == 8
+        assert set(spec["development_indices"]) <= set(range(4, 20))
+        cohort = spec["cohort"]
+        assert [item["name"] for item in cohort] == [
+            manifest["development_sequences"][index] for index in spec["development_indices"]]
+        assert all(item["evaluated_frames"] == item["video_frames"] for item in cohort)
     assert not set(item["name"] for item in cohort) & (
         set(manifest["train_sequences"]) | set(manifest["heldout_sequences"]))
     update_config_from_file(str(RUNTIME / "experiments/cadtrack/cadtrack.yaml"))
@@ -66,10 +83,11 @@ def main():
     started = time.time()
     launch = dict(
         pid=os.getpid(), started_utc=datetime.datetime.utcnow().isoformat() + "Z",
-        physical_gpu=0, evaluator_workers=1, memory_free_at_launch_mib=int(free),
+        physical_gpu=int(args.gpu), evaluator_workers=1, memory_free_at_launch_mib=int(free),
         checkpoint=str(checkpoint), checkpoint_sha256=sha(checkpoint),
         source_tracking_report_sha256=sha(SOURCE / "report.json"),
-        cohort=cohort, arms=["hold", "velocity"], conditions=["complete", "alternating_outage"],
+        cohort=cohort, cohort_spec_sha256=sha(args.cohort_spec) if args.cohort_spec else None,
+        arms=["hold", "velocity"], conditions=["complete", "alternating_outage"],
         frame_block=32, pattern=PATTERN,
         source_sha256={str(path): sha(path) for path in [
             Path(__file__), ROOT / "analyze_epoch05_health28.py",
@@ -77,9 +95,9 @@ def main():
             RUNTIME / "miss_rgbt/model.py", RUNTIME / "experiments/cadtrack/cadtrack.yaml"]},
         rule="Fixed center velocity from last two observed video-frame states; no GT, "
              "size change, clipping or template write on blind frames",
-        scope="Reused first4 train882 development videos, same GPU paired closed-loop control; "
+        scope="Registered train882 development videos, same GPU paired closed-loop control; "
               "ordinary constant velocity, no novel module or official result claim")
-    (OUTPUT / "launch.json").write_text(json.dumps(launch, indent=2) + "\n")
+    (output / "launch.json").write_text(json.dumps(launch, indent=2) + "\n")
     print("LAUNCH " + json.dumps(launch), flush=True)
     records, references = {}, {}
     for arm in launch["arms"]:
@@ -143,8 +161,8 @@ def main():
                     first_blind = blind.index(True)
                     assert np.array_equal(predicted[:first_blind], references[key][:first_blind])
                 basename = arm + "_" + name + "_" + condition
-                bbox_path = OUTPUT / (basename + ".txt")
-                trace_path = OUTPUT / (basename + ".json")
+                bbox_path = output / (basename + ".txt")
+                trace_path = output / (basename + ".json")
                 np.savetxt(str(bbox_path), predicted)
                 trace_path.write_text(json.dumps(trace, separators=(",", ":")) + "\n")
                 measured = metrics(predicted, target)
@@ -152,7 +170,7 @@ def main():
                     frames=frames, blind_frames=sum(blind), bbox_sha256=sha(bbox_path),
                     trace_sha256=sha(trace_path), seconds=time.time() - started)
                 records[arm][name][condition] = measured
-                (OUTPUT / "progress.json").write_text(json.dumps(records, indent=2) + "\n")
+                (output / "progress.json").write_text(json.dumps(records, indent=2) + "\n")
                 print("TRACK " + json.dumps(dict(arm=arm, sequence=name, condition=condition,
                                                  metrics=measured)), flush=True)
     assert network_digest(tracker.network) == baseline_sha
@@ -169,9 +187,9 @@ def main():
         baseline_state_unchanged=True, complete_outputs_bitwise_equal=True,
         pre_blind_prefix_bitwise_equal=True, no_blind_video_outputs_bitwise_equal=True,
         peak_allocated_bytes=torch.cuda.max_memory_allocated(), seconds=time.time() - started)
-    (OUTPUT / "report.json").write_text(json.dumps(report, indent=2) + "\n")
-    (OUTPUT / "completed.json").write_text(json.dumps(dict(
-        report_sha256=sha(OUTPUT / "report.json"), model_conditions=4, sequences=4,
+    (output / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+    (output / "completed.json").write_text(json.dumps(dict(
+        report_sha256=sha(output / "report.json"), model_conditions=4, sequences=len(cohort),
         seconds=time.time() - started), indent=2) + "\n")
     print("COMPLETE " + json.dumps(report), flush=True)
 

@@ -1164,3 +1164,20 @@ measurement, doesnotforecastfuturemeasurement. Noexternalcodeintegrated.
 At12:12:34+08 original4trainers andCPU869785live. OriginalLR/final5/
 selection unchanged; fullgoal remainsincomplete.
 
+## 2026-10-31 12:32 UTC+08 - Next16 motion control launched
+
+Controller967085, GPU0 evaluator967093, GPU1 evaluator967094 verified live.
+Four original trainers remain live; CPU869785 complete-template arm at
+epoch6/update166 at12:31:58. No convergence or official-score claim.
+Fixed unchanged CV versus hold on development indices4..19:16 full videos,
+7776 frames per arm/condition,64 trajectories total. Same-GPU paired methods;
+GPU0 eight videos3942frames, GPU1 eight videos3834frames.
+Output reports/server28-blind-motion-next16-20261031; controller polls300s.
+Budget20-35min from12:32; inspect near12:52-13:07, not early repetitive polls.
+Require report.json and completed.json plus both independent worker analyses.
+Code compiled with server Python before launch; frozen runtime unchanged.
+Launch receipt reports/blind-motion-next16-launch-20261031.json;
+protocol docs/BLIND_MOTION_NEXT16_PROTOCOL_20261031.md.
+Official targets, convergence, last5 selection/cleanup and three validated
+paper modules remain unfinished.
+

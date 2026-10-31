@@ -1,4 +1,5 @@
 """Verify closed-loop saved trajectories and separate blind/recovery scores."""
+import argparse
 import json
 from pathlib import Path
 
@@ -14,9 +15,13 @@ REPORT = ROOT / "reports/server28-blind-motion-closed-loop-20261031"
 
 
 def main():
-    completion = json.loads((REPORT / "completed.json").read_text())
-    assert sha(REPORT / "report.json") == completion["report_sha256"]
-    original = json.loads((REPORT / "report.json").read_text())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--report-dir", type=Path, default=REPORT)
+    args = parser.parse_args()
+    root = args.report_dir
+    completion = json.loads((root / "completed.json").read_text())
+    assert sha(root / "report.json") == completion["report_sha256"]
+    original = json.loads((root / "report.json").read_text())
     launch = original["launch"]
     assert sha(launch["checkpoint"]) == launch["checkpoint_sha256"]
     for path, expected in launch["source_sha256"].items():
@@ -35,7 +40,7 @@ def main():
         predictions = {}
         for arm in launch["arms"]:
             for condition in launch["conditions"]:
-                prefix = REPORT / (arm + "_" + name + "_" + condition)
+                prefix = root / (arm + "_" + name + "_" + condition)
                 receipt = original["records"][arm][name][condition]
                 assert sha(str(prefix) + ".txt") == receipt["bbox_sha256"]
                 assert sha(str(prefix) + ".json") == receipt["trace_sha256"]
@@ -73,7 +78,7 @@ def main():
                 metric: record["metrics"]["velocity"][metric] - record["metrics"]["hold"][metric]
                 for metric in ["PR20", "SR"]}
             groups[group].append(record)
-    assert trajectories == 16
+    assert trajectories == len(launch["cohort"]) * 4
     summaries = {}
     for group, rows in groups.items():
         scores = {arm: {metric: float(np.mean([row["metrics"][arm][metric] for row in rows]))
@@ -89,15 +94,14 @@ def main():
                               original["aggregate"]["alternating_outage"][arm][metric],
                               rtol=0, atol=1e-9)
     result = dict(
-        scope="Verified same-GPU first4 train882 dev closed-loop motion control; not official scores",
-        report_sha256=sha(REPORT / "report.json"), analyzer_sha256=sha(Path(__file__)),
+        scope="Verified same-GPU registered train882 dev closed-loop motion control; not official scores",
+        report_sha256=sha(root / "report.json"), analyzer_sha256=sha(Path(__file__)),
         trajectories_verified=trajectories, groups=summaries, per_sequence=groups,
         complete_outputs_bitwise_equal=True, pre_blind_prefix_bitwise_equal=True,
         interpretation="Groups use different video/frame membership and cannot be added as "
-                       "sequence macros. Three videos have blind intervals, two have subsequent "
-                       "observed frames; one ends during a blind interval. Ordinary fixed CV, "
-                       "reused development data, no novelty or generalization claim.")
-    with (REPORT / "analysis.json").open("x") as stream:
+                       "sequence macros. Video durations determine blind/recovery membership. "
+                       "Ordinary fixed CV, registered development data, no novelty claim.")
+    with (root / "analysis.json").open("x") as stream:
         json.dump(result, stream, indent=2)
         stream.write("\n")
     print(json.dumps(summaries, indent=2))
