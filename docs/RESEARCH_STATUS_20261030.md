@@ -1,5 +1,26 @@
 # Miss-RGBT evidence and remaining targets
 
+## Latest Evidence, 2026-10-31 14:35 UTC+08
+
+Fresh CPU factorial completed576calls in338.26s. Current01 state matching
+replicates a lower velocity error; current10-versus-prior11 velocity contrast
+is uncertain. This is a fixed-crop diagnostic, not an inference improvement.
+
+Fresh closed-loop lag2 versus adjacent velocity is negative on average:
+PR/SR-2.712765/-1.301565pp, paired-video intervals cross0.
+`fallenbikeitself` loses31.014006pp SR. Earlier positive development means
+must not be promoted as generally effective. Verified equal controls and
+all64 trajectories per history are archived.
+
+A post-hoc past-only offset correction lowers fresh TIR-only current-center
+error3.204725px, but RGB-only improvement0.096662px is uncertain.
+This motivates the distinct prospectively registered four-video closed-loop
+control, not an official or novel-module claim. Native, calibration-only
+sham and correction arms run both conditions,24 trajectories total.
+Controller1173352 and GPU workers1173436/1173438 are live, each2266MiB;
+all four main trainers remain live. See docs/STATE_OFFSET_CONTROL_20261031.md.
+No active training or prior GPU study execution source was changed.
+
 ## Latest Evidence, 2026-10-31 14:07 UTC+08
 
 The576-call fixed-crop CPU probe completed in303.75seconds. A post-hoc3x3

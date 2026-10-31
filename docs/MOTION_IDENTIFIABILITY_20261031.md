@@ -156,3 +156,16 @@ Reference report SHA256:
 The availability/lag2 arm started at about14:08:47; controller1132262 and
 workers1132272/1132273 were verified live14:12:13. Its final paired
 comparison is still pending. Active GPU execution sources remain unchanged.
+
+## Final Replication Outcome, 14:35 UTC+08
+
+Fresh CPU probe completed576calls in338.26s with both analyses.
+Current01 state matching remains favorable; current10 same-minus-prior11
+velocity effect is-0.104311px/frame, CI[-0.717432,0.481283], uncertain.
+Fresh closed-loop availability/lag2 minus adjacent PR/SR is
+-2.712765/-1.301565pp with intervals crossing0, dominated by
+`fallenbikeitself` SR-31.014006pp. Equal controls and common assignments
+were independently verified. Do not treat original positive history
+results as a validated module. Full final reports are published.
+See `STATE_OFFSET_CONTROL_20261031.md` for completed factorial evidence,
+the distinct past-only offset hypothesis and the new four-video control.

@@ -1410,3 +1410,27 @@ CPUfreshworker1138583+runner1129716live14:13:40,108/576calls65.01s;
 expect14:18-14:22automaticanalysis. Batch10utility9/17000random9/17575.
 DetailedfreshreportsandlimitsinMOTION_IDENTIFIABILITYdoc. Fullgoalactive.
 
+## 2026-10-31 14:35 UTC+08 - Final replication and offset-control launch
+
+FreshCPU576calls/338.26scomplete,analysesarchived. TIRstateeffectreplicates,
+RGBsame-minus-completepriorvelocity -.104311CI[-.717432,.481283]uncertain.
+FreshGPUlag2-adjacentPR/SR -2.712765/-1.301565pp,CIcross0; SR10wins1tie5losses,
+fallenbikeitself -31.014006SRdominates. Controlsbitwiseequal. Do notpromote
+oldpositive16mean. Finalfreshreportsinreports/motion-replication16-*.
+
+Posthocpastoffsetauditlowersfresh01centererror3.204725pxbutfresh10
+0.096662pxuncertain;notprospectivefornewcorrection. Builtstandalone
+parameterfree offsettracker+native/calibration-sham/corrected control
+onnewdev36..39 fourvideos2155frames24tracks;00hold,noblindvelocity.
+Correctionappliedbeforeclip/templatewrite;extra2callsatfullframes.
+CPU7-framebodywitnesspassedlimitedequality/frozenchecks; fullGPUnotyet.
+
+Controller1173352started14:33:00;1173436/1173438live14:34:55each2266MiB,
+besideoriginaltrainers;all4maintrainerslive. Assignment1334/821frames.
+Outputreports/server28-state-offset-control4-20261031,logsibling.log.
+300spolls,ETA14:55-15:15;do notedit4queuednewsources.
+Registrationimmutablehash99d6eab430e203a13b2c4dfec5584a41d97a967423fb0c2e9fc4376caf0dbdb2.
+Independentanalysisverifiescausaloffsettrace+allmetrics/equalities.
+docs/STATE_OFFSET_CONTROL_20261031.md givesprotocolandlimitations.
+Fullobjectiveunfinished,nonewofficielscores/threevalidatedmodules.
+

@@ -1,0 +1,677 @@
+{
+  "report_sha256": {
+    "adjacent": "b77bf568199a27aded01559eccc54c22fd7c10879eab4b838ca6d734965783de",
+    "availability": "e3b9731539b032d64da02ea55bbee8a880a9a36d01709a1074273532bd527b82"
+  },
+  "analyzer_sha256": "791f96b14113b4a7acc59fc69bef0cba80b98edef06816b6a77e90ca5fe0e9ef",
+  "full_outage_availability_minus_adjacent": {
+    "PR20": {
+      "mean_delta_pp": -2.71276455263974,
+      "paired_sequence_bootstrap95_pp": [
+        -10.29380211255327,
+        1.5980407131066734
+      ],
+      "wins": 6,
+      "ties": 4,
+      "losses": 6,
+      "worst5": [
+        {
+          "sequence": "fallenbikeitself",
+          "delta_pp": -56.47058823529411
+        },
+        {
+          "sequence": "2girlinrain",
+          "delta_pp": -1.0335917312661493
+        },
+        {
+          "sequence": "motocomeinrain",
+          "delta_pp": -0.4291845493562221
+        },
+        {
+          "sequence": "tworightbehindboy-gai",
+          "delta_pp": -0.42038885969522255
+        },
+        {
+          "sequence": "blkcarfollowingwhite",
+          "delta_pp": -0.255754475703327
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "2ndblkboy1_quezhen",
+          "delta_pp": 6.677099634846115
+        },
+        {
+          "sequence": "bikeboy173",
+          "delta_pp": 2.9069767441860392
+        },
+        {
+          "sequence": "biketurndark",
+          "delta_pp": 2.564102564102555
+        },
+        {
+          "sequence": "Athe3rdboybesidescar",
+          "delta_pp": 1.9323671497584627
+        },
+        {
+          "sequence": "bikeumbrellacome",
+          "delta_pp": 0.7782101167315147
+        }
+      ]
+    },
+    "SR": {
+      "mean_delta_pp": -1.3015648029263511,
+      "paired_sequence_bootstrap95_pp": [
+        -5.519468182885314,
+        1.159146179142632
+      ],
+      "wins": 10,
+      "ties": 1,
+      "losses": 5,
+      "worst5": [
+        {
+          "sequence": "fallenbikeitself",
+          "delta_pp": -31.014005602240907
+        },
+        {
+          "sequence": "2girlinrain",
+          "delta_pp": -1.378122308354861
+        },
+        {
+          "sequence": "redcupatleft",
+          "delta_pp": -0.9009009009009077
+        },
+        {
+          "sequence": "blkcarfollowingwhite",
+          "delta_pp": -0.36536353671904465
+        },
+        {
+          "sequence": "whitecarinrain",
+          "delta_pp": -0.18896447467876953
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "biketurndark",
+          "delta_pp": 3.3984533984533982
+        },
+        {
+          "sequence": "bikeboy173",
+          "delta_pp": 2.934662236987819
+        },
+        {
+          "sequence": "Athe3rdboybesidescar",
+          "delta_pp": 1.9783758914193683
+        },
+        {
+          "sequence": "2ndblkboy1_quezhen",
+          "delta_pp": 1.7015674292669587
+        },
+        {
+          "sequence": "bikeumbrellacome",
+          "delta_pp": 0.7596813044283834
+        }
+      ]
+    }
+  },
+  "group_contrasts": {
+    "all_valid": {
+      "PR20": {
+        "mean_delta_pp": -2.712764552639741,
+        "paired_sequence_bootstrap95_pp": [
+          -10.293802112553273,
+          1.5980407131066734
+        ],
+        "wins": 6,
+        "ties": 4,
+        "losses": 6,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -56.47058823529412
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.0335917312661493
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": -0.4291845493562221
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.42038885969522255
+          },
+          {
+            "sequence": "blkcarfollowingwhite",
+            "delta_pp": -0.255754475703327
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 6.677099634846115
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 2.9069767441860392
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 2.564102564102569
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 1.9323671497584627
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 0.7782101167315147
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": -1.301564802926348,
+        "paired_sequence_bootstrap95_pp": [
+          -5.519468182885312,
+          1.1591461791426294
+        ],
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -31.014005602240893
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.3781223083548682
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -0.9009009009008935
+          },
+          {
+            "sequence": "blkcarfollowingwhite",
+            "delta_pp": -0.36536353671903044
+          },
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": -0.1889644746787411
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 3.3984533984533982
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 2.934662236987805
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 1.9783758914193612
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 1.7015674292669587
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 0.7596813044283834
+          }
+        ]
+      }
+    },
+    "blind": {
+      "PR20": {
+        "mean_delta_pp": -0.5322031037161548,
+        "paired_sequence_bootstrap95_pp": [
+          -7.272710557702869,
+          4.162633095050516
+        ],
+        "wins": 6,
+        "ties": 5,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -43.97163120567375
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": -2.564102564102569
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": -2.3255813953488342
+          },
+          {
+            "sequence": "blkcarfollowingwhite",
+            "delta_pp": -1.538461538461533
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.31545741324922005
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 13.16614420062696
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 12.820512820512818
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 5.882352941176478
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 5.882352941176464
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 3.5714285714285694
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.22312335306612896,
+        "paired_sequence_bootstrap95_pp": [
+          -4.063495082584823,
+          3.2170203528884085
+        ],
+        "wins": 9,
+        "ties": 0,
+        "losses": 7,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -27.152988855116504
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": -1.2181616832779838
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -0.9672619047619122
+          },
+          {
+            "sequence": "blkcarfollowingwhite",
+            "delta_pp": -0.5860805860805698
+          },
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": -0.4535147392290071
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 9.645909645909626
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 8.263305322128843
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 4.421768707482997
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 3.2542170473204806
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 3.2212885154061723
+          }
+        ]
+      }
+    },
+    "observed_before_first_blind": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "observed_after_first_blind": {
+      "PR20": {
+        "mean_delta_pp": -3.159818846336325,
+        "paired_sequence_bootstrap95_pp": [
+          -10.961909323006514,
+          1.20833748485454
+        ],
+        "wins": 5,
+        "ties": 6,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -59.29078014184397
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.2539184952978033
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": -0.6060606060606091
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.4424778761061958
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -0.3518029903254174
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 5.395232120451695
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 2.857142857142847
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 1.4285714285714306
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 1.1834319526627297
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 0.5235602094240903
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": -1.604892583577239,
+        "paired_sequence_bootstrap95_pp": [
+          -5.872317599888314,
+          0.822671856134542
+        ],
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -31.96217494089835
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.4778325123152598
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -1.051220840139031
+          },
+          {
+            "sequence": "blkcarfollowingwhite",
+            "delta_pp": -0.3253475303164919
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": -0.23088023088023135
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 2.7210884353741562
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 2.1939665918723534
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 1.3951126247236658
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 1.1791383219954668
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 0.7607776838546201
+          }
+        ]
+      }
+    },
+    "both_observed_after_first_blind": {
+      "PR20": {
+        "mean_delta_pp": -3.401613982043793,
+        "paired_sequence_bootstrap95_pp": [
+          -11.838994010770909,
+          1.419156937412294
+        ],
+        "wins": 3,
+        "ties": 8,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -63.35697399527187
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": -1.7391304347826093
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.7376185458377336
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -0.7331378299120175
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -0.5235602094240832
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 7.112970711297081
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 3.5714285714285694
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 1.9801980198019749
+          },
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": -1.835758485442466,
+        "paired_sequence_bootstrap95_pp": [
+          -6.3781347407156535,
+          0.7399878768140025
+        ],
+        "wins": 10,
+        "ties": 0,
+        "losses": 6,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -34.21141506247889
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.1219147344801783
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -0.9705348415025838
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": -0.8177008177008247
+          },
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": -0.46838407494142587
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 3.0612244897959044
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 1.904761904761898
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 1.5291890814903297
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 0.41572184429325887
+          },
+          {
+            "sequence": "blkmotocome",
+            "delta_pp": 0.3840245775729443
+          }
+        ]
+      }
+    }
+  },
+  "controls_equal": {
+    "complete_hold": true,
+    "complete_velocity": true,
+    "outage_hold": true
+  },
+  "same_cohort_gpu_checkpoint": true,
+  "sequences": 16,
+  "scope": "Registered sequential development indices20..35, fresh to motion comparisons; not independent training-seed or official evidence. Matching state also changes velocity time interval; no fitted threshold or novel-module claim."
+}
