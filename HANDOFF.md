@@ -1463,3 +1463,21 @@ Candidateverification06:51:48Zutility9/17727random10/18303,finite,
 sharedinputsidentical. Estimatednextboundaries15:06/16:20UTC+08.
 NoLRdropconvergenceyet,earlieststop14;fullobjectiveunfinished.
 
+## 2026-10-31 15:04 UTC+08 - Saved offset mechanism audit
+
+NewCPUofflineaudit_offset_mechanism28.py completed,zero modelcalls.
+FinalreportSHA44deca28fb1b641c06f930ff798e40f320e8dfd5528b81be6e8cfe461c95ea9c,
+downloadhashmatches. Validatesinput/worker/trace/GThashes and recomputed
+allpervideoPR/SR/framecounts against authoritative receipts1e-10.
+Samecorrectedhistory immediate TIRcenter50.781617->48.854224px
+delta-1.927394CI[-3.689640,-.383854],butPR/SRintervalscross0.
+RGB47.453297->47.236450delta-.216847CIcross0,PR/SR-1.086957/-.182500pp.
+WholetrajectorystateSRdeltas11/01/10/00=.567341/1.669953/-.932571/1.456278,
+allintervalscross0. bikefromnorthwholegain4.396941despitebothimmediate
+stateSRdeclines;cannotattributeallgaintoimmediatespatialcorrection.
+Writedecisionschange4leftredflagframes/3bikeframes,nottemplatecausalityproof.
+DocSTATE_OFFSET_MECHANISM_20261031.md. No parameter/state-gate changes.
+At15:01:23actualall4trainers+1212195/1212202/1212203live;SSHtimeout
+recoveredwithoutrestart. Utility9/17905random10/18485finite latestlosses.
+Fresh16stillpending,nextmeaningfulfinal16:30-17:00;preserve4sources.
+
