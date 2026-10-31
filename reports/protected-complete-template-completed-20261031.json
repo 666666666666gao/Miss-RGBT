@@ -1,0 +1,7 @@
+{
+  "updates": 192,
+  "selected_epoch": 6,
+  "cleanup_completed": true,
+  "retained": "/home/gaob/Miss-RGBT/reports/server28-protected-mixed-pair-20261031/complete_templates/repair_epoch06.pth",
+  "retained_sha256": "fe1bc6fb533ae81b2bc8e4e2cf1fc4005c10ee0b165fd70ff016b300838ea7ad"
+}

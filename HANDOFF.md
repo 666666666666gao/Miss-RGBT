@@ -1189,3 +1189,21 @@ initial/current measurement checks passed on actual data. Run its main
 only after paired comparison.json AND completed.json exist. No automatic
 analysis queue has been launched. Full audit/second-arm results pending.
 
+## 2026-10-31 12:42 UTC+08 - Gap duration mismatch and first CPU arm
+
+Published-mask structure audit found effective blind frames33737/220703
+LasHeR and18756/116650 RGBT234. Blind interval median1,p954,maximum15/12.
+Current32-frame development gaps are longer than every official blind gap;
+do not extrapolate motion stress-test gains to official scores.
+Registered same16 videos/block1 follow-up in
+docs/OFFICIAL_MASK_STRUCTURE_20261031.md. Do not modify in-flight motion
+sources before current independent analyses finish. Short-gap run not launched.
+Raw interval report remains server/local outputs, SHA4be7ac472affdd0c6ee023b3882556431cd74c4d7db7b0595f2f994d0d3d9c04.
+
+CPU complete-template arm finished: selectedepoch6 score4.363575024840732;
+retained repair_epoch06.pth SHAfe1bc6fb533ae81b2bc8e4e2cf1fc4005c10ee0b165fd70ff016b300838ea7ad.
+Independently verified final5 argmin, retainedhash, exactly4deletedweights,
+onlywinnerremains. First-arm reportSHA00664097b8fd98b64047a15023c6bd9b5d2203feb9078d87d16f46563e6f8f40.
+CPU869785 live12:42:26, preparing second mixed-template arm. Both-arm
+comparison/analysis and tracking benefit unproven. Main goal incomplete.
+
