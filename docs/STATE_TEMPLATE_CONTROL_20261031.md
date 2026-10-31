@@ -95,17 +95,42 @@ Runner SHA256:
 Registration SHA256:
 `7b86360a23527e90e68ec73f2828cbebed6be54ca5f3f71364526a750a913f6e`.
 
-Controller342664 launched20:07:20 UTC+08. At20:08:13 it was actually
-alive and GPU workers342898/342899 each used2266MiB alongside all four
-trainers. No full-track receipt was present yet. At20:44:51 controller342664
-and GPU0 worker342898 were still live; GPU1 worker342899 was a defunct child
-being handled by its controller. GPU0 had completed girlshead native and
-sham complete/outage and matched complete; full cohort and matched outage
-remain pending. The initial20:55-21:40 final estimate was too optimistic for
-the actual long-video stage. No efficacy claim follows from partial tracks.
+Controller342664 launched20:07:20 UTC+08. It finished all48 trajectories and
+the final analyzer; controller COMPLETE was observed at20:56 UTC+08.
+Completion receipt SHA256
+`8ffe5b57d56c3be01a6d7f51f5854c39290dcedf2377d1afa8eb868ef6fa32be`
+names report SHA256
+`66b3b776e0152f01bf0115e322e371ca7e15ec0c7b1576e1f8550f11300ad3e9`;
+downloaded report hash matches. Analyzer verified all trajectory, control,
+GT/trace/box hashes and past-only bank/write history.
 
-The final analyzer also independently checks native writes from tensor
-replacement receipts and the YAML predicate. It reports current11
-PR20/SR within the outage trajectory, with paired matched-minus-native
-intervals. These current11 frames include pre-outage frames and entire
-complete blocks; they are not exclusively first restoration frames.
+| Condition | Arm | PR20 (%) | SR (%) |
+|---|---|---:|---:|
+| Complete | Native/sham | 92.123743 | 74.997601 |
+| Complete | State matched | 92.123743 | 74.997601 |
+| Block32 outage | Native/sham | 80.072518 | 65.698845 |
+| Block32 outage | State matched | 73.127902 | 59.989876 |
+
+Matched-minus-native paired video differences:
+
+| Metric | Mean difference pp | 95% paired-video interval | Wins / ties / losses |
+|---|---:|---:|---:|
+| Block32 PR20 | -6.944616 | [-18.359874, -0.145757] | 1 / 2 / 5 |
+| Block32 SR | -5.708969 | [-14.650757, -0.689463] | 1 / 1 / 6 |
+| Outage current11 PR20 | -6.864088 | [-17.031998, -0.082919] | 0 / 4 / 4 |
+| Outage current11 SR | -5.698328 | [-14.003148, -0.159444] | 1 / 1 / 6 |
+
+Bootstrap intervals resample8videos for one E0, not training seeds.
+Current11 includes pre-outage frames and full-complete blocks; it is not
+exclusively first restoration frames. `leftgirlat1row` SR drops35.796074pp.
+That matched arm records34 block32 writes versus64 native; on `girlshead`,
+527 versus560. The confidence-controlled predicate is unchanged, so
+trajectory confidence also changes subsequent template-write frequency.
+This coupled loop does not isolate cache-age or availability causality.
+
+Decision: reject state-matched cache reading. Complete tracking is unchanged,
+but missing-history performance degrades materially. Do not adopt it as a
+paper module or tune a state gate on these same videos. Seek an independent
+prospective alternative for temporal recovery.
+
+Full report: `reports/state-template-report-20261031.json`.

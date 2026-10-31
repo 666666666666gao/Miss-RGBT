@@ -100,5 +100,14 @@ must be read from the retry witness and launch receipt.
 Queue and sources remain frozen through final analysis.
 Retry controller393144 registered at20:37:03 UTC+08. It was verified alive
 and waiting on controller342664 at20:37:58 and20:44:51; no repair-control
-GPU workers exist. The retry CPU witness passes parity/frozen-state checks,
-and its absolute self-source path/hash matches the current source.
+GPU workers existed during that wait. After controller342664 wrote the
+verified48-track report/completion receipt and exited, the retry checked
+both GPUs for at least3000MiB free and launched workers418802/418803 at
+20:52 UTC+08. At20:56:32 controller393144 and both worker command lines were
+actually alive. The completed predecessor report SHA is
+`66b3b776e0152f01bf0115e322e371ca7e15ec0c7b1576e1f8550f11300ad3e9`.
+Repair workers have begun utility/native on fresh video sequences. At this
+snapshot, GPU0 had completed native complete/block32 for
+`thefirstexcersicebook` and started `blkboy`; no complete paired summary yet.
+The retry CPU witness passes parity/frozen-state checks, and its absolute
+self-source path/hash matches the current source.

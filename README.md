@@ -36,9 +36,10 @@ completed48registered trajectories on four new videos. Scale-only SR
 changes by-5.032522/-0.088620points versus native at block32/128;
 unconditional removal of center translation is rejected. Block128 covers
 TIR-only missing exposure on this cohort, with no RGB-only or blind exposure.
-The prospective [state-template history control](docs/STATE_TEMPLATE_CONTROL_20261031.md)
-tests ordinary per-state template reading on eight fresh development videos;
-it is pending and does not establish a new module.
+The completed [state-template history control](docs/STATE_TEMPLATE_CONTROL_20261031.md)
+found that state-matched reading preserves complete tracking but reduces
+block32 outage SR by5.708969points on eight fresh development videos; this
+policy is rejected and is not a new module.
 After it completes, a registered [closed-loop compensation control](docs/REPAIR_TRAJECTORY_CONTROL_20261031.md)
 will compare same-epoch Utility/Random native, sham and compensation-off
 tracking, without adding a concurrent GPU worker.

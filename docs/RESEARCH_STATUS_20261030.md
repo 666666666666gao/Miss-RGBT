@@ -18,13 +18,14 @@ The next implementation decisions must address demonstrated problems:
 | Persistent calibration | Fresh4 gap control geometry-native SR+0.949828 at block32, -4.805974 at block128 | Independent component and longer-exposure controls must test which correction remains useful |
 
 These are research problems, not three completed contributions.
-The new state-template control tests native/sham/state-matched reading on
-sequential fresh development68..75,8videos/8398frames,48trajectories.
-It retains native writes and truthful initial availability. CPU21-call
-actual-body witness passed; GPU0/1 workers342898/342899 actually allocated
-2266MiB each at20:08:13 beside all four trainers. Results remain pending.
-See STATE_TEMPLATE_CONTROL_20261031.md. It is an ordinary history control;
-template age/crop history remain coupled, so launch proves no novel module.
+The state-template control completed all48 trajectories on sequential fresh
+development68..75. State-matched reading preserves complete PR20/SR exactly,
+but block32 outage PR20/SR is-6.944616/-5.708969pp relative to native;
+paired-video SR interval[-14.650757,-0.689463]. The matched arm's confidence
+changes later write counts on severe regressions, so cache-age causality is
+not isolated. Reject the policy and do not fit a gate on this cohort. See
+STATE_TEMPLATE_CONTROL_20261031.md; this negative ordinary control is not a
+validated module.
 Separately, a CPU-verified closed-loop native/sham/compensation-off control
 is registered behind that GPU job, using retained epoch6 Utility/Random on
 fresh development76..83. It will not launch GPU workers until the preceding
@@ -33,8 +34,10 @@ REPAIR_TRAJECTORY_CONTROL_20261031.md. The matched checkpoint weights remain
 protected by the original-weight cleanup inventory.
 The first queue-controller attempt failed before allocation due to relative
 versus absolute `__file__` in its source manifest; its log is preserved.
-Corrected retry controller393144 is actually alive/waiting on template
-controller342664, with no GPU workers started.
+Corrected retry controller393144 waited for the verified48-trajectory result,
+then launched repair-control workers418802/418803 at20:52 on GPU0/1. At
+20:56:32 all three processes were actually alive alongside four trainers.
+See REPAIR_TRAJECTORY_CONTROL_20261031.md.
 The completed observed-copy control worsens6of8noncomplete mean-loss
 cells, so copying is not promoted. The template-coverage paired pilot
 improves selected mean loss only0.19%, with3of6missing-search cells worse.

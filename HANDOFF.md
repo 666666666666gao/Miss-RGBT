@@ -1921,3 +1921,18 @@ because witness used relative `__file__` and launcher absolute path. Failure
 log/receipt retained. Corrected absolute-path witness passes, and retry
 controller393144 is alive/waiting on342664; no retry GPU worker started.
 
+## 2026-10-31 20:57 UTC+08 - Template control complete
+
+All48 trajectories independently analyzed; report SHA
+66b3b776e0152f01bf0115e322e371ca7e15ec0c7b1576e1f8550f11300ad3e9 matches
+completion receipt. Native/sham block32 PR20/SR80.072518/65.698845;
+state-matched73.127902/59.989876. Matched-native SR-5.708969pp,
+95% paired-video interval[-14.650757,-0.689463],1win/1tie/6losses.
+Complete all three arms exactly92.123743/74.997601. Reject state-matched
+policy; no gate fit or contribution claim.
+Queue retry controller393144 verified the predecessor report and started
+workers418802/418803 on GPU0/1 at20:52. At20:56:32 all3 were live beside
+four trainers. Repair trajectory comparison remains in progress.
+Fixed12 task-loss validations are recorded in latest metrics; no tracking
+or convergence conclusion follows. Preserve all registered weights.
+
