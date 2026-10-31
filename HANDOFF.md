@@ -1092,3 +1092,28 @@ controllers3816049/3816050 live. Health controller570241 and post613855
 finished normally; do not restart them. Official goals, final5 common
 checkpoint selection/cleanup and three modules remain incomplete.
 
+## 2026-10-31 03:44 UTC matched history-coverage pilot
+
+Launched CPU-only paired LocalRepair control PID869785, fourthreads,
+initialreferences running/live347%CPU at11:44:50+08. Botharms freshE0,
+sameinitialrepair/data/192updates, sixepochs, effectivebatch4 LR1e-4.
+Onlydifference: complete vs independently sampled dynamictemplates
+11/01/10 with existingformal probabilities. Botharms use samefinal5
+sixmissingsearchcell devselection;9devcells measured. No val97/test
+selection, newmodule claim, GPUallocation orlive sourcechanges.
+
+Output reports/server28-protected-mixed-pair-20261031; siblings.log.
+Runner probe_protected_mixed_pair28.py; launcher launch_protected_mixed_pair28.py.
+Protocol docs/PROTECTED_MIXED_PAIR_PROTOCOL_20261031.md. Runtime/source/
+checkpoint hashes verified before optimization. Initialmeasurements can
+take severalminutes; firstupdates not yetverified atinitialobservation.
+Roughfirstarm12:35-13:05+08, both13:25-14:25+08; refineactualthroughput.
+Require comparison.json AND completed.json and perarmselection/cleanup.
+Do not restart after observationfailure. Original4GPUtrainers+3controllers
+verifiedlive11:39:26+08. Fullgoal remainsincomplete.
+
+At11:49:44+08 sameCPU869785 live393%CPU3.22GiB, firstarmepoch1
+10actualupdates finite loss/norm; update10loss4.892799616 norm.190860614.
+Recent7.7-9.1s/update; originalepoch1inputhashespassed. No gainclaim.
+Next meaningfulcheckfirstarm12:35-13:05+08; avoidimmediatepolls.
+
