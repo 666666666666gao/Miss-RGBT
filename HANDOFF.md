@@ -1040,3 +1040,11 @@ gap; template, crop/scale drift and timing are confounded, no causal
 template-write conclusion or change. docs/E0_AVAILABILITY_20261031.md,
 reports/e0-availability-analysis-20261031.json. No new GPU run.
 
+At09:46:11+08:00 utility completedepoch6/update12000, mean4.968987959,
+states11/01/10=4.393904358/5.730497293/4.782562226; lowest through6.
+Random epoch6 mean4.963055770 remains worse than its epoch3. Neither
+convergence nor stable utility benefit established. All original8jobPIDs
+live. Epoch5 candidate complete tracking each3seq15963frames; next useful
+full-complete node~10:40+08:00. No training/LR/selection changes.
+reports/candidate-utility-epoch06-validation-20261031.json archived.
+

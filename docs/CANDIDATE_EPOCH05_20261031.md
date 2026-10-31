@@ -41,3 +41,21 @@ Evidence is copied from each run's `validation_history.json` into
 The historical A Miss result remains separate; three of four requested
 Miss thresholds, complete-input gains and three validated paper modules
 remain unfulfilled.
+
+## Epoch Six Observation
+
+At2026-10-31T01:46:11Z (09:46:11+08:00) both original trainers,
+tracking workers/controller and postprocessing queue remained live.
+Utility finished epoch6/update12000 with losses11/01/10=
+4.393904358/5.730497293/4.782562226 and mean4.968987959.
+This is its lowest mean through epoch6, compared with epoch3=5.001092297.
+Random epoch6 mean4.963055770 remains above its epoch3=4.897612979.
+Utility-minus-random mean at epoch6 is+0.005932190; no stable advantage
+or convergence follows. Neither stopping schedule nor LR was changed.
+
+Epoch5 full tracking health evaluation continues independently, each
+candidate complete condition at3/97sequences and15963/54646frames.
+Do not confuse epoch6 tuple validation with epoch5 tracking evaluation.
+Full candidate complete results are expected near10:40+08:00, pending
+actual throughput. Utility history is archived as
+`reports/candidate-utility-epoch06-validation-20261031.json`.
