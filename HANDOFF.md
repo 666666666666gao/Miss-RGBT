@@ -1819,3 +1819,22 @@ history hashes match: U47a29672de633aad726b4ed8072a037d37405b9ad28e28bc074f5b643
 R4df5c6adfbaa9eff8bf9b2a1b3138cf8d9b4196064ef4dd6f2331f999cc72d41.
 Next candidate boundaries approximately19:37-19:45+08 using latest update rate.
 
+## 2026-10-31 19:20 UTC+08 - Prospective scale-only component control
+
+Newrun_scale_only28.py follows completedgapentrypoint without modifying
+sharedtracker/runtime/registeredpredecessors. Dev64..67sequential4videos881frames,
+472/409GPU0/1. Native/sham/scale-only/center+scale xcomplete/block32/block128
+=48tracks. Allvideos<384frames: block128onlyTIR, noRGB/blindcoverage,
+keepallvideos/nooutcomefilter. No learned gate/expiry/weights/GTcorrection.
+CPUactualbodywitnesspassed7framescomplete/block1,2nonidentityscaleframes,
+sham/completeequality/zerooffset/frozenstate;notCUDAfullevaluation.
+Witness0d3fb33841f505c8b1340340c82336e3be75f5cad9cb48af08dfbc2cd1ec6d05;
+sourceacf6a56e84cbfdfa406ef7904664627ea52e899f3933e37e25afe2de2e182086;
+registrationc8335c3a96ba57e2ad3fbc3a96c3f764e15f64304095af0f55079c358a51ed10.
+Controller268017launched19:18:14actualalive19:18:33;children268025/268026
+actualGPUprocesses2124/2080MiB besideall4trainers, nofulltrackreceiptyet.
+Outputreports/server28-scale-only4-20261031,sibling.log.
+ETA19:30-19:45+08thenrefineactualcalls;300spollsnearcompletion.
+DocSCALE_ONLY_CONTROL_20261031.md. Preserve newsource/shareddependencies
+untilfinal48traceverification. Notofficial/modulebenefit/convergence.
+

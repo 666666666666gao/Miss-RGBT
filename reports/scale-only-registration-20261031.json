@@ -1,0 +1,134 @@
+{
+  "pid": 268017,
+  "registered_utc": "2026-10-31T11:18:15.111398Z",
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "development_indices": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "cohort": [
+    {
+      "name": "rightgirlbike",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightgirlbike",
+      "development_index": 64,
+      "video_frames": 190,
+      "gt_sha256": "953e1e1b7228f7a81ab79b360ed74532ed1f21e49de346c58acbae5a5f041c6d"
+    },
+    {
+      "name": "whitegirlcrossingroad",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlcrossingroad",
+      "development_index": 65,
+      "video_frames": 154,
+      "gt_sha256": "9c0c6c131b303621be99550e0c5c6febd55ac3ebf2bd78623711f74a7d3bb1fc"
+    },
+    {
+      "name": "boybesidescarwithouthat",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/boybesidescarwithouthat",
+      "development_index": 66,
+      "video_frames": 318,
+      "gt_sha256": "7f1924988500c7b543694270e15acf2dc28051d98466ead2cdd8ef5f878c6d4d"
+    },
+    {
+      "name": "rightblkboybesidesred",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightblkboybesidesred",
+      "development_index": 67,
+      "video_frames": 219,
+      "gt_sha256": "1065f3e0d6b7e38ad9e735766d8fbbbe8015e4aa74fc6e7e7daf76b86e6520e4"
+    }
+  ],
+  "parts": {
+    "0": [
+      {
+        "name": "boybesidescarwithouthat",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boybesidescarwithouthat",
+        "development_index": 66,
+        "video_frames": 318,
+        "gt_sha256": "7f1924988500c7b543694270e15acf2dc28051d98466ead2cdd8ef5f878c6d4d"
+      },
+      {
+        "name": "whitegirlcrossingroad",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlcrossingroad",
+        "development_index": 65,
+        "video_frames": 154,
+        "gt_sha256": "9c0c6c131b303621be99550e0c5c6febd55ac3ebf2bd78623711f74a7d3bb1fc"
+      }
+    ],
+    "1": [
+      {
+        "name": "rightblkboybesidesred",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightblkboybesidesred",
+        "development_index": 67,
+        "video_frames": 219,
+        "gt_sha256": "1065f3e0d6b7e38ad9e735766d8fbbbe8015e4aa74fc6e7e7daf76b86e6520e4"
+      },
+      {
+        "name": "rightgirlbike",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightgirlbike",
+        "development_index": 64,
+        "video_frames": 190,
+        "gt_sha256": "953e1e1b7228f7a81ab79b360ed74532ed1f21e49de346c58acbae5a5f041c6d"
+      }
+    ]
+  },
+  "loads": {
+    "0": 472,
+    "1": 409
+  },
+  "arms": [
+    "native",
+    "sham",
+    "scale",
+    "geometry"
+  ],
+  "conditions": [
+    "complete",
+    "block32_outage",
+    "block128_outage"
+  ],
+  "frame_blocks": {
+    "complete": 0,
+    "alternating_outage": 1,
+    "block32_outage": 32,
+    "block128_outage": 128
+  },
+  "pattern": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/run_scale_only28.py": "acf6a56e84cbfdfa406ef7904664627ea52e899f3933e37e25afe2de2e182086",
+    "/home/gaob/Miss-RGBT/spatial_calibration_tracker28.py": "7f53a211e16b7e4f5c2e52021e8c63188d222b620b6a8d2161e443d0ef8283f8",
+    "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4"
+  },
+  "witness_sha256": "0d3fb33841f505c8b1340340c82336e3be75f5cad9cb48af08dfbc2cd1ec6d05",
+  "poll_seconds": 300,
+  "scope": "Sequential fresh development indices64..67, no outcome or duration filtering. Native/sham/scale-only/center-plus-scale, complete/block32/block128. Same E0 and hardware per video; no fitted gate, expiry, decay or weight updates."
+}
