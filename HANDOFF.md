@@ -1031,3 +1031,12 @@ Random training epoch6 mean taskloss4.963055770 improves fromepoch5 but
 is worse thanepoch3; nowepoch7. Utility epoch6/update11700 at09:30:44+08.
 Do not infer convergence or candidate PR/SR gain before full receipts.
 
+Full E0 paired availability analysis completed offline,194 trajectory
+hashes rechecked,54289 valid scored frames partitioned00/01/10/11 as
+7503/10086/8865/27835. Outage-minus-complete sequence macro PR20/SR gaps
+are00:-35.038/-26.475,01:-16.923/-15.765,10:-10.942/-8.070,
+11:-4.099/-2.937pp. Current complete frames retain a descriptive history
+gap; template, crop/scale drift and timing are confounded, no causal
+template-write conclusion or change. docs/E0_AVAILABILITY_20261031.md,
+reports/e0-availability-analysis-20261031.json. No new GPU run.
+
