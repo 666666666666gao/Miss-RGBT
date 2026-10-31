@@ -1278,3 +1278,28 @@ pastGTvelocity34.668561/25.305961. PrivilegedSRvsmeasured+1.910173 but
 Report reports/blind-motion-next16-past-gt-audit-20261031.json.
 At13:08:27short54/64tracksfinishedandworkerslive; nofinalresultthen.
 
+## 2026-10-31 13:19 UTC+08 - Short-gap result and availability history control
+
+Shortgap64tracksverified. Holdoutage80.858060/65.136455 ->adjacentCV
+81.693045/66.032080; paired+.834986/+.895625, CIs[-.679692,2.966112]/
+[-.177558,2.483089]cross0. ReportSHA9a076d9b77cd9c1b0c81a9ecec9e649f2b6e72a6e77cc1850a987900b29649a9.
+Post1020925finishedshortcontrast/estimateaudit, stillwaitingCPU869785.
+CrossgapSR-effectdifference+.048866CI[-1.982117,1.833271], noestablished
+durationadvantage; completebitwiseequalacrossdurations.
+
+Newoffline availabilitymatchedvelocity1287validblindframes16videos:
+adjacentPR/SR80.809015/65.654678 ->matched81.473186/66.201395.
+SR+.546717CI[.170715,1.007952],12wins1tie3losses. Offlineonly;
+sameavailabilityalsomeanslongertimeinterval,soconfoundnotisolated.
+Motivatesmatchedclosedloopcontrol, notnovelmodule.
+
+Archivedshortsourcesinshortoutput/verified_source beforedeployment.
+Newstatehistorycontrol1044705started~13:17, children1044714/1044715
+verifiedliveeach2266MiB; GPU0/1oneworker, alloriginaltrainerscontinue.
+Outputreports/server28-state-motion-shortgap16-20261031.
+ETA13:37-13:47; actualcomparisonwaiter1049221verifiedlive13:19:32,
+300spolls thencomparison.json verifiesbothcompleteandholdoutagebitwise
+equalityacrossruns. Do noteditactiveevaluator/controller/analyzerhashes.
+docs/AVAILABILITY_VELOCITY_CONTROL_20261031.md containslimits/protocol.
+Reused16videos, notfreshreplication/officialscore/validatedmodule.
+

@@ -40,7 +40,10 @@ def main():
     parser.add_argument("--cohort-spec", type=Path)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--frame-block", type=int, choices=[1, 32], default=32)
+    parser.add_argument("--velocity-history", choices=["adjacent", "availability"], default="adjacent")
     args = parser.parse_args()
+    if args.velocity_history == "availability":
+        assert args.frame_block == 1 and args.cohort_spec is not None
     output = args.output
     os.environ.update(CUDA_VISIBLE_DEVICES=args.gpu, OMP_NUM_THREADS="1",
                       MKL_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1")
@@ -90,12 +93,13 @@ def main():
         cohort=cohort, cohort_spec_sha256=sha(args.cohort_spec) if args.cohort_spec else None,
         arms=["hold", "velocity"], conditions=["complete", "alternating_outage"],
         frame_block=args.frame_block, pattern=PATTERN,
+        velocity_history=args.velocity_history,
         source_sha256={str(path): sha(path) for path in [
             Path(__file__), ROOT / "analyze_epoch05_health28.py",
             ROOT / "evaluate_val97_recovery28.py", RUNTIME / "miss_rgbt/tracker.py",
             RUNTIME / "miss_rgbt/model.py", RUNTIME / "experiments/cadtrack/cadtrack.yaml"]},
-        rule="Fixed center velocity from last two observed video-frame states; no GT, "
-             "size change, clipping or template write on blind frames",
+        rule="Fixed center velocity with " + args.velocity_history +
+             " observation history; no GT, size change, clipping or template write on blind frames",
         scope="Registered train882 development videos, same GPU paired closed-loop control; "
               "ordinary constant velocity, no novel module or official result claim")
     (output / "launch.json").write_text(json.dumps(launch, indent=2) + "\n")
@@ -118,6 +122,8 @@ def main():
                 tracker.initialize(get_x_frame(str(rgb[0]), str(tir[0]), dtype="rgbrgb"),
                                    dict(init_bbox=gt[0].tolist()))
                 history = [(0, list(tracker.state))]
+                state_history = {(1, 1): list(history)}
+                last_available = (1, 1)
                 boxes, trace, blind = [list(tracker.state)], [], [False]
                 for index in range(1, frames):
                     available = [1, 1] if condition == "complete" else PATTERN[(index // args.frame_block) % 6]
@@ -133,10 +139,15 @@ def main():
                         assert np.isfinite(confidence) and tracker.frame_id == calls + 1
                         history.append((index, list(tracker.state)))
                         history = history[-2:]
+                        last_available = tuple(available)
+                        state_history.setdefault(last_available, []).append((index, list(tracker.state)))
+                        state_history[last_available] = state_history[last_available][-2:]
                     else:
                         if arm == "velocity":
-                            assert len(history) == 2
-                            (before_time, before), (last_time, last) = history
+                            selected_history = (history if args.velocity_history == "adjacent" else
+                                                state_history[last_available])
+                            assert len(selected_history) == 2
+                            (before_time, before), (last_time, last) = selected_history
                             velocity = (center(last) - center(before)) / (last_time - before_time)
                             forecast = np.asarray(last).copy()
                             forecast[:2] += (index - last_time) * velocity

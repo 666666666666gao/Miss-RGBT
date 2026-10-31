@@ -25,9 +25,13 @@ def save(path, value):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--frame-block", type=int, choices=[1, 32], default=32)
+    parser.add_argument("--velocity-history", choices=["adjacent", "availability"], default="adjacent")
     args = parser.parse_args()
     output = (OUTPUT if args.frame_block == 32 else
               ROOT / "reports/server28-blind-motion-shortgap16-20261031")
+    if args.velocity_history == "availability":
+        assert args.frame_block == 1
+        output = ROOT / "reports/server28-state-motion-shortgap16-20261031"
     output.mkdir(exist_ok=False)
     memory = subprocess.check_output([
         "nvidia-smi", "--id=0,1", "--query-gpu=index,memory.free",
@@ -63,6 +67,7 @@ def main():
         input_manifest_sha256=sha(manifest_path), development_indices=list(range(4, 20)),
         sequences=16, frames_per_arm_condition=7776, total_tracking_frames=31104,
         frame_block=args.frame_block,
+        velocity_history=args.velocity_history,
         parts=parts, part_frames=loads, workers_per_gpu=1, memory_free_at_launch=memory,
         assignment="Longest-video-first frame balancing, capacity8 videos per GPU; "
                    "hold and velocity for a video always share one GPU",
@@ -82,7 +87,8 @@ def main():
             process = subprocess.Popen(
                 [sys.executable, "-u", str(ROOT / "evaluate_blind_motion28.py"),
                  "--gpu", str(gpu), "--cohort-spec", str(spec_path), "--output", str(destination),
-                 "--frame-block", str(args.frame_block)],
+                 "--frame-block", str(args.frame_block),
+                 "--velocity-history", args.velocity_history],
                 cwd=str(ROOT), env=env, stdout=log, stderr=subprocess.STDOUT)
         processes[gpu] = process
         launch["children"][str(gpu)] = process.pid
