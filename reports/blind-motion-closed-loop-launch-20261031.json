@@ -1,0 +1,85 @@
+{
+  "pid": 925753,
+  "started_utc": "2026-10-31T04:12:22.785932Z",
+  "physical_gpu": 0,
+  "evaluator_workers": 1,
+  "memory_free_at_launch_mib": 4790,
+  "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+  "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e",
+  "source_tracking_report_sha256": "8e04756875c9538f34e20aaa396efb1bae4b65827fb2d414f5fab13fe641e6cf",
+  "cohort": [
+    {
+      "name": "2up",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/2up",
+      "video_frames": 176,
+      "evaluated_frames": 176,
+      "gt_sha256": "2e2edfe5618b0ad25bbe1b60d5f2d6d50a48ea5ce494e754af0a4a6c6de7994d"
+    },
+    {
+      "name": "comingboy'shead",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/comingboy'shead",
+      "video_frames": 256,
+      "evaluated_frames": 256,
+      "gt_sha256": "d2c2ce6fa13d8e753ce5fb051d3b81492a83003e50ffd144d9fc28cff5ec8faf"
+    },
+    {
+      "name": "wanderingly_1202",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/wanderingly_1202",
+      "video_frames": 256,
+      "evaluated_frames": 256,
+      "gt_sha256": "269a8dfaac60691c2077c028693292788186ac2fc8cb141a3939819129b03ccb"
+    },
+    {
+      "name": "bike2north",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike2north",
+      "video_frames": 150,
+      "evaluated_frames": 150,
+      "gt_sha256": "a180a85da70d1ae4af599c7ac6b593009b76f265e1b87d1c697d3704da2a970a"
+    }
+  ],
+  "arms": [
+    "hold",
+    "velocity"
+  ],
+  "conditions": [
+    "complete",
+    "alternating_outage"
+  ],
+  "frame_block": 32,
+  "pattern": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "47361c1e393cff40abaf28283e63c6af7a71322392abb3a485e808377d203cd2",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+  },
+  "rule": "Fixed center velocity from last two observed video-frame states; no GT, size change, clipping or template write on blind frames",
+  "scope": "Reused first4 train882 development videos, same GPU paired closed-loop control; ordinary constant velocity, no novel module or official result claim"
+}

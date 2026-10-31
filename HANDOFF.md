@@ -1143,3 +1143,24 @@ arm1epoch2/update59live. Nextmeaningfulfirstarm12:35-13:05+08,
 batch10epoch8boundaries~12:52random/13:27utilityuncertain.
 Officialthresholds/final5selection/cleanup/3modules remainpending.
 
+## 2026-10-31 04:18 UTC blind-motion closed-loop control
+
+Offline saveddev4tracks showCVimproves00SRall3blindvideos, butCPUoutputs
+arenotGPUoutputs. RanmatchedsameGPU0holdvsCVcomplete/outage16trajectories,
+3352video frames; evaluator925753finished237.57s andreleasedGPU.
+Independent analyze_blind_motion28.py verified16bbox/trace/GT hashes,
+allmetrics, complete/no-blind/prefixbitwise equality andfrozenmodel.
+Fulloutage PR/SR89.324968/70.910351 ->91.134491/72.246885
+=+1.809524/+1.336535pp. Blind80frames3seq+19.791667/+14.087302;
+observedafterblind128frames2seq0/+.186012. Mostbenefit duringgap.
+All3fulloutageSRdeltaspositive(.136054/2.278245/2.931839);
+no-blindbike unchanged. OrdinaryCVcontrol, noofficial/noveltyclaim.
+
+ReportSHAfaead2d14bc4580fb2efba9caac3365a422245058ff234bb3c276ee7b80ea4a5,
+analysisSHA07e20f91cb1d79b2f7069536942c53382094afb46ce0e72ed132a8ca19086794.
+docs/BLIND_MOTION_PROTOCOL_20261031.md hasoffline/closedloop distinctions.
+OC_SORT pinned8462e7e source/MIT inspected; recoveryvirtualpath usesnew
+measurement, doesnotforecastfuturemeasurement. Noexternalcodeintegrated.
+At12:12:34+08 original4trainers andCPU869785live. OriginalLR/final5/
+selection unchanged; fullgoal remainsincomplete.
+
