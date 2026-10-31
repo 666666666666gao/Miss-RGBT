@@ -1481,3 +1481,34 @@ At15:01:23actualall4trainers+1212195/1212202/1212203live;SSHtimeout
 recoveredwithoutrestart. Utility9/17905random10/18485finite latestlosses.
 Fresh16stillpending,nextmeaningfulfinal16:30-17:00;preserve4sources.
 
+## 2026-10-31 15:23 UTC+08 - Size-error evidence and queued fresh geometry control
+
+Offlineaudit_offset_geometry28.py reuses32fixedcropvideos,zero modelcalls.
+ReportSHA9f556ba28a3258aa412c7ec3eab324262dbe8b694b680d035eabfe703967345f.
+Pastsize-ratioaddedtocentercorrectionSRoriginal/freshTIR+6.324405/+7.589286,
+CI[2.008929,12.276786]/[2.827381,13.467262],13/14winsoutof16.
+RGB+1.413690/+.148810;freshCI[-.446429,.818452]uncertain.
+Bothcohortsalreadyinspected,syntheticboxesunclipped,noclosedloopclaim.
+DocSPATIAL_CALIBRATION_CONTROL_20261031.md.
+
+Newspatial_calibration_tracker28.py extendsisolatedoffsetcontrolwith
+pastcompleteframewidth/heightratios;scalesaroundrawcenterbeforeclip/
+templatewrite,allothernativepoliciesunchanged. No fit/cap/gate/weights.
+Fourarmsnative/sham/center/geometry,same3callsatcompleteincalibratingarms.
+Seven-frameCPUtrackbodywitnesspassesnative/sham,completeall,
+newcenter/oldcenterbitwiseequalandunchangednetwork;realnonidentityscales
+exercised. NotGPUconstructor/fulltrajectoryproof.
+WitnessSHA9fc2f23a9c7405556b10babc31236cc0675ff2cc27db23df047593753a7f7987.
+
+Queuedcontroller1256793registered15:21:59andactualalive15:22:52waiting
+actual1212195. Freshdev56..59,4videos836frames32tracks,loads396/440.
+rightbhindbike-gai265/leftwhitebike199/whitegirlwithumbrella131/manbikecoming241.
+Outputreports/server28-spatial-calibration4-20261031,logsibling.log.
+RegistrationSHA2127191883035a6c3721a4de4a55651c8c8d5e6a3ea8e178c825035a0fd93251.
+NOgeometryGPUworkersyet. Requirespriorfinalverifiedreport/free>=3000MiB,
+then~10-20minplus300squeuedelay. Independentanalyzerchecksall32metrics,
+pastoffset/ratio/identityprior/clip/holds/callcounts,controls/hashreceipts.
+Preserve2newsourcesAND4activecenter16sources/sharedhelpersuntilanalyses.
+At15:22:52all4trainers+1212195/1212202/1212203and1256793actualalive.
+NoGPU2/3extrajob,notemperature/powerchecks. Fullobjectiveunfinished.
+
