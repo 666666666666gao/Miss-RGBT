@@ -1013,3 +1013,21 @@ verified paired results. Receipt reports/epoch05-health-analysis-queue-
 20261031.json. Next meaningful human/agent observation remains09:25-09:35
 UTC+08:00; do not keep adding intermediate snapshot commits.
 
+## 2026-10-31 01:30 UTC E0 full-val97 verified
+
+Both E0 conditions completed97sequences/54646frames/54289scored around
+09:24:41+08:00. All194saved trajectory hashes and GT hashes checked;
+per-sequence PR20/SR and both aggregates recomputed within1e-9.
+Complete75.879164/61.654017; alternating outage64.528129/52.346049.
+These are val97 development references, not official Miss test scores.
+Artifacts reports/epoch05-health-e0-{complete,outage}-20261031.json.
+
+Same evaluator workers570254/570255 now run utility/random epoch5 complete
+tracking from09:24:41+08:00. Original controller570241, postprocess613855
+and all four trainers reverified live09:30:44+08:00 after local monitor
+exit; no restart. Candidate full complete estimated10:40+08:00 pending
+actual candidate speed; alternating outage follows in the same queues.
+Random training epoch6 mean taskloss4.963055770 improves fromepoch5 but
+is worse thanepoch3; nowepoch7. Utility epoch6/update11700 at09:30:44+08.
+Do not infer convergence or candidate PR/SR gain before full receipts.
+

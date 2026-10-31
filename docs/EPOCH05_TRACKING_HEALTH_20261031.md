@@ -151,3 +151,40 @@ Successful postprocessing writes `paired_analysis.json` followed by
 analysis remains unproven. The archived launch receipt is
 `reports/epoch05-health-analysis-queue-20261031.json`; its analyzer SHA256 is
 `b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede`.
+
+## E0 Full Validation Completed And Recomputed
+
+Both E0 conditions finished at approximately2026-10-31T01:24:41Z
+(09:24:41+08:00), each97 sequences/54646 video frames/54289 scored frames.
+The194 saved trajectories were read again, their SHA256 values matched
+every receipt, GT hashes and shapes matched, and every per-sequence metric
+and both aggregates were recomputed within1e-9. Each condition took4391s.
+
+| Full val97 condition | E0 PR20 | E0 SR |
+|---|---:|---:|
+| Complete | 75.879164 | 61.654017 |
+| Alternating outage | 64.528129 | 52.346049 |
+
+These are development references under the fixed alternating schedule,
+not official LasHeR-Miss or RGBT234-Miss scores. They do not demonstrate
+any candidate gain. Completion JSONs are archived as
+`reports/epoch05-health-e0-{complete,outage}-20261031.json`, SHA256
+`dd0716172d1341b11a7185be782567d0a936085a5d2778ffe49be92c547504eb`
+and `0d631b20004d5b71a42a38bc986d73e9da2429c5a7730369d7d148ab02510b80`.
+
+The same workers570254/570255 entered utility/random epoch5 complete
+tracking at01:24:41Z, with checkpoint SHA256 respectively
+`cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10`
+and `7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4`.
+Original four trainers and postprocess613855 remained live at09:30:44+08:00.
+The local observation session exited, but these exact server processes
+were rechecked live; no evaluation or training was restarted.
+
+Candidate complete tracking is provisionally estimated near10:40+08:00,
+with candidate alternating outage following, pending candidate throughput.
+Random training finished epoch6 with fixed task-loss mean4.963055770
+(11/01/10=4.250733800/5.757652976/4.880780533) and entered epoch7.
+That improves on epoch5 but remains above epoch3 mean4.897612979;
+no convergence or tracking gain follows. Utility was still epoch6/update11700
+at09:30:44+08:00. Detailed random history is archived in
+`reports/candidate-random-epoch06-validation-20261031.json`.
