@@ -130,3 +130,56 @@ Output `reports/server28-state-offset-control4-20261031`, log sibling `.log`.
 `registration.json` is immutable; worker specs reference its hash.
 Do not modify the queued four source files before independent analysis.
 Original targets and three validated paper modules remain unachieved.
+
+## Completed Four-Video Result And Independent Replication
+
+The24 trajectories and independent analyzer completed by14:53 UTC+08.
+Downloaded report hash matches the server and completion receipt:
+`c522e6a898ebfc2f88a145bc41c9c317afc1c380efbddf397f1c36f35dccf32f`.
+Archived original four sources match every registered source hash.
+Both downloaded worker reports match their final report receipts.
+
+| Outage arm | PR20 | SR |
+|---|---:|---:|
+| Native | 76.109299 | 60.194491 |
+| Calibration sham | 76.109299 | 60.194491 |
+| Corrected | 76.889868 | 60.844880 |
+
+Paired PR/SR changes are+0.780568/+0.650389pp.
+Video bootstrap95% intervals[-1.951681,4.105839]/
+[-1.360381,3.278505] both cross zero. SR wins2/loses2:
+10phone_boy-.076805, mototaking2boys-1.861472,
+leftredflag-lsz+.142893, bikefromnorth+4.396941.
+Complete PR/SR75.596413/62.662731 is bitwise identical across all arms.
+All native/sham trajectories are bitwise identical, all offsets have verified
+past-only provenance, and the analyzer checks clipping, holds, call counts,
+input/checkpoint/source hashes and unchanged network state.
+This small heterogeneous result is insufficient to claim stable efficacy.
+
+Without changing the tracker or correction parameters, registered fresh
+development indices40..55 for16 videos13951 frames,96 trajectories.
+The same three arms and two conditions run on physical GPU0/1 beside their
+trainers, loads6968/6983 frames. The6158-frame leftconergirl is retained;
+cohort selection is sequential and independent of outcomes.
+Same video and physical GPU are used in every arm.
+Original sources were archived before adding cohort/output arguments to the
+controller/analyzer; evaluator changed only its descriptive scope string.
+The offset-tracker hash remains078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3.
+The revised entrypoints compile under the actual server Python.
+
+Controller1212195 launched14:55:51, workers1212202/1212203 were verified
+running14:56:10 with actual GPU memory allocation. Four training workers
+3453478/3453479/3816056/3816057 remain present in GPU process accounting.
+Immutable registration hash:
+`68d5a2fad5fb69663ddc03185a1061e7edd3f6aac3aecda412d795deab29f1f2`.
+Output `reports/server28-state-offset-replication16-20261031`,
+log sibling `.log`. Expected completion16:30-17:00 UTC+08 based on the
+completed four-video runtime; controller polls300seconds.
+Preserve the new four source hashes until its analyzer finishes.
+No replication outcomes or official benchmark improvements are established.
+
+The pinned DSRTrack review in `DSRTRACK_SOURCE_REVIEW_20261031.md`
+documents existing anchor-guided template repair, volatility-based queue
+selection, identity/licensing limitations and a coordinate-contract concern.
+It provides bounded source evidence, not a novelty certificate or adopted
+upstream code.

@@ -1,4 +1,5 @@
 """Independently verify offset-control trajectories and past-only corrections."""
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -20,6 +21,11 @@ def read(path):
 
 
 def main():
+    global OUTPUT
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    OUTPUT = args.output
     launch = read(OUTPUT / "launch.json")
     assert launch["registration_sha256"] == sha(OUTPUT / "registration.json")
     for path, expected in launch["source_sha256"].items():
@@ -97,7 +103,8 @@ def main():
                     all_records[name][arm][condition] = measured
                     total += 1
     names = sorted(all_records)
-    assert len(names) == 4 and total == 24
+    assert set(names) == {item["name"] for item in launch["cohort"]}
+    assert total == len(names) * 6
     indices = np.random.RandomState(2027).randint(0, len(names), (10000, len(names)))
     aggregate, contrasts = {}, {}
     for condition in ["complete", "alternating_outage"]:
@@ -112,7 +119,7 @@ def main():
         worker_receipts=receipts, trajectories_verified=total,
         sham_and_complete_bitwise_equal=True, past_only_offsets_verified=True,
         analyzer_sha256=sha(Path(__file__)),
-        scope="Four fresh full development videos, parameter-free offset calibration control; "
+        scope="Fresh full development videos, parameter-free offset calibration control; "
               "small paired-video uncertainty, no official result or novelty claim.")
     with (OUTPUT / "report.json").open("x") as stream:
         json.dump(result, stream, indent=2)

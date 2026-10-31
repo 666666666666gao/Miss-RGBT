@@ -54,7 +54,7 @@ def main():
         source_sha256={str(p): sha(p) for p in [
             Path(__file__), ROOT / "state_offset_tracker28.py", RUNTIME / "miss_rgbt/tracker.py",
             RUNTIME / "miss_rgbt/model.py", ROOT / "analyze_epoch05_health28.py"]},
-        scope="New sequential development36..39, parameter-free E0 calibration control. "
+        scope="Registered sequential development cohort, parameter-free E0 calibration control. "
               "No GT beyond initialization in inference, official score or novel-module claim.")
     save(args.output / "launch.json", launch)
     print("LAUNCH " + json.dumps(launch), flush=True)

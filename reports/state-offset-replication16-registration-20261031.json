@@ -1,0 +1,270 @@
+{
+  "pid": 1212195,
+  "registered_utc": "2026-10-31T06:55:51.071649Z",
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "cohort": [
+    {
+      "name": "AQmotomove",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/AQmotomove",
+      "development_index": 40,
+      "video_frames": 50,
+      "gt_sha256": "a0bc76164b9a138604b37e312c92b81c0792208b43a96518918728bd1c72b017"
+    },
+    {
+      "name": "leftdress-gai",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftdress-gai",
+      "development_index": 41,
+      "video_frames": 212,
+      "gt_sha256": "5a0efb7330b5df97a155b31445878384d197dbf26d95fb3660401372d92b4362"
+    },
+    {
+      "name": "greenleftthewhite",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/greenleftthewhite",
+      "development_index": 42,
+      "video_frames": 492,
+      "gt_sha256": "6e0a08c2a10c53190486058b84874ac6ba1c61a14b24853f720229af9f99d6ad"
+    },
+    {
+      "name": "rightof2boys953",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightof2boys953",
+      "development_index": 43,
+      "video_frames": 953,
+      "gt_sha256": "c26a650d56c9b68710ac7776914ddbb3b7474e6adc924d07e440583477e62903"
+    },
+    {
+      "name": "blueumbrellagirl",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/blueumbrellagirl",
+      "development_index": 44,
+      "video_frames": 467,
+      "gt_sha256": "948fda2dfd09d802f79d5440841807a762d1b71dbd33b5f27748139656cd60e6"
+    },
+    {
+      "name": "bikeinhand",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeinhand",
+      "development_index": 45,
+      "video_frames": 177,
+      "gt_sha256": "4fe0641320cb33a7831c223b5285ca9926f7d2dab61bad41ef1e3b36a0ad34be"
+    },
+    {
+      "name": "left4thgirlwithwhitepants",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/left4thgirlwithwhitepants",
+      "development_index": 46,
+      "video_frames": 619,
+      "gt_sha256": "c2fa408697c0f7e394b504cc36996b792c07301b8eb9bd985d66ca691425bffd"
+    },
+    {
+      "name": "takeoutman953",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/takeoutman953",
+      "development_index": 47,
+      "video_frames": 953,
+      "gt_sha256": "33f4b959863454c9801b9a9f60d6798bf95d54a8df6bd6012200a6e7c4b058c0"
+    },
+    {
+      "name": "whitegirl2",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirl2",
+      "development_index": 48,
+      "video_frames": 1399,
+      "gt_sha256": "e137be244132d22ff3de3a0952ff7402af469dcd26b6b9592039872ecf74db6f"
+    },
+    {
+      "name": "besom-ymm",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/besom-ymm",
+      "development_index": 49,
+      "video_frames": 1020,
+      "gt_sha256": "57a509c1e65fc5164467e9efdecb56584e4e1b7b26fc45cf700d834d7feea980"
+    },
+    {
+      "name": "leftconergirl",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftconergirl",
+      "development_index": 50,
+      "video_frames": 6158,
+      "gt_sha256": "8af2bc94981fb49d1a003d0fe2000058e44f0f2f6d18b3da781b1205aa56f92e"
+    },
+    {
+      "name": "bike150",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike150",
+      "development_index": 51,
+      "video_frames": 150,
+      "gt_sha256": "0f9d0d0f37c682b97f1aad06c860f278858ade3978c4b75bf65ad18245b5bb0d"
+    },
+    {
+      "name": "rightwhitegirlleftpink",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightwhitegirlleftpink",
+      "development_index": 52,
+      "video_frames": 569,
+      "gt_sha256": "275b51395ca31bf08d8689f085fa287e48d2a9aa307f44e318bd4c281f008c04"
+    },
+    {
+      "name": "blackinpeople",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/blackinpeople",
+      "development_index": 53,
+      "video_frames": 230,
+      "gt_sha256": "5044017450d99cf97631d354b758f78ec33d21893af77cf5f14c6d8b05012714"
+    },
+    {
+      "name": "left2flagfornews",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/left2flagfornews",
+      "development_index": 54,
+      "video_frames": 398,
+      "gt_sha256": "24f86a1aed1ba7c8b47402b9c91dfad2630f2673e25ae2873b85b51e97a2ca39"
+    },
+    {
+      "name": "bluetruck",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bluetruck",
+      "development_index": 55,
+      "video_frames": 104,
+      "gt_sha256": "867dd6300f69da15ebf38a8f4b139300106f98157ea406c3bd949d5ee3b599c1"
+    }
+  ],
+  "parts": {
+    "0": [
+      {
+        "name": "AQmotomove",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/AQmotomove",
+        "development_index": 40,
+        "video_frames": 50,
+        "gt_sha256": "a0bc76164b9a138604b37e312c92b81c0792208b43a96518918728bd1c72b017"
+      },
+      {
+        "name": "leftdress-gai",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftdress-gai",
+        "development_index": 41,
+        "video_frames": 212,
+        "gt_sha256": "5a0efb7330b5df97a155b31445878384d197dbf26d95fb3660401372d92b4362"
+      },
+      {
+        "name": "leftconergirl",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftconergirl",
+        "development_index": 50,
+        "video_frames": 6158,
+        "gt_sha256": "8af2bc94981fb49d1a003d0fe2000058e44f0f2f6d18b3da781b1205aa56f92e"
+      },
+      {
+        "name": "bike150",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike150",
+        "development_index": 51,
+        "video_frames": 150,
+        "gt_sha256": "0f9d0d0f37c682b97f1aad06c860f278858ade3978c4b75bf65ad18245b5bb0d"
+      },
+      {
+        "name": "left2flagfornews",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/left2flagfornews",
+        "development_index": 54,
+        "video_frames": 398,
+        "gt_sha256": "24f86a1aed1ba7c8b47402b9c91dfad2630f2673e25ae2873b85b51e97a2ca39"
+      }
+    ],
+    "1": [
+      {
+        "name": "greenleftthewhite",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/greenleftthewhite",
+        "development_index": 42,
+        "video_frames": 492,
+        "gt_sha256": "6e0a08c2a10c53190486058b84874ac6ba1c61a14b24853f720229af9f99d6ad"
+      },
+      {
+        "name": "rightof2boys953",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightof2boys953",
+        "development_index": 43,
+        "video_frames": 953,
+        "gt_sha256": "c26a650d56c9b68710ac7776914ddbb3b7474e6adc924d07e440583477e62903"
+      },
+      {
+        "name": "blueumbrellagirl",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blueumbrellagirl",
+        "development_index": 44,
+        "video_frames": 467,
+        "gt_sha256": "948fda2dfd09d802f79d5440841807a762d1b71dbd33b5f27748139656cd60e6"
+      },
+      {
+        "name": "bikeinhand",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeinhand",
+        "development_index": 45,
+        "video_frames": 177,
+        "gt_sha256": "4fe0641320cb33a7831c223b5285ca9926f7d2dab61bad41ef1e3b36a0ad34be"
+      },
+      {
+        "name": "left4thgirlwithwhitepants",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/left4thgirlwithwhitepants",
+        "development_index": 46,
+        "video_frames": 619,
+        "gt_sha256": "c2fa408697c0f7e394b504cc36996b792c07301b8eb9bd985d66ca691425bffd"
+      },
+      {
+        "name": "takeoutman953",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/takeoutman953",
+        "development_index": 47,
+        "video_frames": 953,
+        "gt_sha256": "33f4b959863454c9801b9a9f60d6798bf95d54a8df6bd6012200a6e7c4b058c0"
+      },
+      {
+        "name": "whitegirl2",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirl2",
+        "development_index": 48,
+        "video_frames": 1399,
+        "gt_sha256": "e137be244132d22ff3de3a0952ff7402af469dcd26b6b9592039872ecf74db6f"
+      },
+      {
+        "name": "besom-ymm",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/besom-ymm",
+        "development_index": 49,
+        "video_frames": 1020,
+        "gt_sha256": "57a509c1e65fc5164467e9efdecb56584e4e1b7b26fc45cf700d834d7feea980"
+      },
+      {
+        "name": "rightwhitegirlleftpink",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightwhitegirlleftpink",
+        "development_index": 52,
+        "video_frames": 569,
+        "gt_sha256": "275b51395ca31bf08d8689f085fa287e48d2a9aa307f44e318bd4c281f008c04"
+      },
+      {
+        "name": "blackinpeople",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blackinpeople",
+        "development_index": 53,
+        "video_frames": 230,
+        "gt_sha256": "5044017450d99cf97631d354b758f78ec33d21893af77cf5f14c6d8b05012714"
+      },
+      {
+        "name": "bluetruck",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bluetruck",
+        "development_index": 55,
+        "video_frames": 104,
+        "gt_sha256": "867dd6300f69da15ebf38a8f4b139300106f98157ea406c3bd949d5ee3b599c1"
+      }
+    ]
+  },
+  "loads": {
+    "0": 6968,
+    "1": 6983
+  },
+  "entry_witness_sha256": "bd9d7f5fcbbeb50b19023e08e249f580debd0831d3848eada399b123fc0aada4",
+  "development_indices": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/run_state_offset_control28.py": "4635c0746d758243c6827caa5f200a43bde721c842cef63981b09faced6f13d7",
+    "/home/gaob/Miss-RGBT/evaluate_state_offset28.py": "d3fb5ff34d6557efb798211016ed9dd33c4d207ec9b60ea33a25eff4692b7909",
+    "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+    "/home/gaob/Miss-RGBT/analyze_state_offset28.py": "7b530d273b9fccd35f539ff24dadbc74b76a22e4ccc545389b45b738670bd8dd"
+  },
+  "previous_pid": 1173352,
+  "poll_seconds": 300,
+  "children": {},
+  "scope": "Sequential fresh development videos; fixed parameter-free correction and equal-compute sham, no outcomes used for cohort selection or tuning."
+}

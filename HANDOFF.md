@@ -1434,3 +1434,32 @@ Independentanalysisverifiescausaloffsettrace+allmetrics/equalities.
 docs/STATE_OFFSET_CONTROL_20261031.md givesprotocolandlimitations.
 Fullobjectiveunfinished,nonewofficielscores/threevalidatedmodules.
 
+## 2026-10-31 14:56 UTC+08 - Offset control final and fresh16 launch
+
+Four-video offset control completed24tracks, independently verified and
+downloaded with matching final/worker/source hashes. FinalSHA
+c522e6a898ebfc2f88a145bc41c9c317afc1c380efbddf397f1c36f35dccf32f.
+Outage nativePR/SR76.109299/60.194491 ->corrected76.889868/60.844880,
+delta+.780568/+.650389pp;95CI[-1.951681,4.105839]/[-1.360381,3.278505]
+cross0,SR2wins2losses. Allcomplete/shambitwiseequal,pastoffsetsverified.
+Notstablegain,officialresultorvalidatedmodule.
+
+Archived4originalsourcesbeforeCLIcohort/outputchanges;trackerunchanged.
+Freshregistereddev40..55,16videos13951frames96tracks,loads6968/6983.
+Controller1212195started14:55:51;workers1212202/1212203actualrunning
+14:56:10withGPUallocationbeside4trainers.
+Outputreports/server28-state-offset-replication16-20261031,logsibling.log.
+RegistrationSHA68d5a2fad5fb69663ddc03185a1061e7edd3f6aac3aecda412d795deab29f1f2.
+Estimate16:30-17:00,300spolls;preserve4newsourcesuntilfinalanalysis.
+Noalgorithm/parameterchanges,nosequencefiltering,6158-framevideo retained.
+SourcescompileactualserverPython;final4reportsandregistration/launchinGit.
+
+DSRTrackpinnedd9e23e08e5b98ede129e4512fc89220d68d307ca source review:
+anchor-guidedrepair+volatilityqueuealreadyexist,notDCTrackcodeidentity
+proof;no rootlicensefile,selectedheadersApache2only;coordinatecontract
+concern(updaterwidth/heightvsevaluatorcornerboxes)static,notruntimeproof.
+Noexternalcode/dependency/weightsintegrated;docDSRTRACK_SOURCE_REVIEW_20261031.
+Candidateverification06:51:48Zutility9/17727random10/18303,finite,
+sharedinputsidentical. Estimatednextboundaries15:06/16:20UTC+08.
+NoLRdropconvergenceyet,earlieststop14;fullobjectiveunfinished.
+

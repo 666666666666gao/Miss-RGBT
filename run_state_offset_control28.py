@@ -23,9 +23,15 @@ def save(path, value):
 
 
 def main():
+    global OUTPUT, PREVIOUS
     parser = argparse.ArgumentParser()
     parser.add_argument("--wait-pid", type=int, required=True)
+    parser.add_argument("--start", type=int, default=36)
+    parser.add_argument("--count", type=int, default=4)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--previous", type=Path, default=PREVIOUS)
     args = parser.parse_args()
+    OUTPUT, PREVIOUS = args.output, args.previous
     entry_path = ROOT / "reports/server28-state-offset-entry-20261031.json"
     entry = json.loads(entry_path.read_text())
     assert entry["sham_bitwise_equal"] and entry["complete_bitwise_equal"]
@@ -36,7 +42,8 @@ def main():
     manifest_path = ROOT / "reports/server28-protected-sixepoch-20261030/inputs.json"
     manifest = json.loads(manifest_path.read_text())
     cohort = []
-    for index in range(36, 40):
+    indices = list(range(args.start, args.start + args.count))
+    for index in indices:
         name = manifest["development_sequences"][index]
         folder = Path("/data/wangwj/dataset/LasHeR/trainingset") / name
         gt_path = folder / "init.txt"
@@ -46,10 +53,10 @@ def main():
         assert len(list((folder / "infrared").glob("*.jpg"))) == len(gt)
         cohort.append(dict(name=name, folder=str(folder), development_index=index,
                            video_frames=len(gt), gt_sha256=sha(gt_path)))
-    assert sum(row["video_frames"] for row in cohort) == 2155
+    assert len(cohort) == args.count
     assert not {row["name"] for row in cohort} & (
         set(manifest["train_sequences"]) | set(manifest["heldout_sequences"]) |
-        set(manifest["development_sequences"][:36]))
+        set(manifest["development_sequences"][:args.start]))
     parts, loads = {0: [], 1: []}, {0: 0, 1: 0}
     for row in sorted(cohort, key=lambda item: -item["video_frames"]):
         gpu = min(loads, key=lambda value: (loads[value], value))
@@ -65,9 +72,9 @@ def main():
         pid=os.getpid(), registered_utc=datetime.datetime.utcnow().isoformat() + "Z",
         input_manifest_sha256=sha(manifest_path), cohort=cohort, parts=parts, loads=loads,
         entry_witness_sha256=sha(entry_path),
-        development_indices=list(range(36, 40)), source_sha256=sources,
+        development_indices=indices, source_sha256=sources,
         previous_pid=previous_pid, poll_seconds=300, children={},
-        scope="Four sequential fresh development videos; fixed parameter-free correction "
+        scope="Sequential fresh development videos; fixed parameter-free correction "
               "and equal-compute sham, no outcomes used for cohort selection or tuning.")
     save(OUTPUT / "registration.json", launch)
     launch["registration_sha256"] = sha(OUTPUT / "registration.json")
@@ -78,8 +85,12 @@ def main():
         time.sleep(300)
     completion = json.loads((PREVIOUS / "completed.json").read_text())
     assert completion["report_sha256"] == sha(PREVIOUS / "report.json")
-    comparison = json.loads((PREVIOUS / "comparison.json").read_text())
-    assert comparison["same_cohort_gpu_checkpoint"] and all(comparison["controls_equal"].values())
+    if args.start == 36:
+        comparison = json.loads((PREVIOUS / "comparison.json").read_text())
+        assert comparison["same_cohort_gpu_checkpoint"] and all(comparison["controls_equal"].values())
+    else:
+        report = json.loads((PREVIOUS / "report.json").read_text())
+        assert report["sham_and_complete_bitwise_equal"] and report["past_only_offsets_verified"]
     for path, expected in sources.items():
         assert sha(path) == expected, path
     memory = subprocess.check_output([
@@ -108,7 +119,8 @@ def main():
     while any(process.poll() is None for process in processes.values()):
         time.sleep(300)
     assert all(process.returncode == 0 for process in processes.values())
-    subprocess.check_call([sys.executable, str(ROOT / "analyze_state_offset28.py")])
+    subprocess.check_call([sys.executable, str(ROOT / "analyze_state_offset28.py"),
+                           "--output", str(OUTPUT)])
     print("COMPLETE", flush=True)
 
 
