@@ -1838,3 +1838,38 @@ ETA19:30-19:45+08thenrefineactualcalls;300spollsnearcompletion.
 DocSCALE_ONLY_CONTROL_20261031.md. Preserve newsource/shareddependencies
 untilfinal48traceverification. Notofficial/modulebenefit/convergence.
 
+## 2026-10-31 19:40 UTC+08 - Completed component control
+
+Scale-only control finished48trajectories, report SHA256
+df6a9be1f1ce6ec5dad1b81b980357b1b639f29be7c3fc3d5de0d8ca064b9cf7.
+Native/sham, scale-only, geometry PR20/SR:
+complete75.146496/57.352125 for all;
+block32 57.257201/44.689179,52.145743/39.656658,58.213389/44.977624;
+block128 57.049005/44.075706,57.443327/43.987086,57.891059/45.397069.
+Reject unconditional center removal. Block128 has TIR-only missing
+exposure, no RGB-only/blind exposure. Full hash/metric/past-only/control
+checks passed; frozen state is a worker witness, not independent replay.
+See docs/SCALE_ONLY_CONTROL_20261031.md for paired intervals and limits.
+
+Template pilot primary protocol now records completed192updates per arm,
+selectedepoch6/final5, one retained/four removed each, mean improvement
+only0.19%,3of6missing-search cells improve. Formal A already samples
+dynamic-template availability; no template omission justifies a live patch.
+ViPT source review pins f49f30186ebff5587600a61ff224bb341c0a3243,
+documents prompt prior art/availability limits; no code integrated/executed.
+
+At19:39:32 four trainers50004/49999/50013/50008, four final verifiers
+128343..128346 and cleanup197828 were actually live. All4power limits250W;
+temperatures85/80/81/77C. No power/temperature operation executed by agent.
+At19:40:06 fixedU/R12 updates28833/28938; candidateU11/22000,
+candidateR13/24065. All recorded task/loss/update means finite.
+CandidateRandom12 proxy5.03791772077481 (11/01/10:
+4.340420678257942/5.873122118413448/4.900210365653038).
+Utility11 validation pending in this snapshot. Final5/common-weight
+official results, cleanup and three validated modules remain pending.
+
+19:43 update: Utility11 validation now complete, mean4.984900663296382,
+states11/01/10=4.355199903249741/5.744167685508728/4.855334401130676.
+Raw Utility11 and Random12 histories are published with hashes in latest
+metrics document. This supersedes the pending Utility11 snapshot below.
+

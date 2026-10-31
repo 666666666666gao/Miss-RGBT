@@ -1,5 +1,40 @@
 # Miss-RGBT evidence and remaining targets
 
+## Current Decision Context, 2026-10-31
+
+Four recovered server28 trainings continue. Their final-five tracking
+selection, common-weight official evaluation and independent verification
+remain pending. Read LATEST_TRAINING_METRICS_20261031.md for timestamped
+training and validation values. Historical entries below are not current
+process-state claims. No current-campaign official threshold attainment or
+three validated paper modules has been proved.
+
+The next implementation decisions must address demonstrated problems:
+
+| Problem | Current evidence | Required next evidence |
+|---|---|---|
+| Selector attribution | Full97 epoch5 Utility trails Random; disabling repair in the matched epoch6 audit leaves most between-model loss differences | Matched retrained control and full trajectories must isolate selection benefit |
+| Tracking history after observation returns | E0 full97 outage trajectories retain a2.937169point SR penalty on current11 frames relative to complete trajectories | A temporal intervention must improve restoration trajectories while controlling crop/template history |
+| Persistent calibration | Fresh4 gap control geometry-native SR+0.949828 at block32, -4.805974 at block128 | Independent component and longer-exposure controls must test which correction remains useful |
+
+These are research problems, not three completed contributions.
+The completed observed-copy control worsens6of8noncomplete mean-loss
+cells, so copying is not promoted. The template-coverage paired pilot
+improves selected mean loss only0.19%, with3of6missing-search cells worse.
+Formal A training already samples dynamic-template masks; there is no
+evidenced omission requiring a live training patch.
+
+CMNeXt and ViPT source reviews identify learned selection/fusion and
+frozen-main-model prompt adaptation as prior art. Neither was integrated
+or reproduced. A source reference is not experimental support for a module.
+The scale-only48trajectory control completed on new development64..67.
+Scale-native SR is-5.032522/-0.088620pp at block32/128; scale-geometry
+is-5.320967/-1.409983pp. Reject unconditional center-translation removal.
+All four videos end before RGB-only block128 or blind exposure.
+Same-history instantaneous diagnostics did not predict closed-loop benefit.
+Keep current source/runtime and registered weights intact until queued
+verification and cleanup complete.
+
 ## Latest Evidence, 2026-10-31 14:35 UTC+08
 
 Fresh CPU factorial completed576calls in338.26s. Current01 state matching

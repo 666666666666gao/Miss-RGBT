@@ -144,3 +144,53 @@ Receipt: reports/protected-template-paired-progress-20261031T0506.json.
 The existing six-epoch protocol and final-five selection remain unchanged.
 Analysis controller1020925 will run the independent final paired audit
 after CPU869785 exits and completion artifacts exist.
+
+## Completed Result
+
+The earlier live entries above are historical. Both arms completed192
+updates, selectedepoch6 within the registered final five epochs2..6, replayed
+that selection, retained one small branch checkpoint and removed the other
+four with receipts. The separate analyzer verified384total updates,
+common initialization, replayed input hashes, all nine-cell loss means,
+exact selection scores, retained hashes and deleted-file absence.
+
+| Training template coverage | Selected six-cell mean task loss |
+|---|---:|
+| Complete | 4.363575024840732 |
+| Mixed11/01/10 | 4.355297873883198 |
+
+Mixed minus complete is-0.008277150957534, approximately-0.19%.
+Only3of6missing-search cells improve;3worsen. Fully complete11_11
+outputs remain identical. Selected development tuples are reused in these
+comparisons; the numbers do not prove independent generalization, tracking
+improvement, convergence or a new module. Do not promote this small mixed
+effect alone into a larger GPU training campaign.
+
+| Dynamic/search | Complete-template training loss | Mixed-template training loss | Mixed minus complete |
+|---|---:|---:|---:|
+| 11/11 | 2.988172 | 2.988172 | 0 |
+| 11/01 | 4.534665 | 4.564351 | +0.029686 |
+| 11/10 | 3.300384 | 3.292627 | -0.007758 |
+| 01/11 | 3.328026 | 3.326445 | -0.001581 |
+| 01/01 | 4.603475 | 4.612228 | +0.008753 |
+| 01/10 | 4.024025 | 4.043722 | +0.019697 |
+| 10/11 | 3.734240 | 3.737079 | +0.002839 |
+| 10/01 | 6.409793 | 6.315915 | -0.093879 |
+| 10/10 | 3.309108 | 3.302945 | -0.006163 |
+
+The largest reduction is the opposite-modality10/01cell. The sign changes
+across other cells rule out a uniform benefit from this selected comparison.
+
+Retained branch hashes:
+complete `fe1bc6fb533ae81b2bc8e4e2cf1fc4005c10ee0b165fd70ff016b300838ea7ad`;
+mixed `15cad3fbd973ec1c674a76565961fbe42d39679a6affe01e7849dec78e23a434`.
+Published comparison SHA256
+`f4f28cb3a39fb2edd54c09be26804feb79da05c20601b1a84b7a4575f3184132`;
+analysis SHA256
+`d83418a53bd3287412c7dd7b34732b901086d2c159540acc8a93e6792ae6108f`.
+Both hashes were rechecked against server artifacts at19:26:20 UTC+08.
+
+The formal A training sampler already keeps initialization complete and
+samples dynamic-template and search availability independently among11/01/10.
+This pilot concerns a simplified frozen-branch control; it does not identify
+a missing-template omission in the four running formal campaigns.

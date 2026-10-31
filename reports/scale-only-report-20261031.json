@@ -1,0 +1,1515 @@
+{
+  "launch": {
+    "pid": 268017,
+    "registered_utc": "2026-10-31T11:18:15.111398Z",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "development_indices": [
+      64,
+      65,
+      66,
+      67
+    ],
+    "cohort": [
+      {
+        "name": "rightgirlbike",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightgirlbike",
+        "development_index": 64,
+        "video_frames": 190,
+        "gt_sha256": "953e1e1b7228f7a81ab79b360ed74532ed1f21e49de346c58acbae5a5f041c6d"
+      },
+      {
+        "name": "whitegirlcrossingroad",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlcrossingroad",
+        "development_index": 65,
+        "video_frames": 154,
+        "gt_sha256": "9c0c6c131b303621be99550e0c5c6febd55ac3ebf2bd78623711f74a7d3bb1fc"
+      },
+      {
+        "name": "boybesidescarwithouthat",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boybesidescarwithouthat",
+        "development_index": 66,
+        "video_frames": 318,
+        "gt_sha256": "7f1924988500c7b543694270e15acf2dc28051d98466ead2cdd8ef5f878c6d4d"
+      },
+      {
+        "name": "rightblkboybesidesred",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightblkboybesidesred",
+        "development_index": 67,
+        "video_frames": 219,
+        "gt_sha256": "1065f3e0d6b7e38ad9e735766d8fbbbe8015e4aa74fc6e7e7daf76b86e6520e4"
+      }
+    ],
+    "parts": {
+      "0": [
+        {
+          "name": "boybesidescarwithouthat",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/boybesidescarwithouthat",
+          "development_index": 66,
+          "video_frames": 318,
+          "gt_sha256": "7f1924988500c7b543694270e15acf2dc28051d98466ead2cdd8ef5f878c6d4d"
+        },
+        {
+          "name": "whitegirlcrossingroad",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlcrossingroad",
+          "development_index": 65,
+          "video_frames": 154,
+          "gt_sha256": "9c0c6c131b303621be99550e0c5c6febd55ac3ebf2bd78623711f74a7d3bb1fc"
+        }
+      ],
+      "1": [
+        {
+          "name": "rightblkboybesidesred",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightblkboybesidesred",
+          "development_index": 67,
+          "video_frames": 219,
+          "gt_sha256": "1065f3e0d6b7e38ad9e735766d8fbbbe8015e4aa74fc6e7e7daf76b86e6520e4"
+        },
+        {
+          "name": "rightgirlbike",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightgirlbike",
+          "development_index": 64,
+          "video_frames": 190,
+          "gt_sha256": "953e1e1b7228f7a81ab79b360ed74532ed1f21e49de346c58acbae5a5f041c6d"
+        }
+      ]
+    },
+    "loads": {
+      "0": 472,
+      "1": 409
+    },
+    "arms": [
+      "native",
+      "sham",
+      "scale",
+      "geometry"
+    ],
+    "conditions": [
+      "complete",
+      "block32_outage",
+      "block128_outage"
+    ],
+    "frame_blocks": {
+      "complete": 0,
+      "alternating_outage": 1,
+      "block32_outage": 32,
+      "block128_outage": 128
+    },
+    "pattern": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_scale_only28.py": "acf6a56e84cbfdfa406ef7904664627ea52e899f3933e37e25afe2de2e182086",
+      "/home/gaob/Miss-RGBT/spatial_calibration_tracker28.py": "7f53a211e16b7e4f5c2e52021e8c63188d222b620b6a8d2161e443d0ef8283f8",
+      "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+      "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+      "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4"
+    },
+    "witness_sha256": "0d3fb33841f505c8b1340340c82336e3be75f5cad9cb48af08dfbc2cd1ec6d05",
+    "poll_seconds": 300,
+    "scope": "Sequential fresh development indices64..67, no outcome or duration filtering. Native/sham/scale-only/center-plus-scale, complete/block32/block128. Same E0 and hardware per video; no fitted gate, expiry, decay or weight updates.",
+    "registration_sha256": "c8335c3a96ba57e2ad3fbc3a96c3f764e15f64304095af0f55079c358a51ed10",
+    "started_utc": "2026-10-31T11:18:15.182086Z",
+    "previous_report_sha256": "2ff1cb19cb250aeb4cc6f98d6b440de1b6f32633c246206cfb23375617c61ebd"
+  },
+  "aggregate": {
+    "complete": {
+      "native": {
+        "PR20": 75.14649648628395,
+        "SR": 57.352125028691354
+      },
+      "sham": {
+        "PR20": 75.14649648628395,
+        "SR": 57.352125028691354
+      },
+      "scale": {
+        "PR20": 75.14649648628395,
+        "SR": 57.352125028691354
+      },
+      "geometry": {
+        "PR20": 75.14649648628395,
+        "SR": 57.352125028691354
+      }
+    },
+    "block32_outage": {
+      "native": {
+        "PR20": 57.2572011887105,
+        "SR": 44.68917923004736
+      },
+      "sham": {
+        "PR20": 57.2572011887105,
+        "SR": 44.68917923004736
+      },
+      "scale": {
+        "PR20": 52.14574264541833,
+        "SR": 39.656657700440924
+      },
+      "geometry": {
+        "PR20": 58.21338877151686,
+        "SR": 44.977624254086535
+      }
+    },
+    "block128_outage": {
+      "native": {
+        "PR20": 57.04900512380837,
+        "SR": 44.07570629778712
+      },
+      "sham": {
+        "PR20": 57.04900512380837,
+        "SR": 44.07570629778712
+      },
+      "scale": {
+        "PR20": 57.44332689036988,
+        "SR": 43.98708629208443
+      },
+      "geometry": {
+        "PR20": 57.89105943589422,
+        "SR": 45.39706912219371
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "scale_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      },
+      "scale_minus_geometry": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "block32_outage": {
+      "scale_minus_native": {
+        "PR20": {
+          "mean_delta_pp": -5.111458543292168,
+          "paired_sequence_bootstrap95_pp": [
+            -11.622615407019087,
+            0.7170144415824939
+          ],
+          "wins": 1,
+          "ties": 0,
+          "losses": 3,
+          "worst5": [
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -15.343915343915356
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -6.535947712418306
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4587155963302756
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 1.8927444794952635
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 1.8927444794952635
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4587155963302756
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -6.535947712418306
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -15.343915343915356
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -5.032521529606429,
+          "paired_sequence_bootstrap95_pp": [
+            -10.15665525469447,
+            0.0916121954816127
+          ],
+          "wins": 1,
+          "ties": 0,
+          "losses": 3,
+          "worst5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -11.67133520074696
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -8.641975308641982
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.8082131935342929
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.9914375844975183
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.9914375844975183
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.8082131935342929
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -8.641975308641982
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -11.67133520074696
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.9561875828063622,
+          "paired_sequence_bootstrap95_pp": [
+            -8.9742626808873,
+            10.17943874797626
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -13.227513227513242
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4587155963302756
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 3.785488958990527
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 13.72549019607844
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 13.72549019607844
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 3.785488958990527
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4587155963302756
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -13.227513227513242
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.28844502403917627,
+          "paired_sequence_bootstrap95_pp": [
+            -5.080819569327902,
+            5.45522490341703
+          ],
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -7.079868984630885
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.06553079947575569
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.9163286765810454
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 7.251789604730789
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 7.251789604730789
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.9163286765810454
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.06553079947575569
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -7.079868984630885
+            }
+          ]
+        }
+      },
+      "scale_minus_geometry": {
+        "PR20": {
+          "mean_delta_pp": -6.067646126098531,
+          "paired_sequence_bootstrap95_pp": [
+            -15.669264551246375,
+            -0.5291005291005284
+          ],
+          "wins": 0,
+          "ties": 1,
+          "losses": 3,
+          "worst5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -20.261437908496745
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -2.1164021164021136
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -1.8927444794952635
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -1.8927444794952635
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -2.1164021164021136
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -20.261437908496745
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -5.320966553645605,
+          "paired_sequence_bootstrap95_pp": [
+            -14.410779602360824,
+            -0.33419490006541963
+          ],
+          "wins": 1,
+          "ties": 0,
+          "losses": 3,
+          "worst5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -18.923124805477748
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -1.562106324011097
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.8737439930100486
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.07510890791647284
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.07510890791647284
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.8737439930100486
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -1.562106324011097
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -18.923124805477748
+            }
+          ]
+        }
+      }
+    },
+    "block128_outage": {
+      "scale_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.3943217665615144,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            1.1829652996845432
+          ],
+          "wins": 1,
+          "ties": 3,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 1.5772870662460576
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 1.5772870662460576
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -0.08862000570268869,
+          "paired_sequence_bootstrap95_pp": [
+            -0.5426227575637768,
+            0.3653827461583994
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.6046863189720284
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4805591961555251
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.2801120448179262
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.4506534474988726
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 0.4506534474988726
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.2801120448179262
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -0.4805591961555251
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.6046863189720284
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.8420543120858586,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            2.1293375394321767
+          ],
+          "wins": 2,
+          "ties": 2,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.529100529100532
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 2.8391167192429023
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 2.8391167192429023
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": 0.529100529100532
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 1.3213628244065845,
+          "paired_sequence_bootstrap95_pp": [
+            0.34532331451099907,
+            2.330830684885246
+          ],
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.025195263290498815
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.715841892312497
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 1.725644386194844
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 2.8691602824094957
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": 2.8691602824094957
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 1.725644386194844
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.715841892312497
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.025195263290498815
+            }
+          ]
+        }
+      },
+      "scale_minus_geometry": {
+        "PR20": {
+          "mean_delta_pp": -0.44773254552434416,
+          "paired_sequence_bootstrap95_pp": [
+            -0.9463722397476335,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 2,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -1.2618296529968447
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.529100529100532
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.529100529100532
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -1.2618296529968447
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -1.4099828301092732,
+          "paired_sequence_bootstrap95_pp": [
+            -2.312355208630496,
+            -0.5076104515880502
+          ],
+          "wins": 0,
+          "ties": 0,
+          "losses": 4,
+          "worst5": [
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -2.418506834910623
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -2.206203582350369
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.5794910556815296
+            },
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -0.4357298474945708
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "whitegirlcrossingroad",
+              "delta_pp": -0.4357298474945708
+            },
+            {
+              "sequence": "rightgirlbike",
+              "delta_pp": -0.5794910556815296
+            },
+            {
+              "sequence": "rightblkboybesidesred",
+              "delta_pp": -2.206203582350369
+            },
+            {
+              "sequence": "boybesidescarwithouthat",
+              "delta_pp": -2.418506834910623
+            }
+          ]
+        }
+      }
+    }
+  },
+  "per_video": {
+    "boybesidescarwithouthat": {
+      "native": {
+        "complete": {
+          "PR20": 88.64353312302839,
+          "SR": 63.55715787892444,
+          "scored_frames": 317
+        },
+        "block32_outage": {
+          "PR20": 67.19242902208202,
+          "SR": 47.99459215863001,
+          "scored_frames": 317
+        },
+        "block128_outage": {
+          "PR20": 40.063091482649845,
+          "SR": 29.5328225927595,
+          "scored_frames": 317
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 88.64353312302839,
+          "SR": 63.55715787892444,
+          "scored_frames": 317
+        },
+        "block32_outage": {
+          "PR20": 67.19242902208202,
+          "SR": 47.99459215863001,
+          "scored_frames": 317
+        },
+        "block128_outage": {
+          "PR20": 40.063091482649845,
+          "SR": 29.5328225927595,
+          "scored_frames": 317
+        }
+      },
+      "scale": {
+        "complete": {
+          "PR20": 88.64353312302839,
+          "SR": 63.55715787892444,
+          "scored_frames": 317
+        },
+        "block32_outage": {
+          "PR20": 69.08517350157729,
+          "SR": 48.98602974312753,
+          "scored_frames": 317
+        },
+        "block128_outage": {
+          "PR20": 41.6403785488959,
+          "SR": 29.983476040258374,
+          "scored_frames": 317
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 88.64353312302839,
+          "SR": 63.55715787892444,
+          "scored_frames": 317
+        },
+        "block32_outage": {
+          "PR20": 70.97791798107255,
+          "SR": 48.91092083521106,
+          "scored_frames": 317
+        },
+        "block128_outage": {
+          "PR20": 42.90220820189275,
+          "SR": 32.401982875169,
+          "scored_frames": 317
+        }
+      }
+    },
+    "whitegirlcrossingroad": {
+      "native": {
+        "complete": {
+          "PR20": 96.73202614379085,
+          "SR": 67.35138499844382,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 64.05228758169935,
+          "SR": 51.19825708061002,
+          "scored_frames": 153
+        },
+        "block128_outage": {
+          "PR20": 96.73202614379085,
+          "SR": 66.1064425770308,
+          "scored_frames": 153
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 96.73202614379085,
+          "SR": 67.35138499844382,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 64.05228758169935,
+          "SR": 51.19825708061002,
+          "scored_frames": 153
+        },
+        "block128_outage": {
+          "PR20": 96.73202614379085,
+          "SR": 66.1064425770308,
+          "scored_frames": 153
+        }
+      },
+      "scale": {
+        "complete": {
+          "PR20": 96.73202614379085,
+          "SR": 67.35138499844382,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 57.51633986928104,
+          "SR": 39.52692187986306,
+          "scored_frames": 153
+        },
+        "block128_outage": {
+          "PR20": 96.73202614379085,
+          "SR": 66.38655462184873,
+          "scored_frames": 153
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 96.73202614379085,
+          "SR": 67.35138499844382,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 77.77777777777779,
+          "SR": 58.45004668534081,
+          "scored_frames": 153
+        },
+        "block128_outage": {
+          "PR20": 96.73202614379085,
+          "SR": 66.8222844693433,
+          "scored_frames": 153
+        }
+      }
+    },
+    "rightblkboybesidesred": {
+      "native": {
+        "complete": {
+          "PR20": 21.55963302752294,
+          "SR": 18.807339449541285,
+          "scored_frames": 218
+        },
+        "block32_outage": {
+          "PR20": 17.889908256880734,
+          "SR": 15.945827872433377,
+          "scored_frames": 218
+        },
+        "block128_outage": {
+          "PR20": 21.55963302752294,
+          "SR": 19.28789864569681,
+          "scored_frames": 218
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 21.55963302752294,
+          "SR": 18.807339449541285,
+          "scored_frames": 218
+        },
+        "block32_outage": {
+          "PR20": 17.889908256880734,
+          "SR": 15.945827872433377,
+          "scored_frames": 218
+        },
+        "block128_outage": {
+          "PR20": 21.55963302752294,
+          "SR": 19.28789864569681,
+          "scored_frames": 218
+        }
+      },
+      "scale": {
+        "complete": {
+          "PR20": 21.55963302752294,
+          "SR": 18.807339449541285,
+          "scored_frames": 218
+        },
+        "block32_outage": {
+          "PR20": 17.431192660550458,
+          "SR": 15.137614678899084,
+          "scored_frames": 218
+        },
+        "block128_outage": {
+          "PR20": 21.55963302752294,
+          "SR": 18.807339449541285,
+          "scored_frames": 218
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 21.55963302752294,
+          "SR": 18.807339449541285,
+          "scored_frames": 218
+        },
+        "block32_outage": {
+          "PR20": 17.431192660550458,
+          "SR": 16.011358671909132,
+          "scored_frames": 218
+        },
+        "block128_outage": {
+          "PR20": 21.55963302752294,
+          "SR": 21.013543031891654,
+          "scored_frames": 218
+        }
+      }
+    },
+    "rightgirlbike": {
+      "native": {
+        "complete": {
+          "PR20": 93.65079365079364,
+          "SR": 79.69261778785588,
+          "scored_frames": 189
+        },
+        "block32_outage": {
+          "PR20": 79.8941798941799,
+          "SR": 63.618039808516,
+          "scored_frames": 189
+        },
+        "block128_outage": {
+          "PR20": 69.84126984126983,
+          "SR": 61.37566137566137,
+          "scored_frames": 189
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 93.65079365079364,
+          "SR": 79.69261778785588,
+          "scored_frames": 189
+        },
+        "block32_outage": {
+          "PR20": 79.8941798941799,
+          "SR": 63.618039808516,
+          "scored_frames": 189
+        },
+        "block128_outage": {
+          "PR20": 69.84126984126983,
+          "SR": 61.37566137566137,
+          "scored_frames": 189
+        }
+      },
+      "scale": {
+        "complete": {
+          "PR20": 93.65079365079364,
+          "SR": 79.69261778785588,
+          "scored_frames": 189
+        },
+        "block32_outage": {
+          "PR20": 64.55026455026454,
+          "SR": 54.97606449987402,
+          "scored_frames": 189
+        },
+        "block128_outage": {
+          "PR20": 69.84126984126983,
+          "SR": 60.770975056689345,
+          "scored_frames": 189
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 93.65079365079364,
+          "SR": 79.69261778785588,
+          "scored_frames": 189
+        },
+        "block32_outage": {
+          "PR20": 66.66666666666666,
+          "SR": 56.53817082388512,
+          "scored_frames": 189
+        },
+        "block128_outage": {
+          "PR20": 70.37037037037037,
+          "SR": 61.350466112370874,
+          "scored_frames": 189
+        }
+      }
+    }
+  },
+  "effect_change_from_block32": {
+    "block128_outage": {
+      "scale_minus_native": {
+        "PR20": {
+          "mean_delta": 5.505780309853683,
+          "paired_video_bootstrap95": [
+            0.07162909154053487,
+            11.622615407019087
+          ]
+        },
+        "SR": {
+          "mean_delta": 4.94390152390374,
+          "paired_video_bootstrap95": [
+            -0.10656506980993896,
+            9.99436811761742
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta": -0.11413327072050361,
+          "paired_video_bootstrap95": [
+            -10.17943874797626,
+            10.080867257523424
+          ]
+        },
+        "SR": {
+          "mean_delta": 1.0329178003674082,
+          "paired_video_bootstrap95": [
+            -4.413752882856606,
+            5.7060336876850615
+          ]
+        }
+      },
+      "scale_minus_geometry": {
+        "PR20": {
+          "mean_delta": 5.619913580574186,
+          "paired_video_bootstrap95": [
+            0.3154574132492094,
+            15.353807137997164
+          ]
+        },
+        "SR": {
+          "mean_delta": 3.910983723536332,
+          "paired_video_bootstrap95": [
+            -1.9130376660837083,
+            13.532431321152304
+          ]
+        }
+      }
+    }
+  },
+  "calibration_age_by_video": {
+    "boybesidescarwithouthat": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 126,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.0,
+          29.0,
+          30.0,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 128,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          64.5,
+          115.3,
+          121.64999999999999,
+          126.73,
+          128.0
+        ]
+      }
+    },
+    "whitegirlcrossingroad": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 64,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          30.849999999999994,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 26,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          13.5,
+          23.5,
+          24.75,
+          25.75,
+          26.0
+        ]
+      }
+    },
+    "rightblkboybesidesred": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 64,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          30.849999999999994,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 91,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          46.0,
+          82.0,
+          86.5,
+          90.1,
+          91.0
+        ]
+      }
+    },
+    "rightgirlbike": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 64,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          30.849999999999994,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 62,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          31.5,
+          55.9,
+          58.949999999999996,
+          61.39,
+          62.0
+        ]
+      }
+    }
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "f4f987333498888a09e020f7e475b6d163bf8cbfe07506463037e83f39b31c88",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    "1": {
+      "report_sha256": "a90a029ba57461eeb9997f13ec6ca20b5f9163c30804a8fc3a643df7a2cfaf82",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    }
+  },
+  "trajectories_verified": 48,
+  "past_only_center_and_scale_verified": true,
+  "controls_bitwise_equal": true,
+  "scope": "Four prospectively registered fresh development videos, complete/block32/block128 scale-only versus native and center-plus-scale. Block interactions change all modality histories, not isolated cache-age causality. Ordinary component control, not official benchmark or novel-module evidence."
+}

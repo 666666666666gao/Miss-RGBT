@@ -160,3 +160,24 @@ from the server results directory. Epoch5 development evaluation reports
 PR20/SR only; no epoch5 development NPR or FPS was produced in this report.
 The previous user-facing report omitted the completed epoch5 development
 tracking table; that omission is corrected here.
+## New Validation, 2026-10-31 19:43 UTC+08
+
+| Batch10 candidate | Completed epoch | Update | Complete11 loss | TIR01 loss | RGB10 loss | Mean task loss |
+|---|---:|---:|---:|---:|---:|---:|
+| Utility | 11 | 22000 | 4.355199903 | 5.744167686 | 4.855334401 | 4.984900663 |
+| Random | 12 | 24000 | 4.340420678 | 5.873122118 | 4.900210366 | 5.037917721 |
+
+Utility changes from epoch10 mean5.026235372 to4.984900663;
+Random changes from epoch11 mean5.032911457 to5.037917721.
+Different completed epochs must not be treated as a matched comparison.
+These are128cached-tuple validation losses, not tracking PR/SR or convergence.
+Utility11 is the post-drop stopping-reference epoch; earliest stop remains14.
+All four trainer commands were actually live at19:39:32; fixedU/R12
+updates28833/28938 and candidateU11/22000,R13/24065 at19:40:06.
+All recorded loss/task/update means were finite.
+
+Raw histories:
+`reports/candidate-utility-recovered-epoch11-validation-20261031.json`,
+SHA256 `7e9e91dd6fb48c93ca3a23d47d8dd67a58575bae11ba023936d93f860542f3ab`;
+`reports/candidate-random-recovered-epoch12-validation-20261031.json`,
+SHA256 `34d5f0099aff3dd834ce72a0e51fc9582b3013048542460e0ca84fb20fd416bf`.

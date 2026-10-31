@@ -98,3 +98,42 @@ alongside all four existing trainers. Initial full-track receipts were not
 yet present. This is a running experiment, not a completed benefit result.
 Provisional final estimate19:30-19:45 UTC+08; check near that window,
 then refine using completed calls. Do not restart on an observer timeout.
+
+## Completed Result, 2026-10-31 19:34 UTC+08
+
+All48 trajectories finished; the controller log ends COMPLETE and its
+three process handles were absent at19:34:26. The final analyzer verifies
+metrics, source/GT/checkpoint/trace/bbox hashes, past-only calibration,
+zero scale-only offset, clipping, calls, holds and exact control equality.
+The frozen-state check is a worker witness, not independent network replay.
+Report SHA256:
+`df6a9be1f1ce6ec5dad1b81b980357b1b639f29be7c3fc3d5de0d8ca064b9cf7`.
+Downloaded report, server report and completion receipt agree.
+
+| Condition | Native/sham PR20 / SR (%) | Scale-only PR20 / SR (%) | Center+scale PR20 / SR (%) |
+|---|---:|---:|---:|
+| Complete | 75.146496 / 57.352125 | 75.146496 / 57.352125 | 75.146496 / 57.352125 |
+| Block32 | 57.257201 / 44.689179 | 52.145743 / 39.656658 | 58.213389 / 44.977624 |
+| Block128 | 57.049005 / 44.075706 | 57.443327 / 43.987086 | 57.891059 / 45.397069 |
+
+Four-video paired bootstrap intervals are descriptive:
+
+| Condition | Contrast | PR difference pp [95% interval] | SR difference pp [95% interval] | SR wins/losses |
+|---|---|---:|---:|---:|
+| Block32 | Scale-native | -5.111459 [-11.622615, 0.717014] | -5.032522 [-10.156655, 0.091612] | 1/3 |
+| Block32 | Geometry-native | 0.956188 [-8.974263, 10.179439] | 0.288445 [-5.080820, 5.455225] | 3/1 |
+| Block32 | Scale-geometry | -6.067646 [-15.669265, -0.529101] | -5.320967 [-14.410780, -0.334195] | 1/3 |
+| Block128 | Scale-native | 0.394322 [0, 1.182965] | -0.088620 [-0.542623, 0.365383] | 2/2 |
+| Block128 | Geometry-native | 0.842054 [0, 2.129338] | 1.321363 [0.345323, 2.330831] | 3/1 |
+| Block128 | Scale-geometry | -0.447733 [-0.946372, 0] | -1.409983 [-2.312355, -0.507610] | 0/4 |
+
+The scale-native SR effect changes by+4.943902pp from block32 to block128,
+interval[-0.106565, 9.994368]. A negative effect becoming approximately
+neutral does not establish a long-gap gain. Block128 covers TIR-only
+missing exposure on this cohort, with no RGB-only or blind exposure.
+
+Reject unconditional removal of center translation. The earlier same-history
+instantaneous component diagnostic did not predict independent closed-loop
+benefit. The geometry gain on these short TIR exposures does not resolve
+its prior regression on the longer cohort. No gate or parameter was fitted;
+this is neither official benchmark attainment nor a validated paper module.

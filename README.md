@@ -29,9 +29,13 @@ geometry SR+0.949828points at block32 but-4.805974at block128 on four fresh
 videos; unconditional correction is not supported as a general solution.
 The bounded [CMNeXt source review](docs/CMNEXT_SOURCE_REVIEW_20261031.md)
 records relevant selection/fusion prior art and adaptation limits.
+The [ViPT source review](docs/VIPT_SOURCE_REVIEW_20261031.md) records
+frozen-main-model prompt adaptation and its missing-input contract limits.
 The subsequent [scale-only component control](docs/SCALE_ONLY_CONTROL_20261031.md)
-runs48registered trajectories on four new videos, testing removal of center
-translation. No result or long-gap RGB claim follows from its launch.
+completed48registered trajectories on four new videos. Scale-only SR
+changes by-5.032522/-0.088620points versus native at block32/128;
+unconditional removal of center translation is rejected. Block128 covers
+TIR-only missing exposure on this cohort, with no RGB-only or blind exposure.
 
 The server28 standalone entrypoints in the repository root expect the
 existing frozen runtime at `runtime/task_utility_20261018` and protocol
