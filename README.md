@@ -36,6 +36,9 @@ completed48registered trajectories on four new videos. Scale-only SR
 changes by-5.032522/-0.088620points versus native at block32/128;
 unconditional removal of center translation is rejected. Block128 covers
 TIR-only missing exposure on this cohort, with no RGB-only or blind exposure.
+The prospective [state-template history control](docs/STATE_TEMPLATE_CONTROL_20261031.md)
+tests ordinary per-state template reading on eight fresh development videos;
+it is pending and does not establish a new module.
 
 The server28 standalone entrypoints in the repository root expect the
 existing frozen runtime at `runtime/task_utility_20261018` and protocol

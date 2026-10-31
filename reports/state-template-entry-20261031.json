@@ -1,0 +1,2077 @@
+{
+  "records": {
+    "complete": [
+      {
+        "frame": 1,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              415.24486351013184,
+              427.5548629760742,
+              60.20991897583008,
+              147.6652374267578
+            ],
+            "best_score": 0.9323800206184387,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              415.24486351013184,
+              427.5548629760742,
+              60.20991897583008,
+              147.6652374267578
+            ],
+            "best_score": 0.9323800206184387,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 2,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              415.53650093078613,
+              427.38460540771484,
+              59.697628021240234,
+              147.2642059326172
+            ],
+            "best_score": 0.9386274218559265,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              415.53650093078613,
+              427.38460540771484,
+              59.697628021240234,
+              147.2642059326172
+            ],
+            "best_score": 0.9386274218559265,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 3,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              414.94956398010254,
+              427.0189514160156,
+              60.09672164916992,
+              147.38983154296875
+            ],
+            "best_score": 0.9371028542518616,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              414.94956398010254,
+              427.0189514160156,
+              60.09672164916992,
+              147.38983154296875
+            ],
+            "best_score": 0.9371028542518616,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              414.98773765563965,
+              426.9573669433594,
+              59.47127151489258,
+              147.6800537109375
+            ],
+            "best_score": 0.9333685636520386,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              414.98773765563965,
+              426.9573669433594,
+              59.47127151489258,
+              147.6800537109375
+            ],
+            "best_score": 0.9333685636520386,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 5,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              413.7516574859619,
+              427.09234619140625,
+              59.45652389526367,
+              148.01242065429688
+            ],
+            "best_score": 0.9259747862815857,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              413.7516574859619,
+              427.09234619140625,
+              59.45652389526367,
+              148.01242065429688
+            ],
+            "best_score": 0.9259747862815857,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 6,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              412.12849617004395,
+              426.5363540649414,
+              59.43520736694336,
+              148.1878204345703
+            ],
+            "best_score": 0.9367842078208923,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              412.12849617004395,
+              426.5363540649414,
+              59.43520736694336,
+              148.1878204345703
+            ],
+            "best_score": 0.9367842078208923,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 7,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              410.5613498687744,
+              426.1984100341797,
+              59.51853561401367,
+              147.96170043945312
+            ],
+            "best_score": 0.9391786456108093,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              410.5613498687744,
+              426.1984100341797,
+              59.51853561401367,
+              147.96170043945312
+            ],
+            "best_score": 0.9391786456108093,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 8,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              410.39703941345215,
+              426.6756591796875,
+              58.73463821411133,
+              147.50955200195312
+            ],
+            "best_score": 0.9373423457145691,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              410.39703941345215,
+              426.6756591796875,
+              58.73463821411133,
+              147.50955200195312
+            ],
+            "best_score": 0.9373423457145691,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 9,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              408.1021022796631,
+              426.9574737548828,
+              59.56425857543945,
+              147.37704467773438
+            ],
+            "best_score": 0.9299484491348267,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              408.1021022796631,
+              426.9574737548828,
+              59.56425857543945,
+              147.37704467773438
+            ],
+            "best_score": 0.9299484491348267,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 10,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              406.0263080596924,
+              426.6132049560547,
+              59.749141693115234,
+              147.78665161132812
+            ],
+            "best_score": 0.9244885444641113,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              406.0263080596924,
+              426.6132049560547,
+              59.749141693115234,
+              147.78665161132812
+            ],
+            "best_score": 0.9244885444641113,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 11,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              404.4210891723633,
+              426.0537796020508,
+              60.10865783691406,
+              147.90000915527344
+            ],
+            "best_score": 0.9290893077850342,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              404.4210891723633,
+              426.0537796020508,
+              60.10865783691406,
+              147.90000915527344
+            ],
+            "best_score": 0.9290893077850342,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 12,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              403.283483505249,
+              426.27857971191406,
+              59.89577102661133,
+              147.90792846679688
+            ],
+            "best_score": 0.9317864775657654,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              403.283483505249,
+              426.27857971191406,
+              59.89577102661133,
+              147.90792846679688
+            ],
+            "best_score": 0.9317864775657654,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              401.2032279968262,
+              426.03170013427734,
+              60.357521057128906,
+              148.1732635498047
+            ],
+            "best_score": 0.9262754917144775,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              401.2032279968262,
+              426.03170013427734,
+              60.357521057128906,
+              148.1732635498047
+            ],
+            "best_score": 0.9262754917144775,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 14,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              399.9305763244629,
+              425.53125762939453,
+              60.14000701904297,
+              148.1370086669922
+            ],
+            "best_score": 0.9273110032081604,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              399.9305763244629,
+              425.53125762939453,
+              60.14000701904297,
+              148.1370086669922
+            ],
+            "best_score": 0.9273110032081604,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 10,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 15,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              398.49730682373047,
+              425.4430160522461,
+              59.68431091308594,
+              148.3821258544922
+            ],
+            "best_score": 0.9250324368476868,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              398.49730682373047,
+              425.4430160522461,
+              59.68431091308594,
+              148.3821258544922
+            ],
+            "best_score": 0.9250324368476868,
+            "selected_source_call": 10,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 16,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              397.53771781921387,
+              425.57706451416016,
+              59.103214263916016,
+              147.88975524902344
+            ],
+            "best_score": 0.9310540556907654,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              397.53771781921387,
+              425.57706451416016,
+              59.103214263916016,
+              147.88975524902344
+            ],
+            "best_score": 0.9310540556907654,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 17,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              397.16485595703125,
+              425.15857696533203,
+              58.862335205078125,
+              147.46800231933594
+            ],
+            "best_score": 0.925678014755249,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              397.16485595703125,
+              425.15857696533203,
+              58.862335205078125,
+              147.46800231933594
+            ],
+            "best_score": 0.925678014755249,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 18,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              395.78554344177246,
+              425.83341217041016,
+              58.7739143371582,
+              147.52919006347656
+            ],
+            "best_score": 0.9288928508758545,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              395.78554344177246,
+              425.83341217041016,
+              58.7739143371582,
+              147.52919006347656
+            ],
+            "best_score": 0.9288928508758545,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 19,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              394.55063247680664,
+              425.65745544433594,
+              59.250877380371094,
+              147.46966552734375
+            ],
+            "best_score": 0.922402024269104,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              394.55063247680664,
+              425.65745544433594,
+              59.250877380371094,
+              147.46966552734375
+            ],
+            "best_score": 0.922402024269104,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 20,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              394.8523769378662,
+              425.72254180908203,
+              58.46889114379883,
+              147.7364044189453
+            ],
+            "best_score": 0.9231410026550293,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 20,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              394.8523769378662,
+              425.72254180908203,
+              58.46889114379883,
+              147.7364044189453
+            ],
+            "best_score": 0.9231410026550293,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 20,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 21,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              394.47241401672363,
+              425.26456451416016,
+              58.083003997802734,
+              147.0195770263672
+            ],
+            "best_score": 0.9189509749412537,
+            "selected_source_call": 20,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 20,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              394.47241401672363,
+              425.26456451416016,
+              58.083003997802734,
+              147.0195770263672
+            ],
+            "best_score": 0.9189509749412537,
+            "selected_source_call": 20,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 20,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      }
+    ],
+    "switch_every_five": [
+      {
+        "frame": 1,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              415.24486351013184,
+              427.5548629760742,
+              60.20991897583008,
+              147.6652374267578
+            ],
+            "best_score": 0.9323800206184387,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              415.24486351013184,
+              427.5548629760742,
+              60.20991897583008,
+              147.6652374267578
+            ],
+            "best_score": 0.9323800206184387,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 2,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              415.53650093078613,
+              427.38460540771484,
+              59.697628021240234,
+              147.2642059326172
+            ],
+            "best_score": 0.9386274218559265,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              415.53650093078613,
+              427.38460540771484,
+              59.697628021240234,
+              147.2642059326172
+            ],
+            "best_score": 0.9386274218559265,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 3,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              414.94956398010254,
+              427.0189514160156,
+              60.09672164916992,
+              147.38983154296875
+            ],
+            "best_score": 0.9371028542518616,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              414.94956398010254,
+              427.0189514160156,
+              60.09672164916992,
+              147.38983154296875
+            ],
+            "best_score": 0.9371028542518616,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 4,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              414.98773765563965,
+              426.9573669433594,
+              59.47127151489258,
+              147.6800537109375
+            ],
+            "best_score": 0.9333685636520386,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              414.98773765563965,
+              426.9573669433594,
+              59.47127151489258,
+              147.6800537109375
+            ],
+            "best_score": 0.9333685636520386,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 0,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 5,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              413.7516574859619,
+              427.09234619140625,
+              59.45652389526367,
+              148.01242065429688
+            ],
+            "best_score": 0.9259747862815857,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              413.7516574859619,
+              427.09234619140625,
+              59.45652389526367,
+              148.01242065429688
+            ],
+            "best_score": 0.9259747862815857,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 6,
+        "available": [
+          0,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              405.90576934814453,
+              428.11034393310547,
+              69.12089538574219,
+              141.00364685058594
+            ],
+            "best_score": 0.7939408421516418,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              404.5975875854492,
+              428.2668914794922,
+              71.90632629394531,
+              141.19961547851562
+            ],
+            "best_score": 0.765930712223053,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 7,
+        "available": [
+          0,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              406.6988983154297,
+              427.11183166503906,
+              66.56884765625,
+              141.69265747070312
+            ],
+            "best_score": 0.8135569095611572,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              404.41389083862305,
+              427.197998046875,
+              70.61298370361328,
+              141.5299072265625
+            ],
+            "best_score": 0.7685939073562622,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 8,
+        "available": [
+          0,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              405.8558654785156,
+              427.20288848876953,
+              67.30230712890625,
+              141.50917053222656
+            ],
+            "best_score": 0.8004553318023682,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              404.73192596435547,
+              426.61402893066406,
+              68.84672546386719,
+              142.79559326171875
+            ],
+            "best_score": 0.7866303324699402,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 9,
+        "available": [
+          0,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              403.52535247802734,
+              427.2414779663086,
+              67.70481872558594,
+              142.10902404785156
+            ],
+            "best_score": 0.7918869853019714,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              402.66812896728516,
+              426.25559997558594,
+              69.94767761230469,
+              143.07611083984375
+            ],
+            "best_score": 0.7650493383407593,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 0,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 10,
+        "available": [
+          0,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              401.3165283203125,
+              426.8056640625,
+              67.5096435546875,
+              141.17779541015625
+            ],
+            "best_score": 0.7859203815460205,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              402.58410263061523,
+              427.02425384521484,
+              67.51111602783203,
+              142.3645477294922
+            ],
+            "best_score": 0.7636679410934448,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 11,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              402.91357040405273,
+              425.67977142333984,
+              62.12055206298828,
+              147.73060607910156
+            ],
+            "best_score": 0.9332641959190369,
+            "selected_source_call": 10,
+            "selected_availability": [
+              0.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              404.0923328399658,
+              425.0521469116211,
+              60.534969329833984,
+              148.97715759277344
+            ],
+            "best_score": 0.9306143522262573,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 12,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              400.2858581542969,
+              425.23211669921875,
+              63.4072265625,
+              148.166748046875
+            ],
+            "best_score": 0.9255332350730896,
+            "selected_source_call": 10,
+            "selected_availability": [
+              0.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              402.58545684814453,
+              425.3478469848633,
+              60.26933288574219,
+              148.6648406982422
+            ],
+            "best_score": 0.925801157951355,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 13,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              399.2928276062012,
+              425.767578125,
+              62.82038116455078,
+              147.5078125
+            ],
+            "best_score": 0.9231203198432922,
+            "selected_source_call": 10,
+            "selected_availability": [
+              0.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              401.7861270904541,
+              426.1025848388672,
+              59.7934684753418,
+              148.18695068359375
+            ],
+            "best_score": 0.9276942610740662,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 14,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              397.8987445831299,
+              424.98181915283203,
+              62.54995346069336,
+              148.1987762451172
+            ],
+            "best_score": 0.9157179594039917,
+            "selected_source_call": 10,
+            "selected_availability": [
+              0.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              400.152587890625,
+              425.55885314941406,
+              60.171539306640625,
+              148.24569702148438
+            ],
+            "best_score": 0.9208336472511292,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 5,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 15,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              396.90116691589355,
+              425.5771026611328,
+              61.761783599853516,
+              147.907470703125
+            ],
+            "best_score": 0.9237491488456726,
+            "selected_source_call": 10,
+            "selected_availability": [
+              0.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              398.5224380493164,
+              425.3962097167969,
+              59.83280944824219,
+              148.43780517578125
+            ],
+            "best_score": 0.919171929359436,
+            "selected_source_call": 5,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": true,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 16,
+        "available": [
+          1,
+          0
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              396.99864387512207,
+              422.9814987182617,
+              62.184932708740234,
+              153.01850128173828
+            ],
+            "best_score": 0.6872786283493042,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              397.643762588501,
+              425.5172119140625,
+              62.2635612487793,
+              150.4827880859375
+            ],
+            "best_score": 0.6640892624855042,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 17,
+        "available": [
+          1,
+          0
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              394.93542098999023,
+              424.0301094055176,
+              62.94257354736328,
+              151.96989059448242
+            ],
+            "best_score": 0.6670544743537903,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              396.9768581390381,
+              424.76216888427734,
+              62.91164016723633,
+              150.78233337402344
+            ],
+            "best_score": 0.6546962857246399,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 18,
+        "available": [
+          1,
+          0
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              396.2507972717285,
+              424.0024127960205,
+              61.960472106933594,
+              151.9975872039795
+            ],
+            "best_score": 0.6755059361457825,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              398.3842144012451,
+              425.31514739990234,
+              61.00076675415039,
+              150.68485260009766
+            ],
+            "best_score": 0.6405625343322754,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 19,
+        "available": [
+          1,
+          0
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              395.91021728515625,
+              422.8423852920532,
+              61.60888671875,
+              151.9148712158203
+            ],
+            "best_score": 0.6442314982414246,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              396.52050971984863,
+              424.078670501709,
+              61.429012298583984,
+              150.50387573242188
+            ],
+            "best_score": 0.6139519214630127,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 20,
+        "available": [
+          1,
+          0
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              396.28794860839844,
+              423.76068210601807,
+              59.797210693359375,
+              152.23931789398193
+            ],
+            "best_score": 0.624972403049469,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              397.6642665863037,
+              424.3267936706543,
+              59.3578987121582,
+              150.9642333984375
+            ],
+            "best_score": 0.6206784844398499,
+            "selected_source_call": 0,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      },
+      {
+        "frame": 21,
+        "available": [
+          1,
+          1
+        ],
+        "predictions": {
+          "sham": {
+            "target_bbox": [
+              393.4729652404785,
+              425.0080723762512,
+              59.70330047607422,
+              148.24853515625
+            ],
+            "best_score": 0.9051778316497803,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          },
+          "matched": {
+            "target_bbox": [
+              393.89450454711914,
+              425.4605522155762,
+              59.060752868652344,
+              148.3739013671875
+            ],
+            "best_score": 0.9018517136573792,
+            "selected_source_call": 15,
+            "selected_availability": [
+              1.0,
+              1.0
+            ],
+            "template_written": false,
+            "bank_source_calls": {
+              "11": 15,
+              "01": 10,
+              "10": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  "sham_equal": true,
+  "complete_equal": true,
+  "actual_writes": 14,
+  "differing_sources": 15,
+  "frozen_network": true,
+  "source_sha256": {
+    "run_state_template28.py": "a4bbf19900df0aacf4992a1168454da64d033b61fe905305cef253835cfb2bc3",
+    "/home/gaob/Miss-RGBT/state_template_tracker28.py": "8f3c0b48ee40d74aca4925f1aeca23b867d38b82fb3d91631b013d8244276a4f",
+    "/home/gaob/Miss-RGBT/cpu_diagnostic_tracker.py": "cae1ef91b909c2f43718453ebbbba8d36887d07aa79edc15e1bff799709d8b14"
+  },
+  "scope": "CPU actual track-body witness,21calls/condition; not CUDA initialization or full-trajectory verification."
+}

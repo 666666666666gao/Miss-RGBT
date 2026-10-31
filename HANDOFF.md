@@ -1873,3 +1873,22 @@ states11/01/10=4.355199903249741/5.744167685508728/4.855334401130676.
 Raw Utility11 and Random12 histories are published with hashes in latest
 metrics document. This supersedes the pending Utility11 snapshot below.
 
+## 2026-10-31 20:08 UTC+08 - State-template control launched
+
+New isolated state_template_tracker28.py/run_state_template28.py/
+launch_state_template28.py, frozen runtime unchanged. Ordinary state-cache
+reading, native writes retained, all caches truthful complete initialization.
+Native/sham/matched x complete/block32 =48trajectories on sequential
+dev68..75,8398frames including6024-frame girlshead; loads6024/2374.
+No duration/outcome filtering, fitted gate, extra forward or weight updates.
+CPU21calls/condition passed native/sham boxes/confidence, complete matched
+boxes, frozen digest;14writes/15differing sources. Witness17e16924...,
+tracker8f3c0b48...,runnera4bbf199...,registration7b86360a....
+Controller342664 launched20:07:20; at20:08:13 actual alive, workers
+342898/342899 each2266MiB beside all4trainers. No full-track receipts yet.
+Final analyzer checks48metrics/hashes/past-only truthful banks/native writes/
+blind holds/controls and current11 subgroup. Not isolated age causality,
+novelty, official gain or independent network replay. ETA20:55-21:40+08,
+refine long native receipt;300spolls near completion. Preserve registered
+new sources and dependencies until analysis. Goal remains incomplete.
+

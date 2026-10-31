@@ -18,6 +18,13 @@ The next implementation decisions must address demonstrated problems:
 | Persistent calibration | Fresh4 gap control geometry-native SR+0.949828 at block32, -4.805974 at block128 | Independent component and longer-exposure controls must test which correction remains useful |
 
 These are research problems, not three completed contributions.
+The new state-template control tests native/sham/state-matched reading on
+sequential fresh development68..75,8videos/8398frames,48trajectories.
+It retains native writes and truthful initial availability. CPU21-call
+actual-body witness passed; GPU0/1 workers342898/342899 actually allocated
+2266MiB each at20:08:13 beside all four trainers. Results remain pending.
+See STATE_TEMPLATE_CONTROL_20261031.md. It is an ordinary history control;
+template age/crop history remain coupled, so launch proves no novel module.
 The completed observed-copy control worsens6of8noncomplete mean-loss
 cells, so copying is not promoted. The template-coverage paired pilot
 improves selected mean loss only0.19%, with3of6missing-search cells worse.
