@@ -1,0 +1,1163 @@
+{
+  "launch": {
+    "pid": 72348,
+    "registered_utc": "2026-10-31T06:55:51.071649Z",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "cohort": [
+      {
+        "name": "AQmotomove",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/AQmotomove",
+        "development_index": 40,
+        "video_frames": 50,
+        "gt_sha256": "a0bc76164b9a138604b37e312c92b81c0792208b43a96518918728bd1c72b017"
+      },
+      {
+        "name": "leftdress-gai",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftdress-gai",
+        "development_index": 41,
+        "video_frames": 212,
+        "gt_sha256": "5a0efb7330b5df97a155b31445878384d197dbf26d95fb3660401372d92b4362"
+      },
+      {
+        "name": "greenleftthewhite",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/greenleftthewhite",
+        "development_index": 42,
+        "video_frames": 492,
+        "gt_sha256": "6e0a08c2a10c53190486058b84874ac6ba1c61a14b24853f720229af9f99d6ad"
+      },
+      {
+        "name": "rightof2boys953",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightof2boys953",
+        "development_index": 43,
+        "video_frames": 953,
+        "gt_sha256": "c26a650d56c9b68710ac7776914ddbb3b7474e6adc924d07e440583477e62903"
+      },
+      {
+        "name": "blueumbrellagirl",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blueumbrellagirl",
+        "development_index": 44,
+        "video_frames": 467,
+        "gt_sha256": "948fda2dfd09d802f79d5440841807a762d1b71dbd33b5f27748139656cd60e6"
+      },
+      {
+        "name": "bikeinhand",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeinhand",
+        "development_index": 45,
+        "video_frames": 177,
+        "gt_sha256": "4fe0641320cb33a7831c223b5285ca9926f7d2dab61bad41ef1e3b36a0ad34be"
+      },
+      {
+        "name": "left4thgirlwithwhitepants",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/left4thgirlwithwhitepants",
+        "development_index": 46,
+        "video_frames": 619,
+        "gt_sha256": "c2fa408697c0f7e394b504cc36996b792c07301b8eb9bd985d66ca691425bffd"
+      },
+      {
+        "name": "takeoutman953",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/takeoutman953",
+        "development_index": 47,
+        "video_frames": 953,
+        "gt_sha256": "33f4b959863454c9801b9a9f60d6798bf95d54a8df6bd6012200a6e7c4b058c0"
+      },
+      {
+        "name": "whitegirl2",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirl2",
+        "development_index": 48,
+        "video_frames": 1399,
+        "gt_sha256": "e137be244132d22ff3de3a0952ff7402af469dcd26b6b9592039872ecf74db6f"
+      },
+      {
+        "name": "besom-ymm",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/besom-ymm",
+        "development_index": 49,
+        "video_frames": 1020,
+        "gt_sha256": "57a509c1e65fc5164467e9efdecb56584e4e1b7b26fc45cf700d834d7feea980"
+      },
+      {
+        "name": "leftconergirl",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftconergirl",
+        "development_index": 50,
+        "video_frames": 6158,
+        "gt_sha256": "8af2bc94981fb49d1a003d0fe2000058e44f0f2f6d18b3da781b1205aa56f92e"
+      },
+      {
+        "name": "bike150",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike150",
+        "development_index": 51,
+        "video_frames": 150,
+        "gt_sha256": "0f9d0d0f37c682b97f1aad06c860f278858ade3978c4b75bf65ad18245b5bb0d"
+      },
+      {
+        "name": "rightwhitegirlleftpink",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightwhitegirlleftpink",
+        "development_index": 52,
+        "video_frames": 569,
+        "gt_sha256": "275b51395ca31bf08d8689f085fa287e48d2a9aa307f44e318bd4c281f008c04"
+      },
+      {
+        "name": "blackinpeople",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blackinpeople",
+        "development_index": 53,
+        "video_frames": 230,
+        "gt_sha256": "5044017450d99cf97631d354b758f78ec33d21893af77cf5f14c6d8b05012714"
+      },
+      {
+        "name": "left2flagfornews",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/left2flagfornews",
+        "development_index": 54,
+        "video_frames": 398,
+        "gt_sha256": "24f86a1aed1ba7c8b47402b9c91dfad2630f2673e25ae2873b85b51e97a2ca39"
+      },
+      {
+        "name": "bluetruck",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bluetruck",
+        "development_index": 55,
+        "video_frames": 104,
+        "gt_sha256": "867dd6300f69da15ebf38a8f4b139300106f98157ea406c3bd949d5ee3b599c1"
+      }
+    ],
+    "parts": {
+      "0": [
+        {
+          "name": "AQmotomove",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/AQmotomove",
+          "development_index": 40,
+          "video_frames": 50,
+          "gt_sha256": "a0bc76164b9a138604b37e312c92b81c0792208b43a96518918728bd1c72b017"
+        },
+        {
+          "name": "leftdress-gai",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftdress-gai",
+          "development_index": 41,
+          "video_frames": 212,
+          "gt_sha256": "5a0efb7330b5df97a155b31445878384d197dbf26d95fb3660401372d92b4362"
+        },
+        {
+          "name": "leftconergirl",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftconergirl",
+          "development_index": 50,
+          "video_frames": 6158,
+          "gt_sha256": "8af2bc94981fb49d1a003d0fe2000058e44f0f2f6d18b3da781b1205aa56f92e"
+        },
+        {
+          "name": "bike150",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike150",
+          "development_index": 51,
+          "video_frames": 150,
+          "gt_sha256": "0f9d0d0f37c682b97f1aad06c860f278858ade3978c4b75bf65ad18245b5bb0d"
+        },
+        {
+          "name": "left2flagfornews",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/left2flagfornews",
+          "development_index": 54,
+          "video_frames": 398,
+          "gt_sha256": "24f86a1aed1ba7c8b47402b9c91dfad2630f2673e25ae2873b85b51e97a2ca39"
+        }
+      ],
+      "1": [
+        {
+          "name": "greenleftthewhite",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/greenleftthewhite",
+          "development_index": 42,
+          "video_frames": 492,
+          "gt_sha256": "6e0a08c2a10c53190486058b84874ac6ba1c61a14b24853f720229af9f99d6ad"
+        },
+        {
+          "name": "rightof2boys953",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightof2boys953",
+          "development_index": 43,
+          "video_frames": 953,
+          "gt_sha256": "c26a650d56c9b68710ac7776914ddbb3b7474e6adc924d07e440583477e62903"
+        },
+        {
+          "name": "blueumbrellagirl",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/blueumbrellagirl",
+          "development_index": 44,
+          "video_frames": 467,
+          "gt_sha256": "948fda2dfd09d802f79d5440841807a762d1b71dbd33b5f27748139656cd60e6"
+        },
+        {
+          "name": "bikeinhand",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeinhand",
+          "development_index": 45,
+          "video_frames": 177,
+          "gt_sha256": "4fe0641320cb33a7831c223b5285ca9926f7d2dab61bad41ef1e3b36a0ad34be"
+        },
+        {
+          "name": "left4thgirlwithwhitepants",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/left4thgirlwithwhitepants",
+          "development_index": 46,
+          "video_frames": 619,
+          "gt_sha256": "c2fa408697c0f7e394b504cc36996b792c07301b8eb9bd985d66ca691425bffd"
+        },
+        {
+          "name": "takeoutman953",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/takeoutman953",
+          "development_index": 47,
+          "video_frames": 953,
+          "gt_sha256": "33f4b959863454c9801b9a9f60d6798bf95d54a8df6bd6012200a6e7c4b058c0"
+        },
+        {
+          "name": "whitegirl2",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirl2",
+          "development_index": 48,
+          "video_frames": 1399,
+          "gt_sha256": "e137be244132d22ff3de3a0952ff7402af469dcd26b6b9592039872ecf74db6f"
+        },
+        {
+          "name": "besom-ymm",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/besom-ymm",
+          "development_index": 49,
+          "video_frames": 1020,
+          "gt_sha256": "57a509c1e65fc5164467e9efdecb56584e4e1b7b26fc45cf700d834d7feea980"
+        },
+        {
+          "name": "rightwhitegirlleftpink",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightwhitegirlleftpink",
+          "development_index": 52,
+          "video_frames": 569,
+          "gt_sha256": "275b51395ca31bf08d8689f085fa287e48d2a9aa307f44e318bd4c281f008c04"
+        },
+        {
+          "name": "blackinpeople",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/blackinpeople",
+          "development_index": 53,
+          "video_frames": 230,
+          "gt_sha256": "5044017450d99cf97631d354b758f78ec33d21893af77cf5f14c6d8b05012714"
+        },
+        {
+          "name": "bluetruck",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bluetruck",
+          "development_index": 55,
+          "video_frames": 104,
+          "gt_sha256": "867dd6300f69da15ebf38a8f4b139300106f98157ea406c3bd949d5ee3b599c1"
+        }
+      ]
+    },
+    "loads": {
+      "0": 6968,
+      "1": 6983
+    },
+    "entry_witness_sha256": "bd9d7f5fcbbeb50b19023e08e249f580debd0831d3848eada399b123fc0aada4",
+    "development_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_state_offset_control28.py": "4635c0746d758243c6827caa5f200a43bde721c842cef63981b09faced6f13d7",
+      "/home/gaob/Miss-RGBT/evaluate_state_offset28.py": "d3fb5ff34d6557efb798211016ed9dd33c4d207ec9b60ea33a25eff4692b7909",
+      "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+      "/home/gaob/Miss-RGBT/analyze_state_offset28.py": "7b530d273b9fccd35f539ff24dadbc74b76a22e4ccc545389b45b738670bd8dd",
+      "/home/gaob/Miss-RGBT/recover_state_offset28.py": "e346fd953df8e8ffc9bb1c3d7062b5b49e64a5996b6a9370f12a92b801d2be3e",
+      "/home/gaob/Miss-RGBT/recover_evaluation_chain28.py": "0e737d3dc318123c51ee7a8b83b2f76600b5d1e83994e3be752c0e12aac8e99c"
+    },
+    "previous_pid": 1173352,
+    "poll_seconds": 300,
+    "children": {
+      "0": 72352,
+      "1": 72353
+    },
+    "scope": "Sequential fresh development videos; fixed parameter-free correction and equal-compute sham, no outcomes used for cohort selection or tuning.",
+    "registration_sha256": "68d5a2fad5fb69663ddc03185a1061e7edd3f6aac3aecda412d795deab29f1f2",
+    "memory_free_at_launch": "0, 4790\n1, 4825\n",
+    "started_utc": "2026-10-31T06:55:51.171877Z",
+    "recovery": {
+      "old_output": "/home/gaob/Miss-RGBT/reports/server28-state-offset-replication16-20261031",
+      "old_launch_sha256": "fb27dc747ef66dd7ece090cca76798cb16327b78584adcb2554cd6af96053946",
+      "boot_id": "8212e607-b051-467d-a468-86436b0b702e",
+      "observed_utc": "2026-10-31T08:59:38.509525Z",
+      "original_outputs_preserved": true,
+      "fresh_full_video_for_unfinished_tracks": true
+    }
+  },
+  "aggregate": {
+    "complete": {
+      "native": {
+        "PR20": 90.65693628819292,
+        "SR": 73.83915018400447
+      },
+      "calibration_sham": {
+        "PR20": 90.65693628819292,
+        "SR": 73.83915018400447
+      },
+      "offset_corrected": {
+        "PR20": 90.65693628819292,
+        "SR": 73.83915018400447
+      }
+    },
+    "alternating_outage": {
+      "native": {
+        "PR20": 86.55059041849447,
+        "SR": 71.11415617309049
+      },
+      "calibration_sham": {
+        "PR20": 86.55059041849447,
+        "SR": 71.11415617309049
+      },
+      "offset_corrected": {
+        "PR20": 87.30107245223255,
+        "SR": 71.47243857054418
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "AQmotomove",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "besom-ymm",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bike150",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeinhand",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blackinpeople",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitegirl2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "takeoutman953",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightwhitegirlleftpink",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightof2boys953",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftdress-gai",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "AQmotomove",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "besom-ymm",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bike150",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeinhand",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blackinpeople",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitegirl2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "takeoutman953",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightwhitegirlleftpink",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightof2boys953",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftdress-gai",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "alternating_outage": {
+      "PR20": {
+        "mean_delta_pp": 0.7504820337380782,
+        "paired_sequence_bootstrap95_pp": [
+          -0.14086426744032182,
+          1.6918714508949073
+        ],
+        "wins": 9,
+        "ties": 3,
+        "losses": 4,
+        "worst5": [
+          {
+            "sequence": "left4thgirlwithwhitepants",
+            "delta_pp": -2.9126213592233086
+          },
+          {
+            "sequence": "rightof2boys953",
+            "delta_pp": -1.1554621848739401
+          },
+          {
+            "sequence": "greenleftthewhite",
+            "delta_pp": -1.0183299389001945
+          },
+          {
+            "sequence": "blueumbrellagirl",
+            "delta_pp": -0.8583690987124442
+          },
+          {
+            "sequence": "AQmotomove",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "rightwhitegirlleftpink",
+            "delta_pp": 5.457746478873233
+          },
+          {
+            "sequence": "bikeinhand",
+            "delta_pp": 2.8409090909090935
+          },
+          {
+            "sequence": "leftconergirl",
+            "delta_pp": 2.127659574468087
+          },
+          {
+            "sequence": "bike150",
+            "delta_pp": 2.013422818791966
+          },
+          {
+            "sequence": "blackinpeople",
+            "delta_pp": 1.7467248908297108
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.35828239745367274,
+        "paired_sequence_bootstrap95_pp": [
+          -0.3263796527478626,
+          1.0719180127690224
+        ],
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "rightof2boys953",
+            "delta_pp": -2.2859143657462937
+          },
+          {
+            "sequence": "left4thgirlwithwhitepants",
+            "delta_pp": -2.13438126059485
+          },
+          {
+            "sequence": "blueumbrellagirl",
+            "delta_pp": -0.7868383404864261
+          },
+          {
+            "sequence": "greenleftthewhite",
+            "delta_pp": -0.7273785277858735
+          },
+          {
+            "sequence": "left2flagfornews",
+            "delta_pp": -0.03598416696652862
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "rightwhitegirlleftpink",
+            "delta_pp": 3.7642521797451423
+          },
+          {
+            "sequence": "leftconergirl",
+            "delta_pp": 1.8732066482594352
+          },
+          {
+            "sequence": "takeoutman953",
+            "delta_pp": 1.6206482593037208
+          },
+          {
+            "sequence": "besom-ymm",
+            "delta_pp": 1.2290293938969086
+          },
+          {
+            "sequence": "AQmotomove",
+            "delta_pp": 1.068999028182688
+          }
+        ]
+      }
+    }
+  },
+  "per_video": {
+    "AQmotomove": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 79.88338192419825,
+          "scored_frames": 49
+        },
+        "alternating_outage": {
+          "PR20": 93.87755102040816,
+          "SR": 72.78911564625851,
+          "scored_frames": 49
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 79.88338192419825,
+          "scored_frames": 49
+        },
+        "alternating_outage": {
+          "PR20": 93.87755102040816,
+          "SR": 72.78911564625851,
+          "scored_frames": 49
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 79.88338192419825,
+          "scored_frames": 49
+        },
+        "alternating_outage": {
+          "PR20": 93.87755102040816,
+          "SR": 73.8581146744412,
+          "scored_frames": 49
+        }
+      }
+    },
+    "leftdress-gai": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 81.35860979462876,
+          "scored_frames": 211
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 77.47686752426088,
+          "scored_frames": 211
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 81.35860979462876,
+          "scored_frames": 211
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 77.47686752426088,
+          "scored_frames": 211
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 81.35860979462876,
+          "scored_frames": 211
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 77.70255021439856,
+          "scored_frames": 211
+        }
+      }
+    },
+    "leftconergirl": {
+      "native": {
+        "complete": {
+          "PR20": 84.44047425694332,
+          "SR": 51.10714092360998,
+          "scored_frames": 6157
+        },
+        "alternating_outage": {
+          "PR20": 13.919116452817931,
+          "SR": 10.217561118974144,
+          "scored_frames": 6157
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 84.44047425694332,
+          "SR": 51.10714092360998,
+          "scored_frames": 6157
+        },
+        "alternating_outage": {
+          "PR20": 13.919116452817931,
+          "SR": 10.217561118974144,
+          "scored_frames": 6157
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 84.44047425694332,
+          "SR": 51.10714092360998,
+          "scored_frames": 6157
+        },
+        "alternating_outage": {
+          "PR20": 16.04677602728602,
+          "SR": 12.09076776723358,
+          "scored_frames": 6157
+        }
+      }
+    },
+    "bike150": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 84.49984020453819,
+          "scored_frames": 149
+        },
+        "alternating_outage": {
+          "PR20": 95.9731543624161,
+          "SR": 80.15340364333653,
+          "scored_frames": 149
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 84.49984020453819,
+          "scored_frames": 149
+        },
+        "alternating_outage": {
+          "PR20": 95.9731543624161,
+          "SR": 80.15340364333653,
+          "scored_frames": 149
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 84.49984020453819,
+          "scored_frames": 149
+        },
+        "alternating_outage": {
+          "PR20": 97.98657718120806,
+          "SR": 80.72866730584852,
+          "scored_frames": 149
+        }
+      }
+    },
+    "left2flagfornews": {
+      "native": {
+        "complete": {
+          "PR20": 99.74811083123426,
+          "SR": 88.67698212786374,
+          "scored_frames": 397
+        },
+        "alternating_outage": {
+          "PR20": 98.48866498740554,
+          "SR": 87.0456998920475,
+          "scored_frames": 397
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 99.74811083123426,
+          "SR": 88.67698212786374,
+          "scored_frames": 397
+        },
+        "alternating_outage": {
+          "PR20": 98.48866498740554,
+          "SR": 87.0456998920475,
+          "scored_frames": 397
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 99.74811083123426,
+          "SR": 88.67698212786374,
+          "scored_frames": 397
+        },
+        "alternating_outage": {
+          "PR20": 98.99244332493703,
+          "SR": 87.00971572508097,
+          "scored_frames": 397
+        }
+      }
+    },
+    "greenleftthewhite": {
+      "native": {
+        "complete": {
+          "PR20": 95.72301425661914,
+          "SR": 78.51808747939094,
+          "scored_frames": 491
+        },
+        "alternating_outage": {
+          "PR20": 95.5193482688391,
+          "SR": 78.06226360197847,
+          "scored_frames": 491
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 95.72301425661914,
+          "SR": 78.51808747939094,
+          "scored_frames": 491
+        },
+        "alternating_outage": {
+          "PR20": 95.5193482688391,
+          "SR": 78.06226360197847,
+          "scored_frames": 491
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 95.72301425661914,
+          "SR": 78.51808747939094,
+          "scored_frames": 491
+        },
+        "alternating_outage": {
+          "PR20": 94.5010183299389,
+          "SR": 77.3348850741926,
+          "scored_frames": 491
+        }
+      }
+    },
+    "rightof2boys953": {
+      "native": {
+        "complete": {
+          "PR20": 54.621848739495796,
+          "SR": 43.06222488995598,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 59.97899159663865,
+          "SR": 46.49859943977591,
+          "scored_frames": 952
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 54.621848739495796,
+          "SR": 43.06222488995598,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 59.97899159663865,
+          "SR": 46.49859943977591,
+          "scored_frames": 952
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 54.621848739495796,
+          "SR": 43.06222488995598,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 58.82352941176471,
+          "SR": 44.212685074029615,
+          "scored_frames": 952
+        }
+      }
+    },
+    "blueumbrellagirl": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.89106887390149,
+          "scored_frames": 466
+        },
+        "alternating_outage": {
+          "PR20": 99.57081545064378,
+          "SR": 80.47210300429185,
+          "scored_frames": 466
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.89106887390149,
+          "scored_frames": 466
+        },
+        "alternating_outage": {
+          "PR20": 99.57081545064378,
+          "SR": 80.47210300429185,
+          "scored_frames": 466
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.89106887390149,
+          "scored_frames": 466
+        },
+        "alternating_outage": {
+          "PR20": 98.71244635193133,
+          "SR": 79.68526466380543,
+          "scored_frames": 466
+        }
+      }
+    },
+    "bikeinhand": {
+      "native": {
+        "complete": {
+          "PR20": 96.5909090909091,
+          "SR": 81.52056277056276,
+          "scored_frames": 176
+        },
+        "alternating_outage": {
+          "PR20": 92.61363636363636,
+          "SR": 80.27597402597402,
+          "scored_frames": 176
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 96.5909090909091,
+          "SR": 81.52056277056276,
+          "scored_frames": 176
+        },
+        "alternating_outage": {
+          "PR20": 92.61363636363636,
+          "SR": 80.27597402597402,
+          "scored_frames": 176
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 96.5909090909091,
+          "SR": 81.52056277056276,
+          "scored_frames": 176
+        },
+        "alternating_outage": {
+          "PR20": 95.45454545454545,
+          "SR": 80.76298701298701,
+          "scored_frames": 176
+        }
+      }
+    },
+    "left4thgirlwithwhitepants": {
+      "native": {
+        "complete": {
+          "PR20": 98.54368932038835,
+          "SR": 74.87286176606564,
+          "scored_frames": 618
+        },
+        "alternating_outage": {
+          "PR20": 96.11650485436894,
+          "SR": 70.55016181229773,
+          "scored_frames": 618
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 98.54368932038835,
+          "SR": 74.87286176606564,
+          "scored_frames": 618
+        },
+        "alternating_outage": {
+          "PR20": 96.11650485436894,
+          "SR": 70.55016181229773,
+          "scored_frames": 618
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 98.54368932038835,
+          "SR": 74.87286176606564,
+          "scored_frames": 618
+        },
+        "alternating_outage": {
+          "PR20": 93.20388349514563,
+          "SR": 68.41578055170288,
+          "scored_frames": 618
+        }
+      }
+    },
+    "takeoutman953": {
+      "native": {
+        "complete": {
+          "PR20": 99.26470588235294,
+          "SR": 81.70768307322929,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 95.58823529411765,
+          "SR": 77.37094837935174,
+          "scored_frames": 952
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 99.26470588235294,
+          "SR": 81.70768307322929,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 95.58823529411765,
+          "SR": 77.37094837935174,
+          "scored_frames": 952
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 99.26470588235294,
+          "SR": 81.70768307322929,
+          "scored_frames": 952
+        },
+        "alternating_outage": {
+          "PR20": 97.16386554621849,
+          "SR": 78.99159663865547,
+          "scored_frames": 952
+        }
+      }
+    },
+    "whitegirl2": {
+      "native": {
+        "complete": {
+          "PR20": 51.931330472103,
+          "SR": 46.4404932216091,
+          "scored_frames": 1398
+        },
+        "alternating_outage": {
+          "PR20": 96.13733905579399,
+          "SR": 86.45003065603925,
+          "scored_frames": 1398
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 51.931330472103,
+          "SR": 46.4404932216091,
+          "scored_frames": 1398
+        },
+        "alternating_outage": {
+          "PR20": 96.13733905579399,
+          "SR": 86.45003065603925,
+          "scored_frames": 1398
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 51.931330472103,
+          "SR": 46.4404932216091,
+          "scored_frames": 1398
+        },
+        "alternating_outage": {
+          "PR20": 96.35193133047211,
+          "SR": 86.49090537502555,
+          "scored_frames": 1398
+        }
+      }
+    },
+    "besom-ymm": {
+      "native": {
+        "complete": {
+          "PR20": 84.69087340529931,
+          "SR": 74.27449880835553,
+          "scored_frames": 1019
+        },
+        "alternating_outage": {
+          "PR20": 77.3307163886163,
+          "SR": 70.1107528389177,
+          "scored_frames": 1019
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 84.69087340529931,
+          "SR": 74.27449880835553,
+          "scored_frames": 1019
+        },
+        "alternating_outage": {
+          "PR20": 77.3307163886163,
+          "SR": 70.1107528389177,
+          "scored_frames": 1019
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 84.69087340529931,
+          "SR": 74.27449880835553,
+          "scored_frames": 1019
+        },
+        "alternating_outage": {
+          "PR20": 78.8027477919529,
+          "SR": 71.33978223281461,
+          "scored_frames": 1019
+        }
+      }
+    },
+    "rightwhitegirlleftpink": {
+      "native": {
+        "complete": {
+          "PR20": 97.1830985915493,
+          "SR": 76.46713615023474,
+          "scored_frames": 568
+        },
+        "alternating_outage": {
+          "PR20": 90.3169014084507,
+          "SR": 70.4728370221328,
+          "scored_frames": 568
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 97.1830985915493,
+          "SR": 76.46713615023474,
+          "scored_frames": 568
+        },
+        "alternating_outage": {
+          "PR20": 90.3169014084507,
+          "SR": 70.4728370221328,
+          "scored_frames": 568
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 97.1830985915493,
+          "SR": 76.46713615023474,
+          "scored_frames": 568
+        },
+        "alternating_outage": {
+          "PR20": 95.77464788732394,
+          "SR": 74.23708920187794,
+          "scored_frames": 568
+        }
+      }
+    },
+    "blackinpeople": {
+      "native": {
+        "complete": {
+          "PR20": 87.77292576419214,
+          "SR": 67.20731960906633,
+          "scored_frames": 229
+        },
+        "alternating_outage": {
+          "PR20": 80.34934497816593,
+          "SR": 61.114576835100856,
+          "scored_frames": 229
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 87.77292576419214,
+          "SR": 67.20731960906633,
+          "scored_frames": 229
+        },
+        "alternating_outage": {
+          "PR20": 80.34934497816593,
+          "SR": 61.114576835100856,
+          "scored_frames": 229
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 87.77292576419214,
+          "SR": 67.20731960906633,
+          "scored_frames": 229
+        },
+        "alternating_outage": {
+          "PR20": 82.09606986899564,
+          "SR": 61.65522977750052,
+          "scored_frames": 229
+        }
+      }
+    },
+    "bluetruck": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 90.93851132686083,
+          "scored_frames": 103
+        },
+        "alternating_outage": {
+          "PR20": 99.02912621359224,
+          "SR": 88.76560332871013,
+          "scored_frames": 103
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 90.93851132686083,
+          "scored_frames": 103
+        },
+        "alternating_outage": {
+          "PR20": 99.02912621359224,
+          "SR": 88.76560332871013,
+          "scored_frames": 103
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 90.93851132686083,
+          "scored_frames": 103
+        },
+        "alternating_outage": {
+          "PR20": 99.02912621359224,
+          "SR": 89.04299583911235,
+          "scored_frames": 103
+        }
+      }
+    }
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "319327ad927e65a761021f7cdc6b65ac4eabd229e8d3ce2035f67063af438c35"
+    },
+    "1": {
+      "report_sha256": "cd1c5157305bbdd5bf99d110f2e99b6c5de242f0d071663441f2bf391e9877d1"
+    }
+  },
+  "trajectories_verified": 96,
+  "sham_and_complete_bitwise_equal": true,
+  "past_only_offsets_verified": true,
+  "analyzer_sha256": "7b530d273b9fccd35f539ff24dadbc74b76a22e4ccc545389b45b738670bd8dd",
+  "scope": "Fresh full development videos, parameter-free offset calibration control; small paired-video uncertainty, no official result or novelty claim."
+}

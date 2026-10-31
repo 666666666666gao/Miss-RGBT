@@ -1,0 +1,107 @@
+{
+  "pid": 1256793,
+  "registered_utc": "2026-10-31T07:21:59.239384Z",
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "development_indices": [
+    56,
+    57,
+    58,
+    59
+  ],
+  "cohort": [
+    {
+      "name": "rightbhindbike-gai",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightbhindbike-gai",
+      "development_index": 56,
+      "video_frames": 265,
+      "gt_sha256": "e06303d7a76086da47dce6f08387887a7915245960f646d8c9c2966f40ce0b19"
+    },
+    {
+      "name": "leftwhitebike",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftwhitebike",
+      "development_index": 57,
+      "video_frames": 199,
+      "gt_sha256": "61bb70cdec5615ecd0c6dc028ba2317a492998406d591f13edecaa5c655e8082"
+    },
+    {
+      "name": "whitegirlwithumbrella",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlwithumbrella",
+      "development_index": 58,
+      "video_frames": 131,
+      "gt_sha256": "bac1d978a3702bf23cab0f077a989bfa79373e6a9f671ab53a1d185140011ab1"
+    },
+    {
+      "name": "manbikecoming",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/manbikecoming",
+      "development_index": 59,
+      "video_frames": 241,
+      "gt_sha256": "cf9333e1e0eeae37737404853e4114602445cbb36338c1fc29947668fc6b55d4"
+    }
+  ],
+  "parts": {
+    "0": [
+      {
+        "name": "rightbhindbike-gai",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightbhindbike-gai",
+        "development_index": 56,
+        "video_frames": 265,
+        "gt_sha256": "e06303d7a76086da47dce6f08387887a7915245960f646d8c9c2966f40ce0b19"
+      },
+      {
+        "name": "whitegirlwithumbrella",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitegirlwithumbrella",
+        "development_index": 58,
+        "video_frames": 131,
+        "gt_sha256": "bac1d978a3702bf23cab0f077a989bfa79373e6a9f671ab53a1d185140011ab1"
+      }
+    ],
+    "1": [
+      {
+        "name": "manbikecoming",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/manbikecoming",
+        "development_index": 59,
+        "video_frames": 241,
+        "gt_sha256": "cf9333e1e0eeae37737404853e4114602445cbb36338c1fc29947668fc6b55d4"
+      },
+      {
+        "name": "leftwhitebike",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftwhitebike",
+        "development_index": 57,
+        "video_frames": 199,
+        "gt_sha256": "61bb70cdec5615ecd0c6dc028ba2317a492998406d591f13edecaa5c655e8082"
+      }
+    ]
+  },
+  "loads": {
+    "0": 396,
+    "1": 440
+  },
+  "arms": [
+    "native",
+    "sham",
+    "center",
+    "geometry"
+  ],
+  "conditions": [
+    "complete",
+    "alternating_outage"
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/run_spatial_calibration28.py": "e27c9b924792fcd20e7603fdb42830f38340127835d85ccdf182162b640c08de",
+    "/home/gaob/Miss-RGBT/spatial_calibration_tracker28.py": "7f53a211e16b7e4f5c2e52021e8c63188d222b620b6a8d2161e443d0ef8283f8",
+    "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/recover_evaluation_chain28.py": "0e737d3dc318123c51ee7a8b83b2f76600b5d1e83994e3be752c0e12aac8e99c"
+  },
+  "witness_sha256": "9fc2f23a9c7405556b10babc31236cc0675ff2cc27db23df047593753a7f7987",
+  "poll_seconds": 300,
+  "previous_pid": 1212195,
+  "geometry_diagnostic_sha256": "9f556ba28a3258aa412c7ec3eab324262dbe8b694b680d035eabfe703967345f",
+  "scope": "Sequential fresh videos, no outcome filtering. Same past-only center and size calibration in both missing states, no fitted gate/coefficient or weight update.",
+  "registration_sha256": "2127191883035a6c3721a4de4a55651c8c8d5e6a3ea8e178c825035a0fd93251",
+  "recovery_previous_report_sha256": "246af77cac7b3272aa5adff9599839e75612250b9d5eed263f4203c3bf233fab",
+  "recovered_controller_pid": 72348
+}

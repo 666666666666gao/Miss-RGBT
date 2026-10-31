@@ -1,0 +1,1843 @@
+{
+  "source_report_sha256": "246af77cac7b3272aa5adff9599839e75612250b9d5eed263f4203c3bf233fab",
+  "audit_sha256": "0d258bf2e36bfe2c701eaa4613ae823e2722badc1311b7f736d5aa619e69f96f",
+  "videos": 16,
+  "new_model_calls": 0,
+  "immediate_same_history": {
+    "01": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 9,
+          "before": {
+            "center_error_px": 6.31687210411609,
+            "PR20": 100.0,
+            "SR": 70.37037037037037
+          },
+          "after": {
+            "center_error_px": 4.122571369312748,
+            "PR20": 100.0,
+            "SR": 74.6031746031746
+          }
+        },
+        "besom-ymm": {
+          "frames": 170,
+          "before": {
+            "center_error_px": 15.593581070957402,
+            "PR20": 76.47058823529412,
+            "SR": 71.9327731092437
+          },
+          "after": {
+            "center_error_px": 18.20616970377831,
+            "PR20": 78.82352941176471,
+            "SR": 70.72829131652661
+          }
+        },
+        "bike150": {
+          "frames": 25,
+          "before": {
+            "center_error_px": 8.463509821762388,
+            "PR20": 84.0,
+            "SR": 63.80952380952381
+          },
+          "after": {
+            "center_error_px": 6.2441122776908955,
+            "PR20": 96.0,
+            "SR": 67.99999999999999
+          }
+        },
+        "bikeinhand": {
+          "frames": 30,
+          "before": {
+            "center_error_px": 6.580458403078136,
+            "PR20": 96.66666666666667,
+            "SR": 80.47619047619045
+          },
+          "after": {
+            "center_error_px": 6.592483907431144,
+            "PR20": 93.33333333333333,
+            "SR": 81.1111111111111
+          }
+        },
+        "blackinpeople": {
+          "frames": 39,
+          "before": {
+            "center_error_px": 18.333720952380684,
+            "PR20": 69.23076923076923,
+            "SR": 50.18315018315017
+          },
+          "after": {
+            "center_error_px": 18.156624847071136,
+            "PR20": 76.92307692307692,
+            "SR": 51.770451770451764
+          }
+        },
+        "bluetruck": {
+          "frames": 18,
+          "before": {
+            "center_error_px": 3.728114869554405,
+            "PR20": 100.0,
+            "SR": 85.44973544973544
+          },
+          "after": {
+            "center_error_px": 2.2158052293893777,
+            "PR20": 100.0,
+            "SR": 87.56613756613757
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 78,
+          "before": {
+            "center_error_px": 5.19688739739945,
+            "PR20": 98.71794871794872,
+            "SR": 76.61782661782662
+          },
+          "after": {
+            "center_error_px": 7.788234118688397,
+            "PR20": 93.58974358974359,
+            "SR": 73.44322344322343
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 82,
+          "before": {
+            "center_error_px": 12.61406669203267,
+            "PR20": 89.02439024390245,
+            "SR": 69.04761904761904
+          },
+          "after": {
+            "center_error_px": 14.329085712323328,
+            "PR20": 86.58536585365853,
+            "SR": 68.3507549361208
+          }
+        },
+        "left2flagfornews": {
+          "frames": 67,
+          "before": {
+            "center_error_px": 6.166985263985249,
+            "PR20": 97.01492537313433,
+            "SR": 84.1506751954513
+          },
+          "after": {
+            "center_error_px": 5.252217784851698,
+            "PR20": 98.50746268656717,
+            "SR": 84.57711442786069
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 103,
+          "before": {
+            "center_error_px": 11.236972689120591,
+            "PR20": 86.40776699029126,
+            "SR": 53.952843273231615
+          },
+          "after": {
+            "center_error_px": 10.636450804346731,
+            "PR20": 85.4368932038835,
+            "SR": 53.8141470180305
+          }
+        },
+        "leftconergirl": {
+          "frames": 1027,
+          "before": {
+            "center_error_px": 331.38996043751354,
+            "PR20": 15.968841285296982,
+            "SR": 11.304307506839152
+          },
+          "after": {
+            "center_error_px": 307.7918060356179,
+            "PR20": 16.066212268743914,
+            "SR": 11.59642045717995
+          }
+        },
+        "leftdress-gai": {
+          "frames": 36,
+          "before": {
+            "center_error_px": 4.52523859866276,
+            "PR20": 100.0,
+            "SR": 66.005291005291
+          },
+          "after": {
+            "center_error_px": 3.0524065614924742,
+            "PR20": 100.0,
+            "SR": 70.1058201058201
+          }
+        },
+        "rightof2boys953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 73.52882099843457,
+            "PR20": 54.716981132075475,
+            "SR": 42.61755016471997
+          },
+          "after": {
+            "center_error_px": 73.30353566455324,
+            "PR20": 58.490566037735846,
+            "SR": 43.03683737646002
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 95,
+          "before": {
+            "center_error_px": 6.098277337948302,
+            "PR20": 95.78947368421052,
+            "SR": 69.57393483709272
+          },
+          "after": {
+            "center_error_px": 5.318999540312836,
+            "PR20": 95.78947368421052,
+            "SR": 68.8220551378446
+          }
+        },
+        "takeoutman953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 7.541776960435942,
+            "PR20": 92.45283018867924,
+            "SR": 67.65498652291105
+          },
+          "after": {
+            "center_error_px": 3.9921394313101293,
+            "PR20": 97.48427672955975,
+            "SR": 75.35190176699611
+          }
+        },
+        "whitegirl2": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 7.477198965688041,
+            "PR20": 95.27896995708154,
+            "SR": 84.4880441446965
+          },
+          "after": {
+            "center_error_px": 6.9136293306000445,
+            "PR20": 95.70815450643777,
+            "SR": 84.85591661557328
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 32.799527660191885,
+          "video_macro_after": 30.86976701992315,
+          "mean_delta": -1.9297606402687377,
+          "paired_video_bootstrap95": [
+            -5.125843607606298,
+            0.13942196681075747
+          ],
+          "negative_videos": 12,
+          "zero_videos": 0,
+          "positive_videos": 4
+        },
+        "PR20": {
+          "video_macro_before": 84.4837594815844,
+          "video_macro_after": 85.79613051429472,
+          "mean_delta": 1.312371032710313,
+          "paired_video_bootstrap95": [
+            -0.5628397922271564,
+            3.387504533105184
+          ],
+          "negative_videos": 4,
+          "zero_videos": 4,
+          "positive_videos": 8
+        },
+        "SR": {
+          "video_macro_before": 65.47717635711831,
+          "video_macro_after": 66.73333485328195,
+          "mean_delta": 1.2561584961636372,
+          "paired_video_bootstrap95": [
+            0.06363094668530939,
+            2.5554096537923265
+          ],
+          "negative_videos": 5,
+          "zero_videos": 0,
+          "positive_videos": 11
+        }
+      }
+    },
+    "10": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 8,
+          "before": {
+            "center_error_px": 4.660419743671827,
+            "PR20": 100.0,
+            "SR": 76.78571428571428
+          },
+          "after": {
+            "center_error_px": 4.5881019044231,
+            "PR20": 100.0,
+            "SR": 77.38095238095238
+          }
+        },
+        "besom-ymm": {
+          "frames": 170,
+          "before": {
+            "center_error_px": 38.512293533506174,
+            "PR20": 57.64705882352941,
+            "SR": 59.103641456582636
+          },
+          "after": {
+            "center_error_px": 23.04914834433726,
+            "PR20": 67.6470588235294,
+            "SR": 63.529411764705884
+          }
+        },
+        "bike150": {
+          "frames": 25,
+          "before": {
+            "center_error_px": 1.5854903978699764,
+            "PR20": 100.0,
+            "SR": 85.90476190476191
+          },
+          "after": {
+            "center_error_px": 1.9725305025260982,
+            "PR20": 100.0,
+            "SR": 85.33333333333334
+          }
+        },
+        "bikeinhand": {
+          "frames": 29,
+          "before": {
+            "center_error_px": 10.947653104180844,
+            "PR20": 79.3103448275862,
+            "SR": 75.36945812807882
+          },
+          "after": {
+            "center_error_px": 5.915898186207674,
+            "PR20": 100.0,
+            "SR": 78.98193760262724
+          }
+        },
+        "blackinpeople": {
+          "frames": 38,
+          "before": {
+            "center_error_px": 11.133463774522939,
+            "PR20": 86.84210526315789,
+            "SR": 63.28320802005012
+          },
+          "after": {
+            "center_error_px": 13.127398677195046,
+            "PR20": 86.84210526315789,
+            "SR": 61.779448621553875
+          }
+        },
+        "bluetruck": {
+          "frames": 17,
+          "before": {
+            "center_error_px": 1.3544050184579046,
+            "PR20": 100.0,
+            "SR": 91.31652661064426
+          },
+          "after": {
+            "center_error_px": 1.362724032524241,
+            "PR20": 100.0,
+            "SR": 91.03641456582633
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 78,
+          "before": {
+            "center_error_px": 3.1679327648424875,
+            "PR20": 100.0,
+            "SR": 82.05128205128203
+          },
+          "after": {
+            "center_error_px": 3.6815574500489197,
+            "PR20": 100.0,
+            "SR": 80.89133089133088
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 82,
+          "before": {
+            "center_error_px": 5.842268833486092,
+            "PR20": 96.34146341463415,
+            "SR": 79.96515679442506
+          },
+          "after": {
+            "center_error_px": 7.100858260089071,
+            "PR20": 95.1219512195122,
+            "SR": 78.57142857142857
+          }
+        },
+        "left2flagfornews": {
+          "frames": 66,
+          "before": {
+            "center_error_px": 4.3922176634285774,
+            "PR20": 100.0,
+            "SR": 86.29148629148628
+          },
+          "after": {
+            "center_error_px": 4.02576993992402,
+            "PR20": 100.0,
+            "SR": 86.43578643578644
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 103,
+          "before": {
+            "center_error_px": 4.8043498970312575,
+            "PR20": 95.14563106796116,
+            "SR": 73.37031900138695
+          },
+          "after": {
+            "center_error_px": 4.828598763738425,
+            "PR20": 96.11650485436893,
+            "SR": 73.46278317152102
+          }
+        },
+        "leftconergirl": {
+          "frames": 1026,
+          "before": {
+            "center_error_px": 309.4981045828987,
+            "PR20": 16.08187134502924,
+            "SR": 11.94189176645317
+          },
+          "after": {
+            "center_error_px": 311.5443537858666,
+            "PR20": 15.984405458089668,
+            "SR": 11.91404437018472
+          }
+        },
+        "leftdress-gai": {
+          "frames": 35,
+          "before": {
+            "center_error_px": 2.212506026008412,
+            "PR20": 100.0,
+            "SR": 79.59183673469387
+          },
+          "after": {
+            "center_error_px": 2.4618465764938744,
+            "PR20": 100.0,
+            "SR": 78.3673469387755
+          }
+        },
+        "rightof2boys953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 73.42314352699198,
+            "PR20": 58.490566037735846,
+            "SR": 44.65408805031446
+          },
+          "after": {
+            "center_error_px": 74.2589319181652,
+            "PR20": 59.119496855345915,
+            "SR": 44.1749026654687
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 95,
+          "before": {
+            "center_error_px": 5.8507440630191025,
+            "PR20": 92.63157894736842,
+            "SR": 74.13533834586465
+          },
+          "after": {
+            "center_error_px": 5.808138347558934,
+            "PR20": 94.73684210526316,
+            "SR": 74.68671679197995
+          }
+        },
+        "takeoutman953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 2.641986334948424,
+            "PR20": 98.74213836477988,
+            "SR": 81.94070080862534
+          },
+          "after": {
+            "center_error_px": 2.555607287035481,
+            "PR20": 99.37106918238993,
+            "SR": 82.00059898173105
+          }
+        },
+        "whitegirl2": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 5.76415937344177,
+            "PR20": 95.70815450643777,
+            "SR": 87.10402615982014
+          },
+          "after": {
+            "center_error_px": 5.65732461108291,
+            "PR20": 96.56652360515021,
+            "SR": 86.85877784590231
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 30.361946164894157,
+          "video_macro_after": 29.496174286701052,
+          "mean_delta": -0.8657718781931016,
+          "paired_video_bootstrap95": [
+            -3.1746479860771974,
+            0.6224907716676049
+          ],
+          "negative_videos": 7,
+          "zero_videos": 0,
+          "positive_videos": 9
+        },
+        "PR20": {
+          "video_macro_before": 86.05880703738875,
+          "video_macro_after": 88.21912233542545,
+          "mean_delta": 2.160315298036709,
+          "paired_video_bootstrap95": [
+            0.14219137842271148,
+            5.306046140139414
+          ],
+          "negative_videos": 2,
+          "zero_videos": 7,
+          "positive_videos": 7
+        },
+        "SR": {
+          "video_macro_before": 72.0505897756365,
+          "video_macro_after": 72.21282593331927,
+          "mean_delta": 0.16223615768276423,
+          "paired_video_bootstrap95": [
+            -0.5219070132339291,
+            1.0174312757206434
+          ],
+          "negative_videos": 9,
+          "zero_videos": 0,
+          "positive_videos": 7
+        }
+      }
+    }
+  },
+  "closed_loop_state_slices": {
+    "11": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 24,
+          "before": {
+            "center_error_px": 4.133539749440445,
+            "PR20": 100.0,
+            "SR": 79.96031746031746
+          },
+          "after": {
+            "center_error_px": 4.066190923370639,
+            "PR20": 100.0,
+            "SR": 80.15873015873017
+          }
+        },
+        "besom-ymm": {
+          "frames": 509,
+          "before": {
+            "center_error_px": 18.117013154094305,
+            "PR20": 81.72888015717092,
+            "SR": 72.36411263916175
+          },
+          "after": {
+            "center_error_px": 14.944070336734876,
+            "PR20": 81.9253438113949,
+            "SR": 73.81420151557677
+          }
+        },
+        "bike150": {
+          "frames": 74,
+          "before": {
+            "center_error_px": 2.0503425956418297,
+            "PR20": 100.0,
+            "SR": 84.36293436293437
+          },
+          "after": {
+            "center_error_px": 2.143856720587753,
+            "PR20": 100.0,
+            "SR": 84.55598455598455
+          }
+        },
+        "bikeinhand": {
+          "frames": 88,
+          "before": {
+            "center_error_px": 5.5900427517507945,
+            "PR20": 97.72727272727273,
+            "SR": 82.41341991341992
+          },
+          "after": {
+            "center_error_px": 5.566072248689034,
+            "PR20": 98.86363636363636,
+            "SR": 82.4134199134199
+          }
+        },
+        "blackinpeople": {
+          "frames": 114,
+          "before": {
+            "center_error_px": 10.57938865343947,
+            "PR20": 86.84210526315789,
+            "SR": 67.25146198830409
+          },
+          "after": {
+            "center_error_px": 11.03147448842815,
+            "PR20": 85.96491228070175,
+            "SR": 67.41854636591479
+          }
+        },
+        "bluetruck": {
+          "frames": 51,
+          "before": {
+            "center_error_px": 1.718306106204494,
+            "PR20": 100.0,
+            "SR": 91.03641456582635
+          },
+          "after": {
+            "center_error_px": 1.7274939276939156,
+            "PR20": 100.0,
+            "SR": 91.03641456582633
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 3.485681581462048,
+            "PR20": 100.0,
+            "SR": 81.42244022072347
+          },
+          "after": {
+            "center_error_px": 3.51891157089822,
+            "PR20": 100.0,
+            "SR": 81.52462701818924
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 245,
+          "before": {
+            "center_error_px": 5.70916973450966,
+            "PR20": 97.14285714285714,
+            "SR": 80.09718172983479
+          },
+          "after": {
+            "center_error_px": 5.989477396597737,
+            "PR20": 96.3265306122449,
+            "SR": 79.55296404275997
+          }
+        },
+        "left2flagfornews": {
+          "frames": 198,
+          "before": {
+            "center_error_px": 3.730001340421246,
+            "PR20": 100.0,
+            "SR": 88.48003848003847
+          },
+          "after": {
+            "center_error_px": 3.7640909470038793,
+            "PR20": 100.0,
+            "SR": 88.33573833573834
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 309,
+          "before": {
+            "center_error_px": 4.220508093196694,
+            "PR20": 97.41100323624596,
+            "SR": 73.63230081676683
+          },
+          "after": {
+            "center_error_px": 5.55288073984478,
+            "PR20": 94.49838187702265,
+            "SR": 71.75219602404069
+          }
+        },
+        "leftconergirl": {
+          "frames": 3078,
+          "before": {
+            "center_error_px": 311.11627719638045,
+            "PR20": 13.905133203378817,
+            "SR": 10.390172963272379
+          },
+          "after": {
+            "center_error_px": 309.233339899182,
+            "PR20": 16.049382716049383,
+            "SR": 12.252854358117515
+          }
+        },
+        "leftdress-gai": {
+          "frames": 105,
+          "before": {
+            "center_error_px": 2.2445267801859536,
+            "PR20": 100.0,
+            "SR": 80.72562358276645
+          },
+          "after": {
+            "center_error_px": 2.1546239702902925,
+            "PR20": 100.0,
+            "SR": 80.68027210884352
+          }
+        },
+        "rightof2boys953": {
+          "frames": 476,
+          "before": {
+            "center_error_px": 56.51292279220722,
+            "PR20": 60.294117647058826,
+            "SR": 46.89875950380153
+          },
+          "after": {
+            "center_error_px": 72.8809430227315,
+            "PR20": 58.8235294117647,
+            "SR": 44.72789115646258
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 284,
+          "before": {
+            "center_error_px": 14.224481813053492,
+            "PR20": 90.49295774647888,
+            "SR": 71.0596914822267
+          },
+          "after": {
+            "center_error_px": 5.153716312930641,
+            "PR20": 95.77464788732394,
+            "SR": 75.41918175720991
+          }
+        },
+        "takeoutman953": {
+          "frames": 476,
+          "before": {
+            "center_error_px": 2.6619734643340744,
+            "PR20": 98.94957983193277,
+            "SR": 81.27250900360141
+          },
+          "after": {
+            "center_error_px": 2.450524797758841,
+            "PR20": 99.5798319327731,
+            "SR": 81.82272909163663
+          }
+        },
+        "whitegirl2": {
+          "frames": 699,
+          "before": {
+            "center_error_px": 5.901940619519574,
+            "PR20": 96.70958512160229,
+            "SR": 87.20621295728591
+          },
+          "after": {
+            "center_error_px": 5.956322655647135,
+            "PR20": 96.99570815450643,
+            "SR": 87.22665031677906
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 28.249757276615107,
+          "video_macro_after": 28.50837437239933,
+          "mean_delta": 0.2586170957842275,
+          "paired_video_bootstrap95": [
+            -1.814192286520831,
+            2.8887236410120805
+          ],
+          "negative_videos": 7,
+          "zero_videos": 0,
+          "positive_videos": 9
+        },
+        "PR20": {
+          "video_macro_before": 88.82521825482226,
+          "video_macro_after": 89.05011906546363,
+          "mean_delta": 0.22490081064136835,
+          "paired_video_bootstrap95": [
+            -0.5272599964166781,
+            1.1212572913757655
+          ],
+          "negative_videos": 4,
+          "zero_videos": 6,
+          "positive_videos": 6
+        },
+        "SR": {
+          "video_macro_before": 73.66084947939262,
+          "video_macro_after": 73.91827508032688,
+          "mean_delta": 0.2574256009342568,
+          "paired_video_bootstrap95": [
+            -0.3871656046635607,
+            1.026359452111202
+          ],
+          "negative_videos": 7,
+          "zero_videos": 0,
+          "positive_videos": 9
+        }
+      }
+    },
+    "01": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 9,
+          "before": {
+            "center_error_px": 6.175555114304972,
+            "PR20": 100.0,
+            "SR": 70.89947089947088
+          },
+          "after": {
+            "center_error_px": 4.122571369312748,
+            "PR20": 100.0,
+            "SR": 74.6031746031746
+          }
+        },
+        "besom-ymm": {
+          "frames": 170,
+          "before": {
+            "center_error_px": 14.295881579238683,
+            "PR20": 78.82352941176471,
+            "SR": 72.18487394957982
+          },
+          "after": {
+            "center_error_px": 18.20616970377831,
+            "PR20": 78.82352941176471,
+            "SR": 70.72829131652661
+          }
+        },
+        "bike150": {
+          "frames": 25,
+          "before": {
+            "center_error_px": 8.741707550907138,
+            "PR20": 84.0,
+            "SR": 62.857142857142854
+          },
+          "after": {
+            "center_error_px": 6.2441122776908955,
+            "PR20": 96.0,
+            "SR": 67.99999999999999
+          }
+        },
+        "bikeinhand": {
+          "frames": 30,
+          "before": {
+            "center_error_px": 6.6945269992941485,
+            "PR20": 96.66666666666667,
+            "SR": 81.1111111111111
+          },
+          "after": {
+            "center_error_px": 6.592483907431144,
+            "PR20": 93.33333333333333,
+            "SR": 81.1111111111111
+          }
+        },
+        "blackinpeople": {
+          "frames": 39,
+          "before": {
+            "center_error_px": 19.50920185504185,
+            "PR20": 66.66666666666667,
+            "SR": 48.22954822954822
+          },
+          "after": {
+            "center_error_px": 18.156624847071136,
+            "PR20": 76.92307692307692,
+            "SR": 51.770451770451764
+          }
+        },
+        "bluetruck": {
+          "frames": 18,
+          "before": {
+            "center_error_px": 3.6002915562124875,
+            "PR20": 100.0,
+            "SR": 85.18518518518519
+          },
+          "after": {
+            "center_error_px": 2.2158052293893777,
+            "PR20": 100.0,
+            "SR": 87.56613756613757
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 78,
+          "before": {
+            "center_error_px": 5.197876862381169,
+            "PR20": 98.71794871794872,
+            "SR": 76.8009768009768
+          },
+          "after": {
+            "center_error_px": 7.788234118688397,
+            "PR20": 93.58974358974359,
+            "SR": 73.44322344322343
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 82,
+          "before": {
+            "center_error_px": 12.34681060645427,
+            "PR20": 89.02439024390245,
+            "SR": 69.33797909407666
+          },
+          "after": {
+            "center_error_px": 14.329085712323328,
+            "PR20": 86.58536585365853,
+            "SR": 68.3507549361208
+          }
+        },
+        "left2flagfornews": {
+          "frames": 67,
+          "before": {
+            "center_error_px": 6.136458926642475,
+            "PR20": 97.01492537313433,
+            "SR": 84.29282160625444
+          },
+          "after": {
+            "center_error_px": 5.252217784851698,
+            "PR20": 98.50746268656717,
+            "SR": 84.57711442786069
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 103,
+          "before": {
+            "center_error_px": 8.4463645418964,
+            "PR20": 90.29126213592232,
+            "SR": 57.928802588996746
+          },
+          "after": {
+            "center_error_px": 10.636450804346731,
+            "PR20": 85.4368932038835,
+            "SR": 53.8141470180305
+          }
+        },
+        "leftconergirl": {
+          "frames": 1027,
+          "before": {
+            "center_error_px": 332.4672026519736,
+            "PR20": 13.924050632911392,
+            "SR": 9.56553994528678
+          },
+          "after": {
+            "center_error_px": 307.7918060356179,
+            "PR20": 16.066212268743914,
+            "SR": 11.59642045717995
+          }
+        },
+        "leftdress-gai": {
+          "frames": 36,
+          "before": {
+            "center_error_px": 4.898388715570852,
+            "PR20": 100.0,
+            "SR": 65.34391534391534
+          },
+          "after": {
+            "center_error_px": 3.0524065614924742,
+            "PR20": 100.0,
+            "SR": 70.1058201058201
+          }
+        },
+        "rightof2boys953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 56.698764288139806,
+            "PR20": 59.74842767295598,
+            "SR": 46.00179694519317
+          },
+          "after": {
+            "center_error_px": 73.30353566455324,
+            "PR20": 58.490566037735846,
+            "SR": 43.03683737646002
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 95,
+          "before": {
+            "center_error_px": 14.677454810959357,
+            "PR20": 88.42105263157895,
+            "SR": 65.91478696741854
+          },
+          "after": {
+            "center_error_px": 5.318999540312836,
+            "PR20": 95.78947368421052,
+            "SR": 68.8220551378446
+          }
+        },
+        "takeoutman953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 7.60762376573037,
+            "PR20": 91.82389937106919,
+            "SR": 67.68493560946389
+          },
+          "after": {
+            "center_error_px": 3.9921394313101293,
+            "PR20": 97.48427672955975,
+            "SR": 75.35190176699611
+          }
+        },
+        "whitegirl2": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 7.397819381354386,
+            "PR20": 95.27896995708154,
+            "SR": 84.44716942571019
+          },
+          "after": {
+            "center_error_px": 6.9136293306000445,
+            "PR20": 95.70815450643777,
+            "SR": 84.85591661557328
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 32.18074557538137,
+          "video_macro_after": 30.86976701992315,
+          "mean_delta": -1.3109785554582216,
+          "paired_video_bootstrap95": [
+            -5.379569312276045,
+            2.3250300461800983
+          ],
+          "negative_videos": 11,
+          "zero_videos": 0,
+          "positive_videos": 5
+        },
+        "PR20": {
+          "video_macro_before": 84.40011184260018,
+          "video_macro_after": 85.79613051429472,
+          "mean_delta": 1.3960186716945393,
+          "paired_video_bootstrap95": [
+            -0.8405808232541864,
+            3.879597513483798
+          ],
+          "negative_videos": 5,
+          "zero_videos": 4,
+          "positive_videos": 7
+        },
+        "SR": {
+          "video_macro_before": 65.48662853495816,
+          "video_macro_after": 66.73333485328195,
+          "mean_delta": 1.24670631832378,
+          "paired_video_bootstrap95": [
+            -0.32682358459078653,
+            2.7986870389753737
+          ],
+          "negative_videos": 5,
+          "zero_videos": 1,
+          "positive_videos": 10
+        }
+      }
+    },
+    "10": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 8,
+          "before": {
+            "center_error_px": 4.691178851118362,
+            "PR20": 100.0,
+            "SR": 77.38095238095238
+          },
+          "after": {
+            "center_error_px": 4.5881019044231,
+            "PR20": 100.0,
+            "SR": 77.38095238095238
+          }
+        },
+        "besom-ymm": {
+          "frames": 170,
+          "before": {
+            "center_error_px": 35.3903901044003,
+            "PR20": 60.588235294117645,
+            "SR": 60.868347338935564
+          },
+          "after": {
+            "center_error_px": 23.04914834433726,
+            "PR20": 67.6470588235294,
+            "SR": 63.529411764705884
+          }
+        },
+        "bike150": {
+          "frames": 25,
+          "before": {
+            "center_error_px": 1.5953899266389695,
+            "PR20": 100.0,
+            "SR": 87.23809523809524
+          },
+          "after": {
+            "center_error_px": 1.9725305025260982,
+            "PR20": 100.0,
+            "SR": 85.33333333333334
+          }
+        },
+        "bikeinhand": {
+          "frames": 29,
+          "before": {
+            "center_error_px": 10.782112146063065,
+            "PR20": 79.3103448275862,
+            "SR": 76.02627257799669
+          },
+          "after": {
+            "center_error_px": 5.915898186207674,
+            "PR20": 100.0,
+            "SR": 78.98193760262724
+          }
+        },
+        "blackinpeople": {
+          "frames": 38,
+          "before": {
+            "center_error_px": 11.588741908821001,
+            "PR20": 84.21052631578948,
+            "SR": 62.28070175438596
+          },
+          "after": {
+            "center_error_px": 13.127398677195046,
+            "PR20": 86.84210526315789,
+            "SR": 61.779448621553875
+          }
+        },
+        "bluetruck": {
+          "frames": 17,
+          "before": {
+            "center_error_px": 1.4223887362186922,
+            "PR20": 100.0,
+            "SR": 91.31652661064426
+          },
+          "after": {
+            "center_error_px": 1.362724032524241,
+            "PR20": 100.0,
+            "SR": 91.03641456582633
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 78,
+          "before": {
+            "center_error_px": 3.0683569210431583,
+            "PR20": 100.0,
+            "SR": 82.53968253968253
+          },
+          "after": {
+            "center_error_px": 3.6815574500489197,
+            "PR20": 100.0,
+            "SR": 80.89133089133088
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 82,
+          "before": {
+            "center_error_px": 5.72329779069664,
+            "PR20": 96.34146341463415,
+            "SR": 80.19744483159117
+          },
+          "after": {
+            "center_error_px": 7.100858260089071,
+            "PR20": 95.1219512195122,
+            "SR": 78.57142857142857
+          }
+        },
+        "left2flagfornews": {
+          "frames": 66,
+          "before": {
+            "center_error_px": 4.22987388906568,
+            "PR20": 100.0,
+            "SR": 86.43578643578644
+          },
+          "after": {
+            "center_error_px": 4.02576993992402,
+            "PR20": 100.0,
+            "SR": 86.43578643578644
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 103,
+          "before": {
+            "center_error_px": 3.9853961396071673,
+            "PR20": 97.0873786407767,
+            "SR": 74.80351363846509
+          },
+          "after": {
+            "center_error_px": 4.828598763738425,
+            "PR20": 96.11650485436893,
+            "SR": 73.46278317152102
+          }
+        },
+        "leftconergirl": {
+          "frames": 1026,
+          "before": {
+            "center_error_px": 311.56406782700833,
+            "PR20": 13.937621832358674,
+            "SR": 10.155017172561031
+          },
+          "after": {
+            "center_error_px": 311.5443537858666,
+            "PR20": 15.984405458089668,
+            "SR": 11.91404437018472
+          }
+        },
+        "leftdress-gai": {
+          "frames": 35,
+          "before": {
+            "center_error_px": 2.0960626073277724,
+            "PR20": 100.0,
+            "SR": 81.36054421768709
+          },
+          "after": {
+            "center_error_px": 2.4618465764938744,
+            "PR20": 100.0,
+            "SR": 78.3673469387755
+          }
+        },
+        "rightof2boys953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 56.64654286188006,
+            "PR20": 59.119496855345915,
+            "SR": 46.091644204851754
+          },
+          "after": {
+            "center_error_px": 74.2589319181652,
+            "PR20": 59.119496855345915,
+            "SR": 44.1749026654687
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 95,
+          "before": {
+            "center_error_px": 14.597329032680639,
+            "PR20": 90.52631578947368,
+            "SR": 72.08020050125313
+          },
+          "after": {
+            "center_error_px": 5.808138347558934,
+            "PR20": 94.73684210526316,
+            "SR": 74.68671679197995
+          }
+        },
+        "takeoutman953": {
+          "frames": 159,
+          "before": {
+            "center_error_px": 2.675024185243391,
+            "PR20": 98.74213836477988,
+            "SR": 81.70110811620246
+          },
+          "after": {
+            "center_error_px": 2.555607287035481,
+            "PR20": 99.37106918238993,
+            "SR": 82.00059898173105
+          }
+        },
+        "whitegirl2": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 5.803450876703397,
+            "PR20": 96.13733905579399,
+            "SR": 87.24708767627222
+          },
+          "after": {
+            "center_error_px": 5.65732461108291,
+            "PR20": 96.56652360515021,
+            "SR": 86.85877784590231
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 29.74122523778229,
+          "video_macro_after": 29.496174286701052,
+          "mean_delta": -0.24505095108123676,
+          "paired_video_bootstrap95": [
+            -3.006424192824006,
+            2.8458558400196403
+          ],
+          "negative_videos": 9,
+          "zero_videos": 0,
+          "positive_videos": 7
+        },
+        "PR20": {
+          "video_macro_before": 86.00005377441602,
+          "video_macro_after": 88.21912233542545,
+          "mean_delta": 2.2190685610094367,
+          "paired_video_bootstrap95": [
+            0.25486319957661735,
+            5.208790538318273
+          ],
+          "negative_videos": 2,
+          "zero_videos": 7,
+          "positive_videos": 7
+        },
+        "SR": {
+          "video_macro_before": 72.3576828272102,
+          "video_macro_after": 72.21282593331927,
+          "mean_delta": -0.14485689389092637,
+          "paired_video_bootstrap95": [
+            -0.9812642440967214,
+            0.7378724667878537
+          ],
+          "negative_videos": 9,
+          "zero_videos": 2,
+          "positive_videos": 5
+        }
+      }
+    },
+    "00": {
+      "per_video": {
+        "AQmotomove": {
+          "frames": 8,
+          "before": {
+            "center_error_px": 19.742020899361542,
+            "PR20": 62.5,
+            "SR": 48.80952380952381
+          },
+          "after": {
+            "center_error_px": 19.558773434424022,
+            "PR20": 62.5,
+            "SR": 50.595238095238095
+          }
+        },
+        "besom-ymm": {
+          "frames": 170,
+          "before": {
+            "center_error_px": 20.190136718905897,
+            "PR20": 79.41176470588235,
+            "SR": 70.53221288515405
+          },
+          "after": {
+            "center_error_px": 15.735498308950163,
+            "PR20": 80.58823529411765,
+            "SR": 72.3529411764706
+          }
+        },
+        "bike150": {
+          "frames": 25,
+          "before": {
+            "center_error_px": 5.291839532452186,
+            "PR20": 92.0,
+            "SR": 77.9047619047619
+          },
+          "after": {
+            "center_error_px": 5.216222580386978,
+            "PR20": 92.0,
+            "SR": 77.52380952380952
+          }
+        },
+        "bikeinhand": {
+          "frames": 29,
+          "before": {
+            "center_error_px": 9.963071683000567,
+            "PR20": 86.20689655172414,
+            "SR": 77.17569786535302
+          },
+          "after": {
+            "center_error_px": 9.9936885734364,
+            "PR20": 82.75862068965517,
+            "SR": 77.17569786535304
+          }
+        },
+        "blackinpeople": {
+          "frames": 38,
+          "before": {
+            "center_error_px": 16.013956482976088,
+            "PR20": 71.05263157894737,
+            "SR": 54.76190476190476
+          },
+          "after": {
+            "center_error_px": 16.771438363482016,
+            "PR20": 71.05263157894737,
+            "SR": 54.3859649122807
+          }
+        },
+        "bluetruck": {
+          "frames": 17,
+          "before": {
+            "center_error_px": 7.100321891174872,
+            "PR20": 94.11764705882354,
+            "SR": 83.19327731092437
+          },
+          "after": {
+            "center_error_px": 7.118933153531291,
+            "PR20": 94.11764705882354,
+            "SR": 82.63305322128852
+          }
+        },
+        "blueumbrellagirl": {
+          "frames": 77,
+          "before": {
+            "center_error_px": 4.209306063745466,
+            "PR20": 98.7012987012987,
+            "SR": 79.2207792207792
+          },
+          "after": {
+            "center_error_px": 4.358454093032693,
+            "PR20": 98.7012987012987,
+            "SR": 79.2207792207792
+          }
+        },
+        "greenleftthewhite": {
+          "frames": 82,
+          "before": {
+            "center_error_px": 6.363705049536505,
+            "PR20": 96.34146341463415,
+            "SR": 78.57142857142856
+          },
+          "after": {
+            "center_error_px": 6.420003307869383,
+            "PR20": 96.34146341463415,
+            "SR": 78.45528455284551
+          }
+        },
+        "left2flagfornews": {
+          "frames": 66,
+          "before": {
+            "center_error_px": 6.991523422154869,
+            "PR20": 93.93939393939394,
+            "SR": 86.14718614718613
+          },
+          "after": {
+            "center_error_px": 7.10691407699907,
+            "PR20": 95.45454545454545,
+            "SR": 86.07503607503605
+          }
+        },
+        "left4thgirlwithwhitepants": {
+          "frames": 103,
+          "before": {
+            "center_error_px": 6.290589958275685,
+            "PR20": 97.0873786407767,
+            "SR": 69.67175219602403
+          },
+          "after": {
+            "center_error_px": 7.662626592422939,
+            "PR20": 94.1747572815534,
+            "SR": 67.96116504854368
+          }
+        },
+        "leftconergirl": {
+          "frames": 1026,
+          "before": {
+            "center_error_px": 309.47940671619176,
+            "PR20": 13.937621832358674,
+            "SR": 10.414926204399888
+          },
+          "after": {
+            "center_error_px": 308.1723593058078,
+            "PR20": 16.08187134502924,
+            "SR": 12.276060521674557
+          }
+        },
+        "leftdress-gai": {
+          "frames": 35,
+          "before": {
+            "center_error_px": 3.1020986632554304,
+            "PR20": 100.0,
+            "SR": 76.3265306122449
+          },
+          "after": {
+            "center_error_px": 3.048653642191749,
+            "PR20": 100.0,
+            "SR": 75.9183673469388
+          }
+        },
+        "rightof2boys953": {
+          "frames": 158,
+          "before": {
+            "center_error_px": 55.685616534759944,
+            "PR20": 60.12658227848101,
+            "SR": 46.20253164556962
+          },
+          "after": {
+            "center_error_px": 71.55445669947851,
+            "PR20": 58.860759493670884,
+            "SR": 43.88185654008439
+          }
+        },
+        "rightwhitegirlleftpink": {
+          "frames": 94,
+          "before": {
+            "center_error_px": 13.70438913201785,
+            "PR20": 91.48936170212765,
+            "SR": 71.68186423505571
+          },
+          "after": {
+            "center_error_px": 4.8890930278123115,
+            "PR20": 96.80851063829788,
+            "SR": 75.68389057750758
+          }
+        },
+        "takeoutman953": {
+          "frames": 158,
+          "before": {
+            "center_error_px": 7.7247125682178615,
+            "PR20": 86.07594936708861,
+            "SR": 71.00663050030138
+          },
+          "after": {
+            "center_error_px": 7.618662958669512,
+            "PR20": 87.34177215189874,
+            "SR": 71.09704641350211
+          }
+        },
+        "whitegirl2": {
+          "frames": 233,
+          "before": {
+            "center_error_px": 6.810397275296105,
+            "PR20": 95.27896995708154,
+            "SR": 85.38728796239525
+          },
+          "after": {
+            "center_error_px": 6.750300428119546,
+            "PR20": 94.84978540772532,
+            "SR": 85.5507868383405
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 31.166443286957666,
+          "video_macro_after": 31.373504909163398,
+          "mean_delta": 0.20706162220573365,
+          "paired_video_bootstrap95": [
+            -1.841555182905209,
+            2.785737807241398
+          ],
+          "negative_videos": 8,
+          "zero_videos": 0,
+          "positive_videos": 8
+        },
+        "PR20": {
+          "video_macro_before": 82.39168498303866,
+          "video_macro_after": 82.60199365688734,
+          "mean_delta": 0.21030867384869423,
+          "paired_video_bootstrap95": [
+            -0.6961539651091432,
+            1.1876574656521253
+          ],
+          "negative_videos": 4,
+          "zero_videos": 7,
+          "positive_videos": 5
+        },
+        "SR": {
+          "video_macro_before": 67.93801848956291,
+          "video_macro_after": 68.17418612060581,
+          "mean_delta": 0.23616763104289218,
+          "paired_video_bootstrap95": [
+            -0.4378496287900152,
+            0.996357056584893
+          ],
+          "negative_videos": 8,
+          "zero_videos": 1,
+          "positive_videos": 7
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "AQmotomove": {
+      "trajectory_changed_frames": 47,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 1,
+        "offset_corrected": 1
+      },
+      "template_write_decision_changes": [],
+      "nonzero_offset_frames": 16
+    },
+    "leftdress-gai": {
+      "trajectory_changed_frames": 209,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 20,
+        "offset_corrected": 21
+      },
+      "template_write_decision_changes": [
+        54,
+        90,
+        96,
+        144,
+        168,
+        198,
+        210
+      ],
+      "nonzero_offset_frames": 70
+    },
+    "leftconergirl": {
+      "trajectory_changed_frames": 6155,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 106,
+        "offset_corrected": 137
+      },
+      "template_write_decision_changes": [
+        204,
+        222,
+        354,
+        360,
+        366,
+        372,
+        378,
+        384,
+        390,
+        396,
+        402,
+        408,
+        414,
+        420,
+        426,
+        432,
+        438,
+        444,
+        450,
+        540,
+        612,
+        618,
+        624,
+        630,
+        636,
+        642,
+        654,
+        672,
+        678,
+        690,
+        696,
+        702,
+        714,
+        738,
+        774,
+        780,
+        822,
+        858,
+        864,
+        1014,
+        1038,
+        1044,
+        1050,
+        1056,
+        1068,
+        1092,
+        1116
+      ],
+      "nonzero_offset_frames": 2052
+    },
+    "bike150": {
+      "trajectory_changed_frames": 147,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 14,
+        "offset_corrected": 12
+      },
+      "template_write_decision_changes": [
+        48,
+        132
+      ],
+      "nonzero_offset_frames": 49
+    },
+    "left2flagfornews": {
+      "trajectory_changed_frames": 395,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 59,
+        "offset_corrected": 59
+      },
+      "template_write_decision_changes": [
+        294,
+        390
+      ],
+      "nonzero_offset_frames": 132
+    },
+    "greenleftthewhite": {
+      "trajectory_changed_frames": 489,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 69,
+        "offset_corrected": 67
+      },
+      "template_write_decision_changes": [
+        174,
+        390
+      ],
+      "nonzero_offset_frames": 163
+    },
+    "rightof2boys953": {
+      "trajectory_changed_frames": 950,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 71,
+        "offset_corrected": 77
+      },
+      "template_write_decision_changes": [
+        18,
+        24,
+        36,
+        90,
+        126,
+        132,
+        144,
+        150,
+        156,
+        162,
+        282,
+        288,
+        300,
+        306
+      ],
+      "nonzero_offset_frames": 317
+    },
+    "blueumbrellagirl": {
+      "trajectory_changed_frames": 464,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 66,
+        "offset_corrected": 64
+      },
+      "template_write_decision_changes": [
+        48,
+        168,
+        192,
+        270,
+        330,
+        360
+      ],
+      "nonzero_offset_frames": 155
+    },
+    "bikeinhand": {
+      "trajectory_changed_frames": 174,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 20,
+        "offset_corrected": 20
+      },
+      "template_write_decision_changes": [
+        90,
+        168
+      ],
+      "nonzero_offset_frames": 58
+    },
+    "left4thgirlwithwhitepants": {
+      "trajectory_changed_frames": 616,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 45,
+        "offset_corrected": 44
+      },
+      "template_write_decision_changes": [
+        102,
+        234,
+        396,
+        492,
+        504,
+        534,
+        540
+      ],
+      "nonzero_offset_frames": 205
+    },
+    "takeoutman953": {
+      "trajectory_changed_frames": 950,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 121,
+        "offset_corrected": 122
+      },
+      "template_write_decision_changes": [
+        6,
+        12,
+        306,
+        342,
+        396,
+        480,
+        516,
+        522,
+        528,
+        546,
+        564,
+        648,
+        678
+      ],
+      "nonzero_offset_frames": 317
+    },
+    "whitegirl2": {
+      "trajectory_changed_frames": 1396,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 218,
+        "offset_corrected": 219
+      },
+      "template_write_decision_changes": [
+        360
+      ],
+      "nonzero_offset_frames": 465
+    },
+    "besom-ymm": {
+      "trajectory_changed_frames": 1017,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 107,
+        "offset_corrected": 99
+      },
+      "template_write_decision_changes": [
+        282,
+        348,
+        540,
+        546,
+        552,
+        558,
+        564,
+        570,
+        576,
+        582,
+        738,
+        816,
+        852,
+        858
+      ],
+      "nonzero_offset_frames": 339
+    },
+    "rightwhitegirlleftpink": {
+      "trajectory_changed_frames": 566,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 57,
+        "offset_corrected": 57
+      },
+      "template_write_decision_changes": [
+        102,
+        108,
+        318,
+        408,
+        426,
+        480
+      ],
+      "nonzero_offset_frames": 189
+    },
+    "blackinpeople": {
+      "trajectory_changed_frames": 227,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 9,
+        "offset_corrected": 10
+      },
+      "template_write_decision_changes": [
+        108
+      ],
+      "nonzero_offset_frames": 76
+    },
+    "bluetruck": {
+      "trajectory_changed_frames": 101,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 13,
+        "offset_corrected": 13
+      },
+      "template_write_decision_changes": [],
+      "nonzero_offset_frames": 34
+    }
+  },
+  "scope": "Post-hoc saved-trajectory mechanism audit. Immediate comparisons use the same corrected tracker history, comparing the clipped no-offset and clipped offset boxes from one raw prediction. Closed-loop state slices include all prior crop/template effects. Template write counts do not isolate a causal template mechanism. GT is evaluation-only. Correlated frame strata and video bootstrap do not establish new-seed, official or independent prospective efficacy; no algorithm parameter is selected."
+}

@@ -1661,3 +1661,28 @@ GPU1 center16completed66/66 withreceipt;GPU0 24/30stilllongleftconergirl,
 overall90/96 at17:29. All4trainers andCPU101337 live17:27,
 CPUUtility48/128 at552.61s. No finalcenter/CPU/officialnewresult.
 
+## 2026-10-31 17:52 UTC+08 - Center16 complete, geometry actually running
+
+All96 tracks independently verified including6158leftconergirl; exact
+complete/sham/past-only controls passed. Report246af77cac7b3272aa5adff9599839e75612250b9d5eed263f4203c3bf233fab
+matches server/download/completion. Outage nativePR/SR86.550590/71.114156,
+corrected87.301072/71.472439;delta+.750482/+.358282,95intervals
+[-.140864,1.691871]/[-.326380,1.071918],SR11wins5losses. Notstablebenefit,
+notofficialscore/module. Complete90.656936/73.839150 identicalallarms.
+Unchangedmechanismaudit zero calls reporta5f42c576ccf5afec3bbdf35f7aee7f071d3efd0aa6107dc5a09f59befd2e748
+downloadmatch. ImmediateTIRSR+1.256158CI[.063631,2.555410],RGBSR+.162236
+CIcross0;RGBPR+2.160315CI[.142191,5.306046]. Posthocnotstate-gateproof.
+14/16templatewritedecisionschange,notisolatedcausaltemplatemechanism.
+Docdocs/STATE_OFFSET_REPLICATION16_RESULT_20261031.md;reportsarchived.
+
+Geometryworkers151970/151971launch~17:49:44,actualalive17:51:25 and
+fullnativeTRACKreceiptsalreadywritten. Originalregistration/cohort/source
+unchanged. Outputserver28-spatial-calibration4-20261031-recovered;then
+registeredgap4unchanged. ETAgeometry18:00-18:15+300swakeup,provisional.
+All4trainers+CPU101337/105825live17:52:16. CPUUtility128done1428s,
+Randomongoing;nofullpairedresult. Preserveallregisteredsources.
+BoundedPMAalignmentcodepriorartreview recordsimport/package/license
+uncertainty,notrunnabletransplant/nointegration;FlexTrackwrapperredirect
+andPAFCabstractonlyscopeindocs/CALIBRATION_PRIOR_ART_BOUNDARY_20261031.md.
+Officialthresholds/3modules/final5/globalweightcleanupremainincomplete.
+
