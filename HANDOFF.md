@@ -1048,3 +1048,20 @@ live. Epoch5 candidate complete tracking each3seq15963frames; next useful
 full-complete node~10:40+08:00. No training/LR/selection changes.
 reports/candidate-utility-epoch06-validation-20261031.json archived.
 
+## 2026-10-31 02:32 UTC full candidate complete-input results
+
+Verified all291saved complete-input trajectories and recomputed all97seq
+metrics/model. E0 PR20/SR75.879164/61.654017, utility5=79.596578/64.472777,
+random5=80.667388/65.321675. Utility minusE0 +3.717415/+2.818759pp;
+random minusE0 +4.788224/+3.667658. Utility minusrandom -1.070809/
+-0.848899pp, paired-video95% intervals cross0 for both. No demonstrated
+utility-selector advantage; gains do not establish official complete/Miss
+scores, unseen E0 data, training-seed robustness or three contributions.
+
+Alloriginal8jobPIDs reverified live10:32:58+08:00; both candidates now
+track alternating outage using sameepoch5weights. Utilityfirstseq done,
+fulloutage stillpending; nextwindow11:15-11:40+08:00, refineactualspeed.
+NoLR/train/selection/cleanup changes. Continuefinal5protocol.
+docs/EPOCH05_COMPLETE_RESULTS_20261031.md and reports/epoch05-complete-
+paired-analysis-20261031.json contain fullverifiedresults/intervals.
+
