@@ -1270,3 +1270,11 @@ epoch2+.005247972, mixedsigncells. Noconsistentbenefit/promotionevidence.
 Receipt reports/protected-template-paired-progress-20261031T0506.json.
 Waitregisteredfullsixepoch/final5checksandshortgapcompletionnear13:14-13:25.
 
+Expanded privilegedpastGTvelocitydiagnostic audit_past_gt_motion28.py ran:
+34/35gaps,1047validframes,11videos. Exclude blkskirtwoman160 invalidpastGT.
+Same-lastCVholdblindPR/SR22.897727/19.192145; measured27.642045/23.395788;
+pastGTvelocity34.668561/25.305961. PrivilegedSRvsmeasured+1.910173 but
+6wins1tie4losses, notupperbound/uniformsolution/closedloopresult.
+Report reports/blind-motion-next16-past-gt-audit-20261031.json.
+At13:08:27short54/64tracksfinishedandworkerslive; nofinalresultthen.
+

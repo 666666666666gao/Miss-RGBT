@@ -119,3 +119,40 @@ Source hashes of its analyzer scripts are fixed at launch. Log:
 Final/partial receipt:
 `reports/server28-development-controls-analysis-20261031.json`.
 No short-gap result or final CPU-pair analysis existed at this observation.
+
+## Privileged Past-Velocity Control
+
+`audit_past_gt_motion28.py` replaces the measured last-two-box velocity
+with the last-two-GT velocity, anchored at the same saved CV last box.
+It uses only past GT to construct predictions, then scores all valid blind
+frames using later GT. It does not recompute the tracker or recovery.
+The local hold control uses that same CV last box; it is not the separate
+closed-loop hold arm.
+
+Of35 long gaps,34 are eligible, covering1047 valid frames in11 videos.
+The interval beginning160 in `blkskirtwoman` is excluded because its
+past GT geometry is invalid. This changes the scoring subset from the
+main closed-loop experiment; do not directly compare the tables.
+
+| Offline predictor on this subset | Blind video-macro PR20 | SR |
+|---|---:|---:|
+| Same last CV box held | 22.897727 | 19.192145 |
+| Measured velocity | 27.642045 | 23.395788 |
+| Privileged past-GT velocity | 34.668561 | 25.305961 |
+
+Past-GT velocity improves mean SR over measured velocity by1.910173pp,
+with6 video wins,1 tie and4 losses. Relative to same-last hold it improves
+6.113817pp, with5wins,2ties,4losses. Exact past displacement therefore
+helps on average here but is not uniformly better and is not a performance
+bound. Even accurate recent displacement can be a poor long-gap predictor.
+
+In `blkskirtwoman` gap352, measured velocity gives blind SR19.642857,
+while past-GT velocity gives15.327381 and same-last hold8.928571.
+No method/threshold is selected using this privileged diagnostic.
+Its role is to distinguish input trajectory error from the limitations of
+extrapolating recent velocity; it does not identify their causal shares.
+
+Report: `reports/blind-motion-next16-past-gt-audit-20261031.json`.
+At13:08:27 UTC+08 short-gap workers had finished30/32 and24/32 trajectories.
+Both remained live, as did post-analysis1020925, CPU869785 and fourtrainers.
+CPU mixed-template training had completed two epoch validations.
