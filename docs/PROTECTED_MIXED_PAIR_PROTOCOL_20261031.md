@@ -101,3 +101,23 @@ The exact prior epoch1 image/box hashes passed before these updates.
 Initial nine-cell measurement time explains the pre-update log interval.
 This verifies execution, not training benefit. Next useful observation
 remains the first-arm completion window, rather than another immediate poll.
+
+## Independent Receipt Analysis
+
+`analyze_protected_mixed_pair28.py` runs only after both arms finish.
+It checks the final comparison hash, unchanged source/input manifest hashes,
+all six replayed training manifests per arm, finite16-tuple cell losses,
+nine-cell means and six-cell selection scores, exact final-five selection,
+retained weight hashes, and removal of exactly the other four snapshots.
+It also checks equal initial results and the reported full-history invariant.
+Baseline tensor equality is a training receipt, not an independent tensor
+re-execution by this analyzer.
+
+The analysis reports each selected arm's nine cell losses and mixed-minus-
+complete deltas. Selection reused these development tuples, so these numbers
+are descriptive selected development outcomes, not unbiased tracking effects.
+It creates `analysis.json` exclusively after all final receipts pass.
+At12:36 UTC+08 the analyzer's measurement checks passed on actual initial
+and available complete-template epoch records. The full final audit has
+not yet run. At12:37:29 the original CPU PID869785 remained live after
+update192, performing final development/selection work.

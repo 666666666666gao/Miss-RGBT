@@ -1181,3 +1181,11 @@ protocol docs/BLIND_MOTION_NEXT16_PROTOCOL_20261031.md.
 Official targets, convergence, last5 selection/cleanup and three validated
 paper modules remain unfinished.
 
+At12:37:29 UTC+08 CPU869785 remained live after first-arm update192;
+final development/selection receipts were not yet present. Both batch10
+trainers are in epoch8; no convergence evidence or schedule change.
+Independent analyze_protected_mixed_pair28.py is deployed, and its
+initial/current measurement checks passed on actual data. Run its main
+only after paired comparison.json AND completed.json exist. No automatic
+analysis queue has been launched. Full audit/second-arm results pending.
+
