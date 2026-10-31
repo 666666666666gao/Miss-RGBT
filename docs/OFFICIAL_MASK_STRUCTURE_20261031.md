@@ -73,3 +73,33 @@ Report SHA256:
 
 This is a schedule-structure finding, not a tracking score, training result,
 parameter fit or independently validated paper contribution.
+
+## Short-Gap Execution Prepared
+
+At12:49 UTC+08 continuation PID997655 was launched and verified live,
+waiting on actual long-gap controller967085 at300-second intervals.
+The long-gap workers967093/967094 were still live at12:49:56.
+The short-gap GPU run is therefore queued, not yet started.
+
+`continue_blind_motion_shortgap28.py` first waits for that controller to exit,
+then requires its64-trajectory completion and both independent worker
+analyses. It archives the exact three long-gap source files, checks their
+launch hashes, deploys the compiled staged short-gap files, and invokes
+`launch_blind_motion_shortgap28.py`. Any failed assertion stops the chain.
+
+The staged evaluator adds only an explicit1/32 frame-block choice. The
+controller sends that argument to both workers and uses a separate
+`reports/server28-blind-motion-shortgap16-20261031` directory for block1.
+The files in GitHub describe this staged next execution; the in-flight
+server-root files still describe the long-gap execution until it completes.
+Staging directory: `development/shortgap_staged_20261031`.
+Continuation log: `reports/server28-motion-shortgap-continuation-20261031.log`.
+
+`analyze_motion_gap_contrast28.py` is deployed and compiled for use after
+both runs finish. It verifies their completion/report/worker-analysis
+receipts, identical cohort/GPU/checkpoint assignments and bitwise identical
+complete trajectories across durations. It then compares paired per-video
+CV-minus-hold effects with10000 video bootstrap draws, seed2027.
+Both duration and switching frequency change, so this comparison cannot
+identify duration alone as a causal mechanism. No cross-duration result
+has been produced yet.

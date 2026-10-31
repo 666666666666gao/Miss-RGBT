@@ -39,6 +39,7 @@ def main():
     parser.add_argument("--gpu", choices=["0", "1"], default="0")
     parser.add_argument("--cohort-spec", type=Path)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--frame-block", type=int, choices=[1, 32], default=32)
     args = parser.parse_args()
     output = args.output
     os.environ.update(CUDA_VISIBLE_DEVICES=args.gpu, OMP_NUM_THREADS="1",
@@ -88,7 +89,7 @@ def main():
         source_tracking_report_sha256=sha(SOURCE / "report.json"),
         cohort=cohort, cohort_spec_sha256=sha(args.cohort_spec) if args.cohort_spec else None,
         arms=["hold", "velocity"], conditions=["complete", "alternating_outage"],
-        frame_block=32, pattern=PATTERN,
+        frame_block=args.frame_block, pattern=PATTERN,
         source_sha256={str(path): sha(path) for path in [
             Path(__file__), ROOT / "analyze_epoch05_health28.py",
             ROOT / "evaluate_val97_recovery28.py", RUNTIME / "miss_rgbt/tracker.py",
@@ -119,7 +120,7 @@ def main():
                 history = [(0, list(tracker.state))]
                 boxes, trace, blind = [list(tracker.state)], [], [False]
                 for index in range(1, frames):
-                    available = [1, 1] if condition == "complete" else PATTERN[(index // 32) % 6]
+                    available = [1, 1] if condition == "complete" else PATTERN[(index // args.frame_block) % 6]
                     previous = list(tracker.state)
                     calls = tracker.frame_id
                     template = tracker.templates[-1]

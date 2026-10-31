@@ -1207,3 +1207,18 @@ onlywinnerremains. First-arm reportSHA00664097b8fd98b64047a15023c6bd9b5d2203feb9
 CPU869785 live12:42:26, preparing second mixed-template arm. Both-arm
 comparison/analysis and tracking benefit unproven. Main goal incomplete.
 
+## 2026-10-31 12:49 UTC+08 - Short-gap continuation queued
+
+PID997655 verified live waiting on real controller967085 with300s polls.
+It requires the prior final64-track report/completed and independentworker
+analyses, archives3sourcefiles withlaunchhashchecks, then deploysthestaged
+frame-block1files and launches the same16 fullvideos on GPU0/1.
+Shortgap GPU run has NOT started at12:49:56; oldworkers967093/967094live.
+Serverrootmotionfiles remainold while GitHub nowdescribesstagednextversion.
+Staging development/shortgap_staged_20261031; logreports/server28-motion-shortgap-continuation-20261031.log.
+Crossduration analyzer analyze_motion_gap_contrast28.py deployed/compiled,
+requires bothfinalruns; no resultsyet. One-frame versus32 changes switching
+frequency too, not isolated durationcausality.
+CPU869785 actualmixedarmepoch1/update25 at12:48:21; firstarmcomplete.
+Fullgoalandofficialtargets remainunachieved.
+

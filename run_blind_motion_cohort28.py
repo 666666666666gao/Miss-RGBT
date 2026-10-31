@@ -1,4 +1,5 @@
 """Run and verify fixed motion controls on the next16 full development videos."""
+import argparse
 import datetime
 import json
 import os
@@ -22,7 +23,12 @@ def save(path, value):
 
 
 def main():
-    OUTPUT.mkdir(exist_ok=False)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--frame-block", type=int, choices=[1, 32], default=32)
+    args = parser.parse_args()
+    output = (OUTPUT if args.frame_block == 32 else
+              ROOT / "reports/server28-blind-motion-shortgap16-20261031")
+    output.mkdir(exist_ok=False)
     memory = subprocess.check_output([
         "nvidia-smi", "--id=0,1", "--query-gpu=index,memory.free",
         "--format=csv,noheader,nounits"], universal_newlines=True)
@@ -56,6 +62,7 @@ def main():
         scope="Next16 full train882 development videos; unchanged ordinary CV, no tuning or official test",
         input_manifest_sha256=sha(manifest_path), development_indices=list(range(4, 20)),
         sequences=16, frames_per_arm_condition=7776, total_tracking_frames=31104,
+        frame_block=args.frame_block,
         parts=parts, part_frames=loads, workers_per_gpu=1, memory_free_at_launch=memory,
         assignment="Longest-video-first frame balancing, capacity8 videos per GPU; "
                    "hold and velocity for a video always share one GPU",
@@ -64,21 +71,22 @@ def main():
             "analyze_blind_motion28.py"]}, children={}, poll_seconds=300)
     processes = {}
     for gpu, selected in parts.items():
-        spec_path = OUTPUT / ("gpu%d_cohort.json" % gpu)
+        spec_path = output / ("gpu%d_cohort.json" % gpu)
         save(spec_path, dict(
             input_manifest_sha256=sha(manifest_path),
             development_indices=[item["development_index"] for item in selected], cohort=selected))
-        destination = OUTPUT / ("gpu%d" % gpu)
+        destination = output / ("gpu%d" % gpu)
         env = dict(os.environ, CUDA_VISIBLE_DEVICES=str(gpu), OMP_NUM_THREADS="1",
                    MKL_NUM_THREADS="1", OPENBLAS_NUM_THREADS="1")
-        with (OUTPUT / ("gpu%d.log" % gpu)).open("xb") as log:
+        with (output / ("gpu%d.log" % gpu)).open("xb") as log:
             process = subprocess.Popen(
                 [sys.executable, "-u", str(ROOT / "evaluate_blind_motion28.py"),
-                 "--gpu", str(gpu), "--cohort-spec", str(spec_path), "--output", str(destination)],
+                 "--gpu", str(gpu), "--cohort-spec", str(spec_path), "--output", str(destination),
+                 "--frame-block", str(args.frame_block)],
                 cwd=str(ROOT), env=env, stdout=log, stderr=subprocess.STDOUT)
         processes[gpu] = process
         launch["children"][str(gpu)] = process.pid
-    save(OUTPUT / "launch.json", launch)
+    save(output / "launch.json", launch)
     print("LAUNCH " + json.dumps(launch), flush=True)
     while any(process.poll() is None for process in processes.values()):
         time.sleep(300)
@@ -86,10 +94,10 @@ def main():
         assert process.returncode == 0, (gpu, process.returncode)
         subprocess.check_call(
             [sys.executable, str(ROOT / "analyze_blind_motion28.py"),
-             "--report-dir", str(OUTPUT / ("gpu%d" % gpu))])
+             "--report-dir", str(output / ("gpu%d" % gpu))])
     combined, groups, receipts = {}, {}, {}
     for gpu in parts:
-        folder = OUTPUT / ("gpu%d" % gpu)
+        folder = output / ("gpu%d" % gpu)
         worker = json.loads((folder / "report.json").read_text())
         analysis = json.loads((folder / "analysis.json").read_text())
         assert analysis["report_sha256"] == sha(folder / "report.json")
@@ -126,9 +134,9 @@ def main():
         bootstrap_draws=10000, bootstrap_seed=2027,
         uncertainty_scope="Paired video resampling on16 registered development videos; "
                           "not training-seed uncertainty, official results or a novel module")
-    save(OUTPUT / "report.json", report)
-    save(OUTPUT / "completed.json", dict(
-        report_sha256=sha(OUTPUT / "report.json"),
+    save(output / "report.json", report)
+    save(output / "completed.json", dict(
+        report_sha256=sha(output / "report.json"),
         ended_utc=datetime.datetime.utcnow().isoformat() + "Z",
         trajectories_verified=64, sequences=16))
     print("COMPLETE " + json.dumps(report), flush=True)
