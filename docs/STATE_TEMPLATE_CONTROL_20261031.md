@@ -97,9 +97,12 @@ Registration SHA256:
 
 Controller342664 launched20:07:20 UTC+08. At20:08:13 it was actually
 alive and GPU workers342898/342899 each used2266MiB alongside all four
-trainers. No full-track receipt was present yet. Provisional final window
-20:55-21:40 UTC+08 plus controller delay; refine after the long native
-trajectory receipt. No completed efficacy claim follows from this launch.
+trainers. No full-track receipt was present yet. At20:44:51 controller342664
+and GPU0 worker342898 were still live; GPU1 worker342899 was a defunct child
+being handled by its controller. GPU0 had completed girlshead native and
+sham complete/outage and matched complete; full cohort and matched outage
+remain pending. The initial20:55-21:40 final estimate was too optimistic for
+the actual long-video stage. No efficacy claim follows from partial tracks.
 
 The final analyzer also independently checks native writes from tensor
 replacement receipts and the YAML predicate. It reports current11

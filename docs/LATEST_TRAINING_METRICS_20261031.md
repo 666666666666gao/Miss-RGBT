@@ -181,3 +181,28 @@ Raw histories:
 SHA256 `7e9e91dd6fb48c93ca3a23d47d8dd67a58575bae11ba023936d93f860542f3ab`;
 `reports/candidate-random-recovered-epoch12-validation-20261031.json`,
 SHA256 `34d5f0099aff3dd834ce72a0e51fc9582b3013048542460e0ca84fb20fd416bf`.
+
+## New Fixed-Campaign Validation, 2026-10-31 20:44 UTC+08
+
+| Fixed campaign | Completed epoch | Update | Complete11 loss | TIR01 loss | RGB10 loss | Mean task loss |
+|---|---:|---:|---:|---:|---:|---:|
+| Utility | 12 | 30000 | 4.160528 | 5.795622 | 4.741132 | 4.899094 |
+| Random | 12 | 30000 | 4.222112 | 5.883676 | 4.825316 | 4.977035 |
+
+Relative to epoch11, mean proxy loss rises+0.004280 for Utility and
++0.011804 for Random. These are small non-monotonic proxy changes, not
+tracking gains. Fixed campaigns continue to the registered20-epoch budget.
+
+At20:44:51 actual trainer command lines were live. Fixed U/R were epoch13,
+updates30164/30376; batch10 U was epoch12/update23228 and R epoch13/update
+25317. Candidate histories still ended at Utility11/4.984901 and Random12/
+5.037918 in that exact snapshot. Do not treat the current in-progress epoch
+as a completed validation. Candidate first post-drop reference epoch11;
+earliest stop14, maximum20.
+
+Raw fixed histories:
+`reports/fixed-utility-recovered-validation-history-20261031.json`,
+SHA256 `5af4a9862c0da019ae70e7ee0bbcb5fa0d57271564c17b0bb24b1894dcfe4d2a`;
+`reports/fixed-random-recovered-validation-history-20261031.json`,
+SHA256 `cdd57589a563eb24dc29e49ab7eaece9857f2a5eb40a6229b111c8a02d93df16`.
+These fixed128-sample cached losses remain proxies, not PR/SR or convergence.

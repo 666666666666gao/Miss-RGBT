@@ -98,7 +98,7 @@ hash and completion receipt agree, and GPU0/1 each have at least3000MiB
 free. Source SHA256
 must be read from the retry witness and launch receipt.
 Queue and sources remain frozen through final analysis.
-Retry controller393144 registered at20:37:03 UTC+08. At20:37:58 it was
-verified alive and waiting on controller342664; no repair-control GPU
-workers exist. The retry CPU witness passes parity/frozen-state checks,
+Retry controller393144 registered at20:37:03 UTC+08. It was verified alive
+and waiting on controller342664 at20:37:58 and20:44:51; no repair-control
+GPU workers exist. The retry CPU witness passes parity/frozen-state checks,
 and its absolute self-source path/hash matches the current source.
