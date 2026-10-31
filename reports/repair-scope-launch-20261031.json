@@ -1,0 +1,26 @@
+{
+  "pid": 892597,
+  "started_utc": "2026-10-31T03:55:44.835272Z",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "samples": 4,
+  "input_sha256": [
+    "fc8e8cf298b6c8c696775a095a79ae9552aa4206c7294f9cea52183d88952f44",
+    "72bd0b1c53fa494e7d760701839c6a8fc77ce496dc579d3904c36277047683ab"
+  ],
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "layer": 6,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/audit_repair_scope28.py": "405bdbb73fdfe6f7b0726918660889b667fdddff1fb19e445c87ad367729f37d",
+    "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+  },
+  "arms": [
+    "native",
+    "missing_tokens_oracle",
+    "affected_stream_oracle"
+  ],
+  "scope": "Privileged complete-feature replacement on reused train882 dev tuples; not a deployable method, training, tracking or official evaluation"
+}

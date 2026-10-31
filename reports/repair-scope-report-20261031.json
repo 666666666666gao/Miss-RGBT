@@ -1,0 +1,307 @@
+{
+  "launch": {
+    "pid": 892597,
+    "started_utc": "2026-10-31T03:55:44.835272Z",
+    "device": "cpu",
+    "cpu_threads": 4,
+    "samples": 4,
+    "input_sha256": [
+      "fc8e8cf298b6c8c696775a095a79ae9552aa4206c7294f9cea52183d88952f44",
+      "72bd0b1c53fa494e7d760701839c6a8fc77ce496dc579d3904c36277047683ab"
+    ],
+    "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+    "layer": 6,
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/audit_repair_scope28.py": "405bdbb73fdfe6f7b0726918660889b667fdddff1fb19e445c87ad367729f37d",
+      "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+    },
+    "arms": [
+      "native",
+      "missing_tokens_oracle",
+      "affected_stream_oracle"
+    ],
+    "scope": "Privileged complete-feature replacement on reused train882 dev tuples; not a deployable method, training, tracking or official evaluation"
+  },
+  "teacher_losses": [
+    3.0427026748657227,
+    3.5426933765411377,
+    1.730488657951355,
+    1.3314471244812012
+  ],
+  "teacher_mean_task_loss": 2.411832958459854,
+  "losses": {
+    "11_11": {
+      "native": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ],
+      "missing_tokens_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "11_01": {
+      "native": [
+        4.233878135681152,
+        2.9502038955688477,
+        3.3509740829467773,
+        7.0551958084106445
+      ],
+      "missing_tokens_oracle": [
+        3.0491526126861572,
+        3.5436055660247803,
+        1.9068814516067505,
+        1.3202290534973145
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "11_10": {
+      "native": [
+        1.4846981763839722,
+        3.9384255409240723,
+        2.2537670135498047,
+        1.3685245513916016
+      ],
+      "missing_tokens_oracle": [
+        2.8720176219940186,
+        3.6913414001464844,
+        1.8025026321411133,
+        1.3658140897750854
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "01_11": {
+      "native": [
+        2.7214231491088867,
+        3.600637435913086,
+        1.5794713497161865,
+        1.4345422983169556
+      ],
+      "missing_tokens_oracle": [
+        2.7495570182800293,
+        3.7512025833129883,
+        1.7224606275558472,
+        1.3310298919677734
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "01_01": {
+      "native": [
+        4.562486171722412,
+        2.938594341278076,
+        3.2411720752716064,
+        7.191673278808594
+      ],
+      "missing_tokens_oracle": [
+        2.8266048431396484,
+        3.5378787517547607,
+        1.8478446006774902,
+        1.3107919692993164
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "01_10": {
+      "native": [
+        1.4085315465927124,
+        4.008631706237793,
+        2.131222724914551,
+        1.6144577264785767
+      ],
+      "missing_tokens_oracle": [
+        2.5943145751953125,
+        3.9312472343444824,
+        1.8247594833374023,
+        1.3634843826293945
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "10_11": {
+      "native": [
+        2.4152894020080566,
+        3.7675280570983887,
+        1.7657582759857178,
+        1.363984227180481
+      ],
+      "missing_tokens_oracle": [
+        2.6554677486419678,
+        3.665599822998047,
+        1.71811842918396,
+        1.3341178894042969
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "10_01": {
+      "native": [
+        3.601942539215088,
+        3.1233041286468506,
+        4.74752140045166,
+        10.129179954528809
+      ],
+      "missing_tokens_oracle": [
+        2.640007972717285,
+        3.6701273918151855,
+        1.8990678787231445,
+        1.3224595785140991
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    },
+    "10_10": {
+      "native": [
+        1.418440341949463,
+        3.867701530456543,
+        2.2074928283691406,
+        1.3853206634521484
+      ],
+      "missing_tokens_oracle": [
+        2.998065233230591,
+        3.6647908687591553,
+        1.7985587120056152,
+        1.3747642040252686
+      ],
+      "affected_stream_oracle": [
+        3.0427026748657227,
+        3.5426933765411377,
+        1.730488657951355,
+        1.3314471244812012
+      ]
+    }
+  },
+  "means": {
+    "11_11": {
+      "native": 2.411832958459854,
+      "missing_tokens_oracle": 2.411832958459854,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "11_01": {
+      "native": 4.3975629806518555,
+      "missing_tokens_oracle": 2.4549671709537506,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "11_10": {
+      "native": 2.2613538205623627,
+      "missing_tokens_oracle": 2.4329189360141754,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "01_11": {
+      "native": 2.3340185582637787,
+      "missing_tokens_oracle": 2.3885625302791595,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "01_01": {
+      "native": 4.483481466770172,
+      "missing_tokens_oracle": 2.380780041217804,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "01_10": {
+      "native": 2.290710926055908,
+      "missing_tokens_oracle": 2.428451418876648,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "10_11": {
+      "native": 2.328139990568161,
+      "missing_tokens_oracle": 2.343325972557068,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "10_01": {
+      "native": 5.400487005710602,
+      "missing_tokens_oracle": 2.3829157054424286,
+      "affected_stream_oracle": 2.411832958459854
+    },
+    "10_10": {
+      "native": 2.2197388410568237,
+      "missing_tokens_oracle": 2.4590447545051575,
+      "affected_stream_oracle": 2.411832958459854
+    }
+  },
+  "oracle_minus_native": {
+    "11_11": {
+      "missing_tokens_oracle": 0.0,
+      "affected_stream_oracle": 0.0
+    },
+    "11_01": {
+      "missing_tokens_oracle": -1.9425958096981049,
+      "affected_stream_oracle": -1.9857300221920013
+    },
+    "11_10": {
+      "missing_tokens_oracle": 0.17156511545181274,
+      "affected_stream_oracle": 0.15047913789749146
+    },
+    "01_11": {
+      "missing_tokens_oracle": 0.05454397201538086,
+      "affected_stream_oracle": 0.07781440019607544
+    },
+    "01_01": {
+      "missing_tokens_oracle": -2.102701425552368,
+      "affected_stream_oracle": -2.071648508310318
+    },
+    "01_10": {
+      "missing_tokens_oracle": 0.13774049282073975,
+      "affected_stream_oracle": 0.12112203240394592
+    },
+    "10_11": {
+      "missing_tokens_oracle": 0.01518598198890686,
+      "affected_stream_oracle": 0.08369296789169312
+    },
+    "10_01": {
+      "missing_tokens_oracle": -3.017571300268173,
+      "affected_stream_oracle": -2.9886540472507477
+    },
+    "10_10": {
+      "missing_tokens_oracle": 0.23930591344833374,
+      "affected_stream_oracle": 0.1920941174030304
+    }
+  },
+  "model_state_unchanged": true,
+  "complete_history_outputs_bitwise_equal": true,
+  "affected_stream_outputs_match_complete_teacher": true,
+  "seconds": 161.87005281448364,
+  "interpretation": "These interventions use unavailable complete-input features. Differences measure a repair-scope diagnostic only, not achievable inference gains. Mixed-history sample size is four reused development tuples, one seed. A teacher can itself have higher task loss on a sample; replacing exact features is not assumed to improve supervised loss."
+}

@@ -1117,3 +1117,29 @@ At11:49:44+08 sameCPU869785 live393%CPU3.22GiB, firstarmepoch1
 Recent7.7-9.1s/update; originalepoch1inputhashespassed. No gainclaim.
 Next meaningfulcheckfirstarm12:35-13:05+08; avoidimmediatepolls.
 
+## 2026-10-31 04:01 UTC repair-scope diagnostic completed
+
+CPU892597 completed161.87seconds,27cells x4reused train882devtuples,
+native vscomplete-feature replacement atlayer6. Fullaffectedstream
+replacement reproducedteacher bitwiseallstates; frozenmodelhashpassed.
+Missingpositiononly loss vsfullstream differs-.068507..+.047212 percell.
+Teacherloss2.411833; nativeRGBonlymeans2.219739..2.290711 arelower,
+whileTIRonlynative4.397563..5.400487 improvewithoraclefeatures.
+Complete-search/missingtemplate nativealso lowerthan teacher here.
+No universalteacherbenefit orneedforobservedtokenrepair established.
+Keepcurrentrepairscope andcomplete mixedtemplate pair; do notadd
+unconditionalfeatureMSE ornewmodulefrom4samples.
+
+Report repair-scope-report-20261031.json
+SHA162fa65f7959132eccefc8b79ff9e52d927c2f1b6e84c702233d3bedf4a20101.
+docs/REPAIR_SCOPE_PROTOCOL_20261031.md hasfulltable andlimits.
+Pinned FlexTrackV2 source30a5ff1 reviewed: masksencodedfeaturesafter
+encoder, unlikeourpremasking; BMR per-samplefusionmask doesnotdirectly
+handle tokenlevelhistory. Noexternalcode/weights integrated, nopinned
+licensefilefound. docs/FLEXTRACK_SOURCE_REVIEW_20261031.md.
+
+At12:00:57+08 alloriginal4GPUtrainers+3controllerslive; CPU869785
+arm1epoch2/update59live. Nextmeaningfulfirstarm12:35-13:05+08,
+batch10epoch8boundaries~12:52random/13:27utilityuncertain.
+Officialthresholds/final5selection/cleanup/3modules remainpending.
+
