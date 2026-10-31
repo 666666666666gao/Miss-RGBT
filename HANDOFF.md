@@ -1549,3 +1549,21 @@ Postdrop reference resets11; earliest patience stop14. Controller's final5
 full97 selection/cleanup/official stages verified in source, not yet executed.
 No active sources changed. Official attainment and three modules incomplete.
 
+## 2026-10-31 Calibration age coverage gap
+
+New CPU-only official-mask audit: reports/calibration-age-20261031.json
+SHA4cda9fa314e59d52ddc2264c7bd181fddb97b979d6ab6499d2caf4122da8a8d5.
+Both masks match frozen inventory; independent vectorized recomputation
+matches147248calibrated single frames. No GT/model calls/GPU or fitting.
+Official medianvideoage LasHeR01/10=493/279,RGBT234=141/128;~94%age>1.
+Block1development age always1 after calibration. Beforefirst calibration:
+LasHeR01/10=954/699frames,RGBT234=96/815. Rawmask0 notalways11 but actual
+evaluator initializes bothimages, doesnotcalibrate, begins inferenceframe1.
+Framepooledstats canbedominated by longvideos;pervideocounts retained.
+Doc docs/CALIBRATION_AGE_AUDIT_20261031.md/source audit_calibration_age28.py.
+Next promotion now requires independentlonggapclosedloopcontrol even if
+current center16/geometry4positive. Do not infer stale-cache failure or add
+decay/expiry/gates from distributionalone. Preserve currentregisteredjobs.
+15:49:26UTC+08 all4trainers+1212195/1212202/1212203/1256793actualalive.
+No finalcenter16/geometryresult yet. Next random10~16:20+08. Goalincomplete.
+
