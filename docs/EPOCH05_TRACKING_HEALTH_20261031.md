@@ -64,6 +64,39 @@ The controller manifest is archived as
 `a8843b4b21a2068d6e76e3b9123ec3836df49396dee5d75fa84138a1fa5b48ed`.
 Runner SHA256 is
 `937a6b5d0e65e25069cfd02d22cfc9047c570a9e629c6111205af09e64765e77`.
-Check initial longest-sequence progress around08:20+08:00, then estimate
+Check initial longest-sequence progress around08:23+08:00, then estimate
 condition completion from actual speed. Launch checks prove execution
 and bounded concurrency, not tracking correctness or improved metrics.
+
+At08:17:23+08:00 both original evaluator PIDs remained live with substantial
+CPU and read I/O, with no completed sequence or error. The longest-first
+inventory starts with `ab_bolster`8406frames, followed by
+`rightof2cupsattached`4857frames. At the prior13frames/sec estimate,
+the first receipt takes about11minutes; an empty sequence log after6minutes
+does not indicate failure. Do not restart the workers.
+
+## Paired Analysis
+
+`analyze_epoch05_health28.py` is prepared and syntax-checked in the server's
+Python3.7 environment. It has not been run on complete results yet.
+After all six conditions finish, invoke:
+
+```bash
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python \
+  /home/gaob/Miss-RGBT/analyze_epoch05_health28.py
+```
+
+It requires the complete six-cell receipt and all97 sequence receipts per
+cell; verifies582 trajectory hashes, GT hashes, frame counts, protocol and
+common source/weight identities; and recomputes every sequence's PR20/SR
+from saved boxes before verifying aggregate metrics. Paired comparisons
+are utility-minus-E0, random-minus-E0 and utility-minus-random in both
+conditions. Report sequence wins/ties/losses, five largest gains/regressions,
+and paired-sequence percentile bootstrap95% intervals using10000 draws
+and fixed seed2027. All comparisons use the same resampling indices.
+
+Intervals describe variation across these97 videos for one training seed,
+not training-seed robustness or official performance. Do not select
+checkpoints, tune thresholds or declare the research goal complete from
+these development comparisons. The analyzer creates `paired_analysis.json`
+exclusively and does not modify model weights or running evaluations.

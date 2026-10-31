@@ -973,3 +973,12 @@ reports/server28-epoch05-tracking-health-20261031, sibling.log.
 Protocol/launch evidence: docs/EPOCH05_TRACKING_HEALTH_20261031.md and
 reports/epoch05-tracking-health-launch-20261031.json.
 
+Paired analysis is prepared as analyze_epoch05_health28.py and compiled on
+server Python3.7. Run only after six-cell completed.json exists: it verifies
+582 trajectory hashes, recomputes all sequence/aggregate metrics and reports
+paired effects plus10000-draw sequence-bootstrap intervals (one seed only).
+At08:17:23+08:00 workers570254/570255 remain live with CPU/read activity,
+no error or full sequence yet. First sorted video ab_bolster has8406frames;
+expect its first receipt around08:23+08:00 using prior throughput. Next
+check should be near that boundary, not from an empty log alone.
+
