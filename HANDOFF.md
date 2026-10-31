@@ -1532,3 +1532,20 @@ Next meaningful random10 boundary~16:20, center16~16:30-17:00 UTC+08.
 Registered sources untouched; geometry still awaits predecessor completion.
 Full objective remains incomplete.
 
+## 2026-10-31 Epoch9 paired-curve audit
+
+Full live inspector evidence archived as
+reports/candidate-health-epoch09-20261031.json, SHA256
+911808ac87ed25b3fb813918146ef0ce14f4f4838708387957886ba734d31eff.
+All recorded losses finite; paired inputs equal. Utility lower than random
+only3/9 epochs. Epoch9 means4.979970/4.972420; utility state deltas11/01/10
+-0.001977/-0.048274/+0.072901. Best proxy epochs8/3, no stable advantage.
+Validation uses complete templates and cannot represent missing-history
+closed-loop behavior. Doc docs/CANDIDATE_EPOCH09_CURVE_AUDIT_20261031.md.
+Actual live15:39:20 all4trainers, bothcandidatecontrollers, fixedevaluator,
+center16parent/workers and queuedgeometry. Inspector utility/random
+updates18618/19225epoch10; projected boundaries16:54/16:20 UTC+08.
+Postdrop reference resets11; earliest patience stop14. Controller's final5
+full97 selection/cleanup/official stages verified in source, not yet executed.
+No active sources changed. Official attainment and three modules incomplete.
+
