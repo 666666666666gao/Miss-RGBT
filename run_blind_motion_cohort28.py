@@ -26,12 +26,17 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--frame-block", type=int, choices=[1, 32], default=32)
     parser.add_argument("--velocity-history", choices=["adjacent", "availability"], default="adjacent")
+    parser.add_argument("--replication", action="store_true")
     args = parser.parse_args()
     output = (OUTPUT if args.frame_block == 32 else
               ROOT / "reports/server28-blind-motion-shortgap16-20261031")
     if args.velocity_history == "availability":
         assert args.frame_block == 1
         output = ROOT / "reports/server28-state-motion-shortgap16-20261031"
+    if args.replication:
+        assert args.frame_block == 1
+        output = ROOT / ("reports/server28-motion-replication16-" +
+                         args.velocity_history + "-20261031")
     output.mkdir(exist_ok=False)
     memory = subprocess.check_output([
         "nvidia-smi", "--id=0,1", "--query-gpu=index,memory.free",
@@ -41,8 +46,10 @@ def main():
     manifest_path = ROOT / "reports/server28-protected-sixepoch-20261030/inputs.json"
     manifest = json.loads(manifest_path.read_text())
     data_root = Path("/data/wangwj/dataset/LasHeR/trainingset")
+    registration_path = ROOT / "reports/server28-motion-replication16-cohort-20261031.json"
+    development_indices = list(range(20, 36) if args.replication else range(4, 20))
     cohort = []
-    for index in range(4, 20):
+    for index in development_indices:
         name = manifest["development_sequences"][index]
         folder = data_root / name
         gt_path = folder / "init.txt"
@@ -52,7 +59,8 @@ def main():
                            evaluated_frames=len(gt), gt_sha256=sha(gt_path),
                            development_index=index))
     assert len(set(item["name"] for item in cohort)) == 16
-    assert sum(item["video_frames"] for item in cohort) == 7776
+    frames = sum(item["video_frames"] for item in cohort)
+    assert frames == (8611 if args.replication else 7776)
     parts, loads = {0: [], 1: []}, {0: 0, 1: 0}
     for item in sorted(cohort, key=lambda row: (-row["video_frames"], row["development_index"])):
         eligible = [gpu for gpu in parts if len(parts[gpu]) < 8]
@@ -61,11 +69,20 @@ def main():
         loads[gpu] += item["video_frames"]
     for gpu in parts:
         parts[gpu].sort(key=lambda item: item["development_index"])
+    if args.replication:
+        registration = json.loads(registration_path.read_text())
+        assert registration["manifest_sha256"] == sha(manifest_path)
+        assert registration["development_indices"] == development_indices
+        for gpu in parts:
+            registered = [{key: value for key, value in row.items() if key != "invalid_gt_frames"}
+                          for row in registration["parts"][str(gpu)]]
+            assert parts[gpu] == registered
     launch = dict(
         pid=os.getpid(), started_utc=datetime.datetime.utcnow().isoformat() + "Z",
         scope="Next16 full train882 development videos; unchanged ordinary CV, no tuning or official test",
-        input_manifest_sha256=sha(manifest_path), development_indices=list(range(4, 20)),
-        sequences=16, frames_per_arm_condition=7776, total_tracking_frames=31104,
+        input_manifest_sha256=sha(manifest_path), development_indices=development_indices,
+        registration_sha256=sha(registration_path) if args.replication else None,
+        sequences=16, frames_per_arm_condition=frames, total_tracking_frames=frames * 4,
         frame_block=args.frame_block,
         velocity_history=args.velocity_history,
         parts=parts, part_frames=loads, workers_per_gpu=1, memory_free_at_launch=memory,

@@ -73,7 +73,7 @@ def main():
         spec = json.loads(args.cohort_spec.read_text())
         assert spec["input_manifest_sha256"] == sha(manifest_path)
         assert len(spec["development_indices"]) == len(set(spec["development_indices"])) == 8
-        assert set(spec["development_indices"]) <= set(range(4, 20))
+        assert set(spec["development_indices"]) <= set(range(4, 36))
         cohort = spec["cohort"]
         assert [item["name"] for item in cohort] == [
             manifest["development_sequences"][index] for index in spec["development_indices"]]

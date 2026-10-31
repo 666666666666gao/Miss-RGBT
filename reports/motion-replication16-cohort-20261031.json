@@ -1,0 +1,325 @@
+{
+  "registered_utc": "2026-10-31T05:36:28.885307Z",
+  "manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "development_indices": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "cohort": [
+    {
+      "name": "bus2north111",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bus2north111",
+      "development_index": 20,
+      "video_frames": 111,
+      "evaluated_frames": 111,
+      "gt_sha256": "bca85bf561e4fd5628ed25ba000526a6aeeccd2ecf01a3f22183d77c636a8ec2",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "tworightbehindboy-gai",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/tworightbehindboy-gai",
+      "development_index": 21,
+      "video_frames": 1904,
+      "evaluated_frames": 1904,
+      "gt_sha256": "553316c4dc3b830dd31febff89f2675910de637308bf16095a119e7706a64580",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "bikeboy173",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeboy173",
+      "development_index": 22,
+      "video_frames": 173,
+      "evaluated_frames": 173,
+      "gt_sha256": "129b3712f5ba69e16954fc9d83e7f851b045e05188145540e03cf08c2f2a73c7",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "motocomeinrain",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/motocomeinrain",
+      "development_index": 23,
+      "video_frames": 234,
+      "evaluated_frames": 234,
+      "gt_sha256": "7ca0d7e6d192603923567d3d6382c1a83fdf9cc064926f17bf5fbbdb8cb63527",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "biketurndark",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/biketurndark",
+      "development_index": 24,
+      "video_frames": 235,
+      "evaluated_frames": 235,
+      "gt_sha256": "3c85e3bc34484c239a22a0fe577ee8e5a5b90792b1c7b4c14cd8b4b3989d4bf0",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "2girlinrain",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/2girlinrain",
+      "development_index": 25,
+      "video_frames": 388,
+      "evaluated_frames": 388,
+      "gt_sha256": "7ced8e1b105d756bb9af8be6a1a9c4e574fe3aa4d8c94880c71e391a6cffc06e",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "fallenbikeitself",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/fallenbikeitself",
+      "development_index": 26,
+      "video_frames": 851,
+      "evaluated_frames": 851,
+      "gt_sha256": "e63180f66de671539e79a1ecf61b9396fb9eedf74f1f5e286acd1a00e227d5a0",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "boyblackback",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyblackback",
+      "development_index": 27,
+      "video_frames": 109,
+      "evaluated_frames": 109,
+      "gt_sha256": "9099240e7077460d016e654e32809f016e4d81f01005e94fa4f10fe6326cced1",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "blkcarfollowingwhite",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkcarfollowingwhite",
+      "development_index": 28,
+      "video_frames": 392,
+      "evaluated_frames": 392,
+      "gt_sha256": "ea76e3bfd8b3beef519f535b1fb886219867e6f1b713812885e66ba84075a466",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "2ndblkboy1_quezhen",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/2ndblkboy1_quezhen",
+      "development_index": 29,
+      "video_frames": 1918,
+      "evaluated_frames": 1918,
+      "gt_sha256": "519196adea036b9bbf6b02c716a1c1a49e3229ac68bbeede03c643f00df9de52",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "whitecarinrain",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarinrain",
+      "development_index": 30,
+      "video_frames": 127,
+      "evaluated_frames": 127,
+      "gt_sha256": "df0c3fe0f2d02ea6609ab9a251493eccf4b9662684ae8418577c6d82df5d3d3a",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "bikeumbrellacome",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeumbrellacome",
+      "development_index": 31,
+      "video_frames": 258,
+      "evaluated_frames": 258,
+      "gt_sha256": "f52fd9fd576c87435003a2b448ce16b3b68bfcb6a4b51166b41c9b3760a55a14",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "7rightredboy",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/7rightredboy",
+      "development_index": 32,
+      "video_frames": 204,
+      "evaluated_frames": 204,
+      "gt_sha256": "8bf1efc809cc6f1817466a59559fc65c29b399c2026ba4ec00f3d91fbbaacc1d",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "Athe3rdboybesidescar",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/Athe3rdboybesidescar",
+      "development_index": 33,
+      "video_frames": 208,
+      "evaluated_frames": 208,
+      "gt_sha256": "f9b0898bd032db8fe22e3259c90b65ba0f95cf2514311f285c09616a5e364619",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "blkmotocome",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkmotocome",
+      "development_index": 34,
+      "video_frames": 129,
+      "evaluated_frames": 129,
+      "gt_sha256": "4d021e50f995f0a9e6f7d68b622f3813e8e34e4476f3b12f6f1da88a18263851",
+      "invalid_gt_frames": 0
+    },
+    {
+      "name": "redcupatleft",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/redcupatleft",
+      "development_index": 35,
+      "video_frames": 1370,
+      "evaluated_frames": 1370,
+      "gt_sha256": "52b098cb49f0accb129b8e8fada6ad7a405fcdecd9abc86a1927c7f593dd6e72",
+      "invalid_gt_frames": 0
+    }
+  ],
+  "parts": {
+    "0": [
+      {
+        "name": "motocomeinrain",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/motocomeinrain",
+        "development_index": 23,
+        "video_frames": 234,
+        "evaluated_frames": 234,
+        "gt_sha256": "7ca0d7e6d192603923567d3d6382c1a83fdf9cc064926f17bf5fbbdb8cb63527",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "2girlinrain",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/2girlinrain",
+        "development_index": 25,
+        "video_frames": 388,
+        "evaluated_frames": 388,
+        "gt_sha256": "7ced8e1b105d756bb9af8be6a1a9c4e574fe3aa4d8c94880c71e391a6cffc06e",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "fallenbikeitself",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/fallenbikeitself",
+        "development_index": 26,
+        "video_frames": 851,
+        "evaluated_frames": 851,
+        "gt_sha256": "e63180f66de671539e79a1ecf61b9396fb9eedf74f1f5e286acd1a00e227d5a0",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "blkcarfollowingwhite",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkcarfollowingwhite",
+        "development_index": 28,
+        "video_frames": 392,
+        "evaluated_frames": 392,
+        "gt_sha256": "ea76e3bfd8b3beef519f535b1fb886219867e6f1b713812885e66ba84075a466",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "2ndblkboy1_quezhen",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/2ndblkboy1_quezhen",
+        "development_index": 29,
+        "video_frames": 1918,
+        "evaluated_frames": 1918,
+        "gt_sha256": "519196adea036b9bbf6b02c716a1c1a49e3229ac68bbeede03c643f00df9de52",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "whitecarinrain",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarinrain",
+        "development_index": 30,
+        "video_frames": 127,
+        "evaluated_frames": 127,
+        "gt_sha256": "df0c3fe0f2d02ea6609ab9a251493eccf4b9662684ae8418577c6d82df5d3d3a",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "7rightredboy",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/7rightredboy",
+        "development_index": 32,
+        "video_frames": 204,
+        "evaluated_frames": 204,
+        "gt_sha256": "8bf1efc809cc6f1817466a59559fc65c29b399c2026ba4ec00f3d91fbbaacc1d",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "blkmotocome",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkmotocome",
+        "development_index": 34,
+        "video_frames": 129,
+        "evaluated_frames": 129,
+        "gt_sha256": "4d021e50f995f0a9e6f7d68b622f3813e8e34e4476f3b12f6f1da88a18263851",
+        "invalid_gt_frames": 0
+      }
+    ],
+    "1": [
+      {
+        "name": "bus2north111",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bus2north111",
+        "development_index": 20,
+        "video_frames": 111,
+        "evaluated_frames": 111,
+        "gt_sha256": "bca85bf561e4fd5628ed25ba000526a6aeeccd2ecf01a3f22183d77c636a8ec2",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "tworightbehindboy-gai",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/tworightbehindboy-gai",
+        "development_index": 21,
+        "video_frames": 1904,
+        "evaluated_frames": 1904,
+        "gt_sha256": "553316c4dc3b830dd31febff89f2675910de637308bf16095a119e7706a64580",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "bikeboy173",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeboy173",
+        "development_index": 22,
+        "video_frames": 173,
+        "evaluated_frames": 173,
+        "gt_sha256": "129b3712f5ba69e16954fc9d83e7f851b045e05188145540e03cf08c2f2a73c7",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "biketurndark",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/biketurndark",
+        "development_index": 24,
+        "video_frames": 235,
+        "evaluated_frames": 235,
+        "gt_sha256": "3c85e3bc34484c239a22a0fe577ee8e5a5b90792b1c7b4c14cd8b4b3989d4bf0",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "boyblackback",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyblackback",
+        "development_index": 27,
+        "video_frames": 109,
+        "evaluated_frames": 109,
+        "gt_sha256": "9099240e7077460d016e654e32809f016e4d81f01005e94fa4f10fe6326cced1",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "bikeumbrellacome",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeumbrellacome",
+        "development_index": 31,
+        "video_frames": 258,
+        "evaluated_frames": 258,
+        "gt_sha256": "f52fd9fd576c87435003a2b448ce16b3b68bfcb6a4b51166b41c9b3760a55a14",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "Athe3rdboybesidescar",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/Athe3rdboybesidescar",
+        "development_index": 33,
+        "video_frames": 208,
+        "evaluated_frames": 208,
+        "gt_sha256": "f9b0898bd032db8fe22e3259c90b65ba0f95cf2514311f285c09616a5e364619",
+        "invalid_gt_frames": 0
+      },
+      {
+        "name": "redcupatleft",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/redcupatleft",
+        "development_index": 35,
+        "video_frames": 1370,
+        "evaluated_frames": 1370,
+        "gt_sha256": "52b098cb49f0accb129b8e8fada6ad7a405fcdecd9abc86a1927c7f593dd6e72",
+        "invalid_gt_frames": 0
+      }
+    ]
+  },
+  "part_frames": {
+    "0": 4243,
+    "1": 4368
+  },
+  "sequences": 16,
+  "frames_per_condition": 8611,
+  "scope": "Next sequential16 complete development videos, fixed before current closed-loop contrast. No tracking outcomes consulted for this registration. No GPU job launched by this inventory."
+}

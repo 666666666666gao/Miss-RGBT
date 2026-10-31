@@ -1331,3 +1331,30 @@ At13:32:10 CPU869785 completedsecondarm192updates, stilllivefinal
 measurement/selection, nopairedcompleted/analysisyet. State1044705,
 1044714/1044715 andcomparison1049221live. Preservequeues/sourcehashes.
 
+## 2026-10-31 13:46 UTC+08 - Final development controls; replication
+
+CPU paired384update pilot independently verified complete. Both arms select
+epoch6, each retains one branch weight and deletes4 with receipts.
+Complete loss4.363575024840732 vs mixed4.355297873883198 (-0.19%),
+mixed cell effects, reused selection tuples: no larger GPU campaign justified.
+
+Closed-loop availability-minus-adjacent PR/SR +1.806145/+1.659243pp,
+95% paired video CI [0.114418,4.293027]/[0.372872,3.778192].
+SR14wins2losses; one video contributes16.172161pp. Complete and outage
+hold controls bitwise equal. Reused16videos, state/temporal baseline
+confounded; no official or novelty claim. Final report/comparison and CPU
+analysis archived under reports/. See docs/DEVELOPMENT_CONTROLS_FINAL_20261031.md.
+
+Fresh development indices20..35 registered before final comparison:
+8611frames, GPU0/1 4243/4368. Finished sources archived/hash-checked.
+Replication1090396 started13:43:43; adjacent controller1090400,
+workers1090441/1090444 verified live13:46, each2266MiB.
+All4 main trainers verified live; batch10 utility epoch9/update16500,
+random epoch9/update17050. Replication repeats both4-condition studies
+on fresh16,128tracks total, then automatic paired comparison.
+Log reports/server28-motion-replication16-20261031.log; outputs
+reports/server28-motion-replication16-{adjacent,availability}-20261031.
+300s controller polls. First arm expected14:04-14:14, final14:24-14:44
+UTC+08. No restart after SSH observation timeouts.
+Full target and three modules unproven; main final-five workflow pending.
+

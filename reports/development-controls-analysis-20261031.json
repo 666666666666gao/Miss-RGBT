@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "analyze_motion_gap_contrast28.py": "3a7784dfc960a71f979edb0ebe08776c7fed41a6ed0089ed6a664126bb58a2c4",
+    "audit_motion_estimates28.py": "2a2538ad8c04643696f73e6e53070a5bfa3a835bab502ed8f6f697ee3e2aa652",
+    "analyze_protected_mixed_pair28.py": "f6a21958288dfad56da8fee47c49e458d73820ec24cd183d0455eb9ac6523f9c"
+  },
+  "poll_seconds": 300,
+  "completed": {
+    "shortgap": {
+      "/home/gaob/Miss-RGBT/reports/server28-motion-gap-contrast-20261031.json": "53b44c70a1830974b30f0bf422bb6c152ed32841106dafaae68c831715b4c952",
+      "/home/gaob/Miss-RGBT/reports/server28-blind-motion-shortgap16-20261031/motion_estimate_audit.json": "e2e23abbffc1988cc75299bce0474553c19d19032149b7bed9a8d5422f290d56",
+      "/home/gaob/Miss-RGBT/reports/server28-blind-motion-shortgap16-20261031/completed.json": "0a2f007b3fa40fd714fdbccf9f0ac5e7d54b72281c392e82a0bf18604c592602"
+    },
+    "template_pair": {
+      "/home/gaob/Miss-RGBT/reports/server28-protected-mixed-pair-20261031/analysis.json": "d83418a53bd3287412c7dd7b34732b901086d2c159540acc8a93e6792ae6108f",
+      "/home/gaob/Miss-RGBT/reports/server28-protected-mixed-pair-20261031/completed.json": "7797a06367782eed8c43ad29d58ea9db847e2faf700f7639dc585ceea8107fce"
+    }
+  }
+}

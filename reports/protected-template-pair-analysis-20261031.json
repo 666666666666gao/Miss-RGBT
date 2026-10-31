@@ -1,0 +1,85 @@
+{
+  "comparison_sha256": "f4f28cb3a39fb2edd54c09be26804feb79da05c20601b1a84b7a4575f3184132",
+  "analyzer_sha256": "f6a21958288dfad56da8fee47c49e458d73820ec24cd183d0455eb9ac6523f9c",
+  "verified_updates": 384,
+  "arm_receipts": {
+    "complete_templates": {
+      "selected_epoch": 6,
+      "retained_sha256": "fe1bc6fb533ae81b2bc8e4e2cf1fc4005c10ee0b165fd70ff016b300838ea7ad",
+      "report_sha256": "00664097b8fd98b64047a15023c6bd9b5d2203feb9078d87d16f46563e6f8f40"
+    },
+    "mixed_templates": {
+      "selected_epoch": 6,
+      "retained_sha256": "15cad3fbd973ec1c674a76565961fbe42d39679a6affe01e7849dec78e23a434",
+      "report_sha256": "e9a90f86fe5abc257df02ea8c9819324ea5acc0e47eb79e55bfe4ded42728ac3"
+    }
+  },
+  "cells": {
+    "11_11": {
+      "selected_task_loss": {
+        "complete_templates": 2.988172385841608,
+        "mixed_templates": 2.988172385841608
+      },
+      "mixed_minus_complete": 0.0
+    },
+    "11_01": {
+      "selected_task_loss": {
+        "complete_templates": 4.534664507955313,
+        "mixed_templates": 4.564350858330727
+      },
+      "mixed_minus_complete": 0.029686350375413895
+    },
+    "11_10": {
+      "selected_task_loss": {
+        "complete_templates": 3.3003843370825052,
+        "mixed_templates": 3.292626690119505
+      },
+      "mixed_minus_complete": -0.0077576469630002975
+    },
+    "01_11": {
+      "selected_task_loss": {
+        "complete_templates": 3.328025668859482,
+        "mixed_templates": 3.3264445457607508
+      },
+      "mixed_minus_complete": -0.001581123098731041
+    },
+    "01_01": {
+      "selected_task_loss": {
+        "complete_templates": 4.603474624454975,
+        "mixed_templates": 4.6122279688715935
+      },
+      "mixed_minus_complete": 0.008753344416618347
+    },
+    "01_10": {
+      "selected_task_loss": {
+        "complete_templates": 4.0240252912044525,
+        "mixed_templates": 4.043721823953092
+      },
+      "mixed_minus_complete": 0.019696532748639584
+    },
+    "10_11": {
+      "selected_task_loss": {
+        "complete_templates": 3.734239600598812,
+        "mixed_templates": 3.737078543752432
+      },
+      "mixed_minus_complete": 0.0028389431536197662
+    },
+    "10_01": {
+      "selected_task_loss": {
+        "complete_templates": 6.409793183207512,
+        "mixed_templates": 6.315914615988731
+      },
+      "mixed_minus_complete": -0.09387856721878052
+    },
+    "10_10": {
+      "selected_task_loss": {
+        "complete_templates": 3.309108205139637,
+        "mixed_templates": 3.3029452860355377
+      },
+      "mixed_minus_complete": -0.006162919104099274
+    }
+  },
+  "selection_score_delta": -0.008277150957534118,
+  "scope": "One-seed reused development task losses, selected on these same tuples; descriptive only, no tracking/generalization/official/novelty claim",
+  "baseline_and_complete_outputs_checks": "Training receipts verified; tensors are not re-executed here"
+}
