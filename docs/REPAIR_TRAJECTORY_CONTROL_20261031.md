@@ -106,8 +106,10 @@ both GPUs for at least3000MiB free and launched workers418802/418803 at
 20:52 UTC+08. At20:56:32 controller393144 and both worker command lines were
 actually alive. The completed predecessor report SHA is
 `66b3b776e0152f01bf0115e322e371ca7e15ec0c7b1576e1f8550f11300ad3e9`.
-Repair workers have begun utility/native on fresh video sequences. At this
-snapshot, GPU0 had completed native complete/block32 for
-`thefirstexcersicebook` and started `blkboy`; no complete paired summary yet.
-The retry CPU witness passes parity/frozen-state checks, and its absolute
-self-source path/hash matches the current source.
+Repair workers have begun utility/native on fresh video sequences. At
+21:06:50 they remained live alongside all four trainers. GPU0 had two track
+receipts for the4221-frame `higherthwartbottle_quezhen` (complete PR20/SR
+42.393365/27.807493; block32 7.274882/8.803882). GPU1 had34 receipts,
+including utility native/sham and off beginning; these are partial per-arm
+records, not a paired aggregate. The retry CPU witness passes parity/frozen
+state checks, and its absolute self-source hash matches the current source.

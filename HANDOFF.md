@@ -1936,3 +1936,10 @@ four trainers. Repair trajectory comparison remains in progress.
 Fixed12 task-loss validations are recorded in latest metrics; no tracking
 or convergence conclusion follows. Preserve all registered weights.
 
+At21:06:50 controller393144 and workers418802/418803 remained live.
+GPU0 completed two required long-video tracks, Utility native on
+higherthwartbottle_quezhen: complete PR20/SR42.393365/27.807493 and block32
+7.274882/8.803882. GPU1 had34/96 receipts with Utility sham/off partial;
+these do not form a complete paired contrast. Four trainers remained alive.
+No partial arm or official claim; continue on live process handles.
+
