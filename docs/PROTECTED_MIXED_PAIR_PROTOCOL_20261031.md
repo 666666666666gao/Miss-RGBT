@@ -121,3 +121,26 @@ At12:36 UTC+08 the analyzer's measurement checks passed on actual initial
 and available complete-template epoch records. The full final audit has
 not yet run. At12:37:29 the original CPU PID869785 remained live after
 update192, performing final development/selection work.
+
+## Paired Progress, Not Final Results
+
+At13:06:20 UTC+08 both initial.json objects were independently compared
+and were exactly equal, including baseline/repair hashes and initial
+nine-cell results. Both arms have completed epochs1/2 on identical inputs.
+The complete-template arm is already finished; mixed-template training
+remains active, with epoch3/update88 observed at13:05:32.
+
+At epoch1 the six-cell selection loss is4.506485711 complete-template
+versus4.503826366 mixed-template (difference-0.002659345).
+At epoch2 it is4.427691171 versus4.432939143 (+0.005247972).
+Per-cell changes have mixed signs. Complete-history11_11 remains exactly
+equal; missing-template/complete-search cell differences at epoch2 are
++0.000251725 and+0.000318335. These are small descriptive task-loss
+changes on reused development tuples, not tracking evidence or final
+checkpoint comparisons. They do not establish consistent improvement
+or harm, and do not justify promoting this control to a full GPU campaign.
+
+Receipt: reports/protected-template-paired-progress-20261031T0506.json.
+The existing six-epoch protocol and final-five selection remain unchanged.
+Analysis controller1020925 will run the independent final paired audit
+after CPU869785 exits and completion artifacts exist.
