@@ -1,0 +1,58 @@
+{
+  "registered_utc": "2026-10-31T09:34:41.120738Z",
+  "jobs": {
+    "a_utility_full20_seed2027": {
+      "pid": 128343,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py",
+        "--label",
+        "a_utility_full20_seed2027",
+        "--wait"
+      ]
+    },
+    "a_random_full20_seed2027": {
+      "pid": 128344,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py",
+        "--label",
+        "a_random_full20_seed2027",
+        "--wait"
+      ]
+    },
+    "batch10_utility_seed2027": {
+      "pid": 128345,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py",
+        "--label",
+        "batch10_utility_seed2027",
+        "--wait"
+      ]
+    },
+    "batch10_random_seed2027": {
+      "pid": 128346,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py",
+        "--label",
+        "batch10_random_seed2027",
+        "--wait"
+      ]
+    }
+  },
+  "poll_seconds": 300,
+  "read_only_verification": true,
+  "deletes_weights": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/launch_recovery_verification28.py": "8bdad8bc3dd65a6b80f6a126d98d27d28f84a9764b276ccf36ac245e3f214654",
+    "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e"
+  }
+}

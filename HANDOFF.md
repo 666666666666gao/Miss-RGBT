@@ -1643,3 +1643,21 @@ docs/CANDIDATE_REPAIR_INTERVENTION_20261031.md; launch/queue receipts inreports.
 Keep4new audit sources/registered runtime unchanged. Expected~18:05-18:15
 full CPU result; current GPU sources/queues unchanged. Goal incomplete.
 
+## 2026-10-31 17:35 UTC+08 - Independent final-result verification queued
+
+New read-only verify_recovery_campaign28.py checks970 final5development
+tracks, common validation-selected checkpoint, four removed recovery links,
+958 official complete/Miss tracks, source/GT/mask hashes and independently
+recomputed scores/curves. Reports baseline+2pp deltas and strict Miss targets.
+No original weight deletion or three-module/convergence certification.
+Metric helper actual witness: existing full97 epoch5complete79.596578/64.472777
+and historical479 officialMiss68.565174/63.576593/54.621376,
+84.964353/60.511286 reproduced. Final5end-to-end witness still future.
+Launch17:34:41; actual17:35:18 waiting128343/128344/128345/128346
+for fixedU/fixedR/batch10U/batch10R, poll300s on real controller cmdlines.
+Doc docs/RECOVERY_RESULT_VERIFICATION_20261031.md, queue receipt inreports.
+Preserve verifier/launcher/sharedhelpers hashes until all finish.
+GPU1 center16completed66/66 withreceipt;GPU0 24/30stilllongleftconergirl,
+overall90/96 at17:29. All4trainers andCPU101337 live17:27,
+CPUUtility48/128 at552.61s. No finalcenter/CPU/officialnewresult.
+
