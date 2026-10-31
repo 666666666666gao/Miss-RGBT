@@ -1,6 +1,6 @@
 # Recent Training Metrics
 
-Verified server state: 2026-10-31 17:05-17:06 UTC+08.
+Verified server state: 2026-10-31 17:59:33 UTC+08 (05:59:33 EDT).
 
 ## Live Recovery Training
 
@@ -9,29 +9,30 @@ and their controllers are alive. Model and optimizer were restored from
 verified checkpoints, but original RNG state was unavailable; this is not
 bitwise uninterrupted continuation.
 
-Progress snapshot at approximately 17:05 UTC+08:
+Progress snapshot at 17:59:33 UTC+08:
 
 | GPU | Run | Current epoch | Total updates | Completed checkpoint epoch |
 |---|---|---:|---:|---:|
-| 0 | Fixed Utility, effective batch8 | 11 | 25476 | 10 |
-| 1 | Fixed Random, effective batch8 | 11 | 25469 | 10 |
-| 2 | Candidate Utility, effective batch10 | 10 | 18430 | 9 |
-| 3 | Candidate Random, effective batch10 | 11 | 20438 | 10 |
+| 0 | Fixed Utility, effective batch8 | 11 | 26598 | 10 |
+| 1 | Fixed Random, effective batch8 | 11 | 26749 | 10 |
+| 2 | Candidate Utility, effective batch10 | 10 | 19687 | 9 |
+| 3 | Candidate Random, effective batch10 | 11 | 21720 | 10 |
 
-Means over the latest100 logged updates, collected approximately17:06:
+Means over the latest100 logged updates, collected at17:59:33:
 task_c/task_m/KD columns are logged microbatch terms; update_loss_mean is
 the mean update objective. These columns are not an additive decomposition.
 All five recorded loss fields were finite over every recovered logged update.
 
 | Run | update_loss_mean | task_c | task_m | KD forward | KD reverse |
 |---|---:|---:|---:|---:|---:|
-| Fixed Utility | 5.964880 | 2.520834 | 3.389449 | 0.613829 | 0.064752 |
-| Fixed Random | 5.874629 | 2.520454 | 3.368429 | 0.595234 | 0.059223 |
-| Candidate Utility | 5.803319 | 2.551239 | 3.363491 | 0.595614 | 0.071777 |
-| Candidate Random | 5.832360 | 2.419760 | 3.257323 | 0.584688 | 0.068232 |
+| Fixed Utility | 5.785116 | 2.532332 | 3.362975 | 0.598257 | 0.067988 |
+| Fixed Random | 5.753347 | 2.409846 | 3.260267 | 0.603756 | 0.057157 |
+| Candidate Utility | 6.020692 | 2.532831 | 3.416879 | 0.681238 | 0.069590 |
+| Candidate Random | 5.737769 | 2.346651 | 3.282969 | 0.645740 | 0.079484 |
 
 These training losses are not tracking precision, nor sufficient evidence of
-convergence. The two snapshots above were collected at distinct moments.
+convergence. All four trainer processes were verified alive at17:58:41.
+Recent seconds/update were2.5272/2.5601/2.5588/2.5065 respectively.
 
 ## Current Campaign: Completed Epoch5 Development Tracking
 

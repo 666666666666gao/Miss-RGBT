@@ -1,0 +1,207 @@
+{
+  "report_sha256": "070f5f10f4147e6c036442d3cc7d80b4c3e93865b60e51a7103dcf215666d939",
+  "analyzer_sha256": "939b1dc0ac66f87d85ad7c490143b7ddbf9de1fa45ec7d34f1d2f912c44f1eb8",
+  "model_summaries": {
+    "utility": {
+      "11": {
+        "mean_task_loss": {
+          "native4": 4.3939295737072825,
+          "off": 4.39382439525798,
+          "random4": 4.394164960831404,
+          "all16": 4.393871475942433
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": 0.00010517844930291176,
+            "wins": 67,
+            "ties": 0,
+            "losses": 61
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": -0.00023538712412118912,
+            "wins": 60,
+            "ties": 0,
+            "losses": 68
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": -5.809776484966278e-05,
+            "wins": 58,
+            "ties": 0,
+            "losses": 70
+          }
+        }
+      },
+      "01": {
+        "mean_task_loss": {
+          "native4": 5.730526973493397,
+          "off": 5.730584851931781,
+          "random4": 5.730558658950031,
+          "all16": 5.730503388680518
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": -5.7878438383340836e-05,
+            "wins": 66,
+            "ties": 0,
+            "losses": 62
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": -3.168545663356781e-05,
+            "wins": 66,
+            "ties": 0,
+            "losses": 62
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": -2.3584812879562378e-05,
+            "wins": 77,
+            "ties": 0,
+            "losses": 51
+          }
+        }
+      },
+      "10": {
+        "mean_task_loss": {
+          "native4": 4.782561638858169,
+          "off": 4.790026976494119,
+          "random4": 4.789281659992412,
+          "all16": 4.782572960248217
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": -0.007465337635949254,
+            "wins": 62,
+            "ties": 0,
+            "losses": 66
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": -0.006720021134242415,
+            "wins": 59,
+            "ties": 0,
+            "losses": 69
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": 1.132139004766941e-05,
+            "wins": 69,
+            "ties": 0,
+            "losses": 59
+          }
+        }
+      }
+    },
+    "random": {
+      "11": {
+        "mean_task_loss": {
+          "native4": 4.2507330174557865,
+          "off": 4.250470625702292,
+          "random4": 4.252820182591677,
+          "all16": 4.2597087025642395
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": 0.00026239175349473953,
+            "wins": 51,
+            "ties": 0,
+            "losses": 77
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": -0.0020871651358902454,
+            "wins": 62,
+            "ties": 0,
+            "losses": 66
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": 0.008975685108453035,
+            "wins": 62,
+            "ties": 0,
+            "losses": 66
+          }
+        }
+      },
+      "01": {
+        "mean_task_loss": {
+          "native4": 5.757667100522667,
+          "off": 5.757446235977113,
+          "random4": 5.75756002496928,
+          "all16": 5.757995849009603
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": 0.00022086454555392265,
+            "wins": 61,
+            "ties": 0,
+            "losses": 67
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": 0.00010707555338740349,
+            "wins": 68,
+            "ties": 0,
+            "losses": 60
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": 0.0003287484869360924,
+            "wins": 54,
+            "ties": 0,
+            "losses": 74
+          }
+        }
+      },
+      "10": {
+        "mean_task_loss": {
+          "native4": 4.880788935814053,
+          "off": 4.881931590847671,
+          "random4": 4.880054617766291,
+          "all16": 4.8795838644728065
+        },
+        "contrasts": {
+          "native4_minus_off": {
+            "mean_loss_delta": -0.0011426550336182117,
+            "wins": 63,
+            "ties": 0,
+            "losses": 65
+          },
+          "native4_minus_random4": {
+            "mean_loss_delta": 0.0007343180477619171,
+            "wins": 55,
+            "ties": 0,
+            "losses": 73
+          },
+          "all16_minus_native4": {
+            "mean_loss_delta": -0.0012050713412463665,
+            "wins": 66,
+            "ties": 0,
+            "losses": 62
+          }
+        }
+      }
+    }
+  },
+  "utility_minus_random_loss": {
+    "11": {
+      "native4": 0.14319655625149608,
+      "off": 0.1433537695556879,
+      "random4": 0.14134477823972702,
+      "all16": 0.13416277337819338
+    },
+    "01": {
+      "native4": -0.027140127029269934,
+      "off": -0.02686138404533267,
+      "random4": -0.027001366019248962,
+      "all16": -0.02749246032908559
+    },
+    "10": {
+      "native4": -0.0982272969558835,
+      "off": -0.09190461435355246,
+      "random4": -0.09077295777387917,
+      "all16": -0.09701090422458947
+    }
+  },
+  "random_regions_reproduced": true,
+  "samples_per_model_state": 128,
+  "searches_per_tuple": 3,
+  "templates_per_tuple": 2,
+  "configuration_sha256": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+  "original_analyzer_sha256": "9999f3ae1d6f1cff774a6b65e69034164ddf458850a4cb798aeaf4520f342999",
+  "original_failure_log_sha256": "dca3ccbacdf33e1e4c4092c0fa17621f408af7922b51c79bac9d98fe17e7ca17",
+  "correction": "Original analyzer assumed two search frames; frozen YAML and producer data have three. Original producer/report/log preserved. This analyzer checks every recorded search and all random draws. The producer protocol string saying both search frames is incorrect; the producer processes all three configured search frames.",
+  "scope": "Independent file/hash/shape/random-subset and aggregate-arithmetic verification. Native-tail and unchanged-model execution witnesses come from the producer, not independently re-executed here. Reused cached tuples, full templates and batch-coupled focal loss; no video-independent confidence interval or PR/SR claim. Between-model differences also include trained backbone/correction; they cannot identify the effect of selection alone."
+}

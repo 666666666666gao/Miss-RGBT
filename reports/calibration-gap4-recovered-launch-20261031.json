@@ -1,0 +1,142 @@
+{
+  "pid": 1320176,
+  "registered_utc": "2026-10-31T08:00:19.924087Z",
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "development_indices": [
+    60,
+    61,
+    62,
+    63
+  ],
+  "cohort": [
+    {
+      "name": "boyaftertworunboys",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyaftertworunboys",
+      "development_index": 60,
+      "video_frames": 458,
+      "gt_sha256": "ba157f5efac9ad49e3f1104ded49a2b64fec2ac1c860453bd53b5e2943e7e417"
+    },
+    {
+      "name": "twopeople_0109",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/twopeople_0109",
+      "development_index": 61,
+      "video_frames": 450,
+      "gt_sha256": "931f3eebf4d518849294030bf0c5a03de33fb20db73bde2bd8014dc6737473de"
+    },
+    {
+      "name": "10rightblackboy",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/10rightblackboy",
+      "development_index": 62,
+      "video_frames": 333,
+      "gt_sha256": "3c7266877e5a0f9162273a630347d879769064d862ac005204be156031513cb1"
+    },
+    {
+      "name": "leftbottle",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftbottle",
+      "development_index": 63,
+      "video_frames": 1143,
+      "gt_sha256": "79fc02d3ec0c4a3b6deecb41d85cc9cf1a2b2904cbda1c28a899c0291eff3c4d"
+    }
+  ],
+  "parts": {
+    "0": [
+      {
+        "name": "leftbottle",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftbottle",
+        "development_index": 63,
+        "video_frames": 1143,
+        "gt_sha256": "79fc02d3ec0c4a3b6deecb41d85cc9cf1a2b2904cbda1c28a899c0291eff3c4d"
+      }
+    ],
+    "1": [
+      {
+        "name": "boyaftertworunboys",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyaftertworunboys",
+        "development_index": 60,
+        "video_frames": 458,
+        "gt_sha256": "ba157f5efac9ad49e3f1104ded49a2b64fec2ac1c860453bd53b5e2943e7e417"
+      },
+      {
+        "name": "twopeople_0109",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/twopeople_0109",
+        "development_index": 61,
+        "video_frames": 450,
+        "gt_sha256": "931f3eebf4d518849294030bf0c5a03de33fb20db73bde2bd8014dc6737473de"
+      },
+      {
+        "name": "10rightblackboy",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/10rightblackboy",
+        "development_index": 62,
+        "video_frames": 333,
+        "gt_sha256": "3c7266877e5a0f9162273a630347d879769064d862ac005204be156031513cb1"
+      }
+    ]
+  },
+  "loads": {
+    "0": 1143,
+    "1": 1241
+  },
+  "arms": [
+    "native",
+    "sham",
+    "center",
+    "geometry"
+  ],
+  "conditions": [
+    "complete",
+    "alternating_outage",
+    "block32_outage",
+    "block128_outage"
+  ],
+  "frame_blocks": {
+    "complete": 0,
+    "alternating_outage": 1,
+    "block32_outage": 32,
+    "block128_outage": 128
+  },
+  "pattern": [
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/run_calibration_gap28.py": "9c1ae50b7a9efbad10d83480fe2e8db786d6d1a7512280c4a55ec5b53a56c06e",
+    "/home/gaob/Miss-RGBT/spatial_calibration_tracker28.py": "7f53a211e16b7e4f5c2e52021e8c63188d222b620b6a8d2161e443d0ef8283f8",
+    "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/recover_evaluation_chain28.py": "0e737d3dc318123c51ee7a8b83b2f76600b5d1e83994e3be752c0e12aac8e99c"
+  },
+  "witness_sha256": "050a54f4f770ce7a638b9adca160a0c7e1e3c4077e80c9bd9964a63e22a3dd7e",
+  "poll_seconds": 300,
+  "previous_pid": 1256793,
+  "geometry_diagnostic_sha256": "9f556ba28a3258aa412c7ec3eab324262dbe8b694b680d035eabfe703967345f",
+  "calibration_age_diagnostic_sha256": "4cda9fa314e59d52ddc2264c7bd181fddb97b979d6ab6499d2caf4122da8a8d5",
+  "scope": "Sequential fresh videos, no outcome filtering. Fixed block1, existing block32, and fourfold block128 stress. Compare both missing states without fitted gate/decay/expiry/coefficient or weight updates; same video/hardware across arms.",
+  "registration_sha256": "e9260c3a032c2bc3395904d974066fb479639318020707a18aeee1b150f7a3b7",
+  "recovery_previous_report_sha256": "96be9ee99255d28ee98ccafb01f844c82cc49666ec074d0676fd8f2a1046242e",
+  "recovered_controller_pid": 72348
+}

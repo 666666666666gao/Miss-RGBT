@@ -1686,3 +1686,44 @@ uncertainty,notrunnabletransplant/nointegration;FlexTrackwrapperredirect
 andPAFCabstractonlyscopeindocs/CALIBRATION_PRIOR_ART_BOUNDARY_20261031.md.
 Officialthresholds/3modules/final5/globalweightcleanupremainincomplete.
 
+## 2026-10-31 18:04 UTC+08 - Geometry completed, gap workers running
+
+All32 fresh geometry trajectories independently verified; report
+96be9ee99255d28ee98ccafb01f844c82cc49666ec074d0676fd8f2a1046242e
+matches server/completion/download. Complete allarms94.507576/77.629789.
+Outage native93.983586/75.107497,center93.226010/74.745948,
+geometry93.068182/75.233551. Geometry-native PR/SR-.915404/+.126055pp,
+95intervals[-1.893939,0]/[-.117244,.394120];SR2wins2losses.
+Geometry-centerSR+.487603CI[.082036,1.199495],4wins, but not demonstrated
+gain over native. Do not promote as a validated module or official result.
+Docdocs/SPATIAL_CALIBRATION_RESULT_20261031.md; final/completion archived.
+Controller72348advanced to gap4; actualworkers168995/168996alive18:01:45.
+Outputreports/server28-calibration-gap4-20261031-recovered,64tracks across
+fresh4videos2384frames and4arms xcomplete/block1/32/128. Launch links
+verifiedgeometrySHA. No source/parameterchanges. Gap changes observation/
+templatehistories, not isolated causal cacheage. Keep short/unexposedstates.
+Estimate~19:00-20:00+08 plus300squeue fromoriginal60-120minbudget,
+reviseusingactualthroughput. Fourtrainers+CPU101337/105825alive18:01:10.
+CPUfullpairpending. Latestcomplete usermetrics snapshot17:59:33 updated
+locally; candidatesUtility9/Random10cachedvalidation unchanged. No new
+currentcampaignofficialmetrics or convergence claim. Fullgoal incomplete.
+
+## 2026-10-31 18:08 UTC+08 - CPU full pair completed and corrected verification passed
+
+Producer101337 completedbothmodels128tuples in2760.96s at18:04.
+Original analyzer failed: hardcoded2searches versus actual frozenYAML3,
+templates2. Producer didprocessall3; original launch "bothsearchframes"
+wording incorrect. Original sources/report/failurelog preserved. New
+analyze_candidate_repair_corrected28.py reads hashverifiedYAML3search/2template,
+checksall3searches/randomdraws/source/checkpoint/means and exited0~18:07.
+ReportSHA070f5f10f4147e6c036442d3cc7d80b4c3e93865b60e51a7103dcf215666d939;
+analysisSHA0631845222c32de202b59f1f054185111af4afc1e5f18b56dc627eaf1571fa9b.
+Completion/download/codehashesmatch. OriginalCPUproducer/queue areterminal.
+Docdocs/CANDIDATE_REPAIR_INTERVENTION_20261031.md now fullresult+correction.
+Utility native-off11/01/10lossdelta+.000105/-.000058/-.007465(~.156%RGB);
+RGB62wins66losses. native-random4RGB-.006720but59wins69losses.
+All16notuniformlybetter. U-R native+.143197/-.027140/-.098227,off
++.143354/-.026861/-.091905; cannotattributejointmodeldifferences toselector.
+NotPRSR/retrainedablation/official/novelmodule. No activeparameterchanges.
+Gap64running; final5/official/3modules/convergence/globalcleanupincomplete.
+
