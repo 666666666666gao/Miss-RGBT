@@ -1,0 +1,40 @@
+{
+  "complete": {
+    "receipt": {
+      "sequence": "ab_bolster",
+      "video_frames": 8406,
+      "scored_frames": 8393,
+      "PR20": 65.86441081853926,
+      "SR": 61.055982025837864,
+      "bbox_sha256": "4d74734b9b7da12a86006c4979752f21f4d997f4ebc44ae45bac7a240001708b"
+    },
+    "recomputed": {
+      "PR20": 65.86441081853926,
+      "SR": 61.055982025837864,
+      "scored_frames": 8393
+    },
+    "trajectory_hash_verified": true
+  },
+  "alternating_outage": {
+    "receipt": {
+      "sequence": "ab_bolster",
+      "video_frames": 8406,
+      "scored_frames": 8393,
+      "PR20": 38.78231859883236,
+      "SR": 42.08439005293527,
+      "bbox_sha256": "debc3b9bc95528e0ec34ce271c3a97d8b4c1962352c09ee6a5ca054a8f240eef"
+    },
+    "recomputed": {
+      "PR20": 38.78231859883236,
+      "SR": 42.08439005293527,
+      "scored_frames": 8393
+    },
+    "trajectory_hash_verified": true
+  },
+  "sequence": "ab_bolster",
+  "scope": "Initial single-sequence execution verification, not full validation metrics",
+  "common_complete_prefix_frames": 32,
+  "common_prefix_bitwise_equal": true,
+  "prefix_max_abs_difference": 0.0,
+  "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+}

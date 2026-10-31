@@ -982,3 +982,24 @@ no error or full sequence yet. First sorted video ab_bolster has8406frames;
 expect its first receipt around08:23+08:00 using prior throughput. Next
 check should be near that boundary, not from an empty log alone.
 
+## 2026-10-31 00:25 UTC first tracking sequence verified
+
+Both original E0 workers completed ab_bolster8406frames/8393scored in
+about733s each. Complete PR20/SR65.864411/61.055982; alternating outage
+38.782319/42.084390. Hashes and recomputed metrics match; first32 common
+complete-input boxes are bitwise equal across GPUs0/1. This is one video,
+not full-val97 or a candidate gain. All original jobs remain live.
+
+Measured11.46frames/sec implies about79.5min per full54646-frame condition.
+Next combined check09:25-09:35+08:00, near E0 condition completion and
+candidate epoch6 validation; all three cases per GPU roughly12:10+08:00,
+pending actual speed. Do not poll every few minutes before those nodes.
+Receipt reports/epoch05-health-initial-verification-20261031.json.
+
+Source review docs/COARSE_FINE_SOURCE_REVIEW_20261031.md pins EfficientLoFTR
+07e9c140: fine matching uses retained higher-resolution features and yields
+point correspondences, not target box scale/identity acceptance. No external
+code, weights, environment change or GPU method run. Future recovery must
+separately validate proposal scale/localization and target acceptance on
+train882 development; these are not validated paper contributions.
+

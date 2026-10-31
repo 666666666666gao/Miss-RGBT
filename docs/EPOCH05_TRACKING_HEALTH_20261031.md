@@ -100,3 +100,33 @@ not training-seed robustness or official performance. Do not select
 checkpoints, tune thresholds or declare the research goal complete from
 these development comparisons. The analyzer creates `paired_analysis.json`
 exclusively and does not modify model weights or running evaluations.
+
+## First Complete Sequence Verified
+
+At2026-10-31T08:25:39+08:00 both E0 workers had completed `ab_bolster`:
+8406 video frames,8393 scored frames, approximately733seconds per
+condition (11.46frames/sec). All original training and evaluation PIDs
+remained live; GPU0/1 total memory was21603/21571MiB.
+
+| Single sequence | PR20 | SR |
+|---|---:|---:|
+| E0 complete | 65.864411 | 61.055982 |
+| E0 alternating outage | 38.782319 | 42.084390 |
+
+Both saved trajectory hashes match their receipts, and independently
+reading the saved boxes through the prepared metric function reproduces
+PR20/SR and scored-frame counts exactly. The first32 common complete-input
+frames have bitwise equal boxes across the two GPU runs (max difference0).
+This verifies the initial sequence's execution, not full validation quality
+or a candidate gain. The utility/random epoch5 queues have not begun yet.
+
+At this first-sequence rate, a full54646-frame condition takes about
+79.5minutes. Remaining46240frames imply roughly67minutes after the first
+receipt; plan the next combined observation around09:25-09:35+08:00,
+near the first condition completion and candidate epoch6 validation.
+Three sequential conditions per GPU project completion around12:10+08:00,
+with substantial uncertainty from sequence resolution, I/O and model cost.
+Use actual subsequent receipt rates before treating that estimate as firm.
+
+Evidence: `reports/epoch05-health-initial-verification-20261031.json`,
+SHA256 `7c3bc003f8c44fd56d26049280f1bfd497be008e434db378928913306487899a`.
