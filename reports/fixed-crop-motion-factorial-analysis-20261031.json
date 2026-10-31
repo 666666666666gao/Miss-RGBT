@@ -1,0 +1,607 @@
+{
+  "report_sha256": "5dd9c71105a49ac525ad6bfd1c75be630a38e6108cfc30206d190bbcb27ff596",
+  "analyzer_sha256": "0df646114fd94a9753c2c74937f5f140b71614839f9a6a9c9b19dfcfd35be68b",
+  "calls_verified": 576,
+  "rows_verified": 384,
+  "per_video": {
+    "2whitegirl": {
+      "1_11": {
+        "velocity_error": 3.7943015646078484,
+        "forecast_center_error": 6.356649126610115
+      },
+      "1_01": {
+        "velocity_error": 5.015448707261836,
+        "forecast_center_error": 8.55959282216502
+      },
+      "1_10": {
+        "velocity_error": 7.997240184385258,
+        "forecast_center_error": 6.590473425624851
+      },
+      "2_11": {
+        "velocity_error": 1.554787718235604,
+        "forecast_center_error": 6.320896638907424
+      },
+      "2_01": {
+        "velocity_error": 2.946753532773979,
+        "forecast_center_error": 7.119063921588396
+      },
+      "2_10": {
+        "velocity_error": 2.931711700135335,
+        "forecast_center_error": 5.831917661869109
+      }
+    },
+    "5manwakeright": {
+      "1_11": {
+        "velocity_error": 3.381244924037846,
+        "forecast_center_error": 7.890731267828562
+      },
+      "1_01": {
+        "velocity_error": 4.584672969503331,
+        "forecast_center_error": 9.785078091139749
+      },
+      "1_10": {
+        "velocity_error": 5.321676593275108,
+        "forecast_center_error": 8.038281778142807
+      },
+      "2_11": {
+        "velocity_error": 2.6681710798877925,
+        "forecast_center_error": 7.898405830322485
+      },
+      "2_01": {
+        "velocity_error": 2.1849061392098332,
+        "forecast_center_error": 8.359735953280989
+      },
+      "2_10": {
+        "velocity_error": 3.527592294837923,
+        "forecast_center_error": 8.053364801618441
+      }
+    },
+    "The_girl_back_at_the_lab_1202": {
+      "1_11": {
+        "velocity_error": 1.4184273644468888,
+        "forecast_center_error": 3.8105637001182657
+      },
+      "1_01": {
+        "velocity_error": 4.104788741920972,
+        "forecast_center_error": 6.206526640300647
+      },
+      "1_10": {
+        "velocity_error": 3.5875831763922075,
+        "forecast_center_error": 3.9220878175102363
+      },
+      "2_11": {
+        "velocity_error": 0.965447702749842,
+        "forecast_center_error": 3.785998541502357
+      },
+      "2_01": {
+        "velocity_error": 2.3276354900305263,
+        "forecast_center_error": 4.8159755621257005
+      },
+      "2_10": {
+        "velocity_error": 1.6291248788046426,
+        "forecast_center_error": 3.164526960218092
+      }
+    },
+    "bikeblkturn": {
+      "1_11": {
+        "velocity_error": 3.324106481354609,
+        "forecast_center_error": 5.2328882620059725
+      },
+      "1_01": {
+        "velocity_error": 8.14701103814436,
+        "forecast_center_error": 8.396535392007795
+      },
+      "1_10": {
+        "velocity_error": 2.4040007619964965,
+        "forecast_center_error": 4.892253539888803
+      },
+      "2_11": {
+        "velocity_error": 2.537143835170101,
+        "forecast_center_error": 4.960513603133955
+      },
+      "2_01": {
+        "velocity_error": 3.3121797778746767,
+        "forecast_center_error": 4.350224319334186
+      },
+      "2_10": {
+        "velocity_error": 2.226647868546594,
+        "forecast_center_error": 4.386319176542108
+      }
+    },
+    "blkskirtwoman": {
+      "1_11": {
+        "velocity_error": 2.008928075823272,
+        "forecast_center_error": 2.391561097000089
+      },
+      "1_01": {
+        "velocity_error": 8.71654375332732,
+        "forecast_center_error": 9.769013513960395
+      },
+      "1_10": {
+        "velocity_error": 1.9246089354884703,
+        "forecast_center_error": 2.507541062635553
+      },
+      "2_11": {
+        "velocity_error": 1.2348118942048563,
+        "forecast_center_error": 2.051109290016793
+      },
+      "2_01": {
+        "velocity_error": 5.72150956029902,
+        "forecast_center_error": 6.319756896516441
+      },
+      "2_10": {
+        "velocity_error": 1.3070277819461742,
+        "forecast_center_error": 2.2062356909951775
+      }
+    },
+    "boybesidesbar2putcup": {
+      "1_11": {
+        "velocity_error": 1.1409381512517585,
+        "forecast_center_error": 2.5958099482992463
+      },
+      "1_01": {
+        "velocity_error": 4.487583227599069,
+        "forecast_center_error": 4.735197695640752
+      },
+      "1_10": {
+        "velocity_error": 1.242432887300576,
+        "forecast_center_error": 2.047265849812909
+      },
+      "2_11": {
+        "velocity_error": 0.5764180595109798,
+        "forecast_center_error": 2.0817443751701075
+      },
+      "2_01": {
+        "velocity_error": 2.4399652134740806,
+        "forecast_center_error": 3.098020328937154
+      },
+      "2_10": {
+        "velocity_error": 0.7100274059221314,
+        "forecast_center_error": 1.6931787983161701
+      }
+    },
+    "exercisebook": {
+      "1_11": {
+        "velocity_error": 2.098685889893151,
+        "forecast_center_error": 1.9116583596704602
+      },
+      "1_01": {
+        "velocity_error": 3.0317514915775594,
+        "forecast_center_error": 2.991210712081731
+      },
+      "1_10": {
+        "velocity_error": 2.412152768809398,
+        "forecast_center_error": 2.110893869674174
+      },
+      "2_11": {
+        "velocity_error": 0.9014133441657946,
+        "forecast_center_error": 1.7288221111788293
+      },
+      "2_01": {
+        "velocity_error": 1.3320970366285172,
+        "forecast_center_error": 2.2910209615603305
+      },
+      "2_10": {
+        "velocity_error": 1.0690548100238164,
+        "forecast_center_error": 1.778865122588134
+      }
+    },
+    "hyalinepaperfrontclothes": {
+      "1_11": {
+        "velocity_error": 2.3816505026422705,
+        "forecast_center_error": 8.971334456962431
+      },
+      "1_01": {
+        "velocity_error": 3.248683817364963,
+        "forecast_center_error": 8.806751452952854
+      },
+      "1_10": {
+        "velocity_error": 3.757651055938252,
+        "forecast_center_error": 10.20975728292155
+      },
+      "2_11": {
+        "velocity_error": 0.6799270747015302,
+        "forecast_center_error": 8.990986659345097
+      },
+      "2_01": {
+        "velocity_error": 2.4361124893318884,
+        "forecast_center_error": 8.01340622848916
+      },
+      "2_10": {
+        "velocity_error": 1.192364492622361,
+        "forecast_center_error": 9.286249773820455
+      }
+    },
+    "midblkboyplayingphone": {
+      "1_11": {
+        "velocity_error": 3.797463559777586,
+        "forecast_center_error": 6.5769678265321705
+      },
+      "1_01": {
+        "velocity_error": 4.334096913482198,
+        "forecast_center_error": 6.463443227610485
+      },
+      "1_10": {
+        "velocity_error": 3.8450545391844493,
+        "forecast_center_error": 6.776428908008592
+      },
+      "2_11": {
+        "velocity_error": 1.99993600311713,
+        "forecast_center_error": 9.251388170421711
+      },
+      "2_01": {
+        "velocity_error": 2.050084048709011,
+        "forecast_center_error": 9.38171231220443
+      },
+      "2_10": {
+        "velocity_error": 1.9797992469008872,
+        "forecast_center_error": 9.187290222536149
+      }
+    },
+    "moto2west": {
+      "1_11": {
+        "velocity_error": 0.9915458356149489,
+        "forecast_center_error": 1.0864988648907676
+      },
+      "1_01": {
+        "velocity_error": 1.5724066728638717,
+        "forecast_center_error": 1.4326889312613142
+      },
+      "1_10": {
+        "velocity_error": 1.1853743989946806,
+        "forecast_center_error": 1.1909242692465636
+      },
+      "2_11": {
+        "velocity_error": 0.8564972636901756,
+        "forecast_center_error": 1.1643689343494126
+      },
+      "2_01": {
+        "velocity_error": 1.004501725354905,
+        "forecast_center_error": 1.218133636025684
+      },
+      "2_10": {
+        "velocity_error": 0.9247924998122093,
+        "forecast_center_error": 1.2926180566366814
+      }
+    },
+    "motocome": {
+      "1_11": {
+        "velocity_error": 2.255450871692964,
+        "forecast_center_error": 2.871443253316512
+      },
+      "1_01": {
+        "velocity_error": 2.7439467255537004,
+        "forecast_center_error": 2.1617869439268524
+      },
+      "1_10": {
+        "velocity_error": 2.8424047099428305,
+        "forecast_center_error": 3.9625070205250688
+      },
+      "2_11": {
+        "velocity_error": 1.119102984031794,
+        "forecast_center_error": 2.806803067165736
+      },
+      "2_01": {
+        "velocity_error": 0.8420683301162576,
+        "forecast_center_error": 2.3431611191906736
+      },
+      "2_10": {
+        "velocity_error": 1.650994129388953,
+        "forecast_center_error": 3.485592732165788
+      }
+    },
+    "motowithgood": {
+      "1_11": {
+        "velocity_error": 0.6423004923344001,
+        "forecast_center_error": 2.0587283561029937
+      },
+      "1_01": {
+        "velocity_error": 0.8638458048744264,
+        "forecast_center_error": 2.4888265267070095
+      },
+      "1_10": {
+        "velocity_error": 0.5583370205655888,
+        "forecast_center_error": 1.673996135656247
+      },
+      "2_11": {
+        "velocity_error": 0.4760975419489625,
+        "forecast_center_error": 2.0683341555046044
+      },
+      "2_01": {
+        "velocity_error": 0.48882792110014056,
+        "forecast_center_error": 2.2099105762976867
+      },
+      "2_10": {
+        "velocity_error": 0.4846010746523774,
+        "forecast_center_error": 1.865262937076714
+      }
+    },
+    "right1stgirlin2ndqueue": {
+      "1_11": {
+        "velocity_error": 1.9391809445613584,
+        "forecast_center_error": 5.425711528700279
+      },
+      "1_01": {
+        "velocity_error": 2.418955015386218,
+        "forecast_center_error": 5.339067658750984
+      },
+      "1_10": {
+        "velocity_error": 2.7683193634186947,
+        "forecast_center_error": 6.245862805103641
+      },
+      "2_11": {
+        "velocity_error": 1.135063218071927,
+        "forecast_center_error": 4.033398280450525
+      },
+      "2_01": {
+        "velocity_error": 1.0941783103768628,
+        "forecast_center_error": 3.9275859398728534
+      },
+      "2_10": {
+        "velocity_error": 1.264807828787431,
+        "forecast_center_error": 4.156721262964943
+      }
+    },
+    "rightboy479": {
+      "1_11": {
+        "velocity_error": 3.099607805502056,
+        "forecast_center_error": 4.044482271825832
+      },
+      "1_01": {
+        "velocity_error": 7.405337147842669,
+        "forecast_center_error": 7.92678850769312
+      },
+      "1_10": {
+        "velocity_error": 3.5615984850836098,
+        "forecast_center_error": 4.242774220433769
+      },
+      "2_11": {
+        "velocity_error": 1.2265758215073101,
+        "forecast_center_error": 5.014107143623226
+      },
+      "2_01": {
+        "velocity_error": 1.5192286139786475,
+        "forecast_center_error": 5.578649493718888
+      },
+      "2_10": {
+        "velocity_error": 1.6985590551565157,
+        "forecast_center_error": 5.463414093782292
+      }
+    },
+    "shotmaker2": {
+      "1_11": {
+        "velocity_error": 13.97586557564791,
+        "forecast_center_error": 32.65879088681248
+      },
+      "1_01": {
+        "velocity_error": 44.46693016620114,
+        "forecast_center_error": 63.03913789295976
+      },
+      "1_10": {
+        "velocity_error": 8.280628552517793,
+        "forecast_center_error": 25.405576753065944
+      },
+      "2_11": {
+        "velocity_error": 7.443517626977047,
+        "forecast_center_error": 27.148019770208972
+      },
+      "2_01": {
+        "velocity_error": 21.64925116861786,
+        "forecast_center_error": 40.36321394269026
+      },
+      "2_10": {
+        "velocity_error": 5.138261141060361,
+        "forecast_center_error": 23.876637063195155
+      }
+    },
+    "whitecarcoming": {
+      "1_11": {
+        "velocity_error": 1.2097692570611769,
+        "forecast_center_error": 0.8510887321437413
+      },
+      "1_01": {
+        "velocity_error": 6.336173789819008,
+        "forecast_center_error": 5.956533844990461
+      },
+      "1_10": {
+        "velocity_error": 1.262456630529468,
+        "forecast_center_error": 0.8817975732467287
+      },
+      "2_11": {
+        "velocity_error": 0.8303941460168478,
+        "forecast_center_error": 0.9504182184321732
+      },
+      "2_01": {
+        "velocity_error": 3.313020692518612,
+        "forecast_center_error": 3.411192869301372
+      },
+      "2_10": {
+        "velocity_error": 0.8338163444038703,
+        "forecast_center_error": 0.9060263022719123
+      }
+    }
+  },
+  "contrasts": {
+    "lag1_same11_minus_cross01": {
+      "velocity_error": {
+        "mean_delta": -4.001169292904537,
+        "paired_video_bootstrap95": [
+          -7.963058977788977,
+          -1.5180805960896355
+        ],
+        "lower_error_videos": 16,
+        "equal_videos": 0,
+        "higher_error_videos": 0
+      },
+      "forecast_center_error": {
+        "mean_delta": -3.7077044947080635,
+        "paired_video_bootstrap95": [
+          -7.729994818597821,
+          -1.1411624788237762
+        ],
+        "lower_error_videos": 12,
+        "equal_videos": 0,
+        "higher_error_videos": 4
+      }
+    },
+    "lag1_same11_minus_cross10": {
+      "velocity_error": {
+        "mean_delta": -0.3432532979733023,
+        "paired_video_bootstrap95": [
+          -1.2151260759566023,
+          0.6784959047662967
+        ],
+        "lower_error_videos": 12,
+        "equal_videos": 0,
+        "higher_error_videos": 4
+      },
+      "forecast_center_error": {
+        "mean_delta": 0.2522803517076552,
+        "paired_video_bootstrap95": [
+          -0.39500635227449216,
+          1.290646342329471
+        ],
+        "lower_error_videos": 12,
+        "equal_videos": 0,
+        "higher_error_videos": 4
+      }
+    },
+    "lag2_same11_minus_cross01": {
+      "velocity_error": {
+        "mean_delta": -1.7785634210254448,
+        "paired_video_bootstrap95": [
+          -3.7169479595469133,
+          -0.48835191668107986
+        ],
+        "lower_error_videos": 13,
+        "equal_videos": 0,
+        "higher_error_videos": 3
+      },
+      "forecast_center_error": {
+        "mean_delta": -1.4090905794625497,
+        "paired_video_bootstrap95": [
+          -3.279335310202505,
+          -0.1806821602654016
+        ],
+        "lower_error_videos": 12,
+        "equal_videos": 0,
+        "higher_error_videos": 4
+      }
+    },
+    "lag2_same11_minus_cross10": {
+      "velocity_error": {
+        "mean_delta": -0.14774232743836802,
+        "paired_video_bootstrap95": [
+          -0.4679437304398149,
+          0.25898586281611097
+        ],
+        "lower_error_videos": 13,
+        "equal_videos": 0,
+        "higher_error_videos": 3
+      },
+      "forecast_center_error": {
+        "mean_delta": 0.22631838332100546,
+        "paired_video_bootstrap95": [
+          -0.11142309194658004,
+          0.7050105105075651
+        ],
+        "lower_error_videos": 8,
+        "equal_videos": 0,
+        "higher_error_videos": 8
+      }
+    },
+    "state11_lag2_minus_lag1": {
+      "velocity_error": {
+        "mean_delta": -1.328385123891397,
+        "paired_video_bootstrap95": [
+          -2.1519421936013985,
+          -0.7512739019255535
+        ],
+        "lower_error_videos": 16,
+        "equal_videos": 0,
+        "higher_error_videos": 0
+      },
+      "forecast_center_error": {
+        "mean_delta": -0.279974571817907,
+        "paired_video_bootstrap95": [
+          -1.1303599822290966,
+          0.3982867612762936
+        ],
+        "lower_error_videos": 9,
+        "equal_videos": 0,
+        "higher_error_videos": 7
+      }
+    },
+    "state01_lag2_minus_lag1": {
+      "velocity_error": {
+        "mean_delta": -3.550990995770489,
+        "paired_video_bootstrap95": [
+          -6.432566140957983,
+          -1.7575256420389007
+        ],
+        "lower_error_videos": 16,
+        "equal_videos": 0,
+        "higher_error_videos": 0
+      },
+      "forecast_center_error": {
+        "mean_delta": -2.5785884870634206,
+        "paired_video_bootstrap95": [
+          -5.591832926466212,
+          -0.6363780180209402
+        ],
+        "lower_error_videos": 14,
+        "equal_videos": 0,
+        "higher_error_videos": 2
+      }
+    },
+    "state10_lag2_minus_lag1": {
+      "velocity_error": {
+        "mean_delta": -1.5238960944263313,
+        "paired_video_bootstrap95": [
+          -2.1895408318400476,
+          -0.9511209209238848
+        ],
+        "lower_error_videos": 16,
+        "equal_videos": 0,
+        "higher_error_videos": 0
+      },
+      "forecast_center_error": {
+        "mean_delta": -0.2540126034312573,
+        "paired_video_bootstrap95": [
+          -0.7129716599877699,
+          0.2592808107898601
+        ],
+        "lower_error_videos": 10,
+        "equal_videos": 0,
+        "higher_error_videos": 6
+      }
+    }
+  },
+  "video_macro": {
+    "1_11": {
+      "velocity_error": 2.9662167060156284,
+      "forecast_center_error": 5.920931746176246
+    },
+    "1_01": {
+      "velocity_error": 6.9673859989201645,
+      "forecast_center_error": 9.628636240884308
+    },
+    "1_10": {
+      "velocity_error": 3.30947000398893,
+      "forecast_center_error": 5.66865139446859
+    },
+    "2_11": {
+      "velocity_error": 1.637831582124231,
+      "forecast_center_error": 5.640957174358338
+    },
+    "2_01": {
+      "velocity_error": 3.4163950031496757,
+      "forecast_center_error": 7.050047753820888
+    },
+    "2_10": {
+      "velocity_error": 1.7855739095625989,
+      "forecast_center_error": 5.414638791037332
+    }
+  },
+  "scope": "Paired16-video fixed-crop CPU diagnostic with four early triplets/video. Negative error deltas favor left condition. Equal-lag state contrasts isolate the prior observation availability in this fixed context, not whole-tracker causal mechanisms or deployment gains. Complete prior GPU crop histories and fixed initial templates limit transfer. Reused development, no official scores."
+}

@@ -1,5 +1,37 @@
 # Miss-RGBT evidence and remaining targets
 
+## Latest Evidence, 2026-10-31 14:07 UTC+08
+
+The576-call fixed-crop CPU probe completed in303.75seconds. A post-hoc3x3
+current/prior-state factorial reuses its saved outputs without new calls.
+At equal lag1, same-state prior predictions have the lowest macro velocity
+error for each current state11/01/10. Current01/10 same-minus-complete-prior
+velocity errors are-2.912099/-1.035978px/frame with video intervals below0.
+This rules out complete-prior quality as the sole explanation in that fixed
+context, but is not closed-loop, official or novel-module evidence.
+All64 triplets have valid labels; uncertainty resamples16 videos.
+Lag2 also independently reduces velocity error under all three prior states.
+See docs/MOTION_IDENTIFIABILITY_20261031.md and published factorial reports.
+
+Fresh factorial replication runner1129716 waits on actual adjacent reference
+controller1090400, then repeats576 calls and both analyses without tuning.
+At14:07:46 both adjacent GPU workers had32/32tracks; final parent checks
+were pending. Availability-history replication and all four main training
+jobs remain separate, with unchanged GPU execution sources.
+
+The historical A utility20 Miss evaluation is already complete, verified
+against current server metrics and479-sequence/337353-frame completion:
+
+| Model | LasHeR-Miss PR | SR | RGBT234-Miss MPR | MSR |
+|---|---:|---:|---:|---:|
+| Historical A utility20 | 68.565174 | 54.621376 | 84.964353 | 60.511286 |
+| Strict target | >69.3 | >54.4 | >88.1 | >64.3 |
+
+Only LasHeR-Miss SR clears its threshold. These historical weights are
+not the currently training candidates. Earlier live-evaluation entries
+below are dated history. No combined target attainment or three validated
+paper modules has been established.
+
 ## Latest Evidence, 2026-10-31 13:56 UTC+08
 
 Both protected-template arms completed192updates, selectedepoch6, retained

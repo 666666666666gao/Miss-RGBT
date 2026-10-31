@@ -1,4 +1,5 @@
 """Check factorial receipts and compare equal-lag sensor-state pairs."""
+import argparse
 import json
 from pathlib import Path
 
@@ -16,10 +17,10 @@ def center(box):
     return box[:2] + box[2:] / 2
 
 
-def main():
-    report = json.loads((OUTPUT / "report.json").read_text())
-    completion = json.loads((OUTPUT / "completed.json").read_text())
-    assert sha(OUTPUT / "report.json") == completion["report_sha256"]
+def main(output):
+    report = json.loads((output / "report.json").read_text())
+    completion = json.loads((output / "completed.json").read_text())
+    assert sha(output / "report.json") == completion["report_sha256"]
     assert report["calls"] == completion["calls"] == 576
     assert report["baseline_state_unchanged"]
     for path, expected in report["launch"]["source_sha256"].items():
@@ -83,7 +84,7 @@ def main():
     for state in ["11", "01", "10"]:
         contrasts["state%s_lag2_minus_lag1" % state] = contrast("2_" + state, "1_" + state)
     result = dict(
-        report_sha256=sha(OUTPUT / "report.json"), analyzer_sha256=sha(Path(__file__)),
+        report_sha256=sha(output / "report.json"), analyzer_sha256=sha(Path(__file__)),
         calls_verified=576, rows_verified=384, per_video=per_video, contrasts=contrasts,
         video_macro={cell: {metric: float(np.mean([per_video[name][cell][metric] for name in names]))
                             for metric in metrics} for cell in per_video[names[0]]},
@@ -92,11 +93,14 @@ def main():
               "the prior observation availability in this fixed context, not whole-tracker "
               "causal mechanisms or deployment gains. Complete prior GPU crop histories and "
               "fixed initial templates limit transfer. Reused development, no official scores.")
-    with (OUTPUT / "analysis.json").open("x") as stream:
+    with (output / "analysis.json").open("x") as stream:
         json.dump(result, stream, indent=2)
         stream.write("\n")
     print(json.dumps(dict(video_macro=result["video_macro"], contrasts=contrasts), indent=2))
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    main(args.output)

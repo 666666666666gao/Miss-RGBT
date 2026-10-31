@@ -1,4 +1,5 @@
 """CPU factorial diagnostic separating temporal lag from sensor-state pairs."""
+import argparse
 import datetime
 import json
 import os
@@ -38,14 +39,14 @@ def center(box):
     return value[:2] + value[2:] / 2
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=False)
+def main(source, output):
+    output.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     cv2.setNumThreads(1)
     started = time.time()
-    parent = json.loads((SOURCE / "report.json").read_text())
-    assert sha(SOURCE / "report.json") == json.loads(
-        (SOURCE / "completed.json").read_text())["report_sha256"]
+    parent = json.loads((source / "report.json").read_text())
+    assert sha(source / "report.json") == json.loads(
+        (source / "completed.json").read_text())["report_sha256"]
     checkpoint = ROOT / "checkpoints/e0_availability/epoch20.pth.tar"
     update_config_from_file(str(RUNTIME / "experiments/cadtrack/cadtrack.yaml"))
     tracker = CpuDiagnosticTracker(cfg, str(checkpoint))
@@ -53,7 +54,7 @@ def main():
     digest = network_digest(tracker.network)
     launch = dict(
         pid=os.getpid(), started_utc=datetime.datetime.utcnow().isoformat() + "Z",
-        checkpoint_sha256=sha(checkpoint), parent_report_sha256=sha(SOURCE / "report.json"),
+        checkpoint_sha256=sha(checkpoint), parent_report_sha256=sha(source / "report.json"),
         device="cpu", threads=4, source_sha256={
             str(path): sha(path) for path in [
                 Path(__file__), ROOT / "cpu_diagnostic_tracker.py",
@@ -62,14 +63,14 @@ def main():
         current_state="11", expected_model_calls=576,
         crop_rule="Saved complete-track previous-frame box at each observation time",
         template_rule="First-frame complete templates fixed; reset call index before each probe",
-        scope="Reused16 development videos; fixed-crop CPU counterfactual, not closed-loop "
+        scope="Registered16 development videos; fixed-crop CPU counterfactual, not closed-loop "
               "tracking or an official/module gain. GT after initialization used only for metrics.")
-    save(OUTPUT / "launch.json", launch)
+    save(output / "launch.json", launch)
     print("LAUNCH " + json.dumps(launch), flush=True)
     records = []
     calls = 0
     for gpu in [0, 1]:
-        folder = SOURCE / ("gpu%d" % gpu)
+        folder = source / ("gpu%d" % gpu)
         worker = json.loads((folder / "report.json").read_text())
         assert sha(folder / "report.json") == parent["worker_receipts"][str(gpu)]["report_sha256"]
         for item in worker["launch"]["cohort"]:
@@ -122,18 +123,22 @@ def main():
                                 velocity_error=float(np.linalg.norm(velocity - true_velocity)),
                                 forecast_center_error=float(np.linalg.norm(forecast - center(gt[target]))))
                         records.append(row)
-            save(OUTPUT / "progress.json", dict(calls=calls, records=len(records),
+            save(output / "progress.json", dict(calls=calls, records=len(records),
                                                 last_sequence=name, seconds=time.time() - started))
             print(json.dumps(dict(sequence=name, calls=calls,
                                   seconds=time.time() - started)), flush=True)
     assert calls == launch["expected_model_calls"]
     assert network_digest(tracker.network) == digest
-    save(OUTPUT / "report.json", dict(launch=launch, records=records, calls=calls,
+    save(output / "report.json", dict(launch=launch, records=records, calls=calls,
                                      baseline_state_unchanged=True, seconds=time.time() - started))
-    save(OUTPUT / "completed.json", dict(report_sha256=sha(OUTPUT / "report.json"),
+    save(output / "completed.json", dict(report_sha256=sha(output / "report.json"),
                                         calls=calls, seconds=time.time() - started))
     print("COMPLETE", flush=True)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", type=Path, default=SOURCE)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    main(args.source, args.output)

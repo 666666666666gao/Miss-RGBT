@@ -1,0 +1,34 @@
+{
+  "pid": 1138583,
+  "started_utc": "2026-10-31T06:12:26.479138Z",
+  "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e",
+  "parent_report_sha256": "b77bf568199a27aded01559eccc54c22fd7c10879eab4b838ca6d734965783de",
+  "device": "cpu",
+  "threads": 4,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/probe_fixed_crop_motion28.py": "560798364851d68d981d114df33cdcd300f3b0342a516d5f98ee94551c659fcc",
+    "/home/gaob/Miss-RGBT/cpu_diagnostic_tracker.py": "cae1ef91b909c2f43718453ebbbba8d36887d07aa79edc15e1bff799709d8b14",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4"
+  },
+  "blind_targets": [
+    5,
+    11,
+    17,
+    23
+  ],
+  "lags": [
+    1,
+    2
+  ],
+  "prior_states": [
+    "11",
+    "01",
+    "10"
+  ],
+  "current_state": "11",
+  "expected_model_calls": 576,
+  "crop_rule": "Saved complete-track previous-frame box at each observation time",
+  "template_rule": "First-frame complete templates fixed; reset call index before each probe",
+  "scope": "Registered16 development videos; fixed-crop CPU counterfactual, not closed-loop tracking or an official/module gain. GT after initialization used only for metrics."
+}

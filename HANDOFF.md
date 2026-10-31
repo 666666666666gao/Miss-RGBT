@@ -1377,3 +1377,36 @@ automaticindependentanalysisafterprobe. ETA14:02-14:04;preservequeuedhashes.
 FourmaintrainersandGPUreplication1090396/1090400/1090441/1090444
 verifiedlive13:50. Noofficialthresholds/threevalidatedmodulesyet.
 
+## 2026-10-31 14:07 UTC+08 - Equal-lag results and replication queue
+
+576-call CPUprobe completed303.75s, independent384rowanalysispassed.
+Originalcurrent11 lag2 reducesvelocityerror acrossall3priorstates;
+current11vsprior10effectuncertain. 3x3posthocfactorialusesalready-saved
+frame2/3etc outputs,64validtriplets,zeroaddedcalls. Same-statepriorbest
+macrovelocityerrorineachcurrentstate. Current01/10 same-minus-completeprior
+velocityerror -2.912099/-1.035978px/frame,95%videoCIbelowzero.
+Thuscompletepriorqualityaloneinsufficienthere; no closedloop/officialclaim.
+Detailsdocs/MOTION_IDENTIFIABILITY_20261031.md; reports/fixed-crop-motion-*.
+
+OldCPUsourcesarchived/hashverifiedbeforeaddingpathargs. Freshfactorial
+queue1129716launched14:07:20,verifiedlive14:07:46. Waitactual1090400
+every300s, requirefreshadjacentcompletionhash, repeat576callsandanalyses.
+Outputreports/server28-fixed-crop-motion-replication16-20261031,
+logsibling.log. ETA14:18-14:25subjectreferencecompletion. Preservequeued
+sources. No activeGPUexecutionchanges or newGPUallocations.
+At14:07:46adjacentbothworkers32/32,controllerstilldoingfinalchecks;
+availabilitynotyetstarted. All4maintrainerslive.
+
+ReverifiedhistoricalA Miss68.565174/54.621376 and84.964353/60.511286,
+onlyLasHeR-MissSRabovegoal. Centralresearchstatusupdatedsostalehistorical
+liveentriescannotbeconfusedwithcurrentstate. Fullobjectiveunfinished.
+
+At14:12:13adjacentfresh64-track reportfinal/verified. OutageholdPR/SR
+79.572046/65.009895 vsadjacent90.016246/71.278588;large delta
++10.444200/+6.268693butCI[-.283139,25.678533]/[-.240559,15.576421]
+cross0, SR10wins6losses;2videostaildominates,no stablegainclaim.
+Availability1132262/workers1132272/1132273verifiedlive,started~14:08:47.
+CPUfreshworker1138583+runner1129716live14:13:40,108/576calls65.01s;
+expect14:18-14:22automaticanalysis. Batch10utility9/17000random9/17575.
+DetailedfreshreportsandlimitsinMOTION_IDENTIFIABILITYdoc. Fullgoalactive.
+
