@@ -1943,3 +1943,24 @@ higherthwartbottle_quezhen: complete PR20/SR42.393365/27.807493 and block32
 these do not form a complete paired contrast. Four trainers remained alive.
 No partial arm or official claim; continue on live process handles.
 
+## 2026-10-31 21:47 UTC+08 - Repair Control Complete
+
+Repair controller393144 completed and exited normally. All96 fresh-
+development trajectories were independently checked; report SHA
+`73c5e905bc944f27ba5da274284fb3c70808037d64403c324b54a0c56adf37a5`
+matches the downloaded report and server completion receipt. Utility
+native-minus-off PR20/SR was+0.462/+0.338pp on complete and+0.822/+0.538pp
+on block32 outage; all four paired95% intervals cross zero. Random
+native-minus-off showed complete-input harm and a high-variance outage
+contrast. This is inconclusive Utility-module evidence, not official
+benchmark gain or a paper contribution. Detailed results:
+`docs/REPAIR_TRAJECTORY_CONTROL_20261031.md`.
+
+At21:56:25+08 all four training command lines remained live. Fixed
+Utility/Random were epoch13 updates31525/31825; batch10 Utility was epoch13
+update24575 and Random epoch14 update26700. Latest completed candidate
+validation was Random epoch13 mean5.001639 over128 cached tuples; this is
+not a tracking metric or convergence proof. Final-five selection, official
+LasHeR/RGBT234 complete/Miss evaluation, and weight cleanup remain pending.
+Preserve registered weights and active source/receipt files.
+

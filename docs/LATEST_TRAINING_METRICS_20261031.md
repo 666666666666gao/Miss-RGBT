@@ -206,3 +206,25 @@ SHA256 `5af4a9862c0da019ae70e7ee0bbcb5fa0d57271564c17b0bb24b1894dcfe4d2a`;
 `reports/fixed-random-recovered-validation-history-20261031.json`,
 SHA256 `cdd57589a563eb24dc29e49ab7eaece9857f2a5eb40a6229b111c8a02d93df16`.
 These fixed128-sample cached losses remain proxies, not PR/SR or convergence.
+
+## Live Training Snapshot, 2026-10-31 21:56 UTC+08
+
+Server process command lines were verified live at21:55:22+08. Latest
+training-log records at21:56:25+08:
+
+| Campaign | Epoch/update | Latest completed cached validation |
+|---|---:|---|
+| Fixed Utility | 13 / 31525 | Epoch12, mean4.899094 |
+| Fixed Random | 13 / 31825 | Epoch12, mean4.977035 |
+| Batch10 Utility | 13 / 24575 | Epoch12, mean5.004183 |
+| Batch10 Random | 14 / 26700 | Epoch13, mean5.001639 |
+
+Batch10 Random epoch13 mean improved by0.036279 from epoch12 and reset
+stale-epoch count to0; epoch14 remains in progress. The other three rows
+show the latest update, not a completed validation at that update. These
+cached128-tuple task-loss values are not PR/SR and do not establish
+convergence. The fixed runs retain their20-epoch budget; candidate
+early-stop and final-five full-val97 selection protocols remain active.
+No current-campaign official complete/Miss score or common selected weight
+exists yet. The four training processes remain active; do not clean up
+weights before final-five validation and selection complete.

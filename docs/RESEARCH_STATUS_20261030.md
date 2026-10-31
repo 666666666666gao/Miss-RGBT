@@ -416,3 +416,21 @@ docs/UTILITY_RANKING_AUDIT_20261030.md.
 Training-log per-batch-mean correlation was also near zero, but is only a
 weak aggregate diagnostic, not individual-region calibration evidence:
 reports/server28-utility-training-audit-20261030.json.
+
+## Closed-Loop Repair Control, 2026-10-31
+
+The registered native/sham/compensation-off inference comparison completed
+on eight fresh LasHeR development videos:96 trajectories with independent
+trajectory, metric, hash, hold, and sham-parity checks. Utility native minus
+off changed outage PR20/SR by+0.822/+0.538 pp, but both paired-video 95%
+intervals cross zero. Complete-input Utility effects also cross zero.
+Random native minus off instead showed complete-input harm and a highly
+variable outage result. This does not validate the compensation path as a
+stable module; see `docs/REPAIR_TRAJECTORY_CONTROL_20261031.md` for all
+aggregates, paired intervals, and the report SHA.
+
+The finding is development-only and uses retained epoch6 weights. Official
+LasHeR-Miss and RGBT234-Miss thresholds, approximately+2-point gains on
+both benchmarks, and three empirically validated paper modules remain
+unmet. Do not promote a method from this control or select weights from
+these eight videos.

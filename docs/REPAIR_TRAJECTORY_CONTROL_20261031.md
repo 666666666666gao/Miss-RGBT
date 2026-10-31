@@ -113,3 +113,45 @@ receipts for the4221-frame `higherthwartbottle_quezhen` (complete PR20/SR
 including utility native/sham and off beginning; these are partial per-arm
 records, not a paired aggregate. The retry CPU witness passes parity/frozen
 state checks, and its absolute self-source hash matches the current source.
+
+## Completed Paired Result
+
+At21:47 UTC+08 the original controller exited after both workers and the
+independent analyzer completed. All96 trajectories across the registered
+eight videos were checked; native/sham equality passed. The downloaded
+aggregate report SHA256 is
+`73c5e905bc944f27ba5da274284fb3c70808037d64403c324b54a0c56adf37a5`,
+and matches the server completion receipt. The full report remains at
+`reports/server28-repair-trajectory8-retry-20261031/report.json` on server28
+and `outputs/server28-repair-trajectory8-retry-20261031.json` locally.
+
+| Condition | Model/arm | PR20 | SR |
+|---|---|---:|---:|
+| Complete | Utility native/sham | 88.069833 | 72.546582 |
+| Complete | Utility off | 87.607351 | 72.208823 |
+| Complete | Random native/sham | 85.504068 | 71.008909 |
+| Complete | Random off | 86.813567 | 71.839161 |
+| Block32 outage | Utility native/sham | 71.922056 | 60.210104 |
+| Block32 outage | Utility off | 71.100426 | 59.672526 |
+| Block32 outage | Random native/sham | 71.206848 | 59.709433 |
+| Block32 outage | Random off | 67.179369 | 56.478608 |
+
+The paired native-minus-off effects are:
+
+| Condition/model | PR20 delta (95% paired-video CI) | SR delta (95% paired-video CI) | SR wins/ties/losses |
+|---|---|---|---:|
+| Complete Utility | +0.462 pp [-0.114, 1.502] | +0.338 pp [-0.285, 1.235] | 3/0/5 |
+| Block32 Utility | +0.822 pp [-0.770, 2.694] | +0.538 pp [-0.844, 2.099] | 5/0/3 |
+| Complete Random | -1.309 pp [-3.072, -0.034] | -0.830 pp [-1.867, -0.156] | 0/1/7 |
+| Block32 Random | +4.027 pp [-0.285, 12.046] | +3.231 pp [-0.192, 9.562] | 3/0/5 |
+
+Each interval uses10000 paired-video bootstrap draws with seed2027. Utility
+native-minus-off intervals cross zero in both conditions, so this control
+does not establish a stable Utility compensation benefit. Random has a
+complete-input regression and a highly variable outage contrast; this is
+not evidence for a universal intervention. The cohort is eight fresh
+development videos, not the official LasHeR-Miss or RGBT234-Miss evaluation.
+This is an inference intervention on retained epoch6 weights, not matched
+retraining, isolated selector causality, or a validated paper module.
+No weights were changed or deleted. Continue the registered training,
+final-five common-checkpoint evaluation, and official benchmark gates.
