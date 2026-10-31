@@ -1892,3 +1892,27 @@ novelty, official gain or independent network replay. ETA20:55-21:40+08,
 refine long native receipt;300spolls near completion. Preserve registered
 new sources and dependencies until analysis. Goal remains incomplete.
 
+## 2026-10-31 20:22 UTC+08 - Repair trajectory control queued
+
+New run_repair_trajectory28.py / launch_repair_trajectory28.py queued behind
+actual state-template controller342664. Retained epoch6 Utility/Random,
+fresh dev76..83 (7059frames, long higherthwartbottle_quezhen4221),
+native/sham/compensation-off x complete/block32 =96trajectories. Off returns
+exact pre-compensation tensor objects while selection/RNG/overhead remains.
+CPU7-call/model/arm witness verifies sham/native, off/disabled-module,
+RNG restoration and frozen digest. Witness
+e9f3bb9d5125e6dcdecde3700a2ef5bd346aa4213d44c5799fb319dc6406dbbb0;
+source1ebb46e1f68d66af53d0d4ffccd8d0116a3db5735dc36044827a4b28a1458aa3.
+Queue controller366251 registered20:21:15; no GPU workers until prior
+48-track report/hash passes, its controller exits, and >=3000MiB free on
+GPU0/1. Original epoch6 weights and registered sources remain protected.
+This is inference intervention, not matched retraining/module causal proof.
+
+Published8c6d7c7947f813ffef1be4086a7108ce56bc2e92 to
+origin/codex/server28-research with exact remote HEAD. Repair control CPU
+witness passed and controller366251 is registered behind actual
+state-template controller342664; no second GPU job starts early.
+At20:22 the preceding state-template worker command lines342898/342899
+were verified actual. Preserve both experiment source sets and registered
+epoch6 checkpoints until their respective analyses complete.
+
