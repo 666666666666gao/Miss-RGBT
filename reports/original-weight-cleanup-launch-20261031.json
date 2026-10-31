@@ -1,0 +1,11 @@
+{
+  "pid": 197828,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "cleanup_original_weights28.py",
+    "--mode",
+    "wait"
+  ],
+  "registration_sha256": "3cc1a95c53ed920f018ed06cd677f33ee3870ab85b644d1b2e5f2e7f65e1ea0b"
+}

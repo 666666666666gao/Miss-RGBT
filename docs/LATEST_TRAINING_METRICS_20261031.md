@@ -1,6 +1,8 @@
 # Recent Training Metrics
 
 Verified server state: 2026-10-31 17:59:33 UTC+08 (05:59:33 EDT).
+Cached validation updated through18:13 UTC+08; the training snapshot below
+remains the explicitly timestamped17:59:33 observation.
 
 ## Live Recovery Training
 
@@ -69,16 +71,20 @@ analyzer verified582 trajectories, hashes, metrics and scored frame counts.
 128 fixed tuples; complete templates, search availability varied.
 Task loss is lower-is-better and is not a tracking precision metric.
 
-| State | Utility epoch9 loss | Random epoch9 loss | Random epoch10 loss |
+| State | Utility epoch10 loss | Random epoch10 loss | Random epoch11 loss |
 |---|---:|---:|---:|
-| Both available | 4.343521 | 4.345498 | 4.239481 |
-| TIR only | 5.634853 | 5.683127 | 5.984103 |
-| RGB only | 4.961537 | 4.888636 | 4.767208 |
-| Mean | 4.979970 | 4.972420 | 4.996931 |
+| Both available | 4.387996 | 4.239481 | 4.348452 |
+| TIR only | 5.847460 | 5.984103 | 5.879302 |
+| RGB only | 4.843250 | 4.767208 | 4.870980 |
+| Mean | 5.026235 | 4.996931 | 5.032911 |
 
 These proxy losses do not establish convergence or measure closed-loop
-missing-template history. Random epoch10 mean is worse than epoch9.
-Utility epoch10 validation is not yet complete.
+missing-template history. Utility10 is worse than Utility9; Random11 is
+worse than Random10. Utility10 predates its first post-drop training epoch;
+Random11 is its first post-drop reference. The registered patience resets
+at11, so earliest candidate plateau stop remains14, not11 or12.
+Recovered histories preserve the old entries; the new `seconds` fields
+restart at recovery and must not be interpreted as total campaign time.
 
 ## Full Candidate Validation History
 
@@ -96,12 +102,20 @@ All entries use the same fixed128 validation tuples.
 | 7 | 4.344943 | 5.822408 | 5.042096 | 5.069816 | 4.415956 | 5.907963 | 5.084766 | 5.136228 |
 | 8 | 4.285330 | 5.838099 | 4.768391 | 4.963940 | 4.340837 | 5.815869 | 4.829668 | 4.995458 |
 | 9 | 4.343521 | 5.634853 | 4.961537 | 4.979970 | 4.345498 | 5.683127 | 4.888636 | 4.972420 |
-| 10 | pending | pending | pending | pending | 4.239481 | 5.984103 | 4.767208 | 4.996931 |
+| 10 | 4.387996 | 5.847460 | 4.843250 | 5.026235 | 4.239481 | 5.984103 | 4.767208 | 4.996931 |
+| 11 | pending | pending | pending | pending | 4.348452 | 5.879302 | 4.870980 | 5.032911 |
 
 The lowest recorded Utility mean is epoch8,4.963940; Random is
 epoch3,4.897613. These are proxy minima, not final selected checkpoints.
 The campaign selects one weight using full tracking evaluations of its final
 five checkpoints.
+
+Recovered-history receipts:
+`reports/candidate-utility-recovered-epoch10-validation-20261031.json`,
+SHA256 `a54d7580b25ecf0ae8710927b783b65917c56032d7bfc4be1e75d1c699e51175`;
+`reports/candidate-random-recovered-epoch11-validation-20261031.json`,
+SHA256 `c3222577181e8f2a1763c4c5a15092b347a30efbfe675340986e4f126025beab`.
+Server and downloaded file hashes match.
 
 ## Historical Official Reference
 

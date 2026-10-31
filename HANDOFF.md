@@ -1727,3 +1727,31 @@ All16notuniformlybetter. U-R native+.143197/-.027140/-.098227,off
 NotPRSR/retrainedablation/official/novelmodule. No activeparameterchanges.
 Gap64running; final5/official/3modules/convergence/globalcleanupincomplete.
 
+## 2026-10-31 18:19 UTC+08 - New validation and original-weight cleanup queue
+
+RecoveredUtility10validationmean5.026235371828079,states11/01/10=
+4.387995824/5.847460255/4.843250036, worseUtility9. Random11mean
+5.032911457121372,states4.348451704/5.879302219/4.870980449,worseRandom10.
+No convergencedeclaration;epoch11postdropreset/earliestplateaustop14.
+DownloadedfullhistoriesSHAa54d7580.../c3222577...matchserver. Latestmetricsdoc
+now includesUtility10/Random11,trainingupdate snapshotstill17:59:33.
+
+Newcleanup_original_weights28.py actualfixturewitnessremoved4temporary
+files,preserved4selected+1unrelated,source2685ec98c14d09d565709e1a8aa476c8b6f202fdf68946eb843e7c96c5acf7ab.
+Queue197828registered18:17:15andactualalive18:17:57;300spolls,CPUonly.
+Registration3cc1a95c53ed920f018ed06cd677f33ee3870ab85b644d1b2e5f2e7f65e1ea0b
+captures12originalepochweights fromfourcampaigns. Waitsallfourfinal
+independentverifications,checksselectedcommonweights+CPUauditcompletion,
+thenexactpath/size/hashinventorybeforedeletion. Keeps4selectedrecoveryweights;
+doesnotselectontest,claimtargets/modules,orcleanunrelatedexperiments.
+Approvedplan/perfilefsyncedjournal/completionreceipts;realdeletionpending.
+Originalverifiersreadonlyreportsremainunchanged;newcleanupreceiptseparate.
+Docdocs/ORIGINAL_WEIGHT_CLEANUP_20261031.md. Preserveallsourcesandregistered
+originalpaths; donotrepurposethemfornewjobswhilepending. Fullgoalactive.
+
+At18:20:59 gap35/64fulltracks:GPU0 9/16 and17396/33776registeredcalls
+infinishedtracks;GPU1 26/48 and17780/37544. Actualelapsed~21min projects
+final18:40-18:55+08includingparent300sdelay,reviseearlier19:00-20:00.
+CandidateU11/update20181,R12/22222;nextvalidation~19:30-19:50+08.
+Do notpollrepeatedlybeforethosemilestones;allregisteredvideosretained.
+
