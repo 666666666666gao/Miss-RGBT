@@ -1065,3 +1065,30 @@ NoLR/train/selection/cleanup changes. Continuefinal5protocol.
 docs/EPOCH05_COMPLETE_RESULTS_20261031.md and reports/epoch05-complete-
 paired-analysis-20261031.json contain fullverifiedresults/intervals.
 
+## 2026-10-31 03:34 UTC full epoch5 health complete
+
+Six-cell tracking finished11:23:42+08, paired analysis11:24:33+08.
+All582 trajectories/GT/metrics verified. Outage PR20/SR:
+E0 64.528129/52.346049, utility5 70.868974/56.749288,
+random5 71.457491/57.152398. Utility-E0 +6.340845/+4.403239pp;
+utility-random -.588517/-.403110,95%video CIs both cross0.
+No demonstrated selector benefit; fixed val97 outage is not official Miss.
+Final analysis SHA7034c378efa3dd1430dd32dcd94e968aaa11832a3e333f8a95b922aa106f7c31.
+
+CPU-only paired penalty analysis rechecked582 tracks. Utility-E0 reduction
+in outage penalty +2.623430PR/+1.584479SR, CIs cross0; utility-random
++.482292/+.445789 also CIs cross0. State00/11 SR penalties did not improve
+at point estimates; state01 exploratory benefit vsE0, not vsrandom.
+No causal/template/motion claim or val-based tuning.
+Report SHAfbda5dbf76cff4e812455b2202f3f97401bf5449318689f31dffa80452c5cfcb.
+See docs/EPOCH05_FULL_RESULTS_20261031.md and matching reports.
+
+At11:32:50+08 batch10 original trainers live, epoch8 updates14007/14466.
+Epoch7 validation means5.069815951/5.136228281 worsened; keep original
+LR/stop/final5 protocol. Next epoch8 boundaries roughly12:52random/
+13:27utility+08, uncertain. At11:33:25+08 fixed20 original trainers live,
+epoch9 updates20767/20806; evaluator3463984 waiting. Both batch10
+controllers3816049/3816050 live. Health controller570241 and post613855
+finished normally; do not restart them. Official goals, final5 common
+checkpoint selection/cleanup and three modules remain incomplete.
+

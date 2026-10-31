@@ -1,0 +1,11 @@
+{
+  "label": "utility",
+  "condition": "alternating_outage",
+  "sequences": 97,
+  "frames": 54646,
+  "scored_frames": 54289,
+  "PR20": 70.86897358258348,
+  "SR": 56.74928814567882,
+  "seconds": 3011.3156769275665,
+  "checkpoint_sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+}

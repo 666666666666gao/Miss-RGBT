@@ -1,0 +1,73 @@
+{
+  "results": [
+    {
+      "label": "E0",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 75.87916370270696,
+      "SR": 61.654017215477666,
+      "seconds": 4391.126217842102,
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    {
+      "label": "utility",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 79.59657844569887,
+      "SR": 64.4727766284708,
+      "seconds": 3529.7471528053284,
+      "checkpoint_sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+    },
+    {
+      "label": "utility",
+      "condition": "alternating_outage",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 70.86897358258348,
+      "SR": 56.74928814567882,
+      "seconds": 3011.3156769275665,
+      "checkpoint_sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+    },
+    {
+      "label": "E0",
+      "condition": "alternating_outage",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 64.52812878990574,
+      "SR": 52.34604940776634,
+      "seconds": 4391.378163576126,
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    {
+      "label": "random",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 80.66738780719817,
+      "SR": 65.32167522847284,
+      "seconds": 3895.9362139701843,
+      "checkpoint_sha256": "7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4"
+    },
+    {
+      "label": "random",
+      "condition": "alternating_outage",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 71.45749085760909,
+      "SR": 57.152398074942944,
+      "seconds": 3242.1196150779724,
+      "checkpoint_sha256": "7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4"
+    }
+  ],
+  "official_test_used": false,
+  "checkpoint_selection_used": false,
+  "ended_utc": "2026-10-31T03:23:42.101217Z"
+}
