@@ -1983,3 +1983,23 @@ GPU0-3 power-limit telemetry was250W; temperatures were83/78/78/76C at
 Preserve registered weights until their final-five evaluation and cleanup
 protocols complete.
 
+## 2026-10-31 22:37 UTC+08 - Training progress
+
+At22:37:03+08 all four trainers, four final-validation waiters, and the
+original-weight cleanup waiter remained live. Current updates were Fixed
+Utility epoch14/32525, Fixed Random epoch14/32800, Batch10 Utility
+epoch13/25350, and Batch10 Random epoch14/27475.
+
+Fixed Utility completed cached epoch13 validation with losses11/01/10
+4.259495/5.816765/4.654164, mean4.910141, stale_epochs2, stop=false.
+This is0.011047 higher than epoch12 and is not PR/SR. The latest completed
+validations for Fixed Random, Batch10 Utility and Batch10 Random remain
+epoch13/4.945365, epoch12/5.004183, and epoch13/5.001639, respectively.
+These are cached128-tuple mean losses, not convergence evidence. No current-
+campaign official complete/Miss scores or final-five selected checkpoint
+exist yet.
+
+GPU telemetry at22:37:03 was83/80/78/75C with250W power limits on GPUs0-3;
+utilization was100/100/94/100%. This does not verify the85C target setting.
+Keep registered weights until the current validation and cleanup gates end.
+

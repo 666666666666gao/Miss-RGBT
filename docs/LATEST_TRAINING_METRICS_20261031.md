@@ -252,3 +252,23 @@ weights remain pending.
 GPU telemetry at22:25:21 showed temperatures83/78/78/76C and power limits
 of250W on GPUs0-3. This does not verify a configured85C target. Preserve
 registered weights until the final-five evaluation and cleanup gates finish.
+
+## Live Training Snapshot, 2026-10-31 22:37 UTC+08
+
+At22:37:03+08 all four trainers, four final-validation waiters, and the
+original-weight cleanup waiter remained live. Current updates were Fixed
+Utility epoch14/32525, Fixed Random epoch14/32800, Batch10 Utility
+epoch13/25350, and Batch10 Random epoch14/27475.
+
+Fixed Utility completed cached epoch13 validation with losses11/01/10
+4.259495/5.816765/4.654164, mean4.910141, stale_epochs2, stop=false.
+This is0.011047 higher than epoch12, and is not PR/SR. Latest completed
+validations for Fixed Random, Batch10 Utility and Batch10 Random remain
+epoch13/4.945365, epoch12/5.004183, and epoch13/5.001639. All are mean
+task losses on128 fixed tuples. Current-campaign official complete/Miss
+scores and final-five selected checkpoint remain pending.
+
+GPU telemetry at22:37:03 showed temperatures83/80/78/75C, power limits
+250W on all GPUs, and utilization100/100/94/100%. This does not verify a
+configured85C temperature target. Preserve registered weights until the
+existing evaluation and cleanup gates complete.
