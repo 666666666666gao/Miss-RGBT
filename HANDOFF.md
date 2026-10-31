@@ -1512,3 +1512,23 @@ Preserve2newsourcesAND4activecenter16sources/sharedhelpersuntilanalyses.
 At15:22:52all4trainers+1212195/1212202/1212203and1256793actualalive.
 NoGPU2/3extrajob,notemperature/powerchecks. Fullobjectiveunfinished.
 
+## 2026-10-31 15:36 UTC+08 - Primary-paper correction
+
+Actual local DCTrack PDF SHA256:
+ac899ca27264de01218dd7c86ee4b89dddbf218844dcf14d0697d672890cd715.
+Withdraw unsupported DCTrack-to-DSRTrack repository identity and feature
+disentanglement claims. Actual sections3.3-3.5 specify max-intensity>=5
+availability, image substitution, IPT/MMCITrack/DAM4SAM instantiations,
+past-state linear extrapolation blended with Kalman, and buffered replay.
+The intermediate STD/SIAMTFA/DiMP/future-interpolation account is also
+unsupported by these bytes. See docs/DCTRACK_PRIMARY_REVIEW_20261031.md.
+Do not use generic routing or motion prediction as our novel module.
+
+Four trainers and center16 workers verified live15:33:50; center16 parent
+1212195 and queued geometry1256793 verified live15:36:34. No job restarted.
+Latest batch10 utility/random updates18525/19150, both epoch10, logged
+losses finite. No new validation/convergence/official threshold evidence.
+Next meaningful random10 boundary~16:20, center16~16:30-17:00 UTC+08.
+Registered sources untouched; geometry still awaits predecessor completion.
+Full objective remains incomplete.
+

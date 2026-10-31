@@ -7,11 +7,14 @@ Selected exact Git blobs are retained in local `work/dsrtrack-source-review`.
 
 ## Identity And Scope
 
-The previously located DCTrack paper links this repository, but the current
-README names DSRTrack and describes disturbance-aware online-state recovery.
-Its model implements anchor-guided cross-modal template repair. That is not
-enough to identify the checked-out code as the paper's disentanglement and
-missing-feature reconstruction implementation. Do not use its scores or
+The pinned README names DSRTrack and describes disturbance-aware online-state
+recovery. Its model implements anchor-guided cross-modal template repair.
+The earlier assertion that the DCTrack paper links this repository was not
+verified and is withdrawn. The earlier description of DCTrack as feature
+disentanglement and missing-feature reconstruction was also inaccurate:
+the inspected primary PDF describes availability routing, image substitution,
+and motion prediction. See `DCTRACK_PRIMARY_REVIEW_20261031.md` for the exact
+PDF receipt and bounded findings. Do not use this repository's scores or
 mechanism as a verified DCTrack reproduction.
 
 The complete pinned tree contains no filename matching LICENSE, LICENCE or
