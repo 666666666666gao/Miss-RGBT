@@ -1,7 +1,8 @@
 # Historical A utility20 official Miss evaluation
 
 The historical `a_utility_full20_seed2027` checkpoint completed the official
-paired Miss evaluation on 28 October 31, 2026. It covered all479 sequences
+paired Miss evaluation on server28 on October31,2026 (UTC+08:00),
+equivalent to October30,2026 in UTC. It covered all479 sequences
 and337353 frames in12528.71seconds using one worker on each of GPUs0/1.
 The evaluated checkpoint SHA256 is
 `c4aabefb495344b6d5e6e17655ac20fd51c4e2dec575843133096b319e047db3`.

@@ -926,3 +926,29 @@ boundaries are roughly11/5minutes away at observed throughput. Fixed20
 utility/random are in epoch7. All GPUs remain occupied, temperatures
 83/80/79/76C and configured power limits250W.
 
+## 2026-10-31 00:02 UTC verified results and time correction
+
+Server28 uses UTC+08:00. Earlier October31 entries labeled05:13..07:29
+UTC used the server wall clock and should read UTC+08:00. For example
+07:29+08:00 equals October30 23:29Z. Historical A Miss completed at
+October31 05:55:32+08:00, equivalent to October30 21:55:32Z.
+Older snapshots are historical, not the current running state.
+
+AtOctober31 08:02:19+08:00 the original four trainers were live.
+Batch10 utility/random both completed epoch5 and entered epoch6.
+Epoch5 mean validation task losses=5.0956679235/5.1295612181; both
+remain worse than epoch3, so no convergence or stable utility advantage.
+Next epoch6 boundaries are approximately09:45/09:25+08:00 using actual
+3.2/3.1seconds per update. Observe near milestones at180-300seconds.
+Detailed evidence: docs/CANDIDATE_EPOCH05_20261031.md and paired reports.
+
+CPU diagnostic552251 completed40.86seconds, four reused pilot development
+tuples and9 dynamic-template/search combinations per arm. All6 missing-
+search means decreased for the selected branch. Complete search with
+missing dynamic templates changed by-0.000819/+0.000196, mixed signs;
+complete-history outputs remain bitwise equal and baseline unchanged.
+This bounds the equality claim; it does not prove general benefit/harm.
+See docs/PROTECTED_HISTORY_DIAGNOSTIC_20261031.md and full JSON reports.
+No GPU job added/restarted; frozen runtime unchanged. Full objective
+remains incomplete, especially RGBT234-Miss and three validated modules.
+
