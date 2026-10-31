@@ -952,3 +952,24 @@ See docs/PROTECTED_HISTORY_DIAGNOSTIC_20261031.md and full JSON reports.
 No GPU job added/restarted; frozen runtime unchanged. Full objective
 remains incomplete, especially RGBT234-Miss and three validated modules.
 
+## 2026-10-31 00:11 UTC full-val97 tracking health launched
+
+Controller570241 started00:11:12Z /08:11:12+08:00; at08:11:45+08:00,
+workers570254/570255 were live on GPU0/1, each2266MiB beside19290MiB
+original trainers. GPU2/3 candidate training remains allocated22702MiB.
+Use one evaluator per GPU; do not increase concurrency or restart jobs.
+
+Full97 sequences/54646 frames each: GPU0 runs E0 complete, then utility
+epoch5 complete/outage; GPU1 runs E0 outage, then random epoch5 complete/
+outage. Reuse native validation sequence/metric functions unchanged.
+This is a predeclared epoch5 development health check, not checkpoint
+selection or official test tuning. Existing stopping/final-five selection
+continues unchanged. No tracking result exists yet.
+
+Budget3-4.5hours total per queue, pending measured speed. First meaningful
+longest-sequence check around08:20+08:00; inspect near subsequent estimated
+condition boundaries at180-300seconds. Output:
+reports/server28-epoch05-tracking-health-20261031, sibling.log.
+Protocol/launch evidence: docs/EPOCH05_TRACKING_HEALTH_20261031.md and
+reports/epoch05-tracking-health-launch-20261031.json.
+
