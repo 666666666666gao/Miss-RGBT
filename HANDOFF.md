@@ -1567,3 +1567,25 @@ decay/expiry/gates from distributionalone. Preserve currentregisteredjobs.
 15:49:26UTC+08 all4trainers+1212195/1212202/1212203/1256793actualalive.
 No finalcenter16/geometryresult yet. Next random10~16:20+08. Goalincomplete.
 
+## 2026-10-31 16:00 UTC+08 - Long-gap control queued
+
+New isolated run_calibration_gap28.py + launch_calibration_gap28.py.
+Same frozen E0/native/sham/center/geometry on freshdev60..63,4videos2384frames:
+boyaftertworunboys458,twopeople_0109 450,10rightblackboy333,leftbottle1143.
+Complete/block1/block32/block128,64tracks,loads1143/1241GPU0/1. No gates,
+decay/expiry/weight changes. Gap interaction not isolated cache-age causality.
+Short333video hasnoRGBonlyblock128;only1143video reachesblindblock128.
+CPU7framebodywitness exit0 equality/frozenpass;block32/128first7allcomplete
+so NOT longgap/CUDA/fulltrackproof. WitnessSHA
+050a54f4f770ce7a638b9adca160a0c7e1e3c4077e80c9bd9964a63e22a3dd7e.
+Controller1320176registered16:00:19andactuallylive16:00:45waiting1256793.
+RegistrationSHAe9260c3a032c2bc3395904d974066fb479639318020707a18aeee1b150f7a3b7.
+NewsourceSHA9c1ae50b7a9efbad10d83480fe2e8db786d6d1a7512280c4a55ec5b53a56c06e.
+No gapGPUworkeryet. Requires geometry4finalhash/controls thenfree3000MiB
+eachGPU0/1;poll300s,estimate60-120minafterrelease. Outputreports/
+server28-calibration-gap4-20261031,siblinglog. All4trainers+center16workers+
+geometryqueueactuallylive16:00:45. Do notmodifynewsource/shareddependencies
+untilanalysis;originalactive sourcesunchanged. SeeCALIBRATION_GAP_CONTROL doc.
+Nextmeaningfulrandom10~16:20,center16~16:30-17:00,utility10~16:54 UTC+08.
+Officialtargets,final5selection andthreevalidatedmodulesremainincomplete.
+

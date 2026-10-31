@@ -1,0 +1,14 @@
+{
+  "pid": 1320176,
+  "previous_pid": 1256793,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/run_calibration_gap28.py",
+    "--mode",
+    "controller",
+    "--wait-pid",
+    "1256793"
+  ],
+  "launched_utc": "2026-10-31T08:00:19.673720Z"
+}
