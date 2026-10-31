@@ -1,0 +1,193 @@
+{
+  "source_sha256": "8338daac3ee55a97e0d3177fbc5b8b9ce89b97dbad1f4cd66e61a158fcae3b7d",
+  "studies": {
+    "adjacent": {
+      "report_sha256": "9a076d9b77cd9c1b0c81a9ecec9e649f2b6e72a6e77cc1850a987900b29649a9",
+      "sequences": 16,
+      "blind_frames": 1290,
+      "history_counts": {
+        "adjacent_dt1_cross_state": 1290,
+        "matched_dt2_same_state": 1290
+      },
+      "trajectories": [
+        {
+          "sequence": "boybesidesbar2putcup",
+          "physical_gpu": 0,
+          "blind_frames": 93
+        },
+        {
+          "sequence": "2whitegirl",
+          "physical_gpu": 0,
+          "blind_frames": 27
+        },
+        {
+          "sequence": "blkskirtwoman",
+          "physical_gpu": 0,
+          "blind_frames": 72
+        },
+        {
+          "sequence": "The_girl_back_at_the_lab_1202",
+          "physical_gpu": 0,
+          "blind_frames": 22
+        },
+        {
+          "sequence": "moto2west",
+          "physical_gpu": 0,
+          "blind_frames": 13
+        },
+        {
+          "sequence": "motowithgood",
+          "physical_gpu": 0,
+          "blind_frames": 14
+        },
+        {
+          "sequence": "5manwakeright",
+          "physical_gpu": 0,
+          "blind_frames": 80
+        },
+        {
+          "sequence": "hyalinepaperfrontclothes",
+          "physical_gpu": 0,
+          "blind_frames": 333
+        },
+        {
+          "sequence": "motocome",
+          "physical_gpu": 1,
+          "blind_frames": 19
+        },
+        {
+          "sequence": "whitecarcoming",
+          "physical_gpu": 1,
+          "blind_frames": 25
+        },
+        {
+          "sequence": "shotmaker2",
+          "physical_gpu": 1,
+          "blind_frames": 105
+        },
+        {
+          "sequence": "right1stgirlin2ndqueue",
+          "physical_gpu": 1,
+          "blind_frames": 130
+        },
+        {
+          "sequence": "exercisebook",
+          "physical_gpu": 1,
+          "blind_frames": 193
+        },
+        {
+          "sequence": "midblkboyplayingphone",
+          "physical_gpu": 1,
+          "blind_frames": 49
+        },
+        {
+          "sequence": "rightboy479",
+          "physical_gpu": 1,
+          "blind_frames": 79
+        },
+        {
+          "sequence": "bikeblkturn",
+          "physical_gpu": 1,
+          "blind_frames": 36
+        }
+      ],
+      "max_saved_forecast_reconstruction_error": 0.0
+    },
+    "availability": {
+      "report_sha256": "1e5899fd63b37690d08c715c827a893035c487c7e469f6ce806e194e70c0670c",
+      "sequences": 16,
+      "blind_frames": 1290,
+      "history_counts": {
+        "adjacent_dt1_cross_state": 1290,
+        "matched_dt2_same_state": 1290
+      },
+      "trajectories": [
+        {
+          "sequence": "boybesidesbar2putcup",
+          "physical_gpu": 0,
+          "blind_frames": 93
+        },
+        {
+          "sequence": "2whitegirl",
+          "physical_gpu": 0,
+          "blind_frames": 27
+        },
+        {
+          "sequence": "blkskirtwoman",
+          "physical_gpu": 0,
+          "blind_frames": 72
+        },
+        {
+          "sequence": "The_girl_back_at_the_lab_1202",
+          "physical_gpu": 0,
+          "blind_frames": 22
+        },
+        {
+          "sequence": "moto2west",
+          "physical_gpu": 0,
+          "blind_frames": 13
+        },
+        {
+          "sequence": "motowithgood",
+          "physical_gpu": 0,
+          "blind_frames": 14
+        },
+        {
+          "sequence": "5manwakeright",
+          "physical_gpu": 0,
+          "blind_frames": 80
+        },
+        {
+          "sequence": "hyalinepaperfrontclothes",
+          "physical_gpu": 0,
+          "blind_frames": 333
+        },
+        {
+          "sequence": "motocome",
+          "physical_gpu": 1,
+          "blind_frames": 19
+        },
+        {
+          "sequence": "whitecarcoming",
+          "physical_gpu": 1,
+          "blind_frames": 25
+        },
+        {
+          "sequence": "shotmaker2",
+          "physical_gpu": 1,
+          "blind_frames": 105
+        },
+        {
+          "sequence": "right1stgirlin2ndqueue",
+          "physical_gpu": 1,
+          "blind_frames": 130
+        },
+        {
+          "sequence": "exercisebook",
+          "physical_gpu": 1,
+          "blind_frames": 193
+        },
+        {
+          "sequence": "midblkboyplayingphone",
+          "physical_gpu": 1,
+          "blind_frames": 49
+        },
+        {
+          "sequence": "rightboy479",
+          "physical_gpu": 1,
+          "blind_frames": 79
+        },
+        {
+          "sequence": "bikeblkturn",
+          "physical_gpu": 1,
+          "blind_frames": 36
+        }
+      ],
+      "max_saved_forecast_reconstruction_error": 0.0
+    }
+  },
+  "matched_velocity_equals_fixed_lag2_on_every_blind_frame": true,
+  "conclusion": "This schedule perfectly couples sensor-state matching to a two-frame difference. Availability-history results cannot distinguish it from ordinary lag2 velocity. Fresh videos under the same schedule do not remove this identifiability problem.",
+  "next_evidence": "Use equal temporal intervals with same/different state pairs, or a counterbalanced schedule, before claiming a sensor-state mechanism.",
+  "scope": "Read-only reconstruction of completed development tracks, including invalid-GT frames. No GT consulted, model calls, tuning, inference change or new metric gain."
+}

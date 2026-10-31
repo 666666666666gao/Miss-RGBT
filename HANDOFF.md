@@ -1358,3 +1358,22 @@ reports/server28-motion-replication16-{adjacent,availability}-20261031.
 UTC+08. No restart after SSH observation timeouts.
 Full target and three modules unproven; main final-five workflow pending.
 
+## 2026-10-31 13:56 UTC+08 - Motion identifiability audit
+
+Exact1290blindframes/study reconstruction verifies state-matched velocity
+equals ordinarylag2 at every blindframe,maxerror0. Includes3invalidGTframes
+excludedfromearlier1287accuracyrows. Fresh16replication cannot distinguish
+state matching andlag2 under identical schedule. It remains running for
+ordinary-rulegeneralization; no newmoduleclaim.
+Audit:reports/motion-identifiability-20261031.json;
+docs/MOTION_IDENTIFIABILITY_20261031.md.
+
+CPU equal-lag probe runner1109528/worker1109529 launched13:55:35, runner
+verifiedlive13:56with36realcalls22.98s. 576forwards, fixedsavedcomplete
+cropgeometryandinitialtemplates, prior11/01/10 versus current11 atlag1/2.
+NoGPUs,tuningorofficialdata. Doesnotisolateconsistencyfromcomplete-quality.
+Outputreports/server28-fixed-crop-motion-factorial-20261031/logsibling.log,
+automaticindependentanalysisafterprobe. ETA14:02-14:04;preservequeuedhashes.
+FourmaintrainersandGPUreplication1090396/1090400/1090441/1090444
+verifiedlive13:50. Noofficialthresholds/threevalidatedmodulesyet.
+

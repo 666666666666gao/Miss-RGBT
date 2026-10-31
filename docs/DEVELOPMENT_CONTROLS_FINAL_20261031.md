@@ -21,6 +21,9 @@ These same videos motivated the change. This is development evidence, not
 fresh replication, official results, training-seed uncertainty or novelty.
 Same-availability history also has a different temporal baseline; smoothing
 and state matching remain confounded.
+The subsequent exact saved-trajectory audit proves matching equals ordinary
+lag2 at every one of1290 blind frames/study. Fresh videos under the same
+schedule cannot remove this coupling. See `MOTION_IDENTIFIABILITY_20261031.md`.
 
 Candidate report SHA256:
 `1e5899fd63b37690d08c715c827a893035c487c7e469f6ce806e194e70c0670c`.

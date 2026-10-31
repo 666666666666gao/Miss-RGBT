@@ -1,5 +1,24 @@
 # Miss-RGBT evidence and remaining targets
 
+## Latest Evidence, 2026-10-31 13:56 UTC+08
+
+Both protected-template arms completed192updates, selectedepoch6, retained
+one branch weight each and removed4 with independently verified receipts.
+Mixed template loss is4.355298 vs complete4.363575 (-0.19%) on reused
+selection tuples, with3/6 missing-search cells improving. This does not
+justify a larger GPU campaign or a module claim.
+
+Completed16-video motion history contrast gives PR/SR+1.806145/+1.659243pp,
+with paired-video intervals above0 and bitwise equal controls. Crucially,
+an exact1290-blind-frame audit per study proves that availability matching
+is identical to ordinary lag2 velocity under this schedule. Fresh-video
+replication1090396 is running, but cannot identify a sensor-state mechanism.
+An equal-lag, fixed-crop CPU probe1109528/1109529 is separately running.
+See docs/DEVELOPMENT_CONTROLS_FINAL_20261031.md and
+docs/MOTION_IDENTIFIABILITY_20261031.md for evidence and limitations.
+Four main trainers remain live; no complete/Miss target attainment or
+three substantively validated modules has been established.
+
 ## Native-Scale Spatial Audit, Complete
 
 CPU worker4006613 completed46points/2346candidates in1314.66s; terminal
