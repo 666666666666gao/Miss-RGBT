@@ -1243,3 +1243,22 @@ inspectnear13:14-13:25 then300spolls. Do noteditactivehashrecordedsources.
 Batch10random nowepoch9,epoch8val4.995457771; utilityepoch8update15524.
 CPU869785 mixedarmrunning. Fullgoalstillincomplete.
 
+## 2026-10-31 13:03 UTC+08 - Velocity audit and result collection queued
+
+audit_motion_estimates28.py verified endpointformulaall35longgaps.
+All35 inputstatepairs11->11, so nocrosssensorpairsexplaintheseestimates.
+blkskirtwoman gap352 lastobservedcentererror5.203668 grows479.839829
+atblindend; holdingthesamelastCVbox90.852464. Othercasehyalinepaper928
+GTrecentvelocity0,0 butpredicted-19.464630,-9.828613 withalreadylost
+observedbox. Mixedcauses; nofittedthreshold/cap/newmodule.
+Shortblock1 velocityinputstates10->11 byschedule, so crossduration
+contrastalsochangesobservationstatepair, notjustgapduration.
+
+Postanalysiscontroller1020925verifiedlive13:02:55, waitingactual
+short1006350 andCPU869785 independentlywith300spolls. Aftereachprocess
+exitrequirescompletion; short->contrast+estimateaudit;CPU->pairedreceipt
+analysis. Logreports/server28-development-controls-analysis-20261031.log,
+receiptsibling.json. Analyzerhashesfixed; donotedituntilqueuedanalysisdone.
+Shortworkers1006355/1006356stilllive; CPUmixedarmepoch2update64.
+Goalremainsincomplete; noofficialscores/threevalidatedmodulesyet.
+

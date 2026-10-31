@@ -77,3 +77,45 @@ exclusive separate output name and records the YAML hash/search factor.
 At the latest training check, batch10 random enteredepoch9 afterepoch8
 validation mean4.995457771. Utility remainedepoch8/update15524. This is
 not convergence: original LR drop10 and post-drop reference11 remain.
+
+## Velocity-Entry Audit
+
+`audit_motion_estimates28.py` verifies the saved CV endpoint against the
+last-two-observation formula for all35 blind intervals. Every long-gap
+velocity used two complete11 observations. No cross-sensor switch occurs
+between those two input observations, so such a switch cannot explain
+these particular velocity estimates. Earlier template/trajectory history
+can still differ; this does not isolate a neural failure mechanism.
+
+For the `blkskirtwoman` interval352..383, the final observed center error
+is5.203668px. Estimated velocity is(-12.493881,-1.535645)px/frame, while
+the previous GT displacement is(-11.5,-10)px/frame. By the last blind frame,
+CV center error is479.839829px. Holding the same last observed box would
+have90.852464px error at that endpoint. This local comparison uses the
+same CV history, not the separate closed-loop hold arm. It illustrates
+the limits of extrapolating a recent displacement through a long gap.
+
+For `hyalinepaperfrontclothes` interval928..959, recent GT displacement
+is(0,0), but estimated velocity is(-19.464630,-9.828613)px/frame. The last
+observed center already has173.483649px error; endpoint error grows to
+701.996890px, versus173.061759px holding the same last box. Thus erroneous
+observed trajectories are also a concrete source of motion-estimate error.
+No confidence threshold or motion cap is fitted from these examples.
+
+The one-frame schedule uses input states10 then11 before each00 gap,
+unlike the long schedule's11 then11. Besides duration and switching
+frequency, the observation-state pair used for velocity also differs.
+The queued short-gap estimate audit will record the actual pairs; the
+cross-duration result must not be attributed solely to gap duration.
+
+At13:02:55 UTC+08 analysis controller1020925 was verified live waiting on
+actual short-gap controller1006350 and CPU process869785. It checks
+process exit every300seconds and then requires completion artifacts.
+It runs the cross-duration contrast and velocity-entry audit for short
+gaps, and independently verifies the final paired CPU result after that
+process exits. Each task is processed as soon as it finishes.
+Source hashes of its analyzer scripts are fixed at launch. Log:
+`reports/server28-development-controls-analysis-20261031.log`.
+Final/partial receipt:
+`reports/server28-development-controls-analysis-20261031.json`.
+No short-gap result or final CPU-pair analysis existed at this observation.

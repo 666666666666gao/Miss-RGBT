@@ -1,0 +1,1151 @@
+{
+  "report_sha256": "d0f7e15e2633924a2738661af1f383122af3ca2ee6e91856fe862021335bb933",
+  "analyzer_sha256": "2a2538ad8c04643696f73e6e53070a5bfa3a835bab502ed8f6f697ee3e2aa652",
+  "config_sha256": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+  "intervals": 35,
+  "observed_state_pairs": {
+    "11->11": 35
+  },
+  "records": [
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.5816535949707031,
+        -0.5766372680664062
+      ],
+      "forecast_displacement_crop_sides": 0.21308435893322714,
+      "last_observed_confidence": 0.6228814125061035,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.5,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.582389773686599,
+        "last_observed_center_error_px": 104.55949231401898,
+        "endpoint_center_error_cv_px": 121.11867710613149,
+        "endpoint_center_error_hold_from_same_last_px": 137.4701295406103
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.7578048706054688,
+        -0.700042724609375
+      ],
+      "forecast_displacement_crop_sides": 0.2539477548547513,
+      "last_observed_confidence": 0.3535197079181671,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -4.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 3.3169095666520874,
+        "last_observed_center_error_px": 409.55459414509977,
+        "endpoint_center_error_cv_px": 404.17629525483926,
+        "endpoint_center_error_hold_from_same_last_px": 378.538820694276
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 544,
+      "end_exclusive": 563,
+      "observed_frames": [
+        542,
+        543
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.13077163696289062,
+        -0.5275726318359375
+      ],
+      "forecast_displacement_crop_sides": 0.10646630446858805,
+      "last_observed_confidence": 0.8304768204689026,
+      "recovery_state": null,
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.5435385017606864,
+        "last_observed_center_error_px": 249.56475553375645,
+        "endpoint_center_error_cv_px": 242.6399284686056,
+        "endpoint_center_error_hold_from_same_last_px": 244.61688839062248
+      }
+    },
+    {
+      "sequence": "2whitegirl",
+      "start": 160,
+      "end_exclusive": 164,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -14.7843017578125,
+        -1.35418701171875
+      ],
+      "forecast_displacement_crop_sides": 0.18852306618515502,
+      "last_observed_confidence": 0.630690336227417,
+      "recovery_state": null,
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -21.0,
+          -1.0
+        ],
+        "observed_velocity_error_px_per_frame": 6.225781322629557,
+        "last_observed_center_error_px": 6.321617387853506,
+        "endpoint_center_error_cv_px": 11.792964689225572,
+        "endpoint_center_error_hold_from_same_last_px": 70.75386663341155
+      }
+    },
+    {
+      "sequence": "blkskirtwoman",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.057952880859375,
+        -3.0147933959960938
+      ],
+      "forecast_displacement_crop_sides": 0.4269522625032639,
+      "last_observed_confidence": 0.4506169259548187,
+      "recovery_state": [
+        1,
+        1
+      ]
+    },
+    {
+      "sequence": "blkskirtwoman",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -12.493881225585938,
+        -1.53564453125
+      ],
+      "forecast_displacement_crop_sides": 0.9636671249014168,
+      "last_observed_confidence": 0.49532753229141235,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -11.5,
+          -10.0
+        ],
+        "observed_velocity_error_px_per_frame": 8.52250628582521,
+        "last_observed_center_error_px": 5.203668097322602,
+        "endpoint_center_error_cv_px": 479.8398288566641,
+        "endpoint_center_error_hold_from_same_last_px": 90.85246436017995
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.175750732421875,
+        -0.74700927734375
+      ],
+      "forecast_displacement_crop_sides": 0.08185658520402103,
+      "last_observed_confidence": 0.8999014496803284,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -0.5,
+          -0.5
+        ],
+        "observed_velocity_error_px_per_frame": 0.7194808096555335,
+        "last_observed_center_error_px": 5.780319993736025,
+        "endpoint_center_error_cv_px": 36.60819959286704,
+        "endpoint_center_error_hold_from_same_last_px": 32.1253880577157
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -2.164581298828125,
+        0.3455657958984375
+      ],
+      "forecast_displacement_crop_sides": 0.22197385009848553,
+      "last_observed_confidence": 0.8862813711166382,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -3.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.904068650912431,
+        "last_observed_center_error_px": 2.354849278638289,
+        "endpoint_center_error_cv_px": 115.79841393871057,
+        "endpoint_center_error_hold_from_same_last_px": 184.33208353564225
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.49737548828125,
+        -3.2676086425781534
+      ],
+      "forecast_displacement_crop_sides": 0.2567181065119294,
+      "last_observed_confidence": 0.4491344690322876,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -1.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 3.5943566314372526,
+        "last_observed_center_error_px": 188.23584626357587,
+        "endpoint_center_error_cv_px": 236.89656316355445,
+        "endpoint_center_error_hold_from_same_last_px": 134.16940278164512
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        8.81085205078125,
+        -3.4947509765625
+      ],
+      "forecast_displacement_crop_sides": 0.5810653486846423,
+      "last_observed_confidence": 0.4675869643688202,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.0,
+          0.5
+        ],
+        "observed_velocity_error_px_per_frame": 8.773109205061836,
+        "last_observed_center_error_px": 114.29487878396031,
+        "endpoint_center_error_cv_px": 275.2221779534058,
+        "endpoint_center_error_hold_from_same_last_px": 28.55626350523866
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 544,
+      "end_exclusive": 576,
+      "observed_frames": [
+        542,
+        543
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -1.75115966796875,
+        -4.371459960937443
+      ],
+      "forecast_displacement_crop_sides": 0.20065677377745436,
+      "last_observed_confidence": 0.556441605091095,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 4.709163659589632,
+        "last_observed_center_error_px": 227.81465676598972,
+        "endpoint_center_error_cv_px": 316.91652635782367,
+        "endpoint_center_error_hold_from_same_last_px": 227.81465676598972
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 736,
+      "end_exclusive": 768,
+      "observed_frames": [
+        734,
+        735
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        4.6463623046875,
+        -3.534576416015625
+      ],
+      "forecast_displacement_crop_sides": 0.409682221779098,
+      "last_observed_confidence": 0.513414740562439,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 5.837971660352147,
+        "last_observed_center_error_px": 274.3087667879217,
+        "endpoint_center_error_cv_px": 451.29080060305927,
+        "endpoint_center_error_hold_from_same_last_px": 274.7499071820576
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 928,
+      "end_exclusive": 960,
+      "observed_frames": [
+        926,
+        927
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -19.464630126953125,
+        -9.82861328125
+      ],
+      "forecast_displacement_crop_sides": 1.1746992077912597,
+      "last_observed_confidence": 0.3684265613555908,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 21.805354044625258,
+        "last_observed_center_error_px": 173.48364883972522,
+        "endpoint_center_error_cv_px": 701.996890351248,
+        "endpoint_center_error_hold_from_same_last_px": 173.06175866777326
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1120,
+      "end_exclusive": 1152,
+      "observed_frames": [
+        1118,
+        1119
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.8422393798828125,
+        -14.129364013671875
+      ],
+      "forecast_displacement_crop_sides": 0.8969152849774007,
+      "last_observed_confidence": 0.3505306839942932,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 14.154444341049604,
+        "last_observed_center_error_px": 179.39832041812315,
+        "endpoint_center_error_cv_px": 616.7647717193312,
+        "endpoint_center_error_hold_from_same_last_px": 178.54028438154182
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1312,
+      "end_exclusive": 1344,
+      "observed_frames": [
+        1310,
+        1311
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -5.53125,
+        20.57354736328125
+      ],
+      "forecast_displacement_crop_sides": 1.435225003311661,
+      "last_observed_confidence": 0.3257999122142792,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -1.0,
+          -1.0
+        ],
+        "observed_velocity_error_px_per_frame": 22.044277543123055,
+        "last_observed_center_error_px": 127.10335649664054,
+        "endpoint_center_error_cv_px": 701.8227529465416,
+        "endpoint_center_error_hold_from_same_last_px": 38.72743221971658
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1504,
+      "end_exclusive": 1536,
+      "observed_frames": [
+        1502,
+        1503
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.953887939453125,
+        -0.291961669921875
+      ],
+      "forecast_displacement_crop_sides": 0.08400580664220811,
+      "last_observed_confidence": 0.8360910415649414,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -1.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.2955806807479957,
+        "last_observed_center_error_px": 9.074902363195104,
+        "endpoint_center_error_cv_px": 68.72138525280133,
+        "endpoint_center_error_hold_from_same_last_px": 37.800764468451256
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1696,
+      "end_exclusive": 1728,
+      "observed_frames": [
+        1694,
+        1695
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        1.9512786865234375,
+        0.3567962646484375
+      ],
+      "forecast_displacement_crop_sides": 0.14328711772397273,
+      "last_observed_confidence": 0.6184423565864563,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.0,
+          1.5
+        ],
+        "observed_velocity_error_px_per_frame": 1.4872275952104714,
+        "last_observed_center_error_px": 36.78133555945189,
+        "endpoint_center_error_cv_px": 35.16712629515149,
+        "endpoint_center_error_hold_from_same_last_px": 97.89462228618186
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1888,
+      "end_exclusive": 1920,
+      "observed_frames": [
+        1886,
+        1887
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        6.5644989013671875,
+        5.215118408203125
+      ],
+      "forecast_displacement_crop_sides": 0.5441894996792753,
+      "last_observed_confidence": 0.5257309079170227,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          3.0,
+          0.5
+        ],
+        "observed_velocity_error_px_per_frame": 5.910836998363587,
+        "last_observed_center_error_px": 39.206403712458616,
+        "endpoint_center_error_cv_px": 244.71784279324424,
+        "endpoint_center_error_hold_from_same_last_px": 85.00811418247338
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        1.0108184814453125,
+        -0.2684173583984375
+      ],
+      "forecast_displacement_crop_sides": 0.0964472471794604,
+      "last_observed_confidence": 0.8072219491004944,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.26863528776089307,
+        "last_observed_center_error_px": 13.118090584591828,
+        "endpoint_center_error_cv_px": 14.081568070692914,
+        "endpoint_center_error_hold_from_same_last_px": 26.917655478143875
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        2.2116241455078125,
+        0.6229095458984375
+      ],
+      "forecast_displacement_crop_sides": 0.19247516038858303,
+      "last_observed_confidence": 0.8124391436576843,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.5,
+          -0.5
+        ],
+        "observed_velocity_error_px_per_frame": 1.329411438471762,
+        "last_observed_center_error_px": 1.1301828723067964,
+        "endpoint_center_error_cv_px": 41.6720854634832,
+        "endpoint_center_error_hold_from_same_last_px": 34.98384593509972
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 544,
+      "end_exclusive": 576,
+      "observed_frames": [
+        542,
+        543
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.648956298828125,
+        -1.3089447021484375
+      ],
+      "forecast_displacement_crop_sides": 0.10847228906569485,
+      "last_observed_confidence": 0.8504765629768372,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -0.5,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 1.3173929604499317,
+        "last_observed_center_error_px": 5.652137168059854,
+        "endpoint_center_error_cv_px": 56.66620048132305,
+        "endpoint_center_error_hold_from_same_last_px": 38.19551623202161
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        1.8518524169921875,
+        -2.8319168090820312
+      ],
+      "forecast_displacement_crop_sides": 0.9023075676806503,
+      "last_observed_confidence": 0.601545512676239,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          2.0,
+          -2.5
+        ],
+        "observed_velocity_error_px_per_frame": 0.36347829990558483,
+        "last_observed_center_error_px": 123.03910874695433,
+        "endpoint_center_error_cv_px": 117.99230401681682,
+        "endpoint_center_error_hold_from_same_last_px": 105.21685331215528
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -31.99917984008789,
+        1.6796188354492188
+      ],
+      "forecast_displacement_crop_sides": 7.484550222563569,
+      "last_observed_confidence": 0.3577359616756439,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          2.0,
+          -1.0
+        ],
+        "observed_velocity_error_px_per_frame": 34.10461239923323,
+        "last_observed_center_error_px": 140.79150189753165,
+        "endpoint_center_error_cv_px": 1216.6584189940133,
+        "endpoint_center_error_hold_from_same_last_px": 191.32592404603204
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 544,
+      "end_exclusive": 576,
+      "observed_frames": [
+        542,
+        543
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        19.23223876953125,
+        9.897003173828182
+      ],
+      "forecast_displacement_crop_sides": 0.8576702164109311,
+      "last_observed_confidence": 0.30950236320495605,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 21.62937077011317,
+        "last_observed_center_error_px": 222.1599286550613,
+        "endpoint_center_error_cv_px": 687.8109797085027,
+        "endpoint_center_error_hold_from_same_last_px": 220.43638835074748
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 736,
+      "end_exclusive": 768,
+      "observed_frames": [
+        734,
+        735
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.27558135986328125,
+        0.3283843994140625
+      ],
+      "forecast_displacement_crop_sides": 0.159515285118555,
+      "last_observed_confidence": 0.7355774641036987,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.42869732875611655,
+        "last_observed_center_error_px": 1.8606021750689554,
+        "endpoint_center_error_cv_px": 10.878912845942956,
+        "endpoint_center_error_hold_from_same_last_px": 10.572163529801106
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.35772705078125,
+        0.43365478515625
+      ],
+      "forecast_displacement_crop_sides": 0.02070098455188637,
+      "last_observed_confidence": 0.9122283458709717,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.5,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 0.961120266319889,
+        "last_observed_center_error_px": 175.9088874008494,
+        "endpoint_center_error_cv_px": 172.91806707068915,
+        "endpoint_center_error_hold_from_same_last_px": 155.01691725339
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.4571990966796875,
+        -0.240936279296875
+      ],
+      "forecast_displacement_crop_sides": 0.05864386894641604,
+      "last_observed_confidence": 0.8344967365264893,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -1.5,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 1.070272869247409,
+        "last_observed_center_error_px": 2.1039866302935826,
+        "endpoint_center_error_cv_px": 23.806359131251575,
+        "endpoint_center_error_hold_from_same_last_px": 32.39342210338529
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 544,
+      "end_exclusive": 576,
+      "observed_frames": [
+        542,
+        543
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -2.965545654296875,
+        -1.5962371826171875
+      ],
+      "forecast_displacement_crop_sides": 0.3568586013952058,
+      "last_observed_confidence": 0.621121883392334,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.5,
+          -2.0
+        ],
+        "observed_velocity_error_px_per_frame": 3.488987115871433,
+        "last_observed_center_error_px": 112.48830301945341,
+        "endpoint_center_error_cv_px": 199.49208548466595,
+        "endpoint_center_error_hold_from_same_last_px": 104.82717368568977
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 736,
+      "end_exclusive": 768,
+      "observed_frames": [
+        734,
+        735
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.479095458984375,
+        -1.9045562744140625
+      ],
+      "forecast_displacement_crop_sides": 0.21670519135624847,
+      "last_observed_confidence": 0.8611451387405396,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -4.5,
+          -2.0
+        ],
+        "observed_velocity_error_px_per_frame": 4.022037149593946,
+        "last_observed_center_error_px": 13.31610435775288,
+        "endpoint_center_error_cv_px": 45.63270384708628,
+        "endpoint_center_error_hold_from_same_last_px": 62.495572545919195
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 928,
+      "end_exclusive": 960,
+      "observed_frames": [
+        926,
+        927
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        2.4539566040039062,
+        0.3904266357421875
+      ],
+      "forecast_displacement_crop_sides": 0.3326957141067367,
+      "last_observed_confidence": 0.508021891117096,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          0.0,
+          -1.0
+        ],
+        "observed_velocity_error_px_per_frame": 2.820494503401083,
+        "last_observed_center_error_px": 27.93052762390257,
+        "endpoint_center_error_cv_px": 50.70590109073891,
+        "endpoint_center_error_hold_from_same_last_px": 123.40254212095486
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 1120,
+      "end_exclusive": 1152,
+      "observed_frames": [
+        1118,
+        1119
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -0.9637603759765625,
+        2.5156402587890625
+      ],
+      "forecast_displacement_crop_sides": 0.2892814949368257,
+      "last_observed_confidence": 0.5931323170661926,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          3.5,
+          1.5
+        ],
+        "observed_velocity_error_px_per_frame": 4.577846855172368,
+        "last_observed_center_error_px": 13.293397611569752,
+        "endpoint_center_error_cv_px": 175.1394296447627,
+        "endpoint_center_error_hold_from_same_last_px": 190.86759270777284
+      }
+    },
+    {
+      "sequence": "midblkboyplayingphone",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        -3.8587646484376137,
+        -3.2169189453126137
+      ],
+      "forecast_displacement_crop_sides": 0.10811150582182485,
+      "last_observed_confidence": 0.9424787759780884,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          -1.5,
+          0.0
+        ],
+        "observed_velocity_error_px_per_frame": 3.989027220693065,
+        "last_observed_center_error_px": 228.47920209897413,
+        "endpoint_center_error_cv_px": 327.0260654025648,
+        "endpoint_center_error_hold_from_same_last_px": 166.7233256501072
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.52996826171875,
+        1.6981964111328125
+      ],
+      "forecast_displacement_crop_sides": 0.31802831461355124,
+      "last_observed_confidence": 0.8101047873497009,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.0,
+          2.5
+        ],
+        "observed_velocity_error_px_per_frame": 0.9294185440973272,
+        "last_observed_center_error_px": 2.3253002989427434,
+        "endpoint_center_error_cv_px": 105.91984967939153,
+        "endpoint_center_error_hold_from_same_last_px": 77.8495373740669
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 352,
+      "end_exclusive": 384,
+      "observed_frames": [
+        350,
+        351
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        0.8265304565429688,
+        0.4623565673828125
+      ],
+      "forecast_displacement_crop_sides": 0.19303171930582225,
+      "last_observed_confidence": 0.8408734202384949,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          1.5,
+          -1.0
+        ],
+        "observed_velocity_error_px_per_frame": 1.6099838372269035,
+        "last_observed_center_error_px": 0.9547819235259281,
+        "endpoint_center_error_cv_px": 143.60697508071735,
+        "endpoint_center_error_hold_from_same_last_px": 116.55878291124081
+      }
+    },
+    {
+      "sequence": "bikeblkturn",
+      "start": 160,
+      "end_exclusive": 192,
+      "observed_frames": [
+        158,
+        159
+      ],
+      "observed_states": [
+        "11",
+        "11"
+      ],
+      "velocity_px_per_frame": [
+        2.6752700805664062,
+        -0.34038543701171875
+      ],
+      "forecast_displacement_crop_sides": 0.5640444346841744,
+      "last_observed_confidence": 0.7611604928970337,
+      "recovery_state": [
+        1,
+        1
+      ],
+      "retrospective_gt": {
+        "recent_velocity_px_per_frame": [
+          3.5,
+          0.5
+        ],
+        "observed_velocity_error_px_per_frame": 1.1774663998392139,
+        "last_observed_center_error_px": 1.2307055205081152,
+        "endpoint_center_error_cv_px": 57.07680430671775,
+        "endpoint_center_error_hold_from_same_last_px": 31.99409017589326
+      }
+    }
+  ],
+  "scope": "GT is used only after saved tracking to diagnose velocity and localization errors. Hold-from-same-last is a local counterfactual, not the separate hold trajectory. No fitted threshold, inference intervention, benchmark result or causal attribution."
+}
