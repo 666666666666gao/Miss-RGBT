@@ -1003,3 +1003,13 @@ code, weights, environment change or GPU method run. Future recovery must
 separately validate proposal scale/localization and target acceptance on
 train882 development; these are not validated paper contributions.
 
+At08:34:45+08:00 CPU postprocess613855 was verified live/sleeping, targeting
+the original live controller570241. It checks at300seconds, then requires
+six-cell completion and unchanged analyzer SHA before running paired
+analysis. No new GPU load, retry, training change or weight selection.
+Runner finish_epoch05_health28.py; log health-report-dir/postprocess.log.
+Require paired_analysis.json AND analysis_completed.json before reporting
+verified paired results. Receipt reports/epoch05-health-analysis-queue-
+20261031.json. Next meaningful human/agent observation remains09:25-09:35
+UTC+08:00; do not keep adding intermediate snapshot commits.
+

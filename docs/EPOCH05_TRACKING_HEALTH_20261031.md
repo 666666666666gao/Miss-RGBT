@@ -130,3 +130,24 @@ Use actual subsequent receipt rates before treating that estimate as firm.
 
 Evidence: `reports/epoch05-health-initial-verification-20261031.json`,
 SHA256 `7c3bc003f8c44fd56d26049280f1bfd497be008e434db378928913306487899a`.
+
+## Automatic Paired Verification Queue
+
+`finish_epoch05_health28.py` was compiled with server Python3.7 and launched
+as CPU process613855 at2026-10-31T00:34:26.295195Z.
+At08:34:45+08:00 it was live/sleeping and the original tracking controller
+570241 and both evaluation workers remained live.
+
+This one-shot queue checks the existing controller every300seconds. After
+that exact process exits, it requires the six-cell `completed.json`,
+verifies the analyzer still matches its launch hash, then runs the paired
+verification command. It never restarts evaluations, changes training,
+selects a weight or starts another GPU process. A missing completion
+receipt or failed analyzer remains a visible error in `postprocess.log`;
+there is no retry.
+
+Successful postprocessing writes `paired_analysis.json` followed by
+`analysis_completed.json` with the analysis hash. Until both exist, paired
+analysis remains unproven. The archived launch receipt is
+`reports/epoch05-health-analysis-queue-20261031.json`; its analyzer SHA256 is
+`b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede`.
