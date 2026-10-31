@@ -228,3 +228,27 @@ early-stop and final-five full-val97 selection protocols remain active.
 No current-campaign official complete/Miss score or common selected weight
 exists yet. The four training processes remain active; do not clean up
 weights before final-five validation and selection complete.
+
+## Live Training Snapshot, 2026-10-31 22:25 UTC+08
+
+At22:25:21+08 all four trainer processes, four final-validation waiters,
+and the original-weight cleanup waiter were live. Latest update positions:
+
+| Campaign | Current epoch/update | Latest completed cached validation |
+|---|---:|---|
+| Fixed Utility | 13 / 32225 | Epoch12, 4.899094 |
+| Fixed Random | 13 / 32500 | Epoch13, 4.945365 |
+| Batch10 Utility | 13 / 25125 | Epoch12, 5.004183 |
+| Batch10 Random | 14 / 27250 | Epoch13, 5.001639 |
+
+These values are mean task losses on128 fixed cached tuples, not PR/SR or
+convergence evidence. Fixed Random epoch13 improved0.031669 versus epoch12;
+Batch10 Random epoch13 improved0.036279. Utility log tails had not advanced
+since22:20, but both processes remained live at about101% CPU and GPUs0/2
+were100% utilized; this does not indicate a stalled or failed run.
+Current-campaign official complete/Miss scores and final-five selected
+weights remain pending.
+
+GPU telemetry at22:25:21 showed temperatures83/78/78/76C and power limits
+of250W on GPUs0-3. This does not verify a configured85C target. Preserve
+registered weights until the final-five evaluation and cleanup gates finish.

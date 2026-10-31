@@ -1964,3 +1964,22 @@ not a tracking metric or convergence proof. Final-five selection, official
 LasHeR/RGBT234 complete/Miss evaluation, and weight cleanup remain pending.
 Preserve registered weights and active source/receipt files.
 
+## 2026-10-31 22:25 UTC+08 - Training progress
+
+At22:25:21+08 the four trainers, four final-validation waiters and original-
+weight cleanup waiter were live. Current updates were fixed Utility
+epoch13/32225, fixed Random epoch13/32500, batch10 Utility epoch13/25125,
+and batch10 Random epoch14/27250. Latest completed cached128-tuple mean
+task losses were4.899094(epoch12),4.945365(epoch13),5.004183(epoch12),
+and5.001639(epoch13), respectively. These are not PR/SR or convergence
+evidence. Random epoch13 improved over its prior cached validation in both
+campaigns. Utility log tails had not advanced since22:20, but the processes
+remained live at~101% CPU while GPUs0/2 were100% utilized; do not restart
+based on log age alone. Official complete/Miss scores and final-five
+selected weights remain pending.
+
+GPU0-3 power-limit telemetry was250W; temperatures were83/78/78/76C at
+22:25:21. This snapshot does not prove an85C temperature target was set.
+Preserve registered weights until their final-five evaluation and cleanup
+protocols complete.
+
