@@ -39,6 +39,9 @@ TIR-only missing exposure on this cohort, with no RGB-only or blind exposure.
 The prospective [state-template history control](docs/STATE_TEMPLATE_CONTROL_20261031.md)
 tests ordinary per-state template reading on eight fresh development videos;
 it is pending and does not establish a new module.
+After it completes, a registered [closed-loop compensation control](docs/REPAIR_TRAJECTORY_CONTROL_20261031.md)
+will compare same-epoch Utility/Random native, sham and compensation-off
+tracking, without adding a concurrent GPU worker.
 
 The server28 standalone entrypoints in the repository root expect the
 existing frozen runtime at `runtime/task_utility_20261018` and protocol

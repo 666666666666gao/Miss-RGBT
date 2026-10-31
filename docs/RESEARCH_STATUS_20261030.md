@@ -25,6 +25,12 @@ actual-body witness passed; GPU0/1 workers342898/342899 actually allocated
 2266MiB each at20:08:13 beside all four trainers. Results remain pending.
 See STATE_TEMPLATE_CONTROL_20261031.md. It is an ordinary history control;
 template age/crop history remain coupled, so launch proves no novel module.
+Separately, a CPU-verified closed-loop native/sham/compensation-off control
+is registered behind that GPU job, using retained epoch6 Utility/Random on
+fresh development76..83. It will not launch GPU workers until the preceding
+48 trajectories and analyzer complete. See
+REPAIR_TRAJECTORY_CONTROL_20261031.md. The matched checkpoint weights remain
+protected by the original-weight cleanup inventory.
 The completed observed-copy control worsens6of8noncomplete mean-loss
 cells, so copying is not promoted. The template-coverage paired pilot
 improves selected mean loss only0.19%, with3of6missing-search cells worse.
