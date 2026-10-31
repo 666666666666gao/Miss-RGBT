@@ -1222,3 +1222,24 @@ frequency too, not isolated durationcausality.
 CPU869785 actualmixedarmepoch1/update25 at12:48:21; firstarmcomplete.
 Fullgoalandofficialtargets remainunachieved.
 
+## 2026-10-31 12:55 UTC+08 - Long gap verified, short gap live
+
+Next16 completed64tracks. Complete84.909989/69.541361 same botharms;
+outage hold69.109374/55.843400 -> CV70.264971/56.690159 PR20/SR.
+Delta+1.155597/+.846760; bootstrap95CI[-.915736,3.678837]/
+[-.891109,2.836747], bothcross0. SR6wins6ties4losses; noofficial/moduleclaim.
+ReportSHAd0f7e15e2633924a2738661af1f383122af3ca2ee6e91856fe862021335bb933.
+New intervalgeometrydiagnostic35gaps: blkskirtwoman gap352-383 blindSR
++10.565476 yet48observedframesafterSR-66.369048; firstrecovered384 target
+notinCVcrop,34/48CVcropsunsupported versus0/48hold. Actualrecoverycrop
+failure, notprovenidentity/confidencecause orvalidatednewsolution.
+Docs BLIND_MOTION_NEXT16_RESULTS_20261031.md.
+
+Continuation997655 completedoldaudit/archive/deploy thenexitednormally.
+Shortgapcontroller1006350 started12:54:45, children1006355/1006356
+verifiedlive12:55:22 each2266MiB. Oldsourcesarchivedinlonggap/verified_source.
+Shortgapoutput reports/server28-blind-motion-shortgap16-20261031;
+inspectnear13:14-13:25 then300spolls. Do noteditactivehashrecordedsources.
+Batch10random nowepoch9,epoch8val4.995457771; utilityepoch8update15524.
+CPU869785 mixedarmrunning. Fullgoalstillincomplete.
+

@@ -1,0 +1,2253 @@
+{
+  "parent_report_sha256": "d0f7e15e2633924a2738661af1f383122af3ca2ee6e91856fe862021335bb933",
+  "analyzer_sha256": "2ff2b3f5ab005052c2234d0b96d3c4eb2e9068e958232897d208f398ec13bab5",
+  "crop_config_sha256": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+  "search_factor": 4.0,
+  "videos": [
+    {
+      "sequence": "blkskirtwoman",
+      "blind_intervals": 2,
+      "full_SR_delta": -7.114032053499379
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "blind_intervals": 10,
+      "full_SR_delta": -0.8512769153730595
+    },
+    {
+      "sequence": "midblkboyplayingphone",
+      "blind_intervals": 1,
+      "full_SR_delta": -0.5308880308880326
+    },
+    {
+      "sequence": "bikeblkturn",
+      "blind_intervals": 1,
+      "full_SR_delta": -0.4429678848283487
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "blind_intervals": 3,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "The_girl_back_at_the_lab_1202",
+      "blind_intervals": 0,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "moto2west",
+      "blind_intervals": 0,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "motowithgood",
+      "blind_intervals": 0,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "motocome",
+      "blind_intervals": 0,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "whitecarcoming",
+      "blind_intervals": 0,
+      "full_SR_delta": 0.0
+    },
+    {
+      "sequence": "exercisebook",
+      "blind_intervals": 6,
+      "full_SR_delta": 0.10262725779967496
+    },
+    {
+      "sequence": "shotmaker2",
+      "blind_intervals": 3,
+      "full_SR_delta": 0.7685352622061572
+    },
+    {
+      "sequence": "2whitegirl",
+      "blind_intervals": 1,
+      "full_SR_delta": 0.9348524685947979
+    },
+    {
+      "sequence": "rightboy479",
+      "blind_intervals": 2,
+      "full_SR_delta": 2.161785216178515
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "blind_intervals": 4,
+      "full_SR_delta": 6.55067155067155
+    },
+    {
+      "sequence": "5manwakeright",
+      "blind_intervals": 2,
+      "full_SR_delta": 11.96884550921817
+    }
+  ],
+  "intervals": [
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 152,
+              "target_center_outside_crop": 154,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 153,
+              "target_center_outside_crop": 153,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 160,
+              "target_center_outside_crop": 160,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 160,
+              "target_center_outside_crop": 160,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 544,
+      "end_exclusive": 563,
+      "gap_frames": 19,
+      "groups": {
+        "blind": {
+          "frames": 19,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        }
+      }
+    },
+    {
+      "sequence": "2whitegirl",
+      "start": 160,
+      "end_exclusive": 164,
+      "gap_frames": 4,
+      "groups": {
+        "blind": {
+          "frames": 4,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 8.333333333333332
+            },
+            "velocity": {
+              "PR20": 50.0,
+              "SR": 46.42857142857142
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 50.0,
+            "SR": 38.09523809523809
+          }
+        }
+      }
+    },
+    {
+      "sequence": "blkskirtwoman",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 28,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 2.0408163265306123
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 1.3605442176870746
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -0.6802721088435377
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 96.875,
+              "SR": 82.85714285714285
+            },
+            "velocity": {
+              "PR20": 96.875,
+              "SR": 82.41071428571428
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -0.4464285714285694
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 2,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 3,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "blkskirtwoman",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 3.125,
+              "SR": 9.07738095238095
+            },
+            "velocity": {
+              "PR20": 25.0,
+              "SR": 19.642857142857142
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 21.875,
+            "SR": 10.565476190476192
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 48,
+          "scores": {
+            "hold": {
+              "PR20": 100.0,
+              "SR": 85.11904761904763
+            },
+            "velocity": {
+              "PR20": 25.0,
+              "SR": 18.749999999999996
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -75.0,
+            "SR": -66.36904761904763
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.9416110948653775
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 34,
+              "target_center_outside_crop": 34,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 62.5,
+              "SR": 53.27380952380952
+            },
+            "velocity": {
+              "PR20": 56.25,
+              "SR": 50.14880952380952
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -6.25,
+            "SR": -3.125
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 100.0,
+              "SR": 83.42261904761905
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 83.48214285714285
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.05952380952379599
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8851998310722659
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.9045797369836885
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 25.0,
+              "SR": 23.214285714285715
+            },
+            "velocity": {
+              "PR20": 59.375,
+              "SR": 49.4047619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 34.375,
+            "SR": 26.190476190476183
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 100,
+          "scores": {
+            "hold": {
+              "PR20": 37.0,
+              "SR": 31.0
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 81.33333333333331
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 63.0,
+            "SR": 50.333333333333314
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 51,
+              "target_center_outside_crop": 55,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8261502222138709
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 10.625,
+              "SR": 24.97023809523809
+            },
+            "velocity": {
+              "PR20": 11.875,
+              "SR": 24.13690476190476
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 1.25,
+            "SR": -0.8333333333333321
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 4,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.044473230021035245
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 20.535714285714285
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.5952380952380952
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -19.94047619047619
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 4.375,
+              "SR": 2.3809523809523805
+            },
+            "velocity": {
+              "PR20": 3.75,
+              "SR": 2.083333333333333
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -0.625,
+            "SR": -0.29761904761904745
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 3,
+              "target_center_outside_crop": 4,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.35339193470112684
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.045820244453754704
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 544,
+      "end_exclusive": 576,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 33,
+              "target_center_outside_crop": 75,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 33,
+              "target_center_outside_crop": 74,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 736,
+      "end_exclusive": 768,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 1,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 928,
+      "end_exclusive": 960,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 8,
+              "target_center_outside_crop": 11,
+              "first_scored_frame": 960,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 11,
+              "target_center_outside_crop": 12,
+              "first_scored_frame": 960,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1120,
+      "end_exclusive": 1152,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.3869047619047619
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.3273809523809524
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -0.059523809523809534
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1152,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 2,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 1152,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1312,
+      "end_exclusive": 1344,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 23.363095238095234
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.7440476190476191
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -22.619047619047613
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 34.375,
+              "SR": 42.64880952380952
+            },
+            "velocity": {
+              "PR20": 31.25,
+              "SR": 40.267857142857146
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -3.125,
+            "SR": -2.3809523809523725
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1344,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.4263446051963651
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 3,
+              "target_center_outside_crop": 3,
+              "first_scored_frame": 1344,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1504,
+      "end_exclusive": 1536,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 34.375,
+              "SR": 52.67857142857143
+            },
+            "velocity": {
+              "PR20": 43.75,
+              "SR": 54.46428571428571
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 9.375,
+            "SR": 1.7857142857142776
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 54.375,
+              "SR": 44.613095238095234
+            },
+            "velocity": {
+              "PR20": 55.0,
+              "SR": 44.107142857142854
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.625,
+            "SR": -0.5059523809523796
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1536,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.704982541908134
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1536,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.660296178689345
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1696,
+      "end_exclusive": 1728,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 17.70833333333333
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 34.07738095238095
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 16.36904761904762
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 57.5,
+              "SR": 53.779761904761905
+            },
+            "velocity": {
+              "PR20": 61.25,
+              "SR": 54.52380952380953
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 3.75,
+            "SR": 0.7440476190476275
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1728,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.7491672508168451
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1728,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.799124188817061
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1888,
+      "end_exclusive": 1920,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 18.898809523809526
+            },
+            "velocity": {
+              "PR20": 12.5,
+              "SR": 12.797619047619047
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 12.5,
+            "SR": -6.101190476190478
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 78,
+          "scores": {
+            "hold": {
+              "PR20": 71.7948717948718,
+              "SR": 49.99999999999998
+            },
+            "velocity": {
+              "PR20": 78.2051282051282,
+              "SR": 47.55799755799754
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 6.410256410256409,
+            "SR": -2.4420024420024404
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1920,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.4439297830527894
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 1920,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 50.0,
+              "SR": 31.39880952380952
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 48.06547619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 50.0,
+            "SR": 16.66666666666667
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 92.5,
+              "SR": 67.82738095238093
+            },
+            "velocity": {
+              "PR20": 92.5,
+              "SR": 68.0952380952381
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.2678571428571672
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.43621263518562087
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.4300062127034153
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 59.375,
+              "SR": 52.82738095238095
+            },
+            "velocity": {
+              "PR20": 37.5,
+              "SR": 51.041666666666664
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -21.875,
+            "SR": -1.7857142857142847
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 96.875,
+              "SR": 78.7797619047619
+            },
+            "velocity": {
+              "PR20": 97.5,
+              "SR": 78.7797619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.625,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8376946111889966
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8419137425808875
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 544,
+      "end_exclusive": 576,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 71.875,
+              "SR": 63.690476190476176
+            },
+            "velocity": {
+              "PR20": 37.5,
+              "SR": 61.9047619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -34.375,
+            "SR": -1.7857142857142776
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 57,
+          "scores": {
+            "hold": {
+              "PR20": 73.6842105263158,
+              "SR": 65.91478696741854
+            },
+            "velocity": {
+              "PR20": 75.43859649122807,
+              "SR": 66.33249791144527
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 1.7543859649122737,
+            "SR": 0.41771094402673725
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8489159070716207
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8677123358483259
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 160,
+              "target_center_outside_crop": 160,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 159,
+              "target_center_outside_crop": 159,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.8035714285714285
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.8035714285714285
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 160,
+              "target_center_outside_crop": 160,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 62,
+              "target_center_outside_crop": 62,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 544,
+      "end_exclusive": 576,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 15.0,
+              "SR": 12.410714285714288
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 15.0,
+            "SR": 12.410714285714288
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 160,
+              "target_center_outside_crop": 160,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 1,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 736,
+      "end_exclusive": 768,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 60.26785714285714
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 100.0,
+            "SR": 60.26785714285714
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 13,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 82.05128205128204
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 100.0,
+            "SR": 82.05128205128204
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 13,
+              "target_center_outside_crop": 13,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.872726864024964
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 4.613095238095237
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 3.2738095238095237
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -1.3392857142857135
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 40.0,
+              "SR": 33.363095238095234
+            },
+            "velocity": {
+              "PR20": 45.625,
+              "SR": 38.00595238095238
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 5.625,
+            "SR": 4.642857142857146
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.031690398210352924
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.034944712275929074
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 40.625,
+              "SR": 44.04761904761904
+            },
+            "velocity": {
+              "PR20": 40.625,
+              "SR": 46.875
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 2.827380952380963
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 40.625,
+              "SR": 30.892857142857146
+            },
+            "velocity": {
+              "PR20": 40.0,
+              "SR": 31.01190476190476
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -0.625,
+            "SR": 0.1190476190476133
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 36,
+              "target_center_outside_crop": 59,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.6120316319216556
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 36,
+              "target_center_outside_crop": 59,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.6501096824429498
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 544,
+      "end_exclusive": 576,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 0.0
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 90.625,
+              "SR": 59.13690476190476
+            },
+            "velocity": {
+              "PR20": 57.5,
+              "SR": 36.45833333333333
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -33.125,
+            "SR": -22.67857142857143
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.4458469093451549
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 31,
+              "target_center_outside_crop": 42,
+              "first_scored_frame": 576,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 736,
+      "end_exclusive": 768,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 40.625,
+              "SR": 32.88690476190476
+            },
+            "velocity": {
+              "PR20": 21.875,
+              "SR": 34.226190476190474
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -18.75,
+            "SR": 1.3392857142857153
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 53.125,
+              "SR": 30.178571428571427
+            },
+            "velocity": {
+              "PR20": 52.5,
+              "SR": 29.970238095238095
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -0.625,
+            "SR": -0.20833333333333215
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 10,
+              "target_center_outside_crop": 13,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.578636028566705
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 10,
+              "target_center_outside_crop": 13,
+              "first_scored_frame": 768,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.5589884487945751
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 928,
+      "end_exclusive": 960,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 12.351190476190474
+            },
+            "velocity": {
+              "PR20": 28.125,
+              "SR": 20.08928571428571
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 28.125,
+            "SR": 7.738095238095237
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 38.75,
+              "SR": 16.696428571428573
+            },
+            "velocity": {
+              "PR20": 63.75,
+              "SR": 28.89880952380952
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 25.0,
+            "SR": 12.202380952380945
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 39,
+              "target_center_outside_crop": 51,
+              "first_scored_frame": 960,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 31,
+              "target_center_outside_crop": 43,
+              "first_scored_frame": 960,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.6764095504465374
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 1120,
+      "end_exclusive": 1152,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 37.5,
+              "SR": 25.0
+            },
+            "velocity": {
+              "PR20": 56.25,
+              "SR": 30.357142857142854
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 18.75,
+            "SR": 5.357142857142854
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 9,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 0.0
+            },
+            "velocity": {
+              "PR20": 77.77777777777777,
+              "SR": 61.9047619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 77.77777777777777,
+            "SR": 61.9047619047619
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 3,
+              "target_center_outside_crop": 9,
+              "first_scored_frame": 1152,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 2,
+              "first_scored_frame": 1152,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "midblkboyplayingphone",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 9.82142857142857
+            },
+            "velocity": {
+              "PR20": 0.0,
+              "SR": 1.9345238095238095
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -7.88690476190476
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 105,
+          "scores": {
+            "hold": {
+              "PR20": 0.0,
+              "SR": 1.4512471655328798
+            },
+            "velocity": {
+              "PR20": 0.9523809523809523,
+              "SR": 2.3582766439909295
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.9523809523809523,
+            "SR": 0.9070294784580497
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 80,
+              "target_center_outside_crop": 90,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 80,
+              "target_center_outside_crop": 90,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 9.375,
+              "SR": 6.101190476190475
+            },
+            "velocity": {
+              "PR20": 9.375,
+              "SR": 5.952380952380952
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -0.14880952380952372
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 160,
+          "scores": {
+            "hold": {
+              "PR20": 99.375,
+              "SR": 78.51190476190474
+            },
+            "velocity": {
+              "PR20": 98.75,
+              "SR": 78.1547619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -0.625,
+            "SR": -0.357142857142847
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.4154715786795369
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 352,
+      "end_exclusive": 384,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 59.375,
+              "SR": 35.26785714285714
+            },
+            "velocity": {
+              "PR20": 37.5,
+              "SR": 24.4047619047619
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -21.875,
+            "SR": -10.863095238095237
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 95,
+          "scores": {
+            "hold": {
+              "PR20": 69.47368421052632,
+              "SR": 45.11278195488721
+            },
+            "velocity": {
+              "PR20": 89.47368421052632,
+              "SR": 60.300751879699234
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 20.0,
+            "SR": 15.187969924812023
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.0
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 1,
+              "target_center_outside_crop": 1,
+              "first_scored_frame": 384,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": false,
+                "target_overlaps_previous_crop": false,
+                "iou": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "sequence": "bikeblkturn",
+      "start": 160,
+      "end_exclusive": 192,
+      "gap_frames": 32,
+      "groups": {
+        "blind": {
+          "frames": 32,
+          "scores": {
+            "hold": {
+              "PR20": 59.375,
+              "SR": 25.59523809523809
+            },
+            "velocity": {
+              "PR20": 34.375,
+              "SR": 22.916666666666664
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": -25.0,
+            "SR": -2.678571428571427
+          }
+        },
+        "observed_until_next_gap": {
+          "frames": 24,
+          "scores": {
+            "hold": {
+              "PR20": 100.0,
+              "SR": 79.56349206349206
+            },
+            "velocity": {
+              "PR20": 100.0,
+              "SR": 79.16666666666667
+            }
+          },
+          "velocity_minus_hold": {
+            "PR20": 0.0,
+            "SR": -0.39682539682539186
+          },
+          "crop_support": {
+            "hold": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8016071505671852
+              }
+            },
+            "velocity": {
+              "target_outside_crop": 0,
+              "target_center_outside_crop": 0,
+              "first_scored_frame": 192,
+              "first_frame_geometry": {
+                "target_center_in_previous_crop": true,
+                "target_overlaps_previous_crop": true,
+                "iou": 0.8685598221846111
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "scope": "Retrospective train882 development localization of fixed-CV regressions. Recovery windows end at the next blind interval or video end. No parameter fitting, intervention, official result or causal mechanism claim."
+}

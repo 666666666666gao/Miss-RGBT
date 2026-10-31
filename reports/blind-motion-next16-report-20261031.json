@@ -1,0 +1,1627 @@
+{
+  "launch": {
+    "pid": 967085,
+    "started_utc": "2026-10-31T04:32:24.381032Z",
+    "scope": "Next16 full train882 development videos; unchanged ordinary CV, no tuning or official test",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "development_indices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "sequences": 16,
+    "frames_per_arm_condition": 7776,
+    "total_tracking_frames": 31104,
+    "parts": {
+      "0": [
+        {
+          "name": "boybesidesbar2putcup",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/boybesidesbar2putcup",
+          "video_frames": 563,
+          "evaluated_frames": 563,
+          "gt_sha256": "d8d33c11d0eb833784e581ac346e8ab1058d25bc657cb58d4a45cff968884f60",
+          "development_index": 4
+        },
+        {
+          "name": "2whitegirl",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/2whitegirl",
+          "video_frames": 164,
+          "evaluated_frames": 164,
+          "gt_sha256": "d59e98ff17a7348a1777e9cd4f6cc39833da100ec84375c6c9adb90369f9dfcf",
+          "development_index": 5
+        },
+        {
+          "name": "blkskirtwoman",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkskirtwoman",
+          "video_frames": 432,
+          "evaluated_frames": 432,
+          "gt_sha256": "336f1307073a6ff3a82239169df53b63973a9901e330b7ce6507259b0bf9848f",
+          "development_index": 7
+        },
+        {
+          "name": "The_girl_back_at_the_lab_1202",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/The_girl_back_at_the_lab_1202",
+          "video_frames": 132,
+          "evaluated_frames": 132,
+          "gt_sha256": "33d94eee824781019f4d67f01ead2f46e1ef0977f09dd8d76e643814149fa0a2",
+          "development_index": 8
+        },
+        {
+          "name": "moto2west",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/moto2west",
+          "video_frames": 80,
+          "evaluated_frames": 80,
+          "gt_sha256": "5e63333977b1f359de74ecaa6d376e74e91f834ff877141b1c070da03cb0ab4a",
+          "development_index": 9
+        },
+        {
+          "name": "motowithgood",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/motowithgood",
+          "video_frames": 89,
+          "evaluated_frames": 89,
+          "gt_sha256": "ed916c4e204c45d7528172ab44207176b4a54dcede7a43ab69e781263484d75e",
+          "development_index": 10
+        },
+        {
+          "name": "5manwakeright",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/5manwakeright",
+          "video_frames": 484,
+          "evaluated_frames": 484,
+          "gt_sha256": "80fc4f5a1a73378aca0075c398a3f10a1f6ab016e2956f41550c67120e88db29",
+          "development_index": 17
+        },
+        {
+          "name": "hyalinepaperfrontclothes",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/hyalinepaperfrontclothes",
+          "video_frames": 1998,
+          "evaluated_frames": 1998,
+          "gt_sha256": "580ee0dc9fe887317bb346c9a2feb9cf484f11a56ae8401f5a2511087c636822",
+          "development_index": 18
+        }
+      ],
+      "1": [
+        {
+          "name": "motocome",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/motocome",
+          "video_frames": 117,
+          "evaluated_frames": 117,
+          "gt_sha256": "0171ce8eef0f0066e1fbdaa4641126c89df9418eae7ce50acb45f5d7e76c9b6d",
+          "development_index": 6
+        },
+        {
+          "name": "whitecarcoming",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarcoming",
+          "video_frames": 150,
+          "evaluated_frames": 150,
+          "gt_sha256": "aa554a29994c7a61a898a7b6b9043f322f7a833dfb9630bec2f36b7b4e1f2215",
+          "development_index": 11
+        },
+        {
+          "name": "shotmaker2",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/shotmaker2",
+          "video_frames": 633,
+          "evaluated_frames": 633,
+          "gt_sha256": "4912cc08cffa2481234bc926197919661075143a77364defe9b228cde21f4820",
+          "development_index": 12
+        },
+        {
+          "name": "right1stgirlin2ndqueue",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/right1stgirlin2ndqueue",
+          "video_frames": 781,
+          "evaluated_frames": 781,
+          "gt_sha256": "34daf9e3eb7ab053c947344d9956d71771f53584e7503eef2e598f7beb12e5a3",
+          "development_index": 13
+        },
+        {
+          "name": "exercisebook",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/exercisebook",
+          "video_frames": 1161,
+          "evaluated_frames": 1161,
+          "gt_sha256": "39f29be626d2de51476afbe67cdc0bd26e44bf7f5b2e63a0c7a6ff2e3bf77c35",
+          "development_index": 14
+        },
+        {
+          "name": "midblkboyplayingphone",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/midblkboyplayingphone",
+          "video_frames": 297,
+          "evaluated_frames": 297,
+          "gt_sha256": "6b2e0dfa061e20d8da359c571fb1f2bada2d60df50b4b8035b7e7e9a3708fbf5",
+          "development_index": 15
+        },
+        {
+          "name": "rightboy479",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightboy479",
+          "video_frames": 479,
+          "evaluated_frames": 479,
+          "gt_sha256": "2e9083da8c7589aca2f8b7792df2b61d839eb6c2ae061e71dddc55087e99ab29",
+          "development_index": 16
+        },
+        {
+          "name": "bikeblkturn",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeblkturn",
+          "video_frames": 216,
+          "evaluated_frames": 216,
+          "gt_sha256": "dd56d3441a45735f0650c7226a7e10cec8d53a9c16a593295ba83c4293d18594",
+          "development_index": 19
+        }
+      ]
+    },
+    "part_frames": {
+      "0": 3942,
+      "1": 3834
+    },
+    "workers_per_gpu": 1,
+    "memory_free_at_launch": "0, 4790\n1, 4825\n",
+    "assignment": "Longest-video-first frame balancing, capacity8 videos per GPU; hold and velocity for a video always share one GPU",
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_blind_motion_cohort28.py": "97fc456aedeea823b6c25c036ec1f30ddf27bdcf8720a6a7eb6dbfbcaf29b53f",
+      "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "11ada36ce0cb1c81955595c1b9a181508af922746f0e7520f8b1ed753c6f6c3e",
+      "/home/gaob/Miss-RGBT/analyze_blind_motion28.py": "2d3f776afbdb12e762bca82be03d85c55b7e500b0871d9102b5288da98dfb1fb"
+    },
+    "children": {
+      "0": 967093,
+      "1": 967094
+    },
+    "poll_seconds": 300
+  },
+  "aggregate": {
+    "complete": {
+      "hold": {
+        "PR20": 84.90998932249137,
+        "SR": 69.54136083443164
+      },
+      "velocity": {
+        "PR20": 84.90998932249137,
+        "SR": 69.54136083443164
+      }
+    },
+    "alternating_outage": {
+      "hold": {
+        "PR20": 69.1093744073786,
+        "SR": 55.843399876325506
+      },
+      "velocity": {
+        "PR20": 70.26497107817386,
+        "SR": 56.69015940008052
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "alternating_outage": {
+      "PR20": {
+        "mean_delta_pp": 1.1555966707952627,
+        "paired_sequence_bootstrap95_pp": [
+          -0.9157358715149146,
+          3.6788368380263177
+        ],
+        "wins": 7,
+        "ties": 7,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": -7.021791767554475
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": -3.720930232558146
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "boybesidesbar2putcup",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "moto2west",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 14.90683229813665
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 8.846153846153847
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 2.30125523012552
+          },
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 1.2269938650306784
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 0.8620689655172384
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.8467595237550027,
+        "paired_sequence_bootstrap95_pp": [
+          -0.8911089665405509,
+          2.836746624999933
+        ],
+        "wins": 6,
+        "ties": 6,
+        "losses": 4,
+        "worst5": [
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": -7.114032053499379
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": -0.8512769153730595
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": -0.5308880308880326
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": -0.4429678848283487
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 11.96884550921817
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 6.55067155067155
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 2.161785216178515
+          },
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.9348524685947979
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.7685352622061572
+          }
+        ]
+      }
+    }
+  },
+  "groups": {
+    "all_valid": {
+      "sequences": 16,
+      "frames": 7742,
+      "delta": {
+        "PR20": 1.1555966707952627,
+        "SR": 0.8467595237550056
+      }
+    },
+    "blind": {
+      "sequences": 11,
+      "frames": 1075,
+      "delta": {
+        "PR20": 6.325757575757577,
+        "SR": 5.264475108225108
+      }
+    },
+    "observed_before_first_blind": {
+      "sequences": 16,
+      "frames": 2298,
+      "delta": {
+        "PR20": 0.0,
+        "SR": 0.0
+      }
+    },
+    "observed_after_first_blind": {
+      "sequences": 10,
+      "frames": 4369,
+      "delta": {
+        "PR20": 2.362047499453964,
+        "SR": 1.5350229091687937
+      }
+    },
+    "both_observed_after_first_blind": {
+      "sequences": 10,
+      "frames": 2651,
+      "delta": {
+        "PR20": 0.8131361453293662,
+        "SR": 0.49592092612034444
+      }
+    }
+  },
+  "per_sequence_groups": {
+    "all_valid": [
+      {
+        "sequence": "boybesidesbar2putcup",
+        "frames": 562,
+        "metrics": {
+          "hold": {
+            "PR20": 6.93950177935943,
+            "SR": 4.905948144382307
+          },
+          "velocity": {
+            "PR20": 6.93950177935943,
+            "SR": 4.905948144382307
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "2whitegirl",
+        "frames": 163,
+        "metrics": {
+          "hold": {
+            "PR20": 94.47852760736197,
+            "SR": 67.86444639205375
+          },
+          "velocity": {
+            "PR20": 95.70552147239263,
+            "SR": 68.79929886064855
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.2269938650306642,
+          "SR": 0.9348524685947979
+        }
+      },
+      {
+        "sequence": "blkskirtwoman",
+        "frames": 413,
+        "metrics": {
+          "hold": {
+            "PR20": 76.99757869249395,
+            "SR": 66.57442638072177
+          },
+          "velocity": {
+            "PR20": 69.97578692493947,
+            "SR": 59.46039432722241
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -7.021791767554475,
+          "SR": -7.114032053499365
+        }
+      },
+      {
+        "sequence": "The_girl_back_at_the_lab_1202",
+        "frames": 131,
+        "metrics": {
+          "hold": {
+            "PR20": 96.18320610687023,
+            "SR": 81.60668847691748
+          },
+          "velocity": {
+            "PR20": 96.18320610687023,
+            "SR": 81.60668847691748
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "moto2west",
+        "frames": 79,
+        "metrics": {
+          "hold": {
+            "PR20": 93.67088607594937,
+            "SR": 77.69740807715489
+          },
+          "velocity": {
+            "PR20": 93.67088607594937,
+            "SR": 77.69740807715489
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "motowithgood",
+        "frames": 88,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 82.3051948051948
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.3051948051948
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "5manwakeright",
+        "frames": 483,
+        "metrics": {
+          "hold": {
+            "PR20": 79.5031055900621,
+            "SR": 65.60189293108547
+          },
+          "velocity": {
+            "PR20": 94.40993788819875,
+            "SR": 77.57073844030367
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 14.90683229813665,
+          "SR": 11.968845509218198
+        }
+      },
+      {
+        "sequence": "hyalinepaperfrontclothes",
+        "frames": 1997,
+        "metrics": {
+          "hold": {
+            "PR20": 21.832749123685527,
+            "SR": 21.539452035195648
+          },
+          "velocity": {
+            "PR20": 22.58387581372058,
+            "SR": 20.68817511982259
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.7511266900350542,
+          "SR": -0.8512769153730595
+        }
+      },
+      {
+        "sequence": "motocome",
+        "frames": 116,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 78.57142857142857
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 78.57142857142857
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "whitecarcoming",
+        "frames": 149,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 86.48130393096837
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 86.48130393096837
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "shotmaker2",
+        "frames": 632,
+        "metrics": {
+          "hold": {
+            "PR20": 88.4493670886076,
+            "SR": 67.6763110307414
+          },
+          "velocity": {
+            "PR20": 88.4493670886076,
+            "SR": 68.44484629294756
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.7685352622061572
+        }
+      },
+      {
+        "sequence": "right1stgirlin2ndqueue",
+        "frames": 780,
+        "metrics": {
+          "hold": {
+            "PR20": 6.794871794871795,
+            "SR": 5.268620268620269
+          },
+          "velocity": {
+            "PR20": 15.64102564102564,
+            "SR": 11.819291819291818
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 8.846153846153847,
+          "SR": 6.550671550671549
+        }
+      },
+      {
+        "sequence": "exercisebook",
+        "frames": 1160,
+        "metrics": {
+          "hold": {
+            "PR20": 43.87931034482759,
+            "SR": 30.311986863711002
+          },
+          "velocity": {
+            "PR20": 44.741379310344826,
+            "SR": 30.414614121510674
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.8620689655172384,
+          "SR": 0.10262725779967141
+        }
+      },
+      {
+        "sequence": "midblkboyplayingphone",
+        "frames": 296,
+        "metrics": {
+          "hold": {
+            "PR20": 19.594594594594593,
+            "SR": 24.87129987129987
+          },
+          "velocity": {
+            "PR20": 19.93243243243243,
+            "SR": 24.340411840411836
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.3378378378378386,
+          "SR": -0.5308880308880326
+        }
+      },
+      {
+        "sequence": "rightboy479",
+        "frames": 478,
+        "metrics": {
+          "hold": {
+            "PR20": 83.47280334728033,
+            "SR": 62.27336122733612
+          },
+          "velocity": {
+            "PR20": 85.77405857740585,
+            "SR": 64.43514644351464
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 2.30125523012552,
+          "SR": 2.1617852161785223
+        }
+      },
+      {
+        "sequence": "bikeblkturn",
+        "frames": 215,
+        "metrics": {
+          "hold": {
+            "PR20": 93.95348837209302,
+            "SR": 69.94462901439645
+          },
+          "velocity": {
+            "PR20": 90.23255813953489,
+            "SR": 69.5016611295681
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -3.720930232558132,
+          "SR": -0.4429678848283487
+        }
+      }
+    ],
+    "blind": [
+      {
+        "sequence": "boybesidesbar2putcup",
+        "frames": 83,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "2whitegirl",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 8.333333333333332
+          },
+          "velocity": {
+            "PR20": 50.0,
+            "SR": 46.42857142857142
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 50.0,
+          "SR": 38.09523809523809
+        }
+      },
+      {
+        "sequence": "blkskirtwoman",
+        "frames": 60,
+        "metrics": {
+          "hold": {
+            "PR20": 1.6666666666666667,
+            "SR": 5.7936507936507935
+          },
+          "velocity": {
+            "PR20": 13.333333333333334,
+            "SR": 11.11111111111111
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 11.666666666666668,
+          "SR": 5.317460317460317
+        }
+      },
+      {
+        "sequence": "5manwakeright",
+        "frames": 64,
+        "metrics": {
+          "hold": {
+            "PR20": 43.75,
+            "SR": 38.24404761904761
+          },
+          "velocity": {
+            "PR20": 57.8125,
+            "SR": 49.77678571428571
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 14.0625,
+          "SR": 11.532738095238095
+        }
+      },
+      {
+        "sequence": "hyalinepaperfrontclothes",
+        "frames": 320,
+        "metrics": {
+          "hold": {
+            "PR20": 3.4375,
+            "SR": 13.31845238095238
+          },
+          "velocity": {
+            "PR20": 5.625,
+            "SR": 10.267857142857142
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 2.1875,
+          "SR": -3.0505952380952372
+        }
+      },
+      {
+        "sequence": "shotmaker2",
+        "frames": 96,
+        "metrics": {
+          "hold": {
+            "PR20": 60.416666666666664,
+            "SR": 49.30555555555555
+          },
+          "velocity": {
+            "PR20": 58.333333333333336,
+            "SR": 53.67063492063492
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -2.0833333333333286,
+          "SR": 4.365079365079367
+        }
+      },
+      {
+        "sequence": "right1stgirlin2ndqueue",
+        "frames": 128,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 25.0,
+            "SR": 15.066964285714285
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 25.0,
+          "SR": 15.066964285714285
+        }
+      },
+      {
+        "sequence": "exercisebook",
+        "frames": 192,
+        "metrics": {
+          "hold": {
+            "PR20": 19.791666666666668,
+            "SR": 19.816468253968253
+          },
+          "velocity": {
+            "PR20": 24.479166666666668,
+            "SR": 22.47023809523809
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 4.6875,
+          "SR": 2.6537698412698383
+        }
+      },
+      {
+        "sequence": "midblkboyplayingphone",
+        "frames": 32,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 9.82142857142857
+          },
+          "velocity": {
+            "PR20": 0.0,
+            "SR": 1.9345238095238095
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -7.88690476190476
+        }
+      },
+      {
+        "sequence": "rightboy479",
+        "frames": 64,
+        "metrics": {
+          "hold": {
+            "PR20": 34.375,
+            "SR": 20.68452380952381
+          },
+          "velocity": {
+            "PR20": 23.4375,
+            "SR": 15.178571428571427
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -10.9375,
+          "SR": -5.505952380952383
+        }
+      },
+      {
+        "sequence": "bikeblkturn",
+        "frames": 32,
+        "metrics": {
+          "hold": {
+            "PR20": 59.375,
+            "SR": 25.59523809523809
+          },
+          "velocity": {
+            "PR20": 34.375,
+            "SR": 22.916666666666664
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -25.0,
+          "SR": -2.678571428571427
+        }
+      }
+    ],
+    "observed_before_first_blind": [
+      {
+        "sequence": "boybesidesbar2putcup",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 24.528301886792452,
+            "SR": 17.340521114106018
+          },
+          "velocity": {
+            "PR20": 24.528301886792452,
+            "SR": 17.340521114106018
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "2whitegirl",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 96.85534591194968,
+            "SR": 69.36208445642407
+          },
+          "velocity": {
+            "PR20": 96.85534591194968,
+            "SR": 69.36208445642407
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "blkskirtwoman",
+        "frames": 145,
+        "metrics": {
+          "hold": {
+            "PR20": 78.62068965517241,
+            "SR": 67.61904761904762
+          },
+          "velocity": {
+            "PR20": 78.62068965517241,
+            "SR": 67.61904761904762
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "The_girl_back_at_the_lab_1202",
+        "frames": 131,
+        "metrics": {
+          "hold": {
+            "PR20": 96.18320610687023,
+            "SR": 81.60668847691748
+          },
+          "velocity": {
+            "PR20": 96.18320610687023,
+            "SR": 81.60668847691748
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "moto2west",
+        "frames": 79,
+        "metrics": {
+          "hold": {
+            "PR20": 93.67088607594937,
+            "SR": 77.69740807715489
+          },
+          "velocity": {
+            "PR20": 93.67088607594937,
+            "SR": 77.69740807715489
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "motowithgood",
+        "frames": 88,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 82.3051948051948
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.3051948051948
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "5manwakeright",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 80.44324648098234
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 80.44324648098234
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "hyalinepaperfrontclothes",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 69.81132075471699,
+            "SR": 49.35609463911349
+          },
+          "velocity": {
+            "PR20": 69.81132075471699,
+            "SR": 49.35609463911349
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "motocome",
+        "frames": 116,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 78.57142857142857
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 78.57142857142857
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "whitecarcoming",
+        "frames": 149,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 86.48130393096837
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 86.48130393096837
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "shotmaker2",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 98.11320754716981,
+            "SR": 68.07427373465111
+          },
+          "velocity": {
+            "PR20": 98.11320754716981,
+            "SR": 68.07427373465111
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "right1stgirlin2ndqueue",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 33.333333333333336,
+            "SR": 25.8460616951183
+          },
+          "velocity": {
+            "PR20": 33.333333333333336,
+            "SR": 25.8460616951183
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "exercisebook",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 31.446540880503143,
+            "SR": 25.876010781671155
+          },
+          "velocity": {
+            "PR20": 31.446540880503143,
+            "SR": 25.876010781671155
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "midblkboyplayingphone",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 36.477987421383645,
+            "SR": 43.36627732854147
+          },
+          "velocity": {
+            "PR20": 36.477987421383645,
+            "SR": 43.36627732854147
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "rightboy479",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 95.59748427672956,
+            "SR": 72.92602575621444
+          },
+          "velocity": {
+            "PR20": 95.59748427672956,
+            "SR": 72.92602575621444
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "bikeblkturn",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 77.41838873914345
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 77.41838873914345
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    ],
+    "observed_after_first_blind": [
+      {
+        "sequence": "boybesidesbar2putcup",
+        "frames": 320,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "blkskirtwoman",
+        "frames": 208,
+        "metrics": {
+          "hold": {
+            "PR20": 97.59615384615384,
+            "SR": 83.37912087912088
+          },
+          "velocity": {
+            "PR20": 80.28846153846153,
+            "SR": 67.71978021978022
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -17.307692307692307,
+          "SR": -15.659340659340657
+        }
+      },
+      {
+        "sequence": "5manwakeright",
+        "frames": 260,
+        "metrics": {
+          "hold": {
+            "PR20": 75.76923076923077,
+            "SR": 63.260073260073256
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.65567765567765
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 24.230769230769226,
+          "SR": 19.395604395604394
+        }
+      },
+      {
+        "sequence": "hyalinepaperfrontclothes",
+        "frames": 1518,
+        "metrics": {
+          "hold": {
+            "PR20": 20.685111989459816,
+            "SR": 20.35886818495514
+          },
+          "velocity": {
+            "PR20": 21.21212121212121,
+            "SR": 19.882050316832924
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.5270092226613947,
+          "SR": -0.4768178681222146
+        }
+      },
+      {
+        "sequence": "shotmaker2",
+        "frames": 377,
+        "metrics": {
+          "hold": {
+            "PR20": 91.51193633952255,
+            "SR": 72.18643425539976
+          },
+          "velocity": {
+            "PR20": 92.04244031830238,
+            "SR": 72.36326891499306
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.5305039787798336,
+          "SR": 0.1768346595932968
+        }
+      },
+      {
+        "sequence": "right1stgirlin2ndqueue",
+        "frames": 493,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 7.505070993914807,
+            "SR": 6.45223606684053
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 7.505070993914807,
+          "SR": 6.45223606684053
+        }
+      },
+      {
+        "sequence": "exercisebook",
+        "frames": 809,
+        "metrics": {
+          "hold": {
+            "PR20": 52.03955500618047,
+            "SR": 33.67473070810524
+          },
+          "velocity": {
+            "PR20": 52.16316440049444,
+            "SR": 33.19206545411737
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.12360939431396645,
+          "SR": -0.48266525398786797
+        }
+      },
+      {
+        "sequence": "midblkboyplayingphone",
+        "frames": 105,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 1.4512471655328798
+          },
+          "velocity": {
+            "PR20": 0.9523809523809523,
+            "SR": 2.3582766439909295
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.9523809523809523,
+          "SR": 0.9070294784580497
+        }
+      },
+      {
+        "sequence": "rightboy479",
+        "frames": 255,
+        "metrics": {
+          "hold": {
+            "PR20": 88.23529411764706,
+            "SR": 66.06909430438841
+          },
+          "velocity": {
+            "PR20": 95.29411764705883,
+            "SR": 71.50326797385621
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 7.058823529411768,
+          "SR": 5.434173669467796
+        }
+      },
+      {
+        "sequence": "bikeblkturn",
+        "frames": 24,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 79.56349206349206
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 79.16666666666667
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.39682539682539186
+        }
+      }
+    ],
+    "both_observed_after_first_blind": [
+      {
+        "sequence": "boybesidesbar2putcup",
+        "frames": 192,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "blkskirtwoman",
+        "frames": 128,
+        "metrics": {
+          "hold": {
+            "PR20": 97.65625,
+            "SR": 85.49107142857142
+          },
+          "velocity": {
+            "PR20": 71.875,
+            "SR": 62.723214285714285
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -25.78125,
+          "SR": -22.76785714285713
+        }
+      },
+      {
+        "sequence": "5manwakeright",
+        "frames": 160,
+        "metrics": {
+          "hold": {
+            "PR20": 80.0,
+            "SR": 65.80357142857142
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 83.125
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 20.0,
+          "SR": 17.321428571428584
+        }
+      },
+      {
+        "sequence": "hyalinepaperfrontclothes",
+        "frames": 910,
+        "metrics": {
+          "hold": {
+            "PR20": 20.10989010989011,
+            "SR": 21.15646258503401
+          },
+          "velocity": {
+            "PR20": 20.54945054945055,
+            "SR": 20.643642072213503
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.43956043956044155,
+          "SR": -0.5128205128205074
+        }
+      },
+      {
+        "sequence": "shotmaker2",
+        "frames": 224,
+        "metrics": {
+          "hold": {
+            "PR20": 99.10714285714286,
+            "SR": 75.99914965986393
+          },
+          "velocity": {
+            "PR20": 99.10714285714286,
+            "SR": 76.42431972789116
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.4251700680272279
+        }
+      },
+      {
+        "sequence": "right1stgirlin2ndqueue",
+        "frames": 301,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 12.29235880398671,
+            "SR": 9.555450087011547
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 12.29235880398671,
+          "SR": 9.555450087011547
+        }
+      },
+      {
+        "sequence": "exercisebook",
+        "frames": 489,
+        "metrics": {
+          "hold": {
+            "PR20": 45.39877300613497,
+            "SR": 30.110039925990844
+          },
+          "velocity": {
+            "PR20": 48.466257668711656,
+            "SR": 31.02541630148992
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 3.067484662576689,
+          "SR": 0.9153763754990756
+        }
+      },
+      {
+        "sequence": "midblkboyplayingphone",
+        "frames": 64,
+        "metrics": {
+          "hold": {
+            "PR20": 0.0,
+            "SR": 0.0
+          },
+          "velocity": {
+            "PR20": 0.0,
+            "SR": 0.0
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "rightboy479",
+        "frames": 159,
+        "metrics": {
+          "hold": {
+            "PR20": 94.96855345911949,
+            "SR": 72.32704402515724
+          },
+          "velocity": {
+            "PR20": 93.08176100628931,
+            "SR": 72.74633123689728
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -1.8867924528301785,
+          "SR": 0.41928721174004124
+        }
+      },
+      {
+        "sequence": "bikeblkturn",
+        "frames": 24,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 79.56349206349206
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 79.16666666666667
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.39682539682539186
+        }
+      }
+    ]
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "ae121280ea99ba088b4092554b298d4f946c1787f49ea9887723b160fcc62d3d",
+      "analysis_sha256": "53bfb79fec5489d1524b9affb3423a52e03e883eac7c5168c27eda1b00819178"
+    },
+    "1": {
+      "report_sha256": "d4ead568d6c2aec20b9e6b8f0f24de1321aa3187a4ec89024cdbd50d23968866",
+      "analysis_sha256": "f66b81992c04a68bee6621d1371cfc5aefa70e42de9a74f70e4b574b8f614590"
+    }
+  },
+  "trajectories_verified": 64,
+  "source_sha256": "97fc456aedeea823b6c25c036ec1f30ddf27bdcf8720a6a7eb6dbfbcaf29b53f",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 2027,
+  "uncertainty_scope": "Paired video resampling on16 registered development videos; not training-seed uncertainty, official results or a novel module"
+}
