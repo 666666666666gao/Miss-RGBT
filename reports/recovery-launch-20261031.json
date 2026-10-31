@@ -1,0 +1,59 @@
+{
+  "started_utc": "2026-10-31T08:45:53.132042Z",
+  "boot_id": "8212e607-b051-467d-a468-86436b0b702e",
+  "memory_before_launch": "0, 1\n1, 1\n2, 1\n3, 33\n",
+  "campaigns": {
+    "a_utility_full20_seed2027": {
+      "controller_pid": 49952,
+      "physical_gpu": 0,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/recovery_campaign28.py",
+        "--label",
+        "a_utility_full20_seed2027",
+        "--gpu",
+        "0"
+      ]
+    },
+    "a_random_full20_seed2027": {
+      "controller_pid": 49953,
+      "physical_gpu": 1,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/recovery_campaign28.py",
+        "--label",
+        "a_random_full20_seed2027",
+        "--gpu",
+        "1"
+      ]
+    },
+    "batch10_utility_seed2027": {
+      "controller_pid": 49955,
+      "physical_gpu": 2,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/recovery_campaign28.py",
+        "--label",
+        "batch10_utility_seed2027",
+        "--gpu",
+        "2"
+      ]
+    },
+    "batch10_random_seed2027": {
+      "controller_pid": 49956,
+      "physical_gpu": 3,
+      "command": [
+        "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+        "-u",
+        "/home/gaob/Miss-RGBT/recovery_campaign28.py",
+        "--label",
+        "batch10_random_seed2027",
+        "--gpu",
+        "3"
+      ]
+    }
+  }
+}

@@ -1589,3 +1589,39 @@ untilanalysis;originalactive sourcesunchanged. SeeCALIBRATION_GAP_CONTROL doc.
 Nextmeaningfulrandom10~16:20,center16~16:30-17:00,utility10~16:54 UTC+08.
 Officialtargets,final5selection andthreevalidatedmodulesremainincomplete.
 
+## 2026-10-31 17:00 UTC+08 - IMPORTANT: reboot and recovery
+
+Original processes ALL TERMINATED after actual repeated reboots16:24/16:28.
+Current boot8212e607-b051-467d-a468-86436b0b702e, unchangedthrough16:59.
+CPUverified4checkpoints restored in independent runs/server28-recovery-20261031.
+Controllers49952/49953/49955/49956;trainers50004/49999/50013/50008 GPU0/1/2/3.
+Fixedbothfromepoch10,Utilitycandidatefrom9,Randomcandidatefrom10. Actual
+updateshundredsafterrestoration16:59,finite losses,VRAM19346/19346/22732/22806.
+OriginalRNGnotstored,NOTbitwisecontinuation;newmatchedepochseedstreams.
+Originalfilespreserved;rolling/finalcleanupremoveonlyrecoverylinks,global
+oldnonselectedweightcleanupstillpending. All4nowgetfinal5full97selection
+andthenofficialscores. Fixedruns20/candidatespostdroppatienceunchanged.
+
+Newrandom10validationmean4.9969308004(states4.2394807264/5.9841034710/
+4.7672082037),worse9mean4.9724204093;Utility10interrupted,notcompleted.
+Recoverydocdocs/REBOOT_RECOVERY_20261031.md;checkpointaudit/recoverylaunch
+archivedreports. Firstauditbecame0bytesaftersecondreboot;replacementfsyncs.
+Noassertedcause/no temperaturepowerqueryorchange.
+
+Evalrecovery72348workers72352/72353live17:00:21. Reusehash/metricsverified
+complete savedtracks,unfinishedvideosrestartfrominitialization;oldpartial
+outputsunchanged. Newcenteroutputserver28-state-offset-replication16-recovered-20261031.
+Thenregisteredgeometry4/gap4new-recovereddirs;unchangedoriginalsources.
+Preserveallold/newregisteredsourcesuntilanalyses. No finalresultyet.
+Nextcandidateepochboundaries~18:15-18:40UTC+08subjecttoactualspeed.
+Fullobjective/threevalidatedmodules/officialtargetsremainincomplete.
+
+Recovery reverified17:08: all four controllers/trainers and evaluation
+controller72348/workers72352/72353 alive. At17:09 center16 has82/96
+complete tracks (GPU0 24/30, GPU1 58/66; video counts intentionally unequal
+to balance frames). Includes hash/metric-verified reused tracks and fresh
+whitegirl2 outage. Long leftconergirl6158 corrected tracks still pending.
+Estimated center final17:45-18:15 + up to300s queue wakeup, provisional.
+Detailed recent metrics docs/LATEST_TRAINING_METRICS_20261031.md;
+candidate Random10 worse than9, no convergence or official new score.
+
