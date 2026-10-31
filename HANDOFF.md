@@ -1316,3 +1316,18 @@ changingservercopy, SHAb0f91914a219109f679424e3692c21ace5a66a16ac7730c6ea010783f
 docs/TRAINING_LIFECYCLE_AUDIT_20261031.md andreportreceiptclarifyallstages.
 Futurecandidatefinal5eval/selection/cleanup/officialscoresstillpending.
 
+## 2026-10-31 13:32 UTC+08 - SAMURAI source review
+
+PinnedSAMURAI76ba195984892b0d1e3db5d9c9f90bb62175680a, inspected
+modeling/sam2_base.py,utils/kalman_filter.py,rootApache2license.
+MotionmeanIoU+predictedmaskqualityselectsmasks; filteredhistoricalmemory
+stillforciblyincludeslatestframe. Notstricttrustedmemoryguarantee;
+doesnotrestoremisingCADTrackcropcoverage. Filterdt1mustadvancevideotime,
+notourneuralcallframe_idwhichskipsblindframes. DonotcopySAMquality
+thresholdstohannresponseormislabelordinaryKF/memorygatingasnovelmodules.
+Noexternalcode/weights/depsintegrated; docs/SAMURAI_SOURCE_REVIEW_20261031.md.
+
+At13:32:10 CPU869785 completedsecondarm192updates, stilllivefinal
+measurement/selection, nopairedcompleted/analysisyet. State1044705,
+1044714/1044715 andcomparison1049221live. Preservequeues/sourcehashes.
+
