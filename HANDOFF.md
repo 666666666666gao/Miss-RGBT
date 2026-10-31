@@ -1625,3 +1625,21 @@ Estimated center final17:45-18:15 + up to300s queue wakeup, provisional.
 Detailed recent metrics docs/LATEST_TRAINING_METRICS_20261031.md;
 candidate Random10 worse than9, no convergence or official new score.
 
+## 2026-10-31 17:22 UTC+08 - Compensation versus selection intervention
+
+New isolated CPU4thread audit101337 launched~17:18; analyzer queue105825
+uses300s polling. Both actual alive17:21:40. Utility16/128 samples completed
+all4arms/3states in185.28s, native tail bitwise witnesses passed. No result
+claim yet. Two matched candidate epoch6/update12000 checkpoints, because
+Random5 was already removed by rolling retention; different from epoch5
+full97 tracking. Exact existing128 cached inputs SHA13105d... reverified.
+Same pre-repair features/context within each model: native4/off/random4/all16;
+full templates/both searches/states11/01/10, no fitting/no weight writes.
+Independent analyzer checks receipts/hashes/shapes/random draws/means;
+producer checks unchanged full model state after restoring selector RNG.
+No PR/SR, novel-module or retrained-ablation claim. Between-model effects
+also include jointly trained trunk/correction. Doc
+docs/CANDIDATE_REPAIR_INTERVENTION_20261031.md; launch/queue receipts inreports.
+Keep4new audit sources/registered runtime unchanged. Expected~18:05-18:15
+full CPU result; current GPU sources/queues unchanged. Goal incomplete.
+

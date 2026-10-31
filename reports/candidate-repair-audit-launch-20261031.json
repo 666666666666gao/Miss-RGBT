@@ -1,0 +1,35 @@
+{
+  "pid": 101337,
+  "started_utc": "2026-10-31T09:18:05.412208Z",
+  "device": "cpu",
+  "threads": 4,
+  "inputs_sha256": "13105d2512b095da153e0ec8cd38cf6264c0971db7d40b036ddfc10a71455391",
+  "validation_seed": 1701,
+  "samples": 128,
+  "batch_size": 4,
+  "motivating_epoch5_tracking_report_sha256": "7034c378efa3dd1430dd32dcd94e968aaa11832a3e333f8a95b922aa106f7c31",
+  "checkpoint_epoch": 6,
+  "checkpoint_updates": 12000,
+  "checkpoint_sha256": {
+    "utility": "ec9b4b087f2f44f71831ada45c3c34ee82efaad4d5344e048aaf9a7ce526a527",
+    "random": "66fa8175a6f000e711da8577903eba386c2a8b03c94b504e68e7a82c5f4577ee"
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/audit_candidate_repair28.py": "d7b3a0e648eb8c5fec3c3fefa886b18a2fa63c27f241181de6b7614e7275edaf",
+    "/home/gaob/Miss-RGBT/audit_validation_reference28.py": "d6df87561c57a75658ce9cd625f14420c86ac559a5a0365cee3290bd37740eed",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/task_utility.py": "6f9d5c8947b5915eb4d56010caacd72710b69353306e83d0a1221d87e25b67b5",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+  },
+  "arms": [
+    "native4",
+    "off",
+    "random4",
+    "all16"
+  ],
+  "random_control_seed": 2027,
+  "protocol": "Exact fixed128 cached tuples, both search frames, full templates, search11/01/10, eval mode, no patch masking or optimization. Within each model/search, reuse identical pre-repair features and context for off, seeded random4 and all16 tail interventions. Native4 is re-executed through the same tail as an exact witness.",
+  "scope": "Inference ablations of the retained matched epoch6 checkpoints, motivated by epoch5 full97 tracking but distinct weights. Random epoch5 was already removed by rolling retention. Not retrained ablations, tracking PR/SR, official scores, independent validation or a novel module. All16 costs more and is only a diagnostic. CPU/GPU equality is not assumed."
+}
