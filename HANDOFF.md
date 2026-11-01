@@ -2361,3 +2361,20 @@ No full run completed and no aggregate metrics changed. GPU temperatures
 were 74-81 C; power draw was 248.93-249.44 W under 250 W limits. Receipt
 counts are operational progress only. Preserve all checkpoints and do not
 restart the evaluators, launch training, or run val97.
+
+## 2026-11-02 02:59-03:03 CST - Official queue progress
+
+The same four official evaluator PIDs remained live throughout a 240-second
+wait. Receipt counts advanced:
+
+| GPU | Candidate | Condition | Receipts before -> after |
+|---|---|---|---:|
+| 0 | Fixed A Random epoch20 | Complete | 161 -> 184 / 479 |
+| 1 | Fixed A Utility epoch20 | Complete | 84 -> 96 / 479 |
+| 2 | Batch10 Utility epoch17 | Miss | 125 -> 146 / 479 |
+| 3 | Batch10 Random epoch17 | Miss | 48 -> 58 / 479 |
+
+No `completed.json` or `metrics.json` appeared for these runs. GPU
+temperatures were 74-81 C and power draw was 248.94-249.71 W, below the
+250 W limits. These receipts are progress only; preserve all checkpoints
+and do not restart jobs, launch training, or run val97.
