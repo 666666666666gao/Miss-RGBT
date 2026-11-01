@@ -13,6 +13,7 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Batch10 Utility, epoch14 | 85.139809 | 61.393057 |
 | Fixed A Random, epoch16 | 84.746741 | 60.612033 |
 | Fixed A Utility, epoch16 | 84.946943 | 60.677252 |
+| Fixed A Random, epoch17 | 85.328042 | 60.523251 |
 | Requested threshold | >88.1 | >64.3 |
 
 The requested RGBT234-Miss thresholds are +5.305185 MPR and +4.725565 MSR
@@ -23,6 +24,13 @@ Utility epoch14 adds +2.344994/+1.818622, the largest verified RGBT234-Miss
 result in the current campaign, but remains 2.960191 MPR and 2.906943 MSR
 below the requested threshold. The requested threshold is not equivalent to
 a two-point gain over E0.
+
+Fixed A Random epoch17 is now the highest verified RGBT234-Miss MPR at
+85.328042, while its MSR is 60.523251. Against epoch16, MPR improves by
+0.581301 but MSR decreases by 0.088782; LasHeR PR/SR change from
+68.065197/54.134896 to 68.729255/54.635222. This shows candidate and metric
+tradeoffs, not a dataset-specific cause. It remains 2.771958 MPR and 3.776749
+MSR below the requested thresholds.
 
 Batch10 Utility epoch13 is nearly tied with historical A: -0.060903 MPR and
 +0.145671 MSR. Fixed A epoch16 is also near the historical result (-0.017410
@@ -73,7 +81,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 18:01 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 18:13 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -105,15 +113,19 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch15 complete | 126/479, 229,439 frames |
-| Batch10 Utility | epoch15 complete | 168/479, 255,008 frames |
-| Fixed A Random | epoch17 miss | 273/479, 299,566 frames |
-| Fixed A Utility | epoch17 miss | 207/479, 274,232 frames |
+| Batch10 Random | epoch15 complete | 196/479 |
+| Batch10 Utility | epoch15 complete | 257/479 |
+| Fixed A Random | epoch18 complete | 0/479 |
+| Fixed A Utility | epoch17 miss | 354/479 |
 
-The receipt counts are progress only, not performance metrics. Batch10
-Utility epoch14 Miss completed; both Batch10 arms advanced to epoch15
-complete. Both Fixed A epoch17 complete runs finished and advanced to Miss.
-Preserve all weights. Do not run val97.
+Fixed A Random epoch17 `miss` passed independent full-scope audit:
+`condition=miss`, `limit=null`, 479 sequence receipts and 337,353 frames;
+dataset counts are 245/220,703 for LasHeR-Miss and 234/116,650 for
+RGBT234-Miss. `completed.json` matches the run, checkpoint and evaluator
+SHA256 values match the manifest, and every bbox file hash matches its
+receipt. Metrics are LasHeR PR/NPR/SR 68.729255/63.438200/54.635222 and
+RGBT234 MPR/MSR 85.328042/60.523251. Queue receipt counts are progress only,
+not performance metrics. Preserve all weights. Do not run val97.
 Report Miss scores only after each official evaluation has 479 sequence
 receipts and 337,353 frames and its aggregate result has been independently
 checked.
