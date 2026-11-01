@@ -2395,3 +2395,35 @@ No `completed.json` or `metrics.json` appeared for these runs. GPU
 temperatures were 74-81 C and power draw was 249.15-249.48 W, below the
 250 W limits. Counts are progress only; preserve all checkpoints and do not
 restart the evaluators, launch training, or run val97.
+
+## 2026-11-02 03:31-03:50 CST - Batch10 Utility epoch17 Miss audited
+
+The full official `miss` evaluation passed independent recomputation with
+`limit=null`, 479 sequences, and 337,353 frames. Scope matches
+245/220,703 LasHeR-Miss and 234/116,650 RGBT234-Miss. The verifier checked
+all per-sequence receipts and bbox hashes, source/evaluator/GT/mask hashes,
+then recalculated official metrics and curves from saved trajectories.
+Checkpoint SHA256:
+`fbeaf71a9b4bbfb46e926251b34c7fb1960c4ba41d3da75745342638fd4dc062`.
+
+Metrics: LasHeR-Miss PR/NPR/SR `70.397396/65.127562/55.789882`;
+RGBT234-Miss MPR/MSR `85.097378/60.685934`. This is the new audited
+per-metric maximum for all three LasHeR-Miss scores. Against E0 Miss, gains
+are `+6.924889/+6.545711/+5.206733`; the requested LasHeR PR/SR thresholds
+are cleared. RGBT234-Miss is still led by Fixed A Random epoch19 at
+`86.073187/61.660594`, short of the requested thresholds by
+`2.026813/2.639406`. Audit:
+`docs/BATCH10_UTILITY_EPOCH17_MISS_AUDIT_20261102.md`.
+
+At 03:50 CST, the remaining official evaluators were live: Fixed A Utility
+epoch20 Complete PID 3596077 at 441/479 receipts, Batch10 Random epoch17
+Miss PID 3632441 at 341/479, and Fixed A Random epoch20 Miss PID 3755113
+at 6/479. Batch10 Utility's final-five queue completed. GPU3 was idle;
+GPUs0-2 were 76-79 C, 248.57-249.19 W with 250 W caps. Do not infer scores
+from these receipt counts, restart work, select a checkpoint, delete weights,
+or run val97. Allow the three active full evaluations to finish before
+considering another training run.
+
+All requested target thresholds and the three experimentally validated
+paper modules remain unachieved. Current research boundary and module gate:
+`docs/MISSING_MODALITY_SOURCE_REVIEW_20261102.md`.

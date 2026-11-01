@@ -19,14 +19,16 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Fixed A Utility, epoch17 | 85.649309 | 60.685303 |
 | Fixed A Random, epoch18 | 85.840473 | 61.418089 |
 | Fixed A Utility, epoch18 | 86.039255 | 61.454244 |
+| Fixed A Random, epoch19 | 86.073187 | 61.660594 |
+| Batch10 Utility, epoch17 | 85.097378 | 60.685934 |
 | Requested threshold | >88.1 | >64.3 |
 
 The requested RGBT234-Miss thresholds are +5.305185 MPR and +4.725565 MSR
 above the measured E0 baseline. Historical A adds +2.169538 and +0.936851;
 Batch10 Utility epoch13 adds +2.108635 and +1.082522. Fixed A epoch16 adds
 +1.951926/+1.037598 (Random) and +2.152128/+1.102817 (Utility). Batch10
-Utility epoch14 adds +2.344994/+1.818622; Fixed A Utility epoch18 is now
-highest at +3.244440 MPR/+1.879809 MSR. The requested threshold is not
+Utility epoch14 adds +2.344994/+1.818622. Fixed A Random epoch19 is now
+highest at +3.278372 MPR/+2.086159 MSR. The requested threshold is not
 equivalent to a two-point gain over E0.
 
 ## Best Audited Official Metrics So Far
@@ -36,27 +38,27 @@ available so far. Different columns can come from different checkpoints; this
 is not one model's combined score. The final-five evaluation is still running,
 so later epochs can change these maxima.
 
-| Condition | Metric | Best candidate / epoch | Candidate | Original E0 | Delta vs E0 |
+| Condition | Metric | Best model / epoch | Score | Original E0 | Delta vs E0 |
 |---|---|---|---:|---:|---:|
-| Complete | LasHeR PR | Batch10 Utility / 13 | 75.459824 | 75.636503 | -0.176679 |
-| Complete | LasHeR NPR | Batch10 Utility / 13 | 72.049205 | 71.772837 | +0.276368 |
-| Complete | LasHeR SR | Fixed A Utility / 16 | 60.316126 | 60.125714 | +0.190412 |
+| Complete | LasHeR PR | Batch10 Utility / 17 | 75.751492 | 75.636503 | +0.114989 |
+| Complete | LasHeR NPR | Batch10 Random / 17 | 72.171251 | 71.772837 | +0.398414 |
+| Complete | LasHeR SR | Batch10 Random / 17 | 60.419370 | 60.125714 | +0.293656 |
 | Complete | RGBT234 MPR | Fixed A Random / 16 | 91.043051 | 90.677134 | +0.365917 |
-| Complete | RGBT234 MSR | Batch10 Random / 14 | 66.311785 | 66.845228 | -0.533443 |
-| Miss | LasHeR PR | Batch10 Random / 15 | 69.568285 | 63.472507 | +6.095778 |
-| Miss | LasHeR NPR | Batch10 Utility / 13 | 64.255180 | 58.581851 | +5.673330 |
-| Miss | LasHeR SR | Batch10 Utility / 13 | 55.088625 | 50.583149 | +4.505476 |
-| Miss | RGBT234 MPR | Fixed A Utility / 18 | 86.039255 | 82.794815 | +3.244440 |
-| Miss | RGBT234 MSR | Fixed A Utility / 18 | 61.454244 | 59.574435 | +1.879809 |
+| Complete | RGBT234 MSR | Original CADTrack E0 | 66.845228 | 66.845228 | 0.000000 |
+| Miss | LasHeR PR | Batch10 Utility / 17 | 70.397396 | 63.472507 | +6.924889 |
+| Miss | LasHeR NPR | Batch10 Utility / 17 | 65.127562 | 58.581851 | +6.545711 |
+| Miss | LasHeR SR | Batch10 Utility / 17 | 55.789882 | 50.583149 | +5.206733 |
+| Miss | RGBT234 MPR | Fixed A Random / 19 | 86.073187 | 82.794815 | +3.278372 |
+| Miss | RGBT234 MSR | Fixed A Random / 19 | 61.660594 | 59.574435 | +2.086159 |
 
-Including E0 itself, E0 remains the overall complete-input maximum for LasHeR
-PR/SR and RGBT234 MSR; current candidates lead on LasHeR NPR and RGBT234 MPR.
-The current candidate Miss maxima still miss the requested RGBT234 thresholds
-by 2.060745 MPR and 2.845756 MSR.
+Including E0 itself, E0 remains the overall complete-input maximum for
+RGBT234 MSR; the current candidates lead on all three LasHeR complete metrics,
+RGBT234 MPR, and all three LasHeR-Miss metrics. The current RGBT234-Miss
+maxima still miss the requested thresholds by 2.026813 MPR and 2.639406 MSR.
 
-Fixed A Utility epoch17 was the previous highest verified RGBT234-Miss result.
-Fixed A Utility epoch18 now leads both RGBT234-Miss metrics at 86.039255/
-61.454244, still 2.060745/2.845756 below the target.
+Fixed A Random epoch19 leads both RGBT234-Miss metrics at 86.073187/61.660594.
+Batch10 Utility epoch17 now leads all three LasHeR-Miss metrics at
+70.397396/65.127562/55.789882.
 Against epoch16 Utility, RGBT234 MPR/MSR improve by 0.702366/0.008051 and
 LasHeR PR/SR by 0.468011/0.434108. Fixed A Random epoch17 improves its
 RGBT234 MPR by 0.581301 but decreases MSR by 0.088782 against its epoch16.
