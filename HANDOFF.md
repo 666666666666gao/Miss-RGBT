@@ -2588,3 +2588,36 @@ SHA256 `fa6e4c98b0d51730b288024d59b369581d717c96cbd878ea335d6105da6fa09f`.
 The diagnostic script, Python3.7 fixes, and protocol/result record are on
 `codex/server28-research`; no candidate training or checkpoint cleanup was
 performed. GPU2 is released.
+
+## 2026-11-02 07:14 UTC+08 - Train-only joint utility-set diagnostic
+
+Previous turn classified as no progress toward the research objective: it
+reported the already-audited official table without new experimental evidence.
+This turn revalidated clean local/remote commit6be2713, idle GPU0-3 and
+the rejected block-bypass result, then completed a new frozen-checkpoint
+train882 diagnostic. No val97 or official-test inference was launched.
+
+Fixed A Utility ep16 was fixed as the first retained final-five epoch,
+not chosen by official scores. SHA25642ed78bb821a34f2695423a3a5d8db3ea0af0ab7820022b78588378fea803c8d.
+GPU2 process4108301 completed128 tuples from118 training sequences, three
+search conditions, batch8, no parameter updates. The same pre-repair features
+fed no-repair, utility/random/similarity top4 and four selected single-region
+interventions. Both missing-state utility-vs-control bootstrap intervals
+cross zero, as do joint-minus-single-sum interaction intervals. Registered
+training gate=false: do not launch joint-utility training from these results.
+
+Report `reports/server28_joint_utility_sets_20261102/diagnostic.json`,
+SHA2561a36cb0f3235fc5d2ad56821efe16d3a6e110a0bcc7ec17e806589b2ac37f0d7.
+Separate local analyzer verified384 saved records, sequence membership,
+input pairing, means and all sequence-bootstrap calculations. See
+`docs/JOINT_UTILITY_SET_DIAGNOSTIC_20261102.md` for results and limitations.
+This is a one-checkpoint task-loss diagnostic with complete templates, not
+official scores, proof of exact additivity, or an independently reviewed
+paper module. All-map parity/repeat noise/frozen-state digests were not
+recorded; do not imply otherwise. GPU2 worker exited; preserve all weights.
+
+Next research direction must address useful correction or target localization
+with train-only evidence rather than assume subset interactions explain the
+gap. Existing negative bypass, unconditional geometry/state-template and
+ordinary motion results remain closed; do not restart them. Complete gains
+near2 points, RGBT234-Miss targets and three validated modules remain unmet.

@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "diagnostic": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_joint_utility_sets_20261102/diagnostic.json",
+  "diagnostic_sha256": "1a36cb0f3235fc5d2ad56821efe16d3a6e110a0bcc7ec17e806589b2ac37f0d7",
+  "checkpoint_sha256": "42ed78bb821a34f2695423a3a5d8db3ea0af0ab7820022b78588378fea803c8d",
+  "tuples": 128,
+  "condition_rows": 384
+}

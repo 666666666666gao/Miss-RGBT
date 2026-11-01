@@ -1,0 +1,7 @@
+{
+  "stage": "complete",
+  "tuples_processed": 128,
+  "condition_rows_processed": 384,
+  "diagnostic": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_joint_utility_sets_20261102/diagnostic.json",
+  "completed": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_joint_utility_sets_20261102/completed.json"
+}

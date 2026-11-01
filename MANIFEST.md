@@ -2,6 +2,13 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/diagnose_joint_utility_sets.py`,
+`scripts/analyze_joint_utility_sets.py`,
+`docs/JOINT_UTILITY_SET_DIAGNOSTIC_20261102.md`, and
+`reports/server28_joint_utility_sets_20261102/` record a completed train882-only
+frozen-checkpoint diagnostic and saved-arithmetic verification. Registered
+training gate failed; no training, official evaluation, or module promotion.
+
 | Timestamp | Skill | File | Stage | Description |
 |---|---|---|---|---|
 | 2026-10-13 | /experiment-plan + /run-experiment | README.md | implementation | 实际 E0、方案、环境；新训练效果待验证 |
