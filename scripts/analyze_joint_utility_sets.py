@@ -84,7 +84,7 @@ def main():
                   condition_rows=384, tuples=128, summaries=summaries,
                   registered_gate=gate,
                   limitations='Saved-record recomputation only; no independent neural replay, frozen-state digest or training-seed replication.')
-    with (directory / 'analysis.json').open('x') as stream:
+    with (directory / 'analysis.json').open('x', newline='\n') as stream:
         json.dump(result, stream, indent=2)
         stream.write('\n')
     print(json.dumps(result, indent=2))
