@@ -266,3 +266,21 @@ At 23:59 CST, remaining active evaluations were Batch10 Random epoch16 Miss
 Miss 0/479, and Fixed A Utility epoch19 complete 346/479. GPUs were
 75-82 C and 249.19-249.61 W under 250 W limits. No training or val97 run
 was started; all checkpoints remain.
+
+## Fixed A Utility epoch19 complete, audited 2026-11-02 00:06 CST
+
+| Arm / epoch | Condition | LasHeR PR/NPR/SR | RGBT234 MPR/MSR |
+|---|---|---:|---:|
+| Fixed A Utility / 19 | Complete | 73.888772 / 70.183386 / 59.052663 | 90.778065 / 65.965932 |
+
+Full audit passed: `limit=null`, 479 sequences/337,353 frames; 245/220,703
+LasHeR and 234/116,650 RGBT234; run/completed agreement; all individual
+receipts match the aggregate; all bbox hashes pass; checkpoint/evaluator
+hashes pass; and all 110 runtime source hashes match. This result does not
+change any current complete-input per-metric maximum.
+
+At 00:06 CST, Batch10 Random epoch16 Miss was 397/479, Batch10 Utility
+epoch17 complete 3/479, Fixed A Random epoch19 Miss 4/479, and Fixed A
+Utility epoch19 Miss had just started. These are progress counts only. GPUs
+were 48-82 C with GPU1 momentarily idle during evaluator startup; the other
+three were near 249 W under 250 W limits. No new training or val97 run.

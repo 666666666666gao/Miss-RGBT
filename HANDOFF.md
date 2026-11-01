@@ -2198,3 +2198,21 @@ epoch19 `miss` `0/479`, and Fixed A Utility epoch19 `complete` `346/479`.
 GPU0-3 were at 75-82 C and 249.19-249.61 W under 250 W limits. No new
 training or val97 evaluation was started.
 
+## 2026-11-02 00:06 CST - Fixed A Utility epoch19 complete audited
+
+The official complete run passed full-scope audit: `condition=complete`,
+`limit=null`, 479 sequences/337,353 frames, with 245/220,703 LasHeR and
+234/116,650 RGBT234. Run/completed records agree; all 479 individual receipt
+records match `all_receipts.json`; all bbox hashes, checkpoint/evaluator
+hashes, and 110 runtime source-file hashes match.
+
+Metrics: LasHeR PR/NPR/SR `73.888772/70.183386/59.052663`; RGBT234 MPR/MSR
+`90.778065/65.965932`. This does not update the per-metric complete maxima.
+Its paired Miss run has started.
+
+At 00:06 CST, the other live queues were Batch10 Random epoch16 Miss
+`397/479`, Batch10 Utility epoch17 complete `3/479`, and Fixed A Random
+epoch19 Miss `4/479`. Fixed A Utility epoch19 Miss had just started. GPUs
+0-3 were 48-82 C, with GPU1 momentarily idle during evaluator startup and
+the others near 249 W under 250 W limits. No new training or val97 run.
+
