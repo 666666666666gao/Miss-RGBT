@@ -12,6 +12,7 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Batch10 Utility, epoch13 | 84.903450 | 60.656957 |
 | Batch10 Utility, epoch14 | 85.139809 | 61.393057 |
 | Batch10 Utility, epoch15 | 84.877660 | 60.116616 |
+| Batch10 Random, epoch15 | 85.562010 | 60.642597 |
 | Fixed A Random, epoch16 | 84.746741 | 60.612033 |
 | Fixed A Utility, epoch16 | 84.946943 | 60.677252 |
 | Fixed A Random, epoch17 | 85.328042 | 60.523251 |
@@ -105,6 +106,17 @@ and evaluator hashes match their manifests.
 | Fixed A Random epoch16 complete | 74.490607 / 59.572963 | 91.043051 / 66.287325 |
 | Fixed A Utility epoch16 complete | 75.425079 / 60.316126 | 90.847494 / 65.941674 |
 
+Batch10 Random epoch15 `miss` passed independent full-scope audit:
+`condition=miss`, `limit=null`, 479 receipts/337,353 frames, dataset counts
+245/220,703 and 234/116,650, completion record agrees, checkpoint/evaluator
+hashes match, and all bbox receipt hashes match. Metrics are LasHeR
+PR/NPR/SR 69.568285/64.141402/55.071246 and RGBT234 MPR/MSR
+85.562010/60.642597. Against Batch10 Utility epoch15, Random is lower on
+LasHeR PR/SR by 0.082263/0.097587 but higher on RGBT234 MPR/MSR by
+0.684350/0.525981. This is an observed arm tradeoff, not a cause diagnosis.
+It clears both LasHeR thresholds but neither RGBT234 threshold; final-five
+selection is pending.
+
 Batch10 Utility epoch14 `complete` also finished and passed the same
 479-sequence/337,353-frame receipt check, with checkpoint and evaluator
 hashes matching its manifest. Its complete-input metrics are LasHeR
@@ -126,10 +138,10 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch15 miss | 401/479 |
-| Batch10 Utility | epoch16 complete | 0/479 |
-| Fixed A Random | epoch18 miss | 0/479 |
-| Fixed A Utility | epoch18 complete | 444/479 |
+| Batch10 Random | epoch16 complete | 0/479 |
+| Batch10 Utility | epoch16 complete | 3/479 |
+| Fixed A Random | epoch18 miss | 4/479 |
+| Fixed A Utility | epoch18 miss | 0/479 |
 
 Fixed A Random epoch17 `miss` passed independent full-scope audit:
 `condition=miss`, `limit=null`, 479 sequence receipts and 337,353 frames;
