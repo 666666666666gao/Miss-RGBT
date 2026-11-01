@@ -21,6 +21,7 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Fixed A Utility, epoch18 | 86.039255 | 61.454244 |
 | Fixed A Random, epoch19 | 86.073187 | 61.660594 |
 | Batch10 Utility, epoch17 | 85.097378 | 60.685934 |
+| Batch10 Random, epoch17 | 85.859985 | 61.231719 |
 | Requested threshold | >88.1 | >64.3 |
 
 The requested RGBT234-Miss thresholds are +5.305185 MPR and +4.725565 MSR

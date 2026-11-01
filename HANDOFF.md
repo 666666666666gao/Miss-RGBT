@@ -2427,3 +2427,19 @@ considering another training run.
 All requested target thresholds and the three experimentally validated
 paper modules remain unachieved. Current research boundary and module gate:
 `docs/MISSING_MODALITY_SOURCE_REVIEW_20261102.md`.
+
+## 2026-11-02 04:12 CST - Three additional final-five results audited
+
+Fixed A Random epoch20 Complete, Fixed A Utility epoch20 Complete, and
+Batch10 Random epoch17 Miss all passed independent full-scope receipt/hash
+verification and official-toolkit metric/curve recomputation. Each run is
+479/337,353 with `limit=null`; exact values and checkpoint hashes are in
+`docs/ADDITIONAL_FINAL5_RESULT_AUDITS_20261102.md`. None changes current
+per-metric maxima.
+
+At 04:12 CST, Fixed A Random epoch20 Miss PID 3755113 had 42/479 sequence
+receipts and Fixed A Utility epoch20 Miss PID 3788435 had 9/479. Both were
+alive. GPUs0/1 were 78-79 C and 248.91-249.13 W under 250 W limits; GPUs2/3
+were idle. Counts are progress only. Continue without restarting, do not
+launch another GPU job while the paired full Miss evaluations are early in
+their long sequences, do not clean checkpoints, and do not run val97.
