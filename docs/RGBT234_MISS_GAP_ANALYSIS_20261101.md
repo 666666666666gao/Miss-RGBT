@@ -73,7 +73,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 16:35 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 16:48 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -105,16 +105,15 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch14 miss | 409/479, 330,418 frames |
-| Batch10 Utility | epoch15 complete | 0/479 |
-| Fixed A Random | epoch17 miss | 0/479 |
-| Fixed A Utility | epoch17 complete | 412/479, 330,830 frames |
+| Batch10 Random | epoch15 complete | 0/479 |
+| Batch10 Utility | epoch15 complete | 3/479, 26,531 frames |
+| Fixed A Random | epoch17 miss | 4/479, 39,393 frames |
+| Fixed A Utility | epoch17 miss | 1/479, 7,309 frames |
 
 The receipt counts are progress only, not performance metrics. Batch10
-Utility epoch14 Miss completed and advanced to epoch15 complete; Batch10
-Random epoch14 Miss remains active. Fixed A Random epoch17 advanced to Miss,
-while Fixed A Utility epoch17 complete remains active. Preserve all weights.
-Do not run val97.
+Utility epoch14 Miss completed; both Batch10 arms advanced to epoch15
+complete. Both Fixed A epoch17 complete runs finished and advanced to Miss.
+Preserve all weights. Do not run val97.
 Report Miss scores only after each official evaluation has 479 sequence
 receipts and 337,353 frames and its aggregate result has been independently
 checked.
