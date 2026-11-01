@@ -2477,3 +2477,9 @@ Verified another 240-second wait through 04:41 CST. Random advanced to
 Both evaluator PIDs remained live. Recent frame throughput suggests roughly
 26 and 44 minutes remain; re-estimate at the next 240-second check. GPUs0/1
 were 78-79 C and 249.26-249.40 W. No full aggregate metrics yet.
+
+Verified 240-second wait through 04:49 CST. Random advanced to 202/479
+receipts and 271,978 frames; Utility to 84/479 and 195,666 frames. Both
+original evaluator PIDs remained live. Current frame throughput suggests
+about 15 and 31 minutes remain, respectively; check near 05:05 CST. GPUs0/1
+were 78-79 C and 249.25-249.63 W. No aggregate metrics yet.
