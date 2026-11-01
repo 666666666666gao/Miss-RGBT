@@ -2471,3 +2471,9 @@ receipts advanced to Random 116/479, 222,639 frames and Utility 43/479,
 146,284 frames. Over this six-minute interval, estimated remaining time is
 about 31 minutes and 55 minutes, respectively; recheck near 04:50 CST.
 GPUs0/1 were 78-79 C and 249.10 W, with the 250 W caps unchanged.
+
+Verified another 240-second wait through 04:41 CST. Random advanced to
+149/479 receipts and 244,034 frames; Utility to 60/479 and 169,335 frames.
+Both evaluator PIDs remained live. Recent frame throughput suggests roughly
+26 and 44 minutes remain; re-estimate at the next 240-second check. GPUs0/1
+were 78-79 C and 249.26-249.40 W. No full aggregate metrics yet.
