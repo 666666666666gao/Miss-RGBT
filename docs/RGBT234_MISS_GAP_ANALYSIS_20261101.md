@@ -73,7 +73,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 17:44 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 17:53 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -105,10 +105,10 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch15 complete | 69/479, 179,826 frames |
-| Batch10 Utility | epoch15 complete | 93/479, 204,304 frames |
-| Fixed A Random | epoch17 miss | 142/479, 239,795 frames |
-| Fixed A Utility | epoch17 miss | 105/479, 214,488 frames |
+| Batch10 Random | epoch15 complete | 98/479, 208,676 frames |
+| Batch10 Utility | epoch15 complete | 132/479, 233,408 frames |
+| Fixed A Random | epoch17 miss | 207/479, 274,232 frames |
+| Fixed A Utility | epoch17 miss | 157/479, 248,756 frames |
 
 The receipt counts are progress only, not performance metrics. Batch10
 Utility epoch14 Miss completed; both Batch10 arms advanced to epoch15
