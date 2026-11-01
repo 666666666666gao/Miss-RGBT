@@ -2292,3 +2292,21 @@ improvement is not established. This is a final-five candidate, not a
 selected checkpoint. Preserve all weights; official test-based selection
 has test-selection bias. Full audit:
 `docs/BATCH10_UTILITY_EPOCH17_COMPLETE_AUDIT_20261102.md`.
+
+## 2026-11-02 02:13 CST - Batch10 Random epoch17 complete audited
+
+Official complete-input run passed full audit: `limit=null`, 479 sequences
+and 337,353 frames; benchmark-split receipts are 245/220,703 LasHeR-Miss
+and 234/116,650 RGBT234-Miss. The `-Miss` suffix is the split label; the
+run condition is `complete`. Run/completed agree; all receipt identities,
+bbox hashes, 110 runtime source hashes, and checkpoint/evaluator hashes
+match.
+
+Metrics: LasHeR PR/NPR/SR `75.704048/72.171251/60.419370`; RGBT234 MPR/MSR
+`89.946245/65.472600`. LasHeR NPR/SR become new complete-input per-metric
+maxima, +`0.122045/0.103244` over prior maxima. LasHeR PR maximum remains
+`75.751492`; RGBT234 maxima do not change. Compared with E0, LasHeR NPR/SR
+gains are `0.398414/0.293656`; roughly +2 point complete-input improvement
+is not established. This remains a final-five candidate, not a selected
+checkpoint. Preserve all weights and disclose test-selection bias.
+Full audit: `docs/BATCH10_RANDOM_EPOCH17_COMPLETE_AUDIT_20261102.md`.
