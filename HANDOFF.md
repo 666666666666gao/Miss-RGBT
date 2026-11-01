@@ -2327,3 +2327,20 @@ No run completed and no new aggregate metrics are available. GPU temperatures
 were 74-81 C; power draw was 249.34-249.69 W under 250 W limits. These receipt
 counts are operational progress only. Do not restart evaluators, launch
 training, run val97, or remove candidate checkpoints.
+
+## Research boundary update (2026-11-02)
+
+A read-only audit of the exact active runtime found that availability gates
+input tokens and the layer-6 repair, while the shared transformer blocks do
+not receive availability as an explicit condition. The tracker retains a
+bounded template list but no separate short/long feature-state representation.
+This is a testable architectural observation, not a demonstrated cause or
+gain. Server source hashes and the experiment gate are recorded in
+`docs/MISSING_MODALITY_SOURCE_REVIEW_20261102.md`.
+
+SCDT (CVPR 2026) already uses spatially and temporally conditioned denoising
+for missing-modality RGBT tracking. Directly porting or renaming temporal
+feature reconstruction/noise-conditioned enhancement would not establish
+novelty. Any next module needs a mechanism-specific training-only diagnostic,
+matched controls, and complete-input parity; no val97 or RGBT234 development
+is allowed. The requested three modules and target metrics remain unproven.
