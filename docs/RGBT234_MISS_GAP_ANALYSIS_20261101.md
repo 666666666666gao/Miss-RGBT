@@ -37,6 +37,13 @@ is more or less damaging on one dataset. They do not isolate a cause for the
 target gap. What is established is that RGBT234-Miss remains around
 84.75-84.95/60.61-60.68, below the requested 88.1/64.3.
 
+The earlier paired Batch10 Utility epoch13 run shows the same pattern:
+RGBT234 changes from 89.677569/65.372151 complete to 84.903450/60.656957
+Miss (-4.774118/-4.715194); LasHeR changes from 75.459824/60.179363 to
+69.252673/55.088625 (-6.207151/-5.090738). This confirms a substantial
+missing-condition loss in that model, but the cross-benchmark differences
+still do not identify a RGBT-specific cause.
+
 ## What the Existing Controls Show
 
 - The published missing-state masks have similar missing-frame rates:
@@ -87,10 +94,10 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch14 miss | 0/479 |
-| Batch10 Utility | epoch14 miss | 1/479, 7,309 frames |
-| Fixed A Random | epoch17 complete | 10/479, 71,398 frames |
-| Fixed A Utility | epoch17 complete | 7/479, 58,555 frames |
+| Batch10 Random | epoch14 miss | 12/479, 79,206 frames |
+| Batch10 Utility | epoch14 miss | 17/479, 96,647 frames |
+| Fixed A Random | epoch17 complete | 35/479, 134,150 frames |
+| Fixed A Utility | epoch17 complete | 27/479, 119,860 frames |
 
 The receipt counts are progress only, not performance metrics. The fixed A
 epoch16 Miss queues completed and advanced to epoch17 complete; both Batch10
