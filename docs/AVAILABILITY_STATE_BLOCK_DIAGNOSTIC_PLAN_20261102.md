@@ -1,6 +1,6 @@
 # Availability-State Block Diagnostic
 
-Status: proposed diagnostic only; not a paper-module claim and not launched.
+Status: diagnostic in progress; not a paper-module claim.
 
 ## Evidence and hypothesis
 
@@ -60,3 +60,13 @@ runtime's position-only stream through ordinary shared blocks is harmful.
 Even a positive diagnostic would establish only a local mechanism signal,
 not novelty, official benchmark gains, or one of the three requested paper
 modules.
+
+## Execution Notes
+
+The first launch attempt failed before model loading because invoking the
+script by path did not put the runtime root on Python's import path. The
+second attempt loaded the model but stopped at the first batch: this
+repository's `generalized_box_iou` returns per-pair IoU as a vector, not a
+matrix. The diagnostic now consumes that native vector directly. No
+optimizer step occurred in either attempt; GPU2 was released after each.
+Launch with the runtime root explicitly set in `PYTHONPATH`.

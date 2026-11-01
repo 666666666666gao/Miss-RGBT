@@ -170,8 +170,7 @@ def measure(outputs, boxes, cfg):
     target = boxes[-1]
     prediction_xyxy = box_cxcywh_to_xyxy(prediction)
     target_xyxy = box_xywh_to_xyxy(target).clamp(0, 1)
-    _, iou_matrix = generalized_box_iou(prediction_xyxy, target_xyxy)
-    iou = torch.diagonal(iou_matrix)
+    _, iou = generalized_box_iou(prediction_xyxy, target_xyxy)
     center_error = torch.norm(prediction[:, :2] - target[:, :2], dim=-1)
     return [
         {
