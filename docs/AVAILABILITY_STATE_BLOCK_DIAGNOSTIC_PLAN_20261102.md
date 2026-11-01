@@ -1,6 +1,6 @@
 # Availability-State Block Diagnostic
 
-Status: diagnostic in progress; not a paper-module claim.
+Status: completed; candidate rejected by the registered diagnostic gate.
 
 ## Evidence and hypothesis
 
@@ -40,14 +40,44 @@ intervention improves the missing-state tracking loss beyond that noise, the
 matched sham does not reproduce the effect, and complete-input parity holds.
 Otherwise reject this candidate without a full training run.
 
-If it passes, train one native control and one intervention arm with matched
-data order, seed, schedule, optimizer, and 20-epoch budget. Use two idle GPUs,
-one per arm; calibrate the largest stable batch size first and scale learning
-rate in proportion to the reference global batch size. Keep epochs 16-20 for
-full official `complete` and `miss` evaluation, 479 sequences/337,353 frames
-per run. Report every audited final-five result and disclose that selecting
-the maximum official-test score is post-hoc. Preserve all weights until all
-receipts and audits finish.
+## Completed Result
+
+The diagnostic completed on server28 at 2026-11-02 06:53 CST on GPU2. It
+used 128 tuples from 118 train882 sequences, batch size32, and the frozen
+CADTrack E0 epoch20 checkpoint (`d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8`).
+The train split hash is
+`27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846`.
+Every tuple records template, search, box, and sequence/frame identities.
+No optimizer updates were performed; val97 and official test data were not
+used. Complete-input intervention matched native output bitwise, with max
+absolute difference0. Native repeat task-loss noise was0 in both missing
+directions.
+
+The intervention readout is defined as native minus intervention for task
+loss and center error, and intervention minus native for IoU; positive is
+improvement. Sequence-macro effects over118 sequences were:
+
+| Search condition | Task-loss change | 95% interval | IoU change | 95% interval | Center-error change |
+|---|---:|---:|---:|---:|---:|
+| RGB only | -4.847049 | [-5.466646, -4.230780] | -0.226034 | [-0.273621, -0.179301] | -0.059862 |
+| TIR only | -12.076711 | [-13.086938, -11.087066] | -0.367300 | [-0.420182, -0.312548] | -0.128255 |
+
+Negative values mean bypassing updates to the unavailable stream worsened
+the readout. The intervention did not exceed the repeat-noise gate in either
+direction. The registered advance flag is false. Do not launch matched
+training for this hypothesis; the observation does not validate a module or
+explain the RGBT234-Miss gap.
+
+Full tuple-level evidence remains on server28 at
+`runtime/task_utility_20261018/reports/server28_train882_block_state_diag_20261102/diagnostic.json`
+and locally at
+`outputs/server28_train882_block_state_diag_20261102.json`.
+The local JSON SHA256 is
+`fa6e4c98b0d51730b288024d59b369581d717c96cbd878ea335d6105da6fa09f`.
+
+This candidate did not pass its diagnostic gate, so its matched-training run
+is not authorized by this protocol. Any different mechanism requires its own
+predeclared diagnostic and matched control before training.
 
 ## Prior-Art Boundary
 

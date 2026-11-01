@@ -2559,3 +2559,32 @@ LasHeR-Miss PR/SR exceed their thresholds by 1.097396/1.389882 points.
 RGBT234-Miss MPR/MSR remain short by 1.915136/2.639406 points. The best
 complete-input gains over E0 are below +0.4 points, so the approximate
 +2-point objective and all three paper modules remain unproven.
+
+## 2026-11-02 06:53 CST - Train-only availability-block diagnostic
+
+Completed the registered no-update diagnostic on GPU2 using 128 tuples from
+118 LasHeR train882 sequences and frozen E0 epoch20
+(`d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8`).
+The split-list hash matches the audited train882 manifest. Every tuple
+records its sequence/frame identities and input hashes. No val97 or official
+test data was used; no optimizer update occurred. Complete-input intervention
+is bitwise identical to native (maximum absolute output delta0), and native
+repeat task-loss noise is0.
+
+Bypass of ordinary block updates to the unavailable stream worsened both
+missing-state conditions. Sequence-macro native-minus-intervention task-loss
+effects (positive would improve) were -4.847049
+([-5.466646, -4.230780]) RGB-only and -12.076711
+([-13.086938, -11.087066]) TIR-only. IoU changes were -0.226034
+([-0.273621, -0.179301]) and -0.367300
+([-0.420182, -0.312548]); center-error improvements were also negative.
+Neither direction passes the registered repeat-noise/effect gate.
+
+Decision: reject this mechanism and do not start matched training. It does
+not establish a paper module or explain the RGBT234-Miss gap. Full 128-tuple
+report: `reports/server28_train882_block_state_diag_20261102/diagnostic.json`
+on server28 and local workspace `outputs/server28_train882_block_state_diag_20261102.json`,
+SHA256 `fa6e4c98b0d51730b288024d59b369581d717c96cbd878ea335d6105da6fa09f`.
+The diagnostic script, Python3.7 fixes, and protocol/result record are on
+`codex/server28-research`; no candidate training or checkpoint cleanup was
+performed. GPU2 is released.
