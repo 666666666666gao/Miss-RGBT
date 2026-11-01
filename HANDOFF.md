@@ -2089,3 +2089,9 @@ run val97, or delete candidate weights. Continue final-five official
 complete/Miss evaluation and audit each Miss result only after all 479
 sequences/337,353 frames and receipt/hash checks pass.
 
+At 21:39 CST, SSH2028 confirmed the same four evaluator PIDs were still alive.
+Batch10 Random/Utility epoch16 `complete` had 100/479 and 160/479 receipts;
+Fixed A Random/Utility epoch18 `miss` had 271/479 and 172/479. GPU0-3 were
+99-100% utilized, 74-82 C, and 249.08-249.40 W under 250 W caps. No new full
+Miss aggregate was ready; do not treat these counts as scores.
+

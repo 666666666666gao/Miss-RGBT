@@ -120,7 +120,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 21:24 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 21:39 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -163,14 +163,14 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch16 complete | 58/479 |
-| Batch10 Utility | epoch16 complete | 95/479 |
-| Fixed A Random | epoch18 miss | 151/479 |
-| Fixed A Utility | epoch18 miss | 92/479 |
+| Batch10 Random | epoch16 complete | 100/479 |
+| Batch10 Utility | epoch16 complete | 160/479 |
+| Fixed A Random | epoch18 miss | 271/479 |
+| Fixed A Utility | epoch18 miss | 172/479 |
 
-At 21:24 CST, all four evaluator processes were still alive and advancing.
-GPU0-3 utilization was 96-100%, temperature 75-82 C, and draw
-248.66-249.13 W under the existing 250 W power caps. No new full Miss
+At 21:39 CST, all four evaluator processes were still alive and advancing.
+GPU0-3 utilization was 99-100%, temperature 74-82 C, and draw
+249.08-249.40 W under the existing 250 W power caps. No new full Miss
 aggregate was available; these receipt counts are progress only. No process
 was restarted, no new training was launched, and all candidate weights remain
 preserved. Do not run val97.
