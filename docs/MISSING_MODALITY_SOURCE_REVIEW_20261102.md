@@ -52,6 +52,11 @@ inputs. A direct port or relabeling of temporal feature reconstruction or
 noise-conditioned enhancement would therefore not establish a distinct
 contribution here. Primary source: the [CVPR paper page](https://openaccess.thecvf.com/content/CVPR2026/html/Lu_Spatio-Temporal_Conditional_Denoising_Transformer_for_Modality-Missing_RGBT_Tracking_CVPR_2026_paper.html)
 and [paper PDF](https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_Spatio-Temporal_Conditional_Denoising_Transformer_for_Modality-Missing_RGBT_Tracking_CVPR_2026_paper.pdf).
+The public [SCDT GitHub repository](https://github.com/mas-38/SCDenoiseTransformer_CVPR26)
+was checked by a shallow clone on 2026-11-02 at commit
+`44062ed`. It contains a paper README and a one-byte file named `src`
+containing only a newline; no implementation source is present in that
+revision, so code-level reproduction is not currently possible.
 
 ## Next-Experiment Gate
 
