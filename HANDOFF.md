@@ -2465,3 +2465,9 @@ receipts and 200,576 frames; Utility had 30/479 and 125,385 frames. Over the
 preceding ten-minute interval, frame throughput implies about 45 minutes
 remaining for Random and 60 minutes for Utility; check again around 04:50 CST
 and update the estimates. GPU state remained 78-79 C and 249.32-249.38 W.
+
+Verified another wait through 04:35 CST: the same PIDs remained live and
+receipts advanced to Random 116/479, 222,639 frames and Utility 43/479,
+146,284 frames. Over this six-minute interval, estimated remaining time is
+about 31 minutes and 55 minutes, respectively; recheck near 04:50 CST.
+GPUs0/1 were 78-79 C and 249.10 W, with the 250 W caps unchanged.
