@@ -2,6 +2,15 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/probe_fusion_adapter.py`,
+`scripts/launch_fusion_adapter_pilot.py`,
+`scripts/analyze_fusion_adapter_pilot.py`,
+`docs/FUSION_ADAPTER_PILOT_20261102.md`, and
+`reports/server28_fusion_adapter_pilot_20261102/` record completed paired
+train882-only cached-head adaptation and saved-evidence/hash verification.
+Registered advancement gate failed. No full-tracker training, official
+evaluation or module promotion. All pilot and baseline weights preserved.
+
 2026-11-02 UTC+08: `scripts/diagnose_joint_utility_sets.py`,
 `scripts/analyze_joint_utility_sets.py`,
 `docs/JOINT_UTILITY_SET_DIAGNOSTIC_20261102.md`, and

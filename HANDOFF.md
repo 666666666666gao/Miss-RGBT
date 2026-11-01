@@ -2621,3 +2621,34 @@ with train-only evidence rather than assume subset interactions explain the
 gap. Existing negative bypass, unconditional geometry/state-template and
 ordinary motion results remain closed; do not restart them. Complete gains
 near2 points, RGBT234-Miss targets and three validated modules remain unmet.
+
+## 2026-11-02 07:30 UTC+08 - Fusion adapter paired pilot completed
+
+After the table-only turn (no research progress), checked actual PID4123633:
+worker exited normally,197.78seconds, GPUs0-3 idle. Train882-only cached
+fitting/development/audit partitions705/88/89;256/128/128 tuples. Frozen E0,
+two50,080-parameter matched adapters. Local stopped18epochs/144updates,
+global14epochs/112updates; last-five development selection chose15 and11.
+No val97, official-test evaluation or baseline update.
+
+Local sequence-macro native-loss gains: TIR-only0.068091,95%CI
+[-0.022931,0.160346]; RGB-only0.053419,[-0.013591,0.129761]. Relative
+macro improvements3.367973%/3.807889% are positive point estimates, but both
+registered absolute-effect CIs cross zero. Local-global gain0.010722,
+CI[-0.041733,0.066307]. Registered promotion gate=false. Do not launch
+full training or fresh closed-loop promotion from this pilot.
+
+Complete history remains bitwise equal; complete search after missing
+templates worsened in both local-arm tuple-mean cells. Baseline state digest
+unchanged, gradients absent. Saved-record analysis with server-file hashes
+passed source/checkpoint/cache/final-five integrity, stopping/selection and
+sequence-bootstrap arithmetic. This does not independently replay inference.
+Report SHA2562ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f.
+Protocol/results:docs/FUSION_ADAPTER_PILOT_20261102.md; small evidence:
+reports/server28_fusion_adapter_pilot_20261102/. All weights preserved.
+
+Next evidence should distinguish persistent target localization from
+recovery-frame damage with a fresh train-only cohort and explicit controls.
+Do not retune this adapter on the audit sample or count an ordinary adapter
+as a contribution. Official maxima unchanged; complete approximately+2,
+RGBT234-Miss88.1/64.3 and three supported modules remain unmet.
