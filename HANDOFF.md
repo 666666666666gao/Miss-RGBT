@@ -2261,3 +2261,16 @@ audit details: `docs/FIXED_A_EPOCH19_RANDOM_MISS_AUDIT_20261102.md`.
 At 01:37 CST, Fixed A Utility epoch19 Miss had 275/479 receipts; Batch10
 Random/Utility epoch17 Complete had 145/479 and 271/479; Fixed A Random
 epoch20 Complete had just started. These counts are progress only.
+
+## 2026-11-02 01:49 CST - Fixed A Utility epoch19 Miss audited
+
+Official Miss evaluation passed full audit: `limit=null`, 479 sequences and
+337,353 frames; per-dataset scope 245/220,703 LasHeR-Miss and 234/116,650
+RGBT234-Miss. Run/completed records, all 479 receipt identities, bbox hashes,
+110 runtime source-file hashes, and checkpoint/evaluator hashes match.
+
+Metrics: LasHeR PR/NPR/SR `68.095620/63.042714/54.109071`; RGBT234 MPR/MSR
+`85.283767/60.972261`. Checkpoint SHA256:
+`9a5683045ec8ba7b3560856c20a52ba50e8def85fe12988d25b8dc629825dfbe`.
+This candidate does not improve any current per-metric maximum. Preserve it
+for final-five comparison; no checkpoint selection or cleanup yet.

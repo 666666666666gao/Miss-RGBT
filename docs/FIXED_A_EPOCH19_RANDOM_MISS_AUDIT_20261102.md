@@ -29,3 +29,9 @@ This candidate does not improve the current LasHeR-Miss PR/SR maxima. Its RGBT23
 This is one candidate in the final-five official evaluation campaign, not the selected checkpoint. Comparing checkpoints on official test results is post-hoc and introduces test-selection bias. Keep all candidate weights until the campaign and final-five comparison are complete. No val97 result is used.
 
 At 2026-11-02 01:37 CST the remaining active official evaluations were Fixed A Utility epoch19 Miss (275/479 receipts), Batch10 Random/Utility epoch17 Complete (145/479 and 271/479), and Fixed A Random epoch20 Complete (0/479). Receipt counts are operational progress, not metrics.
+
+## Related candidate: Fixed A Utility epoch 19
+
+This official Miss run also completed and passed the same full-scope audit at 2026-11-02 01:49 CST: `limit=null`, 479 sequences/337,353 frames, correct per-dataset scope, run/completed agreement, all 110 source hashes, checkpoint/evaluator hashes, receipt identities, and bbox hashes matched.
+
+Metrics: LasHeR-Miss PR/NPR/SR `68.095620/63.042714/54.109071`; RGBT234-Miss MPR/MSR `85.283767/60.972261`. Checkpoint SHA256: `9a5683045ec8ba7b3560856c20a52ba50e8def85fe12988d25b8dc629825dfbe`. This run does not improve any current per-metric maximum and is retained as a final-five comparison candidate, not a selected checkpoint.
