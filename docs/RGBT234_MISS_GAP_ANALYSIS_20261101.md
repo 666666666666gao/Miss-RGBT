@@ -39,21 +39,31 @@ evaluations are still running; no final model selection is justified yet.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 13:41 CST, all four official evaluators were alive and writing
-sequence receipts:
+At 2026-11-01 14:20 CST, all four official evaluators were alive. Fixed A
+epoch16 `complete` finished for both arms and passed an independent full-scope
+check: each run has 479 receipts and 337,353 summed frames, matching
+`completed.json` and `run.json`; checkpoint and evaluator hashes match the run
+manifests. These are complete-input results, not Miss results:
+
+| Arm | LasHeR PR/SR | RGBT234 MPR/MSR |
+|---|---:|---:|
+| Fixed A Random epoch16 complete | 74.490607 / 59.572963 | 91.043051 / 66.287325 |
+| Fixed A Utility epoch16 complete | 75.425079 / 60.316126 | 90.847494 / 65.941674 |
+
+The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch14 complete | 30/479 |
-| Batch10 Utility | epoch14 complete | 35/479 |
-| Fixed A Random | epoch16 miss | 48/479 |
-| Fixed A Utility | epoch16 miss | 42/479 |
+| Batch10 Random | epoch14 complete | 136/479, 236,020 frames |
+| Batch10 Utility | epoch14 complete | 155/479, 247,589 frames |
+| Fixed A Random | epoch16 miss | 239/479, 287,601 frames |
+| Fixed A Utility | epoch16 miss | 212/479, 276,434 frames |
 
 The receipt counts are progress only, not performance metrics. GPUs 0-3 were
-active; the 13:36 CST sample showed 72-79 C and 250 W power limits. Preserve
-all weights. Do not run val97. Report only after the official full evaluation
-has 479 sequence receipts and 337,353 frames and its aggregate result has
-been independently checked.
+active at 249-250 W in the 14:15 CST sample; temperatures were 71-78 C.
+Preserve all weights. Do not run val97. Report Miss scores only after the
+official full evaluation has 479 sequence receipts and 337,353 frames and its
+aggregate result has been independently checked.
 
 Selecting the best checkpoint from test-set final-five scores has selection
 bias. Report the requested best-of-five result with that limitation explicit;
