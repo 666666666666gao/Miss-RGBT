@@ -2216,3 +2216,23 @@ epoch19 Miss `4/479`. Fixed A Utility epoch19 Miss had just started. GPUs
 0-3 were 48-82 C, with GPU1 momentarily idle during evaluator startup and
 the others near 249 W under 250 W limits. No new training or val97 run.
 
+## 2026-11-02 00:13 CST - Batch10 Random epoch16 Miss audited
+
+The official `miss` run passed full audit: `limit=null`, 479 sequences and
+337,353 frames; 245/220,703 LasHeR-Miss and 234/116,650 RGBT234-Miss.
+Run/completed records agree. All 479 individual receipts match
+`all_receipts.json`; every bbox hash, checkpoint/evaluator hash, and all 110
+runtime source-file hashes match.
+
+Metrics: LasHeR PR/NPR/SR `69.243173/63.933594/54.937753`; RGBT234 MPR/MSR
+`84.027511/60.083422`. This is not a new per-metric maximum. It clears the
+LasHeR-SR threshold but misses LasHeR-PR by 0.056827 and the RGBT234 targets
+by 4.072489 MPR and 4.216578 MSR. Paired with the same checkpoint's epoch16
+complete run, complete-to-Miss changes are -5.297980 PR, -7.119503 NPR,
+-4.525656 SR, -5.935696 MPR, and -5.399290 MSR.
+
+At 00:17 CST, active evaluations were Batch10 Random epoch17 `complete`
+`0/479`, Batch10 Utility epoch17 `complete` `8/479`, Fixed A Random epoch19
+`miss` `12/479`, and Fixed A Utility epoch19 `miss` `1/479`. GPU0-3 were
+74-82 C at 246.70-249.74 W under 250 W limits. No new training or val97.
+
