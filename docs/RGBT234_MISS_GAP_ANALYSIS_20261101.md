@@ -27,6 +27,31 @@ Utility epoch14 adds +2.344994/+1.818622; Fixed A Utility epoch17 is now
 highest at +2.854494/+1.110868. The requested threshold is not equivalent
 to a two-point gain over E0.
 
+## Best Audited Official Metrics So Far
+
+These are per-metric maxima among completed, full-scope official evaluations
+available so far. Different columns can come from different checkpoints; this
+is not one model's combined score. The final-five evaluation is still running,
+so later epochs can change these maxima.
+
+| Condition | Metric | Best candidate / epoch | Candidate | Original E0 | Delta vs E0 |
+|---|---|---|---:|---:|---:|
+| Complete | LasHeR PR | Batch10 Utility / 13 | 75.459824 | 75.636503 | -0.176679 |
+| Complete | LasHeR NPR | Batch10 Utility / 13 | 72.049205 | 71.772837 | +0.276368 |
+| Complete | LasHeR SR | Fixed A Utility / 16 | 60.316126 | 60.125714 | +0.190412 |
+| Complete | RGBT234 MPR | Fixed A Random / 16 | 91.043051 | 90.677134 | +0.365917 |
+| Complete | RGBT234 MSR | Batch10 Random / 14 | 66.311785 | 66.845228 | -0.533443 |
+| Miss | LasHeR PR | Batch10 Random / 15 | 69.568285 | 63.472507 | +6.095778 |
+| Miss | LasHeR NPR | Batch10 Utility / 13 | 64.255180 | 58.581851 | +5.673330 |
+| Miss | LasHeR SR | Batch10 Utility / 13 | 55.088625 | 50.583149 | +4.505476 |
+| Miss | RGBT234 MPR | Fixed A Utility / 17 | 85.649309 | 82.794815 | +2.854494 |
+| Miss | RGBT234 MSR | Batch10 Random / 13 | 61.401363 | 59.574435 | +1.826928 |
+
+Including E0 itself, E0 remains the overall complete-input maximum for LasHeR
+PR/SR and RGBT234 MSR; current candidates lead on LasHeR NPR and RGBT234 MPR.
+The current candidate Miss maxima still miss the requested RGBT234 thresholds
+by 2.450691 MPR and 2.898637 MSR.
+
 Fixed A Utility epoch17 is now the highest verified RGBT234-Miss result in
 this table at 85.649309/60.685303, still 2.450691/3.614697 below the target.
 Against epoch16 Utility, RGBT234 MPR/MSR improve by 0.702366/0.008051 and
@@ -95,7 +120,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 21:05 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 21:24 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -138,10 +163,17 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch16 complete | 23/479 |
-| Batch10 Utility | epoch16 complete | 47/479 |
-| Fixed A Random | epoch18 miss | 71/479 |
-| Fixed A Utility | epoch18 miss | 38/479 |
+| Batch10 Random | epoch16 complete | 58/479 |
+| Batch10 Utility | epoch16 complete | 95/479 |
+| Fixed A Random | epoch18 miss | 151/479 |
+| Fixed A Utility | epoch18 miss | 92/479 |
+
+At 21:24 CST, all four evaluator processes were still alive and advancing.
+GPU0-3 utilization was 96-100%, temperature 75-82 C, and draw
+248.66-249.13 W under the existing 250 W power caps. No new full Miss
+aggregate was available; these receipt counts are progress only. No process
+was restarted, no new training was launched, and all candidate weights remain
+preserved. Do not run val97.
 
 Fixed A Random epoch17 `miss` passed independent full-scope audit:
 `condition=miss`, `limit=null`, 479 sequence receipts and 337,353 frames;

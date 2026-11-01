@@ -2077,3 +2077,15 @@ Utility epoch14 complete had 76/479 and 87/479 receipts; Fixed A Random and
 Utility epoch16 miss had 125/479 and 111/479. There were no new complete
 receipts or aggregate metrics.
 
+## 2026-11-01 21:24 CST - Final-five official queue
+
+Verified on SSH2028 that the four existing evaluator processes remain alive:
+Batch10 Random/Utility epoch16 `complete` are at 58/479 and 95/479 receipts;
+Fixed A Random/Utility epoch18 `miss` are at 151/479 and 92/479. These are
+progress counts, not metrics. No new full Miss aggregate is available.
+GPU0-3 are 96-100% utilized, 75-82 C, and 248.66-249.13 W under 250 W caps.
+Do not restart the queue, launch training while all four GPUs are occupied,
+run val97, or delete candidate weights. Continue final-five official
+complete/Miss evaluation and audit each Miss result only after all 479
+sequences/337,353 frames and receipt/hash checks pass.
+
