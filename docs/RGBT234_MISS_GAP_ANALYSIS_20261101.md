@@ -166,18 +166,18 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch16 complete | 388/479 |
-| Batch10 Utility | epoch16 miss | 1/479 |
-| Fixed A Random | epoch19 complete | 12/479 |
-| Fixed A Utility | epoch19 complete | 3/479 |
+| Batch10 Random | epoch16 miss | 4/479 |
+| Batch10 Utility | epoch16 miss | 17/479 |
+| Fixed A Random | epoch19 complete | 39/479 |
+| Fixed A Utility | epoch19 complete | 18/479 |
 
-At 22:21 CST, all four evaluator processes were still alive and advancing.
-GPU0-3 utilization was 100%, temperature 75-83 C, and draw 248.91-249.36 W
-under the existing 250 W power caps. Fixed A Random and Utility epoch18 Miss
-have both passed full audits; both arms are on epoch19 complete, while
-Batch10 Utility is evaluating epoch16 Miss. No process was restarted, no new
-training was launched, and all candidate weights remain preserved. Do not
-run val97.
+At 22:42 CST, all four evaluator processes were still alive and advancing.
+GPU0-3 utilization was 99-100%, temperature 75-83 C, and draw
+249.01-249.54 W under the existing 250 W power caps. Batch10 Random epoch16
+complete has passed full audit and its Miss evaluation is underway. Fixed A
+Random and Utility epoch18 Miss have both passed full audits, and both arms
+are evaluating epoch19 complete. No process was restarted, no new training
+was launched, and all candidate weights remain preserved. Do not run val97.
 
 Fixed A Random epoch18 `miss` passed full-scope audit: `condition=miss`,
 `limit=null`, 479 receipts/337,353 frames; dataset counts are 245/220,703
@@ -200,6 +200,18 @@ evaluator SHA256 is
 All 479 individual receipt identities and hashes match `all_receipts.json`,
 and all 479 bbox file hashes match. Metrics: LasHeR PR/NPR/SR
 67.730655/62.711185/53.942749; RGBT234 MPR/MSR 86.039255/61.454244.
+
+Batch10 Random epoch16 `complete` passed full-scope audit:
+`condition=complete`, `limit=null`, 479 receipts/337,353 frames, with
+245/220,703 LasHeR and 234/116,650 RGBT234 frames. Run/completed records
+agree; checkpoint SHA256 is
+`16dc20c62d8464c884147aecaa732f5acbdbe5529daf1d55867297567a0da932`;
+evaluator SHA256 is
+`bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1`.
+All 479 individual receipt identities match `all_receipts.json`, and all
+479 bbox hashes pass. Metrics are LasHeR PR/NPR/SR
+74.541153/71.053097/59.463409 and RGBT234 MPR/MSR 89.963207/65.482712.
+This does not change the current per-metric complete maxima above.
 
 Fixed A Random epoch17 `miss` passed independent full-scope audit:
 `condition=miss`, `limit=null`, 479 sequence receipts and 337,353 frames;

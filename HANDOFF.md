@@ -2145,3 +2145,23 @@ Random/Utility epoch19 complete `12/479` and `3/479`. GPU0-3 were 100%
 utilized, 75-83 C, and 248.91-249.36 W under 250 W caps. No new full Miss
 aggregate or training was started; receipt counts are progress only.
 
+## 2026-11-01 22:42 CST - Batch10 Random epoch16 complete audited
+
+The full official `complete` run passed audit: `limit=null`, 479 receipts /
+337,353 frames, with 245/220,703 LasHeR and 234/116,650 RGBT234. `run.json`
+and `completed.json` agree. Checkpoint SHA256 is
+`16dc20c62d8464c884147aecaa732f5acbdbe5529daf1d55867297567a0da932`;
+evaluator SHA256 is
+`bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1`.
+All 479 individual receipt identities match `all_receipts.json`, and all
+479 bbox hashes pass.
+
+Metrics: LasHeR PR/NPR/SR `74.541153/71.053097/59.463409`; RGBT234 MPR/MSR
+`89.963207/65.482712`. These do not change the current per-metric complete
+maxima. The paired epoch16 Miss evaluation has started.
+
+At 22:42 CST, queues were Batch10 Random/Utility epoch16 Miss `4/479` and
+`17/479`; Fixed A Random/Utility epoch19 complete `39/479` and `18/479`.
+GPU0-3 were 99-100% utilized, 75-83 C, 249.01-249.54 W under 250 W caps.
+All weights remain preserved; no val97.
+
