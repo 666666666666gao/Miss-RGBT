@@ -2310,3 +2310,20 @@ gains are `0.398414/0.293656`; roughly +2 point complete-input improvement
 is not established. This remains a final-five candidate, not a selected
 checkpoint. Preserve all weights and disclose test-selection bias.
 Full audit: `docs/BATCH10_RANDOM_EPOCH17_COMPLETE_AUDIT_20261102.md`.
+
+## 2026-11-02 02:33-02:38 CST - Official queue progress
+
+Reconfirmed the same four evaluator PIDs were live at both ends of a
+240-second wait. Receipt counts advanced:
+
+| GPU | Candidate | Condition | Receipts before -> after |
+|---|---|---|---:|
+| 0 | Fixed A Random epoch20 | Complete | 67 -> 76 / 479 |
+| 1 | Fixed A Utility epoch20 | Complete | 28 -> 35 / 479 |
+| 2 | Batch10 Random epoch17 | Miss | 7 -> 12 / 479 |
+| 3 | Batch10 Utility epoch17 | Miss | 38 -> 48 / 479 |
+
+No run completed and no new aggregate metrics are available. GPU temperatures
+were 74-81 C; power draw was 249.34-249.69 W under 250 W limits. These receipt
+counts are operational progress only. Do not restart evaluators, launch
+training, run val97, or remove candidate checkpoints.
