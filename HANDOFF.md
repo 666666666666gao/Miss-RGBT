@@ -2483,3 +2483,25 @@ receipts and 271,978 frames; Utility to 84/479 and 195,666 frames. Both
 original evaluator PIDs remained live. Current frame throughput suggests
 about 15 and 31 minutes remain, respectively; check near 05:05 CST. GPUs0/1
 were 78-79 C and 249.25-249.63 W. No aggregate metrics yet.
+
+## 2026-11-02 05:05 CST - Fixed A Random epoch20 Miss audited
+
+The official Miss run completed and passed independent full-scope
+verification: 479 sequences, 337,353 frames, `limit=null`; LasHeR-Miss
+245/220,703 and RGBT234-Miss 234/116,650. Receipt identities, bbox/GT/mask
+hashes, runtime/evaluator hashes, and recalculated official metrics/curves
+all pass. Checkpoint SHA256:
+`6f014866e45393edd0c32594a916d1b0e677f1c6bea8f2d898daa7938f4e5e39`.
+
+Metrics: LasHeR-Miss PR/NPR/SR `67.823154/62.731542/53.736184`;
+RGBT234-Miss MPR/MSR `86.184864/61.418962`. This is a new RGBT234-Miss
+MPR maximum (+0.111677 over epoch19) but does not improve the MSR maximum
+61.660594 from epoch19. The current RGBT234 targets remain short by
+1.915136 MPR/2.639406 MSR; the LasHeR-Miss best remains Batch10 Utility
+epoch17. Audit: `docs/FIXED_A_EPOCH20_RANDOM_MISS_AUDIT_20261102.md`.
+
+Fixed A Utility epoch20 Miss PID 3788435 remained active at 199/479 receipts
+and 270,607 frames at 05:12 CST. GPU0 was idle after the Random evaluation;
+GPU1 remained active at 79 C/249.15 W, GPUs2/3 idle. Preserve all weights;
+do not use receipt progress as a metric or run val97. Recheck the Utility
+evaluation after about four minutes and audit only after full completion.
