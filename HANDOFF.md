@@ -2236,3 +2236,28 @@ At 00:17 CST, active evaluations were Batch10 Random epoch17 `complete`
 `miss` `12/479`, and Fixed A Utility epoch19 `miss` `1/479`. GPU0-3 were
 74-82 C at 246.70-249.74 W under 250 W limits. No new training or val97.
 
+## 2026-11-02 01:30 CST - Fixed A Random epoch19 Miss audited
+
+Official Miss evaluation passed full audit: `limit=null`, 479 sequences and
+337,353 frames; dataset scope 245/220,703 LasHeR-Miss and 234/116,650
+RGBT234-Miss. Run/completed records agree. All 479 receipt JSON files match
+`all_receipts.json`; all bbox hashes, 110 runtime source-file hashes, and
+checkpoint/evaluator hashes match.
+
+Metrics: LasHeR PR/NPR/SR `68.365216/63.171326/54.312404`; RGBT234 MPR/MSR
+`86.073187/61.660594`. This does not change the LasHeR-Miss PR/SR maxima;
+it raises RGBT234-Miss per-metric maxima by `0.033932/0.206349` points.
+Versus original CADTrack E0 Miss `82.794815/59.574435`, the gains are
+`3.278372/2.086159`; the `88.1/64.3` targets remain short by
+`2.026813/2.639406`.
+
+Checkpoint: `a_random_full20_seed2027/epoch19.pth.tar`, SHA256
+`0444578e5d157e8801e537a166c83f4973ed0f56846374b3fd139f7da4ffe8e9`.
+This is a final-five candidate, not the selected model; choosing among
+official test scores is post-hoc and test-selection-biased. Keep all weights
+until the final-five campaign completes. No val97 results are used. Full
+audit details: `docs/FIXED_A_EPOCH19_RANDOM_MISS_AUDIT_20261102.md`.
+
+At 01:37 CST, Fixed A Utility epoch19 Miss had 275/479 receipts; Batch10
+Random/Utility epoch17 Complete had 145/479 and 271/479; Fixed A Random
+epoch20 Complete had just started. These counts are progress only.
