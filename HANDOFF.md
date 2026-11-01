@@ -2443,3 +2443,19 @@ alive. GPUs0/1 were 78-79 C and 248.91-249.13 W under 250 W limits; GPUs2/3
 were idle. Counts are progress only. Continue without restarting, do not
 launch another GPU job while the paired full Miss evaluations are early in
 their long sequences, do not clean checkpoints, and do not run val97.
+
+## 2026-11-02 04:19 CST - Queue ETA and next diagnostic
+
+Fixed A Random epoch20 Miss PID 3755113 and Fixed A Utility epoch20 Miss
+PID 3788435 remained alive at 56/479 and 15/479 receipts. At a nearby sample,
+their receipts covered about 169,335 and 89,860 frames, respectively, out of
+337,353. Frame-throughput estimates suggest roughly 50 minutes and 80 minutes
+remain, but sequence mix can move these estimates; recheck near 04:45 CST and
+re-estimate. GPUs0/1 were 79 C and about 249.4 W under 250 W; GPUs2/3 idle.
+
+A no-training, train-only diagnostic is specified in
+`docs/AVAILABILITY_STATE_BLOCK_DIAGNOSTIC_PLAN_20261102.md`. It tests whether
+normal Transformer updates to the position-only missing stream change
+tracking loss, with an available-stream sham and exact complete-input parity.
+It is not a claimed contribution and has not been launched; wait for the two
+official Miss evaluations to finish before allocating a diagnostic GPU.
