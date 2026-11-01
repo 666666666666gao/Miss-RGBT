@@ -2459,3 +2459,9 @@ normal Transformer updates to the position-only missing stream change
 tracking loss, with an available-stream sham and exact complete-input parity.
 It is not a claimed contribution and has not been launched; wait for the two
 official Miss evaluations to finish before allocating a diagnostic GPU.
+
+At 04:29 CST, both same evaluator PIDs remained live. Random had 89/479
+receipts and 200,576 frames; Utility had 30/479 and 125,385 frames. Over the
+preceding ten-minute interval, frame throughput implies about 45 minutes
+remaining for Random and 60 minutes for Utility; check again around 04:50 CST
+and update the estimates. GPU state remained 78-79 C and 249.32-249.38 W.
