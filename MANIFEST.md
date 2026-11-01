@@ -2,6 +2,14 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/probe_head_supervision.py`,
+`scripts/launch_head_supervision.py`, `scripts/analyze_head_supervision.py`,
+`docs/HEAD_SUPERVISION_PILOT_20261102.md`, and
+`reports/server28_head_supervision_20261102/` record completed matched
+native/target-position head training. Registered promotion gate failed.
+Saved arithmetic/hashes and direct3456-row native-head replay passed.
+No official benchmarks or contribution claims. All weights preserved.
+
 2026-11-02 UTC+08: `scripts/diagnose_response_geometry.py`,
 `scripts/launch_response_geometry.py`, `scripts/analyze_response_geometry.py`,
 `docs/RESPONSE_GEOMETRY_DIAGNOSTIC_20261102.md`, and

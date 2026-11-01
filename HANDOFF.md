@@ -2689,3 +2689,41 @@ native inference. No adapter promotion or training started here.
 No val97/official evaluation/baseline update/cleanup. Official scores,
 approximately+2 complete goal,RGBT234-Miss thresholds and three modules
 remain unchanged and incomplete.
+
+## 2026-11-02 07:56 UTC+08 - Paired head supervision failed promotion
+
+Prior turn completed a fresh response/geometry diagnostic (actual progress).
+This turn rechecked idle GPUs and ran GPU2 PID4161273,274.387seconds,
+paired native versus target-position box-regression supervision. Frozen E0
+fusion,6,474,117-parameter copied heads,BN eval,all9 modality states.
+New256/128/128 tuples from705/88/89 train882 name partitions; no exact tuple
+overlap with two preceding pilots. Audit128 tuples cover70 actual sequences.
+No val97 or official tests.
+
+Both arms stopped epoch10/360updates, selected epoch6 from final-five6-10 by
+native-head development loss. Target-native missing-cell macro IoU effect
+-0.009119,95%CI[-0.017295,-0.000888]. Target-E0 TIR-only-0.000202
+CI[-0.017034,0.017395],RGB-only+0.001481CI[-0.015394,0.019496]. Complete
+history target-E0-0.006657; recovery10_11-0.017905
+CI[-0.033137,-0.005049]. Registered gate=false. Do not promote target
+supervision or reinterpret native control as an approved candidate.
+
+Saved-evidence verifier checked source/base/cache/selected/final-five hashes,
+partitions and prior tuple exclusion, stopping/selection and all bootstrap
+effects. All10 last-five head weights finite with BN buffers equal to E0.
+Separately constructed heads directly replayed1152 audit rows for each
+E0/native/target:3456 native-inference losses/IoUs exactly match. No GT map
+in replay. Baseline full-state digest unchanged,gradients absent.
+This replays cached heads, not backbone/images or full tracking.
+
+Report SHA2565e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9.
+Full protocol/results:docs/HEAD_SUPERVISION_PILOT_20261102.md; small evidence
+reports/server28_head_supervision_20261102/. All weights preserved.
+Static crops omit tracker Hann response and dynamic updates. Heads used
+less than1GiB allocated; finite pilot does not saturate24GiB, full-model
+batch profiling remains pending evidence. No official scores changed.
+
+Next mechanism must address modality-asymmetric geometry with explicit
+capacity and complete/recovery controls; do not rerun target-peak or failed
+fusion-adapter tuning on these audit samples. Ordinary controls are not
+paper modules. Complete+2,RGBT234-Miss targets and three modules remain unmet.
