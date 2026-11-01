@@ -2538,3 +2538,24 @@ Current audited maxima after both epoch20 Miss runs:
 LasHeR-Miss PR/SR targets are met by the current maxima. RGBT234-Miss
 remains short by 1.915136 MPR and 2.639406 MSR. Three paper modules and the
 approximately +2-point complete-input gains remain unproven.
+
+## 2026-11-02 05:46 CST - All final-five official outputs independently recalculated
+
+On server28, independently recalculated all 40 official conditions using the
+isolated `verify_official` path: Fixed A Random/Utility epochs 16-20 and
+Batch10 Random/Utility epochs 13-17, each in complete and miss. Every run
+passed checkpoint SHA, source/evaluator/GT/mask hashes, all 479 receipt and
+bbox checks, 479-sequence/337,353-frame scope with `limit=null`, and toolkit
+metric/curve recomputation. No val97 inference or score was used.
+
+All 20 final-five checkpoints were rehashed and match the corresponding
+Complete/Miss run manifests. No official-test-based selection or cleanup was
+performed. GPUs 0-3 were idle after the audit and remain capped at 250 W.
+The per-metric maxima, retained checkpoint hashes, baseline deltas, remaining
+targets, and next diagnostic gate are recorded in
+`docs/FINAL5_OFFICIAL_RECALC_AUDIT_20261102.md`.
+
+LasHeR-Miss PR/SR exceed their thresholds by 1.097396/1.389882 points.
+RGBT234-Miss MPR/MSR remain short by 1.915136/2.639406 points. The best
+complete-input gains over E0 are below +0.4 points, so the approximate
++2-point objective and all three paper modules remain unproven.
