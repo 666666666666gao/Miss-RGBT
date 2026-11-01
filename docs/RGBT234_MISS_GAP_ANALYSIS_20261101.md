@@ -54,7 +54,7 @@ target gap. What is established is that RGBT234-Miss remains around
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 14:54 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 15:03 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -72,6 +72,12 @@ hashes matching its manifest. Its complete-input metrics are LasHeR
 epoch14 Miss evaluation has only just started, so this result is not evidence
 of target attainment under missing input.
 
+Batch10 Random epoch14 `complete` independently passed the same full-scope
+and hash checks. Its complete-input metrics are LasHeR PR/SR
+75.229949/59.903038 and RGBT234 MPR/MSR 90.279097/66.311785. Both Batch10
+complete-input RGBT234 results exceed the numeric Miss targets, but complete
+input is a different condition and cannot count as meeting those targets.
+
 The paired full Miss metrics are LasHeR PR/SR 68.065197/54.134896 and
 RGBT234 MPR/MSR 84.746741/60.612033 for Random; Utility is
 68.217157/54.247395 and 84.946943/60.677252. These remain intermediate
@@ -81,15 +87,15 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch14 complete | 410/479, 330,556 frames |
-| Batch10 Utility | epoch14 miss | 0/479 |
-| Fixed A Random | epoch17 complete | 4/479, 39,393 frames |
-| Fixed A Utility | epoch17 complete | 3/479, 26,531 frames |
+| Batch10 Random | epoch14 miss | 0/479 |
+| Batch10 Utility | epoch14 miss | 1/479, 7,309 frames |
+| Fixed A Random | epoch17 complete | 10/479, 71,398 frames |
+| Fixed A Utility | epoch17 complete | 7/479, 58,555 frames |
 
 The receipt counts are progress only, not performance metrics. The fixed A
-epoch16 Miss queues completed and advanced to epoch17 complete; Batch10
-Utility epoch14 complete finished and advanced to miss, while Batch10 Random
-epoch14 complete remains active. Preserve all weights. Do not run val97.
+epoch16 Miss queues completed and advanced to epoch17 complete; both Batch10
+epoch14 complete queues finished and advanced to Miss. Preserve all weights.
+Do not run val97.
 Report Miss scores only after each official evaluation has 479 sequence
 receipts and 337,353 frames and its aggregate result has been independently
 checked.
