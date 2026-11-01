@@ -67,6 +67,10 @@ The first launch attempt failed before model loading because invoking the
 script by path did not put the runtime root on Python's import path. The
 second attempt loaded the model but stopped at the first batch: this
 repository's `generalized_box_iou` returns per-pair IoU as a vector, not a
-matrix. The diagnostic now consumes that native vector directly. No
-optimizer step occurred in either attempt; GPU2 was released after each.
-Launch with the runtime root explicitly set in `PYTHONPATH`.
+matrix. The third attempt exposed a scope mismatch: each sampled item has two
+templates and three search frames, while the model invokes the backbone once
+per search frame. The diagnostic had concatenated availability for all three
+search frames into one mask. It now configures one aligned token mask per
+backbone call and retains drift readings for each search frame. No optimizer
+step occurred in any failed attempt; GPU2 was released each time. Launch with
+the runtime root explicitly set in `PYTHONPATH`.

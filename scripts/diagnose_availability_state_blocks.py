@@ -39,39 +39,44 @@ class AvailabilityPolicyBlock(nn.Module):
         self.index = index
         self.policy = "native"
         self.availability = None
+        self.call_index = 0
         self.capture_drift = False
-        self.drift = {}
+        self.drift = []
 
     def configure(self, policy, availability, capture_drift):
         self.policy = policy
         self.availability = availability
+        self.call_index = 0
         self.capture_drift = capture_drift
-        self.drift = {}
+        self.drift = []
 
     def forward(self, rgb, tir):
+        availability = self.availability[self.call_index]
+        self.call_index += 1
         next_rgb, next_tir = self.block(rgb, tir)
         if self.policy == "skip_unavailable":
-            skip_rgb = self.availability[:, :, 0:1] < 0.5
-            skip_tir = self.availability[:, :, 1:2] < 0.5
+            skip_rgb = availability[:, :, 0:1] < 0.5
+            skip_tir = availability[:, :, 1:2] < 0.5
             next_rgb = torch.where(skip_rgb, rgb, next_rgb)
             next_tir = torch.where(skip_tir, tir, next_tir)
         elif self.policy == "skip_available":
-            skip_rgb = self.availability[:, :, 0:1] >= 0.5
-            skip_tir = self.availability[:, :, 1:2] >= 0.5
+            skip_rgb = availability[:, :, 0:1] >= 0.5
+            skip_tir = availability[:, :, 1:2] >= 0.5
             next_rgb = torch.where(skip_rgb, rgb, next_rgb)
             next_tir = torch.where(skip_tir, tir, next_tir)
         else:
             assert self.policy == "native"
 
         if self.capture_drift:
-            self.drift = {
+            self.drift.append({
                 "rgb": self._drift(rgb, next_rgb, 0),
                 "tir": self._drift(tir, next_tir, 1),
-            }
+            })
         return next_rgb, next_tir
 
     def _drift(self, before, after, stream):
-        missing = self.availability[:, :, stream] < 0.5
+        availability = self.availability[self.call_index - 1]
+        missing = availability[:, :, stream] < 0.5
         delta = (after - before).float().square().mean(-1).sqrt()
         scale = before.float().square().mean(-1).sqrt()
         count = missing.sum(1).clamp_min(1)
@@ -106,9 +111,9 @@ def make_availability(batch, templates, searches, condition, device):
     return [first] + [rest.expand(batch, -1) for _ in range(len(templates) - 1 + len(searches))]
 
 
-def make_token_availability(model, templates, searches, availability):
+def make_token_availability(model, templates, availability):
     backbone = model.baseline.backbone
-    batch = searches[0].shape[0]
+    batch = templates[0].shape[0]
     frames = []
     for index, available in enumerate(availability):
         pos = backbone.pos_embed_z if index < len(templates) else backbone.pos_embed_x
@@ -281,8 +286,13 @@ def main():
 
         for condition, condition_modes in modes.items():
             available_frames = make_availability(batch, templates, searches, condition, device)
-            token_available = make_token_availability(
-                model, templates, searches, available_frames)
+            token_available = []
+            for search_index in range(len(searches)):
+                frame_availability = (
+                    available_frames[:len(templates)]
+                    + [available_frames[len(templates) + search_index]])
+                token_available.append(make_token_availability(
+                    model, templates, frame_availability))
             condition_rows = [{} for _ in range(batch)]
             native_outputs = None
             for mode in condition_modes:
@@ -303,14 +313,15 @@ def main():
                     condition_rows[index][mode] = measured[index]
                     if condition != "complete":
                         condition_rows[index][mode + "_drift"] = [
-                            {
-                                "absolute_rms": block.drift[
-                                    "tir" if condition == "rgb_only" else "rgb"
-                                ]["absolute_rms"][index],
-                                "relative_rms": block.drift[
-                                    "tir" if condition == "rgb_only" else "rgb"
-                                ]["relative_rms"][index],
-                            }
+                            [{
+                                    "absolute_rms": search_drift[
+                                        "tir" if condition == "rgb_only" else "rgb"
+                                    ]["absolute_rms"][index],
+                                    "relative_rms": search_drift[
+                                        "tir" if condition == "rgb_only" else "rgb"
+                                    ]["relative_rms"][index],
+                                }
+                                for search_drift in block.drift]
                             for block in blocks
                         ]
 
