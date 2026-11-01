@@ -71,6 +71,8 @@ matrix. The third attempt exposed a scope mismatch: each sampled item has two
 templates and three search frames, while the model invokes the backbone once
 per search frame. The diagnostic had concatenated availability for all three
 search frames into one mask. It now configures one aligned token mask per
-backbone call and retains drift readings for each search frame. No optimizer
-step occurred in any failed attempt; GPU2 was released each time. Launch with
-the runtime root explicitly set in `PYTHONPATH`.
+backbone call and retains drift readings for each search frame. Its first
+execution also caught a stale CLS-mask variable reference; CLS availability
+now derives from the aligned frame mask. No optimizer step occurred in any
+failed attempt; GPU2 was released each time. Launch with the runtime root
+explicitly set in `PYTHONPATH`.

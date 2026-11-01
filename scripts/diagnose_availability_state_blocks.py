@@ -118,7 +118,7 @@ def make_token_availability(model, templates, availability):
     for index, available in enumerate(availability):
         pos = backbone.pos_embed_z if index < len(templates) else backbone.pos_embed_x
         frames.append(available.unsqueeze(1).expand(-1, pos.shape[1], -1))
-    cls = searches[0].new_ones(batch, 1, 2)
+    cls = availability[0].new_ones(batch, 1, 2)
     return torch.cat([cls, torch.cat(frames, dim=1)], dim=1)
 
 
