@@ -22,11 +22,15 @@ branch also operates at layer 6. The tracker maintains target boxes and a
 bounded template list; it does not maintain a separate short/long feature
 state or a modality-evolution token.
 
-This identifies a concrete architectural boundary for future work:
-availability currently gates input token content and repair, but it is not
-an explicit condition inside the transformer's per-layer cross-modal
-interaction. It is not yet evidence that this boundary causes the observed
-benchmark gap or that changing it improves tracking.
+The RGB and TIR branches reuse the same block weights, but each block applies
+self-attention and an MLP to the two streams in separate calls; these blocks
+do not perform cross-modal attention. Availability gates input patch content
+and the layer-6 repair, but it is not passed into the intervening per-stream
+blocks. Consequently, a missing stream contains positional embeddings after
+the input gate and still undergoes ordinary self-attention/MLP updates before
+the availability-aware repair. This is a concrete diagnostic target, not
+evidence that it causes the benchmark gap or that changing it improves
+tracking.
 
 ## Source Identity
 
@@ -57,6 +61,16 @@ was checked by a shallow clone on 2026-11-02 at commit
 `44062ed`. It contains a paper README and a one-byte file named `src`
 containing only a newline; no implementation source is present in that
 revision, so code-level reproduction is not currently possible.
+
+The public [FlexTrack-V2 repository](https://github.com/supertyd/FlexTrackV2)
+was also inspected at commit `30a5ff1`. Its implementation includes bilateral
+missing-feature reconstruction with a present-target consistency loss,
+heterogeneous mixture-of-experts fusion, and curriculum missing augmentation
+with complete-teacher/student distillation. These are direct prior-art
+boundaries: porting reconstruction, generic expert fusion, or a missing-rate
+curriculum would not by itself provide a distinct contribution. The source
+reviewed includes `lib/models/flextrackv2/moe_fusion.py` and
+`lib/models/flextrackv2/flextrackv2.py`.
 
 ## Next-Experiment Gate
 
