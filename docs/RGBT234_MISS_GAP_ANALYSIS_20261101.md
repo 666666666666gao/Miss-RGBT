@@ -10,6 +10,7 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Original CADTrack E0, epoch20 | 82.794815 | 59.574435 |
 | Historical A Utility, epoch20 | 84.964353 | 60.511286 |
 | Batch10 Utility, epoch13 | 84.903450 | 60.656957 |
+| Batch10 Utility, epoch14 | 85.139809 | 61.393057 |
 | Fixed A Random, epoch16 | 84.746741 | 60.612033 |
 | Fixed A Utility, epoch16 | 84.946943 | 60.677252 |
 | Requested threshold | >88.1 | >64.3 |
@@ -17,16 +18,27 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 The requested RGBT234-Miss thresholds are +5.305185 MPR and +4.725565 MSR
 above the measured E0 baseline. Historical A adds +2.169538 and +0.936851;
 Batch10 Utility epoch13 adds +2.108635 and +1.082522. Fixed A epoch16 adds
-+1.951926/+1.037598 (Random) and +2.152128/+1.102817 (Utility). The Utility
-epoch16 result remains 3.153057 MPR and 3.622748 MSR below the requested
-threshold. The requested threshold is not equivalent to a two-point gain
-over E0.
++1.951926/+1.037598 (Random) and +2.152128/+1.102817 (Utility). Batch10
+Utility epoch14 adds +2.344994/+1.818622, the largest verified RGBT234-Miss
+result in the current campaign, but remains 2.960191 MPR and 2.906943 MSR
+below the requested threshold. The requested threshold is not equivalent to
+a two-point gain over E0.
 
 Batch10 Utility epoch13 is nearly tied with historical A: -0.060903 MPR and
 +0.145671 MSR. Fixed A epoch16 is also near the historical result (-0.017410
 MPR, +0.165966 MSR for Utility). Epoch16 is only the first of five official
 checkpoints in this final-five campaign; no final model selection is
 justified yet.
+
+Batch10 Utility epoch14 Miss passed the full official audit: `condition=miss`,
+`limit=null`, 479 receipts and 337,353 frames matching `run.json` and
+`completed.json`; per-dataset scope is 245/220,703 LasHeR-Miss and
+234/116,650 RGBT234-Miss; checkpoint and evaluator hashes match the run
+manifest. Metrics are LasHeR PR/NPR/SR 69.418287/64.214523/55.036005 and
+RGBT234 MPR/MSR 85.139809/61.393057. It clears both LasHeR targets but misses
+both RGBT234 targets by 2.960191/2.906943; it is not the final-five
+selection. Relative to Batch10 Utility epoch13, changes are +0.165615 PR,
+-0.052619 SR, +0.236358 MPR and +0.736100 MSR.
 
 The paired complete-input results show substantial Miss-condition drops on
 both benchmarks. From complete to Miss, Fixed A Utility drops 7.21/6.07 points
@@ -35,7 +47,7 @@ on LasHeR PR/SR and 5.90/5.26 on RGBT234 MPR/MSR; Random drops 6.43/5.44 and
 aggregations, these numeric differences cannot establish that missing input
 is more or less damaging on one dataset. They do not isolate a cause for the
 target gap. What is established is that RGBT234-Miss remains around
-84.75-84.95/60.61-60.68, below the requested 88.1/64.3.
+84.75-85.14/60.61-61.39, below the requested 88.1/64.3.
 
 The earlier paired Batch10 Utility epoch13 run shows the same pattern:
 RGBT234 changes from 89.677569/65.372151 complete to 84.903450/60.656957
@@ -61,7 +73,7 @@ still do not identify a RGBT-specific cause.
 
 ## Current Official Evaluation Queue
 
-At 2026-11-01 16:23 CST, Fixed A epoch16 `complete` and `miss` finished for
+At 2026-11-01 16:35 CST, Fixed A epoch16 `complete` and `miss` finished for
 both arms. Each of the four runs passed independent full-scope checks:
 479 receipts, 337,353 summed frames, matching `completed.json` and `run.json`;
 the two Miss runs also match per-dataset receipt/frame counts, and checkpoint
@@ -76,8 +88,7 @@ Batch10 Utility epoch14 `complete` also finished and passed the same
 479-sequence/337,353-frame receipt check, with checkpoint and evaluator
 hashes matching its manifest. Its complete-input metrics are LasHeR
 75.024540/59.742296 PR/SR and RGBT234 89.747434/65.849284 MPR/MSR. Its paired
-epoch14 Miss evaluation has only just started, so this result is not evidence
-of target attainment under missing input.
+epoch14 Miss result is reported in the full-Miss table above.
 
 Batch10 Random epoch14 `complete` independently passed the same full-scope
 and hash checks. Its complete-input metrics are LasHeR PR/SR
@@ -94,14 +105,15 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch14 miss | 241/479, 288,375 frames |
-| Batch10 Utility | epoch14 miss | 313/479, 311,344 frames |
-| Fixed A Random | epoch17 complete | 313/479, 311,344 frames |
-| Fixed A Utility | epoch17 complete | 261/479, 295,568 frames |
+| Batch10 Random | epoch14 miss | 409/479, 330,418 frames |
+| Batch10 Utility | epoch15 complete | 0/479 |
+| Fixed A Random | epoch17 miss | 0/479 |
+| Fixed A Utility | epoch17 complete | 412/479, 330,830 frames |
 
-The receipt counts are progress only, not performance metrics. The fixed A
-epoch16 Miss queues completed and advanced to epoch17 complete; both Batch10
-epoch14 complete queues finished and advanced to Miss. Preserve all weights.
+The receipt counts are progress only, not performance metrics. Batch10
+Utility epoch14 Miss completed and advanced to epoch15 complete; Batch10
+Random epoch14 Miss remains active. Fixed A Random epoch17 advanced to Miss,
+while Fixed A Utility epoch17 complete remains active. Preserve all weights.
 Do not run val97.
 Report Miss scores only after each official evaluation has 479 sequence
 receipts and 337,353 frames and its aggregate result has been independently
