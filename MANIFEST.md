@@ -2,6 +2,13 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/diagnose_response_geometry.py`,
+`scripts/launch_response_geometry.py`, `scripts/analyze_response_geometry.py`,
+`docs/RESPONSE_GEOMETRY_DIAGNOSTIC_20261102.md`, and
+`reports/server28_response_geometry_20261102/` record a completed fresh
+train882 response/geometry/gradient diagnostic and saved-evidence hashes/
+arithmetic checks. No training, official benchmark, or module promotion.
+
 2026-11-02 UTC+08: `scripts/probe_fusion_adapter.py`,
 `scripts/launch_fusion_adapter_pilot.py`,
 `scripts/analyze_fusion_adapter_pilot.py`,

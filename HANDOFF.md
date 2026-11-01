@@ -2652,3 +2652,40 @@ recovery-frame damage with a fresh train-only cohort and explicit controls.
 Do not retune this adapter on the audit sample or count an ordinary adapter
 as a contribution. Official maxima unchanged; complete approximately+2,
 RGBT234-Miss88.1/64.3 and three supported modules remain unmet.
+
+## 2026-11-02 07:40 UTC+08 - Fresh response/geometry diagnostic
+
+Previous goal turn made progress: paired fusion-adapter training completed,
+failed its registered promotion gate and was published atbc9d667. This turn
+checked actual idle GPUs and completed new train882-only diagnostic PID4143074
+on GPU2 in45.296seconds. New seed39101,128 tuples/111 sequences, nine
+template/search states,1152 rows; no exact frame-tuple overlap with prior
+pilot. Same fitting-name pool, not sequence-independent data.
+
+Complete-template native IoU: full0.768577,TIR-only0.561638,RGB-only0.682737.
+GT-peak diagnostic IoU0.797548/0.635005/0.712224. TIR-only oracle gain excess
+over complete0.044397,95%CI[0.016508,0.074092]; RGB-only excess CI spans zero.
+Peak selection is only part of the observed TIR-only crop deficit. GT oracle
+cannot be used at inference or reported as attainable benchmark performance.
+All nine mean gradient cosines positive; TIR-only conflict fraction actually
+decreases, not evidence for a gradient-conflict method.
+
+Native complete-search/missing-template effects are small with intervals
+spanning zero on this cohort. They cannot be equated with the prior adapter's
+different-cohort loss increases or temporal recovery effects.
+
+Saved-evidence analyzer passed90 cell summaries/32 paired contrasts and
+source/base/cache hashes,1152 row arithmetic, whole frozen-state/gradient
+invariants. No independent inference replay. Report SHA256
+7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3.
+See docs/RESPONSE_GEOMETRY_DIAGNOSTIC_20261102.md and
+reports/server28_response_geometry_20261102/.
+
+Reviewed pinned CenterNet target-index regression and OSTrack gt_score_map
+API as ordinary supervision controls, not new modules. Next eligible
+question is a fresh matched training-objective control comparing native
+predicted-peak regression and target-supported supervision while keeping
+native inference. No adapter promotion or training started here.
+No val97/official evaluation/baseline update/cleanup. Official scores,
+approximately+2 complete goal,RGBT234-Miss thresholds and three modules
+remain unchanged and incomplete.

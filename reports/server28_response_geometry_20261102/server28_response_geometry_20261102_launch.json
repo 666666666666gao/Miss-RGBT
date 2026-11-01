@@ -1,0 +1,18 @@
+{
+  "pid": 4143074,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "scripts/diagnose_response_geometry.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_response_geometry_20261102"
+  ],
+  "physical_gpu": 2,
+  "started_utc": "2026-11-01T23:35:58.590980Z",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/scripts/diagnose_response_geometry.py": "ca821b09abe7efc7183cba25c53cb86e7a2d2d684e9d32d3267ce5195c461da3",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/scripts/launch_response_geometry.py": "bd7f01634e31c44e1f78efff1146e6e62f652065d5235bc23b270cf52ad7ef9d",
+    "/home/gaob/Miss-RGBT/docs/RESPONSE_GEOMETRY_DIAGNOSTIC_20261102.md": "4978f87db2f1a9025675e7c294e702cbee83aece067c665be8fb6633dcd86fb2"
+  },
+  "poll_seconds": 240
+}
