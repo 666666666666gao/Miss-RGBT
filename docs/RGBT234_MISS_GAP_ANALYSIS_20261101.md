@@ -235,3 +235,10 @@ checked.
 Selecting the best checkpoint from test-set final-five scores has selection
 bias. Report the requested best-of-five result with that limitation explicit;
 do not present it as an unbiased estimate.
+
+At 23:00 CST, the same four official queues were still live. Batch10 Random
+and Utility epoch16 Miss had 21/479 and 56/479 sequence receipts; Fixed A
+Random and Utility epoch19 complete had 83/479 and 48/479. These are progress
+counts, not metrics, and no new full-scope result was available. GPU0-3 were
+82/80/78/75 C at 249.10/248.88/248.89/249.39 W under 250 W limits. No
+training or val97 evaluation was started; all weights remain preserved.
