@@ -2095,3 +2095,26 @@ Fixed A Random/Utility epoch18 `miss` had 271/479 and 172/479. GPU0-3 were
 99-100% utilized, 74-82 C, and 249.08-249.40 W under 250 W caps. No new full
 Miss aggregate was ready; do not treat these counts as scores.
 
+## 2026-11-01 22:02 CST - Fixed A Random epoch18 Miss audited
+
+The official `miss` evaluation completed with `condition=miss`, `limit=null`,
+479 sequence receipts and 337,353 frames. LasHeR-Miss has 245 sequences /
+220,703 frames; RGBT234-Miss has 234 / 116,650. `run.json` and
+`completed.json` agree. Checkpoint SHA256 is
+`929d6538ae350a5dcfb7198620c46c49fa77f752e4c177bd2fd5a2a300da7dc1`;
+evaluator SHA256 is
+`bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1`.
+All 479 individual receipt identities/hashes match `all_receipts.json`, and
+all 479 bbox hashes pass.
+
+Metrics: LasHeR PR/NPR/SR `68.162673/63.150544/54.273160`; RGBT234 MPR/MSR
+`85.840473/61.418089`. This is now the highest audited RGBT234-Miss MPR/MSR
+among completed candidates, but remains 2.259527/2.881911 below the requested
+88.1/64.3 thresholds.
+
+At 22:02 CST, the existing queues remained live: Batch10 Random/Utility
+epoch16 complete `208/479` and `331/479`; Fixed A Random epoch19 complete
+`1/479`; Fixed A Utility epoch18 miss `434/479`. GPU0-3 were 98-100%
+utilized, 75-83 C, and 248.44-249.55 W under 250 W caps. Do not restart,
+launch training while GPUs are occupied, run val97, or delete weights.
+

@@ -17,15 +17,16 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Fixed A Utility, epoch16 | 84.946943 | 60.677252 |
 | Fixed A Random, epoch17 | 85.328042 | 60.523251 |
 | Fixed A Utility, epoch17 | 85.649309 | 60.685303 |
+| Fixed A Random, epoch18 | 85.840473 | 61.418089 |
 | Requested threshold | >88.1 | >64.3 |
 
 The requested RGBT234-Miss thresholds are +5.305185 MPR and +4.725565 MSR
 above the measured E0 baseline. Historical A adds +2.169538 and +0.936851;
 Batch10 Utility epoch13 adds +2.108635 and +1.082522. Fixed A epoch16 adds
 +1.951926/+1.037598 (Random) and +2.152128/+1.102817 (Utility). Batch10
-Utility epoch14 adds +2.344994/+1.818622; Fixed A Utility epoch17 is now
-highest at +2.854494/+1.110868. The requested threshold is not equivalent
-to a two-point gain over E0.
+Utility epoch14 adds +2.344994/+1.818622; Fixed A Random epoch18 is now
+highest at +3.045658 MPR/+1.843654 MSR. The requested threshold is not
+equivalent to a two-point gain over E0.
 
 ## Best Audited Official Metrics So Far
 
@@ -44,16 +45,17 @@ so later epochs can change these maxima.
 | Miss | LasHeR PR | Batch10 Random / 15 | 69.568285 | 63.472507 | +6.095778 |
 | Miss | LasHeR NPR | Batch10 Utility / 13 | 64.255180 | 58.581851 | +5.673330 |
 | Miss | LasHeR SR | Batch10 Utility / 13 | 55.088625 | 50.583149 | +4.505476 |
-| Miss | RGBT234 MPR | Fixed A Utility / 17 | 85.649309 | 82.794815 | +2.854494 |
-| Miss | RGBT234 MSR | Batch10 Random / 13 | 61.401363 | 59.574435 | +1.826928 |
+| Miss | RGBT234 MPR | Fixed A Random / 18 | 85.840473 | 82.794815 | +3.045658 |
+| Miss | RGBT234 MSR | Fixed A Random / 18 | 61.418089 | 59.574435 | +1.843654 |
 
 Including E0 itself, E0 remains the overall complete-input maximum for LasHeR
 PR/SR and RGBT234 MSR; current candidates lead on LasHeR NPR and RGBT234 MPR.
 The current candidate Miss maxima still miss the requested RGBT234 thresholds
-by 2.450691 MPR and 2.898637 MSR.
+by 2.259527 MPR and 2.881911 MSR.
 
-Fixed A Utility epoch17 is now the highest verified RGBT234-Miss result in
-this table at 85.649309/60.685303, still 2.450691/3.614697 below the target.
+Fixed A Utility epoch17 was the previous highest verified RGBT234-Miss result.
+Fixed A Random epoch18 now leads both RGBT234-Miss metrics at 85.840473/
+61.418089, still 2.259527/2.881911 below the target.
 Against epoch16 Utility, RGBT234 MPR/MSR improve by 0.702366/0.008051 and
 LasHeR PR/SR by 0.468011/0.434108. Fixed A Random epoch17 improves its
 RGBT234 MPR by 0.581301 but decreases MSR by 0.088782 against its epoch16.
@@ -163,17 +165,29 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch16 complete | 100/479 |
-| Batch10 Utility | epoch16 complete | 160/479 |
-| Fixed A Random | epoch18 miss | 271/479 |
-| Fixed A Utility | epoch18 miss | 172/479 |
+| Batch10 Random | epoch16 complete | 208/479 |
+| Batch10 Utility | epoch16 complete | 331/479 |
+| Fixed A Random | epoch19 complete | 1/479 |
+| Fixed A Utility | epoch18 miss | 434/479 |
 
-At 21:39 CST, all four evaluator processes were still alive and advancing.
-GPU0-3 utilization was 99-100%, temperature 74-82 C, and draw
-249.08-249.40 W under the existing 250 W power caps. No new full Miss
-aggregate was available; these receipt counts are progress only. No process
-was restarted, no new training was launched, and all candidate weights remain
-preserved. Do not run val97.
+At 22:02 CST, all four evaluator processes were still alive and advancing.
+GPU0-3 utilization was 98-100%, temperature 75-83 C, and draw
+248.44-249.55 W under the existing 250 W power caps. Fixed A Random epoch18
+Miss has passed its full audit; its next evaluation is epoch19 complete. No
+other new full Miss aggregate is ready. These receipt counts are progress
+only. No process was restarted, no new training was launched, and all
+candidate weights remain preserved. Do not run val97.
+
+Fixed A Random epoch18 `miss` passed full-scope audit: `condition=miss`,
+`limit=null`, 479 receipts/337,353 frames; dataset counts are 245/220,703
+LasHeR-Miss and 234/116,650 RGBT234-Miss. `run.json` and `completed.json`
+agree; checkpoint SHA256 is
+`929d6538ae350a5dcfb7198620c46c49fa77f752e4c177bd2fd5a2a300da7dc1`;
+evaluator SHA256 is
+`bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1`.
+All 479 individual receipt identities and hashes match `all_receipts.json`,
+and all 479 bbox file hashes match. Metrics: LasHeR PR/NPR/SR
+68.162673/63.150544/54.273160; RGBT234 MPR/MSR 85.840473/61.418089.
 
 Fixed A Random epoch17 `miss` passed independent full-scope audit:
 `condition=miss`, `limit=null`, 479 sequence receipts and 337,353 frames;
