@@ -2044,3 +2044,21 @@ GPU0-3 temperatures were83/80/78/76C, power-limit readings250W, and
 utilization100/100/100/91%. This does not verify an85C target setting.
 Preserve registered weights until evaluation and cleanup gates complete.
 
+## 2026-11-01 13:41 CST - RGBT234-Miss gap and official queues
+
+Recorded the target arithmetic and existing-control evidence in
+`docs/RGBT234_MISS_GAP_ANALYSIS_20261101.md`. The requested RGBT234-Miss
+thresholds exceed original CADTrack E0 by +5.305185 MPR/+4.725565 MSR;
+Batch10 Utility epoch13 is +2.108635/+1.082522 over E0 and nearly ties
+historical A. This is a persistent unmet target, not a demonstrated regression
+from epoch13. Template U1 helps versus U0, while all-BN freezing does not
+close the gap; neither identifies a sole cause.
+
+At 13:41 CST four official evaluators remained live: Batch10 Random/Utility
+epoch14 complete had 30/479 and 35/479 sequence receipts; Fixed A
+Random/Utility epoch16 miss had 48/479 and 42/479. These counts are progress,
+not metrics. Preserve weights, do not run val97, and publish no result until
+the complete 479-sequence/337,353-frame official receipt and aggregate
+verification are present. Final-five test selection must be labeled as
+selection-biased.
+
