@@ -242,3 +242,27 @@ Random and Utility epoch19 complete had 83/479 and 48/479. These are progress
 counts, not metrics, and no new full-scope result was available. GPU0-3 were
 82/80/78/75 C at 249.10/248.88/248.89/249.39 W under 250 W limits. No
 training or val97 evaluation was started; all weights remain preserved.
+
+## Newly audited final-five entries at 23:55 CST
+
+| Arm / epoch | Condition | LasHeR PR/NPR/SR | RGBT234 MPR/MSR |
+|---|---|---:|---:|
+| Fixed A Random / 19 | Complete | 73.398075 / 69.879029 / 58.671485 | 90.159512 / 65.761226 |
+| Batch10 Utility / 16 | Miss | 69.541995 / 64.221692 / 55.006010 | 84.979303 / 60.632103 |
+
+Both runs have `limit=null`, 479 sequences and 337,353 frames, matching
+`run.json` and `completed.json`. Dataset totals are 245/220,703 LasHeR and
+234/116,650 RGBT234. Each of 479 individual receipts matches the aggregate
+receipt, every bbox hash matches, checkpoint/evaluator hashes match, and all
+110 pinned runtime source-file hashes match.
+
+Neither result changes the per-metric maxima above. Batch10 Utility epoch16
+Miss clears the LasHeR PR/SR thresholds (69.3/54.4), but RGBT234 remains
+3.120697 MPR and 3.667897 MSR below 88.1/64.3. Selection among final-five
+test results remains post-hoc and test-selection-biased.
+
+At 23:59 CST, remaining active evaluations were Batch10 Random epoch16 Miss
+290/479, Batch10 Utility epoch17 complete 0/479, Fixed A Random epoch19
+Miss 0/479, and Fixed A Utility epoch19 complete 346/479. GPUs were
+75-82 C and 249.19-249.61 W under 250 W limits. No training or val97 run
+was started; all checkpoints remain.

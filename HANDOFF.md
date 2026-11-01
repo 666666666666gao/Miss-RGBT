@@ -2177,3 +2177,24 @@ GPU0-3 are 100%, 100%, 99%, and 100% utilized at 82/80/78/75 C and
 started, no evaluator was restarted, all weights remain preserved, and no
 val97 evaluation was run. Continue the existing final-five official queues.
 
+## 2026-11-01 23:55 CST - Two official runs audited
+
+Fixed A Random epoch19 `complete` passed full-scope audit:
+`condition=complete`, `limit=null`, 479 sequences/337,353 frames, with
+245/220,703 LasHeR and 234/116,650 RGBT234. Run/completed records, all 479
+individual receipts and bbox hashes, checkpoint/evaluator hashes, and all
+110 source-file hashes match. Metrics: LasHeR PR/NPR/SR
+`73.398075/69.879029/58.671485`; RGBT234 MPR/MSR `90.159512/65.761226`.
+
+Batch10 Utility epoch16 `miss` passed the same full-scope and hash checks.
+Metrics: LasHeR PR/NPR/SR `69.541995/64.221692/55.006010`; RGBT234 MPR/MSR
+`84.979303/60.632103`. This clears the LasHeR PR/SR thresholds but does not
+reach either RGBT234 target. Neither run changes the current per-metric
+maxima; all final-five checkpoints remain preserved.
+
+At 23:59 CST, the four active runs were Batch10 Random epoch16 `miss`
+`290/479`, Batch10 Utility epoch17 `complete` `0/479`, Fixed A Random
+epoch19 `miss` `0/479`, and Fixed A Utility epoch19 `complete` `346/479`.
+GPU0-3 were at 75-82 C and 249.19-249.61 W under 250 W limits. No new
+training or val97 evaluation was started.
+
