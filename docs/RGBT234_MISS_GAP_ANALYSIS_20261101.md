@@ -166,18 +166,18 @@ The four queues then advanced to:
 
 | Queue | Current evaluation | Sequence receipts |
 |---|---|---:|
-| Batch10 Random | epoch16 complete | 276/479 |
-| Batch10 Utility | epoch16 miss | 0/479 |
-| Fixed A Random | epoch19 complete | 4/479 |
-| Fixed A Utility | epoch19 complete | 0/479 |
+| Batch10 Random | epoch16 complete | 388/479 |
+| Batch10 Utility | epoch16 miss | 1/479 |
+| Fixed A Random | epoch19 complete | 12/479 |
+| Fixed A Utility | epoch19 complete | 3/479 |
 
-At 22:11 CST, all four evaluator processes were still alive and advancing.
-GPU0-3 utilization was 95-100%, temperature 75-82 C, and draw
-248.24-249.16 W under the existing 250 W power caps. Fixed A Random and
-Utility epoch18 Miss have both passed full audits; both arms are on epoch19
-complete, while Batch10 Utility has advanced to epoch16 Miss. No process was
-restarted, no new training was launched, and all candidate weights remain
-preserved. Do not run val97.
+At 22:21 CST, all four evaluator processes were still alive and advancing.
+GPU0-3 utilization was 100%, temperature 75-83 C, and draw 248.91-249.36 W
+under the existing 250 W power caps. Fixed A Random and Utility epoch18 Miss
+have both passed full audits; both arms are on epoch19 complete, while
+Batch10 Utility is evaluating epoch16 Miss. No process was restarted, no new
+training was launched, and all candidate weights remain preserved. Do not
+run val97.
 
 Fixed A Random epoch18 `miss` passed full-scope audit: `condition=miss`,
 `limit=null`, 479 receipts/337,353 frames; dataset counts are 245/220,703
