@@ -2505,3 +2505,36 @@ and 270,607 frames at 05:12 CST. GPU0 was idle after the Random evaluation;
 GPU1 remained active at 79 C/249.15 W, GPUs2/3 idle. Preserve all weights;
 do not use receipt progress as a metric or run val97. Recheck the Utility
 evaluation after about four minutes and audit only after full completion.
+
+## 2026-11-02 05:33 CST - Fixed A Utility epoch20 Miss audited
+
+The second remaining official Miss run completed and passed independent
+full-scope verification: 479 sequences, 337,353 frames, `limit=null`;
+245/220,703 LasHeR-Miss and 234/116,650 RGBT234-Miss. Receipts,
+bbox/GT/mask hashes, runtime/evaluator hashes, and recomputed official
+metrics/curves all pass. Checkpoint SHA256:
+`19c008d03f261ebda37c89eff63a0b959bcb6795c0da548e761ef12c91878170`.
+
+Metrics: LasHeR-Miss PR/NPR/SR `68.569074/63.435064/54.347391`;
+RGBT234-Miss MPR/MSR `84.703935/60.637694`. It does not update any
+per-metric maximum. Audit: `docs/FIXED_A_EPOCH20_UTILITY_MISS_AUDIT_20261102.md`.
+All four GPUs were idle after completion. Keep all final-five weights
+preserved until queue manifests confirm every registered run has finished;
+do not select by official scores, clean weights, or run val97.
+
+Current audited maxima after both epoch20 Miss runs:
+
+| Condition / dataset | Metric | Candidate | Score |
+|---|---|---|---:|
+| Complete / LasHeR | PR | Batch10 Utility ep17 | 75.751492 |
+| Complete / LasHeR | NPR | Batch10 Random ep17 | 72.171251 |
+| Complete / LasHeR | SR | Batch10 Random ep17 | 60.419370 |
+| Complete / RGBT234 | MPR | Fixed A Random ep16 | 91.043051 |
+| Complete / RGBT234 | MSR | CADTrack E0 | 66.845228 |
+| Miss / LasHeR | PR / NPR / SR | Batch10 Utility ep17 | 70.397396 / 65.127562 / 55.789882 |
+| Miss / RGBT234 | MPR | Fixed A Random ep20 | 86.184864 |
+| Miss / RGBT234 | MSR | Fixed A Random ep19 | 61.660594 |
+
+LasHeR-Miss PR/SR targets are met by the current maxima. RGBT234-Miss
+remains short by 1.915136 MPR and 2.639406 MSR. Three paper modules and the
+approximately +2-point complete-input gains remain unproven.

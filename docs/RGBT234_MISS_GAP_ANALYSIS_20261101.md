@@ -21,6 +21,7 @@ sequences and 337,353 frames across LasHeR and RGBT234.
 | Fixed A Utility, epoch18 | 86.039255 | 61.454244 |
 | Fixed A Random, epoch19 | 86.073187 | 61.660594 |
 | Fixed A Random, epoch20 | 86.184864 | 61.418962 |
+| Fixed A Utility, epoch20 | 84.703935 | 60.637694 |
 | Batch10 Utility, epoch17 | 85.097378 | 60.685934 |
 | Batch10 Random, epoch17 | 85.859985 | 61.231719 |
 | Requested threshold | >88.1 | >64.3 |
@@ -58,8 +59,8 @@ RGBT234 MSR; the current candidates lead on all three LasHeR complete metrics,
 RGBT234 MPR, and all three LasHeR-Miss metrics. The current RGBT234-Miss
 maxima still miss the requested thresholds by 1.915136 MPR and 2.639406 MSR.
 
-Fixed A Random epoch20 now leads RGBT234-Miss MPR at 86.184864; epoch19
-retains the MSR maximum at 61.660594.
+Fixed A Random epoch20 leads RGBT234-Miss MPR at 86.184864; Fixed A Random
+epoch19 retains the MSR maximum at 61.660594.
 Batch10 Utility epoch17 now leads all three LasHeR-Miss metrics at
 70.397396/65.127562/55.789882.
 Against epoch16 Utility, RGBT234 MPR/MSR improve by 0.702366/0.008051 and
