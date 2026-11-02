@@ -3606,6 +3606,14 @@ Exactzero-residual parity states11/01/10 across3frames;one network call and
 one box/state commit per frame;round2 decode;conditional template append/pop.
 No image training/official score/latency efficacy claim.
 
+Published bf580bd, research:F tracker integration check; GitHub branch pushed.
+At 19:53:55 CST original trainers 1288280/1288281 and queue 1355742 remain
+alive. Both formal trainers entered epoch3 after epoch2 DEVELOPMENT records;
+latest observed updates Utility 4025 / Random 4075 with finite losses.
+GPU2/3 73/74C, 241/244W under 250W, 22710/22742MiB. No new official score.
+P remains blocked on original formal completion receipts and frozen manifests;
+do not start P smoke/formal or alter active runtime/queue.
+
 At19:34:37CST originaltrainers1288280/1288281live03:15:37,
 queue1355742live02:34:51. Utilityepoch2/update3675,Random3700,finite losses.
 GPUs2/3 75/74C,22710/22742MiB,250W;GPU0/1idleatobservation.
