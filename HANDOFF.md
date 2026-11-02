@@ -1,6 +1,24 @@
 # Miss-RGBT 交接文档
 
-## 2026-11-02 Matched chronology training launched
+## 2026-11-02 Matched chronology training verified
+
+PID589499 completed704.600s; both10epochs/120updates,final5=6-10;
+development chose native6/chronological9. Audit128tuples/69sequences:
+chronological-E0 complete+.003912CI[-.013950,.029749],
+RGBmissing+.010976CI[-.008068,.029101],
+TIRmissing+.009991CI[-.002026,.023430];
+chronological-native-.003260CI[-.007479,.000038]. Advance=false.
+Do not expand/retune audit/promote this exact intervention as a module.
+This does not disprove all chronological or full-backbone training.
+Server+local tuple/partition/inputpairing/boxmath/stop/select/bootstrap/
+protocol verified. Base/source/fourcache/all10final5 finite30720parameter
+weight hashes checked. Separate-process E0tail1152+selected2304rows exact,
+sharedtail/measurementcode,notindependentimagereplay.
+Producer baseline-state/gradient assertions passed. All weights retained.
+ReportSHA645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce.
+GPUs idle38/38/44/37C,all250W. No val97/official/cleanup; goal unmet.
+
+### Original launch observation
 
 GPU2 PID589499 launched2026-11-02T04:02:16Z, fresh256/128/128 tuples,
 same original-order image/augmentation hashes checked across fitting arms.

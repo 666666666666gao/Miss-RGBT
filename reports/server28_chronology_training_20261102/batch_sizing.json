@@ -1,0 +1,20 @@
+{
+  "probe": {
+    "attention": {
+      "static_bytes": 415465472,
+      "batch16_peak_bytes": 1847573504
+    },
+    "mlp": {
+      "static_bytes": 415465472,
+      "batch16_peak_bytes": 1543908352
+    }
+  },
+  "total_bytes": 25296044032,
+  "proposed": 192,
+  "batch": 192,
+  "reference_batch": 32,
+  "reference_lr": 0.0001,
+  "learning_rate": 0.0006000000000000001,
+  "updates_per_epoch": 12,
+  "policy": "Largest divisor multiple16 below75% linear allocated-memory estimate; max256."
+}

@@ -6,9 +6,13 @@
 `scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,
 and `docs/CHRONOLOGY_TRAINING_PILOT_20261102.md`: matched native versus
 chronological mask training using identical small native-tail adapters.
-GPU2 PID589499 launched04:02:16Z, results pending. Original-order tensor
-digests check exact fitting input pairing. Train882 only, delayed audit,
-no official score or validated module claim.
+GPU2 PID589499 completed704.600s,both10epochs/120updates,selected6/9.
+Original-order tensor digests verify exact fitting input pairing.
+Audit128tuples/69sequences; all registered contrasts' intervals cross0,
+advance=false. Server+local evidence/hash/stop/select/bootstrap verified;
+cached E0tail1152+selected2304rows replay exact,not independent image replay.
+Evidence `reports/server28_chronology_training_20261102/`.
+Train882 only,delayed audit,no official score or validated module claim.
 
 2026-11-02 UTC: `scripts/diagnose_template_chronology.py`,
 `scripts/launch_template_chronology.py`, `scripts/analyze_template_chronology.py`,

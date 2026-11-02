@@ -52,9 +52,49 @@ No claim that chronology is the sole benchmark failure cause.
 
 ## Result
 
-Pending. GPU2 PID589499 launched2026-11-02T04:02:16Z. At elapsed5:09,
+Completed in704.600s on GPU2, PID589499. Both arms stopped at10epochs/
+120updates; both final-five windows are6-10. Common development loss chose
+nativeepoch6 and chronologicalepoch9 before sampling the delayed audit.
+Actual audit:128tuples/69sequences/1152rows per arm. Exact original-order
+input digests matched across all256 fitting tuples.
+
+| Sequence-macro crop-IoU contrast | Mean | 95% CI |
+|---|---:|---|
+| Chronological-trained minus E0, complete11_11 | +.003912 | [-.013950,+.029749] |
+| Chronological-trained minus E0, RGB missing | +.010976 | [-.008068,+.029101] |
+| Chronological-trained minus E0, TIR missing | +.009991 | [-.002026,+.023430] |
+| Chronological minus native training, all9cells | -.003260 | [-.007479,+.000038] |
+
+Registered advance=false. These observations do not establish a benefit
+from changing the temporal missingness assignment with this adapter budget.
+The preceding frozen diagnostic's detectable difference is not evidence
+that this training intervention fixes it. Do not expand this exact pilot,
+retune its audit, launch official evaluation, or count it as a paper module.
+This does not establish that all chronological/full-backbone training fails.
+
+Server and local analyzers verified actual name partitions, strict template
+chronology, prior exact-tuple exclusions, input pairing, box-IoU arithmetic,
+stopping/final-five selection, bootstrap/decision and report/protocol hashes.
+Server also checked base/source/fourcache hashes and all10 final-five
+weights, finite30720parameters each. Separate-process cached-tail replay
+matched1152 originalE0 and2304 selected-adapter records exactly. Replay
+uses shared tail/measurement implementation, not independent image/backbone
+replay or external review. Producer reports original state unchanged and
+gradients absent; these checks are producer assertions.
+
+Report SHA256:
+`645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce`.
+Evidence: `reports/server28_chronology_training_20261102/`.
+All weights retained. No val97, official evaluation or cleanup.
+Official maxima unchanged; complete+2,RGBT234-Miss and three-module goals
+remain incomplete. A next method needs distinct prospective evidence,
+not further fitting to this audit.
+
+### Launch Observation
+
+GPU2 PID589499 launched2026-11-02T04:02:16Z. At elapsed5:09,
 native fitting reached epoch3/update36. Both fitting caches and common
 development cache completed, and exact original-order input pairing passed.
 Measured batch192/LR0.0006,12updates per epoch; native epoch time about20s.
-Observed GPU22156MiB/73C/250W. Remaining estimate6-9min including second
-arm and delayed audit. No terminal result or official-score update yet.
+Observed GPU22156MiB/73C/250W. Remaining estimate at that snapshot was6-9min.
+After verification GPUs0-3 were idle,38/38/44/37C,all250W.
