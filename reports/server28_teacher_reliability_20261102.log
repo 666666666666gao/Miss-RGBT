@@ -1,0 +1,83 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+{"stage": "cache", "split": "fitting", "samples": 16, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 32, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 48, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 64, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 80, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 96, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 112, "expected": 128}
+{"stage": "cache", "split": "fitting", "samples": 128, "expected": 128}
+{"stage": "gradient", "rows": 16, "expected": 1152}
+{"stage": "gradient", "rows": 32, "expected": 1152}
+{"stage": "gradient", "rows": 48, "expected": 1152}
+{"stage": "gradient", "rows": 64, "expected": 1152}
+{"stage": "gradient", "rows": 80, "expected": 1152}
+{"stage": "gradient", "rows": 96, "expected": 1152}
+{"stage": "gradient", "rows": 112, "expected": 1152}
+{"stage": "gradient", "rows": 128, "expected": 1152}
+{"stage": "gradient", "rows": 144, "expected": 1152}
+{"stage": "gradient", "rows": 160, "expected": 1152}
+{"stage": "gradient", "rows": 176, "expected": 1152}
+{"stage": "gradient", "rows": 192, "expected": 1152}
+{"stage": "gradient", "rows": 208, "expected": 1152}
+{"stage": "gradient", "rows": 224, "expected": 1152}
+{"stage": "gradient", "rows": 240, "expected": 1152}
+{"stage": "gradient", "rows": 256, "expected": 1152}
+{"stage": "gradient", "rows": 272, "expected": 1152}
+{"stage": "gradient", "rows": 288, "expected": 1152}
+{"stage": "gradient", "rows": 304, "expected": 1152}
+{"stage": "gradient", "rows": 320, "expected": 1152}
+{"stage": "gradient", "rows": 336, "expected": 1152}
+{"stage": "gradient", "rows": 352, "expected": 1152}
+{"stage": "gradient", "rows": 368, "expected": 1152}
+{"stage": "gradient", "rows": 384, "expected": 1152}
+{"stage": "gradient", "rows": 400, "expected": 1152}
+{"stage": "gradient", "rows": 416, "expected": 1152}
+{"stage": "gradient", "rows": 432, "expected": 1152}
+{"stage": "gradient", "rows": 448, "expected": 1152}
+{"stage": "gradient", "rows": 464, "expected": 1152}
+{"stage": "gradient", "rows": 480, "expected": 1152}
+{"stage": "gradient", "rows": 496, "expected": 1152}
+{"stage": "gradient", "rows": 512, "expected": 1152}
+{"stage": "gradient", "rows": 528, "expected": 1152}
+{"stage": "gradient", "rows": 544, "expected": 1152}
+{"stage": "gradient", "rows": 560, "expected": 1152}
+{"stage": "gradient", "rows": 576, "expected": 1152}
+{"stage": "gradient", "rows": 592, "expected": 1152}
+{"stage": "gradient", "rows": 608, "expected": 1152}
+{"stage": "gradient", "rows": 624, "expected": 1152}
+{"stage": "gradient", "rows": 640, "expected": 1152}
+{"stage": "gradient", "rows": 656, "expected": 1152}
+{"stage": "gradient", "rows": 672, "expected": 1152}
+{"stage": "gradient", "rows": 688, "expected": 1152}
+{"stage": "gradient", "rows": 704, "expected": 1152}
+{"stage": "gradient", "rows": 720, "expected": 1152}
+{"stage": "gradient", "rows": 736, "expected": 1152}
+{"stage": "gradient", "rows": 752, "expected": 1152}
+{"stage": "gradient", "rows": 768, "expected": 1152}
+{"stage": "gradient", "rows": 784, "expected": 1152}
+{"stage": "gradient", "rows": 800, "expected": 1152}
+{"stage": "gradient", "rows": 816, "expected": 1152}
+{"stage": "gradient", "rows": 832, "expected": 1152}
+{"stage": "gradient", "rows": 848, "expected": 1152}
+{"stage": "gradient", "rows": 864, "expected": 1152}
+{"stage": "gradient", "rows": 880, "expected": 1152}
+{"stage": "gradient", "rows": 896, "expected": 1152}
+{"stage": "gradient", "rows": 912, "expected": 1152}
+{"stage": "gradient", "rows": 928, "expected": 1152}
+{"stage": "gradient", "rows": 944, "expected": 1152}
+{"stage": "gradient", "rows": 960, "expected": 1152}
+{"stage": "gradient", "rows": 976, "expected": 1152}
+{"stage": "gradient", "rows": 992, "expected": 1152}
+{"stage": "gradient", "rows": 1008, "expected": 1152}
+{"stage": "gradient", "rows": 1024, "expected": 1152}
+{"stage": "gradient", "rows": 1040, "expected": 1152}
+{"stage": "gradient", "rows": 1056, "expected": 1152}
+{"stage": "gradient", "rows": 1072, "expected": 1152}
+{"stage": "gradient", "rows": 1088, "expected": 1152}
+{"stage": "gradient", "rows": 1104, "expected": 1152}
+{"stage": "gradient", "rows": 1120, "expected": 1152}
+{"stage": "gradient", "rows": 1136, "expected": 1152}
+{"stage": "gradient", "rows": 1152, "expected": 1152}
+{"stage": "complete", "effects": {"unreliable_fused_cosine": {"mean": 0.004751569141358238, "ci95_low": -0.05803658462399005, "ci95_high": 0.06689000421727846, "sequences": 61, "rows": 177}, "unreliable_projection_cosine": {"mean": 0.49247568254232915, "ci95_low": 0.3729223560500678, "ci95_high": 0.6006341405042128, "sequences": 61, "rows": 177}, "reliable_fused_cosine": {"mean": 0.44742386936488904, "ci95_low": 0.4141526949836225, "ci95_high": 0.48024339187351933, "sequences": 114, "rows": 591}, "reliable_projection_cosine": {"mean": 0.43297535665980363, "ci95_low": 0.34834746890981877, "ci95_high": 0.5151692696797865, "sequences": 114, "rows": 591}, "reliable_minus_unreliable_fused": {"mean": 0.4325278357139237, "ci95_low": 0.3509575583413026, "ci95_high": 0.512308273308722, "sequences": 57, "rows": 57}}, "group_counts": {"unreliable": {"rows": 177, "sequences": 61}, "reliable": {"rows": 591, "sequences": 114}}, "diagnostic_supported": false, "seconds": 55.654918909072876}

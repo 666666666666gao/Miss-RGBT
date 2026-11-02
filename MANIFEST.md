@@ -2,6 +2,17 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/diagnose_teacher_reliability.py`,
+`scripts/launch_teacher_reliability.py`, `scripts/analyze_teacher_reliability.py`,
+`docs/TEACHER_RELIABILITY_DIAGNOSTIC_20261102.md`: frozen E0 task/KD
+gradient diagnostic on128fresh fittingtuples/1152rows. PID728997 completed
+55.655s. Registered criterion=false;unreliable teacher gradient mean not
+established negative,fused cosine .004752CI[-.058037,.066890],
+projection .492476CI[.372922,.600634]. No reliability training promotion.
+Server/local saved evidence/hash/bootstrap checked;1152row native-head
+gradient replay exact,sharedmeasurement,notindependentimagereplay.
+Evidence `reports/server28_teacher_reliability_20261102/`.
+
 2026-11-02 UTC: `scripts/probe_window_training.py`,
 `scripts/launch_window_training.py`, `scripts/analyze_window_training.py`,
 `docs/WINDOW_TRAINING_PILOT_20261102.md`: matched raw/Hann regression

@@ -1,5 +1,27 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Complete-teacher gradient diagnostic verified
+
+FrozenE0GPU2PID728997 completed55.655s,128fresh train882 fitting tuples/
+1152rows. Missing-search unreliable177rows/61seq,reliable591/114seq.
+Unreliable fused-gradient cosine .004752CI[-.058037,.066890];
+response-projection parameter cosine .492476CI[.372922,.600634].
+Reliable fused .447424CI[.414153,.480243];paired57seq reliable-unreliable
+gap .432528CI[.350958,.512308]. Registered diagnostic=false: no evidence
+of negative unreliable mean at both required interfaces. Do not launch
+reliability-filtered KD training or retune thresholds on these samples.
+Higher teacher task loss alone does not establish harmful gradients.
+Full-backbone parameter/optimizer effects not measured.
+Server+local partitions/tuple exclusions/vector+dotnormcosines/bootstrap/
+decision/protocol verified;source/base/cache hashes checked. Native-head
+separate-process1152row gradient replay exact,shared measurement function,
+not independent image/backbone replay. Producer parity/state/gradient-sum
+assertions re-exercised by replay. No optimizer/val97/official/cleanup.
+ReportSHAf46bbd0342729be6d3d8b15523908fcf7a6e3f26410b0352694b4614098382d6.
+Protocol docs/TEACHER_RELIABILITY_DIAGNOSTIC_20261102.md;
+evidence reports/server28_teacher_reliability_20261102/.
+GPUs idle38/37/42/37C,all250W. Official maxima unchanged;fullgoalunmet.
+
 ## 2026-11-02 Matched raw/Hann supervision verified
 
 Corrected679342 completed185.454s,batch256/LR0.00032,9updates/epoch.
