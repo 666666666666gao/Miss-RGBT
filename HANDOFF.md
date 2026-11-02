@@ -3639,3 +3639,23 @@ observed loss5.376097/4.109694; estimated epoch3 end21:37-21:38 CST.
 At20:51:05 original PIDs1288280/1288281 and queue1355742 still live;
 GPU2/3 75/74C,22710/22742MiB,250W caps. No restart, new official result,
 checkpoint selection or cleanup. Full goal remains unmet.
+
+## F per-step mask isolation, 2026-11-02
+
+training.step_masks wraps the unchanged native sampler in a CPU/CUDA RNG fork,
+keyed by config mask_seed+microstep. Actual E0 synthetic v2 PASS: native
+same-seed parity, exact caller RNG preservation, consecutive-step patch
+variation, identical masks across four arms/two steps after their different
+forward draws. Those masks drive all8 C/Mprobe AdamW updates; objective
+reconstruction exact, gradients finite, backbone update and selector/feedback
+gradient checks and frozen BN pass. 19.253s, peak8434151424bytes, GPU0 checker exited.
+Receipt reports/server28_feedback_f_training_v2_20261102.json SHA256
+0c4052c1c9eb833114c1522c9610be2931abf5562491882b42e30306b3e14d30.
+No real-image training/official metric/convergence claim. Formal F loop
+must call this helper and verify actual image/input/mask parity across arms.
+
+At20:54:44CST original1288280/1288281/1355742 commands live; epoch3
+Utility5175/Random5200 with observed losses6.963657/5.826354 finite.
+GPU2/3both74C,22710/22742MiB,250Wcaps. Epoch3 milestone~21:37CST.
+No original runtime/training/queue changes, checkpoint pruning or val97.
+P still waits original terminal/frozen manifests; full goal remains unmet.

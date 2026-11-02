@@ -121,18 +121,31 @@ updates took 19.424 seconds; peak allocated memory was 8,434,151,424 bytes.
 This is synthetic optimizer evidence, not real-image training, real batch
 memory sizing, convergence or efficacy. No persistent weights were produced.
 
-Formal training must isolate per-step mask draws and verify input/mask hashes
-across arms: single and double passes consume different stochastic forward
-draws, so matching an initial seed is insufficient. Training-mode loss equality
-between single and double passes is not asserted; zero-residual exact parity
-is an evaluation-mode check.
+`step_masks` now isolates native CUDA mask draws using `mask_seed + microstep`
+and restores the caller's CPU/CUDA RNG. This handles different stochastic
+forward draws between single and double passes; an initial seed alone was
+insufficient. The future formal loop must call this helper and verify actual
+image/input/mask hashes across arms. Training-mode loss equality between
+single and double passes is not asserted; zero-residual exact parity is an
+evaluation-mode check.
+
+The v2 actual-network synthetic receipt is
+`reports/server28_feedback_f_training_v2_20261102.json`, SHA256
+`0c4052c1c9eb833114c1522c9610be2931abf5562491882b42e30306b3e14d30`.
+It checks native sampler parity at the same step seed, exact caller CPU/CUDA
+RNG restoration, different patch draws on consecutive steps, and equal
+mask hashes across all four arms for two steps despite their different
+forward paths. These masks are used for the eight C/M probe optimizer
+updates, with exact objective reconstruction, finite gradients, parameter
+updates and frozen BN. Duration19.253s, peak8434151424bytes. V1 retains
+its original source hashes. Neither receipt is real-image training evidence.
 
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original
 manifests, metadata feasibility, actual image smoke and formal training.
 Before image training/evaluation of F, provide the isolated formal trainer
-loop, isolated mask draws and image smoke verification. Synthetic tracker
+loop using the isolated mask helper and image smoke verification. Synthetic tracker
 loading and one external state/template update have passed. Compare single-pass/no-residual/
 shallow/deep with matched objective and training budgets.
 Measure latency and peak memory on the same actual workload and record

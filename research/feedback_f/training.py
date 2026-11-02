@@ -3,9 +3,19 @@ import torch
 
 from miss_rgbt.model import load_pretrained
 from miss_rgbt.objectives import training_loss, utility_supervision
+from miss_rgbt.train import sample_masks
 from model import FeedbackTrackerModel, two_round_training_loss
 
 ARMS = ('single', 'none', 'shallow', 'deep')
+
+
+def step_masks(templates, searches, config, microstep):
+    """Native masks keyed by step, independent of model forward RNG draws."""
+    device = searches[0].device
+    with torch.random.fork_rng(devices=[device.index]):
+        with torch.cuda.device(device):
+            torch.cuda.manual_seed(config['mask_seed'] + microstep)
+        return sample_masks(templates, searches, config)
 
 
 def build_model(cfg, checkpoint, task_utility, arm, width=128):
