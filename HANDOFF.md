@@ -3953,3 +3953,53 @@ recheck near that milestone with180-300s polling. Do not read growing
 manifests or start P smoke before both trainers terminate and queue
 verification_v2 passes. No new official score; no run/config/queue changes
 or checkpoint cleanup. Full goal remains active and unmet.
+
+## 2026-11-03 00:38 CST - Current verified state
+
+Read-only SSH confirmed original Utility/Random training parents1288280/
+1288281 and official queue v2 PID1355742 are live. PIDs1945771/1945774 and
+1942780/1942781 are their dataloader children, not extra training jobs.
+Latest log: epoch5, Utility update9475, Random update9450; finite loss is
+training telemetry only, not convergence or official accuracy. At the
+observed rate, next 2000-update epoch boundary is estimated around
+01:05-01:10 CST.
+
+GPU0/1 idle. GPU2 75C/243.38W and GPU3 75C/249.64W, both fully utilized and
+within 85C/250W limits. Queue remains waiting for both original trainers and
+the formal verifier. No new full official result; no process, queue,
+checkpoint, or growing manifest was changed.
+
+Audited Miss per-metric bests remain LasHeR PR/SR70.397396/55.789882
+(+1.097396/+1.389882 over targets) and RGBT234 MPR/MSR86.184864/61.660594
+(1.915136/2.639406 below targets). The approximate +2-point complete
+improvement is also unproven. These maxima are not one jointly selected
+checkpoint. Current A is a paired CADTrack-initialization replication, not
+one of the three validated paper modules. Preserve the registered last-five
+full official evaluation and no-test-selection/no-cleanup boundaries.
+
+## 2026-11-03 00:46 CST - Verified training progress
+
+After a 180-second wait, Utility log microstep advanced from18999 to19149;
+Random also advanced. Both original trainer parents and queue remain live,
+so prior tail positions did not indicate a hang. GPU2/3 remain fully
+utilized at75/74C and247.76/244.44W; GPU0/1 are idle.
+
+Epoch5 is not complete; queue remains WAITING_FOR_TRAINING and no completion
+or formal-verification receipt exists, so no official evaluation was
+started. At the observed rate, epoch5 boundary is estimated near01:05CST;
+recheck at the milestone without intervention. No run/queue edits,
+checkpoint cleanup, or new official metric.
+
+## 2026-11-03 02:12 CST - A training remains active
+
+After continued 300-second polling, both original A trainers remain live
+and are still writing finite-loss records in epoch6: Utility update11200
+and Random update11250. The official queue is still WAITING_FOR_TRAINING;
+no completion receipt or verification_v2 receipt exists, so no downstream
+formal training or partial evaluation was started.
+
+GPU2/3 are fully utilized at75/74C and244.31/249.20W with a 250W cap.
+GPU0/1 remain idle because they are reserved for the registered official
+full-dataset evaluation queue after the A formal gate. Preserve the
+last-five-epoch Complete+Miss evaluation and do not use val97 or test
+metrics for selection.
