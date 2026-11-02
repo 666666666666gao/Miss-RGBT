@@ -164,9 +164,19 @@ Author-repository HEADs verified with git ls-remote on November2:
 | joe-siyuan-qiao/DetectoRS | 612916ba89ad6452b07ae52d3a6ec8d34a792608 |
 | sundw2014/DCM | df2f5f68e6f7eb50f27fe77c5047d1ffd87c2820 |
 
-HEAD lookup proves repository identity at this observation, not a code review,
-module portability or a novelty finding. Relevant implementation reading is
-still required before the F/X designs borrow from these repositories.
+Pinned implementation reading is now recorded in
+PFX_SOURCE_AUDIT_20261102.md, including masking complementarity, shared paths,
+RFP recursion and initialization, DCM detached supervision, licenses and
+our actual F insertion constraints. This does not establish portability,
+novelty or efficacy. No reference code was integrated.
+
+For F, the repeated blocks4-12 must include the existing block6 repair;
+predict_tail starts after block6 and cannot be reused as that entire pass.
+Default utility selection is deterministic; any later random-mode control
+must explicitly preserve selection-state semantics for identity checks.
+Evaluate zero-residual parity with stochastic layers disabled and retain
+frozen BN during training. Normalize both-round losses when comparing
+the single-pass and computation-matched controls.
 
 ## Original Replication First Epoch
 

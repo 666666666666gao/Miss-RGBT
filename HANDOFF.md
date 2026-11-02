@@ -3547,3 +3547,27 @@ lossesfinite. Queue1355742 live01:27:34WAITING_FOR_TRAINING.
 GPU2/3both75C,22710/22742MiB,250W;GPU0/1idleafterCUDAcheck.
 Next second-epoch milestone roughly19:52CST;avoid repeated early polls.
 No officialscore/convergence/module claim;fullgoal remains unmet.
+
+## 2026-11-02 19:22 CST - P/F/X source audit
+
+Inspected all four pinned author repositories and actual local insertion
+points. Evidence and blob IDs:docs/PFX_SOURCE_AUDIT_20261102.md.
+SDSTrack masks complementary RGB/TIR patches (marginals .3/.21), unlike
+our independent patches; not a proven cause of the performance gap.
+CBM is patch/classification curriculum, not whole-modality frequency.
+DetectoRS recomputes backbone/neck; zero sigmoid blend logits give .5,
+distinct from its zero feedback projections. DCM uses detached cross-head
+targets; classification KL is not a drop-in tracking objective.
+No reference code copied/installed/run. No new trained module claim.
+
+F must rerun blocks4-12 INCLUDING block6 repair, preserve query/template
+prefix at feedback insertion, test eval-mode zero-residual parity and
+random-selection RNG semantics, normalize dual-round losses, and commit
+one external tracker update. Active code/runtime/queue unchanged.
+
+At19:20:30CST trainer1288280/1288281 actual command identities live03:01:31;
+queue1355742 live02:20:45. GPUs2/3 74/71C,22710/22742MiB,250W limits.
+Near19:22 logs Utility epoch2/update3425 and Random epoch2/update3450,
+finite losses. Common update3425 input/mask hashes match. No new complete
+epoch development result or official score. GPU0/1 idle.
+Next epoch2 milestone about19:52CST;P preparation waits terminal originals.
