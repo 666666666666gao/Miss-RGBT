@@ -1,0 +1,18 @@
+{
+  "pid": 1318842,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/partitioned_a_official_queue.py",
+    "--register"
+  ],
+  "log": "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue.log",
+  "registered_utc": "2026-11-02T08:36:53.327071Z",
+  "poll_seconds": 300,
+  "cuda_visible_devices": "",
+  "script_sha256": "0399082b8aff0a3bad7baeac460c6fb611eaf7fd7f9a6d488e0cef9dde3689a2",
+  "checks_sha256": "9fe2135ddff9a7172c790dcc7e429a04b76c0faf697cd4a038bd3c6299431724",
+  "queues_existing_training": true,
+  "restarts_training": false,
+  "benchmark_evaluation_starts_only_after_terminal_training_verification": true
+}

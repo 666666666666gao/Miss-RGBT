@@ -1,0 +1,18 @@
+{
+  "stage": "WAITING_FOR_TRAINING",
+  "training": [
+    {
+      "selector": "utility",
+      "pid": 1288280,
+      "live": true,
+      "completion_present": false
+    },
+    {
+      "selector": "random",
+      "pid": 1288281,
+      "live": true,
+      "completion_present": false
+    }
+  ],
+  "observed_utc": "2026-11-02T08:36:53.630085Z"
+}

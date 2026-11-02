@@ -1,5 +1,29 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 - Full official continuation queue registered
+
+Previous turn launched paired training=progress. Revalidated originalPIDs
+1288280/1288281 live16:29:39CST,epoch1/update>=175,76/74C,250W. No full
+epoch/new official score. No training/runtime/protocol changes.
+New queue compiled and checked20full plans(no subset),strict native tracker
+loading of both smoke weights,synthetic11/01/10images finite,parameter
+digests unchanged/gradients absent. GPU0released;zero benchmark jobs run.
+Checks reportserver28_partitioned_a_20261102_queue_checks.json.
+
+Detached controllerPID1318842 registered08:36:53UTCNov2,verified actual
+commandlive00:27/statusWAITING_FOR_TRAINING,CUDAempty/noGPUallocation.
+300s process-identity polls,waitbothterminal,formalCPUverifier mustPASS,
+thenUtilityGPU2/RandomGPU3 each5weights xcomplete/miss,4workers/GPU.
+Eachrun479seq337353frames,isolated verify_official recomputesallreceipts,
+box/GT/mask/sourcehashes andtoolkitcurves. No verify_development/main,
+val97,subset,testselection,cleanup ortrainingrestart. Preserveallweights.
+Twentyfullruns=9580trajectories/6747060frames. No future result claimed.
+Remote reports/server28_partitioned_a_20261102_official_queue{.launch.json,.log,/}.
+Queue source/protocol/inventory hashes frozen;do noteditthese pending files.
+Docs PARTITIONED_A_OFFICIAL_QUEUE_20261102.md and PARTITIONED_A_QUEUE_EVIDENCE_20261102.md.
+Nextfirstepoch~18:00CSTNov2,inspectnearboundary then180-300s livechecks.
+Full goal/three modules incomplete;official scores unchanged.
+
 ## 2026-11-02 - Train882-only A replication launched
 
 Previous table-only turn=no progress. Revalidated server28 idle and7340a53
