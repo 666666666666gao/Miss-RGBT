@@ -168,6 +168,17 @@ without creating an F run directory. It did not execute the loader/epoch/
 checkpoint loop or verify the positive-parent path. The earlier optimizer
 receipts cover synthetic batch updates only, not this image loop.
 
+`check_parent_contracts.py` also exercises the parent validator against
+temporary synthetic metadata: a complete fixture passes, and twelve cases
+reject missing verification, wrong phase, missing arm, changed verifier/
+prepared/config/run-config files, incomplete parent status (even with updated
+hashes), changed manifest, omitted inherited completion/manifest and wrong
+verification hash. No GPU, dataset or F run directory is used.
+Receipt `reports/server28_feedback_f_parent_contracts_20261102.json`,
+SHA256 `8db6fd81b56defe6fae71ce38bae2fdd333cadecbc1ef0bcd6f4f891b3569d44`.
+These are metadata contract checks, not validation against real P receipts
+or execution of the image-training loop.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original

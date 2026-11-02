@@ -3683,3 +3683,21 @@ epoch3microsteps10599/10649 (updates5300/5325),observedloss3.276134/6.415179
 finite. GPU2/3 75/74C,22710/22742MiB,250Wcaps. Epoch3ETA~21:37CST.
 Original runtime/training/queue unchanged. P waits originalterminal;
 P->F->X retained and full goal still unmet.
+
+## F parent metadata contracts, 2026-11-02
+
+Added research/feedback_f/check_parent_contracts.py. Actual Python3.7
+CPU-only test on temporary synthetic files: positive fixture accepted;
+12cases reject missing verification/wrong phase/missing arm/changed verifier,
+prepared,config,run-config/incomplete status despite refreshed hashes/changed
+manifest/omitted inherited completion or manifest/wrong verification hash.
+No F run directory,dataset,GPU or actual image loop. Receipt
+reports/server28_feedback_f_parent_contracts_20261102.json SHA256
+8db6fd81b56defe6fae71ce38bae2fdd333cadecbc1ef0bcd6f4f891b3569d44.
+Real P positive-boundary,image smoke,full-loop and saved-weight checks remain
+pending; synthetic acceptance does not establish actual P/F training.
+
+At21:09:19CST actual original PIDs1288280/1288281/1355742 live,
+epoch3updates5450/5500,observedloss11.090048/7.013592 finite.
+Epoch3 milestone remains about21:37CST; no early repeated polling.
+Original training/runtime/queue untouched. No new official metrics.
