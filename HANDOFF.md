@@ -1,5 +1,27 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Cross-stream context pilot completed
+
+GPU2 corrected PID318603 completed246.879s. Matched aligned/shuffled
+199104-parameter adapters both stopped10epochs/480updates and selected6
+from final-five6-10 before audit sampling. All weights/caches retained.
+Audit128tuples/69sequences,1152rows per arm. Aligned-E0 crop IoU:
+RGB-missing+.013811 CI[-.007264,.037425], TIR-missing+.008506
+CI[-.017583,.031635]; aligned-shuffled+.001734 CI[-.017697,.019887].
+Registered advancement=false. Do not expand/tune this pilot or run official
+evaluation for it. Complete-search parity and producer frozen-state checks
+passed. Separate saved-evidence arithmetic/source/protocol/file hashes
+verified; separate-process selected-adapter replay2304records exact, using
+the same adapter/measurement implementation, not independent image replay.
+Local evidence analysis also passed. Report SHA256
+21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8.
+Protocol/results: docs/CROSS_STREAM_CONTEXT_PILOT_20261102.md;
+reports/server28_cross_stream_context_20261102_v2/.
+Initial pre-update layout-parity failure and its cache/log remain on server.
+No val97, official metrics or cleanup. Full research goal remains active.
+Next action must address a distinct evidenced mechanism on train882, not
+retune this audit or count ordinary cross-attention as a validated module.
+
 ## 2026-11-02 Late-fusion stream diagnostic
 
 Frozen E0 train882 fusion-input ablation completed on GPU2 in79.108s:

@@ -2,6 +2,19 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/probe_cross_stream_context.py`,
+`scripts/launch_cross_stream_context.py`,
+`scripts/analyze_cross_stream_context.py`,
+`scripts/check_cross_stream_layout.py`,
+`docs/CROSS_STREAM_CONTEXT_PILOT_20261102.md`, and
+`reports/server28_cross_stream_context_20261102_v2/` record completed
+matched199104-parameter train882 cross-stream context training.
+Both arms stopped10epochs/480updates,selected6 from final-five6-10.
+Registered promotion failed; saved-evidence verification and2304-record
+separate-process selected-adapter replay passed. Replay shares adapter/
+measurement code and cached maps; not independent image/backbone replay.
+No official results, val97, checkpoint cleanup or validated paper module.
+
 2026-11-02 UTC: `scripts/diagnose_late_fusion_streams.py`,
 `scripts/launch_late_fusion_streams.py`,
 `scripts/analyze_late_fusion_streams.py`, and
