@@ -1,5 +1,14 @@
 # F Structural Prototype
 
+`official.py --campaign <formal-campaign> --arm <arm> --gpu 0|1` now
+provides final-five full evaluation. It requires verified formal training,
+then evaluates16-20 x complete/miss with4workers/GPU and300second polling,
+independently recalculates each result and preserves the development-selected
+epoch marker. It retains all weights. ActualPython3.7 CLI/import and
+synthetic plan checks passed; receipt server28_feedback_f_official_plan_20261102.json.
+160unique synthetic plan paths cover4curricula x4arms x10jobs; none has
+been registered/launched. Actual F training/evaluation remains unexecuted.
+
 Current preparation command requires `prepare.py --phase smoke|formal
 --curriculum-arm progressive` (or another explicit shared P curriculum).
 Formal preparation and train.py require verified completed four-arm F smoke;

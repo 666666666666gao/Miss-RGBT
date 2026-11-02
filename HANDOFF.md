@@ -3846,3 +3846,25 @@ Earlier receipts retain historical source hashes.
 22:10:08CST original1288280/1288281/1355742 actual commands live;
 GPU2/3=75/74C,250W,22710/22744MiB. Next epoch4 milestone~23:23CST.
 Full objective remains active/unmet.
+
+## F final-five official queue entry
+
+Added research/feedback_f/official.py and check_official.py. Entry requires
+the full formal4arm saved-run verification, unchanged prepared/config/
+completion/manifest/source hashes and inherited P/F smoke boundaries.
+For one arm it evaluates epochs16-20 in complete+miss,10 full479/337353
+jobs,4workers/GPU0or1,300second child-process polling. Uses F evaluate.py
+and independent verify_official.verify for every result. Saves registration,
+source hashes, exit records and recomputed metrics. Keeps the train-only
+development-selected epoch marker and all checkpoints; no test selection.
+
+ActualPython3.7 CLI/import and synthetic plan checks PASS: all4curricula x
+4arms x10jobs have160unique output paths, pairedselected weights, fixed
+fullcoverage, no subset option; invalid epochbudget/selection/hash/final5
+rejected. Receipt reports/server28_feedback_f_official_plan_20261102.json.
+These160 jobs are synthetic plans, NOT registered/executed experiments.
+No real F campaign, spawned evaluation, verifier trajectory recalculation
+or new scores. Real P/F smoke/formal and efficacy remain pending.
+At22:18:56CST original1288280/1288281/1355742 actualcommands stilllive.
+Next originalepoch4 milestone~23:23CST; no early repeated statuspoll.
+Originalruntime/queue unchanged. Full objective active and unmet.

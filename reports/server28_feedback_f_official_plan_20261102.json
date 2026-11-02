@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unique_jobs": 160,
+  "jobs_per_arm": 10,
+  "selected_checkpoint_paired": true,
+  "full_inventory_only": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_official.py": "400a334d00fad15f5c342ea0e480c275de2d65e0b141772bfb0a82da88086471",
+    "/home/gaob/Miss-RGBT/research/feedback_f/official.py": "956d5c215c8b94bb8cbfb77b6bbec8c017d264b0c41512f3a1661aa6967c1a6d"
+  },
+  "scope": "Synthetic job-plan checks only; no campaign, processes, data or official metrics"
+}
