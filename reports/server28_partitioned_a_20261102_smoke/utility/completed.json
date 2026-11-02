@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "epochs": 6,
+  "updates": 12,
+  "early_stopped": false,
+  "seconds": 66.99644017219543,
+  "pid": 1277886,
+  "final_five": [
+    {
+      "epoch": 2,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch02.pth.tar",
+      "sha256": "2802960063b7a7e58be89462ac7b0d31a3c7061bddc93c9017e6a7abab1f37c3"
+    },
+    {
+      "epoch": 3,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch03.pth.tar",
+      "sha256": "9d1b2c021ecebf36c314bce2a847ed742d09ae3412bdd504126d254939695169"
+    },
+    {
+      "epoch": 4,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch04.pth.tar",
+      "sha256": "5350eaeeb8d2554072f42f656ab7c424104053760bf1cdee72b0a161bc7ac31c"
+    },
+    {
+      "epoch": 5,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch05.pth.tar",
+      "sha256": "f9623f600c9d52a0ec1b581f950e89e62edeeeb88287cc435822dabf0d04a548"
+    },
+    {
+      "epoch": 6,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch06.pth.tar",
+      "sha256": "e5f58f05d8e0c283c6054b2374b753cb4ef1c4edaafdeea921e3ebcb8524f09d"
+    }
+  ],
+  "selected_epoch": 6,
+  "selected_checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_smoke/utility/epoch06.pth.tar",
+  "selected_sha256": "e5f58f05d8e0c283c6054b2374b753cb4ef1c4edaafdeea921e3ebcb8524f09d",
+  "selection_rule": "Lowest fixed train882 development task loss among final five; earlier tie",
+  "all_checkpoints_retained": true,
+  "official_test_selection_used": false,
+  "scope": "Existing A replication; no new module or official result"
+}

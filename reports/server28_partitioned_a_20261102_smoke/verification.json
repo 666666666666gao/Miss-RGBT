@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "phase": "smoke",
+  "arms": {
+    "utility": {
+      "epochs": 6,
+      "updates": 12,
+      "selected_epoch": 6,
+      "finite_final_five": true,
+      "changed_state_tensors": 223,
+      "frozen_bn_buffers": 39,
+      "counts": {
+        "train": 120,
+        "development": 8
+      },
+      "peak_gpu_bytes": 21118406144,
+      "completed_sha256": "75fa064b57b5c0ab42db705117ef7ec52caaaf546dc3c3a4e53760ed84d56217",
+      "input_manifest_sha256": "11bcda158caded685a9e791b858d9095a4da6145827c137ee9525724953958bc"
+    },
+    "random": {
+      "epochs": 6,
+      "updates": 12,
+      "selected_epoch": 6,
+      "finite_final_five": true,
+      "changed_state_tensors": 224,
+      "frozen_bn_buffers": 39,
+      "counts": {
+        "train": 120,
+        "development": 8
+      },
+      "peak_gpu_bytes": 21118406144,
+      "completed_sha256": "0f33190fdce38bb9823afcf8b675fde9489c36c563746a0fb3c18024fd166a02",
+      "input_manifest_sha256": "11bcda158caded685a9e791b858d9095a4da6145827c137ee9525724953958bc"
+    }
+  },
+  "paired_inputs_and_masks_exact": true,
+  "initial_parameters_exact": true,
+  "scope": "Saved evidence verification; shared trainer sources, not independent image/gradient replay"
+}

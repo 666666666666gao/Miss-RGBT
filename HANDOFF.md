@@ -1,5 +1,31 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 - Train882-only A replication launched
+
+Previous table-only turn=no progress. Revalidated server28 idle and7340a53
+clean. Added separate full-network A trainer;705/88/89train882 partitions,
+prior+smoke frame exclusions,actual microbatch IDs/tensor/mask hashes.
+No val97/official access,runtime/environment changes or automatic evaluator.
+Both smoke arms6epochs/12updates verified,pairedinputs/masks/initial exact,
+finite final5+selection/source/data checked,actual backbone/head/utility
+updates,39BNbuffers frozen. Saved-evidence checks,not image/optimizer replay.
+
+FormalGPU2UtilityPID1288280/GPU3RandomPID1288281 launched08:19:00UTC,
+seed2028,batch5x2/LR.000125,20000tuples/epoch,max20/drop10/earlymin14.
+Both original PIDs live16:21:22CST epoch1/update>=25;first50microsteps
+input/mask pairs exact,74/73C,22710/22742MiB,250W,100%utilization.
+Boundary partitions/879excludedsets/priorhashes structurally equal;dict key
+order alone differs in bytes. All weights retained,no test-based cleanup.
+~3.01s/update=>101min/epoch,24-34h;firstepoch near18:00CSTNov2.
+Inspect near milestone,180-300s live checks,no restart on observation timeout.
+After terminal receipts run scripts/verify_partitioned_a.py --phase formal
+before final-five full complete/Miss reports. Development-only weight
+selection;official final5 comparison is post-hoc,never cleanup criterion.
+Remote reports/runs stemserver28_partitioned_a_20261102_formal.
+Future freshsamplers excludeALLactive input_manifest.jsonl frames.
+Protocol/results docs/PARTITIONED_A_*20261102.md. Official metrics unchanged;
+full goal/three modules unmet. Publication pending this turn.
+
 ## 2026-11-02 - Template attention information diagnostic verified/closed
 
 Previous last-observedtemplate verifiednegative=progress. New frozenE0
