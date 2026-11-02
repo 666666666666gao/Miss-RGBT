@@ -3869,6 +3869,28 @@ At22:18:56CST original1288280/1288281/1355742 actualcommands stilllive.
 Next originalepoch4 milestone~23:23CST; no early repeated statuspoll.
 Originalruntime/queue unchanged. Full objective active and unmet.
 
+## Historical fresh-frame feasibility audit
+
+Added read-only CPU metadata audit scripts/audit_partitioned_fresh_frames.py.
+It exactly counts native causal anchors for fitting705 sequences using
+length>=20, visible>10, anchor range[1,len-3), an earlier visible template
+frame and3 later search frames; native gap expands without a fixed cap.
+Exclusions are completed historical diagnostics/crops plus completed dense
+cache identities only. Active/growing partitioned-A/P manifests were not
+read; no images, GPU, workers or training/evaluation launched.
+
+Result296231 possible anchors,704/705 eligible,median229,minimum positive7,
+7 sequences below20 anchors. `aboyleft_1202` has71 total/5 visible/66 excluded/
+0 anchors. This is historical-boundary upper-bound feasibility, NOT the
+post-A final boundary or crop-augmentation acceptance. Do not launch P smoke
+yet. Once both original A formal manifests/completion receipts freeze, rerun
+with those immutable exclusions before P smoke. Checker pure fixtures PASS.
+Raw report `reports/server28_partitioned_fresh_frame_audit_v3_20261102.json`;
+analysis `docs/PARTITIONED_FRESH_FRAME_FEASIBILITY_20261102.md`.
+Only the dedicated audit report was written; no audit input manifest/run dir.
+At22:31CST original1288280/1288281/1355742 remained actual live commands;
+GPU0/1 1MiB idle, GPU2/3=75/74C,22710/22744MiB,100%.
+
 ## Actual initial/epoch3 same-image diagnosis
 
 Added scripts/diagnose_partitioned_initial.py and executed on GPU0.

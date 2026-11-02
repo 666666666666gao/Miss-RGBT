@@ -75,6 +75,11 @@ completion receipt, before creating any P campaign directory.
 Before image smoke, check remaining train882 frame/clip feasibility from
 metadata after exclusions; previous crop experiments demonstrated that a
 requested fresh cohort can be infeasible. No fallback sampler is added.
+The historical-only metadata pass is recorded in
+`PARTITIONED_FRESH_FRAME_FEASIBILITY_20261102.md`:704/705 fitting sequences
+currently have causal anchors, but this is only an upper bound because the
+active original A manifests were deliberately excluded. Do not launch P
+smoke until those manifests freeze and feasibility is recomputed with them.
 
 ### P Execution And Verification
 

@@ -1,0 +1,4973 @@
+{
+  "status": "PASS",
+  "sequences": 705,
+  "total_fresh_anchors": 296231,
+  "zero_anchor_sequences": 1,
+  "minimum_anchors": 0,
+  "median_anchors": 229,
+  "required_templates": 2,
+  "required_searches": 3,
+  "minimum_visible_for_sampler": 11,
+  "minimum_sequence_length": 20,
+  "excluded_manifest_sha256": {
+    "server28_template_chronology_20261102": "20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79",
+    "server28_chronology_training_20261102": "645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce",
+    "server28_window_training_20261102_v2": "95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612",
+    "server28_teacher_reliability_20261102": "f46bbd0342729be6d3d8b15523908fcf7a6e3f26410b0352694b4614098382d6",
+    "server28_joint_gradients_20261102": "b0bf4d5fdd0df3e6d98b9e7b6a5deceb40b9a7ff82c6463fb0efc9d5242b7e41",
+    "server28_burst_mask_rollout_20261102": "b44dc635c7b6c1807ab08dd6ec9e7d1e3976fce8d4e40ceacb8fd198b420212b",
+    "server28_causal_crop_exposure_20261102": "ef0e7aa20a83097e265e2603d3b4ffdb328bc4c0c6aa30f6fe1e23e458be6a2c",
+    "server28_causal_crop_training_20261102/initial_clips.json": "e7c151a8c6fa0cbbe4abd301610eef6dbe972dfc7ebca71b136e53e94c33ece3",
+    "server28_causal_crop_training_20261102/audit_clips.json": "b6c2425483a71dab51d5f7cbdb5b850bf1eb8c29b1d6b58e773f89c74f6ce522",
+    "server28_last_observed_template_20261102/selected_clips.json": "0af89a134e7409c4eaa4dfbf6ef4f947b53ee44b16ddfdd86b39e41711d60e68",
+    "server28_template_attention_20261102/report.json": "a7e8afa27171abd35ea53d963ae11d71f25c2f7b8145d4b2cef0528d81bb18eb",
+    "server28_box_consensus_20261102/report.json": "dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b",
+    "/home/gaob/Miss-RGBT/reports/server28_dense_geometry_20261102/report.json": "de33c5b1912be26b4527df5bbdf579f995596680e1459d548ee675b21f308a70"
+  },
+  "excluded_scope": "Completed historical diagnostics/crops via exclusions() and completed dense-geometry cache manifests only; excludes no active or growing partitioned-A/P manifests",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/audit_partitioned_fresh_frames.py": "12fd77b2842b070c8a83d98afd4c1158e2ab1b4351eb4d4f7bbce5c3a260453f",
+    "/home/gaob/Miss-RGBT/scripts/train_partitioned_a.py": "5a387f95f46d3b0798e516cee03d1bb3609f901a79fd9d5d8a5483e9f91ef981",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba"
+  },
+  "sequence_details": [
+    {
+      "sequence": "motocross",
+      "frames": 53,
+      "visible": 34,
+      "excluded": 19,
+      "causal_anchors": 30
+    },
+    {
+      "sequence": "carturn",
+      "frames": 176,
+      "visible": 141,
+      "excluded": 35,
+      "causal_anchors": 137
+    },
+    {
+      "sequence": "bluegirl",
+      "frames": 258,
+      "visible": 226,
+      "excluded": 32,
+      "causal_anchors": 222
+    },
+    {
+      "sequence": "bike2",
+      "frames": 467,
+      "visible": 452,
+      "excluded": 15,
+      "causal_anchors": 448
+    },
+    {
+      "sequence": "comebike",
+      "frames": 158,
+      "visible": 138,
+      "excluded": 20,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "girlthroughtrees",
+      "frames": 103,
+      "visible": 88,
+      "excluded": 15,
+      "causal_anchors": 84
+    },
+    {
+      "sequence": "leftcup",
+      "frames": 4165,
+      "visible": 3916,
+      "excluded": 249,
+      "causal_anchors": 3912
+    },
+    {
+      "sequence": "blkcarcome155",
+      "frames": 155,
+      "visible": 140,
+      "excluded": 15,
+      "causal_anchors": 136
+    },
+    {
+      "sequence": "11runthree",
+      "frames": 343,
+      "visible": 333,
+      "excluded": 10,
+      "causal_anchors": 329
+    },
+    {
+      "sequence": "boybehindtrees",
+      "frames": 251,
+      "visible": 217,
+      "excluded": 34,
+      "causal_anchors": 213
+    },
+    {
+      "sequence": "farwhitecarturn",
+      "frames": 68,
+      "visible": 52,
+      "excluded": 16,
+      "causal_anchors": 48
+    },
+    {
+      "sequence": "blackpantsman",
+      "frames": 259,
+      "visible": 235,
+      "excluded": 24,
+      "causal_anchors": 231
+    },
+    {
+      "sequence": "basketballup",
+      "frames": 84,
+      "visible": 55,
+      "excluded": 29,
+      "causal_anchors": 51
+    },
+    {
+      "sequence": "rightboywitjbag",
+      "frames": 314,
+      "visible": 235,
+      "excluded": 79,
+      "causal_anchors": 231
+    },
+    {
+      "sequence": "nightboy",
+      "frames": 538,
+      "visible": 510,
+      "excluded": 28,
+      "causal_anchors": 506
+    },
+    {
+      "sequence": "5runone",
+      "frames": 87,
+      "visible": 49,
+      "excluded": 38,
+      "causal_anchors": 45
+    },
+    {
+      "sequence": "1whiteteacher",
+      "frames": 1611,
+      "visible": 1591,
+      "excluded": 20,
+      "causal_anchors": 1587
+    },
+    {
+      "sequence": "outerfoam",
+      "frames": 38,
+      "visible": 19,
+      "excluded": 19,
+      "causal_anchors": 15
+    },
+    {
+      "sequence": "gonemoto_ab",
+      "frames": 144,
+      "visible": 86,
+      "excluded": 23,
+      "causal_anchors": 82
+    },
+    {
+      "sequence": "rainblackcarcome",
+      "frames": 198,
+      "visible": 174,
+      "excluded": 24,
+      "causal_anchors": 170
+    },
+    {
+      "sequence": "orangegirlwithumbrella",
+      "frames": 1460,
+      "visible": 1216,
+      "excluded": 244,
+      "causal_anchors": 1212
+    },
+    {
+      "sequence": "runninggreenboyafterwhite",
+      "frames": 853,
+      "visible": 824,
+      "excluded": 29,
+      "causal_anchors": 820
+    },
+    {
+      "sequence": "motocomenight",
+      "frames": 91,
+      "visible": 76,
+      "excluded": 15,
+      "causal_anchors": 72
+    },
+    {
+      "sequence": "girlalone",
+      "frames": 570,
+      "visible": 546,
+      "excluded": 24,
+      "causal_anchors": 542
+    },
+    {
+      "sequence": "leftgirl1299",
+      "frames": 1299,
+      "visible": 1243,
+      "excluded": 25,
+      "causal_anchors": 1239
+    },
+    {
+      "sequence": "lightcarstart",
+      "frames": 132,
+      "visible": 99,
+      "excluded": 33,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "takeoutmoto",
+      "frames": 169,
+      "visible": 124,
+      "excluded": 45,
+      "causal_anchors": 120
+    },
+    {
+      "sequence": "carfarstart",
+      "frames": 245,
+      "visible": 215,
+      "excluded": 30,
+      "causal_anchors": 211
+    },
+    {
+      "sequence": "stronggirl",
+      "frames": 338,
+      "visible": 323,
+      "excluded": 15,
+      "causal_anchors": 319
+    },
+    {
+      "sequence": "motoprecede",
+      "frames": 89,
+      "visible": 65,
+      "excluded": 23,
+      "causal_anchors": 61
+    },
+    {
+      "sequence": "boyinsnowfield_inf_white",
+      "frames": 361,
+      "visible": 333,
+      "excluded": 28,
+      "causal_anchors": 329
+    },
+    {
+      "sequence": "ab_minibusstops",
+      "frames": 501,
+      "visible": 434,
+      "excluded": 34,
+      "causal_anchors": 430
+    },
+    {
+      "sequence": "boycome",
+      "frames": 177,
+      "visible": 154,
+      "excluded": 23,
+      "causal_anchors": 150
+    },
+    {
+      "sequence": "whitecarback",
+      "frames": 81,
+      "visible": 41,
+      "excluded": 40,
+      "causal_anchors": 37
+    },
+    {
+      "sequence": "bouheadupstream",
+      "frames": 936,
+      "visible": 830,
+      "excluded": 106,
+      "causal_anchors": 826
+    },
+    {
+      "sequence": "bluegirlriding",
+      "frames": 676,
+      "visible": 661,
+      "excluded": 15,
+      "causal_anchors": 657
+    },
+    {
+      "sequence": "blackdownball",
+      "frames": 928,
+      "visible": 794,
+      "excluded": 30,
+      "causal_anchors": 790
+    },
+    {
+      "sequence": "2runfour",
+      "frames": 232,
+      "visible": 199,
+      "excluded": 33,
+      "causal_anchors": 195
+    },
+    {
+      "sequence": "agirl_1202",
+      "frames": 273,
+      "visible": 249,
+      "excluded": 24,
+      "causal_anchors": 245
+    },
+    {
+      "sequence": "blkman2trees",
+      "frames": 191,
+      "visible": 146,
+      "excluded": 45,
+      "causal_anchors": 142
+    },
+    {
+      "sequence": "boybetween2blkcar",
+      "frames": 143,
+      "visible": 125,
+      "excluded": 18,
+      "causal_anchors": 121
+    },
+    {
+      "sequence": "motowithblack",
+      "frames": 147,
+      "visible": 111,
+      "excluded": 36,
+      "causal_anchors": 107
+    },
+    {
+      "sequence": "bikecoming",
+      "frames": 314,
+      "visible": 265,
+      "excluded": 49,
+      "causal_anchors": 261
+    },
+    {
+      "sequence": "leftbasketball",
+      "frames": 1611,
+      "visible": 1505,
+      "excluded": 106,
+      "causal_anchors": 1501
+    },
+    {
+      "sequence": "2runtwo",
+      "frames": 129,
+      "visible": 107,
+      "excluded": 22,
+      "causal_anchors": 103
+    },
+    {
+      "sequence": "whitecar70",
+      "frames": 70,
+      "visible": 42,
+      "excluded": 28,
+      "causal_anchors": 38
+    },
+    {
+      "sequence": "boyrightrubbish",
+      "frames": 386,
+      "visible": 352,
+      "excluded": 34,
+      "causal_anchors": 348
+    },
+    {
+      "sequence": "3rdboy",
+      "frames": 557,
+      "visible": 532,
+      "excluded": 25,
+      "causal_anchors": 528
+    },
+    {
+      "sequence": "blackboypushbike",
+      "frames": 530,
+      "visible": 515,
+      "excluded": 15,
+      "causal_anchors": 511
+    },
+    {
+      "sequence": "rightgirlbikecome",
+      "frames": 280,
+      "visible": 202,
+      "excluded": 77,
+      "causal_anchors": 198
+    },
+    {
+      "sequence": "notebook-gai",
+      "frames": 3237,
+      "visible": 3109,
+      "excluded": 128,
+      "causal_anchors": 3105
+    },
+    {
+      "sequence": "2boyscome",
+      "frames": 417,
+      "visible": 383,
+      "excluded": 34,
+      "causal_anchors": 379
+    },
+    {
+      "sequence": "rightblkgirl",
+      "frames": 369,
+      "visible": 340,
+      "excluded": 29,
+      "causal_anchors": 336
+    },
+    {
+      "sequence": "raincarstop",
+      "frames": 595,
+      "visible": 580,
+      "excluded": 15,
+      "causal_anchors": 576
+    },
+    {
+      "sequence": "carfromnorth2",
+      "frames": 173,
+      "visible": 154,
+      "excluded": 19,
+      "causal_anchors": 150
+    },
+    {
+      "sequence": "leftgirlchecking2",
+      "frames": 1446,
+      "visible": 1412,
+      "excluded": 34,
+      "causal_anchors": 1408
+    },
+    {
+      "sequence": "whiteboycome",
+      "frames": 1353,
+      "visible": 1318,
+      "excluded": 35,
+      "causal_anchors": 1314
+    },
+    {
+      "sequence": "whitecarturn",
+      "frames": 189,
+      "visible": 174,
+      "excluded": 15,
+      "causal_anchors": 170
+    },
+    {
+      "sequence": "whitedown",
+      "frames": 83,
+      "visible": 64,
+      "excluded": 19,
+      "causal_anchors": 60
+    },
+    {
+      "sequence": "boyindarkwithgirl",
+      "frames": 479,
+      "visible": 382,
+      "excluded": 97,
+      "causal_anchors": 378
+    },
+    {
+      "sequence": "woman",
+      "frames": 273,
+      "visible": 254,
+      "excluded": 19,
+      "causal_anchors": 250
+    },
+    {
+      "sequence": "threepeople",
+      "frames": 583,
+      "visible": 548,
+      "excluded": 35,
+      "causal_anchors": 544
+    },
+    {
+      "sequence": "girlshakeinrain",
+      "frames": 129,
+      "visible": 106,
+      "excluded": 23,
+      "causal_anchors": 102
+    },
+    {
+      "sequence": "2girlsridebikes",
+      "frames": 114,
+      "visible": 70,
+      "excluded": 44,
+      "causal_anchors": 66
+    },
+    {
+      "sequence": "motoman",
+      "frames": 165,
+      "visible": 145,
+      "excluded": 20,
+      "causal_anchors": 141
+    },
+    {
+      "sequence": "girlsheadwithhat",
+      "frames": 219,
+      "visible": 199,
+      "excluded": 20,
+      "causal_anchors": 195
+    },
+    {
+      "sequence": "pinkbikeboy",
+      "frames": 166,
+      "visible": 122,
+      "excluded": 44,
+      "causal_anchors": 118
+    },
+    {
+      "sequence": "blueboycome",
+      "frames": 553,
+      "visible": 509,
+      "excluded": 44,
+      "causal_anchors": 505
+    },
+    {
+      "sequence": "girlwithredhat",
+      "frames": 307,
+      "visible": 287,
+      "excluded": 20,
+      "causal_anchors": 283
+    },
+    {
+      "sequence": "girltakebag",
+      "frames": 222,
+      "visible": 189,
+      "excluded": 33,
+      "causal_anchors": 185
+    },
+    {
+      "sequence": "manglass1",
+      "frames": 139,
+      "visible": 91,
+      "excluded": 48,
+      "causal_anchors": 87
+    },
+    {
+      "sequence": "blkboywithblkbag",
+      "frames": 345,
+      "visible": 321,
+      "excluded": 24,
+      "causal_anchors": 317
+    },
+    {
+      "sequence": "bolster_infwhite",
+      "frames": 4465,
+      "visible": 4317,
+      "excluded": 148,
+      "causal_anchors": 4313
+    },
+    {
+      "sequence": "Amotoinrain150",
+      "frames": 150,
+      "visible": 125,
+      "excluded": 25,
+      "causal_anchors": 121
+    },
+    {
+      "sequence": "e-tribike",
+      "frames": 192,
+      "visible": 172,
+      "excluded": 20,
+      "causal_anchors": 168
+    },
+    {
+      "sequence": "redshirtman",
+      "frames": 256,
+      "visible": 232,
+      "excluded": 24,
+      "causal_anchors": 228
+    },
+    {
+      "sequence": "the4thboy",
+      "frames": 371,
+      "visible": 337,
+      "excluded": 34,
+      "causal_anchors": 333
+    },
+    {
+      "sequence": "nightrightboy1",
+      "frames": 1429,
+      "visible": 1312,
+      "excluded": 116,
+      "causal_anchors": 1308
+    },
+    {
+      "sequence": "girlrightcomein",
+      "frames": 553,
+      "visible": 538,
+      "excluded": 15,
+      "causal_anchors": 534
+    },
+    {
+      "sequence": "left11",
+      "frames": 973,
+      "visible": 840,
+      "excluded": 133,
+      "causal_anchors": 836
+    },
+    {
+      "sequence": "2girlgoleft",
+      "frames": 138,
+      "visible": 118,
+      "excluded": 20,
+      "causal_anchors": 114
+    },
+    {
+      "sequence": "mototurn102",
+      "frames": 102,
+      "visible": 67,
+      "excluded": 35,
+      "causal_anchors": 63
+    },
+    {
+      "sequence": "redgirlafterwhitecar",
+      "frames": 432,
+      "visible": 408,
+      "excluded": 24,
+      "causal_anchors": 404
+    },
+    {
+      "sequence": "boycomingwithumbrella",
+      "frames": 288,
+      "visible": 273,
+      "excluded": 15,
+      "causal_anchors": 269
+    },
+    {
+      "sequence": "yellowgirlwithbowl",
+      "frames": 547,
+      "visible": 469,
+      "excluded": 78,
+      "causal_anchors": 465
+    },
+    {
+      "sequence": "yellowtruck",
+      "frames": 64,
+      "visible": 36,
+      "excluded": 28,
+      "causal_anchors": 32
+    },
+    {
+      "sequence": "leftlastgirl-yxb",
+      "frames": 1242,
+      "visible": 1116,
+      "excluded": 126,
+      "causal_anchors": 1112
+    },
+    {
+      "sequence": "bikecoming176",
+      "frames": 176,
+      "visible": 166,
+      "excluded": 10,
+      "causal_anchors": 162
+    },
+    {
+      "sequence": "whiteshoesleftbottle-gai",
+      "frames": 685,
+      "visible": 547,
+      "excluded": 138,
+      "causal_anchors": 543
+    },
+    {
+      "sequence": "redboywithblkumbrella",
+      "frames": 156,
+      "visible": 136,
+      "excluded": 20,
+      "causal_anchors": 132
+    },
+    {
+      "sequence": "girlruns2right",
+      "frames": 220,
+      "visible": 205,
+      "excluded": 15,
+      "causal_anchors": 201
+    },
+    {
+      "sequence": "4one",
+      "frames": 192,
+      "visible": 160,
+      "excluded": 32,
+      "causal_anchors": 156
+    },
+    {
+      "sequence": "5runfour",
+      "frames": 300,
+      "visible": 280,
+      "excluded": 20,
+      "causal_anchors": 276
+    },
+    {
+      "sequence": "raincarstop2",
+      "frames": 181,
+      "visible": 150,
+      "excluded": 31,
+      "causal_anchors": 146
+    },
+    {
+      "sequence": "boyleft",
+      "frames": 169,
+      "visible": 134,
+      "excluded": 35,
+      "causal_anchors": 130
+    },
+    {
+      "sequence": "blueboyopenbike",
+      "frames": 355,
+      "visible": 331,
+      "excluded": 24,
+      "causal_anchors": 327
+    },
+    {
+      "sequence": "rightgreenboy",
+      "frames": 260,
+      "visible": 128,
+      "excluded": 132,
+      "causal_anchors": 124
+    },
+    {
+      "sequence": "rightwhiteboy",
+      "frames": 1614,
+      "visible": 1574,
+      "excluded": 40,
+      "causal_anchors": 1570
+    },
+    {
+      "sequence": "girlback",
+      "frames": 712,
+      "visible": 676,
+      "excluded": 36,
+      "causal_anchors": 672
+    },
+    {
+      "sequence": "bigbus",
+      "frames": 142,
+      "visible": 115,
+      "excluded": 27,
+      "causal_anchors": 111
+    },
+    {
+      "sequence": "downmoto",
+      "frames": 53,
+      "visible": 29,
+      "excluded": 24,
+      "causal_anchors": 25
+    },
+    {
+      "sequence": "girl",
+      "frames": 1040,
+      "visible": 1015,
+      "excluded": 25,
+      "causal_anchors": 1011
+    },
+    {
+      "sequence": "lover_1202",
+      "frames": 178,
+      "visible": 163,
+      "excluded": 15,
+      "causal_anchors": 159
+    },
+    {
+      "sequence": "blkgirlfat_quezhen",
+      "frames": 888,
+      "visible": 883,
+      "excluded": 5,
+      "causal_anchors": 879
+    },
+    {
+      "sequence": "firstleftrunning",
+      "frames": 1013,
+      "visible": 984,
+      "excluded": 29,
+      "causal_anchors": 980
+    },
+    {
+      "sequence": "blackcargo",
+      "frames": 165,
+      "visible": 145,
+      "excluded": 20,
+      "causal_anchors": 141
+    },
+    {
+      "sequence": "mototake2boys123",
+      "frames": 123,
+      "visible": 98,
+      "excluded": 25,
+      "causal_anchors": 94
+    },
+    {
+      "sequence": "whitebikebehind2",
+      "frames": 42,
+      "visible": 16,
+      "excluded": 26,
+      "causal_anchors": 12
+    },
+    {
+      "sequence": "besom6",
+      "frames": 1412,
+      "visible": 1173,
+      "excluded": 239,
+      "causal_anchors": 1169
+    },
+    {
+      "sequence": "carbesidesmoto",
+      "frames": 172,
+      "visible": 140,
+      "excluded": 32,
+      "causal_anchors": 136
+    },
+    {
+      "sequence": "2runfive",
+      "frames": 218,
+      "visible": 198,
+      "excluded": 20,
+      "causal_anchors": 194
+    },
+    {
+      "sequence": "AQboywithumbrella415",
+      "frames": 415,
+      "visible": 405,
+      "excluded": 10,
+      "causal_anchors": 401
+    },
+    {
+      "sequence": "2ndgirlmove",
+      "frames": 143,
+      "visible": 109,
+      "excluded": 34,
+      "causal_anchors": 105
+    },
+    {
+      "sequence": "midgirl",
+      "frames": 918,
+      "visible": 736,
+      "excluded": 182,
+      "causal_anchors": 732
+    },
+    {
+      "sequence": "maninfrontofbus",
+      "frames": 140,
+      "visible": 113,
+      "excluded": 27,
+      "causal_anchors": 109
+    },
+    {
+      "sequence": "openthisexersicebook",
+      "frames": 603,
+      "visible": 492,
+      "excluded": 111,
+      "causal_anchors": 488
+    },
+    {
+      "sequence": "motocometurn",
+      "frames": 125,
+      "visible": 101,
+      "excluded": 24,
+      "causal_anchors": 97
+    },
+    {
+      "sequence": "leftboyleftblkbackpack",
+      "frames": 553,
+      "visible": 519,
+      "excluded": 34,
+      "causal_anchors": 515
+    },
+    {
+      "sequence": "basketball",
+      "frames": 175,
+      "visible": 156,
+      "excluded": 19,
+      "causal_anchors": 152
+    },
+    {
+      "sequence": "boyinsnowfield4",
+      "frames": 757,
+      "visible": 728,
+      "excluded": 29,
+      "causal_anchors": 724
+    },
+    {
+      "sequence": "motofromdark",
+      "frames": 77,
+      "visible": 35,
+      "excluded": 42,
+      "causal_anchors": 31
+    },
+    {
+      "sequence": "the2ndboyunderbasket",
+      "frames": 902,
+      "visible": 868,
+      "excluded": 34,
+      "causal_anchors": 864
+    },
+    {
+      "sequence": "motocome2left",
+      "frames": 120,
+      "visible": 90,
+      "excluded": 30,
+      "causal_anchors": 86
+    },
+    {
+      "sequence": "boyshorts",
+      "frames": 636,
+      "visible": 512,
+      "excluded": 124,
+      "causal_anchors": 508
+    },
+    {
+      "sequence": "3whitemen",
+      "frames": 449,
+      "visible": 427,
+      "excluded": 22,
+      "causal_anchors": 423
+    },
+    {
+      "sequence": "carcomeonlight2",
+      "frames": 141,
+      "visible": 91,
+      "excluded": 50,
+      "causal_anchors": 87
+    },
+    {
+      "sequence": "boyinsnowfield2",
+      "frames": 1422,
+      "visible": 1178,
+      "excluded": 244,
+      "causal_anchors": 1174
+    },
+    {
+      "sequence": "ajiandan_catwhite",
+      "frames": 166,
+      "visible": 147,
+      "excluded": 19,
+      "causal_anchors": 143
+    },
+    {
+      "sequence": "blkmaninrain",
+      "frames": 219,
+      "visible": 174,
+      "excluded": 45,
+      "causal_anchors": 170
+    },
+    {
+      "sequence": "bikeboystrong",
+      "frames": 173,
+      "visible": 147,
+      "excluded": 26,
+      "causal_anchors": 143
+    },
+    {
+      "sequence": "othersideoftheriver_1227",
+      "frames": 353,
+      "visible": 334,
+      "excluded": 19,
+      "causal_anchors": 330
+    },
+    {
+      "sequence": "fatmancome",
+      "frames": 394,
+      "visible": 379,
+      "excluded": 15,
+      "causal_anchors": 375
+    },
+    {
+      "sequence": "takeoutmototurn",
+      "frames": 135,
+      "visible": 120,
+      "excluded": 15,
+      "causal_anchors": 116
+    },
+    {
+      "sequence": "browncar2east",
+      "frames": 89,
+      "visible": 71,
+      "excluded": 18,
+      "causal_anchors": 67
+    },
+    {
+      "sequence": "rightholdball",
+      "frames": 1109,
+      "visible": 1089,
+      "excluded": 20,
+      "causal_anchors": 1085
+    },
+    {
+      "sequence": "whitecarturn85",
+      "frames": 85,
+      "visible": 67,
+      "excluded": 18,
+      "causal_anchors": 63
+    },
+    {
+      "sequence": "redlittleboy",
+      "frames": 184,
+      "visible": 164,
+      "excluded": 20,
+      "causal_anchors": 160
+    },
+    {
+      "sequence": "boy2_1227",
+      "frames": 476,
+      "visible": 471,
+      "excluded": 5,
+      "causal_anchors": 467
+    },
+    {
+      "sequence": "moto2trees",
+      "frames": 50,
+      "visible": 45,
+      "excluded": 5,
+      "causal_anchors": 41
+    },
+    {
+      "sequence": "4three",
+      "frames": 228,
+      "visible": 213,
+      "excluded": 15,
+      "causal_anchors": 209
+    },
+    {
+      "sequence": "fardarkboyleftthe1stgirl",
+      "frames": 814,
+      "visible": 784,
+      "excluded": 30,
+      "causal_anchors": 780
+    },
+    {
+      "sequence": "midpinkblkglasscup",
+      "frames": 1257,
+      "visible": 1131,
+      "excluded": 126,
+      "causal_anchors": 1127
+    },
+    {
+      "sequence": "carturnleft",
+      "frames": 229,
+      "visible": 213,
+      "excluded": 15,
+      "causal_anchors": 209
+    },
+    {
+      "sequence": "ab_motoinrain",
+      "frames": 125,
+      "visible": 97,
+      "excluded": 14,
+      "causal_anchors": 93
+    },
+    {
+      "sequence": "blackphoneboy",
+      "frames": 122,
+      "visible": 108,
+      "excluded": 14,
+      "causal_anchors": 104
+    },
+    {
+      "sequence": "manwait1",
+      "frames": 481,
+      "visible": 462,
+      "excluded": 19,
+      "causal_anchors": 458
+    },
+    {
+      "sequence": "ninboy-gai",
+      "frames": 1466,
+      "visible": 1446,
+      "excluded": 20,
+      "causal_anchors": 1442
+    },
+    {
+      "sequence": "girlgoleft",
+      "frames": 429,
+      "visible": 383,
+      "excluded": 46,
+      "causal_anchors": 379
+    },
+    {
+      "sequence": "e-tricycle",
+      "frames": 212,
+      "visible": 166,
+      "excluded": 46,
+      "causal_anchors": 162
+    },
+    {
+      "sequence": "stubesideswhitecar",
+      "frames": 260,
+      "visible": 216,
+      "excluded": 44,
+      "causal_anchors": 212
+    },
+    {
+      "sequence": "blackcar",
+      "frames": 140,
+      "visible": 99,
+      "excluded": 41,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "moto2north2",
+      "frames": 309,
+      "visible": 273,
+      "excluded": 36,
+      "causal_anchors": 269
+    },
+    {
+      "sequence": "whiteshirt",
+      "frames": 227,
+      "visible": 189,
+      "excluded": 38,
+      "causal_anchors": 185
+    },
+    {
+      "sequence": "5two",
+      "frames": 263,
+      "visible": 248,
+      "excluded": 15,
+      "causal_anchors": 244
+    },
+    {
+      "sequence": "meituanbike2",
+      "frames": 122,
+      "visible": 97,
+      "excluded": 25,
+      "causal_anchors": 93
+    },
+    {
+      "sequence": "boyleave",
+      "frames": 382,
+      "visible": 362,
+      "excluded": 20,
+      "causal_anchors": 358
+    },
+    {
+      "sequence": "manafetrtrees",
+      "frames": 100,
+      "visible": 72,
+      "excluded": 28,
+      "causal_anchors": 68
+    },
+    {
+      "sequence": "boytakebox",
+      "frames": 396,
+      "visible": 366,
+      "excluded": 30,
+      "causal_anchors": 362
+    },
+    {
+      "sequence": "leftboy-gai",
+      "frames": 418,
+      "visible": 312,
+      "excluded": 106,
+      "causal_anchors": 308
+    },
+    {
+      "sequence": "nearstrongboy",
+      "frames": 1452,
+      "visible": 1334,
+      "excluded": 30,
+      "causal_anchors": 1330
+    },
+    {
+      "sequence": "leftmirror2",
+      "frames": 1310,
+      "visible": 1179,
+      "excluded": 131,
+      "causal_anchors": 1175
+    },
+    {
+      "sequence": "foamboardatlefthand",
+      "frames": 98,
+      "visible": 68,
+      "excluded": 30,
+      "causal_anchors": 64
+    },
+    {
+      "sequence": "blkteacher`shead",
+      "frames": 539,
+      "visible": 524,
+      "excluded": 15,
+      "causal_anchors": 520
+    },
+    {
+      "sequence": "yellowumbrellagirl",
+      "frames": 545,
+      "visible": 425,
+      "excluded": 120,
+      "causal_anchors": 421
+    },
+    {
+      "sequence": "rightboyleader",
+      "frames": 440,
+      "visible": 339,
+      "excluded": 101,
+      "causal_anchors": 335
+    },
+    {
+      "sequence": "easy_rightblkboywithgirl",
+      "frames": 417,
+      "visible": 398,
+      "excluded": 19,
+      "causal_anchors": 394
+    },
+    {
+      "sequence": "trashtruck",
+      "frames": 110,
+      "visible": 95,
+      "excluded": 15,
+      "causal_anchors": 91
+    },
+    {
+      "sequence": "man_head",
+      "frames": 110,
+      "visible": 95,
+      "excluded": 15,
+      "causal_anchors": 91
+    },
+    {
+      "sequence": "twopeople",
+      "frames": 814,
+      "visible": 673,
+      "excluded": 141,
+      "causal_anchors": 669
+    },
+    {
+      "sequence": "rightboyatwindow",
+      "frames": 388,
+      "visible": 369,
+      "excluded": 19,
+      "causal_anchors": 365
+    },
+    {
+      "sequence": "blackcar131",
+      "frames": 131,
+      "visible": 111,
+      "excluded": 20,
+      "causal_anchors": 107
+    },
+    {
+      "sequence": "whiteboy1_quezhen",
+      "frames": 1918,
+      "visible": 1783,
+      "excluded": 135,
+      "causal_anchors": 1779
+    },
+    {
+      "sequence": "boy_0109",
+      "frames": 332,
+      "visible": 318,
+      "excluded": 14,
+      "causal_anchors": 314
+    },
+    {
+      "sequence": "blackbagbike",
+      "frames": 175,
+      "visible": 140,
+      "excluded": 34,
+      "causal_anchors": 136
+    },
+    {
+      "sequence": "2sisiters",
+      "frames": 448,
+      "visible": 418,
+      "excluded": 30,
+      "causal_anchors": 414
+    },
+    {
+      "sequence": "boyplayingphone366",
+      "frames": 366,
+      "visible": 334,
+      "excluded": 32,
+      "causal_anchors": 330
+    },
+    {
+      "sequence": "7two",
+      "frames": 111,
+      "visible": 101,
+      "excluded": 10,
+      "causal_anchors": 97
+    },
+    {
+      "sequence": "righthunchblack",
+      "frames": 405,
+      "visible": 338,
+      "excluded": 67,
+      "causal_anchors": 334
+    },
+    {
+      "sequence": "basketballshooting",
+      "frames": 110,
+      "visible": 97,
+      "excluded": 13,
+      "causal_anchors": 93
+    },
+    {
+      "sequence": "boyputtinghandup",
+      "frames": 184,
+      "visible": 174,
+      "excluded": 10,
+      "causal_anchors": 170
+    },
+    {
+      "sequence": "redgirl",
+      "frames": 346,
+      "visible": 315,
+      "excluded": 31,
+      "causal_anchors": 311
+    },
+    {
+      "sequence": "moto2ground",
+      "frames": 127,
+      "visible": 100,
+      "excluded": 27,
+      "causal_anchors": 96
+    },
+    {
+      "sequence": "moto2trees2",
+      "frames": 41,
+      "visible": 15,
+      "excluded": 26,
+      "causal_anchors": 11
+    },
+    {
+      "sequence": "left3rdrunwaygirlbesideswhitepants",
+      "frames": 588,
+      "visible": 546,
+      "excluded": 42,
+      "causal_anchors": 542
+    },
+    {
+      "sequence": "boycoming",
+      "frames": 317,
+      "visible": 309,
+      "excluded": 8,
+      "causal_anchors": 305
+    },
+    {
+      "sequence": "whitegirl",
+      "frames": 730,
+      "visible": 693,
+      "excluded": 37,
+      "causal_anchors": 689
+    },
+    {
+      "sequence": "carstarts",
+      "frames": 470,
+      "visible": 359,
+      "excluded": 111,
+      "causal_anchors": 355
+    },
+    {
+      "sequence": "whiteman",
+      "frames": 132,
+      "visible": 109,
+      "excluded": 23,
+      "causal_anchors": 105
+    },
+    {
+      "sequence": "rightmirrorbackwards",
+      "frames": 1604,
+      "visible": 1584,
+      "excluded": 20,
+      "causal_anchors": 1580
+    },
+    {
+      "sequence": "lonelyman",
+      "frames": 286,
+      "visible": 271,
+      "excluded": 15,
+      "causal_anchors": 267
+    },
+    {
+      "sequence": "doginrain",
+      "frames": 183,
+      "visible": 141,
+      "excluded": 42,
+      "causal_anchors": 137
+    },
+    {
+      "sequence": "blkboywithumbrella",
+      "frames": 451,
+      "visible": 421,
+      "excluded": 30,
+      "causal_anchors": 417
+    },
+    {
+      "sequence": "boybikeblueumbrella",
+      "frames": 199,
+      "visible": 175,
+      "excluded": 24,
+      "causal_anchors": 171
+    },
+    {
+      "sequence": "shunfengtribike",
+      "frames": 71,
+      "visible": 51,
+      "excluded": 20,
+      "causal_anchors": 47
+    },
+    {
+      "sequence": "pingpongpad2",
+      "frames": 426,
+      "visible": 384,
+      "excluded": 42,
+      "causal_anchors": 380
+    },
+    {
+      "sequence": "whitehatgirl`sheadleftwhiteumbrella",
+      "frames": 414,
+      "visible": 394,
+      "excluded": 20,
+      "causal_anchors": 390
+    },
+    {
+      "sequence": "cycleman",
+      "frames": 282,
+      "visible": 263,
+      "excluded": 19,
+      "causal_anchors": 259
+    },
+    {
+      "sequence": "leftaloneboy-gai",
+      "frames": 5236,
+      "visible": 5110,
+      "excluded": 126,
+      "causal_anchors": 5106
+    },
+    {
+      "sequence": "suitcase",
+      "frames": 443,
+      "visible": 327,
+      "excluded": 116,
+      "causal_anchors": 323
+    },
+    {
+      "sequence": "firstrightflagcoming",
+      "frames": 779,
+      "visible": 654,
+      "excluded": 125,
+      "causal_anchors": 650
+    },
+    {
+      "sequence": "girloutreading",
+      "frames": 689,
+      "visible": 455,
+      "excluded": 234,
+      "causal_anchors": 451
+    },
+    {
+      "sequence": "backpackboyhead",
+      "frames": 353,
+      "visible": 324,
+      "excluded": 29,
+      "causal_anchors": 320
+    },
+    {
+      "sequence": "bikefromwest",
+      "frames": 96,
+      "visible": 63,
+      "excluded": 33,
+      "causal_anchors": 59
+    },
+    {
+      "sequence": "pinkgirl",
+      "frames": 216,
+      "visible": 187,
+      "excluded": 29,
+      "causal_anchors": 183
+    },
+    {
+      "sequence": "strongboy`head",
+      "frames": 1683,
+      "visible": 1530,
+      "excluded": 153,
+      "causal_anchors": 1526
+    },
+    {
+      "sequence": "whitecat",
+      "frames": 665,
+      "visible": 631,
+      "excluded": 34,
+      "causal_anchors": 627
+    },
+    {
+      "sequence": "redgirlsits",
+      "frames": 193,
+      "visible": 167,
+      "excluded": 24,
+      "causal_anchors": 163
+    },
+    {
+      "sequence": "girlintrees",
+      "frames": 67,
+      "visible": 55,
+      "excluded": 12,
+      "causal_anchors": 51
+    },
+    {
+      "sequence": "7runtwo",
+      "frames": 108,
+      "visible": 82,
+      "excluded": 26,
+      "causal_anchors": 78
+    },
+    {
+      "sequence": "whiteboyphone",
+      "frames": 158,
+      "visible": 137,
+      "excluded": 21,
+      "causal_anchors": 133
+    },
+    {
+      "sequence": "2boysbesidesblkcar",
+      "frames": 391,
+      "visible": 357,
+      "excluded": 34,
+      "causal_anchors": 353
+    },
+    {
+      "sequence": "manatwhiteright",
+      "frames": 274,
+      "visible": 247,
+      "excluded": 27,
+      "causal_anchors": 243
+    },
+    {
+      "sequence": "boywithwhitebackpack",
+      "frames": 1545,
+      "visible": 1530,
+      "excluded": 15,
+      "causal_anchors": 1526
+    },
+    {
+      "sequence": "minibus152",
+      "frames": 152,
+      "visible": 122,
+      "excluded": 30,
+      "causal_anchors": 118
+    },
+    {
+      "sequence": "2runone",
+      "frames": 98,
+      "visible": 83,
+      "excluded": 15,
+      "causal_anchors": 79
+    },
+    {
+      "sequence": "whiteboyback",
+      "frames": 175,
+      "visible": 146,
+      "excluded": 29,
+      "causal_anchors": 142
+    },
+    {
+      "sequence": "blackof4bikes",
+      "frames": 151,
+      "visible": 131,
+      "excluded": 20,
+      "causal_anchors": 127
+    },
+    {
+      "sequence": "boytoleft_inf_white",
+      "frames": 260,
+      "visible": 245,
+      "excluded": 15,
+      "causal_anchors": 241
+    },
+    {
+      "sequence": "Amotowithbluetop",
+      "frames": 50,
+      "visible": 30,
+      "excluded": 20,
+      "causal_anchors": 26
+    },
+    {
+      "sequence": "manfromcar",
+      "frames": 125,
+      "visible": 100,
+      "excluded": 25,
+      "causal_anchors": 96
+    },
+    {
+      "sequence": "bolster",
+      "frames": 1353,
+      "visible": 1309,
+      "excluded": 44,
+      "causal_anchors": 1305
+    },
+    {
+      "sequence": "besom5-sq",
+      "frames": 1425,
+      "visible": 1272,
+      "excluded": 153,
+      "causal_anchors": 1268
+    },
+    {
+      "sequence": "rightshiningmirror",
+      "frames": 948,
+      "visible": 928,
+      "excluded": 20,
+      "causal_anchors": 924
+    },
+    {
+      "sequence": "singleboywalking",
+      "frames": 529,
+      "visible": 407,
+      "excluded": 122,
+      "causal_anchors": 403
+    },
+    {
+      "sequence": "right4thboy",
+      "frames": 283,
+      "visible": 263,
+      "excluded": 20,
+      "causal_anchors": 259
+    },
+    {
+      "sequence": "rightbottle-gai",
+      "frames": 665,
+      "visible": 625,
+      "excluded": 40,
+      "causal_anchors": 621
+    },
+    {
+      "sequence": "manwalkincars",
+      "frames": 159,
+      "visible": 138,
+      "excluded": 21,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "leftconerbattle-gai",
+      "frames": 164,
+      "visible": 130,
+      "excluded": 34,
+      "causal_anchors": 126
+    },
+    {
+      "sequence": "agirl1_1202",
+      "frames": 82,
+      "visible": 60,
+      "excluded": 22,
+      "causal_anchors": 56
+    },
+    {
+      "sequence": "blackridebike2",
+      "frames": 110,
+      "visible": 91,
+      "excluded": 19,
+      "causal_anchors": 87
+    },
+    {
+      "sequence": "ab_redboyatbike",
+      "frames": 357,
+      "visible": 251,
+      "excluded": 42,
+      "causal_anchors": 247
+    },
+    {
+      "sequence": "3blackboys",
+      "frames": 351,
+      "visible": 331,
+      "excluded": 20,
+      "causal_anchors": 327
+    },
+    {
+      "sequence": "minibusback",
+      "frames": 138,
+      "visible": 110,
+      "excluded": 28,
+      "causal_anchors": 106
+    },
+    {
+      "sequence": "boytakepath",
+      "frames": 809,
+      "visible": 671,
+      "excluded": 138,
+      "causal_anchors": 667
+    },
+    {
+      "sequence": "cameraman_1202",
+      "frames": 313,
+      "visible": 288,
+      "excluded": 25,
+      "causal_anchors": 284
+    },
+    {
+      "sequence": "stripeman",
+      "frames": 412,
+      "visible": 382,
+      "excluded": 30,
+      "causal_anchors": 378
+    },
+    {
+      "sequence": "whitecarafterbike",
+      "frames": 85,
+      "visible": 60,
+      "excluded": 25,
+      "causal_anchors": 56
+    },
+    {
+      "sequence": "mototurntous",
+      "frames": 32,
+      "visible": 11,
+      "excluded": 21,
+      "causal_anchors": 7
+    },
+    {
+      "sequence": "schoolofeconomics-yxb",
+      "frames": 932,
+      "visible": 779,
+      "excluded": 153,
+      "causal_anchors": 775
+    },
+    {
+      "sequence": "blkcarcomeinrain",
+      "frames": 87,
+      "visible": 78,
+      "excluded": 9,
+      "causal_anchors": 74
+    },
+    {
+      "sequence": "folddenumbrellainhand",
+      "frames": 151,
+      "visible": 131,
+      "excluded": 20,
+      "causal_anchors": 127
+    },
+    {
+      "sequence": "occludedmoto",
+      "frames": 138,
+      "visible": 124,
+      "excluded": 14,
+      "causal_anchors": 120
+    },
+    {
+      "sequence": "greenboyafterwhite",
+      "frames": 225,
+      "visible": 185,
+      "excluded": 40,
+      "causal_anchors": 181
+    },
+    {
+      "sequence": "blktakeoutmoto",
+      "frames": 128,
+      "visible": 100,
+      "excluded": 28,
+      "causal_anchors": 96
+    },
+    {
+      "sequence": "4two",
+      "frames": 184,
+      "visible": 165,
+      "excluded": 19,
+      "causal_anchors": 161
+    },
+    {
+      "sequence": "rightof2boys",
+      "frames": 270,
+      "visible": 247,
+      "excluded": 23,
+      "causal_anchors": 243
+    },
+    {
+      "sequence": "fogboyscoming1_quezhen_inf_heiying",
+      "frames": 896,
+      "visible": 858,
+      "excluded": 38,
+      "causal_anchors": 854
+    },
+    {
+      "sequence": "bikeboygo",
+      "frames": 194,
+      "visible": 170,
+      "excluded": 24,
+      "causal_anchors": 166
+    },
+    {
+      "sequence": "blkgirlfromcolumn1_quezhen",
+      "frames": 444,
+      "visible": 410,
+      "excluded": 34,
+      "causal_anchors": 406
+    },
+    {
+      "sequence": "downwhite_1227",
+      "frames": 214,
+      "visible": 204,
+      "excluded": 10,
+      "causal_anchors": 200
+    },
+    {
+      "sequence": "4boysbesidesblkcar",
+      "frames": 372,
+      "visible": 343,
+      "excluded": 29,
+      "causal_anchors": 339
+    },
+    {
+      "sequence": "carfromnorth",
+      "frames": 159,
+      "visible": 27,
+      "excluded": 132,
+      "causal_anchors": 23
+    },
+    {
+      "sequence": "redwhitegirl",
+      "frames": 131,
+      "visible": 103,
+      "excluded": 28,
+      "causal_anchors": 99
+    },
+    {
+      "sequence": "greenfaceback",
+      "frames": 1203,
+      "visible": 1104,
+      "excluded": 30,
+      "causal_anchors": 1100
+    },
+    {
+      "sequence": "pingpongball",
+      "frames": 126,
+      "visible": 91,
+      "excluded": 35,
+      "causal_anchors": 87
+    },
+    {
+      "sequence": "blackthree_1227",
+      "frames": 208,
+      "visible": 194,
+      "excluded": 14,
+      "causal_anchors": 190
+    },
+    {
+      "sequence": "blkboywithwhitebackpack",
+      "frames": 177,
+      "visible": 140,
+      "excluded": 37,
+      "causal_anchors": 136
+    },
+    {
+      "sequence": "leftshortgirl",
+      "frames": 411,
+      "visible": 372,
+      "excluded": 39,
+      "causal_anchors": 368
+    },
+    {
+      "sequence": "blackcar126",
+      "frames": 126,
+      "visible": 103,
+      "excluded": 23,
+      "causal_anchors": 99
+    },
+    {
+      "sequence": "blkbikecomes",
+      "frames": 112,
+      "visible": 92,
+      "excluded": 20,
+      "causal_anchors": 88
+    },
+    {
+      "sequence": "boyrightthelightbrown",
+      "frames": 248,
+      "visible": 213,
+      "excluded": 33,
+      "causal_anchors": 209
+    },
+    {
+      "sequence": "yellowexcesicebook",
+      "frames": 143,
+      "visible": 116,
+      "excluded": 27,
+      "causal_anchors": 112
+    },
+    {
+      "sequence": "rightgirlplayingphone",
+      "frames": 1257,
+      "visible": 1242,
+      "excluded": 15,
+      "causal_anchors": 1238
+    },
+    {
+      "sequence": "whitewoman",
+      "frames": 156,
+      "visible": 130,
+      "excluded": 26,
+      "causal_anchors": 126
+    },
+    {
+      "sequence": "aboyleft_1202",
+      "frames": 71,
+      "visible": 5,
+      "excluded": 66,
+      "causal_anchors": 0
+    },
+    {
+      "sequence": "peoplefromright_0109",
+      "frames": 465,
+      "visible": 450,
+      "excluded": 15,
+      "causal_anchors": 446
+    },
+    {
+      "sequence": "bikeout",
+      "frames": 236,
+      "visible": 216,
+      "excluded": 20,
+      "causal_anchors": 212
+    },
+    {
+      "sequence": "blackdresswithwhitefar",
+      "frames": 633,
+      "visible": 525,
+      "excluded": 20,
+      "causal_anchors": 521
+    },
+    {
+      "sequence": "Ahercarstart",
+      "frames": 172,
+      "visible": 136,
+      "excluded": 36,
+      "causal_anchors": 132
+    },
+    {
+      "sequence": "blkboyback636",
+      "frames": 636,
+      "visible": 505,
+      "excluded": 131,
+      "causal_anchors": 501
+    },
+    {
+      "sequence": "blkboywithglasses",
+      "frames": 938,
+      "visible": 795,
+      "excluded": 143,
+      "causal_anchors": 791
+    },
+    {
+      "sequence": "tallboyblack",
+      "frames": 307,
+      "visible": 269,
+      "excluded": 38,
+      "causal_anchors": 265
+    },
+    {
+      "sequence": "aboy_1202",
+      "frames": 159,
+      "visible": 134,
+      "excluded": 25,
+      "causal_anchors": 130
+    },
+    {
+      "sequence": "rightbottle2-gai",
+      "frames": 391,
+      "visible": 376,
+      "excluded": 15,
+      "causal_anchors": 372
+    },
+    {
+      "sequence": "glassesboyhead",
+      "frames": 1228,
+      "visible": 1203,
+      "excluded": 25,
+      "causal_anchors": 1199
+    },
+    {
+      "sequence": "car",
+      "frames": 268,
+      "visible": 240,
+      "excluded": 28,
+      "causal_anchors": 236
+    },
+    {
+      "sequence": "manbesideslight",
+      "frames": 287,
+      "visible": 244,
+      "excluded": 43,
+      "causal_anchors": 240
+    },
+    {
+      "sequence": "bike2trees86",
+      "frames": 86,
+      "visible": 68,
+      "excluded": 18,
+      "causal_anchors": 64
+    },
+    {
+      "sequence": "mototurnleft",
+      "frames": 73,
+      "visible": 50,
+      "excluded": 23,
+      "causal_anchors": 46
+    },
+    {
+      "sequence": "blacktallman",
+      "frames": 250,
+      "visible": 217,
+      "excluded": 33,
+      "causal_anchors": 213
+    },
+    {
+      "sequence": "blkboywillstand",
+      "frames": 361,
+      "visible": 332,
+      "excluded": 29,
+      "causal_anchors": 328
+    },
+    {
+      "sequence": "greenrightblack",
+      "frames": 1417,
+      "visible": 1368,
+      "excluded": 49,
+      "causal_anchors": 1364
+    },
+    {
+      "sequence": "pinkgirl285",
+      "frames": 285,
+      "visible": 270,
+      "excluded": 15,
+      "causal_anchors": 266
+    },
+    {
+      "sequence": "boyright",
+      "frames": 153,
+      "visible": 130,
+      "excluded": 23,
+      "causal_anchors": 126
+    },
+    {
+      "sequence": "leftboy",
+      "frames": 135,
+      "visible": 114,
+      "excluded": 21,
+      "causal_anchors": 110
+    },
+    {
+      "sequence": "whiteboy395",
+      "frames": 395,
+      "visible": 331,
+      "excluded": 14,
+      "causal_anchors": 327
+    },
+    {
+      "sequence": "right2ndblkboy",
+      "frames": 508,
+      "visible": 460,
+      "excluded": 48,
+      "causal_anchors": 456
+    },
+    {
+      "sequence": "easy_runninggirls",
+      "frames": 138,
+      "visible": 114,
+      "excluded": 24,
+      "causal_anchors": 110
+    },
+    {
+      "sequence": "bus2north",
+      "frames": 176,
+      "visible": 149,
+      "excluded": 27,
+      "causal_anchors": 145
+    },
+    {
+      "sequence": "boyrideoutandin",
+      "frames": 722,
+      "visible": 691,
+      "excluded": 30,
+      "causal_anchors": 687
+    },
+    {
+      "sequence": "lightcarfromnorth",
+      "frames": 91,
+      "visible": 77,
+      "excluded": 13,
+      "causal_anchors": 73
+    },
+    {
+      "sequence": "whitegirlundertheumbrella",
+      "frames": 275,
+      "visible": 247,
+      "excluded": 28,
+      "causal_anchors": 243
+    },
+    {
+      "sequence": "4runeight",
+      "frames": 281,
+      "visible": 271,
+      "excluded": 10,
+      "causal_anchors": 267
+    },
+    {
+      "sequence": "1boygo",
+      "frames": 224,
+      "visible": 211,
+      "excluded": 13,
+      "causal_anchors": 207
+    },
+    {
+      "sequence": "whiteblcakwoman",
+      "frames": 102,
+      "visible": 78,
+      "excluded": 24,
+      "causal_anchors": 74
+    },
+    {
+      "sequence": "whitecarfromnorth",
+      "frames": 79,
+      "visible": 59,
+      "excluded": 20,
+      "causal_anchors": 55
+    },
+    {
+      "sequence": "Awhiteleftbike",
+      "frames": 231,
+      "visible": 185,
+      "excluded": 46,
+      "causal_anchors": 181
+    },
+    {
+      "sequence": "rightboywithbluebackpack",
+      "frames": 329,
+      "visible": 290,
+      "excluded": 39,
+      "causal_anchors": 286
+    },
+    {
+      "sequence": "lastof4boys",
+      "frames": 853,
+      "visible": 746,
+      "excluded": 107,
+      "causal_anchors": 742
+    },
+    {
+      "sequence": "bikeblkbag",
+      "frames": 185,
+      "visible": 167,
+      "excluded": 18,
+      "causal_anchors": 163
+    },
+    {
+      "sequence": "blackbaggirl",
+      "frames": 153,
+      "visible": 125,
+      "excluded": 28,
+      "causal_anchors": 121
+    },
+    {
+      "sequence": "Aab_whitecarturn",
+      "frames": 181,
+      "visible": 151,
+      "excluded": 28,
+      "causal_anchors": 147
+    },
+    {
+      "sequence": "blkcarstart",
+      "frames": 112,
+      "visible": 93,
+      "excluded": 19,
+      "causal_anchors": 89
+    },
+    {
+      "sequence": "boywithshorts",
+      "frames": 420,
+      "visible": 400,
+      "excluded": 20,
+      "causal_anchors": 396
+    },
+    {
+      "sequence": "carclosedoor",
+      "frames": 403,
+      "visible": 292,
+      "excluded": 111,
+      "causal_anchors": 288
+    },
+    {
+      "sequence": "boybesidesblkcarrunning",
+      "frames": 116,
+      "visible": 85,
+      "excluded": 31,
+      "causal_anchors": 81
+    },
+    {
+      "sequence": "minibus125",
+      "frames": 125,
+      "visible": 94,
+      "excluded": 31,
+      "causal_anchors": 90
+    },
+    {
+      "sequence": "bluebike",
+      "frames": 177,
+      "visible": 177,
+      "excluded": 0,
+      "causal_anchors": 173
+    },
+    {
+      "sequence": "blkcarinrain107",
+      "frames": 107,
+      "visible": 97,
+      "excluded": 10,
+      "causal_anchors": 93
+    },
+    {
+      "sequence": "openningumbrella",
+      "frames": 71,
+      "visible": 31,
+      "excluded": 40,
+      "causal_anchors": 27
+    },
+    {
+      "sequence": "motolightturnright",
+      "frames": 77,
+      "visible": 46,
+      "excluded": 31,
+      "causal_anchors": 42
+    },
+    {
+      "sequence": "2ndbus",
+      "frames": 175,
+      "visible": 160,
+      "excluded": 15,
+      "causal_anchors": 156
+    },
+    {
+      "sequence": "bluemoto",
+      "frames": 173,
+      "visible": 159,
+      "excluded": 14,
+      "causal_anchors": 155
+    },
+    {
+      "sequence": "moto2",
+      "frames": 233,
+      "visible": 190,
+      "excluded": 43,
+      "causal_anchors": 186
+    },
+    {
+      "sequence": "whitesuvstop",
+      "frames": 247,
+      "visible": 216,
+      "excluded": 31,
+      "causal_anchors": 212
+    },
+    {
+      "sequence": "lightredboy",
+      "frames": 892,
+      "visible": 766,
+      "excluded": 126,
+      "causal_anchors": 762
+    },
+    {
+      "sequence": "blkboyatbike",
+      "frames": 305,
+      "visible": 295,
+      "excluded": 10,
+      "causal_anchors": 291
+    },
+    {
+      "sequence": "whitebikebehind172",
+      "frames": 172,
+      "visible": 152,
+      "excluded": 20,
+      "causal_anchors": 148
+    },
+    {
+      "sequence": "boyrunning",
+      "frames": 190,
+      "visible": 185,
+      "excluded": 5,
+      "causal_anchors": 181
+    },
+    {
+      "sequence": "motocominginlight",
+      "frames": 48,
+      "visible": 39,
+      "excluded": 9,
+      "causal_anchors": 35
+    },
+    {
+      "sequence": "ajiandan_boyleft2right",
+      "frames": 463,
+      "visible": 441,
+      "excluded": 22,
+      "causal_anchors": 437
+    },
+    {
+      "sequence": "4four",
+      "frames": 262,
+      "visible": 252,
+      "excluded": 10,
+      "causal_anchors": 248
+    },
+    {
+      "sequence": "rightgirlwithumbrella",
+      "frames": 640,
+      "visible": 415,
+      "excluded": 225,
+      "causal_anchors": 411
+    },
+    {
+      "sequence": "AQwhiteminibus",
+      "frames": 67,
+      "visible": 34,
+      "excluded": 33,
+      "causal_anchors": 30
+    },
+    {
+      "sequence": "whiteboy242",
+      "frames": 242,
+      "visible": 136,
+      "excluded": 106,
+      "causal_anchors": 132
+    },
+    {
+      "sequence": "takeoutmanleave",
+      "frames": 168,
+      "visible": 158,
+      "excluded": 10,
+      "causal_anchors": 154
+    },
+    {
+      "sequence": "left_two_0109",
+      "frames": 557,
+      "visible": 528,
+      "excluded": 29,
+      "causal_anchors": 524
+    },
+    {
+      "sequence": "boyshead",
+      "frames": 652,
+      "visible": 607,
+      "excluded": 45,
+      "causal_anchors": 603
+    },
+    {
+      "sequence": "righthand`sfoam",
+      "frames": 349,
+      "visible": 319,
+      "excluded": 30,
+      "causal_anchors": 315
+    },
+    {
+      "sequence": "leftdrillmasterstandsundertree",
+      "frames": 1053,
+      "visible": 1013,
+      "excluded": 40,
+      "causal_anchors": 1009
+    },
+    {
+      "sequence": "umbrellainyellowhand",
+      "frames": 222,
+      "visible": 202,
+      "excluded": 20,
+      "causal_anchors": 198
+    },
+    {
+      "sequence": "boyplayingphone",
+      "frames": 164,
+      "visible": 136,
+      "excluded": 28,
+      "causal_anchors": 132
+    },
+    {
+      "sequence": "blklittlebag",
+      "frames": 1162,
+      "visible": 1099,
+      "excluded": 44,
+      "causal_anchors": 1095
+    },
+    {
+      "sequence": "girlinfrontofcars",
+      "frames": 174,
+      "visible": 145,
+      "excluded": 29,
+      "causal_anchors": 141
+    },
+    {
+      "sequence": "2gointrees",
+      "frames": 270,
+      "visible": 238,
+      "excluded": 32,
+      "causal_anchors": 234
+    },
+    {
+      "sequence": "nikeatbike",
+      "frames": 316,
+      "visible": 210,
+      "excluded": 106,
+      "causal_anchors": 206
+    },
+    {
+      "sequence": "bord",
+      "frames": 3670,
+      "visible": 3651,
+      "excluded": 19,
+      "causal_anchors": 3647
+    },
+    {
+      "sequence": "bikeboycome",
+      "frames": 301,
+      "visible": 263,
+      "excluded": 38,
+      "causal_anchors": 259
+    },
+    {
+      "sequence": "bluecar",
+      "frames": 127,
+      "visible": 98,
+      "excluded": 29,
+      "causal_anchors": 94
+    },
+    {
+      "sequence": "7runthree",
+      "frames": 118,
+      "visible": 77,
+      "excluded": 41,
+      "causal_anchors": 73
+    },
+    {
+      "sequence": "boywithblkbackpack",
+      "frames": 495,
+      "visible": 384,
+      "excluded": 111,
+      "causal_anchors": 380
+    },
+    {
+      "sequence": "11righttwoboy",
+      "frames": 406,
+      "visible": 371,
+      "excluded": 35,
+      "causal_anchors": 367
+    },
+    {
+      "sequence": "orange",
+      "frames": 304,
+      "visible": 223,
+      "excluded": 20,
+      "causal_anchors": 219
+    },
+    {
+      "sequence": "blkridesbike",
+      "frames": 143,
+      "visible": 138,
+      "excluded": 5,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "blackaftertrees",
+      "frames": 87,
+      "visible": 70,
+      "excluded": 17,
+      "causal_anchors": 66
+    },
+    {
+      "sequence": "blkboycoming",
+      "frames": 814,
+      "visible": 713,
+      "excluded": 101,
+      "causal_anchors": 709
+    },
+    {
+      "sequence": "whiteboyatbike",
+      "frames": 157,
+      "visible": 105,
+      "excluded": 52,
+      "causal_anchors": 101
+    },
+    {
+      "sequence": "ab_mototurn",
+      "frames": 65,
+      "visible": 30,
+      "excluded": 35,
+      "causal_anchors": 26
+    },
+    {
+      "sequence": "ab_leftmirrordancing",
+      "frames": 787,
+      "visible": 730,
+      "excluded": 40,
+      "causal_anchors": 726
+    },
+    {
+      "sequence": "manglass2",
+      "frames": 154,
+      "visible": 149,
+      "excluded": 5,
+      "causal_anchors": 145
+    },
+    {
+      "sequence": "whitecarcomes",
+      "frames": 117,
+      "visible": 93,
+      "excluded": 24,
+      "causal_anchors": 89
+    },
+    {
+      "sequence": "rightredboy954",
+      "frames": 954,
+      "visible": 926,
+      "excluded": 28,
+      "causal_anchors": 922
+    },
+    {
+      "sequence": "basketballatboysrighthand",
+      "frames": 779,
+      "visible": 759,
+      "excluded": 20,
+      "causal_anchors": 755
+    },
+    {
+      "sequence": "yellowgirl",
+      "frames": 104,
+      "visible": 85,
+      "excluded": 19,
+      "causal_anchors": 81
+    },
+    {
+      "sequence": "umbrellainblack",
+      "frames": 169,
+      "visible": 133,
+      "excluded": 36,
+      "causal_anchors": 129
+    },
+    {
+      "sequence": "darkredcarturn",
+      "frames": 116,
+      "visible": 46,
+      "excluded": 70,
+      "causal_anchors": 42
+    },
+    {
+      "sequence": "Take_an_umbrella_1202",
+      "frames": 176,
+      "visible": 153,
+      "excluded": 23,
+      "causal_anchors": 149
+    },
+    {
+      "sequence": "bikefromnorth2",
+      "frames": 171,
+      "visible": 141,
+      "excluded": 30,
+      "causal_anchors": 137
+    },
+    {
+      "sequence": "right2ndgirl",
+      "frames": 393,
+      "visible": 250,
+      "excluded": 143,
+      "causal_anchors": 246
+    },
+    {
+      "sequence": "1handsth",
+      "frames": 454,
+      "visible": 419,
+      "excluded": 35,
+      "causal_anchors": 415
+    },
+    {
+      "sequence": "whiteboywait",
+      "frames": 745,
+      "visible": 593,
+      "excluded": 152,
+      "causal_anchors": 589
+    },
+    {
+      "sequence": "left4throwboy",
+      "frames": 478,
+      "visible": 445,
+      "excluded": 33,
+      "causal_anchors": 441
+    },
+    {
+      "sequence": "manaftercars",
+      "frames": 265,
+      "visible": 225,
+      "excluded": 40,
+      "causal_anchors": 221
+    },
+    {
+      "sequence": "boyunderleftbar",
+      "frames": 2277,
+      "visible": 2257,
+      "excluded": 20,
+      "causal_anchors": 2253
+    },
+    {
+      "sequence": "rightof2cominggirls",
+      "frames": 250,
+      "visible": 170,
+      "excluded": 80,
+      "causal_anchors": 166
+    },
+    {
+      "sequence": "whitecarstart",
+      "frames": 103,
+      "visible": 93,
+      "excluded": 10,
+      "causal_anchors": 89
+    },
+    {
+      "sequence": "redup",
+      "frames": 76,
+      "visible": 71,
+      "excluded": 5,
+      "causal_anchors": 67
+    },
+    {
+      "sequence": "trolleywith2boxes1_quezhen",
+      "frames": 722,
+      "visible": 483,
+      "excluded": 239,
+      "causal_anchors": 479
+    },
+    {
+      "sequence": "whitemotoout",
+      "frames": 103,
+      "visible": 79,
+      "excluded": 24,
+      "causal_anchors": 75
+    },
+    {
+      "sequence": "basketballshooting2",
+      "frames": 431,
+      "visible": 310,
+      "excluded": 120,
+      "causal_anchors": 306
+    },
+    {
+      "sequence": "boysumbrella3",
+      "frames": 225,
+      "visible": 205,
+      "excluded": 20,
+      "causal_anchors": 201
+    },
+    {
+      "sequence": "rightofth3boys",
+      "frames": 590,
+      "visible": 551,
+      "excluded": 39,
+      "causal_anchors": 547
+    },
+    {
+      "sequence": "2boyscome245",
+      "frames": 245,
+      "visible": 226,
+      "excluded": 19,
+      "causal_anchors": 222
+    },
+    {
+      "sequence": "1strowleft3rdgirl",
+      "frames": 916,
+      "visible": 815,
+      "excluded": 101,
+      "causal_anchors": 811
+    },
+    {
+      "sequence": "redbaginbike",
+      "frames": 120,
+      "visible": 99,
+      "excluded": 21,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "dogunderthelamp",
+      "frames": 68,
+      "visible": 48,
+      "excluded": 20,
+      "causal_anchors": 44
+    },
+    {
+      "sequence": "schoolbus",
+      "frames": 113,
+      "visible": 99,
+      "excluded": 14,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "sitleftboy",
+      "frames": 406,
+      "visible": 259,
+      "excluded": 147,
+      "causal_anchors": 255
+    },
+    {
+      "sequence": "AQtaxi",
+      "frames": 168,
+      "visible": 148,
+      "excluded": 20,
+      "causal_anchors": 144
+    },
+    {
+      "sequence": "whitecarturn178",
+      "frames": 178,
+      "visible": 166,
+      "excluded": 12,
+      "causal_anchors": 162
+    },
+    {
+      "sequence": "ajiandan_blkdog",
+      "frames": 883,
+      "visible": 772,
+      "excluded": 111,
+      "causal_anchors": 768
+    },
+    {
+      "sequence": "bluemanatbike",
+      "frames": 225,
+      "visible": 182,
+      "excluded": 43,
+      "causal_anchors": 178
+    },
+    {
+      "sequence": "lastblkboy1_quezhen",
+      "frames": 1930,
+      "visible": 1900,
+      "excluded": 30,
+      "causal_anchors": 1896
+    },
+    {
+      "sequence": "boyatbluegirlleft",
+      "frames": 525,
+      "visible": 490,
+      "excluded": 35,
+      "causal_anchors": 486
+    },
+    {
+      "sequence": "boyfromdark2",
+      "frames": 125,
+      "visible": 116,
+      "excluded": 9,
+      "causal_anchors": 112
+    },
+    {
+      "sequence": "camonflageatbike",
+      "frames": 106,
+      "visible": 82,
+      "excluded": 24,
+      "causal_anchors": 78
+    },
+    {
+      "sequence": "girlbesidesboy",
+      "frames": 559,
+      "visible": 421,
+      "excluded": 138,
+      "causal_anchors": 417
+    },
+    {
+      "sequence": "blkmoto",
+      "frames": 157,
+      "visible": 129,
+      "excluded": 28,
+      "causal_anchors": 125
+    },
+    {
+      "sequence": "leftgirl",
+      "frames": 372,
+      "visible": 347,
+      "excluded": 24,
+      "causal_anchors": 343
+    },
+    {
+      "sequence": "manopendoor",
+      "frames": 100,
+      "visible": 85,
+      "excluded": 15,
+      "causal_anchors": 81
+    },
+    {
+      "sequence": "ab_hyalinepaperatground",
+      "frames": 1867,
+      "visible": 1730,
+      "excluded": 131,
+      "causal_anchors": 1726
+    },
+    {
+      "sequence": "take-out-motocoming",
+      "frames": 117,
+      "visible": 103,
+      "excluded": 14,
+      "causal_anchors": 99
+    },
+    {
+      "sequence": "girlleft2right1",
+      "frames": 430,
+      "visible": 405,
+      "excluded": 25,
+      "causal_anchors": 401
+    },
+    {
+      "sequence": "moto2north101",
+      "frames": 101,
+      "visible": 63,
+      "excluded": 38,
+      "causal_anchors": 59
+    },
+    {
+      "sequence": "motocome122",
+      "frames": 122,
+      "visible": 87,
+      "excluded": 35,
+      "causal_anchors": 83
+    },
+    {
+      "sequence": "shotmaker",
+      "frames": 669,
+      "visible": 470,
+      "excluded": 199,
+      "causal_anchors": 466
+    },
+    {
+      "sequence": "boybikewithbag",
+      "frames": 120,
+      "visible": 95,
+      "excluded": 25,
+      "causal_anchors": 91
+    },
+    {
+      "sequence": "leftlastboy-sq",
+      "frames": 1064,
+      "visible": 1025,
+      "excluded": 39,
+      "causal_anchors": 1021
+    },
+    {
+      "sequence": "whiteboyup",
+      "frames": 558,
+      "visible": 534,
+      "excluded": 24,
+      "causal_anchors": 530
+    },
+    {
+      "sequence": "boy1227",
+      "frames": 242,
+      "visible": 199,
+      "excluded": 43,
+      "causal_anchors": 195
+    },
+    {
+      "sequence": "etrike",
+      "frames": 85,
+      "visible": 59,
+      "excluded": 26,
+      "causal_anchors": 55
+    },
+    {
+      "sequence": "rightstripeblack",
+      "frames": 1203,
+      "visible": 1188,
+      "excluded": 15,
+      "causal_anchors": 1184
+    },
+    {
+      "sequence": "elector_0115",
+      "frames": 266,
+      "visible": 246,
+      "excluded": 20,
+      "causal_anchors": 242
+    },
+    {
+      "sequence": "5runthree",
+      "frames": 371,
+      "visible": 299,
+      "excluded": 72,
+      "causal_anchors": 295
+    },
+    {
+      "sequence": "whitacatfrombush",
+      "frames": 638,
+      "visible": 426,
+      "excluded": 212,
+      "causal_anchors": 422
+    },
+    {
+      "sequence": "outer2leftmirrorback",
+      "frames": 2110,
+      "visible": 1994,
+      "excluded": 116,
+      "causal_anchors": 1990
+    },
+    {
+      "sequence": "car2north2",
+      "frames": 343,
+      "visible": 318,
+      "excluded": 25,
+      "causal_anchors": 314
+    },
+    {
+      "sequence": "womanongrass",
+      "frames": 111,
+      "visible": 80,
+      "excluded": 31,
+      "causal_anchors": 76
+    },
+    {
+      "sequence": "skirtwoman",
+      "frames": 527,
+      "visible": 415,
+      "excluded": 111,
+      "causal_anchors": 411
+    },
+    {
+      "sequence": "boywithshorts2",
+      "frames": 140,
+      "visible": 108,
+      "excluded": 32,
+      "causal_anchors": 104
+    },
+    {
+      "sequence": "rightfirstgirl-gai",
+      "frames": 2067,
+      "visible": 1946,
+      "excluded": 121,
+      "causal_anchors": 1942
+    },
+    {
+      "sequence": "ab_rightcupcoming_infwhite_quezhen",
+      "frames": 6981,
+      "visible": 6941,
+      "excluded": 40,
+      "causal_anchors": 6937
+    },
+    {
+      "sequence": "bluegirlcoming",
+      "frames": 562,
+      "visible": 517,
+      "excluded": 45,
+      "causal_anchors": 513
+    },
+    {
+      "sequence": "left_first_0109",
+      "frames": 658,
+      "visible": 633,
+      "excluded": 25,
+      "causal_anchors": 629
+    },
+    {
+      "sequence": "biked",
+      "frames": 390,
+      "visible": 302,
+      "excluded": 88,
+      "causal_anchors": 298
+    },
+    {
+      "sequence": "whiteatright",
+      "frames": 169,
+      "visible": 140,
+      "excluded": 29,
+      "causal_anchors": 136
+    },
+    {
+      "sequence": "lastgirl-qzc",
+      "frames": 369,
+      "visible": 282,
+      "excluded": 87,
+      "causal_anchors": 278
+    },
+    {
+      "sequence": "carlight",
+      "frames": 103,
+      "visible": 23,
+      "excluded": 80,
+      "causal_anchors": 19
+    },
+    {
+      "sequence": "boygointrees",
+      "frames": 361,
+      "visible": 330,
+      "excluded": 31,
+      "causal_anchors": 326
+    },
+    {
+      "sequence": "4thgirl",
+      "frames": 522,
+      "visible": 483,
+      "excluded": 39,
+      "causal_anchors": 479
+    },
+    {
+      "sequence": "nearestleftblack",
+      "frames": 1144,
+      "visible": 1124,
+      "excluded": 20,
+      "causal_anchors": 1120
+    },
+    {
+      "sequence": "umbrellabikegirl",
+      "frames": 205,
+      "visible": 187,
+      "excluded": 18,
+      "causal_anchors": 183
+    },
+    {
+      "sequence": "bus",
+      "frames": 113,
+      "visible": 64,
+      "excluded": 49,
+      "causal_anchors": 60
+    },
+    {
+      "sequence": "blackboy256",
+      "frames": 256,
+      "visible": 232,
+      "excluded": 24,
+      "causal_anchors": 228
+    },
+    {
+      "sequence": "rightofthe4girls",
+      "frames": 933,
+      "visible": 895,
+      "excluded": 30,
+      "causal_anchors": 891
+    },
+    {
+      "sequence": "redcarturn",
+      "frames": 102,
+      "visible": 65,
+      "excluded": 37,
+      "causal_anchors": 61
+    },
+    {
+      "sequence": "boysback",
+      "frames": 161,
+      "visible": 121,
+      "excluded": 39,
+      "causal_anchors": 117
+    },
+    {
+      "sequence": "manaftertrees",
+      "frames": 202,
+      "visible": 101,
+      "excluded": 101,
+      "causal_anchors": 97
+    },
+    {
+      "sequence": "redmotocome",
+      "frames": 115,
+      "visible": 96,
+      "excluded": 19,
+      "causal_anchors": 92
+    },
+    {
+      "sequence": "basketballbyNo_9boyplaying",
+      "frames": 832,
+      "visible": 822,
+      "excluded": 10,
+      "causal_anchors": 818
+    },
+    {
+      "sequence": "mototake2boys",
+      "frames": 165,
+      "visible": 142,
+      "excluded": 23,
+      "causal_anchors": 138
+    },
+    {
+      "sequence": "blackcarturn175",
+      "frames": 175,
+      "visible": 160,
+      "excluded": 15,
+      "causal_anchors": 156
+    },
+    {
+      "sequence": "besom4",
+      "frames": 1419,
+      "visible": 1298,
+      "excluded": 121,
+      "causal_anchors": 1294
+    },
+    {
+      "sequence": "whitegirl_0115",
+      "frames": 305,
+      "visible": 266,
+      "excluded": 39,
+      "causal_anchors": 262
+    },
+    {
+      "sequence": "manfromcar302",
+      "frames": 302,
+      "visible": 282,
+      "excluded": 20,
+      "causal_anchors": 278
+    },
+    {
+      "sequence": "girlpickboy",
+      "frames": 492,
+      "visible": 467,
+      "excluded": 25,
+      "causal_anchors": 463
+    },
+    {
+      "sequence": "drillmaster",
+      "frames": 406,
+      "visible": 381,
+      "excluded": 25,
+      "causal_anchors": 377
+    },
+    {
+      "sequence": "boy",
+      "frames": 495,
+      "visible": 367,
+      "excluded": 128,
+      "causal_anchors": 363
+    },
+    {
+      "sequence": "biketurn",
+      "frames": 175,
+      "visible": 155,
+      "excluded": 20,
+      "causal_anchors": 151
+    },
+    {
+      "sequence": "boyalone",
+      "frames": 274,
+      "visible": 255,
+      "excluded": 19,
+      "causal_anchors": 251
+    },
+    {
+      "sequence": "darkleftboy2left",
+      "frames": 945,
+      "visible": 839,
+      "excluded": 106,
+      "causal_anchors": 835
+    },
+    {
+      "sequence": "2outdark",
+      "frames": 122,
+      "visible": 107,
+      "excluded": 15,
+      "causal_anchors": 103
+    },
+    {
+      "sequence": "greyboysit1_quezhen",
+      "frames": 432,
+      "visible": 294,
+      "excluded": 138,
+      "causal_anchors": 290
+    },
+    {
+      "sequence": "boyshead2",
+      "frames": 361,
+      "visible": 332,
+      "excluded": 29,
+      "causal_anchors": 328
+    },
+    {
+      "sequence": "swan2_0109",
+      "frames": 1291,
+      "visible": 1276,
+      "excluded": 15,
+      "causal_anchors": 1272
+    },
+    {
+      "sequence": "left_leader",
+      "frames": 160,
+      "visible": 138,
+      "excluded": 22,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "blkboygoleft",
+      "frames": 264,
+      "visible": 254,
+      "excluded": 10,
+      "causal_anchors": 250
+    },
+    {
+      "sequence": "carstart2east",
+      "frames": 187,
+      "visible": 168,
+      "excluded": 19,
+      "causal_anchors": 164
+    },
+    {
+      "sequence": "motowithtopcoming",
+      "frames": 141,
+      "visible": 117,
+      "excluded": 24,
+      "causal_anchors": 113
+    },
+    {
+      "sequence": "blkboy198",
+      "frames": 198,
+      "visible": 158,
+      "excluded": 40,
+      "causal_anchors": 154
+    },
+    {
+      "sequence": "theleftboytakingball",
+      "frames": 401,
+      "visible": 315,
+      "excluded": 86,
+      "causal_anchors": 311
+    },
+    {
+      "sequence": "girlatleft",
+      "frames": 128,
+      "visible": 118,
+      "excluded": 10,
+      "causal_anchors": 114
+    },
+    {
+      "sequence": "manupstairs",
+      "frames": 212,
+      "visible": 178,
+      "excluded": 34,
+      "causal_anchors": 174
+    },
+    {
+      "sequence": "man",
+      "frames": 151,
+      "visible": 123,
+      "excluded": 28,
+      "causal_anchors": 119
+    },
+    {
+      "sequence": "collegeofmaterial-gai",
+      "frames": 502,
+      "visible": 459,
+      "excluded": 43,
+      "causal_anchors": 455
+    },
+    {
+      "sequence": "basketboyblack",
+      "frames": 320,
+      "visible": 295,
+      "excluded": 25,
+      "causal_anchors": 291
+    },
+    {
+      "sequence": "rainysuitcase",
+      "frames": 224,
+      "visible": 190,
+      "excluded": 34,
+      "causal_anchors": 186
+    },
+    {
+      "sequence": "ab_leftfoam",
+      "frames": 230,
+      "visible": 194,
+      "excluded": 30,
+      "causal_anchors": 190
+    },
+    {
+      "sequence": "whiteboycome598",
+      "frames": 598,
+      "visible": 558,
+      "excluded": 40,
+      "causal_anchors": 554
+    },
+    {
+      "sequence": "rightumbrella_quezhen",
+      "frames": 1881,
+      "visible": 1770,
+      "excluded": 111,
+      "causal_anchors": 1766
+    },
+    {
+      "sequence": "blkboyonleft",
+      "frames": 264,
+      "visible": 232,
+      "excluded": 32,
+      "causal_anchors": 228
+    },
+    {
+      "sequence": "lastrowrightboy",
+      "frames": 770,
+      "visible": 745,
+      "excluded": 25,
+      "causal_anchors": 741
+    },
+    {
+      "sequence": "blkumbrella",
+      "frames": 875,
+      "visible": 851,
+      "excluded": 24,
+      "causal_anchors": 847
+    },
+    {
+      "sequence": "redumbrellagirlcome",
+      "frames": 912,
+      "visible": 801,
+      "excluded": 111,
+      "causal_anchors": 797
+    },
+    {
+      "sequence": "whitecargo",
+      "frames": 76,
+      "visible": 52,
+      "excluded": 24,
+      "causal_anchors": 48
+    },
+    {
+      "sequence": "checkedshirt",
+      "frames": 199,
+      "visible": 184,
+      "excluded": 15,
+      "causal_anchors": 180
+    },
+    {
+      "sequence": "AQraincarturn2",
+      "frames": 232,
+      "visible": 147,
+      "excluded": 85,
+      "causal_anchors": 143
+    },
+    {
+      "sequence": "5runtwo",
+      "frames": 117,
+      "visible": 93,
+      "excluded": 24,
+      "causal_anchors": 89
+    },
+    {
+      "sequence": "ab_girlrideintrees",
+      "frames": 272,
+      "visible": 239,
+      "excluded": 25,
+      "causal_anchors": 235
+    },
+    {
+      "sequence": "bikefromnorth257",
+      "frames": 257,
+      "visible": 215,
+      "excluded": 42,
+      "causal_anchors": 211
+    },
+    {
+      "sequence": "blackmanleft",
+      "frames": 735,
+      "visible": 697,
+      "excluded": 38,
+      "causal_anchors": 693
+    },
+    {
+      "sequence": "manstarttreecar",
+      "frames": 496,
+      "visible": 466,
+      "excluded": 30,
+      "causal_anchors": 462
+    },
+    {
+      "sequence": "blackruning",
+      "frames": 371,
+      "visible": 371,
+      "excluded": 0,
+      "causal_anchors": 367
+    },
+    {
+      "sequence": "leftblkboyunderbasketballhoop",
+      "frames": 1564,
+      "visible": 1413,
+      "excluded": 151,
+      "causal_anchors": 1409
+    },
+    {
+      "sequence": "manphone",
+      "frames": 174,
+      "visible": 159,
+      "excluded": 15,
+      "causal_anchors": 155
+    },
+    {
+      "sequence": "treeboy",
+      "frames": 180,
+      "visible": 149,
+      "excluded": 31,
+      "causal_anchors": 145
+    },
+    {
+      "sequence": "farredcar",
+      "frames": 55,
+      "visible": 36,
+      "excluded": 19,
+      "causal_anchors": 32
+    },
+    {
+      "sequence": "ab_boyfromtrees",
+      "frames": 276,
+      "visible": 204,
+      "excluded": 5,
+      "causal_anchors": 200
+    },
+    {
+      "sequence": "mirrorfront",
+      "frames": 1168,
+      "visible": 1138,
+      "excluded": 30,
+      "causal_anchors": 1134
+    },
+    {
+      "sequence": "jeepleave",
+      "frames": 151,
+      "visible": 125,
+      "excluded": 26,
+      "causal_anchors": 121
+    },
+    {
+      "sequence": "ab_catescapes",
+      "frames": 133,
+      "visible": 106,
+      "excluded": 27,
+      "causal_anchors": 102
+    },
+    {
+      "sequence": "silvercarcome",
+      "frames": 37,
+      "visible": 29,
+      "excluded": 8,
+      "causal_anchors": 25
+    },
+    {
+      "sequence": "whitecarstart126",
+      "frames": 126,
+      "visible": 117,
+      "excluded": 9,
+      "causal_anchors": 113
+    },
+    {
+      "sequence": "jeepblack",
+      "frames": 79,
+      "visible": 79,
+      "excluded": 0,
+      "causal_anchors": 75
+    },
+    {
+      "sequence": "takeoutman",
+      "frames": 335,
+      "visible": 255,
+      "excluded": 80,
+      "causal_anchors": 251
+    },
+    {
+      "sequence": "leftwhiteblack",
+      "frames": 3800,
+      "visible": 3632,
+      "excluded": 168,
+      "causal_anchors": 3628
+    },
+    {
+      "sequence": "rightbattle",
+      "frames": 323,
+      "visible": 286,
+      "excluded": 37,
+      "causal_anchors": 282
+    },
+    {
+      "sequence": "elector_1227",
+      "frames": 129,
+      "visible": 124,
+      "excluded": 5,
+      "causal_anchors": 120
+    },
+    {
+      "sequence": "tallwhiteboy",
+      "frames": 296,
+      "visible": 278,
+      "excluded": 18,
+      "causal_anchors": 274
+    },
+    {
+      "sequence": "1rowleft2ndgirl",
+      "frames": 588,
+      "visible": 541,
+      "excluded": 47,
+      "causal_anchors": 537
+    },
+    {
+      "sequence": "leftmen-chong1",
+      "frames": 360,
+      "visible": 336,
+      "excluded": 20,
+      "causal_anchors": 332
+    },
+    {
+      "sequence": "man2startmoto",
+      "frames": 505,
+      "visible": 480,
+      "excluded": 25,
+      "causal_anchors": 476
+    },
+    {
+      "sequence": "leftmirrorshining",
+      "frames": 1361,
+      "visible": 1136,
+      "excluded": 225,
+      "causal_anchors": 1132
+    },
+    {
+      "sequence": "boyalonecoming",
+      "frames": 630,
+      "visible": 625,
+      "excluded": 5,
+      "causal_anchors": 621
+    },
+    {
+      "sequence": "bluelittletruck",
+      "frames": 459,
+      "visible": 427,
+      "excluded": 32,
+      "causal_anchors": 423
+    },
+    {
+      "sequence": "boyride2trees",
+      "frames": 837,
+      "visible": 739,
+      "excluded": 97,
+      "causal_anchors": 735
+    },
+    {
+      "sequence": "boyscome",
+      "frames": 360,
+      "visible": 319,
+      "excluded": 36,
+      "causal_anchors": 315
+    },
+    {
+      "sequence": "moto78",
+      "frames": 78,
+      "visible": 62,
+      "excluded": 16,
+      "causal_anchors": 58
+    },
+    {
+      "sequence": "girlaftertree",
+      "frames": 443,
+      "visible": 332,
+      "excluded": 111,
+      "causal_anchors": 328
+    },
+    {
+      "sequence": "rightboystand",
+      "frames": 324,
+      "visible": 290,
+      "excluded": 34,
+      "causal_anchors": 286
+    },
+    {
+      "sequence": "boysumbrella2",
+      "frames": 582,
+      "visible": 558,
+      "excluded": 24,
+      "causal_anchors": 554
+    },
+    {
+      "sequence": "boytakingcamera",
+      "frames": 348,
+      "visible": 242,
+      "excluded": 106,
+      "causal_anchors": 238
+    },
+    {
+      "sequence": "midflag-qzc",
+      "frames": 1462,
+      "visible": 1437,
+      "excluded": 25,
+      "causal_anchors": 1433
+    },
+    {
+      "sequence": "rightboy`shead",
+      "frames": 360,
+      "visible": 334,
+      "excluded": 26,
+      "causal_anchors": 330
+    },
+    {
+      "sequence": "left3boycoming",
+      "frames": 271,
+      "visible": 256,
+      "excluded": 15,
+      "causal_anchors": 252
+    },
+    {
+      "sequence": "girlblack",
+      "frames": 388,
+      "visible": 373,
+      "excluded": 15,
+      "causal_anchors": 369
+    },
+    {
+      "sequence": "rightblkboy",
+      "frames": 240,
+      "visible": 216,
+      "excluded": 23,
+      "causal_anchors": 212
+    },
+    {
+      "sequence": "midblkbike",
+      "frames": 206,
+      "visible": 186,
+      "excluded": 20,
+      "causal_anchors": 182
+    },
+    {
+      "sequence": "3bike2",
+      "frames": 143,
+      "visible": 130,
+      "excluded": 13,
+      "causal_anchors": 126
+    },
+    {
+      "sequence": "whitecarcome",
+      "frames": 113,
+      "visible": 86,
+      "excluded": 27,
+      "causal_anchors": 82
+    },
+    {
+      "sequence": "girlwithumbrella",
+      "frames": 299,
+      "visible": 269,
+      "excluded": 30,
+      "causal_anchors": 265
+    },
+    {
+      "sequence": "runningwhiteboy",
+      "frames": 74,
+      "visible": 53,
+      "excluded": 21,
+      "causal_anchors": 49
+    },
+    {
+      "sequence": "ab_motocometurn",
+      "frames": 172,
+      "visible": 139,
+      "excluded": 30,
+      "causal_anchors": 135
+    },
+    {
+      "sequence": "6walkgirl",
+      "frames": 273,
+      "visible": 225,
+      "excluded": 48,
+      "causal_anchors": 221
+    },
+    {
+      "sequence": "blkcarcome115",
+      "frames": 115,
+      "visible": 104,
+      "excluded": 11,
+      "causal_anchors": 100
+    },
+    {
+      "sequence": "whiteaftertree",
+      "frames": 377,
+      "visible": 339,
+      "excluded": 38,
+      "causal_anchors": 335
+    },
+    {
+      "sequence": "leftbrowngirlfat",
+      "frames": 306,
+      "visible": 267,
+      "excluded": 39,
+      "causal_anchors": 263
+    },
+    {
+      "sequence": "basketman",
+      "frames": 214,
+      "visible": 209,
+      "excluded": 5,
+      "causal_anchors": 205
+    },
+    {
+      "sequence": "mototurn",
+      "frames": 127,
+      "visible": 95,
+      "excluded": 32,
+      "causal_anchors": 91
+    },
+    {
+      "sequence": "whitewoman_1202",
+      "frames": 477,
+      "visible": 439,
+      "excluded": 38,
+      "causal_anchors": 435
+    },
+    {
+      "sequence": "whiteboybike",
+      "frames": 176,
+      "visible": 138,
+      "excluded": 38,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "mancarstart",
+      "frames": 210,
+      "visible": 165,
+      "excluded": 45,
+      "causal_anchors": 161
+    },
+    {
+      "sequence": "rightblkboy188",
+      "frames": 188,
+      "visible": 105,
+      "excluded": 83,
+      "causal_anchors": 101
+    },
+    {
+      "sequence": "dogouttrees",
+      "frames": 226,
+      "visible": 197,
+      "excluded": 29,
+      "causal_anchors": 193
+    },
+    {
+      "sequence": "2ndcarcome",
+      "frames": 79,
+      "visible": 48,
+      "excluded": 31,
+      "causal_anchors": 44
+    },
+    {
+      "sequence": "motobike",
+      "frames": 116,
+      "visible": 73,
+      "excluded": 43,
+      "causal_anchors": 69
+    },
+    {
+      "sequence": "rainywhitecar",
+      "frames": 197,
+      "visible": 165,
+      "excluded": 32,
+      "causal_anchors": 161
+    },
+    {
+      "sequence": "yellowcar",
+      "frames": 167,
+      "visible": 134,
+      "excluded": 33,
+      "causal_anchors": 130
+    },
+    {
+      "sequence": "whitemoto",
+      "frames": 96,
+      "visible": 65,
+      "excluded": 31,
+      "causal_anchors": 61
+    },
+    {
+      "sequence": "1strowright1stboy",
+      "frames": 897,
+      "visible": 761,
+      "excluded": 136,
+      "causal_anchors": 757
+    },
+    {
+      "sequence": "1rightboy",
+      "frames": 216,
+      "visible": 175,
+      "excluded": 41,
+      "causal_anchors": 171
+    },
+    {
+      "sequence": "pingpongball2",
+      "frames": 159,
+      "visible": 121,
+      "excluded": 38,
+      "causal_anchors": 117
+    },
+    {
+      "sequence": "leftlightsweaterboy",
+      "frames": 416,
+      "visible": 377,
+      "excluded": 39,
+      "causal_anchors": 373
+    },
+    {
+      "sequence": "left3rdgirlbesideswhitepants",
+      "frames": 588,
+      "visible": 568,
+      "excluded": 20,
+      "causal_anchors": 564
+    },
+    {
+      "sequence": "man_with_black_clothes3",
+      "frames": 224,
+      "visible": 209,
+      "excluded": 15,
+      "causal_anchors": 205
+    },
+    {
+      "sequence": "whitecarturnright248",
+      "frames": 248,
+      "visible": 229,
+      "excluded": 19,
+      "causal_anchors": 225
+    },
+    {
+      "sequence": "rightblkboy2",
+      "frames": 379,
+      "visible": 364,
+      "excluded": 15,
+      "causal_anchors": 360
+    },
+    {
+      "sequence": "truckcoming",
+      "frames": 141,
+      "visible": 116,
+      "excluded": 25,
+      "causal_anchors": 112
+    },
+    {
+      "sequence": "trimototurn",
+      "frames": 196,
+      "visible": 167,
+      "excluded": 29,
+      "causal_anchors": 163
+    },
+    {
+      "sequence": "blackturnr",
+      "frames": 320,
+      "visible": 283,
+      "excluded": 37,
+      "causal_anchors": 279
+    },
+    {
+      "sequence": "greenboy438",
+      "frames": 438,
+      "visible": 332,
+      "excluded": 106,
+      "causal_anchors": 328
+    },
+    {
+      "sequence": "cargirl2",
+      "frames": 539,
+      "visible": 514,
+      "excluded": 25,
+      "causal_anchors": 510
+    },
+    {
+      "sequence": "girlfoldumbrella",
+      "frames": 530,
+      "visible": 485,
+      "excluded": 45,
+      "causal_anchors": 481
+    },
+    {
+      "sequence": "bus2",
+      "frames": 79,
+      "visible": 51,
+      "excluded": 28,
+      "causal_anchors": 47
+    },
+    {
+      "sequence": "biketonorth",
+      "frames": 287,
+      "visible": 277,
+      "excluded": 10,
+      "causal_anchors": 273
+    },
+    {
+      "sequence": "2boysup",
+      "frames": 69,
+      "visible": 46,
+      "excluded": 23,
+      "causal_anchors": 42
+    },
+    {
+      "sequence": "tallboyNumber_9",
+      "frames": 3952,
+      "visible": 3908,
+      "excluded": 44,
+      "causal_anchors": 3904
+    },
+    {
+      "sequence": "waiterontheothersideofwindow",
+      "frames": 251,
+      "visible": 224,
+      "excluded": 27,
+      "causal_anchors": 220
+    },
+    {
+      "sequence": "leftorangeboy",
+      "frames": 666,
+      "visible": 651,
+      "excluded": 15,
+      "causal_anchors": 647
+    },
+    {
+      "sequence": "whitebikebehind",
+      "frames": 128,
+      "visible": 110,
+      "excluded": 18,
+      "causal_anchors": 106
+    },
+    {
+      "sequence": "man_0109",
+      "frames": 663,
+      "visible": 654,
+      "excluded": 9,
+      "causal_anchors": 650
+    },
+    {
+      "sequence": "frontmirror",
+      "frames": 927,
+      "visible": 898,
+      "excluded": 29,
+      "causal_anchors": 894
+    },
+    {
+      "sequence": "unbrellainbike",
+      "frames": 193,
+      "visible": 183,
+      "excluded": 10,
+      "causal_anchors": 179
+    },
+    {
+      "sequence": "AQmidof3boys",
+      "frames": 156,
+      "visible": 116,
+      "excluded": 40,
+      "causal_anchors": 112
+    },
+    {
+      "sequence": "whitecarleave198",
+      "frames": 198,
+      "visible": 170,
+      "excluded": 28,
+      "causal_anchors": 166
+    },
+    {
+      "sequence": "greenleftbackblack",
+      "frames": 1417,
+      "visible": 1398,
+      "excluded": 19,
+      "causal_anchors": 1394
+    },
+    {
+      "sequence": "The_girl_with_the_cup_1202",
+      "frames": 227,
+      "visible": 212,
+      "excluded": 15,
+      "causal_anchors": 208
+    },
+    {
+      "sequence": "mototurn134",
+      "frames": 134,
+      "visible": 129,
+      "excluded": 5,
+      "causal_anchors": 125
+    },
+    {
+      "sequence": "lightcarstop",
+      "frames": 134,
+      "visible": 110,
+      "excluded": 23,
+      "causal_anchors": 106
+    },
+    {
+      "sequence": "girlcoat",
+      "frames": 220,
+      "visible": 195,
+      "excluded": 25,
+      "causal_anchors": 191
+    },
+    {
+      "sequence": "Aredtopmoto",
+      "frames": 115,
+      "visible": 90,
+      "excluded": 25,
+      "causal_anchors": 86
+    },
+    {
+      "sequence": "ab_bikeboycoming",
+      "frames": 151,
+      "visible": 133,
+      "excluded": 18,
+      "causal_anchors": 129
+    },
+    {
+      "sequence": "whitecarcome192",
+      "frames": 192,
+      "visible": 187,
+      "excluded": 5,
+      "causal_anchors": 183
+    },
+    {
+      "sequence": "the4thwhiteboy",
+      "frames": 298,
+      "visible": 279,
+      "excluded": 19,
+      "causal_anchors": 275
+    },
+    {
+      "sequence": "leftgirlchecking",
+      "frames": 1590,
+      "visible": 1337,
+      "excluded": 253,
+      "causal_anchors": 1333
+    },
+    {
+      "sequence": "manaftercar",
+      "frames": 274,
+      "visible": 250,
+      "excluded": 24,
+      "causal_anchors": 246
+    },
+    {
+      "sequence": "rightbluegirl",
+      "frames": 610,
+      "visible": 452,
+      "excluded": 158,
+      "causal_anchors": 448
+    },
+    {
+      "sequence": "Abluemotoinrain",
+      "frames": 91,
+      "visible": 75,
+      "excluded": 16,
+      "causal_anchors": 71
+    },
+    {
+      "sequence": "whitegirlcoming",
+      "frames": 344,
+      "visible": 206,
+      "excluded": 138,
+      "causal_anchors": 202
+    },
+    {
+      "sequence": "agirl",
+      "frames": 173,
+      "visible": 138,
+      "excluded": 35,
+      "causal_anchors": 134
+    },
+    {
+      "sequence": "manaftercar114",
+      "frames": 114,
+      "visible": 87,
+      "excluded": 27,
+      "causal_anchors": 83
+    },
+    {
+      "sequence": "sisterswithbags",
+      "frames": 558,
+      "visible": 477,
+      "excluded": 81,
+      "causal_anchors": 473
+    },
+    {
+      "sequence": "rightdrillmasterunderthebar",
+      "frames": 1250,
+      "visible": 1220,
+      "excluded": 30,
+      "causal_anchors": 1216
+    },
+    {
+      "sequence": "midwhitegirl",
+      "frames": 401,
+      "visible": 372,
+      "excluded": 29,
+      "causal_anchors": 368
+    },
+    {
+      "sequence": "AQwhitetruck",
+      "frames": 99,
+      "visible": 85,
+      "excluded": 14,
+      "causal_anchors": 81
+    },
+    {
+      "sequence": "umbregirl",
+      "frames": 492,
+      "visible": 460,
+      "excluded": 32,
+      "causal_anchors": 456
+    },
+    {
+      "sequence": "1righttwogreen",
+      "frames": 224,
+      "visible": 201,
+      "excluded": 23,
+      "causal_anchors": 197
+    },
+    {
+      "sequence": "redbackpackgirl",
+      "frames": 1121,
+      "visible": 899,
+      "excluded": 222,
+      "causal_anchors": 895
+    },
+    {
+      "sequence": "dogforward",
+      "frames": 356,
+      "visible": 336,
+      "excluded": 20,
+      "causal_anchors": 332
+    },
+    {
+      "sequence": "ab_rightmirror",
+      "frames": 1528,
+      "visible": 1508,
+      "excluded": 20,
+      "causal_anchors": 1504
+    },
+    {
+      "sequence": "car2north",
+      "frames": 140,
+      "visible": 121,
+      "excluded": 19,
+      "causal_anchors": 117
+    },
+    {
+      "sequence": "whiteaftertrees",
+      "frames": 1117,
+      "visible": 949,
+      "excluded": 168,
+      "causal_anchors": 945
+    },
+    {
+      "sequence": "Awoman2openthecardoor",
+      "frames": 240,
+      "visible": 181,
+      "excluded": 33,
+      "causal_anchors": 177
+    },
+    {
+      "sequence": "abeauty_1202",
+      "frames": 227,
+      "visible": 217,
+      "excluded": 10,
+      "causal_anchors": 213
+    },
+    {
+      "sequence": "blueboywalking",
+      "frames": 234,
+      "visible": 189,
+      "excluded": 45,
+      "causal_anchors": 185
+    },
+    {
+      "sequence": "rightboybesidesredcar",
+      "frames": 544,
+      "visible": 521,
+      "excluded": 23,
+      "causal_anchors": 517
+    },
+    {
+      "sequence": "carstart189",
+      "frames": 189,
+      "visible": 175,
+      "excluded": 14,
+      "causal_anchors": 171
+    },
+    {
+      "sequence": "1strow3rdboymid",
+      "frames": 747,
+      "visible": 708,
+      "excluded": 39,
+      "causal_anchors": 704
+    },
+    {
+      "sequence": "ab_pingpongball3",
+      "frames": 50,
+      "visible": 20,
+      "excluded": 27,
+      "causal_anchors": 16
+    },
+    {
+      "sequence": "blkcarcome",
+      "frames": 175,
+      "visible": 155,
+      "excluded": 20,
+      "causal_anchors": 151
+    },
+    {
+      "sequence": "whiteskirtgirl",
+      "frames": 419,
+      "visible": 394,
+      "excluded": 25,
+      "causal_anchors": 390
+    },
+    {
+      "sequence": "catbrown",
+      "frames": 385,
+      "visible": 355,
+      "excluded": 30,
+      "causal_anchors": 351
+    },
+    {
+      "sequence": "leftclosedexersicebook",
+      "frames": 1034,
+      "visible": 1009,
+      "excluded": 25,
+      "causal_anchors": 1005
+    },
+    {
+      "sequence": "blkmototurn",
+      "frames": 99,
+      "visible": 65,
+      "excluded": 34,
+      "causal_anchors": 61
+    },
+    {
+      "sequence": "whitegirl2_0115",
+      "frames": 335,
+      "visible": 234,
+      "excluded": 101,
+      "causal_anchors": 230
+    },
+    {
+      "sequence": "bowblkboy1-quezhen",
+      "frames": 1264,
+      "visible": 1264,
+      "excluded": 0,
+      "causal_anchors": 1260
+    },
+    {
+      "sequence": "girltakingmoto",
+      "frames": 292,
+      "visible": 268,
+      "excluded": 24,
+      "causal_anchors": 264
+    },
+    {
+      "sequence": "blkcargo",
+      "frames": 163,
+      "visible": 144,
+      "excluded": 19,
+      "causal_anchors": 140
+    },
+    {
+      "sequence": "10crosswhite",
+      "frames": 249,
+      "visible": 235,
+      "excluded": 14,
+      "causal_anchors": 231
+    },
+    {
+      "sequence": "5one",
+      "frames": 261,
+      "visible": 237,
+      "excluded": 24,
+      "causal_anchors": 233
+    },
+    {
+      "sequence": "blackcarcoming",
+      "frames": 71,
+      "visible": 52,
+      "excluded": 19,
+      "causal_anchors": 48
+    },
+    {
+      "sequence": "boyleft161",
+      "frames": 161,
+      "visible": 132,
+      "excluded": 29,
+      "causal_anchors": 128
+    },
+    {
+      "sequence": "The_one_on_the_left_in_black_1202",
+      "frames": 240,
+      "visible": 210,
+      "excluded": 30,
+      "causal_anchors": 206
+    },
+    {
+      "sequence": "large2-gai",
+      "frames": 1444,
+      "visible": 1227,
+      "excluded": 217,
+      "causal_anchors": 1223
+    },
+    {
+      "sequence": "browncarturn",
+      "frames": 392,
+      "visible": 362,
+      "excluded": 30,
+      "causal_anchors": 358
+    },
+    {
+      "sequence": "twoperpson_1202",
+      "frames": 263,
+      "visible": 168,
+      "excluded": 19,
+      "causal_anchors": 164
+    },
+    {
+      "sequence": "boytakesuicase",
+      "frames": 579,
+      "visible": 449,
+      "excluded": 130,
+      "causal_anchors": 445
+    },
+    {
+      "sequence": "rightgreen",
+      "frames": 912,
+      "visible": 776,
+      "excluded": 136,
+      "causal_anchors": 772
+    },
+    {
+      "sequence": "motolight",
+      "frames": 131,
+      "visible": 99,
+      "excluded": 32,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "whitegirl1227",
+      "frames": 660,
+      "visible": 540,
+      "excluded": 120,
+      "causal_anchors": 536
+    },
+    {
+      "sequence": "twoleft",
+      "frames": 359,
+      "visible": 349,
+      "excluded": 10,
+      "causal_anchors": 345
+    },
+    {
+      "sequence": "whitegirl209",
+      "frames": 209,
+      "visible": 190,
+      "excluded": 19,
+      "causal_anchors": 186
+    },
+    {
+      "sequence": "camera_1202",
+      "frames": 236,
+      "visible": 216,
+      "excluded": 20,
+      "causal_anchors": 212
+    },
+    {
+      "sequence": "umbrellainred",
+      "frames": 278,
+      "visible": 246,
+      "excluded": 32,
+      "causal_anchors": 242
+    },
+    {
+      "sequence": "girlatwindow",
+      "frames": 578,
+      "visible": 563,
+      "excluded": 15,
+      "causal_anchors": 559
+    },
+    {
+      "sequence": "rightblkgirlrunning",
+      "frames": 4470,
+      "visible": 4392,
+      "excluded": 78,
+      "causal_anchors": 4388
+    },
+    {
+      "sequence": "abreastinnerboy",
+      "frames": 475,
+      "visible": 456,
+      "excluded": 19,
+      "causal_anchors": 452
+    },
+    {
+      "sequence": "motoslow",
+      "frames": 503,
+      "visible": 478,
+      "excluded": 25,
+      "causal_anchors": 474
+    },
+    {
+      "sequence": "bikewithbag",
+      "frames": 195,
+      "visible": 166,
+      "excluded": 29,
+      "causal_anchors": 162
+    },
+    {
+      "sequence": "4sisters",
+      "frames": 406,
+      "visible": 366,
+      "excluded": 40,
+      "causal_anchors": 362
+    },
+    {
+      "sequence": "easy_whiterignt2left",
+      "frames": 693,
+      "visible": 668,
+      "excluded": 25,
+      "causal_anchors": 664
+    },
+    {
+      "sequence": "carleaves",
+      "frames": 196,
+      "visible": 154,
+      "excluded": 42,
+      "causal_anchors": 150
+    },
+    {
+      "sequence": "blueboy85",
+      "frames": 85,
+      "visible": 63,
+      "excluded": 22,
+      "causal_anchors": 59
+    },
+    {
+      "sequence": "dogfollowinggirl",
+      "frames": 213,
+      "visible": 176,
+      "excluded": 37,
+      "causal_anchors": 172
+    },
+    {
+      "sequence": "yellowatright",
+      "frames": 342,
+      "visible": 298,
+      "excluded": 44,
+      "causal_anchors": 294
+    },
+    {
+      "sequence": "firstboythroughtrees",
+      "frames": 1068,
+      "visible": 819,
+      "excluded": 249,
+      "causal_anchors": 815
+    },
+    {
+      "sequence": "whitecarstart183",
+      "frames": 183,
+      "visible": 155,
+      "excluded": 28,
+      "causal_anchors": 151
+    },
+    {
+      "sequence": "right2ndfarboytakinglight2left",
+      "frames": 667,
+      "visible": 628,
+      "excluded": 24,
+      "causal_anchors": 624
+    },
+    {
+      "sequence": "blkcar2north",
+      "frames": 201,
+      "visible": 171,
+      "excluded": 30,
+      "causal_anchors": 167
+    },
+    {
+      "sequence": "carleaveturnleft",
+      "frames": 167,
+      "visible": 129,
+      "excluded": 38,
+      "causal_anchors": 125
+    },
+    {
+      "sequence": "mengointrees",
+      "frames": 517,
+      "visible": 406,
+      "excluded": 111,
+      "causal_anchors": 402
+    },
+    {
+      "sequence": "1strowright2ndgirl",
+      "frames": 907,
+      "visible": 883,
+      "excluded": 24,
+      "causal_anchors": 879
+    },
+    {
+      "sequence": "bookatfloor",
+      "frames": 637,
+      "visible": 507,
+      "excluded": 130,
+      "causal_anchors": 503
+    },
+    {
+      "sequence": "4runone",
+      "frames": 234,
+      "visible": 221,
+      "excluded": 13,
+      "causal_anchors": 217
+    },
+    {
+      "sequence": "boysumbrella",
+      "frames": 441,
+      "visible": 399,
+      "excluded": 42,
+      "causal_anchors": 395
+    },
+    {
+      "sequence": "womanaroundcar",
+      "frames": 383,
+      "visible": 364,
+      "excluded": 19,
+      "causal_anchors": 360
+    },
+    {
+      "sequence": "whiteof2boys",
+      "frames": 294,
+      "visible": 279,
+      "excluded": 15,
+      "causal_anchors": 275
+    },
+    {
+      "sequence": "goaftrtrees",
+      "frames": 315,
+      "visible": 303,
+      "excluded": 10,
+      "causal_anchors": 299
+    },
+    {
+      "sequence": "whiteboy-gai",
+      "frames": 1438,
+      "visible": 1224,
+      "excluded": 151,
+      "causal_anchors": 1220
+    },
+    {
+      "sequence": "womanopendoor",
+      "frames": 117,
+      "visible": 102,
+      "excluded": 15,
+      "causal_anchors": 98
+    },
+    {
+      "sequence": "Ablkboybike77",
+      "frames": 77,
+      "visible": 48,
+      "excluded": 29,
+      "causal_anchors": 44
+    },
+    {
+      "sequence": "two_1227",
+      "frames": 184,
+      "visible": 158,
+      "excluded": 26,
+      "causal_anchors": 154
+    },
+    {
+      "sequence": "rightredboy",
+      "frames": 506,
+      "visible": 484,
+      "excluded": 22,
+      "causal_anchors": 480
+    },
+    {
+      "sequence": "rightwhite_1227",
+      "frames": 273,
+      "visible": 242,
+      "excluded": 31,
+      "causal_anchors": 238
+    },
+    {
+      "sequence": "huggirl",
+      "frames": 1393,
+      "visible": 1185,
+      "excluded": 131,
+      "causal_anchors": 1181
+    },
+    {
+      "sequence": "mancrossroad",
+      "frames": 147,
+      "visible": 112,
+      "excluded": 35,
+      "causal_anchors": 108
+    },
+    {
+      "sequence": "easy_4women",
+      "frames": 195,
+      "visible": 184,
+      "excluded": 10,
+      "causal_anchors": 180
+    },
+    {
+      "sequence": "lefthyalinepaper",
+      "frames": 2521,
+      "visible": 2471,
+      "excluded": 30,
+      "causal_anchors": 2467
+    },
+    {
+      "sequence": "2ndbikecoming",
+      "frames": 126,
+      "visible": 111,
+      "excluded": 15,
+      "causal_anchors": 107
+    },
+    {
+      "sequence": "boysitbike",
+      "frames": 88,
+      "visible": 80,
+      "excluded": 8,
+      "causal_anchors": 76
+    },
+    {
+      "sequence": "foundsecondpeople_0109",
+      "frames": 683,
+      "visible": 663,
+      "excluded": 20,
+      "causal_anchors": 659
+    },
+    {
+      "sequence": "boystandinglefttree",
+      "frames": 1251,
+      "visible": 1098,
+      "excluded": 153,
+      "causal_anchors": 1094
+    },
+    {
+      "sequence": "the4thboystandby",
+      "frames": 961,
+      "visible": 932,
+      "excluded": 29,
+      "causal_anchors": 928
+    },
+    {
+      "sequence": "boybackpack",
+      "frames": 247,
+      "visible": 223,
+      "excluded": 24,
+      "causal_anchors": 219
+    },
+    {
+      "sequence": "Blue_in_line_1202",
+      "frames": 440,
+      "visible": 233,
+      "excluded": 207,
+      "causal_anchors": 229
+    },
+    {
+      "sequence": "redcar",
+      "frames": 96,
+      "visible": 70,
+      "excluded": 26,
+      "causal_anchors": 66
+    },
+    {
+      "sequence": "biketurnleft2",
+      "frames": 65,
+      "visible": 34,
+      "excluded": 31,
+      "causal_anchors": 30
+    },
+    {
+      "sequence": "midtallboycoming",
+      "frames": 681,
+      "visible": 612,
+      "excluded": 69,
+      "causal_anchors": 608
+    },
+    {
+      "sequence": "rightwhitegirl",
+      "frames": 479,
+      "visible": 363,
+      "excluded": 116,
+      "causal_anchors": 359
+    },
+    {
+      "sequence": "belowyellow-gai",
+      "frames": 199,
+      "visible": 185,
+      "excluded": 14,
+      "causal_anchors": 181
+    },
+    {
+      "sequence": "rightbottle",
+      "frames": 2670,
+      "visible": 2586,
+      "excluded": 84,
+      "causal_anchors": 2582
+    },
+    {
+      "sequence": "boyumbrella4",
+      "frames": 326,
+      "visible": 311,
+      "excluded": 15,
+      "causal_anchors": 307
+    },
+    {
+      "sequence": "pingpongpad",
+      "frames": 346,
+      "visible": 303,
+      "excluded": 43,
+      "causal_anchors": 299
+    },
+    {
+      "sequence": "ab_moto2north0",
+      "frames": 163,
+      "visible": 103,
+      "excluded": 15,
+      "causal_anchors": 99
+    },
+    {
+      "sequence": "5numone",
+      "frames": 269,
+      "visible": 249,
+      "excluded": 20,
+      "causal_anchors": 245
+    },
+    {
+      "sequence": "manatmoto",
+      "frames": 144,
+      "visible": 111,
+      "excluded": 33,
+      "causal_anchors": 107
+    },
+    {
+      "sequence": "10rightboy",
+      "frames": 244,
+      "visible": 229,
+      "excluded": 15,
+      "causal_anchors": 225
+    },
+    {
+      "sequence": "mirroratleft",
+      "frames": 1429,
+      "visible": 1409,
+      "excluded": 20,
+      "causal_anchors": 1405
+    },
+    {
+      "sequence": "rightexercisebookwillfly",
+      "frames": 182,
+      "visible": 150,
+      "excluded": 32,
+      "causal_anchors": 146
+    },
+    {
+      "sequence": "9whitegirl",
+      "frames": 124,
+      "visible": 101,
+      "excluded": 23,
+      "causal_anchors": 97
+    },
+    {
+      "sequence": "girlbikeinlight",
+      "frames": 562,
+      "visible": 451,
+      "excluded": 111,
+      "causal_anchors": 447
+    },
+    {
+      "sequence": "girltakingblkumbrella",
+      "frames": 346,
+      "visible": 302,
+      "excluded": 44,
+      "causal_anchors": 298
+    },
+    {
+      "sequence": "ab_shorthairgirlbike",
+      "frames": 214,
+      "visible": 190,
+      "excluded": 22,
+      "causal_anchors": 186
+    },
+    {
+      "sequence": "rightbiggreenboy",
+      "frames": 840,
+      "visible": 688,
+      "excluded": 152,
+      "causal_anchors": 684
+    },
+    {
+      "sequence": "motowithtop",
+      "frames": 138,
+      "visible": 123,
+      "excluded": 15,
+      "causal_anchors": 119
+    },
+    {
+      "sequence": "rainyboyaftertrees",
+      "frames": 530,
+      "visible": 481,
+      "excluded": 47,
+      "causal_anchors": 477
+    },
+    {
+      "sequence": "takeoutmoto521",
+      "frames": 521,
+      "visible": 390,
+      "excluded": 131,
+      "causal_anchors": 386
+    },
+    {
+      "sequence": "leftredcup",
+      "frames": 1376,
+      "visible": 1128,
+      "excluded": 248,
+      "causal_anchors": 1124
+    },
+    {
+      "sequence": "girlleaveboys",
+      "frames": 309,
+      "visible": 277,
+      "excluded": 32,
+      "causal_anchors": 273
+    },
+    {
+      "sequence": "guardatbike_ab",
+      "frames": 244,
+      "visible": 195,
+      "excluded": 22,
+      "causal_anchors": 191
+    },
+    {
+      "sequence": "blkgirlbike",
+      "frames": 216,
+      "visible": 192,
+      "excluded": 24,
+      "causal_anchors": 188
+    },
+    {
+      "sequence": "runningwhiteboy249",
+      "frames": 249,
+      "visible": 224,
+      "excluded": 25,
+      "causal_anchors": 220
+    },
+    {
+      "sequence": "womanstartbike",
+      "frames": 320,
+      "visible": 290,
+      "excluded": 30,
+      "causal_anchors": 286
+    },
+    {
+      "sequence": "blkbagontheleftgirl",
+      "frames": 97,
+      "visible": 72,
+      "excluded": 25,
+      "causal_anchors": 68
+    },
+    {
+      "sequence": "blkboybike",
+      "frames": 148,
+      "visible": 99,
+      "excluded": 49,
+      "causal_anchors": 95
+    },
+    {
+      "sequence": "boybehindtrees2",
+      "frames": 352,
+      "visible": 342,
+      "excluded": 10,
+      "causal_anchors": 338
+    },
+    {
+      "sequence": "boy2_0115",
+      "frames": 2698,
+      "visible": 2540,
+      "excluded": 158,
+      "causal_anchors": 2536
+    },
+    {
+      "sequence": "leftgirlafterlamppost",
+      "frames": 138,
+      "visible": 123,
+      "excluded": 15,
+      "causal_anchors": 119
+    },
+    {
+      "sequence": "boyof2leaders",
+      "frames": 889,
+      "visible": 749,
+      "excluded": 140,
+      "causal_anchors": 745
+    },
+    {
+      "sequence": "lovers_1227",
+      "frames": 376,
+      "visible": 366,
+      "excluded": 10,
+      "causal_anchors": 362
+    },
+    {
+      "sequence": "folderinrighthand",
+      "frames": 1222,
+      "visible": 1207,
+      "excluded": 15,
+      "causal_anchors": 1203
+    },
+    {
+      "sequence": "toulan-ly",
+      "frames": 833,
+      "visible": 702,
+      "excluded": 131,
+      "causal_anchors": 698
+    },
+    {
+      "sequence": "meituanbike",
+      "frames": 204,
+      "visible": 179,
+      "excluded": 25,
+      "causal_anchors": 175
+    },
+    {
+      "sequence": "blkboywithbluebag",
+      "frames": 181,
+      "visible": 158,
+      "excluded": 23,
+      "causal_anchors": 154
+    },
+    {
+      "sequence": "leftlastgirl2",
+      "frames": 646,
+      "visible": 621,
+      "excluded": 25,
+      "causal_anchors": 617
+    },
+    {
+      "sequence": "blkboylefttheredbagboy",
+      "frames": 249,
+      "visible": 164,
+      "excluded": 85,
+      "causal_anchors": 160
+    },
+    {
+      "sequence": "motocoming",
+      "frames": 191,
+      "visible": 158,
+      "excluded": 33,
+      "causal_anchors": 154
+    },
+    {
+      "sequence": "comecar",
+      "frames": 128,
+      "visible": 100,
+      "excluded": 28,
+      "causal_anchors": 96
+    },
+    {
+      "sequence": "2ndboyfarintheforest2right",
+      "frames": 635,
+      "visible": 610,
+      "excluded": 25,
+      "causal_anchors": 606
+    },
+    {
+      "sequence": "whitecatjump",
+      "frames": 950,
+      "visible": 820,
+      "excluded": 130,
+      "causal_anchors": 816
+    },
+    {
+      "sequence": "darkgiratbike",
+      "frames": 95,
+      "visible": 68,
+      "excluded": 27,
+      "causal_anchors": 64
+    },
+    {
+      "sequence": "boy_0115",
+      "frames": 478,
+      "visible": 463,
+      "excluded": 15,
+      "causal_anchors": 459
+    },
+    {
+      "sequence": "small2-gai",
+      "frames": 1473,
+      "visible": 1423,
+      "excluded": 50,
+      "causal_anchors": 1419
+    },
+    {
+      "sequence": "motoinrain",
+      "frames": 90,
+      "visible": 68,
+      "excluded": 22,
+      "causal_anchors": 64
+    },
+    {
+      "sequence": "battlerightblack",
+      "frames": 1104,
+      "visible": 963,
+      "excluded": 141,
+      "causal_anchors": 959
+    }
+  ],
+  "scope": "Metadata-only sampler feasibility; does not open images or estimate augmentation crop acceptance"
+}
