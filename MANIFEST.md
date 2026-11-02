@@ -8,11 +8,17 @@
 supervision in identical native heads. GPU2PID654595 launched04:29:02Z,
 same frozen train882 feature caches,common Hann inference and delayed audit.
 Prior crop evidence motivates an ordinary training-alignment control,
-not a validated novel module or official score. Result pending.
+not a validated novel module or official score. Completed result below.
 Initial run stopped at a wrong auxiliary source path during report creation;
 failed worker source and log retained. Corrected module.__file__ lookup,
 same seeds/configuration/gate,exclusive_v2 retryPID679342 launched04:40:09Z.
 This retries a reporting failure,not an independent experiment or retuning.
+CorrectedPID679342 completed185.454s,batch256/LR0.00032,both10epochs/
+90updates,selected6 before delayed128tuple/66seq audit. Missing-direction
+E0 gains pass,but Hann/raw advantage and complete/recovery protection do
+not;advance=false. Server/local checks and3456row cached-head replay with
+independent Hann decode passed;not independent image/backbone replay.
+Evidence reports/server28_window_training_20261102_v2/. All weights retained.
 
 2026-11-02 UTC: `scripts/probe_chronology_training.py`,
 `scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,

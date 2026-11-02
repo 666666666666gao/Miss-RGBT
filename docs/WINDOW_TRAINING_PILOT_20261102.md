@@ -61,6 +61,54 @@ refine from actual cache/epoch time;180-300s meaningful checks.
 
 ## Result
 
+Corrected GPU2 PID679342 completed185.454seconds. Batch256/LR0.00032,
+9updates/epoch. Both arms stopped10epochs/90updates; both selectedepoch6
+from final-five6-10 using common Hann development task loss, before audit.
+Audit128tuples sampled66 actual sequences,1152rows per head and baseline.
+Peak allocated raw1559207936/Hann1559994368 bytes,reserved1931476992 each.
+This finite cached-head control does not saturate24GB and is not full
+image/backbone training or evidence of full-tracker convergence.
+
+| Sequence-macro crop-IoU contrast | Mean | 95% CI |
+|---|---:|---|
+| Hann-trained minus E0,RGB missing | +.037455 | [.020163,.056675] |
+| Hann-trained minus E0,TIR missing | +.043352 | [.018517,.072476] |
+| Hann minus raw training,missing cells | +.000731 | [-.006815,.009476] |
+| Hann-trained minus E0,complete11_11 | +.005781 | [-.009436,.025590] |
+| Hann-trained minus E0,recovery01_11 | +.004673 | [-.011939,.024269] |
+| Hann-trained minus E0,recovery10_11 | -.006195 | [-.022286,.011793] |
+
+Registered advance=false. Both missing-direction gains over frozen E0
+pass, but the matched raw-supervision control is not reliably exceeded.
+All complete-search protection intervals miss the registered-.005 lower
+bound,and10_11 also misses the nonnegative point criterion. Thus neither
+the specific Hann-alignment contribution nor complete/recovery protection
+is established. Do not describe positive E0 comparisons as proof of the
+proposed mechanism. The raw arm is a control,not approved for promotion.
+Do not expand/retune this exact pilot,run official evaluation,or count a
+paper module. These results do not rule out all full-model alignment methods.
+
+Server and local analyzers recomputed partitions,exact prior-tuple exclusions,
+3456saved box IoUs,stopping/final-five selection,bootstrap/decision and source
+exploratory window effects. Server checked original checkpoint/source/
+threecache/all10finite6474117parameter final-five weights and unchanged
+native head BN buffers. Separate-process native-head reconstruction replayed
+baseline+selected heads3456rows exactly,with independently written Hann
+box decode. Head layers and task_loss remain shared; no independent image/
+backbone replay or external review. Baseline-state/gradient assertions were
+checked by the producer,not independently observed during optimization.
+
+Report SHA256:
+`95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612`.
+Analyzer SHA256:
+`11caa22cf7d8b0b3ac8153047d8602bab1c758f0ac134d3a66e7a19df2860d15`.
+Small evidence `reports/server28_window_training_20261102_v2/`.
+All initial/retry weights retained. No val97,official evaluation or cleanup.
+After verification GPUs idle38/38/51/37C,all250W. Official maxima unchanged.
+Complete+2,RGBT234-Miss thresholds and three validated modules remain unmet.
+
+### Initial Reporting Failure
+
 Initial PID654595 launched2026-11-02T04:29:02Z and terminated after
 training/selection/audit caching,while building the source manifest. The
 worker incorrectly assumed diagnose_joint_utility_sets.py was next to

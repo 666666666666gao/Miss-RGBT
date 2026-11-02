@@ -1,0 +1,13 @@
+{
+  "probe_batch": 64,
+  "static_bytes": 443497984,
+  "peak_bytes": 720176640,
+  "total_bytes": 25296044032,
+  "proposed": 256,
+  "batch": 256,
+  "learning_rate": 0.00032,
+  "reference_batch": 8,
+  "reference_lr": 1e-05,
+  "updates_per_epoch": 9,
+  "policy": "75% linear memory estimate; cap256 keeps at least9 finite-cache updates/epoch."
+}

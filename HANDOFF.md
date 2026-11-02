@@ -1,6 +1,25 @@
 # Miss-RGBT 交接文档
 
-## 2026-11-02 Matched raw/Hann supervision launched
+## 2026-11-02 Matched raw/Hann supervision verified
+
+Corrected679342 completed185.454s,batch256/LR0.00032,9updates/epoch.
+Both10epochs/90updates,selected6 fromfinal5=6-10 before audit.
+Audit128tuples/66seq:Hann-E0 RGBmissing+.037455CI[.020163,.056675],
+TIRmissing+.043352CI[.018517,.072476];Hann-rawtraining+.000731
+CI[-.006815,.009476]. Complete/recovery11_11/01_11/10_11 protection
+failed;last has point-.006195. Registered advance=false despite E0 gains.
+Do not expand/retune/promote Hann or raw control/countmodule.
+This does not rule out all full-model alignment methods.
+Server+local partition/tuple/boxmath/stop/select/bootstrap/protocol passed;
+base/source/threecache/all10finite6474117paramweights/BN buffers checked.
+Separate-process native heads3456rows exact,independent Hann decode;
+sharedhead/taskloss,notindependentimagereplay. Producerstatechecks passed.
+ReportSHA95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612.
+Evidence reports/server28_window_training_20261102_v2/.
+All weights retained;GPUsidle38/38/51/37C,all250W. No val97/official/
+cleanup. Official maxima unchanged;full goal remains incomplete.
+
+### Reporting failure and corrected launch
 
 Initial654595 terminated at source-manifest generation: helper was imported
 from runtime/scripts,not root/scripts. Training/selection/audit caches
