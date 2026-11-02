@@ -1,0 +1,271 @@
+{
+  "status": "verified",
+  "report_sha256": "ef0e7aa20a83097e265e2603d3b4ffdb328bc4c0c6aa30f6fe1e23e458be6a2c",
+  "analyzer_sha256": "e9d8cba930780fa662bb4a2e38802c62d69b1d784000291da1ba1345705497fa",
+  "effects": {
+    "complete": {
+      "mean": 0.03232935657800871,
+      "ci95_low": 0.010974628053771385,
+      "ci95_high": 0.059320866689304065,
+      "sequences": 48,
+      "rows": 4560
+    },
+    "mixed_complete": {
+      "mean": 0.05799644487386376,
+      "ci95_low": 0.028699952651795212,
+      "ci95_high": 0.09285087100887994,
+      "sequences": 48,
+      "rows": 1829
+    },
+    "mixed_rgb_missing": {
+      "mean": 0.04769355245350334,
+      "ci95_low": 0.02174396106104636,
+      "ci95_high": 0.08173142331527534,
+      "sequences": 48,
+      "rows": 1373
+    },
+    "mixed_tir_missing": {
+      "mean": 0.038412748344071136,
+      "ci95_low": 0.01924010834000131,
+      "ci95_high": 0.06180360372923579,
+      "sequences": 48,
+      "rows": 1358
+    },
+    "mixed_missing": {
+      "mean": 0.042196404789283846,
+      "ci95_low": 0.022036173045117444,
+      "ci95_high": 0.06659524044203587,
+      "sequences": 48,
+      "rows": 2731
+    }
+  },
+  "advance": true,
+  "descriptive_iou": {
+    "complete": {
+      "native_iou": {
+        "mean": 0.765561694421379,
+        "ci95_low": 0.7039711889683896,
+        "ci95_high": 0.8158625689101,
+        "sequences": 48,
+        "rows": 4560
+      },
+      "shadow_iou": {
+        "mean": 0.7978910509993878,
+        "ci95_low": 0.7567532888792174,
+        "ci95_high": 0.8311178127187423,
+        "sequences": 48,
+        "rows": 4560
+      }
+    },
+    "mixed_complete": {
+      "native_iou": {
+        "mean": 0.7395128789962196,
+        "ci95_low": 0.6760723687019249,
+        "ci95_high": 0.7954717754089455,
+        "sequences": 48,
+        "rows": 1829
+      },
+      "shadow_iou": {
+        "mean": 0.7975093238700834,
+        "ci95_low": 0.7576214815239904,
+        "ci95_high": 0.8300305589413088,
+        "sequences": 48,
+        "rows": 1829
+      }
+    },
+    "mixed_rgb_missing": {
+      "native_iou": {
+        "mean": 0.6421404542875627,
+        "ci95_low": 0.5688237285340247,
+        "ci95_high": 0.7082875104965368,
+        "sequences": 48,
+        "rows": 1373
+      },
+      "shadow_iou": {
+        "mean": 0.6898340067410661,
+        "ci95_low": 0.6292039430249389,
+        "ci95_high": 0.7430726021534569,
+        "sequences": 48,
+        "rows": 1373
+      }
+    },
+    "mixed_tir_missing": {
+      "native_iou": {
+        "mean": 0.6798051554035899,
+        "ci95_low": 0.6077882489780334,
+        "ci95_high": 0.7444348740531204,
+        "sequences": 48,
+        "rows": 1358
+      },
+      "shadow_iou": {
+        "mean": 0.7182179037476608,
+        "ci95_low": 0.6602759572463682,
+        "ci95_high": 0.7699382196215083,
+        "sequences": 48,
+        "rows": 1358
+      }
+    },
+    "mixed_missing": {
+      "native_iou": {
+        "mean": 0.6599450618063929,
+        "ci95_low": 0.5932725636521841,
+        "ci95_high": 0.7198731710354538,
+        "sequences": 48,
+        "rows": 2731
+      },
+      "shadow_iou": {
+        "mean": 0.7021414665956768,
+        "ci95_low": 0.6530281502615418,
+        "ci95_high": 0.7470602093080171,
+        "sequences": 48,
+        "rows": 2731
+      }
+    }
+  },
+  "exploratory_prior_error_bins": {
+    "below_quarter": {
+      "native_iou": {
+        "mean": 0.71240525703693,
+        "ci95_low": 0.66552557129801,
+        "ci95_high": 0.7531159537180655,
+        "sequences": 48,
+        "rows": 2252
+      },
+      "shadow_iou": {
+        "mean": 0.7216473101160071,
+        "ci95_low": 0.6754029253738184,
+        "ci95_high": 0.7620152037033114,
+        "sequences": 48,
+        "rows": 2252
+      },
+      "gain": {
+        "mean": 0.009242053079077,
+        "ci95_low": 0.005548493412563205,
+        "ci95_high": 0.013195660454873859,
+        "sequences": 48,
+        "rows": 2252
+      }
+    },
+    "quarter_to_one": {
+      "native_iou": {
+        "mean": 0.4551487833693719,
+        "ci95_low": 0.37703477578998246,
+        "ci95_high": 0.5330534707424719,
+        "sequences": 32,
+        "rows": 245
+      },
+      "shadow_iou": {
+        "mean": 0.5661093067897889,
+        "ci95_low": 0.504856350987567,
+        "ci95_high": 0.6264719989158122,
+        "sequences": 32,
+        "rows": 245
+      },
+      "gain": {
+        "mean": 0.11096052342041683,
+        "ci95_low": 0.063402858568008,
+        "ci95_high": 0.16695830546255572,
+        "sequences": 32,
+        "rows": 245
+      }
+    },
+    "at_least_one": {
+      "native_iou": {
+        "mean": 0.19923458692143411,
+        "ci95_low": 0.06533204312618181,
+        "ci95_high": 0.36847372400051903,
+        "sequences": 12,
+        "rows": 234
+      },
+      "shadow_iou": {
+        "mean": 0.43941242253121454,
+        "ci95_low": 0.3344393260225517,
+        "ci95_high": 0.5571558397674088,
+        "sequences": 12,
+        "rows": 234
+      },
+      "gain": {
+        "mean": 0.24017783560978045,
+        "ci95_low": 0.15733938643956763,
+        "ci95_high": 0.3289802618901341,
+        "sequences": 12,
+        "rows": 234
+      }
+    }
+  },
+  "exploratory_nominal_crop_support": {
+    "no_nominal_overlap": {
+      "native_iou": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "sequences": 4,
+        "rows": 15
+      },
+      "shadow_iou": {
+        "mean": 0.4365044338821056,
+        "ci95_low": 0.252574514317576,
+        "ci95_high": 0.6633102708648347,
+        "sequences": 4,
+        "rows": 15
+      },
+      "gain": {
+        "mean": 0.4365044338821056,
+        "ci95_low": 0.252574514317576,
+        "ci95_high": 0.6633102708648347,
+        "sequences": 4,
+        "rows": 15
+      }
+    },
+    "partial_nominal_overlap": {
+      "native_iou": {
+        "mean": 0.004336857106402306,
+        "ci95_low": 0.0,
+        "ci95_high": 0.010398722177257833,
+        "sequences": 6,
+        "rows": 20
+      },
+      "shadow_iou": {
+        "mean": 0.36789063707533476,
+        "ci95_low": 0.1960446133695047,
+        "ci95_high": 0.5341803609943017,
+        "sequences": 6,
+        "rows": 20
+      },
+      "gain": {
+        "mean": 0.3635537799689325,
+        "ci95_low": 0.1944984469405906,
+        "ci95_high": 0.5255066467814972,
+        "sequences": 6,
+        "rows": 20
+      }
+    },
+    "full_nominal_overlap": {
+      "native_iou": {
+        "mean": 0.6622280331247098,
+        "ci95_low": 0.5968084745078729,
+        "ci95_high": 0.7209794905147537,
+        "sequences": 48,
+        "rows": 2696
+      },
+      "shadow_iou": {
+        "mean": 0.7020477278447291,
+        "ci95_low": 0.6528853820537565,
+        "ci95_high": 0.7469739097057817,
+        "sequences": 48,
+        "rows": 2696
+      },
+      "gain": {
+        "mean": 0.039819694720019415,
+        "ci95_low": 0.021298470960283606,
+        "ci95_high": 0.062867598218687,
+        "sequences": 48,
+        "rows": 2696
+      }
+    }
+  },
+  "nominal_crop_support_note": "Native factor4 rounded crop bounds before image padding; post-hoc description, not a promotion criterion.",
+  "server_files_checked": false,
+  "replay": null,
+  "limitation": "Previous-GT crop oracle under native histories; no trained policy or official scores. State/gradient absence assertions are producer checks."
+}

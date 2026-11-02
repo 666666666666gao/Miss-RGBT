@@ -2,6 +2,21 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/diagnose_causal_crop_exposure.py`,
+`scripts/launch_causal_crop_exposure.py`, `scripts/analyze_causal_crop_exposure.py`,
+`docs/CAUSAL_CROP_EXPOSURE_20261102.md`,
+`docs/CAUSAL_CROP_PRIOR_ART_20261102.md`: frozenE0 causal previous-GT crop
+diagnostic under native template histories;48fresh96frame fitting clips.
+GPU2PID804850 launched05:22:22Z,confirmed live09:15 at44/48clips.
+COMPLETED594.422s,9120rows,mixedmissing IoU delta+.042196
+CI[.022036,.066595];registered gate=true only to separate trainingprotocol.
+Server/local math/partition/exclusion/schedules/sham/source/base passed;
+firstclip190row native exact replay,directshadow maxboxerror0.
+Sharednetwork/crop;notfullreport replay. Temporarylocaledit reverted,
+serverrunner unchanged andhashmatches launch. Nooptimizer/val97/official/
+cleanup;officialscoresunchanged. Fullgoalunmet.
+Evidence `reports/server28_causal_crop_exposure_20261102/`.
+
 2026-11-02 UTC: `scripts/diagnose_joint_gradients.py`,
 `scripts/launch_joint_gradients.py`, `scripts/analyze_joint_gradients.py`,
 `docs/JOINT_GRADIENT_DIAGNOSTIC_20261102.md`: originalE0 train-mode full

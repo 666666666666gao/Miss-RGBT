@@ -1,5 +1,43 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Causal crop exposure diagnostic verified
+
+COMPLETED GPU2PID804850 in594.422s,48unique96frame fittingclips,
+9120pairedrows. PreviousGTcrop-native IoU mixedmissing+.042196
+CI[.022036,.066595],RGBmissing+.047694CI[.021744,.081731],
+TIRmissing+.038413CI[.019240,.061804],complete+.032329
+CI[.010975,.059321]. Advance=true only to separately registered matched
+image-training experiment;oracle unavailable at inference,not a module.
+Complete effect means not uniquely missing-modality evidence.
+Posthoc fullycontained2696/2731missingframes delta+.039820
+CI[.021298,.062868];shortclip phenomenon not just nominaltargetescape.
+Server/local savedboxmath/nativehistory/exclusion/partition/schedule/
+sham/bootstrap/hash checks passed;actualGT/visibility/source/base checked.
+Separate firstclip190row native replay exact,direct shadow inversecrop
+decode maxboxerror0;sharednetwork/crop,notfullreport imagereplay.
+State/absent.grad assertions from producer. Temporary localrunner edit
+reverted;finalsource/server/launch all ae3e517c90085b5e371f7dd99ec16041f0cb07ecd423dd7ffc862d7f7f7b7c53.
+ReportSHAef0e7aa20a83097e265e2603d3b4ffdb328bc4c0c6aa30f6fe1e23e458be6a2c.
+Nooptimizer/val97/official/cleanup;weightskept,officialscoresunchanged.
+Next: matched fullimage training nativecrop versus causalpredictioncrop
+with fixed capacity,completeprotection,train-onlydevelopment/audit and
+measuredbatch/LR/finalfive. Notyet registered/launched. Fullgoalunmet.
+
+GPU2PID804850 launched05:22:22Z; confirmedlive03:19 at16/48clips.
+48fresh96frame train882 fitting clips, complete andIID mixed native
+trajectories. Each shadow call changes only previous prediction crop to
+previousGT; native template histories retained, shadow updates discarded.
+First3frame native shams and firstframe initialization parity asserted.
+OriginalE0 andavailabilitywrapper weight digests equal. Nooptimizer,
+val97,official data or cleanup. Batch1 causal inference;~2206MiB/60C/250W.
+RevisedETA~10min total;observe180-300s near completion.
+Protocol docs/CAUSAL_CROP_EXPOSURE_20261102.md; output
+reports/server28_causal_crop_exposure_20261102/.
+Advance criterion: mixedmissing sequence-macro oracle IoU delta>=.02,
+lower95CI>0,all48sequences. Pass only supports separately registered
+matched image-training experiment, not deployment/module/official gains.
+Launch history above superseded by completed verification.
+
 ## 2026-11-02 Full-parameter joint-task gradients verified
 
 GPU2PID768965 completed37.670s,64fresh train882 fittingtuples,
