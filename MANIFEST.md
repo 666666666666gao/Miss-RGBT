@@ -2,6 +2,14 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/diagnose_absent_search_kv.py`,
+`scripts/launch_absent_search_kv.py`, `scripts/analyze_absent_search_kv.py`,
+`docs/ABSENT_SEARCH_KV_DIAGNOSTIC_20261102.md`, and
+`reports/server28_absent_search_kv_20261102_v2/` record a completed frozen
+train882 attention K/V diagnostic. Independent saved-evidence verification
+passed; the registered improvement gate failed in both missing-search
+directions. No training, official evaluation, or module promotion.
+
 2026-11-02 UTC+08: `scripts/probe_modality_heads.py`,
 `scripts/launch_modality_heads.py`, `scripts/analyze_modality_heads.py`,
 `docs/MODALITY_HEAD_PILOT_20261102.md`, and

@@ -2758,3 +2758,26 @@ reports/server28_modality_heads_20261102/. All weights preserved,no val97
 or official runs,official scores unchanged. Full goal remains incomplete.
 Do not keep testing minor head variants on this audit cohort; next work
 must test a distinct evidence-backed representation or temporal mechanism.
+
+## 2026-11-02 - Absent-search attention K/V diagnostic
+
+Completed frozen E0 train882 diagnostic on server28 GPU2, PID65200, in
+80.864 seconds. The one-batch custom attention sham matched native output
+exactly. Corrected full run used128 fresh frame tuples/113 sequences and
+1152 rows across nine dynamic-template/search states. Independent analyzer
+verified tuple exclusions, source hashes, all 1152 sham parity checks,
+384 complete-search parity checks, report digest, and bootstrap arithmetic.
+No optimizer, model-state change, or gradients.
+
+Masking current missing-search tokens as attention keys/values reduced
+sequence-macro IoU in both missing directions: RGB missing -0.182255
+95% CI[-0.221629,-0.143620]; TIR missing -0.062795
+95% CI[-0.088324,-0.038894]. Registered gate failed. Close this hypothesis
+on this cohort; do not train or official-evaluate it. The first full attempt
+failed on CPU target/GPU prediction placement; its log and launch receipts
+are retained and the corrected run completed. No val97 or official data.
+Full protocol/results: `docs/ABSENT_SEARCH_KV_DIAGNOSTIC_20261102.md`;
+report: `reports/server28_absent_search_kv_20261102_v2/`.
+The overall objective remains incomplete: RGBT234-Miss targets and the
+approximately +2 complete-input gains are unmet; no three paper modules
+have been validated.
