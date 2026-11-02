@@ -2,6 +2,16 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/train_causal_crop_exposure.py`,
+`scripts/launch_causal_crop_training.py`,`scripts/analyze_causal_crop_training.py`,
+`docs/CAUSAL_CROP_TRAINING_20261102.md`: matched full-image training,
+305accepted imagepairs/32fresh96framefittingclips,8dev48frameclips,
+16delayedaudit96frameclips. GPU2PID877938 launched05:50:24Z,live05:12,
+nativeepoch1completed,batch32/LR4e-5/9updates,23350MiB/72C/250W.
+NoKD/patchdrop,bothfulloriginalparameters,samecompletebranch/different
+auxiliarycrop. Final5train-onlyselection;notofficialmetrics/module.
+Resultpending,analyzersyntaxcheckedonly.
+
 2026-11-02 UTC: `scripts/diagnose_causal_crop_exposure.py`,
 `scripts/launch_causal_crop_exposure.py`, `scripts/analyze_causal_crop_exposure.py`,
 `docs/CAUSAL_CROP_EXPOSURE_20261102.md`,

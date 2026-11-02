@@ -1,5 +1,25 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Matched full-image crop training launched
+
+Previous causal-crop diagnostic was verified progress. NewGPU2PID877938
+launched05:50:24Z,confirmedlive05:12/first nativeepoch1 completed62.687s.
+32fresh96frame fittingclips,305accepted of352candidates,pairednative
+GTjitter/predictioncrop images andsamefrozenE0 templatehistory.
+Fulloriginal103Mparameter network retrained fromimage tensors,notfeature
+caches. Same completebranch;auxiliarycrop differs. Both noKD/patchdrop.
+Batch32/LR4e-5,backbone.1,9updates/epoch,17droppedremainder;observed
+23350MiB/72C/250W. Fullimagestepbatch4 profilepeak3514857472bytes.
+Native/casualarms sequential,max12/min8,LRdrop5,patience3 on8development
+48frame nativecomplete/mixed trajectories;final5 selectiononlydevelopment.
+Delayed16audit96frame clips,E0/native/causal nativeclosedloop,train882
+705/88/89partitions;no val97/test/official masks. No officialscores yet.
+Protocol docs/CAUSAL_CROP_TRAINING_20261102.md;output
+reports/server28_causal_crop_training_20261102/. Analyzerdeployed,
+syntaxchecked,notyetresultverified. ETA20-30min totalfromactualepoch.
+Keep original/allfinal5weights. Ordinaryofflineexposurecontrol,
+notonlinepolicyaggregation orvalidatedmodule. Fullgoal remains unmet.
+
 ## 2026-11-02 Causal crop exposure diagnostic verified
 
 COMPLETED GPU2PID804850 in594.422s,48unique96frame fittingclips,
