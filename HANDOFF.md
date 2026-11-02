@@ -1,5 +1,22 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Full-parameter joint-task gradients verified
+
+GPU2PID768965 completed37.670s,64fresh train882 fittingtuples,
+16batches4,3searches,trainDropPath/allBN frozen,native availability+
+patchmasks. Complete versus missing+.1KD raw parameter cosine:
+mean .201456,batchbootstrap95[.160851,.248108],negative0/16.
+Registered gatefalse;do not launch gradient projection/countmodule.
+Does not rule out later conflicts,withinbatch cancellation or AdamW effects.
+Server/local saved Gram additivity/cosines/finite values/partition/
+exacttupleexclusion/masks/bootstrap/source/base/protocol checks passed.
+No raw gradients/images saved,no neural replay;state/absent.grad checks
+are producer assertions. No optimizer,val97,official evaluation or cleanup.
+ReportSHAb0bf4d5fdd0df3e6d98b9e7b6a5deceb40b9a7ff82c6463fb0efc9d5242b7e41.
+Protocol docs/JOINT_GRADIENT_DIAGNOSTIC_20261102.md,evidence
+reports/server28_joint_gradients_20261102/. Official scores unchanged.
+Complete+2,RGBT234-Miss and three validated modules remain unmet.
+
 ## 2026-11-02 Complete-teacher gradient diagnostic verified
 
 FrozenE0GPU2PID728997 completed55.655s,128fresh train882 fitting tuples/

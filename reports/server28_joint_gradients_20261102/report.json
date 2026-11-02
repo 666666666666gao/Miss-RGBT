@@ -1,0 +1,4865 @@
+{
+  "status": "complete",
+  "pid": 768965,
+  "seed": 56101,
+  "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "fitting_names": [
+    "motocross",
+    "carturn",
+    "bluegirl",
+    "bike2",
+    "comebike",
+    "girlthroughtrees",
+    "leftcup",
+    "blkcarcome155",
+    "11runthree",
+    "boybehindtrees",
+    "farwhitecarturn",
+    "blackpantsman",
+    "basketballup",
+    "rightboywitjbag",
+    "nightboy",
+    "5runone",
+    "1whiteteacher",
+    "outerfoam",
+    "gonemoto_ab",
+    "rainblackcarcome",
+    "orangegirlwithumbrella",
+    "runninggreenboyafterwhite",
+    "motocomenight",
+    "girlalone",
+    "leftgirl1299",
+    "lightcarstart",
+    "takeoutmoto",
+    "carfarstart",
+    "stronggirl",
+    "motoprecede",
+    "boyinsnowfield_inf_white",
+    "ab_minibusstops",
+    "boycome",
+    "whitecarback",
+    "bouheadupstream",
+    "bluegirlriding",
+    "blackdownball",
+    "2runfour",
+    "agirl_1202",
+    "blkman2trees",
+    "boybetween2blkcar",
+    "motowithblack",
+    "bikecoming",
+    "leftbasketball",
+    "2runtwo",
+    "whitecar70",
+    "boyrightrubbish",
+    "3rdboy",
+    "blackboypushbike",
+    "rightgirlbikecome",
+    "notebook-gai",
+    "2boyscome",
+    "rightblkgirl",
+    "raincarstop",
+    "carfromnorth2",
+    "leftgirlchecking2",
+    "whiteboycome",
+    "whitecarturn",
+    "whitedown",
+    "boyindarkwithgirl",
+    "woman",
+    "threepeople",
+    "girlshakeinrain",
+    "2girlsridebikes",
+    "motoman",
+    "girlsheadwithhat",
+    "pinkbikeboy",
+    "blueboycome",
+    "girlwithredhat",
+    "girltakebag",
+    "manglass1",
+    "blkboywithblkbag",
+    "bolster_infwhite",
+    "Amotoinrain150",
+    "e-tribike",
+    "redshirtman",
+    "the4thboy",
+    "nightrightboy1",
+    "girlrightcomein",
+    "left11",
+    "2girlgoleft",
+    "mototurn102",
+    "redgirlafterwhitecar",
+    "boycomingwithumbrella",
+    "yellowgirlwithbowl",
+    "yellowtruck",
+    "leftlastgirl-yxb",
+    "bikecoming176",
+    "whiteshoesleftbottle-gai",
+    "redboywithblkumbrella",
+    "girlruns2right",
+    "4one",
+    "5runfour",
+    "raincarstop2",
+    "boyleft",
+    "blueboyopenbike",
+    "rightgreenboy",
+    "rightwhiteboy",
+    "girlback",
+    "bigbus",
+    "downmoto",
+    "girl",
+    "lover_1202",
+    "blkgirlfat_quezhen",
+    "firstleftrunning",
+    "blackcargo",
+    "mototake2boys123",
+    "whitebikebehind2",
+    "besom6",
+    "carbesidesmoto",
+    "2runfive",
+    "AQboywithumbrella415",
+    "2ndgirlmove",
+    "midgirl",
+    "maninfrontofbus",
+    "openthisexersicebook",
+    "motocometurn",
+    "leftboyleftblkbackpack",
+    "basketball",
+    "boyinsnowfield4",
+    "motofromdark",
+    "the2ndboyunderbasket",
+    "motocome2left",
+    "boyshorts",
+    "3whitemen",
+    "carcomeonlight2",
+    "boyinsnowfield2",
+    "ajiandan_catwhite",
+    "blkmaninrain",
+    "bikeboystrong",
+    "othersideoftheriver_1227",
+    "fatmancome",
+    "takeoutmototurn",
+    "browncar2east",
+    "rightholdball",
+    "whitecarturn85",
+    "redlittleboy",
+    "boy2_1227",
+    "moto2trees",
+    "4three",
+    "fardarkboyleftthe1stgirl",
+    "midpinkblkglasscup",
+    "carturnleft",
+    "ab_motoinrain",
+    "blackphoneboy",
+    "manwait1",
+    "ninboy-gai",
+    "girlgoleft",
+    "e-tricycle",
+    "stubesideswhitecar",
+    "blackcar",
+    "moto2north2",
+    "whiteshirt",
+    "5two",
+    "meituanbike2",
+    "boyleave",
+    "manafetrtrees",
+    "boytakebox",
+    "leftboy-gai",
+    "nearstrongboy",
+    "leftmirror2",
+    "foamboardatlefthand",
+    "blkteacher`shead",
+    "yellowumbrellagirl",
+    "rightboyleader",
+    "easy_rightblkboywithgirl",
+    "trashtruck",
+    "man_head",
+    "twopeople",
+    "rightboyatwindow",
+    "blackcar131",
+    "whiteboy1_quezhen",
+    "boy_0109",
+    "blackbagbike",
+    "2sisiters",
+    "boyplayingphone366",
+    "7two",
+    "righthunchblack",
+    "basketballshooting",
+    "boyputtinghandup",
+    "redgirl",
+    "moto2ground",
+    "moto2trees2",
+    "left3rdrunwaygirlbesideswhitepants",
+    "boycoming",
+    "whitegirl",
+    "carstarts",
+    "whiteman",
+    "rightmirrorbackwards",
+    "lonelyman",
+    "doginrain",
+    "blkboywithumbrella",
+    "boybikeblueumbrella",
+    "shunfengtribike",
+    "pingpongpad2",
+    "whitehatgirl`sheadleftwhiteumbrella",
+    "cycleman",
+    "leftaloneboy-gai",
+    "suitcase",
+    "firstrightflagcoming",
+    "girloutreading",
+    "backpackboyhead",
+    "bikefromwest",
+    "pinkgirl",
+    "strongboy`head",
+    "whitecat",
+    "redgirlsits",
+    "girlintrees",
+    "7runtwo",
+    "whiteboyphone",
+    "2boysbesidesblkcar",
+    "manatwhiteright",
+    "boywithwhitebackpack",
+    "minibus152",
+    "2runone",
+    "whiteboyback",
+    "blackof4bikes",
+    "boytoleft_inf_white",
+    "Amotowithbluetop",
+    "manfromcar",
+    "bolster",
+    "besom5-sq",
+    "rightshiningmirror",
+    "singleboywalking",
+    "right4thboy",
+    "rightbottle-gai",
+    "manwalkincars",
+    "leftconerbattle-gai",
+    "agirl1_1202",
+    "blackridebike2",
+    "ab_redboyatbike",
+    "3blackboys",
+    "minibusback",
+    "boytakepath",
+    "cameraman_1202",
+    "stripeman",
+    "whitecarafterbike",
+    "mototurntous",
+    "schoolofeconomics-yxb",
+    "blkcarcomeinrain",
+    "folddenumbrellainhand",
+    "occludedmoto",
+    "greenboyafterwhite",
+    "blktakeoutmoto",
+    "4two",
+    "rightof2boys",
+    "fogboyscoming1_quezhen_inf_heiying",
+    "bikeboygo",
+    "blkgirlfromcolumn1_quezhen",
+    "downwhite_1227",
+    "4boysbesidesblkcar",
+    "carfromnorth",
+    "redwhitegirl",
+    "greenfaceback",
+    "pingpongball",
+    "blackthree_1227",
+    "blkboywithwhitebackpack",
+    "leftshortgirl",
+    "blackcar126",
+    "blkbikecomes",
+    "boyrightthelightbrown",
+    "yellowexcesicebook",
+    "rightgirlplayingphone",
+    "whitewoman",
+    "aboyleft_1202",
+    "peoplefromright_0109",
+    "bikeout",
+    "blackdresswithwhitefar",
+    "Ahercarstart",
+    "blkboyback636",
+    "blkboywithglasses",
+    "tallboyblack",
+    "aboy_1202",
+    "rightbottle2-gai",
+    "glassesboyhead",
+    "car",
+    "manbesideslight",
+    "bike2trees86",
+    "mototurnleft",
+    "blacktallman",
+    "blkboywillstand",
+    "greenrightblack",
+    "pinkgirl285",
+    "boyright",
+    "leftboy",
+    "whiteboy395",
+    "right2ndblkboy",
+    "easy_runninggirls",
+    "bus2north",
+    "boyrideoutandin",
+    "lightcarfromnorth",
+    "whitegirlundertheumbrella",
+    "4runeight",
+    "1boygo",
+    "whiteblcakwoman",
+    "whitecarfromnorth",
+    "Awhiteleftbike",
+    "rightboywithbluebackpack",
+    "lastof4boys",
+    "bikeblkbag",
+    "blackbaggirl",
+    "Aab_whitecarturn",
+    "blkcarstart",
+    "boywithshorts",
+    "carclosedoor",
+    "boybesidesblkcarrunning",
+    "minibus125",
+    "bluebike",
+    "blkcarinrain107",
+    "openningumbrella",
+    "motolightturnright",
+    "2ndbus",
+    "bluemoto",
+    "moto2",
+    "whitesuvstop",
+    "lightredboy",
+    "blkboyatbike",
+    "whitebikebehind172",
+    "boyrunning",
+    "motocominginlight",
+    "ajiandan_boyleft2right",
+    "4four",
+    "rightgirlwithumbrella",
+    "AQwhiteminibus",
+    "whiteboy242",
+    "takeoutmanleave",
+    "left_two_0109",
+    "boyshead",
+    "righthand`sfoam",
+    "leftdrillmasterstandsundertree",
+    "umbrellainyellowhand",
+    "boyplayingphone",
+    "blklittlebag",
+    "girlinfrontofcars",
+    "2gointrees",
+    "nikeatbike",
+    "bord",
+    "bikeboycome",
+    "bluecar",
+    "7runthree",
+    "boywithblkbackpack",
+    "11righttwoboy",
+    "orange",
+    "blkridesbike",
+    "blackaftertrees",
+    "blkboycoming",
+    "whiteboyatbike",
+    "ab_mototurn",
+    "ab_leftmirrordancing",
+    "manglass2",
+    "whitecarcomes",
+    "rightredboy954",
+    "basketballatboysrighthand",
+    "yellowgirl",
+    "umbrellainblack",
+    "darkredcarturn",
+    "Take_an_umbrella_1202",
+    "bikefromnorth2",
+    "right2ndgirl",
+    "1handsth",
+    "whiteboywait",
+    "left4throwboy",
+    "manaftercars",
+    "boyunderleftbar",
+    "rightof2cominggirls",
+    "whitecarstart",
+    "redup",
+    "trolleywith2boxes1_quezhen",
+    "whitemotoout",
+    "basketballshooting2",
+    "boysumbrella3",
+    "rightofth3boys",
+    "2boyscome245",
+    "1strowleft3rdgirl",
+    "redbaginbike",
+    "dogunderthelamp",
+    "schoolbus",
+    "sitleftboy",
+    "AQtaxi",
+    "whitecarturn178",
+    "ajiandan_blkdog",
+    "bluemanatbike",
+    "lastblkboy1_quezhen",
+    "boyatbluegirlleft",
+    "boyfromdark2",
+    "camonflageatbike",
+    "girlbesidesboy",
+    "blkmoto",
+    "leftgirl",
+    "manopendoor",
+    "ab_hyalinepaperatground",
+    "take-out-motocoming",
+    "girlleft2right1",
+    "moto2north101",
+    "motocome122",
+    "shotmaker",
+    "boybikewithbag",
+    "leftlastboy-sq",
+    "whiteboyup",
+    "boy1227",
+    "etrike",
+    "rightstripeblack",
+    "elector_0115",
+    "5runthree",
+    "whitacatfrombush",
+    "outer2leftmirrorback",
+    "car2north2",
+    "womanongrass",
+    "skirtwoman",
+    "boywithshorts2",
+    "rightfirstgirl-gai",
+    "ab_rightcupcoming_infwhite_quezhen",
+    "bluegirlcoming",
+    "left_first_0109",
+    "biked",
+    "whiteatright",
+    "lastgirl-qzc",
+    "carlight",
+    "boygointrees",
+    "4thgirl",
+    "nearestleftblack",
+    "umbrellabikegirl",
+    "bus",
+    "blackboy256",
+    "rightofthe4girls",
+    "redcarturn",
+    "boysback",
+    "manaftertrees",
+    "redmotocome",
+    "basketballbyNo_9boyplaying",
+    "mototake2boys",
+    "blackcarturn175",
+    "besom4",
+    "whitegirl_0115",
+    "manfromcar302",
+    "girlpickboy",
+    "drillmaster",
+    "boy",
+    "biketurn",
+    "boyalone",
+    "darkleftboy2left",
+    "2outdark",
+    "greyboysit1_quezhen",
+    "boyshead2",
+    "swan2_0109",
+    "left_leader",
+    "blkboygoleft",
+    "carstart2east",
+    "motowithtopcoming",
+    "blkboy198",
+    "theleftboytakingball",
+    "girlatleft",
+    "manupstairs",
+    "man",
+    "collegeofmaterial-gai",
+    "basketboyblack",
+    "rainysuitcase",
+    "ab_leftfoam",
+    "whiteboycome598",
+    "rightumbrella_quezhen",
+    "blkboyonleft",
+    "lastrowrightboy",
+    "blkumbrella",
+    "redumbrellagirlcome",
+    "whitecargo",
+    "checkedshirt",
+    "AQraincarturn2",
+    "5runtwo",
+    "ab_girlrideintrees",
+    "bikefromnorth257",
+    "blackmanleft",
+    "manstarttreecar",
+    "blackruning",
+    "leftblkboyunderbasketballhoop",
+    "manphone",
+    "treeboy",
+    "farredcar",
+    "ab_boyfromtrees",
+    "mirrorfront",
+    "jeepleave",
+    "ab_catescapes",
+    "silvercarcome",
+    "whitecarstart126",
+    "jeepblack",
+    "takeoutman",
+    "leftwhiteblack",
+    "rightbattle",
+    "elector_1227",
+    "tallwhiteboy",
+    "1rowleft2ndgirl",
+    "leftmen-chong1",
+    "man2startmoto",
+    "leftmirrorshining",
+    "boyalonecoming",
+    "bluelittletruck",
+    "boyride2trees",
+    "boyscome",
+    "moto78",
+    "girlaftertree",
+    "rightboystand",
+    "boysumbrella2",
+    "boytakingcamera",
+    "midflag-qzc",
+    "rightboy`shead",
+    "left3boycoming",
+    "girlblack",
+    "rightblkboy",
+    "midblkbike",
+    "3bike2",
+    "whitecarcome",
+    "girlwithumbrella",
+    "runningwhiteboy",
+    "ab_motocometurn",
+    "6walkgirl",
+    "blkcarcome115",
+    "whiteaftertree",
+    "leftbrowngirlfat",
+    "basketman",
+    "mototurn",
+    "whitewoman_1202",
+    "whiteboybike",
+    "mancarstart",
+    "rightblkboy188",
+    "dogouttrees",
+    "2ndcarcome",
+    "motobike",
+    "rainywhitecar",
+    "yellowcar",
+    "whitemoto",
+    "1strowright1stboy",
+    "1rightboy",
+    "pingpongball2",
+    "leftlightsweaterboy",
+    "left3rdgirlbesideswhitepants",
+    "man_with_black_clothes3",
+    "whitecarturnright248",
+    "rightblkboy2",
+    "truckcoming",
+    "trimototurn",
+    "blackturnr",
+    "greenboy438",
+    "cargirl2",
+    "girlfoldumbrella",
+    "bus2",
+    "biketonorth",
+    "2boysup",
+    "tallboyNumber_9",
+    "waiterontheothersideofwindow",
+    "leftorangeboy",
+    "whitebikebehind",
+    "man_0109",
+    "frontmirror",
+    "unbrellainbike",
+    "AQmidof3boys",
+    "whitecarleave198",
+    "greenleftbackblack",
+    "The_girl_with_the_cup_1202",
+    "mototurn134",
+    "lightcarstop",
+    "girlcoat",
+    "Aredtopmoto",
+    "ab_bikeboycoming",
+    "whitecarcome192",
+    "the4thwhiteboy",
+    "leftgirlchecking",
+    "manaftercar",
+    "rightbluegirl",
+    "Abluemotoinrain",
+    "whitegirlcoming",
+    "agirl",
+    "manaftercar114",
+    "sisterswithbags",
+    "rightdrillmasterunderthebar",
+    "midwhitegirl",
+    "AQwhitetruck",
+    "umbregirl",
+    "1righttwogreen",
+    "redbackpackgirl",
+    "dogforward",
+    "ab_rightmirror",
+    "car2north",
+    "whiteaftertrees",
+    "Awoman2openthecardoor",
+    "abeauty_1202",
+    "blueboywalking",
+    "rightboybesidesredcar",
+    "carstart189",
+    "1strow3rdboymid",
+    "ab_pingpongball3",
+    "blkcarcome",
+    "whiteskirtgirl",
+    "catbrown",
+    "leftclosedexersicebook",
+    "blkmototurn",
+    "whitegirl2_0115",
+    "bowblkboy1-quezhen",
+    "girltakingmoto",
+    "blkcargo",
+    "10crosswhite",
+    "5one",
+    "blackcarcoming",
+    "boyleft161",
+    "The_one_on_the_left_in_black_1202",
+    "large2-gai",
+    "browncarturn",
+    "twoperpson_1202",
+    "boytakesuicase",
+    "rightgreen",
+    "motolight",
+    "whitegirl1227",
+    "twoleft",
+    "whitegirl209",
+    "camera_1202",
+    "umbrellainred",
+    "girlatwindow",
+    "rightblkgirlrunning",
+    "abreastinnerboy",
+    "motoslow",
+    "bikewithbag",
+    "4sisters",
+    "easy_whiterignt2left",
+    "carleaves",
+    "blueboy85",
+    "dogfollowinggirl",
+    "yellowatright",
+    "firstboythroughtrees",
+    "whitecarstart183",
+    "right2ndfarboytakinglight2left",
+    "blkcar2north",
+    "carleaveturnleft",
+    "mengointrees",
+    "1strowright2ndgirl",
+    "bookatfloor",
+    "4runone",
+    "boysumbrella",
+    "womanaroundcar",
+    "whiteof2boys",
+    "goaftrtrees",
+    "whiteboy-gai",
+    "womanopendoor",
+    "Ablkboybike77",
+    "two_1227",
+    "rightredboy",
+    "rightwhite_1227",
+    "huggirl",
+    "mancrossroad",
+    "easy_4women",
+    "lefthyalinepaper",
+    "2ndbikecoming",
+    "boysitbike",
+    "foundsecondpeople_0109",
+    "boystandinglefttree",
+    "the4thboystandby",
+    "boybackpack",
+    "Blue_in_line_1202",
+    "redcar",
+    "biketurnleft2",
+    "midtallboycoming",
+    "rightwhitegirl",
+    "belowyellow-gai",
+    "rightbottle",
+    "boyumbrella4",
+    "pingpongpad",
+    "ab_moto2north0",
+    "5numone",
+    "manatmoto",
+    "10rightboy",
+    "mirroratleft",
+    "rightexercisebookwillfly",
+    "9whitegirl",
+    "girlbikeinlight",
+    "girltakingblkumbrella",
+    "ab_shorthairgirlbike",
+    "rightbiggreenboy",
+    "motowithtop",
+    "rainyboyaftertrees",
+    "takeoutmoto521",
+    "leftredcup",
+    "girlleaveboys",
+    "guardatbike_ab",
+    "blkgirlbike",
+    "runningwhiteboy249",
+    "womanstartbike",
+    "blkbagontheleftgirl",
+    "blkboybike",
+    "boybehindtrees2",
+    "boy2_0115",
+    "leftgirlafterlamppost",
+    "boyof2leaders",
+    "lovers_1227",
+    "folderinrighthand",
+    "toulan-ly",
+    "meituanbike",
+    "blkboywithbluebag",
+    "leftlastgirl2",
+    "blkboylefttheredbagboy",
+    "motocoming",
+    "comecar",
+    "2ndboyfarintheforest2right",
+    "whitecatjump",
+    "darkgiratbike",
+    "boy_0115",
+    "small2-gai",
+    "motoinrain",
+    "battlerightblack"
+  ],
+  "input_manifest": [
+    {
+      "identity": {
+        "sequence": "whitebikebehind2",
+        "template_frames": [
+          1,
+          0
+        ],
+        "search_frames": [
+          10,
+          10,
+          21
+        ]
+      },
+      "tensors_sha256": "fddd576fcbf9b3c37f5c2f61d90205c1f89e71fa6d5ad344993c9842a837c7fd"
+    },
+    {
+      "identity": {
+        "sequence": "womanaroundcar",
+        "template_frames": [
+          239,
+          227
+        ],
+        "search_frames": [
+          323,
+          330,
+          319
+        ]
+      },
+      "tensors_sha256": "1c367e01030fdb41ae5c6dfb1d0b4c111a3f3e62e6a5ab7c99db77713dbb5ede"
+    },
+    {
+      "identity": {
+        "sequence": "redboywithblkumbrella",
+        "template_frames": [
+          24,
+          22
+        ],
+        "search_frames": [
+          148,
+          92,
+          79
+        ]
+      },
+      "tensors_sha256": "94564729aba002f0f91675ec0776b9ae5bf6e72e4ecdbcad200deb7528d4b229"
+    },
+    {
+      "identity": {
+        "sequence": "AQmidof3boys",
+        "template_frames": [
+          112,
+          5
+        ],
+        "search_frames": [
+          122,
+          133,
+          118
+        ]
+      },
+      "tensors_sha256": "933f1c6aa54b7cdf2596a61dbef41a9d5a19a8f306c3584f7d756ebd68d1759b"
+    },
+    {
+      "identity": {
+        "sequence": "pingpongpad",
+        "template_frames": [
+          79,
+          11
+        ],
+        "search_frames": [
+          232,
+          184,
+          235
+        ]
+      },
+      "tensors_sha256": "8e94a5c3145bd51040a8e5cf79c7b076bfc8f426c992c80c8d7956852caa1a06"
+    },
+    {
+      "identity": {
+        "sequence": "rightredboy",
+        "template_frames": [
+          178,
+          37
+        ],
+        "search_frames": [
+          313,
+          304,
+          276
+        ]
+      },
+      "tensors_sha256": "cbf5662b7980759d88d4199becefe0fffd5263fbfdc2dc4be216a6ebe9e2db81"
+    },
+    {
+      "identity": {
+        "sequence": "7runthree",
+        "template_frames": [
+          11,
+          2
+        ],
+        "search_frames": [
+          28,
+          48,
+          44
+        ]
+      },
+      "tensors_sha256": "e8e29ee109497ce58b419b7a154716964e9e04ec8c0751676ec507ff91e04448"
+    },
+    {
+      "identity": {
+        "sequence": "whitegirlundertheumbrella",
+        "template_frames": [
+          263,
+          158
+        ],
+        "search_frames": [
+          266,
+          264,
+          272
+        ]
+      },
+      "tensors_sha256": "3a5f407e4d2f5b3fd6a332e11365d3302ca56860a99b29e9021b9fa2acefa9cc"
+    },
+    {
+      "identity": {
+        "sequence": "carturn",
+        "template_frames": [
+          134,
+          88
+        ],
+        "search_frames": [
+          146,
+          152,
+          157
+        ]
+      },
+      "tensors_sha256": "0ced349711dccc28f4adadf5087beb3b1b201493dd5146acbc39299e29412bef"
+    },
+    {
+      "identity": {
+        "sequence": "motofromdark",
+        "template_frames": [
+          25,
+          6
+        ],
+        "search_frames": [
+          59,
+          65,
+          39
+        ]
+      },
+      "tensors_sha256": "276d341fc08f6f52e1d450e871b2b8c2614a29f7cab06d3f28b5572bae582e11"
+    },
+    {
+      "identity": {
+        "sequence": "maninfrontofbus",
+        "template_frames": [
+          134,
+          49
+        ],
+        "search_frames": [
+          137,
+          137,
+          136
+        ]
+      },
+      "tensors_sha256": "e77f07007ea443e45925509b7cbbea5a60f47c3fa9d38ca6e5d03c21ba88406b"
+    },
+    {
+      "identity": {
+        "sequence": "cameraman_1202",
+        "template_frames": [
+          190,
+          71
+        ],
+        "search_frames": [
+          224,
+          211,
+          248
+        ]
+      },
+      "tensors_sha256": "c33e78aeca13290494b21ad28354966a8112a4aacc8ed5acc79a0b83dffe2e68"
+    },
+    {
+      "identity": {
+        "sequence": "lonelyman",
+        "template_frames": [
+          19,
+          14
+        ],
+        "search_frames": [
+          47,
+          65,
+          148
+        ]
+      },
+      "tensors_sha256": "f1ddb2d9e53fd19242d9d219880de0cb989a8a04b4621c1411ca92557a078676"
+    },
+    {
+      "identity": {
+        "sequence": "redboywithblkumbrella",
+        "template_frames": [
+          130,
+          113
+        ],
+        "search_frames": [
+          138,
+          143,
+          147
+        ]
+      },
+      "tensors_sha256": "24c68ad66e5624ad3d8fc6723c1f227d82375eb9d841ced56b4de6b6c30752a4"
+    },
+    {
+      "identity": {
+        "sequence": "leftlastboy-sq",
+        "template_frames": [
+          387,
+          206
+        ],
+        "search_frames": [
+          393,
+          560,
+          423
+        ]
+      },
+      "tensors_sha256": "49e6d149868953c529d24b82de87220382251ac1c796a76efada3eb5fe422d97"
+    },
+    {
+      "identity": {
+        "sequence": "midpinkblkglasscup",
+        "template_frames": [
+          657,
+          550
+        ],
+        "search_frames": [
+          845,
+          774,
+          830
+        ]
+      },
+      "tensors_sha256": "08ffbbca1cfbddbedf4b94162242808ae0f2541998e0886c598ad2707967b19b"
+    },
+    {
+      "identity": {
+        "sequence": "schoolofeconomics-yxb",
+        "template_frames": [
+          549,
+          464
+        ],
+        "search_frames": [
+          701,
+          648,
+          666
+        ]
+      },
+      "tensors_sha256": "fbed990627df59d1a078d50716022d5ae224153bbcf2f525fa3923132f5fd693"
+    },
+    {
+      "identity": {
+        "sequence": "bikeout",
+        "template_frames": [
+          194,
+          64
+        ],
+        "search_frames": [
+          225,
+          235,
+          208
+        ]
+      },
+      "tensors_sha256": "a12115070e1d184f112430bcd7ca7a9c3cb4e71ba13c878d8d5c54e53e98ce67"
+    },
+    {
+      "identity": {
+        "sequence": "lightcarstart",
+        "template_frames": [
+          80,
+          38
+        ],
+        "search_frames": [
+          91,
+          124,
+          123
+        ]
+      },
+      "tensors_sha256": "391f96b4b64c55c526568b78a6403f79d27ff6607e215704c729e171b5caef01"
+    },
+    {
+      "identity": {
+        "sequence": "boyshorts",
+        "template_frames": [
+          13,
+          7
+        ],
+        "search_frames": [
+          118,
+          75,
+          183
+        ]
+      },
+      "tensors_sha256": "01d99854911e21d853ccec473e59ea1bffd9be8e9f9463bab7b38dd1b9600cdc"
+    },
+    {
+      "identity": {
+        "sequence": "boysumbrella",
+        "template_frames": [
+          360,
+          340
+        ],
+        "search_frames": [
+          439,
+          380,
+          393
+        ]
+      },
+      "tensors_sha256": "fffdcc025b095e648072c8c47220099aff3c43a3705cf4ffac286335a6c3bc14"
+    },
+    {
+      "identity": {
+        "sequence": "boy1227",
+        "template_frames": [
+          163,
+          31
+        ],
+        "search_frames": [
+          214,
+          238,
+          172
+        ]
+      },
+      "tensors_sha256": "b361941fbe98e9f75d723e1df2c7d14cddf5d5da770df59c1eaeb11535dd7e84"
+    },
+    {
+      "identity": {
+        "sequence": "blkman2trees",
+        "template_frames": [
+          137,
+          56
+        ],
+        "search_frames": [
+          151,
+          190,
+          162
+        ]
+      },
+      "tensors_sha256": "e74bdcebabe170b17f354f8c4b280c8136a8cba1bc8f95e1ab7ccdc9e389f661"
+    },
+    {
+      "identity": {
+        "sequence": "manatmoto",
+        "template_frames": [
+          135,
+          34
+        ],
+        "search_frames": [
+          140,
+          136,
+          137
+        ]
+      },
+      "tensors_sha256": "129b7a326adccc32241ff8604941962c27f604382f74b1c19e1eb34800948fcd"
+    },
+    {
+      "identity": {
+        "sequence": "1strowright2ndgirl",
+        "template_frames": [
+          516,
+          417
+        ],
+        "search_frames": [
+          655,
+          540,
+          668
+        ]
+      },
+      "tensors_sha256": "2fb7f1da9fc8da2c48c282fda9a40c095cab6da950068d7a2a0e0e75c0db7e4e"
+    },
+    {
+      "identity": {
+        "sequence": "blkbikecomes",
+        "template_frames": [
+          22,
+          16
+        ],
+        "search_frames": [
+          98,
+          66,
+          29
+        ]
+      },
+      "tensors_sha256": "6e2c29a5ce6dda79816bb0027f10a8e93add462e9f99ed5cc0aee9ff075be8f1"
+    },
+    {
+      "identity": {
+        "sequence": "girlatleft",
+        "template_frames": [
+          4,
+          0
+        ],
+        "search_frames": [
+          100,
+          116,
+          24
+        ]
+      },
+      "tensors_sha256": "5ff6bb056ca6058c1cf14b0cae1e0910ad99d7857003c26564206637eff5c940"
+    },
+    {
+      "identity": {
+        "sequence": "blacktallman",
+        "template_frames": [
+          205,
+          168
+        ],
+        "search_frames": [
+          248,
+          230,
+          228
+        ]
+      },
+      "tensors_sha256": "82e2bb97e63c93eb0e1c5cca39e06a3384e42e39da4851cf0cd63a9cbe7f6e59"
+    },
+    {
+      "identity": {
+        "sequence": "lover_1202",
+        "template_frames": [
+          38,
+          6
+        ],
+        "search_frames": [
+          152,
+          105,
+          55
+        ]
+      },
+      "tensors_sha256": "dda01d195ff67b07ba47b895e14d69a34760c9f9ebd7cd789d06f850f531f52d"
+    },
+    {
+      "identity": {
+        "sequence": "2gointrees",
+        "template_frames": [
+          75,
+          68
+        ],
+        "search_frames": [
+          148,
+          143,
+          80
+        ]
+      },
+      "tensors_sha256": "ec29f57b77107bc1ccab4b8ad86be39f26b931c714a90f3a5cb210cafbfe7ffa"
+    },
+    {
+      "identity": {
+        "sequence": "blkbagontheleftgirl",
+        "template_frames": [
+          69,
+          48
+        ],
+        "search_frames": [
+          96,
+          89,
+          95
+        ]
+      },
+      "tensors_sha256": "be239370b1f0e9e9ed9d0ce33db8cf5fc317a2b86d2eebe78d272fa5a11ad3c6"
+    },
+    {
+      "identity": {
+        "sequence": "raincarstop2",
+        "template_frames": [
+          20,
+          9
+        ],
+        "search_frames": [
+          138,
+          55,
+          139
+        ]
+      },
+      "tensors_sha256": "483bf763c87ed5c6bcc895ce8c454d225918aa06fdacbaf588707cb80eef97e2"
+    },
+    {
+      "identity": {
+        "sequence": "rightboyatwindow",
+        "template_frames": [
+          51,
+          26
+        ],
+        "search_frames": [
+          75,
+          185,
+          111
+        ]
+      },
+      "tensors_sha256": "bff9c904d723388f42043c19312a2310e58ad8865c3fd2e889a2932b4fe5edc5"
+    },
+    {
+      "identity": {
+        "sequence": "Take_an_umbrella_1202",
+        "template_frames": [
+          133,
+          47
+        ],
+        "search_frames": [
+          141,
+          146,
+          157
+        ]
+      },
+      "tensors_sha256": "0c36c90750b8bf5328f446e954df52b1d007ddaf9f6b172d02396a0e4b5ec7f1"
+    },
+    {
+      "identity": {
+        "sequence": "whiteboycome598",
+        "template_frames": [
+          233,
+          129
+        ],
+        "search_frames": [
+          297,
+          264,
+          310
+        ]
+      },
+      "tensors_sha256": "74043397084c6768f356f856e4576a475fc2c58338143e582cbc63f5d559b464"
+    },
+    {
+      "identity": {
+        "sequence": "blkboyback636",
+        "template_frames": [
+          147,
+          31
+        ],
+        "search_frames": [
+          202,
+          174,
+          152
+        ]
+      },
+      "tensors_sha256": "ef4396deeb0b358c2a16197ac6094a45b751be39a6beb12674748764a8a94a0c"
+    },
+    {
+      "identity": {
+        "sequence": "manopendoor",
+        "template_frames": [
+          42,
+          32
+        ],
+        "search_frames": [
+          63,
+          57,
+          43
+        ]
+      },
+      "tensors_sha256": "ce2549a275bd99f37b4076158a28c0bfa4d0bab7cd3020791aa66109c3c73a7c"
+    },
+    {
+      "identity": {
+        "sequence": "greenboy438",
+        "template_frames": [
+          323,
+          211
+        ],
+        "search_frames": [
+          381,
+          422,
+          346
+        ]
+      },
+      "tensors_sha256": "6773d113c4c00e15f50150a2e7ab753bfc19402b414e2ebbe6128cffa1bab7fe"
+    },
+    {
+      "identity": {
+        "sequence": "leftmirrorshining",
+        "template_frames": [
+          268,
+          132
+        ],
+        "search_frames": [
+          364,
+          382,
+          285
+        ]
+      },
+      "tensors_sha256": "c726ec249cb351bfd1f3ada3335f21fd576bd17af0e0a9bacd8ebbc7c12d80ed"
+    },
+    {
+      "identity": {
+        "sequence": "redgirlsits",
+        "template_frames": [
+          78,
+          71
+        ],
+        "search_frames": [
+          176,
+          149,
+          127
+        ]
+      },
+      "tensors_sha256": "da983152e711701b3de1de7d8cf9f547f65a00b026774cc9f18acb5676433788"
+    },
+    {
+      "identity": {
+        "sequence": "whitecarturn85",
+        "template_frames": [
+          37,
+          14
+        ],
+        "search_frames": [
+          60,
+          69,
+          84
+        ]
+      },
+      "tensors_sha256": "47e3be3d84650896c4bfa8cfc9af2ec24799a4cde40a32adcb1fbf58f0dd9bb0"
+    },
+    {
+      "identity": {
+        "sequence": "3rdboy",
+        "template_frames": [
+          402,
+          235
+        ],
+        "search_frames": [
+          493,
+          533,
+          411
+        ]
+      },
+      "tensors_sha256": "74fa67da58cfbf8e0b8af84c3db675d274d1c3e346327d24b5e63c0e09e18b98"
+    },
+    {
+      "identity": {
+        "sequence": "huggirl",
+        "template_frames": [
+          76,
+          40
+        ],
+        "search_frames": [
+          177,
+          163,
+          162
+        ]
+      },
+      "tensors_sha256": "4c491bd70653c6612800786759b94264c2cc3c9ff6d001a5d2957e40b0149537"
+    },
+    {
+      "identity": {
+        "sequence": "boybesidesblkcarrunning",
+        "template_frames": [
+          11,
+          6
+        ],
+        "search_frames": [
+          65,
+          92,
+          90
+        ]
+      },
+      "tensors_sha256": "ee4cf43e32fc782c4ea80ccbb2bb72d83c7875cc8ab11d392d5e05f32cf2bd0e"
+    },
+    {
+      "identity": {
+        "sequence": "leftgirl1299",
+        "template_frames": [
+          282,
+          216
+        ],
+        "search_frames": [
+          283,
+          368,
+          327
+        ]
+      },
+      "tensors_sha256": "312190fb74dee9735d2d2b9f8d03b38e93d92ed36479a179c0799cec94228a75"
+    },
+    {
+      "identity": {
+        "sequence": "rightof2cominggirls",
+        "template_frames": [
+          205,
+          196
+        ],
+        "search_frames": [
+          218,
+          249,
+          227
+        ]
+      },
+      "tensors_sha256": "ed131f6d66a59f01943609aea65e4583a04d2a701a24860571c1d3132d5e92b2"
+    },
+    {
+      "identity": {
+        "sequence": "rightboy`shead",
+        "template_frames": [
+          345,
+          164
+        ],
+        "search_frames": [
+          357,
+          350,
+          357
+        ]
+      },
+      "tensors_sha256": "175503ad64b14ec509ce700bb04334f98fadbbe67bab52096ac2df50184337f7"
+    },
+    {
+      "identity": {
+        "sequence": "ab_motoinrain",
+        "template_frames": [
+          40,
+          30
+        ],
+        "search_frames": [
+          47,
+          104,
+          106
+        ]
+      },
+      "tensors_sha256": "da5a288463a5ce25ceb8b88474bf1f697f8b5b9619969219fc65c75d8857680d"
+    },
+    {
+      "identity": {
+        "sequence": "farredcar",
+        "template_frames": [
+          20,
+          12
+        ],
+        "search_frames": [
+          54,
+          31,
+          45
+        ]
+      },
+      "tensors_sha256": "1883affb2e0e8ed50876029d59f74d57b5a0a5cbbe28ba32991d326881e8b7f8"
+    },
+    {
+      "identity": {
+        "sequence": "man2startmoto",
+        "template_frames": [
+          458,
+          287
+        ],
+        "search_frames": [
+          486,
+          464,
+          478
+        ]
+      },
+      "tensors_sha256": "37a24f3a8bfb2b22513ce2ce1a8682baafaeceeee6c06330fbd00e9ff7d613dd"
+    },
+    {
+      "identity": {
+        "sequence": "mirrorfront",
+        "template_frames": [
+          564,
+          516
+        ],
+        "search_frames": [
+          607,
+          567,
+          678
+        ]
+      },
+      "tensors_sha256": "78f8a37140b1128313e5fd74a1f9dc5085ff45e517ce4f56cf5730adea42b1d2"
+    },
+    {
+      "identity": {
+        "sequence": "manfromcar",
+        "template_frames": [
+          37,
+          25
+        ],
+        "search_frames": [
+          58,
+          108,
+          41
+        ]
+      },
+      "tensors_sha256": "1ec05a38f5f49e04d333d5872d5632e724d3bc58f0d550a12171054a53951d9e"
+    },
+    {
+      "identity": {
+        "sequence": "bikefromwest",
+        "template_frames": [
+          76,
+          71
+        ],
+        "search_frames": [
+          78,
+          80,
+          88
+        ]
+      },
+      "tensors_sha256": "a48121e56d54121a81418261001c1a32d9182d7489571e962d178a5ac9d76f25"
+    },
+    {
+      "identity": {
+        "sequence": "comecar",
+        "template_frames": [
+          120,
+          90
+        ],
+        "search_frames": [
+          124,
+          127,
+          124
+        ]
+      },
+      "tensors_sha256": "ff57bca957c25447c1b75916041a0fe614f283cc1ce578411028daca0bc24667"
+    },
+    {
+      "identity": {
+        "sequence": "boysitbike",
+        "template_frames": [
+          62,
+          46
+        ],
+        "search_frames": [
+          63,
+          87,
+          69
+        ]
+      },
+      "tensors_sha256": "ce786991c6a1e3aef15c9f42fad7bd730ac84b217faa64810a6060a3e22bf4de"
+    },
+    {
+      "identity": {
+        "sequence": "blkman2trees",
+        "template_frames": [
+          183,
+          69
+        ],
+        "search_frames": [
+          190,
+          184,
+          189
+        ]
+      },
+      "tensors_sha256": "45fbc45c406aa1d240eb6c56ca5527540ce04b83c4b0fcc4359789ebabe48a5d"
+    },
+    {
+      "identity": {
+        "sequence": "motocoming",
+        "template_frames": [
+          103,
+          76
+        ],
+        "search_frames": [
+          149,
+          175,
+          167
+        ]
+      },
+      "tensors_sha256": "560b5826cd003212ec972f08b1d6e192e42f97df80131af66f41b4bc695993e3"
+    },
+    {
+      "identity": {
+        "sequence": "whitebikebehind172",
+        "template_frames": [
+          33,
+          16
+        ],
+        "search_frames": [
+          169,
+          86,
+          43
+        ]
+      },
+      "tensors_sha256": "0d9e369d5d587caaf455741a23eb37cc62b0e3c839a1611f6e4bd3b0ce50e2dd"
+    },
+    {
+      "identity": {
+        "sequence": "take-out-motocoming",
+        "template_frames": [
+          87,
+          73
+        ],
+        "search_frames": [
+          111,
+          108,
+          109
+        ]
+      },
+      "tensors_sha256": "2b553f03e6f58a9e24fe5dabfe70717e56063135c23626c7ffcbf9594e5a6898"
+    },
+    {
+      "identity": {
+        "sequence": "whitecarback",
+        "template_frames": [
+          34,
+          13
+        ],
+        "search_frames": [
+          54,
+          50,
+          43
+        ]
+      },
+      "tensors_sha256": "d860c0255ed053cf31245e976ec8ca7df8f089e0f618bd9174c602052350c529"
+    },
+    {
+      "identity": {
+        "sequence": "whiteboywait",
+        "template_frames": [
+          355,
+          192
+        ],
+        "search_frames": [
+          504,
+          524,
+          524
+        ]
+      },
+      "tensors_sha256": "ed6674c0f123a20aacc9ef7544631710699df9834f3beb269243d11be257967a"
+    },
+    {
+      "identity": {
+        "sequence": "leftdrillmasterstandsundertree",
+        "template_frames": [
+          682,
+          587
+        ],
+        "search_frames": [
+          723,
+          700,
+          739
+        ]
+      },
+      "tensors_sha256": "c95aab3de3fadede546198b7146a81c1b098f600f590805599e089ba5d34f2ae"
+    },
+    {
+      "identity": {
+        "sequence": "bolster",
+        "template_frames": [
+          144,
+          61
+        ],
+        "search_frames": [
+          245,
+          157,
+          161
+        ]
+      },
+      "tensors_sha256": "dfd54f6ba7bb5f8523efc520741072a28c5884c68217a5a0a66f7871eeccf7a2"
+    },
+    {
+      "identity": {
+        "sequence": "boyshead",
+        "template_frames": [
+          377,
+          180
+        ],
+        "search_frames": [
+          535,
+          507,
+          464
+        ]
+      },
+      "tensors_sha256": "1ff89f0f4cd984284bbd2c3e5c51e121128f474c9c414da9467e902294d03554"
+    }
+  ],
+  "rows": [
+    {
+      "batch": 0,
+      "identities": [
+        {
+          "sequence": "whitebikebehind2",
+          "template_frames": [
+            1,
+            0
+          ],
+          "search_frames": [
+            10,
+            10,
+            21
+          ]
+        },
+        {
+          "sequence": "womanaroundcar",
+          "template_frames": [
+            239,
+            227
+          ],
+          "search_frames": [
+            323,
+            330,
+            319
+          ]
+        },
+        {
+          "sequence": "redboywithblkumbrella",
+          "template_frames": [
+            24,
+            22
+          ],
+          "search_frames": [
+            148,
+            92,
+            79
+          ]
+        },
+        {
+          "sequence": "AQmidof3boys",
+          "template_frames": [
+            112,
+            5
+          ],
+          "search_frames": [
+            122,
+            133,
+            118
+          ]
+        }
+      ],
+      "complete_loss": 1.362671136856079,
+      "missing_loss": 2.763303279876709,
+      "kd": 2.372250556945801,
+      "groups": {
+        "all": {
+          "complete_sq": 115.94801530153735,
+          "auxiliary_sq": 585.7873019458409,
+          "dot": 38.30462964553986,
+          "parameters": 102986373,
+          "cosine": 0.14697708556534606
+        },
+        "backbone": {
+          "complete_sq": 86.1212471250093,
+          "auxiliary_sq": 443.419834488218,
+          "dot": 24.11456156531262,
+          "parameters": 85893120,
+          "cosine": 0.12340042555815703
+        },
+        "head_fusion": {
+          "complete_sq": 29.826768176528006,
+          "auxiliary_sq": 142.36746745762292,
+          "dot": 14.190068080227224,
+          "parameters": 17093253,
+          "cosine": 0.2177589430733476
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "59cad3157a288e9ffe1087c67a0a2f803a93951989c3032c0151d4970fb545d4",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          459.0,
+          461.0,
+          453.0,
+          462.0
+        ],
+        [
+          474.0,
+          458.0,
+          462.0,
+          469.0
+        ],
+        [
+          464.0,
+          455.0,
+          448.0,
+          462.0
+        ]
+      ]
+    },
+    {
+      "batch": 1,
+      "identities": [
+        {
+          "sequence": "pingpongpad",
+          "template_frames": [
+            79,
+            11
+          ],
+          "search_frames": [
+            232,
+            184,
+            235
+          ]
+        },
+        {
+          "sequence": "rightredboy",
+          "template_frames": [
+            178,
+            37
+          ],
+          "search_frames": [
+            313,
+            304,
+            276
+          ]
+        },
+        {
+          "sequence": "7runthree",
+          "template_frames": [
+            11,
+            2
+          ],
+          "search_frames": [
+            28,
+            48,
+            44
+          ]
+        },
+        {
+          "sequence": "whitegirlundertheumbrella",
+          "template_frames": [
+            263,
+            158
+          ],
+          "search_frames": [
+            266,
+            264,
+            272
+          ]
+        }
+      ],
+      "complete_loss": 1.9930095672607422,
+      "missing_loss": 4.728641986846924,
+      "kd": 1.5049809217453003,
+      "groups": {
+        "all": {
+          "complete_sq": 122.51970167951043,
+          "auxiliary_sq": 359.14945037158566,
+          "dot": 25.9221378309368,
+          "parameters": 102986373,
+          "cosine": 0.12357489413237836
+        },
+        "backbone": {
+          "complete_sq": 78.77727878940733,
+          "auxiliary_sq": 257.10035523859244,
+          "dot": 12.859728152035434,
+          "parameters": 85893120,
+          "cosine": 0.09036077813109374
+        },
+        "head_fusion": {
+          "complete_sq": 43.742422890103086,
+          "auxiliary_sq": 102.04909513299344,
+          "dot": 13.062409678901362,
+          "parameters": 17093253,
+          "cosine": 0.19550924740868905
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "ea1d0de8c073580ba7f4b27ede7ef0e4af527a604cf7f44f10228c7de95db491",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          455.0,
+          453.0,
+          465.0,
+          472.0
+        ],
+        [
+          461.0,
+          464.0,
+          458.0,
+          452.0
+        ],
+        [
+          477.0,
+          459.0,
+          460.0,
+          473.0
+        ]
+      ]
+    },
+    {
+      "batch": 2,
+      "identities": [
+        {
+          "sequence": "carturn",
+          "template_frames": [
+            134,
+            88
+          ],
+          "search_frames": [
+            146,
+            152,
+            157
+          ]
+        },
+        {
+          "sequence": "motofromdark",
+          "template_frames": [
+            25,
+            6
+          ],
+          "search_frames": [
+            59,
+            65,
+            39
+          ]
+        },
+        {
+          "sequence": "maninfrontofbus",
+          "template_frames": [
+            134,
+            49
+          ],
+          "search_frames": [
+            137,
+            137,
+            136
+          ]
+        },
+        {
+          "sequence": "cameraman_1202",
+          "template_frames": [
+            190,
+            71
+          ],
+          "search_frames": [
+            224,
+            211,
+            248
+          ]
+        }
+      ],
+      "complete_loss": 1.6967530250549316,
+      "missing_loss": 4.09811544418335,
+      "kd": 2.6542601585388184,
+      "groups": {
+        "all": {
+          "complete_sq": 157.1217844942747,
+          "auxiliary_sq": 956.8179088419253,
+          "dot": 79.6755255786587,
+          "parameters": 102986373,
+          "cosine": 0.2054906603600929
+        },
+        "backbone": {
+          "complete_sq": 92.36994042811739,
+          "auxiliary_sq": 706.1073138480672,
+          "dot": 37.330561208555736,
+          "parameters": 85893120,
+          "cosine": 0.14617187982992907
+        },
+        "head_fusion": {
+          "complete_sq": 64.75184406615732,
+          "auxiliary_sq": 250.7105949938583,
+          "dot": 42.344964370102986,
+          "parameters": 17093253,
+          "cosine": 0.332345159195095
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "faa6dc0d6e4f368199020d8436036ab512d6662f6db62e44f2661f8e6ff9239c",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          453.0,
+          467.0,
+          457.0,
+          452.0
+        ],
+        [
+          460.0,
+          454.0,
+          458.0,
+          478.0
+        ],
+        [
+          466.0,
+          467.0,
+          460.0,
+          470.0
+        ]
+      ]
+    },
+    {
+      "batch": 3,
+      "identities": [
+        {
+          "sequence": "lonelyman",
+          "template_frames": [
+            19,
+            14
+          ],
+          "search_frames": [
+            47,
+            65,
+            148
+          ]
+        },
+        {
+          "sequence": "redboywithblkumbrella",
+          "template_frames": [
+            130,
+            113
+          ],
+          "search_frames": [
+            138,
+            143,
+            147
+          ]
+        },
+        {
+          "sequence": "leftlastboy-sq",
+          "template_frames": [
+            387,
+            206
+          ],
+          "search_frames": [
+            393,
+            560,
+            423
+          ]
+        },
+        {
+          "sequence": "midpinkblkglasscup",
+          "template_frames": [
+            657,
+            550
+          ],
+          "search_frames": [
+            845,
+            774,
+            830
+          ]
+        }
+      ],
+      "complete_loss": 2.899561643600464,
+      "missing_loss": 5.1835551261901855,
+      "kd": 1.4543125629425049,
+      "groups": {
+        "all": {
+          "complete_sq": 700.947538739959,
+          "auxiliary_sq": 578.3630189510985,
+          "dot": 220.62635086447,
+          "parameters": 102986373,
+          "cosine": 0.3465088780253249
+        },
+        "backbone": {
+          "complete_sq": 540.9753867253469,
+          "auxiliary_sq": 435.51229707169665,
+          "dot": 143.04452121946238,
+          "parameters": 85893120,
+          "cosine": 0.29470144432690154
+        },
+        "head_fusion": {
+          "complete_sq": 159.97215201461182,
+          "auxiliary_sq": 142.85072187940173,
+          "dot": 77.58182964500756,
+          "parameters": 17093253,
+          "cosine": 0.513211765669646
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "e50aecd651bf5140a83968720510dabf27b8a8bcc85cdfced7470d04531139bc",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          470.0,
+          463.0,
+          466.0,
+          464.0
+        ],
+        [
+          465.0,
+          456.0,
+          467.0,
+          458.0
+        ],
+        [
+          463.0,
+          450.0,
+          471.0,
+          451.0
+        ]
+      ]
+    },
+    {
+      "batch": 4,
+      "identities": [
+        {
+          "sequence": "schoolofeconomics-yxb",
+          "template_frames": [
+            549,
+            464
+          ],
+          "search_frames": [
+            701,
+            648,
+            666
+          ]
+        },
+        {
+          "sequence": "bikeout",
+          "template_frames": [
+            194,
+            64
+          ],
+          "search_frames": [
+            225,
+            235,
+            208
+          ]
+        },
+        {
+          "sequence": "lightcarstart",
+          "template_frames": [
+            80,
+            38
+          ],
+          "search_frames": [
+            91,
+            124,
+            123
+          ]
+        },
+        {
+          "sequence": "boyshorts",
+          "template_frames": [
+            13,
+            7
+          ],
+          "search_frames": [
+            118,
+            75,
+            183
+          ]
+        }
+      ],
+      "complete_loss": 1.9629757404327393,
+      "missing_loss": 3.2589900493621826,
+      "kd": 2.24617862701416,
+      "groups": {
+        "all": {
+          "complete_sq": 145.64312836525454,
+          "auxiliary_sq": 612.2899720080161,
+          "dot": 35.94392436387091,
+          "parameters": 102986373,
+          "cosine": 0.12036547081415264
+        },
+        "backbone": {
+          "complete_sq": 98.11239830265933,
+          "auxiliary_sq": 446.73791800769396,
+          "dot": 16.730478015008643,
+          "parameters": 85893120,
+          "cosine": 0.07991347123101447
+        },
+        "head_fusion": {
+          "complete_sq": 47.53073006259513,
+          "auxiliary_sq": 165.55205400032224,
+          "dot": 19.21344634886227,
+          "parameters": 17093253,
+          "cosine": 0.21659615499553636
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "ef4317fc624a3b31d3107eff8d0227510e86334af1c347e5f6439486149eed10",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          459.0,
+          461.0,
+          473.0,
+          472.0
+        ],
+        [
+          464.0,
+          455.0,
+          458.0,
+          449.0
+        ],
+        [
+          468.0,
+          461.0,
+          460.0,
+          461.0
+        ]
+      ]
+    },
+    {
+      "batch": 5,
+      "identities": [
+        {
+          "sequence": "boysumbrella",
+          "template_frames": [
+            360,
+            340
+          ],
+          "search_frames": [
+            439,
+            380,
+            393
+          ]
+        },
+        {
+          "sequence": "boy1227",
+          "template_frames": [
+            163,
+            31
+          ],
+          "search_frames": [
+            214,
+            238,
+            172
+          ]
+        },
+        {
+          "sequence": "blkman2trees",
+          "template_frames": [
+            137,
+            56
+          ],
+          "search_frames": [
+            151,
+            190,
+            162
+          ]
+        },
+        {
+          "sequence": "manatmoto",
+          "template_frames": [
+            135,
+            34
+          ],
+          "search_frames": [
+            140,
+            136,
+            137
+          ]
+        }
+      ],
+      "complete_loss": 1.7129755020141602,
+      "missing_loss": 5.1179327964782715,
+      "kd": 2.697282314300537,
+      "groups": {
+        "all": {
+          "complete_sq": 219.30973303542848,
+          "auxiliary_sq": 1697.9063694379408,
+          "dot": 87.05250778908731,
+          "parameters": 102986373,
+          "cosine": 0.14265778113146638
+        },
+        "backbone": {
+          "complete_sq": 172.32239592426473,
+          "auxiliary_sq": 1414.5956343326957,
+          "dot": 74.24637890933869,
+          "parameters": 85893120,
+          "cosine": 0.15037936912509434
+        },
+        "head_fusion": {
+          "complete_sq": 46.987337111163775,
+          "auxiliary_sq": 283.31073510524476,
+          "dot": 12.806128879748629,
+          "parameters": 17093253,
+          "cosine": 0.11099308846893764
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "318837ab17fb2ed9846c0659eb765a346d40b4bd64c35008509d306e56260009",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          475.0,
+          464.0,
+          464.0,
+          472.0
+        ],
+        [
+          471.0,
+          464.0,
+          467.0,
+          464.0
+        ],
+        [
+          458.0,
+          456.0,
+          463.0,
+          464.0
+        ]
+      ]
+    },
+    {
+      "batch": 6,
+      "identities": [
+        {
+          "sequence": "1strowright2ndgirl",
+          "template_frames": [
+            516,
+            417
+          ],
+          "search_frames": [
+            655,
+            540,
+            668
+          ]
+        },
+        {
+          "sequence": "blkbikecomes",
+          "template_frames": [
+            22,
+            16
+          ],
+          "search_frames": [
+            98,
+            66,
+            29
+          ]
+        },
+        {
+          "sequence": "girlatleft",
+          "template_frames": [
+            4,
+            0
+          ],
+          "search_frames": [
+            100,
+            116,
+            24
+          ]
+        },
+        {
+          "sequence": "blacktallman",
+          "template_frames": [
+            205,
+            168
+          ],
+          "search_frames": [
+            248,
+            230,
+            228
+          ]
+        }
+      ],
+      "complete_loss": 3.4261045455932617,
+      "missing_loss": 3.866668224334717,
+      "kd": 1.551287055015564,
+      "groups": {
+        "all": {
+          "complete_sq": 332.9926791935994,
+          "auxiliary_sq": 901.940467487429,
+          "dot": 132.1913856882083,
+          "parameters": 102986373,
+          "cosine": 0.24121087037861863
+        },
+        "backbone": {
+          "complete_sq": 263.3207100816574,
+          "auxiliary_sq": 774.7631062216403,
+          "dot": 102.84836541011155,
+          "parameters": 85893120,
+          "cosine": 0.22770387382359142
+        },
+        "head_fusion": {
+          "complete_sq": 69.67196911194196,
+          "auxiliary_sq": 127.17736126578896,
+          "dot": 29.343020278096706,
+          "parameters": 17093253,
+          "cosine": 0.31172444928255105
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "7d8bea7f13352a15a0ca5c812afb9fc33f5245ef04fc1af07a0eca170a590262",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          448.0,
+          470.0,
+          462.0,
+          448.0
+        ],
+        [
+          465.0,
+          461.0,
+          472.0,
+          459.0
+        ],
+        [
+          455.0,
+          471.0,
+          462.0,
+          460.0
+        ]
+      ]
+    },
+    {
+      "batch": 7,
+      "identities": [
+        {
+          "sequence": "lover_1202",
+          "template_frames": [
+            38,
+            6
+          ],
+          "search_frames": [
+            152,
+            105,
+            55
+          ]
+        },
+        {
+          "sequence": "2gointrees",
+          "template_frames": [
+            75,
+            68
+          ],
+          "search_frames": [
+            148,
+            143,
+            80
+          ]
+        },
+        {
+          "sequence": "blkbagontheleftgirl",
+          "template_frames": [
+            69,
+            48
+          ],
+          "search_frames": [
+            96,
+            89,
+            95
+          ]
+        },
+        {
+          "sequence": "raincarstop2",
+          "template_frames": [
+            20,
+            9
+          ],
+          "search_frames": [
+            138,
+            55,
+            139
+          ]
+        }
+      ],
+      "complete_loss": 2.429154872894287,
+      "missing_loss": 3.694467067718506,
+      "kd": 2.2800447940826416,
+      "groups": {
+        "all": {
+          "complete_sq": 634.4707114330365,
+          "auxiliary_sq": 1000.9362492818562,
+          "dot": 108.94577513742993,
+          "parameters": 102986373,
+          "cosine": 0.13671034991602704
+        },
+        "backbone": {
+          "complete_sq": 531.9984933768916,
+          "auxiliary_sq": 765.0603233055648,
+          "dot": 76.07521090430912,
+          "parameters": 85893120,
+          "cosine": 0.11924498520030409
+        },
+        "head_fusion": {
+          "complete_sq": 102.4722180561452,
+          "auxiliary_sq": 235.8759259762913,
+          "dot": 32.870564233120824,
+          "parameters": 17093253,
+          "cosine": 0.21142789284262337
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "bdc4b72966a32331a35f4d4d6a6d7f0844422c98161e5deec68e17864e1571bf",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          465.0,
+          464.0,
+          459.0,
+          451.0
+        ],
+        [
+          468.0,
+          464.0,
+          465.0,
+          452.0
+        ],
+        [
+          457.0,
+          468.0,
+          463.0,
+          461.0
+        ]
+      ]
+    },
+    {
+      "batch": 8,
+      "identities": [
+        {
+          "sequence": "rightboyatwindow",
+          "template_frames": [
+            51,
+            26
+          ],
+          "search_frames": [
+            75,
+            185,
+            111
+          ]
+        },
+        {
+          "sequence": "Take_an_umbrella_1202",
+          "template_frames": [
+            133,
+            47
+          ],
+          "search_frames": [
+            141,
+            146,
+            157
+          ]
+        },
+        {
+          "sequence": "whiteboycome598",
+          "template_frames": [
+            233,
+            129
+          ],
+          "search_frames": [
+            297,
+            264,
+            310
+          ]
+        },
+        {
+          "sequence": "blkboyback636",
+          "template_frames": [
+            147,
+            31
+          ],
+          "search_frames": [
+            202,
+            174,
+            152
+          ]
+        }
+      ],
+      "complete_loss": 2.1599464416503906,
+      "missing_loss": 4.984886646270752,
+      "kd": 1.3780821561813354,
+      "groups": {
+        "all": {
+          "complete_sq": 163.83938907844973,
+          "auxiliary_sq": 815.863071395531,
+          "dot": 85.1340539823044,
+          "parameters": 102986373,
+          "cosine": 0.2328549725054943
+        },
+        "backbone": {
+          "complete_sq": 109.3057557095011,
+          "auxiliary_sq": 625.9704806778252,
+          "dot": 60.594852428270414,
+          "parameters": 85893120,
+          "cosine": 0.23165265915586025
+        },
+        "head_fusion": {
+          "complete_sq": 54.53363336894867,
+          "auxiliary_sq": 189.89259071770573,
+          "dot": 24.53920155403397,
+          "parameters": 17093253,
+          "cosine": 0.24114274532358915
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "84692972d76953c75123767a97f549f8f4ad0eb7f7afdb359d8c5366b07d33d2",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          457.0,
+          460.0,
+          461.0,
+          457.0
+        ],
+        [
+          464.0,
+          468.0,
+          459.0,
+          478.0
+        ],
+        [
+          460.0,
+          466.0,
+          467.0,
+          458.0
+        ]
+      ]
+    },
+    {
+      "batch": 9,
+      "identities": [
+        {
+          "sequence": "manopendoor",
+          "template_frames": [
+            42,
+            32
+          ],
+          "search_frames": [
+            63,
+            57,
+            43
+          ]
+        },
+        {
+          "sequence": "greenboy438",
+          "template_frames": [
+            323,
+            211
+          ],
+          "search_frames": [
+            381,
+            422,
+            346
+          ]
+        },
+        {
+          "sequence": "leftmirrorshining",
+          "template_frames": [
+            268,
+            132
+          ],
+          "search_frames": [
+            364,
+            382,
+            285
+          ]
+        },
+        {
+          "sequence": "redgirlsits",
+          "template_frames": [
+            78,
+            71
+          ],
+          "search_frames": [
+            176,
+            149,
+            127
+          ]
+        }
+      ],
+      "complete_loss": 1.6788389682769775,
+      "missing_loss": 2.738192081451416,
+      "kd": 1.5502336025238037,
+      "groups": {
+        "all": {
+          "complete_sq": 137.79832085932586,
+          "auxiliary_sq": 666.7101398444194,
+          "dot": 47.63993115683918,
+          "parameters": 102986373,
+          "cosine": 0.1571739733820815
+        },
+        "backbone": {
+          "complete_sq": 89.58294986051952,
+          "auxiliary_sq": 527.6701127160321,
+          "dot": 30.38985700908698,
+          "parameters": 85893120,
+          "cosine": 0.13977668258807913
+        },
+        "head_fusion": {
+          "complete_sq": 48.215370998806335,
+          "auxiliary_sq": 139.040027128387,
+          "dot": 17.250074147752198,
+          "parameters": 17093253,
+          "cosine": 0.21068241496210074
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "d6993fdde2f14aed49dd7983a1b883d401aad2bb45d59a16acf706c80700f057",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          469.0,
+          449.0,
+          459.0,
+          464.0
+        ],
+        [
+          453.0,
+          469.0,
+          463.0,
+          445.0
+        ],
+        [
+          456.0,
+          465.0,
+          456.0,
+          462.0
+        ]
+      ]
+    },
+    {
+      "batch": 10,
+      "identities": [
+        {
+          "sequence": "whitecarturn85",
+          "template_frames": [
+            37,
+            14
+          ],
+          "search_frames": [
+            60,
+            69,
+            84
+          ]
+        },
+        {
+          "sequence": "3rdboy",
+          "template_frames": [
+            402,
+            235
+          ],
+          "search_frames": [
+            493,
+            533,
+            411
+          ]
+        },
+        {
+          "sequence": "huggirl",
+          "template_frames": [
+            76,
+            40
+          ],
+          "search_frames": [
+            177,
+            163,
+            162
+          ]
+        },
+        {
+          "sequence": "boybesidesblkcarrunning",
+          "template_frames": [
+            11,
+            6
+          ],
+          "search_frames": [
+            65,
+            92,
+            90
+          ]
+        }
+      ],
+      "complete_loss": 2.1504530906677246,
+      "missing_loss": 3.9880785942077637,
+      "kd": 2.18805193901062,
+      "groups": {
+        "all": {
+          "complete_sq": 335.90129331059467,
+          "auxiliary_sq": 811.0254139768629,
+          "dot": 77.38229664304339,
+          "parameters": 102986373,
+          "cosine": 0.14825813936188556
+        },
+        "backbone": {
+          "complete_sq": 263.52516662231807,
+          "auxiliary_sq": 653.4037104215373,
+          "dot": 59.93168484123146,
+          "parameters": 85893120,
+          "cosine": 0.14442907858637888
+        },
+        "head_fusion": {
+          "complete_sq": 72.37612668827673,
+          "auxiliary_sq": 157.6217035553255,
+          "dot": 17.450611801811927,
+          "parameters": 17093253,
+          "cosine": 0.16338229050228284
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "310edc1a4000020fdcd6ac328f9c2ef81dfa89fb2e8a9864d0bda3bfa8303214",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          454.0,
+          460.0,
+          467.0,
+          459.0
+        ],
+        [
+          465.0,
+          476.0,
+          449.0,
+          455.0
+        ],
+        [
+          464.0,
+          454.0,
+          463.0,
+          470.0
+        ]
+      ]
+    },
+    {
+      "batch": 11,
+      "identities": [
+        {
+          "sequence": "leftgirl1299",
+          "template_frames": [
+            282,
+            216
+          ],
+          "search_frames": [
+            283,
+            368,
+            327
+          ]
+        },
+        {
+          "sequence": "rightof2cominggirls",
+          "template_frames": [
+            205,
+            196
+          ],
+          "search_frames": [
+            218,
+            249,
+            227
+          ]
+        },
+        {
+          "sequence": "rightboy`shead",
+          "template_frames": [
+            345,
+            164
+          ],
+          "search_frames": [
+            357,
+            350,
+            357
+          ]
+        },
+        {
+          "sequence": "ab_motoinrain",
+          "template_frames": [
+            40,
+            30
+          ],
+          "search_frames": [
+            47,
+            104,
+            106
+          ]
+        }
+      ],
+      "complete_loss": 2.6052534580230713,
+      "missing_loss": 2.7731680870056152,
+      "kd": 1.4197639226913452,
+      "groups": {
+        "all": {
+          "complete_sq": 533.1777042191491,
+          "auxiliary_sq": 601.2031841336566,
+          "dot": 246.40004252607764,
+          "parameters": 102986373,
+          "cosine": 0.4352052765773211
+        },
+        "backbone": {
+          "complete_sq": 429.2340724307039,
+          "auxiliary_sq": 462.7414712409272,
+          "dot": 181.1420569440278,
+          "parameters": 85893120,
+          "cosine": 0.40644612659935636
+        },
+        "head_fusion": {
+          "complete_sq": 103.94363178844515,
+          "auxiliary_sq": 138.4617128927297,
+          "dot": 65.25798558204977,
+          "parameters": 17093253,
+          "cosine": 0.5439636386520929
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "1845f021613344a294723ad34c84ec98d1751aa68eecb1b6360941994bb4af36",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          452.0,
+          455.0,
+          470.0,
+          460.0
+        ],
+        [
+          466.0,
+          459.0,
+          464.0,
+          471.0
+        ],
+        [
+          452.0,
+          473.0,
+          465.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "batch": 12,
+      "identities": [
+        {
+          "sequence": "farredcar",
+          "template_frames": [
+            20,
+            12
+          ],
+          "search_frames": [
+            54,
+            31,
+            45
+          ]
+        },
+        {
+          "sequence": "man2startmoto",
+          "template_frames": [
+            458,
+            287
+          ],
+          "search_frames": [
+            486,
+            464,
+            478
+          ]
+        },
+        {
+          "sequence": "mirrorfront",
+          "template_frames": [
+            564,
+            516
+          ],
+          "search_frames": [
+            607,
+            567,
+            678
+          ]
+        },
+        {
+          "sequence": "manfromcar",
+          "template_frames": [
+            37,
+            25
+          ],
+          "search_frames": [
+            58,
+            108,
+            41
+          ]
+        }
+      ],
+      "complete_loss": 3.0193839073181152,
+      "missing_loss": 4.530218601226807,
+      "kd": 1.4858131408691406,
+      "groups": {
+        "all": {
+          "complete_sq": 379.27841853269274,
+          "auxiliary_sq": 758.8844420263425,
+          "dot": 118.08374436566432,
+          "parameters": 102986373,
+          "cosine": 0.22010161311743406
+        },
+        "backbone": {
+          "complete_sq": 281.14656771180387,
+          "auxiliary_sq": 551.8501397393819,
+          "dot": 72.09672592966331,
+          "parameters": 85893120,
+          "cosine": 0.1830368661780897
+        },
+        "head_fusion": {
+          "complete_sq": 98.13185082088907,
+          "auxiliary_sq": 207.03430228696058,
+          "dot": 45.987018436001016,
+          "parameters": 17093253,
+          "cosine": 0.32263323629651985
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "2a4e387534f25d72d2cdb4baa680e869298c3872bcb83427935ee3adfc371574",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          456.0,
+          466.0,
+          464.0,
+          457.0
+        ],
+        [
+          462.0,
+          462.0,
+          463.0,
+          454.0
+        ],
+        [
+          450.0,
+          462.0,
+          452.0,
+          461.0
+        ]
+      ]
+    },
+    {
+      "batch": 13,
+      "identities": [
+        {
+          "sequence": "bikefromwest",
+          "template_frames": [
+            76,
+            71
+          ],
+          "search_frames": [
+            78,
+            80,
+            88
+          ]
+        },
+        {
+          "sequence": "comecar",
+          "template_frames": [
+            120,
+            90
+          ],
+          "search_frames": [
+            124,
+            127,
+            124
+          ]
+        },
+        {
+          "sequence": "boysitbike",
+          "template_frames": [
+            62,
+            46
+          ],
+          "search_frames": [
+            63,
+            87,
+            69
+          ]
+        },
+        {
+          "sequence": "blkman2trees",
+          "template_frames": [
+            183,
+            69
+          ],
+          "search_frames": [
+            190,
+            184,
+            189
+          ]
+        }
+      ],
+      "complete_loss": 1.566166639328003,
+      "missing_loss": 3.0262033939361572,
+      "kd": 2.3085927963256836,
+      "groups": {
+        "all": {
+          "complete_sq": 165.8180332283716,
+          "auxiliary_sq": 862.4077460076859,
+          "dot": 54.822118502496224,
+          "parameters": 102986373,
+          "cosine": 0.14497182626579963
+        },
+        "backbone": {
+          "complete_sq": 122.12696478020058,
+          "auxiliary_sq": 655.915441921202,
+          "dot": 43.58644235246877,
+          "parameters": 85893120,
+          "cosine": 0.15400035166446222
+        },
+        "head_fusion": {
+          "complete_sq": 43.69106844817102,
+          "auxiliary_sq": 206.49230408648438,
+          "dot": 11.235676150027468,
+          "parameters": 17093253,
+          "cosine": 0.11829079350393072
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "5ef023a6555b9d8d607b9ce5a0610b2a5a0239f17a57b7f0f118f6397a236b68",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          456.0,
+          457.0,
+          467.0,
+          467.0
+        ],
+        [
+          457.0,
+          462.0,
+          461.0,
+          458.0
+        ],
+        [
+          455.0,
+          450.0,
+          471.0,
+          468.0
+        ]
+      ]
+    },
+    {
+      "batch": 14,
+      "identities": [
+        {
+          "sequence": "motocoming",
+          "template_frames": [
+            103,
+            76
+          ],
+          "search_frames": [
+            149,
+            175,
+            167
+          ]
+        },
+        {
+          "sequence": "whitebikebehind172",
+          "template_frames": [
+            33,
+            16
+          ],
+          "search_frames": [
+            169,
+            86,
+            43
+          ]
+        },
+        {
+          "sequence": "take-out-motocoming",
+          "template_frames": [
+            87,
+            73
+          ],
+          "search_frames": [
+            111,
+            108,
+            109
+          ]
+        },
+        {
+          "sequence": "whitecarback",
+          "template_frames": [
+            34,
+            13
+          ],
+          "search_frames": [
+            54,
+            50,
+            43
+          ]
+        }
+      ],
+      "complete_loss": 2.054105281829834,
+      "missing_loss": 4.468296051025391,
+      "kd": 2.2626736164093018,
+      "groups": {
+        "all": {
+          "complete_sq": 490.6706949859546,
+          "auxiliary_sq": 1213.547047794922,
+          "dot": 243.2996344122705,
+          "parameters": 102986373,
+          "cosine": 0.31529572834060743
+        },
+        "backbone": {
+          "complete_sq": 397.78364468205837,
+          "auxiliary_sq": 998.4999901786149,
+          "dot": 185.40110349335552,
+          "parameters": 85893120,
+          "cosine": 0.2941811361488093
+        },
+        "head_fusion": {
+          "complete_sq": 92.88705030389636,
+          "auxiliary_sq": 215.04705761630686,
+          "dot": 57.89853091891495,
+          "parameters": 17093253,
+          "cosine": 0.4096596655714778
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "025fab2742771687dc9fc70ff48e443ed4c088072c6ea68682afbdaddbf95a49",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          459.0,
+          453.0,
+          470.0,
+          447.0
+        ],
+        [
+          456.0,
+          473.0,
+          458.0,
+          459.0
+        ],
+        [
+          454.0,
+          464.0,
+          456.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "batch": 15,
+      "identities": [
+        {
+          "sequence": "whiteboywait",
+          "template_frames": [
+            355,
+            192
+          ],
+          "search_frames": [
+            504,
+            524,
+            524
+          ]
+        },
+        {
+          "sequence": "leftdrillmasterstandsundertree",
+          "template_frames": [
+            682,
+            587
+          ],
+          "search_frames": [
+            723,
+            700,
+            739
+          ]
+        },
+        {
+          "sequence": "bolster",
+          "template_frames": [
+            144,
+            61
+          ],
+          "search_frames": [
+            245,
+            157,
+            161
+          ]
+        },
+        {
+          "sequence": "boyshead",
+          "template_frames": [
+            377,
+            180
+          ],
+          "search_frames": [
+            535,
+            507,
+            464
+          ]
+        }
+      ],
+      "complete_loss": 2.6001992225646973,
+      "missing_loss": 4.193824768066406,
+      "kd": 2.1717991828918457,
+      "groups": {
+        "all": {
+          "complete_sq": 444.7767232110592,
+          "auxiliary_sq": 2423.024011460458,
+          "dot": 109.97352854791315,
+          "parameters": 102986373,
+          "cosine": 0.10593470837808035
+        },
+        "backbone": {
+          "complete_sq": 377.06321538651315,
+          "auxiliary_sq": 2016.356754871738,
+          "dot": 98.43677495970302,
+          "parameters": 85893120,
+          "cosine": 0.11289289395455514
+        },
+        "head_fusion": {
+          "complete_sq": 67.713507824546,
+          "auxiliary_sq": 406.66725658872014,
+          "dot": 11.536753588210162,
+          "parameters": 17093253,
+          "cosine": 0.06952265634945394
+        }
+      },
+      "unused_parameters": [
+        "baseline.backbone.pos_embed",
+        "baseline.backbone.cls_pos_embed"
+      ],
+      "mask_sha256": "36fc10676331f3a5dc75c4315da3e366060e48318703850ba3b5886f79264d25",
+      "availability": [
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0
+          ]
+        ]
+      ],
+      "patch_keep_counts": [
+        [
+          461.0,
+          454.0,
+          450.0,
+          461.0
+        ],
+        [
+          468.0,
+          450.0,
+          462.0,
+          465.0
+        ],
+        [
+          458.0,
+          454.0,
+          460.0,
+          465.0
+        ]
+      ]
+    }
+  ],
+  "effects": {
+    "mean": 0.20145576426575695,
+    "ci95_low": 0.1608510358654812,
+    "ci95_high": 0.2481084965341151,
+    "negative_batches": 0,
+    "batches": 16
+  },
+  "diagnostic_supported": false,
+  "prior_reports_sha256": {
+    "server28_template_chronology_20261102": "20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79",
+    "server28_chronology_training_20261102": "645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce",
+    "server28_window_training_20261102_v2": "95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612",
+    "server28_teacher_reliability_20261102": "f46bbd0342729be6d3d8b15523908fcf7a6e3f26410b0352694b4614098382d6"
+  },
+  "baseline_unchanged": true,
+  "baseline_gradients_absent": true,
+  "baseline_state_sha256": "4d64b467b82ff76963a8c32d13cb0e60980fef236df14546e7bceaddffdb6eb6",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/diagnose_joint_gradients.py": "68d47f91c560f73eb8bc39a52a0b0a119755fae8299348e27c48b205e75b32bf",
+    "/home/gaob/Miss-RGBT/scripts/diagnose_absent_position.py": "17908bd9c2b1b8e19f34e7893c24393419efc123397f5034a03276dcfc265bb0",
+    "/home/gaob/Miss-RGBT/scripts/diagnose_teacher_reliability.py": "14ff299c7a7f17f46940f418ca66cd21df9d6612333a9e9caebe049c4d85ed1d",
+    "lib/train/data_specs/lasher_train.txt": "27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846",
+    "experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+    "miss_rgbt/__init__.py": "7e9a1007fb76a2460b19806183f82550c31de32c4dac4746c74ac8691c1fae4f",
+    "miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+    "miss_rgbt/task_utility.py": "6f9d5c8947b5915eb4d56010caacd72710b69353306e83d0a1221d87e25b67b5",
+    "miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "miss_rgbt/train.py": "c74f079465024b1890213a9737f0179502ccdeb217e22501f2665dd778f0323a",
+    "lib/models/__init__.py": "65c27110a13c7f4ea45b7449e4cfc5e8e978dc78c03dd0e06e82668d8d56772d",
+    "lib/models/cadtrack/__init__.py": "90f89fa6e3fb10a85f2d344052296acbbfae153a293eec78640635654845dc88",
+    "lib/models/cadtrack/base_backbone.py": "c091912a9372ba5c14b01952b165a1642c40bb33ce53f0e1d7a4e094e1b117f0",
+    "lib/models/cadtrack/cadtrack.py": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+    "lib/models/cadtrack/utils.py": "557ce8e3d352e3ec69b2d21fcb0f8c18703b3152eff6f3f2e1a7470585e634ea",
+    "lib/models/cadtrack/vit_care.py": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+    "lib/models/layers/CDA_Module.py": "637c9d4859cf4b0eeef91dde7495d6cf97d3471a86a5c0ba2c904c542f452d68",
+    "lib/models/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lib/models/layers/adapter.py": "af082f7c8b07f9df4f650f96ae6d699bf7cabc89032d364885b84eb060e62bf0",
+    "lib/models/layers/attn.py": "4b70c16a4900e554eb573cac6050efbbe91666d1d9352a610173bb13b64163a3",
+    "lib/models/layers/attn_blocks.py": "43d830e603bad33041df42b04b1afd31f18df5acbb25659b1b80ee4e8723f9f2",
+    "lib/models/layers/cross_layer.py": "5008a012c53aaa0f5b7bb567b95b6118cef138644be9955e566cdf8c298d114e",
+    "lib/models/layers/frozen_bn.py": "6398d16294268830ede7992e616d7176ae484759f86fb977a6b73fccb86e8db8",
+    "lib/models/layers/head.py": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+    "lib/models/layers/mamba.py": "c671e339dd8f7417591864bd9829acd7837beb6ecba0ccac44b830efeed39f08",
+    "lib/models/layers/patch_embed.py": "2259b7703f008748167dd65d12ac28a496235d1f20a1d5c84a3aa0da9c8c0499",
+    "lib/models/layers/rpe.py": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94"
+  },
+  "peak_gpu_bytes": 8706549760,
+  "seconds": 37.66953802108765,
+  "scope": "Train-mode complete versus missing+.1KD raw parameter gradients; no optimizer or official scores."
+}

@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "report_sha256": "b0bf4d5fdd0df3e6d98b9e7b6a5deceb40b9a7ff82c6463fb0efc9d5242b7e41",
+  "analyzer_sha256": "9f9c5d2e0792c4fdc251d5059790b7460c9b10b3e56bcb94d38d61bd1800dccc",
+  "effects": {
+    "mean": 0.20145576426575695,
+    "ci95_low": 0.1608510358654812,
+    "ci95_high": 0.2481084965341151,
+    "negative_batches": 0,
+    "batches": 16
+  },
+  "diagnostic_supported": false,
+  "prior_reports_sha256": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89",
+    "server28_cross_stream_context_20261102_v2": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8",
+    "server28_tail_lowrank_20261102": "ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2",
+    "server28_candidate_quality_20261102_v2": "e774a5ff4b4cdacffae53c286c25bed0116d0feb6175a777f66a3061d4a35cda",
+    "server28_quality_ranker_20261102": "686d472292a7eb8a72e3a7ee168818b880cb601a0a353824f129cb73d5628bb7",
+    "server28_template_chronology_20261102": "20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79",
+    "server28_chronology_training_20261102": "645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce",
+    "server28_window_training_20261102_v2": "95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612",
+    "server28_teacher_reliability_20261102": "f46bbd0342729be6d3d8b15523908fcf7a6e3f26410b0352694b4614098382d6"
+  },
+  "server_files_checked": true,
+  "neural_gradient_replay": false,
+  "limitation": "Saved Gram arithmetic only; raw gradients/images not persisted."
+}

@@ -2,6 +2,15 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/diagnose_joint_gradients.py`,
+`scripts/launch_joint_gradients.py`, `scripts/analyze_joint_gradients.py`,
+`docs/JOINT_GRADIENT_DIAGNOSTIC_20261102.md`: originalE0 train-mode full
+complete/auxiliary parameter-gradient diagnostic,64fresh tuples/16batches.
+PID768965 completed37.670s,cosine .201456CI[.160851,.248108],negative0/16.
+Gatefalse,no projection training. Server/local saved Gram/bootstrap/hash
+verification passed;no independent neural-gradient replay or optimizer.
+Evidence `reports/server28_joint_gradients_20261102/`.
+
 2026-11-02 UTC: `scripts/diagnose_teacher_reliability.py`,
 `scripts/launch_teacher_reliability.py`, `scripts/analyze_teacher_reliability.py`,
 `docs/TEACHER_RELIABILITY_DIAGNOSTIC_20261102.md`: frozen E0 task/KD
