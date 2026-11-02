@@ -6,6 +6,37 @@ epoch1/update>=175. Both finite logged losses,76/74C,250Wcaps. No completed
 epoch or new official score was present. Training code/source/protocol,
 optimizer, data boundary and stopping/selection rules remain unchanged.
 
+## Live prefix audit at 08:44:51 UTC
+
+A separate read-only auditor inspected a fixed, already-written prefix of
+800microsteps per formal arm:400logged updates,4000fitting tuples spanning
+703of705fitting names,plus128development input records. Every actual frame
+identity satisfied partition, prior-frame exclusion and causal-order checks.
+Both full prefixes matched exactly in input identities/tensor hashes,
+availability/patch-mask hashes and200scheduled utility-probe selections.
+All recorded source hashes and queued frozen-source hashes still match.
+
+Reconstructed logged total loss from complete task,missing task,forwardKD
+and scheduled utility terms. Maximum absolute floating-point reconstruction
+error was1.2744451e-6 Utility and1.3189972e-6 Random. All logged loss fields
+finite; C/Mprobe alternation,search indices andregion ranges matched protocol.
+This checks recorded arithmetic,not raw images,gradients or optimizer states.
+It makes no method-superiority,convergence or official-score claim.
+
+Observed~3.164/3.152seconds/update predicts105.48/105.07minutes per epoch
+before epoch-level development/save. Firstepoch ETA now~18:05CSTNov2;
+14-20epochs approximately25-36hours plus full official reporting afterward.
+No training change,extra dataset evaluation,new sampling or GPU allocation.
+Continue original training; no adverse diagnostic calls for intervention.
+
+Audit reportSHA256
+07b6f720d0a25176619c72a03d5e09fe7d07a16667816760fc2c71dc134d577c:
+reports/server28_partitioned_a_prefix0800_20261102.json.
+AuditorSHA256
+3fe3d185983fb5f84cdc1ec76b8feca9510b4c97e989d58705673ca1f702923d:
+scripts/audit_partitioned_a_prefix.py.
+No formal checkpoint yet; no official result changed.
+
 ## Executed checks
 
 Python3.7 compilation passed for the new queue, registration helper and

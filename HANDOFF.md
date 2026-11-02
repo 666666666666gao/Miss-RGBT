@@ -1,5 +1,23 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 08:44 UTC - Live training prefix audit passed
+
+Previous turn officialqueueregistration=progress. Separate readonlyaudit of
+first800microsteps each:400loggedupdates/4000fittingtuples/703trainnames,
+128devinputrecords,200utilityprobes. All identities/partition/exclusions/
+causalorder pass. Entire pairedinput/mask/probe prefixes exact;allrecorded
+trainerandqueued frozen sources unchanged. Logged total-loss reconstruction
+maxerrorUtility1.2744451e-6/Random1.3189972e-6,alllossfieldsfinite.
+Not rawimage/gradient/optimizer replay or convergence/effectiveness evidence.
+No sampling/evaluation/parameter/rule change,GPUallocation or cleanup.
+Reportserver28_partitioned_a_prefix0800_20261102.json SHA
+07b6f720d0a25176619c72a03d5e09fe7d07a16667816760fc2c71dc134d577c.
+~3.164/3.152s/update=>105min/epoch;revisedfirstepoch~18:05CSTNov2,
+~25-36h for14-20epochs,official reporting afterward. Originaltrainingand
+queuecontinue;no adverse evidence requiringintervention. No official result
+or module validated;full goal incomplete. Inspectnearfirstepoch,notbefore
+unnecessarily;180-300s live observations near milestone.
+
 ## 2026-11-02 - Full official continuation queue registered
 
 Previous turn launched paired training=progress. Revalidated originalPIDs
