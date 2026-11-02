@@ -1,5 +1,27 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Template chronology diagnostic running
+
+Previous quality ranker failure was verified evidence, not a validated
+module. Existing independent-anchor experiments already failed to show
+stable identity acceptance, so do not repeat plain cosine/ranker pilots.
+New code-level question: sampler emits [newer,older], first template
+always complete; tracker retains [initial,recent], with recent availability.
+Missingness is therefore bound to different template ages. Templates share
+positional embeddings; image order alone is not a demonstrated cause.
+Frozen E0 GPU2 PID538386 launched2026-11-02T03:45:39Z:
+/home/gaob/Miss-RGBT/reports/server28_template_chronology_20261102.
+Native [newer complete,older masked], chronological [older complete,newer
+masked], and matched permutation sham[older masked,newer complete].
+Fresh128tuples from705fitting names,seed52101,all9states; nooptimizer.
+Last live elapsed1:13,112/128samples. ETA1-3min,check180s.
+Protocol docs/TEMPLATE_CHRONOLOGY_DIAGNOSTIC_20261102.md,worker frozen.
+SHAfa2a7433bf80e2d9685bb0cbefc3f92d1675f612803602085de38ea5072a9cc1.
+ProtocolSHA7dd785e9b01306de603f7acafb642b3873e64be8179f3c1ce0f712638f49caa0.
+On completion scripts/analyze_template_chronology.py --server-files.
+Either-sign material effect is diagnosis only, not a better inference
+policy; no automatic training/official evaluation. Overall goal incomplete.
+
 ## 2026-11-02 Matched quality ranker completed and verified
 
 PID499198 finished231.174s. Both51585parameter arms10epochs/180updates;
