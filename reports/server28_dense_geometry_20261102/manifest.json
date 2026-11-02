@@ -1,0 +1,2021 @@
+{
+  "samples": 128,
+  "rows": 1152,
+  "seed": 62103,
+  "sequence_names": [
+    "blkcarinrain",
+    "smallmoto",
+    "guardman",
+    "redgirl2trees",
+    "carturnleft109",
+    "leftthrowfoam",
+    "girlleft2right2",
+    "leftof2girls",
+    "motosmall",
+    "large3-gai",
+    "bikeboyleft",
+    "umbellaatnight",
+    "mototakinggirl",
+    "girlwithblkbag",
+    "whitecarturnl2",
+    "boydown",
+    "greenboywithgirl",
+    "boyridesbike",
+    "actor_1202",
+    "girl2-gai",
+    "greengirls",
+    "right2nddrillmaster",
+    "blackridebike",
+    "carturncome",
+    "bluemanof3",
+    "9handlowboy",
+    "boy_1227",
+    "rightbackcup",
+    "boyshead509",
+    "2ndrunningboy",
+    "rightestblkboy",
+    "blackbetweengreenandorange",
+    "boyturn",
+    "manleftsmallwhitehouse",
+    "right2ndblkpantsboy",
+    "Acarlightcome",
+    "whitecarturn137",
+    "motostraught2east",
+    "2boysatblkcarend",
+    "carout",
+    "whiteboyright",
+    "rightboywithbackpackandumbrella",
+    "girloutqueuewithbackpack",
+    "redbaggirlleftgreenbar",
+    "besom2-gai",
+    "blackcarturn183",
+    "mototurnright",
+    "girlbike156",
+    "left2ndgirl",
+    "leftrunningboy",
+    "2rdtribike",
+    "boywalkinginsnow",
+    "leftblkboy",
+    "rightredcup_quezhen",
+    "boyfollowing",
+    "motoinrain56",
+    "rightblkgirlNo_11",
+    "7rightblueboy",
+    "2boys",
+    "redminirtruck",
+    "whiteminibus197",
+    "7rightwhitegirl",
+    "boybehindbus",
+    "11runone",
+    "manrun250",
+    "biketurnleft",
+    "carstart",
+    "farwhiteboy",
+    "left4thblkboyback",
+    "bikeorange",
+    "4boys2left",
+    "leftblkboy648",
+    "moto2north",
+    "righttallnine-gai",
+    "boyouttrees",
+    "minibuscome",
+    "twoperson_1202",
+    "twopeopleelec-gai",
+    "rightredboy1227",
+    "rightholdball1096",
+    "greenboy",
+    "rightestblkboy2",
+    "lightcarcome",
+    "elegirl",
+    "boyunderthecolumn",
+    "ab_righthandfoamboard",
+    "1strowrightgirl",
+    "whiteboy`head",
+    "blackboy186"
+  ],
+  "input_manifest": [
+    {
+      "identity": {
+        "sequence": "rightestblkboy2",
+        "template_frames": [
+          321,
+          302
+        ],
+        "search_frames": [
+          359,
+          343,
+          334
+        ]
+      },
+      "tensors_sha256": "79bcc9a4f6c686f92fb0d9fb109907b6da609e663a7a4aac0b90393968ca0332"
+    },
+    {
+      "identity": {
+        "sequence": "leftrunningboy",
+        "template_frames": [
+          94,
+          71
+        ],
+        "search_frames": [
+          109,
+          104,
+          101
+        ]
+      },
+      "tensors_sha256": "d97bc319a879438a09041e534395c52cb95dba60924161fc22c34c057a4c1af2"
+    },
+    {
+      "identity": {
+        "sequence": "left4thblkboyback",
+        "template_frames": [
+          308,
+          295
+        ],
+        "search_frames": [
+          444,
+          419,
+          440
+        ]
+      },
+      "tensors_sha256": "66eb8e08487dfb2741da38ca925e14f3769495b5c9337fcc88a04d71e182275b"
+    },
+    {
+      "identity": {
+        "sequence": "Acarlightcome",
+        "template_frames": [
+          13,
+          6
+        ],
+        "search_frames": [
+          19,
+          17,
+          33
+        ]
+      },
+      "tensors_sha256": "28e3e9bd2cee274b114d76b14f7eee097eb3d6a278dc7fb4faf3c61afd576ec1"
+    },
+    {
+      "identity": {
+        "sequence": "2boys",
+        "template_frames": [
+          138,
+          34
+        ],
+        "search_frames": [
+          140,
+          139,
+          139
+        ]
+      },
+      "tensors_sha256": "66efca732a16fb95011fc53211f92f7fa9797296dd96cc1fc5964e948fa3ac3f"
+    },
+    {
+      "identity": {
+        "sequence": "2ndrunningboy",
+        "template_frames": [
+          40,
+          2
+        ],
+        "search_frames": [
+          157,
+          197,
+          66
+        ]
+      },
+      "tensors_sha256": "ca861254709931010fe6716b195e6b781fdef84b402cdf4bbc86e47b5a13d9f0"
+    },
+    {
+      "identity": {
+        "sequence": "girloutqueuewithbackpack",
+        "template_frames": [
+          41,
+          3
+        ],
+        "search_frames": [
+          150,
+          82,
+          51
+        ]
+      },
+      "tensors_sha256": "2b2898d6e33b3fda2f9cf19a44aae54721628d698c93e79cff3ca2efaf7c6016"
+    },
+    {
+      "identity": {
+        "sequence": "boyridesbike",
+        "template_frames": [
+          143,
+          123
+        ],
+        "search_frames": [
+          153,
+          199,
+          197
+        ]
+      },
+      "tensors_sha256": "72111d26f2fd19b918e6891732b264d590eccbaa7ee6981f2dddeb9d3fec005a"
+    },
+    {
+      "identity": {
+        "sequence": "right2ndblkpantsboy",
+        "template_frames": [
+          200,
+          87
+        ],
+        "search_frames": [
+          266,
+          219,
+          239
+        ]
+      },
+      "tensors_sha256": "8e604849753f45722d4a78a3e6dbbf38e516dbed95f26d7496dfc43b6022570d"
+    },
+    {
+      "identity": {
+        "sequence": "whiteminibus197",
+        "template_frames": [
+          55,
+          29
+        ],
+        "search_frames": [
+          94,
+          164,
+          72
+        ]
+      },
+      "tensors_sha256": "ebd3aac1b0171b19f60611c3f774b847eef3b1edb7bfcaf6b395cd47a5eeff06"
+    },
+    {
+      "identity": {
+        "sequence": "rightbackcup",
+        "template_frames": [
+          2546,
+          2482
+        ],
+        "search_frames": [
+          2716,
+          2593,
+          2572
+        ]
+      },
+      "tensors_sha256": "55c76f7b86371b6db66978faef2d69b72d76e632882282c8f08de79fec92797e"
+    },
+    {
+      "identity": {
+        "sequence": "right2nddrillmaster",
+        "template_frames": [
+          321,
+          233
+        ],
+        "search_frames": [
+          436,
+          489,
+          458
+        ]
+      },
+      "tensors_sha256": "343922e91ff4f68f31421cb5b2c3c781b28d01e6a5c80263ad149feeccb762e0"
+    },
+    {
+      "identity": {
+        "sequence": "left2ndgirl",
+        "template_frames": [
+          583,
+          423
+        ],
+        "search_frames": [
+          585,
+          585,
+          584
+        ]
+      },
+      "tensors_sha256": "40ab8022ecac027cc3cfc9c62a24f9ce6efa8a35193965559259dc8767f4e37d"
+    },
+    {
+      "identity": {
+        "sequence": "girl2-gai",
+        "template_frames": [
+          3168,
+          3106
+        ],
+        "search_frames": [
+          3242,
+          3290,
+          3347
+        ]
+      },
+      "tensors_sha256": "8329a38af190503a59d563bf4c4a03b7ef76e36947c7797f6d5fecb5ca785b6f"
+    },
+    {
+      "identity": {
+        "sequence": "boyouttrees",
+        "template_frames": [
+          7,
+          2
+        ],
+        "search_frames": [
+          50,
+          39,
+          75
+        ]
+      },
+      "tensors_sha256": "057a72fa435b13884338bca61f7542e59ce8d49b10caf9ca73ad1f1fa7646895"
+    },
+    {
+      "identity": {
+        "sequence": "2rdtribike",
+        "template_frames": [
+          58,
+          4
+        ],
+        "search_frames": [
+          85,
+          75,
+          99
+        ]
+      },
+      "tensors_sha256": "176eab415caa57d55356edf6088445553f9af3e10485e7569157e3c1542416bd"
+    },
+    {
+      "identity": {
+        "sequence": "leftof2girls",
+        "template_frames": [
+          219,
+          151
+        ],
+        "search_frames": [
+          401,
+          248,
+          280
+        ]
+      },
+      "tensors_sha256": "b21cbc434dc6dafa1c81a158651919ffeab1ba8a96fc1e4aae90fe2f67393305"
+    },
+    {
+      "identity": {
+        "sequence": "1strowrightgirl",
+        "template_frames": [
+          1629,
+          1545
+        ],
+        "search_frames": [
+          1665,
+          1652,
+          1702
+        ]
+      },
+      "tensors_sha256": "2cd5f5fbe008039d9a618a871e860d3b619e30e0c45fbcf0985a526e9560f09e"
+    },
+    {
+      "identity": {
+        "sequence": "blackcarturn183",
+        "template_frames": [
+          112,
+          104
+        ],
+        "search_frames": [
+          123,
+          124,
+          130
+        ]
+      },
+      "tensors_sha256": "60ed44963e36f9fe0e9a00cf8e5c32f507c55e014f06dc63a077d8bb7ff17ac3"
+    },
+    {
+      "identity": {
+        "sequence": "lightcarcome",
+        "template_frames": [
+          102,
+          51
+        ],
+        "search_frames": [
+          105,
+          118,
+          107
+        ]
+      },
+      "tensors_sha256": "96b5dc4416cbadf63bcdbfb63f45fd093a561fe8493301d82ae61c15e8269e94"
+    },
+    {
+      "identity": {
+        "sequence": "4boys2left",
+        "template_frames": [
+          361,
+          277
+        ],
+        "search_frames": [
+          413,
+          511,
+          425
+        ]
+      },
+      "tensors_sha256": "47cd97d19de9faecaeba420317300666bac472c788b116a4abef9909edf8c9de"
+    },
+    {
+      "identity": {
+        "sequence": "smallmoto",
+        "template_frames": [
+          57,
+          27
+        ],
+        "search_frames": [
+          61,
+          73,
+          100
+        ]
+      },
+      "tensors_sha256": "226fc6c2baf5775d25ea3d75b4050365e8a1a47ca1c3861fe386f9b307d9d7e7"
+    },
+    {
+      "identity": {
+        "sequence": "boy_1227",
+        "template_frames": [
+          546,
+          350
+        ],
+        "search_frames": [
+          594,
+          714,
+          553
+        ]
+      },
+      "tensors_sha256": "b5629ee5704d20bddd9c550ad3e010d6667eee15e58278c08b50e3f7556cd37a"
+    },
+    {
+      "identity": {
+        "sequence": "large3-gai",
+        "template_frames": [
+          1129,
+          1108
+        ],
+        "search_frames": [
+          1328,
+          1179,
+          1306
+        ]
+      },
+      "tensors_sha256": "c0a03070e96cca055163a2b3a57b794ecf494f498de35cd16c74e823c66038fe"
+    },
+    {
+      "identity": {
+        "sequence": "carstart",
+        "template_frames": [
+          115,
+          83
+        ],
+        "search_frames": [
+          147,
+          144,
+          127
+        ]
+      },
+      "tensors_sha256": "67bfdc63a69dc8d130acf007ce6d6422d8c18d81661c757af34cb6eb1d8d2405"
+    },
+    {
+      "identity": {
+        "sequence": "rightblkgirlNo_11",
+        "template_frames": [
+          3342,
+          3322
+        ],
+        "search_frames": [
+          3374,
+          3488,
+          3381
+        ]
+      },
+      "tensors_sha256": "b1886bf7bd304426ac996260778eb06666632db61b2335563de798e2213ba47e"
+    },
+    {
+      "identity": {
+        "sequence": "girl2-gai",
+        "template_frames": [
+          2130,
+          2026
+        ],
+        "search_frames": [
+          2185,
+          2189,
+          2187
+        ]
+      },
+      "tensors_sha256": "c8b6f7c37969257ea6a7a2a6e38b70e35796e69d68d9b3f4416e1f85fbae4104"
+    },
+    {
+      "identity": {
+        "sequence": "besom2-gai",
+        "template_frames": [
+          1420,
+          1394
+        ],
+        "search_frames": [
+          1425,
+          1437,
+          1426
+        ]
+      },
+      "tensors_sha256": "f0f16df479181a28919b2eade59cd1bfd266c8bbb805693b854f2e430d0d2d08"
+    },
+    {
+      "identity": {
+        "sequence": "rightestblkboy2",
+        "template_frames": [
+          47,
+          36
+        ],
+        "search_frames": [
+          177,
+          125,
+          171
+        ]
+      },
+      "tensors_sha256": "777ba44f56c7d7094c8a6cfa9b90112d010df9c0aef1f014a1f9e61b835e5582"
+    },
+    {
+      "identity": {
+        "sequence": "rightredboy1227",
+        "template_frames": [
+          135,
+          39
+        ],
+        "search_frames": [
+          284,
+          154,
+          246
+        ]
+      },
+      "tensors_sha256": "fc4e9bb5f41bc5f3fd748f05c131d8f5ca3ecab01dab6ff64731fabded31bb16"
+    },
+    {
+      "identity": {
+        "sequence": "mototurnright",
+        "template_frames": [
+          15,
+          14
+        ],
+        "search_frames": [
+          16,
+          62,
+          36
+        ]
+      },
+      "tensors_sha256": "a9fe1f64b090d8847aa79d4a2cbabba3402f4f3731c18110972860235faa6165"
+    },
+    {
+      "identity": {
+        "sequence": "Acarlightcome",
+        "template_frames": [
+          20,
+          18
+        ],
+        "search_frames": [
+          33,
+          33,
+          35
+        ]
+      },
+      "tensors_sha256": "1d34f16dbf721901d6819f7ed032d6d070a2690656dfdf3a4943cc45d56009da"
+    },
+    {
+      "identity": {
+        "sequence": "boyfollowing",
+        "template_frames": [
+          268,
+          262
+        ],
+        "search_frames": [
+          280,
+          279,
+          276
+        ]
+      },
+      "tensors_sha256": "dbb020a49019c0221488de2bca84ede45a895c0a6f6427916e535fa8490b4f3e"
+    },
+    {
+      "identity": {
+        "sequence": "twoperson_1202",
+        "template_frames": [
+          41,
+          28
+        ],
+        "search_frames": [
+          234,
+          198,
+          227
+        ]
+      },
+      "tensors_sha256": "b9d354bc6b12246731e376553e7fe12d15cf9fe4c9da02653979cd6150f33851"
+    },
+    {
+      "identity": {
+        "sequence": "motosmall",
+        "template_frames": [
+          97,
+          1
+        ],
+        "search_frames": [
+          211,
+          206,
+          225
+        ]
+      },
+      "tensors_sha256": "72be9cf89fcfd74bf17d57e0861d099f9a2247b1a62f75fae14df0ff69607825"
+    },
+    {
+      "identity": {
+        "sequence": "blackcarturn183",
+        "template_frames": [
+          159,
+          130
+        ],
+        "search_frames": [
+          169,
+          164,
+          164
+        ]
+      },
+      "tensors_sha256": "e0a85fe4162d5660541defcc84e99e6af4812bfde024f845ad8768f42751b537"
+    },
+    {
+      "identity": {
+        "sequence": "leftrunningboy",
+        "template_frames": [
+          92,
+          79
+        ],
+        "search_frames": [
+          98,
+          195,
+          184
+        ]
+      },
+      "tensors_sha256": "98e2ded8f0b0d5072c7bb32f596b63837562e01d00376c73917f5446bd124769"
+    },
+    {
+      "identity": {
+        "sequence": "greenboywithgirl",
+        "template_frames": [
+          160,
+          128
+        ],
+        "search_frames": [
+          215,
+          215,
+          191
+        ]
+      },
+      "tensors_sha256": "4503df1d0ba2642ca1f76e560442c4bdab289c286d9e2b245873150c21c9aec9"
+    },
+    {
+      "identity": {
+        "sequence": "carturncome",
+        "template_frames": [
+          75,
+          54
+        ],
+        "search_frames": [
+          198,
+          190,
+          127
+        ]
+      },
+      "tensors_sha256": "219cbf2db65b6e3fc86ac03ba61a1e82785e02af22cbe5067572f5317d358435"
+    },
+    {
+      "identity": {
+        "sequence": "whiteboyright",
+        "template_frames": [
+          261,
+          104
+        ],
+        "search_frames": [
+          388,
+          395,
+          398
+        ]
+      },
+      "tensors_sha256": "b4bbcfc41cab1ae4df5170051841377c823be225f694ffe24c20cbe8cdbbaba6"
+    },
+    {
+      "identity": {
+        "sequence": "boyshead509",
+        "template_frames": [
+          207,
+          99
+        ],
+        "search_frames": [
+          358,
+          213,
+          366
+        ]
+      },
+      "tensors_sha256": "a2b20975398f6c990b0809823ed0bcfbf298701e48df6eb11f008a3afc0aef25"
+    },
+    {
+      "identity": {
+        "sequence": "whitecarturnl2",
+        "template_frames": [
+          54,
+          16
+        ],
+        "search_frames": [
+          63,
+          68,
+          95
+        ]
+      },
+      "tensors_sha256": "8a02812f82bf2982269e14931286d53847d8ed426ae2c0156f8fd4c6c3878cf2"
+    },
+    {
+      "identity": {
+        "sequence": "7rightblueboy",
+        "template_frames": [
+          243,
+          131
+        ],
+        "search_frames": [
+          258,
+          357,
+          303
+        ]
+      },
+      "tensors_sha256": "8ebfe032af0a767aa59b6d52cf20f5c2d7209300b6ecb48e488cd18c16f7a4fa"
+    },
+    {
+      "identity": {
+        "sequence": "whitecarturn137",
+        "template_frames": [
+          15,
+          13
+        ],
+        "search_frames": [
+          111,
+          87,
+          33
+        ]
+      },
+      "tensors_sha256": "3fd7b9e73482f62bf8ac69b75902a627ea096089390de10bccc9f6b43241ceb5"
+    },
+    {
+      "identity": {
+        "sequence": "girloutqueuewithbackpack",
+        "template_frames": [
+          604,
+          544
+        ],
+        "search_frames": [
+          690,
+          771,
+          655
+        ]
+      },
+      "tensors_sha256": "738b6a24a2af341240be0e912aa756da18646c8564e3accc92241b0166cb6ee2"
+    },
+    {
+      "identity": {
+        "sequence": "redgirl2trees",
+        "template_frames": [
+          388,
+          286
+        ],
+        "search_frames": [
+          442,
+          393,
+          419
+        ]
+      },
+      "tensors_sha256": "2f9b06e60de83ef9d84c99a3fb36fc7ad7a48d007df8c57696f9ddc69b3f6470"
+    },
+    {
+      "identity": {
+        "sequence": "blackboy186",
+        "template_frames": [
+          27,
+          25
+        ],
+        "search_frames": [
+          103,
+          32,
+          69
+        ]
+      },
+      "tensors_sha256": "50ff6a3c76ab9f028a10651b736acad89523e6e5961e6597baaca2ae5f112dc2"
+    },
+    {
+      "identity": {
+        "sequence": "7rightwhitegirl",
+        "template_frames": [
+          232,
+          208
+        ],
+        "search_frames": [
+          329,
+          257,
+          325
+        ]
+      },
+      "tensors_sha256": "1e1e6f8b86540ff8d64416b9f2c7b9cf31ab5062dc6da0856e49a91cf725537b"
+    },
+    {
+      "identity": {
+        "sequence": "blackridebike",
+        "template_frames": [
+          153,
+          150
+        ],
+        "search_frames": [
+          158,
+          159,
+          155
+        ]
+      },
+      "tensors_sha256": "12fccc7d4b1a81935571457b4a64f947e5a47a527be8cc27a725d76e3059ea91"
+    },
+    {
+      "identity": {
+        "sequence": "carout",
+        "template_frames": [
+          252,
+          150
+        ],
+        "search_frames": [
+          264,
+          262,
+          266
+        ]
+      },
+      "tensors_sha256": "322c7c5fbeb429423ab26f092662d9e58263a430687541f57a7f0cfda04c6947"
+    },
+    {
+      "identity": {
+        "sequence": "smallmoto",
+        "template_frames": [
+          36,
+          1
+        ],
+        "search_frames": [
+          103,
+          78,
+          94
+        ]
+      },
+      "tensors_sha256": "588503a4f6a4b4895aaf335e96aa2c7b1937b2cdd158c12d30f632590ebe8906"
+    },
+    {
+      "identity": {
+        "sequence": "ab_righthandfoamboard",
+        "template_frames": [
+          119,
+          9
+        ],
+        "search_frames": [
+          130,
+          123,
+          154
+        ]
+      },
+      "tensors_sha256": "54873252fa84ebf574a48d79f0a483059a3fa7bb498c851bdf4ab2b143ef6d4d"
+    },
+    {
+      "identity": {
+        "sequence": "1strowrightgirl",
+        "template_frames": [
+          2531,
+          2447
+        ],
+        "search_frames": [
+          2604,
+          2556,
+          2636
+        ]
+      },
+      "tensors_sha256": "fac36519800c5b4fcc15d953fd350acbd45bca0c0932a2165b9e7bdc0c53e1e1"
+    },
+    {
+      "identity": {
+        "sequence": "2rdtribike",
+        "template_frames": [
+          120,
+          103
+        ],
+        "search_frames": [
+          134,
+          125,
+          129
+        ]
+      },
+      "tensors_sha256": "6291fcda7af8e4289f3e0da2d18519d923e23de11099100c82ac39a7f248b514"
+    },
+    {
+      "identity": {
+        "sequence": "blackcarturn183",
+        "template_frames": [
+          106,
+          0
+        ],
+        "search_frames": [
+          121,
+          158,
+          137
+        ]
+      },
+      "tensors_sha256": "82e8975ebfa2d4a97b4ede0fef31558d5a37100b802d72e18e552732a8ef2f4b"
+    },
+    {
+      "identity": {
+        "sequence": "2boys",
+        "template_frames": [
+          59,
+          5
+        ],
+        "search_frames": [
+          92,
+          86,
+          118
+        ]
+      },
+      "tensors_sha256": "d53070c421328d864567d72465a4b9a283e4bf86c83718f9f4dbe15a96c6735e"
+    },
+    {
+      "identity": {
+        "sequence": "right2nddrillmaster",
+        "template_frames": [
+          516,
+          430
+        ],
+        "search_frames": [
+          574,
+          519,
+          549
+        ]
+      },
+      "tensors_sha256": "6f1a3b7f2969175e686491f195ab79488730ec7b1d36cc10e16dcb1320162713"
+    },
+    {
+      "identity": {
+        "sequence": "boyouttrees",
+        "template_frames": [
+          76,
+          66
+        ],
+        "search_frames": [
+          79,
+          82,
+          82
+        ]
+      },
+      "tensors_sha256": "f74f5724ac4111c47655050610ed78596bd99f9864effa439bfc38d6dc29e8e1"
+    },
+    {
+      "identity": {
+        "sequence": "boyunderthecolumn",
+        "template_frames": [
+          121,
+          111
+        ],
+        "search_frames": [
+          251,
+          245,
+          260
+        ]
+      },
+      "tensors_sha256": "83413377940e46a843a700c5942fbbad2398d77e2686aa0de456c5ec482cbb45"
+    },
+    {
+      "identity": {
+        "sequence": "twoperson_1202",
+        "template_frames": [
+          433,
+          276
+        ],
+        "search_frames": [
+          566,
+          519,
+          549
+        ]
+      },
+      "tensors_sha256": "d9acfde974a272d4c26acbf7143b5793d021d7f44ae574ec020287ff20169327"
+    },
+    {
+      "identity": {
+        "sequence": "girlwithblkbag",
+        "template_frames": [
+          49,
+          26
+        ],
+        "search_frames": [
+          67,
+          70,
+          70
+        ]
+      },
+      "tensors_sha256": "f5791ed4e95d57d64ae36fa23302d60743b704f7bc45541bf6d3b85f833db28f"
+    },
+    {
+      "identity": {
+        "sequence": "bikeboyleft",
+        "template_frames": [
+          361,
+          345
+        ],
+        "search_frames": [
+          362,
+          376,
+          455
+        ]
+      },
+      "tensors_sha256": "084f49595aa6865201dd4493f6105cd55eba314428773bf140163a9b0956ff4c"
+    },
+    {
+      "identity": {
+        "sequence": "boydown",
+        "template_frames": [
+          41,
+          34
+        ],
+        "search_frames": [
+          59,
+          44,
+          51
+        ]
+      },
+      "tensors_sha256": "46798cd1aa7a0c8efaf09d6a3596ef70e9ec75794721392841d4de9e7ef954e6"
+    },
+    {
+      "identity": {
+        "sequence": "minibuscome",
+        "template_frames": [
+          77,
+          25
+        ],
+        "search_frames": [
+          82,
+          80,
+          90
+        ]
+      },
+      "tensors_sha256": "d7d78badecc5eb50f94ae7aee6550ce32c27bc662721017049da508917041737"
+    },
+    {
+      "identity": {
+        "sequence": "4boys2left",
+        "template_frames": [
+          252,
+          171
+        ],
+        "search_frames": [
+          423,
+          391,
+          373
+        ]
+      },
+      "tensors_sha256": "b5419a252925ac2256b432fdc265c044dbe9f8a7cda5b308ee6fbcb01a94afa6"
+    },
+    {
+      "identity": {
+        "sequence": "boyunderthecolumn",
+        "template_frames": [
+          100,
+          99
+        ],
+        "search_frames": [
+          227,
+          121,
+          202
+        ]
+      },
+      "tensors_sha256": "4417a8116ad4adff66cae517af9c21bafff10d18d09803040a1896b63bcce294"
+    },
+    {
+      "identity": {
+        "sequence": "motostraught2east",
+        "template_frames": [
+          61,
+          7
+        ],
+        "search_frames": [
+          62,
+          62,
+          64
+        ]
+      },
+      "tensors_sha256": "fb01c231fe603889d14790c6055110dd4b1c9cf628b1ee74f6e485d50f64b8b7"
+    },
+    {
+      "identity": {
+        "sequence": "rightblkgirlNo_11",
+        "template_frames": [
+          2965,
+          2961
+        ],
+        "search_frames": [
+          3163,
+          3135,
+          3075
+        ]
+      },
+      "tensors_sha256": "49fe58a0200a76df0743ac934b2f6a3c4cbd63df21a9268b0c8b63133ba52dda"
+    },
+    {
+      "identity": {
+        "sequence": "redbaggirlleftgreenbar",
+        "template_frames": [
+          991,
+          846
+        ],
+        "search_frames": [
+          1126,
+          1149,
+          1002
+        ]
+      },
+      "tensors_sha256": "fd5b5bb436935c601e555a98a9714ed6eeca83152ec22edb38918c8c157a0bec"
+    },
+    {
+      "identity": {
+        "sequence": "moto2north",
+        "template_frames": [
+          237,
+          214
+        ],
+        "search_frames": [
+          265,
+          277,
+          246
+        ]
+      },
+      "tensors_sha256": "2d823157a4ed7c6d44e6fce8e07f9b90eba843fb3e417a883c8b1679a78762f5"
+    },
+    {
+      "identity": {
+        "sequence": "boyfollowing",
+        "template_frames": [
+          164,
+          117
+        ],
+        "search_frames": [
+          262,
+          186,
+          256
+        ]
+      },
+      "tensors_sha256": "94f957e36f01d5c4ccd7e3a2de66fd5e76600fdbd6a68bbe3d1002221870a068"
+    },
+    {
+      "identity": {
+        "sequence": "smallmoto",
+        "template_frames": [
+          26,
+          9
+        ],
+        "search_frames": [
+          105,
+          79,
+          41
+        ]
+      },
+      "tensors_sha256": "d34f8efc1ca3b3522c275d5042ba01db6040f2fde736f073264e429cae74c3dc"
+    },
+    {
+      "identity": {
+        "sequence": "11runone",
+        "template_frames": [
+          117,
+          90
+        ],
+        "search_frames": [
+          226,
+          173,
+          251
+        ]
+      },
+      "tensors_sha256": "1086e79f30be02e7f0747f43a3d34a1e03e1c3b7df43be5ae164260808d6fd88"
+    },
+    {
+      "identity": {
+        "sequence": "whitecarturn137",
+        "template_frames": [
+          122,
+          53
+        ],
+        "search_frames": [
+          135,
+          135,
+          134
+        ]
+      },
+      "tensors_sha256": "1176078f362a1f3b32b4c6dda93933d6cab68b2ccfb49c85830e350bbefc9829"
+    },
+    {
+      "identity": {
+        "sequence": "blkcarinrain",
+        "template_frames": [
+          64,
+          58
+        ],
+        "search_frames": [
+          66,
+          99,
+          72
+        ]
+      },
+      "tensors_sha256": "7b63042da7fc8585ab3b6e0ae7341e44350346e8a361e0cb6c5724ae955ec83f"
+    },
+    {
+      "identity": {
+        "sequence": "2boys",
+        "template_frames": [
+          6,
+          3
+        ],
+        "search_frames": [
+          24,
+          127,
+          56
+        ]
+      },
+      "tensors_sha256": "0b5bf19c596017010a4ea271fc8cbde843800f83961fa6c67fc92113e7a0d798"
+    },
+    {
+      "identity": {
+        "sequence": "girlleft2right2",
+        "template_frames": [
+          168,
+          89
+        ],
+        "search_frames": [
+          324,
+          258,
+          275
+        ]
+      },
+      "tensors_sha256": "b7b8eb71eebab9563879405358a92f97ef96d4be72a378892109473335a4fb78"
+    },
+    {
+      "identity": {
+        "sequence": "farwhiteboy",
+        "template_frames": [
+          62,
+          16
+        ],
+        "search_frames": [
+          94,
+          89,
+          86
+        ]
+      },
+      "tensors_sha256": "eefebdab10feeb5d43e34f32dbc5310df4ddd45c2f29176052e5ae86f57cb7f0"
+    },
+    {
+      "identity": {
+        "sequence": "actor_1202",
+        "template_frames": [
+          463,
+          288
+        ],
+        "search_frames": [
+          542,
+          600,
+          474
+        ]
+      },
+      "tensors_sha256": "ab2db60777f521c6855dd6cd8e8cd2b2894e53ea8e689b6fe2ac79c2ab87d1a5"
+    },
+    {
+      "identity": {
+        "sequence": "ab_righthandfoamboard",
+        "template_frames": [
+          83,
+          9
+        ],
+        "search_frames": [
+          156,
+          106,
+          84
+        ]
+      },
+      "tensors_sha256": "9e5abef4ddf43f1bee6170def2c5adc94cef2b9173f61a8994b216fdbb12c695"
+    },
+    {
+      "identity": {
+        "sequence": "besom2-gai",
+        "template_frames": [
+          1326,
+          1215
+        ],
+        "search_frames": [
+          1399,
+          1375,
+          1334
+        ]
+      },
+      "tensors_sha256": "991459315334ae1fe8fd8e24e546a8435613b40041b23d67c902c64b9f732870"
+    },
+    {
+      "identity": {
+        "sequence": "boydown",
+        "template_frames": [
+          19,
+          15
+        ],
+        "search_frames": [
+          49,
+          46,
+          40
+        ]
+      },
+      "tensors_sha256": "f436c2005f8f96aa32be5b0c53a9f29d070c24cc05af0606e5672964138c4994"
+    },
+    {
+      "identity": {
+        "sequence": "girlleft2right2",
+        "template_frames": [
+          144,
+          43
+        ],
+        "search_frames": [
+          167,
+          272,
+          162
+        ]
+      },
+      "tensors_sha256": "8a65aa52c735261ffe4094553091477c6e1ee8c859cb5302cf7044e90ed3b220"
+    },
+    {
+      "identity": {
+        "sequence": "boyturn",
+        "template_frames": [
+          45,
+          31
+        ],
+        "search_frames": [
+          52,
+          93,
+          101
+        ]
+      },
+      "tensors_sha256": "b0d67c32b70d403617ef6e31985a9d9eb149d72eb8ba66b898bc4e95250aeca1"
+    },
+    {
+      "identity": {
+        "sequence": "whiteminibus197",
+        "template_frames": [
+          142,
+          3
+        ],
+        "search_frames": [
+          160,
+          169,
+          157
+        ]
+      },
+      "tensors_sha256": "1b070cf0564cc7dfb9511480e0a925c3e74b8413f71b160b23dc9bd8e3746df1"
+    },
+    {
+      "identity": {
+        "sequence": "motosmall",
+        "template_frames": [
+          29,
+          24
+        ],
+        "search_frames": [
+          195,
+          49,
+          157
+        ]
+      },
+      "tensors_sha256": "e3baf75f31552dd302f385d3d0c37f3839acaa4380d7b0600ec02236a6375eb2"
+    },
+    {
+      "identity": {
+        "sequence": "elegirl",
+        "template_frames": [
+          88,
+          19
+        ],
+        "search_frames": [
+          118,
+          167,
+          103
+        ]
+      },
+      "tensors_sha256": "e22a7df2831ae7b376d8f7003ae7d5c1f8ad1b23c92acf371899c7b7b4dcde3e"
+    },
+    {
+      "identity": {
+        "sequence": "righttallnine-gai",
+        "template_frames": [
+          380,
+          274
+        ],
+        "search_frames": [
+          517,
+          429,
+          575
+        ]
+      },
+      "tensors_sha256": "7908c32f2816e5a7f61af5c76d4a61925673332e7e13d65cb5f57b25f1ca8e04"
+    },
+    {
+      "identity": {
+        "sequence": "manleftsmallwhitehouse",
+        "template_frames": [
+          407,
+          234
+        ],
+        "search_frames": [
+          444,
+          491,
+          439
+        ]
+      },
+      "tensors_sha256": "ff4d4770a580c163590cedd7fc07cb6f4fec7864428736bd5477e24e9c8d3953"
+    },
+    {
+      "identity": {
+        "sequence": "bikeboyleft",
+        "template_frames": [
+          152,
+          63
+        ],
+        "search_frames": [
+          197,
+          333,
+          306
+        ]
+      },
+      "tensors_sha256": "4aae127867d4c0fa9bfdf0ca1902bb3db074eeec34dc32e7f0214f126cf78bf6"
+    },
+    {
+      "identity": {
+        "sequence": "minibuscome",
+        "template_frames": [
+          22,
+          13
+        ],
+        "search_frames": [
+          34,
+          75,
+          25
+        ]
+      },
+      "tensors_sha256": "94c0a0fe51b44133d55c58c91ce1186078da5bd5618dcb55c8c3b2c506537635"
+    },
+    {
+      "identity": {
+        "sequence": "redminirtruck",
+        "template_frames": [
+          11,
+          3
+        ],
+        "search_frames": [
+          26,
+          17,
+          38
+        ]
+      },
+      "tensors_sha256": "b3ccc3d966c3d40f8135c131b1c3545462d43238287a962122411b59758de16c"
+    },
+    {
+      "identity": {
+        "sequence": "greenboy",
+        "template_frames": [
+          194,
+          190
+        ],
+        "search_frames": [
+          291,
+          232,
+          247
+        ]
+      },
+      "tensors_sha256": "6681ab473656d178e118aa7d1db8705acf9a76de0de7ee87a0da623f5d8d3e61"
+    },
+    {
+      "identity": {
+        "sequence": "2rdtribike",
+        "template_frames": [
+          71,
+          39
+        ],
+        "search_frames": [
+          119,
+          119,
+          134
+        ]
+      },
+      "tensors_sha256": "eb308122f50056282fa0bbd72fd0d5c5e223b62e467597a078c0deeef33f06d9"
+    },
+    {
+      "identity": {
+        "sequence": "biketurnleft",
+        "template_frames": [
+          82,
+          29
+        ],
+        "search_frames": [
+          109,
+          147,
+          184
+        ]
+      },
+      "tensors_sha256": "4ecf4365df5f656de52a7715fee7258a06e4dccde50a242727479e0c61a04c19"
+    },
+    {
+      "identity": {
+        "sequence": "carout",
+        "template_frames": [
+          155,
+          36
+        ],
+        "search_frames": [
+          159,
+          156,
+          198
+        ]
+      },
+      "tensors_sha256": "2fa91565ef90889ca3d60b35838e2a7453853699c7b356f72235f2162a919def"
+    },
+    {
+      "identity": {
+        "sequence": "farwhiteboy",
+        "template_frames": [
+          94,
+          56
+        ],
+        "search_frames": [
+          111,
+          107,
+          106
+        ]
+      },
+      "tensors_sha256": "168d672cd61e15e24a2225fc2b84d5526f4f954616618d7603f56fc0c5706d10"
+    },
+    {
+      "identity": {
+        "sequence": "carout",
+        "template_frames": [
+          231,
+          125
+        ],
+        "search_frames": [
+          262,
+          245,
+          235
+        ]
+      },
+      "tensors_sha256": "dc21d1a397df755a9889dccb5ad4c6035121294d617772e52a1614fae58a9b85"
+    },
+    {
+      "identity": {
+        "sequence": "greengirls",
+        "template_frames": [
+          23,
+          12
+        ],
+        "search_frames": [
+          73,
+          57,
+          98
+        ]
+      },
+      "tensors_sha256": "f63016f6b3394c2c13697004c409057956364331388486731e8aad7e35f90a76"
+    },
+    {
+      "identity": {
+        "sequence": "boyshead509",
+        "template_frames": [
+          434,
+          363
+        ],
+        "search_frames": [
+          469,
+          460,
+          471
+        ]
+      },
+      "tensors_sha256": "becd8c4c2e9043e1398ecfd943de6546c8b324c3442b068e807c3f4502245c8f"
+    },
+    {
+      "identity": {
+        "sequence": "redminirtruck",
+        "template_frames": [
+          28,
+          7
+        ],
+        "search_frames": [
+          38,
+          38,
+          38
+        ]
+      },
+      "tensors_sha256": "5bf59ea418ab821795b58071d663476bb31093e66554ecbb7847e48868be728d"
+    },
+    {
+      "identity": {
+        "sequence": "rightestblkboy",
+        "template_frames": [
+          220,
+          162
+        ],
+        "search_frames": [
+          241,
+          226,
+          233
+        ]
+      },
+      "tensors_sha256": "34e3768f010b9ac76251ac50f5f202fc73dc9adb3f3f06a244d908e38e4b2697"
+    },
+    {
+      "identity": {
+        "sequence": "rightredboy1227",
+        "template_frames": [
+          390,
+          246
+        ],
+        "search_frames": [
+          435,
+          432,
+          420
+        ]
+      },
+      "tensors_sha256": "3ac2709643dec91d9a8a1ffa785c81e725c3d719c0e19e77f5f35a2384bca2c6"
+    },
+    {
+      "identity": {
+        "sequence": "right2ndblkpantsboy",
+        "template_frames": [
+          113,
+          53
+        ],
+        "search_frames": [
+          226,
+          140,
+          132
+        ]
+      },
+      "tensors_sha256": "10c0d0c51867aaea68dbc5d7f9233628a1766e0988cc9a90e6609abde8a2a786"
+    },
+    {
+      "identity": {
+        "sequence": "lightcarcome",
+        "template_frames": [
+          2,
+          1
+        ],
+        "search_frames": [
+          29,
+          92,
+          38
+        ]
+      },
+      "tensors_sha256": "e2c5db078fece3e49d588a63ba63f1900c31321c88a66588c0ca76047115b3ca"
+    },
+    {
+      "identity": {
+        "sequence": "rightredcup_quezhen",
+        "template_frames": [
+          854,
+          709
+        ],
+        "search_frames": [
+          1033,
+          866,
+          934
+        ]
+      },
+      "tensors_sha256": "398984639f534472e9cc64aab95baa4875919cd1c48db1115340e73def66daf0"
+    },
+    {
+      "identity": {
+        "sequence": "bikeboyleft",
+        "template_frames": [
+          315,
+          245
+        ],
+        "search_frames": [
+          350,
+          353,
+          373
+        ]
+      },
+      "tensors_sha256": "a8e32323296bcb92f07e680625465d28d9ce2fc33cd943e35b19f461e0b654cd"
+    },
+    {
+      "identity": {
+        "sequence": "redminirtruck",
+        "template_frames": [
+          16,
+          13
+        ],
+        "search_frames": [
+          17,
+          21,
+          17
+        ]
+      },
+      "tensors_sha256": "5325a281168fba8ba226eed2232f16267d86e822951920530a688741f7351309"
+    },
+    {
+      "identity": {
+        "sequence": "boyshead509",
+        "template_frames": [
+          406,
+          309
+        ],
+        "search_frames": [
+          485,
+          451,
+          411
+        ]
+      },
+      "tensors_sha256": "83c36b70c48935b1edc1c35b7084d6b44c3bdda2de72d23ec6a682f75eecd074"
+    },
+    {
+      "identity": {
+        "sequence": "manleftsmallwhitehouse",
+        "template_frames": [
+          128,
+          47
+        ],
+        "search_frames": [
+          256,
+          298,
+          285
+        ]
+      },
+      "tensors_sha256": "d53c12306c5fbd37fcc565b79ea41d6522cedc5595a882fb45daa7feab5f9e48"
+    },
+    {
+      "identity": {
+        "sequence": "elegirl",
+        "template_frames": [
+          1332,
+          1236
+        ],
+        "search_frames": [
+          1460,
+          1456,
+          1378
+        ]
+      },
+      "tensors_sha256": "f013463a669b1e54ae4a1096f441bc5737a28a42e7a996492df00b5b03b69564"
+    },
+    {
+      "identity": {
+        "sequence": "ab_righthandfoamboard",
+        "template_frames": [
+          32,
+          30
+        ],
+        "search_frames": [
+          136,
+          65,
+          118
+        ]
+      },
+      "tensors_sha256": "16a8dbe55a0fb607bdb5fd40fd18471f6e44b7d32cdef77d143a97e585ed4a29"
+    },
+    {
+      "identity": {
+        "sequence": "leftrunningboy",
+        "template_frames": [
+          132,
+          82
+        ],
+        "search_frames": [
+          171,
+          141,
+          181
+        ]
+      },
+      "tensors_sha256": "0341d2cf35221d140d49ed2c0e716867039cd619be81481adf3703585ec87497"
+    },
+    {
+      "identity": {
+        "sequence": "boybehindbus",
+        "template_frames": [
+          88,
+          49
+        ],
+        "search_frames": [
+          218,
+          147,
+          204
+        ]
+      },
+      "tensors_sha256": "f6d45a745212631695d91831d4ad53157738c5d29accc130d8236f41dc0a4809"
+    },
+    {
+      "identity": {
+        "sequence": "Acarlightcome",
+        "template_frames": [
+          17,
+          8
+        ],
+        "search_frames": [
+          23,
+          29,
+          20
+        ]
+      },
+      "tensors_sha256": "b0d14b59cedeb4c97f62d51ab2ab14e9c07e4283366e59ff070c97a7923394e1"
+    },
+    {
+      "identity": {
+        "sequence": "manleftsmallwhitehouse",
+        "template_frames": [
+          272,
+          181
+        ],
+        "search_frames": [
+          459,
+          327,
+          450
+        ]
+      },
+      "tensors_sha256": "93a4215458dc217cf9c9a90cc2b03789756d82ee2ff76659167ad2b3334bdab5"
+    },
+    {
+      "identity": {
+        "sequence": "carturncome",
+        "template_frames": [
+          127,
+          48
+        ],
+        "search_frames": [
+          191,
+          182,
+          147
+        ]
+      },
+      "tensors_sha256": "8823095bc1248c61531ef5292ecf1f80bb5649370fe45a2ef74dfe46255f18dc"
+    },
+    {
+      "identity": {
+        "sequence": "twoperson_1202",
+        "template_frames": [
+          165,
+          1
+        ],
+        "search_frames": [
+          247,
+          333,
+          279
+        ]
+      },
+      "tensors_sha256": "233cf953543a42e533fa1c24c724aafea261816a7722c0534ae907597e06148b"
+    },
+    {
+      "identity": {
+        "sequence": "manleftsmallwhitehouse",
+        "template_frames": [
+          287,
+          248
+        ],
+        "search_frames": [
+          427,
+          313,
+          317
+        ]
+      },
+      "tensors_sha256": "d520a27426c1e31d63fccb796e147d72d159cf5e8d072438d61e9290c5d2c343"
+    },
+    {
+      "identity": {
+        "sequence": "greenboywithgirl",
+        "template_frames": [
+          201,
+          141
+        ],
+        "search_frames": [
+          215,
+          251,
+          206
+        ]
+      },
+      "tensors_sha256": "1bce98e51f96ceebdf558f812b8866c268655a10b6528b1e25396869fa03fb19"
+    },
+    {
+      "identity": {
+        "sequence": "boyridesbike",
+        "template_frames": [
+          35,
+          28
+        ],
+        "search_frames": [
+          81,
+          97,
+          102
+        ]
+      },
+      "tensors_sha256": "526ea597abcf0c23631a8b63d5c8979f2e49484c5b50b7327026bb8d198d2107"
+    },
+    {
+      "identity": {
+        "sequence": "motoinrain56",
+        "template_frames": [
+          10,
+          1
+        ],
+        "search_frames": [
+          35,
+          46,
+          44
+        ]
+      },
+      "tensors_sha256": "0ff22f7193ebcf5a067fe02a15ace79e43e35b378a1d67425b49ca0244ad9b0b"
+    },
+    {
+      "identity": {
+        "sequence": "girlbike156",
+        "template_frames": [
+          19,
+          9
+        ],
+        "search_frames": [
+          30,
+          55,
+          137
+        ]
+      },
+      "tensors_sha256": "0fe5645723919e446fba3467eb3339793bbdcfe42b6e0c237ce387a7040c6280"
+    },
+    {
+      "identity": {
+        "sequence": "greenboy",
+        "template_frames": [
+          113,
+          72
+        ],
+        "search_frames": [
+          270,
+          129,
+          282
+        ]
+      },
+      "tensors_sha256": "452c8767463093de84c00dae3f95fed0310a0480cdde1655fdf6edd38ac554cd"
+    },
+    {
+      "identity": {
+        "sequence": "9handlowboy",
+        "template_frames": [
+          1164,
+          968
+        ],
+        "search_frames": [
+          1340,
+          1354,
+          1168
+        ]
+      },
+      "tensors_sha256": "966181bc61191bb0728c2aad38c8468c624632c2fe5c6bc151b716f857f9e4cd"
+    },
+    {
+      "identity": {
+        "sequence": "leftblkboy648",
+        "template_frames": [
+          122,
+          6
+        ],
+        "search_frames": [
+          133,
+          235,
+          275
+        ]
+      },
+      "tensors_sha256": "01494e84727d2dc276e75789224f35e1a120463cac4b69e75f3da499de0935bd"
+    },
+    {
+      "identity": {
+        "sequence": "redminirtruck",
+        "template_frames": [
+          17,
+          5
+        ],
+        "search_frames": [
+          23,
+          28,
+          38
+        ]
+      },
+      "tensors_sha256": "1a267f7defd19674cb283acb5ad69be1336c94feb9504cddcb24e2c4d23a5865"
+    },
+    {
+      "identity": {
+        "sequence": "bluemanof3",
+        "template_frames": [
+          831,
+          694
+        ],
+        "search_frames": [
+          862,
+          927,
+          906
+        ]
+      },
+      "tensors_sha256": "f00201339778f15c6b76d5d92ca3c9d4e8b3ef9db72a9955ba7084c99c64c81e"
+    }
+  ],
+  "native_head_replay_bitwise": true,
+  "cache_path": "/home/gaob/Miss-RGBT/reports/server28_dense_geometry_20261102/audit/features.pth",
+  "cache_sha256": "10e273a2f54eb1a925ca10cc938f653b77378c8bcb883c272ab3aa2ef4b50023"
+}

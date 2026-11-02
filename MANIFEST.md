@@ -322,3 +322,17 @@ Server/local9216boxes/1152aggregates/maps/exclusions/bootstrapverified;
 144normalizedimage replayrowsbitwiseexact,sharednetwork/notrawdecoder.
 ReportSHA dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b.
 Largecachesserveronly;notofficialgain/training/module. Fullgoalunmet.
+2026-11-02 matchedlocaldensegeometry completed280.274s. Fixed3x3 GT-peak
+neighborhood regression vs native peak,256/128/128 train/dev/audit tuples.
+Batch2304/LR.00288/1updateperepoch; native max20/selected17,lastfive16-20;
+dense stop14/selected13,lastfive10-14; peak9440MiB/arm.
+Audit74seq: dense-E0 RGBmissing-.006127CI[-.028993,.015274],
+TIRmissing+.022116CI[.001969,.046957]; dense-nativecontrol
+-.010682CI[-.019862,-.001967]. Gatefalse,closeexact3x3.
+Source/frame exclusion/full-state/finalfive/objectivegradient/replay checks
+passed;cached-head-not-fullnetwork,selected replay3456rows. Scripts:
+train_dense_geometry.py,launch_dense_geometry.py,analyze_dense_geometry.py.
+Docs DENSE_GEOMETRY_TRAINING_20261102.md, reportSHA
+de33c5b1912be26b4527df5bbdf579f995596680e1459d548ee675b21f308a70.
+All20 checkpoints and large caches retained server-only. Noofficial score/
+module. Next samplers exclude all this report's manifest frame IDs.

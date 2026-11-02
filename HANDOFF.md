@@ -3354,3 +3354,35 @@ ReportSHA dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b.
 Docs BOX_CONSENSUS_DIAGNOSTIC_20261102.md;largecachesserveronly.
 NextfreshsamplersmustexcludeALLthisreportinput_manifestframeIDs.
 No val97/official/newweights/cleanup. Officialscores unchanged,goalunmet.
+## 2026-11-02 - Matched local dense geometry training verified
+
+Previous goal turn ran/published box-consensus negative=progress. GPU2PID1178458
+completed280.274s. train/dev/audit256/128/128 train882 tuples,705/88/89 name
+partitions,all old template/search frames excluded. Fixed3x3 GT-heatmap
+regression mean vs native Hann-peak regression; common full focal objective,
+same six-million-parameter pretrained head and original single-box inference.
+Batch2304/LR.00288/one update per epoch,actual peak9440MiB each. Native20
+epochs hit max with ongoing dev improvement,selected17 from16-20; dense
+stopped14 after patience3,selected13 from10-14. All10 final-five checkpoints
+verified finite/BN unchanged. Cached-head only; not full-network convergence.
+
+Audit128/74seq: dense-E0 RGBmissing-.006127CI[-.028993,.015274],
+TIRmissing+.022116CI[.001969,.046957]. Dense-native-trained pooled missing
+-.010682CI[-.019862,-.001967]. Complete11_11+.011744
+CI[-.012965,.044125]; recovery01+.022820CI[-.012885,.065286],
+recovery10+.037759CI[.003800,.079068]. Gatefalse: RGBmissing gain absent,
+matched control superior to dense, complete parity gate failed. Close exact
+3x3 treatment/no neighborhood tuning/no module promotion. Does not reject all
+dense regression or explain cross-modal gap.
+
+Local/server analyzers verified all sources/base/cache/final-five weights,
+all prior-frame exclusions/visibility/partition/pairing/bootstrap/history,
+16 independent objective witness expressions/offset gradients (max error0),
+and selected-head3456 audit-row replay via independent Hann decode.
+Shared cached features/native taskloss; not image/full-tracker replay or
+external review. ReportSHA de33c5b1912be26b4527df5bbdf579f995596680e1459d548ee675b21f308a70.
+WorkerSHA b23858e5f3f679af547047873ab4f96d85f8ba3b501833759fedea4f3880f217.
+ProtocolSHA8847da6ad48e2219336b0fe1c0554a11714cd4bd5c4f6f0fb04f0acbee686b21.
+Docs DENSE_GEOMETRY_TRAINING_20261102.md. Large caches and all20 weights
+remain server-only. No val97/official calls/cleanup; official scores unchanged,
+goal unmet. Future samples exclude all new manifest frames.

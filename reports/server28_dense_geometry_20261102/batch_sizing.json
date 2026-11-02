@@ -1,0 +1,11 @@
+{
+  "probe_batch": 64,
+  "static_bytes": 443497984,
+  "peak_bytes": 720177152,
+  "total_bytes": 25296044032,
+  "proposed": 4578,
+  "batch": 2304,
+  "learning_rate": 0.00288,
+  "updates_per_epoch": 1,
+  "policy": "80percent linear incremental-peak estimate; divisor32 of actual2304 rows; no duplication/cap/retry."
+}
