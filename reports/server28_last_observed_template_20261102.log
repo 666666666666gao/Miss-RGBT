@@ -1,0 +1,35 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+{"stage": "clip", "clips": 1, "rows": 34, "writes": 18, "seconds": 23.15047311782837}
+{"stage": "clip", "clips": 2, "rows": 68, "writes": 38, "seconds": 36.713605880737305}
+{"stage": "clip", "clips": 3, "rows": 102, "writes": 50, "seconds": 51.745272636413574}
+{"stage": "clip", "clips": 4, "rows": 136, "writes": 50, "seconds": 64.85137963294983}
+{"stage": "clip", "clips": 5, "rows": 170, "writes": 61, "seconds": 77.25196027755737}
+{"stage": "clip", "clips": 6, "rows": 204, "writes": 70, "seconds": 83.32265424728394}
+{"stage": "clip", "clips": 7, "rows": 238, "writes": 90, "seconds": 91.67416143417358}
+{"stage": "clip", "clips": 8, "rows": 272, "writes": 101, "seconds": 100.89284706115723}
+{"stage": "clip", "clips": 9, "rows": 306, "writes": 107, "seconds": 108.46199440956116}
+{"stage": "clip", "clips": 10, "rows": 340, "writes": 124, "seconds": 113.62401819229126}
+{"stage": "clip", "clips": 11, "rows": 374, "writes": 140, "seconds": 123.98103499412537}
+{"stage": "clip", "clips": 12, "rows": 408, "writes": 154, "seconds": 137.0364282131195}
+{"stage": "clip", "clips": 13, "rows": 442, "writes": 162, "seconds": 146.0732386112213}
+{"stage": "clip", "clips": 14, "rows": 476, "writes": 174, "seconds": 160.2247714996338}
+{"stage": "clip", "clips": 15, "rows": 510, "writes": 177, "seconds": 174.51050782203674}
+{"stage": "clip", "clips": 16, "rows": 544, "writes": 183, "seconds": 185.82549142837524}
+{"stage": "clip", "clips": 17, "rows": 578, "writes": 203, "seconds": 194.15628457069397}
+{"stage": "clip", "clips": 18, "rows": 612, "writes": 217, "seconds": 206.77972412109375}
+{"stage": "clip", "clips": 19, "rows": 646, "writes": 242, "seconds": 216.23454236984253}
+{"stage": "clip", "clips": 20, "rows": 680, "writes": 250, "seconds": 224.81007266044617}
+{"stage": "clip", "clips": 21, "rows": 714, "writes": 263, "seconds": 238.25170922279358}
+{"stage": "clip", "clips": 22, "rows": 748, "writes": 276, "seconds": 248.12462949752808}
+{"stage": "clip", "clips": 23, "rows": 782, "writes": 278, "seconds": 262.21576166152954}
+{"stage": "clip", "clips": 24, "rows": 816, "writes": 285, "seconds": 269.85244035720825}
+{"stage": "clip", "clips": 25, "rows": 850, "writes": 302, "seconds": 277.4831738471985}
+{"stage": "clip", "clips": 26, "rows": 884, "writes": 315, "seconds": 288.9369900226593}
+{"stage": "clip", "clips": 27, "rows": 918, "writes": 323, "seconds": 295.89882254600525}
+{"stage": "clip", "clips": 28, "rows": 952, "writes": 336, "seconds": 309.4430594444275}
+{"stage": "clip", "clips": 29, "rows": 986, "writes": 337, "seconds": 318.6780664920807}
+{"stage": "clip", "clips": 30, "rows": 1020, "writes": 337, "seconds": 328.99705624580383}
+{"stage": "clip", "clips": 31, "rows": 1054, "writes": 360, "seconds": 339.5851709842682}
+{"stage": "clip", "clips": 32, "rows": 1088, "writes": 377, "seconds": 350.688104391098}
+{"stage": "complete", "effects": {"01": {"gain": {"mean": 0.00818816333269964, "ci95_low": -0.0031804391408890268, "ci95_high": 0.021454223782999778, "sequences": 32, "rows": 343}, "control": {"mean": -0.0008602858856693831, "ci95_low": -0.0023664717565655474, "ci95_high": 0.00017491966038488702, "sequences": 32, "rows": 343}}, "10": {"gain": {"mean": 0.0055756164392620836, "ci95_low": 0.001101934204854665, "ci95_high": 0.012709679877289997, "sequences": 32, "rows": 321}, "control": {"mean": -0.0002814853300871832, "ci95_low": -0.00200226836180716, "ci95_high": 0.0013511383055392703, "sequences": 32, "rows": 321}}, "missing": {"gain": {"mean": 0.006703114212752732, "ci95_low": 0.0009432889307030226, "ci95_high": 0.013223609634356178, "sequences": 32, "rows": 664}, "control": {"mean": -0.00043984555353186386, "ci95_low": -0.0015298828403907919, "ci95_high": 0.0005633525648625994, "sequences": 32, "rows": 664}}, "complete": {"gain": {"mean": 0.0015978425270519138, "ci95_low": 0.0003178962993020084, "ci95_high": 0.0030168386258606107, "sequences": 32, "rows": 424}, "control": {"mean": 0.0022886679151726563, "ci95_low": 0.0003586288765382965, "ci95_high": 0.004532887338963957, "sequences": 32, "rows": 424}}}, "advance": false, "seconds": 351.700724363327}

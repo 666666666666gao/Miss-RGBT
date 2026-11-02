@@ -1,0 +1,79 @@
+{
+  "status": "verified",
+  "report_sha256": "b0e0cbb393f4e449dde5df845aa104898b7a5cf55cf8cd03a6a086d7bffb7963",
+  "analyzer_sha256": "21014254201afb703c03f304b387aee05dc82dc0751b19c913fcbd38c7758ce2",
+  "effects": {
+    "01": {
+      "gain": {
+        "mean": 0.00818816333269964,
+        "ci95_low": -0.0031804391408890268,
+        "ci95_high": 0.021454223782999778,
+        "sequences": 32,
+        "rows": 343
+      },
+      "control": {
+        "mean": -0.0008602858856693831,
+        "ci95_low": -0.0023664717565655474,
+        "ci95_high": 0.00017491966038488702,
+        "sequences": 32,
+        "rows": 343
+      }
+    },
+    "10": {
+      "gain": {
+        "mean": 0.0055756164392620836,
+        "ci95_low": 0.001101934204854665,
+        "ci95_high": 0.012709679877289997,
+        "sequences": 32,
+        "rows": 321
+      },
+      "control": {
+        "mean": -0.0002814853300871832,
+        "ci95_low": -0.00200226836180716,
+        "ci95_high": 0.0013511383055392703,
+        "sequences": 32,
+        "rows": 321
+      }
+    },
+    "missing": {
+      "gain": {
+        "mean": 0.006703114212752732,
+        "ci95_low": 0.0009432889307030226,
+        "ci95_high": 0.013223609634356178,
+        "sequences": 32,
+        "rows": 664
+      },
+      "control": {
+        "mean": -0.00043984555353186386,
+        "ci95_low": -0.0015298828403907919,
+        "ci95_high": 0.0005633525648625994,
+        "sequences": 32,
+        "rows": 664
+      }
+    },
+    "complete": {
+      "gain": {
+        "mean": 0.0015978425270519138,
+        "ci95_low": 0.0003178962993020084,
+        "ci95_high": 0.0030168386258606107,
+        "sequences": 32,
+        "rows": 424
+      },
+      "control": {
+        "mean": 0.0022886679151726563,
+        "ci95_low": 0.0003586288765382965,
+        "ci95_high": 0.004532887338963957,
+        "sequences": 32,
+        "rows": 424
+      }
+    }
+  },
+  "advance": false,
+  "rows": 1088,
+  "shams": 96,
+  "complete_history_parity_rows": 731,
+  "writes": 377,
+  "incomplete_writes": 165,
+  "server_checks": null,
+  "limitation": "Same-native-history shadow intervention; not closed-loop policy benefit, official metrics, external scientific review or validated novelty."
+}

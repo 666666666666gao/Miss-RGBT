@@ -1,5 +1,58 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 - Last-observed template diagnostic verified and closed
+
+PID1011087 completed351.701s,32fresh128frameclips/1088rows,377native
+writes/165incomplete. Retained-native RGBmissing IoU+.008188
+CI[-.003180,.021454],TIRmissing+.005576CI[.001102,.012710],
+pooledmissing+.006703CI[.000943,.013224],complete-current+.001598
+CI[.000318,.003017]. Retained-complete-only pooledmissing-.000440
+CI[-.001530,.000563]. All32seq contribute. Promotion=false: insufficient
+directional gains and no demonstrated matched-control superiority.
+Close exactpolicy/control; do not promote complete-only control separately,
+retune audit,expandtraining or claim a module. Smallpositive effects are
+same-native-history one-step benefits,notclosedloop/official gains.
+
+Server/local box/provenance/exclusion/bootstrap/source/checkpoint verified.
+96native shams,731complete-history exactparityrows;firstclip native-image
+replay34rows/18writes/templatehashes exact. Replay shares policyworker and
+nativetracker,notfullimageaudit/independentneuralimplementation/externalreview.
+ReportSHA b0e0cbb393f4e449dde5df845aa104898b7a5cf55cf8cd03a6a086d7bffb7963.
+Nooptimizer/weights/cleanup/val97/officialcalls;GPUsidle38/37/45/37C,all250W.
+Protocol/results docs/LAST_OBSERVED_TEMPLATE_DIAGNOSTIC_20261102.md.
+MPTrack70ae6b7asynchronoustemplatepriorart documented,no sourcecopied.
+Official best scores unchanged;overall objective/three modules unmet.
+Future fresh-frame samplers must additionally exclude all32clips in
+reports/server28_last_observed_template_20261102/selected_clips.json;
+the recorded140eligible128frame count was BEFORE this new diagnostic.
+
+## 2026-11-02 06:44 UTC - Last-observed template diagnostic running
+
+Previous crop pilot verified/closed was progress,not goal completion.
+GPU2PID1011087 launched06:44:26Z,live02:39/13of32clips,442rows/162writes,
+2208MiB/67C/250W. FrozenE0,32fresh128frame fitting705clips,seed59101.
+Excluded all prior tuple/burst/crop and image-training fit/dev/amendedaudit
+frames; metadata preflight140eligible128frame fittingseq,175at96.
+Native alone commits trajectories. At every4thcall+first3, shadow last-
+observed per-sensor dynamic template vs complete-only-write control,
+same nativecrop/writeevents,2slots andnooptimization. Native snapshots
+restored;GTonlyinit/scoring. Both valid banks carryrealpastobservations.
+
+Protocol docs/LAST_OBSERVED_TEMPLATE_DIAGNOSTIC_20261102.md snapshotSHA
+6314346f0b969799e3a0ed834c2ff483f37eb9b55ade8756504e1b3d38eb0f89.
+WorkerSHAf98e64eefea7d54451c90516ccfa493358f3e6d259a2885d55bcaccca74ca569.
+Source frozen. Analyzer implemented/syntaxchecked, not resultverified.
+Expectedremaining~4min at13clips;next180-300sobservation thenanalyze
+--server-files --replay-first-clip ifcompleted. Reportroot
+reports/server28_last_observed_template_20261102. Gate only authorizes
+freshclosedloopdiagnostic,nottraining/official/module claim.
+
+Read-only MPTrack70ae6b7 alreadyusesasynchronoussensortemplates;MITlicense,
+sourceblobd42fb6b1602173461754af5b3ad517c0251955f6. No codecopied/installed.
+Windowslongpath checkoutfailure forunrelatedYAML preserved;Gitobjects and
+inspectedtracker/LICENSE readable. Priorartdoc records exactscope.
+No val97/official/cleanup;officialmetrics unchanged;overallgoal unmet.
+
 ## 2026-11-02 - Full-image crop pilot closed after verified amended audit
 
 Audit-only PID949348 completed346.833s; server/local analysis verified.

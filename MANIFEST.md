@@ -2,6 +2,26 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 completed: last-observedtemplate diagnostic351.701s,
+32fresh128frameclips/1088rows/377writes,165incomplete. Retained-native
+RGBmissing+.008188CI[-.003180,.021454],TIRmissing+.005576CI[.001102,.012710],
+pooledmissing+.006703CI[.000943,.013224],complete-current+.001598
+CI[.000318,.003017];retained-complete-only pooledmissing-.000440
+CI[-.001530,.000563]. Gatefalse,exactpolicy/controlclosed.
+Server/localprovenance/math/hashespassed,96shams/731completehistoryparity;
+firstclip34rows/18events native-image replay exact,sharedpolicy/tracker.
+ReportSHAb0e0cbb393f4e449dde5df845aa104898b7a5cf55cf8cd03a6a086d7bffb7963.
+Nooptimization/officialscores/modulevalidated,fullgoalunmet.
+
+2026-11-02 06:44UTC: `scripts/diagnose_last_observed_template.py`,
+`scripts/launch_last_observed_template.py`,`scripts/analyze_last_observed_template.py`,
+`docs/LAST_OBSERVED_TEMPLATE_DIAGNOSTIC_20261102.md`:32fresh128frame fitting
+clips, frozenE0 last-observed per-sensor templates vs complete-only control
+under native crops/writes. GPU2PID1011087 live02:39/13clips,2208MiB/67C/250W.
+Metadata feasibility140eligible128frameseq;allpriorcropframes excluded.
+Nooutcome yet,analyzersyntaxcheckedonly;notclosedloop/official/module.
+MPTrack pinnedsource/mit review in ASYNCHRONOUS_TEMPLATE_SOURCE_REVIEW_20261102.md.
+
 2026-11-02 completed: amended24x64 full-image crop audit,346.833s,
 9072rows/24sequences,server+local analysis and378row firstclip image replay.
 All10finitefinal5weights/BN/source/base/cache/metadata verified; selected
