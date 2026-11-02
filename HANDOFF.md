@@ -3659,3 +3659,27 @@ Utility5175/Random5200 with observed losses6.963657/5.826354 finite.
 GPU2/3both74C,22710/22742MiB,250Wcaps. Epoch3 milestone~21:37CST.
 No original runtime/training/queue changes, checkpoint pruning or val97.
 P still waits original terminal/frozen manifests; full goal remains unmet.
+
+## Isolated F image training entry, 2026-11-02
+
+Added research/feedback_f/train.py: four controls use shared build/batch/
+step_masks, inherited train882 partitions/exclusions/loader/records and BN
+freeze; logs gradients/LRs/masks/input hashes, saves20weights and selects
+development-loss minimum within16-20 with earlier tie. Completes full common
+configured P course; no benchmark selection or weight deletion.
+Requires actual formal P verification plus prepared/config/source/parent/
+manifest hashes before dataset access/output-directory creation.
+
+ActualPython3.7 compile/import/CLI PASS and missing formal P verification
+rejected with no F run directory created. Receipt
+reports/server28_feedback_f_train_entry_20261102.json SHA256
+054f3e7874460bbadfd083ac7cfce28108af19464eebf60a71ed293301920736.
+This is entry validation only: no positive-parent check, dataset/epoch loop,
+F real-image smoke/formal run, saved-weight verifier or official result.
+Batch-memory sizing/matched configs and positive-path checks remain pending.
+
+At21:00:45CST original1288280/1288281/1355742 actualcommands live;
+epoch3microsteps10599/10649 (updates5300/5325),observedloss3.276134/6.415179
+finite. GPU2/3 75/74C,22710/22742MiB,250Wcaps. Epoch3ETA~21:37CST.
+Original runtime/training/queue unchanged. P waits originalterminal;
+P->F->X retained and full goal still unmet.

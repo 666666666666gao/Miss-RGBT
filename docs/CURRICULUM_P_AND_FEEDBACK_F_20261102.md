@@ -145,13 +145,21 @@ An isolated structural prototype now exists in research/feedback_f/model.py,
 with none/shallow/deep controls and a normalized dual-round objective helper.
 Actual-E0-network synthetic checks are documented in
 FEEDBACK_F_STRUCTURE_20261102.md. No F image experiment, convergence result
-or official score exists; formal trainer/tracker integration remains pending.
+or official score exists; actual image-loop validation remains pending.
 This does not change the P-then-F-then-X experiment order.
 
 The tracker integration check now passes on synthetic frames and confirms
 that F can inherit native crop/decode/template-update behavior with one
-external state commit per frame. It still is not formal trainer integration
-or image/benchmark evidence.
+external state commit per frame. These checks do not validate the image
+training loop or benchmark behavior.
+
+An isolated F image-training entry now exists in research/feedback_f/train.py,
+using shared batch/mask helpers, native data records and BN freeze, all20
+epochs of one common configured P course, and final-five train-only selection.
+It requires verified completed P controls before dataset access/output creation.
+Actual Python3.7 compile/CLI and missing-parent rejection pass; no F image
+loop or campaign has run. Positive-parent validation, matched configs,
+batch-memory measurement and image smoke/verifier remain pending.
 
 ## X: Cross-View Supervision
 

@@ -140,12 +140,41 @@ updates, with exact objective reconstruction, finite gradients, parameter
 updates and frozen BN. Duration19.253s, peak8434151424bytes. V1 retains
 its original source hashes. Neither receipt is real-image training evidence.
 
+## Isolated Image Training Entry
+
+`train.py` now supplies the image-training loop for all four F controls.
+It reuses the original partitioned loader, frame/tensor identity records,
+train882-only development evaluation and frozen BN. All arms use the same
+configured P schedule, sample/update budget, per-step mask seeds and probe
+sequence. Their learning rate, microbatch and accumulation must be matched
+when preparing the four-arm campaign; batch sizing remains unmeasured.
+The entry records config/source/initial shared parameter/BN hashes, masks,
+losses, gradient norms, learning rates, development history and checkpoints.
+It completes the configured 20-epoch P course, retaining every checkpoint;
+the minimum development loss within epochs16-20 selects one checkpoint
+(earlier tie). It does not select or delete weights using official tests.
+
+Before dataset access or output-directory creation, the entry requires the
+full formal P verification report, unchanged verifier/prepared/config hashes,
+all four P completion/manifest hashes, and inherited prior completion and
+frame-exclusion boundaries. This preserves the P->F->X experiment order.
+No F configs, campaign or image workers have been created.
+
+The actual Python3.7 compile/import/CLI and missing-parent rejection check
+passed; receipt `reports/server28_feedback_f_train_entry_20261102.json`,
+SHA256 `054f3e7874460bbadfd083ac7cfce28108af19464eebf60a71ed293301920736`.
+This check confirmed the absent formal P verification causes rejection
+without creating an F run directory. It did not execute the loader/epoch/
+checkpoint loop or verify the positive-parent path. The earlier optimizer
+receipts cover synthetic batch updates only, not this image loop.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original
 manifests, metadata feasibility, actual image smoke and formal training.
-Before image training/evaluation of F, provide the isolated formal trainer
-loop using the isolated mask helper and image smoke verification. Synthetic tracker
+Before image training/evaluation of F, complete positive-parent validation,
+prepare matched configs, measure batch memory and perform image smoke plus
+saved-evidence verification of the new training loop. Synthetic tracker
 loading and one external state/template update have passed. Compare single-pass/no-residual/
 shallow/deep with matched objective and training budgets.
 Measure latency and peak memory on the same actual workload and record

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Compile/import/CLI and actual missing P boundary only",
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "cli_help": true,
+  "compile": true,
+  "missing_parent_rejected": true,
+  "no_f_run_directory_created": true,
+  "required_parent": "/home/gaob/Miss-RGBT/reports/server28_curriculum_p_20261102_formal/verification.json",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/train.py": "197133328038f3543b17f2290525abb16e5db6a0543dfb2c340788bb6e1d0511",
+    "/home/gaob/Miss-RGBT/research/feedback_f/training.py": "3b103a99986ca22907236c486ff6adae72d93995522922a132dc2ff9eabd01cc",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f"
+  },
+  "limitations": [
+    "No image data opened or training loop executed",
+    "No full positive-parent or saved-weight verification",
+    "No F smoke, convergence or official metrics"
+  ]
+}
