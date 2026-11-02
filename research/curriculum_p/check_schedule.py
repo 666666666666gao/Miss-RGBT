@@ -13,7 +13,12 @@ from miss_rgbt.train import sample_masks as native_sample_masks
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', required=True)
+    parser.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
     args = parser.parse_args()
+    device = torch.device(args.device)
+    if args.device == 'cuda':
+        from partitioned_a_official_queue_v2 import gpu_ready
+        gpu_ready(0)
     torch.set_num_threads(1)
     random.seed(65102)
     before = random.getstate()
@@ -27,8 +32,8 @@ def main():
     assert schedule('shuffled') != expected
     assert abs(sum(expected) / 20. - .5) < 1e-12
     assert schedule('shuffled') == schedule('shuffled')
-    templates = [torch.empty(64, 1), torch.empty(64, 1)]
-    searches = [torch.empty(64, 1) for _ in range(3)]
+    templates = [torch.empty(64, 1, device=device), torch.empty(64, 1, device=device)]
+    searches = [torch.empty(64, 1, device=device) for _ in range(3)]
     observations = {}
     for epoch in [1, 5, 6, 15, 16, 20]:
         paired_patches = []
@@ -41,15 +46,17 @@ def main():
             assert local['patch_mask_probability'] == .1
             torch.manual_seed(65103)
             actual = sample_masks(templates, searches, config, epoch)
-            after = torch.get_rng_state().clone()
+            after = (torch.cuda.get_rng_state() if args.device == 'cuda'
+                     else torch.get_rng_state()).clone()
             torch.manual_seed(65103)
             reference = native_sample_masks(templates, searches, local)
-            assert torch.equal(after, torch.get_rng_state())
+            current = torch.cuda.get_rng_state() if args.device == 'cuda' else torch.get_rng_state()
+            assert torch.equal(after, current)
             assert all(torch.equal(a, b) for aa, bb in zip(actual, reference)
                        for a, b in zip(aa, bb))
             available, patch = actual
             assert len(available) == 5 and len(patch) == 3
-            assert torch.equal(available[0], torch.ones(64, 2))
+            assert torch.equal(available[0], torch.ones(64, 2, device=device))
             assert all((value.sum(-1) >= 1.).all() for value in available)
             assert all(value.shape == (64, 256, 2) for value in patch)
             assert all(((value == 0.) | (value == 1.)).all() for value in patch)
@@ -65,7 +72,7 @@ def main():
             local = epoch_config(config, epoch)
             assert abs(1. - local['complete_rgb_missing_tir_missing_probability'][0]
                        - schedule(arm)[epoch - 1]) < 1e-12
-    result = dict(status='PASS', scope='Synthetic CPU mask checks; no training',
+    result = dict(status='PASS', scope='Synthetic mask checks; no training', device=args.device,
                   schedules=observations, shared_patch_masks=True,
                   native_sampler_parity=True, shared_rng_consumption=True)
     with Path(args.output).open('x') as stream:

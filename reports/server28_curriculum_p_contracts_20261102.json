@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "rejected": [
+    "partial_course",
+    "early_stopped",
+    "selection_outside_final5",
+    "nonfinite_loss",
+    "wrong_probability",
+    "wrong_final5",
+    "wrong_updates",
+    "pair_input_sha256",
+    "pair_patch_sha256",
+    "pair_masks_sha256",
+    "pair_microstep"
+  ],
+  "tested_lr_epochs": [
+    1,
+    10,
+    11,
+    16,
+    20
+  ],
+  "same_probability_requires_same_masks": true,
+  "different_probability_may_change_modality_masks": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/curriculum_p/check_contracts.py": "6495ced32e40b6ecf2ceb8f80298a3e03fc9365fd4a74fc43189396eecf449ab",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/verify.py": "1a6406c0a50ff22d2a250d192c2321231887865aebbbcd4085fbfdfbd92d0e21"
+  },
+  "scope": "Synthetic verifier contracts only; no images, checkpoints or training evidence"
+}

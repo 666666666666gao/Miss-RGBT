@@ -33,18 +33,24 @@ def main():
             manifests[str(manifest)] = sha(manifest)
     if args.phase == 'formal':
         smoke = PROJECT/'reports/server28_curriculum_p_20261102_smoke/verification.json'
-        assert json.loads(smoke.read_text())['status'] == 'PASS'
+        checked = json.loads(smoke.read_text())
+        assert checked['status'] == 'PASS' and checked['phase'] == 'smoke'
+        assert set(checked['arms']) == set(ARMS)
+        assert all(sha(path) == digest for path, digest in checked['source_sha256'].items())
         for arm in ARMS:
             root = PROJECT/'runs/server28_curriculum_p_20261102_smoke'/arm
             path = root/'completed.json'
             completed = json.loads(path.read_text())
             assert completed['status'] == 'complete' and completed['epochs'] == 20
+            assert checked['arms'][arm]['completed_sha256'] == sha(path)
             parents[str(path)] = sha(path)
             manifest = root/'input_manifest.jsonl'
             manifests[str(manifest)] = sha(manifest)
     stem = 'server28_curriculum_p_20261102_'+args.phase
     destination = PROJECT/'reports'/stem
     destination.mkdir(exist_ok=False)
+    (destination/'protocol.md').write_bytes(
+        (PROJECT/'docs/CURRICULUM_P_AND_FEEDBACK_F_20261102.md').read_bytes())
     source = PROJECT/'reports/server28_partitioned_a_20261102_formal/utility.json'
     original = json.loads(source.read_text())
     records = []

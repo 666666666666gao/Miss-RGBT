@@ -75,7 +75,10 @@ def main():
                                     task_utility=config['task_utility']).cuda().train()
         base.fix_bn(model, True)
         base.save(root/'initial_state.json',
-                  dict(parameters_sha256=base.prior.common.digest(dict(model.named_parameters()))))
+            dict(parameters_sha256=base.prior.common.digest(dict(model.named_parameters())),
+                 bn_sha256={name: base.tensor_hash(value) for name, value in model.named_buffers()
+                            if any(key in name for key in
+                                   ['running_mean', 'running_var', 'num_batches_tracked'])}))
         groups = [
             dict(params=[p for name, p in model.named_parameters() if p.requires_grad and 'backbone' in name],
                  lr=config['learning_rate']*config['backbone_multiplier']),
@@ -133,7 +136,8 @@ def main():
                     optimizer.zero_grad(set_to_none=True)
                     updates += 1
                     status.update(update=updates, seconds=time.time()-started,
-                                  peak_gpu_bytes=torch.cuda.max_memory_allocated())
+                        grad_norm=float(norm), learning_rates=[group['lr'] for group in optimizer.param_groups],
+                        peak_gpu_bytes=torch.cuda.max_memory_allocated())
                     if updates == 1 or updates % 25 == 0:
                         print(json.dumps(status), flush=True)
                 steps.write(json.dumps(status)+'\n')

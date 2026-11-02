@@ -50,9 +50,8 @@ Use common fitting/dev inputs and initialization across all four P arms.
 Preserve all twenty checkpoints initially; report final-five full official
 Complete/Miss results, and identify the same internal-dev-selected
 checkpoint for both conditions. Never clean using official-test ranking.
-No val97 access. No formal image run is authorized by a synthetic PASS alone:
-the image trainer, manifest capture, gradient/update smoke and isolated
-full-evaluation continuation still require implementation and verification.
+No val97 access. A synthetic PASS is insufficient to launch formal image
+training: the image gradient/update smoke must pass first.
 
 The separate train.py entry point is implemented using the frozen A
 loader, validation, objective and initialization helpers. It runs20epochs
@@ -60,9 +59,10 @@ without early stopping, records actual inputs and masks, saves all weights,
 and selects within epochs16-20 by internal development loss.
 prepare.py creates four configs only after all original smoke/formal
 completion receipts exist; missing original receipts stop preparation.
-Formal preparation also requires a future four-arm image-smoke
-verification.json with status PASS. That verifier and the P official
-evaluation continuation are not yet implemented; do not bypass this gate.
+Formal preparation also requires a four-arm image-smoke verification.json
+with status PASS, matching completion digests and unchanged verifier sources.
+verify.py and official.py are implemented separately; neither has verified
+real P image training or performed a benchmark run yet.
 No new image training has been launched. Compile and sampler checks alone
 do not establish model gradients, convergence, image-manifest pairing or
 inference compatibility.
@@ -75,6 +75,48 @@ completion receipt, before creating any P campaign directory.
 Before image smoke, check remaining train882 frame/clip feasibility from
 metadata after exclusions; previous crop experiments demonstrated that a
 requested fresh cohort can be infeasible. No fallback sampler is added.
+
+### P Execution And Verification
+
+launch.py starts one prepared arm on physical GPU0 or1, after checking free
+memory, temperature and250W cap with the existing queue helper. Original
+GPU2/3 training and its registered official queue remain separate.
+Run at most two P arms concurrently, then the remaining two.
+Smoke uses20tuples/epoch,8development tuples and20epochs/40updates;
+it exercises all schedule stages but is not formal training.
+Formal uses20000tuples/epoch and128development tuples.
+
+verify.py checks all four configurations, partitions/exclusions, every
+input identity/hash, every logged loss/gradient norm, learning-rate stages,
+all20development rows, selected epoch within16-20, retained20weights,
+finite final-five weights, actual backbone/head/utility updates and BN
+hashes against initialization. Inputs and patch masks must match across
+arms; modality masks must also match at equal missing frequencies.
+It compares all six arm pairs and refuses unequal/truncated evidence.
+This is saved-evidence checking, not independent image/optimizer replay.
+
+After actual smoke PASS, prepare formal configs and train all four arms.
+After actual formal PASS, official.py can report each arm's five checkpoints
+in both complete/miss conditions:10full evaluations per arm,40total,4workers
+per GPU. Each result is independently recomputed by isolated verify_official.
+No development main is called, no --limit argument is used, and no weights
+are deleted or selected by official metrics. Same dev-selected checkpoint
+is identified for both conditions.
+
+Synthetic contract checks exercised rejection of a14epoch course, early
+stopping, selection outside final-five, nonfinite loss/gradient, wrong
+probability/learning rate, wrong final-five/update count and mismatched
+input/patch/modality records. Synthetic job planning checks40unique full
+official output paths; this does not mean40benchmark jobs were executed.
+The native-sampler parity, shared patch draws and RNG-consumption checks
+also passed on CUDA GPU0. No images, optimizer or benchmark data were used.
+Current contract receipt:
+reports/server28_curriculum_p_contracts_v3_20261102.json.
+CUDA receipt:reports/server28_curriculum_p_sampler_cuda_20261102.json.
+Earlier contract receipts are retained with their own source hashes.
+All eight P Python files compile under the actual Python3.7 environment;
+launch/verify/official CLI imports pass. No P campaign directory or image
+worker was created by these checks.
 
 ## F: Same-View Deep-To-Shallow Feedback
 

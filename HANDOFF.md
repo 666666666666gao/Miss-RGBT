@@ -3516,3 +3516,34 @@ internal128dev meanloss4.356546/4.310292,not official PR/SR or convergence.
 Firstepoch6389.62/6368.71s;roughly25-35.5h for14-20epochs total.
 Queue1355742 live,unchanged. GPU2/3 75/74C,22710/22742MiB,250Wlimits.
 No new official score, validated module or checkpoint cleanup.
+
+## 2026-11-02 18:27 CST - P execution and verification tools
+
+Added research/curriculum_p/launch.py,verify.py,official.py,check_contracts.py.
+P trainer now records initial BN digests plus actual update gradient norms/LRs.
+Verifier requires20epochs/finalfive16-20,all four prepared configs and
+actual launch receipts, all data/source/exclusion identities and hashes,
+all dev rows, final-five finite weights/actual parameter updates and BN
+initialization parity. All six arm pairs compare exact inputs/patch masks;
+equal-frequency steps also require modality-mask equality.
+Formal preparation requires actual smoke PASS with matching completion and
+verifier-source hashes. P launch/evaluation uses GPU0/1,leaving original
+GPU2/3 queue unchanged. official.py plans10fullruns/arm,4workers/GPU,
+isolated official-only recomputation,no subsets/val97main/weight deletion.
+
+Synthetic contract rejection tests and40unique official job plans PASS;
+CUDA0native sampler parity/sharedpatch/RNG checks PASS. All8files compiled
+and launcher/verifier/official CLI imports passed in actualPython3.7.
+Receipts reports/server28_curriculum_p_contracts_v3_20261102.json and
+reports/server28_curriculum_p_sampler_cuda_20261102.json. Not actual P
+image/gradient/weight verification or40executed benchmark jobs.
+No P campaign prepared/launched:original manifests still growing.
+After originalterminal:metadatafeasibility,image4arm smoke,actual verifier,
+formal20epochs,formal verifier,full official reports. Do not bypass gates.
+
+At18:27:20CST originaltrainers1288280/1288281 actualcommands live02:08:20,
+epoch2/update2400total(400of2000thisepoch),sameobservedinputs/masks,
+lossesfinite. Queue1355742 live01:27:34WAITING_FOR_TRAINING.
+GPU2/3both75C,22710/22742MiB,250W;GPU0/1idleafterCUDAcheck.
+Next second-epoch milestone roughly19:52CST;avoid repeated early polls.
+No officialscore/convergence/module claim;fullgoal remains unmet.
