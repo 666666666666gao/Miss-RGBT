@@ -2,6 +2,15 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/diagnose_late_fusion_streams.py`,
+`scripts/launch_late_fusion_streams.py`,
+`scripts/analyze_late_fusion_streams.py`, and
+`docs/LATE_FUSION_STREAM_DIAGNOSTIC_20261102.md` record a frozen-E0
+train882 fusion-input stream ablation over128 tuples/117 sequences.
+Saved evidence, source/protocol hashes, tuple exclusions and sequence
+bootstrap were verified. The registered advancement gate failed.
+No training, official benchmark, or module promotion.
+
 2026-11-02 UTC+08: `scripts/diagnose_absent_position.py`,
 `scripts/launch_absent_position.py`, `scripts/analyze_absent_position.py`,
 and `docs/ABSENT_POSITION_DIAGNOSTIC_20261102.md` register a frozen-E0

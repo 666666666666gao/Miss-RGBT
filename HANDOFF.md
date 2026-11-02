@@ -1,5 +1,22 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Late-fusion stream diagnostic
+
+Frozen E0 train882 fusion-input ablation completed on GPU2 in79.108s:
+128tuples/117sequences/2304paired records. Zero absent-stream features only
+before decode_fuse_search; matched control zeros available-stream features.
+Absent-stream removal IoU delta RGB-missing -0.008314 CI[-0.029745,+0.014144],
+TIR-missing +0.010427 CI[-0.002732,+0.024063]. Both intervals cross zero;
+registered advancement=false. Do not train/tune/promote this ablation.
+Complete producer parity/state checks passed; independent saved-evidence,
+prior-tuple exclusions, bootstrap and source/protocol hashes passed on
+server and locally. No independent neural replay; no image tensor hashes
+or full output maps persisted. See docs/LATE_FUSION_STREAM_DIAGNOSTIC_20261102.md.
+No val97, official evaluation, optimizer or weight cleanup. Official maxima
+unchanged; remaining full goal is incomplete. Next: examine a matched
+train-only cross-stream interaction, retaining spatial/template structure
+and comparing a spatially shuffled context control before any long training.
+
 ## 2026-11-02 位置编码诊断更新
 
 最新注册的 train882 冻结 E0 诊断已完成：移除缺失搜索流的位置编码后，RGB 缺失 crop IoU 变化为 -0.053025（95% 序列 bootstrap CI [-0.080336, -0.024700]）；TIR 缺失变化为 -0.006421（CI [-0.015715, +0.002530]）。晋级门槛未通过，不启动该方向训练，不用该样本调参，也不运行官方评估。Complete 输出一致、模型状态未变、无梯度；独立分析器及服务器源码哈希核验通过。
