@@ -1,5 +1,31 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Final-two-block low-rank pilot running
+
+Previous cross-stream result was verified negative evidence, not a module.
+New registered question adapts native blocks10/11 rather than frozen
+fusion outputs: attention-qkv rank5 vs MLP-fc2 rank4,30720parameters each.
+Includes all9 template/search states and can alter complete-input predictions.
+Ordinary low-rank adaptation; no novelty claim. Official microsoft/LoRA
+source pinned/reviewed; no copied file or environment change.
+GPU2 PID368156 launched2026-11-02T02:41:45Z, output
+/home/gaob/Miss-RGBT/reports/server28_tail_lowrank_20261102.
+Last live observation at elapsed1:55: train cache256/256,
+development32/128; GPU2 2828MiB/66C/249.04W/100%,250W cap.
+Estimate10-30min;180-300s milestone checks. Source stays frozen.
+Protocol docs/TAIL_LOWRANK_PILOT_20261102.md, launch protocol SHA
+6a08f79a9748a48306490cc0d80693b905fb8880845adc2ed698607874891328.
+Worker SHA1ba7393ad0268e19d49d9411ec8305cde0806b1d973544ff404ef9755048e298.
+Existing705/88/89 train882 name partitions reused, fresh256/128/128 tuples;
+audit sampled after both arms stop/select. Native tail replay must be exact.
+Data-dependent memory sizing, LR linear in batch, max20/min10/patience3
+after epoch7 decay, select min9-cell loss among last5. Preserve weights.
+Each arm gate: sequence-macro crop-IoU >=.01, lower95%>0 in all3
+search states. Pass authorizes only fresh train882 closed-loop diagnostic.
+On completion run scripts/analyze_tail_lowrank.py with --server-files
+--replay, collect small receipts/reports, update desktop handoff and GitHub.
+No val97 or official evaluation; full research goal remains incomplete.
+
 ## 2026-11-02 Cross-stream context pilot completed
 
 GPU2 corrected PID318603 completed246.879s. Matched aligned/shuffled

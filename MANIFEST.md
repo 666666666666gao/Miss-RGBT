@@ -2,6 +2,12 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/probe_tail_lowrank.py`,
+`scripts/launch_tail_lowrank.py`, `scripts/analyze_tail_lowrank.py`, and
+`docs/TAIL_LOWRANK_PILOT_20261102.md` register a matched30720-parameter
+attention-versus-MLP adaptation pilot in native blocks10/11.
+GPU2 PID368156 running; no result/official metric/promotion yet.
+
 2026-11-02 UTC: `scripts/probe_cross_stream_context.py`,
 `scripts/launch_cross_stream_context.py`,
 `scripts/analyze_cross_stream_context.py`,
