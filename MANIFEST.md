@@ -6,7 +6,11 @@
 `scripts/launch_template_chronology.py`, `scripts/analyze_template_chronology.py`,
 and `docs/TEMPLATE_CHRONOLOGY_DIAGNOSTIC_20261102.md` register a frozen
 train882 template-age/missingness binding diagnostic, including a paired
-image+mask permutation control. GPU2 PID538386 running; no result yet.
+image+mask permutation control. GPU2PID538386 completed79.312s.
+Either-sign diagnostic criterion supported for missing searches, not
+improved policy or training efficacy. Saved evidence/3456boxIoUs/
+bootstrap/source/protocol hashes verified; no neural replay.
+Evidence `reports/server28_template_chronology_20261102/`.
 
 2026-11-02 UTC: `scripts/diagnose_candidate_quality.py`,
 `scripts/launch_candidate_quality.py`, `scripts/analyze_candidate_quality.py`,

@@ -1,6 +1,27 @@
 # Miss-RGBT 交接文档
 
-## 2026-11-02 Template chronology diagnostic running
+## 2026-11-02 Template chronology diagnostic verified
+
+GPU2PID538386 completed79.312s,128tuples/118fittingsequences/1152rows.
+Oldercomplete/newermasked minus newercomplete/oldermasked IoU:
+search11-.005529CI[-.020217,.008644],RGBmissing-.018251
+CI[-.035117,-.001065],TIRmissing-.015967CI[-.031889,-.000592].
+Registered either-sign mechanism criterion supported. This is an observed
+data-contract effect, not an improved policy or proven training cause.
+Image+mask permutation sham mean-.000000234,allrowIoUdeltas<=1e-4,
+maxboxerror.0000352263,maxmaperror.0141708255;notbitwiseinvariance.
+Server+local temporal order/age gaps,exact tuple exclusions,3456boxIoUs,
+bootstrap/source/base/protocol/report hashes passed. No neural replay,
+image tensors/maps not saved. Baseline state/gradient checks are producer
+assertions. ReportSHA20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79.
+Protocol/results docs/TEMPLATE_CHRONOLOGY_DIAGNOSTIC_20261102.md,
+reports/server28_template_chronology_20261102/.
+Next: register matched age-mask training with fresh train882 tuples,
+same capacity/images/masks/updates, chronological evaluation for botharms,
+complete and missing endpoints, then fresh closed-loop gate. Not launched.
+No val97,official evaluation,optimizer update or cleanup. Overallgoalunmet.
+
+### Original launch observation
 
 Previous quality ranker failure was verified evidence, not a validated
 module. Existing independent-anchor experiments already failed to show

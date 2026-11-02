@@ -60,4 +60,54 @@ No neural replay is claimed without saved/replayed input tensors.
 
 ## Result
 
-Pending.
+Completed GPU2 PID538386 in79.312seconds:128tuples/118fitting sequences,
+1152rows. Either-sign diagnostic criterion supported, not an improvement
+criterion or module promotion.
+
+| Search state, dynamic missing01/10 pooled | Chronological minus native IoU | 95% sequence-bootstrap CI |
+|---|---:|---|
+| Complete search11 | -.005529 | [-.020217,+.008644] |
+| RGB-missing01 | -.018251 | [-.035117,-.001065] |
+| TIR-missing10 | -.015967 | [-.031889,-.000592] |
+
+Each primary category has256rows from118sequences. Both missing-search
+effects exceed.01 in magnitude and intervals exclude zero. The
+complete-search interval crosses zero. This says an older complete /
+newer masked template pair is harder for this frozen E0 on these tuples
+than the opposite availability assignment. It does not show why, prove
+that current training caused the official gap, or show training on the
+harder assignment improves performance.
+
+Permutation sham mean IoU delta-.000000234,
+CI[-.000000922,+.000000420], all per-row IoU deviations<=1e-4.
+Maximum box component difference.0000352263, map difference.0141708255.
+The outputs are not bitwise invariant; small decoded effects satisfy only
+the registered sham IoU condition. Do not claim identical attention or maps.
+The sham and chronological outputs for dynamic-complete rows matched each
+other exactly as they use the same inputs.
+
+Server and local saved-evidence analyzers passed temporal ordering/age gaps,
+actual fitting names, exact prior tuple exclusions,9-cell identities,
+3456box-IoU checks, sequence-bootstrap recomputation, decision, source/
+base/protocol/report hashes. Producer reports original state unchanged and
+gradients absent. No raw image tensors or maps persisted for this run;
+input digests alone do not provide neural replay or independent verification
+of every producer-state assertion. No external scientific review.
+
+Report SHA256:
+`20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79`.
+Evidence: `reports/server28_template_chronology_20261102/`.
+No optimizer, val97, official test evaluation or checkpoint cleanup.
+Official maxima unchanged; Complete+2,RGBT234-Miss and three modules unmet.
+
+## Next Experiment Boundary
+
+The next matched training question should compare native newer-complete
+mask assignment against older-complete assignment using the same E0,
+images, mask states, parameter budget and update order. Changing template
+order while keeping masks with their images is only a sham. New fitting,
+stopping and delayed-audit tuples are required, with chronological inputs
+for both arms at evaluation. It must retain complete11_11 and both missing
+search endpoints, then test fresh prediction-driven trajectories before any
+official evaluation. Do not tune on this diagnostic cohort or interpret
+its negative delta as a reason to change deployed tracking history.
