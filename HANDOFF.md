@@ -3490,3 +3490,29 @@ No candidate in this table meets all four Miss targets.
 All40 historical final-five evaluations finished and passed the05:46CST
 audit; older individual notes describe their original timestamps.
 Current seed2028 training/queue unchanged and has no new official score.
+
+## 2026-11-02 18:05 CST - P implementation and first original epoch
+
+User's pasted P/F/X proposal is adopted in that order. Isolated P code is in
+research/curriculum_p/{schedule,check_schedule,train,prepare}.py.
+Four20epoch controls:fixed60,fixed50,progressive5/10/5epochs at.2/.5/.8,
+and deterministic stage-permuted control. Patch.1,original A Utility,
+same-budget controls; no early stopping for P. CPU sampler/native parity,
+cross-arm patch/RNG checks PASS in server environment; trainer imports/CLI
+and compilation passed. No image smoke/formal P launched. Preparation
+correctly stops before campaign creation while original training completion
+is absent. Future image smoke/verifier/full-evaluation continuation pending;
+check metadata feasibility after freezing original complete manifests.
+Details and source HEAD pins:docs/CURRICULUM_P_AND_FEEDBACK_F_20261102.md.
+
+Scope correction:recent40run maxima are not all historical maxima.
+Migrated historical A Utility complete RGBT234 MPR91.450712 was directly
+read from original metrics artifact; no fresh trajectory recomputation.
+Older E4epoch05 Miss MSR61.797040 remains a historical recorded result
+requiring original-artifact/provenance checking. Do not silently omit these.
+
+Original PIDs1288280/1288281 live18:05:48CST with epoch1/2000updates done;
+internal128dev meanloss4.356546/4.310292,not official PR/SR or convergence.
+Firstepoch6389.62/6368.71s;roughly25-35.5h for14-20epochs total.
+Queue1355742 live,unchanged. GPU2/3 75/74C,22710/22742MiB,250Wlimits.
+No new official score, validated module or checkpoint cleanup.

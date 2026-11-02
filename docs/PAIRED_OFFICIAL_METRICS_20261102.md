@@ -3,6 +3,10 @@
 Recorded November 2, 2026. Scores are percentages. Each row contains all
 five metrics from one checkpoint and one full input condition. These are
 historical comparison candidates, not a new checkpoint selection.
+This table covers the recent candidate campaign plus E0. Historical migrated
+results are a separate scope; see CURRICULUM_P_AND_FEEDBACK_F_20261102.md
+for the higher historical A Utility complete MPR91.450712 and the older E4
+Miss MSR61.797040 record and their different verification boundaries.
 
 Each condition covers LasHeR 245 sequences / 220,703 frames and RGBT234
 234 sequences / 116,650 frames, totaling 479 sequences / 337,353 frames.
