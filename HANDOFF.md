@@ -3479,3 +3479,14 @@ ProtocolSHA8847da6ad48e2219336b0fe1c0554a11714cd4bd5c4f6f0fb04f0acbee686b21.
 Docs DENSE_GEOMETRY_TRAINING_20261102.md. Large caches and all20 weights
 remain server-only. No val97/official calls/cleanup; official scores unchanged,
 goal unmet. Future samples exclude all new manifest frames.
+# 2026-11-02 paired full official metrics
+
+New consolidated table: docs/PAIRED_OFFICIAL_METRICS_20261102.md.
+It pairs Complete/Miss for E0 epoch20, Batch10 Utility/Random epoch17
+and Fixed A Random epoch20, with all five metrics per condition.
+These are historical comparisons, not checkpoint selection.
+The existing per-metric maxima come from multiple weights.
+No candidate in this table meets all four Miss targets.
+All40 historical final-five evaluations finished and passed the05:46CST
+audit; older individual notes describe their original timestamps.
+Current seed2028 training/queue unchanged and has no new official score.
