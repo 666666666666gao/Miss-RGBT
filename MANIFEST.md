@@ -9,6 +9,10 @@ supervision in identical native heads. GPU2PID654595 launched04:29:02Z,
 same frozen train882 feature caches,common Hann inference and delayed audit.
 Prior crop evidence motivates an ordinary training-alignment control,
 not a validated novel module or official score. Result pending.
+Initial run stopped at a wrong auxiliary source path during report creation;
+failed worker source and log retained. Corrected module.__file__ lookup,
+same seeds/configuration/gate,exclusive_v2 retryPID679342 launched04:40:09Z.
+This retries a reporting failure,not an independent experiment or retuning.
 
 2026-11-02 UTC: `scripts/probe_chronology_training.py`,
 `scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,

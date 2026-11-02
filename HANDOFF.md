@@ -2,6 +2,18 @@
 
 ## 2026-11-02 Matched raw/Hann supervision launched
 
+Initial654595 terminated at source-manifest generation: helper was imported
+from runtime/scripts,not root/scripts. Training/selection/audit caches
+exist,but no report/completed receipt. Original log/source/weights preserved.
+Worker now hashes imported module.__file__,same settings/seeds/gate,
+exclusive_v2 output. Corrected GPU2PID679342 launched04:40:09Z,
+confirmedlive00:37/fittingcache112of256. Follow this PID/output:
+reports/server28_window_training_20261102_v2/. Do not restart on timeout.
+Analyzer now also recomputes exploratory source-record window effects
+and records its own hash. No original audit scores used to change settings.
+
+### Initial launch
+
 GPU2 PID654595 launched04:29:02Z. New256/128/128 train882 tuples,
 same6474117parameter native CENTER heads compare raw-peak versus Hann-peak
 regression; both evaluate using Hann,raw focal maps unchanged.

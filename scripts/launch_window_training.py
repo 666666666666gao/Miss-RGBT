@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 root = Path('/home/gaob/Miss-RGBT')
-stem = 'server28_window_training_20261102'
+stem = 'server28_window_training_20261102_v2'
 script = root / 'scripts/probe_window_training.py'
 protocol = root / 'docs/WINDOW_TRAINING_PILOT_20261102.md'
 output = root / 'reports' / stem

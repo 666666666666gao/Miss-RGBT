@@ -61,6 +61,13 @@ refine from actual cache/epoch time;180-300s meaningful checks.
 
 ## Result
 
-Pending. GPU2PID654595 launched2026-11-02T04:29:02Z. Actual live process
-confirmed at elapsed00:19, fitting cache32/256 tuples. Worker source frozen.
-Analyzer deployed/syntax checked; await actual result and replay.
+Initial PID654595 launched2026-11-02T04:29:02Z and terminated after
+training/selection/audit caching,while building the source manifest. The
+worker incorrectly assumed diagnose_joint_utility_sets.py was next to
+it; the imported helper actually lives inside runtime/scripts. No report
+or completion receipt was produced. Original log,launch/protocol receipts,
+weights/caches and failed worker source are preserved. No original audit
+scores were inspected for tuning. Corrected worker records the actual
+imported module.__file__,and retries in exclusive output
+server28_window_training_20261102_v2 with identical seeds/settings/gate.
+This is a reporting-path correction,not a new independent experiment.

@@ -189,9 +189,22 @@ def main():
                 parameters = sum(value.numel() for key, value in state['head'].items()
                     if not key.endswith(('running_mean', 'running_var', 'num_batches_tracked')))
                 assert parameters == 6474117
-    result = dict(status='verified', report_sha256=done['report_sha256'], effects=effects,
+    result = dict(status='verified', report_sha256=done['report_sha256'],
+        analyzer_sha256=sha256(__file__), effects=effects,
         advance=advance, prior_reports_sha256=prior_hashes, server_files_checked=args.server_files,
         replay=replay(report, root) if args.replay else None)
+    candidate = json.loads((root.parent / 'server28_candidate_quality_20261102_v2/report.json').read_text())
+    exploratory = {}
+    for category, suffix in [('complete', '11_11'), ('rgb_missing', '_01'), ('tir_missing', '_10')]:
+        rows = [row for row in candidate['rows'] if row['cell'].endswith(suffix)]
+        for row in rows:
+            assert np.isclose(box_iou(row['raw_box'], row['target']), row['raw_iou'], atol=2e-6, rtol=1e-6)
+            assert np.isclose(box_iou(row['candidates'][0]['box'], row['target']),
+                              row['hann_iou'], atol=2e-6, rtol=1e-6)
+            assert row['hann_minus_raw'] == row['hann_iou'] - row['raw_iou']
+        exploratory[category] = dict(effect=clustered(rows, 'hann_minus_raw', 54101),
+            different_peaks=sum(row['raw_index'] != row['hann_index'] for row in rows), rows=len(rows))
+    result['exploratory_source_window_effects'] = exploratory
     if args.output:
         save_path = Path(args.output)
         with save_path.open('x', newline='\n') as stream:

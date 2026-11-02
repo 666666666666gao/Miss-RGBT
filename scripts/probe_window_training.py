@@ -15,6 +15,7 @@ from lib.test.utils.hann import hann2d
 from lib.utils.box_ops import box_cxcywh_to_xyxy, box_xywh_to_xyxy, generalized_box_iou
 from miss_rgbt.model import load_pretrained
 from miss_rgbt.objectives import task_loss
+from scripts import diagnose_joint_utility_sets
 from probe_fusion_adapter import build_cache, head_output
 from diagnose_absent_position import CHECKPOINT, CHECKPOINT_SHA, clustered, digest, seed, sha256
 from diagnose_template_chronology import old_ids, PROJECT
@@ -223,7 +224,7 @@ def main():
     assert digest(model.state_dict()) == before
     assert all(parameter.grad is None for parameter in model.parameters())
     sources = [Path(__file__), Path(__file__).with_name('probe_fusion_adapter.py'),
-        Path(__file__).with_name('diagnose_joint_utility_sets.py'),
+        Path(diagnose_joint_utility_sets.__file__),
         Path(__file__).with_name('diagnose_absent_position.py'),
         Path(__file__).with_name('diagnose_template_chronology.py'),
         Path('lib/train/data_specs/lasher_train.txt'), Path('experiments/cadtrack/cadtrack.yaml'),
