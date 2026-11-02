@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic tensors, actual E0 network; no dataset or benchmark",
+  "seed": 65301,
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "checks": {
+    "zero_residual_native_round1_round2_exact": {
+      "11": true,
+      "01": true,
+      "10": true
+    },
+    "block_calls": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "repair_calls": 2,
+    "no_residual_and_shallow_controls_native_parity_exact": true,
+    "nonzero_feedback_changes_complete_prediction": true,
+    "unavailable_sensor_input_invariance_exact": {
+      "01": true,
+      "10": true
+    },
+    "masked_patch_input_invariance_exact": true,
+    "three_search_dual_round_task_and_utility_loss": 31.55992317199707,
+    "objective_scale_exact": true,
+    "gradient_norms": {
+      "feedback.delta.weight": 2.824512481689453,
+      "feedback.hidden.0.weight": 0.2693783640861511,
+      "baseline.backbone.blocks.0.attn.qkv.weight": 13.693929672241211,
+      "baseline.backbone.blocks.11.attn.qkv.weight": 21.924280166625977,
+      "utility_repair.selector.0.weight": 0.0178495105355978
+    },
+    "feedback_parameter_updated": true,
+    "fresh_model_strict_reload_prediction_exact": true
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_structure.py": "9c2d26229bd688bddb4ba245425ebb28a9714348ee581328692e475878aefd09",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/task_utility.py": "6f9d5c8947b5915eb4d56010caacd72710b69353306e83d0a1221d87e25b67b5"
+  },
+  "torch_version": "1.12.1+cu113",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "peak_gpu_bytes": 7554110976,
+  "seconds": 9.705356359481812,
+  "limitations": [
+    "No actual image training or efficacy evidence",
+    "No full tracker/template-update integration check",
+    "No random-region selection protocol",
+    "No formal trainer or official evaluator integration",
+    "No measured correction/destruction rates or latency comparison"
+  ]
+}

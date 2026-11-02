@@ -3571,3 +3571,35 @@ Near19:22 logs Utility epoch2/update3425 and Random epoch2/update3450,
 finite losses. Common update3425 input/mask hashes match. No new complete
 epoch development result or official score. GPU0/1 idle.
 Next epoch2 milestone about19:52CST;P preparation waits terminal originals.
+
+## 2026-11-02 - Isolated F structural implementation
+
+research/feedback_f/model.py implements shared second-pass blocks4-12,
+including block6 utility repair, search-only residuals from this view's
+shallow/deep features,prediction,availability,plus none/shallow controls.
+No active runtime/source or original trainer/queue was changed.
+Normalized two-round C/M task-and-KD helper and round2 utility probes work.
+Random-region mode intentionally excluded pending its two-round RNG policy.
+
+Actual E0 network synthetic check PASS onGPU0;latest receipt
+reports/server28_feedback_f_structure_v3_20261102.json,
+SHA6cfa0abeb90f43854aab1152701ab697c982921875126fb7301ba1d790a1086d.
+Two128templates/256search;three-search C/M gradient test and oneSGDupdate.
+Exact native/round1/round2 parity for11/01/10 with nonzero syntheticrepair;
+blockcounts[1,1,1,2,2,2,2,2,2,2,2,2],repair2;prefixunchangedatfeedback;
+deepvs shallow dependency controls;physicalmissing/patch invariance;
+zero-initialized projectiongradnorm.883728;finitebackbone/feedback/selector
+gradients;actualparameterupdate;BN unchanged;fresh-model strictreload exact.
+10.206s,peak8002914304bytes(~7.45GiB). GPU0released oncheckerexit.
+All five receipt source digests match publication files. Earlier v1/v2
+receipts kept with their own earlier checker-source hashes.
+No actual image learning,formaltrainer/trackerintegration,latency comparison,
+correction/destruction measurement,convergence or official-score claim.
+Details:docs/FEEDBACK_F_STRUCTURE_20261102.md.
+
+At19:34:37CST originaltrainers1288280/1288281live03:15:37,
+queue1355742live02:34:51. Utilityepoch2/update3675,Random3700,finite losses.
+GPUs2/3 75/74C,22710/22742MiB,250W;GPU0/1idleatobservation.
+Epoch2development milestone stillabout19:52CST. P remains waiting for
+originalterminal/frozenmanifests/metadatafeasibility;P->F->X orderunchanged.
+No weights pruned,no val97,no newofficialscore;fullgoalunmet.

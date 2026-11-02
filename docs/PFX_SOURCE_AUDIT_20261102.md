@@ -155,5 +155,7 @@ No active source was modified.
 
 Next implementation remains isolated from the frozen active runtime.
 P image smoke/formal execution still waits for original formal manifests
-to stop growing. F/X have no implemented or trained efficacy result.
+to stop growing. F now has an isolated structural prototype and synthetic
+checks, documented in FEEDBACK_F_STRUCTURE_20261102.md.
+F/X have no trained efficacy result.
 The three desired paper modules remain hypotheses, not validated claims.

@@ -141,6 +141,13 @@ deep-to-shallow feedback, with matched loss and training budgets.
 Record measured latency/memory, round1-to-round2 correction and destruction
 rates, separately by availability. Block counts alone are not latency.
 
+An isolated structural prototype now exists in research/feedback_f/model.py,
+with none/shallow/deep controls and a normalized dual-round objective helper.
+Actual-E0-network synthetic checks are documented in
+FEEDBACK_F_STRUCTURE_20261102.md. No F image experiment, convergence result
+or official score exists; formal trainer/tracker integration remains pending.
+This does not change the P-then-F-then-X experiment order.
+
 ## X: Cross-View Supervision
 
 Only after P and F are isolated, compare ordinary response KD, deep-to-shallow
