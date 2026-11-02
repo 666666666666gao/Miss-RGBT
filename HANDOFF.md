@@ -1,5 +1,17 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-03 00:14 CST - A组正式训练进度
+
+只读 SSH 核验原 Utility/Random 训练进程 PID1288280/1288281 仍存活，均在
+epoch5：Utility update8975，Random update9000。最新单步训练 loss 均为有限值，
+仅是训练日志，不是收敛证据或官方指标。评估队列控制器 PID1355742 仍存活；
+最近状态快照（00:10 CST）为 WAITING_FOR_TRAINING。尚无训练完成收据或新完整
+数据集官方指标。
+
+GPU2/3 温度为75/74C，功率241.60/244.72W，功率上限均为250W；GPU0/1空闲。
+按约3.16秒/update估算，下一次每轮2000 updates的边界在01:05-01:15 CST左右。
+保持现有训练和队列不变，在边界附近复核，并根据实际轮次耗时更新后续 ETA。
+
 ## 2026-11-02 09:00 UTC - Pairing-verifier correction; queue v2 active
 
 Previous goalturn was verifiedwait. Foundrealcontractbug:oldverifierrequires
