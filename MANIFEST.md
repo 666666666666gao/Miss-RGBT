@@ -2,6 +2,18 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/diagnose_candidate_quality.py`,
+`scripts/launch_candidate_quality.py`, `scripts/analyze_candidate_quality.py`,
+`docs/CANDIDATE_QUALITY_DIAGNOSTIC_20261102.md` and
+`reports/server28_candidate_quality_20261102_v2/` record verified fixed
+native top8 candidate GT-oracle headroom. Gate passed; no deployable method.
+Independent NumPy map replay checked294912boxes. Failed original launch
+traceback retained. Follow-up `scripts/probe_quality_ranker.py`,
+`scripts/launch_quality_ranker.py`, `scripts/analyze_quality_ranker.py`,
+and `docs/QUALITY_RANKER_PILOT_20261102.md` register the matched
+quality/response supervision pilot, currently PID499198 onGPU2.
+No official metric or module claim.
+
 2026-11-02 UTC: `scripts/probe_tail_lowrank.py`,
 `scripts/launch_tail_lowrank.py`, `scripts/analyze_tail_lowrank.py`, and
 `docs/TAIL_LOWRANK_PILOT_20261102.md` register a matched30720-parameter

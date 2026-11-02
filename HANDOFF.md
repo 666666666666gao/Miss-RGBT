@@ -1,5 +1,33 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Candidate quality headroom verified; ranking pilot running
+
+Frozen E0 GPU2 diagnostic PID460256 completed44.809s,128tuples/
+121fitting sequences/1152rows. Native top8 Hann GT-oracle gain:
+complete+.053037CI[.032385,.078354],RGBmissing+.078130
+CI[.056767,.103489],TIRmissing+.079255CI[.052755,.109509].
+Registered headroom gate passed. Not deployable/learnable/official metric.
+Source/protocol/base/cache hashes, exact tuple exclusions, box arithmetic,
+bootstrap/gate and actual fitting names verified server+local; independent
+NumPy map replay1152rows/294912boxes passed. No neural image replay.
+ReportSHAe774a5ff4b4cdacffae53c286c25bed0116d0feb6175a777f66a3061d4a35cda.
+FirstPID425514 stable argsort API failure retained; corrected via NumPy
+mergesort with same tie rule, no gate change. Evidence/protocol:
+docs/CANDIDATE_QUALITY_DIAGNOSTIC_20261102.md,
+reports/server28_candidate_quality_20261102_v2/.
+
+Follow-up PID499198 on GPU2 launched2026-11-02T03:31:17Z:
+/home/gaob/Miss-RGBT/reports/server28_quality_ranker_20261102.
+Matched51585parameter quality/response-supervised rankers, same initial
+state, fixed native top8 geometry+Hann prior. Fresh512/128/128 train882
+tuples, existing705/88/89 names, delayed audit after selection.
+Batch256/LR8e-4,18updates/epoch,min10/max20,drop7,patience3; retain final5.
+Last live elapsed1:57 fitting384/512. Estimate3-8min,180-300s checks.
+Protocol docs/QUALITY_RANKER_PILOT_20261102.md; worker source frozen.
+On complete run scripts/analyze_quality_ranker.py --server-files --replay.
+Pass only authorizes fresh closed-loop train882, not official/paper claim.
+No val97, official evaluation or cleanup. Overall goal remains incomplete.
+
 ## 2026-11-02 Final-two-block low-rank pilot verified
 
 PID368156 finished584.557s. Both arms10epochs/120updates; final-five6-10

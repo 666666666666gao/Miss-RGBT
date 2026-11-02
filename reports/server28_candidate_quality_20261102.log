@@ -1,0 +1,13 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+Traceback (most recent call last):
+  File "/home/gaob/Miss-RGBT/scripts/diagnose_candidate_quality.py", line 214, in <module>
+    main()
+  File "/home/gaob/Miss-RGBT/scripts/diagnose_candidate_quality.py", line 171, in main
+    inspected = inspect_output(model, output, target, window)
+  File "/home/gaob/Miss-RGBT/scripts/diagnose_candidate_quality.py", line 70, in inspect_output
+    order = torch.argsort(weighted, dim=1, descending=True, stable=True)[:, :8]
+TypeError: argsort() received an invalid combination of arguments - got (Tensor, stable=bool, descending=bool, dim=int), but expected one of:
+ * (Tensor input, int dim, bool descending)
+ * (Tensor input, name dim, bool descending)
+
