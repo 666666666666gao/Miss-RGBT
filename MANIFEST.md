@@ -313,3 +313,12 @@ training gate failed; no training, official evaluation, or module promotion.
 | 2026-10-13 | /experiment-audit | reports/e0/MISSING_DIAGNOSTICS_before_first_transition_fix.md | review | 初始化切换标签修正前真实历史；不覆盖原记录 |
 | 2026-10-13 | /run-experiment | scripts/validate_focal_normalization.py | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |
 | 2026-10-13 | /run-experiment | reports/focal_normalization_validation.json | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |
+2026-11-02 fixedboxconsensus completed50.036s,128freshfittingtuples117seq,
+1152rows. Weighted-native IoU complete-.061691,RGBmissing-.075441,
+TIRmissing-.117869;allCIbelowzero. Gatefalse,closeexacttop8estimator.
+scripts/diagnose_box_consensus.py,launch_box_consensus.py,
+analyze_box_consensus.py;docs/BOX_CONSENSUS_DIAGNOSTIC_20261102.md.
+Server/local9216boxes/1152aggregates/maps/exclusions/bootstrapverified;
+144normalizedimage replayrowsbitwiseexact,sharednetwork/notrawdecoder.
+ReportSHA dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b.
+Largecachesserveronly;notofficialgain/training/module. Fullgoalunmet.

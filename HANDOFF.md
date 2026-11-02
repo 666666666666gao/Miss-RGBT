@@ -3334,3 +3334,23 @@ and reports/server28_burst_mask_rollout_20261102/.
 No training, benchmark evaluation, weight selection or cleanup occurred.
 Complete-input gains, RGBT234-Miss thresholds, and three validated modules
 remain unmet.
+## 2026-11-02 - Fixed box consensus verified and closed
+
+Previous turn published attention evidence (progress). New GPU2PID1131961
+completed50.036s,128freshfittingtuples117seq1152states,all priorframes
+including attentiontemplates/search excluded. Fixed top8 nativeHann boxes:
+scoreweightedmean versus uniformmean versus nativeargmax; nooptimizer.
+Weighted-native cropIoU complete-.061691CI[-.091699,-.034760],
+RGBmissing-.075441CI[-.104439,-.047579],TIRmissing-.117869
+CI[-.152202,-.085691]. Recovery01/10-.078797/-.079187.
+Weighted beats uniform but harms native; advancefalse,closeexactestimator,
+no tuning candidatecount/temperature/clusters/controlpromotion/module.
+Not universalboxfusion rejection or established soleerrorcause.
+Server/local verified9216boxes/1152aggregates/bootstrap/gate/exclusions/
+provenance;allnative maps checked and144firstbatch normalizedimage
+forwardrows bitwiseexact. Sharednetwork,notrawdecoder/fullimagereplay/
+externalreview. Source/checkpoint/cache hashes and physicalvisibility pass.
+ReportSHA dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b.
+Docs BOX_CONSENSUS_DIAGNOSTIC_20261102.md;largecachesserveronly.
+NextfreshsamplersmustexcludeALLthisreportinput_manifestframeIDs.
+No val97/official/newweights/cleanup. Officialscores unchanged,goalunmet.
