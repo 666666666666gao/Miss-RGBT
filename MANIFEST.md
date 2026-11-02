@@ -2,6 +2,15 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/diagnose_absent_position.py`,
+`scripts/launch_absent_position.py`, `scripts/analyze_absent_position.py`,
+and `docs/ABSENT_POSITION_DIAGNOSTIC_20261102.md` register a frozen-E0
+train882 diagnostic of absolute position embeddings on unavailable search
+streams, paired with a matched available-stream position-removal control.
+The corrected run passed independent saved-evidence, bootstrap, source-hash,
+and complete-parity verification, but the registered gate failed. No training,
+official evaluation, or module promotion.
+
 2026-11-02 UTC+08: `scripts/diagnose_burst_mask_rollout.py`,
 `scripts/launch_burst_mask_rollout.py`, `scripts/analyze_burst_mask_rollout.py`,
 `docs/BURST_MASK_ROLLOUT_DIAGNOSTIC_20261102.md`, and

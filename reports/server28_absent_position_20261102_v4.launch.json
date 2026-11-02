@@ -1,0 +1,20 @@
+{
+  "pid": 231593,
+  "gpu": 2,
+  "memory_used_mib": 1.0,
+  "temperature_c": 40.0,
+  "power_limit_w": 250.0,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/diagnose_absent_position.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/reports/server28_absent_position_20261102_v4"
+  ],
+  "cwd": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018",
+  "output": "/home/gaob/Miss-RGBT/reports/server28_absent_position_20261102_v4",
+  "log": "/home/gaob/Miss-RGBT/reports/server28_absent_position_20261102_v4.log",
+  "script_sha256": "17908bd9c2b1b8e19f34e7893c24393419efc123397f5034a03276dcfc265bb0",
+  "launcher_sha256": "c966fed2aa99fd4a11bce5eedfb4f1da3c3c29caff4ebea84471245c8dfc20d2",
+  "launched_utc": "2026-11-02T01:43:54.606386Z"
+}

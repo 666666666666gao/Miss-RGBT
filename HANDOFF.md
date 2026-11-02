@@ -1,5 +1,13 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 位置编码诊断更新
+
+最新注册的 train882 冻结 E0 诊断已完成：移除缺失搜索流的位置编码后，RGB 缺失 crop IoU 变化为 -0.053025（95% 序列 bootstrap CI [-0.080336, -0.024700]）；TIR 缺失变化为 -0.006421（CI [-0.015715, +0.002530]）。晋级门槛未通过，不启动该方向训练，不用该样本调参，也不运行官方评估。Complete 输出一致、模型状态未变、无梯度；独立分析器及服务器源码哈希核验通过。
+
+前两次运行在模型推理前因目录/schema 错误退出；第三次计算结果因 TIR 缺失组 treatment/sham 路由错误而作废；第四次正确按 availability 路由并完成。失败运行均保留，不纳入结论。完整协议及报告 SHA256 见[位置编码诊断记录](docs/ABSENT_POSITION_DIAGNOSTIC_20261102.md)。
+
+官方完整指标没有变化：LasHeR-Miss 已超过 PR/SR 目标；RGBT234-Miss MPR/MSR 仍为 86.184864/61.660594，距离 88.1/64.3 目标 1.915136/2.639406 点；Complete 相对 E0 的约 +2 点目标未达到。此次不使用 val97，也未训练或清理 checkpoint。桌面交接补充见 `C:\Users\gb\Desktop\document\Miss-RGBT-absent-position-diagnostic-20261102.md`。
+
 ## 2026-10-30 分支保护控制实验
 
 CPU8次真实更新完成，只训练现有LocalRepair，baseline参数与缓冲区哈希完全不变；
