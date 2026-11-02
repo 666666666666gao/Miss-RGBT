@@ -2781,3 +2781,32 @@ report: `reports/server28_absent_search_kv_20261102_v2/`.
 The overall objective remains incomplete: RGBT234-Miss targets and the
 approximately +2 complete-input gains are unmet; no three paper modules
 have been validated.
+
+## 2026-11-02 - Burst-mask closed-loop rollout diagnostic
+
+Compared IID versus temporally clustered modality masks on frozen E0 over
+24 fresh contiguous64-frame train882 clips. Each arm used exactly the same
+per-clip counts:26 complete and19 in each single-modality state. The
+paired rollout produced3024 tracked-frame records; no val97 or official
+test data were used. GPU2 PID144335 completed in123.645s.
+
+Clustered-minus-IID sequence-macro IoU was -0.015331 on all missing frames
+(95% bootstrap CI[-0.032356,0.001973]), -0.009342 on RGB-only input
+(CI[-0.037280,0.018596]), -0.013135 on TIR-only input
+(CI[-0.052738,0.026904]), and -0.043505 on first-five-frame recovery
+(18 paired sequences; CI[-0.178025,0.056210]). All intervals cross zero;
+registered gate=false. Do not launch burst-aware full training or claim a
+module from this diagnostic.
+
+Independent saved-evidence verification rechecked all per-frame schedules,
+recovery flags, box IoUs, source/checkpoint hashes, and bootstrap intervals.
+The model state remained unchanged and gradients absent. Raw report SHA256:
+b44dc635c7b6c1807ab08dd6ec9e7d1e3976fce8d4e40ceacb8fd198b420212b.
+The producer labeled paired-sequence counts as `frames`; the recomputed
+analysis corrects this label to `paired_sequences` without altering the
+raw report. Full evidence:docs/BURST_MASK_ROLLOUT_DIAGNOSTIC_20261102.md
+and reports/server28_burst_mask_rollout_20261102/.
+
+No training, benchmark evaluation, weight selection or cleanup occurred.
+Complete-input gains, RGBT234-Miss thresholds, and three validated modules
+remain unmet.

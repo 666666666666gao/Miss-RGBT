@@ -1,0 +1,34 @@
+{
+  "status": "saved_arithmetic_and_bootstrap_verified",
+  "source_hashes_checked": true,
+  "sequences": 24,
+  "rows": 3024,
+  "effects": {
+    "all_missing": {
+      "mean": -0.015331036245414965,
+      "ci95_low": -0.03235642371327161,
+      "ci95_high": 0.001972747979350967,
+      "paired_sequences": 24
+    },
+    "rgb_only": {
+      "mean": -0.009341713877185171,
+      "ci95_low": -0.03727989852866723,
+      "ci95_high": 0.018596208448869254,
+      "paired_sequences": 24
+    },
+    "tir_only": {
+      "mean": -0.013134804389764743,
+      "ci95_low": -0.052737994751250086,
+      "ci95_high": 0.02690408356973785,
+      "paired_sequences": 24
+    },
+    "recovery": {
+      "mean": -0.043504500466333064,
+      "ci95_low": -0.17802481191649064,
+      "ci95_high": 0.05621082687822784,
+      "paired_sequences": 18
+    }
+  },
+  "advance": false,
+  "report_sha256": "b44dc635c7b6c1807ab08dd6ec9e7d1e3976fce8d4e40ceacb8fd198b420212b"
+}

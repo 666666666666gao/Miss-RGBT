@@ -1,0 +1,27 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+{"stage": "clip", "completed": 1, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 2, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 3, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 4, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 5, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 6, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 7, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 8, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 9, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 10, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 11, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 12, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 13, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 14, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 15, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 16, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 17, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 18, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 19, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 20, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 21, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 22, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 23, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "clip", "completed": 24, "total": 24, "peak_allocated": 477212160, "peak_reserved": 547356672}
+{"stage": "complete", "effects": {"all_missing": {"mean": -0.015331036245414965, "ci95_low": -0.03235642371327161, "ci95_high": 0.001972747979350967, "sequences": 24, "frames": 24}, "rgb_only": {"mean": -0.009341713877185171, "ci95_low": -0.03727989852866723, "ci95_high": 0.018596208448869254, "sequences": 24, "frames": 24}, "tir_only": {"mean": -0.013134804389764743, "ci95_low": -0.052737994751250086, "ci95_high": 0.02690408356973785, "sequences": 24, "frames": 24}, "recovery": {"mean": -0.043504500466333064, "ci95_low": -0.17802481191649064, "ci95_high": 0.05621082687822784, "sequences": 18, "frames": 18}}, "advance": false, "seconds": 123.64508295059204}

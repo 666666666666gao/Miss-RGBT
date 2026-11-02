@@ -2,6 +2,15 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/diagnose_burst_mask_rollout.py`,
+`scripts/launch_burst_mask_rollout.py`, `scripts/analyze_burst_mask_rollout.py`,
+`docs/BURST_MASK_ROLLOUT_DIAGNOSTIC_20261102.md`, and
+`reports/server28_burst_mask_rollout_20261102/` record a frozen-E0 paired
+train882 IID-versus-clustered outage rollout over24 clips. All3,024 tracked
+rows, schedule/recovery labels, source/checkpoint hashes, box-IoU arithmetic,
+and sequence-bootstrap intervals were independently verified. Effects did
+not clear the registered gate; no training or official evaluation.
+
 2026-11-02 UTC+08: `scripts/diagnose_absent_search_kv.py`,
 `scripts/launch_absent_search_kv.py`, `scripts/analyze_absent_search_kv.py`,
 `docs/ABSENT_SEARCH_KV_DIAGNOSTIC_20261102.md`, and
