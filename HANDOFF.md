@@ -1,5 +1,23 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Matched chronology training launched
+
+GPU2 PID589499 launched2026-11-02T04:02:16Z, fresh256/128/128 tuples,
+same original-order image/augmentation hashes checked across fitting arms.
+Original E0 frozen; matched30720parameter attention adapters compare
+newercomplete/olderdynamic against oldercomplete/newerdynamic.
+Both evaluated on chronological train882 development/audit; delayed audit,
+same memory-sized batch/scaled LR/stopping/final-five selection.
+Output reports/server28_chronology_training_20261102/.
+Protocol docs/CHRONOLOGY_TRAINING_PILOT_20261102.md; analyzer
+scripts/analyze_chronology_training.py deployed and syntax checked.
+Worker source frozen after launch. Estimate10-20min,180-300s observation
+milestones. Do not restart on observation timeout; inspect actual PID/log.
+No val97 or official evaluation. Official maxima unchanged; goal unmet.
+First verified live observation elapsed5:09: nativeepoch3/update36,
+batch192/LR0.0006,12updates/epoch,~20s/epoch,GPU22156MiB/73C/250W.
+Exact fitting-input pairing passed; estimated6-9min remaining.
+
 ## 2026-11-02 Template chronology diagnostic verified
 
 GPU2PID538386 completed79.312s,128tuples/118fittingsequences/1152rows.

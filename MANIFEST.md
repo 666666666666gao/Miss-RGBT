@@ -2,6 +2,14 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/probe_chronology_training.py`,
+`scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,
+and `docs/CHRONOLOGY_TRAINING_PILOT_20261102.md`: matched native versus
+chronological mask training using identical small native-tail adapters.
+GPU2 PID589499 launched04:02:16Z, results pending. Original-order tensor
+digests check exact fitting input pairing. Train882 only, delayed audit,
+no official score or validated module claim.
+
 2026-11-02 UTC: `scripts/diagnose_template_chronology.py`,
 `scripts/launch_template_chronology.py`, `scripts/analyze_template_chronology.py`,
 and `docs/TEMPLATE_CHRONOLOGY_DIAGNOSTIC_20261102.md` register a frozen
