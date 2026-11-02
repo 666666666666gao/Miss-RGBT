@@ -5,6 +5,7 @@ from lib.models.cadtrack import build_cadtrack
 from lib.test.tracker.data_utils import PreprocessorMM
 from lib.test.utils.hann import hann2d
 from miss_rgbt.tracker import MissingTracker
+from miss_rgbt.model import MissingTrackerModel
 from model import FeedbackTrackerModel
 
 
@@ -14,9 +15,13 @@ class FeedbackTracker(MissingTracker):
         config = saved['config']
         feedback = config['feedback']
         self.cfg = cfg
-        self.network = FeedbackTrackerModel(build_cadtrack(cfg, training=False),
-            task_utility=config['task_utility'], feedback_mode=feedback['mode'],
-            feedback_width=feedback['width'])
+        if feedback['mode'] == 'single':
+            self.network = MissingTrackerModel(build_cadtrack(cfg, training=False),
+                repair=False, task_utility=config['task_utility'])
+        else:
+            self.network = FeedbackTrackerModel(build_cadtrack(cfg, training=False),
+                task_utility=config['task_utility'], feedback_mode=feedback['mode'],
+                feedback_width=feedback['width'])
         self.network.load_state_dict(saved['model'], strict=True)
         self.network.cuda().eval()
         self.preprocessor = PreprocessorMM(mean=cfg.DATA.MEAN, std=cfg.DATA.STD)

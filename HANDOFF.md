@@ -3751,3 +3751,26 @@ No real F images/epoch/efficacy/official score; previous source receipts
 remain historical. At21:40:32CST original1288280/1288281/1355742 live,
 both epoch4, latestupdates6050/6075 finite; no active runtime/queue edit.
 Next meaningful training milestone~23:23CST; P waits original completion.
+
+## F full official entry and single-arm loader fix, 2026-11-02
+
+Added research/feedback_f/evaluate.py and verify_official.py. Full evaluator
+reuses native prepare/sequence, fixed479/337353, no subset CLI, same rgbt
+metrics/curves, checkpoint/runtime/F/native source hashes and all receipts.
+Separate F verifier recalculates all scores/curves and checks every receipt,
+trajectory,GT/mask/source; original verifier hardcodes original evaluator hash.
+No original evaluator/queue edits. Verified F campaign/final-five integration
+and actual spawned evaluation/recalculation remain pending.
+
+Fixed tracker.py mode single: native training checkpoint now constructs
+MissingTrackerModel rather than rejecting single as a two-round mode.
+Actual E0 synthetic tracker v2 PASS, including three-frame single/native
+box/template/availability parity and previous round2/template checks.
+Receipt server28_feedback_f_tracker_v2_20261102 SHA256
+4aab14a1ded19e1d7b71bc176e1c73aed72e3159c563c0cbcaf7b69b4839a468.
+ActualPython3.7 new evaluator/verifier compile/import/CLI PASS; --limit rejected
+before output creation. Receipt server28_feedback_f_official_entry_20261102 SHA
+d4c1df7722c0a378ffa0b8e4a715e2d29c8f2c0cfa0e91f01ee9dc783d1804bb.
+No official dataset preparation, F trajectory/metric, image training or
+real learned F weights. Earlier source receipts remain historical.
+Original training continues; next milestone~23:23CST. Full goal unmet.

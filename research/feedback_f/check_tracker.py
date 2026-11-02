@@ -69,6 +69,8 @@ def main():
     config = dict(base_config, feedback=dict(mode='deep', width=128))
     baseline = native_tracker.MissingTracker(test_cfg, checkpoint(base, base_config))
     tracker = FeedbackTracker(test_cfg, checkpoint(model, config))
+    single = FeedbackTracker(test_cfg, checkpoint(base,
+        dict(base_config, feedback=dict(mode='single', width=128))))
     assert FeedbackTracker.track is native_tracker.MissingTracker.track
     assert FeedbackTracker.initialize is native_tracker.MissingTracker.initialize
     checks = dict(inherited_native_initialize_and_track=True)
@@ -84,12 +86,19 @@ def main():
     box = [80., 60., 35., 30.]
     baseline.initialize(frame, dict(init_bbox=box))
     tracker.initialize(frame, dict(init_bbox=box))
+    single.initialize(frame, dict(init_bbox=box))
     parity = []
     for flags in [[1, 1], [0, 1], [1, 0]]:
         current = random.randint(0, 256, frame.shape, dtype=np.uint8)
         expected = baseline.track(current, flags)
         actual = tracker.track(current, flags)
         assert expected == actual
+        assert single.track(current, flags) == expected
+        assert single.frame_id == baseline.frame_id
+        assert all(torch.equal(left, right) for left, right in
+                   zip(single.templates, baseline.templates))
+        assert all(torch.equal(left, right) for left, right in
+                   zip(single.availability, baseline.availability))
         assert tracker.frame_id == baseline.frame_id
         assert all(torch.equal(left, right) for left, right in
                    zip(tracker.templates, baseline.templates))
@@ -97,6 +106,7 @@ def main():
                    zip(tracker.availability, baseline.availability))
         parity.append(dict(availability=flags, frame_id=tracker.frame_id, exact=True))
     checks['zero_residual_native_multiframe_box_template_availability_parity'] = parity
+    checks['single_checkpoint_native_multiframe_parity_exact'] = True
     with torch.no_grad():
         tracker.network.feedback.delta.weight.normal_(std=.01)
     rounds = []
@@ -165,7 +175,7 @@ def main():
         seconds=time.time()-started, peak_gpu_bytes=torch.cuda.max_memory_allocated(),
         limitations=['No real-image training or official metrics',
             'Synthetic initialized repair and residual, not learned F weights',
-            'No formal trainer or official evaluator launcher',
+            'No image-training or spawned official evaluator execution',
             'No actual-workload latency comparison or correction/destruction rates'])
     output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report), flush=True)

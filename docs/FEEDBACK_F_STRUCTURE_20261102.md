@@ -205,6 +205,43 @@ The updated train CLI imports in Python3.7. No real image/epoch, learned F
 weight, actual tracking correction/destruction rate or official score was
 produced. Earlier receipts retain their historical source hashes.
 
+## Full Official Evaluation Entry
+
+`evaluate.py` provides complete/miss evaluation for single/none/shallow/deep.
+It reuses the frozen evaluator's `prepare` and `sequence` functions, including
+GT/mask hashes, first-frame initialization, both-missing hold and all-frame
+output. Its initializer loads FeedbackTracker and assigns the same sequence
+runner globals in each spawned worker. Full inventory counts are fixed at
+479 sequences / 337353 frames; the CLI has no subset/limit argument.
+It uses the same rgbt metric classes and saves five scores and curves,
+all trajectory receipts, checkpoint hash and both native/F source hashes.
+No original evaluator or running queue was edited.
+
+`verify_official.py` independently recomputes scores/curves from all saved
+trajectories, checks every individual receipt against the aggregate, verifies
+all GT/mask hashes, model/F/native/runtime source hashes and full coverage.
+The original verifier hardcodes the original evaluator's source hash, so it
+cannot validate this F entry unchanged. This separate verifier identifies the
+actual F entry instead; it does not call any development evaluation main.
+It is not yet integrated with a verified F campaign or final-five queue.
+
+Fixed a concrete loading mismatch: single-arm training saves native
+MissingTrackerModel weights with feedback mode `single`; the earlier F loader
+only constructed a two-round FeedbackTrackerModel and would reject that mode.
+The loader now explicitly constructs the native model for `single` and
+strictly loads its weights. The updated actual E0 synthetic tracker check
+confirms single/native boxes, templates and availability match over three
+frames/states, and preserves the existing two-round checks. Receipt:
+`reports/server28_feedback_f_tracker_v2_20261102.json`, SHA256
+`4aab14a1ded19e1d7b71bc176e1c73aed72e3159c563c0cbcaf7b69b4839a468`.
+
+Actual Python3.7 compile/import/CLI help pass for both new entries; `--limit`
+is rejected before dataset access/output creation. Receipt:
+`reports/server28_feedback_f_official_entry_20261102.json`, SHA256
+`d4c1df7722c0a378ffa0b8e4a715e2d29c8f2c0cfa0e91f01ee9dc783d1804bb`.
+Neither spawned evaluation, actual F trajectory verification nor any official
+benchmark was run. These are implementation checks only.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original
