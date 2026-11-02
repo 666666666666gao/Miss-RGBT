@@ -2,6 +2,14 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC: `scripts/probe_window_training.py`,
+`scripts/launch_window_training.py`, `scripts/analyze_window_training.py`,
+`docs/WINDOW_TRAINING_PILOT_20261102.md`: matched raw/Hann regression
+supervision in identical native heads. GPU2PID654595 launched04:29:02Z,
+same frozen train882 feature caches,common Hann inference and delayed audit.
+Prior crop evidence motivates an ordinary training-alignment control,
+not a validated novel module or official score. Result pending.
+
 2026-11-02 UTC: `scripts/probe_chronology_training.py`,
 `scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,
 and `docs/CHRONOLOGY_TRAINING_PILOT_20261102.md`: matched native versus

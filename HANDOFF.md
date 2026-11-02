@@ -1,5 +1,21 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 Matched raw/Hann supervision launched
+
+GPU2 PID654595 launched04:29:02Z. New256/128/128 train882 tuples,
+same6474117parameter native CENTER heads compare raw-peak versus Hann-peak
+regression; both evaluate using Hann,raw focal maps unchanged.
+Backbone/fusion/BN frozen. Same feature caches,LR scaling,stop/final-five
+selection; audit sampled only after selection. Output
+reports/server28_window_training_20261102/. Protocol
+docs/WINDOW_TRAINING_PILOT_20261102.md; dedicated analyzer deployed.
+Estimate3-8min,180-300s milestone observations. Worker frozen after launch.
+Prior candidate diagnostic's Hann-minus-raw crop IoU was significantly
+negative in both missing directions,not complete; this is exploratory
+evidence of a train/inference contract difference,not a deployable benefit.
+No Hann removal,threshold tuning,val97 or official evaluation authorized
+by this pilot. All weights preserved. Official maxima unchanged;goalunmet.
+
 ## 2026-11-02 Matched chronology training verified
 
 PID589499 completed704.600s; both10epochs/120updates,final5=6-10;
