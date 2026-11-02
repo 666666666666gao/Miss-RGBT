@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic resident tensors; three full AdamW updates",
+  "arm": "shallow",
+  "microbatch": 2,
+  "accumulation": 2,
+  "effective_batch": 4,
+  "learning_rate": 5e-05,
+  "backbone_learning_rate": 5e-06,
+  "seed": 65307,
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "cuda_visible_devices": "0",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "total_gpu_bytes": 25296044032,
+  "torch_version": "1.12.1+cu113",
+  "rows": [
+    {
+      "update": 1,
+      "seconds": 4.527595461986493,
+      "losses": [
+        29.775924682617188,
+        30.230289459228516
+      ],
+      "probe_views": [
+        "C",
+        null
+      ],
+      "grad_norm": 166.00997924804688,
+      "peak_allocated_bytes": 14799338496,
+      "peak_reserved_bytes": 15483273216
+    },
+    {
+      "update": 2,
+      "seconds": 2.226456077012699,
+      "losses": [
+        23.281795501708984,
+        24.236509323120117
+      ],
+      "probe_views": [
+        null,
+        null
+      ],
+      "grad_norm": 97.75486755371094,
+      "peak_allocated_bytes": 15650767360,
+      "peak_reserved_bytes": 16361979904
+    },
+    {
+      "update": 3,
+      "seconds": 2.245917019987246,
+      "losses": [
+        22.227428436279297,
+        20.739398956298828
+      ],
+      "probe_views": [
+        "M",
+        null
+      ],
+      "grad_norm": 93.44257354736328,
+      "peak_allocated_bytes": 15651667456,
+      "peak_reserved_bytes": 16361979904
+    }
+  ],
+  "peak_allocated_bytes": 15651667456,
+  "peak_reserved_bytes": 16361979904,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/profile_batch.py": "b07f623d22219ee0b3e58b73179aea2082107722039df0f3bbdcd83fa4bc4778",
+    "/home/gaob/Miss-RGBT/research/feedback_f/training.py": "3b103a99986ca22907236c486ff6adae72d93995522922a132dc2ff9eabd01cc",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/train.py": "c74f079465024b1890213a9737f0179502ccdeb217e22501f2665dd778f0323a"
+  },
+  "limitations": [
+    "No real images, data loading, cropping, transfers or official metrics",
+    "Three updates do not measure convergence or sustained training throughput",
+    "Synthetic memory fit is preliminary; actual image smoke remains required",
+    "No checkpoint persisted or formal F campaign launched"
+  ]
+}

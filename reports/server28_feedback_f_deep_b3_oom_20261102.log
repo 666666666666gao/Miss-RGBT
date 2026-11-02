@@ -1,0 +1,15 @@
+Captured SSH stderr from the first deep/microbatch3 synthetic profile attempt.
+Process exit code: 1. No successful JSON receipt was produced.
+profile_batch.py SHA256: b07f623d22219ee0b3e58b73179aea2082107722039df0f3bbdcd83fa4bc4778
+The actual update/microstep at failure was not recorded.
+
+Traceback (most recent call last):
+  File "/home/gaob/Miss-RGBT/research/feedback_f/profile_batch.py", line 106, in <module>
+    main()
+  File "/home/gaob/Miss-RGBT/research/feedback_f/profile_batch.py", line 70, in main
+    (loss/accumulation).backward()
+  File "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/autograd/__init__.py", line 175, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 42.00 MiB (GPU 0; 23.56 GiB total capacity; 20.46 GiB already allocated; 21.00 MiB free; 21.82 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

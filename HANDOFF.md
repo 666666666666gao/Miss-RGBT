@@ -3701,3 +3701,20 @@ At21:09:19CST actual original PIDs1288280/1288281/1355742 live,
 epoch3updates5450/5500,observedloss11.090048/7.013592 finite.
 Epoch3 milestone remains about21:37CST; no early repeated polling.
 Original training/runtime/queue untouched. No new official metrics.
+
+## F batch profile, 2026-11-02
+
+Added profile_batch.py and measured all four controls with synthetic resident
+tensors on RTX3090. Microbatch2/accumulation2/effective4 passed three full
+AdamW updates. Single peak allocated8.95GiB; none14.46GiB; shallow14.59GiB;
+deep14.57GiB. Deep microbatch3 OOM during backward:20.46GiB allocated,
+21MiB free,21.82GiB reserved. Microbatch4 not attempted. Preliminary smoke
+choice is microbatch2, accumulation2, effective4, LR5e-5/backbone5e-6;
+actual image smoke must recheck memory. Profile docs:
+docs/FEEDBACK_F_BATCH_PROFILE_20261102.md and OOM log
+reports/server28_feedback_f_deep_b3_oom_20261102.log.
+No F image or official run launched.
+
+At21:22:22CST original1288280/1288281/1355742 actualcommands live;
+GPU2/3 75/74C,22710/22742MiB,250Wcaps. No original runtime/queue change,
+new official metric or checkpoint cleanup.
