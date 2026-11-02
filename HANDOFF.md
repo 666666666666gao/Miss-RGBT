@@ -3620,3 +3620,22 @@ GPUs2/3 75/74C,22710/22742MiB,250W;GPU0/1idleatobservation.
 Epoch2development milestone stillabout19:52CST. P remains waiting for
 originalterminal/frozenmanifests/metadatafeasibility;P->F->X orderunchanged.
 No weights pruned,no val97,no newofficialscore;fullgoalunmet.
+
+## F shared training batch interface, 2026-11-02 20:51 CST
+
+Added research/feedback_f/training.py and check_training.py. Actual E0
+synthetic four-arm check PASS: shared initialization and post-build CPU RNG
+exact; C/M probes each reconstruct objective exactly, backward/AdamW finite,
+backbone/selector updated, shallow/deep projection gradients nonzero, BN fixed.
+Eight updates, 19.424 seconds, peak 8434151424 bytes; GPU0 released.
+Receipt reports/server28_feedback_f_training_20261102.json SHA256
+455379b2f90fb0e612acacc0dd1ddf231898e222af57ff9814e4db74886afc62.
+No persistent weights or dataset use; not formal training or efficacy.
+Formal loop still pending; isolate mask RNG per step because forward RNG
+consumption differs between single/double passes. P->F->X order retained.
+
+At 20:47:05 CST original Utility/Random updates5050/5075, epoch3, finite
+observed loss5.376097/4.109694; estimated epoch3 end21:37-21:38 CST.
+At20:51:05 original PIDs1288280/1288281 and queue1355742 still live;
+GPU2/3 75/74C,22710/22742MiB,250W caps. No restart, new official result,
+checkpoint selection or cleanup. Full goal remains unmet.

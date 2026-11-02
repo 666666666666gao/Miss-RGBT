@@ -103,13 +103,37 @@ prediction used for decode; and conditional template append/pop exactly
 matching the inherited update rule. This remains synthetic integration
 evidence, not an image-trained or benchmark result.
 
+## Shared Training Batch Interface
+
+`training.py` provides the single/none/shallow/deep model factory and shared
+C/M batch objective. It strictly copies the native initialized Utility state;
+extra module construction preserves the caller's CPU RNG. Two-round task/KD
+supervision is averaged over rounds; the existing Utility probe supervises
+round2 once. Reverse KD stays disabled. No datasets or jobs are opened.
+
+Actual E0 synthetic check: `reports/server28_feedback_f_training_20261102.json`
+(SHA256 `455379b2f90fb0e612acacc0dd1ddf231898e222af57ff9814e4db74886afc62`).
+All four arms have exactly equal shared initial state and post-build CPU RNG.
+C and M probe cases each reconstruct the objective exactly, perform finite
+backward/AdamW updates, update backbone and Utility selector, and preserve BN.
+Shallow/deep feedback projections receive nonzero gradients. Eight optimizer
+updates took 19.424 seconds; peak allocated memory was 8,434,151,424 bytes.
+This is synthetic optimizer evidence, not real-image training, real batch
+memory sizing, convergence or efficacy. No persistent weights were produced.
+
+Formal training must isolate per-step mask draws and verify input/mask hashes
+across arms: single and double passes consume different stochastic forward
+draws, so matching an initial seed is insufficient. Training-mode loss equality
+between single and double passes is not asserted; zero-residual exact parity
+is an evaluation-mode check.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original
 manifests, metadata feasibility, actual image smoke and formal training.
 Before image training/evaluation of F, provide the isolated formal trainer
-and checkpoint/tracker loading integration, verify one external tracker
-state/template update per frame, and compare single-pass/no-residual/
+loop, isolated mask draws and image smoke verification. Synthetic tracker
+loading and one external state/template update have passed. Compare single-pass/no-residual/
 shallow/deep with matched objective and training budgets.
 Measure latency and peak memory on the same actual workload and record
 correction as well as destruction. Do not infer any of these from block
