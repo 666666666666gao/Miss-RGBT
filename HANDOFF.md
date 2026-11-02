@@ -3706,7 +3706,7 @@ Original training/runtime/queue untouched. No new official metrics.
 
 Added profile_batch.py and measured all four controls with synthetic resident
 tensors on RTX3090. Microbatch2/accumulation2/effective4 passed three full
-AdamW updates. Single peak allocated8.95GiB; none14.46GiB; shallow14.59GiB;
+AdamW updates. Single peak allocated8.97GiB; none14.46GiB; shallow14.58GiB;
 deep14.57GiB. Deep microbatch3 OOM during backward:20.46GiB allocated,
 21MiB free,21.82GiB reserved. Microbatch4 not attempted. Preliminary smoke
 choice is microbatch2, accumulation2, effective4, LR5e-5/backbone5e-6;
@@ -3718,3 +3718,16 @@ No F image or official run launched.
 At21:22:22CST original1288280/1288281/1355742 actualcommands live;
 GPU2/3 75/74C,22710/22742MiB,250Wcaps. No original runtime/queue change,
 new official metric or checkpoint cleanup.
+
+## Epoch3 completed, 2026-11-02 21:37:44 CST
+
+Actual original PIDs1288280/1288281/1355742 remain live with original commands.
+Both trainers completed epoch3/update6000; Random already logged epoch4.
+Fixed train882-development mean task losses (epochs1,2,3):
+Utility4.356546/4.398573/4.481288; Random4.310292/4.399227/4.472109.
+Neither improves over epoch1. This is an early optimization concern, not
+official accuracy or proof of convergence; keep the preregistered LR-drop/
+stopping policy unchanged. No test checkpoint selection or cleanup.
+Raw three-epoch histories copied to reports/server28_partitioned_a_
+{utility,random}_epoch03_20261102.json. Next epoch milestone~23:23CST.
+P still requires original terminal receipts and frozen manifests.
