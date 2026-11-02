@@ -1,4 +1,4 @@
-"""Launch one prepared P arm on GPU0/1; original GPU2/3 queue is unchanged."""
+"""Launch one prepared P arm on any verified Server 28 GPU."""
 import argparse
 import datetime
 import json
@@ -16,7 +16,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--phase', required=True, choices=['smoke', 'formal'])
     parser.add_argument('--arm', required=True, choices=ARMS)
-    parser.add_argument('--gpu', required=True, type=int, choices=[0, 1])
+    parser.add_argument('--gpu', required=True, type=int, choices=[0, 1, 2, 3])
     args = parser.parse_args()
     campaign = PROJECT/'reports'/('server28_curriculum_p_20261102_'+args.phase)
     prepared = json.loads((campaign/'prepared.json').read_text())

@@ -1,4 +1,4 @@
-"""Full final-five official reporting for one verified P arm on GPU0/1."""
+"""Full final-five official reporting for one verified P arm on Server 28."""
 import argparse
 import datetime
 import json
@@ -44,7 +44,7 @@ def jobs_for(arm, completed):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--arm', required=True, choices=ARMS)
-    parser.add_argument('--gpu', required=True, type=int, choices=[0, 1])
+    parser.add_argument('--gpu', required=True, type=int, choices=[0, 1, 2, 3])
     args = parser.parse_args()
     campaign = PROJECT/'reports/server28_curriculum_p_20261102_formal'
     verified = read(campaign/'verification.json')
