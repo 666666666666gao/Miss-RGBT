@@ -3920,3 +3920,24 @@ At22:24:15CST original1288280/1288281/1355742 actualcommands live;
 GPU2/3both74C,250W. Still3completedepochs, nextmilestone~23:23CST.
 Previous official queue implementation was progress; this turn adds actual
 image evidence. No new official score; full objective remains unmet.
+
+## Partitioned A epoch4 diagnostic snapshot
+
+At23:27CST, paired train-only fixed128 development histories through epoch4
+were preserved in
+reports/server28_partitioned_a_dev_history_epoch04_{utility,random}_20261102.json
+and summarized in docs/PARTITIONED_A_EPOCH04_DIAGNOSTIC_20261102.md.
+Utility mean losses by epoch1-4:4.356546,4.398573,4.481288,4.492963.
+Random:4.310292,4.399227,4.472109,4.386902. Complete and TIR-missing
+losses remain above epoch1 in both arms; Utility RGB-missing also increased,
+while Random RGB-missing epoch4 remains slightly above epoch1. This is
+uneven early optimization evidence, not official accuracy or convergence;
+keep preregistered LR/stopping unchanged.
+
+At23:27CST original trainer PIDs1288280/1288281 and official queue1355742
+were live. Utility epoch5/update8100; Random epoch5/update8150 (2000 updates
+per epoch). GPU2/3 75/74C,250W caps. Estimated epoch5 boundary ~00:59CST;
+recheck near that milestone with180-300s polling. Do not read growing
+manifests or start P smoke before both trainers terminate and queue
+verification_v2 passes. No new official score; no run/config/queue changes
+or checkpoint cleanup. Full goal remains active and unmet.
