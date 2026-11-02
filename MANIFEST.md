@@ -10,9 +10,13 @@ native top8 candidate GT-oracle headroom. Gate passed; no deployable method.
 Independent NumPy map replay checked294912boxes. Failed original launch
 traceback retained. Follow-up `scripts/probe_quality_ranker.py`,
 `scripts/launch_quality_ranker.py`, `scripts/analyze_quality_ranker.py`,
-and `docs/QUALITY_RANKER_PILOT_20261102.md` register the matched
-quality/response supervision pilot, currently PID499198 onGPU2.
-No official metric or module claim.
+and `docs/QUALITY_RANKER_PILOT_20261102.md` record the matched
+quality/response supervision pilot completed231.174s onGPU2.
+Both10epochs/180updates,selected9/10 from final-five6-10.
+Registered gate failed; saved-evidence and2304row cached-ranker replay
+verified,9216candidate IoUs independently checked.
+Evidence `reports/server28_quality_ranker_20261102/`.
+No official metric or module claim; weights preserved.
 
 2026-11-02 UTC: `scripts/probe_tail_lowrank.py`,
 `scripts/launch_tail_lowrank.py`, `scripts/analyze_tail_lowrank.py`, and

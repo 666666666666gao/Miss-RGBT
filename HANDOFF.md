@@ -1,6 +1,29 @@
 # Miss-RGBT 交接文档
 
-## 2026-11-02 Candidate quality headroom verified; ranking pilot running
+## 2026-11-02 Matched quality ranker completed and verified
+
+PID499198 finished231.174s. Both51585parameter arms10epochs/180updates;
+qualityselected9,responseselected10 from final-five6-10, all weights kept.
+Audit128tuples/66sequences/1152rows per arm. Quality-native IoU complete
++.004284CI[-.033706,.046220],RGBmissing+.022927CI[-.013764,.064605],
+TIRmissing-.004925CI[-.039010,.028868];quality-response+.011954
+CI[-.014616,.043682]. Registered gate=false; do not enlarge/retune/promote.
+Oracle candidate headroom does not establish learned selection efficacy.
+Server+local box arithmetic, pairing, partitions/tuple exclusions,
+LR/stop/select/bootstrap/protocol checks passed. Source/base/3caches/
+selected/all10final5 hashes verified; all10actual weights51585finiteparams.
+Separate-process selected-ranker replay2304rows exact;9216candidate IoUs
+independently checked. Shared ranker/evaluation code,cached features,
+not neural image/backbone replay or independent scientific review.
+ReportSHA686d472292a7eb8a72e3a7ee168818b880cb601a0a353824f129cb73d5628bb7.
+docs/QUALITY_RANKER_PILOT_20261102.md,
+reports/server28_quality_ranker_20261102/.
+No val97/official evaluation/cleanup. Overall goal remains incomplete.
+Next mechanism requires distinct fresh train882 evidence; candidate
+identity discrimination from initial/dynamic templates is a prospective
+question only, not validated by these negative results.
+
+## 2026-11-02 Candidate quality headroom verified; original pilot launch
 
 Frozen E0 GPU2 diagnostic PID460256 completed44.809s,128tuples/
 121fitting sequences/1152rows. Native top8 Hann GT-oracle gain:

@@ -69,4 +69,56 @@ Full Complete+2, RGBT234-Miss88.1/64.3 and three-module goals remain unmet.
 
 ## Result
 
-Pending.
+Completed GPU2 PID499198 in231.174seconds. Both51585-parameter arms
+stopped10epochs/180updates. Quality selected9,response10 from final-five
+6-10 using their own development cross entropy, before audit sampling.
+All epoch weights retained. Peak allocated quality441560576bytes,
+response441975296bytes; reserved1086324736bytes each. This tiny cached
+ranking experiment does not establish full-tracker batch size/convergence.
+
+Audit128tuples/66actual sequences,1152rows per arm. Sequence-macro
+crop-IoU changes (not official tracking scores):
+
+| Comparison | Mean delta | 95% sequence-bootstrap CI |
+|---|---:|---|
+| Quality minus native / full complete11_11 | +.004284 | [-.033706,+.046220] |
+| Quality minus native / RGB missing | +.022927 | [-.013764,+.064605] |
+| Quality minus native / TIR missing | -.004925 | [-.039010,+.028868] |
+| Quality minus response / all9cells | +.011954 | [-.014616,+.043682] |
+
+All intervals cross zero, and two categories miss the.01 mean requirement.
+Registered advancement=false. Do not enlarge this exact ranker, retune
+its audit, run official evaluation or label it a validated paper module.
+Earlier fixed-candidate oracle headroom remains valid on its own sample;
+this learned pilot does not establish that those gains can be recovered.
+It also does not prove that all quality-ranking methods fail. The shared
+reused sequence partitions, one seed, static crops and no temporal identity
+evidence limit generalization and causal claims.
+
+Server and local saved-evidence analysis passed partition/exact prior-tuple
+exclusions, row pairing, box-IoU arithmetic, stopping/LR/final-five
+selection, bootstrap/gate and report/protocol hashes. Server additionally
+checked listed sources, original E0, three candidate caches and selected/
+all10 final-five weight hashes; each actual weight dictionary had51585
+finite parameters and matching epoch metadata.
+Separate-process cached selected-ranker replay reproduced all2304rows
+exactly and independently checked9216audit candidate box IoUs. This reuses
+ranker/evaluation implementation and cached fused features; no neural
+image/backbone replay or independent scientific review. Cache candidate
+ordering was checked; full native dense candidate reconstruction was done
+in the preceding diagnostic, not independently rerun for every training
+cache. Producer baseline digest unchanged and gradients absent.
+
+Report SHA256:
+`686d472292a7eb8a72e3a7ee168818b880cb601a0a353824f129cb73d5628bb7`.
+Immutable initial protocol SHA256:
+`7302d5775ba34a3741dac22c138499f5131d42816c202a6374995e8f71272499`.
+Evidence: `reports/server28_quality_ranker_20261102/`.
+No val97, official evaluation or checkpoint cleanup. Official maxima
+unchanged; full Complete+2,RGBT234-Miss and three-module goals remain unmet.
+
+Next investigation must bring distinct evidence, such as measuring whether
+identity information in initial/dynamic templates can distinguish native
+candidate ambiguities on fresh train882 trajectories. Do not infer such
+information is useful from this failure or add a verifier without first
+testing its discriminative signal under complete and both missing states.
