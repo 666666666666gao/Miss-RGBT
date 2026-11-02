@@ -39,7 +39,7 @@ def main():
         save(verification, verified)
         with patch.object(prepare, 'PROJECT', root), patch.object(trainer, 'PROJECT', root):
             for curriculum in trainer.P_ARMS:
-                destination, arms, source = prepare.configs(curriculum)
+                destination, arms, source = prepare.configs(curriculum, 'smoke')
                 assert not destination.exists()
                 assert set(arms) == set(trainer.ARMS)
                 common = []
@@ -58,17 +58,56 @@ def main():
                                    if key not in ['feedback', 'output']})
                 assert all(value == common[0] for value in common)
                 assert source.exists()
+                smoke_rows, smoke_results = [], {}
+                for arm, config in arms.items():
+                    path = destination/(arm+'.json')
+                    save(path, config)
+                    run = Path(config['output'])
+                    save(run/'run_config.json', config)
+                    save(run/'completed.json', dict(status='complete', scope='synthetic'))
+                    save(run/'input_manifest.jsonl', dict(identities=[], scope='synthetic'))
+                    smoke_rows.append(dict(arm=arm, config=str(path),
+                                           config_sha256=prepare.sha(path)))
+                    smoke_results[arm] = dict(
+                        completed_sha256=prepare.sha(run/'completed.json'),
+                        input_manifest_sha256=prepare.sha(run/'input_manifest.jsonl'))
+                save(destination/'prepared.json', dict(arms=smoke_rows))
+                check = destination/'verification.json'
+                save(check, dict(status='PASS', phase='smoke', curriculum_arm=curriculum,
+                    arms=smoke_results, source_sha256={},
+                    prepared_sha256=prepare.sha(destination/'prepared.json')))
+                formal_destination, formal, _ = prepare.configs(curriculum, 'formal')
+                assert not formal_destination.exists()
+                common = []
+                for arm, config in formal.items():
+                    trainer.validate_parents(config)
+                    trainer.validate_smoke(config)
+                    assert config['samples_per_epoch'] == 20000
+                    assert config['development_samples'] == 128
+                    assert config['seed'] == 2030 and config['mask_seed'] == 65403
+                    assert len(config['exclude_manifest_sha256']) == 9
+                    common.append({key: value for key, value in config.items()
+                                   if key not in ['feedback', 'output']})
+                assert all(value == common[0] for value in common)
+                check.unlink()
+                try:
+                    prepare.configs(curriculum, 'formal')
+                except FileNotFoundError:
+                    pass
+                else:
+                    raise AssertionError('Formal preparation accepted absent F smoke')
             verification.unlink()
             try:
-                prepare.configs('progressive')
+                prepare.configs('progressive', 'smoke')
             except FileNotFoundError:
                 pass
             else:
                 raise AssertionError('Missing formal P verification was accepted')
-            assert not list(root.glob('reports/*feedback_f*'))
+            assert not list(root.glob('reports/*feedback_f*formal*'))
     sources = [Path(__file__), Path(prepare.__file__), Path(trainer.__file__)]
     report = dict(status='PASS', curricula=list(trainer.P_ARMS),
         arms=list(trainer.ARMS), updates_per_arm=40,
+        formal_configs_matched=True, formal_missing_smoke_rejected=True,
         matched_configs=True, missing_parent_rejected_before_output=True,
         source_sha256={str(path.resolve()): prepare.sha(path) for path in sources},
         scope='Synthetic parent metadata/config arithmetic only; no real P/F training')

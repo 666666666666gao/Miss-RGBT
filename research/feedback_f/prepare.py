@@ -1,4 +1,4 @@
-"""Prepare matched F image-smoke configs after verified formal P training."""
+"""Prepare matched F smoke/formal configs after verified parent runs."""
 import argparse
 import copy
 import hashlib
@@ -18,8 +18,9 @@ def sha(path):
     return digest.hexdigest()
 
 
-def configs(curriculum_arm):
+def configs(curriculum_arm, phase):
     assert curriculum_arm in trainer.P_ARMS
+    assert phase in ['smoke', 'formal']
     campaign = PROJECT/'reports/server28_curriculum_p_20261102_formal'
     verified_path = campaign/'verification.json'
     verified = json.loads(verified_path.read_text())
@@ -38,13 +39,29 @@ def configs(curriculum_arm):
         config['exclude_manifest_sha256'][str(root/'input_manifest.jsonl')] = (
             verified['arms'][arm]['input_manifest_sha256'])
     trainer.validate_parents(config)
-    stem = 'server28_feedback_f_20261102_smoke_'+curriculum_arm
-    config.update(phase='smoke', curriculum_arm=curriculum_arm, epochs=20,
-        seed=65301, development_seed=65302, mask_seed=65303,
-        development_samples=8, samples_per_epoch=8,
+    if phase == 'formal':
+        smoke_path = PROJECT/'reports'/(
+            'server28_feedback_f_20261102_smoke_'+curriculum_arm)/'verification.json'
+        smoke = json.loads(smoke_path.read_text())
+        config['smoke_verification_sha256'] = {str(smoke_path): sha(smoke_path)}
+        for arm in trainer.ARMS:
+            root = PROJECT/'runs'/(
+                'server28_feedback_f_20261102_smoke_'+curriculum_arm)/arm
+            config['parent_completion_sha256'][str(root/'completed.json')] = (
+                smoke['arms'][arm]['completed_sha256'])
+            config['exclude_manifest_sha256'][str(root/'input_manifest.jsonl')] = (
+                smoke['arms'][arm]['input_manifest_sha256'])
+        trainer.validate_smoke(config)
+    stem = 'server28_feedback_f_20261102_'+phase+'_'+curriculum_arm
+    config.update(phase=phase, curriculum_arm=curriculum_arm, epochs=20,
+        seed=2030 if phase == 'formal' else 65301,
+        development_seed=65402 if phase == 'formal' else 65302,
+        mask_seed=65403 if phase == 'formal' else 65303,
+        development_samples=128 if phase == 'formal' else 8,
+        samples_per_epoch=20000 if phase == 'formal' else 8,
         microbatch=2, accumulation=2, learning_rate=5e-5,
         backbone_multiplier=.1, workers=2,
-        purpose='Matched F real-image smoke; not formal or official evidence')
+        purpose='Matched F '+phase+' image experiment; not official evidence')
     config['task_utility'] = dict(original['task_utility'],
                                   selection='utility', selection_seed=config['seed'])
     for key in ['early_stop_min_epochs', 'early_stop_patience',
@@ -61,23 +78,24 @@ def configs(curriculum_arm):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--phase', required=True, choices=['smoke', 'formal'])
     parser.add_argument('--curriculum-arm', required=True, choices=trainer.P_ARMS)
     args = parser.parse_args()
-    destination, arms, source = configs(args.curriculum_arm)
+    destination, arms, source = configs(args.curriculum_arm, args.phase)
     destination.mkdir(exist_ok=False)
     records = []
     for arm, config in arms.items():
         path = destination/(arm+'.json')
         path.write_text(json.dumps(config, indent=2)+'\n')
         records.append(dict(arm=arm, config=str(path), config_sha256=sha(path)))
-    report = dict(status='PREPARED_NOT_LAUNCHED', phase='smoke',
+    report = dict(status='PREPARED_NOT_LAUNCHED', phase=args.phase,
         curriculum_arm=args.curriculum_arm, source_config=str(source),
         source_config_sha256=sha(source),
         parent_verification_sha256=arms['single']['parent_verification_sha256'],
         source_sha256={str(Path(__file__).resolve()): sha(__file__),
                        str(Path(trainer.__file__).resolve()): sha(trainer.__file__)},
         arms=records,
-        scope='Four matched smoke configs only; no images, workers or weights')
+        scope='Four matched configs only; no images, workers or weights')
     (destination/'prepared.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], destination=str(destination))))
 

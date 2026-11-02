@@ -3822,3 +3822,27 @@ Utility epoch4 microstep12995/update6498 observedloss5.676797;
 Random epoch4 microstep13057/update6529 observedloss9.936890.
 Different latest steps, no paired-loss comparison. No training edit,
 restart, extra image job or checkpoint deletion. Goal remains unmet.
+
+## F smoke-to-formal preparation and launcher
+
+prepare.py now requires --phase smoke|formal. Formal requires a completed
+verified4arm F smoke for the same explicit curriculum before output creation,
+checks source/prepared/config/run/receipt hashes and adds smoke manifests
+to inherited frame exclusions. train.py independently enforces this formal
+boundary; verify.py checks it and actual launcher receipt/config/trainer/
+prepared hashes. launch.py uses existing GPU readiness checks,GPU0/1 only,
+isolated subprocess/log/receipt and frozen runtime cwd; no original job edits.
+Formal matched budget: seed2030,mask65403,dev65402,20epochs,
+20000samples/epoch,128dev,microbatch2/accum2,LR5e-5/backbone5e-6.
+Smoke remains20shortepochs/8samples/40updates. No checkpoint deletion.
+
+ActualPython3.7 prepare_v2 synthetic fixture checks pass all4curricula,
+matched smoke/formal configs, inherited exclusions and missing-smoke rejection.
+Evidence-helperv2 checks pass; launch.py --help imports pass.
+Receipts reports/server28_feedback_f_{prepare_v2,evidence_contracts_v2}_20261102.json.
+No real F config/run, positive real-parent verification, spawned image worker,
+full saved-run verification or new official metric. Final5 queue pending.
+Earlier receipts retain historical source hashes.
+22:10:08CST original1288280/1288281/1355742 actual commands live;
+GPU2/3=75/74C,250W,22710/22744MiB. Next epoch4 milestone~23:23CST.
+Full objective remains active/unmet.

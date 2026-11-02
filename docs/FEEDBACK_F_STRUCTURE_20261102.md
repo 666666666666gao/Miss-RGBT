@@ -1,5 +1,19 @@
 # F Structural Prototype
 
+Current preparation command requires `prepare.py --phase smoke|formal
+--curriculum-arm progressive` (or another explicit shared P curriculum).
+Formal preparation and train.py require verified completed four-arm F smoke;
+its frames enter the inherited exclusion set. Formal uses seed2030,
+mask65403,dev65402,20epochs,20000samples/epoch,128dev,batch2/accum2,
+LR5e-5/backbone5e-6. `launch.py --campaign <path> --arm <arm> --gpu 0|1`
+uses the existing idle/temperature/power checks and records process/config/
+trainer/prepared provenance. verify.py checks those launch receipts.
+Actual Python3.7 temporary-metadata checks pass matched smoke/formal
+preparation and missing-smoke rejection; CLI imports pass. Receipts:
+server28_feedback_f_prepare_v2_20261102.json and
+server28_feedback_f_evidence_contracts_v2_20261102.json.
+No real F campaign or launch has run; final-five queue remains pending.
+
 `verify.py --campaign <prepared-campaign>` now provides the saved image-run
 verification entry: all four matched input/mask/config records,20epoch
 history,final5 development selection,raw round-loss summaries and retained

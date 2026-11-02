@@ -155,8 +155,16 @@ def main():
         assert config['curriculum_arm'] == prepared['curriculum_arm']
         assert config['phase'] == prepared['phase']
         trainer.validate_parents(config)
+        if config['phase'] == 'formal':
+            trainer.validate_smoke(config)
         root = Path(config['output'])
         assert read(root/'run_config.json') == config
+        launch = read(campaign/('launch_'+entry['arm']+'.json'))
+        assert launch['arm'] == entry['arm'] and launch['phase'] == config['phase']
+        assert launch['config'] == entry['config']
+        assert launch['config_sha256'] == entry['config_sha256']
+        assert launch['prepared_sha256'] == sha(campaign/'prepared.json')
+        assert sha(launch['command'][2]) == launch['trainer_sha256']
         for path, digest in read(root/'source_sha256.json').items():
             assert sha(path) == digest
         boundary = read(root/'data_boundary.json')

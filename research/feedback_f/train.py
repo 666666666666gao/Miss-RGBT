@@ -47,6 +47,36 @@ def validate_parents(config):
                 assert json.loads(Path(source).read_text())['status'] == 'complete'
 
 
+def validate_smoke(config):
+    path = PROJECT/'reports'/(
+        'server28_feedback_f_20261102_smoke_'+config['curriculum_arm'])/'verification.json'
+    assert config['smoke_verification_sha256'] == {str(path): base.prior.common.sha256(path)}
+    checked = json.loads(path.read_text())
+    assert checked['status'] == 'PASS' and checked['phase'] == 'smoke'
+    assert checked['curriculum_arm'] == config['curriculum_arm']
+    assert set(checked['arms']) == set(ARMS)
+    for source, digest in checked['source_sha256'].items():
+        assert base.prior.common.sha256(source) == digest
+    prepared = path.with_name('prepared.json')
+    assert base.prior.common.sha256(prepared) == checked['prepared_sha256']
+    for entry in json.loads(prepared.read_text())['arms']:
+        assert base.prior.common.sha256(entry['config']) == entry['config_sha256']
+        parent = json.loads(Path(entry['config']).read_text())
+        root = Path(parent['output'])
+        assert parent == json.loads((root/'run_config.json').read_text())
+        for source, digest in parent['exclude_manifest_sha256'].items():
+            assert config['exclude_manifest_sha256'][source] == digest
+        for source, digest in parent['parent_completion_sha256'].items():
+            assert config['parent_completion_sha256'][source] == digest
+        completed, manifest = root/'completed.json', root/'input_manifest.jsonl'
+        result = checked['arms'][entry['arm']]
+        assert config['parent_completion_sha256'][str(completed)] == result['completed_sha256']
+        assert config['exclude_manifest_sha256'][str(manifest)] == result['input_manifest_sha256']
+        assert base.prior.common.sha256(completed) == result['completed_sha256']
+        assert base.prior.common.sha256(manifest) == result['input_manifest_sha256']
+        assert json.loads(completed.read_text())['status'] == 'complete'
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', required=True)
@@ -59,6 +89,8 @@ def main():
     assert config['curriculum_arm'] in P_ARMS
     assert isinstance(config['mask_seed'], int)
     validate_parents(config)
+    if config['phase'] == 'formal':
+        validate_smoke(config)
     torch.set_num_threads(1)
     cv2.setNumThreads(1)
     base.update_config_from_file('experiments/cadtrack/cadtrack.yaml')

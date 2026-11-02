@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "rejected": [
+    "epochs",
+    "selected_epoch",
+    "official_test_selection_used",
+    "updates",
+    "wrong_mask_seed",
+    "nonfinite_each_arm_task",
+    "wrong_round_counts"
+  ],
+  "single_and_nested_round_status": true,
+  "lr_epoch_boundaries": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_evidence.py": "7bd53eef4a7b6a9357222677dac3a951205ec1bb3215844ffb28f4d536c29840",
+    "/home/gaob/Miss-RGBT/research/feedback_f/verify.py": "54ff1acee828e5b52e1610463fbc10b384360e577c1220064ceb62ebc0d4b2da"
+  },
+  "scope": "Synthetic helper evidence only; no full saved-run/weight/image verification"
+}
