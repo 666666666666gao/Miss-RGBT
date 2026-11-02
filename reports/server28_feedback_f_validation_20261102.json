@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "seed": 65309,
+  "scope": "Synthetic batch, actual E0 network; internal task-loss reporting only",
+  "checks": {
+    "single": {
+      "native_final_loss_exact": true,
+      "zero_residual_round_ties": false,
+      "rng_and_selector_preserved": true
+    },
+    "none": {
+      "native_final_loss_exact": true,
+      "zero_residual_round_ties": true,
+      "rng_and_selector_preserved": true
+    },
+    "deep": {
+      "native_final_loss_exact": true,
+      "zero_residual_round_ties": true,
+      "rng_and_selector_preserved": true
+    },
+    "deep_nonzero": {
+      "raw_losses_recomputed_exact": true,
+      "count_arithmetic_exact": true,
+      "states": {
+        "11": {
+          "samples": 2,
+          "round1_mean": 15.322044372558594,
+          "round2_mean": 15.297238826751709,
+          "mean_delta": -0.024805545806884766,
+          "lower_loss": 2,
+          "higher_loss": 0,
+          "equal_loss": 0,
+          "lower_loss_fraction": 1.0,
+          "higher_loss_fraction": 0.0,
+          "equal_loss_fraction": 0.0
+        },
+        "01": {
+          "samples": 2,
+          "round1_mean": 14.030372142791748,
+          "round2_mean": 14.024564266204834,
+          "mean_delta": -0.0058078765869140625,
+          "lower_loss": 2,
+          "higher_loss": 0,
+          "equal_loss": 0,
+          "lower_loss_fraction": 1.0,
+          "higher_loss_fraction": 0.0,
+          "equal_loss_fraction": 0.0
+        },
+        "10": {
+          "samples": 2,
+          "round1_mean": 14.815938949584961,
+          "round2_mean": 14.821264266967773,
+          "mean_delta": 0.0053253173828125,
+          "lower_loss": 1,
+          "higher_loss": 1,
+          "equal_loss": 0,
+          "lower_loss_fraction": 0.5,
+          "higher_loss_fraction": 0.5,
+          "equal_loss_fraction": 0.0
+        }
+      }
+    }
+  },
+  "peak_gpu_bytes": 531227648,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_validation.py": "27a6dfd1ae1d67c258fea3084ea5cb7380f4d85df0915a34e6c91353c3b7adf2",
+    "/home/gaob/Miss-RGBT/research/feedback_f/validation.py": "9cd3c0e3ac1e9cc04d65cbb62967cc967890b96b0daf19786b2997a915c4351e",
+    "/home/gaob/Miss-RGBT/research/feedback_f/train.py": "9c1d132b0f3e73c5be65e43490707e8110ad2fe4f8c2a30c9fb249c6c0666a83",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f",
+    "/home/gaob/Miss-RGBT/research/feedback_f/training.py": "3b103a99986ca22907236c486ff6adae72d93995522922a132dc2ff9eabd01cc",
+    "/home/gaob/Miss-RGBT/scripts/train_partitioned_a.py": "5a387f95f46d3b0798e516cee03d1bb3609f901a79fd9d5d8a5483e9f91ef981",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+  },
+  "limitations": [
+    "No real images or learned F weights",
+    "No closed-loop correction/destruction rates or official accuracy",
+    "No F image-training epoch or checkpoint selection executed"
+  ]
+}

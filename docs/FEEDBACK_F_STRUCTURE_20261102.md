@@ -179,6 +179,32 @@ SHA256 `8db6fd81b56defe6fae71ce38bae2fdd333cadecbc1ef0bcd6f4f891b3569d44`.
 These are metadata contract checks, not validation against real P receipts
 or execution of the image-training loop.
 
+## Internal Round-Loss Diagnostics
+
+`validation.py` preserves the original final-round task-loss aggregation and
+adds paired round1/round2 losses for F controls, separately for 11/01/10.
+For each input tuple it sums task loss over all search frames, then reports
+strictly lower/higher/equal loss counts, fractions and mean delta. This does
+not measure whether a closed-loop tracker corrected or destroyed a frame.
+Single-pass controls keep only the original final-loss fields.
+
+The trainer writes raw vectors to `development_round_samples_epochNN.json`.
+The batch index and vector position correspond to the development entries
+already recorded in `input_manifest.jsonl`. `development_history.json` keeps
+the summary; checkpoint selection still uses final-round mean task loss.
+No threshold, selection rule or training objective changed.
+
+Actual E0 synthetic checker `check_validation.py` passes: final loss matches
+the original validator exactly for single/none/deep, zero-feedback rounds
+tie exactly, CPU/CUDA RNG and selector state are preserved, and nonzero
+feedback raw losses/counts/deltas match independent recomputation from
+captured network outputs. Its receipt is
+`reports/server28_feedback_f_validation_20261102.json`, SHA256
+`a32207d49dae468c58a4d9c4f3975774742e9397d58c44d5c74501abea39a665`.
+The updated train CLI imports in Python3.7. No real image/epoch, learned F
+weight, actual tracking correction/destruction rate or official score was
+produced. Earlier receipts retain their historical source hashes.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original

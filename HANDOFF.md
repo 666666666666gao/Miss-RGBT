@@ -3731,3 +3731,23 @@ stopping policy unchanged. No test checkpoint selection or cleanup.
 Raw three-epoch histories copied to reports/server28_partitioned_a_
 {utility,random}_epoch03_20261102.json. Next epoch milestone~23:23CST.
 P still requires original terminal receipts and frozen manifests.
+
+## F internal round-loss diagnostics, 2026-11-02
+
+Added validation.py/check_validation.py; F train writes per-epoch paired
+round1/2 task-loss vectors keyed by development batch/sample index and
+summarizes lower/higher/equal counts/fractions and mean deltas for11/01/10.
+Original final-round mean-loss aggregation and selection unchanged.
+These are per-tuple sums over search frames, not closed-loop tracking
+correction/destruction or official metrics. Single controls keep native fields.
+
+Actual E0 synthetic check PASS: final-loss exact native parity for single/
+none/deep, zero-feedback ties, preserved CPU/CUDA RNG and selector state,
+nonzero-feedback raw losses/counts/deltas recomputed from captured outputs.
+Receipt reports/server28_feedback_f_validation_20261102.json SHA256
+a32207d49dae468c58a4d9c4f3975774742e9397d58c44d5c74501abea39a665.
+Updated Python3.7 train CLI imports; checker exited and GPU0 released.
+No real F images/epoch/efficacy/official score; previous source receipts
+remain historical. At21:40:32CST original1288280/1288281/1355742 live,
+both epoch4, latestupdates6050/6075 finite; no active runtime/queue edit.
+Next meaningful training milestone~23:23CST; P waits original completion.

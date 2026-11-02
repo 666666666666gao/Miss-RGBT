@@ -11,6 +11,7 @@ import torch
 import train_partitioned_a as base
 from research.curriculum_p.schedule import ARMS as P_ARMS, epoch_config
 from training import ARMS, batch_loss, build_model, step_masks
+from validation import validate
 
 PROJECT = Path('/home/gaob/Miss-RGBT')
 
@@ -172,7 +173,10 @@ def main():
                 steps.write(json.dumps(status)+'\n')
                 steps.flush()
             scheduler.step()
-            result = base.validate(model, dev_batches)
+            result = validate(model, dev_batches, base.cfg)
+            if 'round_samples' in result:
+                base.save(root/('development_round_samples_epoch%02d.json' % epoch),
+                          result.pop('round_samples'))
             result.update(epoch=epoch, updates=updates, seconds=time.time()-started)
             history.append(result)
             base.save(root/'development_history.json', history)
