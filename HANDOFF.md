@@ -3891,6 +3891,14 @@ Only the dedicated audit report was written; no audit input manifest/run dir.
 At22:31CST original1288280/1288281/1355742 remained actual live commands;
 GPU0/1 1MiB idle, GPU2/3=75/74C,22710/22744MiB,100%.
 
+Added final-boundary option `--include-completed-partitioned-a`. It requires
+formal `verification_v2.json` status=passed, then verifies both completed
+and input-manifest hashes before including their identities. Synthetic
+receipt tests pass paired acceptance and reject changed manifest/incomplete
+status; no live manifest was read. After original A training finishes and
+verification_v2 passes, rerun to a NEW report path with this option before
+P smoke. Python3.7 checker PASS; no P image smoke/training launched.
+
 ## Actual initial/epoch3 same-image diagnosis
 
 Added scripts/diagnose_partitioned_initial.py and executed on GPU0.

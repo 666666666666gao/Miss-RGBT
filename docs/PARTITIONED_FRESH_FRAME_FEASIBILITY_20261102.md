@@ -34,8 +34,13 @@ frame exclusions.
 This is an upper bound for the next P run, not its final feasibility result.
 The two running A formal input manifests are not included and will add
 exclusions. Re-run this audit only after both A manifests and completion
-receipts are frozen, adding those immutable inputs before P image smoke.
-Do not launch P smoke based on this report alone. The audit creates no
+receipts are frozen and
+`reports/server28_partitioned_a_20261102_formal/verification_v2.json` has
+`status=passed`. Then run `audit_partitioned_fresh_frames.py` with
+`--include-completed-partitioned-a` and a new output path. That option checks
+both manifest/completion hashes against the paired verifier before reading
+the immutable identities. Do not launch P smoke based on this report alone.
+The audit creates no
 training run or `input_manifest.jsonl`; its only output is the JSON report.
 
 Raw output:
@@ -43,6 +48,7 @@ Raw output:
 Checker:
 `scripts/check_partitioned_fresh_frames.py`; it checks native sampler
 boundaries, strict visibility threshold, short-sequence rejection and
-exclusion-induced zero-anchor fixtures. The report hashes its audit,
-sampler, dataset and training-source files and all historical exclusion
-reports.
+exclusion-induced zero-anchor fixtures, plus accepts only paired completed-A
+verification receipts with matching completion/manifest hashes. The report
+hashes its audit, sampler, dataset and training-source files and all
+historical exclusion reports.

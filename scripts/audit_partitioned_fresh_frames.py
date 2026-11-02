@@ -18,9 +18,39 @@ def causal_anchor_count(visible, sequence_length, num_template_frames=2,
         for anchor in range(num_template_frames-1, sequence_length-num_search_frames))
 
 
+def add_verified_partitioned_a_exclusions(verification_path, used, hashes):
+    verification_path = Path(verification_path)
+    verified = json.loads(verification_path.read_text())
+    assert verified['status'] == 'passed' and verified['phase'] == 'formal'
+    assert set(verified['arms']) == {'utility', 'random'}
+    hashes[str(verification_path)] = base.prior.common.sha256(verification_path)
+    verifier = Path(__file__).with_name('verify_partitioned_a_v2.py')
+    hashes[str(verifier.resolve())] = base.prior.common.sha256(verifier)
+    for arm in ['utility', 'random']:
+        root = base.PROJECT/'runs/server28_partitioned_a_20261102_formal'/arm
+        completed, manifest = root/'completed.json', root/'input_manifest.jsonl'
+        result = verified['arms'][arm]
+        assert base.prior.common.sha256(completed) == result['completed_sha256']
+        assert base.prior.common.sha256(manifest) == result['input_manifest_sha256']
+        assert json.loads(completed.read_text())['status'] == 'complete'
+        hashes[str(completed)] = result['completed_sha256']
+        hashes[str(manifest)] = result['input_manifest_sha256']
+        with manifest.open() as stream:
+            for line in stream:
+                row = json.loads(line)
+                for identity in row['identities']:
+                    used[identity['sequence']].update(
+                        identity['template_frames']+identity['search_frames'])
+    return dict(verification=str(verification_path),
+        verification_sha256=hashes[str(verification_path)],
+        utility_manifest_sha256=verified['arms']['utility']['input_manifest_sha256'],
+        random_manifest_sha256=verified['arms']['random']['input_manifest_sha256'])
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', required=True)
+    parser.add_argument('--include-completed-partitioned-a', action='store_true')
     args = parser.parse_args()
     output = Path(args.output)
     assert not output.exists()
@@ -36,6 +66,12 @@ def main():
             identity = entry['identity']
             used[identity['sequence']].update(
                 identity['template_frames']+identity['search_frames'])
+    completed_partitioned_a = None
+    if args.include_completed_partitioned_a:
+        verification = (base.PROJECT/'reports/server28_partitioned_a_20261102_formal'
+                        '/verification_v2.json')
+        completed_partitioned_a = add_verified_partitioned_a_exclusions(
+            verification, used, hashes)
     run_config = json.loads((
         base.PROJECT/'reports/server28_partitioned_a_20261102_formal/utility.json'
     ).read_text())
@@ -61,8 +97,11 @@ def main():
         minimum_visible_for_sampler=2*(2+3)+1, minimum_sequence_length=20,
         excluded_manifest_sha256=hashes,
         excluded_scope='Completed historical diagnostics/crops via exclusions() and '
-                       'completed dense-geometry cache manifests only; excludes no '
-                       'active or growing partitioned-A/P manifests',
+                       'completed dense-geometry cache manifests'
+                       + (' plus independently verified completed partitioned-A manifests'
+                          if completed_partitioned_a else
+                          '; excludes active or growing partitioned-A/P manifests'),
+        completed_partitioned_a=completed_partitioned_a,
         source_sha256={str(path.resolve()): base.prior.common.sha256(path) for path in [
             Path(__file__), Path(base.__file__),
             Path('lib/train/data/sampler.py'), Path('miss_rgbt/data.py'),
