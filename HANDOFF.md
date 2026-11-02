@@ -3868,3 +3868,25 @@ or new scores. Real P/F smoke/formal and efficacy remain pending.
 At22:18:56CST original1288280/1288281/1355742 actualcommands stilllive.
 Next originalepoch4 milestone~23:23CST; no early repeated statuspoll.
 Originalruntime/queue unchanged. Full objective active and unmet.
+
+## Actual initial/epoch3 same-image diagnosis
+
+Added scripts/diagnose_partitioned_initial.py and executed on GPU0.
+All32devbatches/128tuples exactly match original frame identities and
+augmented tensor hashes; initialparameterhash matches; epoch3 three losses
+reproduce exactly. Initial vs epoch3:
+complete3.252417->3.808033(+.555617);
+RGBmissing5.764184->5.488136(-.276049);
+TIRmissing3.976443->4.147695(+.171252);
+mean4.331015->4.481288(+.150273).
+This is real-image evidence of uneven early task-loss changes, not official
+accuracy/convergence/causality. No optimizer/newframe/weightwrite/selection
+change. Process exited0; evaluation37.892s/peak557701120bytes.
+Raw reports/server28_partitioned_initial_diagnosis_20261102.json;
+analysis docs/PARTITIONED_INITIAL_DIAGNOSIS_20261102.md.
+Keep availability-separated analysis for P/F/X and recheck after scheduled
+LRdrop without silently intervening in original training.
+At22:24:15CST original1288280/1288281/1355742 actualcommands live;
+GPU2/3both74C,250W. Still3completedepochs, nextmilestone~23:23CST.
+Previous official queue implementation was progress; this turn adds actual
+image evidence. No new official score; full objective remains unmet.
