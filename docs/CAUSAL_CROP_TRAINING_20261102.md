@@ -1,5 +1,49 @@
 # Matched Full-Image Crop Exposure Training
 
+## Verified amended result
+
+The original16x96 audit was infeasible and remains incomplete. The separately
+registered24x64 audit completed in346.833seconds without retraining. All24
+unique audit sequences contributed. Each model produced3024 tracking rows;
+9072 rows across E0/native/causal. This is train882 internal IoU, not official
+PR/NPR/SR/MPR/MSR, and not96-frame or full-sequence robustness.
+
+| Amended audit contrast | Sequence-macro IoU delta | 95% bootstrap interval |
+|---|---:|---|
+| Causal minus E0, RGB missing | +0.005559 | [-0.008252, +0.020946] |
+| Causal minus E0, TIR missing | -0.003614 | [-0.033199, +0.024765] |
+| Causal minus native-training, pooled missing | -0.002265 | [-0.016638, +0.009103] |
+| Causal minus E0, complete trajectory | -0.002447 | [-0.019433, +0.018133] |
+
+Amended promotion gate=false: neither missing direction clears the
+effect/uncertainty threshold, matched-control superiority is absent, and
+complete protection fails. Close this exact pilot; do not enlarge or retune
+its audit, train an expanded version based on it, or count it as a module.
+The previous-GT crop oracle benefit did not establish that this305pair
+offline full-image exposure treatment transfers to deployment. These results
+do not prove all trajectory-exposure learning ineffective.
+
+Server and local analyzers independently recomputed stored box IoUs,
+selection/stopping, bootstrap statistics, partitions/exclusions and hashes.
+Server additionally regenerated the seeded24clip selection/schedules from
+actual metadata, checked actualGT/visibility, image-cache tensors, source/base
+hashes and all10final-five finite full-model checkpoints. BN buffers equal
+E0. Each selected model changes151backbone and58head/fusion tensors; both
+parts were actually trained. A separate-process native-image first-audit-clip
+replay reproduced378boxes/confidences exactly across3models/2trajectories.
+This shares native tracker/crop utilities; not full-audit image replay or
+independent scientific reviewer acceptance. Earlier first-fitting-clip
+reconstruction reproduced10accepted pairs and1rejection.
+
+Report SHA256:
+`9502da9b3fcbaf14caf5c604fe2a29a7b1d308afa8563f1bb1fac32728147a02`.
+Evidence: `reports/server28_causal_crop_training_20261102/analysis_server.json`,
+`analysis_local.json`, `report.json`, amendment/launch snapshots and failure
+log. All original/final-five weights remain on server28; no test-based cleanup.
+All GPUs idle at final check,250W limits unchanged, temperatures38/38/46/37C.
+No val97 or official tests. Official scores unchanged; complete-input gains,
+RGBT234-Miss targets and three validated paper modules remain unmet.
+
 ## Basis and scope
 
 The registered48clip causal previous-GT crop diagnostic passed, mixedmissing
@@ -95,3 +139,58 @@ from actual epochs. Observe180-300s near useful milestones; do not relaunch
 on observationtimeout. Preserve rawfailure evidence. No val97,LasHeRtest,
 RGBT234test,officialmasks or official test-based selection/cleanup.
 Officialmetric goals and threevalidatedmodules remain unmet.
+
+## Input verification during the live run
+
+The producer source remains frozen at launch SHA
+430a563f5db57d56c25ab170a78b0ad2c9926f27a9b85a99a8f061e968204fd3.
+352candidate fittingpairs across32videos yielded305accepted pairs,
+125complete/87RGBmissing/93TIRmissing. Of47joint rejections,46were
+GTjittercrop invalid and1predictioncrop invalid. All32videos contribute.
+Batch32,LR4e-5/backbone.1,9updates/epoch;17samples dropped after the
+shared per-epoch shuffle. Native full-image peak allocated/reserved
+22,169,819,648/22,636,658,688bytes;observed occupancy23,350MiB/74C/250W.
+
+GPU3 independently reconstructed the first fitting clip `whiteboy242`,
+frames117-212,without updates. Its10accepted paired search-image tensors,
+template tensors and availability matched the saved cache bitwise; the
+one rejection was reproduced. Predicted and seeded jitter crop boxes
+matched exactly. Independently written NumPy target-coordinate arithmetic
+had maximum error1.7149784e-7. This uses the shared native tracker, image
+decoder/crop/preprocessor; it is first-clip input reconstruction, not
+full-cache or optimizer replay, performance evidence or external review.
+Receipt: `input_replay_first_clip.json`. Verifier source SHA
+080541c736588da0df8f3bce9a830e73fe8a9f8fbab16f3b1bdafc47ceaa18c3.
+
+At worker19:20 native completed12epochs/108updates and choseepoch11
+fromfinal5=8-12. Causal reachedepoch7/63updates and remained live.
+Native development scores fluctuate; max12 is a pilot cap, not proof of
+full-dataset convergence. Audit remains delayed until both selections.
+
+## Original execution failure and prospective recovery
+
+Original PID877938 subsequently stopped: native12epochs/108updates,
+selected11(final8-12); causal9epochs/81updates,selected6(final5-9),
+stopped after3postdrop stale epochs. Both103,138,437parameter networks
+were fitted from images; their initial state hashes match.
+The worker then asserted in audit fresh_clips, before saving audit_clips
+or reading audit images/predictions. Original16x96 protocol is incomplete.
+
+Metadata-only inventory under the same89auditnames and exclusions finds
+12 eligible96frame sequences,24 at64frames,29 at48frames. Inventory's
+initial NumPy integer JSON serialization failed; partial file/log retained,
+v2 corrects Python integer serialization. Neither inventory used images,
+model predictions, official data or performance.
+
+Before audit outcomes, registered separate
+CAUSAL_CROP_AUDIT_AMENDMENT_20261102.md:24x64,same seed58103, unchanged
+selections/partitions/exclusions, same thresholds requiring24contributing
+sequences. Audit-only resume PID949348 onGPU2 at06:22:25Z. Original worker
+source unchanged; all weights and failure evidence preserved. This amended
+shorter-horizon readout cannot establish original96-frame success.
+
+Operational lesson: before expensive fitting, check metadata-only audit
+feasibility under existing exclusions, without choosing/loading audit
+images or observing predictions. Delaying audit outcomes need not delay
+this feasibility check. Future protocols must preregister feasible sample
+counts and lengths; do not add result-driven fallback sampling.

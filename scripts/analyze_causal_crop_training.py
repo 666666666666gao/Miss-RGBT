@@ -77,6 +77,8 @@ def server_checks(report, root, replay):
     assert sha256(report['checkpoint']) == report['checkpoint_sha256']
     for path, value in report['source_sha256'].items():
         assert sha256(path) == value, path
+    input_replay = json.loads((root / 'input_replay_first_clip.json').read_text())
+    assert sha256(Path(__file__).with_name('verify_crop_training_inputs.py')) == input_replay['verifier_sha256']
     manifest = report['training_manifest']
     assert sha256(manifest['cache_path']) == manifest['cache_sha256']
     cache = torch.load(manifest['cache_path'], map_location='cpu')
@@ -106,7 +108,7 @@ def server_checks(report, root, replay):
     assert digest(baseline) == report['original_state_sha256']
     bn = {key: value for key, value in baseline.items()
           if key.endswith(('running_mean', 'running_var', 'num_batches_tracked'))}
-    finite_weights = 0
+    finite_weights, selected_changes = 0, {}
     for mode, arm in report['arms'].items():
         assert sha256(arm['selected_path']) == arm['selected_sha256']
         for item in arm['final_five']:
@@ -117,8 +119,47 @@ def server_checks(report, root, replay):
             assert all(torch.isfinite(value).all() for value in checkpoint['model'].values())
             assert all(torch.equal(value, checkpoint['model'][key]) for key, value in bn.items())
             assert digest(checkpoint['model']) != report['original_state_sha256']
+            if item['epoch'] == arm['selected']['epoch']:
+                groups = {name: dict(changed_tensors=0, squared_delta=0.)
+                          for name in ['backbone', 'head_fusion']}
+                for key, value in checkpoint['model'].items():
+                    if key in bn or torch.equal(value, baseline[key]):
+                        continue
+                    group = groups['backbone' if 'backbone' in key else 'head_fusion']
+                    group['changed_tensors'] += 1
+                    delta = value.double() - baseline[key].double()
+                    group['squared_delta'] += float(delta.square().sum())
+                assert all(group['changed_tensors'] > 0 and group['squared_delta'] > 0
+                           for group in groups.values())
+                selected_changes[mode] = groups
             finite_weights += 1
     dataset = LasHeR(root='/data/wangwj/dataset/LasHeR/trainingset', split='train')
+    if 'audit_amendment' in report:
+        used, _ = exclusions(root.parent)
+        previous = json.loads((root.parent /
+            'server28_causal_crop_exposure_20261102/report.json').read_text())
+        for clip in previous['clips']:
+            used[clip['sequence']].update(clip['frame_ids'])
+        rng = np.random.default_rng(58103)
+        reconstructed = []
+        for offset in rng.permutation(len(expected['audit'])):
+            name = expected['audit'][offset]
+            sequence = dataset.sequence_list.index(name)
+            info = dataset.get_sequence_info(sequence)
+            boxes = info['bbox'].numpy()
+            valid = (np.isfinite(boxes).all(1) & (boxes[:, 2:] > 0).all(1)
+                     & info['visible'].numpy().astype(bool))
+            starts = [start for start in range(len(boxes) - 63)
+                      if valid[start:start + 64].all()
+                      and not used[name].intersection(range(start, start + 64))]
+            if starts:
+                start = int(rng.choice(starts))
+                schedule = ['11'] + rng.choice(['11', '01', '10'], 63, p=[.4, .3, .3]).tolist()
+                reconstructed.append(dict(sequence=name, dataset_index=sequence,
+                    frame_ids=list(range(start, start + 64)), mixed_schedule=schedule))
+            if len(reconstructed) == 24:
+                break
+        assert reconstructed == report['audit_clips']
     for clips in [manifest['clips'], report['development_clips'], report['audit_clips']]:
         for clip in clips:
             info = dataset.get_sequence_info(dataset.sequence_list.index(clip['sequence']))
@@ -164,6 +205,7 @@ def server_checks(report, root, replay):
                     replayed += 1
             del tracker
     return dict(finite_final_five_checkpoints=finite_weights, image_cache_verified=True,
+                selected_weight_changes=selected_changes,
                 first_audit_clip_replayed_rows=replayed, shared_native_tracker=True,
                 full_audit_image_replay=False)
 
@@ -185,6 +227,25 @@ def main():
     assert sha256(root.parent / (root.name + '.preregistered_protocol.md')) == launch['protocol_sha256']
     assert report['source_sha256'][launch['command'][2]] == launch['script_sha256']
     assert report['source_sha256'] == json.loads((root / 'source_sha256.json').read_text())
+    count, length = 16, 96
+    if 'audit_amendment' in report:
+        amendment = json.loads((root / 'audit_resume.launch.json').read_text())
+        assert report['audit_amendment'] == amendment
+        assert amendment['original_pid'] == launch['pid']
+        assert (amendment['count'], amendment['length'], amendment['seed']) == (24, 64, 58103)
+        assert report['original_protocol_completed'] is False
+        assert sha256(root / 'audit_amendment.md') == amendment['protocol_sha256']
+        assert sha256(root / 'audit_inventory_v2.json') == amendment['inventory_sha256']
+        inventory = json.loads((root / 'audit_inventory_v2.json').read_text())
+        assert inventory['eligible_sequences'] == {'96': 12, '64': 24, '48': 29}
+        assert {clip['sequence'] for clip in report['audit_clips']} == {
+            row['sequence'] for row in inventory['rows'] if row['eligible_starts']['64'] > 0}
+        if args.server_files:
+            assert sha256(amendment['script_path']) == amendment['script_sha256']
+        for mode in ['native', 'causal']:
+            assert sha256(root / mode / 'selection.json') == amendment['selection_sha256'][mode]
+            assert report['arms'][mode] == json.loads((root / mode / 'selection.json').read_text())
+        count, length = 24, 64
     partitions = report['partitions']
     assert [len(partitions[name]) for name in ['train', 'development', 'audit']] == [705, 88, 89]
     assert len(set(sum(partitions.values(), []))) == 882
@@ -196,12 +257,23 @@ def main():
         used[clip['sequence']].update(clip['frame_ids'])
     assert all(hashes[name] == value for name, value in report['prior_reports_sha256'].items())
     manifest = report['training_manifest']
+    input_replay = json.loads((root / 'input_replay_first_clip.json').read_text())
+    assert input_replay['status'] == 'verified'
+    assert input_replay['image_manifest_sha256'] == sha256(root / 'image_manifest.json')
+    assert input_replay['image_cache_sha256'] == manifest['cache_sha256']
+    assert input_replay['sequence'] == manifest['clips'][0]['sequence']
+    assert input_replay['frame_ids'] == manifest['clips'][0]['frame_ids']
+    assert input_replay['accepted_image_pairs_bitwise'] + input_replay['rejection_decisions_reproduced'] == 11
+    assert input_replay['independent_numpy_target_max_error'] < 1e-6
+    assert all(input_replay[key] for key in ['prediction_crop_boxes_exact', 'jitter_boxes_exact',
+                                           'template_history_exact', 'model_unchanged', 'gradients_absent'])
     clip_sets = dict(train=manifest['clips'], development=report['development_clips'],
                      audit=report['audit_clips'])
     initial = json.loads((root / 'initial_clips.json').read_text())
     assert initial == {key: clip_sets[key] for key in ['train', 'development']}
     assert clip_sets['audit'] == json.loads((root / 'audit_clips.json').read_text())
-    for split, count, length in [('train', 32, 96), ('development', 8, 48), ('audit', 16, 96)]:
+    audit_count = count
+    for split, count, length in [('train', 32, 96), ('development', 8, 48), ('audit', count, length)]:
         clips = clip_sets[split]
         assert len(clips) == len({clip['sequence'] for clip in clips}) == count
         for clip in clips:
@@ -281,15 +353,18 @@ def main():
     effects['complete'] = clustered([row for row in paired if row['trajectory'] == 'complete'], 'gain')
     assert effects == report['effects']
     advance = (all(effects[state]['mean'] >= .01 and effects[state]['ci95_low'] > 0
-                   and effects[state]['sequences'] == 16 for state in ['01', '10'])
+                   and effects[state]['sequences'] == audit_count for state in ['01', '10'])
         and effects['causal_minus_native']['ci95_low'] > 0
-        and effects['causal_minus_native']['sequences'] == 16
+        and effects['causal_minus_native']['sequences'] == audit_count
         and effects['complete']['mean'] >= 0 and effects['complete']['ci95_low'] > -.01
-        and effects['complete']['sequences'] == 16)
+        and effects['complete']['sequences'] == audit_count)
     assert advance == report['advance'] == completed['advance']
     server = server_checks(report, root, args.replay_first_clip) if args.server_files else None
     result = dict(status='verified', report_sha256=completed['report_sha256'],
         analyzer_sha256=sha256(__file__), effects=effects, advance=advance,
+        audit_protocol='amended24x64' if 'audit_amendment' in report else 'original16x96',
+        original_protocol_completed=report.get('original_protocol_completed', True),
+        first_training_clip_replay=input_replay,
         server_checks=server, server_files_checked=args.server_files,
         limitation='Finite offline full-image pilot; not official scores, full-dataset convergence, '
                    'online policy aggregation, independent reviewer acceptance or a validated module.')

@@ -1,0 +1,470 @@
+{
+  "mode": "causal",
+  "initial_sha256": "4d64b467b82ff76963a8c32d13cb0e60980fef236df14546e7bceaddffdb6eb6",
+  "initial_buffers_sha256": "a36dae374507a5a0df46594dc693b64cd6c1de35fd93a14f037c86ba35895d93",
+  "parameter_count": 103138437,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 9,
+      "lr": 4e-05,
+      "train_mean_loss": 2.0745201574431524,
+      "score": 0.6606407303286611,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7214021414201208,
+            "sequences": {
+              "3girl1": 0.6393401700377309,
+              "greenleftthewhite": 0.8162048734977821,
+              "left4thgirlwithwhitepants": 0.8423173441757101,
+              "leftbottle": 0.37163430241289735,
+              "leftbroom": 0.6719154877586809,
+              "redcupatleft": 0.8081000058842756,
+              "rightboy479": 0.7777233870295034,
+              "takeoutman953": 0.8439815605643863
+            }
+          },
+          "missing": {
+            "mean": 0.5998793192372014,
+            "sequences": {
+              "3girl1": 0.6410876053580445,
+              "greenleftthewhite": 0.8102968084900048,
+              "left4thgirlwithwhitepants": 0.6949723067240251,
+              "leftbottle": 0.34237094974253673,
+              "leftbroom": 0.5287890174317474,
+              "redcupatleft": 0.3473742408239518,
+              "rightboy479": 0.6402774916325839,
+              "takeoutman953": 0.7938661336947166
+            }
+          }
+        },
+        "score": 0.6606407303286611,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 46.684980154037476
+    },
+    {
+      "epoch": 2,
+      "updates": 18,
+      "lr": 4e-05,
+      "train_mean_loss": 1.7632912198702495,
+      "score": 0.6721101937647724,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7272778282193083,
+            "sequences": {
+              "3girl1": 0.6477488925653181,
+              "greenleftthewhite": 0.8277385358254447,
+              "left4thgirlwithwhitepants": 0.8507096374238806,
+              "leftbottle": 0.37960482959298925,
+              "leftbroom": 0.6578482804527764,
+              "redcupatleft": 0.8180791723033978,
+              "rightboy479": 0.7904907419906159,
+              "takeoutman953": 0.8460025356000435
+            }
+          },
+          "missing": {
+            "mean": 0.6169425593102366,
+            "sequences": {
+              "3girl1": 0.6610213073291819,
+              "greenleftthewhite": 0.8177824018119291,
+              "left4thgirlwithwhitepants": 0.759129233139675,
+              "leftbottle": 0.3782831576830938,
+              "leftbroom": 0.5261759778915005,
+              "redcupatleft": 0.3474704866364562,
+              "rightboy479": 0.6527082741501565,
+              "takeoutman953": 0.7929696358398999
+            }
+          }
+        },
+        "score": 0.6721101937647724,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 93.94014501571655
+    },
+    {
+      "epoch": 3,
+      "updates": 27,
+      "lr": 4e-05,
+      "train_mean_loss": 1.6195908652411566,
+      "score": 0.6871427309623549,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7292559648828592,
+            "sequences": {
+              "3girl1": 0.6500616250142877,
+              "greenleftthewhite": 0.8303603262508352,
+              "left4thgirlwithwhitepants": 0.8506256503561223,
+              "leftbottle": 0.38424836139738316,
+              "leftbroom": 0.6585152913883677,
+              "redcupatleft": 0.8237468336099332,
+              "rightboy479": 0.7901209232082252,
+              "takeoutman953": 0.8463687078377187
+            }
+          },
+          "missing": {
+            "mean": 0.6450294970418506,
+            "sequences": {
+              "3girl1": 0.6629231258648884,
+              "greenleftthewhite": 0.8212023240148109,
+              "left4thgirlwithwhitepants": 0.773424373336849,
+              "leftbottle": 0.4497665453534951,
+              "leftbroom": 0.5797796288641109,
+              "redcupatleft": 0.39910096538853146,
+              "rightboy479": 0.6767154423810596,
+              "takeoutman953": 0.7973235711310602
+            }
+          }
+        },
+        "score": 0.6871427309623549,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 141.41348099708557
+    },
+    {
+      "epoch": 4,
+      "updates": 36,
+      "lr": 4e-05,
+      "train_mean_loss": 1.3688738875918918,
+      "score": 0.6997069070580546,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7188204780390008,
+            "sequences": {
+              "3girl1": 0.672640157902144,
+              "greenleftthewhite": 0.8066349978896634,
+              "left4thgirlwithwhitepants": 0.8457729687404443,
+              "leftbottle": 0.380926801364735,
+              "leftbroom": 0.6348873749375545,
+              "redcupatleft": 0.8138536224170306,
+              "rightboy479": 0.764360370814798,
+              "takeoutman953": 0.8314875302456368
+            }
+          },
+          "missing": {
+            "mean": 0.6805933360771083,
+            "sequences": {
+              "3girl1": 0.6694819135745285,
+              "greenleftthewhite": 0.8037748256988353,
+              "left4thgirlwithwhitepants": 0.7941327780441566,
+              "leftbottle": 0.4190993513071638,
+              "leftbroom": 0.541826624024055,
+              "redcupatleft": 0.7637878551160395,
+              "rightboy479": 0.6685627172437627,
+              "takeoutman953": 0.7840806236083251
+            }
+          }
+        },
+        "score": 0.6997069070580546,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 188.2710120677948
+    },
+    {
+      "epoch": 5,
+      "updates": 45,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.3326324390040503,
+      "score": 0.671972084904845,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.6926308754834537,
+            "sequences": {
+              "3girl1": 0.6506884695258309,
+              "greenleftthewhite": 0.8170851193739301,
+              "left4thgirlwithwhitepants": 0.8454403411232468,
+              "leftbottle": 0.37495742541016785,
+              "leftbroom": 0.6153683180396798,
+              "redcupatleft": 0.6373635577747687,
+              "rightboy479": 0.7680618060026299,
+              "takeoutman953": 0.8320819666173755
+            }
+          },
+          "missing": {
+            "mean": 0.6513132943262361,
+            "sequences": {
+              "3girl1": 0.6658619727367112,
+              "greenleftthewhite": 0.8131051152168164,
+              "left4thgirlwithwhitepants": 0.7910862213964017,
+              "leftbottle": 0.4528902226531961,
+              "leftbroom": 0.5818945680075163,
+              "redcupatleft": 0.43495149986868425,
+              "rightboy479": 0.6813200506989131,
+              "takeoutman953": 0.7893967040316495
+            }
+          }
+        },
+        "score": 0.671972084904845,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 235.54985785484314
+    },
+    {
+      "epoch": 6,
+      "updates": 54,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.2755351397726271,
+      "score": 0.7088742945964526,
+      "stale": 0,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7174668980039012,
+            "sequences": {
+              "3girl1": 0.6466368484188534,
+              "greenleftthewhite": 0.8204367675133676,
+              "left4thgirlwithwhitepants": 0.8500720434552083,
+              "leftbottle": 0.37056467698017503,
+              "leftbroom": 0.63269113162524,
+              "redcupatleft": 0.8068875431014658,
+              "rightboy479": 0.768220854923947,
+              "takeoutman953": 0.8442253180129525
+            }
+          },
+          "missing": {
+            "mean": 0.700281691189004,
+            "sequences": {
+              "3girl1": 0.6816633473551877,
+              "greenleftthewhite": 0.8076944347953007,
+              "left4thgirlwithwhitepants": 0.807423342111344,
+              "leftbottle": 0.46282066707656955,
+              "leftbroom": 0.5895441301507327,
+              "redcupatleft": 0.7841699341162912,
+              "rightboy479": 0.6795684578359121,
+              "takeoutman953": 0.789369216070694
+            }
+          }
+        },
+        "score": 0.7088742945964526,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 283.23068165779114
+    },
+    {
+      "epoch": 7,
+      "updates": 63,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.2438565492630005,
+      "score": 0.6837152941365903,
+      "stale": 1,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7230593593139896,
+            "sequences": {
+              "3girl1": 0.647911344019308,
+              "greenleftthewhite": 0.8172506621309013,
+              "left4thgirlwithwhitepants": 0.8481821973865501,
+              "leftbottle": 0.39876243093917224,
+              "leftbroom": 0.654093602583975,
+              "redcupatleft": 0.8127182608671001,
+              "rightboy479": 0.7704733638713543,
+              "takeoutman953": 0.8350830127135551
+            }
+          },
+          "missing": {
+            "mean": 0.644371228959191,
+            "sequences": {
+              "3girl1": 0.6469316617564733,
+              "greenleftthewhite": 0.8144745217856525,
+              "left4thgirlwithwhitepants": 0.804431333406103,
+              "leftbottle": 0.4217141058912603,
+              "leftbroom": 0.5400056582114271,
+              "redcupatleft": 0.4450331661998109,
+              "rightboy479": 0.6901979222026366,
+              "takeoutman953": 0.7921814622201635
+            }
+          }
+        },
+        "score": 0.6837152941365903,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 330.1388940811157
+    },
+    {
+      "epoch": 8,
+      "updates": 72,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.2300660676426358,
+      "score": 0.6790711453550193,
+      "stale": 2,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7162736939520786,
+            "sequences": {
+              "3girl1": 0.6472392354077028,
+              "greenleftthewhite": 0.8213713898224816,
+              "left4thgirlwithwhitepants": 0.8514418557202332,
+              "leftbottle": 0.38629748564781163,
+              "leftbroom": 0.5999876372132703,
+              "redcupatleft": 0.8113661165656851,
+              "rightboy479": 0.7734241802438507,
+              "takeoutman953": 0.8390616509955934
+            }
+          },
+          "missing": {
+            "mean": 0.64186859675796,
+            "sequences": {
+              "3girl1": 0.6695724752676198,
+              "greenleftthewhite": 0.8116525520058813,
+              "left4thgirlwithwhitepants": 0.8032849355251881,
+              "leftbottle": 0.4275600027395712,
+              "leftbroom": 0.5178382544419742,
+              "redcupatleft": 0.4267494258608657,
+              "rightboy479": 0.6845223505398235,
+              "takeoutman953": 0.7937687776827563
+            }
+          }
+        },
+        "score": 0.6790711453550193,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 377.24886870384216
+    },
+    {
+      "epoch": 9,
+      "updates": 81,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.2029173738426633,
+      "score": 0.7081378831422238,
+      "stale": 3,
+      "development": {
+        "label": "causal",
+        "means": {
+          "complete": {
+            "mean": 0.7194225808490361,
+            "sequences": {
+              "3girl1": 0.6432974534530241,
+              "greenleftthewhite": 0.8223386072729448,
+              "left4thgirlwithwhitepants": 0.8488456485650155,
+              "leftbottle": 0.4076922216589236,
+              "leftbroom": 0.6046019586847698,
+              "redcupatleft": 0.8157163441476368,
+              "rightboy479": 0.7725287780884684,
+              "takeoutman953": 0.8403596349215054
+            }
+          },
+          "missing": {
+            "mean": 0.6968531854354115,
+            "sequences": {
+              "3girl1": 0.6656607024908283,
+              "greenleftthewhite": 0.8129977369617113,
+              "left4thgirlwithwhitepants": 0.8064680776287457,
+              "leftbottle": 0.44912747872507003,
+              "leftbroom": 0.5824055496349838,
+              "redcupatleft": 0.7815346049554679,
+              "rightboy479": 0.6841605907043347,
+              "takeoutman953": 0.7924707423821505
+            }
+          }
+        },
+        "score": 0.7081378831422238,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 424.5619316101074
+    }
+  ],
+  "selected": {
+    "epoch": 6,
+    "updates": 54,
+    "lr": 4.000000000000001e-06,
+    "train_mean_loss": 1.2755351397726271,
+    "score": 0.7088742945964526,
+    "stale": 0,
+    "development": {
+      "label": "causal",
+      "means": {
+        "complete": {
+          "mean": 0.7174668980039012,
+          "sequences": {
+            "3girl1": 0.6466368484188534,
+            "greenleftthewhite": 0.8204367675133676,
+            "left4thgirlwithwhitepants": 0.8500720434552083,
+            "leftbottle": 0.37056467698017503,
+            "leftbroom": 0.63269113162524,
+            "redcupatleft": 0.8068875431014658,
+            "rightboy479": 0.768220854923947,
+            "takeoutman953": 0.8442253180129525
+          }
+        },
+        "missing": {
+          "mean": 0.700281691189004,
+          "sequences": {
+            "3girl1": 0.6816633473551877,
+            "greenleftthewhite": 0.8076944347953007,
+            "left4thgirlwithwhitepants": 0.807423342111344,
+            "leftbottle": 0.46282066707656955,
+            "leftbroom": 0.5895441301507327,
+            "redcupatleft": 0.7841699341162912,
+            "rightboy479": 0.6795684578359121,
+            "takeoutman953": 0.789369216070694
+          }
+        }
+      },
+      "score": 0.7088742945964526,
+      "rows": null,
+      "image_manifest": []
+    },
+    "seconds": 283.23068165779114
+  },
+  "selected_path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch06.pth",
+  "selected_sha256": "695e7d6b651f652ecd6f1ce497a0461fee76cade5058cb53aae78b55463e1b25",
+  "bn_buffers_unchanged": true,
+  "peak_allocated_bytes": 22169819648,
+  "peak_reserved_bytes": 22636658688,
+  "final_five": [
+    {
+      "epoch": 5,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch05.pth",
+      "sha256": "f5b8ff72151eb4008c1116200c28acbcacea94789c43ff7ca9341ddbeedcc9fe"
+    },
+    {
+      "epoch": 6,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch06.pth",
+      "sha256": "695e7d6b651f652ecd6f1ce497a0461fee76cade5058cb53aae78b55463e1b25"
+    },
+    {
+      "epoch": 7,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch07.pth",
+      "sha256": "5b7f62a14c6dcdff86277edc359cbdcadf9da2ca26023a38944b7514bafcf484"
+    },
+    {
+      "epoch": 8,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch08.pth",
+      "sha256": "956d54280da51c41da92402c50eb87e04681c0da56c68311dbb051a4e522b4c4"
+    },
+    {
+      "epoch": 9,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/causal/epoch09.pth",
+      "sha256": "610d0e26d6013c334c3a5fb3c515ab437bffedaf5f6dd0145ada91c9e55d7eed"
+    }
+  ]
+}

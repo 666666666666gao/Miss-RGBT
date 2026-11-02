@@ -2,6 +2,27 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 completed: amended24x64 full-image crop audit,346.833s,
+9072rows/24sequences,server+local analysis and378row firstclip image replay.
+All10finitefinal5weights/BN/source/base/cache/metadata verified; selected
+backbone151+head58tensors changed ineacharm. Promotion=false:
+RGBmissing+.005559CI[-.008252,.020946],TIRmissing-.003614CI[-.033199,.024765],
+causal-native-.002265CI[-.016638,.009103],complete-.002447CI[-.019433,.018133].
+Original16x96 protocol infeasible/incomplete; amended shorter audit is not
+originalsuccess or officialmetrics. Exactpilotclosed,allweightsretained.
+ReportSHA9502da9b3fcbaf14caf5c604fe2a29a7b1d308afa8563f1bb1fac32728147a02.
+Pinned DenseCL/DINOv2 correspondence source review in prior-artdoc;
+read-only,no code copied/installed/modulevalidated. Fullgoalunmet.
+
+2026-11-02 06:22UTC: original crop-training worker failed audit sampling
+after both selections; no audit predictions. New metadata inventory finds
+12 eligible96-frame audit sequences,24 at64frames; original16x96 infeasible.
+Prospective `docs/CAUSAL_CROP_AUDIT_AMENDMENT_20261102.md`,
+`scripts/inventory_crop_audit.py`,`scripts/resume_causal_crop_audit.py`,
+`scripts/launch_crop_audit_resume.py`: audit-only24x64 resume PID949348,
+same selections/partition/exclusions/seed/thresholds; no retraining.
+Original protocol incomplete; amended result pending, no official metrics.
+
 2026-11-02 UTC: `scripts/train_causal_crop_exposure.py`,
 `scripts/launch_causal_crop_training.py`,`scripts/analyze_causal_crop_training.py`,
 `docs/CAUSAL_CROP_TRAINING_20261102.md`: matched full-image training,
@@ -11,6 +32,12 @@ nativeepoch1completed,batch32/LR4e-5/9updates,23350MiB/72C/250W.
 NoKD/patchdrop,bothfulloriginalparameters,samecompletebranch/different
 auxiliarycrop. Final5train-onlyselection;notofficialmetrics/module.
 Resultpending,analyzersyntaxcheckedonly.
+2026-11-02 followup: `scripts/verify_crop_training_inputs.py` plus
+`input_replay_first_clip.json`: GPU3firstfittingclip10acceptedpairs
+bitwise/1rejection/prediction+jitterboxes/templatehistory reproduced;
+independentNumPytargetmaxerror1.7149784e-7. Sharednativeutilities,
+notfullcache/optimizerreplay. Native12epochs/108updates selected11,
+causal7stilllive atworker19:20. Fullresultpending.
 
 2026-11-02 UTC: `scripts/diagnose_causal_crop_exposure.py`,
 `scripts/launch_causal_crop_exposure.py`, `scripts/analyze_causal_crop_exposure.py`,

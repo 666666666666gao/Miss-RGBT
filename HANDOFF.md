@@ -1,6 +1,69 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 - Full-image crop pilot closed after verified amended audit
+
+Audit-only PID949348 completed346.833s; server/local analysis verified.
+Original16x96 audit infeasible/incomplete; separately registered24x64
+audit completed without retraining,all24sequences/9072totalrows.
+Causal-E0 RGBmissing IoU+.005559 CI[-.008252,.020946],TIRmissing
+-.003614CI[-.033199,.024765],complete-.002447CI[-.019433,.018133].
+Causal-native pooledmissing-.002265CI[-.016638,.009103].
+Amended promotion=false. Close exact pilot; no enlargement/retuning or
+module claim. The oracle benefit did not transfer for this treatment;
+not a universal rejection of trajectory learning.
+
+Original native12/108selected11(final8-12),causal9/81selected6(final5-9).
+All10final-five fullweights finite,BNunchanged,selected models each changed
+151backbone+58head/fusiontensors. Actualmetadata seeded24clip schedules,
+GT/visibility/cache/source/base/weightshashes and box/bootstrap arithmetic
+checked. Separate-process firstauditclip378nativeimage predictions exact;
+sharedtracker/crop,notfullaudit independent replay/externalreview.
+ReportSHA9502da9b3fcbaf14caf5c604fe2a29a7b1d308afa8563f1bb1fac32728147a02.
+Allweights/failures retained,GPUsidle38/38/46/37C,all250W.
+No val97/officialruns;officialmetrics unchanged,fullgoalunmet.
+
+Read-only pinned DenseCL/DINOv2 cross-crop source review documented in
+docs/CAUSAL_CROP_PRIOR_ART_20261102.md. No code copied/installed, no new
+module proposed as validated. Future audit feasibility must be checked
+from metadata before fitting. Do not repeat this pilot on its audit cohort.
+
+## 2026-11-02 06:22 UTC - Audit-only resume after metadata failure
+
+Original PID877938 is terminal: both training arms completed and selected,
+then fresh_clips asserted before any audit images/predictions were read.
+Native12epochs/108updates selected11 from8-12; causal9epochs/81updates
+selected6 from5-9 after patience3. Keep all checkpoints; do not retrain.
+Metadata inventory under unchanged exclusions finds12 eligible96-frame
+audit sequences,24 at64frames,29 at48. Original16x96 protocol infeasible,
+not passed. Inventory initial NumPy JSON error and partial file retained;
+corrected audit_inventory_v2.json saved, metadata only.
+
+Prospective amendment docs/CAUSAL_CROP_AUDIT_AMENDMENT_20261102.md fixes
+24x64 audit, same89names/exclusions/seed58103, same thresholds requiring24.
+PID949348 onGPU2 launched06:22:25Z, live00:28,2206MiB/53C/250W.
+No fitting/source/checkpoint changes. Amendment snapshot SHA
+03f59489d10adc5dda14edcaf969fd2d8639a6f63583ed864fd0df05e6a71ac7.
+Audit worker SHAa8e08824e3e70a8a76465d3400982b888fbb638e420490793f3d9602bd353b56.
+Expected3-6min; observe180-300s then verify terminal result using analyzer
+--server-files --replay-first-clip. No amended outcome yet. Original96-frame
+success cannot be claimed; shorter audit is internal IoU, not official.
+Official metrics unchanged; overall goal and three modules remain unmet.
+
 ## 2026-11-02 Matched full-image crop training launched
+
+Liveverifiedworker19:20,nativecompleted12/108updates,selected11from8-12;
+causalepoch7/63updates,stillrunning,noauditresult. Max12notconvergence.
+NewGPU3firstfittingclip rawimage reconstruction passed:10acceptedpairs
+bitwise,1rejectionreproduced,prediction/jitterboxes/templatehistoryexact,
+independentNumPylabelmaxerror1.7149784e-7. Sharedtracker/crop/preprocessor,
+notfullcache/optimizerreplay. Receiptinput_replay_first_clip.json,
+verifier verify_crop_training_inputs.py SHA
+080541c736588da0df8f3bce9a830e73fe8a9f8fbab16f3b1bdafc47ceaa18c3.
+All32fittingvideoscontribute305pairs125/87/93states11/01/10;
+47rejections46nativejitterinvalid/1predictioninvalid.
+Nativepeakallocated22169819648/reserved22636658688bytes.
+Independentanalyzernowalsoverifiesactualselectedbackbone/headweight
+changes,allfinal5finiteweightsandBNbuffers. Notyet resultverified.
 
 Previous causal-crop diagnostic was verified progress. NewGPU2PID877938
 launched05:50:24Z,confirmedlive05:12/first nativeepoch1 completed62.687s.
