@@ -3597,6 +3597,15 @@ No actual image learning,formaltrainer/trackerintegration,latency comparison,
 correction/destruction measurement,convergence or official-score claim.
 Details:docs/FEEDBACK_F_STRUCTURE_20261102.md.
 
+Tracker integration also PASS on synthetic uint8 frames:
+research/feedback_f/tracker.py strict-loads none/shallow/deep and inherits
+native initialize/track;receipt
+reports/server28_feedback_f_tracker_20261102.json
+SHA3b8d6e559b13db3ca43666c45556212340274969ba08e2ad6828c1d2897637f4.
+Exactzero-residual parity states11/01/10 across3frames;one network call and
+one box/state commit per frame;round2 decode;conditional template append/pop.
+No image training/official score/latency efficacy claim.
+
 At19:34:37CST originaltrainers1288280/1288281live03:15:37,
 queue1355742live02:34:51. Utilityepoch2/update3675,Random3700,finite losses.
 GPUs2/3 75/74C,22710/22742MiB,250W;GPU0/1idleatobservation.

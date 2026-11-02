@@ -148,6 +148,11 @@ FEEDBACK_F_STRUCTURE_20261102.md. No F image experiment, convergence result
 or official score exists; formal trainer/tracker integration remains pending.
 This does not change the P-then-F-then-X experiment order.
 
+The tracker integration check now passes on synthetic frames and confirms
+that F can inherit native crop/decode/template-update behavior with one
+external state commit per frame. It still is not formal trainer integration
+or image/benchmark evidence.
+
 ## X: Cross-View Supervision
 
 Only after P and F are isolated, compare ordinary response KD, deep-to-shallow

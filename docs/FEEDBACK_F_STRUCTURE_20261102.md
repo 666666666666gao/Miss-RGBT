@@ -86,6 +86,23 @@ No benchmark images, train882 frame identities, official evaluation,
 checkpoint pruning or external notifications were used.
 The check's internal saved model is in memory and is not a promoted weight.
 
+## Tracker Integration Check
+
+`research/feedback_f/tracker.py` adds strict loading for an F checkpoint and
+inherits the native `initialize` and `track` methods. It does not fork the
+crop, Hann window, box decode, confidence threshold or template-update logic.
+`check_tracker.py` uses synthetic uint8 frames and the actual E0 network.
+The current receipt is
+`reports/server28_feedback_f_tracker_20261102.json`, SHA256
+`3b8d6e559b13db3ca43666c45556212340274969ba08e2ad6828c1d2897637f4`.
+
+The check passed strict loading for `none`, `shallow` and `deep`; exact
+zero-residual native parity over availability states 11, 01 and 10 across
+three frames; one network call and one box/state commit per frame; round2
+prediction used for decode; and conditional template append/pop exactly
+matching the inherited update rule. This remains synthetic integration
+evidence, not an image-trained or benchmark result.
+
 ## Remaining Work
 
 Preserve P then F then X experiment order. P still needs terminal original
