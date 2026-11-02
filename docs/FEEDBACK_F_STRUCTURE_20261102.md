@@ -1,5 +1,13 @@
 # F Structural Prototype
 
+`verify.py --campaign <prepared-campaign>` now provides the saved image-run
+verification entry: all four matched input/mask/config records,20epoch
+history,final5 development selection,raw round-loss summaries and retained
+weight updates/frozen BN. Actual server Python3.7 CLI and synthetic helper
+contracts passed; receipt reports/server28_feedback_f_evidence_contracts_20261102.json.
+Full saved-run and weight branches remain unexecuted because no F image
+training has run. This is not official evaluation or efficacy evidence.
+
 Latest operational addition: `prepare.py --curriculum-arm progressive`
 (or fixed60/fixed50/shuffled) prepares four matched real-image smoke
 configs after the existing formal P verification boundary. It does not

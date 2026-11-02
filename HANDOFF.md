@@ -3795,3 +3795,30 @@ No real P/F campaign/config directory, image worker, learned weight or
 official score created. At21:57:13CST original1288280/1288281/1355742
 actual commands remain live; GPU2/3=75/74C,250W,22710/22744MiB.
 Next useful original epoch4 inspection remains~23:23CST.
+
+## F saved-run verifier entry, 2026-11-02
+
+Added research/feedback_f/verify.py. Checks prepared/config/source/prior
+hashes, inherited P completion boundaries, train705/dev88/audit89 frame
+membership/exclusions, complete step/input counts, finite single or nested
+round losses, keyed masks, update/LR arithmetic,20epoch history and final5
+development-loss selection. Across all4arms requires same common config,
+saved initial shared parameter/BN hashes, frame/tensor identities and masks.
+Recomputes raw round-loss summaries. Checks all20weight paths and loads
+epoch1/final5 for finite state, fixedBN, backbone/head/Utility updates and
+shallow/deep feedback updates. It never opens official test images.
+
+Actual Python3.7 CLI imports/help passed. check_evidence.py passed temporary
+synthetic helper cases for history/selection/update/mask/nonfinite losses,
+LR boundaries, single/nested status and round-summary recomputation.
+Receipt reports/server28_feedback_f_evidence_contracts_20261102.json.
+No complete saved F run or learned weights exist, so the full verifier and
+weight-loading branch have NOT been exercised. Formal F preparation,
+launch integration and final5 queue still pending. This is implementation
+progress, not training/efficacy/official score evidence.
+
+At22:03:31CST original1288280/1288281/1355742 actualcommands live.
+Utility epoch4 microstep12995/update6498 observedloss5.676797;
+Random epoch4 microstep13057/update6529 observedloss9.936890.
+Different latest steps, no paired-loss comparison. No training edit,
+restart, extra image job or checkpoint deletion. Goal remains unmet.
