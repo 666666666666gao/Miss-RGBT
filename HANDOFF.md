@@ -2727,3 +2727,34 @@ Next mechanism must address modality-asymmetric geometry with explicit
 capacity and complete/recovery controls; do not rerun target-peak or failed
 fusion-adapter tuning on these audit samples. Ordinary controls are not
 paper modules. Complete+2,RGBT234-Miss targets and three modules remain unmet.
+
+## 2026-11-02 08:12 UTC+08 - Capacity-matched modality heads
+
+Previous turn head-supervision training/replay was progress. New paired
+modality-vs-balanced-random two-head training completed GPU2 PID4186101,
+233.025seconds. Same12,948,234parameters per arm,1536 fitting rows,
+768/head,24updates/epoch. New256/128/128 train882 tuples,705/88/89name
+partitions; no exact overlap with previous3pilot samples. Audit73sequences.
+Both stopped10epochs/240updates, selected6 from final-five6-10.
+
+Registered macro IoU modality-E0:TIR-only+0.003473CI[-0.006143,0.013821],
+RGB-only+0.012225CI[0.004128,0.022354]; modality-random+0.000977
+CI[-0.001836,0.003703]. RGB-only single gate passes; full promotion=false.
+No clear superiority to capacity-matched random routing or TIR-only gain;
+do not expand or count as a module. One random route seed, no robustness claim.
+
+All complete-search states use frozen E0 head; complete/recovery cached
+maps exactly equal. This does not establish closed-loop recovery equality
+or complete approximately+2 improvement. Baseline state hash unchanged,
+gradients absent. All10 last-five two-head checkpoints finite and BN
+buffers equal to E0. Separate verifier rederived routes/balance,partitions/
+exclusions,source/base/cache/weights,history/stopping/selection/bootstrap.
+Separate native-head replay3456records exact loss/IoU and complete maps.
+Not image/backbone replay or external scientific review.
+
+Report SHA256ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790.
+Full protocol:docs/MODALITY_HEAD_PILOT_20261102.md; small evidence
+reports/server28_modality_heads_20261102/. All weights preserved,no val97
+or official runs,official scores unchanged. Full goal remains incomplete.
+Do not keep testing minor head variants on this audit cohort; next work
+must test a distinct evidence-backed representation or temporal mechanism.

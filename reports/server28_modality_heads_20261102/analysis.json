@@ -1,0 +1,49 @@
+{
+  "status": "saved_evidence_verified",
+  "report_sha256": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+  "effects": {
+    "01": {
+      "mean": 0.003472740475752475,
+      "ci95_low": -0.006143333823724878,
+      "ci95_high": 0.013821342227713107,
+      "sequences": 73,
+      "rows": 384
+    },
+    "10": {
+      "mean": 0.012224899745226272,
+      "ci95_low": 0.0041275087452048945,
+      "ci95_high": 0.02235370281518019,
+      "sequences": 73,
+      "rows": 384
+    },
+    "versus_random": {
+      "mean": 0.0009767883796699536,
+      "ci95_low": -0.00183603564832335,
+      "ci95_high": 0.003702791499996387,
+      "sequences": 73,
+      "rows": 768
+    }
+  },
+  "advance": false,
+  "native_head_replay": {
+    "baseline": {
+      "rows": 1152,
+      "native_inference": true,
+      "exact_losses_and_ious": true,
+      "complete_search_maps_equal": true
+    },
+    "modality": {
+      "rows": 1152,
+      "native_inference": true,
+      "exact_losses_and_ious": true,
+      "complete_search_maps_equal": true
+    },
+    "random": {
+      "rows": 1152,
+      "native_inference": true,
+      "exact_losses_and_ious": true,
+      "complete_search_maps_equal": true
+    }
+  },
+  "scope": "Saved routing/arithmetic/hash checks and optional cached-head replay; no image/backbone replay or external scientific review."
+}

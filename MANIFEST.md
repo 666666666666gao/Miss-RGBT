@@ -2,6 +2,13 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 UTC+08: `scripts/probe_modality_heads.py`,
+`scripts/launch_modality_heads.py`, `scripts/analyze_modality_heads.py`,
+`docs/MODALITY_HEAD_PILOT_20261102.md`, and
+`reports/server28_modality_heads_20261102/` record completed matched
+modality/random two-head training. Full promotion gate failed;3456 direct
+native cached-head replay records exact. No official metrics/module claim.
+
 2026-11-02 UTC+08: `scripts/probe_head_supervision.py`,
 `scripts/launch_head_supervision.py`, `scripts/analyze_head_supervision.py`,
 `docs/HEAD_SUPERVISION_PILOT_20261102.md`, and
