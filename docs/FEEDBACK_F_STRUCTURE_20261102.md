@@ -1,5 +1,17 @@
 # F Structural Prototype
 
+Latest operational addition: `prepare.py --curriculum-arm progressive`
+(or fixed60/fixed50/shuffled) prepares four matched real-image smoke
+configs after the existing formal P verification boundary. It does not
+launch jobs. Each arm uses20 short epochs,8 samples/epoch,microbatch2,
+accumulation2,40 updates,LR5e-5/backbone5e-6 and8 development samples.
+The curriculum is an explicit shared input, not an official-score choice.
+`check_prepare.py` passed on server Python3.7 with temporary synthetic
+metadata for all four curricula and rejected missing formal P before
+creating output. Receipt: reports/server28_feedback_f_prepare_20261102.json.
+No real F configs/images or formal verification/queue were produced.
+Earlier sections below retain the scope at their original recording time.
+
 Implemented independently in research/feedback_f/model.py on November 2,
 2026. The current seed2028 trainers, frozen runtime and registered official
 queue are unchanged. This is a structural prototype with synthetic checks,

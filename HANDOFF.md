@@ -3774,3 +3774,24 @@ d4c1df7722c0a378ffa0b8e4a715e2d29c8f2c0cfa0e91f01ee9dc783d1804bb.
 No official dataset preparation, F trajectory/metric, image training or
 real learned F weights. Earlier source receipts remain historical.
 Original training continues; next milestone~23:23CST. Full goal unmet.
+
+## Matched F smoke preparation, 2026-11-02
+
+Added research/feedback_f/prepare.py and check_prepare.py. Preparation
+requires the existing verified completed formal P campaign before output
+creation. The explicitly supplied --curriculum-arm is shared by single,
+none, shallow and deep; no official metric chooses a curriculum here.
+Each smoke arm uses microbatch2/accumulation2/effective4, LR5e-5/backbone5e-6,
+20 short epochs,8 samples/epoch,40 total updates and8 fixed development
+samples. Shared seeds/masks/budgets and inherited frame exclusions match.
+This command prepares smoke configs only; formal preparation, saved-run
+verification, launch integration and final-five queue remain pending.
+
+Actual server Python3.7 synthetic metadata check passed all four curriculum
+options, cross-arm config equality, update/LR arithmetic and missing-parent
+rejection before output. Receipt:
+reports/server28_feedback_f_prepare_20261102.json.
+No real P/F campaign/config directory, image worker, learned weight or
+official score created. At21:57:13CST original1288280/1288281/1355742
+actual commands remain live; GPU2/3=75/74C,250W,22710/22744MiB.
+Next useful original epoch4 inspection remains~23:23CST.
