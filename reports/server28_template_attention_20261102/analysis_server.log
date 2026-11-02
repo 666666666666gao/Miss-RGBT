@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/gaob/Miss-RGBT/scripts/analyze_template_attention.py", line 239, in <module>
+    main()
+  File "/home/gaob/Miss-RGBT/scripts/analyze_template_attention.py", line 160, in main
+    assert report['prior_reports_sha256'] == hashes
+AssertionError

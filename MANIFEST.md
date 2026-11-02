@@ -2,6 +2,20 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 completed: frozen template-attention information diagnostic,
+`scripts/diagnose_template_attention.py`,`scripts/launch_template_attention.py`,
+`scripts/analyze_template_attention.py`,`docs/TEMPLATE_ATTENTION_EVIDENCE_20261102.md`.
+128freshfittingtuples117seq1152rows,51.497s;FG-BG concordance differences
+complete+.015090CI[-.030979,.060233],RGBmissing+.044031CI[.012752,.076987],
+TIRmissing-.018250CI[-.055731,.018017]. Gatefalse,exactsignalclosed.
+Server/localv2 analysis:9216boxes,allmaps/pairs/exclusions/hashesarithmetic;
+NumPy9qkv cases attentionerror1.4117185e-9;144normalizedimageforwardrows
+native mapsbitwise,9hookparitycalls. Notrawdecoder/fullimagereplay/
+independentidentity/modulevalidation/officialscore. Firstverifier hashdict
+keycomparisoncorrected,initialfailurelogretained,producer unchanged.
+ReportSHAa7e8afa27171abd35ea53d963ae11d71f25c2f7b8145d4b2cef0528d81bb18eb.
+Largecachesserveronly,nooptimizer/weights/cleanup/val97/official;goalunmet.
+
 2026-11-02 completed: last-observedtemplate diagnostic351.701s,
 32fresh128frameclips/1088rows/377writes,165incomplete. Retained-native
 RGBmissing+.008188CI[-.003180,.021454],TIRmissing+.005576CI[.001102,.012710],

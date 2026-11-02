@@ -1,5 +1,40 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 - Template attention information diagnostic verified/closed
+
+Previous last-observedtemplate verifiednegative=progress. New frozenE0
+GPU2PID1070949completed51.497s,128freshfittingtuples/117seq/1152state rows.
+Excluded all prior tuple/burst/crop/image-training/last-observedclip frames
+by samplingvisibilitymask only; images/physicalGT unchanged. Block6native
+template0 foreground/background-query attention on same top8Hann geometry;
+currentobservedstreams only,templateannotation known,currentGTscoringonly.
+Native templates are contextualized,notindependentidentity verification.
+
+FG-BG candidateconcordance complete+.015090CI[-.030979,.060233],
+RGBmissing+.044031CI[.012752,.076987],TIRmissing-.018250CI[-.055731,.018017].
+AllFG lowerCI>.5,butall3difference means<.05 and2CIcrosszero. Gatefalse.
+FG*Hann fixedheuristic IoUdelta complete/RGBmissing/TIRmissing
+-.018731/-.015895/-.007360,allCIcrosszero. Closeexactblock6signal;
+no rankingtraining/layer/mask/weightsearch/controlpromotion/module claim.
+Officialmetrics unchanged;overallgoals/three modules remainunmet.
+
+Server/localv2 analysis verified all9216candidateboxes,1152maprows,
+paircounts/bootstrap/21priorhashes/exclusions/source/base/cache/physical
+visibility. IndependentNumPy9rawqkv cases maxattentionerror1.4117185e-9.
+Firstbatch normalizedimages144nativeforward rows mapsbitwiseexact,
+stateunchanged/gradientsabsent;9hook/nohookparitycalls. Sharednativenetwork,
+notrawimagedecoder/fullinputreplay/externalreview. Firstverifierwrongly
+required identicalhashdictkeys;independentonehas11additionalolderreports.
+Allproducerhashesmatched. Correctedsubsetrequirement+recordall21hashes;
+initialfailurelogkept,producer/gate/dataunchanged.
+
+ReportSHA a7e8afa27171abd35ea53d963ae11d71f25c2f7b8145d4b2cef0528d81bb18eb.
+WorkerSHA22cb23b74a388da0496860bd01c303a749a50ae4c9a146f545c4e9b2fc4de05b.
+Docs:TEMPLATE_ATTENTION_EVIDENCE_20261102.md;reports/server28_template_attention_20261102.
+Image/mapcachesserveronly,nooptimizer/weights/cleanup/val97/official.
+GPUsidle38/37/42/37C,all250W. NextfreshsamplersmustexcludeALLnew
+input_manifest template/searchframeids,notjustfirstsearch.
+
 ## 2026-11-02 - Last-observed template diagnostic verified and closed
 
 PID1011087 completed351.701s,32fresh128frameclips/1088rows,377native
