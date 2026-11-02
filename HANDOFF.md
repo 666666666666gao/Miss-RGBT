@@ -24,7 +24,8 @@ selection;official final5 comparison is post-hoc,never cleanup criterion.
 Remote reports/runs stemserver28_partitioned_a_20261102_formal.
 Future freshsamplers excludeALLactive input_manifest.jsonl frames.
 Protocol/results docs/PARTITIONED_A_*20261102.md. Official metrics unchanged;
-full goal/three modules unmet. Publication pending this turn.
+full goal/three modules unmet. Implementation/evidence published as3cd8f23
+on codex/server28-research.
 
 ## 2026-11-02 - Template attention information diagnostic verified/closed
 
