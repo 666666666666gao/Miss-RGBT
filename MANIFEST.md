@@ -6,7 +6,13 @@
 `scripts/launch_tail_lowrank.py`, `scripts/analyze_tail_lowrank.py`, and
 `docs/TAIL_LOWRANK_PILOT_20261102.md` register a matched30720-parameter
 attention-versus-MLP adaptation pilot in native blocks10/11.
-GPU2 PID368156 running; no result/official metric/promotion yet.
+GPU2 PID368156 completed584.557s,batch192/LR6e-4,both10epochs/120updates,
+selected8/7 from final-five6-10. Both registered gates failed despite a
+positive attention RGB-missing crop effect. Server file/weight checks and
+3456cached-tail replay records passed; no official result/module promotion.
+Evidence `reports/server28_tail_lowrank_20261102/`.
+Read-only pinned TOOD review:
+`docs/QUALITY_ALIGNMENT_SOURCE_REVIEW_20261102.md`; prospective only.
 
 2026-11-02 UTC: `scripts/probe_cross_stream_context.py`,
 `scripts/launch_cross_stream_context.py`,

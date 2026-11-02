@@ -88,4 +88,68 @@ Full Complete +2-point, RGBT234-Miss88.1/64.3 and three-module goals remain.
 
 ## Result
 
-Pending.
+Completed GPU2 PID368156 in584.557 seconds. Both arms stopped10epochs/
+120updates, retaining final-five6-10. Attention selected8 and MLP selected7
+using nine-cell development loss before audit sampling. All epoch weights
+remain on server in `reports/server28_tail_lowrank_20261102/`.
+
+Memory sizing selected batch192, LR0.0006000000000000001,
+12updates/epoch, reduced to0.00006000000000000001 from epoch7.
+Peak allocated/reserved bytes: attention17389865472/21449670656;
+MLP13747137024/21449670656. The latter reserved figure includes allocator
+reservations from the earlier arm; it is not all live MLP tensors.
+Observed GPU2 occupancy reached22156MiB,73C with the250W cap.
+These are cached-tail training epochs, not full-image model convergence.
+
+Audit128tuples/68actual sequences,1152rows per arm. Internal
+sequence-macro crop-IoU changes, not official tracking scores:
+
+| Arm / search state | Delta vs E0 | 95% sequence-bootstrap CI |
+|---|---:|---|
+| Attention / complete search, all template histories | +0.005012 | [-0.002023,+0.014890] |
+| Attention / RGB missing | +0.031107 | [+0.012872,+0.050894] |
+| Attention / TIR missing | +0.008250 | [-0.003422,+0.020444] |
+| MLP / complete search, all template histories | +0.006713 | [-0.001334,+0.017027] |
+| MLP / RGB missing | +0.010538 | [-0.009403,+0.028719] |
+| MLP / TIR missing | +0.005517 | [-0.007462,+0.018913] |
+| Attention minus MLP / all9 cells | +0.007201 | [-0.000144,+0.015849] |
+
+Descriptive supplementary full-input cell11_11, distinct from the registered
+three-template-history aggregate: attention+.008398
+CI[-.003403,+.024805], MLP+.010931 CI[-.000078,+.026417].
+Computed from saved rows with the same sequence bootstrap seed49301;
+neither is a changed promotion criterion.
+
+Attention has a positive lower bound in one missing direction, but neither
+arm meets the registered all-three-state gate. Both advancement flags=false.
+Do not promote, enlarge or tune this exact intervention on its audit.
+The matched attention-minus-MLP interval also spans zero, so this does not
+prove overall attention superiority. A directional crop benefit is not
+RGBT234-Miss threshold attainment or a validated paper module.
+
+Separate saved-evidence analysis passed box-IoU arithmetic, pairing,
+actual train-list partitions, prior exact-tuple exclusions, memory/batch/LR
+policy, histories/stopping/final-five selection, bootstrap and gate.
+Server hashes passed baseline, listed sources, all3 token caches,
+selected and all10 final-five weights. All10 actual weight dictionaries
+had30720 finite parameters and matching epoch metadata.
+Separate-process cached-tail replay exactly reproduced original E0
+1152rows and both selected adapters2304rows. It reuses tail/measurement
+implementation and detached cached tokens, not an independent implementation,
+first-ten-block/image replay or scientific review. Local saved-evidence
+analysis also passed. Producer baseline state digest remained unchanged
+and original parameter gradients absent. Listed source hashes do not cover
+every transitive import.
+
+Report SHA256:
+`ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2`.
+Initial immutable protocol SHA256:
+`6a08f79a9748a48306490cc0d80693b905fb8880845adc2ed698607874891328`.
+No val97, official evaluation or cleanup. Official maxima unchanged.
+Full research objective remains incomplete.
+
+Next prospective mechanism is separately documented in
+`QUALITY_ALIGNMENT_SOURCE_REVIEW_20261102.md`: first measure fixed native
+candidate ranking/box-quality headroom on fresh train882 data before any
+new learned ranking intervention. That review is not an executed experiment
+or a way to reinterpret this pilot as passing.

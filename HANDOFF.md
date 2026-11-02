@@ -1,6 +1,32 @@
 # Miss-RGBT 交接文档
 
-## 2026-11-02 Final-two-block low-rank pilot running
+## 2026-11-02 Final-two-block low-rank pilot verified
+
+PID368156 finished584.557s. Both arms10epochs/120updates; final-five6-10
+retained, attention selected8,MLP7 before audit. Batch192/LR6e-4,
+12updates/epoch; attention peak allocated17.39GB,reserved21.45GB,
+GPU telemetry22156MiB/73C/250W. All epoch weights retained.
+Audit128tuples/68sequences,1152rows per arm. Attention-E0 RGB-missing
++0.031107 CI[+.012872,+.050894]; TIR-missing+.008250
+CI[-.003422,+.020444]; complete-search over template histories+.005012
+CI[-.002023,+.014890]. MLP effects all cross zero. Neither passes
+registered all-three-state gate. Do not enlarge/tune this exact intervention
+or count it as a validated module. Attention-minus-MLP also crosses zero.
+Server actual partitions/tuple exclusions, memory/LR/stopping/selection,
+box arithmetic/bootstrap/source/base/cache/final-five hashes verified;
+all10 final-five weight dictionaries finite and30720parameters.
+Separate-process E0 cached-tail replay1152rows and selected-adapter2304rows
+exact. Shared tail/measurement implementation, not independent image replay.
+Local evidence analysis passed. Report SHA256
+ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2.
+Full results docs/TAIL_LOWRANK_PILOT_20261102.md and
+reports/server28_tail_lowrank_20261102/. Official maxima unchanged.
+Read-only TOOD source review pinned1bda27c, no copied code or new training:
+docs/QUALITY_ALIGNMENT_SOURCE_REVIEW_20261102.md. Next: preregister fresh
+train882 fixed-candidate quality/ranking diagnostic before another learned
+intervention. No val97, official evaluation or weight cleanup.
+
+### Original launch observation (superseded by completion above)
 
 Previous cross-stream result was verified negative evidence, not a module.
 New registered question adapts native blocks10/11 rather than frozen

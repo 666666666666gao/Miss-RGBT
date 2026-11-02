@@ -21,6 +21,9 @@ def replay(report):
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     model = load_pretrained(cfg, report['checkpoint'], repair=False).cuda().eval().requires_grad_(False)
     cache = torch.load(report['cache_manifests']['audit']['path'], map_location='cpu')
+    native = evaluate(model, cache)
+    assert all(row['box'] == row['native_box'] and row['loss'] == row['native_loss']
+               and row['iou'] == row['native_iou'] for row in native['rows'])
     for mode in ['attention', 'mlp']:
         adapters, handles = attach(model, mode)
         state = torch.load(report['arms'][mode]['selected_path'], map_location='cpu')
@@ -28,7 +31,8 @@ def replay(report):
         assert evaluate(model, cache) == report['audit'][mode], mode
         for handle in handles:
             handle.remove()
-    return dict(selected_tail_replay_exact=True, audit_rows=2304)
+    return dict(native_tail_replay_exact=True, native_rows=1152,
+                selected_tail_replay_exact=True, audit_rows=2304)
 
 
 def main():
@@ -137,6 +141,10 @@ def main():
     assert advances == report['advance'] == completed['advance']
     if args.server_files:
         import torch
+        names = Path('lib/train/data_specs/lasher_train.txt').read_text().splitlines()
+        assert partitions == dict(
+            train=[name for index, name in enumerate(names) if index % 5],
+            development=names[::5][:88], audit=names[::5][88:])
         assert sha256(report['checkpoint']) == report['checkpoint_sha256']
         for filename, expected in report['source_sha256'].items():
             assert sha256(filename) == expected, filename
