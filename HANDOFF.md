@@ -1,5 +1,29 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-02 09:00 UTC - Pairing-verifier correction; queue v2 active
+
+Previous goalturn was verifiedwait. Foundrealcontractbug:oldverifierrequires
+equal wholelogs despite independentlystoppingarms. Historicaldense20/native
+vs14/dense proves stoppinglengthdifference occurs. No currentepochcomplete.
+Newverify_partitioned_a_v2.py keepsallfullsingle-armchecks andrequiresexact
+devinputs/commontrainingprefix IDs/tensor+maskhashes;reportsbothlengths,
+nevercallslongersuffixpaired. Tests equal/unequal-bothorders andcommoninput/
+mask/devmismatchrejection passed;real6epochsmoke reverified,24commonsteps.
+No oldfrozenfilechanged,no trainer/optimizer/data/seed/stopping/selection change.
+
+Oldwaitingcontroller1318842explicitlyretiredaftercommand/status/sourcechecks,
+no devhistory/officialresults. Newv2PID1355742 registered08:59:45UTC.
+At09:00:09UTCcommandlive00:23/statusWAITING_FOR_TRAINING;frozenhashespass.
+OriginaltrainingPIDs1288280/1288281stilllive41:09,74/75C,22710/22742MiB,
+250Wlimits. No trainingrestart/cleanup/benchmarkexecution.
+ACTIVEqueue reports/server28_partitioned_a_20261102_official_queue_v2/.
+Oldqueuepreservedwithsuperseded.json. Futureterminalaudituses
+scripts/verify_partitioned_a_v2.py --phase formal,verification_v2.json;
+do not race the automatedqueue. Full20officialruns unchanged.
+Amendment/evidence docs/PARTITIONED_A_PAIRING_AMENDMENT_20261102.md,
+checks reports/server28_partitioned_pairing_v2_checks_20261102.json.
+Nextfirstepoch~18:05CSTNov2. Officialmetricsunchanged/fullgoalunmet.
+
 ## 2026-11-02 08:44 UTC - Live training prefix audit passed
 
 Previous turn officialqueueregistration=progress. Separate readonlyaudit of

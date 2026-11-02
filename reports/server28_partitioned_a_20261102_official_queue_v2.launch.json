@@ -1,0 +1,22 @@
+{
+  "pid": 1355742,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/partitioned_a_official_queue_v2.py",
+    "--register"
+  ],
+  "log": "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2.log",
+  "registered_utc": "2026-11-02T08:59:45.936762Z",
+  "superseded_pid": 1318842,
+  "superseded_queue": "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue",
+  "reason": "Correct verifier whole-log equality to common-prefix equality for independent early stopping",
+  "training_pids_unchanged": [
+    1288280,
+    1288281
+  ],
+  "checks_sha256": "2bfbcebf896e14efe4517c0e011f7d4480a1f684a0bee2f86aa56daedd7996f4",
+  "script_sha256": "6b5e8b7fbb55d1bc9cf453c43e61a02e452d2ed4bc34d656a2a0d2486e297911",
+  "original_queue_artifacts_preserved": true,
+  "training_restarted": false
+}

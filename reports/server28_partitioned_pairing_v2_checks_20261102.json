@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "equal": {
+    "development_batches": 1,
+    "common_microsteps": 4,
+    "arm_microsteps": [
+      4,
+      4
+    ],
+    "full_run_lengths_equal": true
+  },
+  "unequal": {
+    "development_batches": 1,
+    "common_microsteps": 2,
+    "arm_microsteps": [
+      2,
+      4
+    ],
+    "full_run_lengths_equal": false
+  },
+  "reverse": {
+    "development_batches": 1,
+    "common_microsteps": 2,
+    "arm_microsteps": [
+      4,
+      2
+    ],
+    "full_run_lengths_equal": false
+  },
+  "rejected_mismatches": [
+    "input",
+    "mask",
+    "development"
+  ],
+  "real_smoke_verification_sha256": "24aaf8604c9519b7e361061dd7d127a50ac1d5ccc7ea5db78a63e067226b08fb",
+  "source_sha256": {
+    "scripts/check_partitioned_pairing_v2.py": "49f504ce02c1319363aef7b0d9f9b5965c162d6f882a90d072ddbd77feef229e",
+    "/home/gaob/Miss-RGBT/scripts/verify_partitioned_a_v2.py": "cfa27bd0d36ff21e9c54f92574a909d895aee45e685039e79a44cbae1ea5dd43"
+  },
+  "scope": "Pairing contract fixtures plus complete saved smoke evidence; zero benchmark evaluations"
+}
