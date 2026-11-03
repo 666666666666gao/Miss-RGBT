@@ -4357,3 +4357,16 @@ complete/passed. R1/R2 trainers3388846/3395457 remain live and RPPM3539938
 still waits for four R receipts. GPU0-3:81/78/77/73 C,
 246.45/246.75/249.43/249.02W, utilization100/60/100/100%. No new dispatch
 or intervention; configurations, manifests and checkpoints are unchanged.
+
+## 2026-11-03 22:36 UTC - Both full Miss evaluations continue
+
+Read-only poll at22:36:06Z confirmed Utility epoch14 Miss PID1873594 and
+Random epoch15 Miss PID1870217 are alive on GPU2/3. Utility has completed
+2/479 sequences and20,171/337,353 frames; Random has completed5/479 and
+43,779/337,353 frames. No Miss metrics or completion receipts are available.
+The A queue and controllers remain `OFFICIAL_RUNNING`; training receipts and
+training-evidence `verification_v2.json` remain complete/passed, but no
+queue-level final verification exists. R1/R2 remain alive and RPPM still
+waits on four R receipts. GPU0-3 are81/78/77/73 C,
+246.50/247.06/249.29/248.98W, all at100% utilization. No new task or
+intervention; all configs, manifests and checkpoints remain untouched.
