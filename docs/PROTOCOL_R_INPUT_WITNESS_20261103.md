@@ -1,5 +1,50 @@
 # R Input Prefix Provenance Witness
 
+## Native CPU Setup and Installed-Source Audit
+
+`scripts/audit_protocol_r_cpu_rng.py` ran in the frozen R runtime on CPU.
+The completed report is
+`reports/server28_protocol_r_cpu_rng_audit_v2_20261103.json`.
+It reconstructs the actual OSTrack-initialized native model and matches the
+initialization record of both original R arms. For each actual run configuration,
+it executes native loader construction, AdamW construction, loading the actual
+hash-bound development cache, model train/BN setup, and zeroing gradients.
+Each stage leaves the default CPU RNG unchanged at
+`50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0`,
+exactly matching the completed native epoch witness's initial RNG.
+The check also consumes CPU random values inside `fork_rng(devices=[])`
+and verifies exact restoration on exit.
+
+The report retains source text and hashes for all eighteen distinct native
+model forward types, the native modality/patch sampler, installed DropPath,
+installed AdamW initialization/step/functional implementations, and Torch RNG
+forking. The instantiated model's dropout probabilities are zero; its eleven
+DropPath modules use the input-device `new_empty(...).bernoulli_` implementation.
+Native masks derive their device from the actual search tensor. Installed
+AdamW sources contain no calls from the explicitly enumerated random-call
+inventory. The frozen original validation body wraps its forwards in `fork_rng`.
+This is inspectable source evidence, not exhaustive dynamic tracing of all
+framework internals or a proof inferred merely from an empty AST inventory.
+
+Execution took 6.622544 seconds; CUDA stayed uninitialized. No loader iterator,
+image decode, model forward/backward, optimizer step, or original-process RNG
+read was performed. These results close the measured **setup** uncertainty and
+document the stochastic-operation device paths. They do not independently
+record later original CUDA inputs, certify the entire historical exclusion
+union, or authorize OHCAS. The report retains explicit false values for these
+claims. Original trainers, frozen sources, queues, and checkpoints are untouched.
+
+Executed command:
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/protocol_r_20261103
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/protocol_r_20261103:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python \
+  /home/gaob/Miss-RGBT/scripts/audit_protocol_r_cpu_rng.py \
+  --output /home/gaob/Miss-RGBT/reports/server28_protocol_r_cpu_rng_audit_v2_20261103.json
+```
+
 ## Measured Evidence
 
 The existing server Python 3.7 / Torch 1.12 environment executed
