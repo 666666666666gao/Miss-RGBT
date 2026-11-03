@@ -4461,3 +4461,13 @@ two full Miss evaluators remain alive without Miss completion receipts or
 queue-level formal verification. RPPM remains `WAITING_FOR_R` on the same
 four receipts. GPU0-3 were80/78/77/73 C and249.52/247.66/249.72/249.16W,
 all below250W. No run was dispatched or altered.
+
+## 2026-11-03 23:27 UTC - R2 log gap resolved
+
+A follow-up poll several minutes after R2's log last advanced found both R
+trainers alive with fresh log records: R1 reached epoch14/update34625 and
+R2 epoch14/update16950. GPUs0/1 both reported100% utilization; temperatures
+were81/78 C and power246.61/248.11W. The earlier R2 logging gap did not
+persist, so no stall is established and no intervention was made. A queue
+and both Miss evaluators remain live without full Miss completion receipts;
+RPPM remains `WAITING_FOR_R` on the same four receipts.
