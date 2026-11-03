@@ -169,8 +169,9 @@ def main():
     assert all(parameter.grad is None for parameter in model.parameters())
     effects, advance = summarize(rows, clustered)
     m1_decision = decision(args.injection_layer, advance)
-    source_paths = [Path(__file__), Path('research/history_stream/diagnostic.py'),
-        Path('scripts/diagnose_absent_position.py'), Path(args.config),
+    project = Path(__file__).resolve().parents[1]
+    source_paths = [Path(__file__), project / 'research/history_stream/diagnostic.py',
+        project / 'scripts/diagnose_absent_position.py', Path(args.config),
         Path('experiments/cadtrack/cadtrack.yaml'),
         Path('lib/train/data_specs/lasher_train.txt'), Path('lib/utils/box_ops.py'),
         Path('lib/utils/heapmap_utils.py')]

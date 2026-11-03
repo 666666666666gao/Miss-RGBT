@@ -100,3 +100,52 @@ were live.
 The active run and its frozen snapshot were not edited or restarted. OHCAS/M1
 remains unauthorized until complete historical frame provenance is supported
 by evidence; do not infer it from the scalar step log or the partial replay.
+
+## Diagnostic Runtime Correction
+
+Read-only source inspection found that the project-root `miss_rgbt/model.py`
+is an older model and the root package has no `task_utility.py`. It differs
+from the frozen A runtime used to produce Batch10 Utility ep17. The original
+history launcher selected that root package, so its actual Utility diagnostic
+would fail before useful execution.
+
+`scripts/launch_history_stream.py` now runs from
+`runtime/task_utility_20261018`, with that runtime before the project root
+on `PYTHONPATH`. The diagnostic's source manifest resolves research/script
+files from the project root and native model/config files from its working
+runtime. Active trainers, snapshots and queues are unchanged.
+
+The existing server environment imported the corrected diagnostic and
+strictly loaded the actual ep17 checkpoint on a fresh CPU model. Its SHA256
+matched the registered diagnostic checkpoint; CUDA stayed uninitialized.
+The raw receipt is `reports/server28_history_diagnostic_runtime_20261103.json`.
+The existing sixteen diagnostic helper checks also passed in this runtime;
+their receipt is
+`reports/server28_history_stream_diagnostic_runtime_checks_20261103.json`.
+A mocked launcher check confirmed the native working directory/import path
+and rejection of an unverified cache before any subprocess launch.
+
+These checks establish import/checkpoint compatibility and helper behavior.
+They do not create a fresh cache, execute image interventions, decide M1,
+recover original R frame provenance or produce official tracking metrics.
+
+## Completed Replay Exclusions
+
+The metadata CLI now accepts `--completed-r-replay` for a completed
+epoch-transition witness. It verifies terminal/report/source/run-config and
+manifest hashes, then adds the replay's full first-epoch identities and
+second-epoch prefix. It does not read a growing replay or mark original R
+provenance complete.
+
+Actual CPU metadata execution with the completed real-image replay found
+688 eligible sequences out of 705 fitting sequences, 202,523 current-search
+positions and 10,496,674 history/current pairs after these additional
+exclusions. The earlier partial-exclusion bound was 705/282,120/15,976,753.
+No new diagnostic images or cache were created by this metadata pass.
+
+Raw receipt:
+`reports/server28_history_stream_metadata_replayed_epoch1_v2_20261103.json`,
+SHA256 `645846c461833abd0e4857f85fc6cbf44421ba820fe0c5cd75e05d3e683f1492`.
+It retains `data_gate_passed=false`: original A terminal verification and
+the complete original R frame history remain unresolved. These counts
+still describe a partial-exclusion upper bound, not approved image tuples.

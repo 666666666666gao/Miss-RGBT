@@ -84,3 +84,39 @@ Do not duplicate the queue or edit frozen `curriculum_p` / `protocol_r` files.
 
 There is no new official score. Observed temperatures do not establish an
 85 C hardware temperature limit.
+
+## Completed Real-Image Epoch Transition Witness
+
+`scripts/replay_protocol_r_epoch_boundary.py` exhausted one native epoch:
+5,000 microbatches, 20,000 returned tuples, real images/augmentations/crop
+rejections and two native workers. Every saved original first-update hash
+matched. The main CPU RNG stayed equal to its post-prefetch state for all
+5,000 returned batches, including the exhausted iterator.
+
+It then compared two ways of reaching epoch two: consuming the complete
+native image epoch, and advancing the installed loader's worker-base seed
+plus its native batch sampler without reading dataset items. The next four
+real-image microbatches had identical tensor hashes and frame identities.
+Measured worker-base seeds were 5562934040544554675 and
+5177384581399083067. Total execution took 1459.473608 seconds, CPU only.
+
+The installed Torch1.12.1 source inspection found a main-process worker seed
+and a RandomSampler seed per epoch; RandomSampler uses a local generator
+after that. Native DropPath uses `x.new_empty(...).bernoulli_`, on the input's
+device. Original validation uses `torch.random.fork_rng`, which restores CPU
+state as well. The frozen training source must still be audited as a whole:
+this witness did not execute the original CUDA training operations or read
+their live RNG state. Original later-batch hashes were never recorded.
+
+Server evidence remains in
+`reports/server28_protocol_r_epoch_boundary_20261103/`:
+`epoch01_input_manifest.jsonl`, `report.json`, and `completed.json`.
+The publication copy of report.json is
+`reports/server28_protocol_r_epoch_boundary_20261103.json`, SHA256
+`1eba4e1cf437d7fa19d2c5e49b6035b17d4aef474cd71d62cde1ad244f51ce8b`.
+The epoch-one manifest SHA256 is
+`8d3166d345d2207be7599a75004a3f5f9e208672fb8516bedad9531d5b9c45ee`.
+
+This advances epoch-boundary reproducibility evidence. It does not turn
+the replay into an independently certified full original R manifest, or
+authorize OHCAS. The active trainer sources/processes were not modified.

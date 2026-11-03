@@ -1,0 +1,285 @@
+{
+  "status": "passed",
+  "seconds": 1459.4736075401306,
+  "torch_version": "1.12.1+cu113",
+  "completed_training_epochs_at_start": {
+    "r1": 3,
+    "r2": 3
+  },
+  "exhausted_native_epoch_microbatches": 5000,
+  "returned_epoch1_tuples": 20000,
+  "first_update_hashes_matched": true,
+  "epoch1_main_cpu_rng_unchanged_after_prefetch": true,
+  "epoch2_prefix_bitwise_and_identity_equal": true,
+  "epoch2_prefix_microbatches": 4,
+  "seed_only_epoch_worker_seeds": [
+    5562934040544554675,
+    5177384581399083067
+  ],
+  "initial_cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0",
+  "after_epoch_cpu_rng_sha256": [
+    "159ad735725651492700893fbabf12a040f4ccf1ef9df251aa440aa4e14624f4",
+    "5bd0be52be29a22a57bf2b9a1af40bd6216e0ebe02468c844f8787c98db725c7"
+  ],
+  "epoch1_manifest_sha256": "8d3166d345d2207be7599a75004a3f5f9e208672fb8516bedad9531d5b9c45ee",
+  "epoch2_prefix": [
+    {
+      "epoch": 2,
+      "index": 0,
+      "tensors_sha256": {
+        "template_images": "0ea245b374feb1af337a22228602a5db099ad311890db923070154bb65b21039",
+        "search_images": "97565af026cd8632e2c5af46aee13ed808a62c34f5a449e83399a92ed48b97ee",
+        "search_anno": "fcc3c72f6c9a478fa5f35260506e3feebda02d91d1353e9248ea14560921f24e"
+      },
+      "identities": [
+        {
+          "search_frames": [
+            85,
+            65,
+            114
+          ],
+          "sequence": "moto2ground",
+          "template_frames": [
+            60,
+            8
+          ]
+        },
+        {
+          "search_frames": [
+            146,
+            73,
+            180
+          ],
+          "sequence": "bikecoming",
+          "template_frames": [
+            51,
+            4
+          ]
+        },
+        {
+          "search_frames": [
+            46,
+            68,
+            94
+          ],
+          "sequence": "blkbagontheleftgirl",
+          "template_frames": [
+            41,
+            9
+          ]
+        },
+        {
+          "search_frames": [
+            588,
+            589,
+            524
+          ],
+          "sequence": "left11",
+          "template_frames": [
+            446,
+            291
+          ]
+        }
+      ]
+    },
+    {
+      "epoch": 2,
+      "index": 1,
+      "tensors_sha256": {
+        "template_images": "1195fbb2e5ad3298ee1b3474de4bab457c532aad6e28aa6beff547a391ee8c92",
+        "search_images": "838f2b05f402bc48f93f6ca41cce1c85b1c9cdfe938b0e99ea2db7e70e9bbf49",
+        "search_anno": "713fcb96b05cbb7fc47c668dff699216383567544a5db3619485ea51a9352065"
+      },
+      "identities": [
+        {
+          "search_frames": [
+            161,
+            107,
+            156
+          ],
+          "sequence": "easy_rightblkboywithgirl",
+          "template_frames": [
+            57,
+            17
+          ]
+        },
+        {
+          "search_frames": [
+            157,
+            153,
+            138
+          ],
+          "sequence": "2whitegirl",
+          "template_frames": [
+            135,
+            8
+          ]
+        },
+        {
+          "search_frames": [
+            1006,
+            1140,
+            1105
+          ],
+          "sequence": "blklittlebag",
+          "template_frames": [
+            995,
+            952
+          ]
+        },
+        {
+          "search_frames": [
+            68,
+            63,
+            50
+          ],
+          "sequence": "bus2",
+          "template_frames": [
+            40,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "epoch": 2,
+      "index": 2,
+      "tensors_sha256": {
+        "template_images": "e7cb742ef03f45019a055640b70c369aebf9d9607a6bd3fd25edbede1865d01f",
+        "search_images": "522d15d3198ccf0b75fb1d63224d2a72ee34324db1773449cfd9da2e87c6fcdb",
+        "search_anno": "66c0e86de1c2bd6759ebd6860a559d12ffc88ff294bd712ce1a1f81f3cf4955d"
+      },
+      "identities": [
+        {
+          "search_frames": [
+            632,
+            563,
+            639
+          ],
+          "sequence": "leftclosedexersicebook",
+          "template_frames": [
+            541,
+            509
+          ]
+        },
+        {
+          "search_frames": [
+            66,
+            84,
+            68
+          ],
+          "sequence": "motoprecede",
+          "template_frames": [
+            55,
+            38
+          ]
+        },
+        {
+          "search_frames": [
+            109,
+            99,
+            74
+          ],
+          "sequence": "blkboy198",
+          "template_frames": [
+            34,
+            12
+          ]
+        },
+        {
+          "search_frames": [
+            62,
+            32,
+            44
+          ],
+          "sequence": "tallboyblack",
+          "template_frames": [
+            12,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "epoch": 2,
+      "index": 3,
+      "tensors_sha256": {
+        "template_images": "7056f07ff9e65d21ffab4f748ac11c6065028a57e3c4246e5f95b5c5c727c669",
+        "search_images": "b0e5f0b7ab9aafdce454b5ff01ec9af5c72ea93a5dedf1e87e36809260ff2447",
+        "search_anno": "86bfacc11b850a8bf01262436a6d9c6f90a394a5244bd3a9f8ca948b84fa0450"
+      },
+      "identities": [
+        {
+          "search_frames": [
+            63,
+            60,
+            58
+          ],
+          "sequence": "mototurnright",
+          "template_frames": [
+            56,
+            0
+          ]
+        },
+        {
+          "search_frames": [
+            56,
+            35,
+            45
+          ],
+          "sequence": "dogunderthelamp",
+          "template_frames": [
+            31,
+            4
+          ]
+        },
+        {
+          "search_frames": [
+            240,
+            316,
+            216
+          ],
+          "sequence": "huggirl",
+          "template_frames": [
+            128,
+            43
+          ]
+        },
+        {
+          "search_frames": [
+            114,
+            56,
+            100
+          ],
+          "sequence": "rightblkboybesidesred",
+          "template_frames": [
+            16,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "cuda_initialized": false,
+  "run_config_sha256": {
+    "r1": "6d4d3ebd9d07c3466fa910ce486734df933019b72a5d9e0722fe5c64a68a155f",
+    "r2": "b3342c9ec91960dceedcf7eb520fd1976fd690a8a413e13e63efa477655dd0df"
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/loader.py": "318c729bd3bdc26c39806864430e6bb302c7d7847f296dcc6d21e142185a2639",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/processing.py": "b761856eeb2a9d558d1b8928e5f108eeb6d3da3d8deb0578a57864badcdc30ca",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/transforms.py": "9a7db0eb86a6aa351bb53d0373a07e2a93d14ec0c8b7fa8987811733cdae360a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/research/protocol_r/train.py": "1709f566d80cad56405d0601ea0f1301168d559c70f4790086bfaebfebc4d5d3",
+    "/home/gaob/Miss-RGBT/scripts/replay_protocol_r_epoch_boundary.py": "8a4f2e9fb215efdb68d21e73f2db1db1cceaca311447396a99777360c01165ff",
+    "/home/gaob/Miss-RGBT/scripts/replay_protocol_r_input_witness.py": "3d53e29f42fe512952a4560daf9d018008eff3cbf39b346df708f2849aebef09",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/utils/data/dataloader.py": "5c25ee2d1092eb577166733a21aa373aa06809569980ebab1cdf4e81c61b0e46",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/utils/data/sampler.py": "576328a96f641fd0e6c555ce280a839d7f59b9246125da22b3f51c0559300218",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/drop.py": "0e0e514f16aae1ebeadef0b3fe787d7567050adca0c8a184cb512449890350b5"
+  },
+  "all_historical_frame_exclusions_verified": false,
+  "ohcas_data_gate_passed": false,
+  "scope": "Real native CPU image-loader epoch/transition witness. Original trainers were not instrumented: later original inputs and training CPU-RNG noninterference are not independently certified. Not a full historical manifest, image cache, OHCAS decision, training or official metric."
+}

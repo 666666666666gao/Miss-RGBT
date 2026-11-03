@@ -18,6 +18,7 @@ def main():
     parser.add_argument('--previous-diagnostic')
     args = parser.parse_args()
     root = Path('/home/gaob/Miss-RGBT')
+    runtime = root / 'runtime/task_utility_20261018'
     output = Path(args.output).resolve()
     assert not output.exists()
     receipt = json.loads(Path(args.cache_receipt).read_text())
@@ -42,9 +43,9 @@ def main():
         command += ['--previous-diagnostic', str(Path(args.previous_diagnostic).resolve())]
     environment = dict(os.environ, CUDA_VISIBLE_DEVICES=str(args.gpu),
         OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
-        WANDB_MODE='disabled', PYTHONPATH=str(root))
+        WANDB_MODE='disabled', PYTHONPATH=str(runtime) + ':' + str(root))
     with log_path.open('xb') as stream:
-        child = subprocess.Popen(command, cwd=str(root), env=environment,
+        child = subprocess.Popen(command, cwd=str(runtime), env=environment,
             stdout=stream, stderr=subprocess.STDOUT, start_new_session=True)
     record = dict(pid=child.pid, gpu=args.gpu, command=command,
         started_utc=datetime.datetime.utcnow().isoformat() + 'Z',
