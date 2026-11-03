@@ -200,6 +200,54 @@ actual saved checkpoints/native optimizer audit, caller parent/smoke gates
 and four full-run pairing have not been executed. There is no F CLI or
 authorized campaign yet, no learned feedback/FPS evidence and no new score.
 
+## Read-Only P Parent Gate
+
+`research/feedback_f/protocol_parent.py` is a read-only CLI for the new
+six-arm campaign. It requires queue completion, all six saved-training
+verifications, paired-training verification and all sixty full official
+evaluations before returning `P_PARENT_VERIFIED`. It binds parent/source
+hashes, checks the final-five internal-loss selection for every arm,
+recomputes every full official result with the existing official verifier,
+and reruns six-arm pairing verification. Missing prerequisites return
+`WAITING_FOR_P` without constructing a model or creating a campaign.
+
+The plans request the best P curriculum without defining cross-arm
+selection. Before any P result exists, this implementation specifies:
+choose the arm with the lowest internally selected final-five mean native
+task loss. Epoch ties choose the earlier epoch; arm ties choose the
+registered `ARMS` order. Official Complete/Miss scores do not select an
+arm or checkpoint. The selected Complete/Miss metrics use that same
+checkpoint. This defines a parent candidate, not evidence that it passes
+the plans' module-promotion comparisons.
+
+Executed on server28:
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/task_utility_20261018
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/task_utility_20261018:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u \
+-m research.feedback_f.check_protocol_parent \
+--output /home/gaob/Miss-RGBT/reports/server28_feedback_protocol_parent_checks_20261103.json
+```
+
+PASS, exit0: six synthetic arms and sixty stubbed official evaluations;
+fixed50 wins an internal-loss tie with progressive, and epoch16 wins the
+epoch tie despite higher synthetic test scores later. Twelve altered
+scope/selection/checkpoint/output/evidence cases are rejected. The official
+and paired verifiers are explicitly stubbed in this fixture. CUDA remained
+uninitialized. This checks the outer gate only, not actual full-run or
+official-result verification.
+
+The production invocation replaces the module with
+`research.feedback_f.protocol_parent` and omits `--output`. It executed
+successfully and returned `WAITING_FOR_P` with twenty missing prerequisites.
+No F configs, image smokes or training jobs were created. The gate always
+returns `f_training_authorized=false`, even after P succeeds: an actual
+accepted/closed M1 decision, accepted-OHCAS composition when applicable,
+frozen F preparation and four matched real-image smokes remain necessary.
+
 ## Remaining Dependencies
 
 The old `feedback_f/prepare.py` and `train.py` still bind the retired four-arm
