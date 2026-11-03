@@ -39,6 +39,16 @@ zero IoU CI lower bound is positive in both directions and true-history mean IoU
 exceeds wrong-sequence history in both directions. Task loss is reported, not
 an additional selection criterion. Do not tune age on this cohort.
 
+If block three fails this measured gate, retry once at layer zero: after
+patch/position embedding, before the first Transformer block. Use the same
+checkpoint, cache, configuration, controls and decision rule. The executor
+requires the negative block-three report and its hash-bound completion,
+recomputes its effects and verifies unchanged source/cache/configuration hashes.
+A positive first diagnostic does not authorize the retry. Decisions are
+`accepted_block3`, `retry_embedding`, `accepted_embedding`, or
+`closed_both_diagnostics_negative`. Missing provenance or an unexecuted
+diagnostic is not a negative result and cannot close M1.
+
 ## Data Gate Still Pending
 
 `scripts/diagnose_history_stream.py` consumes a frozen `torch.save` list with
@@ -93,6 +103,28 @@ occupied cards (memory >=500MiB), temperatures >=85C, or power caps other than
 250W. It does not change temperature settings or guarantee a thermal ceiling.
 Follow the child log and completed receipt; check long jobs at 180--300-second
 intervals near an estimated milestone. Preserve existing healthy jobs.
+
+Only after an actual completed negative block-three diagnostic:
+
+```bash
+conda-envs/miss_rgbt/bin/python scripts/launch_history_stream.py \
+  --gpu 2 --cache-receipt <same-verified-cache-receipt.json> \
+  --config reports/server28-candidates-20261030/batch10_utility_seed2027/config.json \
+  --injection-layer 0 \
+  --previous-diagnostic reports/server28_history_stream_20261103/report.json \
+  --output reports/server28_history_stream_embedding_20261103
+```
+
+CPU fixtures cover both hook positions, hook cleanup, four decision outcomes
+and rejection of missing/positive/wrong-layer prior experiments, changed cache
+or configuration, and inconsistent effects. They do not supply the real-image
+or freshness evidence required by either diagnostic.
+
+Server28 Python 3.7 / Torch 1.12 CPU execution passed these fixtures; receipt:
+`reports/server28_history_stream_retry_cpu_checks_20261103.json`, SHA256
+`f56f3c9ee057619674771b052ec4ec45337175d16e952f136e0eaf8846a62dd7`.
+CUDA was not initialized, real images were not executed and the diagnostic
+gate remains unpassed.
 
 The executor checks unchanged model parameters/buffers, no gradients, finite
 outputs, exact complete parity, and writes report plus SHA-bound completion.

@@ -1,4 +1,4 @@
-"""Frozen block-three interventions, without changing the native model."""
+"""Frozen block-three or embedding interventions on the native model."""
 import torch
 
 
@@ -28,14 +28,20 @@ def replace_search(output, availability, history, mode, search_tokens):
     return tuple(values)
 
 
-def capture_search(model, templates, search):
+def capture_search(model, templates, search, injection_layer=3):
+    assert injection_layer in (0, 3)
     captured = []
     count = model.baseline.backbone.pos_embed_x.shape[1]
 
     def capture(block, inputs, output):
         captured.append(tuple(value[:, -count:].detach().clone() for value in output))
 
-    handle = model.baseline.backbone.blocks[2].register_forward_hook(capture)
+    def capture_embedding(block, inputs):
+        capture(block, inputs, inputs)
+
+    blocks = model.baseline.backbone.blocks
+    handle = (blocks[2].register_forward_hook(capture) if injection_layer == 3 else
+              blocks[0].register_forward_pre_hook(capture_embedding))
     with torch.no_grad():
         model(templates, [search])
     handle.remove()
@@ -43,13 +49,20 @@ def capture_search(model, templates, search):
     return captured[0]
 
 
-def forward_intervention(model, templates, search, availability, history, mode):
+def forward_intervention(model, templates, search, availability, history, mode,
+                         injection_layer=3):
+    assert injection_layer in (0, 3)
     count = model.baseline.backbone.pos_embed_x.shape[1]
 
     def intervene(block, inputs, output):
         return replace_search(output, availability[-1], history, mode, count)
 
-    handle = model.baseline.backbone.blocks[2].register_forward_hook(intervene)
+    def intervene_embedding(block, inputs):
+        return replace_search(inputs, availability[-1], history, mode, count)
+
+    blocks = model.baseline.backbone.blocks
+    handle = (blocks[2].register_forward_hook(intervene) if injection_layer == 3 else
+              blocks[0].register_forward_pre_hook(intervene_embedding))
     with torch.no_grad():
         result = model(templates, [search], availability)[0]
     handle.remove()
@@ -86,3 +99,10 @@ def summarize(rows, clustered):
                   and effects[state]['wrong_seq']['iou_gain']['mean'] > 0
                   for state in ('01', '10'))
     return effects, advance
+
+
+def decision(injection_layer, advance):
+    assert injection_layer in (0, 3) and isinstance(advance, bool)
+    if advance:
+        return 'accepted_block3' if injection_layer == 3 else 'accepted_embedding'
+    return 'retry_embedding' if injection_layer == 3 else 'closed_both_diagnostics_negative'

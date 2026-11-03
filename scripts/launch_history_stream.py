@@ -14,6 +14,8 @@ def main():
     parser.add_argument('--cache-receipt', required=True)
     parser.add_argument('--config', required=True)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--injection-layer', type=int, choices=(0, 3), default=3)
+    parser.add_argument('--previous-diagnostic')
     args = parser.parse_args()
     root = Path('/home/gaob/Miss-RGBT')
     output = Path(args.output).resolve()
@@ -21,6 +23,9 @@ def main():
     receipt = json.loads(Path(args.cache_receipt).read_text())
     assert receipt['status'] == 'complete' and receipt['all_historical_frame_exclusions_verified']
     assert Path(args.config).is_file()
+    assert (args.previous_diagnostic is None) == (args.injection_layer == 3)
+    if args.previous_diagnostic is not None:
+        assert Path(args.previous_diagnostic).is_file()
     values = subprocess.check_output(['nvidia-smi', '--id=' + str(args.gpu),
         '--query-gpu=memory.used,temperature.gpu,power.limit',
         '--format=csv,noheader,nounits'], universal_newlines=True)
@@ -31,7 +36,10 @@ def main():
     assert not launch_path.exists()
     command = [sys.executable, '-u', str(root / 'scripts/diagnose_history_stream.py'),
         '--cache-receipt', str(Path(args.cache_receipt).resolve()),
-        '--config', str(Path(args.config).resolve()), '--output', str(output)]
+        '--config', str(Path(args.config).resolve()), '--output', str(output),
+        '--injection-layer', str(args.injection_layer)]
+    if args.previous_diagnostic is not None:
+        command += ['--previous-diagnostic', str(Path(args.previous_diagnostic).resolve())]
     environment = dict(os.environ, CUDA_VISIBLE_DEVICES=str(args.gpu),
         OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
         WANDB_MODE='disabled', PYTHONPATH=str(root))

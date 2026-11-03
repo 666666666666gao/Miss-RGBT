@@ -12,7 +12,8 @@ from diagnose_absent_position import MAPS, clustered, digest, metrics, seed, sha
 from lib.config.cadtrack.config import cfg, update_config_from_file
 from miss_rgbt.model import load_pretrained
 from research.history_stream.diagnostic import (
-    MODES, capture_search, different_sequence_donors, forward_intervention, summarize,
+    MODES, capture_search, decision, different_sequence_donors, forward_intervention,
+    summarize,
 )
 
 CHECKPOINT = '/home/gaob/Miss-RGBT/runs/server28-recovery-20261031/batch10_utility_seed2027/epoch17.pth.tar'
@@ -74,13 +75,48 @@ def load_cache(receipt_path):
     return receipt, cache
 
 
+def check_retry(injection_layer, previous_path, receipt_path, config_path):
+    """Only a completed negative block-three experiment authorizes layer zero."""
+    assert injection_layer in (0, 3)
+    if injection_layer == 3:
+        assert previous_path is None
+        return None
+    assert previous_path is not None
+    path = Path(previous_path).resolve()
+    previous = read(path)
+    completed_path = path.parent / 'completed.json'
+    completed = read(completed_path)
+    assert completed['status'] == previous['status'] == 'complete'
+    assert completed['report_sha256'] == sha256(path)
+    assert previous['injection_layer'] == completed['injection_layer'] == 3
+    assert previous['advance'] is completed['advance'] is False
+    assert previous['m1_decision'] == completed['m1_decision'] == 'retry_embedding'
+    assert previous['checkpoint'] == CHECKPOINT
+    assert previous['checkpoint_sha256'] == CHECKPOINT_SHA
+    assert previous['cache_receipt_sha256'] == sha256(receipt_path)
+    assert previous['source_sha256'][str(Path(config_path).resolve())] == sha256(config_path)
+    for source, expected in previous['source_sha256'].items():
+        assert sha256(source) == expected, source
+    assert previous['complete_bitwise_parity'] and previous['native_zero_bitwise_parity']
+    assert previous['state_unchanged'] and previous['gradients_absent']
+    effects, advance = summarize(previous['rows'], clustered)
+    assert effects == previous['effects'] and advance is False
+    return dict(report=str(path), report_sha256=sha256(path),
+                completed=str(completed_path), completed_sha256=sha256(completed_path),
+                injection_layer=3, advance=False)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cache-receipt', required=True)
     parser.add_argument('--config', required=True)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--injection-layer', type=int, choices=(0, 3), default=3)
+    parser.add_argument('--previous-diagnostic')
     args = parser.parse_args()
     receipt, cache = load_cache(args.cache_receipt)
+    previous = check_retry(args.injection_layer, args.previous_diagnostic,
+                           args.cache_receipt, args.config)
     assert sha256(CHECKPOINT) == CHECKPOINT_SHA
     config = read(args.config)
     assert config['task_utility']['selection'] == 'utility'
@@ -104,7 +140,8 @@ def main():
     histories = []
     for item in cache:
         histories.append(tuple(value.cpu() for value in capture_search(model,
-            [image.cuda() for image in item['history_templates']], item['history'].cuda())))
+            [image.cuda() for image in item['history_templates']], item['history'].cuda(),
+            args.injection_layer)))
     rows = []
     for index, item in enumerate(cache):
         templates = [image.cuda() for image in item['templates']]
@@ -119,7 +156,7 @@ def main():
             for mode in MODES:
                 source = histories[donors[index] if mode == 'wrong_seq' else index]
                 output = forward_intervention(model, templates, search, availability,
-                    tuple(value.cuda() for value in source), mode)
+                    tuple(value.cuda() for value in source), mode, args.injection_layer)
                 if mode == 'zero' or state == '11':
                     assert all(torch.equal(native[key], output[key]) for key in MAPS)
                 with torch.no_grad():
@@ -131,6 +168,7 @@ def main():
     assert before == digest(model.state_dict())
     assert all(parameter.grad is None for parameter in model.parameters())
     effects, advance = summarize(rows, clustered)
+    m1_decision = decision(args.injection_layer, advance)
     source_paths = [Path(__file__), Path('research/history_stream/diagnostic.py'),
         Path('scripts/diagnose_absent_position.py'), Path(args.config),
         Path('experiments/cadtrack/cadtrack.yaml'),
@@ -143,14 +181,18 @@ def main():
         cache_receipt_sha256=sha256(args.cache_receipt),
         source_sha256={str(path.resolve()): sha256(path) for path in source_paths},
         input_manifest=[item['identity'] for item in cache], rows=rows,
+        injection_layer=args.injection_layer, previous_diagnostic=previous,
+        m1_decision=m1_decision,
         effects=effects, advance=advance, complete_bitwise_parity=True,
         native_zero_bitwise_parity=True, state_unchanged=True, gradients_absent=True,
         seconds=time.time() - started, peak_gpu_bytes=torch.cuda.max_memory_allocated(),
         scope='Train882 frozen crop diagnostic; not tracking or official benchmark metrics.')
     save(root / 'report.json', report)
     save(root / 'completed.json', dict(status='complete', advance=advance,
+        injection_layer=args.injection_layer, m1_decision=m1_decision,
         report_sha256=sha256(root / 'report.json')))
-    print(json.dumps(dict(status='complete', advance=advance, effects=effects)), flush=True)
+    print(json.dumps(dict(status='complete', advance=advance, effects=effects,
+        injection_layer=args.injection_layer, m1_decision=m1_decision)), flush=True)
 
 
 if __name__ == '__main__':
