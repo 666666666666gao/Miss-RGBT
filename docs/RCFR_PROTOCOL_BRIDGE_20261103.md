@@ -155,15 +155,60 @@ CUDA remained uninitialized. The report SHA256 is
 it binds the checker/runner/bridge/fixture source hashes, not an entire
 training snapshot. No F training was launched.
 
+## Saved-Evidence Verifier
+
+`research/feedback_f/protocol_verify.py` adds a library verifier for this
+training loop. `verify_run(config, verify_evidence, verify_smokes)` requires
+the same caller-owned F parent/source and four-smoke checks. It audits
+20 epochs, all accepted train882 tuple identities, input/mask hashes,
+round-specific objective terms, Utility schedule, accumulation and learning
+rates. It retains the native RNG/optimizer/BN/native-parameter checks for
+epoch10 and16-20 and checks feedback shape/state changes for shallow/deep.
+Single/none must have no feedback parameters.
+
+Every internal diagnostic sidecar is hash-bound to its history row. The
+verifier recomputes correction/destruction counts and rates from all384
+crop IoUs per availability state, checks all128 final-round sample losses
+against the selected-loss summary and rejects missing searches/tuples.
+`verify_pairs(configs)` audits four matched configurations, shared native
+initialization/data, shallow/deep feedback initialization and per-step masks.
+Paced modality draws may differ with actual model-dependent difficulty;
+patch masks and equal-probability control masks must match.
+
+Executed in the existing server28 CPU environment:
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/task_utility_20261018
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/task_utility_20261018:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u \
+-m research.feedback_f.check_protocol_verify \
+--output /home/gaob/Miss-RGBT/reports/server28_feedback_protocol_verify_checks_20261103.json
+```
+
+PASS, exit0: 24 curriculum/mode cases,576 actual synthetic-loop step records;
+four diagnostic modes including JSON round trips and feedback-weight fixtures.
+Checks reject incorrect mode/round count/objective/normalization counts,
+nonfinite rounds, altered summary/crossing counts, invalid IoU, missing
+searches/tuples and wrong batch indices. CUDA remained uninitialized.
+Report SHA256:
+`543c92ea6db3b69b38a1334d76f35d7ce3b645a85ed1e01c46992f859f0fa236`.
+
+This is synthetic checker evidence. The full `verify_run` orchestration,
+actual saved checkpoints/native optimizer audit, caller parent/smoke gates
+and four full-run pairing have not been executed. There is no F CLI or
+authorized campaign yet, no learned feedback/FPS evidence and no new score.
+
 ## Remaining Dependencies
 
 The old `feedback_f/prepare.py` and `train.py` still bind the retired four-arm
 P campaign, E0 continuation and partitioned data. They cannot consume the new
 six-arm campaign by changing a path. This bridge does not repair them.
 
-Next work requires a coherent new F preparation/verifier/evaluator/dispatcher
+Next work requires a coherent new F preparation/evaluator/dispatcher
 path using the selected P curriculum and the accepted or closed M1 decision.
-The isolated training loop requires those caller-owned gates before use.
+The isolated training loop and verifier require those caller-owned gates before use.
 It must preserve native train882/fixed val97 selection, common data identities,
 20 full epochs without early stopping, epoch10 and16-20 retention, four real
 image smokes, strict model reload, and ten full official evaluations per arm.
