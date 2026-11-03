@@ -4269,3 +4269,12 @@ provisional pending the registered integrity checks.
 Evaluation GPUs 2/3 were released (1/33 MiB used, 0% utilization); GPUs 0/1
 remain occupied by R1/R2. No next stage is authorized before A queue formal
 verification passes. No running job or checkpoint was changed.
+
+Update at 20:22:07 UTC: both Miss results have since passed independent
+`verify_official` recomputation; `utility_verified_metrics.json` and
+`random_verified_metrics.json` each contain the expected Complete and Miss
+epoch records. The two Miss metrics above are now independently verified,
+not provisional. A queue-level formal verification still awaits all twenty
+final-five evaluations. The next jobs, Utility epoch14 Complete (PID1794995)
+and Random epoch15 Complete (PID1794990), are running on GPUs2/3. R1/R2
+remain on GPUs0/1; all four GPUs are occupied again.
