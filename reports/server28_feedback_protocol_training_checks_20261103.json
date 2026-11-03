@@ -1,0 +1,505 @@
+{
+  "status": "PASS",
+  "scope": "CPU synthetic batch gradients and actual OSTrack construction; no actual-network forward, images, GPU smoke, training or official metrics",
+  "batches": [
+    {
+      "curriculum": "fixed60",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed60",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "fixed50",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "progressive",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "shuffled",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "single",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "single",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "single",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "none",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "none",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "none",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "shallow",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "shallow",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "shallow",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "deep",
+      "epoch": 1,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "deep",
+      "epoch": 6,
+      "objective_gradient_ema_match": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "arm": "deep",
+      "epoch": 16,
+      "objective_gradient_ema_match": true
+    }
+  ],
+  "mask_state": [
+    {
+      "curriculum": "fixed60",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    },
+    {
+      "curriculum": "fixed50",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    },
+    {
+      "curriculum": "progressive",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    },
+    {
+      "curriculum": "shuffled",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    },
+    {
+      "curriculum": "paced",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "mask_rng_isolated": true,
+      "state_and_next_gradient_exact": true
+    }
+  ],
+  "initialization": [
+    {
+      "arm": "single",
+      "shared_parameters_buffers_exact": true,
+      "native_initialization_evidence_exact": true,
+      "caller_cpu_rng_exact": true
+    },
+    {
+      "arm": "none",
+      "shared_parameters_buffers_exact": true,
+      "native_initialization_evidence_exact": true,
+      "caller_cpu_rng_exact": true
+    },
+    {
+      "arm": "shallow",
+      "shared_parameters_buffers_exact": true,
+      "native_initialization_evidence_exact": true,
+      "caller_cpu_rng_exact": true
+    },
+    {
+      "arm": "deep",
+      "shared_parameters_buffers_exact": true,
+      "native_initialization_evidence_exact": true,
+      "caller_cpu_rng_exact": true
+    }
+  ],
+  "utility_probe_routing": true,
+  "missing_ema_updates_per_microbatch": 1,
+  "cuda_initialized": false,
+  "initializer_sha256": "8e01d6251569ac84dbb53fdd062cd938551be2d889582f789aa3070196f42f41",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_training.py": "eeb336b0d4a7dacf22b3a329ac8f8c36f32eb7618b17f8d4731bdba27738d935",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_training.py": "98bcc66b1dcf555d42777386d86ecac4965e7a26558fed2ec2333a67041a3720",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f"
+  }
+}
