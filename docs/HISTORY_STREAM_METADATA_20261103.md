@@ -47,6 +47,12 @@ their inputs fall within the required historical exclusion scope.
 No running source, seed, sampler, loader, or process was modified to repair it.
 The checker never treats missing exclusions as permission to launch.
 
+A subsequent real native CPU loader replay recovered frame identities for
+four microbatches and matched every recorded R1/R2 first-update tensor hash.
+See `docs/PROTOCOL_R_INPUT_WITNESS_20261103.md` and its hash-bound raw report.
+This prefix evidence does not establish full-run identities or close the
+historical exclusion boundary described above.
+
 ## Reproduction
 
 CPU helper arithmetic was compared with exhaustive enumeration on 3,060
