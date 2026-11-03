@@ -4109,3 +4109,16 @@ completion receipts. Therefore no follow-on campaign was authorized.
 GPU0-3 were 77/78/75/73 C, drawing246.60/248.99/249.32/249.29 W under
 250 W caps, with GPU0/1/2/3 utilization86/100/100/100%. No training,
 configuration, queue or checkpoint was changed.
+
+## 2026-11-03 18:54 UTC - R1 crossed epoch12
+
+Read-only Server 28 polling confirmed R1 PID3388846 advanced to epoch12,
+update27550; R2 PID3395457 remained at epoch11, update13500. These are
+training-log telemetry, not convergence or official metric evidence.
+The two A Miss evaluations (Utility epoch13 and Random epoch14) remained
+live on GPU2/3, while A queue PID1355742 was still `OFFICIAL_RUNNING`.
+RPPM queue3539938 remained `WAITING_FOR_R` on the same four R training and
+full-official receipts. No new result or dispatch authorization was present.
+
+GPU0-3 were 81/78/76/73 C and drew247.24/246.28/249.40/249.12 W, all under
+250 W caps. All four cards remained allocated to their registered work.
