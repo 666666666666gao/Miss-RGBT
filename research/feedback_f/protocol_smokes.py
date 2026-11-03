@@ -7,8 +7,8 @@ import torch
 
 from research.feedback_f.protocol_runner import check_config
 from research.feedback_f.protocol_training import ARMS
-from research.feedback_f.protocol_verify import check_feedback
-from research.curriculum_p.protocol_verify import records
+from research.feedback_f.protocol_verify import check_feedback, check_step
+from research.curriculum_p.protocol_verify import check_pair, records
 from research.protocol_r.common import read, sha
 
 
@@ -20,6 +20,7 @@ def verify_smokes(config, configs, verify_evidence):
                  if key not in ('feedback', 'output')}
     assert len({candidate['output'] for candidate in configs}) == 4
     evidence, initializations, inputs, feedback_initial = {}, [], [], {}
+    paired_steps = []
     for candidate in configs:
         check_config(candidate)
         verify_evidence(candidate)
@@ -36,7 +37,7 @@ def verify_smokes(config, configs, verify_evidence):
         assert sha(weight) == receipt['checkpoint_sha256']
         fingerprint = sha(root / 'input_manifest.jsonl')
         assert fingerprint == receipt['input_manifest_sha256']
-        count, updates = 0, []
+        count, updates, arm_steps = 0, [], []
         for index, (identity, step) in enumerate(zip_longest(
                 records(root / 'input_manifest.jsonl'), records(root / 'steps.jsonl'))):
             assert identity is not None and step is not None
@@ -44,6 +45,8 @@ def verify_smokes(config, configs, verify_evidence):
             assert identity['index'] == index and step['microstep'] == index + 1
             assert identity['tensors_sha256'] == step['input_sha256']
             assert math.isfinite(step['loss'])
+            check_step(candidate, index, step)
+            arm_steps.append(step)
             if (index + 1) % candidate['accumulation'] == 0:
                 assert step['update'] == (index + 1) // candidate['accumulation']
                 updates.append(step['update'])
@@ -51,6 +54,7 @@ def verify_smokes(config, configs, verify_evidence):
                 assert 'update' not in step
             count += 1
         assert count == 4 * candidate['accumulation'] and updates == [1, 2, 3, 4]
+        paired_steps.append(arm_steps)
         inputs.append(fingerprint)
         initializations.append(read(root / 'initial_state.json'))
         initial = read(root / 'feedback_initial_state.json')
@@ -75,6 +79,10 @@ def verify_smokes(config, configs, verify_evidence):
     assert all(value == initializations[0] for value in initializations)
     assert feedback_initial['single'] == feedback_initial['none'] == {}
     assert feedback_initial['shallow'] == feedback_initial['deep']
+    for rows in zip(*paired_steps):
+        for index, left in enumerate(rows):
+            for right in rows[index + 1:]:
+                check_pair(left, right)
     return dict(status='passed', arms=list(ARMS), updates_per_arm=4,
         native_initialization_and_inputs_exact=True, feedback_initialization_matched=True,
         evidence_sha256=evidence,
