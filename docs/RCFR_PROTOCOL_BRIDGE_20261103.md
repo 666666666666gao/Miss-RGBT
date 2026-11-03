@@ -104,14 +104,66 @@ This check did not use real images or learned feedback, perform backward or
 GPU smoke, evaluate a val97 model, measure FPS, or produce official metrics.
 It establishes diagnostic arithmetic and native forward compatibility only.
 
+## Isolated Training Loop
+
+`research/feedback_f/protocol_runner.py` provides a library loop for the new
+OSTrack protocol. It is not a CLI or campaign authorization. Its caller must
+verify the selected P curriculum, accepted or closed M1 decision, source
+snapshot and, for formal training, all four matched real-image smokes.
+The retired P evidence checks must not be passed unchanged as F checks.
+
+The loop uses microbatch2/accumulation2 and native AdamW/clipping, 500-update
+warmup, epoch10 LR drop, and a final-round Utility probe every four
+microbatches, alternating C/M and cycling the three searches. It records
+accepted tuple identities, tensor/mask hashes, shared and feedback-specific
+initialization, source manifest and checkpoint RNG state. Smoke mode stops
+after four optimizer updates and checks fresh CPU strict loading plus
+bitwise complete-view predictions for every round/search on the live model.
+That reload check is not an all-availability-state or resume check.
+
+Formal mode performs 20 full epochs, saves epoch10 and16-20, writes complete
+internal round-diagnostic sidecars and selects among the final five by fixed
+internal mean loss, with the earlier epoch winning a tie. Its completion
+receipt explicitly does not establish official evaluation completion.
+No resume, early stopping, pruning or active P/R source edits are introduced.
+
+`check_protocol_runner.py` compares the CPU synthetic step against a separate
+explicit optimizer loop: 6 curricula x 4 feedback modes, 24 microsteps and
+12 optimizer updates per case. It checks accumulation boundaries, exact
+model/AdamW/curriculum/RNG state, gradients, masks, alternating probe views
+for all three searches, learning-rate warmup/drop and detached all-round
+prediction snapshots. Synthetic counterfactuals have a known zero Utility
+target. This does not establish actual-network backward, real image
+smokes, checkpoint reload, full-run correctness, learned feedback or scores.
+
+Executed on server28 in the existing Python3.7/Torch1.12 environment:
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/task_utility_20261018
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/task_utility_20261018:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u \
+-m research.feedback_f.check_protocol_runner \
+--output /home/gaob/Miss-RGBT/reports/server28_feedback_protocol_runner_checks_20261103.json
+```
+
+PASS, exit0: 24 mode/curriculum cases, 576 microsteps, 288 updates, five
+learning-rate boundary cases and prediction snapshots in all four modes.
+CUDA remained uninitialized. The report SHA256 is
+`7a4940cc8d8458a42248f2a3215c37b3dfb3d544c6a4c209523ae6169290b427`;
+it binds the checker/runner/bridge/fixture source hashes, not an entire
+training snapshot. No F training was launched.
+
 ## Remaining Dependencies
 
 The old `feedback_f/prepare.py` and `train.py` still bind the retired four-arm
 P campaign, E0 continuation and partitioned data. They cannot consume the new
 six-arm campaign by changing a path. This bridge does not repair them.
 
-Next work requires a coherent new F preparation/trainer/verifier/evaluator
+Next work requires a coherent new F preparation/verifier/evaluator/dispatcher
 path using the selected P curriculum and the accepted or closed M1 decision.
+The isolated training loop requires those caller-owned gates before use.
 It must preserve native train882/fixed val97 selection, common data identities,
 20 full epochs without early stopping, epoch10 and16-20 retention, four real
 image smokes, strict model reload, and ten full official evaluations per arm.
