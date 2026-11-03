@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "cuda_initialized": false,
+  "checks": [
+    "complete_noop_all_modes",
+    "native_zero_noop",
+    "search_only",
+    "observed_stream_unchanged",
+    "missing_stream_replacement",
+    "different_sequence_donors",
+    "paired_sequence_bootstrap",
+    "both_directions_required",
+    "wrong_sequence_control_required"
+  ],
+  "real_images_executed": false,
+  "diagnostic_gate_passed": false
+}
