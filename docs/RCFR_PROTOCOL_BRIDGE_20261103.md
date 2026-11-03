@@ -59,6 +59,51 @@ full training, tracking evaluation, FPS measurement or efficacy evidence.
 The test model is deliberately small and exercises the batch objective only.
 No current P/R source or frozen training runtime was changed.
 
+## Fixed Development Validation Interface
+
+`research/feedback_f/protocol_validation.py::validate` accepts the four F
+modes explicitly and requires all 128 cached development tuples, with two
+templates and three searches per tuple. Model selection uses final-round
+native task loss averaged across complete, RGB-missing and TIR-missing states.
+This is internal selection evidence, never an official benchmark result.
+
+For two-pass arms it saves both rounds' per-tuple task losses and per-search,
+per-sample crop IoU. Boxes use the tracker's Hann-windowed native CENTER
+decoder, normalized crop coordinates, and unclipped prediction/GT. Success
+means IoU >= 0.5. Reports include corrected/destroyed counts, fractions over
+all 384 searches per state, conditional rates over originally failed/successful
+crops, higher/lower/equal IoU counts and mean IoU changes. A conditional rate
+with no eligible crops is null. No closed-loop tracking, template updates or
+full-image clipping is represented.
+
+Validation preserves the Utility selector buffer, torch CPU/current-CUDA RNG,
+and each module's training flag, including frozen batch-normalization modules.
+
+Executed on server28 in the same CPU-only environment:
+
+```bash
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/task_utility_20261018:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u \
+-m research.feedback_f.check_protocol_validation \
+--initializer /home/gaob/rgbx-initializers/OSTrack_ep0300.pth.tar \
+--output /home/gaob/Miss-RGBT/reports/server28_feedback_protocol_validation_checks_20261103.json
+```
+
+PASS: synthetic 128-tuple diagnostics in all four modes and three availability
+states; independent final-loss calculation; known IoU correction/destruction
+counts; threshold-boundary and zero-denominator cases; Hann decoding with raw
+argmax deliberately different; parameter/BN-buffer, selector, RNG and module-mode
+preservation. Actual OSTrack CPU forwards on synthetic full-size inputs also
+passed in all four modes and three states with three searches each. Zero-init
+two-pass predictions matched round1 and the shared single-pass reference.
+CUDA remained uninitialized. The report records source hashes.
+
+This check did not use real images or learned feedback, perform backward or
+GPU smoke, evaluate a val97 model, measure FPS, or produce official metrics.
+It establishes diagnostic arithmetic and native forward compatibility only.
+
 ## Remaining Dependencies
 
 The old `feedback_f/prepare.py` and `train.py` still bind the retired four-arm
@@ -74,7 +119,8 @@ Every evaluation must verify479 sequences/337353frames. Full final metrics
 must use one internally selected checkpoint/config; no test-selected maxima.
 
 New F runs use microbatch2/accumulation2, effective batch4, LR5e-5 and
-backbone LR5e-6 as previously profiled, subject to real image smoke. Actual
-round IoU correction/destruction and matched latency remain required.
+backbone LR5e-6 as previously profiled, subject to real image smoke. Learned
+round IoU correction/destruction evidence and matched latency remain required;
+the new diagnostic interface alone supplies neither.
 OHCAS's unresolved historical R frame-provenance/data gate is unchanged.
 The persistent P queue does not dispatch F or OHCAS.

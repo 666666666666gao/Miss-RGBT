@@ -1,0 +1,253 @@
+{
+  "status": "PASS",
+  "checks": {
+    "single": {
+      "native_hann_decode": true,
+      "final_task_loss_exact": true,
+      "rng_selector_parameters_bn_and_training_modes_preserved": true,
+      "all_three_states": true,
+      "cached_layout_128_tuples": true
+    },
+    "none": {
+      "native_hann_decode": true,
+      "final_task_loss_exact": true,
+      "rng_selector_parameters_bn_and_training_modes_preserved": true,
+      "all_three_states": true,
+      "cached_layout_128_tuples": true
+    },
+    "shallow": {
+      "native_hann_decode": true,
+      "final_task_loss_exact": true,
+      "rng_selector_parameters_bn_and_training_modes_preserved": true,
+      "all_three_states": true,
+      "cached_layout_128_tuples": true
+    },
+    "deep": {
+      "native_hann_decode": true,
+      "final_task_loss_exact": true,
+      "rng_selector_parameters_bn_and_training_modes_preserved": true,
+      "all_three_states": true,
+      "cached_layout_128_tuples": true
+    }
+  },
+  "native_forward": {
+    "single": {
+      "11": {
+        "loss": [
+          42.05843734741211
+        ],
+        "iou": [
+          [
+            0.06268088519573212
+          ],
+          [
+            0.06271291524171829
+          ],
+          [
+            0.06266413629055023
+          ]
+        ]
+      },
+      "01": {
+        "loss": [
+          40.26076126098633
+        ],
+        "iou": [
+          [
+            0.06264692544937134
+          ],
+          [
+            0.06261055171489716
+          ],
+          [
+            0.06257332861423492
+          ]
+        ]
+      },
+      "10": {
+        "loss": [
+          42.53730010986328
+        ],
+        "iou": [
+          [
+            0.0635572224855423
+          ],
+          [
+            0.06333257257938385
+          ],
+          [
+            0.06347109377384186
+          ]
+        ]
+      }
+    },
+    "none": {
+      "11": {
+        "loss": [
+          42.05843734741211
+        ],
+        "iou": [
+          [
+            0.06268088519573212
+          ],
+          [
+            0.06271291524171829
+          ],
+          [
+            0.06266413629055023
+          ]
+        ]
+      },
+      "01": {
+        "loss": [
+          40.26076126098633
+        ],
+        "iou": [
+          [
+            0.06264692544937134
+          ],
+          [
+            0.06261055171489716
+          ],
+          [
+            0.06257332861423492
+          ]
+        ]
+      },
+      "10": {
+        "loss": [
+          42.53730010986328
+        ],
+        "iou": [
+          [
+            0.0635572224855423
+          ],
+          [
+            0.06333257257938385
+          ],
+          [
+            0.06347109377384186
+          ]
+        ]
+      }
+    },
+    "shallow": {
+      "11": {
+        "loss": [
+          42.05843734741211
+        ],
+        "iou": [
+          [
+            0.06268088519573212
+          ],
+          [
+            0.06271291524171829
+          ],
+          [
+            0.06266413629055023
+          ]
+        ]
+      },
+      "01": {
+        "loss": [
+          40.26076126098633
+        ],
+        "iou": [
+          [
+            0.06264692544937134
+          ],
+          [
+            0.06261055171489716
+          ],
+          [
+            0.06257332861423492
+          ]
+        ]
+      },
+      "10": {
+        "loss": [
+          42.53730010986328
+        ],
+        "iou": [
+          [
+            0.0635572224855423
+          ],
+          [
+            0.06333257257938385
+          ],
+          [
+            0.06347109377384186
+          ]
+        ]
+      }
+    },
+    "deep": {
+      "11": {
+        "loss": [
+          42.05843734741211
+        ],
+        "iou": [
+          [
+            0.06268088519573212
+          ],
+          [
+            0.06271291524171829
+          ],
+          [
+            0.06266413629055023
+          ]
+        ]
+      },
+      "01": {
+        "loss": [
+          40.26076126098633
+        ],
+        "iou": [
+          [
+            0.06264692544937134
+          ],
+          [
+            0.06261055171489716
+          ],
+          [
+            0.06257332861423492
+          ]
+        ]
+      },
+      "10": {
+        "loss": [
+          42.53730010986328
+        ],
+        "iou": [
+          [
+            0.0635572224855423
+          ],
+          [
+            0.06333257257938385
+          ],
+          [
+            0.06347109377384186
+          ]
+        ]
+      }
+    }
+  },
+  "cuda_initialized": false,
+  "threshold_boundary_and_zero_denominators": true,
+  "scope": "CPU synthetic cache diagnostics; native OSTrack forwards only if supplied",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_validation.py": "fd5097e66b03e4ee6bde74ce7e255418b6051bdcaf05a280d9894066279f739d",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_validation.py": "49b1784e1384288509409a4e2cb78b38e4e8f1c5d51057aded87cc32f0acd127",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_training.py": "98bcc66b1dcf555d42777386d86ecac4965e7a26558fed2ec2333a67041a3720",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/utils/box_ops.py": "cee9d309a9c4a6c5f00fab575719bc7bf8d865127c91b10d4fb233996a111fbc",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/test/utils/hann.py": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+  },
+  "limitations": [
+    "No real images, learned feedback or CUDA smoke",
+    "Not a full val97 model evaluation, training, latency or official tracking result",
+    "F parent preparation, trainer and complete official dispatch remain unimplemented"
+  ]
+}
