@@ -54,10 +54,62 @@ def add_completed_replay(root, used, hashes):
                 epoch2_prefix_tuples=16, full_original_r_provenance_verified=False)
 
 
+def add_completed_epoch(receipt_path, used, hashes):
+    """Apply one closed conditional replay manifest, never an active epoch."""
+    receipt_path = Path(receipt_path).resolve()
+    root = receipt_path.parent
+    registration_path = root / 'registration.json'
+    registration = json.loads(registration_path.read_text())
+    receipt = json.loads(receipt_path.read_text())
+    epoch = receipt['epoch']
+    assert epoch in registration['epochs'] and 2 <= epoch <= 20
+    assert receipt_path.name == 'epoch%02d_completed.json' % epoch
+    assert registration['cpu_only'] is True
+    assert registration['actual_original_inputs_independently_certified'] is False
+    assert registration['ohcas_data_gate_passed'] is False
+    witness = Path(registration['witness'])
+    assert base.prior.common.sha256(witness / 'report.json') == (
+        registration['witness_report_sha256'])
+    witness_done = json.loads((witness / 'completed.json').read_text())
+    assert witness_done['status'] == 'complete'
+    assert witness_done['report_sha256'] == registration['witness_report_sha256']
+    for name, expected in registration['source_sha256'].items():
+        assert base.prior.common.sha256(name) == expected, name
+        hashes[name] = expected
+    for arm, expected in registration['run_config_sha256'].items():
+        path = base.PROJECT / 'runs/server28_protocol_r_20261103' / arm / 'run_config.json'
+        assert base.prior.common.sha256(path) == expected
+        hashes[str(path)] = expected
+    manifest = root / ('epoch%02d_input_manifest.jsonl' % epoch)
+    assert Path(receipt['manifest']).resolve() == manifest
+    assert base.prior.common.sha256(manifest) == receipt['manifest_sha256']
+    count, tuples = 0, 0
+    with manifest.open() as stream:
+        for count, line in enumerate(stream, 1):
+            row = json.loads(line)
+            assert row['epoch'] == epoch and row['index'] == count - 1
+            assert len(row['identities']) == 4
+            for identity in row['identities']:
+                used[identity['sequence']].update(
+                    identity['template_frames'] + identity['search_frames'])
+                tuples += 1
+    assert count == receipt['microbatches'] == registration['microbatches_per_epoch'] == 5000
+    assert tuples == receipt['tuples'] == 20000
+    assert base.prior.common.sha256(manifest) == receipt['manifest_sha256']
+    for path in (receipt_path, registration_path, manifest,
+                 witness / 'report.json', witness / 'completed.json'):
+        hashes[str(path)] = base.prior.common.sha256(path)
+    return dict(epoch=epoch, tuples=tuples, receipt=str(receipt_path),
+                manifest_sha256=receipt['manifest_sha256'],
+                full_original_r_provenance_verified=False)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', required=True)
     parser.add_argument('--completed-r-replay')
+    parser.add_argument('--completed-r-epoch', action='append', default=[],
+                        help='Closed per-epoch receipt; repeat for completed epochs only')
     args = parser.parse_args()
     started = time.time()
     output = Path(args.output)
@@ -76,6 +128,9 @@ def main():
                 identity['template_frames'] + identity['search_frames'])
     replay = (add_completed_replay(args.completed_r_replay, used, hashes)
               if args.completed_r_replay else None)
+    replay_epochs = [add_completed_epoch(path, used, hashes)
+                     for path in args.completed_r_epoch]
+    assert len({row['epoch'] for row in replay_epochs}) == len(replay_epochs)
     verification = base.PROJECT / 'reports/server28_partitioned_a_20261102_formal/verification_v2.json'
     blockers, inventory = [], []
     if verification.exists():
@@ -126,10 +181,11 @@ def main():
         exclusion_sources_sha256=hashes, unresolved_exclusions=blockers,
         campaign_inventory=inventory, sequence_details=details,
         completed_r_replay_exclusions=replay,
+        completed_r_epoch_exclusions=replay_epochs,
         source_sha256={str(path.resolve()): base.prior.common.sha256(path) for path in sources},
         images_opened=0, gpu_allocations=0, cache_created=False,
         scope='Upper bound under completed historical diagnostic/cache exclusions '
-              'and the optional completed partial R replay. '
+              'and optional completed conditional R replay epochs. '
               'No growing manifests read; no historical-union or real-image acceptance claim. '
               'Candidate identities are examples, not a reserved or approved cache.')
     base.save(output, report)
