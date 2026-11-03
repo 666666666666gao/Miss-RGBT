@@ -1,5 +1,40 @@
 # Miss-RGBT 交接文档
 
+## 2026-11-03 09:50 CST - 四卡训练正常，六臂接续队列已注册
+
+服务器28四卡现有任务继续运行：GPU0 R1 trainer3388846/controller3388832，
+GPU1 R2 trainer3395457/controller3395402，GPU2 A Utility1288280，
+GPU3 A Random1288281；A全量评估队列1355742正常等待。09:48核验温度
+80/79/78/75C，功率上限均250W；这是实测及功率上限，不是硬85C保证。
+R1/R2仍在epoch1，09:50约update1425/650；A两臂epoch10约19850/19925。
+单步损失有限，不据此声称收敛或新增官方指标。现有训练与冻结源文件未改。
+
+新持久队列PID3539938，实际命令research/curriculum_p/protocol_queue.py，
+09:50:19确认WAITING_FOR_R，目录reports/server28_rppm_ostrack_20261103_queue。
+等待R1/R2两份训练核验和两份官方完成凭据，再独立复算20次全量评估并检查
+R1选中权重Complete五项均不低于E0-0.1pp。门槛失败即停止，不能替换协议。
+不要重启退役P控制器2911513；不要再启动同名队列。新队列及其绑定的
+research/curriculum_p和research/protocol_r源文件必须保持冻结。
+
+门槛通过后，六臂fixed60/fixed50/progressive/shuffled/paced/paced+norm先各做
+4个真实optimizer更新并严格重载；六臂全部通过再用空闲GPU0-3最多四项并行。
+每臂20轮不早停、保留10及16-20轮，以固定val97内部任务损失选末五轮权重；
+每张卡接着做该臂5权重×Complete/Miss全量评估，每项479序列/337353帧，
+4workers/卡，独立复算；共60项，完成后核验六臂输入/掩码配对。
+队列300秒轮询，卡释放后分配待办，不抢占健康任务；子任务失败停止新派发。
+
+新增protocol_verify.py、protocol_launch.py、protocol_queue.py及检查器。
+服务器CPU合成检查PASS：288step、36小型权重、240命令、12模拟调度；
+未初始化CUDA。报告reports/server28_rppm_evidence_checks_v2_20261103.json，
+SHA0aa8aaea313ef4cfe1883cfed8e190f4b42298c032d92cc9b845937e72c53905，
+本地/服务器报告与绑定源文件哈希相同；现有R源检查通过。
+这不代表实际完整权重核验、真实六臂smoke或正式评估已执行。
+细节docs/RPPM_PROTOCOL_ENTRY_20261103.md。
+
+R前置未完成期间不能承诺四卡始终无空闲。OHCAS仍因R历史全帧清单缺失受阻，
+等待本身不能补回清单；未获数据门槛与真实诊断证据前不启动OHCAS训练。
+环境原样复用，无重建、权重清理或新增官方分数。总研究目标仍未完成。
+
 ## 2026-11-03 00:14 CST - A组正式训练进度
 
 只读 SSH 核验原 Utility/Random 训练进程 PID1288280/1288281 仍存活，均在

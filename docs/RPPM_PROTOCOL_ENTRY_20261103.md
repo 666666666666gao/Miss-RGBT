@@ -2,9 +2,10 @@
 
 ## Status
 
-The isolated preparation and training entries exist and passed the CPU
-contracts below on server28 on 2026-11-03. They have not read real images,
-created a campaign, run an optimizer smoke, or produced official metrics.
+The isolated preparation, trainer, saved-run verifier, single-arm controller
+and four-GPU dispatcher exist and passed the CPU contracts below on server28
+on 2026-11-03. The new six-arm workflow has not read real images, created a
+campaign, run an optimizer smoke, or produced official metrics.
 The four GPUs remain assigned to the existing R1/R2 and A Utility/Random jobs.
 
 Sources:
@@ -12,6 +13,10 @@ Sources:
 - `research/curriculum_p/protocol_prepare.py`
 - `research/curriculum_p/protocol_train.py`
 - `research/curriculum_p/check_protocol.py`
+- `research/curriculum_p/protocol_verify.py`
+- `research/curriculum_p/protocol_launch.py`
+- `research/curriculum_p/protocol_queue.py`
+- `research/curriculum_p/check_protocol_evidence.py`
 
 These entries do not modify the old E0-continuation P workflow. Do not restart
 its retired controller PID2911513.
@@ -101,12 +106,68 @@ The checker is deliberately tied to the current unfinished R campaign; it
 asserts that the actual gate is blocked. Do not rerun it unchanged after R
 completion and interpret that assertion as a protocol failure.
 
+## Saved-Evidence and Dispatch Checks
+
+Executed in the same server environment with CUDA hidden:
+
+```bash
+cd /home/gaob/Miss-RGBT
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH="$PWD/runtime/task_utility_20261018:$PWD" \
+conda-envs/miss_rgbt/bin/python research/curriculum_p/check_protocol_evidence.py \
+--output reports/server28_rppm_evidence_checks_v2_20261103.json
+```
+
+Result: PASS, `cuda_initialized=false`. This uses 288 synthetic step records,
+36 tiny serialized checkpoint fixtures, 60 distinct evaluation destinations,
+240 single-GPU command fixtures and 12 mocked scheduler dispatches. Checks
+cover invalid history, curriculum/masks, finite gradients, optimizer state,
+BN, EMA and consumed loader position; child exit records and the frozen
+working directory; exclusion of busy/hot GPUs; and stopping new dispatch
+after a failed child. All controller waits are 300 seconds.
+
+Report SHA256:
+`0aa8aaea313ef4cfe1883cfed8e190f4b42298c032d92cc9b845937e72c53905`.
+The report binds all five new/changed entry sources by SHA256. CLI imports
+passed, the actual incomplete R gate returned four missing receipts, and
+the unchanged active R source check passed separately.
+
+These are CPU helper checks. The complete saved-run verification branch,
+positive completed-R gate, native-image smokes and real official execution
+remain unexecuted. No efficacy claim follows from these fixtures.
+
+## Persistent Queue
+
+`protocol_queue.py` registers under
+`reports/server28_rppm_ostrack_20261103_queue`. It waits for both R training
+verifications and both full-official completion receipts, then invokes the
+independent preparation gate above. If the gate fails, it does not launch
+an arm or silently substitute R3.
+
+After a passing gate, it dispatches all six real four-update smokes onto
+available physical GPUs 0-3. Only after all six succeed does it dispatch
+the six formal arms, up to four concurrently, assigning a pending arm
+when a card is free. Each arm controller retains its card through training,
+saved-evidence verification and ten full official evaluations. A card must
+have less than 500 MiB used, temperature below 85 C and a 250 W cap.
+Existing healthy jobs are not preempted.
+
+The queue checks frozen source hashes on each 300-second cycle, records
+launches/exits and stops new dispatch on child failure. After all sixty
+evaluations, it runs the six-arm pairing verification. Official rows carry
+the internally selected epoch, and cross-arm verification remains explicitly
+pending until that final check. All weights and failure logs are retained.
+
+This queue does not promise continuous four-card utilization while prerequisite
+R evidence is incomplete. OHCAS is still blocked by missing historical R
+frame provenance; this queue neither repairs that evidence nor launches it.
+
 ## Remaining Work
 
 The real-image six-arm smokes and native-loader parity remain unexecuted.
 Positive completed-R gate execution and the snapshot training path remain
-unexecuted. The formal saved-run verifier and full official controller for
-this new protocol are not implemented. Sixty full evaluations are required:
+unexecuted. The implemented formal saved-run verifier and full official
+controller still require actual saved-run execution. Sixty full evaluations are required:
 six arms times five checkpoints times Complete/Miss. No new official score
 or module efficacy follows from this CPU receipt.
 
@@ -114,3 +175,14 @@ Keep the healthy current jobs and their existing automatic full evaluation
 queues running. Do not allocate another GPU worker to an occupied card.
 Existing controller polling is300 seconds. The observed250W caps and
 temperatures below85C are not a guarantee of a hard85C temperature limit.
+
+## Observed Registration
+
+At 2026-11-03 09:50:19 CST (01:50:19 UTC), the persistent queue was
+registered as PID3539938 and its actual process command was verified alive.
+Its status is `WAITING_FOR_R`, with the four required R receipts absent.
+Registration, initial status, launch and source-hash records are preserved
+under `reports/server28_rppm_ostrack_20261103_queue` and the sibling
+`.launch.json`. Published status is a historical observation, not a live
+status feed. All seven existing training/controller commands were separately
+verified alive at09:48 CST; no new GPU worker was launched by this queue.

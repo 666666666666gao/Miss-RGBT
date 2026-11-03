@@ -161,7 +161,7 @@ def main():
         expected_full_evaluations=60, sequences_per_evaluation=479,
         frames_per_evaluation=337353, resume_supported=False,
         bn_difference_from_r='All BN frozen for Utility probes, shared across six arms'))
-    print('PREPARED six arms; real smoke, formal verifier and controller still required')
+    print('PREPARED six arms; all real smokes required before formal training')
 
 
 if __name__ == '__main__':

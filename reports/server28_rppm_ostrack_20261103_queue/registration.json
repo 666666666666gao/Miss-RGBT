@@ -1,0 +1,27 @@
+{
+  "pid": 3539938,
+  "arms": [
+    "fixed60",
+    "fixed50",
+    "progressive",
+    "shuffled",
+    "paced",
+    "paced+norm"
+  ],
+  "poll_seconds": 300,
+  "gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "preempts_existing_jobs": false,
+  "gate": "Both R full training verifications and twenty full official evaluations",
+  "smoke_before_formal": "All six four-update real-image smokes",
+  "formal_epochs": 20,
+  "full_evaluations_per_arm": 10,
+  "total_full_evaluations": 60,
+  "full_sequences": 479,
+  "full_frames": 337353,
+  "registered_utc": "2026-11-03T01:50:19.255150Z"
+}
