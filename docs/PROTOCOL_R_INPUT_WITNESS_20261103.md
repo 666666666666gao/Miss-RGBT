@@ -120,3 +120,33 @@ The epoch-one manifest SHA256 is
 This advances epoch-boundary reproducibility evidence. It does not turn
 the replay into an independently certified full original R manifest, or
 authorize OHCAS. The active trainer sources/processes were not modified.
+
+## Conditional Twenty-Epoch Reconstruction Running
+
+`scripts/reconstruct_protocol_r_frames.py` extends that completed witness
+without repeating epoch one. It advances the native loader's epoch-one seed
+boundary, verifies epoch two's first four actual image batches against the
+completed witness, then decodes/augments every returned native tuple through
+epochs2-20. It checks the main CPU RNG after each batch, hashes the frozen
+sources before every epoch, and writes separate immutable epoch manifests
+and completion receipts. It does not construct a model or allocate CUDA.
+
+At 2026-11-03 14:49:08 CST, PID200073 was live, epoch2 had passed500/5000
+microbatches, and the first four batches had therefore matched the witness.
+Measured speed was 145.323795 seconds per500batches, approximately24.2
+minutes per epoch. The nineteen-epoch replay is estimated to finish near
+22:25 CST on November3, excluding unexpected I/O changes.
+
+Server output is
+`reports/server28_protocol_r_full_reconstruction_20261103/`, with sibling
+`.log`; the publication registration copy is
+`reports/server28_protocol_r_full_reconstruction_registration_20261103.json`.
+Check the actual process plus `status.json` at a meaningful milestone.
+Do not duplicate/restart it solely because a query times out.
+
+This is a conditional reconstruction. It may include future planned inputs
+ahead of original training. Its registration and final report explicitly
+keep original-input independent certification and OHCAS authorization false.
+Completion alone does not close the data gate: original training's CPU-RNG
+noninterference, terminal state and the actual exclusion union still need
+audit. Active R/P sources, GPU trainers and queues remain unchanged.
