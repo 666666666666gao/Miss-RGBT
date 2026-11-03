@@ -1,0 +1,94 @@
+"""Metadata-only history feasibility; never freeze active training manifests."""
+import argparse
+import json
+from pathlib import Path
+import time
+
+from lib.train.dataset import LasHeR
+import audit_partitioned_fresh_frames as previous
+from research.history_stream.metadata import history_candidates
+
+base = previous.base
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--output', required=True)
+    args = parser.parse_args()
+    started = time.time()
+    output = Path(args.output)
+    assert not output.exists()
+    names_path = Path('lib/train/data_specs/lasher_train.txt')
+    names = names_path.read_text().splitlines()
+    assert len(names) == len(set(names)) == 882
+    fitting = [name for index, name in enumerate(names) if index % 5]
+    used, hashes = base.prior.exclusions()
+    dense = base.PROJECT / 'reports/server28_dense_geometry_20261102/report.json'
+    hashes[str(dense)] = base.prior.common.sha256(dense)
+    for manifest in json.loads(dense.read_text())['cache_manifests'].values():
+        for entry in manifest['input_manifest']:
+            identity = entry['identity']
+            used[identity['sequence']].update(
+                identity['template_frames'] + identity['search_frames'])
+    verification = base.PROJECT / 'reports/server28_partitioned_a_20261102_formal/verification_v2.json'
+    blockers, inventory = [], []
+    if verification.exists():
+        previous.add_verified_partitioned_a_exclusions(verification, used, hashes)
+    else:
+        blockers.append('Partitioned A formal verification absent; growing manifests not read.')
+    for arm in ('utility', 'random'):
+        root = base.PROJECT / 'runs/server28_partitioned_a_20261102_formal' / arm
+        inventory.append(dict(campaign='partitioned_a', arm=arm,
+            completed_exists=(root / 'completed.json').exists(),
+            frame_manifest_exists=(root / 'input_manifest.jsonl').exists(),
+            exclusions_applied=verification.exists()))
+    for arm in ('r1', 'r2'):
+        root = base.PROJECT / 'runs/server28_protocol_r_20261103' / arm
+        manifest = root / 'input_manifest.jsonl'
+        inventory.append(dict(campaign='protocol_r', arm=arm,
+            completed_exists=(root / 'completed.json').exists(),
+            frame_manifest_exists=manifest.exists(), exclusions_applied=False))
+        blockers.append('Protocol %s frame exclusion not implemented; '
+                        'tensor hashes do not identify source frames.' % arm)
+    config_path = base.PROJECT / 'reports/server28_partitioned_a_20261102_formal/utility.json'
+    config = json.loads(config_path.read_text())
+    dataset = LasHeR(root=config['dataset'], split='train', dtype='rgbrgb')
+    dataset.sequence_list = fitting
+    details = []
+    for index, name in enumerate(fitting):
+        info = dataset.get_sequence_info(index)
+        visible = (info['visible'].bool() & info['valid'].bool()).tolist()
+        result = history_candidates(visible, used[name])
+        if result['first_candidate'] is not None:
+            result['first_candidate']['sequence'] = name
+        result.update(sequence=name, frames=len(visible),
+                      excluded_frames=len(used[name]))
+        details.append(result)
+    sources = [Path(__file__), Path(previous.__file__),
+        Path('research/history_stream/metadata.py'), names_path, config_path,
+        Path('lib/train/dataset/lasher.py'),
+        base.PROJECT / 'runtime/protocol_r_20261103/research/protocol_r/train.py']
+    eligible = sum(row['eligible_searches'] > 0 for row in details)
+    report = dict(status='metadata_complete', data_gate_passed=False,
+        all_historical_frame_exclusions_verified=False,
+        evaluated_at_unix=time.time(), seconds=time.time() - started,
+        split='train882_fitting', sequences=len(fitting), history_max_age=64,
+        eligible_sequences=eligible, required_samples=128,
+        enough_distinct_sequences_under_partial_exclusions=eligible >= 128,
+        eligible_searches=sum(row['eligible_searches'] for row in details),
+        history_search_pairs=sum(row['history_search_pairs'] for row in details),
+        exclusion_sources_sha256=hashes, unresolved_exclusions=blockers,
+        campaign_inventory=inventory, sequence_details=details,
+        source_sha256={str(path.resolve()): base.prior.common.sha256(path) for path in sources},
+        images_opened=0, gpu_allocations=0, cache_created=False,
+        scope='Upper bound under completed historical diagnostic/cache exclusions only. '
+              'No growing manifests read; no historical-union or real-image acceptance claim. '
+              'Candidate identities are examples, not a reserved or approved cache.')
+    base.save(output, report)
+    print(json.dumps({key: value for key, value in report.items()
+                      if key not in ('sequence_details', 'exclusion_sources_sha256',
+                                     'source_sha256')}), flush=True)
+
+
+if __name__ == '__main__':
+    main()
