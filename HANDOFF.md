@@ -4278,3 +4278,23 @@ not provisional. A queue-level formal verification still awaits all twenty
 final-five evaluations. The next jobs, Utility epoch14 Complete (PID1794995)
 and Random epoch15 Complete (PID1794990), are running on GPUs2/3. R1/R2
 remain on GPUs0/1; all four GPUs are occupied again.
+
+## 2026-11-03 20:57 UTC - A training receipts complete; official queue remains active
+
+Read-only check confirmed both A training processes have exited and their
+stable `completed.json` receipts report `complete`: Utility finished 17
+epochs/34,000 updates and selected epoch14; Random finished 18 epochs/36,000
+updates and selected epoch15. Both receipts state all checkpoints retained
+and no official-test selection. The formal training
+`reports/server28_partitioned_a_20261102_formal/verification_v2.json` is
+`passed` for saved-evidence checks; its scope explicitly is not independent
+image/gradient replay.
+
+This is not the official queue's final formal verification. Queue PID1355742
+and both arm controllers 1601932/1601933 remain alive in `OFFICIAL_RUNNING`;
+the queue-level formal receipt is absent. Utility epoch14 Complete (PID1794995)
+and Random epoch15 Complete (PID1794990) are still evaluating full 479-sequence
+runs. GPU0-3 are all allocated (19,160/19,160/9,106/9,138 MiB) at 81/78/77/74 C
+and 246.56/246.68/249.05/249.57 W, below their 250 W limits. No next-stage
+dispatch is authorized until the official queue's final formal verification
+passes; no process, config, or checkpoint was changed.
