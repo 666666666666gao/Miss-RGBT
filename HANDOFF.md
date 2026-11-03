@@ -4298,3 +4298,22 @@ runs. GPU0-3 are all allocated (19,160/19,160/9,106/9,138 MiB) at 81/78/77/74 C
 and 246.56/246.68/249.05/249.57 W, below their 250 W limits. No next-stage
 dispatch is authorized until the official queue's final formal verification
 passes; no process, config, or checkpoint was changed.
+
+## 2026-11-03 22:13 UTC - Final-five Complete evaluations near full coverage
+
+Read-only Server28 poll at22:13:22Z confirmed Utility epoch14 Complete
+evaluator1794995 and Random epoch15 Complete evaluator1794990 remain alive;
+their queue controllers1601932/1601933 and parent queue1355742 also remain
+alive in `OFFICIAL_RUNNING`. Log-derived progress is Utility368/479 sequences,
+323,761/337,353 frames and Random393/479 sequences,328,048/337,353 frames.
+No completion receipts or queue-level formal-verification receipt exist yet.
+
+Both A training `completed.json` receipts remain `complete` (17/34,000 and
+18/36,000 epochs/updates), retain all checkpoints, and state no official-test
+selection. Training-scope `verification_v2.json` remains `passed`; this is
+separate from the pending official queue verification. R1/R2 trainers3388846/
+3395457 and RPPM queue3539938 remain alive; RPPM is still `WAITING_FOR_R` on
+the same four R training-verification/full-official receipts. GPU0-3 are all
+occupied at80/78/76/73 C,246.58/248.36/249.41/248.77W and100% utilization.
+No task was stopped, restarted or dispatched; no config, manifest or
+checkpoint was changed.
