@@ -97,12 +97,16 @@ status=passed, overlapping_frames=0, and SHA256 of the sorted-key JSON list
 of all cache identities. It must independently check every template, search
 and historical frame against the frozen exclusion union.
 
-No such cache or audit was produced in this implementation step. A manifests
-are still growing. Before preparing the cache, inventory all historical input
-manifests, freeze completed A exclusions and explicitly resolve the scope of
-the concurrently running R1/R2 manifests. Do not snapshot a growing manifest
-and call it a completed exclusion union. Check metadata feasibility again
-before opening images; do not silently weaken freshness if too few frames remain.
+No such cache or audit was produced in this implementation step. At the
+2026-11-04 01:24 CST recheck, both A training arms had completed and their
+training verifier had passed, so their manifests are no longer growing. The
+registered full official evaluation queue is still running; it has not passed
+its final formal verification. R1/R2 remain live and do not have per-frame
+input manifests. Before preparing the cache, inventory all historical input
+manifests, bind the frozen A exclusions, and resolve the scope of the
+concurrently running R1/R2 inputs. Do not treat missing R frame identities as
+an empty exclusion set. Check metadata feasibility again before opening images;
+do not silently weaken freshness if too few frames remain.
 
 ## Execution
 

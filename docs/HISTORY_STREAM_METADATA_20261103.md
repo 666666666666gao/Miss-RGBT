@@ -32,9 +32,11 @@ sampler's two-template/three-search eligibility condition, so the older
 The actual report records `data_gate_passed=false` and
 `all_historical_frame_exclusions_verified=false`:
 
-1. Partitioned A Utility/Random are still training. Their manifests exist,
-   but neither completion nor formal verification exists. Their growing
-   manifests were not read or frozen.
+1. At report creation, partitioned A Utility/Random were still training. At
+   the 2026-11-04 01:24 CST recheck, both had completed, both completion
+   receipts were present, and `verification_v2.json` reported `passed`.
+   Their manifests are now frozen. The separate full official evaluation
+   queue remains in progress and has not passed its final formal verification.
 2. R1/R2 are still training. Neither run has `input_manifest.jsonl`.
    The frozen trainer records tensor hashes for the first optimizer update,
    but no per-frame identities. Waiting for completion alone will not create

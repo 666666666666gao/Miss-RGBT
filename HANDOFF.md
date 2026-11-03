@@ -4038,3 +4038,37 @@ GPU0/1 remain idle because they are reserved for the registered official
 full-dataset evaluation queue after the A formal gate. Preserve the
 last-five-epoch Complete+Miss evaluation and do not use val97 or test
 metrics for selection.
+
+## 2026-11-04 01:24 CST - OHCAS residual contract and queue state
+
+Added an isolated `HistoryResidualAdapter` and CPU contract checker under
+`research/history_stream/`. The adapter returns
+`native + (1 - availability) * delta(native, history, log1p(age))`; its final
+projection is zero-initialized. The check passed in Server 28's Python
+3.7/PyTorch 1.12 environment with CUDA hidden: exact initialization parity,
+available-stream invariance after making the residual nonzero, history/age
+sensitivity on the missing stream, and finite nonzero output-projection
+gradient. This was an in-memory execution of the local source; no new source
+was copied into the active project or frozen snapshots. It is an interface
+contract only, not model integration or efficacy evidence.
+
+At 01:24:28 CST, A Utility/Random completion receipts were present at
+`runs/server28_partitioned_a_20261102_formal/{utility,random}/completed.json`.
+The receipt counts are 17 epochs/34,000 updates and 18 epochs/36,000 updates;
+both retain all checkpoints and exclude official-test-based selection.
+`reports/server28_partitioned_a_20261102_formal/verification_v2.json` is
+`passed`, with scope limited to saved-evidence verification.
+
+The A official queue PID1355742 remains `OFFICIAL_RUNNING`. Its Utility epoch13
+Complete job (PID1601993/GPU2) and Random epoch14 Complete job (PID1601948/GPU3)
+each require 479 sequences / 337,353 frames. The queue's final formal
+verification has not passed. R1 PID3388846 and R2 PID3395457 remain alive on
+GPU0/1; P queue PID3539938 remains `WAITING_FOR_R` for the four registered R
+training/official receipts. No GPU is free and no next-stage task was
+dispatched.
+
+GPU0-3 at 01:24:28 CST: temperatures 81/78/76/73 C, power draw
+245.75/246.61/247.09/244.74 W under 250 W limits, memory
+19160/19160/9106/9138 MiB, utilization 100/100/94/90%. No new official score,
+checkpoint cleanup, restart, or active protocol-source change. Overall
+targets and three validated modules remain unproven.
