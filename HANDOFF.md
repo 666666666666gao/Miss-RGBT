@@ -4336,3 +4336,24 @@ queue3539938 remains `WAITING_FOR_R` on four missing R receipts. GPU0-3:
 80/77/74/73 C,246.43/247.12/249.14/247.98W, utilization100/100/100/91%.
 No additional task was dispatched; configs, manifests and checkpoints were
 left untouched.
+
+## 2026-11-03 22:31 UTC - Miss evaluations active; early sequences are long
+
+Read-only poll at22:31:43Z confirmed both full Miss evaluators remain alive:
+Utility epoch14 PID1873594 on GPU2 and Random epoch15 PID1870217 on GPU3.
+Random has completed four LasHeR-Miss sequences totaling39,393 frames:
+"blkboy`shead" (12,862; 695.68s), `broom` (9,538; 742.95s),
+`boyshead9684` (9,684; 755.96s), and `midredboy` (7,309; 774.77s).
+This is 11.7% of its registered337,353-frame scope, not a partial result.
+Utility has no completed sequence record yet; its process and workers remain
+live with GPU2 at100% utilization, so no stall or failure is established.
+The long initial sequences explain the earlier lack of per-sequence log rows;
+any ETA remains provisional.
+
+A queue1355742 and arm controllers1601932/1601933 remain
+`OFFICIAL_RUNNING`; no queue-level completion or final formal verification
+exists. A training receipts and saved-evidence `verification_v2.json` remain
+complete/passed. R1/R2 trainers3388846/3395457 remain live and RPPM3539938
+still waits for four R receipts. GPU0-3:81/78/77/73 C,
+246.45/246.75/249.43/249.02W, utilization100/60/100/100%. No new dispatch
+or intervention; configurations, manifests and checkpoints are unchanged.
