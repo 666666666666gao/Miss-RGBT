@@ -4081,3 +4081,31 @@ targets and three validated modules remain unproven.
 - This is protocol/interface evidence only: no image smoke, F training, learned weights, full GPU tracker integration, official metrics or efficacy claim. All four GPUs remained occupied, so `check_tracker.py` was not run. No active source snapshot, config, queue, checkpoint or growing manifest was changed.
 - At 02:14:15 CST, A training receipts and saved-evidence verification remained complete. A official queue PID1355742 remained `OFFICIAL_RUNNING`; its Utility epoch13 Complete PID1601993/GPU2 and Random epoch14 Complete PID1601948/GPU3 were still live. R1/R2 PIDs3388846/3395457 were live and P queue3539938 remained `WAITING_FOR_R`. Temperatures were81/78/76/73 C, power246.96-249.44 W, and all four GPUs were occupied. No official campaign completion or next-stage authorization was present.
 - One isolated test attempt initially lacked copied dependencies required for source-hash resolution; after adding the read-only source files to the `/tmp` overlay, the saved-evidence and official tests passed. No product-code change was needed for that harness setup issue.
+
+## 2026-11-03 18:34 UTC - A full-official queue progress
+
+Read-only Server 28 checks confirmed A Utility/Random receipts complete at
+17/34,000 and 18/36,000 epochs/updates; both checkpoint sets are retained.
+The training-scope `verification_v2.json` is `passed`. This is distinct from
+the still-running official-evaluation queue's final formal verification.
+
+Utility epoch13 Complete and Random epoch14 Complete each completed the full
+479-sequence / 337,353-frame evaluation and passed independent
+`verify_official` recomputation. Utility metrics (LasHeR PR/NPR/SR,
+RGBT234 MPR/MSR): 73.891323/70.522389/59.025243,
+87.456205/64.369160. Random: 74.008829/70.746387/59.087931,
+87.647063/64.243282. These are two of twenty post-hoc final-five
+evaluations, on Complete input; they do not answer the LasHeR-Miss target
+and do not select checkpoints.
+
+At server-reported 2026-11-03 18:34 UTC, Utility epoch13 Miss and Random
+epoch14 Miss were running on GPU2/3. R1/R2 trainers3388846/3395457 remained
+live on GPU0/1, around epoch11 (latest logged updates26950/13200). The A
+queue was still `OFFICIAL_RUNNING`; no queue-level completed receipt or
+final formal verification existed. The RPPM queue3539938 remained
+`WAITING_FOR_R`, missing r1/r2 training-verification and full-official
+completion receipts. Therefore no follow-on campaign was authorized.
+
+GPU0-3 were 77/78/75/73 C, drawing246.60/248.99/249.32/249.29 W under
+250 W caps, with GPU0/1/2/3 utilization86/100/100/100%. No training,
+configuration, queue or checkpoint was changed.
