@@ -4188,3 +4188,18 @@ GPU0-3 remain allocated at 81/78/77/74 C and 246.68/246.29/249.10/249.34 W;
 memory is 19,160/19,160/9,106/9,138 MiB. P is still not launched because the
 free-card memory preflight failed. No job, configuration, or checkpoint was
 changed.
+
+## 2026-11-03 19:41 UTC - A Miss evaluations continue
+
+At 19:41:58 UTC, Utility epoch13 Miss had logged 127/479 sequences and
+230,103/337,353 frames; Random epoch14 Miss had logged 131/479 sequences and
+232,750/337,353 frames. Frame-rate extrapolation estimates about 32 minutes
+remaining. Both evaluator processes and A official queue PID 1355742 remain
+alive; neither full completion receipt nor queue-level formal verification
+exists yet.
+
+R1/R2 trainers PID 3388846/3395457 and curriculum queue PID 3539938 also
+remain alive. GPU0-3 were at 81/78/77/74 C, drawing
+246.94/245.78/249.32/249.60 W, with 19,160/19,160/9,106/9,138 MiB allocated.
+No task was stopped, restarted, or newly dispatched; no configuration or
+checkpoint was changed.
