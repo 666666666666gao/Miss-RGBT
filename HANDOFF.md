@@ -4451,3 +4451,13 @@ Utility and Random A training `completed.json` receipts were rechecked
 81/78/76/73 C and246.52/247.44/248.97/249.64 W under250 W caps, at
 82/97/100/100% utilization. All four cards remain occupied. No task was
 dispatched, and no process, config, manifest, or checkpoint was modified.
+
+## 2026-11-03 23:19 UTC - R1/R2 training advanced
+
+Read-only inspection of the live training logs showed R1 at epoch14,
+update34450, and R2 at epoch14, update16875. Both trainer PIDs remain alive;
+GPU process monitoring showed active compute on GPUs0/1. The A queue and its
+two full Miss evaluators remain alive without Miss completion receipts or
+queue-level formal verification. RPPM remains `WAITING_FOR_R` on the same
+four receipts. GPU0-3 were80/78/77/73 C and249.52/247.66/249.72/249.16W,
+all below250W. No run was dispatched or altered.
