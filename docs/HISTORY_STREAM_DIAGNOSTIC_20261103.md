@@ -132,3 +132,40 @@ CPU fixture success proves intervention indexing and decision arithmetic only;
 it does not prove native real-image parity, useful history, training improvement
 or any official benchmark metric. Existing A/R training and evaluator sources
 remain untouched.
+
+## Saved Decision Verification
+
+`scripts/verify_history_stream.py` is the consumer entry point for an actual
+completed diagnostic. It validates the registered checkpoint, completion hash,
+source/configuration hashes, and the existing terminal-cache provenance checks.
+It checks all 384 paired observations against the 128 cache identities and
+deterministic different-sequence donors, then recomputes the bootstrap effects
+and decision from raw observations. Complete-input metrics must remain identical
+across interventions. An embedding retry also re-verifies the original negative
+block-three report using the same cache and configuration.
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/task_utility_20261018
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/task_utility_20261018:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python \
+  /home/gaob/Miss-RGBT/scripts/verify_history_stream.py \
+  --report <completed-diagnostic/report.json> \
+  --cache-receipt <same-verified-cache-receipt.json> \
+  --config <same-config.json>
+```
+
+This is a command template: no actual diagnostic report/cache currently exists
+to verify. `retry_embedding` is explicitly nonterminal; accepted diagnostics or
+two measured negative diagnostics are terminal decisions. The output explicitly
+does not authorize OHCAS or F training. Accepted OHCAS still requires actual
+composition, and F still needs campaign preparation and the other parent gates.
+
+The server's frozen A CPU runtime passed three focused test methods, including
+all four decisions, the actual recursive retry-check logic, and rejection of
+modified pairs, donors, state/identity layouts, missing rows, nonfinite metrics,
+completion hashes, sources, and cache-load failures. Their report is
+`reports/server28_history_decision_verifier_cpu_20261103.json`.
+Checkpoint identities and cache loading are mocked in these tests; the paired
+records are synthetic. These tests do not establish real cache freshness, actual
+image interventions, M1 acceptance/closure, or official tracking metrics.

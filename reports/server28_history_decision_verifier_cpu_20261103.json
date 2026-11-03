@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/check_history_decision_verifier.py": "30d8624129525e66187ad4146560ff958a59609b99392207094faa3e552d355e",
+    "/home/gaob/Miss-RGBT/scripts/verify_history_stream.py": "1e25b6f80d9f951470ed67f879c918753ec667b986a5694dd50e45bd7301c350"
+  },
+  "real_images_executed": false,
+  "real_m1_decision_verified": false,
+  "ohcas_training_authorized": false,
+  "f_training_authorized": false,
+  "scope": "Synthetic paired records and mocked checkpoint/cache only; does not supply actual diagnostic or provenance evidence."
+}
