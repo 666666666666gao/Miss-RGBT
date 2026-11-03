@@ -9,7 +9,7 @@ from research.curriculum_p.schedule import sample_masks as control_masks
 from research.feedback_f.model import FeedbackTrackerModel
 from research.protocol_r.common import INITIALIZER_SHA, sha
 
-ARMS = ('single', 'none', 'shallow', 'deep')
+ARMS = ('single', 'none', 'shallow', 'deep-no-response', 'deep')
 
 
 def build(config):

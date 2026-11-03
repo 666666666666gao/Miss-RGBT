@@ -124,13 +124,13 @@ def check_weights():
     for mode in ARMS:
         model = {'baseline.weight': torch.ones(2)}
         initial = {}
-        if mode in ('shallow', 'deep'):
+        if mode in ('shallow', 'deep-no-response', 'deep'):
             value = torch.zeros(2, 3)
             initial['feedback.delta.weight'] = dict(shape=[2, 3], sha256=tensor_sha(value))
             model['feedback.delta.weight'] = value + 1.
         local = dict(feedback=dict(mode=mode))
         changed = check_feedback(dict(model=model), local, initial)
-        assert bool(changed) == (mode in ('shallow', 'deep'))
+        assert bool(changed) == (mode in ('shallow', 'deep-no-response', 'deep'))
         if initial:
             with tester.assertRaises(AssertionError):
                 check_feedback(dict(model={'feedback.delta.weight': torch.zeros(2, 3)}),
@@ -156,6 +156,7 @@ def main():
     sources = [Path(__file__), Path(__file__).with_name('protocol_verify.py'),
         Path(__file__).with_name('protocol_runner.py'),
         Path(__file__).with_name('protocol_training.py'),
+        Path(__file__).with_name('model.py'),
         Path(__file__).with_name('protocol_validation.py'),
         Path(__file__).parents[1] / 'curriculum_p/protocol_verify.py']
     save(args.output, dict(status='PASS', cases=steps, diagnostic_modes=diagnostics,
@@ -165,7 +166,7 @@ def main():
         scope='CPU synthetic F evidence checks only; full-run orchestration, '
               'real saved checkpoints, native optimizer-state audit, parent/smoke gates, '
               'paired full runs and official scores not exercised'))
-    print('PASS: 24 mode/curriculum cases, 576 steps, four diagnostic/weight fixture modes')
+    print('PASS: 30 mode/curriculum cases, 720 steps, five diagnostic/weight fixture modes')
 
 
 if __name__ == '__main__':

@@ -54,7 +54,7 @@ def compare_rounds(first, final):
 
 def validate(model, batches, cfg, feedback_mode):
     """Use all 128 cached tuples and final-round task loss for model selection."""
-    assert feedback_mode in ('single', 'none', 'shallow', 'deep')
+    assert feedback_mode in ('single', 'none', 'shallow', 'deep-no-response', 'deep')
     device = next(model.parameters()).device
     devices = [] if device.type == 'cpu' else [device.index]
     selector = model.utility_repair.selection_rng_state.clone()

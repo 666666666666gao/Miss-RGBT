@@ -104,19 +104,19 @@ def run(config, gpu, results_root, queue, verify_evidence, verify_smokes):
     result = dict(status='complete', rows=rows, selected_epoch=done['selected_epoch'],
         full_evaluations=10, sequences_per_evaluation=479, frames_per_evaluation=337353,
         official_test_selection_used=False, all_checkpoints_retained=True,
-        four_arm_pairing_verified=False, ended_utc=now(),
-        scope='One verified F arm; caller must still verify four-arm training pairing')
+        five_arm_pairing_verified=False, ended_utc=now(),
+        scope='One verified F arm; caller must still verify five-arm training pairing')
     save(queue / 'official_completed.json', result)
     save(queue / 'status.json', dict(stage='COMPLETE', ended_utc=now()))
     return result
 
 
 def verify_campaign(configs, controllers, results_root, verify_evidence, verify_smokes):
-    """Recheck four saved arms and all forty full evaluations before reporting."""
+    """Recheck five saved arms and all fifty full evaluations before reporting."""
     from research.feedback_f.verify_official import verify
     assert [config['feedback']['mode'] for config in configs] == list(ARMS)
     assert set(controllers) == set(ARMS)
-    assert len({str(Path(path).resolve()) for path in controllers.values()}) == 4
+    assert len({str(Path(path).resolve()) for path in controllers.values()}) == len(ARMS)
     evidence, arms, table = {}, {}, []
     for config in configs:
         mode = config['feedback']['mode']
@@ -194,17 +194,17 @@ def verify_campaign(configs, controllers, results_root, verify_evidence, verify_
         verify_smokes(config)
     assert all(sha(path) == digest for path, digest in evidence.items())
     return dict(status='complete', arms=arms, pairing=pairing, rows=table,
-        full_evaluations=40, sequences_per_evaluation=479, frames_per_evaluation=337353,
-        four_arm_pairing_verified=True, official_test_selection_used=False,
+        full_evaluations=50, sequences_per_evaluation=479, frames_per_evaluation=337353,
+        five_arm_pairing_verified=True, official_test_selection_used=False,
         all_checkpoints_retained=True, evidence_sha256=evidence,
-        scope='Four verified F arms; all five epochs disclosed with paired Complete/Miss '
+        scope='Five verified F arms; all five epochs disclosed with paired Complete/Miss '
               'metrics. Development selection only; no module efficacy claim.')
 
 
 def write_campaign_reports(result, output):
-    """Write all twenty paired rows and the four preselected rows after verification."""
-    assert result['status'] == 'complete' and result['four_arm_pairing_verified'] is True
-    assert result['full_evaluations'] == 40 and len(result['rows']) == 20
+    """Write all twenty-five paired rows and the five preselected rows."""
+    assert result['status'] == 'complete' and result['five_arm_pairing_verified'] is True
+    assert result['full_evaluations'] == 50 and len(result['rows']) == 25
     selected = [row for row in result['rows'] if row['development_selected']]
     assert [row['arm'] for row in selected] == list(ARMS)
     assert all(sha(path) == digest for path, digest in result['evidence_sha256'].items())

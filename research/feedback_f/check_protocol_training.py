@@ -11,6 +11,7 @@ from miss_rgbt.objectives import response_kd, task_loss, training_loss
 from research.curriculum_p.check_engine import compare_trees, inputs
 from research.curriculum_p.engine import ARMS as CURRICULA, CurriculumState
 from research.curriculum_p.objectives import STATES
+from research.feedback_f.model import SearchFeedback
 from research.feedback_f.protocol_training import ARMS, build, forward_microbatch, step_masks
 from research.protocol_r.common import INITIALIZER_SHA, save, sha, tensor_sha
 
@@ -171,7 +172,7 @@ def check_initialization(initializer):
         actual_parameters = dict(model.named_parameters())
         assert all(tensor_sha(actual_parameters[name]) == digest
                    for name, digest in evidence['parameters_sha256'].items())
-        if arm in ('shallow', 'deep'):
+        if arm in ('shallow', 'deep-no-response', 'deep'):
             assert model.feedback.delta.weight.eq(0).all()
             assert model.feedback.delta.bias.eq(0).all()
         rows.append(dict(arm=arm, shared_parameters_buffers_exact=True,
@@ -179,6 +180,36 @@ def check_initialization(initializer):
                          caller_cpu_rng_exact=True))
         del model, actual_parameters
         gc.collect()
+    return rows
+
+
+def check_response_control():
+    torch.manual_seed(65503)
+    shallow = (torch.randn(2, 4, 4), torch.randn(2, 4, 4))
+    deep = (torch.randn(2, 4, 4), torch.randn(2, 4, 4))
+    prediction = dict(score_map=torch.randn(2, 1, 2, 2),
+                      size_map=torch.randn(2, 2, 2, 2),
+                      offset_map=torch.randn(2, 2, 2, 2))
+    available = torch.ones(2, 4, 2)
+    response_changed = dict((key, value + .25) for key, value in prediction.items())
+    deep_changed = tuple(value + .25 for value in deep)
+    rows = {}
+    for mode in ('shallow', 'deep-no-response', 'deep'):
+        module = SearchFeedback(4, 8, mode)
+        with torch.no_grad():
+            module.delta.weight.normal_(std=.1)
+            module.delta.bias.normal_(std=.1)
+        output = module(shallow, deep, prediction, available)
+        changed_response = module(shallow, deep, response_changed, available)
+        changed_deep = module(shallow, deep_changed, prediction, available)
+        response_sensitive = any(not torch.equal(a, b)
+                                 for a, b in zip(output, changed_response))
+        deep_sensitive = any(not torch.equal(a, b)
+                             for a, b in zip(output, changed_deep))
+        assert response_sensitive == (mode == 'deep')
+        assert deep_sensitive == (mode != 'shallow')
+        rows[mode] = dict(response_sensitive=response_sensitive,
+                          deep_sensitive=deep_sensitive)
     return rows
 
 
@@ -191,6 +222,7 @@ def main():
     torch.set_num_threads(1)
     update_config_from_file('experiments/cadtrack/cadtrack.yaml')
     batches, masks = check_batches(), check_masks_and_reload()
+    response_control = check_response_control()
     initialization = check_initialization(args.initializer)
     assert not torch.cuda.is_initialized()
     sources = [Path(__file__), Path(__file__).with_name('protocol_training.py'),
@@ -199,10 +231,11 @@ def main():
         status='PASS', scope='CPU synthetic batch gradients and actual OSTrack construction; '
             'no actual-network forward, images, GPU smoke, training or official metrics',
         batches=batches, mask_state=masks, initialization=initialization,
+        response_control=response_control,
         utility_probe_routing=True, missing_ema_updates_per_microbatch=1,
         cuda_initialized=False, initializer_sha256=sha(args.initializer),
         source_sha256={str(path.resolve()): sha(path) for path in sources}))
-    print('PASS: 72 batch cases, 6 mask/state roundtrips, 4 real CPU initializations')
+    print('PASS: 90 batch cases, 6 mask/state roundtrips, 5 real CPU initializations')
 
 
 if __name__ == '__main__':

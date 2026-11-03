@@ -74,14 +74,14 @@ def main():
     assert FeedbackTracker.track is native_tracker.MissingTracker.track
     assert FeedbackTracker.initialize is native_tracker.MissingTracker.initialize
     checks = dict(inherited_native_initialize_and_track=True)
-    for mode in ['none', 'shallow']:
+    for mode in ['none', 'shallow', 'deep-no-response', 'deep']:
         control = FeedbackTrackerModel(base.baseline, task_utility=utility, feedback_mode=mode).eval()
         control.utility_repair.load_state_dict(base.utility_repair.state_dict(), strict=True)
         loaded = FeedbackTracker(test_cfg, checkpoint(control,
             dict(base_config, feedback=dict(mode=mode, width=128))))
         assert loaded.network.feedback_mode == mode
         del loaded, control
-    checks['all_three_feedback_checkpoint_modes_strict_load'] = True
+    checks['all_feedback_checkpoint_modes_strict_load'] = True
     frame = random.randint(0, 256, (180, 240, 6), dtype=np.uint8)
     box = [80., 60., 35., 30.]
     baseline.initialize(frame, dict(init_bbox=box))

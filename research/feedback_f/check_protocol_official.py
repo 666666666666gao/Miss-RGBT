@@ -81,7 +81,7 @@ class OfficialControllerTests(unittest.TestCase):
                 self.assertEqual(scorer.call_count, 10)
                 self.assertEqual(len(guards), 22)
                 self.assertEqual(result, read(queue / 'official_completed.json'))
-                self.assertFalse(result['four_arm_pairing_verified'])
+                self.assertFalse(result['five_arm_pairing_verified'])
                 self.assertEqual(read(queue / 'status.json')['stage'], 'COMPLETE')
                 self.assertEqual(len([job for job in calls if job['development_selected']]), 2)
                 self.assertTrue(all(sha(path) == digest for path, digest in
@@ -241,24 +241,24 @@ class CampaignReportTests(unittest.TestCase):
                 self.assertFalse((root / 'report').exists())
                 return
             result = official.verify_campaign(configs, controllers, results, guard, guard)
-            self.assertEqual(scorer.call_count, 40)
+            self.assertEqual(scorer.call_count, 50)
             pairs.assert_called_once_with(configs)
             self.assertEqual(result['pairing'], pairing)
-            self.assertEqual(len(guards), 16)
+            self.assertEqual(len(guards), 20)
             official.write_campaign_reports(result, root / 'report')
-            for name, count in (('all_epochs.csv', 20), ('selected_epochs.csv', 4)):
+            for name, count in (('all_epochs.csv', 25), ('selected_epochs.csv', 5)):
                 with (root / 'report' / name).open(newline='') as stream:
                     rows = list(csv.DictReader(stream))
                 self.assertEqual(len(rows), count)
                 self.assertEqual(len(rows[0]), 16)
-                if count == 4:
+                if count == 5:
                     self.assertEqual([row['arm'] for row in rows], list(official.ARMS))
                     self.assertTrue(all(row['epoch'] == '18' for row in rows))
                     self.assertTrue(all(row['LasHeR_PR'] == row['LasHeR-Miss_PR']
                                         for row in rows))
             self.assertEqual(official.read(root / 'report/completed.json'), result)
 
-    def test_four_arms_all_epochs_and_preselected_table(self):
+    def test_five_arms_all_epochs_and_preselected_table(self):
         with tempfile.TemporaryDirectory() as directory:
             self.exercise(Path(directory))
 

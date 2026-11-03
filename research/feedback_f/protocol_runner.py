@@ -120,7 +120,7 @@ def run(config, verify_evidence, verify_smokes, smoke=False):
     """Run only after caller-owned parent/source checks; not a standalone launcher.
 
     The supplied checks must validate the chosen P curriculum, M1 decision and
-    frozen F snapshot. Formal runs additionally require all four paired smokes.
+    frozen F snapshot. Formal runs additionally require all five paired smokes.
     No existing P receipt is accepted here as an F authorization.
     """
     check_config(config)

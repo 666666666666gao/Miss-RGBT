@@ -1,0 +1,296 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    }
+  ],
+  "learning_rates": [
+    {
+      "epoch": 1,
+      "next_update": 1,
+      "learning_rates": [
+        1e-08,
+        1.0000000000000001e-07
+      ]
+    },
+    {
+      "epoch": 1,
+      "next_update": 500,
+      "learning_rates": [
+        5e-06,
+        5e-05
+      ]
+    },
+    {
+      "epoch": 10,
+      "next_update": 501,
+      "learning_rates": [
+        5e-06,
+        5e-05
+      ]
+    },
+    {
+      "epoch": 11,
+      "next_update": 501,
+      "learning_rates": [
+        5.000000000000001e-07,
+        5e-06
+      ]
+    },
+    {
+      "epoch": 20,
+      "next_update": 100000,
+      "learning_rates": [
+        5.000000000000001e-07,
+        5e-06
+      ]
+    }
+  ],
+  "prediction_snapshots_all_modes": true,
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/check_protocol_runner.py": "6b78cd74fc048c76da95b7f310fe2e5ef997dde6462f62831cfd1b7db0b31c2d",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_runner.py": "4e3c7243a16448db4933210a68d75e40d977c1d740df0261ab3c4d370f67ed5e",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_training.py": "272b0af34ec8bafd9adc7d8223939685d6e7f0c3773c3b2eee1456f1e021aa7b",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/check_protocol_training.py": "ef74181aee2bf8da63facd4751a4d136921bdcb15b7d7b004306ce91170f5d42"
+  },
+  "scope": "Synthetic CPU step/AdamW/accumulation/Utility routing only; no actual-image smoke, checkpoint reload, full-run validation, GPU, learned feedback or official metrics"
+}

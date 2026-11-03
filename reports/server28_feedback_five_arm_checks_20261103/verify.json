@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "deep-no-response",
+      "microsteps": 24,
+      "updates": 12
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12
+    }
+  ],
+  "diagnostic_modes": [
+    "single",
+    "none",
+    "shallow",
+    "deep-no-response",
+    "deep"
+  ],
+  "feedback_weight_fixture_modes": [
+    "single",
+    "none",
+    "shallow",
+    "deep-no-response",
+    "deep"
+  ],
+  "rejected_steps": [
+    "nonfinite_round",
+    "wrong_mode",
+    "wrong_normalization_count",
+    "wrong_round_count",
+    "wrong_total_loss"
+  ],
+  "rejected_diagnostics": [
+    "incorrect_crossing_count",
+    "invalid_iou",
+    "missing_search",
+    "missing_tuple",
+    "single_with_round_diagnostics",
+    "summary_sidecar_mismatch",
+    "wrong_batch_index",
+    "wrong_loss_mean"
+  ],
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/check_protocol_verify.py": "a5142f19d0a4e33be6d6ad9617960bc239b55fdceab5945d87912e257461d4e9",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_verify.py": "5e6762ed40bd7307580f6be25827014fa17dba8110dc3d9ae295739497b45e9d",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_runner.py": "4e3c7243a16448db4933210a68d75e40d977c1d740df0261ab3c4d370f67ed5e",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_training.py": "272b0af34ec8bafd9adc7d8223939685d6e7f0c3773c3b2eee1456f1e021aa7b",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/model.py": "189e143355290bb9d71db649035fe84098a9b43fd2499eafb1301244d09790ae",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/protocol_validation.py": "23081f7996d2b162ae46d4223dcfa8f90fe6ba4d099d9284a0c8b83d64d6bd23",
+    "/tmp/codex_feedback_f_five_arm_20261103/research/curriculum_p/protocol_verify.py": "74133c24a7f43687fccce4a6cb0848aa2f26165d458fc8ed9d57a58d52ac648f"
+  },
+  "scope": "CPU synthetic F evidence checks only; full-run orchestration, real saved checkpoints, native optimizer-state audit, parent/smoke gates, paired full runs and official scores not exercised"
+}

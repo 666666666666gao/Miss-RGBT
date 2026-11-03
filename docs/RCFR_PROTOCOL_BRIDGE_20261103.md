@@ -305,3 +305,18 @@ Raw check receipt:
 `reports/server28_rcfr_campaign_reporting_20261103.json`, SHA256
 `7c06dcc3dcb8a37d6c0b9020cca6dd8391a4eed25dd2f25b361a10675e5eccb8`.
 Frozen R/P sources and their active processes were not changed.
+
+## Five-Arm Amendment
+
+The preceding four-arm reporting and test counts are historical evidence for
+the earlier protocol. The current isolated F protocol adds
+`deep-no-response`, retaining both shallow and deep features while zeroing
+the first-pass response-map input. This separates the planned deep-feature
+contrast from the response-conditioning contrast. The current mode list is
+`single`, `none`, `shallow`, `deep-no-response`, `deep`; reporting now
+requires five arms, 50 full evaluations and 25 final-five epoch rows for one
+selected curriculum. It does not launch or authorize an F campaign.
+
+See `docs/FEEDBACK_F_FIVE_ARM_RESPONSE_CONTROL_20261103.md` and the raw
+checks under `reports/server28_feedback_five_arm_checks_20261103/` for the
+amendment rationale, current CPU verification and scope limits.

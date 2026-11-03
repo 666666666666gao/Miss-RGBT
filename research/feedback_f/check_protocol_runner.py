@@ -172,7 +172,7 @@ def main():
         scope='Synthetic CPU step/AdamW/accumulation/Utility routing only; '
               'no actual-image smoke, checkpoint reload, full-run validation, '
               'GPU, learned feedback or official metrics'))
-    print('PASS: 24 mode/curriculum cases, 576 microsteps, 288 updates, LR and snapshots')
+    print('PASS: 30 mode/curriculum cases, 720 microsteps, 360 updates, LR and snapshots')
 
 
 if __name__ == '__main__':

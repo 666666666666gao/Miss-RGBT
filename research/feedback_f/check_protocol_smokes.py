@@ -62,7 +62,7 @@ def fixture(root, curriculum='paced+norm'):
             (smoke / name).write_text(''.join(json.dumps(row) + '\n' for row in rows))
         model = dict(native=torch.ones(1))
         initial = {}
-        if mode in ('shallow', 'deep'):
+        if mode in ('shallow', 'deep-no-response', 'deep'):
             model['feedback.delta.weight'] = torch.ones(1)
             initial['feedback.delta.weight'] = dict(shape=[1], sha256=tensor_sha(torch.zeros(1)))
         save(smoke / 'feedback_initial_state.json', initial)
@@ -91,7 +91,7 @@ class SmokeGateTests(unittest.TestCase):
                 result = verify_smokes(configs[0], configs, lambda config: checked.append(config))
                 self.assertEqual(checked, configs)
                 self.assertEqual(result['status'], 'passed')
-                self.assertEqual(len(result['evidence_sha256']), 28)
+                self.assertEqual(len(result['evidence_sha256']), 35)
                 self.assertTrue(all(sha(path) == digest for path, digest in
                                     result['evidence_sha256'].items()))
 

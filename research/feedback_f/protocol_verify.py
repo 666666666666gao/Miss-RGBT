@@ -191,13 +191,13 @@ def verify_pairs(configs):
     assert all({key: value for key, value in config.items()
                 if key not in ('feedback', 'output')} == reference for config in configs)
     roots = [Path(config['output']) for config in configs]
-    assert len(set(roots)) == 4
+    assert len(set(roots)) == len(ARMS)
     for name in ('initial_state.json', 'data_boundary.json', 'input_manifest.jsonl'):
         assert len({sha(root / name) for root in roots}) == 1, name
     assert read(roots[0] / 'feedback_initial_state.json') == {}
     assert read(roots[1] / 'feedback_initial_state.json') == {}
-    assert read(roots[2] / 'feedback_initial_state.json') == read(
-        roots[3] / 'feedback_initial_state.json')
+    feedback_initial = [read(root / 'feedback_initial_state.json') for root in roots[2:]]
+    assert all(value == feedback_initial[0] for value in feedback_initial[1:])
     total = 0
     for index, rows in enumerate(zip_longest(
             *(records(root / 'steps.jsonl') for root in roots))):

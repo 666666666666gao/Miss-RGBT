@@ -1,4 +1,4 @@
-"""Verify all four saved F smokes before caller-owned formal dispatch."""
+"""Verify all five saved F smokes before caller-owned formal dispatch."""
 from itertools import zip_longest
 import math
 from pathlib import Path
@@ -18,7 +18,7 @@ def verify_smokes(config, configs, verify_evidence):
     assert config in configs
     reference = {key: value for key, value in config.items()
                  if key not in ('feedback', 'output')}
-    assert len({candidate['output'] for candidate in configs}) == 4
+    assert len({candidate['output'] for candidate in configs}) == len(ARMS)
     evidence, initializations, inputs, feedback_initial = {}, [], [], {}
     paired_steps = []
     for candidate in configs:
@@ -78,7 +78,8 @@ def verify_smokes(config, configs, verify_evidence):
     assert len(set(inputs)) == 1
     assert all(value == initializations[0] for value in initializations)
     assert feedback_initial['single'] == feedback_initial['none'] == {}
-    assert feedback_initial['shallow'] == feedback_initial['deep']
+    assert feedback_initial['shallow'] == feedback_initial['deep-no-response']
+    assert feedback_initial['deep-no-response'] == feedback_initial['deep']
     for rows in zip(*paired_steps):
         for index, left in enumerate(rows):
             for right in rows[index + 1:]:
@@ -86,4 +87,4 @@ def verify_smokes(config, configs, verify_evidence):
     return dict(status='passed', arms=list(ARMS), updates_per_arm=4,
         native_initialization_and_inputs_exact=True, feedback_initialization_matched=True,
         evidence_sha256=evidence,
-        scope='Saved four-arm smoke receipts only; no full training or official metrics')
+        scope='Saved five-arm smoke receipts only; no full training or official metrics')

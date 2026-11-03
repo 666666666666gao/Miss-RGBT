@@ -2,7 +2,7 @@
 from pathlib import Path
 
 
-MODES = ('single', 'none', 'shallow', 'deep')
+MODES = ('single', 'none', 'shallow', 'deep-no-response', 'deep')
 CURRICULA = ('fixed60', 'fixed50', 'progressive', 'shuffled', 'paced', 'paced+norm')
 
 

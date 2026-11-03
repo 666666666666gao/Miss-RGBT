@@ -179,7 +179,7 @@ def main():
         source_sha256={str(path.resolve()): sha(path) for path in sources},
         limitations=['No real images, learned feedback or CUDA smoke',
             'Not a full val97 model evaluation, training, latency or official tracking result',
-            'F parent preparation, trainer and complete official dispatch remain unimplemented']))
+            'F experiment gates remain pending; checks do not authorize training']))
     print('PASS: diagnostic arithmetic and state preservation', flush=True)
 
 

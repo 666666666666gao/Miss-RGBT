@@ -9,7 +9,7 @@ from miss_rgbt.objectives import training_loss
 class SearchFeedback(nn.Module):
     def __init__(self, dim, width, mode):
         super().__init__()
-        assert mode in ['deep', 'shallow']
+        assert mode in ['deep', 'deep-no-response', 'shallow']
         self.mode = mode
         self.shallow_norm = nn.LayerNorm(2 * dim)
         self.deep_norm = nn.LayerNorm(2 * dim)
@@ -25,6 +25,7 @@ class SearchFeedback(nn.Module):
                               for key in ['score_map', 'size_map', 'offset_map']], -1)
         if self.mode == 'shallow':
             last = torch.zeros_like(last)
+        if self.mode != 'deep':
             response = torch.zeros_like(response)
         hidden = self.hidden(torch.cat(
             [self.shallow_norm(first), self.deep_norm(last), response, available], -1))
@@ -34,7 +35,7 @@ class SearchFeedback(nn.Module):
 
 class FeedbackTrackerModel(MissingTrackerModel):
     def __init__(self, baseline, task_utility=None, feedback_mode='deep', feedback_width=128):
-        assert feedback_mode in ['none', 'shallow', 'deep']
+        assert feedback_mode in ['none', 'shallow', 'deep-no-response', 'deep']
         # Random selection needs a separately specified two-round RNG protocol.
         assert task_utility is None or task_utility['selection'] != 'random'
         super().__init__(baseline, repair=False, task_utility=task_utility)

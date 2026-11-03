@@ -43,7 +43,7 @@ class OfficialPlanTests(unittest.TestCase):
                         self.assertEqual(command[-4:],
                             ['--gpus', str(gpu), '--workers-per-gpu', '4'])
                         self.assertNotIn('--limit', command)
-        self.assertEqual(len(destinations), 240)
+        self.assertEqual(len(destinations), 300)
 
     def test_invalid_training_or_checkpoint_evidence(self):
         config, completed = self.fixture()

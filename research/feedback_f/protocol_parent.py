@@ -138,7 +138,7 @@ def select_parent(campaign=CAMPAIGN, queue=QUEUE):
                 selected=winner, arms=rows, parents_sha256=evidence,
                 full_evaluations_recomputed=60, f_training_authorized=False,
                 remaining='Actual M1 decision, accepted-OHCAS composition if needed, '
-                          'frozen F preparation and four matched real-image smokes')
+                          'frozen F preparation and five matched real-image smokes')
 
 
 def main():
