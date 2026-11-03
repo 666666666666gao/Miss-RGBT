@@ -4413,3 +4413,20 @@ remain complete/passed. R1/R2 trainers3388846/3395457 remain live; RPPM
 GPU0-3 were81/78/77/73 C, power245.79/247.28/249.79/249.44W under250W
 limits, utilization100% each. No new task, intervention, config/manifest
 change or checkpoint cleanup.
+
+## 2026-11-03 22:52 UTC - Full Miss evaluations continue
+
+At22:52:55Z, Utility epoch14 Miss PID1873594 had logged15/479 sequences
+and89,860/337,353 frames; Random epoch15 Miss PID1870217 had logged23/479
+and112,030/337,353. Both evaluators and A queue1355742/controllers1601932/
+1601933 remain live in `OFFICIAL_RUNNING`; their full `completed.json`
+receipts and queue-level final formal verification are still absent.
+
+The A training receipts remain complete (Utility17 epochs/34,000 updates,
+Random18/36,000); all checkpoints are retained and official-test selection
+was not used. Training `verification_v2.json` remains `passed` for saved
+evidence only. R1/R2 trainers3388846/3395457 remain live, and RPPM queue
+3539938 remains `WAITING_FOR_R` on four missing training/full-official
+receipts. GPU0-3 were80/77/76/73 C, drawing246.06/247.21/248.64/249.08W
+under250W; utilization100% and memory19160/19160/9106/9138MiB. No task was
+dispatched or changed; manifests and checkpoints were left untouched.
