@@ -80,3 +80,23 @@ was made; the documented successful command selects the existing A runtime.
 Reports are copied into the publication checkout. Each metadata report binds
 its source files and prior exclusion reports by SHA256. Neither this report
 nor the synthetic result is an official tracking metric or a passed Step 4.
+
+## R1/R2 Manifest Recheck
+
+At 2026-11-03 12:40 CST, both R trainer PIDs and the P queue were still live.
+The R `steps.jsonl` files were being updated, but neither run had an
+`input_manifest.jsonl`. Inspection of the frozen `research/protocol_r/train.py`
+confirms that `first_inputs` is populated only while `updates == 0`, and the
+input tensor hashes are written only to the first optimizer-update record.
+Subsequent step records contain training telemetry, not input hashes or frame
+identities. The current logs therefore cannot establish the complete
+historical frame-exclusion union for these runs. The existing first-update
+hash witness and CPU replay prefix do not extend that evidence to later steps.
+At 12:42 CST, the deployed snapshot and published trainer source had identical
+SHA256 `1709f566d80cad56405d0601ea0f1301168d559c70f4790086bfaebfebc4d5d3`;
+the two `steps.jsonl` files were still growing and all five parent/queue PIDs
+were live.
+
+The active run and its frozen snapshot were not edited or restarted. OHCAS/M1
+remains unauthorized until complete historical frame provenance is supported
+by evidence; do not infer it from the scalar step log or the partial replay.
