@@ -4245,3 +4245,27 @@ R1/R2 trainers PID3388846/3395457 and curriculum queue PID3539938 remain
 alive. GPU0-3 were at81/78/76/74 C and246.88/246.43/248.95/249.18 W, with
 19,160/19,160/9,106/9,138 MiB allocated. No task was stopped/restarted and
 no new task was dispatched.
+
+## 2026-11-03 20:15 UTC - A final-five Miss evaluations finished
+
+At 20:15:23 UTC, Utility epoch13 Miss and Random epoch14 Miss each had
+completed the full scope: 479 sequences / 337,353 frames, comprising LasHeR
+245 / 220,703 and RGBT234 234 / 116,650. Their `completed.json` and
+`metrics.json` outputs exist. Recorded metrics:
+
+- Utility epoch13: LasHeR-Miss PR/NPR/SR 67.791326/62.320427/53.763340;
+  RGBT234-Miss MPR/MSR 84.418707/60.717600.
+- Random epoch14: LasHeR-Miss PR/NPR/SR 67.890157/63.093999/53.846060;
+  RGBT234-Miss MPR/MSR 84.703949/60.568584.
+
+Neither candidate reaches the stated targets (LasHeR-Miss PR/SR 69.3/54.4;
+RGBT234-Miss MPR/MSR 88.1/64.3). These are two of twenty post-hoc
+final-five results; do not use them to select a checkpoint. Independent
+`verify_official` recomputation is still running in the arm controllers
+PID1601932/1601933; queue PID1355742 remains `OFFICIAL_RUNNING`, and the
+queue-level formal-verification receipt is absent. Thus these metrics are
+provisional pending the registered integrity checks.
+
+Evaluation GPUs 2/3 were released (1/33 MiB used, 0% utilization); GPUs 0/1
+remain occupied by R1/R2. No next stage is authorized before A queue formal
+verification passes. No running job or checkpoint was changed.
