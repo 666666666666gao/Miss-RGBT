@@ -195,3 +195,20 @@ keep original-input independent certification and OHCAS authorization false.
 Completion alone does not close the data gate: original training's CPU-RNG
 noninterference, terminal state and the actual exclusion union still need
 audit. Active R/P sources, GPU trainers and queues remain unchanged.
+
+## Full Reconstruction Completed
+
+The registered CPU-only replay exited with `status=complete`: epochs 1-20
+were reconstructed, including 380,000 tuples replayed by this job for epochs
+2-20. CUDA was not initialized. The authoritative server report is
+`reports/server28_protocol_r_full_reconstruction_20261103/report.json`,
+SHA256
+`5ac52cde8a07af99e344ed4a672a2ef530ded77d7d4cadcd286f342fce96437d`.
+
+This completion does not certify what the live R1/R2 trainers actually
+consumed. The report records `actual_original_inputs_independently_certified
+= false`, `all_historical_frame_exclusions_verified = false`, and
+`ohcas_data_gate_passed = false`; at replay completion, both original
+trainers were only at epoch 8 and had no completion receipts. Do not use the
+reconstructed manifests as observed training provenance, and do not authorize
+OHCAS cache generation, diagnostic runs, or training from this replay.

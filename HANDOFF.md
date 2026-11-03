@@ -4430,3 +4430,24 @@ evidence only. R1/R2 trainers3388846/3395457 remain live, and RPPM queue
 receipts. GPU0-3 were80/77/76/73 C, drawing246.06/247.21/248.64/249.08W
 under250W; utilization100% and memory19160/19160/9106/9138MiB. No task was
 dispatched or changed; manifests and checkpoints were left untouched.
+
+## Follow-up poll - R replay complete; official gates remain closed
+
+Server 28's CPU-only protocol-R reconstruction report now records
+`status=complete`, reconstructed epochs1-20 and 380,000 replayed tuples for
+epochs2-20. CUDA remained uninitialized. Report SHA256:
+`5ac52cde8a07af99e344ed6a724a2ef530ded77d7d4cadcd286f342fce96437d`.
+This is candidate loader reconstruction, not proof of the actual inputs seen
+by R1/R2. The report keeps original-input certification, historical
+exclusion verification, and the OHCAS data gate false.
+
+The live poll still found A queue1355742/controllers1601932/1601933,
+Utility Miss evaluator1873594, Random Miss evaluator1870217, R1/R2 trainers
+3388846/3395457, and RPPM queue3539938 alive. The queue remains
+`WAITING_FOR_R` on four R training-verification/full-official receipts.
+Utility and Random A training `completed.json` receipts were rechecked
+(17/34,000 and18/36,000); saved-evidence `verification_v2.json` is
+`passed`, but is not queue-level official verification. GPU0-3 measured
+81/78/76/73 C and246.52/247.44/248.97/249.64 W under250 W caps, at
+82/97/100/100% utilization. All four cards remain occupied. No task was
+dispatched, and no process, config, manifest, or checkpoint was modified.
