@@ -4317,3 +4317,22 @@ the same four R training-verification/full-official receipts. GPU0-3 are all
 occupied at80/78/76/73 C,246.58/248.36/249.41/248.77W and100% utilization.
 No task was stopped, restarted or dispatched; no config, manifest or
 checkpoint was changed.
+
+## 2026-11-03 22:24 UTC - Two more full Complete rows verified; Miss rows running
+
+At22:24:33Z the A official controllers independently recomputed and appended
+Utility epoch14 Complete and Random epoch15 Complete, both at479 sequences /
+337,353 frames. Utility metrics (LasHeR PR/NPR/SR; RGBT234 MPR/MSR) are
+74.158725/70.542595/59.154405 and87.473682/63.972659. Random metrics are
+73.602038/70.002574/58.640863 and88.414559/64.548808. The Random Complete
+RGBT234 values exceed the numeric Miss thresholds but are Complete-condition
+results and do not establish the requested Miss targets.
+
+The queue remains `OFFICIAL_RUNNING`, with no queue-level completion or final
+formal-verification receipt. Utility epoch14 Miss PID1873594 is now running
+on GPU2 and Random epoch15 Miss PID1870217 on GPU3; both require the same
+479/337,353 full scope. R1/R2 trainers3388846/3395457 remain alive and RPPM
+queue3539938 remains `WAITING_FOR_R` on four missing R receipts. GPU0-3:
+80/77/74/73 C,246.43/247.12/249.14/247.98W, utilization100/100/100/91%.
+No additional task was dispatched; configs, manifests and checkpoints were
+left untouched.
