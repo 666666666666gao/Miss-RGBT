@@ -4157,3 +4157,19 @@ with 19,160/19,160/9,106/9,138 MiB allocated and 95-100% utilization.
 The P smoke remains `PREPARED_NOT_LAUNCHED` after the logged free-memory
 preflight failure; no new training was dispatched and no process/config was
 changed.
+
+## 2026-11-03 19:27 UTC - A Miss evaluations pass halfway
+
+Read-only polling at 19:27:36 UTC found both full Miss evaluators still alive.
+Utility epoch13 had completed 71/479 sequences and 182,068/337,353 frames;
+Random epoch14 had completed 72/479 sequences and 183,170/337,353 frames.
+Frame-rate extrapolation gives approximately 47-48 minutes remaining, subject
+to sequence-length variation. Completion receipts and queue-level formal
+verification are still absent; A queue PID1355742 remains
+`OFFICIAL_RUNNING`.
+
+R1/R2 PIDs3388846/3395457 and curriculum queue PID3539938 remain alive.
+All four GPUs remain allocated: temperatures 81/77/77/74 C, power
+247.04/244.82/249.12/249.58 W, memory 19,160/19,160/9,106/9,138 MiB, and
+utilization 86-100%. P remains not launched because its preflight requires a
+free card below 500 MiB allocated memory. No intervention was made.
