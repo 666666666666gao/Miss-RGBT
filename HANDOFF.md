@@ -4471,3 +4471,14 @@ were81/78 C and power246.61/248.11W. The earlier R2 logging gap did not
 persist, so no stall is established and no intervention was made. A queue
 and both Miss evaluators remain live without full Miss completion receipts;
 RPPM remains `WAITING_FOR_R` on the same four receipts.
+
+## 2026-11-03 23:42 UTC - R1 crossed into epoch 15
+
+The live R training logs show R1 at epoch15/update35025 and R2 at
+epoch14/update17150; both trainer PIDs remain alive. This epoch boundary is
+training progress only, not convergence or official-metric evidence. A
+queue1355742, its controllers, and both full Miss evaluators remain alive;
+no Miss `completed.json` receipts or queue-level formal verification are
+present. RPPM remains `WAITING_FOR_R` on four receipts. GPU0-3 were
+78/77/76/73 C,249.48/247.02/249.17/248.81W under250W, at
+78/100/100/100% utilization. No new task was dispatched or modified.
