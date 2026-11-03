@@ -37,6 +37,12 @@ unchanged. In particular, their E0-continuation initialization and internal
 development split do not implement the new protocol. Do not add paced to those
 old campaigns or restart the stopped old P controller.
 
+Subsequent isolated integration is in `engine.py`: six-arm C-before-mask
+microbatch execution and serializable EMA/independent-generator state.
+Actual stochastic CPU checks and the remaining full-trainer boundary are
+documented in `docs/RPPM_ENGINE_20261103.md`. This does not make a P campaign
+launchable; the old trainer entrypoints are still unchanged.
+
 Before a six-arm P campaign, choose the protocol from completed R1/R2 evidence,
 integrate C-before-mask execution and logs, serialize both EMA states and the
 independent generator, share model/data RNG ordering across all six arms, and
