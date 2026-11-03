@@ -32,6 +32,33 @@ Template tokens and available-stream tokens are never replaced. All four modes
 must exactly preserve complete-input score/size/offset maps and predicted boxes;
 `zero` must exactly match the unhooked native output in all three states.
 
+### Trainable Replacement Initialization Caveat
+
+The supplied framework text describes a zero-initialized historical projection
+as initially equivalent to the current behavior. This does not follow for a
+**direct replacement** after block three. Native missing search tokens are no
+longer zero: they contain positional and transformed context information.
+Moreover, zeroing the historical projection alone does not zero an independent
+age-embedding output.
+
+An actual CPU check strictly loaded the registered Utility ep17 checkpoint
+and used synthetic all-zero normalized images, with no dataset images. For each
+missing direction, all 196,608 elements of the `[1,256,768]` native block-three
+search tensor were nonzero; RMS was 1.965019702911377 and maximum absolute value
+38.507667541503906. Model parameters/buffers stayed unchanged and no gradients
+or CUDA allocations were created. This is a representation-level counterexample,
+not a measured change in tracking accuracy or an end-to-end output-parity test.
+
+Reproduction script: `scripts/check_history_zero_initialization.py`.
+Raw report: `reports/server28_history_zero_initialization_20261103.json`.
+The existing diagnostic's `zero` control is already correct and remains
+unchanged. Before claiming initialization parity for a trainable OHCAS module,
+check the **entire** initialized replacement, including the age term, against
+the native path. Retaining direct replacement requires disclosing and measuring
+its initial difference. No alternative architecture or training has been
+registered or launched as part of this check; the actual M1 diagnostic and
+freshness gates remain pending.
+
 Use unwindowed native crop-box IoU and native per-sample task loss with batch one.
 Report paired, sequence-clustered 10,000-resample 95% bootstrap intervals;
 positive loss gain means reduced task loss. Advance only if true-history versus
