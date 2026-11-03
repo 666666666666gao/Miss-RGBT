@@ -4141,3 +4141,19 @@ used, temperatures 73-81 C, power 243.84-249.42 W, and utilization 60-100%.
 No intervention, duplicate dispatch, configuration change, or checkpoint
 cleanup was performed. A training-evidence `verification_v2.json` remains
 `passed`, but it is not the official queue's final formal verification.
+
+## 2026-11-03 19:22 UTC - A Miss evaluation progress
+
+At 19:22:28 UTC, both full Miss evaluations remained live. Utility epoch13
+had logged 56/479 sequences and 164,286/337,353 frames; Random epoch14 had
+logged 58/479 sequences and 166,833/337,353 frames. The frame-based linear
+ETA is roughly 52-54 minutes from this observation and is only an estimate.
+Neither completion receipt nor queue-level formal verification exists yet;
+the A queue PID1355742 remains `OFFICIAL_RUNNING`.
+
+R1/R2 trainers PID3388846/3395457 and curriculum queue PID3539938 remain
+alive. GPU0-3 were at 81/78/77/73 C, drawing247.23/246.81/249.16/248.09 W,
+with 19,160/19,160/9,106/9,138 MiB allocated and 95-100% utilization.
+The P smoke remains `PREPARED_NOT_LAUNCHED` after the logged free-memory
+preflight failure; no new training was dispatched and no process/config was
+changed.
