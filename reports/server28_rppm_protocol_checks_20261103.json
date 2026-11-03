@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "CPU contracts only; not real-image or full-run evidence",
+  "configs": {
+    "six_arm_shared_config": true,
+    "rejected_mutations": [
+      "epochs",
+      "freeze_all_bn",
+      "early_stop",
+      "init",
+      "official_test_selection_used",
+      "checkpoint_epochs",
+      "resume_supported"
+    ],
+    "all_bn_frozen_utility_policy": true,
+    "checkpoint_epochs": [
+      10,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "provenance": {
+    "accepted_native_tuple_identity": true,
+    "rejected_candidate_not_misattributed": true,
+    "tensor_and_rng_bitwise_unchanged": true,
+    "jsonl_record_read_back": true,
+    "scope": "Synthetic sampler only; real native loader parity remains pending"
+  },
+  "missing_parent_gate_rejected": true,
+  "actual_parent_gate": {
+    "ready": false,
+    "missing": [
+      "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r1_official_completed.json",
+      "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r1_training_verified.json",
+      "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_official_completed.json",
+      "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_training_verified.json"
+    ],
+    "reason": "R1/R2 full training and official audits are unfinished"
+  },
+  "cuda_initialized": false,
+  "remaining": [
+    "Actual R full protocol gate",
+    "Real six-arm smoke and data parity",
+    "Formal saved-run verifier",
+    "Full official controller and sixty evaluations"
+  ],
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/curriculum_p/protocol_prepare.py": "0b9150f709831ac17e3831a75b8c97386a462a6472beecc3245200144361113d",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/protocol_train.py": "deab3fd17b523d662fdcfef880eb13a4dbd66e2612b1309e745605239e0d2376",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/check_protocol.py": "e1256705c84e7a3420dfee2456573bb1584528a50f55aa406297e2dcdcbbf1de"
+  }
+}

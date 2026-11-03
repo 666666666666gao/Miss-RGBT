@@ -79,3 +79,7 @@ all final-five full479-sequence Complete/Miss evaluations.
 The old E0-continuation P entrypoints are unchanged and remain incompatible
 with this new protocol. Do not restart their retired controller.
 The R1/R2 missing frame-provenance issue and the OHCAS data gate are unchanged.
+
+Subsequent isolated trainer/preparation implementation and its narrower CPU
+evidence are documented in `docs/RPPM_PROTOCOL_ENTRY_20261103.md`. That entry
+has not yet run real images or a formal campaign.
