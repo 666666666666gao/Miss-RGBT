@@ -269,3 +269,39 @@ round IoU correction/destruction evidence and matched latency remain required;
 the new diagnostic interface alone supplies neither.
 OHCAS's unresolved historical R frame-provenance/data gate is unchanged.
 The persistent P queue does not dispatch F or OHCAS.
+
+## Four-Arm Official Reporting
+
+`protocol_official.verify_campaign` now joins the four completed single-arm
+controllers. The caller must provide the same actual parent/source and
+matched real-image smoke checks required by `protocol_runner.run`; this is
+a library entry point, not a new training CLI or M1 authorization.
+
+It reruns the four saved-training verifiers and full-run pairing verifier.
+For every controller it checks the original frozen source/training/checkpoint
+hashes, exact ten-job registration, successful subprocess exit records,
+saved metrics and terminal receipt. It independently recalculates every
+one of the forty complete-dataset results through the existing F verifier,
+including the 245/220703 LasHeR and 234/116650 RGBT234 coverage checks.
+Every Complete/Miss pair must use the same checkpoint.
+
+Only after that check can `write_campaign_reports` create a fresh output
+directory containing `completed.json`, `all_epochs.csv` (twenty rows) and
+`selected_epochs.csv` (four rows). Both CSVs carry all ten official metrics
+per row. The latter preserves each arm's internal-development selection;
+larger official scores in other epochs do not alter the selection. This
+does not decide which module or final model deserves promotion.
+
+The server's existing Python 3.7 environment ran eight unittest methods
+successfully, with CUDA uninitialized. The new campaign fixture exercises
+forty mocked evaluations and rejects missing results, test-based selection,
+altered metrics, wrong checkpoint hashes, reordered jobs, nonzero exits,
+changed frozen sources and incomplete dataset coverage. Existing single-arm
+failure/source checks and all 240 curriculum/mode job plans still pass.
+The fixture training and pairing verifiers are mocked: no actual F campaign,
+image smoke, learned weight, real official score or M1 decision is established.
+
+Raw check receipt:
+`reports/server28_rcfr_campaign_reporting_20261103.json`, SHA256
+`7c06dcc3dcb8a37d6c0b9020cca6dd8391a4eed25dd2f25b361a10675e5eccb8`.
+Frozen R/P sources and their active processes were not changed.

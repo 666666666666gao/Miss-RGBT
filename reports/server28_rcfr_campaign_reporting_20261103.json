@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "tests_run": 8,
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_official.py": "c20530c2208c4f2ffe64f9a16f7bddf99c837d2127aca275cb03a83cbd14c2ed",
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_official.py": "3cb80291d85a70ee6ba2ea9de3e4289be51f7d1a3f37e650c9daae14e3a88c28",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_official_plan.py": "fcb334b8d75c6f8c7926f5c210cd6145c1a8006b27b957506a50510b61f86f09",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_verify.py": "3bd9af97e946b7b2b3273bdb7d121b927340c84276a7ba4106d3d0ccc1b808a0"
+  },
+  "scope": "CPU temporary-file/mocked training and evaluator checks; forty synthetic evaluations and twenty paired rows. Not actual F runs, real image smoke, independent official metrics or M1 authorization."
+}
