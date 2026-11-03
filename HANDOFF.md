@@ -4122,3 +4122,22 @@ full-official receipts. No new result or dispatch authorization was present.
 
 GPU0-3 were 81/78/76/73 C and drew247.24/246.28/249.40/249.12 W, all under
 250 W caps. All four cards remained allocated to their registered work.
+
+## 2026-11-03 19:05 UTC - Official A evaluation and P preflight still gated
+
+Read-only Server 28 polling at 19:05:59 UTC confirmed the A official queue
+PID1355742 remains `OFFICIAL_RUNNING`. Utility epoch13 Miss PID1731939 and
+Random epoch14 Miss PID1731824 are still active on GPU2/3; neither completed
+receipt nor queue-level formal verification exists. Both jobs target the full
+479-sequence / 337,353-frame scope (LasHeR 245 / 220,703 and RGBT234
+234 / 116,650).
+
+The R1/R2 trainers PID3388846/3395457 and curriculum queue PID3539938 remain
+alive. The autoscheduler log records `PREPARED_NOT_LAUNCHED` for the P smoke:
+its GPU preflight failed at 19,160 MiB allocated versus the required
+less-than-500-MiB free-card threshold (temperature 79 C, 250 W cap). No P
+training was launched. The four GPUs remain occupied, with 9,106-19,160 MiB
+used, temperatures 73-81 C, power 243.84-249.42 W, and utilization 60-100%.
+No intervention, duplicate dispatch, configuration change, or checkpoint
+cleanup was performed. A training-evidence `verification_v2.json` remains
+`passed`, but it is not the official queue's final formal verification.
