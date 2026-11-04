@@ -4526,3 +4526,33 @@ next stage until that gate passes. RPPM remains gated on its four R receipts.
 GPU0-3 were80/77/76/73 C, drawing247.11/245.87/249.22/248.87W under250W,
 at96/100/100/99% utilization. All four GPUs are occupied. No new job,
 configuration, manifest, or checkpoint was changed.
+
+## 2026-11-04 00:31 UTC - A queue and RPPM remain gated
+
+Read-only Server28 poll: A official queue1355742 and controllers1601932/
+1601933 remain live in `OFFICIAL_RUNNING`. Utility epoch15 Complete PID
+1938748/GPU2 and Random epoch16 Complete PID1934927/GPU3 are still running;
+there is no queue-level `completed.json` or final formal-verification
+receipt. The A training receipts and saved-evidence `verification_v2.json`
+remain complete/passed, which does not satisfy the queue-level gate.
+
+R1/R2 trainers3388846/3395457 remain live. Latest log rows are epoch15,
+updates36300/17775; this is progress, not training completion or score
+evidence. RPPM queue3539938 remains `WAITING_FOR_R` on the four R training
+verification and full-official-evaluation receipts. Its actual-input frame
+provenance and OHCAS exclusion gate remain unverified.
+
+The previously completed full-scope Miss candidates remain below the strict
+targets: Utility epoch14 LasHeR PR/SR67.174/53.313 and RGBT234 MPR/MSR
+84.736/60.410; Random epoch15 67.891/53.761 and83.891/59.847.
+
+GPU0-3 were80/77/76/73 C, drawing246.66/246.86/248.98/249.37W under250W,
+at100/100/100/99% utilization. All four GPUs are occupied.
+
+Local source review confirmed the OHCAS adapter remains an isolated,
+zero-initialized residual prototype with CPU contract tests only; it is not
+integrated into `MissingTrackerModel` and has no tracking-efficacy evidence.
+The fresh-frame metadata report still marks historical-frame exclusions
+unverified, including R1/R2, so the OHCAS data gate is closed. No process,
+runtime source, config, manifest, or checkpoint was changed; no next-stage
+job was dispatched.
