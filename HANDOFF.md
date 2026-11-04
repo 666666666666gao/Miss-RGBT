@@ -5732,3 +5732,17 @@ RPPM3539938 were confirmed live at09:28UTC. All four GPUs were occupied,
 80/76/75/72C and249.34/246.03/249.09/249.21W. RPPM still waits for three
 R receipts; A final queue verification remains absent. Overall target and
 three-module efficacy remain unproven.
+
+## 2026-11-04 - Completed R1 proxy curve analyzed
+
+Added reports/server28_r1_development_curve_20261104.md from the terminal
+20-epoch development history (SHA256 f2d6577ac0e7c1930a906d4aaaee1fc36fbb243e358250b476936798757be00c).
+All-epoch mean minimum is epoch15/4.668372538; the registered final-five
+selection remains epoch16/4.692164507. Epoch20 is0.714294% worse than16,
+with no sustained final-five improvement. State minima differ:Complete5,
+RGB-missing14,TIR-missing9. This is one-seed fixed128-crop task-loss
+telemetry, not tracking convergence or grounds for retroactive early stop.
+The report records all20 rows, source hashes and limits on interpretation.
+No active source/config/manifest/checkpoint was changed or new GPU job
+started. At09:33UTC R2 trainer3395457 was live at24675/25000 updates;
+R1/A evaluators and both queues remained live, with all four GPUs occupied.
