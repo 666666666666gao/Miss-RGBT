@@ -5181,3 +5181,22 @@ GPU0-3 were80/76/76/72C, at247.16/243.14/248.56/248.77W with
 95/52/100/100% utilization. All cards remain assigned to registered
 workloads. No process, configuration, manifest, checkpoint, or power
 setting was changed; downstream dispatch remains unauthorized.
+
+## 2026-11-04 05:52 UTC - Random epoch17 Complete receipt; Miss starts
+
+Random epoch17 Complete evaluator2070557 exited after a full-scope run.
+Its `completed.json` records479 sequences/337,353 frames; `metrics.json`
+records LasHeR245/220,703 and RGBT234234/116,650:
+LasHeR PR/NPR/SR73.540330/70.003071/58.610920 and RGBT234
+MPR/MSR88.267873/63.729881. This Complete-condition result exceeds
+RGBT234 MPR88.1 but is0.570119 below MSR64.3; it is not evidence that the
+requested Miss thresholds are met and is not a basis for test-set checkpoint
+selection. Queue-level independent verification remains pending.
+
+The A queue automatically started Random epoch17 Miss evaluator2138910 on
+GPU3. Utility epoch16 Complete evaluator2077250 remains live on GPU2 at
+336/479 sequence rows. Queue1355742/controllers1601932/1601933 remain
+alive; queue-level completion and formal `verification_v2.json` are absent.
+R1/R2 and RPPM remain live/gated. At05:53:30UTC GPUs0-3 were79/76/75/73C
+and246.20/246.22/249.16/249.31W, all cards assigned. No manual dispatch,
+process/configuration change, or checkpoint cleanup occurred.
