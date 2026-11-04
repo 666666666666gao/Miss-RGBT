@@ -82,7 +82,7 @@ Every formal reporting checkpoint still needs Complete/Miss on LasHeR245/220703
 and RGBT234234/116650:958 sequence runs,674706 frames, ten metrics per pair.
 Same weight and inference policy within each dataset pair; retain all weights.
 
-## Segmented Backward: Not Yet Implemented Or Authorized
+## Segmented Backward: Isolated Candidate, Not Deployed
 
 A separate optimization candidate is C forward/backward followed by M forward/
 backward with detached C targets, no parameter step between views, and one clip/
@@ -92,6 +92,20 @@ BN buffers, mask/DropPath draws and peak memory compared to the current joint
 graph. It is restricted to reverse_weight=0 with no cross-view activation path.
 No memory-saving ratio is claimed. Do not apply it to the frozen R3/runtime
 or call synthetic equivalence native evidence.
+
+An isolated implementation now exists in `research/localization_r3/segmented.py`.
+It is not imported by the registered trainer or controller. The narrow contract
+is native C/M task plus0.1 forward response KD, zero reverse weight, no utility
+auxiliary supervision or cross-view activation exchange. Three synthetic CPU
+tests compare stochastic masks, outer RNG, accumulated per-parameter gradients,
+BN buffers, once-clipped AdamW updates and optimizer state under frozen/updating
+BN. They and the three existing objective checks passed together in0.571s with
+CUDA uninitialized. Tests ran from isolated staging
+`/tmp/codex_segmented_20261104.rutu5k`; frozen files were not edited. A first
+test attempt incorrectly compared metadata keys as numeric loss diagnostics;
+the test was corrected to compare the five actual objective diagnostics.
+This is not native-model/image equivalence, a memory measurement or launch
+acceptance. Native checks and independent review remain required.
 
 ## Actual Review Attempt And Blocking Condition
 

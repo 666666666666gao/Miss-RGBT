@@ -6320,3 +6320,21 @@ synthetic acceptance. Supersedes absent-spawn-API description; no waiver.
 Goal resumed active: first resumed barrier observation, not immediate blocked.
 At15:40:52UTC ps confirms R1 Miss2461496/R2 Complete2423750/controllers/P live.
 No new GPU experiment or frozen-source edit.
+
+## 2026-11-04 15:48 UTC - Selected R2 Complete and isolated backward candidate
+
+R2 selected epoch17 Complete receipt479/337353 in7149.371804s. Saved metrics
+LasHeR PR/NPR/SR74.779039745/71.288473611/59.667690180; RGBT234 MPR/MSR
+91.009573731/67.495201037. Scope245/220703 and234/116650. Miss pair pending;
+controller recomputation not yet confirmed. Receipt SHA
+e87105e3d175bc006482a0c9e2fd8c83ba20e0f95c135bdd3989f73b60d29629;
+metrics SHAec27562f115351a5ae0055c405b38033e199180b3cdda3f1fb18496f4c480eb0.
+Actual ps2423750 zombie/GPU1 free; controller3395402, R1 Miss2461496,
+other R controller and P3539938 live. Leave transition to original controller.
+
+Added isolated segmented.py/check_segmented.py, not wired into any trainer.
+Six synthetic CPU tests (three new/three existing) passed0.571s, CUDA unused:
+gradients, BN buffers/order, RNG/masks, accumulated clipping/AdamW updates.
+No native-model/image/GPU-memory equivalence claim, no frozen-runtime edits.
+R3 review incompatibility unchanged, no human effort/model waiver. This
+continuation is not consent. Goal stays active; second resumed barrier turn.
