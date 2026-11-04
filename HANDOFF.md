@@ -5219,3 +5219,22 @@ all four R training-verification/full-official receipts as missing.
 GPU0-3 were80/75/75/72C and246.40/246.35/248.89/249.03W, with all cards
 at100% utilization. No active job or configuration was changed; no new
 task was dispatched.
+
+## 2026-11-04 06:04 UTC - Utility epoch16 Complete receipt; Random Miss runs
+
+Utility epoch16 Complete evaluator2077250 completed the full479-sequence/
+337,353-frame scope. Its stable receipt records LasHeR245/220,703 and
+RGBT234234/116,650. Metrics are LasHeR PR/NPR/SR
+73.492540/70.024632/58.725722 and RGBT234 MPR/MSR89.013478/64.695470.
+The RGBT234 Complete values exceed88.1/64.3, but remain below E0's
+90.677/66.845 by1.663044/2.149530 points; LasHeR Complete PR/SR also trail
+E0's75.637/60.126. These results do not establish the requested gains or
+any Miss-condition target. The A official controller's independent
+recomputation and queue-level formal verification are still pending.
+
+Random epoch17 Miss evaluator2138910 remained live with four completed
+sequence rows. The A queue/controller processes remain alive. GPU2 is
+temporarily idle while its Utility controller verifies/advances the
+registered queue; no manual work was placed on it. At06:04:52UTC GPU0-3
+were80/76/41/73C and248.93/247.14/23.53/249.18W; utilization99/100/0/100%.
+No runtime/configuration/checkpoint changes or cleanup occurred.
