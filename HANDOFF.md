@@ -5537,3 +5537,16 @@ GPU0-3 were79/76/73/72C at246.51/245.40/249.03/248.87W, with
 19160/19160/9106/9138 MiB used and 100% utilization. Queue PID1355742 and
 controllers1601932/1601933 remain alive. R1/R2 trainers3388846/3395457 and
 RPPM queue3539938 remain alive; no manual dispatch or intervention was made.
+
+## Server 28 poll - 2026-11-04 08:05 UTC
+
+The official queue remains `OFFICIAL_RUNNING`, with queue-level completion
+and formal verification still absent. Utility epoch17 Complete has 3/479
+completed sequence rows and Random epoch18 Complete has 12/479; both remain
+active registered evaluations on GPUs2 and3.
+
+R1/R2 remain alive in epoch19, with the latest observed R2 update23550;
+these are training telemetry, not benchmark evidence. GPU0-3 were
+79/76/75/72C at248.50/246.44/249.23/249.05W, with
+19160/19160/9106/9138 MiB used and 100% utilization. No manual dispatch,
+configuration, manifest, checkpoint, or process intervention occurred.
