@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-04T12:43:05.132522Z",
+  "arm": "r2",
+  "epoch": 16,
+  "development_selected": false,
+  "registered_selected_epoch": 17,
+  "condition": "complete",
+  "full_scope": {
+    "sequences": 479,
+    "frames": 337353
+  },
+  "metrics": {
+    "LasHeR": {
+      "sequences": 245,
+      "frames": 220703,
+      "PR": 74.90846367654231,
+      "NPR": 71.0331263745959,
+      "SR": 59.53124171012887
+    },
+    "RGBT234": {
+      "sequences": 234,
+      "frames": 116650,
+      "MPR": 91.38245547854804,
+      "MSR": 67.12076012251707
+    }
+  },
+  "baseline": {
+    "LasHeR": {
+      "sequences": 245,
+      "frames": 220703,
+      "PR": 75.63650288717686,
+      "NPR": 71.77283680562866,
+      "SR": 60.125713676122736
+    },
+    "RGBT234": {
+      "sequences": 234,
+      "frames": 116650,
+      "MPR": 90.67713392128344,
+      "MSR": 66.8452283301532
+    }
+  },
+  "delta_pp": {
+    "LasHeR": {
+      "PR": -0.7280392106345488,
+      "NPR": -0.739710431032762,
+      "SR": -0.5944719659938684
+    },
+    "RGBT234": {
+      "MPR": 0.7053215572645968,
+      "MSR": 0.27553179236386427
+    }
+  },
+  "checkpoint_sha256": "ca916649ed209ccea7058542dedc98e0fafff1d19bd20a1d98f8320bd8b69764",
+  "independently_recomputed": true,
+  "cuda_initialized": false,
+  "evidence_sha256": {
+    "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/completed.json": "a41ab08c7044c0a2aff63425ec9755f77385a31782930749854b80b476a4e8a5",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_training_verified.json": "18f414b945b71986e61ddfe41071e42e6e9a69cacfd3d2e789af1de4113f0a3b",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/e0_complete/metrics.json": "aad0e6eb0a65ac54eb708b0bf0e4e8b2cb408fba3e0bed7c8ab7230ee9733979",
+    "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_complete/run.json": "df02daa612b699f101e21530a3906c4627a0f465397a75310b8a5eb8f6822b3c",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_complete/completed.json": "8d19b885cbfdb319867f754ca2d2ba6fa34152ac9df4eee2eae52fb650784b37",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_complete/metrics.json": "623e8ae7ef0d63667a3a146c8e05b312fd240c051ad98169806fb98182610716",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_complete/all_receipts.json": "36945e5853983302b0573a631b851f0e43d3dc4c9f668cf45ab3418e9712383c"
+  },
+  "scope": "Deterministic full saved-output recomputation, not fresh-agent semantic review; unselected R2 row, not Miss attainment, terminal campaign verification or P authorization"
+}

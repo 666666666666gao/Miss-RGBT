@@ -6159,3 +6159,20 @@ P3539938 were live; GPUs0-3 were76/75/36/34C and249.57/249.18/23.53/24.89W.
 No new GPU task. R3-only review waiver was explicitly requested from the
 human, but no response/waiver exists. Automatic goal continuation is not
 approval; keep the review and paired-smoke prerequisites.
+
+## 2026-11-04 12:43 UTC - R2 epoch16 Complete independently recomputed
+
+The existing full verifier separately recomputed R2 epoch16 Complete from
+all479 saved trajectories/337353 frames and dataset GT, checking receipts,
+inventories, masks, source identities and curves. Actual checkpoint hash
+matches the training receipt; CUDA remained uninitialized. This is a
+deterministic saved-output check, not fresh-agent semantic/code review.
+Report: reports/server28_r2_epoch16_complete_verified_20261104.json, also
+at the same server reports path. Local/remote SHA256 both
+1fb4fb0f511215eb44db2989d656207751b29d8fbbd245b592c8c94f288cea60.
+LasHeR PR/NPR/SR74.908463677/71.033126375/59.531241710; RGBT234 MPR/MSR
+91.382455479/67.120760123. E0 deltas:-0.728039211/-0.739710431/-0.594471966
+and+0.705321557/+0.275531792pp. This is unselected epoch16; selected R2
+epoch17 Complete/Miss and the full terminal campaign remain pending.
+No Miss attainment, original P authorization or R3-review acceptance follows.
+All checkpoints retained; no extra tracker, config/source change or GPU run.
