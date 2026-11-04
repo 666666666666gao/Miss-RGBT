@@ -5378,6 +5378,24 @@ queue3539938 remain alive/gated. GPU3 was released at39C/25.43W/0%
 utilization; GPU0-2 were78/76/75C at248.73/249.62/249.18W, still assigned.
 No manual dispatch or intervention occurred.
 
+## 2026-11-04 07:36 UTC - Official queue advanced to Random epoch18 Complete
+
+At07:36:20UTC A queue1355742/controllers1601932/1601933, Utility epoch16
+Miss evaluator2147541, R1/R2 trainers3388846/3395457, and RPPM queue3539938
+remained alive. Utility Miss advanced from235 to280 rows and has no
+completion receipt. The queue automatically started Random epoch18 Complete
+evaluator2200099 on GPU3 after Random epoch17 Miss ended; this is registered
+queue work, not a manual dispatch.
+
+Random epoch17 Miss has a 479-sequence/337,353-frame receipt and reported
+metrics as recorded above, but its exit record and independent queue formal
+verification were still pending at this observation. Queue
+`completed.json`/`verification_v2.json` remain absent. R1/R2 are still in
+epoch19; latest logged updates46000/22450 precede this poll and are not
+convergence evidence. GPU0-3 were77/76/74/58C at246.83/245.43/249.29/
+247.22W, utilization100/100/100/83%; all cards were assigned. No manual
+job, config, manifest, checkpoint, or power change occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
