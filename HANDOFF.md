@@ -6488,3 +6488,18 @@ At20:20:48UTC2773120 is zombie, controller3388832 alive and owns transition.
 R2 Miss2862563, controller3395402 and P3539938 live. GPU0 released;
 GPUs46/78/40/37C,23.68/249.11/23.45/24.99W. No new dispatch/restart,
 frozen changes or R3 review/smoke bypass.
+
+## 2026-11-04 20:25 UTC - R1 epoch18 pair verified; epoch19 started
+
+Original controller r1_verified_official.json now records both epoch18
+conditions independently_recomputed=true with full245/220703+234/116650
+scope and the previously recorded receipt hashes/metrics. Same checkpoint
+SHA256:e6ed02c319be60d7ff529fdfbae3382d271708dd381bb9948341880ca3a69e21.
+Epoch18 is explicitly development_selected=false; R1 selection16 unchanged.
+No repeated scoring was run by this monitoring turn.
+
+Original controller started epoch19 Complete2941696/GPU0 at
+20:23:26.703274UTC. Status and actual ps20:25:46UTC confirm it and
+R2 epoch18 Miss2862563/GPU1, controllers3388832/3395402/P3539938 live.
+GPUs78/77/39/37C and249.17/249.36/23.22/25.08W. No duplicate dispatch,
+restart, original P gate change or R3 review/smoke bypass.
