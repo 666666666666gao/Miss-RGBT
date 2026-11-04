@@ -5191,6 +5191,20 @@ GPU0-3 were80/76/76/72C at246.27/246.60/249.68/249.30W, each at100%
 utilization; all are assigned to registered jobs. No new task or
 intervention occurred.
 
+## 2026-11-04 06:48 UTC - A full Miss evaluations continue
+
+At06:48:21UTC the A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, Utility epoch16 Miss evaluator2147541, R1/R2
+trainers3388846/3395457, and RPPM queue3539938 remained alive. Random
+epoch17 Miss advanced from67 to80 completed rows; Utility epoch16 Miss
+advanced from28 to38. Neither evaluator has a completion receipt, and the
+queue-level `completed.json` and `verification_v2.json` are still absent.
+
+R1 reached epoch19/update46125 and R2 epoch19/update22575; update counts
+are not benchmark or convergence evidence. RPPM remains gated on missing
+R receipts. GPU0-3 were79/74/76/72C at247.17/246.68/249.22/248.60W and
+100/84/100/100% utilization. No new task or intervention occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
