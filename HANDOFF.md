@@ -6378,3 +6378,22 @@ All weights, original failed R1/P gate and frozen R3 bytes remain preserved.
 Full gains and efficacy claims remain unmet. Human authorization to use
 gpt-6-astra/xhigh for the fresh review would resolve the effort mismatch;
 both registered paired image smokes would still be required before training.
+
+## 2026-11-04 16:42 UTC - R1 epoch17 pair verified; epoch18 started
+
+Original R1 controller independently recomputed the closed epoch17 Complete/
+Miss pair over all479 sequences/337353 frames per condition. Epoch17 remains
+unselected; registered development selection remains epoch16. The epoch17
+Miss metrics are LasHeR PR/NPR/SR68.312268296/63.374057470/54.518998482 and
+RGBT234 MPR/MSR85.426589205/62.118578244. Only LasHeR SR clears its strict
+Miss threshold; all four targets do not pass. Receipt SHA256:
+2d20a0d8b8cb112b24d5b40c652e7b350db28f9c349e22fd9e04a5459b212302;
+metrics SHA256:a85cb683d41da4e6f7d61e9f58427678d1476b6c3bd4ae0cb8860dcd9019d38f.
+Controller row marks both Complete and Miss independently recomputed.
+
+At16:46:50UTC the original controller had dispatched epoch18 Complete PID
+2573133 on GPU0; status and actual ps confirmed it running. R2 selected17
+Miss2489154 onGPU1, R controllers3388832/3395402 and P3539938 remained live.
+GPU0-3 were79/77/39/36C;249.25/249.16/23.16/25.20W, with GPUs0/1 occupied
+and2/3 idle. No task was duplicated or restarted. Original R1 selected16
+pair and failed P gate are unchanged.
