@@ -5994,3 +5994,36 @@ Miss RGBT23484.736/60.410 versus83.891/59.847. Each model pairs one
 checkpoint. Neither meets all Miss thresholds; Utility is not uniformly
 better. This is one seed, unequal registered stopping lengths17/18,
 and does not establish three-module efficacy or terminal A audit success.
+
+## 2026-11-04 11:43 UTC - Both A arm official receipts; R3 objective prepared
+
+Utility's final full Miss evaluator2282311 exited. Both
+utility_completed.json and random_completed.json now exist. The actual
+read-only terminal auditor still waits on the queue's total completed.json
+only; no formal official-queue pass is claimed. The original parent queue
+1355742 remains alive and polls children on its existing300-second cadence.
+Do not restart it or infer terminal success from the two child filenames.
+
+R1 epoch16 Miss2331902 and R2 epoch16 Complete2286460, both R controllers
+and P queue3539938 remain alive. GPU0-3 temperature78/76/39/35C,
+power249.27/249.40/23.62/25.07W under250W, memory9090/9090/1/33MiB.
+GPU2/3 are released, but A terminal audit and each subsequent experiment's
+actual prerequisites still apply. The R1 selected Complete gate is already
+numerically failed; neither R2 nor a new study may replace it.
+
+Separately registered the matched C-only/C+M R3 comparison in
+docs/LOCALIZATION_R3_PAIRED_OBJECTIVE_20261104.md: fresh OSTrack, all BN
+statistics frozen, repair/U1 off, seed2031, micro4/accum2, effective8,
+20x20000 tuples/50000 updates, identical optimizer/data/development policy.
+The objective package differs; compute is100000 versus200000 forwards.
+Fixed epoch20 C development-loss contrast is primary; final-five mean
+11/01/10 development loss selects official reporting checkpoints.
+Twenty full official evaluations are registered, never benchmark selection.
+
+The objective and3 CPU unittest methods passed in0.333s at isolated
+/tmp/codex_r3_objective_20261104.INqkMq, with24 unique role seeds,
+unchanged outer CPU RNG and CUDA uninitialized. Source identities and
+limits are in reports/server28_r3_objective_cpu_20261104.json. This uses a
+synthetic tiny network, not real CADTrack images or efficacy evidence.
+R3 trainer/config/launcher integration, fresh independent review and paired
+real-image smokes remain unfinished. No R3 GPU run or active-source change.
