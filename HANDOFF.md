@@ -6269,3 +6269,16 @@ At13:43:33UTC evaluator2358418 was zombie, GPU1 released. R1 epoch17
 Complete2397874 and both controllers/P3539938 remain alive. GPUs0-3:
 78/45/39/37C,249.28/24.98/23.39/25.07W. Leave transition to original
 controller. R3 review gate unchanged; no new experiment or weight deletion.
+
+## 2026-11-04 13:51 UTC - R2 controller verified pair and advanced
+
+Original r2_verified_official.json now records full epoch16 Complete/Miss
+deterministic recomputation, independently_recomputed=true for both. This
+is controller saved-output verification, not fresh-agent semantic review.
+Copied closed epoch16 row to reports/server28_r2_epoch16_pair_controller_verified_20261104.json;
+remote/local SHA71fd190c4896445986770062cc747bdb1a712de0ac9efdc9bc2769d9d81abb28.
+R2 selects17; epoch16 remains unselected. Original controller dispatched
+selected epoch17 Complete2423750/GPU1 at13:48:32UTC, confirmed live by ps.
+R1 Complete2397874, both R controllers and P3539938 also remain live.
+At13:51:07UTC GPUs78/77/39/36C,249.30/249.18/23.60/25.07W. GPU2/3 free;
+R3 independent review still missing. No duplicate dispatch or gate change.
