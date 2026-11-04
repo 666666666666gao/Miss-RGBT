@@ -4669,3 +4669,17 @@ receipts.
 GPU0-3 were80/77/76/72 C, drawing246.50/247.13/249.21/249.24W under250W,
 at100% utilization. All four cards have active jobs. No process, config,
 manifest, checkpoint, or dispatch was changed.
+
+## 2026-11-04 01:04 UTC - A progress and transient power sample
+
+Utility epoch15 Complete advanced to48/479 sequences and Random epoch16
+Complete to59/479. A queue1355742 and both full evaluation workers remain
+live without queue completion/formal-verification receipts. R1/R2 remain
+live at epoch15, latest updates37150/18175; RPPM remains gated on the four
+R training-verification and full-official receipts.
+
+GPU0-3 measured79/76/76/72 C, 247.76/247.81/249.12/249.40W against250W
+limits, with100% utilization. An immediately preceding sample briefly read
+GPU1 at251.06W; this follow-up read returned247.81W, so sustained power
+exceedance was not observed. All four GPUs have active assignments. No
+intervention or runtime/config/manifest/checkpoint/dispatch change was made.
