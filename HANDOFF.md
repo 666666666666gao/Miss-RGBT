@@ -4606,3 +4606,22 @@ training-verification and full-official receipts.
 GPU0-3 were80/77/75/72 C, drawing246.00/247.85/249.03/249.11W under250W,
 at100/100/100/100% utilization. All cards remain occupied; no new job or
 runtime/config/manifest/checkpoint change was made.
+
+## 2026-11-04 00:55 UTC - Evaluation progress confirmed; no R1 stall
+
+Two read-only observations confirmed the full A evaluations are advancing:
+Utility epoch15 Complete PID1938748 moved from24 to31/479 completed
+sequences, and Random epoch16 Complete PID1934927 moved from32 to39/479.
+The corresponding logs include completed Miss sequences; both jobs remain
+the registered full evaluations. No completion receipts or queue-level
+formal verification are present.
+
+R1/R2 remain live at epoch15, latest updates36925/18075. R1 briefly showed
+state `D` in a single process snapshot, but the next snapshot showed it
+runnable and its log advanced; this does not establish a persistent stall.
+RPPM remains `WAITING_FOR_R` on the four expected R receipts.
+
+All four GPUs have active assigned jobs. At this sample GPU0-3 were
+80/77/76/72 C, drawing244.30/247.08/249.30/249.17W under250W; utilization
+was90/100/100/100%. No process, config, manifest, checkpoint, or dispatch
+was changed.
