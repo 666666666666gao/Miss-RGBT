@@ -5746,3 +5746,27 @@ The report records all20 rows, source hashes and limits on interpretation.
 No active source/config/manifest/checkpoint was changed or new GPU job
 started. At09:33UTC R2 trainer3395457 was live at24675/25000 updates;
 R1/A evaluators and both queues remained live, with all four GPUs occupied.
+
+## 2026-11-04 09:41 UTC - Random18 Complete finished, final Miss started
+
+Random epoch18 Complete has a stable full479-sequence/337353-frame
+completion receipt. LasHeR245/220703 PR/NPR/SR are
+71.460505060/68.124336378/57.167674242; RGBT234234/116650 MPR/MSR are
+88.106667567/64.047762386. The existing random_verified_metrics.json
+records matching values with independently_recomputed=true. This epoch
+has development_selected=false; retain the registered epoch15 selection.
+Complete scores do not demonstrate Miss threshold attainment.
+
+Receipt SHA256:65d0903c2932500c84f2534c433f621bdf9eeda36e045faeac5c7a33d272b9ea.
+Metrics SHA256:d38775f6536611d8f71f2ce92027c7a51aaafbf3a4e6c648593dbc055b4b3390.
+The same checkpoint hash is4e9a27b8efbd2c54b13bc2b2410936750d37e24b5b8bef54671079a48dee3aed.
+
+Original controller1601933 automatically launched Random18 Miss
+PID2270512 on GPU3 at09:36:34UTC, with four workers and registered full
+479/337353 scope. The process was confirmed alive at09:41UTC. Utility17
+Complete evaluator2209628, R1 evaluator2260578, R2 trainer3395457, A
+queue1355742 and RPPM3539938 were live at09:40UTC. R2 last logged24750
+of25000 updates. GPU0-3 were80/76/75/73C at249.11/247.32/249.62/248.99W,
+all100% utilized. A final queue verification remains absent; RPPM waits
+for three R receipts. No manual dispatch, restart, source/config edit,
+training-manifest read or checkpoint cleanup occurred.
