@@ -5055,3 +5055,23 @@ RPPM remains gated on R receipts. GPU0-3 were80/76/75/73C,
 248.62/247.21/248.93/249.16W; all four cards were assigned to the
 registered workloads. No new job was dispatched and no active run,
 configuration, manifest, or checkpoint was changed.
+
+## 2026-11-04 05:11 UTC - A evaluations continue; R2 enters epoch18
+
+At05:11:03UTC A queue1355742/controllers1601932/1601933, Utility epoch16
+Complete evaluator2077250, Random epoch17 Complete evaluator2070557,
+R1/R2 trainers3388846/3395457, and RPPM queue3539938 remained live.
+Neither evaluator has a `completed.json`; queue-level completion and formal
+`verification_v2.json` remain absent. The A training receipts and
+saved-evidence training verification remain complete/passed, respectively.
+
+R1 was at epoch18/update43575. R2 advanced to epoch18/update21325; its
+latest fixed development entry at epoch17/update21250 reported mean task
+loss4.705640 over128 tuples. This single internal-loss observation is not
+convergence or official benchmark evidence. RPPM remains gated on R training
+verification and full-official receipts.
+
+GPU0-3 were77/76/75/72C, with242.59/247.00/249.41/249.10W draw and
+52/100/100/100% utilization. All cards remain assigned to registered
+workloads. No new task was dispatched and no process, configuration,
+manifest, checkpoint, or power setting was changed.
