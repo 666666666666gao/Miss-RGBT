@@ -6226,3 +6226,30 @@ no frozen source changed. Same closed Complete/Miss evidence bindings hold.
 Five fixtures and arithmetic checks are not fresh-agent semantic review.
 13:17:11UTC R1 Complete2397874/R2 Miss2358418, both R controllers/P alive;
 GPU0-3:77/76/37/35C and249.48/249.12/23.27/24.99W. No new GPU experiment.
+
+## 2026-11-04 - Goal blocked on new-experiment review, monitoring active
+
+The goal API now confirms status=blocked, not achieved. The same genuine
+R3 deployment barrier has persisted across more than three goal turns:
+the exposed client catalog has no native fresh reviewer/spawn interface,
+independent_review.json is absent, and the previously requested R3-only
+human waiver has not been granted. CPU integration, control/collection,
+fixture checks and closed-result diagnosis do not satisfy independent
+review or establish the requested gains/three-module efficacy. Further
+offline restatements cannot substitute for the next actual experiment.
+
+The installed experiment-bridge/SKILL.md requires: "Before deploying, send
+the experiment code to a secondary Codex reviewer with max reasoning".
+Its local policy requires a fresh native gpt-6-astra/max reviewer. Resume
+new deployment only after a genuine review or an explicit human exception.
+An exception must be recorded honestly and supported by the sidecar; never
+create a fake passed reviewer record. Then both real-image four-update
+smokes must pass paired checks before formal R3.
+
+This is not a process-failure or evaluation-duration finding. At13:21:20UTC
+actual ps confirmed R1 epoch17 Complete2397874, R2 epoch16 Miss2358418,
+both R controllers and P3539938 alive. GPU0-3:78/77/38/35C and
+249.25/248.91/23.27/25.06W. No job was stopped or restarted. The existing
+heartbeat remains ACTIVE, kind=heartbeat, five-minute interval and same
+target thread; it continues monitoring and collecting meaningful terminal
+results. Preserve original R/P gates, registered selections and all weights.
