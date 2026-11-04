@@ -4696,3 +4696,31 @@ GPU0-3 were80/77/75/72 C and246.32/246.15/248.81/248.99W under250W,
 at82/100/100/100% utilization. All four cards remain assigned to active
 jobs; utilization is not uniformly saturated. No run, configuration,
 manifest, or checkpoint was changed, and no additional job was dispatched.
+
+## 2026-11-04 01:22 UTC - Research decision and gate recheck
+
+The attached research review was cross-checked against the paired full-scope
+metrics and current RPPM source. Batch10 Utility epoch17 clears the LasHeR-Miss
+PR/SR targets but remains below the RGBT234-Miss MPR/MSR targets by
+3.002622/3.614066 points; its Complete RGBT234 MPR/MSR also remain below the
+SCDT table values. See `docs/RESEARCH_DECISION_20261104.md` for the same-
+checkpoint comparison, caveats, and module order.
+
+The active RPPM `paced` arm assigns lower missing probability to samples
+classified hard by complete-view loss EMA. Its `shuffled` arm only permutes
+the epoch-level 0.2/0.5/0.8 schedule, so it is not a matched per-sample
+assignment control. This limits attribution of any paced gain; the frozen
+campaign was not changed. Any matched control must be separately preregistered
+after existing queue gates.
+
+At01:22UTC A queue1355742/controllers1601932/1601933 and the epoch15/16
+Complete evaluators remained live. A training receipts and saved-evidence
+`verification_v2.json` were complete/passed, but A queue terminal receipts
+and queue-level formal verification were absent. R1/R2 remained live at
+epoch16/update37625 and epoch15/update18425; RPPM queue3539938 remained
+`WAITING_FOR_R` on four receipts.
+
+GPU0-3 were77/77/76/72 C, drawing247.43/246.01/249.49/248.97W under250W,
+at91/100/100/100% utilization. All cards remained assigned. No active
+process, config, manifest, checkpoint, or queue was changed; no task was
+dispatched. All checkpoints remain retained.
