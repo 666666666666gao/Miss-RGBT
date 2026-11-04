@@ -5160,6 +5160,20 @@ GPU0-3 were80/75/76/73C and245.66/245.95/249.56/249.30W, at
 no power limit was changed. All cards remain assigned to registered jobs.
 No task, process, configuration, manifest, or checkpoint was changed.
 
+## 2026-11-04 06:31 UTC - Random epoch17 Miss and R1 epoch19 progress
+
+At06:31:57UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, R1/R2 trainers3388846/3395457, and RPPM queue
+3539938 remained alive. Random epoch17 Miss reached38 completed sequence
+rows, with no completion receipt. A queue-level completion and formal
+`verification_v2.json` remain absent.
+
+R1 advanced into epoch19/update45725; R2 remained in epoch18/update22375.
+These training updates are not benchmark or convergence evidence. RPPM
+still lacks R1/R2 training-verification and full-official completion
+receipts. GPU0-3 were79/76/75/72C and247.30/246.33/249.21/249.17W,
+all four fully utilized. No new task or intervention occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
