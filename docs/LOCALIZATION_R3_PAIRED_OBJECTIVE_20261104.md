@@ -136,6 +136,52 @@ Objective SHA256:
 `c1c9be07bb6c5ad042c281e578bbccbd7201bcb12b34626ebdb95c9fc93e2ed5`.
 Test SHA256:
 `2795d9fd69b8b4ed9d6b2b22543881e7a83e420c7135f65db52be6a1c17511d1`.
-No R3 trainer, launcher, prepared campaign, real-image smoke, formal run
-or metric result exists yet. This document fixes the intended paired
-comparison before execution; it is not a completed deployment receipt.
+At the initial registration no trainer/campaign existed. The following
+implementation update preserves the comparison above.
+
+## 2026-11-04 Implementation And Actual Preparation
+
+Added `prepare.py`, `train.py`, `verify.py`, `check_training.py`,
+`check_verification.py` and `check_native_cpu.py` under
+`research/localization_r3`. The trainer reuses the native model, accepted
+tuple provenance helpers and fixed128 development validation. It records
+every microbatch, candidate masks and the actual accumulated-update mean
+loss, freezes all BN statistics and verifies their invariance, and supports
+the registered four-update smoke or full20 training. No resume path exists.
+
+Configuration explicitly includes `repair_width=128, repair_layer=6`;
+the original official tracker requires those keys even with repair off.
+The actual103,138,437-parameter CADTrack model initializes identically for
+both arms (211 parameter tensors,39 BN buffers). Two original tracker
+strict loads passed on CPU with CUDA placement explicitly mocked.
+This checks the actual checkpoint/config interface, not real images.
+Evidence: `reports/server28_r3_native_tracker_cpu_20261104.json`.
+
+Five trainer/preparation CPU fixture tests pass in0.416s. They execute the
+actual four-update loop with a tiny model and mocked CUDA/evidence, check
+matching inputs/masks/initial states, BN invariant receipts, changed inputs,
+exact budgets/configs and frozen preparation checks. Two terminal-verifier
+fixture tests pass in7.029s using synthetic100,000-microbatch records per
+arm, including rejection of an extra step. They are not saved evidence
+from any real training campaign. The verifier waits for both completion
+receipts before reading manifests; it preserves final-five selection and
+reports the fixed epoch20 development contrast, not an official gate.
+
+A's real20-result terminal audit now passes. Its stable report is
+`/home/gaob/Miss-RGBT/reports/server28_partitioned_a_official_terminal_audit_20261104.json`
+(SHA256 `ab0316642d9aeb92784a541e7142b524c3e043f5d60340afac23b2a76f8c826f`).
+After checking that evidence, the actual R3 preparation ran and read-back
+checks passed at12:00:41UTC, with CUDA uninitialized:
+
+- Snapshot: `/home/gaob/Miss-RGBT/runtime/localization_r3_20261104`.
+- Config/registration root: `/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104`.
+- Receipt: `preparation_verified.json` there, also fetched as
+  `reports/server28_r3_preparation_verified_20261104.json`.
+- Status: `prepared_not_launched`; neither smoke nor formal output exists.
+
+Fresh independent review remains `REVIEW_UNAVAILABLE`: the current tool
+set has no callable native reviewer/spawn operation. Local checks are not
+a reviewer result. Both paired real-image GPU smokes are unperformed.
+The full official-evaluation controller and result-collection integration
+also remain unfinished. Do not launch formal training or claim deployment
+acceptance from the CPU reports or preparation receipt.

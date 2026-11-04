@@ -6027,3 +6027,63 @@ limits are in reports/server28_r3_objective_cpu_20261104.json. This uses a
 synthetic tiny network, not real CADTrack images or efficacy evidence.
 R3 trainer/config/launcher integration, fresh independent review and paired
 real-image smokes remain unfinished. No R3 GPU run or active-source change.
+
+## 2026-11-04 12:00 UTC - A full audit passed; R3 actually prepared
+
+A's real terminal audit returned passed/phase=formal_official_queue after
+recomputing all20 full results:9580 trajectories/6747060 frames,
+479 sequences/337353 frames per evaluation. Its CPU process2347843 exited
+successfully; both arm receipts and total queue receipt agree. Parent
+1355742 has finished. The stable server report is
+/home/gaob/Miss-RGBT/reports/server28_partitioned_a_official_terminal_audit_20261104.json,
+also fetched under reports/. SHA256:
+ab0316642d9aeb92784a541e7142b524c3e043f5d60340afac23b2a76f8c826f.
+Do not re-audit20 outputs every heartbeat or wait for a queue verification
+file that the original controller does not produce.
+
+Utility14 and Random15 remain development-selected. Their full Miss
+LasHeR PR/SR are67.174178/53.313374 and67.890547/53.760802;
+RGBT234 MPR/MSR84.735751/60.410309 and83.890983/59.846600.
+Neither meets all four targets; Utility wins are mixed. One seed, unequal
+registered stopping lengths17/18, all weights retained, no test selection.
+The failed original R1-selected Complete gate remains unchanged.
+
+R3 now has actual prepare/train/terminal-pair-verify code and isolated
+source/config preparation at12:00:41UTC. Snapshot:
+/home/gaob/Miss-RGBT/runtime/localization_r3_20261104.
+Report/config root:
+/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104.
+preparation_verified.json confirms both configs/frozen sources and missing
+smoke/formal outputs, CUDA uninitialized. Local copy:
+reports/server28_r3_preparation_verified_20261104.json.
+
+Five preparation/trainer CPU fixture tests pass in0.416s; two full-budget
+synthetic terminal-verifier fixtures pass in7.029s. Actual native OSTrack
+initialization and two original-tracker strict loads pass on CPU:
+103138437 parameters,211 equal parameter tensors,39 equal BN buffers.
+CUDA placement was explicitly mocked; this is not real-image or GPU proof.
+The tracker requires repair_width/repair_layer even with repair disabled;
+configs now include128/6. See reports/server28_r3_native_tracker_cpu_20261104.json
+and docs/LOCALIZATION_R3_PAIRED_OBJECTIVE_20261104.md.
+
+R3 status is prepared_not_launched, independent review REVIEW_UNAVAILABLE.
+Current callable tools expose no native fresh reviewer/spawn operation;
+the executor's own checks do not satisfy that workflow requirement.
+Paired real-image4-update smokes and full official-evaluation controller/
+collection integration are unfinished. Do not launch formal R3 or old P
+from a CPU/prepared pass. GPU2/3 remain free pending genuine prerequisites,
+not lack of GPU authorization. No healthy R task or frozen R/P source changed.
+
+The existing five-minute automation was updated through the app to use
+the actual A passed audit and R3 preparation status, preserving target
+thread/status/cadence and quiet-unless-meaningful notifications.
+
+At12:03:46UTC R1 Miss2331902 remained alive onGPU0. R2 epoch16 Complete
+finished479/337353 in7143.256s, and its original controller automatically
+started same-checkpoint Miss2358418/GPU1 at12:02:56UTC; actual process
+was confirmed. Saved Complete metrics are LasHeR74.908464/71.033126/
+59.531242 and RGBT23491.382455/67.120760. The original controller checks
+the full result before advancing; no extra independent re-audit is claimed
+in this entry and no original gate/selection changes.
+Both R controllers and P3539938 remain alive. GPU0-3 were77/72/38/35C,
+249.09/249.23/23.46/24.86W, memory9090/9090/1/33MiB. GPU2/3 remain free.

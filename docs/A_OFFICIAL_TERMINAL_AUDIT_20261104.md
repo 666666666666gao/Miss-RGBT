@@ -96,3 +96,36 @@ Do not replace these selected weights with per-metric official maxima.
 The existing five-minute automation remains active with the same target
 thread and cadence. Its prompt now names the actual artifacts and the
 read-only audit rather than an unproduced queue verification file.
+
+## Actual Terminal Audit Passed
+
+The original parent queue and both official arm controllers finished.
+The actual read-only audit ran at11:46UTC and was confirmed successful
+at11:58UTC on2026-11-04. It returned `status=passed`,
+`phase=formal_official_queue`, with20 recomputed full evaluations,
+9,580 trajectories and6,747,060 frames. Each evaluation has the required
+479 sequences/337,353 frames. Both training receipts, internal selections,
+all evaluated weights and all produced checkpoints passed the checks.
+
+The raw result is retained locally as
+`reports/server28_partitioned_a_official_terminal_audit_20261104.json`
+and remotely at the same filename under `/home/gaob/Miss-RGBT/reports/`.
+SHA256: `ab0316642d9aeb92784a541e7142b524c3e043f5d60340afac23b2a76f8c826f`.
+Do not rerun the completed20-result audit every heartbeat or overwrite it.
+
+The selected-checkpoint table above is now included in the complete audit.
+Utility14 and Random15 remain selected. Neither meets all four Miss
+thresholds, their relative wins are mixed, and this one paired seed with
+unequal early stopping is not three-module efficacy evidence.
+All checkpoints remain retained.
+
+Passing A permits eligible independent preparation; it does not change
+the failed R1-selected Complete condition or authorize the old P queue.
+The independent R3 pair was actually prepared and source/config read-back
+verified at12:00:41UTC, but independent review and both real-image smokes
+remain unfinished. No R3 training was launched.
+
+The existing five-minute automation was updated through the app to retain
+the passed audit, avoid redundant full re-audits and track the actual R3
+preparation status. Its thread, active status and quiet-unless-meaningful
+notification policy remain unchanged.

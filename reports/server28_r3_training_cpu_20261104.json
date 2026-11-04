@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "CPU fixtures only; not real-image smoke, full training or official metrics",
+  "trainer_preparation_tests": {
+    "command": "python -m unittest research.localization_r3.check_training -v",
+    "tests": 5,
+    "seconds": 0.416,
+    "tiny_model": true,
+    "cuda_placement_mocked": true,
+    "trainer_evidence_check_mocked_in_loop_test": true,
+    "separate_preparation_evidence_checks_exercised": true,
+    "updates_per_synthetic_arm": 4,
+    "microsteps_per_synthetic_arm": 8
+  },
+  "terminal_verifier_tests": {
+    "command": "python -m unittest research.localization_r3.check_verification -v",
+    "tests": 2,
+    "seconds": 7.029,
+    "synthetic_microsteps_per_arm": 100000,
+    "synthetic_accepted_tuples_per_arm": 400000,
+    "real_checkpoint_or_image_data": false,
+    "source_evidence_check_mocked": true,
+    "rejects_extra_step": true,
+    "waits_before_reading_unfinished_manifests": true
+  },
+  "cuda_initialized": false,
+  "independent_review": "REVIEW_UNAVAILABLE",
+  "real_image_smokes_passed": false,
+  "formal_training_started": false,
+  "dispatch_authorized": false
+}
