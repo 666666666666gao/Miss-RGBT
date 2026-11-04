@@ -5645,3 +5645,20 @@ requires completed P pairing and sixty full evaluations and explicitly leaves
 F training unauthorized pending M1, frozen preparation, and five real smokes.
 OHCAS remains an isolated residual prototype without an online history cache
 or verified historical frame exclusions. Neither is a validated paper module.
+
+## 2026-11-04 08:46 UTC - Selected A diagnosis, no new experiment
+
+Added reports/server28_selected_a_diagnosis_20261104.md using only the
+development-selected Utility14/Random15 full Complete/Miss evaluations.
+All ten metric rows were checked against original JSON and all four receipts
+against479 sequences/337353 frames. Utility14 loses3.203451/2.872568pp
+on RGBT234 Complete MPR/MSR versus historical E0, while Miss improves
+1.940936/0.835874pp. Utility beats Random on RGBT234-Miss but trails on
+LasHeR-Miss; no across-dataset selector superiority or causal diagnosis follows.
+The report retains checkpoint/receipt hashes and distinguishes historical
+baseline comparison from a matched-control experiment. No test reselection.
+
+Read-only08:46:46UTC check confirmed all monitored processes live; R1/R2
+epoch20 updates49200/24075; Utility17/Random18 Complete48/87 sequence rows.
+A queue final verification remains absent and RPPM waits on four R receipts.
+No active source/config/checkpoint/manifest was changed or job dispatched.
