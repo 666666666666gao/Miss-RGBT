@@ -5200,3 +5200,22 @@ alive; queue-level completion and formal `verification_v2.json` are absent.
 R1/R2 and RPPM remain live/gated. At05:53:30UTC GPUs0-3 were79/76/75/73C
 and246.20/246.22/249.16/249.31W, all cards assigned. No manual dispatch,
 process/configuration change, or checkpoint cleanup occurred.
+
+## 2026-11-04 05:58 UTC - Utility epoch16 Complete near full coverage
+
+At05:58:40UTC A queue1355742/controllers1601932/1601933, Utility epoch16
+Complete evaluator2077250, Random epoch17 Miss evaluator2138910, R1/R2
+trainers3388846/3395457, and RPPM queue3539938 remained alive. Utility
+epoch16 Complete reached436/479 `DONE` sequence rows without its completion
+receipt. Random epoch17 Complete has a full-scope completion receipt and
+its Complete metrics recorded above; the A queue has not yet produced its
+overall completion or formal `verification_v2.json`.
+
+Random epoch17 Miss began on GPU3 and had no completed sequence row at
+this observation. Treat this as early-run progress only, not a stall or
+failure. R1/R2 remained in epoch18 at updates44850/21950. RPPM still lists
+all four R training-verification/full-official receipts as missing.
+
+GPU0-3 were80/75/75/72C and246.40/246.35/248.89/249.03W, with all cards
+at100% utilization. No active job or configuration was changed; no new
+task was dispatched.
