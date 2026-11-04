@@ -4572,3 +4572,21 @@ This is a concrete integration contract gap, not evidence for a new
 defensive branch or an efficacy claim. OHCAS implementation remains gated
 on the active A/R protocols and verified fresh-frame exclusions. Runtime and
 active jobs were not changed.
+
+## 2026-11-04 00:47 UTC - Full evaluation queues continue
+
+Read-only Server28 poll at00:47:30Z found A official queue1355742 and both
+arm controllers still live in `OFFICIAL_RUNNING`. Utility epoch15 Complete
+PID1938748/GPU2 has logged19/479 sequence completions; Random epoch16
+Complete PID1934927/GPU3 has logged27/479. Each run is registered for the
+full 337,353-frame evaluation. No queue-level completion or verification
+file exists yet. A training receipts remain complete and training-scope
+`verification_v2.json` remains passed; this does not release the queue gate.
+
+R1/R2 trainers3388846/3395457 remain live at epoch15, latest updates
+36675/17950. RPPM queue3539938 remains `WAITING_FOR_R` on both training
+verification and full-official receipts for each arm.
+
+GPU0-3 were80/76/76/73 C, drawing247.46/247.91/249.58/249.32W under250W,
+at100/100/100/99% utilization. All cards remain occupied. No dispatch or
+runtime/config/manifest/checkpoint change was made.
