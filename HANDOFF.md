@@ -6204,3 +6204,25 @@ both controllers and P3539938 alive. GPU0-3:77/76/37/35C,
 249.19/249.51/23.43/25.08W. Heartbeat updated through the app with the
 new worker, selected pair and unchanged gates; active/five-minute cadence
 and target thread were read back unchanged.
+
+## 2026-11-04 13:17 UTC - Full closed-pair geometry diagnosis
+
+Added analysis/diagnose_selected_pair_geometry.py and five CPU tests, all
+passing in0.005s. Actual CPU-only R1 selected-pair run checked all479
+sequences/337353 frames per condition,958 prediction files and713 GT files.
+No state/sequence subsets, tracker, image, NN or weight-tensor loading.
+Full-frame diagnostics use the old coordinate-positive/first-frame exclusion
+policy, with all denominators reconciled; they are not official scores.
+RGBT234 visible median center error3.271830->4.302911px, P9024.189843->
+72.025204px. Infrared P9024.623665->71.714206px. Miss tails are much heavier.
+Visible Miss mean IoU59.414217%, GT-recentered72.352293%, GT-resized64.090613%.
+These nonadditive GT oracles are not module gain forecasts or a causal
+decomposition. Keep existing R/P/R3 gates and registered development choices.
+
+Reports:server28_r1_selected_pair_geometry_20261104.md/json under reports/.
+Raw report local/server SHA3b62729ce37bcde6b8d20c7bbb182eef15057be3488a7561fd112c8196a0348f.
+Source staged separately at/tmp/codex_r1_pair_geometry_20261104.jjw3Hn;
+no frozen source changed. Same closed Complete/Miss evidence bindings hold.
+Five fixtures and arithmetic checks are not fresh-agent semantic review.
+13:17:11UTC R1 Complete2397874/R2 Miss2358418, both R controllers/P alive;
+GPU0-3:77/76/37/35C and249.48/249.12/23.27/24.99W. No new GPU experiment.
