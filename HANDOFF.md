@@ -5954,3 +5954,43 @@ is still absent and no independent Random recheck is claimed in this entry.
 Utility17 Miss evaluator2282311 and R2 Complete2286460 remain live.
 GPU3 cannot dispatch the next research phase before the A official-queue
 formal-pass gate and the relevant R/P/M1 parent gates are satisfied.
+
+## 2026-11-04 - Corrected A terminal artifact interpretation
+
+The running official queue does NOT write its own verification_v2.json.
+It writes completed.json after both utility_completed.json and
+random_completed.json, incorporating20 independently verified full rows.
+The existing verification_v2.json belongs to formal training. Earlier
+references implying that a queue verification_v2.json would eventually
+appear were inaccurate; do not wait indefinitely for that nonexistent file.
+Training passed alone still does not establish official completion.
+
+Added scripts/verify_partitioned_a_official.py and its5-test CPU fixture.
+The auditor uses actual terminal artifacts, checks training receipts,
+internal selection, original sources/plans/exit records and retained
+checkpoints, then calls the existing full verifier for every official row.
+Only20 successful full audits return passed/phase=formal_official_queue.
+It neither starts jobs nor authorizes bypassing any other parent gate.
+Tests mock full metric recomputation and do not prove a real campaign pass.
+
+Stage: /tmp/codex_a_official_audit_20261104.keD6BN/scripts.
+At11:29:33UTC the actual probe waited on queue completed.json and
+utility_completed.json only; no passed audit file was created. See
+docs/A_OFFICIAL_TERMINAL_AUDIT_20261104.md for hashes and the exact future
+read-only command. The five-minute automation was updated through the app
+to use actual artifacts, retaining its target thread, active status and
+quiet-unless-meaningful notification policy.
+
+At11:29UTC R1 Miss2331902/GPU0, R2 Complete2286460/GPU1 and Utility17
+Miss2282311/GPU2 were alive, as were both R controllers, A queue and P queue.
+Temperatures78/76/74/36C, power249.21/249.27/249.38/25.06W; GPU3 was free
+of GPU compute. No eligible next-stage task was launched around parent gates.
+
+Selected full controller rows at11:31UTC show mixed A evidence:
+Utility14 versus Random15 Complete LasHeR74.159/70.543/59.154 versus
+73.602/70.003/58.641; Complete RGBT23487.474/63.973 versus88.415/64.549.
+Miss LasHeR67.174/61.863/53.313 versus67.891/62.762/53.761;
+Miss RGBT23484.736/60.410 versus83.891/59.847. Each model pairs one
+checkpoint. Neither meets all Miss thresholds; Utility is not uniformly
+better. This is one seed, unequal registered stopping lengths17/18,
+and does not establish three-module efficacy or terminal A audit success.
