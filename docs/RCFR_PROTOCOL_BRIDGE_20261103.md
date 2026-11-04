@@ -331,3 +331,14 @@ See `docs/FEEDBACK_F_M1_DECISION_GATE_20261104.md` for exact scope and staging
 identities. Original R historical-frame provenance, actual M1 evidence,
 P* selection, accepted-OHCAS composition where applicable and five real-image
 smokes remain unresolved prerequisites for future F preparation.
+
+## Native Preparation Entry
+
+`protocol_prepare.py` now connects the actual six-arm P* and M1 decision
+gates to isolated five-arm config/source preparation. It waits without
+writes while P/M1 are unfinished and explicitly waits for OHCAS composition
+if M1 is accepted. Its closed-M1 branch retains the selected curriculum
+but initializes from OSTrack. Six CPU fixture methods pass; no actual
+preparation or training was performed. See
+`docs/FEEDBACK_F_NATIVE_PREPARATION_20261104.md` for the budget, evidence
+scope, pending independent review and remaining dispatcher work.

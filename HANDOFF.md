@@ -5882,3 +5882,34 @@ At11:03UTC completed-sequence coverage was R1:283/479,302748/337353 frames;
 R2:62/479,171775 frames; Utility17 Miss:113/479,220481 frames;
 Random18 Miss:252/479,292453 frames. These are coverage counts only; no
 partial metric evaluation was run and no full terminal receipt was new.
+
+## 2026-11-04 - Native F preparation entry implemented, not deployed
+
+Added protocol_prepare.py/check_protocol_prepare.py to the five-arm F bridge.
+The entry uses the actual six-arm P* selector and M1 decision verifier.
+Missing P/M1 or an embedding retry waits without writes; an accepted M1
+waits for the still-unimplemented accepted-OHCAS composition. Only the
+explicit closed-both-negative M1 branch currently permits preparation.
+Missing historical provenance is not a negative result and cannot bypass it.
+
+The preparation copies frozen native sources and its complete five-arm
+source checkout into a new isolated runtime. It selects the P curriculum,
+not P checkpoint continuation; all arms initialize from OSTrack. Seed2030,
+mask65403, microbatch2/accumulation2, LR5e-5/backbone5e-6,20x20000 tuples
+and100000 optimizer updates per arm are paired. The inherited fixed128
+development cache/rule is retained, as are epoch10 and16-20 checkpoints.
+Five real-image smokes and50 full evaluations remain required.
+
+Six CPU fixture unittest methods pass, covering30 configs, isolated copying,
+exact evidence checks, changed config/source/parent rejection and existing
+directory refusal. Fixture parent decisions/cache/weights/source trees are
+synthetic. Live readiness returns WAITING_FOR_P with20 missing paths;
+CUDA is uninitialized and actual campaign/runtime/run roots remain absent.
+The test stage is /tmp/codex_feedback_prepare_20261104.bDfteB and uses
+the earlier five-arm staging dependencies. It is not deployment.
+
+See docs/FEEDBACK_F_NATIVE_PREPARATION_20261104.md for hashes and limits.
+No fresh independent review or actual F preparation was performed; native
+reviewer tools are unavailable. Smoke/formal dispatcher/reporting integration
+and accepted-OHCAS composition are still unfinished. Active R/A/P sources,
+configurations, queues and checkpoints were not modified.
