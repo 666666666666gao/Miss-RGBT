@@ -104,8 +104,21 @@ CUDA uninitialized. Tests ran from isolated staging
 `/tmp/codex_segmented_20261104.rutu5k`; frozen files were not edited. A first
 test attempt incorrectly compared metadata keys as numeric loss diagnostics;
 the test was corrected to compare the five actual objective diagnostics.
-This is not native-model/image equivalence, a memory measurement or launch
-acceptance. Native checks and independent review remain required.
+This first test set is not native-model/image equivalence, a memory measurement
+or launch acceptance.
+
+The subsequent `check_segmented_native.py` executes the actual103138437-parameter
+OSTrack-initialized network on synthetic batch1 CPU images: two128px templates
+and three256px searches, one microstep, all BN statistics frozen. It compares209
+non-null gradients (max absolute difference2.384185791015625e-7),39 exact buffers,
+211 updated parameter tensors (max5.960464477539063e-8) and627 AdamW state tensors
+(max5.820766091346741e-11). Both preclip norms are60.93133544921875. It passed in
+56.633560s with CUDA uninitialized. The full result is
+`reports/server28_segmented_native_synthetic_cpu_20261104.json`, SHA256
+`26ee1eb0e5323b5864a644ff43de6925a099e2af3f3288abfb5417c94e77bfd7`,
+matching the server staging output. This extends the network scope, but still
+does not prove native batch4 real-image/accumulation equivalence or GPU memory,
+speed, launch acceptance or efficacy. No frozen trainer imports this candidate.
 
 ## Actual Review Attempt And Blocking Condition
 

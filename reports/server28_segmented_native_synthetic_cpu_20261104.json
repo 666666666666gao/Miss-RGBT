@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "synthetic_images": true,
+  "batch": 1,
+  "microsteps": 1,
+  "native_model_parameters": 103138437,
+  "searches": 3,
+  "templates": 2,
+  "freeze_all_bn": true,
+  "cuda_initialized": false,
+  "joint_loss": 78.31415557861328,
+  "segmented_loss": 78.31415557861328,
+  "gradients": {
+    "tensors": 209,
+    "maximum_absolute_error": 2.384185791015625e-07,
+    "rtol": 0.0002,
+    "atol": 2e-05
+  },
+  "buffers": {
+    "tensors": 39,
+    "maximum_absolute_error": 0.0,
+    "rtol": 0.0,
+    "atol": 0.0
+  },
+  "parameters_after_adamw": {
+    "tensors": 211,
+    "maximum_absolute_error": 5.960464477539063e-08,
+    "rtol": 1e-06,
+    "atol": 1e-07
+  },
+  "optimizer_state": {
+    "tensors": 627,
+    "maximum_absolute_error": 5.820766091346741e-11,
+    "rtol": 0.0002,
+    "atol": 2e-06
+  },
+  "preclip_gradient_norms": [
+    60.93133544921875,
+    60.93133544921875
+  ],
+  "seconds": 56.633559703826904,
+  "scope": "Native network on synthetic CPU images, not native batch4 real-image smoke, GPU memory/performance, campaign acceptance or efficacy"
+}

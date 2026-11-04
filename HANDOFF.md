@@ -6338,3 +6338,23 @@ gradients, BN buffers/order, RNG/masks, accumulated clipping/AdamW updates.
 No native-model/image/GPU-memory equivalence claim, no frozen-runtime edits.
 R3 review incompatibility unchanged, no human effort/model waiver. This
 continuation is not consent. Goal stays active; second resumed barrier turn.
+
+## 2026-11-04 - Native synthetic CPU backward equivalence
+
+New check_segmented_native.py tests actual103138437-parameter R3 network
+on synthetic batch1 CPU images, two templates/three searches/one microstep.
+Pass56.633560s, CUDA uninitialized.209 gradients maxdiff2.384185791015625e-7;
+39 BN buffers exact;211 post-AdamW parameters maxdiff5.960464477539063e-8;
+627 optimizer state tensors maxdiff5.820766091346741e-11. Both clipping
+norms60.93133544921875. Report:
+reports/server28_segmented_native_synthetic_cpu_20261104.json, local/server
+SHA26ee1eb0e5323b5864a644ff43de6925a099e2af3f3288abfb5417c94e77bfd7.
+Not native batch4 images/accumulation, GPU memory, speed or deployment review.
+No frozen-runtime integration or new GPU experiment.
+
+At15:52:22UTC R2 original controller status records selected17 Miss2489154
+onGPU1 started15:49:09UTC; subsequent actual ps confirms both Miss workers,
+R controllers and P live. Full selected pair still pending. Updated existing
+ACTIVE five-minute same-thread heartbeat through app to current workers,
+correct U1 wording and actual review effort incompatibility. Goal not achieved;
+current evaluations continue, no human review-policy exception received.
