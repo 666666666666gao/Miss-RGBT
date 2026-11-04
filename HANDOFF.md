@@ -5359,6 +5359,25 @@ benchmark or convergence evidence. RPPM remains gated on R receipts.
 GPU0-3 were78/76/75/72C at247.05/247.07/248.48/249.40W and
 75/81/100/100% utilization. No new task or intervention occurred.
 
+## 2026-11-04 07:31 UTC - Random epoch17 Miss full evaluation completed
+
+At07:31:35UTC Random epoch17 Miss evaluator2138910 had exited after producing
+a stable full-scope receipt:479 sequences/337,353 frames, with LasHeR
+245/220,703 and RGBT234234/116,650. Reported metrics are LasHeR PR/NPR/SR
+67.316485/62.323169/53.497994 and RGBT234 MPR/MSR84.165642/59.709256.
+This misses the requested thresholds by1.983515 PR,0.902006 SR,
+3.934358 MPR, and4.590744 MSR points. Queue-level independent formal
+verification is still absent, so treat the metrics as the evaluator receipt,
+not yet independently queue-verified.
+
+Utility epoch16 Miss evaluator2147541 remains alive at235/479 rows.
+A queue1355742/controllers1601932/1601933 remain alive; queue status is
+still `OFFICIAL_RUNNING` and queue-level `completed.json`/
+`verification_v2.json` are absent. R1/R2 trainers3388846/3395457 and RPPM
+queue3539938 remain alive/gated. GPU3 was released at39C/25.43W/0%
+utilization; GPU0-2 were78/76/75C at248.73/249.62/249.18W, still assigned.
+No manual dispatch or intervention occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
