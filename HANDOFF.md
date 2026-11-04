@@ -5247,6 +5247,20 @@ benchmark or convergence evidence. RPPM remains gated on R receipts.
 GPU0-3 were80/77/76/72C at246.21/246.72/249.11/248.75W and
 100% utilization. No new task or intervention occurred.
 
+## 2026-11-04 07:01 UTC - A full Miss evaluations continue
+
+At07:01:49UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, Utility epoch16 Miss evaluator2147541, R1/R2
+trainers3388846/3395457, and RPPM queue3539938 remained alive. Random
+epoch17 Miss advanced from124 to142 completed rows; Utility epoch16 Miss
+advanced from64 to73. Neither has a completion receipt; A queue
+`completed.json` and queue-level `verification_v2.json` are absent.
+
+R1 reached epoch19/update46475 and R2 epoch19/update22750; these are not
+benchmark or convergence evidence. RPPM remains gated on R receipts.
+GPU0-3 were80/76/75/72C at248.43/246.08/249.54/249.33W and
+100% utilization. No new task or intervention occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
