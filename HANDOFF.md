@@ -4878,3 +4878,35 @@ GPU0 briefly read250.55W at80C. A follow-up at03:37:07Z read246.06W;
 GPU0-3 then measured246.06/247.94/249.24/249.37W at80/76/76/72C.
 The exceedance was not sustained. No power limit, active run, configuration,
 manifest, or checkpoint was changed; no task was dispatched.
+
+## 2026-11-04 03:42 UTC - A Miss workers and R training still active
+
+At03:42:23Z A queue1355742/controllers1601932/1601933, Utility epoch15
+Miss PID2016182, Random epoch16 Miss PID2009135, R1 PID3388846, R2
+PID3395457, and RPPM queue3539938 remained live. Both Miss evaluation logs
+appended sequence rows but lack full completion receipts. The queue remains
+`OFFICIAL_RUNNING` with no queue-level completion or formal verification.
+
+R1 was at epoch17/update41275; R2 at epoch17/update20200. No final-five
+development selection is available yet. GPU0-3 were80/74/76/72C,
+246.93/246.20/249.10/249.19W, all at100% utilization. All cards remain
+assigned. No new task or intervention was made.
+
+## 2026-11-04 03:47 UTC - Random epoch16 Miss completed; queue gate remains closed
+
+At03:45-03:47UTC, Random epoch16 Miss PID2009135 exited and its stable
+`completed.json` recorded479/479 sequences and337,353/337,353 frames. Its
+dataset counts are LasHeR245/220,703 and RGBT234234/116,650. The generated
+metrics are LasHeR-Miss PR/NPR/SR67.805983/62.657725/53.763168 and
+RGBT234-Miss MPR/MSR84.363668/60.414559. These numbers are provisional:
+the official queue's independently verified metrics do not yet include this
+run, and queue-level `verification_v2.json`/`completed.json` remain absent.
+
+Utility epoch15 Miss PID2016182 remains alive with no completion receipt.
+Queue1355742 and controllers1601932/1601933 remain live in
+`OFFICIAL_RUNNING`. GPU3 is released; at03:47:28UTC GPU0-3 were
+77/78/75/39C and247.23/247.57/249.27/25.21W, with utilization
+55/100/100/0%. R1/R2 trainers3388846/3395457 and RPPM queue3539938 remain
+live. Do not dispatch onto GPU3: the paired A Miss receipts and queue-level
+formal verification=`passed` are still required. No runtime, config,
+checkpoint, or manifest was changed.
