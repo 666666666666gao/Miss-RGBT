@@ -5010,6 +5010,21 @@ convergence or benchmark performance. GPU0-3 were80/76/76/72C,
 additional job was dispatched; no active process, configuration,
 manifest, or checkpoint was changed.
 
+## 2026-11-04 04:53 UTC - A evaluation progress and transient GPU1 power sample
+
+At04:53:18UTC the A official queue/controllers, Utility epoch16 Complete
+PID2077250, Random epoch17 Complete PID2070557, R1/R2 trainers, and RPPM
+queue3539938 remained alive. Their full-scope evaluation logs reached43
+and67 completed-sequence records; neither evaluator has a completion
+receipt, and the queue-level completion/formal verification files remain
+absent.
+
+R1/R2 are at epoch18/update43125 and epoch17/update21100. GPU1's earlier
+253.28W sample was not sustained: the 180-second recheck measured
+245.86W. GPU0-3 were80/77/76/72C and248.24/245.86/249.14/249.16W,
+all assigned to the registered runs. No power limit or workload was
+changed; no next-stage dispatch is authorized.
+
 ## 2026-11-04 04:33 UTC - R1 entered epoch18; A full evaluations continue
 
 At04:33:25UTC, A official queue1355742/controllers1601932/1601933,
