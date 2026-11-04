@@ -4751,14 +4751,30 @@ an official score; neither run has a completed 20-epoch history, so it is
 not enough to declare convergence or stop early. Continue the registered
 20-epoch runs and final-five development selection.
 
-A's Utility epoch15 Complete PID1938748/GPU2 and Random epoch16 Complete
-PID1934927/GPU3 remain active under queue1355742/controllers1601932/1601933.
-The two training receipts and saved-evidence `verification_v2.json` remain
-complete/passed, but queue-level `completed.json` and formal verification
-are absent. RPPM queue3539938 remains `WAITING_FOR_R` on all four R receipts.
+## 2026-11-04 02:05 UTC - R2 epoch16 Complete evaluation audited
 
-GPU0-3 were80/77/75/73 C, drawing247.19/246.85/249.16/249.43W under250W.
-Utilization was49/100/100/100%; all cards still held assigned job memory
-(19160/19160/9106/9138 MiB). No card was free for a new task. No process,
-configuration, manifest, checkpoint, or queue was changed; no task was
-dispatched.
+The registered A queue's Random epoch16 Complete run has a stable receipt:
+479/479 sequences and337,353/337,353 frames, including LasHeR245/220,703
+and RGBT234234/116,650. The queue controller appended the result with
+`independently_recomputed=true`.
+
+| Dataset | Metric | R2 epoch16 | E0 Complete | Delta |
+|---|---|---:|---:|---:|
+| LasHeR | PR | 73.154501 | 75.636503 | -2.482002 |
+| LasHeR | NPR | 69.602719 | 71.772837 | -2.170118 |
+| LasHeR | SR | 58.395139 | 60.125714 | -1.730575 |
+| RGBT234 | MPR | 89.198793 | 90.677134 | -1.478341 |
+| RGBT234 | MSR | 65.126610 | 66.845228 | -1.718618 |
+
+This is an interim final-five candidate, not the development-selected
+checkpoint: Random selected epoch15. It is Complete-only evidence; Random
+epoch16 Miss is still running, so this is not a same-checkpoint paired
+conclusion. Do not select or discard weights from these official-test
+numbers. Keep all checkpoints and wait for the complete registered queue
+and its formal verification.
+
+At02:05UTC, A queue1355742/controllers1601932/1601933 remained live.
+Utility epoch15 Complete PID1938748 and Random epoch16 Miss PID2009135 were
+active on GPUs2/3. R1/R2 trainers3388846/3395457 and RPPM queue3539938
+remained live/gated. No queue-level A completion/formal verification or R
+receipts were present; no independent task was dispatched.
