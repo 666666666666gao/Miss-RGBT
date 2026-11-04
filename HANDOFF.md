@@ -6135,3 +6135,27 @@ GPU2/3 are free; the immediate R3 execution barrier is the unavailable
 independent review, then actual paired smokes. No healthy task changed.
 The same five-minute heartbeat now records the implemented sidecars and
 actual review wait, retaining active status/target and quiet notifications.
+
+## 2026-11-04 12:30 UTC - R2 terminal development analysis
+
+Copied unchanged terminal R2 history/config/completion/training-verification
+receipts to reports/server28_r2_terminal_20261104/; remote/local SHA256
+values match. All20 ordered128-sample means and1250 updates/epoch checked.
+Report: reports/server28_r2_development_curve_20261104.md. R2 selects17,
+not16: mean4.705640137, also its whole-history minimum. Epoch20 is0.316723%
+worse; final-five mean4.724935788/range0.035032938. State minima are
+Complete7/RGB-missing17/TIR-missing5. These are existing fixed-crop losses,
+not new evaluation or tracking convergence. R2 epoch16 Complete is an
+unselected row; wait for registered epoch17 Complete/Miss reporting.
+
+R1/R2 share LR1e-4/backbone1e-5 but accumulate2/4 microbatches: effective
+8/16 and50000/25000 updates at equal400000-tuple budgets. Warmup500 spans
+4000/8000 tuples; LR drop follows25000/12500 updates. No isolated
+batch-plus-LR efficacy claim or retrospective stopping follows. Original
+R1-selected failed P gate and all checkpoints remain unchanged.
+
+At12:28:13UTC both Miss evaluators2331902/2358418, both R controllers and
+P3539938 were live; GPUs0-3 were76/75/36/34C and249.57/249.18/23.53/24.89W.
+No new GPU task. R3-only review waiver was explicitly requested from the
+human, but no response/waiver exists. Automatic goal continuation is not
+approval; keep the review and paired-smoke prerequisites.

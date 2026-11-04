@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "epochs": 20,
+  "updates": 25000,
+  "seconds": 118893.81392168999,
+  "pid": 3395457,
+  "final_five": [
+    {
+      "epoch": 16,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/epoch16.pth.tar",
+      "sha256": "ca916649ed209ccea7058542dedc98e0fafff1d19bd20a1d98f8320bd8b69764"
+    },
+    {
+      "epoch": 17,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/epoch17.pth.tar",
+      "sha256": "39d75fdb47ca8bbf938e81330d26d0d8a3940780b75c175c41fc569b8346cfe5"
+    },
+    {
+      "epoch": 18,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/epoch18.pth.tar",
+      "sha256": "cc1fd80e0e4c72c28943af4b3699dd74ed758874e9d346d14931c10b7a870b41"
+    },
+    {
+      "epoch": 19,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/epoch19.pth.tar",
+      "sha256": "9e24421c39022680508c6b1b213e66e23e562674f1e56478965073eedc978a42"
+    },
+    {
+      "epoch": 20,
+      "path": "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r2/epoch20.pth.tar",
+      "sha256": "bf35b74e59242785cc2030480a4a830393c692889c88466b143b03795a2fdbee"
+    }
+  ],
+  "selected_epoch": 17,
+  "selection_rule": "Minimum mean 11/01/10 task loss among epochs16-20; earlier tie",
+  "all_checkpoints_retained": true,
+  "official_test_selection_used": false
+}
