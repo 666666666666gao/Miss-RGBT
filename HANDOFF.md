@@ -5146,6 +5146,20 @@ All cards remain assigned to registered workloads. The A verification
 gate remains closed, and RPPM still waits for R receipts. No process,
 configuration, manifest, checkpoint, or power setting was changed.
 
+## 2026-11-04 06:26 UTC - Random epoch17 Miss progress; GPU0 power recheck
+
+At06:26:26UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, R1/R2 trainers3388846/3395457, and RPPM queue
+3539938 remained alive. Random epoch17 Miss advanced from12 to25 completed
+sequence rows and remains without a completion receipt. A queue-level
+`completed.json` and formal `verification_v2.json` are still absent.
+RPPM remains `WAITING_FOR_R` on four missing R receipts.
+
+GPU0-3 were80/75/76/73C and245.66/245.95/249.56/249.30W, at
+100/75/100/100% utilization. GPU0's prior253.34W sample was not sustained;
+no power limit was changed. All cards remain assigned to registered jobs.
+No task, process, configuration, manifest, or checkpoint was changed.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
