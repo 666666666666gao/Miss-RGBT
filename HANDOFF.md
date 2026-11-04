@@ -4683,3 +4683,16 @@ limits, with100% utilization. An immediately preceding sample briefly read
 GPU1 at251.06W; this follow-up read returned247.81W, so sustained power
 exceedance was not observed. All four GPUs have active assignments. No
 intervention or runtime/config/manifest/checkpoint/dispatch change was made.
+
+## 2026-11-04 01:06 UTC - A and R progress continues
+
+Utility epoch15 Complete advanced to52/479 sequences and Random epoch16
+Complete to64/479. A queue1355742 and both evaluators remain live, with no
+queue-level completion or formal-verification receipt. R1/R2 remain live at
+epoch15, latest updates37225/18225. RPPM queue3539938 still waits for the
+four R training-verification/full-official receipts.
+
+GPU0-3 were80/77/75/72 C and246.32/246.15/248.81/248.99W under250W,
+at82/100/100/100% utilization. All four cards remain assigned to active
+jobs; utilization is not uniformly saturated. No run, configuration,
+manifest, or checkpoint was changed, and no additional job was dispatched.
