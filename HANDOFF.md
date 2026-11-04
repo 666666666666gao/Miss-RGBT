@@ -6013,7 +6013,7 @@ numerically failed; neither R2 nor a new study may replace it.
 
 Separately registered the matched C-only/C+M R3 comparison in
 docs/LOCALIZATION_R3_PAIRED_OBJECTIVE_20261104.md: fresh OSTrack, all BN
-statistics frozen, repair/U1 off, seed2031, micro4/accum2, effective8,
+statistics frozen, LocalRepair/A off (inference U1 retained), seed2031, micro4/accum2, effective8,
 20x20000 tuples/50000 updates, identical optimizer/data/development policy.
 The objective package differs; compute is100000 versus200000 forwards.
 Fixed epoch20 C development-loss contrast is primary; final-five mean
@@ -6304,3 +6304,19 @@ Neither current evaluation has a completion receipt. Separate epoch17
 Complete verification evidence not collected this poll; no fresh review claim.
 GPUs70/77/38/36C,248.91/248.69/23.29/25.00W at15:02:18UTC. GPU2/3 free;
 R3 review gate unchanged. No duplicate dispatch or original P gate change.
+
+## 2026-11-04 - Resumed goal and latest source audit
+
+User supplied second review and resumed goal. New source/priority record:
+docs/RESEARCH_PRIORITY_AND_SOURCE_AUDIT_20261104.md. Corrected old prose:
+R3 disables LocalRepair/A, not inference U1. Actual evaluator uses native
+two-template YAML, interval5/threshold0.65. No config/source bytes changed.
+Native task loss intentionally sums searches; curriculum normalization
+already preserves [search,B]. Fusion BN statistics are not OSTrack-matched;
+allBN is a matched policy, not proven cause. Keep original R1/P failure.
+Native fresh-review spawn attempted with gpt-6-astra/max. Tool rejected max:
+supported low/medium/high/xhigh. No reviewer started, no lowered effort or
+synthetic acceptance. Supersedes absent-spawn-API description; no waiver.
+Goal resumed active: first resumed barrier observation, not immediate blocked.
+At15:40:52UTC ps confirms R1 Miss2461496/R2 Complete2423750/controllers/P live.
+No new GPU experiment or frozen-source edit.

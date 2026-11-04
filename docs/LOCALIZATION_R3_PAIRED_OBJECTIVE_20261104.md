@@ -23,7 +23,7 @@ future choices use development evidence, with official results for reporting.
 | Initialization | Fresh OSTrack, never A/R/P checkpoint continuation |
 | Initializer | `/home/gaob/rgbx-initializers/OSTrack_ep0300.pth.tar` |
 | Initializer SHA256 | `8e01d6251569ac84dbb53fdd062cd938551be2d889582f789aa3070196f42f41` |
-| Network | Native CADTrack plus `MissingTrackerModel`, repair and U1 disabled |
+| Network | Native CADTrack plus `MissingTrackerModel`, LocalRepair/A disabled; inference U1 retained |
 | BN policy | All BatchNorm running statistics frozen in both arms |
 | Seed | 2031 for initialization and native data sampling |
 | Training pool | Full LasHeR train882, native two-template/three-search tuples |
@@ -179,8 +179,10 @@ checks passed at12:00:41UTC, with CUDA uninitialized:
   `reports/server28_r3_preparation_verified_20261104.json`.
 - Status: `prepared_not_launched`; neither smoke nor formal output exists.
 
-Fresh independent review remains `REVIEW_UNAVAILABLE`: the current tool
-set has no callable native reviewer/spawn operation. Local checks are not
+Fresh independent review remains `REVIEW_UNAVAILABLE`. On the resumed run,
+the native spawn operation became callable, but rejected the mandated
+`gpt-6-astra` / `max` combination: supported efforts are low, medium, high,
+xhigh. No lower-effort or alternate-model fallback was attempted. Local checks are not
 a reviewer result. Both paired real-image GPU smokes are unperformed.
 Sidecar control/collection is now implemented and tested outside the
 frozen snapshot; see `LOCALIZATION_R3_CONTROL_20261104.md`. Its actual
