@@ -4830,3 +4830,19 @@ One GPU1 sample read253.00W at77C; a follow-up at03:08:55Z read247.01W.
 GPU0-3 then measured246.44/247.01/248.86/249.10W at80/77/75/72C, all
 100% utilized. The single over-limit sample was not sustained. No power
 setting, job, configuration, manifest, or checkpoint was changed.
+
+## 2026-11-04 03:21 UTC - A Miss rows and R epoch progress
+
+At03:21:39Z the official A queue1355742/controllers1601932/1601933,
+Utility epoch15 Miss PID2016182, Random epoch16 Miss PID2009135, R1
+PID3388846, R2 PID3395457, and RPPM queue3539938 were all live. Both
+Miss evaluators appended sequence rows; both remain on the complete
+479-sequence/337,353-frame plans and still lack `completed.json`.
+The official queue remains `OFFICIAL_RUNNING` without queue-level
+completion or `verification_v2.json`.
+
+R1 advanced to epoch17/update40725; R2 advanced within epoch16 to
+update19950. No final-five selection or convergence result is available.
+GPU0-3 were80/76/75/72C, drawing246.30/247.38/249.44/249.34W at100%
+utilization. All cards remain assigned; no additional work was dispatched
+and no training/configuration/manifest/checkpoint state was altered.
