@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-04T11:19:17.941323Z",
+  "arm": "r1",
+  "epoch": 16,
+  "development_selected": true,
+  "condition": "complete",
+  "full_scope": {
+    "sequences": 479,
+    "frames": 337353
+  },
+  "metrics": {
+    "LasHeR": {
+      "sequences": 245,
+      "frames": 220703,
+      "PR": 74.73899846760197,
+      "NPR": 70.99765129589152,
+      "SR": 59.504064141911606
+    },
+    "RGBT234": {
+      "sequences": 234,
+      "frames": 116650,
+      "MPR": 90.90913153056275,
+      "MSR": 67.0596297343512
+    }
+  },
+  "baseline": {
+    "LasHeR": {
+      "sequences": 245,
+      "frames": 220703,
+      "PR": 75.63650288717686,
+      "NPR": 71.77283680562866,
+      "SR": 60.125713676122736
+    },
+    "RGBT234": {
+      "sequences": 234,
+      "frames": 116650,
+      "MPR": 90.67713392128344,
+      "MSR": 66.8452283301532
+    }
+  },
+  "delta_pp": {
+    "LasHeR": {
+      "PR": -0.8975044195748865,
+      "NPR": -0.7751855097371418,
+      "SR": -0.6216495342111301
+    },
+    "RGBT234": {
+      "MPR": 0.23199760927930413,
+      "MSR": 0.21440140419800002
+    }
+  },
+  "registered_tolerance_pp": -0.1,
+  "selected_complete_tolerance_passed": false,
+  "checkpoint_sha256": "0fe0af921bfc4ce2eba1301d3bc6f37a7adf68ea32a93542ecfc822dbcb8e03b",
+  "independently_recomputed": true,
+  "cuda_initialized": false,
+  "evidence_sha256": {
+    "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r1/completed.json": "4eb984002f5599dadd19b4e834ab800a8eea3e98b75d265c2004958fc2f585ae",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/e0_complete/metrics.json": "aad0e6eb0a65ac54eb708b0bf0e4e8b2cb408fba3e0bed7c8ab7230ee9733979",
+    "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/run.json": "898a406505947aadcaf5abbe451d1958ae8b8f779f529ebf9a427b8aee0d9cb8",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/completed.json": "14512320c6241259976ed971bed5bde4954effbd3f38ecffe68193041c660f31",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/metrics.json": "920b98b96d9fa7b092c535eeedd368f920d145ef5788a21eaaeed822861b35a9",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/all_receipts.json": "422efae0183a885c02506483963b31e6a9b61c1f3ea573a5b9a585a105a32dea"
+  },
+  "scope": "One full selected R1 Complete evaluation only; not a terminal twenty-evaluation R campaign gate or authorization to change frozen R/P"
+}

@@ -5913,3 +5913,44 @@ No fresh independent review or actual F preparation was performed; native
 reviewer tools are unavailable. Smoke/formal dispatcher/reporting integration
 and accepted-OHCAS composition are still unfinished. Active R/A/P sources,
 configurations, queues and checkpoints were not modified.
+
+## 2026-11-04 11:19 UTC - R1 selected Complete independently verified
+
+R1 epoch16 Complete finished full479/337353 in6948.8344 seconds. A separate
+read-only call to the existing full verifier recomputed all five metrics,
+checking inventories/ground truth/masks/receipts/boxes/curves/native sources.
+The actual checkpoint SHA256 is
+0fe0af921bfc4ce2eba1301d3bc6f37a7adf68ea32a93542ecfc822dbcb8e03b.
+CUDA was uninitialized. Epoch16 remains the registered development selection.
+
+LasHeR PR/NPR/SR=74.738998468/70.997651296/59.504064142;
+RGBT234 MPR/MSR=90.909131531/67.059629734. Relative to actual E0:
+LasHeR -0.897504420/-0.775185510/-0.621649534pp;
+RGBT234 +0.231997609/+0.214401404pp. All three LasHeR values fail the
+registered R1 Complete tolerance of E0-0.1pp. Neither another epoch nor R2
+may replace the selected R1 under that rule. This is not a terminal R/P
+campaign verdict: both R controllers still owe their full evaluation sets.
+Do not modify the frozen gate or launch P around it.
+
+See reports/server28_r1_selected_complete_analysis_20261104.md and the
+independent record server28_r1_epoch16_complete_verified_20261104.json
+(SHA2561e12d14bb94125303264f6910c4934b742da543166cfc192f9e7f492952b3469).
+No cross-dataset2pp gain or Miss result is established. A new R3/continuation
+requires separate registration, using development evidence for future
+choices and preserving the current official-test-conditioned gate outcome.
+All checkpoints remain retained and active experiment sources unchanged.
+
+At11:20:23UTC controller3388832 automatically launched R1 epoch16 Miss
+PID2331902/GPU0 with four workers and the same checkpoint. The new process
+was confirmed alive at approximately11:21UTC. No duplicate was started.
+The11:20:56UTC poll found GPU0/1/2 active at67/76/72C,
+249.03/249.14/249.25W; GPU3 had33MiB used,38C and24.96W.
+
+Random epoch18 Miss has a full479/337353 terminal receipt,6021.6558 seconds.
+Saved metrics are LasHeR PR/NPR/SR67.533907067/62.320847806/53.489441523;
+RGBT234 MPR/MSR84.853895914/60.257894793. This is not its development-
+selected epoch15 and does not change selection. Queue-level verification
+is still absent and no independent Random recheck is claimed in this entry.
+Utility17 Miss evaluator2282311 and R2 Complete2286460 remain live.
+GPU3 cannot dispatch the next research phase before the A official-queue
+formal-pass gate and the relevant R/P/M1 parent gates are satisfied.
