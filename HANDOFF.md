@@ -4590,3 +4590,19 @@ verification and full-official receipts for each arm.
 GPU0-3 were80/76/76/73 C, drawing247.46/247.91/249.58/249.32W under250W,
 at100/100/100/99% utilization. All cards remain occupied. No dispatch or
 runtime/config/manifest/checkpoint change was made.
+
+## 2026-11-04 00:50 UTC - A full evaluations and R training advance
+
+Read-only Server28 poll: A queue1355742 and controllers1601932/1601933
+remain live in `OFFICIAL_RUNNING`. Utility epoch15 Complete PID1938748 has
+logged24/479 sequences; Random epoch16 Complete PID1934927 has logged
+32/479. Both are full 337,353-frame evaluations. Queue-level completion
+and formal verification files are still absent.
+
+R1/R2 trainers3388846/3395457 remain live at epoch15, latest updates
+36825/18025. RPPM queue3539938 remains `WAITING_FOR_R` on the four R
+training-verification and full-official receipts.
+
+GPU0-3 were80/77/75/72 C, drawing246.00/247.85/249.03/249.11W under250W,
+at100/100/100/100% utilization. All cards remain occupied; no new job or
+runtime/config/manifest/checkpoint change was made.
