@@ -4724,3 +4724,19 @@ GPU0-3 were77/77/76/72 C, drawing247.43/246.01/249.49/248.97W under250W,
 at91/100/100/100% utilization. All cards remained assigned. No active
 process, config, manifest, checkpoint, or queue was changed; no task was
 dispatched. All checkpoints remain retained.
+
+## 2026-11-03 - SCDT scorer provenance follow-up
+
+The arXiv paper's code link resolves to the SCDT-CVPR2026 GitHub repository,
+which currently displays as empty; open issue #1 asks when code will be
+released, and `git ls-remote` returned no refs during this audit. This means
+exact SCDT scorer parity remains unverified; it does not prove that no private
+or separately hosted scorer exists. The pinned dataset/benchmark resource
+repository is not proof of which archive SCDT executed.
+
+See `docs/SCORING_PROVENANCE_FOLLOWUP_20261103.md`. Continue labeling SCDT
+numbers as published comparison targets, not controlled head-to-head
+results. No local score, active job, or checkpoint was changed. The latest
+Server28 poll still showed A's full evaluations and R1/R2 training active,
+with all GPUs assigned; the queue-level formal gate remains pending, so no
+next-stage job is authorized.
