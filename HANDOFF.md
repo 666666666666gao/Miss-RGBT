@@ -4864,3 +4864,17 @@ of convergence. Final-five selection remains pending.
 GPU0-3 were79/77/76/73C,243.53/245.29/249.39/249.24W; GPU0 utilization
 was48%, with GPUs1-3 at100%. All cards remain assigned. No additional job
 or experiment intervention was made.
+
+## 2026-11-04 03:37 UTC - A/R live status and GPU0 power recheck
+
+At03:36:03Z the official A queue/controllers and both full Miss evaluators
+remained live, as did R1/R2 training and the gated RPPM queue. Utility
+epoch15 Miss and Random epoch16 Miss appended sequence rows but still have
+no full-scope completion receipts; A queue completion and formal
+verification are also absent. R1 was epoch17/update41100 and R2
+epoch17/update20125.
+
+GPU0 briefly read250.55W at80C. A follow-up at03:37:07Z read246.06W;
+GPU0-3 then measured246.06/247.94/249.24/249.37W at80/76/76/72C.
+The exceedance was not sustained. No power limit, active run, configuration,
+manifest, or checkpoint was changed; no task was dispatched.
