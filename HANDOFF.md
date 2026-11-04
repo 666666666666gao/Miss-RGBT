@@ -5852,3 +5852,33 @@ R controllers and RPPM3539938 remain live. Original A training PIDs
 1288280/1288281 have exited; their completion is previously verified.
 No new R official completion receipts were present. No task was dispatched
 or healthy process restarted; all checkpoints remain retained.
+
+## 2026-11-04 - Synthetic per-frame F tracker check passed on CPU
+
+Added the test-only check_tracker_cpu.py wrapper and retained its actual
+report at reports/server28_feedback_tracker_cpu_20261104.json.
+SHA25629d0ede75f1673e6571ffc882ea604a508c5cc50c7fe5044f62af69f60e466f0.
+Five files were staged under /tmp/codex_feedback_tracker_cpu_20261104.9WWXlq;
+the active server package was not changed. The actual E0 network processed
+synthetic uint8 frames in36.7953 seconds with CUDA uninitialized.
+
+The wrapper explicitly mocks Module.cuda, Tensor.cuda and native
+torch.tensor/ones CUDA placement. All feedback modes strictly reload.
+For three consecutive availability states, zero-residual deep and single
+match native boxes/templates/availability bitwise. Synthetic nonzero deep
+feedback differs from round1; its round2 box independently decodes exactly.
+Each frame commits its state once; template updates perform one append/pop
+pair when enabled and none otherwise, retaining actual availability.
+
+These are CPU online-interface checks, not real-image training, learned F
+efficacy, GPU parity/performance or official-score evidence. Five real-image
+smokes and the P*/actual-M1/composition/frozen-preparation gates remain.
+The existing F prepare.py still targets the retired four-arm P campaign;
+the new native-protocol preparation/dispatch integration is unfinished.
+
+Read-only11:06:08UTC poll confirmed all four evaluators and both queues
+alive. GPU temperatures79/76/75/72C, power249.74/248.76/248.63/249.06W.
+At11:03UTC completed-sequence coverage was R1:283/479,302748/337353 frames;
+R2:62/479,171775 frames; Utility17 Miss:113/479,220481 frames;
+Random18 Miss:252/479,292453 frames. These are coverage counts only; no
+partial metric evaluation was run and no full terminal receipt was new.

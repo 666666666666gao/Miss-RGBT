@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic uint8 frames and actual E0 network; no dataset",
+  "seed": 65302,
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "checks": {
+    "inherited_native_initialize_and_track": true,
+    "all_feedback_checkpoint_modes_strict_load": true,
+    "zero_residual_native_multiframe_box_template_availability_parity": [
+      {
+        "availability": [
+          1,
+          1
+        ],
+        "frame_id": 1,
+        "exact": true
+      },
+      {
+        "availability": [
+          0,
+          1
+        ],
+        "frame_id": 2,
+        "exact": true
+      },
+      {
+        "availability": [
+          1,
+          0
+        ],
+        "frame_id": 3,
+        "exact": true
+      }
+    ],
+    "single_checkpoint_native_multiframe_parity_exact": true,
+    "single_state_and_conditional_template_commit": [
+      {
+        "allow_update": true,
+        "network_calls": 1,
+        "frame_id": 1,
+        "state_commits": 1,
+        "template_appends": 1,
+        "template_pops": 1,
+        "round2_decode_exact": true
+      },
+      {
+        "allow_update": false,
+        "network_calls": 1,
+        "frame_id": 1,
+        "state_commits": 1,
+        "template_appends": 0,
+        "template_pops": 0,
+        "round2_decode_exact": true
+      }
+    ]
+  },
+  "source_sha256": {
+    "/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/check_tracker.py": "7bce2bacbbee6e729b06e304286fa8e5555d2a8648dc58829766a2758fd10b7e",
+    "/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/tracker.py": "2c4901fa00598afbf4b2a4977b5f1e4c1b8fcf7c46c98f5142eb6991119e2f98",
+    "/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/model.py": "189e143355290bb9d71db649035fe84098a9b43fd2499eafb1301244d09790ae",
+    "/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/check_structure.py": "35e0850556fe360c74951c47dd013bde136e5343656e652613b07d8a1d9a3b52",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/check_tracker_cpu.py": "fe03de06f400aa676e15c77f974776d18316d9a4838ee46fa094e5ff92a0c832"
+  },
+  "seconds": 36.795302629470825,
+  "peak_gpu_bytes": 0,
+  "limitations": [
+    "No real-image training or official metrics",
+    "Synthetic initialized repair and residual, not learned F weights",
+    "No image-training or spawned official evaluator execution",
+    "No actual-workload latency comparison or correction/destruction rates",
+    "CUDA placement explicitly mocked; no GPU/device/parity/performance verification"
+  ],
+  "device": "cpu",
+  "cuda_initialized": false,
+  "device_placement_mocked": [
+    "Module.cuda",
+    "Tensor.cuda",
+    "torch.tensor(device=cuda)",
+    "torch.ones(device=cuda)"
+  ]
+}

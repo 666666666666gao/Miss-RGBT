@@ -108,3 +108,42 @@ contains `training.json`, `runner.json`, `validation.json`, `parent.json`
 and `verify_retry.json`. Report identities have not been compared here.
 No server source, active runtime, configuration, process, or checkpoint was
 changed by this check.
+
+## CPU Per-Frame Tracker Check On 2026-11-04
+
+The previously deferred synthetic-frame tracker check now passes on CPU
+through `research/feedback_f/check_tracker_cpu.py`. This test-only wrapper
+explicitly mocks `Module.cuda`, `Tensor.cuda` and the two native CUDA tensor
+factories. It does not modify the native tracker or model implementation.
+The wrapper asserts CUDA is uninitialized both before and after the check.
+The original GPU check remains available and was not executed on GPU.
+
+Five local files were copied into the isolated directory
+`/tmp/codex_feedback_tracker_cpu_20261104.9WWXlq/`. The check used the frozen
+A native runtime, actual E0 network checkpoint
+`CADTrack_ep0020.pth.tar` and synthetic uint8 images, with seed65302.
+It completed in36.7953 seconds with zero GPU memory allocation.
+
+Observed checks passed:
+
+- All four feedback modes reload strictly; the single-pass control also
+  reloads and follows the native tracker.
+- Zero-residual deep feedback and the single-pass control match the native
+  frame output, templates and availability bitwise for consecutive
+  complete/RGB-missing/TIR-missing frames.
+- With a synthetic nonzero feedback residual, the final decoded box is
+  independently reconstructed from round2 score/size/offset maps; the
+  prediction differs from round1.
+- One frame increments its state once and calls the network once. With
+  template updating enabled there is one append/pop pair; with updating
+  disabled there is none. The static template is preserved and the new
+  dynamic template retains its actual modality availability.
+
+Raw report: `reports/server28_feedback_tracker_cpu_20261104.json`,
+SHA256 `29d0ede75f1673e6571ffc882ea604a508c5cc50c7fe5044f62af69f60e466f0`.
+It records source identities and every explicitly mocked device operation.
+No real images, learned F checkpoint, spawned full evaluator, GPU parity,
+GPU memory profile, workload latency, correction/destruction rate or
+official metric is established. This does not replace five matched
+real-image smokes or the P*/M1/composition gates. No active server code,
+experiment configuration, growing manifest or checkpoint was changed.
