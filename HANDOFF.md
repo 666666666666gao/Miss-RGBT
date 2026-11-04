@@ -4800,3 +4800,20 @@ GPU0-3 were79/74/76/73C,243.61/243.11/249.07/249.30W, and
 81/53/100/100% utilization. All cards remain assigned. No training,
 configuration, manifest, checkpoint, or queue was changed; no additional
 job was dispatched because A's formal queue gate remains pending.
+
+## 2026-11-04 03:02 UTC - A evaluation advances; R1 enters epoch 17
+
+Read-only poll at03:02:16Z confirmed A queue1355742/controllers1601932/
+1601933, Utility epoch15 Miss PID2016182, Random epoch16 Miss PID2009135,
+R1 PID3388846, R2 PID3395457, and RPPM queue3539938 live. Both full-scope
+Miss evaluations appended more completed sequence rows, but neither has a
+479/479 completion receipt. The A queue remains `OFFICIAL_RUNNING`; its
+queue-level completion and formal-verification receipts remain absent.
+
+R1 advanced to epoch17/update40225. R2 remains in epoch16/update19700.
+The final-five development selection is still pending, and current batch
+losses do not establish convergence or benchmark performance.
+
+GPU0-3 were80/77/76/72C,246.74/246.39/248.94/248.83W, all at100%
+utilization. All cards remain assigned. No run, configuration, manifest,
+checkpoint, or queue was changed; no additional job was dispatched.
