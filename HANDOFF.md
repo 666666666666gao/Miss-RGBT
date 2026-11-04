@@ -4931,3 +4931,27 @@ repeat power reading were79/77/75/72C,246.87/246.21/249.20/249.13W,
 all100% utilized. GPU1 had one251.21W sample and then returned to246.21W;
 no sustained over-limit condition or intervention. All four GPUs are
 assigned to authorized runs; no new task was dispatched.
+
+## 2026-11-04 04:00 UTC - Utility epoch15 Miss independently verified
+
+Utility epoch15 Miss PID2016182 exited normally; the authoritative receipt
+records `ended_utc=2026-11-04T03:59:14Z`. Its stable
+completion receipt covers479/479 sequences and337,353/337,353 frames
+(LasHeR245/220,703; RGBT234234/116,650). The queue independently recomputed
+the same full run. Metrics are LasHeR-Miss PR/NPR/SR
+67.511848/62.192528/53.572766 and RGBT234-Miss MPR/MSR
+84.522621/60.189169. They remain below the requested thresholds by
+1.788152/0.827234/3.577379/4.110831 points.
+
+The queue immediately reused GPU2 for Utility epoch16 Complete PID2077250;
+Random epoch17 Complete PID2070557 remains live on GPU3. Queue1355742 and
+both arm controllers remain alive. Despite the two full Miss receipts and
+their independently recomputed metrics, the queue-level `completed.json`
+and formal `verification_v2.json` have not appeared, so no next-stage
+dispatch is authorized. R1/R2 remain in epoch17 at updates41750/20425;
+their fluctuating training losses are not convergence evidence. RPPM queue
+3539938 remains alive and gated.
+
+At04:00:28UTC GPU0-3 were80/77/64/73C and247.10/246.55/249.10/249.38W,
+all100% utilized. All GPUs are assigned to registered jobs. No active run,
+configuration, manifest, or checkpoint was changed or removed.
