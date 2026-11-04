@@ -4955,3 +4955,21 @@ their fluctuating training losses are not convergence evidence. RPPM queue
 At04:00:28UTC GPU0-3 were80/77/64/73C and247.10/246.55/249.10/249.38W,
 all100% utilized. All GPUs are assigned to registered jobs. No active run,
 configuration, manifest, or checkpoint was changed or removed.
+
+## Verified A Miss candidate gap analysis
+
+Among the six independently recomputed full-scope Miss runs currently
+available (Utility epochs13-15; Random epochs14-16), none reaches all four
+requested thresholds. Per-metric maxima are split across checkpoints:
+LasHeR-Miss PR67.890547 (Random15;1.409453 below69.3), SR53.846060
+(Random14;0.553940 below54.4), RGBT234-Miss MPR84.735751
+(Utility14;3.364249 below88.1), and MSR60.717600 (Utility13;3.582400
+below64.3). These are descriptive maxima across tested checkpoints, not a
+single deployable model or a basis for test-set selection. The A queue is
+still evaluating later registered checkpoints.
+
+Within this verified subset, RGBT234-Miss has the largest remaining
+threshold gaps; that observation does not establish a cause. It supports
+measuring complete-condition localization and failure modes alongside
+missing-modality behavior, rather than assuming stronger masking alone is
+the remedy. Queue-level formal verification remains pending.
