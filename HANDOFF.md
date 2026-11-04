@@ -5238,3 +5238,18 @@ temporarily idle while its Utility controller verifies/advances the
 registered queue; no manual work was placed on it. At06:04:52UTC GPU0-3
 were80/76/41/73C and248.93/247.14/23.53/249.18W; utilization99/100/0/100%.
 No runtime/configuration/checkpoint changes or cleanup occurred.
+
+## 2026-11-04 06:10 UTC - Random epoch17 Miss continues
+
+At06:10:33UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, R1/R2 trainers3388846/3395457, and RPPM queue
+3539938 remained alive. Random epoch17 Miss advanced from4 to7 completed
+sequence rows; the evaluator remains active with no completion receipt.
+This slow early sequence phase is not evidence of a stall. The completed
+Utility epoch16 Complete result has been recorded, but the A queue still
+lacks queue-level completion and formal verification.
+
+RPPM remains `WAITING_FOR_R` on the four R training-verification and
+full-official receipts. GPU0-3 were80/77/76/72C and246.79/246.97/
+249.29/249.22W, all four cards fully utilized and assigned. No process,
+configuration, manifest, checkpoint, or power setting was changed.
