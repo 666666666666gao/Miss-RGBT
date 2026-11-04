@@ -5174,6 +5174,23 @@ still lacks R1/R2 training-verification and full-official completion
 receipts. GPU0-3 were79/76/75/72C and247.30/246.33/249.21/249.17W,
 all four fully utilized. No new task or intervention occurred.
 
+## 2026-11-04 06:40 UTC - A full Miss evaluations continue
+
+At06:40:10UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Miss evaluator2138910, Utility epoch16 Miss evaluator2147541, R1/R2
+trainers3388846/3395457, and RPPM queue3539938 remained alive. Random
+epoch17 Miss advanced from38 to67 completed sequence rows; Utility epoch16
+Miss started and reached28 rows. Neither Miss evaluator has a completion
+receipt, and A queue `completed.json` and queue-level `verification_v2.json`
+remain absent. The separate A training verification is not the queue gate.
+
+R1 advanced to epoch19/update45975 and R2 to epoch18/update22500; these
+updates are not benchmark or convergence evidence. RPPM remains
+`WAITING_FOR_R` on its four training-verification/full-official receipts.
+GPU0-3 were80/76/76/72C at246.27/246.60/249.68/249.30W, each at100%
+utilization; all are assigned to registered jobs. No new task or
+intervention occurred.
+
 ## 2026-11-04 05:42 UTC - A full evaluations advance
 
 At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
