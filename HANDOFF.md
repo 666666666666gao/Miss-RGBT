@@ -6253,3 +6253,19 @@ both R controllers and P3539938 alive. GPU0-3:78/77/38/35C and
 heartbeat remains ACTIVE, kind=heartbeat, five-minute interval and same
 target thread; it continues monitoring and collecting meaningful terminal
 results. Preserve original R/P gates, registered selections and all weights.
+
+## 2026-11-04 13:43 UTC - R2 epoch16 Miss full receipt
+
+Closed completed.json reports479 sequences/337353 frames in6018.917587s.
+Saved metrics: LasHeR-Miss PR/NPR/SR68.880842428/63.407934085/54.555897124;
+RGBT234-Miss MPR/MSR85.826986258/62.112798153. Scope245/220703 and234/116650.
+This is an unselected reporting row: R2 selects17. Only SR exceeds the
+strict Miss thresholds; no target attainment or P authorization follows.
+Receipt SHA043ee1cdbfdd81374adfa9964263d664d6958cfe8aab15b978eaac015e74e21b;
+metrics SHA56da4fc96dcd5676c3225b42387f06edada3b73fb0be2b1393ae3ca8b423e511.
+Independent controller recomputation is not yet confirmed; do not claim
+verification or start a duplicate audit. Controller3395402 remains alive.
+At13:43:33UTC evaluator2358418 was zombie, GPU1 released. R1 epoch17
+Complete2397874 and both controllers/P3539938 remain alive. GPUs0-3:
+78/45/39/37C,249.28/24.98/23.39/25.07W. Leave transition to original
+controller. R3 review gate unchanged; no new experiment or weight deletion.
