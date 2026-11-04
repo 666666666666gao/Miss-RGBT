@@ -6543,3 +6543,12 @@ At22:20:48UTC worker2941696 is zombie; parent3388832 remains alive and owns
 verification/next dispatch. R2 Complete3036403, controller3395402 and P3539938
 live. GPU0 released; GPUs40/77/39/37C,22.46/249.43/23.41/25.07W.
 No repeated scoring, duplicate dispatch/restart or original P/R3 gate change.
+
+## 2026-11-04 22:25 UTC - Original R1 epoch19 Miss dispatch
+
+Original controller3388832 started Miss3138441/GPU0 at22:24:03.142978UTC.
+Status/actual ps22:25:46UTC confirm it, R2 Complete3036403/GPU1,
+controllers3388832/3395402 and original P3539938 live.
+GPUs77/77/38/36C,248.97/248.62/23.24/25.17W.
+No duplicate dispatch/restart or epoch19 paired verification claim.
+R1 selection16, original P failure and R3 review/smoke prerequisites unchanged.
