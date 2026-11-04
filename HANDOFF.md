@@ -6503,3 +6503,17 @@ Original controller started epoch19 Complete2941696/GPU0 at
 R2 epoch18 Miss2862563/GPU1, controllers3388832/3395402/P3539938 live.
 GPUs78/77/39/37C and249.17/249.36/23.22/25.08W. No duplicate dispatch,
 restart, original P gate change or R3 review/smoke bypass.
+
+## 2026-11-04 21:20 UTC - R2 epoch18 Miss terminal receipt
+
+Evaluator2862563 exited0 at21:20:24.811703UTC; full479/337353 receipt
+in6054.451759s. LasHeR245/220703 PR/NPR/SR68.798614721/63.501781760/
+54.692969727; RGBT234234/116650 MPR/MSR85.453179752/62.227042152.
+Only strict SR passes. Epoch18 remains unselected; R2 selection17 unchanged.
+Completed SHA256:27f89ab519c530398daa077d87b1c37e69238d770f13eb9ae2d717df979de920;
+metrics SHA256:203257dbd88755460bdf1b3ea3e317829e50e09f7d98ebce76901e6705c42e8a.
+Both18 terminal receipts exist, controller paired recomputation pending
+confirmation. Parent3395402 alive and owns verification/next dispatch.
+At21:20:47UTC R1 Complete2941696, both controllers and P3539938 live.
+GPU1 released; GPUs78/38/39/36C and248.97/23.63/23.45/25.08W.
+No duplicate audit/dispatch/restart, original P change or R3 gate bypass.
