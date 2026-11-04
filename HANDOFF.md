@@ -6448,3 +6448,12 @@ owns recomputation and the next dispatch. No duplicate scoring or dispatch.
 At18:42:44UTC R2 epoch18 Complete2660704, both R controllers and P3539938
 are live. GPU0 released; GPUs0-3:39/78/39/37C and22.38/249.22/23.44/
 25.13W. Original failed R1/P gate and R3 review/smoke requirements unchanged.
+
+## 2026-11-04 18:47 UTC - Original R1 controller started epoch18 Miss
+
+Status and actual ps confirm PID2773120/GPU0, parent3388832, started
+18:42:50.829385UTC using epoch18.pth.tar and the original full evaluator.
+R2 epoch18 Complete2660704/GPU1, both R controllers and P3539938 remain
+live. GPU0-3:79/78/39/37C and249.44/248.62/23.35/25.37W.
+No new closed pair or independent verification claim. Original controllers
+retain ownership; no duplicate dispatch/restart, selection or P gate change.
