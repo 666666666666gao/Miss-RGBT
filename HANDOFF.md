@@ -5662,3 +5662,47 @@ Read-only08:46:46UTC check confirmed all monitored processes live; R1/R2
 epoch20 updates49200/24075; Utility17/Random18 Complete48/87 sequence rows.
 A queue final verification remains absent and RPPM waits on four R receipts.
 No active source/config/checkpoint/manifest was changed or job dispatched.
+
+## 2026-11-04 09:21 UTC - R1 training complete; official evaluation started
+
+The read-only observer ran at300-second intervals from08:56 through09:21UTC
+and stopped when R1 completed. R1 trainer3388846 exited normally; its stable
+completed.json records20 epochs/50000 updates and116565.1468 seconds.
+Controller3388832 remained live and wrote r1_training_verified.json with
+status=passed at09:19:45UTC. This is a saved-training-evidence audit, not
+independent gradient replay or official-score acceptance.
+
+Completion receipt: runs/server28_protocol_r_20261103/r1/completed.json,
+SHA2564eb984002f5599dadd19b4e834ab800a8eea3e98b75d265c2004958fc2f585ae.
+Verification: reports/server28_protocol_r_20261103/r1_training_verified.json.
+Read-back confirmed twenty128-tuple development entries and the registered
+minimum final-five mean task-loss selection, choosing epoch16. Final-five
+losses16-20 are4.692164507/4.699965518/4.719813118/4.736817976/4.725680366.
+No official-test checkpoint selection was used.
+
+All five checkpoint hashes were independently recomputed and match:
+
+| Epoch | SHA256 |
+| --- | --- |
+| 16 | 0fe0af921bfc4ce2eba1301d3bc6f37a7adf68ea32a93542ecfc822dbcb8e03b |
+| 17 | d823d5545796ecc2fb2dca8f69ec95fa9ccb2fed707508e161249e1861243d6c |
+| 18 | e6ed02c319be60d7ff529fdfbae3382d271708dd381bb9948341880ca3a69e21 |
+| 19 | 1d61883c44ba843bd50223e00c014e67a9bcf40b5b1ba002fa974f3da348fe64 |
+| 20 | 5910c65ef002b76eb4baaebd591e6deae59874d364d236f556b381555c74cd1e |
+
+Each final-five file is1236735911 bytes. Epoch10 and all five final weights
+are present; no checkpoint was removed. Historical R input provenance is
+still not certified by this receipt and the OHCAS gate is not released.
+
+The existing controller automatically launched epoch16 Complete at
+09:19:47UTC on GPU0: evaluator2260578, four live-ready workers. Its run.json
+records479 sequences/337353 frames with limit=null. Output:
+results/r1r2_20261103/r1/epoch16_complete. This is the first of ten full
+Complete/Miss evaluations for epochs16-20, not a completed metric result.
+
+At09:21UTC R2 trainer3395457 remained live at epoch20/update24525. RPPM
+queue3539938 remains WAITING_FOR_R on R1/R2 official completion plus R2
+training verification: three missing receipts. A Utility17/Random18 Complete
+reached162/269 sequence rows; its final queue verification remains absent.
+GPU0-3 were77/74/74/73C at249.04/246.84/248.78/249.32W, all assigned.
+No manual job, restart, config/source change, or manifest read occurred.
