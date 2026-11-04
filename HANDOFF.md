@@ -5145,3 +5145,21 @@ R1 was at epoch18/update44075; R2 was at epoch18/update21575. GPU0-3 were
 All cards remain assigned to registered workloads. The A verification
 gate remains closed, and RPPM still waits for R receipts. No process,
 configuration, manifest, checkpoint, or power setting was changed.
+
+## 2026-11-04 05:42 UTC - A full evaluations advance
+
+At05:42:34UTC A official queue1355742/controllers1601932/1601933, Utility
+epoch16 Complete evaluator2077250, Random epoch17 Complete evaluator
+2070557, R1/R2 trainers3388846/3395457, and RPPM queue3539938 remained
+alive. Complete evaluation logs advanced to240/479 and352/479 `DONE`
+records. Both evaluator receipts and queue-level `completed.json`/formal
+`verification_v2.json` remain absent.
+
+R1 was at epoch18/update44400 and R2 at epoch18/update21725. No completed
+training verification or R official evaluation receipts are present for
+the active R arms; RPPM remains gated.
+
+GPU0-3 were80/76/75/72C, drawing246.83/248.27/248.89/248.79W at
+100/100/100/99% utilization. All cards remain assigned to registered
+workloads. No process, configuration, manifest, checkpoint, or power
+setting was changed; no new task was dispatched.
