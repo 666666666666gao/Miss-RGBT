@@ -4644,3 +4644,15 @@ four-card saturation. Temperatures were80/75/75/72 C and power
 242.18/247.02/248.75/249.52W under250W. No card was released and no new job
 was dispatched; active processes, configs, manifests, and checkpoints were
 left unchanged.
+
+## 2026-11-04 01:00 UTC - A full evaluations continue
+
+Read-only poll found Utility epoch15 Complete at39/479 sequences and
+Random epoch16 Complete at50/479. Both evaluator PIDs and A queue1355742
+remain live; no queue completion or formal-verification receipt exists.
+R1/R2 remain live at epoch15, latest updates37050/18125. RPPM queue3539938
+still waits for both R training-verification and full-official receipts.
+
+GPU0-3 were80/76/76/72 C, drawing246.33/246.52/249.33/248.98W under250W,
+at100% utilization for this sample. All cards have active assignments.
+No new dispatch or runtime/config/manifest/checkpoint change was made.
