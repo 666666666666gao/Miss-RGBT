@@ -6530,3 +6530,16 @@ Original controller3395402 started epoch19 Complete3036403/GPU1 at
 Complete2941696/GPU0, both controllers and P3539938 live. GPUs79/78/39/
 37C,249.07/249.13/23.75/25.17W. No repeat scoring, duplicate dispatch,
 restart, original R1/P gate change or R3 review/smoke bypass.
+
+## 2026-11-04 22:20 UTC - R1 epoch19 Complete terminal receipt
+
+Full479/337353 receipt in6915.312787s. LasHeR245/220703 PR/NPR/SR:
+75.614309014/71.746048601/60.159910326; RGBT234234/116650 MPR/MSR:
+90.827525443/66.862301871.
+Completed SHA256:231dfb7339844defbc1e1022bc0cc5981c1c33bbc3fff99fe8e3400324f27bba;
+metrics SHA256:fecd3d08d665781c0ebe327f8ab3a1b17f9bf9581b3a8c36ef940eb80cd40614.
+Unselected19; R1 remains16. No epoch19 paired independent verification claim.
+At22:20:48UTC worker2941696 is zombie; parent3388832 remains alive and owns
+verification/next dispatch. R2 Complete3036403, controller3395402 and P3539938
+live. GPU0 released; GPUs40/77/39/37C,22.46/249.43/23.41/25.07W.
+No repeated scoring, duplicate dispatch/restart or original P/R3 gate change.
