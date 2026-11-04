@@ -4625,3 +4625,22 @@ All four GPUs have active assigned jobs. At this sample GPU0-3 were
 80/77/76/72 C, drawing244.30/247.08/249.30/249.17W under250W; utilization
 was90/100/100/100%. No process, config, manifest, checkpoint, or dispatch
 was changed.
+
+## 2026-11-04 00:57 UTC - A and R progress; utilization fluctuates
+
+The two full A evaluations remain live and advanced: Utility epoch15
+Complete is35/479 sequences and Random epoch16 Complete is44/479.
+R1/R2 remain live at epoch15, latest updates37000/18100. R1's earlier
+single-snapshot `D` state was transient; subsequent process and log checks
+showed it runnable with continued updates. No persistent stall is evidenced.
+
+The official A queue remains `OFFICIAL_RUNNING` without queue completion or
+formal verification. RPPM remains `WAITING_FOR_R` on the four expected
+training-verification/full-official receipts.
+
+GPU0-3 still have their assigned R1/R2/A evaluator processes and associated
+memory allocations, but utilization at this sample was48/73/98/100%, not
+four-card saturation. Temperatures were80/75/75/72 C and power
+242.18/247.02/248.75/249.52W under250W. No card was released and no new job
+was dispatched; active processes, configs, manifests, and checkpoints were
+left unchanged.
