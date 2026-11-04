@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-11-04T13:03:15.031607Z",
+  "arm": "r1",
+  "epoch": 16,
+  "development_selected": true,
+  "condition": "miss",
+  "full_scope": {
+    "sequences": 479,
+    "frames": 337353
+  },
+  "metrics": {
+    "LasHeR-Miss": {
+      "sequences": 245,
+      "frames": 220703,
+      "PR": 68.9593004725339,
+      "NPR": 63.84678666691139,
+      "SR": 54.80958455337066
+    },
+    "RGBT234-Miss": {
+      "sequences": 234,
+      "frames": 116650,
+      "MPR": 84.67445477460784,
+      "MSR": 61.38832354894046
+    }
+  },
+  "miss_targets": {
+    "LasHeR-Miss": {
+      "PR": {
+        "score": 68.9593004725339,
+        "threshold": 69.3,
+        "gap_pp": -0.3406995274661,
+        "passed": false
+      },
+      "SR": {
+        "score": 54.80958455337066,
+        "threshold": 54.4,
+        "gap_pp": 0.4095845533706637,
+        "passed": true
+      }
+    },
+    "RGBT234-Miss": {
+      "MPR": {
+        "score": 84.67445477460784,
+        "threshold": 88.1,
+        "gap_pp": -3.425545225392156,
+        "passed": false
+      },
+      "MSR": {
+        "score": 61.38832354894046,
+        "threshold": 64.3,
+        "gap_pp": -2.9116764510595345,
+        "passed": false
+      }
+    }
+  },
+  "all_miss_targets_met": false,
+  "checkpoint_sha256": "0fe0af921bfc4ce2eba1301d3bc6f37a7adf68ea32a93542ecfc822dbcb8e03b",
+  "independently_recomputed": true,
+  "cuda_initialized": false,
+  "evidence_sha256": {
+    "/home/gaob/Miss-RGBT/runs/server28_protocol_r_20261103/r1/completed.json": "4eb984002f5599dadd19b4e834ab800a8eea3e98b75d265c2004958fc2f585ae",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r1_training_verified.json": "3fcd9771e78a541ac257c8c6f66c6352c627e843c8f26881547146123a907973",
+    "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_miss/run.json": "84891e9111e7dcf9796fd06a8334a304c34456b19eacc975949f6f9236204013",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_miss/completed.json": "38ae4f271e377d659bf51c11580c70dca4dc9986f22084c76285cb403fa38ca6",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_miss/metrics.json": "32ecf2bddcf50d569971a3946347286e0e0838cc0301d26e657ef509fbfae5dc",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_miss/all_receipts.json": "0b7b38b16dc0ac65eb35366695fb899814ec437c7376ac4d9569acb844894988"
+  },
+  "complete_partner_evidence_sha256": {
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/run.json": "898a406505947aadcaf5abbe451d1958ae8b8f779f529ebf9a427b8aee0d9cb8",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/completed.json": "14512320c6241259976ed971bed5bde4954effbd3f38ecffe68193041c660f31",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/metrics.json": "920b98b96d9fa7b092c535eeedd368f920d145ef5788a21eaaeed822861b35a9",
+    "/home/gaob/Miss-RGBT/results/r1r2_20261103/r1/epoch16_complete/all_receipts.json": "422efae0183a885c02506483963b31e6a9b61c1f3ea573a5b9a585a105a32dea"
+  },
+  "complete_recomputed_this_check": false,
+  "scope": "Deterministic full saved-output Miss check, not fresh-agent semantic/code review; selected R1 pair still fails original Complete gate; not terminal twenty-evaluation campaign verification or downstream authorization"
+}

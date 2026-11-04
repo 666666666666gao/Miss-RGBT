@@ -6176,3 +6176,31 @@ and+0.705321557/+0.275531792pp. This is unselected epoch16; selected R2
 epoch17 Complete/Miss and the full terminal campaign remain pending.
 No Miss attainment, original P authorization or R3-review acceptance follows.
 All checkpoints retained; no extra tracker, config/source change or GPU run.
+
+## 2026-11-04 13:03 UTC - Selected R1 full Complete/Miss pair available
+
+R1 epoch16 Miss finished479/337353 in5801.471s. Separate saved-output/GT
+recomputation passed13:03:15UTC; CUDA stayed uninitialized. LasHeR Miss
+PR/NPR/SR68.959300473/63.846786667/54.809584553; RGBT234 Miss MPR/MSR
+84.674454775/61.388323549. Strict target gaps PR/SR/MPR/MSR are
+-0.340699527/+0.409584553/-3.425545225/-2.911676451pp: only LasHeR SR
+passes. This is the development-selected same checkpoint as Complete.
+The four Complete evidence hashes still match its prior verification;
+Complete was not redundantly recomputed. Ten-metric pair report:
+reports/server28_r1_selected_pair_analysis_20261104.md. Raw Miss record:
+reports/server28_r1_epoch16_miss_verified_20261104.json, SHA256
+12d89dda10413cade1baa3b644166fbd9a4e3f88b76cdd82054ed02398ca6b0f.
+
+Original controller automatically started epoch17 Complete2397874/GPU0
+at13:01:00UTC. Do not duplicate or occupy its temporarily released card.
+R2 epoch16 Miss2358418 continues. Old R1-selected Complete gate remains
+failed; R/P full reporting must finish unchanged. R3 review still missing,
+no human waiver or paired real-image smokes; no new independent GPU task.
+The deterministic check is not fresh-agent semantic/code review or terminal
+campaign promotion. Retain all checkpoints and registered internal choices.
+
+At13:07:40UTC actual ps confirms new R1 worker2397874, R2 Miss2358418,
+both controllers and P3539938 alive. GPU0-3:77/76/37/35C,
+249.19/249.51/23.43/25.08W. Heartbeat updated through the app with the
+new worker, selected pair and unchanged gates; active/five-minute cadence
+and target thread were read back unchanged.
