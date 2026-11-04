@@ -4740,3 +4740,25 @@ results. No local score, active job, or checkpoint was changed. The latest
 Server28 poll still showed A's full evaluations and R1/R2 training active,
 with all GPUs assigned; the queue-level formal gate remains pending, so no
 next-stage job is authorized.
+
+## 2026-11-04 01:52 UTC - R training enters epoch 16
+
+Read-only logs show R1 PID3388846 at epoch16/update38425 and R2 PID3395457
+at epoch16/update18800. Their fixed 128-tuple development mean losses from
+epochs10-15 moved from4.8844 to4.6684 for R1, monotonically down, and from
+4.8249 to4.7128 for R2 with an epoch14 rebound. This internal trend is not
+an official score; neither run has a completed 20-epoch history, so it is
+not enough to declare convergence or stop early. Continue the registered
+20-epoch runs and final-five development selection.
+
+A's Utility epoch15 Complete PID1938748/GPU2 and Random epoch16 Complete
+PID1934927/GPU3 remain active under queue1355742/controllers1601932/1601933.
+The two training receipts and saved-evidence `verification_v2.json` remain
+complete/passed, but queue-level `completed.json` and formal verification
+are absent. RPPM queue3539938 remains `WAITING_FOR_R` on all four R receipts.
+
+GPU0-3 were80/77/75/73 C, drawing247.19/246.85/249.16/249.43W under250W.
+Utilization was49/100/100/100%; all cards still held assigned job memory
+(19160/19160/9106/9138 MiB). No card was free for a new task. No process,
+configuration, manifest, checkpoint, or queue was changed; no task was
+dispatched.
