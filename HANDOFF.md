@@ -6087,3 +6087,51 @@ the full result before advancing; no extra independent re-audit is claimed
 in this entry and no original gate/selection changes.
 Both R controllers and P3539938 remain alive. GPU0-3 were77/72/38/35C,
 249.09/249.23/23.46/24.86W, memory9090/9090/1/33MiB. GPU2/3 remain free.
+
+## 2026-11-04 12:20 UTC - R3 sidecar control/collection complete, review still missing
+
+Added control.py/collect.py/check_control.py outside the frozen R3 snapshot.
+Actual bundle: /tmp/codex_r3_control_20261104.uYfXia/research/localization_r3/.
+Use direct script paths with PYTHONPATH=frozen R3 snapshot:project root;
+do not import the test checkout first for real operation. Snapshot and
+source-manifest SHA454f97dbb72cb0f967aa06d69da6326a2cc044418426c3b9e7c54d6de3b524ac
+remain unchanged. See docs/LOCALIZATION_R3_CONTROL_20261104.md.
+
+Smoke phase runs one registered4-update smoke only. Both real smokes
+must pass the paired checker before either train phase. One train
+controller owns one arm's20 epochs plus ten full Complete/Miss evaluations
+for epochs16-20, using four workers on its assigned GPU. Once its own
+terminal training checks pass it can evaluate while the other arm trains;
+it never reads the other growing manifest. No standalone evaluation/resume
+entry point, automatic retries, weight deletion or official selection.
+Child polling300s and exclusive launch/log files prevent duplicate starts.
+
+Final collection waits for both ten-result receipts and full frozen
+paired-training verification, then independently recomputes all20 full
+results. It reports development-selected checkpoints, the fixed epoch20
+development contrast, strict Miss attainment and Complete deltas to E0.
+2pp is a reporting reference, never a new route/selection gate.
+
+Seven CPU fixture tests passed in3.135s:22 mocked child commands and40
+mocked scorer calls including collection, exact20-job coverage, training
+terminal scans, changed receipts, missing review/smokes, duplicate launch
+refusal, failure stop and strict target equality rejection. Review, GPUs,
+weights and metrics in tests are synthetic, not real acceptance or scores.
+Actual read-only readiness at12:15:51UTC through frozen imports returned
+WAITING_FOR_INDEPENDENT_REVIEW for both arms and WAITING_FOR_TWENTY_FULL_RESULTS
+for collection. No smoke/formal output or R3 GPU worker exists. Raw report:
+reports/server28_r3_control_readiness_20261104.json.
+
+The workflow requires a fresh native gpt-6-astra/max reviewer before
+deployment; current tools have no callable reviewer/spawn operation.
+REVIEW_UNAVAILABLE is unchanged. Do not fabricate independent_review.json
+from fixture receipts or executor checks. No human waiver has been granted.
+An automated goal-continuation message does not waive the review condition.
+
+At12:20:22UTC R1 Miss2331902/GPU0 and R2 Miss2358418/GPU1, both R
+controllers3388832/3395402 and P3539938 were confirmed live. GPU0-3
+77/76/37/35C,249.54/249.03/23.11/24.96W,9090/9090/1/33MiB.
+GPU2/3 are free; the immediate R3 execution barrier is the unavailable
+independent review, then actual paired smokes. No healthy task changed.
+The same five-minute heartbeat now records the implemented sidecars and
+actual review wait, retaining active status/target and quiet notifications.

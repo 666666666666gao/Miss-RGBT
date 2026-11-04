@@ -182,6 +182,7 @@ checks passed at12:00:41UTC, with CUDA uninitialized:
 Fresh independent review remains `REVIEW_UNAVAILABLE`: the current tool
 set has no callable native reviewer/spawn operation. Local checks are not
 a reviewer result. Both paired real-image GPU smokes are unperformed.
-The full official-evaluation controller and result-collection integration
-also remain unfinished. Do not launch formal training or claim deployment
-acceptance from the CPU reports or preparation receipt.
+Sidecar control/collection is now implemented and tested outside the
+frozen snapshot; see `LOCALIZATION_R3_CONTROL_20261104.md`. Its actual
+readiness checks still wait for independent review. Do not launch formal
+training or claim deployment acceptance from CPU/preparation reports.
