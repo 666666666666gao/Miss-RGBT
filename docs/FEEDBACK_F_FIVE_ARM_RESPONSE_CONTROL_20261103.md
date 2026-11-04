@@ -52,8 +52,9 @@ with `CUDA_VISIBLE_DEVICES=''`.
   and verification results. Parent-gate fixtures passed with mocked official
   verifiers.
 
-Raw CPU reports are in
-`reports/server28_feedback_five_arm_checks_20261103/`. The 300 planned
+Raw CPU reports are retained in the local Git repository at
+`reports/server28_feedback_five_arm_checks_20261103/`. This is not a
+deployed report directory under the server project root. The 300 planned
 destinations cover six possible curriculum choices; after a curriculum is
 selected, one five-arm formal campaign requires 50 full evaluations
 (five arms x five retained epochs x Complete/Miss). Each evaluation must
@@ -75,3 +76,35 @@ campaign verification has not passed. R1/R2 training and the RPPM queue are
 also still live or gated. No next-stage experiment is authorized by this
 amendment. The benchmark targets and the three-module efficacy claim remain
 unproven.
+
+## Deployment Boundary Checked On 2026-11-04
+
+A read-only check at approximately09:31UTC confirmed that the server project
+root `/home/gaob/Miss-RGBT/research/feedback_f/` still contains the older
+four-arm implementation: `single`, `none`, `shallow`, `deep`. The five-arm
+amendment exists in the isolated staging directory
+`/tmp/codex_feedback_f_five_arm_20261103/research/feedback_f/`, including
+`deep-no-response`. Do not treat the server-root entrypoints as the amended
+implementation or infer deployment from the local Git history.
+
+Three key staged files have the same SHA256 as the local tracked sources:
+
+| File | SHA256 |
+| --- | --- |
+| protocol_training.py | 272b0af34ec8bafd9adc7d8223939685d6e7f0c3773c3b2eee1456f1e021aa7b |
+| protocol_smokes.py | 58352b0d5294f113afc344e3d0466449ff1024a59abe4157ad3277e2c1875e3d |
+| protocol_parent.py | 41b25b22009b530cbcd3ee0a56dd59994098b458ec28e85d0b281c1a9a6644b8 |
+
+This three-file comparison is not a whole-package deployment audit. When
+the actual P and M1 gates allow F preparation, freeze and verify the entire
+five-arm package and its dependencies in the designated isolated runtime,
+then require all five matched real-image smokes before formal training.
+The staging files alone do not authorize a launch; their continued existence
+in `/tmp` must be checked again at preparation time.
+
+The local report directory above exists. The corresponding path under
+`/home/gaob/Miss-RGBT/reports/` was absent at this check; the staging root
+contains `training.json`, `runner.json`, `validation.json`, `parent.json`
+and `verify_retry.json`. Report identities have not been compared here.
+No server source, active runtime, configuration, process, or checkpoint was
+changed by this check.

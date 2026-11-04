@@ -5706,3 +5706,29 @@ training verification: three missing receipts. A Utility17/Random18 Complete
 reached162/269 sequence rows; its final queue verification remains absent.
 GPU0-3 were77/74/74/73C at249.04/246.84/248.78/249.32W, all assigned.
 No manual job, restart, config/source change, or manifest read occurred.
+
+## 2026-11-04 09:31 UTC - F deployment boundary verified
+
+Read-only checks distinguish the server-root four-arm F sources from the
+five-arm amendment staged at /tmp/codex_feedback_f_five_arm_20261103.
+protocol_training.py, protocol_smokes.py and protocol_parent.py in staging
+match the local tracked five-arm sources by SHA256. This is a three-file
+identity check, not a full deployment audit or permission to train. The
+server-root ARMS still omits deep-no-response. Future authorized F
+preparation must freeze the entire five-arm package in an isolated runtime
+and require all five real-image smokes after the P/M1 gates.
+
+Clarified docs/FEEDBACK_F_FIVE_ARM_RESPONSE_CONTROL_20261103.md: CPU reports
+under reports/server28_feedback_five_arm_checks_20261103 are retained in the
+local Git repository; that path is absent under the server project root.
+The staging root has CPU JSON outputs, whose identities were not audited
+in this check. No server source or running experiment was changed.
+
+At09:30:37UTC R2 remained live at epoch20/update24650 of25000. Recent
+25-update intervals were approximately117.4s, giving about27 minutes of
+remaining updates before development/checkpoint/verification overhead.
+R1 evaluator2260578, R controllers3388832/3395402, A queue1355742 and
+RPPM3539938 were confirmed live at09:28UTC. All four GPUs were occupied,
+80/76/75/72C and249.34/246.03/249.09/249.21W. RPPM still waits for three
+R receipts; A final queue verification remains absent. Overall target and
+three-module efficacy remain unproven.
