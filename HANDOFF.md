@@ -6473,3 +6473,18 @@ Original controller3395402 started same epoch18 Miss2862563/GPU1 at
 R1 Miss2773120/GPU0, both controllers and P3539938 live. GPUs0-3:
 79/79/40/38C and249.02/249.11/23.47/25.19W. No duplicate dispatch,
 restart, original R1/P gate change or R3 prerequisite bypass.
+
+## 2026-11-04 20:20 UTC - R1 epoch18 Miss terminal receipt
+
+Full479/337353 in5850.075444s: LasHeR245/220703 PR/NPR/SR
+68.867200877/63.682847970/54.813929155; RGBT234234/116650 MPR/MSR
+85.212050878/61.777361056. Only strict Miss SR passes. Epoch18 remains
+unselected; registered R1 selection16 and original P failure unchanged.
+Completed SHA256:95f1ca4416048cfee37435aaa573750234b0cee81120ea9958792abce0f7dcda;
+metrics SHA256:d0e998e9f5ecc275dbe74ed00add1f80431a21af09a9e39762b3477ea0e85392.
+Both epoch18 terminal receipts now exist; original controller paired
+recomputation is not yet confirmed. Do not duplicate its verification.
+At20:20:48UTC2773120 is zombie, controller3388832 alive and owns transition.
+R2 Miss2862563, controller3395402 and P3539938 live. GPU0 released;
+GPUs46/78/40/37C,23.68/249.11/23.45/24.99W. No new dispatch/restart,
+frozen changes or R3 review/smoke bypass.
