@@ -4482,3 +4482,47 @@ no Miss `completed.json` receipts or queue-level formal verification are
 present. RPPM remains `WAITING_FOR_R` on four receipts. GPU0-3 were
 78/77/76/73 C,249.48/247.02/249.17/248.81W under250W, at
 78/100/100/100% utilization. No new task was dispatched or modified.
+
+## 2026-11-03 23:59 UTC - Random epoch15 full Miss evaluation finished
+
+Random epoch15 Miss now has a stable `completed.json` receipt covering
+479/479 sequences and337,353/337,353 frames. Its saved `metrics.json`
+covers LasHeR245/220,703 and RGBT234234/116,650:
+LasHeR-Miss PR/NPR/SR=67.890547/62.761895/53.760802;
+RGBT234-Miss MPR/MSR=83.890983/59.846600. Relative to the requested strict
+thresholds, this candidate is short by1.409453 PR,0.639198 SR,4.209017 MPR,
+and4.453400 MSR points. These are full-scope raw candidate metrics, not yet
+queue-level formal verification or promotion evidence.
+
+Utility epoch14 Miss PID1873594 and A queue1355742/controllers1601932/1601933
+remain active, with no Utility completion receipt and no queue-level
+verification artifact. Random evaluator1870217 has exited and GPU3 is
+released, but the protocol requires both A Miss receipts and official queue
+formal verification `passed` before scheduling the next phase. RPPM3539938
+also remains `WAITING_FOR_R` on four R training/official receipts. No task
+was started on GPU3 and no checkpoint was changed or removed.
+
+## 2026-11-04 00:11 UTC - Utility epoch14 Miss complete; official queue continues
+
+Read-only Server28 poll at00:11:50Z verified Utility epoch14 Miss
+`completed.json`:479/479 sequences and337,353/337,353 frames. Full metrics:
+LasHeR-Miss PR/NPR/SR=67.174178/61.863332/53.313374;
+RGBT234-Miss MPR/MSR=84.735751/60.410309. Receipt SHA256
+f5a2a5305c3027e48e409ab3417013833f919e5efa3c25738cd7be6e38a41af4;
+metrics SHA256 6d00efb6b36aa7be3ceb40c49a493a0b45ec6c644aee87da85edf3ee0e7ba2d7.
+This remains a full-scope candidate result, below the requested strict
+thresholds; it is not queue-level completion/promotion evidence.
+
+The registered queue PID1355742 and controllers1601932/1601933 remain live.
+They automatically advanced Utility to epoch15 Complete PID1938748/GPU2
+(started00:08:34Z) and Random to epoch16 Complete PID1934927/GPU3
+(started00:03:33Z). R1/R2 trainers3388846/3395457 and RPPM queue3539938
+remain live. The A training receipts remain complete (17/34,000 and
+18/36,000), and the training-scope `verification_v2.json` is `passed`;
+however, the official queue remains `OFFICIAL_RUNNING`, with no queue
+`completed.json` or final queue-level verification. Do not schedule the
+next stage until that gate passes. RPPM remains gated on its four R receipts.
+
+GPU0-3 were80/77/76/73 C, drawing247.11/245.87/249.22/248.87W under250W,
+at96/100/100/99% utilization. All four GPUs are occupied. No new job,
+configuration, manifest, or checkpoint was changed.
