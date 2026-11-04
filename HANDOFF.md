@@ -4556,3 +4556,19 @@ The fresh-frame metadata report still marks historical-frame exclusions
 unverified, including R1/R2, so the OHCAS data gate is closed. No process,
 runtime source, config, manifest, or checkpoint was changed; no next-stage
 job was dispatched.
+
+## 2026-11-04 00:40 UTC - OHCAS online interface gap confirmed
+
+Read-only source review found that the proposed adapter consumes one
+`[B,N,D]` native/history stream pair, age, and modality-level availability.
+`MissingTrackerModel` operates on paired RGB/TIR block outputs containing
+class, template, and search tokens, with the search tokens at the tail and a
+per-token mask. `MissingTracker` currently stores templates/availability
+only; it has no online history crop/feature cache or age. The existing
+history diagnostic uses separately cached crops and hooks, so it does not
+establish online tracking behavior.
+
+This is a concrete integration contract gap, not evidence for a new
+defensive branch or an efficacy claim. OHCAS implementation remains gated
+on the active A/R protocols and verified fresh-frame exclusions. Runtime and
+active jobs were not changed.
