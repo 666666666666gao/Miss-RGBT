@@ -5770,3 +5770,52 @@ of25000 updates. GPU0-3 were80/76/75/73C at249.11/247.32/249.62/248.99W,
 all100% utilized. A final queue verification remains absent; RPPM waits
 for three R receipts. No manual dispatch, restart, source/config edit,
 training-manifest read or checkpoint cleanup occurred.
+
+## 2026-11-04 10:07 UTC - R2 complete and verified; four full evaluators live
+
+Read-only observers checked at300-second intervals until terminal changes.
+R2 completed20 epochs/25000 updates in118893.8139 seconds. Existing
+controller3395402 wrote r2_training_verified.json status=passed at
+10:02:17UTC and launched epoch16 Complete evaluator2286460 on GPU1 at
+10:02:20UTC. Four workers report ready; run.json confirms479 sequences,
+337353 frames and limit=null. This is the first of ten R2 full evaluations,
+not a completed official score. Saved-training verification does not
+certify historical input provenance or independent gradient replay.
+
+Registered development selection is epoch17, mean task loss4.705640137.
+The final-five means16-20 are4.725429536/4.705640137/4.732392224/
+4.740673075/4.720543969. All20 history entries have128 samples; epoch17
+is also the descriptive whole-history minimum. These remain fixed-crop
+losses, not tracking convergence or official-test checkpoint selection.
+Completion SHA256:a41ab08c7044c0a2aff63425ec9755f77385a31782930749854b80b476a4e8a5.
+History SHA256:379d3b22141abc185c51679254524589e4d43ab81489a2d4dd712c59de00e89a.
+
+All five R2 checkpoint hashes were directly recomputed and match the
+completion receipt; each file is1236735911 bytes. Epoch10 is also present.
+
+| Epoch | SHA256 |
+| --- | --- |
+| 16 | ca916649ed209ccea7058542dedc98e0fafff1d19bd20a1d98f8320bd8b69764 |
+| 17 | 39d75fdb47ca8bbf938e81330d26d0d8a3940780b75c175c41fc569b8346cfe5 |
+| 18 | cc1fd80e0e4c72c28943af4b3699dd74ed758874e9d346d14931c10b7a870b41 |
+| 19 | 9e24421c39022680508c6b1b213e66e23e562674f1e56478965073eedc978a42 |
+| 20 | bf35b74e59242785cc2030480a4a830393c692889c88466b143b03795a2fdbee |
+
+Utility17 Complete also finished479/337353. Controller-recorded independent
+metrics:LasHeR PR/NPR/SR73.623847279/70.059267564/58.753705690;
+RGBT234 MPR/MSR88.309103722/63.516444590. Receipt and metrics SHA256:
+6caaf4d5c76e82ad0fdb1be4f39cd3b653aed631d25a3edab03d9f4163c8a436 and
+cadbf849708ba4740abc94b656263598e94532bc9f73c793a7e5608f361bf1ed.
+Utility17 is not development-selected; retain Utility14. Original
+controller1601932 launched Utility17 Miss PID2282311 on GPU2. Both A
+arms now have9/10 independently recomputed evaluations; final Miss runs
+remain pending, and A queue-level verification is absent.
+
+At10:07UTC R1 Complete2260578/GPU0, R2 Complete2286460/GPU1, Utility17
+Miss2282311/GPU2 and Random18 Miss2270512/GPU3 were live. GPUs were
+80/77/75/72C at249.24/248.97/249.23/249.22W under250W limits,100%
+utilization each. RPPM3539938 now waits on only the two R official
+completion receipts; its actual acceptance gate must still pass. No
+manual launch, restart, active source/config edit, training-manifest read
+or checkpoint removal occurred. Targets and three-module efficacy remain
+unproven.
