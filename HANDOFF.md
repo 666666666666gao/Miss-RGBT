@@ -4656,3 +4656,16 @@ still waits for both R training-verification and full-official receipts.
 GPU0-3 were80/76/76/72 C, drawing246.33/246.52/249.33/248.98W under250W,
 at100% utilization for this sample. All cards have active assignments.
 No new dispatch or runtime/config/manifest/checkpoint change was made.
+
+## 2026-11-04 01:02 UTC - A and R jobs continue
+
+Utility epoch15 Complete advanced to43/479 sequences and Random epoch16
+Complete to55/479. Both remain live full evaluations under A queue1355742;
+there is still no queue-level completion or formal-verification receipt.
+R1/R2 remain live at epoch15, latest updates37100/18150. RPPM queue3539938
+remains `WAITING_FOR_R` on the four training-verification and full-official
+receipts.
+
+GPU0-3 were80/77/76/72 C, drawing246.50/247.13/249.21/249.24W under250W,
+at100% utilization. All four cards have active jobs. No process, config,
+manifest, checkpoint, or dispatch was changed.
