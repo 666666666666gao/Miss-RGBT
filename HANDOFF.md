@@ -5503,3 +5503,37 @@ RPPM remains `WAITING_FOR_R` on the four R training-verification and
 full-official receipts. GPU0-3 were80/77/76/72C and246.79/246.97/
 249.29/249.22W, all four cards fully utilized and assigned. No process,
 configuration, manifest, checkpoint, or power setting was changed.
+
+## Server 28 poll - 2026-11-04 07:43 UTC
+
+The two A training `completed.json` receipts are present, and
+`reports/server28_partitioned_a_20261102_formal/verification_v2.json`
+reports `status=passed` for the formal training audit. This is not the
+official evaluation queue's final verification: its `completed.json` and
+queue-level `verification_v2.json` are still absent, and queue1355742 plus
+controllers1601932/1601933 remain alive.
+
+Utility epoch16 Miss evaluator2147541 has exited (zombie); its log contains
+479 `DONE` rows but no stable evaluation completion receipt was found.
+Random epoch18 Complete evaluator2200099 remains live on GPU3 and has
+recorded one completed sequence row. R1/R2 trainers3388846/3395457 and
+RPPM queue3539938 remain alive; RPPM is not eligible to dispatch while its
+R-group evidence is missing. Its attempted P smoke preflight explicitly
+failed on GPU memory 19,160 MiB, above the required <500 MiB; do not bypass
+this gate or manually dispatch work.
+
+GPU0-3 were80/76/58/72C at248.49/246.82/29.00/249.41W and
+100/100/0/100% utilization. GPU2 is temporarily free while the official
+queue continues; no manual job or intervention was made.
+
+## Server 28 poll - 2026-11-04 07:52 UTC
+
+The official queue remains `OFFICIAL_RUNNING`; queue-level `completed.json`
+and `verification_v2.json` are still absent. It automatically advanced to
+Utility epoch17 Complete on GPU2 (PID2209628), while Random epoch18 Complete
+continues on GPU3 (PID2200099). Both are registered official work.
+
+GPU0-3 were79/76/73/72C at246.51/245.40/249.03/248.87W, with
+19160/19160/9106/9138 MiB used and 100% utilization. Queue PID1355742 and
+controllers1601932/1601933 remain alive. R1/R2 trainers3388846/3395457 and
+RPPM queue3539938 remain alive; no manual dispatch or intervention was made.
