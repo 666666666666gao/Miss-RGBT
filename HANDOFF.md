@@ -6397,3 +6397,37 @@ Miss2489154 onGPU1, R controllers3388832/3395402 and P3539938 remained live.
 GPU0-3 were79/77/39/36C;249.25/249.16/23.16/25.20W, with GPUs0/1 occupied
 and2/3 idle. No task was duplicated or restarted. Original R1 selected16
 pair and failed P gate are unchanged.
+
+## 2026-11-04 17:50 UTC - Selected R2 epoch17 pair verified
+
+Original R2 controller records independently_recomputed=true for both
+Complete and Miss at the registered epoch17, using checkpoint SHA256
+39d75fdb47ca8bbf938e81330d26d0d8a3940780b75c175c41fc569b8346cfe5.
+Each condition covers LasHeR245/220703 plus RGBT234234/116650, totaling
+479 sequences/337353 frames. Complete LasHeR PR/NPR/SR:
+74.779039745/71.288473611/59.667690180; RGBT234 MPR/MSR:
+91.009573731/67.495201037. Miss LasHeR PR/NPR/SR:
+68.238208530/63.133785198/54.429002695; RGBT234 MPR/MSR:
+85.702861927/62.587161192.
+
+Correction to the continuation summary: LasHeR Miss SR54.429002695
+PASSES54.4 by0.029002695pp; it is not below target. PR/MPR/MSR remain
+below69.3/88.1/64.3 by1.061791470/2.397138073/1.712838808pp.
+Only SR passes; overall targets and module efficacy remain unproven.
+The original selected R1 epoch16 failure at the P gate is unchanged.
+
+Complete/Miss receipt SHA256:
+e87105e3d175bc006482a0c9e2fd8c83ba20e0f95c135bdd3989f73b60d29629 /
+409d980e0707ff4f953a007a8db37043ff7271a0e93613b090664db9e626becd.
+Miss metrics SHA256:
+be1a5dfa901172ee6e0e6ae6b46c46cabfb44738c228f723043c9dfcab98e54d.
+Evidence: reports/server28_r2_selected_epoch17_pair_20261104.json,
+transcribed from the original controller's closed epoch17 row; no repeat
+recomputation or growing-manifest read.
+
+Original R2 controller dispatched epoch18 Complete PID2660704/GPU1 at
+17:34:45.957854UTC. Status and actual ps confirm it and R1 epoch18
+Complete2573133/GPU0 live, together with3388832/3395402/P3539938.
+GPU0-3 measured79/78/40/38C and249.67/249.35/23.31/25.37W;2/3 idle.
+No dispatch/restart or frozen changes. R3 still requires genuine review
+or explicit human exception, followed by both paired real-image smokes.
