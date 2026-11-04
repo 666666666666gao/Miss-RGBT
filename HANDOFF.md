@@ -6358,3 +6358,23 @@ R controllers and P live. Full selected pair still pending. Updated existing
 ACTIVE five-minute same-thread heartbeat through app to current workers,
 correct U1 wording and actual review effort incompatibility. Goal not achieved;
 current evaluations continue, no human review-policy exception received.
+
+## 2026-11-04 15:59 UTC - Resumed goal blocked audit
+
+Goal API now records blocked after the same independent-review compatibility
+barrier persisted across at least three resumed turns. Required Astra/max
+could not start; no human authorization for xhigh or another exception exists.
+Remote R3 directory still has no independent_review.json. The existing
+readiness record is dated12:15 UTC, not a fresh smoke or review result.
+Neither image smoke nor formal arm has been launched. No further independent
+preparation is being substituted for the required experiment.
+
+Actual ps at15:59 UTC confirms R1 Miss2461496/R2 Miss2489154, both original
+controllers3388832/3395402 and P3539938 remain live. Blocking the goal does
+not stop these jobs or the existing ACTIVE five-minute heartbeat. Collect
+their terminal evidence when available; do not duplicate dispatch or audits.
+The blocker is the new-experiment review prerequisite, not slow evaluations.
+All weights, original failed R1/P gate and frozen R3 bytes remain preserved.
+Full gains and efficacy claims remain unmet. Human authorization to use
+gpt-6-astra/xhigh for the fresh review would resolve the effort mismatch;
+both registered paired image smokes would still be required before training.
