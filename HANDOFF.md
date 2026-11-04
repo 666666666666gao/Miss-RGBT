@@ -6517,3 +6517,16 @@ confirmation. Parent3395402 alive and owns verification/next dispatch.
 At21:20:47UTC R1 Complete2941696, both controllers and P3539938 live.
 GPU1 released; GPUs78/38/39/36C and248.97/23.63/23.45/25.08W.
 No duplicate audit/dispatch/restart, original P change or R3 gate bypass.
+
+## 2026-11-04 21:25 UTC - R2 epoch18 pair verified; epoch19 started
+
+Original r2_verified_official.json records both18 conditions independently
+recomputed, each full245/220703+234/116650, with previously recorded metrics
+and receipt hashes. Same checkpoint SHA256:
+cc1fd80e0e4c72c28943af4b3699dd74ed758874e9d346d14931c10b7a870b41.
+Epoch18 explicitly unselected; R2 selection17 remains unchanged.
+Original controller3395402 started epoch19 Complete3036403/GPU1 at
+21:20:59.232092UTC. Status/actual ps21:25:47UTC confirm it, R1 epoch19
+Complete2941696/GPU0, both controllers and P3539938 live. GPUs79/78/39/
+37C,249.07/249.13/23.75/25.17W. No repeat scoring, duplicate dispatch,
+restart, original R1/P gate change or R3 review/smoke bypass.
