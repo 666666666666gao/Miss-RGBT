@@ -28,6 +28,22 @@ The current six-arm RPPM campaign is frozen and must not be modified. Source ins
 
 Therefore, `shuffled` tests schedule order, not whether associating difficulty with the same sample is useful. If the registered campaign motivates a sample-conditioned pacing claim, a separately preregistered follow-up should compare `paced` with a per-batch assignment-shuffled control. The control must preserve each batch's probability multiset and mean, paired data order, initialization, optimization, and evaluation scope; only the mapping from samples to probabilities should change. This is an attribution gap, not evidence that the existing implementation is faulty.
 
+## Test-Conditioned Continuation Risk
+
+The frozen RPPM preparation gate also decides whether P proceeds by checking
+the R1-selected checkpoint against E0 minus0.1pp on all five Complete
+official metrics (`docs/RPPM_PROTOCOL_ENTRY_20261103.md`). Since these are
+official benchmark evaluations, this uses test outcomes to choose the next
+research branch, not only to report a final score. Preregistration makes the
+decision reproducible but does not make the test set an independent
+development set.
+
+Do not alter this already-running R/P protocol or reinterpret its gate
+post hoc. Preserve and report the registered outcome with this limitation.
+For future method, curriculum, and continuation decisions, use a development
+split and freeze the decision rule before official evaluation; reserve the
+official test for final reporting.
+
 ## Module Evidence and Order
 
 1. **RPPM:** The registered six-arm queue is `WAITING_FOR_R` until both R arms have training verification and full-official receipts. Its real-image smokes, formal runs, and full evaluations are not yet complete. Do not start the proposed matched control or duplicate the queue before the existing protocol reaches its terminal gates.

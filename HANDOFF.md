@@ -4973,3 +4973,22 @@ threshold gaps; that observation does not establish a cause. It supports
 measuring complete-condition localization and failure modes alongside
 missing-modality behavior, rather than assuming stronger masking alone is
 the remedy. Queue-level formal verification remains pending.
+
+## 2026-11-04 04:09 UTC - R-to-P test-conditioned gate limitation recorded
+
+Static review of the frozen RPPM protocol found that its preparation gate
+uses the R1-selected checkpoint's five Complete official benchmark metrics
+against E0-0.1pp to decide whether P proceeds. This makes official-test
+outcomes affect the next research branch; preregistration does not turn
+those test sets into development data. The active protocol remains frozen:
+do not alter the gate or replace its outcome. The caveat and the future
+rule (base new method/continuation decisions on a predeclared development
+split, reserving official test results for final reporting) are recorded in
+`docs/RESEARCH_DECISION_20261104.md`.
+
+At04:09:28UTC A queue1355742/controllers1601932/1601933, Random epoch17
+Complete PID2070557, Utility epoch16 Complete PID2077250, R1/R2 trainers
+3388846/3395457, and RPPM queue3539938 remained alive. Queue-level
+`completed.json` and `verification_v2.json` were still absent. GPU0-3 were
+79/77/75/73C and246.81/247.16/249.04/249.00W, all fully assigned. No
+runtime, config, training process, manifest, or checkpoint was changed.
