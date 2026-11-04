@@ -6431,3 +6431,20 @@ Complete2573133/GPU0 live, together with3388832/3395402/P3539938.
 GPU0-3 measured79/78/40/38C and249.67/249.35/23.31/25.37W;2/3 idle.
 No dispatch/restart or frozen changes. R3 still requires genuine review
 or explicit human exception, followed by both paired real-image smokes.
+
+## 2026-11-04 18:42 UTC - R1 epoch18 Complete terminal receipt
+
+Original evaluator2573133 exited0 at18:42:16.544290UTC. Full receipt:
+479 sequences/337353 frames in6924.519304s; LasHeR245/220703 and
+RGBT234234/116650. LasHeR PR/NPR/SR74.320694625/70.541612351/
+59.299108595; RGBT234 MPR/MSR90.853949114/66.946672504.
+Completed SHA25678f939f31ebc5b443b012bbfe64ed2260137bfd9c8727f054eac1934b54b31de;
+metrics SHA256bed9d61b819a9f8383545b6a825dfd2755c12dbffed5ed9f54bca36196c43761.
+This is an unselected reporting checkpoint; R1 remains selected16.
+Controller verification for18 is not yet confirmed; do not call this an
+independently verified pair. Original controller3388832 remains live and
+owns recomputation and the next dispatch. No duplicate scoring or dispatch.
+
+At18:42:44UTC R2 epoch18 Complete2660704, both R controllers and P3539938
+are live. GPU0 released; GPUs0-3:39/78/39/37C and22.38/249.22/23.44/
+25.13W. Original failed R1/P gate and R3 review/smoke requirements unchanged.
