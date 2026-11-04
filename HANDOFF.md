@@ -5819,3 +5819,36 @@ completion receipts; its actual acceptance gate must still pass. No
 manual launch, restart, active source/config edit, training-manifest read
 or checkpoint removal occurred. Targets and three-module efficacy remain
 unproven.
+
+## 2026-11-04 - Read-only M1 decision verifier staged and checked
+
+Added research/feedback_f/protocol_m1.py and check_protocol_m1.py for the
+future F preparation boundary. The verifier checks saved diagnostic/cache/
+checkpoint/source/terminal bindings and recomputes the registered decision
+with the existing bootstrap and retry helpers. Missing evidence waits;
+invalid evidence fails rather than becoming a negative M1 result.
+Its ready flag concerns M1 alone; f_training_authorized is always false.
+
+Six CPU fixture tests passed again at approximately10:57UTC in the server's
+Python3.7 environment. The image-cache loader is explicitly mocked;
+checkpoint bytes/constants are fixtures. The earlier integrated harness
+confirmed CUDA uninitialized. This proves outer-gate checks, not actual
+cache freshness, M1 model behavior or module efficacy. Only these two
+files were staged under /tmp/codex_feedback_m1_20261104.Xt0jWT; active root
+and frozen runtimes were not changed. No fresh independent review occurred.
+See docs/FEEDBACK_F_M1_DECISION_GATE_20261104.md for hashes and scope.
+
+The designated live report/completed/cache-receipt paths returned
+WAITING_FOR_M1. This was not an exhaustive cache inventory. Uncertified
+original R historical-frame provenance still blocks the actual M1 data
+gate; missing provenance cannot close M1 negatively. P* selection,
+accepted-OHCAS composition where applicable, frozen five-arm preparation
+and all five real-image smokes remain necessary before F training.
+
+At10:56:19UTC four full evaluators2260578/2286460/2282311/2270512 were
+still live on GPU0/1/2/3. Temperatures79/77/75/72C, power249.12/249.72/
+249.06/249.52W and100% utilization each. A queue1355742, arm controllers,
+R controllers and RPPM3539938 remain live. Original A training PIDs
+1288280/1288281 have exited; their completion is previously verified.
+No new R official completion receipts were present. No task was dispatched
+or healthy process restarted; all checkpoints remain retained.

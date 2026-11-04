@@ -320,3 +320,14 @@ selected curriculum. It does not launch or authorize an F campaign.
 See `docs/FEEDBACK_F_FIVE_ARM_RESPONSE_CONTROL_20261103.md` and the raw
 checks under `reports/server28_feedback_five_arm_checks_20261103/` for the
 amendment rationale, current CPU verification and scope limits.
+
+## Read-Only M1 Decision Verification
+
+`protocol_m1.verify_decision` now supplies a separate saved-evidence M1 gate.
+It recomputes the existing diagnostic decision and checks its terminal,
+cache, source, checkpoint and retry bindings. It never authorizes F training.
+Six CPU fixture tests pass with the image-cache loader explicitly mocked.
+See `docs/FEEDBACK_F_M1_DECISION_GATE_20261104.md` for exact scope and staging
+identities. Original R historical-frame provenance, actual M1 evidence,
+P* selection, accepted-OHCAS composition where applicable and five real-image
+smokes remain unresolved prerequisites for future F preparation.
