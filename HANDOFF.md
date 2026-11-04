@@ -5391,8 +5391,8 @@ Random epoch17 Miss has a 479-sequence/337,353-frame receipt and reported
 metrics as recorded above, but its exit record and independent queue formal
 verification were still pending at this observation. Queue
 `completed.json`/`verification_v2.json` remain absent. R1/R2 are still in
-epoch19; latest logged updates46000/22450 precede this poll and are not
-convergence evidence. GPU0-3 were77/76/74/58C at246.83/245.43/249.29/
+epoch19; this entry did not preserve contemporaneous update counts.
+The previously listed46000/22450 were stale. GPU0-3 were77/76/74/58C at246.83/245.43/249.29/
 247.22W, utilization100/100/100/83%; all cards were assigned. No manual
 job, config, manifest, checkpoint, or power change occurred.
 
@@ -5582,3 +5582,43 @@ and R2 epoch20/update23900. Recent25-update intervals were57.4/117.3s;
 remaining training to50000/25000 updates is roughly45/86 minutes, excluding
 development checks, checkpoint writes, verification, and official evaluations.
 This is an estimate, not convergence evidence. No live job was changed.
+
+## 2026-11-04 08:37 UTC - R continuation and proxy-loss evidence
+
+At08:37:42UTC both trainers, A evaluators, A controllers/queue, and RPPM
+were alive. GPUs0-3 were80/77/75/72C at246.68/246.65/248.85/249.62W,
+utilization100/96/100/100%. Utility17 Complete/Random18 Complete had31/63 completed
+sequence rows; A queue completion and formal verification remained absent.
+
+Direct stdout inspection found R1 epoch20/update48975 and R2 epoch20/
+update23950. Their existing controllers3388832/3395402 were independently
+confirmed alive. The active snapshot launch source matches its registration,
+server-root source, and local copy (SHA256
+5ec827f6df2765e2f87d984acf5a713f76e0b53e8b65780fe98effe9ff963ffd).
+It verifies training then evaluates epochs16-20 under complete and miss,
+four workers on the same GPU, independently recomputing each result.
+No replacement controller is needed.
+
+Existing DEVELOPMENT_LOSS records (128 tuples, mean11/01/10 task loss):
+
+| Epoch | R1 | R2 |
+| --- | ---: | ---: |
+| 14 | 4.703898 | 4.771140 |
+| 15 | 4.668373 | 4.712759 |
+| 16 | 4.692165 | 4.725430 |
+| 17 | 4.699966 | 4.705640 |
+| 18 | 4.719813 | 4.732392 |
+| 19 | 4.736818 | 4.740673 |
+
+Neither proxy shows sustained late improvement. This does not establish
+tracking-metric convergence; epoch20 is unfinished and the registered final
+five selection is not final. Do not stop the fixed20-round experiment.
+R1 effective batch8 and R2 batch16 both use base LR1e-4 in their frozen
+configs; R2 is not a linear-LR-scaled batch comparison.
+
+RPPM preparation additionally enforces the registered R1 development-selected
+Complete model >= E0-0.1pp for all five Complete metrics, after all twenty
+R official evaluations are recomputed. Four receipt files alone do not
+authorize downstream training; failed protocol acceptance must not be bypassed.
+No live files were modified, no training manifest was read, and no evaluation
+was launched manually.
