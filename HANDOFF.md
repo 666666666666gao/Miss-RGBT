@@ -4817,3 +4817,16 @@ losses do not establish convergence or benchmark performance.
 GPU0-3 were80/77/76/72C,246.74/246.39/248.94/248.83W, all at100%
 utilization. All cards remain assigned. No run, configuration, manifest,
 checkpoint, or queue was changed; no additional job was dispatched.
+
+## 2026-11-04 03:08 UTC - Active evaluation progress and power recheck
+
+The 03:07:48Z poll found the same A official queue/controllers, Utility
+epoch15 Miss and Random epoch16 Miss evaluators, R1/R2 trainers, and RPPM
+queue alive. Both Miss logs appended completed-sequence rows; neither
+evaluation nor the A queue has a terminal completion receipt or formal
+verification. R1 was at epoch17/update40375 and R2 at epoch16/update19750.
+
+One GPU1 sample read253.00W at77C; a follow-up at03:08:55Z read247.01W.
+GPU0-3 then measured246.44/247.01/248.86/249.10W at80/77/75/72C, all
+100% utilized. The single over-limit sample was not sustained. No power
+setting, job, configuration, manifest, or checkpoint was changed.
