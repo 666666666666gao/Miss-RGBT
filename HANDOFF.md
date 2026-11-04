@@ -5025,6 +5025,20 @@ R1/R2 are at epoch18/update43125 and epoch17/update21100. GPU1's earlier
 all assigned to the registered runs. No power limit or workload was
 changed; no next-stage dispatch is authorized.
 
+## 2026-11-04 05:00 UTC - A evaluation progress and second GPU1 power recheck
+
+At05:00:15UTC the A official queue/controllers, Utility epoch16 Complete
+PID2077250, Random epoch17 Complete PID2070557, R1/R2 trainers, and RPPM
+queue3539938 remained live. The two full-scope A evaluations logged58
+and87 `DONE` sequence records. Neither evaluator completion receipt nor
+the queue-level `completed.json`/formal `verification_v2.json` exists.
+
+R1 remains epoch18 at update43300; R2 remains epoch17 at update21200.
+GPU1's253.39W sample at04:56:37UTC was not sustained: the05:00:15UTC
+reading was241.83W. GPU0-3 were80/75/75/72C and245.81/241.83/249.14/
+248.98W. All cards remain assigned to registered workloads. No power
+setting or running job was changed; no next-stage work is authorized.
+
 ## 2026-11-04 04:33 UTC - R1 entered epoch18; A full evaluations continue
 
 At04:33:25UTC, A official queue1355742/controllers1601932/1601933,
