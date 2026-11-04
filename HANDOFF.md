@@ -6282,3 +6282,16 @@ selected epoch17 Complete2423750/GPU1 at13:48:32UTC, confirmed live by ps.
 R1 Complete2397874, both R controllers and P3539938 also remain live.
 At13:51:07UTC GPUs78/77/39/36C,249.30/249.18/23.60/25.07W. GPU2/3 free;
 R3 independent review still missing. No duplicate dispatch or gate change.
+
+## 2026-11-04 14:57 UTC - R1 epoch17 Complete full receipt
+
+Closed receipt reports479 sequences/337353 frames in6897.107102s.
+Saved Complete LasHeR PR/NPR/SR75.115197819/71.428755404/59.926070334;
+RGBT234 MPR/MSR90.291897400/66.906736480. Scope245/220703 and234/116650.
+Epoch17 is unselected; R1 selects16. Original failed P gate unchanged.
+Receipt SHA305b0cc2445f726697f67366aa943138247bf4a07079e3007c67bfe6f0f8d876;
+metrics SHA022f9c6a0ebb3ed2c0d0ac62b96b4f28bfc3b69486a97979dbfcb06d716b9038.
+Controller recomputation not yet confirmed; no duplicate audit/dispatch.
+At14:57:17UTC2397874 zombie/GPU0 released, R2 Complete2423750 and both
+R controllers/P3539938 alive. GPUs42/77/39/37C,22.99/249.42/23.11/25.08W.
+Leave next evaluation to original controller; R3 review gate unchanged.
