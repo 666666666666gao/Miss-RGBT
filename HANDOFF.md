@@ -5622,3 +5622,26 @@ R official evaluations are recomputed. Four receipt files alone do not
 authorize downstream training; failed protocol acceptance must not be bypassed.
 No live files were modified, no training manifest was read, and no evaluation
 was launched manually.
+
+## 2026-11-04 08:41 UTC - Per-result independent verification confirmed
+
+Both A arm controllers now record8/10 independently recomputed evaluations:
+Utility through epoch16 Miss and Random through epoch17 Miss. Their recorded
+metrics equal the stable full-scope receipts reported above. The queue source
+calls verify_official before recording independently_recomputed=true; its
+server/local/registered SHA256 is
+6b5e8b7fbb55d1bc9cf453c43e61a02e452d2ed4bc34d656a2a0d2486e297911.
+This updates the per-result verification status, not overall campaign status:
+queue-level completed.json and verification_v2.json remain absent.
+
+At08:41:30UTC the ten monitored trainers/controllers/evaluators/queues were
+alive. R1/R2 reached epoch20/update49075/24000; Utility17 Complete/Random18
+Complete reached38/72 of479 sequence rows. GPU0-3 were80/77/76/73C at
+245.69/246.90/249.44/249.21W, all100% utilized. RPPM still waits for four R
+receipts. No new job, source/config edit, manifest read, or cleanup occurred.
+
+Read-only downstream interface review also confirms that F parent selection
+requires completed P pairing and sixty full evaluations and explicitly leaves
+F training unauthorized pending M1, frozen preparation, and five real smokes.
+OHCAS remains an isolated residual prototype without an online history cache
+or verified historical frame exclusions. Neither is a validated paper module.
