@@ -6457,3 +6457,19 @@ R2 epoch18 Complete2660704/GPU1, both R controllers and P3539938 remain
 live. GPU0-3:79/78/39/37C and249.44/248.62/23.35/25.37W.
 No new closed pair or independent verification claim. Original controllers
 retain ownership; no duplicate dispatch/restart, selection or P gate change.
+
+## 2026-11-04 19:39 UTC - R2 epoch18 Complete finished; Miss started
+
+Full Complete receipt479/337353 in7178.541395s: LasHeR245/220703
+PR/NPR/SR74.788599773/71.321228300/59.748058601; RGBT234234/116650
+MPR/MSR90.655620507/66.902647262. Completed SHA256:
+08d1bbbf486291d3acf6dd6f4ea5de66425147f9e2c34a9f2dd9806c23ed6243;
+metrics SHA256:e0f564d1ef82b1e00ad7380fd7b02f6f855088be7d77e2b000573ba38625fc19.
+Epoch18 is unselected; R2 remains selected17. No independent verification
+or closed epoch18 pair claim is made from this terminal receipt.
+
+Original controller3395402 started same epoch18 Miss2862563/GPU1 at
+19:35:22.766487UTC. Status and actual ps at19:39:06UTC confirm it,
+R1 Miss2773120/GPU0, both controllers and P3539938 live. GPUs0-3:
+79/79/40/38C and249.02/249.11/23.47/25.19W. No duplicate dispatch,
+restart, original R1/P gate change or R3 prerequisite bypass.
