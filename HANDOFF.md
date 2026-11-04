@@ -4910,3 +4910,24 @@ Queue1355742 and controllers1601932/1601933 remain live in
 live. Do not dispatch onto GPU3: the paired A Miss receipts and queue-level
 formal verification=`passed` are still required. No runtime, config,
 checkpoint, or manifest was changed.
+
+## 2026-11-04 03:51 UTC - Random epoch16 independently verified; epoch17 evaluation started
+
+The A queue's independent recomputation now includes Random epoch16 Complete
+and Miss, both on the full479-sequence/337,353-frame scope. Random16 Miss
+metrics are LasHeR PR/NPR/SR67.805983/62.657725/53.763168 and RGBT234
+MPR/MSR84.363668/60.414559; all four remain below the requested
+69.3/54.4/88.1/64.3 thresholds. Random16 Complete is
+73.154501/69.602719/58.395139 and89.198793/65.126610. Its Miss metrics
+are verified, but the A queue's overall `completed.json` and formal
+`verification_v2.json` are still absent.
+
+The queue launched Random epoch17 Complete PID2070557 on GPU3. Utility
+epoch15 Miss PID2016182 remains alive; its log has377 completed-sequence
+rows, with no full completion receipt. R1/R2 remain live at epoch17 updates
+41550/20325; individual training losses fluctuate and are not convergence
+or benchmark evidence. RPPM queue3539938 remains gated. GPU0-3 after a
+repeat power reading were79/77/75/72C,246.87/246.21/249.20/249.13W,
+all100% utilized. GPU1 had one251.21W sample and then returned to246.21W;
+no sustained over-limit condition or intervention. All four GPUs are
+assigned to authorized runs; no new task was dispatched.
