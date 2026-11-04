@@ -4778,3 +4778,25 @@ Utility epoch15 Complete PID1938748 and Random epoch16 Miss PID2009135 were
 active on GPUs2/3. R1/R2 trainers3388846/3395457 and RPPM queue3539938
 remained live/gated. No queue-level A completion/formal verification or R
 receipts were present; no independent task was dispatched.
+
+## 2026-11-04 02:53 UTC - A Miss evaluation and R training progress
+
+Read-only poll at02:53:54Z confirmed A queue1355742/controllers1601932/
+1601933, Utility epoch15 Miss PID2016182, Random epoch16 Miss PID2009135,
+R1 PID3388846, R2 PID3395457, and RPPM queue3539938 live. Both Miss
+evaluations continue on the full registered479-sequence/337,353-frame
+scope; their `completed.json` receipts, A queue `completed.json`, and
+queue-level `verification_v2.json` are absent. Latest worker log rows
+advanced, but no final metrics are available.
+
+R1 reached epoch16/update40000 with fixed128-tuple development mean loss
+4.692165, slightly above epoch15's 4.668373. R2 was at epoch16/update19575;
+its latest completed development mean is epoch15's 4.712759. The registered
+configs retain20epochs and select by development mean across epochs16-20.
+These internal losses do not establish convergence or official benchmark
+performance; continue both runs and preserve all checkpoints.
+
+GPU0-3 were79/74/76/73C,243.61/243.11/249.07/249.30W, and
+81/53/100/100% utilization. All cards remain assigned. No training,
+configuration, manifest, checkpoint, or queue was changed; no additional
+job was dispatched because A's formal queue gate remains pending.
