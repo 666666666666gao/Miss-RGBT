@@ -5518,9 +5518,9 @@ Utility epoch16 Miss evaluator2147541 has exited (zombie); its log contains
 Random epoch18 Complete evaluator2200099 remains live on GPU3 and has
 recorded one completed sequence row. R1/R2 trainers3388846/3395457 and
 RPPM queue3539938 remain alive; RPPM is not eligible to dispatch while its
-R-group evidence is missing. Its attempted P smoke preflight explicitly
-failed on GPU memory 19,160 MiB, above the required <500 MiB; do not bypass
-this gate or manually dispatch work.
+R-group evidence is missing. The separate historical P autoscheduler log
+records a smoke preflight failure at19,160 MiB against its <500 MiB gate;
+this is not a failure of the active RPPM queue. Do not bypass either gate.
 
 GPU0-3 were80/76/58/72C at248.49/246.82/29.00/249.41W and
 100/100/0/100% utilization. GPU2 is temporarily free while the official
@@ -5550,3 +5550,35 @@ these are training telemetry, not benchmark evidence. GPU0-3 were
 79/76/75/72C at248.50/246.44/249.23/249.05W, with
 19160/19160/9106/9138 MiB used and 100% utilization. No manual dispatch,
 configuration, manifest, checkpoint, or process intervention occurred.
+
+## Server 28 poll - 2026-11-04 08:28 UTC
+
+Utility epoch17 Complete advanced to18/479 sequences and Random epoch18
+Complete to43/479. Both full official evaluations remain active; the queue
+is still `OFFICIAL_RUNNING` with no queue-level completion or verification
+receipts. Queue/controllers, R1/R2, and RPPM processes remain alive.
+
+GPU0-3 were80/76/76/72C at246.20/245.02/248.72/249.05W, with
+19160/19160/9106/9138 MiB used and utilization100/100/100/99%. No task,
+configuration, manifest, checkpoint, or process was changed.
+
+## 2026-11-04 08:31 UTC - Stable Utility16 Miss receipt and RPPM gate
+
+Read-only inspection confirmed Utility epoch16 Miss completed479 sequences/
+337353 frames. Metrics cover LasHeR245/220703 and RGBT234234/116650:
+LasHeR PR/NPR/SR68.594629/63.241740/54.347945;
+RGBT234 MPR/MSR84.308116/60.129201. All four target metrics remain below
+69.3/54.4/88.1/64.3. These are evaluator-reported metrics; queue-level
+formal verification is still pending, and no test-score selection is allowed.
+
+The active RPPM queue3539938 status at08:30:50UTC is WAITING_FOR_R on
+r1/r2_training_verified.json and r1/r2_official_completed.json. Its registered
+gate requires both training verifications and twenty full official evaluations,
+then all six real-image smokes before formal training. The historical P
+autoscheduler's memory preflight failure is a separate process history.
+
+Live trainer stdout paths independently confirmed R1 epoch20/update48825
+and R2 epoch20/update23900. Recent25-update intervals were57.4/117.3s;
+remaining training to50000/25000 updates is roughly45/86 minutes, excluding
+development checks, checkpoint writes, verification, and official evaluations.
+This is an estimate, not convergence evidence. No live job was changed.
