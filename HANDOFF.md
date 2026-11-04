@@ -6295,3 +6295,12 @@ Controller recomputation not yet confirmed; no duplicate audit/dispatch.
 At14:57:17UTC2397874 zombie/GPU0 released, R2 Complete2423750 and both
 R controllers/P3539938 alive. GPUs42/77/39/37C,22.99/249.42/23.11/25.08W.
 Leave next evaluation to original controller; R3 review gate unchanged.
+
+## 2026-11-04 15:02 UTC - R1 automatic epoch17 Miss dispatch
+
+Original controller started epoch17 Miss2461496/GPU0 at15:01:37UTC;
+actual ps confirms live. R2 Complete2423750/both controllers/P live.
+Neither current evaluation has a completion receipt. Separate epoch17
+Complete verification evidence not collected this poll; no fresh review claim.
+GPUs70/77/38/36C,248.91/248.69/23.29/25.00W at15:02:18UTC. GPU2/3 free;
+R3 review gate unchanged. No duplicate dispatch or original P gate change.
