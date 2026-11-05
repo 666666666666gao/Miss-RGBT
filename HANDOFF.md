@@ -6670,3 +6670,22 @@ Both campaigns' final-five full pairs are closed. The selected checkpoints
 remain R1-16/R2-17; epoch20 was not promoted. Strict Miss targets are still
 not jointly met; overall gains/module efficacy remain unproven. No duplicate
 evaluation, dispatch, restart, source/config change, or checkpoint cleanup.
+
+## 2026-11-05 05:14 UTC - Registered P preparation rejected by original R1 gate
+
+After both R campaigns closed, the original queue3539938 spawned
+`protocol_prepare.py` PID3547319 as registered. It exited1 at05:11:13.850301UTC.
+No `reports/server28_rppm_ostrack_20261103` campaign directory was created,
+no P smoke/formal arm was launched, and GPUs0-3 remained idle.
+The original R1-selected Complete-vs-E0 deltas checked by the queue were
+LasHeR PR/NPR/SR -0.897504420/-0.775185510/-0.621649534pp and
+RGBT234 MPR/MSR +0.231997609/+0.214401404pp. The registered P gate requires
+all five metrics to be at least -0.1pp; it correctly rejected the original
+R1 result. Do not substitute R2, another epoch, or R3.
+`preparation_exit.json` records returncode1, but `status.json` remains stale
+at `PREPARING` and the parent exited without a terminal queue status. This is
+a monitor/reporting defect, not evidence that preparation or training is
+still live. Frozen queue source was not modified. R3 remains separately gated
+on genuine independent review or an honestly recorded human exception before
+its paired real-image smokes. No restart, source/config edit, selection
+change, or checkpoint cleanup.
