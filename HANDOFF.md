@@ -6606,3 +6606,16 @@ controllers3388832/3395402 and P3539938 live.
 GPUs79/77/39/37C,249.08/248.83/23.45/25.20W.
 No duplicate dispatch/restart or pair verification claim. R1 selection16,
 original P failure and R3 review/paired-smoke prerequisites unchanged.
+
+## 2026-11-05 03:10 UTC - R2 epoch20 Complete receipt; Miss dispatched
+
+R2 Complete full479/337353 in7171.041255s. LasHeR245/220703 PR/NPR/SR:
+75.475564485/71.941764108/60.207365112; RGBT234234/116650 MPR/MSR:
+90.470034567/66.909786134.
+Completed SHA256:302959df5b9528adbd367e7910a330a7179a6aff71afec52b36189b03fd3021f;
+metrics SHA256:c0e66617ab569de2be3f37bc270495c7556d1fbc2a81e86996eccc235253c3c2.
+Original controller3395402 started Miss3369277/GPU1 at03:07:48.396006UTC.
+Status/actual ps03:10:07UTC confirm it and R1 Miss3266908/GPU0 plus
+controllers/P live. GPUs79/78/40/37C,249.09/248.76/23.63/25.27W.
+R2 epoch20 unselected, selection17 unchanged; pair recomputation not yet
+recorded. No duplicate scoring/dispatch/restart. Original P/R3 gates unchanged.
