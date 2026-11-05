@@ -6693,3 +6693,64 @@ training is still live. Frozen queue source was not modified. R3 remains
 separately gated on genuine independent review or an honestly recorded human
 exception before its paired real-image smokes. No restart, source/config
 edit, selection change, or checkpoint cleanup.
+
+## 2026-11-05 10:46 UTC - Human R3 exception; paired formal training launched
+
+The user explicitly approved R3-only after the required independent reviewer
+was unavailable. The remote `human_exception.json` records that approval and
+does not claim an independent review. Both registered four-update real-image
+smokes passed and were verified before formal training.
+
+The frozen R3 pair is now running on the released GPUs:
+
+- `complete_only`: GPU2, controller4087075, trainer4087226; launch
+  `10:34:03.106364Z`.
+- `complete_missing`: GPU3, controller4093389, trainer4093646; launch
+  `10:37:51.192817Z`.
+
+At `10:46:36Z`, the saved training logs showed microstep1126/100000 and
+412/100000 respectively (563 and206 optimizer updates). Both processes and
+their loaders were live. GPU2/3 were75/74C and246.46/244.75W, below the
+registered85C limit. Training has not completed; these are progress records,
+not benchmark metrics or evidence of efficacy. Keep the registered 20-epoch,
+50,000-update budgets, full evaluation sequence, frozen snapshot and all
+checkpoints. No source/config edits, restarts, substitutions or checkpoint
+cleanup. Next monitoring should use roughly300-second intervals.
+
+At `11:08:15Z`, all eight training/controller/loader PIDs were present.
+Saved steps advanced to microstep3094 (`complete_only`, update1547) and
+microstep1459 (`complete_missing`, update730). Both arms remain in epoch1;
+the error-pattern scan was empty. GPU2/3 were75/75C and247.47/240.71W.
+
+## 2026-11-05 11:16 UTC - Four-GPU change requested; current pair preserved
+
+The user requested training on four GPUs. At `11:16:17Z`, both current
+single-GPU arms/controllers/loaders remained live: `complete_only` update1913
+and `complete_missing` update924; GPUs2/3 were74/75C and242.42/244.72W.
+No runtime or memory error was observed.
+
+The frozen R3 trainer has no DataParallel/DistributedDataParallel path;
+`train.py` places the model on one CUDA device, the controller accepts one
+GPU id, and the registered configs prohibit resume. A four-GPU change cannot
+be applied mid-run. Preserve the healthy pair and its partial evidence until
+the human confirms whether to stop and restart as two GPUs per arm or use all
+four GPUs for each arm sequentially. Any approved switch needs a new
+registration, multi-GPU implementation, and paired real-image smoke before
+formal dispatch.
+
+## 2026-11-05 11:37 UTC - User decision on four-GPU training
+
+The user explicitly decided to retain and finish the current registered
+single-GPU-per-arm R3 training. Do not stop, restart, hot-expand, or alter
+these runs. The earlier question about replacing the running pair is resolved.
+
+For subsequent new training, each trainer should use all physical GPUs
+0,1,2,3 together. Inference/evaluation may remain single-GPU. The current
+trainer has no DDP path and does not support resume, so a future four-GPU
+run requires a new isolated snapshot and separate registration. Preserve
+the intended global effective batch of 8, matched tuple/RNG behavior and
+frozen BN semantics; train the two arms sequentially if each uses all four
+cards. Validate the actual multi-GPU path and paired real-image smokes
+before formal dispatch. Do not present the existing R3 results as four-GPU
+training or dispatch a new experiment before its registered prerequisites
+are met.
