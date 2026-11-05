@@ -6683,9 +6683,13 @@ RGBT234 MPR/MSR +0.231997609/+0.214401404pp. The registered P gate requires
 all five metrics to be at least -0.1pp; it correctly rejected the original
 R1 result. Do not substitute R2, another epoch, or R3.
 `preparation_exit.json` records returncode1, but `status.json` remains stale
-at `PREPARING` and the parent exited without a terminal queue status. This is
-a monitor/reporting defect, not evidence that preparation or training is
-still live. Frozen queue source was not modified. R3 remains separately gated
-on genuine independent review or an honestly recorded human exception before
-its paired real-image smokes. No restart, source/config edit, selection
-change, or checkpoint cleanup.
+at `PREPARING` and the parent exited without a terminal queue status. The
+child log confirms `protocol_prepare.py:89` raised its registered gate
+assertion with the five deltas above. The parent then raised at
+`protocol_queue.py:112` after observing the child's nonzero exit; its code
+does not write a terminal status after that assertion. Thus the stale status
+is explained by the existing failure path, not evidence that preparation or
+training is still live. Frozen queue source was not modified. R3 remains
+separately gated on genuine independent review or an honestly recorded human
+exception before its paired real-image smokes. No restart, source/config
+edit, selection change, or checkpoint cleanup.
