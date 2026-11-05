@@ -6760,3 +6760,21 @@ Compared with the `11:42:36Z` read, `complete_only` advanced from update
 2982 to3244 and `complete_missing` from1561 to1640. GPU2/3 were73/75C,
 241.45/245.35W. No failure or terminal receipt was observed; keep monitoring
 the original jobs without intervention.
+
+## Four-GPU implementation constraint
+
+Source inspection found that the existing LasHeR loader uses random
+causal-visible-frame sampling with rejection resampling. Replacing it with
+the usual `DistributedSampler` would change the tuple trajectory. The R3
+task loss retains per-sample values; equal local batch sizes let DDP's
+gradient averaging represent the global batch mean, but this alone does not
+prove matched sampling or stochastic behavior.
+
+For the later four-GPU trainer, preserve an explicit global batch/update
+contract and record per-rank tuple identities. Rank-specific data/model RNG
+must be deterministic and identical between paired arms, with frozen BN
+verified on all ranks. Rank-zero-only checkpointing and development
+evaluation need explicit synchronization. Validate these properties in
+tests and paired native-image GPU smokes before registering or dispatching
+formal training. This is an implementation constraint, not evidence that
+four-GPU training is implemented or authorized now.
