@@ -6633,3 +6633,16 @@ worker3266908 is zombie, parent3388832 alive and owns verification/dispatch.
 R2 Miss3369277/GPU1, both controllers and P3539938 live. GPU0 released;
 GPUs43/78/40/38C,22.76/249.34/23.45/24.98W. No duplicate scoring,
 dispatch or restart. Original P failure and R3 review/paired-smoke gates intact.
+
+## 2026-11-05 03:53 UTC - R1 epoch20 pair independently verified
+
+Original `r1_verified_official.json` now contains epoch20 with both Complete
+and Miss marked `independently_recomputed=true`, full245/220703 +234/116650
+each, matching the terminal hashes/metrics already recorded above.
+Checkpoint SHA256:5910c65ef002b76eb4baaebd591e6deae59874d364d236f556b381555c74cd1e.
+Epoch20 remains unselected; fixed R1 selection16 unchanged. Controller3388832
+exited after normal campaign completion (`r1_status` COMPLETE, ended
+03:45:49.716967UTC), not a failure. R2 Miss3369277/GPU1 and controller3395402
+plus P3539938 live at03:53:08UTC. GPUs38/78/39/38C,
+22.13/248.91/23.60/25.00W. No duplicate work, selection/P-gate change or
+R3 prerequisite bypass.
