@@ -6619,3 +6619,17 @@ Status/actual ps03:10:07UTC confirm it and R1 Miss3266908/GPU0 plus
 controllers/P live. GPUs79/78/40/37C,249.09/248.76/23.63/25.27W.
 R2 epoch20 unselected, selection17 unchanged; pair recomputation not yet
 recorded. No duplicate scoring/dispatch/restart. Original P/R3 gates unchanged.
+
+## 2026-11-05 03:43 UTC - R1 epoch20 Miss terminal receipt
+
+Full479/337353 receipt in5849.072769s. LasHeR-Miss245/220703 PR/NPR/SR:
+68.437140074/63.380428767/54.542157643; RGBT234-Miss234/116650 MPR/MSR:
+84.262174290/61.246113140. SR exceeds54.4; PR remains below69.3.
+Completed SHA256:48420e8fb383ba28924a89bfcc80e8eb221352307ba3b257bdf465a3d2968eb1;
+metrics SHA256:f7322efb1ef5a138c131605ae8792c4a77d9c0f9686173c7f81e0c2a014ca98d.
+R1 epoch20 unselected; fixed selection16 unchanged. No pair recomputation
+claim: r1_verified_official.json has no epoch20 entry yet. At03:43:53UTC
+worker3266908 is zombie, parent3388832 alive and owns verification/dispatch.
+R2 Miss3369277/GPU1, both controllers and P3539938 live. GPU0 released;
+GPUs43/78/40/38C,22.76/249.34/23.45/24.98W. No duplicate scoring,
+dispatch or restart. Original P failure and R3 review/paired-smoke gates intact.
