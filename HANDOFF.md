@@ -6552,3 +6552,34 @@ controllers3388832/3395402 and original P3539938 live.
 GPUs77/77/38/36C,248.97/248.62/23.24/25.17W.
 No duplicate dispatch/restart or epoch19 paired verification claim.
 R1 selection16, original P failure and R3 review/smoke prerequisites unchanged.
+
+## 2026-11-05 01:19 UTC - Both epoch19 pairs verified; epoch20 running
+
+Server actual check01:19:31UTC is later than the queued heartbeat label
+2026-11-04 22:50UTC. Original r1/r2_verified_official.json explicitly mark
+both19 Complete/Miss independently_recomputed=true, development_selected=false.
+Each condition is full479/337353: LasHeR245/220703 + RGBT234234/116650.
+R1 checkpoint SHA256:
+1d61883c44ba843bd50223e00c014e67a9bcf40b5b1ba002fa974f3da348fe64.
+R2 checkpoint SHA256:
+9e24421c39022680508c6b1b213e66e23e562674f1e56478965073eedc978a42.
+Metrics below are LasHeR PR/NPR/SR; RGBT234 MPR/MSR:
+- R1 Complete75.614309014/71.746048601/60.159910326;90.827525443/66.862301871.
+- R1 Miss69.241468667/63.971684921/55.051718661;85.220844250/61.697309520.
+- R2 Complete75.359094987/71.592836907/59.938435196;90.136810195/66.212908171.
+- R2 Miss68.474104052/63.359711006/54.516145973;85.245295299/61.607810991.
+Only strict Miss SR passes for either19; selections R1=16/R2=17 unchanged.
+New terminal completed/metrics SHA256:
+- R1 Miss:9c008f13ce777f8c897b8e84a230173d8981cba4de898b42881ac86e28c0ba4e /
+8980d4abcc00d7c9be3342c1ac84b2d24753452a5450feadcf66658925f19dd5.
+- R2 Complete:c22dcbd97da80f0c0d2027a59db5a3a906b7aaa80cb79cd0e0b31ab691c2c05f /
+a6dcd51450a968415c773405372a6e81eb1ef1bbc298573d3bd82304970ae8b1.
+- R2 Miss:b6541e87e17a109380fcfaf00423686c53eac24897273397512e4b85cb2bd534 /
+7ee3a9c4bb77c543213ef78aa963a48f072a1fb2a74bcc4fcf76bac22e29321f.
+Durations respectively5835.437957/7158.173078/6048.987237s.
+Original controllers dispatched epoch20 Complete3189686/GPU0 at
+00:04:39.246434UTC and3190784/GPU1 at01:07:11.699748UTC.
+Actual ps confirms both workers, controllers3388832/3395402/P3539938 live.
+GPUs79/78/39/37C,248.98/248.54/23.34/25.02W.
+No monitoring-side scoring/restart/dispatch; original P failure and R3
+review plus paired real-image smoke prerequisites unchanged. Gains unproven.
