@@ -6583,3 +6583,17 @@ Actual ps confirms both workers, controllers3388832/3395402/P3539938 live.
 GPUs79/78/39/37C,248.98/248.54/23.34/25.02W.
 No monitoring-side scoring/restart/dispatch; original P failure and R3
 review plus paired real-image smoke prerequisites unchanged. Gains unproven.
+
+## 2026-11-05 02:01 UTC - R1 epoch20 Complete terminal receipt
+
+Full479/337353 receipt in6927.733325s. LasHeR245/220703 PR/NPR/SR:
+74.743058337/71.123241019/59.637643389; RGBT234234/116650 MPR/MSR:
+90.492353894/67.000466849.
+Completed SHA256:a9638fe0546ddabcfe99aec6a899dd6fcb07a7f4555d98d33f77c5ef4f073f62;
+metrics SHA256:72f0e4f8f6660f3bb48d94c41d76605bc56bbe37e59c7483c3327248d165f3b1.
+R1 selection16 unchanged; no epoch20 pair verification or Miss dispatch
+claim. At02:01:53UTC evaluator3189686 is zombie; parent3388832 alive and
+owns transition. R2 Complete3190784, controllers3388832/3395402/P3539938
+live. GPU0 released; GPUs42/78/40/38C,22.81/249.20/23.47/25.03W.
+No duplicate scoring/dispatch/restart. Original P failure and R3 review plus
+paired real-image-smoke prerequisites remain unchanged; gains unproven.
