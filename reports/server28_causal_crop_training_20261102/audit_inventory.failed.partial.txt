@@ -1,0 +1,188 @@
+{
+  "scope": "Metadata only; no audit images or predictions inspected.",
+  "rows": [
+    {
+      "sequence": "blkcarinrain",
+      "frames": 101,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "smallmoto",
+      "frames": 114,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "guardman",
+      "frames": 116,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "redgirl2trees",
+      "frames": 538,
+      "eligible_starts": {
+        "96": 0,
+        "64": 25,
+        "48": 41
+      }
+    },
+    {
+      "sequence": "carturnleft109",
+      "frames": 109,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "leftthrowfoam",
+      "frames": 27,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girlleft2right2",
+      "frames": 401,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "leftof2girls",
+      "frames": 405,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 7
+      }
+    },
+    {
+      "sequence": "motosmall",
+      "frames": 252,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "large3-gai",
+      "frames": 1347,
+      "eligible_starts": {
+        "96": 0,
+        "64": 33,
+        "48": 107
+      }
+    },
+    {
+      "sequence": "bikeboyleft",
+      "frames": 481,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "umbellaatnight",
+      "frames": 605,
+      "eligible_starts": {
+        "96": 0,
+        "64": 29,
+        "48": 61
+      }
+    },
+    {
+      "sequence": "mototakinggirl",
+      "frames": 87,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girlwithblkbag",
+      "frames": 112,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "whitecarturnl2",
+      "frames": 98,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boydown",
+      "frames": 66,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "greenboywithgirl",
+      "frames": 257,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boyridesbike",
+      "frames": 203,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "actor_1202",
+      "frames": 627,
+      "eligible_starts": {
+        "96": 25,
+        "64": 59,
+        "48": 91
+      }
+    },
+    {
+      "sequence": "girl2-gai",
+      "frames": 3634,
+      "eligible_starts": {
+        "96": 1689,
+        "64": 2121,
+        "48": 2377
+      }
+    },
+    {
+      "sequence": "greengirls",
+      "frames": 312,
+      "eligible_starts": {
+        "96": 

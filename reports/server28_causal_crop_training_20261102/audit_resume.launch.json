@@ -1,0 +1,27 @@
+{
+  "pid": 949348,
+  "gpu": 2,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "-c",
+    "import runpy,time,sys;from pathlib import Path;sys.path.insert(0,'/home/gaob/Miss-RGBT/scripts');p=Path('/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/audit_resume.launch.json')\nwhile not p.exists(): time.sleep(.1)\nrunpy.run_path('/home/gaob/Miss-RGBT/scripts/resume_causal_crop_audit.py',run_name=\"__main__\")"
+  ],
+  "cwd": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018",
+  "launched_utc": "2026-11-02T06:22:25.840934Z",
+  "script_path": "/home/gaob/Miss-RGBT/scripts/resume_causal_crop_audit.py",
+  "script_sha256": "a8e08824e3e70a8a76465d3400982b888fbb638e420490793f3d9602bd353b56",
+  "protocol_sha256": "03f59489d10adc5dda14edcaf969fd2d8639a6f63583ed864fd0df05e6a71ac7",
+  "inventory_sha256": "bf381557f053fd5472995741e65297292cac359821c8c92ce38a2d87a92ed15f",
+  "selection_sha256": {
+    "native": "a22d787a2eca07bce572dbb6bd7dcd45d08ad68359db2f92aef9ca012c9e9cfa",
+    "causal": "4cea55cfd7a8bc5082416f013d3708a7a79c633ebb398574f60d66125aa32657"
+  },
+  "count": 24,
+  "length": 64,
+  "seed": 58103,
+  "original_pid": 877938,
+  "memory_mib": 1.0,
+  "temperature_c": 39.0,
+  "power_limit_w": 250.0
+}

@@ -1,0 +1,20 @@
+{
+  "pid": 804850,
+  "gpu": 2,
+  "memory_mib": 1.0,
+  "temperature_c": 39.0,
+  "power_limit_w": 250.0,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/diagnose_causal_crop_exposure.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/reports/server28_causal_crop_exposure_20261102"
+  ],
+  "cwd": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018",
+  "output": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_exposure_20261102",
+  "log": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_exposure_20261102.log",
+  "protocol_sha256": "6153f268fffde8f32ad68708ef749d6ab9446bfeec1fcd0830871af2e77aab10",
+  "script_sha256": "ae3e517c90085b5e371f7dd99ec16041f0cb07ecd423dd7ffc862d7f7f7b7c53",
+  "launched_utc": "2026-11-02T05:22:22.747844Z"
+}

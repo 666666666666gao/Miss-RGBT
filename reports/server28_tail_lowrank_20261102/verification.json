@@ -1,0 +1,80 @@
+{
+  "status": "verified",
+  "report_sha256": "ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2",
+  "effects": {
+    "attention": {
+      "11": {
+        "mean": 0.005012409746939061,
+        "ci95_low": -0.0020232473055716437,
+        "ci95_high": 0.014889597494970834,
+        "sequences": 68,
+        "rows": 384
+      },
+      "01": {
+        "mean": 0.031107385669818934,
+        "ci95_low": 0.012872173848149735,
+        "ci95_high": 0.050893521600397555,
+        "sequences": 68,
+        "rows": 384
+      },
+      "10": {
+        "mean": 0.008249809783792089,
+        "ci95_low": -0.003422136304388736,
+        "ci95_high": 0.02044360428105041,
+        "sequences": 68,
+        "rows": 384
+      }
+    },
+    "mlp": {
+      "11": {
+        "mean": 0.006712829472582326,
+        "ci95_low": -0.0013342745788395404,
+        "ci95_high": 0.017026970095999433,
+        "sequences": 68,
+        "rows": 384
+      },
+      "01": {
+        "mean": 0.010537763794612449,
+        "ci95_low": -0.009403173344587287,
+        "ci95_high": 0.028718600646731807,
+        "sequences": 68,
+        "rows": 384
+      },
+      "10": {
+        "mean": 0.005516746038497955,
+        "ci95_low": -0.007462464981473485,
+        "ci95_high": 0.01891306791860105,
+        "sequences": 68,
+        "rows": 384
+      }
+    },
+    "attention_minus_mlp": {
+      "mean": 0.007200755298285784,
+      "ci95_low": -0.0001435321030682656,
+      "ci95_high": 0.015849453398691787,
+      "sequences": 68,
+      "rows": 1152
+    }
+  },
+  "advance": {
+    "attention": false,
+    "mlp": false
+  },
+  "prior_reports_sha256": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89",
+    "server28_cross_stream_context_20261102_v2": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8"
+  },
+  "server_file_hashes_checked": true,
+  "replay": {
+    "native_tail_replay_exact": true,
+    "native_rows": 1152,
+    "selected_tail_replay_exact": true,
+    "audit_rows": 2304
+  }
+}

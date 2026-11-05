@@ -1,0 +1,677 @@
+{
+  "report_sha256": {
+    "adjacent": "9a076d9b77cd9c1b0c81a9ecec9e649f2b6e72a6e77cc1850a987900b29649a9",
+    "availability": "1e5899fd63b37690d08c715c827a893035c487c7e469f6ce806e194e70c0670c"
+  },
+  "analyzer_sha256": "7afef11545b5eb6f5ee54f955daead2b6a7432017cd5a7ac3b3240f4286ab64a",
+  "full_outage_availability_minus_adjacent": {
+    "PR20": {
+      "mean_delta_pp": 1.8061446779171486,
+      "paired_sequence_bootstrap95_pp": [
+        0.11441800697298087,
+        4.293026629543511
+      ],
+      "wins": 8,
+      "ties": 6,
+      "losses": 2,
+      "worst5": [
+        {
+          "sequence": "2whitegirl",
+          "delta_pp": -1.8404907975460247
+        },
+        {
+          "sequence": "The_girl_back_at_the_lab_1202",
+          "delta_pp": -0.7633587786259568
+        },
+        {
+          "sequence": "5manwakeright",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "bikeblkturn",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "moto2west",
+          "delta_pp": 0.0
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "right1stgirlin2ndqueue",
+          "delta_pp": 17.94871794871795
+        },
+        {
+          "sequence": "exercisebook",
+          "delta_pp": 5.603448275862078
+        },
+        {
+          "sequence": "midblkboyplayingphone",
+          "delta_pp": 3.0405405405405475
+        },
+        {
+          "sequence": "hyalinepaperfrontclothes",
+          "delta_pp": 2.4036054081121634
+        },
+        {
+          "sequence": "rightboy479",
+          "delta_pp": 1.2552301255229992
+        }
+      ]
+    },
+    "SR": {
+      "mean_delta_pp": 1.6592428930733625,
+      "paired_sequence_bootstrap95_pp": [
+        0.3728717949685682,
+        3.7781917693334566
+      ],
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "worst5": [
+        {
+          "sequence": "boybesidesbar2putcup",
+          "delta_pp": -0.27114048466361673
+        },
+        {
+          "sequence": "motowithgood",
+          "delta_pp": -0.10822510822511333
+        },
+        {
+          "sequence": "bikeblkturn",
+          "delta_pp": 0.022148394241426672
+        },
+        {
+          "sequence": "whitecarcoming",
+          "delta_pp": 0.031959092361773855
+        },
+        {
+          "sequence": "5manwakeright",
+          "delta_pp": 0.049295080350987064
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "right1stgirlin2ndqueue",
+          "delta_pp": 16.172161172161175
+        },
+        {
+          "sequence": "exercisebook",
+          "delta_pp": 2.848932676518885
+        },
+        {
+          "sequence": "midblkboyplayingphone",
+          "delta_pp": 2.3166023166023137
+        },
+        {
+          "sequence": "hyalinepaperfrontclothes",
+          "delta_pp": 1.6763240098242598
+        },
+        {
+          "sequence": "motocome",
+          "delta_pp": 1.1494252873563227
+        }
+      ]
+    }
+  },
+  "group_contrasts": {
+    "all_valid": {
+      "PR20": {
+        "mean_delta_pp": 1.8061446779171508,
+        "paired_sequence_bootstrap95_pp": [
+          0.11441800697298396,
+          4.2930266295435136
+        ],
+        "wins": 8,
+        "ties": 6,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": -1.8404907975460105
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": -0.7633587786259426
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "moto2west",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 17.94871794871795
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 5.603448275862064
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 3.0405405405405475
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 2.4036054081121705
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 1.2552301255230134
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 1.659242893073368,
+        "paired_sequence_bootstrap95_pp": [
+          0.3728717949685761,
+          3.778191769333463
+        ],
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "boybesidesbar2putcup",
+            "delta_pp": -0.2711404846636176
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": -0.10822510822511333
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.022148394241426672
+          },
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": 0.031959092361773855
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.049295080351001275
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 16.17216117216118
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 2.848932676518885
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 2.3166023166023137
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 1.6763240098242598
+          },
+          {
+            "sequence": "motocome",
+            "delta_pp": 1.1494252873563369
+          }
+        ]
+      }
+    },
+    "blind": {
+      "PR20": {
+        "mean_delta_pp": 2.387688346506377,
+        "paired_sequence_bootstrap95_pp": [
+          0.49505562178373264,
+          5.054414507487277
+        ],
+        "wins": 6,
+        "ties": 10,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 19.230769230769226
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 7.253886010362706
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 4.804804804804805
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 3.7974683544303787
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 2.040816326530617
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 2.1979366279809085,
+        "paired_sequence_bootstrap95_pp": [
+          0.784968472515505,
+          4.423531805318543
+        ],
+        "wins": 14,
+        "ties": 0,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": -0.3809523809523796
+          },
+          {
+            "sequence": "moto2west",
+            "delta_pp": -0.3663003663003508
+          },
+          {
+            "sequence": "boybesidesbar2putcup",
+            "delta_pp": 1.7763568394002505e-15
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.11904761904763461
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": 0.6802721088435533
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 17.069597069597073
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 3.4985422740524825
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 3.1828275351591415
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 2.3809523809523796
+          },
+          {
+            "sequence": "motocome",
+            "delta_pp": 2.005012531328319
+          }
+        ]
+      }
+    },
+    "observed_before_first_blind": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarcoming",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "observed_after_first_blind": {
+      "PR20": {
+        "mean_delta_pp": 1.6968702525427293,
+        "paired_sequence_bootstrap95_pp": [
+          0.012223985325374548,
+          4.170052123364529
+        ],
+        "wins": 8,
+        "ties": 6,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": -2.2727272727272805
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": -0.952380952380949
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "moto2west",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 17.801857585139317
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 5.2959501557632365
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 3.2921810699588434
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 1.927710843373493
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.7594936708860729
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 1.5668044923232105,
+        "paired_sequence_bootstrap95_pp": [
+          0.27609198312094324,
+          3.6913277163454006
+        ],
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "worst5": [
+          {
+            "sequence": "boybesidesbar2putcup",
+            "delta_pp": -0.32770097286226374
+          },
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": -0.31746031746031633
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": -0.27210884353742415
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": -0.13605442176871918
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.03580379520229826
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 16.09169983782987
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 2.7938485882411044
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 2.1164021164021136
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 1.6523235800344231
+          },
+          {
+            "sequence": "motocome",
+            "delta_pp": 1.024065540194556
+          }
+        ]
+      }
+    },
+    "both_observed_after_first_blind": {
+      "PR20": {
+        "mean_delta_pp": 1.8134311045595428,
+        "paired_sequence_bootstrap95_pp": [
+          0.054755274964408594,
+          4.299775487858605
+        ],
+        "wins": 7,
+        "ties": 7,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": -1.5873015873015817
+          },
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": -1.2658227848101262
+          },
+          {
+            "sequence": "5manwakeright",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 17.52577319587629
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 6.228373702422132
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 4.794520547945211
+          },
+          {
+            "sequence": "shotmaker2",
+            "delta_pp": 0.9554140127388564
+          },
+          {
+            "sequence": "rightboy479",
+            "delta_pp": 0.8438818565400794
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 1.5430737576230376,
+        "paired_sequence_bootstrap95_pp": [
+          0.20746087224641113,
+          3.6897718792438514
+        ],
+        "wins": 12,
+        "ties": 0,
+        "losses": 4,
+        "worst5": [
+          {
+            "sequence": "The_girl_back_at_the_lab_1202",
+            "delta_pp": -0.831443688586532
+          },
+          {
+            "sequence": "boybesidesbar2putcup",
+            "delta_pp": -0.4096262160778297
+          },
+          {
+            "sequence": "bikeblkturn",
+            "delta_pp": -0.22675736961451776
+          },
+          {
+            "sequence": "motowithgood",
+            "delta_pp": -0.22675736961450355
+          },
+          {
+            "sequence": "blkskirtwoman",
+            "delta_pp": 0.04668534080298059
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "right1stgirlin2ndqueue",
+            "delta_pp": 16.028473244968097
+          },
+          {
+            "sequence": "exercisebook",
+            "delta_pp": 2.743450321304998
+          },
+          {
+            "sequence": "midblkboyplayingphone",
+            "delta_pp": 2.2504892367906137
+          },
+          {
+            "sequence": "hyalinepaperfrontclothes",
+            "delta_pp": 1.778542742398166
+          },
+          {
+            "sequence": "2whitegirl",
+            "delta_pp": 1.3863773357444416
+          }
+        ]
+      }
+    }
+  },
+  "controls_equal": {
+    "complete_hold": true,
+    "complete_velocity": true,
+    "outage_hold": true
+  },
+  "same_cohort_gpu_checkpoint": true,
+  "sequences": 16,
+  "scope": "Same16 development videos used in the preceding offline diagnostic; not fresh generalization evidence. Matching state also changes velocity time interval. No official score, fitted threshold or novel-module claim."
+}

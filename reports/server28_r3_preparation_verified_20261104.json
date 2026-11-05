@@ -1,0 +1,65 @@
+{
+  "status": "prepared_not_launched",
+  "observed_utc": "2026-11-04T12:00:41.020976Z",
+  "registration": {
+    "status": "prepared_not_launched",
+    "arms": [
+      "complete_only",
+      "complete_missing"
+    ],
+    "epochs": 20,
+    "samples_per_epoch": 20000,
+    "optimizer_updates_per_arm": 50000,
+    "seed": 2031,
+    "stochastic_seed": 74101,
+    "early_stop": false,
+    "primary_development_contrast": "epoch20 complete_missing C loss minus complete_only C loss",
+    "development_selection": "Minimum mean 11/01/10 task loss among epochs16-20; earlier tie",
+    "smoke_updates_per_arm": 4,
+    "official_epochs": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "official_conditions": [
+      "complete",
+      "miss"
+    ],
+    "full_evaluations": 20,
+    "sequences_per_evaluation": 479,
+    "frames_per_evaluation": 337353,
+    "all_checkpoints_retained": true,
+    "official_test_selection_used": false,
+    "independent_review": "REVIEW_UNAVAILABLE",
+    "dispatch_authorized": false,
+    "scope": "Independent R3; does not replace failed R1 or authorize the old P queue"
+  },
+  "configs": [
+    {
+      "arm": "complete_only",
+      "path": "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/complete_only.json",
+      "sha256": "dc408a6480a7be33fa5964e06e6157c28accba6b0df096c3a60f29f334402490"
+    },
+    {
+      "arm": "complete_missing",
+      "path": "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/complete_missing.json",
+      "sha256": "7ccaf91edfc66530a64faf9ff2cea4720a2dedca4a579f3da847ddb1d8a8e24b"
+    }
+  ],
+  "snapshot": "/home/gaob/Miss-RGBT/runtime/localization_r3_20261104",
+  "configs_and_frozen_sources_verified": true,
+  "training_readiness": {
+    "status": "waiting",
+    "missing": [
+      "/home/gaob/Miss-RGBT/runs/server28_localization_r3_20261104/complete_only/completed.json",
+      "/home/gaob/Miss-RGBT/runs/server28_localization_r3_20261104/complete_missing/completed.json"
+    ],
+    "dispatch_authorized": false
+  },
+  "cuda_initialized": false,
+  "real_image_smokes_present": false,
+  "formal_training_started": false,
+  "independent_review": "REVIEW_UNAVAILABLE"
+}

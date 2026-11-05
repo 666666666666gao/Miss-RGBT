@@ -1,0 +1,15 @@
+{
+  "observed_server_time": "2026-10-31T12:49:56+08:00",
+  "continuation_pid": 997655,
+  "previous_controller_pid": 967085,
+  "previous_worker_pids": [967093, 967094],
+  "verified_live": true,
+  "poll_seconds": 300,
+  "shortgap_gpu_run_started": false,
+  "staged_sha256": {
+    "evaluate_blind_motion28.py": "dd4e62750c32f5cb7fa4abe60f80c3561c1a4081defdd097368ddabe02878fc8",
+    "run_blind_motion_cohort28.py": "f9c0fc5ad341f06ca99c912aa7ac71658a0e183034c55c8a1ddaab0ea7c5ef21",
+    "launch_blind_motion_shortgap28.py": "5f4ed58046f17b9c86de52617e5f929aab12c9671d3e70419cf750dec7966b59"
+  },
+  "log": "/home/gaob/Miss-RGBT/reports/server28-motion-shortgap-continuation-20261031.log"
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 268017,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/run_scale_only28.py",
+    "--mode",
+    "controller"
+  ],
+  "launched_utc": "2026-10-31T11:18:14.908005Z"
+}

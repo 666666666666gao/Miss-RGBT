@@ -1,0 +1,10 @@
+{
+  "stage": "WAITING_FOR_R",
+  "missing": [
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r1_official_completed.json",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r1_training_verified.json",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_official_completed.json",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_training_verified.json"
+  ],
+  "observed_utc": "2026-11-03T01:50:19.255918Z"
+}

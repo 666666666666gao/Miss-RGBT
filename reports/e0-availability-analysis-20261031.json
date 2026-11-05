@@ -1,0 +1,4697 @@
+{
+  "scope": "Descriptive full-val97 E0 paired same-frame availability groups; not causal or official test",
+  "protocol_sha256": "71594b9155665ade076a1aff362b509f9bcbb3e6b76e66b24fb0ca1057853ef5",
+  "source_sha256": "82ad1dcc563a76843142869b306dba2cbea492a9c5e238468d14144165949b4c",
+  "groups": {
+    "00": {
+      "sequences": 62,
+      "scored_frames": 7503,
+      "PR20": {
+        "sequence_macro": {
+          "complete": 65.82535521923167,
+          "outage": 30.787110037755223,
+          "outage_minus_complete_pp": -35.03824518147645
+        },
+        "frame_weighted": {
+          "complete": 61.255497800879645,
+          "outage": 26.56270825003332,
+          "outage_minus_complete_pp": -34.69278955084633
+        }
+      },
+      "SR": {
+        "sequence_macro": {
+          "complete": 54.20696530108242,
+          "outage": 27.731910608798536,
+          "outage_minus_complete_pp": -26.47505469228388
+        },
+        "frame_weighted": {
+          "complete": 51.09130950794286,
+          "outage": 26.28282020525123,
+          "outage_minus_complete_pp": -24.808489302691623
+        }
+      }
+    },
+    "01": {
+      "sequences": 97,
+      "scored_frames": 10086,
+      "PR20": {
+        "sequence_macro": {
+          "complete": 76.79154407599678,
+          "outage": 59.868676006285206,
+          "outage_minus_complete_pp": -16.92286806971157
+        },
+        "frame_weighted": {
+          "complete": 66.86496133254016,
+          "outage": 53.82708705135832,
+          "outage_minus_complete_pp": -13.037874281181836
+        }
+      },
+      "SR": {
+        "sequence_macro": {
+          "complete": 61.8496135113542,
+          "outage": 46.08424947255222,
+          "outage_minus_complete_pp": -15.765364038801978
+        },
+        "frame_weighted": {
+          "complete": 55.02865830052029,
+          "outage": 44.13000575998791,
+          "outage_minus_complete_pp": -10.898652540532371
+        }
+      }
+    },
+    "10": {
+      "sequences": 84,
+      "scored_frames": 8865,
+      "PR20": {
+        "sequence_macro": {
+          "complete": 70.49424831971106,
+          "outage": 59.55253655161067,
+          "outage_minus_complete_pp": -10.941711768100385
+        },
+        "frame_weighted": {
+          "complete": 62.10941906373378,
+          "outage": 44.455724760293286,
+          "outage_minus_complete_pp": -17.653694303440496
+        }
+      },
+      "SR": {
+        "sequence_macro": {
+          "complete": 55.99044687197614,
+          "outage": 47.92045215979307,
+          "outage_minus_complete_pp": -8.069994712183064
+        },
+        "frame_weighted": {
+          "complete": 51.071898584588936,
+          "outage": 37.756828619772776,
+          "outage_minus_complete_pp": -13.315069964816159
+        }
+      }
+    },
+    "11": {
+      "sequences": 97,
+      "scored_frames": 27835,
+      "PR20": {
+        "sequence_macro": {
+          "complete": 76.67496729030577,
+          "outage": 72.57638757970406,
+          "outage_minus_complete_pp": -4.098579710601712
+        },
+        "frame_weighted": {
+          "complete": 65.21645410454464,
+          "outage": 59.94251841207113,
+          "outage_minus_complete_pp": -5.273935692473506
+        }
+      },
+      "SR": {
+        "sequence_macro": {
+          "complete": 62.45526390703784,
+          "outage": 59.518094606458924,
+          "outage_minus_complete_pp": -2.9371693005789083
+        },
+        "frame_weighted": {
+          "complete": 53.94595704277759,
+          "outage": 50.44744968222604,
+          "outage_minus_complete_pp": -3.49850736055155
+        }
+      }
+    }
+  },
+  "sequence_gaps": [
+    {
+      "sequence": "boywalkinginsnow3",
+      "PR20": -27.659574468085097,
+      "SR": -20.989530563998663
+    },
+    {
+      "sequence": "leftdrillmasterstanding",
+      "PR20": 12.049292560474669,
+      "SR": 7.091782399860893
+    },
+    {
+      "sequence": "leftgirlunderthelamp",
+      "PR20": -38.521400778210115,
+      "SR": -24.18010005558643
+    },
+    {
+      "sequence": "girlridesbike",
+      "PR20": -3.448275862068968,
+      "SR": -10.235358511220568
+    },
+    {
+      "sequence": "midboyplayingphone",
+      "PR20": 3.9755351681957194,
+      "SR": 2.533857579729144
+    },
+    {
+      "sequence": "boywithumbrella",
+      "PR20": -9.911894273127757,
+      "SR": -10.986993916509334
+    },
+    {
+      "sequence": "manrun",
+      "PR20": 0.0,
+      "SR": -1.9841269841269735
+    },
+    {
+      "sequence": "ab_pingpongball",
+      "PR20": 3.4482758620689644,
+      "SR": 0.9852216748768461
+    },
+    {
+      "sequence": "whitecarturnl",
+      "PR20": -48.529411764705884,
+      "SR": -36.554621848739515
+    },
+    {
+      "sequence": "girltakemoto",
+      "PR20": -73.55371900826447,
+      "SR": -47.42227469500196
+    },
+    {
+      "sequence": "rightgirlatbike",
+      "PR20": -11.46131805157593,
+      "SR": -9.714831491335786
+    },
+    {
+      "sequence": "easy_blackboy",
+      "PR20": -11.777777777777771,
+      "SR": -10.560846560846556
+    },
+    {
+      "sequence": "man_with_black_clothes2",
+      "PR20": -8.955223880597018,
+      "SR": -5.614783226723532
+    },
+    {
+      "sequence": "7runone",
+      "PR20": -11.650485436893206,
+      "SR": -10.540915395284358
+    },
+    {
+      "sequence": "turnblkbike",
+      "PR20": -75.16778523489933,
+      "SR": -58.8686481303931
+    },
+    {
+      "sequence": "motobesidescar",
+      "PR20": -69.56521739130436,
+      "SR": -56.41821946169774
+    },
+    {
+      "sequence": "bikeafterwhitecar",
+      "PR20": 0.0,
+      "SR": 0.0
+    },
+    {
+      "sequence": "2runsix",
+      "PR20": 0.0,
+      "SR": -6.167056986729136
+    },
+    {
+      "sequence": "rightboy_1227",
+      "PR20": -0.3816793893129784,
+      "SR": -1.808433296982905
+    },
+    {
+      "sequence": "whitesuvcome",
+      "PR20": -23.170731707317067,
+      "SR": -16.898954703832757
+    },
+    {
+      "sequence": "AQrightofcomingmotos",
+      "PR20": 0.0,
+      "SR": -1.1337868480725604
+    },
+    {
+      "sequence": "7one",
+      "PR20": 0.0,
+      "SR": -3.9909297052154216
+    },
+    {
+      "sequence": "blackman_0115",
+      "PR20": 35.87301587301588,
+      "SR": 17.369614512471664
+    },
+    {
+      "sequence": "rightmirrornotshining",
+      "PR20": -1.932858596134281,
+      "SR": 1.4435886256842636
+    },
+    {
+      "sequence": "AQmanfromdarktrees",
+      "PR20": -21.36222910216719,
+      "SR": -16.084328468229387
+    },
+    {
+      "sequence": "bikeboy128",
+      "PR20": 0.0,
+      "SR": 0.0
+    },
+    {
+      "sequence": "orangegirl",
+      "PR20": -6.116207951070336,
+      "SR": -5.06771515945826
+    },
+    {
+      "sequence": "girlturnbike",
+      "PR20": -50.0,
+      "SR": -48.268398268398286
+    },
+    {
+      "sequence": "blackman2",
+      "PR20": -42.857142857142854,
+      "SR": -28.84353741496598
+    },
+    {
+      "sequence": "blackcarback",
+      "PR20": 0.0,
+      "SR": -2.0737327188939787
+    },
+    {
+      "sequence": "rightof2cupsattached",
+      "PR20": -27.65650741350907,
+      "SR": -17.057935200439317
+    },
+    {
+      "sequence": "whitecar2west",
+      "PR20": 0.0,
+      "SR": -0.5116096025186891
+    },
+    {
+      "sequence": "hatboy`shead",
+      "PR20": -1.3599999999999994,
+      "SR": -2.8914285714285626
+    },
+    {
+      "sequence": "whitebetweenblackandblue",
+      "PR20": -6.0409924487594395,
+      "SR": -3.7242512970668287
+    },
+    {
+      "sequence": "2rdcarcome",
+      "PR20": 0.0,
+      "SR": -2.614379084967325
+    },
+    {
+      "sequence": "whitemancome",
+      "PR20": -8.069164265129686,
+      "SR": -6.06559626732539
+    },
+    {
+      "sequence": "nearmangotoD",
+      "PR20": -23.239436619718305,
+      "SR": -16.70020120724344
+    },
+    {
+      "sequence": "farmanrightwhitesmallhouse",
+      "PR20": -69.65317919075144,
+      "SR": -45.56840077071291
+    },
+    {
+      "sequence": "lightmotocoming",
+      "PR20": 0.0,
+      "SR": -0.0595238095238102
+    },
+    {
+      "sequence": "boymototakesgirl",
+      "PR20": -22.265625,
+      "SR": -14.50892857142857
+    },
+    {
+      "sequence": "leftblackboy",
+      "PR20": -3.271028037383175,
+      "SR": -1.691143747218515
+    },
+    {
+      "sequence": "righttallholdball",
+      "PR20": -22.654028436018955,
+      "SR": -19.313924621981506
+    },
+    {
+      "sequence": "blackcarcome",
+      "PR20": 0.0,
+      "SR": -1.9195275009228538
+    },
+    {
+      "sequence": "twolinefirstone-gai",
+      "PR20": -14.29902189101071,
+      "SR": -12.886197795373391
+    },
+    {
+      "sequence": "lowerfoam2throw",
+      "PR20": -44.0,
+      "SR": -37.2063492063492
+    },
+    {
+      "sequence": "Awhitecargo",
+      "PR20": 0.0,
+      "SR": -6.184291898577612
+    },
+    {
+      "sequence": "car2north3",
+      "PR20": -37.878787878787875,
+      "SR": -32.28715728715728
+    },
+    {
+      "sequence": "rightfirstboy-ly",
+      "PR20": -4.428571428571431,
+      "SR": -5.945578231292515
+    },
+    {
+      "sequence": "girltakingplate",
+      "PR20": -6.621621621621628,
+      "SR": -6.100386100386089
+    },
+    {
+      "sequence": "left2ndgreenboy",
+      "PR20": 4.950495049504951,
+      "SR": 3.316045890303318
+    },
+    {
+      "sequence": "ab_bolster",
+      "PR20": -27.082092219706894,
+      "SR": -18.9715919729026
+    },
+    {
+      "sequence": "9hatboy",
+      "PR20": -9.598214285714292,
+      "SR": -10.48575680272107
+    },
+    {
+      "sequence": "whitecarturn2",
+      "PR20": 0.0,
+      "SR": -5.513784461152881
+    },
+    {
+      "sequence": "midboyblue",
+      "PR20": 28.229665071770334,
+      "SR": 16.54325206956786
+    },
+    {
+      "sequence": "basketboywhite",
+      "PR20": -13.917525773195877,
+      "SR": -11.389297987236134
+    },
+    {
+      "sequence": "nightmototurn",
+      "PR20": 1.8348623853211024,
+      "SR": 0.21843599825248816
+    },
+    {
+      "sequence": "girlbike",
+      "PR20": 0.0,
+      "SR": -3.3509700176366835
+    },
+    {
+      "sequence": "mantoground",
+      "PR20": 0.0,
+      "SR": -4.71014492753622
+    },
+    {
+      "sequence": "pickuptheyellowbook",
+      "PR20": 6.644518272425248,
+      "SR": 6.644518272425249
+    },
+    {
+      "sequence": "8lastone",
+      "PR20": 0.0,
+      "SR": 0.06391818472356192
+    },
+    {
+      "sequence": "AQbikeback",
+      "PR20": 0.0,
+      "SR": 0.3759398496240607
+    },
+    {
+      "sequence": "girlsquattingbesidesleftbar",
+      "PR20": -4.78142076502732,
+      "SR": -3.301457194899818
+    },
+    {
+      "sequence": "blkbikefromnorth",
+      "PR20": -41.2639405204461,
+      "SR": -28.81926004602584
+    },
+    {
+      "sequence": "whitecar",
+      "PR20": -6.227106227106233,
+      "SR": -1.7268445839874573
+    },
+    {
+      "sequence": "Amidredgirl",
+      "PR20": -6.550218340611352,
+      "SR": -4.290566299299925
+    },
+    {
+      "sequence": "blackbag",
+      "PR20": -13.8755980861244,
+      "SR": -7.928913192071088
+    },
+    {
+      "sequence": "AQblkgirlbike",
+      "PR20": 37.826086956521735,
+      "SR": 29.523809523809515
+    },
+    {
+      "sequence": "manwithyellowumbrella",
+      "PR20": -13.03867403314917,
+      "SR": -11.749539594843466
+    },
+    {
+      "sequence": "browncar2north",
+      "PR20": 0.0,
+      "SR": -0.7344231224828093
+    },
+    {
+      "sequence": "carstop",
+      "PR20": -19.322033898305094,
+      "SR": -9.572235673930578
+    },
+    {
+      "sequence": "whiteboywithbag",
+      "PR20": -9.375,
+      "SR": -7.905505952380963
+    },
+    {
+      "sequence": "theleftestrunningboy",
+      "PR20": 1.0050251256281406,
+      "SR": 0.4307250538406322
+    },
+    {
+      "sequence": "girlafterglassdoor2",
+      "PR20": -18.778280542986423,
+      "SR": -13.208360267183792
+    },
+    {
+      "sequence": "rightmirrorlikesky",
+      "PR20": -6.166007905138343,
+      "SR": -3.338979860718993
+    },
+    {
+      "sequence": "redgirl1497",
+      "PR20": -63.43582887700535,
+      "SR": -48.605805958747126
+    },
+    {
+      "sequence": "midboy",
+      "PR20": 40.0,
+      "SR": 29.6031746031746
+    },
+    {
+      "sequence": "folderatlefthand",
+      "PR20": 0.2557544757033252,
+      "SR": 1.0291072950919506
+    },
+    {
+      "sequence": "bikecome",
+      "PR20": -8.52272727272728,
+      "SR": -9.226190476190482
+    },
+    {
+      "sequence": "leftfallenchair_inf_white",
+      "PR20": -0.41436464088397784,
+      "SR": 3.43330702446724
+    },
+    {
+      "sequence": "Agirlrideback",
+      "PR20": 0.0,
+      "SR": -2.700049091801688
+    },
+    {
+      "sequence": "rightgirl",
+      "PR20": -22.62626262626263,
+      "SR": -18.460798460798458
+    },
+    {
+      "sequence": "belowrightwhiteboy",
+      "PR20": -12.8739800543971,
+      "SR": -3.121357337132494
+    },
+    {
+      "sequence": "moto2north1",
+      "PR20": 42.29074889867842,
+      "SR": 24.06125445773023
+    },
+    {
+      "sequence": "truckk",
+      "PR20": -60.75949367088607,
+      "SR": -51.356238698010834
+    },
+    {
+      "sequence": "highright2ndboy",
+      "PR20": 15.139949109414758,
+      "SR": 23.93675027262814
+    },
+    {
+      "sequence": "girl`sheadoncall",
+      "PR20": -16.545718432510885,
+      "SR": -9.72423802612482
+    },
+    {
+      "sequence": "whiteboy",
+      "PR20": -31.023102310231025,
+      "SR": -27.612761276127607
+    },
+    {
+      "sequence": "truckwhite",
+      "PR20": 0.0,
+      "SR": -4.922779922779938
+    },
+    {
+      "sequence": "AQgirlbiketurns",
+      "PR20": -12.5,
+      "SR": -6.30952380952381
+    },
+    {
+      "sequence": "left2ndboy",
+      "PR20": -2.3999999999999986,
+      "SR": 1.0057142857142765
+    },
+    {
+      "sequence": "whitegirl2right",
+      "PR20": -14.427860696517413,
+      "SR": -14.64108031272211
+    },
+    {
+      "sequence": "rightboywithwhite",
+      "PR20": 39.828080229226366,
+      "SR": 36.07586300996043
+    },
+    {
+      "sequence": "girlplayingphone",
+      "PR20": -22.813688212927758,
+      "SR": -19.39163498098859
+    },
+    {
+      "sequence": "girlumbrella",
+      "PR20": -2.0833333333333286,
+      "SR": -3.8194444444444287
+    },
+    {
+      "sequence": "truck",
+      "PR20": 0.0,
+      "SR": -9.709338280766872
+    },
+    {
+      "sequence": "manfarbesidespool",
+      "PR20": -86.4306784660767,
+      "SR": -62.70543615676358
+    },
+    {
+      "sequence": "dotat43",
+      "PR20": -0.10764262648008582,
+      "SR": -1.609513557845097
+    }
+  ],
+  "per_sequence_state": {
+    "00": [
+      {
+        "sequence": "boywalkinginsnow3",
+        "frames": 85,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 9.411764705882353
+        },
+        "SR": {
+          "complete": 89.01960784313727,
+          "outage": 24.425770308123248
+        }
+      },
+      {
+        "sequence": "leftdrillmasterstanding",
+        "frames": 352,
+        "PR20": {
+          "complete": 36.36363636363637,
+          "outage": 41.76136363636363
+        },
+        "SR": {
+          "complete": 22.456709956709958,
+          "outage": 17.180735930735935
+        }
+      },
+      {
+        "sequence": "leftgirlunderthelamp",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 75.5952380952381,
+          "outage": 1.9345238095238093
+        }
+      },
+      {
+        "sequence": "girlridesbike",
+        "frames": 15,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 73.33333333333333
+        },
+        "SR": {
+          "complete": 83.80952380952382,
+          "outage": 31.428571428571427
+        }
+      },
+      {
+        "sequence": "midboyplayingphone",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 28.125
+        },
+        "SR": {
+          "complete": 85.86309523809524,
+          "outage": 42.857142857142854
+        }
+      },
+      {
+        "sequence": "boywithumbrella",
+        "frames": 128,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 42.1875
+        },
+        "SR": {
+          "complete": 82.47767857142856,
+          "outage": 29.6875
+        }
+      },
+      {
+        "sequence": "rightgirlatbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 78.125
+        },
+        "SR": {
+          "complete": 86.1607142857143,
+          "outage": 40.77380952380952
+        }
+      },
+      {
+        "sequence": "easy_blackboy",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 76.5625
+        },
+        "SR": {
+          "complete": 73.28869047619048,
+          "outage": 47.09821428571428
+        }
+      },
+      {
+        "sequence": "man_with_black_clothes2",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 25.0
+        },
+        "SR": {
+          "complete": 83.63095238095238,
+          "outage": 44.19642857142856
+        }
+      },
+      {
+        "sequence": "bikeafterwhitecar",
+        "frames": 21,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "rightboy_1227",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 98.4375
+        },
+        "SR": {
+          "complete": 67.55952380952381,
+          "outage": 59.52380952380952
+        }
+      },
+      {
+        "sequence": "blackman_0115",
+        "frames": 32,
+        "PR20": {
+          "complete": 65.625,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 60.11904761904762,
+          "outage": 70.68452380952381
+        }
+      },
+      {
+        "sequence": "rightmirrornotshining",
+        "frames": 160,
+        "PR20": {
+          "complete": 53.125,
+          "outage": 33.125
+        },
+        "SR": {
+          "complete": 39.404761904761905,
+          "outage": 40.11904761904761
+        }
+      },
+      {
+        "sequence": "AQmanfromdarktrees",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 9.375
+        },
+        "SR": {
+          "complete": 72.32142857142858,
+          "outage": 10.714285714285712
+        }
+      },
+      {
+        "sequence": "orangegirl",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 28.125
+        },
+        "SR": {
+          "complete": 78.57142857142858,
+          "outage": 32.738095238095234
+        }
+      },
+      {
+        "sequence": "rightof2cupsattached",
+        "frames": 800,
+        "PR20": {
+          "complete": 66.375,
+          "outage": 16.125
+        },
+        "SR": {
+          "complete": 54.05952380952381,
+          "outage": 25.404761904761905
+        }
+      },
+      {
+        "sequence": "hatboy`shead",
+        "frames": 192,
+        "PR20": {
+          "complete": 66.66666666666667,
+          "outage": 56.25
+        },
+        "SR": {
+          "complete": 56.646825396825385,
+          "outage": 46.825396825396815
+        }
+      },
+      {
+        "sequence": "whitebetweenblackandblue",
+        "frames": 128,
+        "PR20": {
+          "complete": 25.0,
+          "outage": 4.6875
+        },
+        "SR": {
+          "complete": 20.610119047619047,
+          "outage": 10.863095238095237
+        }
+      },
+      {
+        "sequence": "whitemancome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 40.625
+        },
+        "SR": {
+          "complete": 87.79761904761905,
+          "outage": 53.720238095238095
+        }
+      },
+      {
+        "sequence": "farmanrightwhitesmallhouse",
+        "frames": 32,
+        "PR20": {
+          "complete": 96.875,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 69.64285714285714,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "boymototakesgirl",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 50.0
+        },
+        "SR": {
+          "complete": 68.1547619047619,
+          "outage": 30.20833333333333
+        }
+      },
+      {
+        "sequence": "leftblackboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 59.375,
+          "outage": 18.75
+        },
+        "SR": {
+          "complete": 46.57738095238095,
+          "outage": 20.982142857142854
+        }
+      },
+      {
+        "sequence": "righttallholdball",
+        "frames": 160,
+        "PR20": {
+          "complete": 79.375,
+          "outage": 40.0
+        },
+        "SR": {
+          "complete": 72.4702380952381,
+          "outage": 36.39880952380952
+        }
+      },
+      {
+        "sequence": "twolinefirstone-gai",
+        "frames": 352,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 90.9090909090909
+        },
+        "SR": {
+          "complete": 75.36525974025973,
+          "outage": 64.06926406926405
+        }
+      },
+      {
+        "sequence": "car2north3",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 83.63095238095238,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "rightfirstboy-ly",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 79.16666666666667
+        },
+        "SR": {
+          "complete": 86.1111111111111,
+          "outage": 62.400793650793645
+        }
+      },
+      {
+        "sequence": "girltakingplate",
+        "frames": 101,
+        "PR20": {
+          "complete": 91.08910891089108,
+          "outage": 72.27722772277228
+        },
+        "SR": {
+          "complete": 81.32956152758132,
+          "outage": 66.19519094766618
+        }
+      },
+      {
+        "sequence": "left2ndgreenboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "ab_bolster",
+        "frames": 1365,
+        "PR20": {
+          "complete": 65.05494505494505,
+          "outage": 10.256410256410257
+        },
+        "SR": {
+          "complete": 59.58834815977673,
+          "outage": 21.84894470608756
+        }
+      },
+      {
+        "sequence": "9hatboy",
+        "frames": 128,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 30.46875
+        },
+        "SR": {
+          "complete": 84.59821428571428,
+          "outage": 26.86011904761905
+        }
+      },
+      {
+        "sequence": "midboyblue",
+        "frames": 416,
+        "PR20": {
+          "complete": 7.6923076923076925,
+          "outage": 16.826923076923077
+        },
+        "SR": {
+          "complete": 5.689102564102564,
+          "outage": 9.581043956043954
+        }
+      },
+      {
+        "sequence": "basketboywhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 15.625
+        },
+        "SR": {
+          "complete": 85.11904761904762,
+          "outage": 19.64285714285714
+        }
+      },
+      {
+        "sequence": "pickuptheyellowbook",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 2.380952380952381,
+          "outage": 2.529761904761905
+        }
+      },
+      {
+        "sequence": "girlsquattingbesidesleftbar",
+        "frames": 224,
+        "PR20": {
+          "complete": 26.339285714285715,
+          "outage": 6.696428571428571
+        },
+        "SR": {
+          "complete": 21.747448979591834,
+          "outage": 6.356292517006802
+        }
+      },
+      {
+        "sequence": "blkbikefromnorth",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.7440476190476191,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "whitecar",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 46.875
+        },
+        "SR": {
+          "complete": 74.85119047619048,
+          "outage": 45.238095238095234
+        }
+      },
+      {
+        "sequence": "Amidredgirl",
+        "frames": 96,
+        "PR20": {
+          "complete": 64.58333333333333,
+          "outage": 40.625
+        },
+        "SR": {
+          "complete": 42.361111111111114,
+          "outage": 27.480158730158724
+        }
+      },
+      {
+        "sequence": "blackbag",
+        "frames": 32,
+        "PR20": {
+          "complete": 3.125,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 2.083333333333333,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "AQblkgirlbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 37.5
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 30.95238095238095
+        }
+      },
+      {
+        "sequence": "manwithyellowumbrella",
+        "frames": 128,
+        "PR20": {
+          "complete": 73.4375,
+          "outage": 7.03125
+        },
+        "SR": {
+          "complete": 54.94791666666667,
+          "outage": 7.775297619047619
+        }
+      },
+      {
+        "sequence": "browncar2north",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.50595238095238,
+          "outage": 76.19047619047619
+        }
+      },
+      {
+        "sequence": "carstop",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 12.5
+        },
+        "SR": {
+          "complete": 86.60714285714286,
+          "outage": 63.54166666666666
+        }
+      },
+      {
+        "sequence": "whiteboywithbag",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 25.0
+        },
+        "SR": {
+          "complete": 85.41666666666669,
+          "outage": 24.553571428571427
+        }
+      },
+      {
+        "sequence": "theleftestrunningboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 18.75,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 15.327380952380953,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "girlafterglassdoor2",
+        "frames": 128,
+        "PR20": {
+          "complete": 98.4375,
+          "outage": 14.84375
+        },
+        "SR": {
+          "complete": 87.76041666666666,
+          "outage": 38.69047619047619
+        }
+      },
+      {
+        "sequence": "rightmirrorlikesky",
+        "frames": 192,
+        "PR20": {
+          "complete": 83.33333333333333,
+          "outage": 33.333333333333336
+        },
+        "SR": {
+          "complete": 79.11706349206348,
+          "outage": 45.85813492063492
+        }
+      },
+      {
+        "sequence": "redgirl1497",
+        "frames": 224,
+        "PR20": {
+          "complete": 85.71428571428571,
+          "outage": 20.535714285714285
+        },
+        "SR": {
+          "complete": 67.1343537414966,
+          "outage": 11.01190476190476
+        }
+      },
+      {
+        "sequence": "folderatlefthand",
+        "frames": 128,
+        "PR20": {
+          "complete": 9.375,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 16.927083333333332,
+          "outage": 13.244047619047617
+        }
+      },
+      {
+        "sequence": "bikecome",
+        "frames": 17,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 11.764705882352942
+        },
+        "SR": {
+          "complete": 89.6358543417367,
+          "outage": 12.324929971988794
+        }
+      },
+      {
+        "sequence": "leftfallenchair_inf_white",
+        "frames": 96,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 21.726190476190467,
+          "outage": 21.924603174603163
+        }
+      },
+      {
+        "sequence": "rightgirl",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 73.4375
+        },
+        "SR": {
+          "complete": 81.99404761904762,
+          "outage": 49.10714285714286
+        }
+      },
+      {
+        "sequence": "belowrightwhiteboy",
+        "frames": 169,
+        "PR20": {
+          "complete": 27.218934911242602,
+          "outage": 3.5502958579881656
+        },
+        "SR": {
+          "complete": 14.144829529444914,
+          "outage": 3.409411101718794
+        }
+      },
+      {
+        "sequence": "moto2north1",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 55.50595238095238
+        }
+      },
+      {
+        "sequence": "highright2ndboy",
+        "frames": 128,
+        "PR20": {
+          "complete": 27.34375,
+          "outage": 21.09375
+        },
+        "SR": {
+          "complete": 21.651785714285715,
+          "outage": 31.95684523809523
+        }
+      },
+      {
+        "sequence": "girl`sheadoncall",
+        "frames": 96,
+        "PR20": {
+          "complete": 33.333333333333336,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 23.115079365079367,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "whiteboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 46.875
+        },
+        "SR": {
+          "complete": 85.26785714285714,
+          "outage": 35.11904761904761
+        }
+      },
+      {
+        "sequence": "left2ndboy",
+        "frames": 96,
+        "PR20": {
+          "complete": 33.333333333333336,
+          "outage": 17.708333333333332
+        },
+        "SR": {
+          "complete": 29.563492063492063,
+          "outage": 30.90277777777777
+        }
+      },
+      {
+        "sequence": "whitegirl2right",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 25.0
+        },
+        "SR": {
+          "complete": 82.2172619047619,
+          "outage": 17.857142857142854
+        }
+      },
+      {
+        "sequence": "rightboywithwhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 46.875
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 57.73809523809523
+        }
+      },
+      {
+        "sequence": "girlplayingphone",
+        "frames": 32,
+        "PR20": {
+          "complete": 75.0,
+          "outage": 18.75
+        },
+        "SR": {
+          "complete": 71.875,
+          "outage": 18.303571428571427
+        }
+      },
+      {
+        "sequence": "manfarbesidespool",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 78.125,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "dotat43",
+        "frames": 130,
+        "PR20": {
+          "complete": 9.23076923076923,
+          "outage": 0.7692307692307693
+        },
+        "SR": {
+          "complete": 5.934065934065933,
+          "outage": 3.443223443223443
+        }
+      }
+    ],
+    "01": [
+      {
+        "sequence": "boywalkinginsnow3",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.32539682539682,
+          "outage": 84.22619047619047
+        }
+      },
+      {
+        "sequence": "leftdrillmasterstanding",
+        "frames": 384,
+        "PR20": {
+          "complete": 44.010416666666664,
+          "outage": 61.979166666666664
+        },
+        "SR": {
+          "complete": 30.121527777777775,
+          "outage": 43.09275793650793
+        }
+      },
+      {
+        "sequence": "leftgirlunderthelamp",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 45.3125
+        },
+        "SR": {
+          "complete": 61.16071428571428,
+          "outage": 30.13392857142857
+        }
+      },
+      {
+        "sequence": "girlridesbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 93.75
+        },
+        "SR": {
+          "complete": 86.45833333333333,
+          "outage": 56.99404761904762
+        }
+      },
+      {
+        "sequence": "midboyplayingphone",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 98.4375
+        },
+        "SR": {
+          "complete": 83.40773809523809,
+          "outage": 82.88690476190476
+        }
+      },
+      {
+        "sequence": "boywithumbrella",
+        "frames": 160,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 90.625
+        },
+        "SR": {
+          "complete": 85.0297619047619,
+          "outage": 66.9047619047619
+        }
+      },
+      {
+        "sequence": "manrun",
+        "frames": 29,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 89.8193760262726,
+          "outage": 85.7142857142857
+        }
+      },
+      {
+        "sequence": "ab_pingpongball",
+        "frames": 22,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 4.545454545454546
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.21645021645021645
+        }
+      },
+      {
+        "sequence": "whitecarturnl",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 92.4107142857143,
+          "outage": 15.029761904761903
+        }
+      },
+      {
+        "sequence": "girltakemoto",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 3.125
+        },
+        "SR": {
+          "complete": 47.32142857142857,
+          "outage": 2.5297619047619047
+        }
+      },
+      {
+        "sequence": "rightgirlatbike",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 51.5625
+        },
+        "SR": {
+          "complete": 67.48511904761904,
+          "outage": 40.17857142857143
+        }
+      },
+      {
+        "sequence": "easy_blackboy",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 63.541666666666664
+        },
+        "SR": {
+          "complete": 77.28174603174602,
+          "outage": 42.261904761904766
+        }
+      },
+      {
+        "sequence": "man_with_black_clothes2",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.85416666666667,
+          "outage": 83.4077380952381
+        }
+      },
+      {
+        "sequence": "7runone",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 62.5
+        },
+        "SR": {
+          "complete": 78.57142857142857,
+          "outage": 45.982142857142854
+        }
+      },
+      {
+        "sequence": "turnblkbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 12.5
+        },
+        "SR": {
+          "complete": 81.10119047619048,
+          "outage": 9.226190476190474
+        }
+      },
+      {
+        "sequence": "motobesidescar",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 21.875
+        },
+        "SR": {
+          "complete": 63.69047619047619,
+          "outage": 3.8690476190476186
+        }
+      },
+      {
+        "sequence": "bikeafterwhitecar",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "2runsix",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 77.67857142857142,
+          "outage": 54.61309523809524
+        }
+      },
+      {
+        "sequence": "rightboy_1227",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 61.805555555555564,
+          "outage": 58.382936507936506
+        }
+      },
+      {
+        "sequence": "whitesuvcome",
+        "frames": 32,
+        "PR20": {
+          "complete": 81.25,
+          "outage": 21.875
+        },
+        "SR": {
+          "complete": 66.66666666666667,
+          "outage": 24.25595238095238
+        }
+      },
+      {
+        "sequence": "AQrightofcomingmotos",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 81.99404761904762,
+          "outage": 79.76190476190476
+        }
+      },
+      {
+        "sequence": "7one",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 77.23214285714286,
+          "outage": 63.0952380952381
+        }
+      },
+      {
+        "sequence": "blackman_0115",
+        "frames": 64,
+        "PR20": {
+          "complete": 48.4375,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 52.60416666666666,
+          "outage": 76.71130952380952
+        }
+      },
+      {
+        "sequence": "rightmirrornotshining",
+        "frames": 160,
+        "PR20": {
+          "complete": 58.75,
+          "outage": 76.25
+        },
+        "SR": {
+          "complete": 57.82738095238095,
+          "outage": 69.25595238095238
+        }
+      },
+      {
+        "sequence": "AQmanfromdarktrees",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 72.39583333333334,
+          "outage": 71.72619047619048
+        }
+      },
+      {
+        "sequence": "bikeboy128",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "orangegirl",
+        "frames": 63,
+        "PR20": {
+          "complete": 96.82539682539682,
+          "outage": 95.23809523809524
+        },
+        "SR": {
+          "complete": 71.57974300831445,
+          "outage": 69.0098261526833
+        }
+      },
+      {
+        "sequence": "girlturnbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 75.0
+        },
+        "SR": {
+          "complete": 83.92857142857142,
+          "outage": 42.70833333333333
+        }
+      },
+      {
+        "sequence": "blackman2",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 78.27380952380952,
+          "outage": 16.81547619047619
+        }
+      },
+      {
+        "sequence": "blackcarback",
+        "frames": 31,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.79877112135175,
+          "outage": 76.65130568356373
+        }
+      },
+      {
+        "sequence": "rightof2cupsattached",
+        "frames": 825,
+        "PR20": {
+          "complete": 59.03030303030303,
+          "outage": 55.515151515151516
+        },
+        "SR": {
+          "complete": 47.75757575757576,
+          "outage": 45.40836940836941
+        }
+      },
+      {
+        "sequence": "whitecar2west",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 91.36904761904762,
+          "outage": 88.6904761904762
+        }
+      },
+      {
+        "sequence": "hatboy`shead",
+        "frames": 224,
+        "PR20": {
+          "complete": 74.55357142857143,
+          "outage": 77.67857142857143
+        },
+        "SR": {
+          "complete": 61.947278911564624,
+          "outage": 59.5875850340136
+        }
+      },
+      {
+        "sequence": "whitebetweenblackandblue",
+        "frames": 160,
+        "PR20": {
+          "complete": 40.0,
+          "outage": 36.25
+        },
+        "SR": {
+          "complete": 32.88690476190476,
+          "outage": 31.815476190476193
+        }
+      },
+      {
+        "sequence": "2rdcarcome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 82.58928571428571,
+          "outage": 76.33928571428572
+        }
+      },
+      {
+        "sequence": "whitemancome",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 85.9375
+        },
+        "SR": {
+          "complete": 84.15178571428572,
+          "outage": 69.79166666666666
+        }
+      },
+      {
+        "sequence": "nearmangotoD",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 85.56547619047619,
+          "outage": 83.03571428571428
+        }
+      },
+      {
+        "sequence": "farmanrightwhitesmallhouse",
+        "frames": 64,
+        "PR20": {
+          "complete": 90.625,
+          "outage": 40.625
+        },
+        "SR": {
+          "complete": 50.29761904761905,
+          "outage": 13.467261904761905
+        }
+      },
+      {
+        "sequence": "lightmotocoming",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.05952380952381,
+          "outage": 82.58928571428572
+        }
+      },
+      {
+        "sequence": "boymototakesgirl",
+        "frames": 64,
+        "PR20": {
+          "complete": 29.6875,
+          "outage": 35.9375
+        },
+        "SR": {
+          "complete": 43.52678571428571,
+          "outage": 43.601190476190474
+        }
+      },
+      {
+        "sequence": "leftblackboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 96.875,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 62.94642857142857,
+          "outage": 4.017857142857142
+        }
+      },
+      {
+        "sequence": "righttallholdball",
+        "frames": 192,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 69.79166666666667
+        },
+        "SR": {
+          "complete": 82.68849206349206,
+          "outage": 58.482142857142854
+        }
+      },
+      {
+        "sequence": "blackcarcome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.01190476190476,
+          "outage": 78.57142857142857
+        }
+      },
+      {
+        "sequence": "twolinefirstone-gai",
+        "frames": 356,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 83.42696629213484
+        },
+        "SR": {
+          "complete": 77.30069555912252,
+          "outage": 59.16265382557518
+        }
+      },
+      {
+        "sequence": "lowerfoam2throw",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 85.86309523809524,
+          "outage": 6.696428571428571
+        }
+      },
+      {
+        "sequence": "Awhitecargo",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 88.83928571428572,
+          "outage": 74.25595238095238
+        }
+      },
+      {
+        "sequence": "car2north3",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 50.0
+        },
+        "SR": {
+          "complete": 85.9375,
+          "outage": 32.738095238095234
+        }
+      },
+      {
+        "sequence": "rightfirstboy-ly",
+        "frames": 128,
+        "PR20": {
+          "complete": 99.21875,
+          "outage": 97.65625
+        },
+        "SR": {
+          "complete": 82.99851190476188,
+          "outage": 76.41369047619048
+        }
+      },
+      {
+        "sequence": "girltakingplate",
+        "frames": 128,
+        "PR20": {
+          "complete": 97.65625,
+          "outage": 82.8125
+        },
+        "SR": {
+          "complete": 77.60416666666666,
+          "outage": 67.55952380952381
+        }
+      },
+      {
+        "sequence": "left2ndgreenboy",
+        "frames": 64,
+        "PR20": {
+          "complete": 46.875,
+          "outage": 37.5
+        },
+        "SR": {
+          "complete": 38.39285714285714,
+          "outage": 16.44345238095238
+        }
+      },
+      {
+        "sequence": "ab_bolster",
+        "frames": 1408,
+        "PR20": {
+          "complete": 64.13352272727273,
+          "outage": 37.28693181818182
+        },
+        "SR": {
+          "complete": 61.32981601731601,
+          "outage": 43.90219155844156
+        }
+      },
+      {
+        "sequence": "9hatboy",
+        "frames": 160,
+        "PR20": {
+          "complete": 95.625,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 76.39880952380952,
+          "outage": 73.21428571428572
+        }
+      },
+      {
+        "sequence": "whitecarturn2",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 91.07142857142858,
+          "outage": 72.61904761904762
+        }
+      },
+      {
+        "sequence": "midboyblue",
+        "frames": 416,
+        "PR20": {
+          "complete": 7.6923076923076925,
+          "outage": 37.74038461538461
+        },
+        "SR": {
+          "complete": 5.528846153846154,
+          "outage": 25.331959706959708
+        }
+      },
+      {
+        "sequence": "basketboywhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.6547619047619,
+          "outage": 77.97619047619048
+        }
+      },
+      {
+        "sequence": "nightmototurn",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.16071428571428,
+          "outage": 76.78571428571428
+        }
+      },
+      {
+        "sequence": "girlbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 77.82738095238095,
+          "outage": 67.41071428571428
+        }
+      },
+      {
+        "sequence": "mantoground",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 75.14880952380952,
+          "outage": 62.351190476190474
+        }
+      },
+      {
+        "sequence": "pickuptheyellowbook",
+        "frames": 64,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "8lastone",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 73.95833333333333,
+          "outage": 74.55357142857143
+        }
+      },
+      {
+        "sequence": "AQbikeback",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 78.42261904761904,
+          "outage": 76.33928571428572
+        }
+      },
+      {
+        "sequence": "girlsquattingbesidesleftbar",
+        "frames": 256,
+        "PR20": {
+          "complete": 23.4375,
+          "outage": 25.390625
+        },
+        "SR": {
+          "complete": 18.489583333333336,
+          "outage": 20.77752976190476
+        }
+      },
+      {
+        "sequence": "blkbikefromnorth",
+        "frames": 64,
+        "PR20": {
+          "complete": 50.0,
+          "outage": 3.125
+        },
+        "SR": {
+          "complete": 40.17857142857143,
+          "outage": 6.101190476190476
+        }
+      },
+      {
+        "sequence": "whitecar",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 68.37797619047619,
+          "outage": 75.22321428571428
+        }
+      },
+      {
+        "sequence": "Amidredgirl",
+        "frames": 128,
+        "PR20": {
+          "complete": 60.15625,
+          "outage": 50.78125
+        },
+        "SR": {
+          "complete": 45.53571428571429,
+          "outage": 38.02083333333334
+        }
+      },
+      {
+        "sequence": "blackbag",
+        "frames": 32,
+        "PR20": {
+          "complete": 40.625,
+          "outage": 3.125
+        },
+        "SR": {
+          "complete": 20.38690476190476,
+          "outage": 5.208333333333334
+        }
+      },
+      {
+        "sequence": "AQblkgirlbike",
+        "frames": 39,
+        "PR20": {
+          "complete": 10.256410256410257,
+          "outage": 25.641025641025642
+        },
+        "SR": {
+          "complete": 4.761904761904762,
+          "outage": 16.483516483516485
+        }
+      },
+      {
+        "sequence": "manwithyellowumbrella",
+        "frames": 160,
+        "PR20": {
+          "complete": 59.375,
+          "outage": 48.125
+        },
+        "SR": {
+          "complete": 50.32738095238095,
+          "outage": 34.43452380952381
+        }
+      },
+      {
+        "sequence": "browncar2north",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 75.29761904761905,
+          "outage": 74.25595238095238
+        }
+      },
+      {
+        "sequence": "carstop",
+        "frames": 64,
+        "PR20": {
+          "complete": 95.3125,
+          "outage": 51.5625
+        },
+        "SR": {
+          "complete": 83.1845238095238,
+          "outage": 52.08333333333333
+        }
+      },
+      {
+        "sequence": "whiteboywithbag",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.00297619047618,
+          "outage": 84.30059523809523
+        }
+      },
+      {
+        "sequence": "theleftestrunningboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 37.5,
+          "outage": 3.125
+        },
+        "SR": {
+          "complete": 23.363095238095234,
+          "outage": 7.44047619047619
+        }
+      },
+      {
+        "sequence": "girlafterglassdoor2",
+        "frames": 160,
+        "PR20": {
+          "complete": 96.25,
+          "outage": 77.5
+        },
+        "SR": {
+          "complete": 87.58928571428571,
+          "outage": 72.55952380952381
+        }
+      },
+      {
+        "sequence": "rightmirrorlikesky",
+        "frames": 224,
+        "PR20": {
+          "complete": 63.392857142857146,
+          "outage": 62.05357142857143
+        },
+        "SR": {
+          "complete": 56.97278911564626,
+          "outage": 59.22619047619048
+        }
+      },
+      {
+        "sequence": "redgirl1497",
+        "frames": 256,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 25.78125
+        },
+        "SR": {
+          "complete": 73.92113095238095,
+          "outage": 15.420386904761905
+        }
+      },
+      {
+        "sequence": "midboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 6.547619047619048
+        }
+      },
+      {
+        "sequence": "folderatlefthand",
+        "frames": 128,
+        "PR20": {
+          "complete": 13.28125,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 18.973214285714285,
+          "outage": 22.135416666666664
+        }
+      },
+      {
+        "sequence": "bikecome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.33333333333334,
+          "outage": 72.76785714285714
+        }
+      },
+      {
+        "sequence": "leftfallenchair_inf_white",
+        "frames": 128,
+        "PR20": {
+          "complete": 4.6875,
+          "outage": 1.5625
+        },
+        "SR": {
+          "complete": 28.757440476190467,
+          "outage": 27.790178571428562
+        }
+      },
+      {
+        "sequence": "Agirlrideback",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.20238095238095,
+          "outage": 79.31547619047618
+        }
+      },
+      {
+        "sequence": "rightgirl",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 43.75
+        },
+        "SR": {
+          "complete": 78.02579365079364,
+          "outage": 31.84523809523809
+        }
+      },
+      {
+        "sequence": "belowrightwhiteboy",
+        "frames": 187,
+        "PR20": {
+          "complete": 43.850267379679146,
+          "outage": 19.78609625668449
+        },
+        "SR": {
+          "complete": 17.035905271199386,
+          "outage": 9.320091673032849
+        }
+      },
+      {
+        "sequence": "moto2north1",
+        "frames": 36,
+        "PR20": {
+          "complete": 88.88888888888889,
+          "outage": 94.44444444444444
+        },
+        "SR": {
+          "complete": 75.0,
+          "outage": 37.16931216931217
+        }
+      },
+      {
+        "sequence": "truckk",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 90.47619047619048,
+          "outage": 6.5476190476190474
+        }
+      },
+      {
+        "sequence": "highright2ndboy",
+        "frames": 128,
+        "PR20": {
+          "complete": 48.4375,
+          "outage": 30.46875
+        },
+        "SR": {
+          "complete": 28.83184523809524,
+          "outage": 29.166666666666668
+        }
+      },
+      {
+        "sequence": "girl`sheadoncall",
+        "frames": 128,
+        "PR20": {
+          "complete": 10.9375,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 6.138392857142857,
+          "outage": 1.6369047619047619
+        }
+      },
+      {
+        "sequence": "whiteboy",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 54.6875
+        },
+        "SR": {
+          "complete": 86.5327380952381,
+          "outage": 47.023809523809526
+        }
+      },
+      {
+        "sequence": "truckwhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 89.73214285714286,
+          "outage": 67.5595238095238
+        }
+      },
+      {
+        "sequence": "AQgirlbiketurns",
+        "frames": 32,
+        "PR20": {
+          "complete": 75.0,
+          "outage": 50.0
+        },
+        "SR": {
+          "complete": 54.910714285714285,
+          "outage": 43.1547619047619
+        }
+      },
+      {
+        "sequence": "left2ndboy",
+        "frames": 114,
+        "PR20": {
+          "complete": 33.333333333333336,
+          "outage": 30.70175438596491
+        },
+        "SR": {
+          "complete": 40.85213032581454,
+          "outage": 42.60651629072682
+        }
+      },
+      {
+        "sequence": "whitegirl2right",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 72.02380952380952,
+          "outage": 63.020833333333336
+        }
+      },
+      {
+        "sequence": "rightboywithwhite",
+        "frames": 64,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 40.625
+        },
+        "SR": {
+          "complete": 0.4464285714285714,
+          "outage": 30.729166666666668
+        }
+      },
+      {
+        "sequence": "girlplayingphone",
+        "frames": 64,
+        "PR20": {
+          "complete": 60.9375,
+          "outage": 4.6875
+        },
+        "SR": {
+          "complete": 52.67857142857142,
+          "outage": 8.928571428571427
+        }
+      },
+      {
+        "sequence": "girlumbrella",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.82142857142858,
+          "outage": 80.50595238095238
+        }
+      },
+      {
+        "sequence": "truck",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 91.96428571428572,
+          "outage": 69.34523809523809
+        }
+      },
+      {
+        "sequence": "manfarbesidespool",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 23.4375
+        },
+        "SR": {
+          "complete": 67.70833333333334,
+          "outage": 12.797619047619047
+        }
+      },
+      {
+        "sequence": "dotat43",
+        "frames": 160,
+        "PR20": {
+          "complete": 1.875,
+          "outage": 5.625
+        },
+        "SR": {
+          "complete": 1.5178571428571428,
+          "outage": 3.9285714285714284
+        }
+      }
+    ],
+    "10": [
+      {
+        "sequence": "boywalkinginsnow3",
+        "frames": 96,
+        "PR20": {
+          "complete": 95.83333333333333,
+          "outage": 61.458333333333336
+        },
+        "SR": {
+          "complete": 79.36507936507935,
+          "outage": 54.81150793650793
+        }
+      },
+      {
+        "sequence": "leftdrillmasterstanding",
+        "frames": 352,
+        "PR20": {
+          "complete": 41.76136363636363,
+          "outage": 48.29545454545455
+        },
+        "SR": {
+          "complete": 27.759740259740262,
+          "outage": 33.23863636363637
+        }
+      },
+      {
+        "sequence": "leftgirlunderthelamp",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 74.10714285714286,
+          "outage": 75.89285714285714
+        }
+      },
+      {
+        "sequence": "girlridesbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.20833333333334,
+          "outage": 79.3154761904762
+        }
+      },
+      {
+        "sequence": "midboyplayingphone",
+        "frames": 64,
+        "PR20": {
+          "complete": 56.25,
+          "outage": 98.4375
+        },
+        "SR": {
+          "complete": 55.72916666666666,
+          "outage": 79.0922619047619
+        }
+      },
+      {
+        "sequence": "boywithumbrella",
+        "frames": 160,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.33333333333333,
+          "outage": 82.05357142857142
+        }
+      },
+      {
+        "sequence": "ab_pingpongball",
+        "frames": 17,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 5.882352941176471
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 1.1204481792717087
+        }
+      },
+      {
+        "sequence": "girltakemoto",
+        "frames": 26,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 76.37362637362637,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "rightgirlatbike",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 81.02678571428572,
+          "outage": 81.69642857142857
+        }
+      },
+      {
+        "sequence": "easy_blackboy",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 72.32142857142856,
+          "outage": 74.55357142857142
+        }
+      },
+      {
+        "sequence": "man_with_black_clothes2",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 88.98809523809524,
+          "outage": 82.29166666666667
+        }
+      },
+      {
+        "sequence": "7runone",
+        "frames": 8,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.30952380952381,
+          "outage": 86.30952380952381
+        }
+      },
+      {
+        "sequence": "turnblkbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 76.78571428571429,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "motobesidescar",
+        "frames": 32,
+        "PR20": {
+          "complete": 87.5,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 66.96428571428572,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "bikeafterwhitecar",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "2runsix",
+        "frames": 27,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 75.13227513227513,
+          "outage": 74.7795414462081
+        }
+      },
+      {
+        "sequence": "rightboy_1227",
+        "frames": 96,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 64.28571428571428,
+          "outage": 63.59126984126984
+        }
+      },
+      {
+        "sequence": "7one",
+        "frames": 10,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.33333333333333,
+          "outage": 83.33333333333333
+        }
+      },
+      {
+        "sequence": "blackman_0115",
+        "frames": 60,
+        "PR20": {
+          "complete": 80.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 70.71428571428571,
+          "outage": 76.66666666666669
+        }
+      },
+      {
+        "sequence": "rightmirrornotshining",
+        "frames": 160,
+        "PR20": {
+          "complete": 48.75,
+          "outage": 40.0
+        },
+        "SR": {
+          "complete": 38.69047619047619,
+          "outage": 35.11904761904761
+        }
+      },
+      {
+        "sequence": "AQmanfromdarktrees",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 46.875
+        },
+        "SR": {
+          "complete": 72.69345238095238,
+          "outage": 29.01785714285714
+        }
+      },
+      {
+        "sequence": "bikeboy128",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "orangegirl",
+        "frames": 64,
+        "PR20": {
+          "complete": 93.75,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 76.78571428571428,
+          "outage": 77.97619047619048
+        }
+      },
+      {
+        "sequence": "girlturnbike",
+        "frames": 15,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 87.61904761904762,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "rightof2cupsattached",
+        "frames": 800,
+        "PR20": {
+          "complete": 72.0,
+          "outage": 7.5
+        },
+        "SR": {
+          "complete": 58.58333333333332,
+          "outage": 13.178571428571427
+        }
+      },
+      {
+        "sequence": "whitecar2west",
+        "frames": 26,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.24908424908425,
+          "outage": 84.98168498168499
+        }
+      },
+      {
+        "sequence": "hatboy`shead",
+        "frames": 195,
+        "PR20": {
+          "complete": 73.33333333333333,
+          "outage": 65.64102564102564
+        },
+        "SR": {
+          "complete": 60.07326007326007,
+          "outage": 52.45421245421246
+        }
+      },
+      {
+        "sequence": "whitebetweenblackandblue",
+        "frames": 160,
+        "PR20": {
+          "complete": 35.625,
+          "outage": 20.0
+        },
+        "SR": {
+          "complete": 28.928571428571423,
+          "outage": 16.696428571428573
+        }
+      },
+      {
+        "sequence": "2rdcarcome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 92.55952380952382,
+          "outage": 91.51785714285714
+        }
+      },
+      {
+        "sequence": "whitemancome",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 88.02083333333333,
+          "outage": 86.5327380952381
+        }
+      },
+      {
+        "sequence": "nearmangotoD",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 70.23809523809524,
+          "outage": 3.571428571428571
+        }
+      },
+      {
+        "sequence": "farmanrightwhitesmallhouse",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 6.25
+        },
+        "SR": {
+          "complete": 75.59523809523809,
+          "outage": 2.157738095238095
+        }
+      },
+      {
+        "sequence": "boymototakesgirl",
+        "frames": 31,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 58.525345622119815,
+          "outage": 7.37327188940092
+        }
+      },
+      {
+        "sequence": "leftblackboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 15.625
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 10.863095238095237
+        }
+      },
+      {
+        "sequence": "righttallholdball",
+        "frames": 160,
+        "PR20": {
+          "complete": 63.75,
+          "outage": 51.875
+        },
+        "SR": {
+          "complete": 54.79166666666667,
+          "outage": 42.08333333333333
+        }
+      },
+      {
+        "sequence": "blackcarcome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 91.96428571428572,
+          "outage": 92.11309523809524
+        }
+      },
+      {
+        "sequence": "twolinefirstone-gai",
+        "frames": 352,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 80.39772727272727
+        },
+        "SR": {
+          "complete": 77.81385281385282,
+          "outage": 61.850649350649356
+        }
+      },
+      {
+        "sequence": "car2north3",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 90.625
+        },
+        "SR": {
+          "complete": 76.19047619047618,
+          "outage": 75.59523809523809
+        }
+      },
+      {
+        "sequence": "rightfirstboy-ly",
+        "frames": 125,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 93.6
+        },
+        "SR": {
+          "complete": 87.04761904761905,
+          "outage": 80.34285714285716
+        }
+      },
+      {
+        "sequence": "girltakingplate",
+        "frames": 128,
+        "PR20": {
+          "complete": 78.125,
+          "outage": 78.125
+        },
+        "SR": {
+          "complete": 75.81845238095238,
+          "outage": 74.96279761904762
+        }
+      },
+      {
+        "sequence": "left2ndgreenboy",
+        "frames": 48,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 14.583333333333334
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 15.575396825396824
+        }
+      },
+      {
+        "sequence": "ab_bolster",
+        "frames": 1407,
+        "PR20": {
+          "complete": 63.96588486140725,
+          "outage": 23.66737739872068
+        },
+        "SR": {
+          "complete": 59.93501878363285,
+          "outage": 29.068941009239513
+        }
+      },
+      {
+        "sequence": "9hatboy",
+        "frames": 160,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 79.43452380952381,
+          "outage": 73.92857142857142
+        }
+      },
+      {
+        "sequence": "whitecarturn2",
+        "frames": 19,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.45112781954886,
+          "outage": 78.44611528822057
+        }
+      },
+      {
+        "sequence": "midboyblue",
+        "frames": 416,
+        "PR20": {
+          "complete": 7.6923076923076925,
+          "outage": 37.5
+        },
+        "SR": {
+          "complete": 5.89514652014652,
+          "outage": 21.520146520146515
+        }
+      },
+      {
+        "sequence": "basketboywhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.60714285714286,
+          "outage": 84.9702380952381
+        }
+      },
+      {
+        "sequence": "nightmototurn",
+        "frames": 14,
+        "PR20": {
+          "complete": 85.71428571428571,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 39.79591836734694,
+          "outage": 62.58503401360544
+        }
+      },
+      {
+        "sequence": "girlbike",
+        "frames": 13,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.08058608058607,
+          "outage": 85.34798534798534
+        }
+      },
+      {
+        "sequence": "pickuptheyellowbook",
+        "frames": 46,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 15.217391304347826
+        },
+        "SR": {
+          "complete": 3.8302277432712213,
+          "outage": 25.05175983436853
+        }
+      },
+      {
+        "sequence": "8lastone",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 73.80952380952381,
+          "outage": 73.36309523809524
+        }
+      },
+      {
+        "sequence": "AQbikeback",
+        "frames": 19,
+        "PR20": {
+          "complete": 94.73684210526316,
+          "outage": 94.73684210526316
+        },
+        "SR": {
+          "complete": 43.85964912280702,
+          "outage": 46.61654135338346
+        }
+      },
+      {
+        "sequence": "girlsquattingbesidesleftbar",
+        "frames": 249,
+        "PR20": {
+          "complete": 18.072289156626507,
+          "outage": 15.261044176706827
+        },
+        "SR": {
+          "complete": 14.610824249378464,
+          "outage": 11.87607573149742
+        }
+      },
+      {
+        "sequence": "blkbikefromnorth",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 67.11309523809524,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "whitecar",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 71.57738095238096,
+          "outage": 72.32142857142857
+        }
+      },
+      {
+        "sequence": "Amidredgirl",
+        "frames": 112,
+        "PR20": {
+          "complete": 57.142857142857146,
+          "outage": 57.142857142857146
+        },
+        "SR": {
+          "complete": 39.583333333333336,
+          "outage": 39.41326530612246
+        }
+      },
+      {
+        "sequence": "blackbag",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "AQblkgirlbike",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 15.625
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 10.863095238095237
+        }
+      },
+      {
+        "sequence": "manwithyellowumbrella",
+        "frames": 160,
+        "PR20": {
+          "complete": 33.125,
+          "outage": 32.5
+        },
+        "SR": {
+          "complete": 22.916666666666664,
+          "outage": 18.422619047619044
+        }
+      },
+      {
+        "sequence": "browncar2north",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 74.70238095238095,
+          "outage": 73.66071428571428
+        }
+      },
+      {
+        "sequence": "carstop",
+        "frames": 40,
+        "PR20": {
+          "complete": 90.0,
+          "outage": 87.5
+        },
+        "SR": {
+          "complete": 84.04761904761905,
+          "outage": 80.83333333333334
+        }
+      },
+      {
+        "sequence": "whiteboywithbag",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.60714285714286,
+          "outage": 85.56547619047619
+        }
+      },
+      {
+        "sequence": "theleftestrunningboy",
+        "frames": 32,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 31.25
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 24.404761904761905
+        }
+      },
+      {
+        "sequence": "girlafterglassdoor2",
+        "frames": 149,
+        "PR20": {
+          "complete": 99.32885906040268,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.27612655800574,
+          "outage": 83.09364014062001
+        }
+      },
+      {
+        "sequence": "rightmirrorlikesky",
+        "frames": 210,
+        "PR20": {
+          "complete": 49.04761904761905,
+          "outage": 33.333333333333336
+        },
+        "SR": {
+          "complete": 50.430839002267575,
+          "outage": 39.93197278911565
+        }
+      },
+      {
+        "sequence": "redgirl1497",
+        "frames": 256,
+        "PR20": {
+          "complete": 93.359375,
+          "outage": 26.171875
+        },
+        "SR": {
+          "complete": 67.13169642857143,
+          "outage": 19.642857142857146
+        }
+      },
+      {
+        "sequence": "midboy",
+        "frames": 25,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 88.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 60.0
+        }
+      },
+      {
+        "sequence": "folderatlefthand",
+        "frames": 128,
+        "PR20": {
+          "complete": 5.46875,
+          "outage": 7.03125
+        },
+        "SR": {
+          "complete": 15.25297619047619,
+          "outage": 18.303571428571427
+        }
+      },
+      {
+        "sequence": "bikecome",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.35119047619048,
+          "outage": 87.94642857142857
+        }
+      },
+      {
+        "sequence": "leftfallenchair_inf_white",
+        "frames": 128,
+        "PR20": {
+          "complete": 17.1875,
+          "outage": 17.96875
+        },
+        "SR": {
+          "complete": 25.3720238095238,
+          "outage": 36.19791666666666
+        }
+      },
+      {
+        "sequence": "Agirlrideback",
+        "frames": 2,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.33333333333333,
+          "outage": 83.33333333333333
+        }
+      },
+      {
+        "sequence": "rightgirl",
+        "frames": 81,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 74.54438565549677,
+          "outage": 80.89359200470311
+        }
+      },
+      {
+        "sequence": "belowrightwhiteboy",
+        "frames": 192,
+        "PR20": {
+          "complete": 8.854166666666666,
+          "outage": 3.125
+        },
+        "SR": {
+          "complete": 4.464285714285714,
+          "outage": 4.117063492063491
+        }
+      },
+      {
+        "sequence": "moto2north1",
+        "frames": 32,
+        "PR20": {
+          "complete": 59.375,
+          "outage": 62.5
+        },
+        "SR": {
+          "complete": 22.172619047619047,
+          "outage": 23.363095238095234
+        }
+      },
+      {
+        "sequence": "highright2ndboy",
+        "frames": 128,
+        "PR20": {
+          "complete": 47.65625,
+          "outage": 79.6875
+        },
+        "SR": {
+          "complete": 31.733630952380956,
+          "outage": 62.49999999999999
+        }
+      },
+      {
+        "sequence": "girl`sheadoncall",
+        "frames": 114,
+        "PR20": {
+          "complete": 28.07017543859649,
+          "outage": 9.649122807017545
+        },
+        "SR": {
+          "complete": 15.371762740183792,
+          "outage": 2.882205513784461
+        }
+      },
+      {
+        "sequence": "whiteboy",
+        "frames": 48,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 66.66666666666667
+        },
+        "SR": {
+          "complete": 86.40873015873017,
+          "outage": 57.53968253968255
+        }
+      },
+      {
+        "sequence": "truckwhite",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.79761904761905,
+          "outage": 87.05357142857143
+        }
+      },
+      {
+        "sequence": "left2ndboy",
+        "frames": 96,
+        "PR20": {
+          "complete": 29.166666666666668,
+          "outage": 30.208333333333332
+        },
+        "SR": {
+          "complete": 28.174603174603174,
+          "outage": 27.430555555555557
+        }
+      },
+      {
+        "sequence": "whitegirl2right",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 84.375
+        },
+        "SR": {
+          "complete": 77.82738095238095,
+          "outage": 60.49107142857143
+        }
+      },
+      {
+        "sequence": "rightboywithwhite",
+        "frames": 64,
+        "PR20": {
+          "complete": 0.0,
+          "outage": 50.0
+        },
+        "SR": {
+          "complete": 0.0,
+          "outage": 40.25297619047619
+        }
+      },
+      {
+        "sequence": "girlplayingphone",
+        "frames": 32,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.90476190476191,
+          "outage": 84.82142857142857
+        }
+      },
+      {
+        "sequence": "girlumbrella",
+        "frames": 1,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.95238095238095,
+          "outage": 80.95238095238095
+        }
+      },
+      {
+        "sequence": "manfarbesidespool",
+        "frames": 64,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 0.0
+        },
+        "SR": {
+          "complete": 68.37797619047618,
+          "outage": 0.0
+        }
+      },
+      {
+        "sequence": "dotat43",
+        "frames": 160,
+        "PR20": {
+          "complete": 6.875,
+          "outage": 8.125
+        },
+        "SR": {
+          "complete": 5.5357142857142865,
+          "outage": 3.601190476190476
+        }
+      }
+    ],
+    "11": [
+      {
+        "sequence": "boywalkinginsnow3",
+        "frames": 287,
+        "PR20": {
+          "complete": 90.2439024390244,
+          "outage": 74.21602787456446
+        },
+        "SR": {
+          "complete": 79.82412477185996,
+          "outage": 65.9532105525137
+        }
+      },
+      {
+        "sequence": "leftdrillmasterstanding",
+        "frames": 1103,
+        "PR20": {
+          "complete": 41.52311876699909,
+          "outage": 55.39437896645512
+        },
+        "SR": {
+          "complete": 27.59573457669559,
+          "outage": 37.102275180244355
+        }
+      },
+      {
+        "sequence": "leftgirlunderthelamp",
+        "frames": 129,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 73.64341085271317
+        },
+        "SR": {
+          "complete": 73.27427094868953,
+          "outage": 58.32410483573274
+        }
+      },
+      {
+        "sequence": "girlridesbike",
+        "frames": 95,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 81.10275689223054,
+          "outage": 80.85213032581451
+        }
+      },
+      {
+        "sequence": "midboyplayingphone",
+        "frames": 167,
+        "PR20": {
+          "complete": 93.41317365269461,
+          "outage": 99.40119760479043
+        },
+        "SR": {
+          "complete": 76.61819218705446,
+          "outage": 81.06643855146848
+        }
+      },
+      {
+        "sequence": "boywithumbrella",
+        "frames": 460,
+        "PR20": {
+          "complete": 99.1304347826087,
+          "outage": 98.91304347826087
+        },
+        "SR": {
+          "complete": 83.89233954451346,
+          "outage": 83.64389233954451
+        }
+      },
+      {
+        "sequence": "manrun",
+        "frames": 31,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 89.40092165898618,
+          "outage": 89.40092165898618
+        }
+      },
+      {
+        "sequence": "ab_pingpongball",
+        "frames": 48,
+        "PR20": {
+          "complete": 14.583333333333334,
+          "outage": 16.666666666666668
+        },
+        "SR": {
+          "complete": 10.912698412698413,
+          "outage": 12.202380952380954
+        }
+      },
+      {
+        "sequence": "whitecarturnl",
+        "frames": 36,
+        "PR20": {
+          "complete": 91.66666666666667,
+          "outage": 88.88888888888889
+        },
+        "SR": {
+          "complete": 87.56613756613756,
+          "outage": 87.3015873015873
+        }
+      },
+      {
+        "sequence": "girltakemoto",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 49.20634920634921
+        },
+        "SR": {
+          "complete": 76.19047619047618,
+          "outage": 39.38019652305366
+        }
+      },
+      {
+        "sequence": "rightgirlatbike",
+        "frames": 189,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 98.94179894179894
+        },
+        "SR": {
+          "complete": 82.89241622574957,
+          "outage": 81.657848324515
+        }
+      },
+      {
+        "sequence": "easy_blackboy",
+        "frames": 226,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 98.67256637168141
+        },
+        "SR": {
+          "complete": 73.59882005899705,
+          "outage": 74.23093131057732
+        }
+      },
+      {
+        "sequence": "man_with_black_clothes2",
+        "frames": 140,
+        "PR20": {
+          "complete": 99.28571428571429,
+          "outage": 99.28571428571429
+        },
+        "SR": {
+          "complete": 84.72789115646259,
+          "outage": 84.72789115646258
+        }
+      },
+      {
+        "sequence": "7runone",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 82.76643990929703,
+          "outage": 82.08616780045348
+        }
+      },
+      {
+        "sequence": "turnblkbike",
+        "frames": 85,
+        "PR20": {
+          "complete": 97.6470588235294,
+          "outage": 36.470588235294116
+        },
+        "SR": {
+          "complete": 78.31932773109243,
+          "outage": 31.09243697478992
+        }
+      },
+      {
+        "sequence": "motobesidescar",
+        "frames": 74,
+        "PR20": {
+          "complete": 98.64864864864865,
+          "outage": 40.54054054054054
+        },
+        "SR": {
+          "complete": 70.78507078507079,
+          "outage": 20.3989703989704
+        }
+      },
+      {
+        "sequence": "bikeafterwhitecar",
+        "frames": 95,
+        "PR20": {
+          "complete": 20.0,
+          "outage": 20.0
+        },
+        "SR": {
+          "complete": 13.182957393483708,
+          "outage": 13.182957393483708
+        }
+      },
+      {
+        "sequence": "2runsix",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 77.17309145880576,
+          "outage": 77.09750566893425
+        }
+      },
+      {
+        "sequence": "rightboy_1227",
+        "frames": 268,
+        "PR20": {
+          "complete": 97.01492537313433,
+          "outage": 96.64179104477611
+        },
+        "SR": {
+          "complete": 61.727078891258,
+          "outage": 61.58493248045485
+        }
+      },
+      {
+        "sequence": "whitesuvcome",
+        "frames": 50,
+        "PR20": {
+          "complete": 86.0,
+          "outage": 86.0
+        },
+        "SR": {
+          "complete": 76.57142857142858,
+          "outage": 75.99999999999999
+        }
+      },
+      {
+        "sequence": "AQrightofcomingmotos",
+        "frames": 31,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 77.72657450076802,
+          "outage": 77.72657450076802
+        }
+      },
+      {
+        "sequence": "7one",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 79.36507936507937,
+          "outage": 79.89417989417989
+        }
+      },
+      {
+        "sequence": "blackman_0115",
+        "frames": 159,
+        "PR20": {
+          "complete": 61.63522012578616,
+          "outage": 97.48427672955975
+        },
+        "SR": {
+          "complete": 58.3707696915244,
+          "outage": 78.70619946091647
+        }
+      },
+      {
+        "sequence": "rightmirrornotshining",
+        "frames": 503,
+        "PR20": {
+          "complete": 54.47316103379722,
+          "outage": 54.27435387673956
+        },
+        "SR": {
+          "complete": 47.694783678879105,
+          "outage": 47.78945375366847
+        }
+      },
+      {
+        "sequence": "AQmanfromdarktrees",
+        "frames": 163,
+        "PR20": {
+          "complete": 94.47852760736197,
+          "outage": 90.79754601226993
+        },
+        "SR": {
+          "complete": 66.84195150452818,
+          "outage": 64.4756061933976
+        }
+      },
+      {
+        "sequence": "bikeboy128",
+        "frames": 63,
+        "PR20": {
+          "complete": 11.11111111111111,
+          "outage": 11.11111111111111
+        },
+        "SR": {
+          "complete": 10.657596371882084,
+          "outage": 10.657596371882084
+        }
+      },
+      {
+        "sequence": "orangegirl",
+        "frames": 168,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 78.42970521541949,
+          "outage": 77.8061224489796
+        }
+      },
+      {
+        "sequence": "girlturnbike",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 49.20634920634921
+        },
+        "SR": {
+          "complete": 86.16780045351476,
+          "outage": 43.6885865457294
+        }
+      },
+      {
+        "sequence": "blackman2",
+        "frames": 38,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 66.29072681704258,
+          "outage": 64.91228070175437
+        }
+      },
+      {
+        "sequence": "blackcarback",
+        "frames": 31,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.25038402457757,
+          "outage": 87.25038402457757
+        }
+      },
+      {
+        "sequence": "rightof2cupsattached",
+        "frames": 2431,
+        "PR20": {
+          "complete": 67.29740847387906,
+          "outage": 51.007815713698065
+        },
+        "SR": {
+          "complete": 55.129184540949254,
+          "outage": 46.22436387142269
+        }
+      },
+      {
+        "sequence": "whitecar2west",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 90.02267573696146,
+          "outage": 90.09826152683299
+        }
+      },
+      {
+        "sequence": "hatboy`shead",
+        "frames": 639,
+        "PR20": {
+          "complete": 66.66666666666667,
+          "outage": 68.38810641627543
+        },
+        "SR": {
+          "complete": 55.5033907146583,
+          "outage": 55.9505179223489
+        }
+      },
+      {
+        "sequence": "whitebetweenblackandblue",
+        "frames": 479,
+        "PR20": {
+          "complete": 28.810020876826723,
+          "outage": 29.018789144050103
+        },
+        "SR": {
+          "complete": 27.328760314146535,
+          "outage": 27.16969877721443
+        }
+      },
+      {
+        "sequence": "2rdcarcome",
+        "frames": 89,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.53718566078116,
+          "outage": 82.6645264847512
+        }
+      },
+      {
+        "sequence": "whitemancome",
+        "frames": 187,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.54774637127579,
+          "outage": 87.54774637127579
+        }
+      },
+      {
+        "sequence": "nearmangotoD",
+        "frames": 78,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 98.71794871794872
+        },
+        "SR": {
+          "complete": 82.78388278388277,
+          "outage": 80.76923076923076
+        }
+      },
+      {
+        "sequence": "farmanrightwhitesmallhouse",
+        "frames": 186,
+        "PR20": {
+          "complete": 97.31182795698925,
+          "outage": 33.87096774193548
+        },
+        "SR": {
+          "complete": 60.88069636456733,
+          "outage": 26.036866359447007
+        }
+      },
+      {
+        "sequence": "lightmotocoming",
+        "frames": 48,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 78.27380952380953,
+          "outage": 76.48809523809524
+        }
+      },
+      {
+        "sequence": "boymototakesgirl",
+        "frames": 129,
+        "PR20": {
+          "complete": 68.21705426356588,
+          "outage": 57.36434108527132
+        },
+        "SR": {
+          "complete": 53.26688815060908,
+          "outage": 46.142488002953115
+        }
+      },
+      {
+        "sequence": "leftblackboy",
+        "frames": 118,
+        "PR20": {
+          "complete": 31.35593220338983,
+          "outage": 58.47457627118644
+        },
+        "SR": {
+          "complete": 28.57142857142857,
+          "outage": 45.48022598870056
+        }
+      },
+      {
+        "sequence": "righttallholdball",
+        "frames": 543,
+        "PR20": {
+          "complete": 83.42541436464089,
+          "outage": 65.19337016574586
+        },
+        "SR": {
+          "complete": 68.35043409629044,
+          "outage": 53.75778303955099
+        }
+      },
+      {
+        "sequence": "blackcarcome",
+        "frames": 65,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 87.54578754578755,
+          "outage": 87.32600732600733
+        }
+      },
+      {
+        "sequence": "twolinefirstone-gai",
+        "frames": 1087,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 86.47654093836246
+        },
+        "SR": {
+          "complete": 76.75121566565907,
+          "outage": 66.06650019713497
+        }
+      },
+      {
+        "sequence": "lowerfoam2throw",
+        "frames": 43,
+        "PR20": {
+          "complete": 79.06976744186046,
+          "outage": 72.09302325581395
+        },
+        "SR": {
+          "complete": 55.59246954595792,
+          "outage": 49.61240310077519
+        }
+      },
+      {
+        "sequence": "Awhitecargo",
+        "frames": 45,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 88.57142857142857,
+          "outage": 88.35978835978837
+        }
+      },
+      {
+        "sequence": "car2north3",
+        "frames": 136,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 75.73529411764706
+        },
+        "SR": {
+          "complete": 83.12324929971989,
+          "outage": 65.30112044817928
+        }
+      },
+      {
+        "sequence": "rightfirstboy-ly",
+        "frames": 351,
+        "PR20": {
+          "complete": 99.43019943019944,
+          "outage": 99.14529914529915
+        },
+        "SR": {
+          "complete": 84.54755121421788,
+          "outage": 83.96418396418396
+        }
+      },
+      {
+        "sequence": "girltakingplate",
+        "frames": 383,
+        "PR20": {
+          "complete": 81.98433420365535,
+          "outage": 79.11227154046998
+        },
+        "SR": {
+          "complete": 77.11053089643167,
+          "outage": 72.95785154792988
+        }
+      },
+      {
+        "sequence": "left2ndgreenboy",
+        "frames": 159,
+        "PR20": {
+          "complete": 28.930817610062892,
+          "outage": 37.735849056603776
+        },
+        "SR": {
+          "complete": 23.000898472596585,
+          "outage": 33.45312967954477
+        }
+      },
+      {
+        "sequence": "ab_bolster",
+        "frames": 4213,
+        "PR20": {
+          "complete": 67.33918822691669,
+          "outage": 53.572276287680985
+        },
+        "SR": {
+          "complete": 61.814338837837525,
+          "outage": 52.379822092615825
+        }
+      },
+      {
+        "sequence": "9hatboy",
+        "frames": 448,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 99.10714285714286
+        },
+        "SR": {
+          "complete": 79.06037414965986,
+          "outage": 77.6892006802721
+        }
+      },
+      {
+        "sequence": "whitecarturn2",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 90.702947845805,
+          "outage": 90.70294784580501
+        }
+      },
+      {
+        "sequence": "midboyblue",
+        "frames": 1260,
+        "PR20": {
+          "complete": 8.412698412698413,
+          "outage": 41.82539682539682
+        },
+        "SR": {
+          "complete": 6.111111111111111,
+          "outage": 26.05820105820106
+        }
+      },
+      {
+        "sequence": "basketboywhite",
+        "frames": 98,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 84.20796890184646,
+          "outage": 84.45092322643345
+        }
+      },
+      {
+        "sequence": "nightmototurn",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 79.44066515495085,
+          "outage": 79.51625094482239
+        }
+      },
+      {
+        "sequence": "girlbike",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 81.40589569160996,
+          "outage": 81.10355253212394
+        }
+      },
+      {
+        "sequence": "mantoground",
+        "frames": 60,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 72.5396825396825,
+          "outage": 72.14285714285712
+        }
+      },
+      {
+        "sequence": "pickuptheyellowbook",
+        "frames": 159,
+        "PR20": {
+          "complete": 16.352201257861637,
+          "outage": 24.528301886792452
+        },
+        "SR": {
+          "complete": 13.32734351602276,
+          "outage": 19.73644803833483
+        }
+      },
+      {
+        "sequence": "8lastone",
+        "frames": 85,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 73.44537815126051,
+          "outage": 73.50140056022408
+        }
+      },
+      {
+        "sequence": "AQbikeback",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 65.07936507936508,
+          "outage": 65.98639455782312
+        }
+      },
+      {
+        "sequence": "girlsquattingbesidesleftbar",
+        "frames": 735,
+        "PR20": {
+          "complete": 25.578231292517007,
+          "outage": 22.312925170068027
+        },
+        "SR": {
+          "complete": 20.31098153547133,
+          "outage": 18.55523161645611
+        }
+      },
+      {
+        "sequence": "blkbikefromnorth",
+        "frames": 141,
+        "PR20": {
+          "complete": 66.66666666666667,
+          "outage": 31.914893617021278
+        },
+        "SR": {
+          "complete": 49.949341438703144,
+          "outage": 25.835866261398174
+        }
+      },
+      {
+        "sequence": "whitecar",
+        "frames": 145,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 74.0886699507389,
+          "outage": 74.1871921182266
+        }
+      },
+      {
+        "sequence": "Amidredgirl",
+        "frames": 351,
+        "PR20": {
+          "complete": 59.82905982905983,
+          "outage": 56.98005698005698
+        },
+        "SR": {
+          "complete": 43.34554334554334,
+          "outage": 41.81250847917515
+        }
+      },
+      {
+        "sequence": "blackbag",
+        "frames": 113,
+        "PR20": {
+          "complete": 20.353982300884955,
+          "outage": 6.1946902654867255
+        },
+        "SR": {
+          "complete": 13.358617783396545,
+          "outage": 3.5819637589549096
+        }
+      },
+      {
+        "sequence": "AQblkgirlbike",
+        "frames": 127,
+        "PR20": {
+          "complete": 24.409448818897637,
+          "outage": 74.80314960629921
+        },
+        "SR": {
+          "complete": 12.373453318335207,
+          "outage": 51.706036745406834
+        }
+      },
+      {
+        "sequence": "manwithyellowumbrella",
+        "frames": 457,
+        "PR20": {
+          "complete": 54.048140043763674,
+          "outage": 50.98468271334792
+        },
+        "SR": {
+          "complete": 41.94018964259664,
+          "outage": 39.02261123267687
+        }
+      },
+      {
+        "sequence": "browncar2north",
+        "frames": 105,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 78.91156462585035,
+          "outage": 79.45578231292517
+        }
+      },
+      {
+        "sequence": "carstop",
+        "frames": 159,
+        "PR20": {
+          "complete": 98.11320754716981,
+          "outage": 98.11320754716981
+        },
+        "SR": {
+          "complete": 86.46301287810721,
+          "outage": 86.67265648397722
+        }
+      },
+      {
+        "sequence": "whiteboywithbag",
+        "frames": 128,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 83.07291666666666,
+          "outage": 82.58928571428571
+        }
+      },
+      {
+        "sequence": "theleftestrunningboy",
+        "frames": 103,
+        "PR20": {
+          "complete": 33.00970873786408,
+          "outage": 41.74757281553398
+        },
+        "SR": {
+          "complete": 22.884882108183078,
+          "outage": 25.84373555247341
+        }
+      },
+      {
+        "sequence": "girlafterglassdoor2",
+        "frames": 447,
+        "PR20": {
+          "complete": 97.76286353467562,
+          "outage": 91.05145413870247
+        },
+        "SR": {
+          "complete": 86.8861191008842,
+          "outage": 80.59017790561415
+        }
+      },
+      {
+        "sequence": "rightmirrorlikesky",
+        "frames": 639,
+        "PR20": {
+          "complete": 52.11267605633803,
+          "outage": 60.563380281690144
+        },
+        "SR": {
+          "complete": 52.93986139056562,
+          "outage": 58.98353081451672
+        }
+      },
+      {
+        "sequence": "redgirl1497",
+        "frames": 760,
+        "PR20": {
+          "complete": 91.3157894736842,
+          "outage": 33.28947368421053
+        },
+        "SR": {
+          "complete": 68.50877192982456,
+          "outage": 25.07518796992481
+        }
+      },
+      {
+        "sequence": "midboy",
+        "frames": 63,
+        "PR20": {
+          "complete": 22.22222222222222,
+          "outage": 60.317460317460316
+        },
+        "SR": {
+          "complete": 19.123204837490547,
+          "outage": 48.374905517762656
+        }
+      },
+      {
+        "sequence": "folderatlefthand",
+        "frames": 398,
+        "PR20": {
+          "complete": 19.597989949748744,
+          "outage": 22.8643216080402
+        },
+        "SR": {
+          "complete": 27.949270160325433,
+          "outage": 29.157693228044987
+        }
+      },
+      {
+        "sequence": "bikecome",
+        "frames": 95,
+        "PR20": {
+          "complete": 98.94736842105263,
+          "outage": 98.94736842105263
+        },
+        "SR": {
+          "complete": 84.8621553884712,
+          "outage": 84.9624060150376
+        }
+      },
+      {
+        "sequence": "leftfallenchair_inf_white",
+        "frames": 372,
+        "PR20": {
+          "complete": 7.526881720430108,
+          "outage": 7.526881720430108
+        },
+        "SR": {
+          "complete": 26.433691756272392,
+          "outage": 29.672299027137722
+        }
+      },
+      {
+        "sequence": "Agirlrideback",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 86.24338624338627,
+          "outage": 86.09221466364323
+        }
+      },
+      {
+        "sequence": "rightgirl",
+        "frames": 254,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 83.85826771653544
+        },
+        "SR": {
+          "complete": 79.5275590551181,
+          "outage": 67.26659167604048
+        }
+      },
+      {
+        "sequence": "belowrightwhiteboy",
+        "frames": 555,
+        "PR20": {
+          "complete": 26.486486486486488,
+          "outage": 18.1981981981982
+        },
+        "SR": {
+          "complete": 13.316173316173316,
+          "outage": 13.1016731016731
+        }
+      },
+      {
+        "sequence": "moto2north1",
+        "frames": 127,
+        "PR20": {
+          "complete": 49.60629921259842,
+          "outage": 97.63779527559055
+        },
+        "SR": {
+          "complete": 36.632920884889394,
+          "outage": 76.07799025121861
+        }
+      },
+      {
+        "sequence": "truckk",
+        "frames": 47,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 65.95744680851064
+        },
+        "SR": {
+          "complete": 88.14589665653496,
+          "outage": 58.96656534954408
+        }
+      },
+      {
+        "sequence": "highright2ndboy",
+        "frames": 402,
+        "PR20": {
+          "complete": 43.78109452736319,
+          "outage": 70.8955223880597
+        },
+        "SR": {
+          "complete": 28.014688462449655,
+          "outage": 61.632314617389234
+        }
+      },
+      {
+        "sequence": "girl`sheadoncall",
+        "frames": 351,
+        "PR20": {
+          "complete": 25.925925925925927,
+          "outage": 12.535612535612536
+        },
+        "SR": {
+          "complete": 14.909781576448243,
+          "outage": 7.841541174874508
+        }
+      },
+      {
+        "sequence": "whiteboy",
+        "frames": 159,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 79.87421383647799
+        },
+        "SR": {
+          "complete": 86.79245283018867,
+          "outage": 68.88289907157831
+        }
+      },
+      {
+        "sequence": "truckwhite",
+        "frames": 84,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 88.20861678004535,
+          "outage": 88.26530612244898
+        }
+      },
+      {
+        "sequence": "AQgirlbiketurns",
+        "frames": 48,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 95.83333333333333
+        },
+        "SR": {
+          "complete": 88.19444444444446,
+          "outage": 85.51587301587301
+        }
+      },
+      {
+        "sequence": "left2ndboy",
+        "frames": 319,
+        "PR20": {
+          "complete": 34.1692789968652,
+          "outage": 34.79623824451411
+        },
+        "SR": {
+          "complete": 34.1842065979997,
+          "outage": 35.34855948649052
+        }
+      },
+      {
+        "sequence": "whitegirl2right",
+        "frames": 210,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 80.1814058956916,
+          "outage": 79.79591836734693
+        }
+      },
+      {
+        "sequence": "rightboywithwhite",
+        "frames": 189,
+        "PR20": {
+          "complete": 15.343915343915343,
+          "outage": 50.264550264550266
+        },
+        "SR": {
+          "complete": 12.799193751574702,
+          "outage": 45.75459813555051
+        }
+      },
+      {
+        "sequence": "girlplayingphone",
+        "frames": 135,
+        "PR20": {
+          "complete": 85.18518518518519,
+          "outage": 80.74074074074075
+        },
+        "SR": {
+          "complete": 67.72486772486772,
+          "outage": 63.88007054673721
+        }
+      },
+      {
+        "sequence": "girlumbrella",
+        "frames": 63,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 96.82539682539682
+        },
+        "SR": {
+          "complete": 86.62131519274377,
+          "outage": 82.99319727891157
+        }
+      },
+      {
+        "sequence": "truck",
+        "frames": 45,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 100.0
+        },
+        "SR": {
+          "complete": 90.47619047619048,
+          "outage": 89.94708994708995
+        }
+      },
+      {
+        "sequence": "manfarbesidespool",
+        "frames": 179,
+        "PR20": {
+          "complete": 100.0,
+          "outage": 17.318435754189945
+        },
+        "SR": {
+          "complete": 72.51928704442672,
+          "outage": 11.811652035115722
+        }
+      },
+      {
+        "sequence": "dotat43",
+        "frames": 479,
+        "PR20": {
+          "complete": 10.020876826722338,
+          "outage": 10.438413361169102
+        },
+        "SR": {
+          "complete": 7.774132617556417,
+          "outage": 5.16949995029327
+        }
+      }
+    ]
+  },
+  "interpretation": "11 frames can retain effects of prior outages and dynamic templates. 00 holds, state timing and scene difficulty are confounded; group gaps do not isolate sensor effects or select thresholds."
+}

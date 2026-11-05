@@ -1,0 +1,274 @@
+{
+  "observed_utc": "2026-10-31T08:32:29.780078Z",
+  "boot_id": "8212e607-b051-467d-a468-86436b0b702e",
+  "uptime": "243.01 26346.47",
+  "records": {
+    "a_utility_full20_seed2027": {
+      "checkpoint": "/home/gaob/Miss-RGBT/runs/server28/a_utility_full20_seed2027/epoch10.pth.tar",
+      "sha256": "064f5a8aeb27a1f2faff38c6f304ce7e43418bf4c027ad26a39a0d4604693cee",
+      "bytes": 1243917743,
+      "epoch": 10,
+      "updates": 25000,
+      "keys": [
+        "model",
+        "config",
+        "epoch",
+        "updates",
+        "optimizer"
+      ],
+      "optimizer_lrs": [
+        1.0000000000000002e-06,
+        1e-05
+      ],
+      "config": {
+        "stage": "A",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data/wangwj/dataset/LasHeR/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/home/gaob/Miss-RGBT/runs/server28/a_utility_full20_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+        "freeze_all_bn": true,
+        "task_utility": {
+          "width": 128,
+          "depth": 1,
+          "region_grid": 4,
+          "selected_regions": 4,
+          "refinement_limit": 0.1,
+          "selection": "utility",
+          "selection_seed": 2027
+        },
+        "utility_probe_interval": 4,
+        "utility_weight": 0.1
+      }
+    },
+    "a_random_full20_seed2027": {
+      "checkpoint": "/home/gaob/Miss-RGBT/runs/server28/a_random_full20_seed2027/epoch10.pth.tar",
+      "sha256": "615c250c17ebd8ff8d4f887f6a9b4b564762ccb584afa6def606b13a935d509c",
+      "bytes": 1243917743,
+      "epoch": 10,
+      "updates": 25000,
+      "keys": [
+        "model",
+        "config",
+        "epoch",
+        "updates",
+        "optimizer"
+      ],
+      "optimizer_lrs": [
+        1.0000000000000002e-06,
+        1e-05
+      ],
+      "config": {
+        "stage": "A",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data/wangwj/dataset/LasHeR/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 4,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 4,
+        "learning_rate": 0.0001,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/home/gaob/Miss-RGBT/runs/server28/a_random_full20_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+        "freeze_all_bn": true,
+        "task_utility": {
+          "width": 128,
+          "depth": 1,
+          "region_grid": 4,
+          "selected_regions": 4,
+          "refinement_limit": 0.1,
+          "selection": "random",
+          "selection_seed": 2027
+        },
+        "utility_probe_interval": 4,
+        "utility_weight": 0.1
+      }
+    },
+    "batch10_utility_seed2027": {
+      "checkpoint": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch09.pth.tar",
+      "sha256": "947e1a1350106e4cc93488ad84a819aaf568329adec86f0c1f5f331c0ccfd3b7",
+      "bytes": 1243917871,
+      "epoch": 9,
+      "updates": 18000,
+      "keys": [
+        "model",
+        "config",
+        "epoch",
+        "updates",
+        "optimizer"
+      ],
+      "optimizer_lrs": [
+        1.25e-05,
+        0.000125
+      ],
+      "config": {
+        "stage": "A",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data/wangwj/dataset/LasHeR/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 5,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 2,
+        "learning_rate": 0.000125,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+        "freeze_all_bn": true,
+        "task_utility": {
+          "width": 128,
+          "depth": 1,
+          "region_grid": 4,
+          "selected_regions": 4,
+          "refinement_limit": 0.1,
+          "selection": "utility",
+          "selection_seed": 2027
+        },
+        "utility_probe_interval": 4,
+        "utility_weight": 0.1,
+        "validation_seed": 1701,
+        "validation_samples": 128,
+        "early_stop_min_epochs": 12,
+        "early_stop_patience": 3,
+        "early_stop_relative_delta": 0.002
+      }
+    },
+    "batch10_random_seed2027": {
+      "checkpoint": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch10.pth.tar",
+      "sha256": "185754d3698db52e9d69e7c99f9733ea651b16ec6f02f0a15bfdcda6a9cf563c",
+      "bytes": 1243917871,
+      "epoch": 10,
+      "updates": 20000,
+      "keys": [
+        "model",
+        "config",
+        "epoch",
+        "updates",
+        "optimizer"
+      ],
+      "optimizer_lrs": [
+        1.25e-06,
+        1.25e-05
+      ],
+      "config": {
+        "stage": "A",
+        "seed": 2027,
+        "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/pretrained/CADTrack_ep0020.pth.tar",
+        "dataset": "/data/wangwj/dataset/LasHeR/trainingset",
+        "repair": false,
+        "repair_width": 128,
+        "repair_layer": 6,
+        "forward_weight": 0.1,
+        "reverse_weight": 0.0,
+        "reverse_margin": 0.1,
+        "patch_mask_probability": 0.1,
+        "complete_rgb_missing_tir_missing_probability": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "microbatch": 5,
+        "accumulation": 2,
+        "samples_per_epoch": 20000,
+        "epochs": 20,
+        "workers": 2,
+        "learning_rate": 0.000125,
+        "backbone_multiplier": 0.1,
+        "weight_decay": 0.0001,
+        "lr_drop_epoch": 10,
+        "clip_grad_norm": 0.1,
+        "output": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027",
+        "checkpoint_epochs": [
+          10,
+          20
+        ],
+        "source_version_file": "reports/TASK_UTILITY_SOURCE_VERSION.txt",
+        "freeze_all_bn": true,
+        "task_utility": {
+          "width": 128,
+          "depth": 1,
+          "region_grid": 4,
+          "selected_regions": 4,
+          "refinement_limit": 0.1,
+          "selection": "random",
+          "selection_seed": 2027
+        },
+        "utility_probe_interval": 4,
+        "utility_weight": 0.1,
+        "validation_seed": 1701,
+        "validation_samples": 128,
+        "early_stop_min_epochs": 12,
+        "early_stop_patience": 3,
+        "early_stop_relative_delta": 0.002
+      }
+    }
+  },
+  "scope": "Actual CPU checkpoint deserialization, finite model tensors and optimizer state. No RNG/scheduler saved; continuation cannot claim bitwise equivalence."
+}

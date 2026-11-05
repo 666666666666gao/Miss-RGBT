@@ -1,0 +1,268 @@
+{
+  "status": "passed",
+  "seconds": 2.146681070327759,
+  "replayed_microbatches": 4,
+  "returned_tuples": 16,
+  "cuda_initialized": false,
+  "records": [
+    {
+      "microbatch": 1,
+      "tensor_sha256": {
+        "template_images": "78f6dfd63dc08be80b6376b73218dcb55b7908ede6325a12d434571792fae60a",
+        "search_images": "39ee5d86a8a9803ca780dc08db2f9d0e786f56b4d1121299b12ebf6132d94c9f",
+        "search_anno": "5166c0be111a7f16def7dd046d4dcccf760658594469d1d93d8de69d27f007c0"
+      },
+      "matches_recorded_arms": [
+        "r1",
+        "r2"
+      ],
+      "identities": [
+        {
+          "search_frames": [
+            774,
+            864,
+            895
+          ],
+          "sequence": "greenleftbackblack",
+          "template_frames": [
+            765,
+            600
+          ]
+        },
+        {
+          "search_frames": [
+            112,
+            106,
+            117
+          ],
+          "sequence": "moto2ground",
+          "template_frames": [
+            102,
+            68
+          ]
+        },
+        {
+          "search_frames": [
+            331,
+            360,
+            437
+          ],
+          "sequence": "blackdresswithwhitefar",
+          "template_frames": [
+            294,
+            289
+          ]
+        },
+        {
+          "search_frames": [
+            428,
+            420,
+            409
+          ],
+          "sequence": "2ndboyfarintheforest2right",
+          "template_frames": [
+            383,
+            295
+          ]
+        }
+      ]
+    },
+    {
+      "microbatch": 2,
+      "tensor_sha256": {
+        "template_images": "a5bc98b8978bb586d5133695ac89af7ee0c1a1ec698fe14543602256f1ec5959",
+        "search_images": "7b2f929dedd6883b52622f1098e7eabdc8f653a9342040c09a5130e9b9d92a0e",
+        "search_anno": "fd9d9830ebb005cea4870488c25b18e9036389f1062ac9762ef8d364e2782146"
+      },
+      "matches_recorded_arms": [
+        "r1",
+        "r2"
+      ],
+      "identities": [
+        {
+          "search_frames": [
+            378,
+            387,
+            322
+          ],
+          "sequence": "drillmaster",
+          "template_frames": [
+            267,
+            192
+          ]
+        },
+        {
+          "search_frames": [
+            116,
+            113,
+            115
+          ],
+          "sequence": "5runtwo",
+          "template_frames": [
+            111,
+            3
+          ]
+        },
+        {
+          "search_frames": [
+            170,
+            113,
+            103
+          ],
+          "sequence": "boycome",
+          "template_frames": [
+            10,
+            0
+          ]
+        },
+        {
+          "search_frames": [
+            322,
+            317,
+            273
+          ],
+          "sequence": "girltakingblkumbrella",
+          "template_frames": [
+            272,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "microbatch": 3,
+      "tensor_sha256": {
+        "template_images": "01cd32e2d1b835910ae51f193381a27cbaa0b8ad6cd81a6ed1d5527e014a5528",
+        "search_images": "c9f3a33799d181724bc82e26d0ccd8e4fda0685a028082833ecdd25b9327efd2",
+        "search_anno": "2f2aa007e0ea3cbdd918018dbf690bcb37096a683e1d5e08a5bb6ff6ea3425c3"
+      },
+      "matches_recorded_arms": [
+        "r2"
+      ],
+      "identities": [
+        {
+          "search_frames": [
+            56,
+            35,
+            47
+          ],
+          "sequence": "mototurnleft",
+          "template_frames": [
+            19,
+            7
+          ]
+        },
+        {
+          "search_frames": [
+            85,
+            144,
+            195
+          ],
+          "sequence": "bikeboycome",
+          "template_frames": [
+            72,
+            2
+          ]
+        },
+        {
+          "search_frames": [
+            863,
+            905,
+            919
+          ],
+          "sequence": "rightshiningmirror",
+          "template_frames": [
+            839,
+            778
+          ]
+        },
+        {
+          "search_frames": [
+            361,
+            366,
+            371
+          ],
+          "sequence": "leftgirl",
+          "template_frames": [
+            353,
+            240
+          ]
+        }
+      ]
+    },
+    {
+      "microbatch": 4,
+      "tensor_sha256": {
+        "template_images": "578f0dca643cc7463d1a0632bc4f49317e97c252620a68444c6a6ec0e93a1e72",
+        "search_images": "685ed30c62ebb6d461e448d17d9e1a3edd8b62bdbfe6b0e4d0582a76ea152428",
+        "search_anno": "2f12a57438bdaf82fc165d1180d674c90335704f9eb5ad2d4f9ee7704218a973"
+      },
+      "matches_recorded_arms": [
+        "r2"
+      ],
+      "identities": [
+        {
+          "search_frames": [
+            1238,
+            1211,
+            1207
+          ],
+          "sequence": "rightgirlplayingphone",
+          "template_frames": [
+            1191,
+            992
+          ]
+        },
+        {
+          "search_frames": [
+            153,
+            153,
+            92
+          ],
+          "sequence": "carfromnorth2",
+          "template_frames": [
+            4,
+            1
+          ]
+        },
+        {
+          "search_frames": [
+            496,
+            447,
+            399
+          ],
+          "sequence": "blackboypushbike",
+          "template_frames": [
+            388,
+            238
+          ]
+        },
+        {
+          "search_frames": [
+            113,
+            163,
+            168
+          ],
+          "sequence": "biked",
+          "template_frames": [
+            95,
+            73
+          ]
+        }
+      ]
+    }
+  ],
+  "run_config_sha256": {
+    "r1": "6d4d3ebd9d07c3466fa910ce486734df933019b72a5d9e0722fe5c64a68a155f",
+    "r2": "b3342c9ec91960dceedcf7eb520fd1976fd690a8a413e13e63efa477655dd0df"
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/processing.py": "b761856eeb2a9d558d1b8928e5f108eeb6d3da3d8deb0578a57864badcdc30ca",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/transforms.py": "9a7db0eb86a6aa351bb53d0373a07e2a93d14ec0c8b7fa8987811733cdae360a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/scripts/replay_protocol_r_input_witness.py": "3d53e29f42fe512952a4560daf9d018008eff3cbf39b346df708f2849aebef09"
+  },
+  "scope": "Real native CPU image-loader prefix replay, matching every recorded R1/R2 first-update input hash. Frame capture adds metadata only. Worker prefetch may read additional images. Not a full-run frame manifest, epoch-boundary RNG verification, OHCAS data gate, training, or official metric."
+}

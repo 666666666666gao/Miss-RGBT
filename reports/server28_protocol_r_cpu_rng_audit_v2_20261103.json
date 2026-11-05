@@ -1,0 +1,811 @@
+{
+  "status": "passed",
+  "seconds": 6.622543811798096,
+  "torch_version": "1.12.1+cu113",
+  "native_cpu_setup_witnesses": [
+    {
+      "arm": "r1",
+      "stages": [
+        {
+          "stage": "native_loader_construction",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "native_adamw_construction",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "actual_development_cache_load",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "train_bn_and_zero_grad",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        }
+      ],
+      "loader_batches": 5000,
+      "development_batches": 32,
+      "no_images_decoded": true,
+      "no_loader_iterator_created": true,
+      "optimizer_steps_executed": 0
+    },
+    {
+      "arm": "r2",
+      "stages": [
+        {
+          "stage": "native_loader_construction",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "native_adamw_construction",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "actual_development_cache_load",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        },
+        {
+          "stage": "train_bn_and_zero_grad",
+          "cpu_rng_sha256": "50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0"
+        }
+      ],
+      "loader_batches": 5000,
+      "development_batches": 32,
+      "no_images_decoded": true,
+      "no_loader_iterator_created": true,
+      "optimizer_steps_executed": 0
+    }
+  ],
+  "setup_matches_completed_replay_initial_rng": true,
+  "native_initialization_matches_both_original_runs": true,
+  "cpu_fork_rng_restoration_executed": true,
+  "initialization_parameters_sha256": "fbf1c1fa406b953eb3469f85835c2243380e1a6a75653827994a7ffb6dba49fb",
+  "stochastic_modules": [
+    {
+      "module": "baseline.backbone.pos_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.0.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.0.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.0.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.0.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.1.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.1.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.1.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.00909090880304575,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.1.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.1.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.2.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.2.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.2.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.0181818176060915,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.2.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.2.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.3.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.3.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.3.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.027272727340459824,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.3.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.3.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.4.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.4.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.4.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.036363635212183,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.4.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.4.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.5.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.5.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.5.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.045454543083906174,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.5.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.5.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.6.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.6.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.6.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.054545458406209946,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.6.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.6.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.7.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.7.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.7.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.06363636255264282,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.7.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.7.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.8.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.8.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.8.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.0727272778749466,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.8.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.8.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.9.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.9.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.9.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.08181818574666977,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.9.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.9.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.10.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.10.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.10.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.09090909361839294,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.10.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.10.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.11.attn.attn_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.11.attn.proj_drop",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.11.drop_path",
+      "type": "timm.layers.drop.DropPath",
+      "probability": 0.10000000149011612,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.11.mlp.drop1",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    },
+    {
+      "module": "baseline.backbone.blocks.11.mlp.drop2",
+      "type": "torch.nn.modules.dropout.Dropout",
+      "probability": 0.0,
+      "input_device_bound": true
+    }
+  ],
+  "model_forward_sources": {
+    "miss_rgbt.model.MissingTrackerModel": {
+      "function": "miss_rgbt.model.MissingTrackerModel.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/model.py",
+      "source_file_sha256": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "function_source_sha256": "d34a343bf73681f1b19acfd4b36d68b41d3d19d778382e00c17b56ba1738e93f",
+      "random_related_calls": [],
+      "source": "    def forward(self, template, search, availability=None, patch_keep=None, utility_probe=None):\n        \"\"\"availability: templates then search, each [B,2], 1 means observed.\"\"\"\n        batch = search[0].shape[0]\n        if availability is None:\n            availability = [search[0].new_ones(batch, 2) for _ in template + search]\n        if utility_probe is not None:\n            assert self.utility_repair is not None\n            assert 0 <= utility_probe['search_index'] < len(search)\n        output = []\n        for index, image in enumerate(search):\n            keep = None if patch_keep is None else patch_keep[index]\n            regions = (utility_probe['regions'] if utility_probe is not None and\n                       index == utility_probe['search_index'] else None)\n            features, auxiliary = self.forward_tokens(template, image,\n                availability[:len(template)] + [availability[len(template) + index]], keep, regions)\n            out = self.baseline.forward_head(features)\n            out.update(attn=None, track_query_before=None, backbone_feat=None)\n            out.update(auxiliary)\n            output.append(out)\n        return output\n"
+    },
+    "lib.models.cadtrack.cadtrack.CADTrack": {
+      "function": "lib.models.cadtrack.cadtrack.CADTrack.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/cadtrack.py",
+      "source_file_sha256": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+      "function_source_sha256": "2d409350ce4cc353beea5d79bbb529574282bb4028eeb5c1e32081064d656b30",
+      "random_related_calls": [],
+      "source": "    def forward(self, template: torch.Tensor,\n                search: torch.Tensor,\n                track_query_before = None\n                ):\n\n        out_dict = []\n        for i in range(len(search)):\n            x, aux_dict, len_zx = self.backbone(z=template, x=search[i], track_query_before=track_query_before\n                                                )\n            # num_template_token = len_zx[0]\n            num_search_token = len_zx[1]\n\n            B, N, _ = x.size()\n            temp_r = x[:, :N // 2, :]  #\u53d6\u51faRGB\n            temp_x = x[:, N // 2:, :]  #\u53d6\u51fax\n\n            \n            # 2. \u4e25\u683c\u53ea\u53d6\u6700\u540e\u7684 num_search_token \u90e8\u5206\uff0c\u4e22\u5f03\u524d\u9762\u7684 CLS \u548c \u6a21\u677f Token\n            rgb = temp_r[:, -num_search_token:, :]\n            ir = temp_x[:, -num_search_token:, :]\n            \n            # 3. \u62fc\u63a5\u9001\u5165\u68c0\u6d4b\u5934\n            feat_last = torch.cat([rgb, ir], dim=-1)\n\n            # out = self.forward_head(feat_last, None)\n            out = self.forward_head(feat_last, None)\n\n            out.update(aux_dict)\n            # out['track_query_before'] = track_query_before\n            # out['backbone_feat'] = feat_last           \n            out['track_query_before'] = None\n            out['backbone_feat'] = None\n\n            out_dict.append(out)\n        return out_dict\n"
+    },
+    "lib.models.cadtrack.vit_care.VisionTransformer": {
+      "function": "lib.models.cadtrack.base_backbone.BaseBackbone.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/base_backbone.py",
+      "source_file_sha256": "c091912a9372ba5c14b01952b165a1642c40bb33ce53f0e1d7a4e094e1b117f0",
+      "function_source_sha256": "76b67b1b7e980011ef0b254abc6ddc7d30464d4816280e4ea13a8672831ecda0",
+      "random_related_calls": [],
+      "source": "    def forward(self, z, x, track_query_before, **kwargs):\n        \"\"\"\n        Joint feature extraction and relation modeling for the basic ViT backbone.\n        Args:\n            z (torch.Tensor): template feature, [B, C, H_z, W_z]\n            x (torch.Tensor): search region feature, [B, C, H_x, W_x]\n\n        Returns:\n            x (torch.Tensor): merged template and search region feature, [B, L_z+L_x, C]\n            attn : None\n        \"\"\"\n        x, aux_dict, len_zx = self.forward_features(z, x, track_query_before)\n\n        return x, aux_dict, len_zx\n"
+    },
+    "lib.models.layers.patch_embed.PatchEmbed": {
+      "function": "lib.models.layers.patch_embed.PatchEmbed.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/patch_embed.py",
+      "source_file_sha256": "2259b7703f008748167dd65d12ac28a496235d1f20a1d5c84a3aa0da9c8c0499",
+      "function_source_sha256": "66c8854aa13c23dfef6ce0ab1b7f7a687bcac6fb308589aa73d7bf5301971a30",
+      "random_related_calls": [],
+      "source": "    def forward(self, x):\n        x = self.proj(x)\n        if self.flatten:\n            x = x.flatten(2).transpose(1, 2)  # BCHW -> BNC\n        x = self.norm(x)\n        return x\n"
+    },
+    "torch.nn.modules.conv.Conv2d": {
+      "function": "torch.nn.modules.conv.Conv2d.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/conv.py",
+      "source_file_sha256": "3e4141db6614f3561d544db1bf42ab9fe9b835e0ac020e55b21f40db442b6377",
+      "function_source_sha256": "91cbbd182f3c8657bd425dea60c472ad0354e5736663c3d0927e6514c846c681",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return self._conv_forward(input, self.weight, self.bias)\n"
+    },
+    "torch.nn.modules.linear.Identity": {
+      "function": "torch.nn.modules.linear.Identity.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/linear.py",
+      "source_file_sha256": "92927533f0d9adffd0365006f1f3fd789570a8368901147d57616a4c9e3a4f04",
+      "function_source_sha256": "7d7c238aeb7267edf58a45b49a389d6a927b41edcd70b20ac20db80c4bb810b9",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return input\n"
+    },
+    "torch.nn.modules.dropout.Dropout": {
+      "function": "torch.nn.modules.dropout.Dropout.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/dropout.py",
+      "source_file_sha256": "916f74b7e320f7d51f8f0a7a6c9f93224fc0a58bb406158a8d0b6e479cb674a3",
+      "function_source_sha256": "f5de7bf5b3333856e3e3ca6a2e8f21c4fc53a09b10c38f5293e002a7aa30badc",
+      "random_related_calls": [
+        {
+          "name": "dropout",
+          "relative_line": 2
+        }
+      ],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return F.dropout(input, self.p, self.training, self.inplace)\n"
+    },
+    "torch.nn.modules.container.Sequential": {
+      "function": "torch.nn.modules.container.Sequential.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/container.py",
+      "source_file_sha256": "fd72a74e2b109acd3d27a5800eba46d53639aca469df39ec27bdbb4ec0f51c04",
+      "function_source_sha256": "468deccec4f32e8f95df586898362ea64dfc3fcd15be04de591354d306a4605c",
+      "random_related_calls": [],
+      "source": "    def forward(self, input):\n        for module in self:\n            input = module(input)\n        return input\n"
+    },
+    "lib.models.cadtrack.vit_care.Block": {
+      "function": "lib.models.cadtrack.vit_care.Block.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/vit_care.py",
+      "source_file_sha256": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+      "function_source_sha256": "51c7cf69a5ad01d268298f1dd5b4465a1ff43b1db05aa2aa4a0a60a4e570fe25",
+      "random_related_calls": [
+        {
+          "name": "drop_path",
+          "relative_line": 2
+        },
+        {
+          "name": "drop_path",
+          "relative_line": 3
+        },
+        {
+          "name": "drop_path",
+          "relative_line": 5
+        },
+        {
+          "name": "drop_path",
+          "relative_line": 6
+        }
+      ],
+      "source": "    def forward(self, x, xi):\n        x = x + self.drop_path(self.attn(self.norm1(x)))\n        xi = xi + self.drop_path(self.attn(self.norm1(xi)))\n\n        x = x + self.drop_path(self.mlp(self.norm2(x)))\n        xi = xi + self.drop_path(self.mlp(self.norm2(xi)))\n        return x, xi\n"
+    },
+    "torch.nn.modules.normalization.LayerNorm": {
+      "function": "torch.nn.modules.normalization.LayerNorm.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/normalization.py",
+      "source_file_sha256": "a2232f8d43f9a5d03f829d7f8c49d7a4acba0bf92aa04e76e6c47937349d984a",
+      "function_source_sha256": "66c180c8c85e223b2bd98145c74e6196d12dbfdda29691555905669ccc6f6af9",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return F.layer_norm(\n            input, self.normalized_shape, self.weight, self.bias, self.eps)\n"
+    },
+    "lib.models.cadtrack.vit_care.Attention": {
+      "function": "lib.models.cadtrack.vit_care.Attention.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/vit_care.py",
+      "source_file_sha256": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+      "function_source_sha256": "f03e40d8ee71fe347c843066544cc18ec4b011530844011d881ab5c108694fc3",
+      "random_related_calls": [],
+      "source": "    def forward(self, x, return_attention=False):\n        B, N, C = x.shape\n        qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)\n        q, k, v = qkv[0], qkv[1], qkv[2]\n\n        attn = (q @ k.transpose(-2, -1)) * self.scale\n        attn = attn.softmax(dim=-1)\n        attn = self.attn_drop(attn)\n\n        x = (attn @ v).transpose(1, 2).reshape(B, N, C)\n        x = self.proj(x)\n        x = self.proj_drop(x)\n\n        if return_attention:\n            return x, attn\n        else:\n            return x\n"
+    },
+    "torch.nn.modules.linear.Linear": {
+      "function": "torch.nn.modules.linear.Linear.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/linear.py",
+      "source_file_sha256": "92927533f0d9adffd0365006f1f3fd789570a8368901147d57616a4c9e3a4f04",
+      "function_source_sha256": "b6069b59d9608ca56723a18719cd65f405961748b61bfa02ecffb2bc56b40e0b",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return F.linear(input, self.weight, self.bias)\n"
+    },
+    "timm.layers.mlp.Mlp": {
+      "function": "timm.layers.mlp.Mlp.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/mlp.py",
+      "source_file_sha256": "daf34147a30be416d2d70ae5784baa99567ba511af3da659c27dab58f055f8bb",
+      "function_source_sha256": "6dade48223cfc2483a5a49541d8769c213e393681753faabaa8bbc89f953add0",
+      "random_related_calls": [],
+      "source": "    def forward(self, x):\n        x = self.fc1(x)\n        x = self.act(x)\n        x = self.drop1(x)\n        x = self.norm(x)\n        x = self.fc2(x)\n        x = self.drop2(x)\n        return x\n"
+    },
+    "torch.nn.modules.activation.GELU": {
+      "function": "torch.nn.modules.activation.GELU.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/activation.py",
+      "source_file_sha256": "d100040cd0ecbcc42ea745bb4e56741204ed0cdbfd43687760c405c0cc857ea7",
+      "function_source_sha256": "ffd4257657f1970f99a24dd90f8939190869bd3fc953433e88e734544580b136",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return F.gelu(input, approximate=self.approximate)\n"
+    },
+    "timm.layers.drop.DropPath": {
+      "function": "timm.layers.drop.DropPath.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/drop.py",
+      "source_file_sha256": "0e0e514f16aae1ebeadef0b3fe787d7567050adca0c8a184cb512449890350b5",
+      "function_source_sha256": "a772e32a8fe4157955b20a5ce038b88e4401ea71b6c42c0da939eb7abf8c36da",
+      "random_related_calls": [
+        {
+          "name": "drop_path",
+          "relative_line": 2
+        }
+      ],
+      "source": "    def forward(self, x):\n        return drop_path(x, self.drop_prob, self.training, self.scale_by_keep)\n"
+    },
+    "lib.models.layers.head.CenterPredictor": {
+      "function": "lib.models.layers.head.CenterPredictor.forward",
+      "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/head.py",
+      "source_file_sha256": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+      "function_source_sha256": "e96945c2aa615eea42b5dba0faee45187fdfa3384f2f35f536cbec13c21333a4",
+      "random_related_calls": [],
+      "source": "    def forward(self, x, gt_score_map=None):\n        \"\"\" Forward pass with input x. \"\"\"\n        score_map_ctr, size_map, offset_map = self.get_score_map(x)\n\n        # assert gt_score_map is None\n        if gt_score_map is None:\n            bbox = self.cal_bbox(score_map_ctr, size_map, offset_map)\n        else:\n            bbox = self.cal_bbox(gt_score_map.unsqueeze(1), size_map, offset_map)\n\n        return score_map_ctr, bbox, size_map, offset_map\n"
+    },
+    "torch.nn.modules.batchnorm.BatchNorm2d": {
+      "function": "torch.nn.modules.batchnorm._BatchNorm.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/batchnorm.py",
+      "source_file_sha256": "c428697637d9cbe4e1cc9a37e9f972389818e4e1177a7d0ef23d70047f91e625",
+      "function_source_sha256": "ceb6268bc84b7b57440b6eda4d6f6603a896746ae90eaf0a5f24fa05aa6773c5",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        self._check_input_dim(input)\n\n        # exponential_average_factor is set to self.momentum\n        # (when it is available) only so that it gets updated\n        # in ONNX graph when this node is exported to ONNX.\n        if self.momentum is None:\n            exponential_average_factor = 0.0\n        else:\n            exponential_average_factor = self.momentum\n\n        if self.training and self.track_running_stats:\n            # TODO: if statement only here to tell the jit to skip emitting this when it is None\n            if self.num_batches_tracked is not None:  # type: ignore[has-type]\n                self.num_batches_tracked.add_(1)  # type: ignore[has-type]\n                if self.momentum is None:  # use cumulative moving average\n                    exponential_average_factor = 1.0 / float(self.num_batches_tracked)\n                else:  # use exponential moving average\n                    exponential_average_factor = self.momentum\n\n        r\"\"\"\n        Decide whether the mini-batch stats should be used for normalization rather than the buffers.\n        Mini-batch stats are used in training mode, and in eval mode when buffers are None.\n        \"\"\"\n        if self.training:\n            bn_training = True\n        else:\n            bn_training = (self.running_mean is None) and (self.running_var is None)\n\n        r\"\"\"\n        Buffers are only updated if they are to be tracked and we are in training mode. Thus they only need to be\n        passed when the update should occur (i.e. in training mode when they are tracked), or when buffer stats are\n        used for normalization (i.e. in eval mode when buffers are not None).\n        \"\"\"\n        return F.batch_norm(\n            input,\n            # If buffers are not to be tracked, ensure that they won't be updated\n            self.running_mean\n            if not self.training or self.track_running_stats\n            else None,\n            self.running_var if not self.training or self.track_running_stats else None,\n            self.weight,\n            self.bias,\n            bn_training,\n            exponential_average_factor,\n            self.eps,\n        )\n"
+    },
+    "torch.nn.modules.activation.ReLU": {
+      "function": "torch.nn.modules.activation.ReLU.forward",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/activation.py",
+      "source_file_sha256": "d100040cd0ecbcc42ea745bb4e56741204ed0cdbfd43687760c405c0cc857ea7",
+      "function_source_sha256": "e0ff33998019cd8e6bbcf62a8a319d90151490d1b3f06962675bc9a792433cc9",
+      "random_related_calls": [],
+      "source": "    def forward(self, input: Tensor) -> Tensor:\n        return F.relu(input, inplace=self.inplace)\n"
+    }
+  },
+  "mask_source": {
+    "function": "miss_rgbt.train.sample_masks",
+    "source_file": "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/train.py",
+    "source_file_sha256": "c74f079465024b1890213a9737f0179502ccdeb217e22501f2665dd778f0323a",
+    "function_source_sha256": "07f13f1abe17f539aa53acbe222d6fff17dbc200a905b2759ece3c4528440f52",
+    "random_related_calls": [
+      {
+        "name": "multinomial",
+        "relative_line": 7
+      },
+      {
+        "name": "rand",
+        "relative_line": 9
+      }
+    ],
+    "source": "def sample_masks(templates, searches, config):\n    batch = searches[0].shape[0]\n    device = searches[0].device\n    states = torch.tensor([[1., 1.], [0., 1.], [1., 0.]], device=device)\n    probability = torch.tensor(config['complete_rgb_missing_tir_missing_probability'], device=device)\n    available = [torch.ones(batch, 2, device=device)]\n    available += [states[torch.multinomial(probability, batch, replacement=True)]\n                  for _ in range(len(templates) - 1 + len(searches))]\n    patch = [torch.rand(batch, 256, 2, device=device).ge(config['patch_mask_probability']).float()\n             for _ in searches]\n    return available, patch\n"
+  },
+  "drop_path_source": {
+    "function": "timm.layers.drop.drop_path",
+    "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/drop.py",
+    "source_file_sha256": "0e0e514f16aae1ebeadef0b3fe787d7567050adca0c8a184cb512449890350b5",
+    "function_source_sha256": "46e3feb4f9b54c1094760cae616437fa9d5c1ac69900f25614492055691a2afa",
+    "random_related_calls": [
+      {
+        "name": "bernoulli_",
+        "relative_line": 15
+      }
+    ],
+    "source": "def drop_path(x, drop_prob: float = 0., training: bool = False, scale_by_keep: bool = True):\n    \"\"\"Drop paths (Stochastic Depth) per sample (when applied in main path of residual blocks).\n\n    This is the same as the DropConnect impl I created for EfficientNet, etc networks, however,\n    the original name is misleading as 'Drop Connect' is a different form of dropout in a separate paper...\n    See discussion: https://github.com/tensorflow/tpu/issues/494#issuecomment-532968956 ... I've opted for\n    changing the layer and argument names to 'drop path' rather than mix DropConnect as a layer name and use\n    'survival rate' as the argument.\n\n    \"\"\"\n    if drop_prob == 0. or not training:\n        return x\n    keep_prob = 1 - drop_prob\n    shape = (x.shape[0],) + (1,) * (x.ndim - 1)  # work with diff dim tensors, not just 2D ConvNets\n    random_tensor = x.new_empty(shape).bernoulli_(keep_prob)\n    if keep_prob > 0.0 and scale_by_keep:\n        random_tensor.div_(keep_prob)\n    return x * random_tensor\n"
+  },
+  "installed_torch_helpers": [
+    {
+      "function": "torch.optim.adamw.AdamW.__init__",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/adamw.py",
+      "source_file_sha256": "6383f0c809b64ccdc997f9fb8af46a953a41ccaeee9720278bd2f95499c90971",
+      "function_source_sha256": "69d74c820a192fa178d92e21999c56fe58ca33a10ab8b29a551acfb179b1e8b2",
+      "random_related_calls": [],
+      "source": "    def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8,\n                 weight_decay=1e-2, amsgrad=False, *, maximize: bool = False,\n                 foreach: Optional[bool] = None,\n                 capturable: bool = False):\n        if not 0.0 <= lr:\n            raise ValueError(\"Invalid learning rate: {}\".format(lr))\n        if not 0.0 <= eps:\n            raise ValueError(\"Invalid epsilon value: {}\".format(eps))\n        if not 0.0 <= betas[0] < 1.0:\n            raise ValueError(\"Invalid beta parameter at index 0: {}\".format(betas[0]))\n        if not 0.0 <= betas[1] < 1.0:\n            raise ValueError(\"Invalid beta parameter at index 1: {}\".format(betas[1]))\n        if not 0.0 <= weight_decay:\n            raise ValueError(\"Invalid weight_decay value: {}\".format(weight_decay))\n        defaults = dict(lr=lr, betas=betas, eps=eps,\n                        weight_decay=weight_decay, amsgrad=amsgrad,\n                        foreach=foreach, maximize=maximize, capturable=capturable)\n        super(AdamW, self).__init__(params, defaults)\n"
+    },
+    {
+      "function": "torch.optim.adamw.AdamW.step",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/optimizer.py",
+      "source_file_sha256": "6c3c68df7a17d3b0f5eeb463c1dec873874a66ded0c76c9ee98b871194ea61ad",
+      "function_source_sha256": "11d74c1052cf747a0e7d030e0322dd6c5b283cf1f3892b949758f4a413be30b9",
+      "random_related_calls": [],
+      "source": "    @torch.no_grad()\n    def step(self, closure=None):\n        \"\"\"Performs a single optimization step.\n\n        Args:\n            closure (callable, optional): A closure that reevaluates the model\n                and returns the loss.\n        \"\"\"\n        self._cuda_graph_capture_health_check()\n\n        loss = None\n        if closure is not None:\n            with torch.enable_grad():\n                loss = closure()\n\n        for group in self.param_groups:\n            params_with_grad = []\n            grads = []\n            exp_avgs = []\n            exp_avg_sqs = []\n            max_exp_avg_sqs = []\n            state_steps = []\n            amsgrad = group['amsgrad']\n            beta1, beta2 = group['betas']\n\n            for p in group['params']:\n                if p.grad is None:\n                    continue\n                params_with_grad.append(p)\n                if p.grad.is_sparse:\n                    raise RuntimeError('AdamW does not support sparse gradients')\n                grads.append(p.grad)\n\n                state = self.state[p]\n\n                # State initialization\n                if len(state) == 0:\n                    state['step'] = torch.zeros((1,), dtype=torch.float, device=p.device) \\\n                        if self.defaults['capturable'] else torch.tensor(0.)\n                    # Exponential moving average of gradient values\n                    state['exp_avg'] = torch.zeros_like(p, memory_format=torch.preserve_format)\n                    # Exponential moving average of squared gradient values\n                    state['exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)\n                    if amsgrad:\n                        # Maintains max of all exp. moving avg. of sq. grad. values\n                        state['max_exp_avg_sq'] = torch.zeros_like(p, memory_format=torch.preserve_format)\n\n                exp_avgs.append(state['exp_avg'])\n                exp_avg_sqs.append(state['exp_avg_sq'])\n\n                if amsgrad:\n                    max_exp_avg_sqs.append(state['max_exp_avg_sq'])\n\n                state_steps.append(state['step'])\n\n            adamw(params_with_grad,\n                  grads,\n                  exp_avgs,\n                  exp_avg_sqs,\n                  max_exp_avg_sqs,\n                  state_steps,\n                  amsgrad=amsgrad,\n                  beta1=beta1,\n                  beta2=beta2,\n                  lr=group['lr'],\n                  weight_decay=group['weight_decay'],\n                  eps=group['eps'],\n                  maximize=group['maximize'],\n                  foreach=group['foreach'],\n                  capturable=group['capturable'])\n\n        return loss\n"
+    },
+    {
+      "function": "torch.optim.adamw.adamw",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/adamw.py",
+      "source_file_sha256": "6383f0c809b64ccdc997f9fb8af46a953a41ccaeee9720278bd2f95499c90971",
+      "function_source_sha256": "7600f5ea89e266d96a9b77ec16ebcbcb4e45fa2b35e7e7543a4ec4d603f2cbc0",
+      "random_related_calls": [],
+      "source": "def adamw(params: List[Tensor],\n          grads: List[Tensor],\n          exp_avgs: List[Tensor],\n          exp_avg_sqs: List[Tensor],\n          max_exp_avg_sqs: List[Tensor],\n          state_steps: List[Tensor],\n          # kwonly args with defaults are not supported by functions compiled with torchscript issue #70627\n          # setting this as kwarg for now as functional API is compiled by torch/distributed/optim\n          foreach: bool = None,\n          capturable: bool = False,\n          *,\n          amsgrad: bool,\n          beta1: float,\n          beta2: float,\n          lr: float,\n          weight_decay: float,\n          eps: float,\n          maximize: bool):\n    r\"\"\"Functional API that performs AdamW algorithm computation.\n\n    See :class:`~torch.optim.AdamW` for details.\n    \"\"\"\n\n    if not all([isinstance(t, torch.Tensor) for t in state_steps]):\n        raise RuntimeError(\"API has changed, `state_steps` argument must contain a list of singleton tensors\")\n\n    if foreach is None:\n        # Placeholder for more complex foreach logic to be added when value is not set\n        foreach = False\n\n    if foreach and torch.jit.is_scripting():\n        raise RuntimeError('torch.jit.script not supported with foreach optimizers')\n\n    if foreach and not torch.jit.is_scripting():\n        func = _multi_tensor_adamw\n    else:\n        func = _single_tensor_adamw\n\n    func(params,\n         grads,\n         exp_avgs,\n         exp_avg_sqs,\n         max_exp_avg_sqs,\n         state_steps,\n         amsgrad=amsgrad,\n         beta1=beta1,\n         beta2=beta2,\n         lr=lr,\n         weight_decay=weight_decay,\n         eps=eps,\n         maximize=maximize,\n         capturable=capturable)\n"
+    },
+    {
+      "function": "torch.optim.adamw._single_tensor_adamw",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/adamw.py",
+      "source_file_sha256": "6383f0c809b64ccdc997f9fb8af46a953a41ccaeee9720278bd2f95499c90971",
+      "function_source_sha256": "05421120b5ebbce130d63fe51e2f5e9a4734499fe9c004ea591f55bf7c7bac38",
+      "random_related_calls": [],
+      "source": "def _single_tensor_adamw(params: List[Tensor],\n                         grads: List[Tensor],\n                         exp_avgs: List[Tensor],\n                         exp_avg_sqs: List[Tensor],\n                         max_exp_avg_sqs: List[Tensor],\n                         state_steps: List[Tensor],\n                         *,\n                         amsgrad: bool,\n                         beta1: float,\n                         beta2: float,\n                         lr: float,\n                         weight_decay: float,\n                         eps: float,\n                         maximize: bool,\n                         capturable: bool):\n\n    for i, param in enumerate(params):\n        grad = grads[i] if not maximize else -grads[i]\n        exp_avg = exp_avgs[i]\n        exp_avg_sq = exp_avg_sqs[i]\n        step_t = state_steps[i]\n\n        if capturable:\n            assert param.is_cuda and step_t.is_cuda, \"If capturable=True, params and state_steps must be CUDA tensors.\"\n\n        # update step\n        step_t += 1\n\n        # Perform stepweight decay\n        param.mul_(1 - lr * weight_decay)\n\n        # Decay the first and second moment running average coefficient\n        exp_avg.mul_(beta1).add_(grad, alpha=1 - beta1)\n        exp_avg_sq.mul_(beta2).addcmul_(grad, grad, value=1 - beta2)\n\n        if capturable:\n            step = step_t\n\n            # 1 - beta1 ** step can't be captured in a CUDA graph, even if step is a CUDA tensor\n            # (incurs \"RuntimeError: CUDA error: operation not permitted when stream is capturing\")\n            bias_correction1 = 1 - torch.pow(beta1, step)\n            bias_correction2 = 1 - torch.pow(beta2, step)\n\n            step_size = lr / bias_correction1\n            step_size_neg = step_size.neg()\n\n            bias_correction2_sqrt = bias_correction2.sqrt()\n\n            if amsgrad:\n                # Maintains the maximum of all 2nd moment running avg. till now\n                torch.maximum(max_exp_avg_sqs[i], exp_avg_sq, out=max_exp_avg_sqs[i])\n                # Uses the max. for normalizing running avg. of gradient\n                # Folds in (admittedly ugly) 1-elem step_size math here to avoid extra param-set-sized read+write\n                # (can't fold it into addcdiv_ below because addcdiv_ requires value is a Number, not a Tensor)\n                denom = (max_exp_avg_sqs[i].sqrt() / (bias_correction2_sqrt * step_size_neg)).add_(eps / step_size_neg)\n            else:\n                denom = (exp_avg_sq.sqrt() / (bias_correction2_sqrt * step_size_neg)).add_(eps / step_size_neg)\n\n            param.addcdiv_(exp_avg, denom)\n        else:\n            step = step_t.item()\n\n            bias_correction1 = 1 - beta1 ** step\n            bias_correction2 = 1 - beta2 ** step\n\n            step_size = lr / bias_correction1\n\n            bias_correction2_sqrt = math.sqrt(bias_correction2)\n\n            if amsgrad:\n                # Maintains the maximum of all 2nd moment running avg. till now\n                torch.maximum(max_exp_avg_sqs[i], exp_avg_sq, out=max_exp_avg_sqs[i])\n                # Use the max. for normalizing running avg. of gradient\n                denom = (max_exp_avg_sqs[i].sqrt() / bias_correction2_sqrt).add_(eps)\n            else:\n                denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)\n\n            param.addcdiv_(exp_avg, denom, value=-step_size)\n"
+    },
+    {
+      "function": "torch.optim.adamw._multi_tensor_adamw",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/adamw.py",
+      "source_file_sha256": "6383f0c809b64ccdc997f9fb8af46a953a41ccaeee9720278bd2f95499c90971",
+      "function_source_sha256": "734d6bba360809542d3d31ba462af87a9b92a8d93f69db5d6265aed58efa484c",
+      "random_related_calls": [],
+      "source": "def _multi_tensor_adamw(params: List[Tensor],\n                        grads: List[Tensor],\n                        exp_avgs: List[Tensor],\n                        exp_avg_sqs: List[Tensor],\n                        max_exp_avg_sqs: List[Tensor],\n                        state_steps: List[Tensor],\n                        *,\n                        amsgrad: bool,\n                        beta1: float,\n                        beta2: float,\n                        lr: float,\n                        weight_decay: float,\n                        eps: float,\n                        maximize: bool,\n                        capturable: bool):\n    if len(params) == 0:\n        return\n\n    if capturable:\n        assert all(p.is_cuda and step.is_cuda for p, step in zip(params, state_steps)), \\\n            \"If capturable=True, params and state_steps must be CUDA tensors.\"\n\n    if maximize:\n        grads = torch._foreach_neg(tuple(grads))  # type: ignore[assignment]\n\n    # update steps\n    torch._foreach_add_(state_steps, 1)\n\n    # Perform stepweight decay\n    torch._foreach_mul_(params, 1 - lr * weight_decay)\n\n    # Decay the first and second moment running average coefficient\n    torch._foreach_mul_(exp_avgs, beta1)\n    torch._foreach_add_(exp_avgs, grads, alpha=1 - beta1)\n\n    torch._foreach_mul_(exp_avg_sqs, beta2)\n    torch._foreach_addcmul_(exp_avg_sqs, grads, grads, 1 - beta2)\n\n    if capturable:\n        # TODO: use foreach_pow if/when foreach_pow is added\n        bias_correction1 = [torch.pow(beta1, step) for step in state_steps]\n        bias_correction2 = [torch.pow(beta2, step) for step in state_steps]\n        # foreach_sub doesn't allow a scalar as the first arg\n        torch._foreach_sub_(bias_correction1, 1)\n        torch._foreach_sub_(bias_correction2, 1)\n        torch._foreach_neg_(bias_correction1)\n        torch._foreach_neg_(bias_correction2)\n\n        # foreach_div doesn't allow a scalar as the first arg\n        step_size = torch._foreach_div(bias_correction1, lr)\n        torch._foreach_reciprocal_(step_size)\n        torch._foreach_neg_(step_size)\n\n        bias_correction2_sqrt = torch._foreach_sqrt(bias_correction2)\n\n        if amsgrad:\n            # Maintains the maximum of all 2nd moment running avg. till now\n            max_exp_avg_sqs = torch._foreach_maximum(max_exp_avg_sqs, exp_avg_sqs)  # type: ignore[assignment]\n\n            # Use the max. for normalizing running avg. of gradient\n            max_exp_avg_sq_sqrt = torch._foreach_sqrt(max_exp_avg_sqs)\n            # Folds in (admittedly ugly) 1-elem step_size math here to avoid extra param-set-sized read+write\n            # (can't fold it into addcdiv_ below because addcdiv_ requires value is a Number, not a Tensor)\n            torch._foreach_div_(max_exp_avg_sq_sqrt, torch._foreach_mul(bias_correction2_sqrt, step_size))\n            eps_over_step_size = torch._foreach_div(step_size, eps)\n            torch._foreach_reciprocal_(eps_over_step_size)\n            denom = torch._foreach_add(max_exp_avg_sq_sqrt, eps_over_step_size)\n        else:\n            exp_avg_sq_sqrt = torch._foreach_sqrt(exp_avg_sqs)\n            torch._foreach_div_(exp_avg_sq_sqrt, torch._foreach_mul(bias_correction2_sqrt, step_size))\n            eps_over_step_size = torch._foreach_div(step_size, eps)\n            torch._foreach_reciprocal_(eps_over_step_size)\n            denom = torch._foreach_add(exp_avg_sq_sqrt, eps_over_step_size)\n\n        torch._foreach_addcdiv_(params, exp_avgs, denom)\n    else:\n        bias_correction1 = [1 - beta1 ** step.item() for step in state_steps]\n        bias_correction2 = [1 - beta2 ** step.item() for step in state_steps]\n\n        step_size = [(lr / bc) * -1 for bc in bias_correction1]\n\n        bias_correction2_sqrt = [math.sqrt(bc) for bc in bias_correction2]\n\n        if amsgrad:\n            # Maintains the maximum of all 2nd moment running avg. till now\n            max_exp_avg_sqs = torch._foreach_maximum(max_exp_avg_sqs, exp_avg_sqs)  # type: ignore[assignment]\n\n            # Use the max. for normalizing running avg. of gradient\n            max_exp_avg_sq_sqrt = torch._foreach_sqrt(max_exp_avg_sqs)\n            torch._foreach_div_(max_exp_avg_sq_sqrt, bias_correction2_sqrt)\n            denom = torch._foreach_add(max_exp_avg_sq_sqrt, eps)\n        else:\n            exp_avg_sq_sqrt = torch._foreach_sqrt(exp_avg_sqs)\n            torch._foreach_div_(exp_avg_sq_sqrt, bias_correction2_sqrt)\n            denom = torch._foreach_add(exp_avg_sq_sqrt, eps)\n\n        torch._foreach_addcdiv_(params, exp_avgs, denom, step_size)\n"
+    },
+    {
+      "function": "torch.random.fork_rng",
+      "source_file": "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/contextlib.py",
+      "source_file_sha256": "ffc477e5c22af51112a07c352a37903423fc25f534a579122208a351780596ad",
+      "function_source_sha256": "103dfd5db2cdb1777568e7161491ced60a046fb609f666cc88294fe0fb140b45",
+      "random_related_calls": [],
+      "source": "@contextlib.contextmanager\ndef fork_rng(devices=None, enabled=True, _caller=\"fork_rng\", _devices_kw=\"devices\") -> Generator:\n    \"\"\"\n    Forks the RNG, so that when you return, the RNG is reset\n    to the state that it was previously in.\n\n    Args:\n        devices (iterable of CUDA IDs): CUDA devices for which to fork\n            the RNG.  CPU RNG state is always forked.  By default, :meth:`fork_rng` operates\n            on all devices, but will emit a warning if your machine has a lot\n            of devices, since this function will run very slowly in that case.\n            If you explicitly specify devices, this warning will be suppressed\n        enabled (bool): if ``False``, the RNG is not forked.  This is a convenience\n            argument for easily disabling the context manager without having\n            to delete it and unindent your Python code under it.\n    \"\"\"\n\n    import torch.cuda\n    global _fork_rng_warned_already\n\n    # Internal arguments:\n    #   _caller: the function which called fork_rng, which the user used\n    #   _devices_kw: the devices keyword of _caller\n\n    if not enabled:\n        yield\n        return\n\n    if devices is None:\n        num_devices = torch.cuda.device_count()\n        if num_devices > 1 and not _fork_rng_warned_already:\n            warnings.warn(\n                (\"CUDA reports that you have {num_devices} available devices, and you \"\n                 \"have used {caller} without explicitly specifying which devices are being used. \"\n                 \"For safety, we initialize *every* CUDA device by default, which \"\n                 \"can be quite slow if you have a lot of GPUs.  If you know that you are only \"\n                 \"making use of a few CUDA devices, set the environment variable CUDA_VISIBLE_DEVICES \"\n                 \"or the '{devices_kw}' keyword argument of {caller} with the set of devices \"\n                 \"you are actually using.  For example, if you are using CPU only, \"\n                 \"set CUDA_VISIBLE_DEVICES= or devices=[]; if you are using \"\n                 \"GPU 0 only, set CUDA_VISIBLE_DEVICES=0 or devices=[0].  To initialize \"\n                 \"all devices and suppress this warning, set the '{devices_kw}' keyword argument \"\n                 \"to `range(torch.cuda.device_count())`.\"\n                 ).format(num_devices=num_devices, caller=_caller, devices_kw=_devices_kw))\n            _fork_rng_warned_already = True\n        devices = list(range(num_devices))\n    else:\n        # Protect against user passing us a generator; we need to traverse this\n        # multiple times but a generator will be exhausted upon first traversal\n        devices = list(devices)\n\n    cpu_rng_state = torch.get_rng_state()\n    gpu_rng_states = []\n    for device in devices:\n        gpu_rng_states.append(torch.cuda.get_rng_state(device))\n\n    try:\n        yield\n    finally:\n        torch.set_rng_state(cpu_rng_state)\n        for device, gpu_rng_state in zip(devices, gpu_rng_states):\n            torch.cuda.set_rng_state(gpu_rng_state, device)\n"
+    }
+  ],
+  "validation_source": "def validate(model, batches):\n    model.eval()\n    totals = dict.fromkeys(['11', '01', '10'], 0.)\n    count = 0\n    with torch.no_grad(), torch.random.fork_rng(devices=[torch.cuda.current_device()]):\n        for data in batches:\n            templates = [x.cuda() for x in data['template_images']]\n            searches = [x.cuda() for x in data['search_images']]\n            boxes = data['search_anno'].cuda()\n            size = searches[0].shape[0]\n            for label, flags in [('11', [1., 1.]), ('01', [0., 1.]), ('10', [1., 0.])]:\n                available = [searches[0].new_ones(size, 2) for _ in templates]\n                available += [searches[0].new_tensor(flags).expand(size, -1)\n                              for _ in searches]\n                loss = task_loss(model(templates, searches, available), boxes, cfg)\n                assert torch.isfinite(loss).all()\n                totals[label] += float(loss.sum())\n            count += size\n    assert count == 128\n    return dict(samples=count, task_loss={k: v/count for k, v in totals.items()},\n                mean_task_loss=sum(totals.values())/(3*count))\n\n",
+  "run_config_sha256": {
+    "r1": "6d4d3ebd9d07c3466fa910ce486734df933019b72a5d9e0722fe5c64a68a155f",
+    "r2": "b3342c9ec91960dceedcf7eb520fd1976fd690a8a413e13e63efa477655dd0df"
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/config/cadtrack/config.py": "8a1dfa9bf4f500be0bf64b205c0772605ac8e2617dbb13705215423fc5884e56",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/__init__.py": "65c27110a13c7f4ea45b7449e4cfc5e8e978dc78c03dd0e06e82668d8d56772d",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/__init__.py": "90f89fa6e3fb10a85f2d344052296acbbfae153a293eec78640635654845dc88",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/base_backbone.py": "c091912a9372ba5c14b01952b165a1642c40bb33ce53f0e1d7a4e094e1b117f0",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/cadtrack.py": "9cddf1ee0f30acb0aa8d3117af9a5ecabdce6cb97f7f5130270e404e6d934dfd",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/utils.py": "557ce8e3d352e3ec69b2d21fcb0f8c18703b3152eff6f3f2e1a7470585e634ea",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/cadtrack/vit_care.py": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/CDA_Module.py": "637c9d4859cf4b0eeef91dde7495d6cf97d3471a86a5c0ba2c904c542f452d68",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/adapter.py": "af082f7c8b07f9df4f650f96ae6d699bf7cabc89032d364885b84eb060e62bf0",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/attn.py": "4b70c16a4900e554eb573cac6050efbbe91666d1d9352a610173bb13b64163a3",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/attn_blocks.py": "43d830e603bad33041df42b04b1afd31f18df5acbb25659b1b80ee4e8723f9f2",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/cross_layer.py": "5008a012c53aaa0f5b7bb567b95b6118cef138644be9955e566cdf8c298d114e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/frozen_bn.py": "6398d16294268830ede7992e616d7176ae484759f86fb977a6b73fccb86e8db8",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/head.py": "958ee314ae200dd52355050dc1da8b46d5268da032e5fc1d0c6af99bab4c7431",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/mamba.py": "c671e339dd8f7417591864bd9829acd7837beb6ecba0ccac44b830efeed39f08",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/patch_embed.py": "2259b7703f008748167dd65d12ac28a496235d1f20a1d5c84a3aa0da9c8c0499",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/models/layers/rpe.py": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/__init__.py": "dfe5bf11d4976f7607e605856ce03c7f58c66820252f54555b218ff8ded09d6e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/data.py": "fa7dfc5570f65bda637ef0d824b7af07f4dd9ee58cd64078c937e1822d839d76",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/datasets.py": "7dc85f9f6c4b350d67f71e59f32d785ebe496da759200aa1e77a065146cdb6c0",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/environment.py": "09c0725aa4b29d8f9880d8a01095ca14e4fedf1b5abf803fb31ddb93c638f61e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/lasherdataset.py": "74fbe5165b1caca6118d1b6d0ab0cf249871a602815379d0fa2483eca03208c0",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/local.py": "56bdab11ae3c137e9d953fa56388382921ffc380ca94a06c7612424fb333a706",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/running.py": "3f0241b65b4f09391a03b8dbd30fdcb76017f10b8579baa209a9306d9d0bdd87",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/tracker.py": "ed63402cc27fcb866994f420724dedcd3b3094cdba3620bf7c8726b0b136d7c5",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/evaluation/vtuavdataset.py": "c710124450ca03b775c61b932266ce400330288c8d671cf94b7bb7004cf5802c",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/parameter/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/parameter/cadtrack.py": "6e3810e341f05788f0c44b5145a3db7f0b0251d4a375845a838009ca38559612",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/tracker/basetracker.py": "f9bc6bbfb1a8f677f86e4f1eda024d89baaf454498a5f1321f1421df67a7aa36",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/tracker/cadtrack.py": "6e0863824a890d6a16b9da5a7b5acd3e9f7bad3c4dd37f0a818c63aa38e433f2",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/tracker/data_utils.py": "873337d0419ecfdd08b64123cdc22a4936ccdd6af98a092bc2106c32cf401fe5",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/tracker/vis_utils.py": "47ba468532b9b849022f23d8025d113300708457ae1dfdcc00ead96cbaf088bb",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/utils/__init__.py": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/utils/_init_paths.py": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/utils/hann.py": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/utils/load_text.py": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/test/utils/params.py": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/__init__.py": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/_init_paths.py": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/actors/__init__.py": "40d17d1e1f7fb20b7104bee934268afd3ff600b0d86dec540ad8d84e784a9eb3",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/actors/base_actor.py": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/actors/cadtrack.py": "aa4694b540883903eb8c638c29e6d37205ee8d09885d91c3a6e1ccb3f4985279",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/__init__.py": "01eca534fc2197f7f71028a91ec684a684b5fe2cb8f5c9cb86fc62072a9f85a5",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/environment.py": "881e678e0cb5afba6b1c52975d7e60c5822d62be4454d26882ae23c8e8af2634",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/local.py": "0531ab69ad5081107b669794ba7dd518c5848b4509a0c318b163118dd08ba00a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/multigpu.py": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/settings.py": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/stats.py": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/admin/tensorboard.py": "023080fef9e85c37360dda5dded64e79ff976baab1c8a2617b05b9e97415dbec",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/base_functions.py": "ac8be5762a0876499802977a77b45b1a3299a1c8b4566fa626d8b2237037ca21",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/__init__.py": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/bounding_box_utils.py": "d32aa112a2dbfb9c7130a9c8ae06558dd47ecf9bba33e46a447f9b7507321a61",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/image_loader.py": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/loader.py": "318c729bd3bdc26c39806864430e6bb302c7d7847f296dcc6d21e142185a2639",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/processing.py": "b761856eeb2a9d558d1b8928e5f108eeb6d3da3d8deb0578a57864badcdc30ca",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/processing_utils.py": "7aca916f5e5f62e1865fbd322ffb63dc08197c544a241938b6c822d4bfb89bf6",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/sampler.py": "6ce05e6a3d80f00dc6d3ad349458c9fbfde7846d39dd71bd6bbe1b16b342b240",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/transforms.py": "9a7db0eb86a6aa351bb53d0373a07e2a93d14ec0c8b7fa8987811733cdae360a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data/wandb_logger.py": "8ab545f24f09c34b2e043b29911a11c9e0fcb0610c3ea2b3b37c66dedcb84758",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data_specs/lasher_all.txt": "db1d62562d533c5383d089933857bea46add53a3648c8f96d122e23db00a55b7",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data_specs/lasher_train.txt": "27d39054b194f1b2e855c0bc1a1e23651f5e2b1cfef1e34d88074d71565df846",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/data_specs/lasher_val.txt": "ff5767e1e2522b87d31b898eb949949478c1dabc3b2cef2754a43c65e089016a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/__init__.py": "6a16289148d0ccdfcd2c3a776fc3b445d94dce413ff9b001f250289367ae3885",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/base_image_dataset.py": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/base_video_dataset.py": "84084446399d659a4026ff5bd6e58dd7ea5e4b76cc1c371969641c4f1ff68496",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/depth_utils.py": "8a84889685aeafec86add59c017aadf237df6815ea4d935f909c31f35587d493",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/lasher.py": "e9116f3e83b4d3d2a9791459e62f5e8563f24505a0849a85e8539c64159f35ba",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/dataset/vtuav.py": "458e90f1a20de7bb157a442b2f18b7847594f5e289b07762fb0b390b920d8715",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/run_training.py": "0ff5582efe6964769e8ccc6b8097edcd3a47394df4d9235e4a18484a9bf5c247",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/train_script.py": "95baaf5466854f7c0ad6e622dcb166cf22dc7e07f8c8ab94e08c740f4e7fbc36",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/trainers/__init__.py": "84d98401c971a9d84a4aed4529695588c724834ed139ec8a76ed93c80fd8753e",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/trainers/base_trainer.py": "a415736ed45a08875b629af0676145f48a9e715333113ca344989702c347f984",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/train/trainers/ltr_trainer.py": "172074b64f49d3a0d0737e7fa716b519a431b10e839627cfa403fa95c1a92b40",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/__init__.py": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/box_ops.py": "cee9d309a9c4a6c5f00fab575719bc7bf8d865127c91b10d4fb233996a111fbc",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/ce_utils.py": "513f12ba31150f8b2a15ed89b719967ec3c4de0659620675bd58b7c9cb052868",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/focal_loss.py": "11ccd7a16af34a3f54bd36191f086f7b0d85e95669e07bc072deb6226b40a965",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/heapmap_utils.py": "cc5ddbc0d65cad55f1a727f43e1d9966caa17a10c043a10586d0a13c1d4f3d4d",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/lmdb_utils.py": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/merge.py": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/misc.py": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/utils/tensor.py": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/vis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/vis/plotting.py": "7b36771b8d5e622bf069e43b0a1adf7290063e9c7d632a7b2220c23247d49a48",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/vis/utils.py": "bb942c58c22d9bbea1a2e596d40871501027330c55ba5a7a28a889687f128aae",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/lib/vis/visdom_cus.py": "8ad65740ac78aaddad82dc2a40fc8a292745d9b69a88116a1ca6075e963c14f1",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/__init__.py": "7e9a1007fb76a2460b19806183f82550c31de32c4dac4746c74ac8691c1fae4f",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/task_utility.py": "6f9d5c8947b5915eb4d56010caacd72710b69353306e83d0a1221d87e25b67b5",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/miss_rgbt/train.py": "c74f079465024b1890213a9737f0179502ccdeb217e22501f2665dd778f0323a",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/research/protocol_r/common.py": "1cb147dfb7f35d6b39c937b3c4f213a32f882d40cbf59bc520e7563b0dc66a4c",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/research/protocol_r/launch.py": "5ec827f6df2765e2f87d984acf5a713f76e0b53e8b65780fe98effe9ff963ffd",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/research/protocol_r/prepare.py": "4896a5f27c56f7a390d30e63d1aba82c89e7a6b14f468b26ffb0025312bb77c2",
+    "/home/gaob/Miss-RGBT/runtime/protocol_r_20261103/research/protocol_r/train.py": "1709f566d80cad56405d0601ea0f1301168d559c70f4790086bfaebfebc4d5d3",
+    "/home/gaob/Miss-RGBT/evaluate_candidate_official28.py": "bc45da1293bb2e4735a3ac79cf7c7bb5fb195b7ef9069744b2ddd891eae307b1",
+    "/home/gaob/Miss-RGBT/verify_recovery_campaign28.py": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+    "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+    "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_epoch_boundary_20261103/report.json": "1eba4e1cf437d7fa19d2c5e49b6035b17d4aef474cd71d62cde1ad244f51ce8b",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_epoch_boundary_20261103/completed.json": "735b975fccc53887135ca4989b6fec168c4778bc33f8b693e8c5d08fb7a67b10",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/conv.py": "3e4141db6614f3561d544db1bf42ab9fe9b835e0ac020e55b21f40db442b6377",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/linear.py": "92927533f0d9adffd0365006f1f3fd789570a8368901147d57616a4c9e3a4f04",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/dropout.py": "916f74b7e320f7d51f8f0a7a6c9f93224fc0a58bb406158a8d0b6e479cb674a3",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/container.py": "fd72a74e2b109acd3d27a5800eba46d53639aca469df39ec27bdbb4ec0f51c04",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/normalization.py": "a2232f8d43f9a5d03f829d7f8c49d7a4acba0bf92aa04e76e6c47937349d984a",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/mlp.py": "daf34147a30be416d2d70ae5784baa99567ba511af3da659c27dab58f055f8bb",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/activation.py": "d100040cd0ecbcc42ea745bb4e56741204ed0cdbfd43687760c405c0cc857ea7",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/timm/layers/drop.py": "0e0e514f16aae1ebeadef0b3fe787d7567050adca0c8a184cb512449890350b5",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/nn/modules/batchnorm.py": "c428697637d9cbe4e1cc9a37e9f972389818e4e1177a7d0ef23d70047f91e625",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/adamw.py": "6383f0c809b64ccdc997f9fb8af46a953a41ccaeee9720278bd2f95499c90971",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/site-packages/torch/optim/optimizer.py": "6c3c68df7a17d3b0f5eeb463c1dec873874a66ded0c76c9ee98b871194ea61ad",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/lib/python3.7/contextlib.py": "ffc477e5c22af51112a07c352a37903423fc25f534a579122208a351780596ad",
+    "/home/gaob/Miss-RGBT/scripts/audit_protocol_r_cpu_rng.py": "94776fd31f630225ef8a011581dbc3536b606d9e28399bc649cb9b7df7210316"
+  },
+  "cuda_initialized": false,
+  "original_cuda_rng_observed": false,
+  "actual_original_inputs_independently_certified": false,
+  "all_historical_frame_exclusions_verified": false,
+  "ohcas_data_gate_passed": false,
+  "scope": "Actual frozen native CPU initialization/loader/AdamW/cache setup plus source inventory of all model forward types, device-bound stochastic layers, masks, installed AdamW and validation RNG restoration. No model forward/backward, optimizer step, original process RNG read, later original input recording, training or official tracking metric."
+}

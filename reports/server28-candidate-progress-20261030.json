@@ -1,0 +1,158 @@
+{
+  "observed_utc": "2026-10-30T18:42:11.767542Z",
+  "models": {
+    "utility": {
+      "launch": {
+        "controller_pid": 3816049,
+        "training_pid": 3816056,
+        "physical_gpu": "2",
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-u",
+          "/home/gaob/Miss-RGBT/train_candidates28.py",
+          "--config",
+          "/home/gaob/Miss-RGBT/reports/server28-candidates-20261030/batch10_utility_seed2027/config.json"
+        ],
+        "effective_batch": 10,
+        "learning_rate": 0.000125,
+        "maximum_epochs": 20,
+        "minimum_early_stop_epoch": 12,
+        "selection_rule": "Highest mean complete/alternating-outage macro validation SR among final5 epochs; ties choose earlier epoch",
+        "source_sha256": {
+          "/home/gaob/Miss-RGBT/train_candidates28.py": "8f1b29de6001800df681835fa08e2e05f9b857c5167148969042a89535d64fee",
+          "/home/gaob/Miss-RGBT/candidate_validation28.py": "3499f5150cdbd8cb48c4d7b1dec09ad7be175277477e7b86d1abce2c72655406",
+          "/home/gaob/Miss-RGBT/evaluate_candidate_val97_28.py": "63f5205dbe2fca907824419b0775cddaff3ef1c6d1352cadd59abf0a36a964bd",
+          "/home/gaob/Miss-RGBT/candidate_campaign28.py": "064084e144c3e0aeb885c480d99c467c7686f0a5e44f5635a70783761fdaa720",
+          "/home/gaob/Miss-RGBT/evaluate_candidate_official28.py": "cb9dafa1f39c453ec1dab53321b3184111a38dbb9abd6a8a6d0bfa802aa57190"
+        }
+      },
+      "validation": {
+        "seed": 1701,
+        "samples": 128,
+        "inputs_sha256": "13105d2512b095da153e0ec8cd38cf6264c0971db7d40b036ddfc10a71455391",
+        "split": "val97",
+        "states": [
+          "11",
+          "01",
+          "10"
+        ],
+        "purpose": "Convergence proxy only; final weight selected by last-five full val97 tracking"
+      },
+      "updates": 4053,
+      "epoch": 3,
+      "finite_recorded_losses": true,
+      "peak_allocated_bytes": 21118406144,
+      "first_update_inputs": [
+        "902c0625ea009da482ca9cff17ac9c9e2837f027736d71d3fb7725cc4c16f424",
+        "d0a86654885f0695ebe0c0ecbff96038aca8ac1b792550843131145f17dd3088"
+      ],
+      "effective_batch": 10,
+      "first_update_seconds": 7.7844319343566895,
+      "recent_seconds_per_update": 3.4533974016555633,
+      "next_epoch_boundary_estimated_utc": "2026-10-30T20:34:15.616854Z",
+      "completed_epoch_validations": [
+        {
+          "samples": 128,
+          "task_loss": {
+            "11": 4.379604488611221,
+            "01": 5.839104577898979,
+            "10": 4.904822401702404
+          },
+          "mean_task_loss": 5.0411771560708685,
+          "epoch": 1,
+          "updates": 2000,
+          "seconds": 5342.689869403839
+        },
+        {
+          "samples": 128,
+          "task_loss": {
+            "11": 4.397490683943033,
+            "01": 5.93563324958086,
+            "10": 5.025560759007931
+          },
+          "mean_task_loss": 5.119561564177275,
+          "epoch": 2,
+          "updates": 4000,
+          "seconds": 11765.723064661026
+        }
+      ]
+    },
+    "random": {
+      "launch": {
+        "controller_pid": 3816050,
+        "training_pid": 3816057,
+        "physical_gpu": "3",
+        "command": [
+          "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+          "-u",
+          "/home/gaob/Miss-RGBT/train_candidates28.py",
+          "--config",
+          "/home/gaob/Miss-RGBT/reports/server28-candidates-20261030/batch10_random_seed2027/config.json"
+        ],
+        "effective_batch": 10,
+        "learning_rate": 0.000125,
+        "maximum_epochs": 20,
+        "minimum_early_stop_epoch": 12,
+        "selection_rule": "Highest mean complete/alternating-outage macro validation SR among final5 epochs; ties choose earlier epoch",
+        "source_sha256": {
+          "/home/gaob/Miss-RGBT/train_candidates28.py": "8f1b29de6001800df681835fa08e2e05f9b857c5167148969042a89535d64fee",
+          "/home/gaob/Miss-RGBT/candidate_validation28.py": "3499f5150cdbd8cb48c4d7b1dec09ad7be175277477e7b86d1abce2c72655406",
+          "/home/gaob/Miss-RGBT/evaluate_candidate_val97_28.py": "63f5205dbe2fca907824419b0775cddaff3ef1c6d1352cadd59abf0a36a964bd",
+          "/home/gaob/Miss-RGBT/candidate_campaign28.py": "064084e144c3e0aeb885c480d99c467c7686f0a5e44f5635a70783761fdaa720",
+          "/home/gaob/Miss-RGBT/evaluate_candidate_official28.py": "cb9dafa1f39c453ec1dab53321b3184111a38dbb9abd6a8a6d0bfa802aa57190"
+        }
+      },
+      "validation": {
+        "seed": 1701,
+        "samples": 128,
+        "inputs_sha256": "13105d2512b095da153e0ec8cd38cf6264c0971db7d40b036ddfc10a71455391",
+        "split": "val97",
+        "states": [
+          "11",
+          "01",
+          "10"
+        ],
+        "purpose": "Convergence proxy only; final weight selected by last-five full val97 tracking"
+      },
+      "updates": 4176,
+      "epoch": 3,
+      "finite_recorded_losses": true,
+      "peak_allocated_bytes": 21118406144,
+      "first_update_inputs": [
+        "902c0625ea009da482ca9cff17ac9c9e2837f027736d71d3fb7725cc4c16f424",
+        "d0a86654885f0695ebe0c0ecbff96038aca8ac1b792550843131145f17dd3088"
+      ],
+      "effective_batch": 10,
+      "first_update_seconds": 7.612964153289795,
+      "recent_seconds_per_update": 3.1145477054095028,
+      "next_epoch_boundary_estimated_utc": "2026-10-30T20:16:52.874866Z",
+      "completed_epoch_validations": [
+        {
+          "samples": 128,
+          "task_loss": {
+            "11": 4.317631758749485,
+            "01": 5.787514112889767,
+            "10": 4.837589263916016
+          },
+          "mean_task_loss": 4.980911711851756,
+          "epoch": 1,
+          "updates": 2000,
+          "seconds": 5177.0734124183655
+        },
+        {
+          "samples": 128,
+          "task_loss": {
+            "11": 4.346727110445499,
+            "01": 5.995276317000389,
+            "10": 4.942289754748344
+          },
+          "mean_task_loss": 5.094764394064744,
+          "epoch": 2,
+          "updates": 4000,
+          "seconds": 11391.104105949402
+        }
+      ]
+    }
+  },
+  "paired_validation_and_first_update_hashes_equal": true
+}

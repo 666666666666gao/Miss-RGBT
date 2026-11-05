@@ -1,0 +1,28 @@
+{
+  "status": "launched",
+  "pid": 3914039,
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "ionice",
+    "-c",
+    "3",
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/replay_protocol_r_frame_manifest.py",
+    "--output-dir",
+    "/home/gaob/Miss-RGBT/reports/server28_protocol_r_epoch01_candidate_v2_20261103"
+  ],
+  "output": "/home/gaob/Miss-RGBT/reports/server28_protocol_r_epoch01_candidate_v2_20261103",
+  "log": "/home/gaob/Miss-RGBT/reports/server28_protocol_r_epoch01_candidate_v2_20261103.log",
+  "launched_utc": "2026-11-03T03:44:34.691369Z",
+  "script_sha256": "08e53a74089c56a9305d5e8f7dfe7e9f7f8fe626c7dbd5fbe85903c6eeeb5f96",
+  "launcher_sha256": "913a25310a62ffb82b1ae999ef75ddcd8a77b4471522fa4081e9a2e5b8c4e744",
+  "cuda_visible_devices": "",
+  "cpu_workers": 2,
+  "cpu_nice": 10,
+  "io_priority_class": 3,
+  "full_epoch_replay_completed": false,
+  "freshness_gate_passed": false
+}

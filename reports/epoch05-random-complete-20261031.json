@@ -1,0 +1,11 @@
+{
+  "label": "random",
+  "condition": "complete",
+  "sequences": 97,
+  "frames": 54646,
+  "scored_frames": 54289,
+  "PR20": 80.66738780719817,
+  "SR": 65.32167522847284,
+  "seconds": 3895.9362139701843,
+  "checkpoint_sha256": "7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4"
+}

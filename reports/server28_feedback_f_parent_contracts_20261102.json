@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scope": "Temporary synthetic parent metadata only",
+  "positive_fixture_accepted": true,
+  "rejected": [
+    "missing_verification",
+    "wrong_phase",
+    "missing_arm",
+    "changed_verifier",
+    "changed_prepared",
+    "changed_config",
+    "changed_run_config",
+    "incomplete_parent",
+    "changed_manifest",
+    "missing_inherited_completion",
+    "missing_inherited_manifest",
+    "wrong_verification_hash"
+  ],
+  "no_f_run_created": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_parent_contracts.py": "651aa58a48a2e397c2dd75273d14fde7e2e832e8be2f857ba31c6dffee36a702",
+    "/home/gaob/Miss-RGBT/research/feedback_f/train.py": "197133328038f3543b17f2290525abb16e5db6a0543dfb2c340788bb6e1d0511"
+  },
+  "limitations": [
+    "Not real P receipts or actual positive-parent experiment validation",
+    "No dataset, GPU, image loop, saved-weight or official evaluation checks"
+  ]
+}

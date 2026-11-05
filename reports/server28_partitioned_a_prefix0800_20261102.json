@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "observed_utc": "2026-11-02T08:44:51.158255Z",
+  "arms": {
+    "utility": {
+      "pid": 1288280,
+      "microsteps": 800,
+      "updates": 400,
+      "epoch": 1,
+      "fitting_tuples": 4000,
+      "fitting_sequences": 703,
+      "development_tuples": 128,
+      "utility_probes": 200,
+      "maximum_loss_reconstruction_error": 1.2744450934576435e-06,
+      "loss_min": 2.6812021732330322,
+      "loss_max": 16.806285858154297,
+      "mean_loss": 7.127492952346802,
+      "median_loss": 6.820162534713745,
+      "seconds_per_update": 3.164429738109273,
+      "estimated_minutes_per_epoch": 105.48099127030909,
+      "steps_prefix_sha256": "2f412e978c9f23f03c8ca1cef689f412fa67347b37a93d3fa0c89e9b72510a65",
+      "inputs_prefix_sha256": "b29f5199d7c2f0ba712a24b1aaf1b343b579bcb7daa524f4adf19c414c87dc65",
+      "source_snapshot_sha256": "5c3ffb779bccb81165b6f47b880669f5728b356473ebb97eaacc8d6838163e5e"
+    },
+    "random": {
+      "pid": 1288281,
+      "microsteps": 800,
+      "updates": 400,
+      "epoch": 1,
+      "fitting_tuples": 4000,
+      "fitting_sequences": 703,
+      "development_tuples": 128,
+      "utility_probes": 200,
+      "maximum_loss_reconstruction_error": 1.3189972385418969e-06,
+      "loss_min": 2.6970760822296143,
+      "loss_max": 16.983505249023438,
+      "mean_loss": 7.1253170332312585,
+      "median_loss": 6.808428764343262,
+      "seconds_per_update": 3.151993971420709,
+      "estimated_minutes_per_epoch": 105.06646571402362,
+      "steps_prefix_sha256": "8607a38f56b9133d7f23b34c29e7d9501677d0386502916705118e8572cb6062",
+      "inputs_prefix_sha256": "b29f5199d7c2f0ba712a24b1aaf1b343b579bcb7daa524f4adf19c414c87dc65",
+      "source_snapshot_sha256": "5c3ffb779bccb81165b6f47b880669f5728b356473ebb97eaacc8d6838163e5e"
+    }
+  },
+  "paired_input_mask_and_probe_prefix_exact": true,
+  "partitions_and_exclusions_verified": true,
+  "all_recorded_sources_unchanged": true,
+  "optimizer_updates_inferred_from_records": true,
+  "scope": "Existing logged prefix arithmetic/identity/hash audit, not raw-image/gradient replay, checkpoint convergence, a development evaluation or official tracking metrics."
+}

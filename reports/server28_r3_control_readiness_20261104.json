@@ -1,0 +1,45 @@
+{
+  "status": "waiting",
+  "observed_utc": "2026-11-04T12:15:51.410019Z",
+  "control_readiness": {
+    "complete_only": {
+      "ready": false,
+      "stage": "WAITING_FOR_INDEPENDENT_REVIEW",
+      "missing": [
+        "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/independent_review.json"
+      ],
+      "dispatch_authorized": false
+    },
+    "complete_missing": {
+      "ready": false,
+      "stage": "WAITING_FOR_INDEPENDENT_REVIEW",
+      "missing": [
+        "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/independent_review.json"
+      ],
+      "dispatch_authorized": false
+    }
+  },
+  "collector_readiness": {
+    "status": "waiting",
+    "stage": "WAITING_FOR_TWENTY_FULL_RESULTS",
+    "missing": [
+      "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/complete_only_official_completed.json",
+      "/home/gaob/Miss-RGBT/reports/server28_localization_r3_20261104/complete_missing_official_completed.json"
+    ],
+    "dispatch_authorized": false
+  },
+  "controller_source_sha256": {
+    "/tmp/codex_r3_control_20261104.uYfXia/research/localization_r3/control.py": "1c24b5b64ffabcef9709165cab15437c038f67ce196c4db088a385357518f746",
+    "/tmp/codex_r3_control_20261104.uYfXia/research/localization_r3/collect.py": "ee907a35c6dbee3b279502aa33468fb3ff15bade09c0b75812f16a76841e0164",
+    "/tmp/codex_r3_control_20261104.uYfXia/research/localization_r3/check_control.py": "f2708fd5de5da8fad707ad56d678e68cb3b64149641c4327c31373865cc5034f"
+  },
+  "snapshot": "/home/gaob/Miss-RGBT/runtime/localization_r3_20261104",
+  "frozen_source_manifest_sha256": "454f97dbb72cb0f967aa06d69da6326a2cc044418426c3b9e7c54d6de3b524ac",
+  "frozen_snapshot_unchanged": true,
+  "independent_review": "REVIEW_UNAVAILABLE",
+  "real_image_smokes_started": false,
+  "formal_training_started": false,
+  "gpu_workers_started": false,
+  "cuda_initialized": false,
+  "scope": "Actual read-only sidecar readiness through frozen R3 imports; no deployment or efficacy"
+}

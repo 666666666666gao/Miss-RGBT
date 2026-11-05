@@ -1,0 +1,14 @@
+{
+  "probe_batch": 4,
+  "static_bytes": 415342592,
+  "peak_bytes": 3514857472,
+  "total_bytes": 25296044032,
+  "parameters_bytes": 412553748,
+  "fixed_estimate_bytes": 1653003836,
+  "activation_estimate_bytes": 1861853636,
+  "batch": 32,
+  "lr": 4e-05,
+  "dropped_remainder": 17,
+  "updates_per_epoch": 9,
+  "policy": "80percent estimated full-image memory, multiple4 cap32; no OOM retry."
+}

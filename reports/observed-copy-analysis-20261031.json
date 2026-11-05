@@ -1,0 +1,80 @@
+{
+  "results": {
+    "11_11": {
+      "native_mean": 3.14846545830369,
+      "observed_copy_mean": 3.14846545830369,
+      "mean_loss_delta": 0.0,
+      "wins": 0,
+      "ties": 16,
+      "losses": 0
+    },
+    "11_01": {
+      "native_mean": 5.43758275359869,
+      "observed_copy_mean": 5.987543478608131,
+      "mean_loss_delta": 0.5499607250094414,
+      "wins": 7,
+      "ties": 0,
+      "losses": 9
+    },
+    "11_10": {
+      "native_mean": 4.897717960178852,
+      "observed_copy_mean": 5.128312185406685,
+      "mean_loss_delta": 0.2305942252278328,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8
+    },
+    "01_11": {
+      "native_mean": 3.4852638579905033,
+      "observed_copy_mean": 3.320603683590889,
+      "mean_loss_delta": -0.16466017439961433,
+      "wins": 7,
+      "ties": 0,
+      "losses": 9
+    },
+    "01_01": {
+      "native_mean": 5.46059213578701,
+      "observed_copy_mean": 5.68771805614233,
+      "mean_loss_delta": 0.22712592035531998,
+      "wins": 7,
+      "ties": 0,
+      "losses": 9
+    },
+    "01_10": {
+      "native_mean": 5.286778848618269,
+      "observed_copy_mean": 5.279069297015667,
+      "mean_loss_delta": -0.007709551602602005,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8
+    },
+    "10_11": {
+      "native_mean": 3.381500020623207,
+      "observed_copy_mean": 3.423232886940241,
+      "mean_loss_delta": 0.04173286631703377,
+      "wins": 5,
+      "ties": 0,
+      "losses": 11
+    },
+    "10_01": {
+      "native_mean": 6.8845275193452835,
+      "observed_copy_mean": 7.443542331457138,
+      "mean_loss_delta": 0.5590148121118546,
+      "wins": 9,
+      "ties": 0,
+      "losses": 7
+    },
+    "10_10": {
+      "native_mean": 4.964786782860756,
+      "observed_copy_mean": 5.392993379384279,
+      "mean_loss_delta": 0.42820659652352333,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10
+    }
+  },
+  "report_sha256": "014156689a47ab34cc750fc55e4b9caa9215019fb30daaadab8a42790658e229",
+  "source_sha256": "13ee19f1f82b0d8966c0ab2c2a63039a4b56063c25d1fa470231d2294127b431",
+  "new_model_calls": 0,
+  "scope": "Separate receipt/source/hash/shape/token-count/aggregate checks on producer outputs. Execution witnesses are not re-executed. Correlated training tuples and batch-coupled loss, not PR/SR, closed-loop benefit or a validated module."
+}

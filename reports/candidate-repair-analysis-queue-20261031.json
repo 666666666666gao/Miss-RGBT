@@ -1,0 +1,8 @@
+{
+  "pid": 105825,
+  "producer_pid": 101337,
+  "producer_launch_sha256": "b2a7b04daffea36f2fdda85447b1ff332f15aab48e68c17c6d198a0cb730f584",
+  "analyzer_sha256": "9999f3ae1d6f1cff774a6b65e69034164ddf458850a4cb798aeaf4520f342999",
+  "controller_sha256": "9761794c5f8496ca5855e1630936ac1a5b45b09f82eed7088c8904f79059831c",
+  "poll_seconds": 300
+}

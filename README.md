@@ -1,5 +1,76 @@
 # Miss-RGBT
 
+## Server28 Research Update, 2026-10-31
+
+The migrated project runs at `/home/gaob/Miss-RGBT` on SSH `2028`.
+Four trainers were restored after server reboots: GPU0/1 run fixed20
+Utility/Random and GPU2/3 run batch10/LR1.25e-4 candidates. At18:20 UTC+08
+the candidates were in epochs11/12; no convergence is established.
+Each campaign evaluates its final5 weights on all97validation videos in
+complete and synthetic-outage conditions, selects one common weight by
+mean SR, then evaluates official complete/Miss datasets. These stages
+remain pending. Recovery restores model/AdamW and the scheduler epoch,
+but missing original RNG state prevents bitwise uninterrupted continuation.
+
+The latest completed full97 tracking check uses batch10 epoch5 weights:
+Utility PR20/SR79.596578/64.472777 complete and70.868974/56.749288 outage;
+Random80.667388/65.321675 and71.457491/57.152398. Utility is below Random,
+and paired-video difference intervals include zero. These are development
+scores, not the current campaign's official benchmark scores.
+
+See [latest full metrics](docs/LATEST_TRAINING_METRICS_20261031.md),
+[verified repair intervention](docs/CANDIDATE_REPAIR_INTERVENTION_20261031.md),
+[completed geometry control](docs/SPATIAL_CALIBRATION_RESULT_20261031.md),
+[completed gap control](docs/CALIBRATION_GAP_CONTROL_20261031.md), and
+[original-weight cleanup queue](docs/ORIGINAL_WEIGHT_CLEANUP_20261031.md).
+The CPU [observed-copy control](docs/OBSERVED_COPY_CONTROL_20261031.md)
+completed with6of8noncomplete loss cells worsening. The gap control found
+geometry SR+0.949828points at block32 but-4.805974at block128 on four fresh
+videos; unconditional correction is not supported as a general solution.
+The bounded [CMNeXt source review](docs/CMNEXT_SOURCE_REVIEW_20261031.md)
+records relevant selection/fusion prior art and adaptation limits.
+The [ViPT source review](docs/VIPT_SOURCE_REVIEW_20261031.md) records
+frozen-main-model prompt adaptation and its missing-input contract limits.
+The subsequent [scale-only component control](docs/SCALE_ONLY_CONTROL_20261031.md)
+completed48registered trajectories on four new videos. Scale-only SR
+changes by-5.032522/-0.088620points versus native at block32/128;
+unconditional removal of center translation is rejected. Block128 covers
+TIR-only missing exposure on this cohort, with no RGB-only or blind exposure.
+The completed [state-template history control](docs/STATE_TEMPLATE_CONTROL_20261031.md)
+found that state-matched reading preserves complete tracking but reduces
+block32 outage SR by5.708969points on eight fresh development videos; this
+policy is rejected and is not a new module.
+After it completes, a registered [closed-loop compensation control](docs/REPAIR_TRAJECTORY_CONTROL_20261031.md)
+will compare same-epoch Utility/Random native, sham and compensation-off
+tracking, without adding a concurrent GPU worker.
+
+The server28 standalone entrypoints in the repository root expect the
+existing frozen runtime at `runtime/task_utility_20261018` and protocol
+assets under `development/recovery_val97_20261030`. They are server-specific
+experiment scripts, not a self-contained installation or portable launcher.
+The `miss_rgbt/` snapshot and A configs match the frozen server28 code.
+Training data, pretrained weights, runtime assets and raw outputs stay on
+the server; publication of source does not establish benchmark gains.
+
+See [current evidence](docs/RESEARCH_STATUS_20261030.md),
+[candidate protocol](docs/CANDIDATE_TRAINING_LAUNCH_20261030.md),
+[selector control](docs/SELECTOR_OBJECTIVE_CONTROL_20261030.md), and
+[global proposal failure audit](docs/GLOBAL_PROPOSAL_AUDIT_20261030.md).
+The completed [native-scale grid audit](docs/NATIVE_GRID_AUDIT_20261030.md)
+also rejects direct peak-based grid recovery: mean IoU fell0.565to0.485,
+and none of the7unsupported missing-state points had an oracle success.
+These fixed-point diagnostics guide development; they are not benchmark
+scores or evidence of a validated recovery module.
+The paired [raw/Hann decode control](docs/NATIVE_GRID_DECODE_20261030.md)
+shows that dropping Hann worsens peak-selection mean IoU further to0.432,
+so the observed failure is not explained by Hann weighting alone.
+The [historical-A evaluation recovery](docs/HISTORICAL_A_MISS_RECOVERY_20261030.md)
+records an OOM from four concurrent workers on one occupied GPU, a passing
+two-GPU smoke, and the replacement full Miss evaluation at one worker/GPU.
+The requested baseline gains, all four Miss thresholds and three validated
+paper contributions remain incomplete. Older dated entries below describe
+the earlier server25 state.
+
 基于用户确认的“去掉CADTrack论文三个模块后训练得到的epoch20 baseline”，研究完整与缺失视图的共享模型训练。DropMoE是用户说明的CADTrack主干来源，本轮直接加载该baseline的epoch20训练权重，没有另载DropMoE原始文件。首版方案 A：独立缺失前向、局部任务特征补偿、C→M响应蒸馏及待验证的选择性M→C反馈。
 
 2026-10-15：E3/E4各20轮、50000更新及四组全量评估已完成，[最终完整指标](reports/full20_comparison_20261013_v1/RESULTS.md)和[独立审计](reports/full20_comparison_20261013_v1/EXPERIMENT_AUDIT.md)已发布。E3严格Miss目标0/4，E4为1/4，仅LasHeR-Miss SR达标；完整输入全部低于E0。审计数值复算一致，语义结论为WARN、same-family/provisional，研究目标仍未实现。

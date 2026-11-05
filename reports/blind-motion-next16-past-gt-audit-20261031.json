@@ -1,0 +1,848 @@
+{
+  "parent_report_sha256": "d0f7e15e2633924a2738661af1f383122af3ca2ee6e91856fe862021335bb933",
+  "estimate_audit_sha256": "94af77671d2c427f766aab356805817188d7b30b9e2f09824182436c4c08679b",
+  "source_sha256": "0d9eb1934f42e6acb1b26f9aad9dc6b9c3cebbe8db5698b2ad5711cc7962b1ed",
+  "intervals": 34,
+  "excluded": [
+    {
+      "sequence": "blkskirtwoman",
+      "start": 160,
+      "reason": "Invalid past GT geometry or no valid blind GT"
+    }
+  ],
+  "videos": 11,
+  "frames": 1047,
+  "blind_video_macro": {
+    "same_last_hold": {
+      "PR20": 22.897727272727273,
+      "SR": 19.19214466089466
+    },
+    "measured_velocity": {
+      "PR20": 27.642045454545453,
+      "SR": 23.395788239538238
+    },
+    "past_gt_velocity": {
+      "PR20": 34.66856060606061,
+      "SR": 25.305961399711403
+    }
+  },
+  "privileged_contrasts": {
+    "same_last_hold": {
+      "past_gt_velocity_SR_delta": 6.113816738816738,
+      "wins": 5,
+      "ties": 2,
+      "losses": 4
+    },
+    "measured_velocity": {
+      "past_gt_velocity_SR_delta": 1.9101731601731613,
+      "wins": 6,
+      "ties": 1,
+      "losses": 4
+    }
+  },
+  "per_video": {
+    "2whitegirl": {
+      "same_last_hold": {
+        "PR20": 0.0,
+        "SR": 8.333333333333332
+      },
+      "measured_velocity": {
+        "PR20": 50.0,
+        "SR": 46.42857142857142
+      },
+      "past_gt_velocity": {
+        "PR20": 100.0,
+        "SR": 61.904761904761905
+      }
+    },
+    "5manwakeright": {
+      "same_last_hold": {
+        "PR20": 43.75,
+        "SR": 37.723214285714285
+      },
+      "measured_velocity": {
+        "PR20": 57.8125,
+        "SR": 49.77678571428571
+      },
+      "past_gt_velocity": {
+        "PR20": 82.8125,
+        "SR": 55.95238095238095
+      }
+    },
+    "bikeblkturn": {
+      "same_last_hold": {
+        "PR20": 59.375,
+        "SR": 25.59523809523809
+      },
+      "measured_velocity": {
+        "PR20": 34.375,
+        "SR": 22.916666666666664
+      },
+      "past_gt_velocity": {
+        "PR20": 25.0,
+        "SR": 14.583333333333332
+      }
+    },
+    "blkskirtwoman": {
+      "same_last_hold": {
+        "PR20": 3.125,
+        "SR": 8.928571428571427
+      },
+      "measured_velocity": {
+        "PR20": 25.0,
+        "SR": 19.642857142857142
+      },
+      "past_gt_velocity": {
+        "PR20": 6.25,
+        "SR": 15.327380952380953
+      }
+    },
+    "boybesidesbar2putcup": {
+      "same_last_hold": {
+        "PR20": 0.0,
+        "SR": 0.0
+      },
+      "measured_velocity": {
+        "PR20": 0.0,
+        "SR": 0.0
+      },
+      "past_gt_velocity": {
+        "PR20": 0.0,
+        "SR": 0.0
+      }
+    },
+    "exercisebook": {
+      "same_last_hold": {
+        "PR20": 19.791666666666668,
+        "SR": 19.692460317460316
+      },
+      "measured_velocity": {
+        "PR20": 24.479166666666668,
+        "SR": 22.47023809523809
+      },
+      "past_gt_velocity": {
+        "PR20": 18.75,
+        "SR": 16.393849206349206
+      }
+    },
+    "hyalinepaperfrontclothes": {
+      "same_last_hold": {
+        "PR20": 5.0,
+        "SR": 13.854166666666668
+      },
+      "measured_velocity": {
+        "PR20": 5.625,
+        "SR": 10.267857142857142
+      },
+      "past_gt_velocity": {
+        "PR20": 6.875,
+        "SR": 13.86904761904762
+      }
+    },
+    "midblkboyplayingphone": {
+      "same_last_hold": {
+        "PR20": 0.0,
+        "SR": 9.82142857142857
+      },
+      "measured_velocity": {
+        "PR20": 0.0,
+        "SR": 1.9345238095238095
+      },
+      "past_gt_velocity": {
+        "PR20": 0.0,
+        "SR": 6.696428571428571
+      }
+    },
+    "right1stgirlin2ndqueue": {
+      "same_last_hold": {
+        "PR20": 25.0,
+        "SR": 15.513392857142854
+      },
+      "measured_velocity": {
+        "PR20": 25.0,
+        "SR": 15.066964285714285
+      },
+      "past_gt_velocity": {
+        "PR20": 25.0,
+        "SR": 15.513392857142854
+      }
+    },
+    "rightboy479": {
+      "same_last_hold": {
+        "PR20": 34.375,
+        "SR": 20.75892857142857
+      },
+      "measured_velocity": {
+        "PR20": 23.4375,
+        "SR": 15.178571428571427
+      },
+      "past_gt_velocity": {
+        "PR20": 25.0,
+        "SR": 14.58333333333333
+      }
+    },
+    "shotmaker2": {
+      "same_last_hold": {
+        "PR20": 61.458333333333336,
+        "SR": 50.89285714285713
+      },
+      "measured_velocity": {
+        "PR20": 58.333333333333336,
+        "SR": 53.67063492063492
+      },
+      "past_gt_velocity": {
+        "PR20": 91.66666666666667,
+        "SR": 63.541666666666664
+      }
+    }
+  },
+  "per_interval": [
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "boybesidesbar2putcup",
+      "start": 544,
+      "frames": 19,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "2whitegirl",
+      "start": 160,
+      "frames": 4,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 8.333333333333332
+        },
+        "measured_velocity": {
+          "PR20": 50.0,
+          "SR": 46.42857142857142
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 61.904761904761905
+        }
+      }
+    },
+    {
+      "sequence": "blkskirtwoman",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 3.125,
+          "SR": 8.928571428571427
+        },
+        "measured_velocity": {
+          "PR20": 25.0,
+          "SR": 19.642857142857142
+        },
+        "past_gt_velocity": {
+          "PR20": 6.25,
+          "SR": 15.327380952380953
+        }
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 62.5,
+          "SR": 53.27380952380952
+        },
+        "measured_velocity": {
+          "PR20": 56.25,
+          "SR": 50.14880952380952
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 65.32738095238095
+        }
+      }
+    },
+    {
+      "sequence": "5manwakeright",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 25.0,
+          "SR": 22.172619047619047
+        },
+        "measured_velocity": {
+          "PR20": 59.375,
+          "SR": 49.4047619047619
+        },
+        "past_gt_velocity": {
+          "PR20": 65.625,
+          "SR": 46.57738095238095
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 3.125,
+          "SR": 21.428571428571423
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.5952380952380952
+        },
+        "past_gt_velocity": {
+          "PR20": 15.625,
+          "SR": 24.107142857142854
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 544,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 736,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 928,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1120,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1312,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 9.375,
+          "SR": 27.82738095238095
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.7440476190476191
+        },
+        "past_gt_velocity": {
+          "PR20": 9.375,
+          "SR": 23.21428571428571
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1504,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 37.5,
+          "SR": 53.86904761904762
+        },
+        "measured_velocity": {
+          "PR20": 43.75,
+          "SR": 54.46428571428571
+        },
+        "past_gt_velocity": {
+          "PR20": 43.75,
+          "SR": 53.273809523809526
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1696,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 15.476190476190478
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 34.07738095238095
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 22.172619047619047
+        }
+      }
+    },
+    {
+      "sequence": "hyalinepaperfrontclothes",
+      "start": 1888,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 19.94047619047619
+        },
+        "measured_velocity": {
+          "PR20": 12.5,
+          "SR": 12.797619047619047
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 15.922619047619046
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 50.0,
+          "SR": 31.39880952380952
+        },
+        "measured_velocity": {
+          "PR20": 100.0,
+          "SR": 48.06547619047619
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 48.06547619047619
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 62.5,
+          "SR": 57.29166666666666
+        },
+        "measured_velocity": {
+          "PR20": 37.5,
+          "SR": 51.041666666666664
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 68.89880952380952
+        }
+      }
+    },
+    {
+      "sequence": "shotmaker2",
+      "start": 544,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 71.875,
+          "SR": 63.98809523809523
+        },
+        "measured_velocity": {
+          "PR20": 37.5,
+          "SR": 61.9047619047619
+        },
+        "past_gt_velocity": {
+          "PR20": 75.0,
+          "SR": 73.66071428571429
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 544,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "right1stgirlin2ndqueue",
+      "start": 736,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 100.0,
+          "SR": 62.053571428571416
+        },
+        "measured_velocity": {
+          "PR20": 100.0,
+          "SR": 60.26785714285714
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 62.053571428571416
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 4.613095238095237
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 3.2738095238095237
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 5.05952380952381
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 40.625,
+          "SR": 44.04761904761904
+        },
+        "measured_velocity": {
+          "PR20": 40.625,
+          "SR": 46.875
+        },
+        "past_gt_velocity": {
+          "PR20": 100.0,
+          "SR": 60.56547619047618
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 544,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 736,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 40.625,
+          "SR": 32.88690476190476
+        },
+        "measured_velocity": {
+          "PR20": 21.875,
+          "SR": 34.226190476190474
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 7.5892857142857135
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 928,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 11.607142857142858
+        },
+        "measured_velocity": {
+          "PR20": 28.125,
+          "SR": 20.08928571428571
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 8.035714285714285
+        }
+      }
+    },
+    {
+      "sequence": "exercisebook",
+      "start": 1120,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 37.5,
+          "SR": 25.0
+        },
+        "measured_velocity": {
+          "PR20": 56.25,
+          "SR": 30.357142857142854
+        },
+        "past_gt_velocity": {
+          "PR20": 12.5,
+          "SR": 17.113095238095237
+        }
+      }
+    },
+    {
+      "sequence": "midblkboyplayingphone",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 0.0,
+          "SR": 9.82142857142857
+        },
+        "measured_velocity": {
+          "PR20": 0.0,
+          "SR": 1.9345238095238095
+        },
+        "past_gt_velocity": {
+          "PR20": 0.0,
+          "SR": 6.696428571428571
+        }
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 9.375,
+          "SR": 6.101190476190475
+        },
+        "measured_velocity": {
+          "PR20": 9.375,
+          "SR": 5.952380952380952
+        },
+        "past_gt_velocity": {
+          "PR20": 9.375,
+          "SR": 5.208333333333333
+        }
+      }
+    },
+    {
+      "sequence": "rightboy479",
+      "start": 352,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 59.375,
+          "SR": 35.416666666666664
+        },
+        "measured_velocity": {
+          "PR20": 37.5,
+          "SR": 24.4047619047619
+        },
+        "past_gt_velocity": {
+          "PR20": 40.625,
+          "SR": 23.95833333333333
+        }
+      }
+    },
+    {
+      "sequence": "bikeblkturn",
+      "start": 160,
+      "frames": 32,
+      "metrics": {
+        "same_last_hold": {
+          "PR20": 59.375,
+          "SR": 25.59523809523809
+        },
+        "measured_velocity": {
+          "PR20": 34.375,
+          "SR": 22.916666666666664
+        },
+        "past_gt_velocity": {
+          "PR20": 25.0,
+          "SR": 14.583333333333332
+        }
+      }
+    }
+  ],
+  "scope": "Offline privileged past-GT velocity anchored to the same saved CV last box. No future GT enters prediction. Future valid GT only scores the prediction. This does not recompute closed-loop recovery, provide a performance bound, select parameters or define a deployable method."
+}

@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "seed": 65303,
+  "scope": "Synthetic tensors; actual E0 network",
+  "shared_initial_state_exact": true,
+  "caller_cpu_rng_after_build_exact": true,
+  "native_step_mask_parity_exact": true,
+  "step_masks_match_all_arms": true,
+  "step_mask_cpu_cuda_rng_preserved": true,
+  "consecutive_step_patch_differs": true,
+  "arms": {
+    "single": [
+      {
+        "probe_view": "C",
+        "loss": 30.228246688842773,
+        "grad_norm": 184.21469116210938,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "ccbe7519440549a8c45f264ecad40f30ea3564ed515d344bca5248aac4715baa",
+          "44d3f03a517aa4deafb9d7fbf21e6099f492c2c6e8a80765e9284b5f46653287",
+          "f2fcd5d29b3c0ba79950770982759eb63a3c10af0ce15854e2829365e1b6e57b"
+        ]
+      },
+      {
+        "probe_view": "M",
+        "loss": 25.717863082885742,
+        "grad_norm": 126.46019744873047,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "fbc2db92ab250ec9c86a7e63d89c67abd226e8bce12293b523614a03e1295e94",
+          "9f2e3463e4d981a375750db5d66637226f995d13a251db7b4c61a223e6e5a032",
+          "77e3de90b9efddccacc064e051dd0b3f8c5eadfa6ab3d86d4fc7a527e6d5be78"
+        ]
+      }
+    ],
+    "none": [
+      {
+        "probe_view": "C",
+        "loss": 29.039506912231445,
+        "grad_norm": 179.77407836914062,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "ccbe7519440549a8c45f264ecad40f30ea3564ed515d344bca5248aac4715baa",
+          "44d3f03a517aa4deafb9d7fbf21e6099f492c2c6e8a80765e9284b5f46653287",
+          "f2fcd5d29b3c0ba79950770982759eb63a3c10af0ce15854e2829365e1b6e57b"
+        ]
+      },
+      {
+        "probe_view": "M",
+        "loss": 24.123979568481445,
+        "grad_norm": 111.62214660644531,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "fbc2db92ab250ec9c86a7e63d89c67abd226e8bce12293b523614a03e1295e94",
+          "9f2e3463e4d981a375750db5d66637226f995d13a251db7b4c61a223e6e5a032",
+          "77e3de90b9efddccacc064e051dd0b3f8c5eadfa6ab3d86d4fc7a527e6d5be78"
+        ]
+      }
+    ],
+    "shallow": [
+      {
+        "probe_view": "C",
+        "loss": 29.039506912231445,
+        "grad_norm": 179.77952575683594,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "ccbe7519440549a8c45f264ecad40f30ea3564ed515d344bca5248aac4715baa",
+          "44d3f03a517aa4deafb9d7fbf21e6099f492c2c6e8a80765e9284b5f46653287",
+          "f2fcd5d29b3c0ba79950770982759eb63a3c10af0ce15854e2829365e1b6e57b"
+        ]
+      },
+      {
+        "probe_view": "M",
+        "loss": 24.122777938842773,
+        "grad_norm": 111.62200164794922,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "fbc2db92ab250ec9c86a7e63d89c67abd226e8bce12293b523614a03e1295e94",
+          "9f2e3463e4d981a375750db5d66637226f995d13a251db7b4c61a223e6e5a032",
+          "77e3de90b9efddccacc064e051dd0b3f8c5eadfa6ab3d86d4fc7a527e6d5be78"
+        ]
+      }
+    ],
+    "deep": [
+      {
+        "probe_view": "C",
+        "loss": 29.039506912231445,
+        "grad_norm": 179.7821807861328,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "22b6f43bd8d27738d3213f29e96b62d01d9d6c0ab4f9732aaae803186f51eab7",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "ccbe7519440549a8c45f264ecad40f30ea3564ed515d344bca5248aac4715baa",
+          "44d3f03a517aa4deafb9d7fbf21e6099f492c2c6e8a80765e9284b5f46653287",
+          "f2fcd5d29b3c0ba79950770982759eb63a3c10af0ce15854e2829365e1b6e57b"
+        ]
+      },
+      {
+        "probe_view": "M",
+        "loss": 24.122407913208008,
+        "grad_norm": 111.71947479248047,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true,
+        "step_mask_sha256": [
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d",
+          "fbc2db92ab250ec9c86a7e63d89c67abd226e8bce12293b523614a03e1295e94",
+          "9f2e3463e4d981a375750db5d66637226f995d13a251db7b4c61a223e6e5a032",
+          "77e3de90b9efddccacc064e051dd0b3f8c5eadfa6ab3d86d4fc7a527e6d5be78"
+        ]
+      }
+    ]
+  },
+  "seconds": 19.253434419631958,
+  "peak_gpu_bytes": 8434151424,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_training.py": "8bcf6fe918aeea4f015dcfb78947ae34850ab6b38464f31d36e0d44090192ad6",
+    "/home/gaob/Miss-RGBT/research/feedback_f/training.py": "3b103a99986ca22907236c486ff6adae72d93995522922a132dc2ff9eabd01cc",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f"
+  },
+  "limitations": [
+    "No image training, convergence or official metrics",
+    "No formal trainer loop or benchmark launcher",
+    "No measured actual-workload latency or correction/destruction rates"
+  ]
+}

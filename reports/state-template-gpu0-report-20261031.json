@@ -1,0 +1,76 @@
+{
+  "records": {
+    "native": {
+      "girlshead": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023,
+          "bbox_sha256": "ef58b061eb61f2e5b7a7d576d8c56ef00d031368b8e61c778d8e55bc4c3712d0",
+          "trace_sha256": "20d92f4364f09c97d8e3108ba5fc5e62f17b2815f4ad7bf81b26f0fbb75be92f",
+          "model_calls": 6023
+        },
+        "block32_outage": {
+          "PR20": 82.63323924954342,
+          "SR": 65.3613529090866,
+          "scored_frames": 6023,
+          "bbox_sha256": "4d6c900a973c7b6693c49429614271884e19fef3dd8dc23f3f7186775d276f52",
+          "trace_sha256": "60d305491aaa728855ed92557aab7251970952dcea32d98f6382fbc6ec896bdd",
+          "model_calls": 5031
+        }
+      }
+    },
+    "sham": {
+      "girlshead": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023,
+          "bbox_sha256": "ef58b061eb61f2e5b7a7d576d8c56ef00d031368b8e61c778d8e55bc4c3712d0",
+          "trace_sha256": "3d7619db74b7a83cc46e63ca146839ba16c998d5352d285fe90f43fffeea76a8",
+          "model_calls": 6023
+        },
+        "block32_outage": {
+          "PR20": 82.63323924954342,
+          "SR": 65.3613529090866,
+          "scored_frames": 6023,
+          "bbox_sha256": "4d6c900a973c7b6693c49429614271884e19fef3dd8dc23f3f7186775d276f52",
+          "trace_sha256": "b794fa1f8e3f4da2b4bdfd1e07d3fa1f6857312f4e1566da6d254f2c84a80797",
+          "model_calls": 5031
+        }
+      }
+    },
+    "matched": {
+      "girlshead": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023,
+          "bbox_sha256": "ef58b061eb61f2e5b7a7d576d8c56ef00d031368b8e61c778d8e55bc4c3712d0",
+          "trace_sha256": "3d7619db74b7a83cc46e63ca146839ba16c998d5352d285fe90f43fffeea76a8",
+          "model_calls": 6023
+        },
+        "block32_outage": {
+          "PR20": 80.3586252697991,
+          "SR": 63.53818299692448,
+          "scored_frames": 6023,
+          "bbox_sha256": "d3183477afa53d25d91e6cbcef14e76b24b8d0cbc4eea4ee006e12c4a94df91a",
+          "trace_sha256": "a2bf1a72b4b9018bb0cd0805d583bf2ea4f1a6de7dd8293d830baffb4469f866",
+          "model_calls": 5031
+        }
+      }
+    }
+  },
+  "cohort": [
+    {
+      "name": "girlshead",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/girlshead",
+      "development_index": 73,
+      "video_frames": 6024,
+      "gt_sha256": "6f411eefe54b1e950d630a4f6cecc24619d410644a39a979da592c564a006d75"
+    }
+  ],
+  "frozen_network": true,
+  "controls_equal": true,
+  "seconds": 2359.679206609726
+}

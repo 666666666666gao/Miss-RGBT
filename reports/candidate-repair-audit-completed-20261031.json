@@ -1,0 +1,9 @@
+{
+  "report_sha256": "070f5f10f4147e6c036442d3cc7d80b4c3e93865b60e51a7103dcf215666d939",
+  "models": 2,
+  "samples_per_model": 128,
+  "states": 3,
+  "native_tail_bitwise_equal": true,
+  "network_state_unchanged": true,
+  "seconds": 2760.9591681957245
+}

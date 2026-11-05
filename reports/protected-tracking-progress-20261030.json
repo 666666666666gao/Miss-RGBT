@@ -1,0 +1,217 @@
+{
+  "E0": {
+    "2up": {
+      "complete": {
+        "frames": 176,
+        "scored_frames": 175,
+        "PR20": 97.14285714285714,
+        "SR": 62.476190476190474,
+        "mean_iou": 0.6317210585467816,
+        "track_calls": 175,
+        "holds": 0,
+        "observed_valid_frames": 175,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e",
+        "trace_sha256": "e2a096ea6ebb2135e30c98b94f39b5b6d170b16e4f7ff90a6e7ce867ec086da1"
+      },
+      "alternating_outage": {
+        "frames": 176,
+        "scored_frames": 175,
+        "PR20": 96.57142857142857,
+        "SR": 60.244897959183675,
+        "mean_iou": 0.6061899207116292,
+        "track_calls": 159,
+        "holds": 16,
+        "observed_valid_frames": 159,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "48847fa7f00fbb1732767dbf640accd271853180b0a36e63553b1ca41447fceb",
+        "trace_sha256": "a4c7924353b4a8813d1695e5af9c21690a11489e4a98cbf53aae5f52e4fdcd39"
+      }
+    },
+    "comingboy'shead": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 100.0,
+        "SR": 80.11204481792717,
+        "mean_iou": 0.8159279215245975,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "1af9a86ecbe9dcf4ee0a5df553c815ee511ea65506e77893a61144137a3a7d5b",
+        "trace_sha256": "5c379b318031dcda46c4dd248871bc8a6375939e6f6bdef8c0b581c84787329d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 88.62745098039215,
+        "SR": 72.08216619981326,
+        "mean_iou": 0.7318979912430428,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "fe3b65b34f19d230983a2f65143e92d34fe0f3bdc6a9227ad5cec83284660d66",
+        "trace_sha256": "d7ee2048ba35bb197afd9923d5242c9d2580c0f72e04f4c023c3dc7329ededf4"
+      }
+    },
+    "wanderingly_1202": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 98.82352941176471,
+        "SR": 88.79551820728291,
+        "mean_iou": 0.9089440130186397,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
+        "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 85.88235294117646,
+        "SR": 79.85060690943044,
+        "mean_iou": 0.815274578611724,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "54b35618b017514641f4c42ba7ea97fe6bd124cf5aa6654ef0bed4ec7ae9262d",
+        "trace_sha256": "f5e16b561ade28d1e1d25fc0bd850ecf1ec8ae24c9b5fb9607015f1378401a88"
+      }
+    },
+    "bike2north": {
+      "complete": {
+        "frames": 150,
+        "scored_frames": 149,
+        "PR20": 100.0,
+        "SR": 82.9658037711729,
+        "mean_iou": 0.8476632212727824,
+        "track_calls": 149,
+        "holds": 0,
+        "observed_valid_frames": 149,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "aa183cda14b62dd14d0dae4f56f64670d248f2430c167753a787dc743c02247a",
+        "trace_sha256": "476ccfbbf1d7ac8cc291a3d8c9e0b51a3343b174f803c640212f4d6b007b2e6e"
+      },
+      "alternating_outage": {
+        "frames": 150,
+        "scored_frames": 149,
+        "PR20": 86.57718120805369,
+        "SR": 72.00383509108342,
+        "mean_iou": 0.7309430669188339,
+        "track_calls": 149,
+        "holds": 0,
+        "observed_valid_frames": 149,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "6c7fbbc3d53ecbf9816b2d9b26232c4a8e596b91289ef24690104bb82a22d1ae",
+        "trace_sha256": "5dfe037cb53dae9e6476e626ac84f073a6facae55407ed0d901d6d663608f7a1"
+      }
+    }
+  },
+  "selected_repair": {
+    "2up": {
+      "complete": {
+        "frames": 176,
+        "scored_frames": 175,
+        "PR20": 97.14285714285714,
+        "SR": 62.476190476190474,
+        "mean_iou": 0.6317210585467816,
+        "track_calls": 175,
+        "holds": 0,
+        "observed_valid_frames": 175,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "b8489ffa21598d6dad8d783c1c199d49cb22589a0c44acc80a9fb699c576556e",
+        "trace_sha256": "e2a096ea6ebb2135e30c98b94f39b5b6d170b16e4f7ff90a6e7ce867ec086da1"
+      },
+      "alternating_outage": {
+        "frames": 176,
+        "scored_frames": 175,
+        "PR20": 94.28571428571428,
+        "SR": 61.795918367346935,
+        "mean_iou": 0.6242709241815164,
+        "track_calls": 159,
+        "holds": 16,
+        "observed_valid_frames": 159,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "1167e38373429efbfebc7b6c9aa2fad378ffa864b9ed0ea42a1d3a3b8f050fa7",
+        "trace_sha256": "2bffcccd516cafd45b4f875c51ec8564de7ba900e906e4bef3ff78293be66069"
+      }
+    },
+    "comingboy'shead": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 100.0,
+        "SR": 80.11204481792717,
+        "mean_iou": 0.8159279215245975,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "1af9a86ecbe9dcf4ee0a5df553c815ee511ea65506e77893a61144137a3a7d5b",
+        "trace_sha256": "5c379b318031dcda46c4dd248871bc8a6375939e6f6bdef8c0b581c84787329d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 88.62745098039215,
+        "SR": 72.60504201680672,
+        "mean_iou": 0.735849584221288,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "a495e13a5e5dc12b5efeb33a42bbcaaac4b55708b13c60633ba59ac7457d5e4d",
+        "trace_sha256": "964ba07b8249fa36dcdf4e01517f662a102f68642f88f5ba130406f5b46c23e2"
+      }
+    },
+    "wanderingly_1202": {
+      "complete": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 98.82352941176471,
+        "SR": 88.79551820728291,
+        "mean_iou": 0.9089440130186397,
+        "track_calls": 255,
+        "holds": 0,
+        "observed_valid_frames": 255,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "ce8d3f237d19c5ab0ee04a6480b088e701e13e532026caf3f683899968891598",
+        "trace_sha256": "8f4fb52cc5ab49577eb188748ea8990363280fad11b17f31aca92d6de2d9124d"
+      },
+      "alternating_outage": {
+        "frames": 256,
+        "scored_frames": 255,
+        "PR20": 86.27450980392157,
+        "SR": 79.6451914098973,
+        "mean_iou": 0.8123960772147063,
+        "track_calls": 223,
+        "holds": 32,
+        "observed_valid_frames": 223,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "dc14ee64993ba33130924181ac02466c547036b07ea9c1556041d94b8a66d6d1",
+        "trace_sha256": "5f350146dcaad4058d984a0185e8bdf58c60fca3a398ca2f595a9b12317b9fa1"
+      }
+    },
+    "bike2north": {
+      "complete": {
+        "frames": 150,
+        "scored_frames": 149,
+        "PR20": 100.0,
+        "SR": 82.9658037711729,
+        "mean_iou": 0.8476632212727824,
+        "track_calls": 149,
+        "holds": 0,
+        "observed_valid_frames": 149,
+        "unsupported_observed_frames": 0,
+        "bbox_sha256": "aa183cda14b62dd14d0dae4f56f64670d248f2430c167753a787dc743c02247a",
+        "trace_sha256": "476ccfbbf1d7ac8cc291a3d8c9e0b51a3343b174f803c640212f4d6b007b2e6e"
+      }
+    }
+  }
+}

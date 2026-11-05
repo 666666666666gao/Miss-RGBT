@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed60",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "fixed50",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "progressive",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "shuffled",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "single",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "none",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "shallow",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    },
+    {
+      "curriculum": "paced+norm",
+      "feedback_mode": "deep",
+      "microsteps": 24,
+      "updates": 12,
+      "independently_matched": true,
+      "all_searches_both_probe_views": true
+    }
+  ],
+  "learning_rates": [
+    {
+      "epoch": 1,
+      "next_update": 1,
+      "learning_rates": [
+        1e-08,
+        1.0000000000000001e-07
+      ]
+    },
+    {
+      "epoch": 1,
+      "next_update": 500,
+      "learning_rates": [
+        5e-06,
+        5e-05
+      ]
+    },
+    {
+      "epoch": 10,
+      "next_update": 501,
+      "learning_rates": [
+        5e-06,
+        5e-05
+      ]
+    },
+    {
+      "epoch": 11,
+      "next_update": 501,
+      "learning_rates": [
+        5.000000000000001e-07,
+        5e-06
+      ]
+    },
+    {
+      "epoch": 20,
+      "next_update": 100000,
+      "learning_rates": [
+        5.000000000000001e-07,
+        5e-06
+      ]
+    }
+  ],
+  "prediction_snapshots_all_modes": true,
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_runner.py": "cb7f5cbe981fea308a4c946fc95a88530d6b624b0458534f50cdca16a794cadb",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_runner.py": "10ba57f4464b05300d1c6ffb2341edf446b625ba94fd7b8a401b0c7a618daad8",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_training.py": "98bcc66b1dcf555d42777386d86ecac4965e7a26558fed2ec2333a67041a3720",
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_training.py": "eeb336b0d4a7dacf22b3a329ac8f8c36f32eb7618b17f8d4731bdba27738d935"
+  },
+  "scope": "Synthetic CPU step/AdamW/accumulation/Utility routing only; no actual-image smoke, checkpoint reload, full-run validation, GPU, learned feedback or official metrics"
+}

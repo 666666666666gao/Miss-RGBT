@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "scope": "CPU synthetic helpers only; not a launch gate",
+  "masks": [
+    {
+      "epoch": 1,
+      "mode": "all",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.796844482421875,
+        0.10296630859375,
+        0.100189208984375
+      ]
+    },
+    {
+      "epoch": 1,
+      "mode": "mixed",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.79718017578125,
+        0.103759765625,
+        0.09906005859375
+      ]
+    },
+    {
+      "epoch": 5,
+      "mode": "all",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.796844482421875,
+        0.10296630859375,
+        0.100189208984375
+      ]
+    },
+    {
+      "epoch": 5,
+      "mode": "mixed",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.79718017578125,
+        0.103759765625,
+        0.09906005859375
+      ]
+    },
+    {
+      "epoch": 6,
+      "mode": "all",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.8021240234375,
+        0.098846435546875,
+        0.099029541015625
+      ]
+    },
+    {
+      "epoch": 6,
+      "mode": "mixed",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.7987060546875,
+        0.1004638671875,
+        0.100830078125
+      ]
+    },
+    {
+      "epoch": 15,
+      "mode": "all",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.8021240234375,
+        0.098846435546875,
+        0.099029541015625
+      ]
+    },
+    {
+      "epoch": 15,
+      "mode": "mixed",
+      "p_hard": 0.2,
+      "hard_state_frequencies": [
+        0.7987060546875,
+        0.1004638671875,
+        0.100830078125
+      ]
+    },
+    {
+      "epoch": 16,
+      "mode": "all",
+      "p_hard": 0.5,
+      "hard_state_frequencies": [
+        0.50286865234375,
+        0.24578857421875,
+        0.2513427734375
+      ]
+    },
+    {
+      "epoch": 16,
+      "mode": "mixed",
+      "p_hard": 0.5,
+      "hard_state_frequencies": [
+        0.499755859375,
+        0.24822998046875,
+        0.25201416015625
+      ]
+    },
+    {
+      "epoch": 20,
+      "mode": "all",
+      "p_hard": 0.5,
+      "hard_state_frequencies": [
+        0.50286865234375,
+        0.24578857421875,
+        0.2513427734375
+      ]
+    },
+    {
+      "epoch": 20,
+      "mode": "mixed",
+      "p_hard": 0.5,
+      "hard_state_frequencies": [
+        0.499755859375,
+        0.24822998046875,
+        0.25201416015625
+      ]
+    }
+  ],
+  "loss": {
+    "norm_off_loss_and_gradients_bitwise": true,
+    "per_search_native_loss_parity": true,
+    "per_state_observations": [
+      3,
+      3,
+      3
+    ],
+    "ema_m": {
+      "ema_m_11": 1.9521286487579346,
+      "ema_m_01": 2.0403053760528564,
+      "ema_m_10": 2.045607805252075,
+      "task_c": 294.4371337890625,
+      "task_m": 306.80419921875,
+      "task_m_normalized": 152.36761474609375,
+      "kd_forward": 3.16454815864563,
+      "kd_reverse": 1.1084450483322144,
+      "reverse_fraction": 0.3333333432674408
+    },
+    "normalized_gradients_finite": true,
+    "unobserved_state_unchanged": true
+  },
+  "all_false_native_mask_patch_rng_bitwise": true,
+  "mixed_easy_samples_native_bitwise": true,
+  "device": "cpu",
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/curriculum_p/check_pacing.py": "a042d75f74adad72a682224901eeedaaac8517a875f9c8180fcaf4cf558fbce9",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/pacing.py": "d53780c537679878eb11c010c128d8f06bc3388990f3fbcdd14ec666a8411c1f",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/objectives.py": "6ae0953ceb6f1dcc277c0080dee329f127a43b2116c902c60245b3cbb343130f",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/schedule.py": "41e468b0929bb4c14171f52977cdb7f8be802b9545d894c007b36b3a3327091a"
+  }
+}

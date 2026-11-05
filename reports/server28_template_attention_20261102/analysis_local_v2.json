@@ -1,0 +1,135 @@
+{
+  "status": "verified",
+  "report_sha256": "a7e8afa27171abd35ea53d963ae11d71f25c2f7b8145d4b2cef0528d81bb18eb",
+  "analyzer_sha256": "a2384ae70710433235d7510b7c8e29f17041cf9f18f4d06218ba571ad9c28104",
+  "effects": {
+    "complete": {
+      "foreground": {
+        "mean": 0.59890619952483,
+        "ci95_low": 0.557234999384216,
+        "ci95_high": 0.6416057119075362
+      },
+      "background": {
+        "mean": 0.583815847378562,
+        "ci95_low": 0.5391651957939679,
+        "ci95_high": 0.6284429910889805
+      },
+      "difference": {
+        "mean": 0.015090352146268058,
+        "ci95_low": -0.03097856949464574,
+        "ci95_high": 0.06023290603299237
+      },
+      "sequences": 117,
+      "pairs": 1986,
+      "rows": 128,
+      "foreground_gain": {
+        "mean": -0.018731045441176646,
+        "ci95_low": -0.0510207733242876,
+        "ci95_high": 0.011491437093155756,
+        "sequences": 117,
+        "rows": 128
+      },
+      "background_gain": {
+        "mean": 0.012414925150636934,
+        "ci95_low": -0.004711765561125472,
+        "ci95_high": 0.036895624866597664,
+        "sequences": 117,
+        "rows": 128
+      }
+    },
+    "rgb_missing": {
+      "foreground": {
+        "mean": 0.6464915261427323,
+        "ci95_low": 0.6110883092317989,
+        "ci95_high": 0.6813814314500024
+      },
+      "background": {
+        "mean": 0.6024605139114514,
+        "ci95_low": 0.5670319050498274,
+        "ci95_high": 0.6372598980854717
+      },
+      "difference": {
+        "mean": 0.04403101223128094,
+        "ci95_low": 0.012751881932948515,
+        "ci95_high": 0.07698677131213912
+      },
+      "sequences": 114,
+      "pairs": 6573,
+      "rows": 384,
+      "foreground_gain": {
+        "mean": -0.0158946005257593,
+        "ci95_low": -0.0363862325106722,
+        "ci95_high": 0.004184576790212231,
+        "sequences": 117,
+        "rows": 384
+      },
+      "background_gain": {
+        "mean": -0.0020932578102527215,
+        "ci95_low": -0.020193751469164502,
+        "ci95_high": 0.01817178946048778,
+        "sequences": 117,
+        "rows": 384
+      }
+    },
+    "tir_missing": {
+      "foreground": {
+        "mean": 0.6236507590126621,
+        "ci95_low": 0.5830806407335468,
+        "ci95_high": 0.664446329409287
+      },
+      "background": {
+        "mean": 0.6419004902981321,
+        "ci95_low": 0.6053905518080074,
+        "ci95_high": 0.6782469468380549
+      },
+      "difference": {
+        "mean": -0.018249731285469944,
+        "ci95_low": -0.05573098458611036,
+        "ci95_high": 0.018017291147658092
+      },
+      "sequences": 115,
+      "pairs": 6292,
+      "rows": 384,
+      "foreground_gain": {
+        "mean": -0.007360203227900317,
+        "ci95_low": -0.027911697563486205,
+        "ci95_high": 0.011772792753790022,
+        "sequences": 117,
+        "rows": 384
+      },
+      "background_gain": {
+        "mean": 0.01452142277826243,
+        "ci95_low": -0.0020163577056603976,
+        "ci95_high": 0.03416977023965868,
+        "sequences": 117,
+        "rows": 384
+      }
+    }
+  },
+  "advance": false,
+  "independently_hashed_prior_reports": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89",
+    "server28_cross_stream_context_20261102_v2": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8",
+    "server28_tail_lowrank_20261102": "ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2",
+    "server28_candidate_quality_20261102_v2": "e774a5ff4b4cdacffae53c286c25bed0116d0feb6175a777f66a3061d4a35cda",
+    "server28_quality_ranker_20261102": "686d472292a7eb8a72e3a7ee168818b880cb601a0a353824f129cb73d5628bb7",
+    "server28_template_chronology_20261102": "20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79",
+    "server28_chronology_training_20261102": "645a7665abf1479a9620dd04fd9ffef6f70b498e6274802d360a48512999a0ce",
+    "server28_window_training_20261102_v2": "95200226fd20c340cf1e124fd3d704a9bed2ff9f52bfeee8f2cf287869c00612",
+    "server28_teacher_reliability_20261102": "f46bbd0342729be6d3d8b15523908fcf7a6e3f26410b0352694b4614098382d6",
+    "server28_joint_gradients_20261102": "b0bf4d5fdd0df3e6d98b9e7b6a5deceb40b9a7ff82c6463fb0efc9d5242b7e41",
+    "server28_burst_mask_rollout_20261102": "b44dc635c7b6c1807ab08dd6ec9e7d1e3976fce8d4e40ceacb8fd198b420212b",
+    "server28_causal_crop_exposure_20261102": "ef0e7aa20a83097e265e2603d3b4ffdb328bc4c0c6aa30f6fe1e23e458be6a2c",
+    "server28_causal_crop_training_20261102/initial_clips.json": "e7c151a8c6fa0cbbe4abd301610eef6dbe972dfc7ebca71b136e53e94c33ece3",
+    "server28_causal_crop_training_20261102/audit_clips.json": "b6c2425483a71dab51d5f7cbdb5b850bf1eb8c29b1d6b58e773f89c74f6ce522",
+    "server28_last_observed_template_20261102/selected_clips.json": "0af89a134e7409c4eaa4dfbf6ef4f947b53ee44b16ddfdd86b39e41711d60e68"
+  },
+  "server_checks": null,
+  "limitation": "Contextual attention information diagnostic, not independent identity evidence, closed-loop gains, official metrics or a validated module."
+}

@@ -1,0 +1,307 @@
+{
+  "launch": {
+    "pid": 925753,
+    "started_utc": "2026-10-31T04:12:22.785932Z",
+    "physical_gpu": 0,
+    "evaluator_workers": 1,
+    "memory_free_at_launch_mib": 4790,
+    "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+    "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e",
+    "source_tracking_report_sha256": "8e04756875c9538f34e20aaa396efb1bae4b65827fb2d414f5fab13fe641e6cf",
+    "cohort": [
+      {
+        "name": "2up",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/2up",
+        "video_frames": 176,
+        "evaluated_frames": 176,
+        "gt_sha256": "2e2edfe5618b0ad25bbe1b60d5f2d6d50a48ea5ce494e754af0a4a6c6de7994d"
+      },
+      {
+        "name": "comingboy'shead",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/comingboy'shead",
+        "video_frames": 256,
+        "evaluated_frames": 256,
+        "gt_sha256": "d2c2ce6fa13d8e753ce5fb051d3b81492a83003e50ffd144d9fc28cff5ec8faf"
+      },
+      {
+        "name": "wanderingly_1202",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/wanderingly_1202",
+        "video_frames": 256,
+        "evaluated_frames": 256,
+        "gt_sha256": "269a8dfaac60691c2077c028693292788186ac2fc8cb141a3939819129b03ccb"
+      },
+      {
+        "name": "bike2north",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bike2north",
+        "video_frames": 150,
+        "evaluated_frames": 150,
+        "gt_sha256": "a180a85da70d1ae4af599c7ac6b593009b76f265e1b87d1c697d3704da2a970a"
+      }
+    ],
+    "arms": [
+      "hold",
+      "velocity"
+    ],
+    "conditions": [
+      "complete",
+      "alternating_outage"
+    ],
+    "frame_block": 32,
+    "pattern": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "47361c1e393cff40abaf28283e63c6af7a71322392abb3a485e808377d203cd2",
+      "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+      "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+    },
+    "rule": "Fixed center velocity from last two observed video-frame states; no GT, size change, clipping or template write on blind frames",
+    "scope": "Reused first4 train882 development videos, same GPU paired closed-loop control; ordinary constant velocity, no novel module or official result claim"
+  },
+  "records": {
+    "hold": {
+      "2up": {
+        "complete": {
+          "PR20": 96.57142857142857,
+          "SR": 62.50340136054422,
+          "scored_frames": 175,
+          "frames": 176,
+          "blind_frames": 0,
+          "bbox_sha256": "51ba6e3a822c470d8bcf9f18c0b554e9bf5f532728eed9249b370198a30b417d",
+          "trace_sha256": "c605a3fb6dbbe32c42f3bb8a84d6128764241ae7ba671d7fddfbc7f4e5166cd5",
+          "seconds": 21.21278691291809
+        },
+        "alternating_outage": {
+          "PR20": 95.42857142857143,
+          "SR": 60.136054421768705,
+          "scored_frames": 175,
+          "frames": 176,
+          "blind_frames": 16,
+          "bbox_sha256": "0f940fe17a507d844d50750638b07b51ff4cd6c073ab811864710b6c747429b1",
+          "trace_sha256": "b995a98de86bd82ff57c46e8016ac798e86c316c2afb06baed95be403a0ad6b6",
+          "seconds": 31.360532999038696
+        }
+      },
+      "comingboy'shead": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.14939309056956,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 0,
+          "bbox_sha256": "464dff59cba46bef580fdfaae1cbbf896313adc0709906f1e1e396859d5a5c27",
+          "trace_sha256": "4c1b70ade24bcb95796ca70fddf3d8e310d22d8a2c753fbb6b3e7dbe88b21670",
+          "seconds": 50.69793701171875
+        },
+        "alternating_outage": {
+          "PR20": 89.01960784313725,
+          "SR": 72.10084033613445,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 32,
+          "bbox_sha256": "bf1863c71f46aae5b42cdae9937db05049c42d2bb4e66958bf532446f6ee5462",
+          "trace_sha256": "a7145cae3dd62d716ce58cfda1e76c6902020029555c8884c9185eaec02ac677",
+          "seconds": 67.35757160186768
+        }
+      },
+      "wanderingly_1202": {
+        "complete": {
+          "PR20": 98.82352941176471,
+          "SR": 88.90756302521008,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 0,
+          "bbox_sha256": "05e842a13c3cb9bb255adddba09d60885cc6807d905ae011ec91733206851d2a",
+          "trace_sha256": "dc44f4db04f5dd32c0b981e9c6baf1937d8016062f713510f7cfc1f1fcb7fdfc",
+          "seconds": 87.74542951583862
+        },
+        "alternating_outage": {
+          "PR20": 86.27450980392157,
+          "SR": 79.94397759103641,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 32,
+          "bbox_sha256": "40c8e737d81aaa545ba16cfeb72fc8058bb4ebd7f13104569619800537f6bfbf",
+          "trace_sha256": "f10e7c109500c28cfa7706da6df0ec71d36e42e17c20da3162ea7bcdb2f96070",
+          "seconds": 104.86383843421936
+        }
+      },
+      "bike2north": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 83.02972195589645,
+          "scored_frames": 149,
+          "frames": 150,
+          "blind_frames": 0,
+          "bbox_sha256": "1895cb91471888ee2fb78f520882fb156af8fb2640302c194066b08c97c76956",
+          "trace_sha256": "3781e92f38a1b0dc302cbed07e7954a5ff4b1d8c731a6ed1876601a65d0117fd",
+          "seconds": 113.94729471206665
+        },
+        "alternating_outage": {
+          "PR20": 86.57718120805369,
+          "SR": 71.4605305209332,
+          "scored_frames": 149,
+          "frames": 150,
+          "blind_frames": 0,
+          "bbox_sha256": "f68da23283275f453965bfad1e5a245834e02ec48106108b3cda90006a74be26",
+          "trace_sha256": "be05e3a3bd97f5eb7d5b9c90b811d7b6fe954caa3b4c3920855b7136d3bf718f",
+          "seconds": 122.79424953460693
+        }
+      }
+    },
+    "velocity": {
+      "2up": {
+        "complete": {
+          "PR20": 96.57142857142857,
+          "SR": 62.50340136054422,
+          "scored_frames": 175,
+          "frames": 176,
+          "blind_frames": 0,
+          "bbox_sha256": "51ba6e3a822c470d8bcf9f18c0b554e9bf5f532728eed9249b370198a30b417d",
+          "trace_sha256": "c605a3fb6dbbe32c42f3bb8a84d6128764241ae7ba671d7fddfbc7f4e5166cd5",
+          "seconds": 134.10501050949097
+        },
+        "alternating_outage": {
+          "PR20": 96.0,
+          "SR": 60.27210884353742,
+          "scored_frames": 175,
+          "frames": 176,
+          "blind_frames": 16,
+          "bbox_sha256": "b9e13d024453f81c7293b3605513b9843f28dd600c16084d8af1e3e6a57b0c08",
+          "trace_sha256": "322c8830c230d5f643e618f2760beebe5f5437b7f415a33999f938ac1d2f742b",
+          "seconds": 144.1269028186798
+        }
+      },
+      "comingboy'shead": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.14939309056956,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 0,
+          "bbox_sha256": "464dff59cba46bef580fdfaae1cbbf896313adc0709906f1e1e396859d5a5c27",
+          "trace_sha256": "4c1b70ade24bcb95796ca70fddf3d8e310d22d8a2c753fbb6b3e7dbe88b21670",
+          "seconds": 164.49118280410767
+        },
+        "alternating_outage": {
+          "PR20": 91.76470588235294,
+          "SR": 74.37908496732027,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 32,
+          "bbox_sha256": "ad850603b00de52b41cce810dff8328a2eb4f9cc6d8e1cd6a89f378fac7100ff",
+          "trace_sha256": "b3aa6fe4cb60599aa955d42155a0774c460754ff348f82d32224ff8847ec121e",
+          "seconds": 181.20053458213806
+        }
+      },
+      "wanderingly_1202": {
+        "complete": {
+          "PR20": 98.82352941176471,
+          "SR": 88.90756302521008,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 0,
+          "bbox_sha256": "05e842a13c3cb9bb255adddba09d60885cc6807d905ae011ec91733206851d2a",
+          "trace_sha256": "dc44f4db04f5dd32c0b981e9c6baf1937d8016062f713510f7cfc1f1fcb7fdfc",
+          "seconds": 201.3352324962616
+        },
+        "alternating_outage": {
+          "PR20": 90.19607843137256,
+          "SR": 82.87581699346406,
+          "scored_frames": 255,
+          "frames": 256,
+          "blind_frames": 32,
+          "bbox_sha256": "024e3fc24342cce4014837522a5dd30607786eec1fa58daf09923818e1a4bfbc",
+          "trace_sha256": "e0aaed8e5027b186ca979b7ebc1f9d8de42d6a550aabc689cc02ad904e01e708",
+          "seconds": 218.0789029598236
+        }
+      },
+      "bike2north": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 83.02972195589645,
+          "scored_frames": 149,
+          "frames": 150,
+          "blind_frames": 0,
+          "bbox_sha256": "1895cb91471888ee2fb78f520882fb156af8fb2640302c194066b08c97c76956",
+          "trace_sha256": "3781e92f38a1b0dc302cbed07e7954a5ff4b1d8c731a6ed1876601a65d0117fd",
+          "seconds": 227.39716410636902
+        },
+        "alternating_outage": {
+          "PR20": 86.57718120805369,
+          "SR": 71.4605305209332,
+          "scored_frames": 149,
+          "frames": 150,
+          "blind_frames": 0,
+          "bbox_sha256": "f68da23283275f453965bfad1e5a245834e02ec48106108b3cda90006a74be26",
+          "trace_sha256": "be05e3a3bd97f5eb7d5b9c90b811d7b6fe954caa3b4c3920855b7136d3bf718f",
+          "seconds": 236.80217504501343
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "complete": {
+      "hold": {
+        "PR20": 98.84873949579831,
+        "SR": 78.64751985805508
+      },
+      "velocity": {
+        "PR20": 98.84873949579831,
+        "SR": 78.64751985805508
+      }
+    },
+    "alternating_outage": {
+      "hold": {
+        "PR20": 89.32496757092098,
+        "SR": 70.91035071746819
+      },
+      "velocity": {
+        "PR20": 91.13449138044479,
+        "SR": 72.24688533131373
+      }
+    }
+  },
+  "velocity_minus_hold": {
+    "complete": {
+      "PR20": 0.0,
+      "SR": 0.0
+    },
+    "alternating_outage": {
+      "PR20": 1.8095238095238102,
+      "SR": 1.3365346138455436
+    }
+  },
+  "baseline_state_unchanged": true,
+  "complete_outputs_bitwise_equal": true,
+  "pre_blind_prefix_bitwise_equal": true,
+  "no_blind_video_outputs_bitwise_equal": true,
+  "peak_allocated_bytes": 497531392,
+  "seconds": 237.5653657913208
+}

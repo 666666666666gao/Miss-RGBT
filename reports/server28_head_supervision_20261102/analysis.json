@@ -1,0 +1,68 @@
+{
+  "status": "saved_evidence_verified",
+  "report_sha256": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+  "server_file_hashes_checked": true,
+  "effects": {
+    "01": {
+      "mean": -0.00020185931791765754,
+      "ci95_low": -0.017033828253107564,
+      "ci95_high": 0.017394770450111875,
+      "sequences": 70,
+      "rows": 384
+    },
+    "10": {
+      "mean": 0.001480666852541386,
+      "ci95_low": -0.01539429439933941,
+      "ci95_high": 0.019495822534792945,
+      "sequences": 70,
+      "rows": 384
+    },
+    "versus_native_training": {
+      "mean": -0.00911932609493046,
+      "ci95_low": -0.01729458346393094,
+      "ci95_high": -0.0008884920398353639,
+      "sequences": 70,
+      "rows": 768
+    },
+    "11_11": {
+      "mean": -0.006656684761955624,
+      "ci95_low": -0.024238560909316656,
+      "ci95_high": 0.013553219694821608,
+      "sequences": 70,
+      "rows": 128
+    },
+    "01_11": {
+      "mean": -0.0038886708783961482,
+      "ci95_low": -0.019001214992521064,
+      "ci95_high": 0.015083256874765668,
+      "sequences": 70,
+      "rows": 128
+    },
+    "10_11": {
+      "mean": -0.017905265944344658,
+      "ci95_low": -0.03313652806604901,
+      "ci95_high": -0.00504928972039904,
+      "sequences": 70,
+      "rows": 128
+    }
+  },
+  "advance": false,
+  "native_head_replay": {
+    "baseline": {
+      "rows": 1152,
+      "native_predicted_peak": true,
+      "losses_and_ious_exact": true
+    },
+    "native": {
+      "rows": 1152,
+      "native_predicted_peak": true,
+      "losses_and_ious_exact": true
+    },
+    "target": {
+      "rows": 1152,
+      "native_predicted_peak": true,
+      "losses_and_ious_exact": true
+    }
+  },
+  "scope": "Saved arithmetic/hashes and optional direct cached-head replay; no backbone replay or external scientific review."
+}

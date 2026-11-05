@@ -1,0 +1,55 @@
+{
+  "source": "/home/gaob/Miss-RGBT/reports/server28_protocol_r_20261103/r2_verified_official.json",
+  "provenance": "Closed epoch17 row transcribed from original controller verification; no new scoring run or independent reviewer claim.",
+  "observed_utc": "2026-11-04T17:50:21Z",
+  "epoch": 17,
+  "development_selected": true,
+  "checkpoint_sha256": "39d75fdb47ca8bbf938e81330d26d0d8a3940780b75c175c41fc569b8346cfe5",
+  "conditions": {
+    "complete": {
+      "independently_recomputed": true,
+      "completed_sha256": "e87105e3d175bc006482a0c9e2fd8c83ba20e0f95c135bdd3989f73b60d29629",
+      "metrics": {
+        "LasHeR": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 74.77903974506471,
+          "NPR": 71.28847361083683,
+          "SR": 59.66769017993686
+        },
+        "RGBT234": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 91.00957373127221,
+          "MSR": 67.49520103664594
+        }
+      }
+    },
+    "miss": {
+      "independently_recomputed": true,
+      "completed_sha256": "409d980e0707ff4f953a007a8db37043ff7271a0e93613b090664db9e626becd",
+      "metrics_sha256": "be1a5dfa901172ee6e0e6ae6b46c46cabfb44738c228f723043c9dfcab98e54d",
+      "metrics": {
+        "LasHeR-Miss": {
+          "sequences": 245,
+          "frames": 220703,
+          "PR": 68.2382085300425,
+          "NPR": 63.13378519803854,
+          "SR": 54.42900269475304
+        },
+        "RGBT234-Miss": {
+          "sequences": 234,
+          "frames": 116650,
+          "MPR": 85.70286192748311,
+          "MSR": 62.58716119226815
+        }
+      }
+    }
+  },
+  "strict_miss_targets": {
+    "LasHeR_PR": {"target": 69.3, "passed": false},
+    "LasHeR_SR": {"target": 54.4, "passed": true},
+    "RGBT234_MPR": {"target": 88.1, "passed": false},
+    "RGBT234_MSR": {"target": 64.3, "passed": false}
+  }
+}

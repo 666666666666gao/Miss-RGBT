@@ -1,0 +1,599 @@
+{
+  "mode": "native",
+  "initial_sha256": "4d64b467b82ff76963a8c32d13cb0e60980fef236df14546e7bceaddffdb6eb6",
+  "initial_buffers_sha256": "a36dae374507a5a0df46594dc693b64cd6c1de35fd93a14f037c86ba35895d93",
+  "parameter_count": 103138437,
+  "history": [
+    {
+      "epoch": 1,
+      "updates": 9,
+      "lr": 4e-05,
+      "train_mean_loss": 2.090287506580353,
+      "score": 0.6613113010047069,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7158756565797278,
+            "sequences": {
+              "3girl1": 0.6349659444262248,
+              "greenleftthewhite": 0.8098673757537472,
+              "left4thgirlwithwhitepants": 0.8407061941532548,
+              "leftbottle": 0.3755724411200182,
+              "leftbroom": 0.6381845823977991,
+              "redcupatleft": 0.796008419016639,
+              "rightboy479": 0.7811496288539832,
+              "takeoutman953": 0.8505506669161566
+            }
+          },
+          "missing": {
+            "mean": 0.6067469454296861,
+            "sequences": {
+              "3girl1": 0.6458728363747631,
+              "greenleftthewhite": 0.8138499002748776,
+              "left4thgirlwithwhitepants": 0.7176796606838219,
+              "leftbottle": 0.37560145280222984,
+              "leftbroom": 0.5261878778709892,
+              "redcupatleft": 0.36773233819940704,
+              "rightboy479": 0.6080505860512232,
+              "takeoutman953": 0.7990009111801765
+            }
+          }
+        },
+        "score": 0.6613113010047069,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 62.687323570251465
+    },
+    {
+      "epoch": 2,
+      "updates": 18,
+      "lr": 4e-05,
+      "train_mean_loss": 1.777401500278049,
+      "score": 0.6764844236848275,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7323877008133162,
+            "sequences": {
+              "3girl1": 0.6815091250569042,
+              "greenleftthewhite": 0.8106350140430322,
+              "left4thgirlwithwhitepants": 0.8542299444689657,
+              "leftbottle": 0.38073451013562437,
+              "leftbroom": 0.6766782404444923,
+              "redcupatleft": 0.8184457543216492,
+              "rightboy479": 0.7909098109256132,
+              "takeoutman953": 0.8459592071102481
+            }
+          },
+          "missing": {
+            "mean": 0.6205811465563389,
+            "sequences": {
+              "3girl1": 0.651748550738671,
+              "greenleftthewhite": 0.8060408091832687,
+              "left4thgirlwithwhitepants": 0.7470563089246997,
+              "leftbottle": 0.3844155034234877,
+              "leftbroom": 0.500338146064023,
+              "redcupatleft": 0.4377707365932781,
+              "rightboy479": 0.6451097230304391,
+              "takeoutman953": 0.7921693944928438
+            }
+          }
+        },
+        "score": 0.6764844236848275,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 109.82840085029602
+    },
+    {
+      "epoch": 3,
+      "updates": 27,
+      "lr": 4e-05,
+      "train_mean_loss": 1.5398567219575245,
+      "score": 0.6944225303592313,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7289248528672342,
+            "sequences": {
+              "3girl1": 0.6771583326046038,
+              "greenleftthewhite": 0.8240506798068731,
+              "left4thgirlwithwhitepants": 0.8524119039082735,
+              "leftbottle": 0.3922173195607743,
+              "leftbroom": 0.6198558521492195,
+              "redcupatleft": 0.8261718734051474,
+              "rightboy479": 0.7992520533927217,
+              "takeoutman953": 0.8402808081102602
+            }
+          },
+          "missing": {
+            "mean": 0.6599202078512283,
+            "sequences": {
+              "3girl1": 0.6178682001067185,
+              "greenleftthewhite": 0.8207015214390575,
+              "left4thgirlwithwhitepants": 0.7263668398781317,
+              "leftbottle": 0.3981568787211167,
+              "leftbroom": 0.48146747313473953,
+              "redcupatleft": 0.7741239518006272,
+              "rightboy479": 0.6666224055354795,
+              "takeoutman953": 0.7940543921939559
+            }
+          }
+        },
+        "score": 0.6944225303592313,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 156.8785698413849
+    },
+    {
+      "epoch": 4,
+      "updates": 36,
+      "lr": 4e-05,
+      "train_mean_loss": 1.3008398910363514,
+      "score": 0.652729365017122,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.6976179619331268,
+            "sequences": {
+              "3girl1": 0.6775679239840617,
+              "greenleftthewhite": 0.7957614908028184,
+              "left4thgirlwithwhitepants": 0.8432516068879733,
+              "leftbottle": 0.3734177828900417,
+              "leftbroom": 0.635670585523994,
+              "redcupatleft": 0.6568838633906486,
+              "rightboy479": 0.7701251757665613,
+              "takeoutman953": 0.8282652662189149
+            }
+          },
+          "missing": {
+            "mean": 0.6078407681011173,
+            "sequences": {
+              "3girl1": 0.6572847030930633,
+              "greenleftthewhite": 0.7954225326062677,
+              "left4thgirlwithwhitepants": 0.7177028169461122,
+              "leftbottle": 0.40816658704703535,
+              "leftbroom": 0.4563645523866833,
+              "redcupatleft": 0.3756374657862325,
+              "rightboy479": 0.6608635191519616,
+              "takeoutman953": 0.791283967791583
+            }
+          }
+        },
+        "score": 0.652729365017122,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 203.52998399734497
+    },
+    {
+      "epoch": 5,
+      "updates": 45,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.1969381372133892,
+      "score": 0.6525525224761547,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.6910957363941481,
+            "sequences": {
+              "3girl1": 0.6780137698646705,
+              "greenleftthewhite": 0.8002188933444422,
+              "left4thgirlwithwhitepants": 0.8428183554003784,
+              "leftbottle": 0.3784316682796677,
+              "leftbroom": 0.6006198761090251,
+              "redcupatleft": 0.6222932582437312,
+              "rightboy479": 0.7720639066398842,
+              "takeoutman953": 0.8343061632713861
+            }
+          },
+          "missing": {
+            "mean": 0.6140093085581613,
+            "sequences": {
+              "3girl1": 0.6491016102431709,
+              "greenleftthewhite": 0.8014756940767015,
+              "left4thgirlwithwhitepants": 0.735613124899287,
+              "leftbottle": 0.4447717555309253,
+              "leftbroom": 0.5006886627198917,
+              "redcupatleft": 0.33634148805540914,
+              "rightboy479": 0.6564398215854014,
+              "takeoutman953": 0.7876423113545034
+            }
+          }
+        },
+        "score": 0.6525525224761547,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 250.19156169891357
+    },
+    {
+      "epoch": 6,
+      "updates": 54,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.1638820966084797,
+      "score": 0.6685995600989936,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.6973490533166208,
+            "sequences": {
+              "3girl1": 0.6399300992342902,
+              "greenleftthewhite": 0.803467774643877,
+              "left4thgirlwithwhitepants": 0.8485943171076826,
+              "leftbottle": 0.40692422489141655,
+              "leftbroom": 0.6515552659207133,
+              "redcupatleft": 0.6211151955838399,
+              "rightboy479": 0.7740429932404211,
+              "takeoutman953": 0.8331625559107253
+            }
+          },
+          "missing": {
+            "mean": 0.6398500668813665,
+            "sequences": {
+              "3girl1": 0.6631123054132443,
+              "greenleftthewhite": 0.7976799929945471,
+              "left4thgirlwithwhitepants": 0.7124376366890309,
+              "leftbottle": 0.39588562383827325,
+              "leftbroom": 0.3358085678683069,
+              "redcupatleft": 0.7445949783986746,
+              "rightboy479": 0.6767978901959487,
+              "takeoutman953": 0.7924835396529056
+            }
+          }
+        },
+        "score": 0.6685995600989936,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 297.1050064563751
+    },
+    {
+      "epoch": 7,
+      "updates": 63,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.1411022179656558,
+      "score": 0.6554968969886699,
+      "stale": 1,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7169984745011436,
+            "sequences": {
+              "3girl1": 0.6386310541094925,
+              "greenleftthewhite": 0.8065142334334287,
+              "left4thgirlwithwhitepants": 0.8483311776726657,
+              "leftbottle": 0.37494881799074475,
+              "leftbroom": 0.64284192000267,
+              "redcupatleft": 0.8067909984727744,
+              "rightboy479": 0.7771896316935454,
+              "takeoutman953": 0.8407399626338273
+            }
+          },
+          "missing": {
+            "mean": 0.593995319476196,
+            "sequences": {
+              "3girl1": 0.6422345376972338,
+              "greenleftthewhite": 0.800323731689407,
+              "left4thgirlwithwhitepants": 0.7066943927924599,
+              "leftbottle": 0.40960505212175363,
+              "leftbroom": 0.41094057544761126,
+              "redcupatleft": 0.3142215461956999,
+              "rightboy479": 0.6739270961645236,
+              "takeoutman953": 0.7940156237008781
+            }
+          }
+        },
+        "score": 0.6554968969886699,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 343.92186880111694
+    },
+    {
+      "epoch": 8,
+      "updates": 72,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.1450424094994862,
+      "score": 0.6689710563979963,
+      "stale": 2,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7122216019501829,
+            "sequences": {
+              "3girl1": 0.6439244361522092,
+              "greenleftthewhite": 0.8133140230904723,
+              "left4thgirlwithwhitepants": 0.8437489067550424,
+              "leftbottle": 0.38640118423511516,
+              "leftbroom": 0.5849583454541355,
+              "redcupatleft": 0.8141364867514921,
+              "rightboy479": 0.7747277010710629,
+              "takeoutman953": 0.8365617320919336
+            }
+          },
+          "missing": {
+            "mean": 0.6257205108458097,
+            "sequences": {
+              "3girl1": 0.6417013040431578,
+              "greenleftthewhite": 0.8001520387171609,
+              "left4thgirlwithwhitepants": 0.7366496770238409,
+              "leftbottle": 0.4305467656780501,
+              "leftbroom": 0.48881664656282275,
+              "redcupatleft": 0.4376137825674356,
+              "rightboy479": 0.6810969022921685,
+              "takeoutman953": 0.7891869698818418
+            }
+          }
+        },
+        "score": 0.6689710563979963,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 391.3054506778717
+    },
+    {
+      "epoch": 9,
+      "updates": 81,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.0964576204617817,
+      "score": 0.6900437771952515,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7190416768585217,
+            "sequences": {
+              "3girl1": 0.6936504086344472,
+              "greenleftthewhite": 0.8113517360087698,
+              "left4thgirlwithwhitepants": 0.8463988384140623,
+              "leftbottle": 0.38360546653425376,
+              "leftbroom": 0.5830719994616408,
+              "redcupatleft": 0.8151104657771802,
+              "rightboy479": 0.7751873762088747,
+              "takeoutman953": 0.8439571238289448
+            }
+          },
+          "missing": {
+            "mean": 0.6610458775319813,
+            "sequences": {
+              "3girl1": 0.6641538734822806,
+              "greenleftthewhite": 0.7968270351334515,
+              "left4thgirlwithwhitepants": 0.7257157143010118,
+              "leftbottle": 0.40836672867171164,
+              "leftbroom": 0.4794148375229819,
+              "redcupatleft": 0.7396042057300719,
+              "rightboy479": 0.6808577856827756,
+              "takeoutman953": 0.7934268397315652
+            }
+          }
+        },
+        "score": 0.6900437771952515,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 438.55827260017395
+    },
+    {
+      "epoch": 10,
+      "updates": 90,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.143323712878757,
+      "score": 0.6662117505389831,
+      "stale": 1,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7227546628904584,
+            "sequences": {
+              "3girl1": 0.6794536115768542,
+              "greenleftthewhite": 0.8104059279705556,
+              "left4thgirlwithwhitepants": 0.8462043406110891,
+              "leftbottle": 0.39130477866944696,
+              "leftbroom": 0.6380181377875979,
+              "redcupatleft": 0.8025273107241073,
+              "rightboy479": 0.7763777254344454,
+              "takeoutman953": 0.8377454703495706
+            }
+          },
+          "missing": {
+            "mean": 0.6096688381875076,
+            "sequences": {
+              "3girl1": 0.645102633144283,
+              "greenleftthewhite": 0.800395570768552,
+              "left4thgirlwithwhitepants": 0.7317101006829614,
+              "leftbottle": 0.4215533631356609,
+              "leftbroom": 0.46598476408825584,
+              "redcupatleft": 0.3350370972280172,
+              "rightboy479": 0.6837250891425981,
+              "takeoutman953": 0.7938420873097324
+            }
+          }
+        },
+        "score": 0.6662117505389831,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 485.2460472583771
+    },
+    {
+      "epoch": 11,
+      "updates": 99,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.126716415087382,
+      "score": 0.6914555555454944,
+      "stale": 0,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7161862815619067,
+            "sequences": {
+              "3girl1": 0.6264923555961349,
+              "greenleftthewhite": 0.8086781230328219,
+              "left4thgirlwithwhitepants": 0.8464078478284623,
+              "leftbottle": 0.38827435178015457,
+              "leftbroom": 0.6406658028532487,
+              "redcupatleft": 0.8104403678221984,
+              "rightboy479": 0.7727714637780732,
+              "takeoutman953": 0.8357599398041592
+            }
+          },
+          "missing": {
+            "mean": 0.6667248295290821,
+            "sequences": {
+              "3girl1": 0.6501819960472992,
+              "greenleftthewhite": 0.7982678142483395,
+              "left4thgirlwithwhitepants": 0.7302064637873585,
+              "leftbottle": 0.39900730561725,
+              "leftbroom": 0.5228371770947469,
+              "redcupatleft": 0.766107438653723,
+              "rightboy479": 0.6823474520674541,
+              "takeoutman953": 0.7848429887164855
+            }
+          }
+        },
+        "score": 0.6914555555454944,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 532.4589142799377
+    },
+    {
+      "epoch": 12,
+      "updates": 108,
+      "lr": 4.000000000000001e-06,
+      "train_mean_loss": 1.0781260993745592,
+      "score": 0.6706592907302049,
+      "stale": 1,
+      "development": {
+        "label": "native",
+        "means": {
+          "complete": {
+            "mean": 0.7191526841841689,
+            "sequences": {
+              "3girl1": 0.675960581775059,
+              "greenleftthewhite": 0.8065096313528851,
+              "left4thgirlwithwhitepants": 0.848250188095542,
+              "leftbottle": 0.4004266631303528,
+              "leftbroom": 0.6060884988319045,
+              "redcupatleft": 0.8108331048620001,
+              "rightboy479": 0.7727577711394319,
+              "takeoutman953": 0.8323950342861763
+            }
+          },
+          "missing": {
+            "mean": 0.6221658972762408,
+            "sequences": {
+              "3girl1": 0.6737195757164379,
+              "greenleftthewhite": 0.8035613954077325,
+              "left4thgirlwithwhitepants": 0.7330293849033458,
+              "leftbottle": 0.4180777763756753,
+              "leftbroom": 0.4484050133595918,
+              "redcupatleft": 0.44009632673002497,
+              "rightboy479": 0.6790791314543642,
+              "takeoutman953": 0.7813585742627542
+            }
+          }
+        },
+        "score": 0.6706592907302049,
+        "rows": null,
+        "image_manifest": []
+      },
+      "seconds": 579.615421295166
+    }
+  ],
+  "selected": {
+    "epoch": 11,
+    "updates": 99,
+    "lr": 4.000000000000001e-06,
+    "train_mean_loss": 1.126716415087382,
+    "score": 0.6914555555454944,
+    "stale": 0,
+    "development": {
+      "label": "native",
+      "means": {
+        "complete": {
+          "mean": 0.7161862815619067,
+          "sequences": {
+            "3girl1": 0.6264923555961349,
+            "greenleftthewhite": 0.8086781230328219,
+            "left4thgirlwithwhitepants": 0.8464078478284623,
+            "leftbottle": 0.38827435178015457,
+            "leftbroom": 0.6406658028532487,
+            "redcupatleft": 0.8104403678221984,
+            "rightboy479": 0.7727714637780732,
+            "takeoutman953": 0.8357599398041592
+          }
+        },
+        "missing": {
+          "mean": 0.6667248295290821,
+          "sequences": {
+            "3girl1": 0.6501819960472992,
+            "greenleftthewhite": 0.7982678142483395,
+            "left4thgirlwithwhitepants": 0.7302064637873585,
+            "leftbottle": 0.39900730561725,
+            "leftbroom": 0.5228371770947469,
+            "redcupatleft": 0.766107438653723,
+            "rightboy479": 0.6823474520674541,
+            "takeoutman953": 0.7848429887164855
+          }
+        }
+      },
+      "score": 0.6914555555454944,
+      "rows": null,
+      "image_manifest": []
+    },
+    "seconds": 532.4589142799377
+  },
+  "selected_path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch11.pth",
+  "selected_sha256": "839834884e7bec3b3087677bd140f38758031883d08e0d8cf089e513a81834ea",
+  "bn_buffers_unchanged": true,
+  "peak_allocated_bytes": 22169819648,
+  "peak_reserved_bytes": 22636658688,
+  "final_five": [
+    {
+      "epoch": 8,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch08.pth",
+      "sha256": "bbe818fe800a7c0a75a901d59f686b9232abcd7505b510edda25321eff19e101"
+    },
+    {
+      "epoch": 9,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch09.pth",
+      "sha256": "067618a89c4574f355d2910661ab48d2419bf2fafe0e4a00ec3a3baed3b4df2d"
+    },
+    {
+      "epoch": 10,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch10.pth",
+      "sha256": "6b0e707e38e604c94fe78c364d168debcc06001fd7f42a1989871861c6a06b46"
+    },
+    {
+      "epoch": 11,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch11.pth",
+      "sha256": "839834884e7bec3b3087677bd140f38758031883d08e0d8cf089e513a81834ea"
+    },
+    {
+      "epoch": 12,
+      "path": "/home/gaob/Miss-RGBT/reports/server28_causal_crop_training_20261102/native/epoch12.pth",
+      "sha256": "2cd0f9f6bcd4095c1ee298550c9e41c00de4ff021384d47c945cbf34792703a0"
+    }
+  ]
+}

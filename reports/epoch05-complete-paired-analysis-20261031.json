@@ -1,0 +1,380 @@
+{
+  "scope": "Full-input val97 epoch5 health only; no weight selection or official test",
+  "trajectories_verified": 291,
+  "aggregates": {
+    "E0": {
+      "label": "E0",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 75.87916370270696,
+      "SR": 61.654017215477666,
+      "seconds": 4391.126217842102,
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    "utility": {
+      "label": "utility",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 79.59657844569887,
+      "SR": 64.4727766284708,
+      "seconds": 3529.7471528053284,
+      "checkpoint_sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+    },
+    "random": {
+      "label": "random",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 80.66738780719817,
+      "SR": 65.32167522847284,
+      "seconds": 3895.9362139701843,
+      "checkpoint_sha256": "7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4"
+    }
+  },
+  "contrasts": {
+    "utility_minus_E0": {
+      "PR20": {
+        "mean_delta_pp": 3.717414742991908,
+        "paired_sequence_bootstrap95_pp": [
+          0.10969870357703965,
+          7.820159174044565
+        ],
+        "wins": 31,
+        "ties": 47,
+        "losses": 19,
+        "worst5": [
+          {
+            "sequence": "redgirl1497",
+            "delta_pp": -60.89572192513369
+          },
+          {
+            "sequence": "rightmirrorlikesky",
+            "delta_pp": -34.703557312252954
+          },
+          {
+            "sequence": "righttallholdball",
+            "delta_pp": -25.308056872037916
+          },
+          {
+            "sequence": "rightmirrornotshining",
+            "delta_pp": -21.566632756866724
+          },
+          {
+            "sequence": "girlbike",
+            "delta_pp": -12.962962962962962
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikeboy128",
+            "delta_pp": 94.48818897637796
+          },
+          {
+            "sequence": "midboy",
+            "delta_pp": 86.66666666666666
+          },
+          {
+            "sequence": "left2ndboy",
+            "delta_pp": 57.6
+          },
+          {
+            "sequence": "moto2north1",
+            "delta_pp": 48.01762114537445
+          },
+          {
+            "sequence": "midboyblue",
+            "delta_pp": 47.12918660287082
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 2.818759412993129,
+        "paired_sequence_bootstrap95_pp": [
+          0.04725258645620373,
+          5.852760252796302
+        ],
+        "wins": 52,
+        "ties": 1,
+        "losses": 44,
+        "worst5": [
+          {
+            "sequence": "redgirl1497",
+            "delta_pp": -45.34313725490197
+          },
+          {
+            "sequence": "rightmirrorlikesky",
+            "delta_pp": -32.05345379258423
+          },
+          {
+            "sequence": "righttallholdball",
+            "delta_pp": -21.85962536673437
+          },
+          {
+            "sequence": "leftfallenchair_inf_white",
+            "delta_pp": -15.331491712707184
+          },
+          {
+            "sequence": "rightmirrornotshining",
+            "delta_pp": -14.421353485443014
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "midboy",
+            "delta_pp": 63.333333333333336
+          },
+          {
+            "sequence": "bikeboy128",
+            "delta_pp": 57.930258717660294
+          },
+          {
+            "sequence": "left2ndboy",
+            "delta_pp": 51.30666666666666
+          },
+          {
+            "sequence": "moto2north1",
+            "delta_pp": 37.54982169079086
+          },
+          {
+            "sequence": "left2ndgreenboy",
+            "delta_pp": 34.747760490334755
+          }
+        ]
+      }
+    },
+    "random_minus_E0": {
+      "PR20": {
+        "mean_delta_pp": 4.788224104491214,
+        "paired_sequence_bootstrap95_pp": [
+          1.0290365565724737,
+          9.13570928135497
+        ],
+        "wins": 33,
+        "ties": 45,
+        "losses": 19,
+        "worst5": [
+          {
+            "sequence": "redgirl1497",
+            "delta_pp": -63.50267379679144
+          },
+          {
+            "sequence": "rightmirrorlikesky",
+            "delta_pp": -33.83399209486166
+          },
+          {
+            "sequence": "righttallholdball",
+            "delta_pp": -26.82464454976303
+          },
+          {
+            "sequence": "rightmirrornotshining",
+            "delta_pp": -18.514750762970493
+          },
+          {
+            "sequence": "girl`sheadoncall",
+            "delta_pp": -17.126269956458636
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikeboy128",
+            "delta_pp": 94.48818897637796
+          },
+          {
+            "sequence": "AQblkgirlbike",
+            "delta_pp": 81.30434782608695
+          },
+          {
+            "sequence": "belowrightwhiteboy",
+            "delta_pp": 65.8204895738894
+          },
+          {
+            "sequence": "midboy",
+            "delta_pp": 58.333333333333336
+          },
+          {
+            "sequence": "left2ndboy",
+            "delta_pp": 56.48000000000001
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 3.667658012995176,
+        "paired_sequence_bootstrap95_pp": [
+          0.7481964877036263,
+          7.004692837465301
+        ],
+        "wins": 51,
+        "ties": 1,
+        "losses": 45,
+        "worst5": [
+          {
+            "sequence": "redgirl1497",
+            "delta_pp": -46.72141583906291
+          },
+          {
+            "sequence": "rightmirrorlikesky",
+            "delta_pp": -31.225296442687746
+          },
+          {
+            "sequence": "righttallholdball",
+            "delta_pp": -24.197698036560595
+          },
+          {
+            "sequence": "rightmirrornotshining",
+            "delta_pp": -12.851814174296372
+          },
+          {
+            "sequence": "leftfallenchair_inf_white",
+            "delta_pp": -12.450670876085244
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "AQblkgirlbike",
+            "delta_pp": 64.22360248447205
+          },
+          {
+            "sequence": "bikeboy128",
+            "delta_pp": 57.66779152605924
+          },
+          {
+            "sequence": "belowrightwhiteboy",
+            "delta_pp": 52.79972369727582
+          },
+          {
+            "sequence": "left2ndboy",
+            "delta_pp": 51.97714285714285
+          },
+          {
+            "sequence": "midboy",
+            "delta_pp": 41.82539682539683
+          }
+        ]
+      }
+    },
+    "utility_minus_random": {
+      "PR20": {
+        "mean_delta_pp": -1.0708093614993062,
+        "paired_sequence_bootstrap95_pp": [
+          -3.7709098040503077,
+          1.1728346228172588
+        ],
+        "wins": 23,
+        "ties": 49,
+        "losses": 25,
+        "worst5": [
+          {
+            "sequence": "AQblkgirlbike",
+            "delta_pp": -81.30434782608695
+          },
+          {
+            "sequence": "belowrightwhiteboy",
+            "delta_pp": -57.38893925657299
+          },
+          {
+            "sequence": "pickuptheyellowbook",
+            "delta_pp": -31.8936877076412
+          },
+          {
+            "sequence": "girlsquattingbesidesleftbar",
+            "delta_pp": -20.49180327868853
+          },
+          {
+            "sequence": "girlbike",
+            "delta_pp": -12.962962962962962
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "rightboywithwhite",
+            "delta_pp": 35.816618911174785
+          },
+          {
+            "sequence": "midboy",
+            "delta_pp": 28.33333333333333
+          },
+          {
+            "sequence": "leftdrillmasterstanding",
+            "delta_pp": 21.999087174806036
+          },
+          {
+            "sequence": "girl`sheadoncall",
+            "delta_pp": 11.465892597968072
+          },
+          {
+            "sequence": "midboyblue",
+            "delta_pp": 11.363636363636367
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": -0.8488986000020474,
+        "paired_sequence_bootstrap95_pp": [
+          -3.080249035899652,
+          0.9946420663143041
+        ],
+        "wins": 46,
+        "ties": 1,
+        "losses": 50,
+        "worst5": [
+          {
+            "sequence": "AQblkgirlbike",
+            "delta_pp": -63.002070393374744
+          },
+          {
+            "sequence": "belowrightwhiteboy",
+            "delta_pp": -49.57907006864396
+          },
+          {
+            "sequence": "pickuptheyellowbook",
+            "delta_pp": -33.00110741971207
+          },
+          {
+            "sequence": "girlsquattingbesidesleftbar",
+            "delta_pp": -14.627244340359095
+          },
+          {
+            "sequence": "girlbike",
+            "delta_pp": -8.994708994709
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "rightboywithwhite",
+            "delta_pp": 30.099604311638696
+          },
+          {
+            "sequence": "midboy",
+            "delta_pp": 21.507936507936506
+          },
+          {
+            "sequence": "leftdrillmasterstanding",
+            "delta_pp": 16.51126904435897
+          },
+          {
+            "sequence": "midboyblue",
+            "delta_pp": 12.183868762816132
+          },
+          {
+            "sequence": "girl`sheadoncall",
+            "delta_pp": 7.208514755684566
+          }
+        ]
+      }
+    }
+  },
+  "checkpoint_sha256": {
+    "E0": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e",
+    "utility": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10",
+    "random": "7f6b8042d81b3c5b9bb2483411d53fdff7936a709aef045716163f85ffc14cf4"
+  },
+  "source_sha256": "5aecc7640de6217d0c0c5a15cad755ee483c1847b42c16e28e98b65c9102aa42",
+  "helper_sha256": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+  "uncertainty": "10000 paired-video bootstrap draws, seed2027; one training seed only",
+  "missing_condition": "Alternating-outage candidate tracking still requires separate completion"
+}

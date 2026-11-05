@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-10-31T09:34:56.068164Z",
+  "verifier_sha256": "63151883bd58736c5c8a4882638e624ac1dc065e5bd3e4993f3383fe74307577",
+  "witness_sha256": "b4cead483beb61e1a311519f808d95f11c9dfcc5ef5636162375602ff0406507",
+  "development": {
+    "path": "/home/gaob/Miss-RGBT/reports/server28-epoch05-tracking-health-20261031/utility_complete",
+    "trajectories_verified": 97,
+    "frames": 54646,
+    "metrics": {
+      "label": "utility",
+      "condition": "complete",
+      "sequences": 97,
+      "frames": 54646,
+      "scored_frames": 54289,
+      "PR20": 79.59657844569887,
+      "SR": 64.4727766284708,
+      "seconds": 3529.7471528053284,
+      "checkpoint_sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+    }
+  },
+  "official": {
+    "path": "/home/gaob/Miss-RGBT/results/server28_historical_a_20261030/miss_single_worker_per_gpu",
+    "trajectories_verified": 479,
+    "frames": 337353,
+    "metrics": {
+      "LasHeR-Miss": {
+        "sequences": 245,
+        "frames": 220703,
+        "PR": 68.56517434870598,
+        "NPR": 63.576592702215486,
+        "SR": 54.62137616634987
+      },
+      "RGBT234-Miss": {
+        "sequences": 234,
+        "frames": 116650,
+        "MPR": 84.9643532159696,
+        "MSR": 60.511285508533064
+      }
+    }
+  },
+  "scope": "Actual full existing trajectory/hash/metric/curve recalculations, no neural calls. Exercises shared helpers, not an end-to-end final-five selection/cleanup witness. Current recovered campaigns have not completed their official evaluations."
+}

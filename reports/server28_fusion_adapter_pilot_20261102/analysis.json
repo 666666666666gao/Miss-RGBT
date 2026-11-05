@@ -1,0 +1,50 @@
+{
+  "status": "saved_evidence_verified",
+  "report_sha256": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+  "server_file_hashes_checked": true,
+  "effects": {
+    "01": {
+      "native_gain": {
+        "mean": 0.06809092411426482,
+        "ci95_low": -0.022930508786708943,
+        "ci95_high": 0.16034616418796835,
+        "sequences": 60,
+        "rows": 384
+      },
+      "relative_gain": {
+        "mean": 0.0448025509062613,
+        "ci95_low": 0.0004077928273946657,
+        "ci95_high": 0.0873923278375489,
+        "sequences": 60,
+        "rows": 384
+      },
+      "relative_macro_loss_improvement": 0.03367973279593763
+    },
+    "10": {
+      "native_gain": {
+        "mean": 0.05341901291575698,
+        "ci95_low": -0.013591024132341973,
+        "ci95_high": 0.12976111000134713,
+        "sequences": 60,
+        "rows": 384
+      },
+      "relative_gain": {
+        "mean": 0.04475796140149395,
+        "ci95_low": 0.017703083742157847,
+        "ci95_high": 0.07196779783583251,
+        "sequences": 60,
+        "rows": 384
+      },
+      "relative_macro_loss_improvement": 0.038078894146245525
+    },
+    "local_vs_global": {
+      "mean": 0.01072224708549954,
+      "ci95_low": -0.04173276613844145,
+      "ci95_high": 0.06630722160537347,
+      "sequences": 60,
+      "rows": 768
+    }
+  },
+  "advance_to_fresh_train882_closed_loop": false,
+  "scope": "Saved arithmetic/hash verification; no independent neural replay or external scientific review."
+}

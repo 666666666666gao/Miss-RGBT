@@ -1,0 +1,485 @@
+{
+  "launch": {
+    "pid": 1173352,
+    "registered_utc": "2026-10-31T06:33:00.999218Z",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "cohort": [
+      {
+        "name": "10phone_boy",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/10phone_boy",
+        "development_index": 36,
+        "video_frames": 435,
+        "gt_sha256": "c4ccc870e19c34c8e2f33d7369af2a94fb89bf2b925f693bd8ff63eb86b6c41d"
+      },
+      {
+        "name": "mototaking2boys",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/mototaking2boys",
+        "development_index": 37,
+        "video_frames": 111,
+        "gt_sha256": "391f4448d2b085f3eff4272d4da06169e47dbaa64ac2d8d39e6d4663d51e0ac7"
+      },
+      {
+        "name": "leftredflag-lsz",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftredflag-lsz",
+        "development_index": 38,
+        "video_frames": 1334,
+        "gt_sha256": "3359d6d90330dfd22742487ac614b5f8923a608397d2365a6bb03684e8fdbd8b"
+      },
+      {
+        "name": "bikefromnorth",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikefromnorth",
+        "development_index": 39,
+        "video_frames": 275,
+        "gt_sha256": "dbe02d5fe1946bf09e29fc84100b7048560b72d8203b9a673ce5c67edc0c20ae"
+      }
+    ],
+    "parts": {
+      "0": [
+        {
+          "name": "leftredflag-lsz",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftredflag-lsz",
+          "development_index": 38,
+          "video_frames": 1334,
+          "gt_sha256": "3359d6d90330dfd22742487ac614b5f8923a608397d2365a6bb03684e8fdbd8b"
+        }
+      ],
+      "1": [
+        {
+          "name": "10phone_boy",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/10phone_boy",
+          "development_index": 36,
+          "video_frames": 435,
+          "gt_sha256": "c4ccc870e19c34c8e2f33d7369af2a94fb89bf2b925f693bd8ff63eb86b6c41d"
+        },
+        {
+          "name": "mototaking2boys",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/mototaking2boys",
+          "development_index": 37,
+          "video_frames": 111,
+          "gt_sha256": "391f4448d2b085f3eff4272d4da06169e47dbaa64ac2d8d39e6d4663d51e0ac7"
+        },
+        {
+          "name": "bikefromnorth",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikefromnorth",
+          "development_index": 39,
+          "video_frames": 275,
+          "gt_sha256": "dbe02d5fe1946bf09e29fc84100b7048560b72d8203b9a673ce5c67edc0c20ae"
+        }
+      ]
+    },
+    "loads": {
+      "0": 1334,
+      "1": 821
+    },
+    "entry_witness_sha256": "bd9d7f5fcbbeb50b19023e08e249f580debd0831d3848eada399b123fc0aada4",
+    "development_indices": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_state_offset_control28.py": "a0bfa0e654431f7a6efb2204e2166f8a79a170f3e4843a55e409d2beddf5c33b",
+      "/home/gaob/Miss-RGBT/evaluate_state_offset28.py": "a732be959bf6e0dd6b249156ddf8fa877d6def0ae61813c654d11bf38c5af82d",
+      "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+      "/home/gaob/Miss-RGBT/analyze_state_offset28.py": "55793dbe477e4ee6516a38560d19f9f298e001563b323f35664eb7ebe5ccd081"
+    },
+    "previous_pid": 1090396,
+    "poll_seconds": 300,
+    "children": {
+      "0": 1173436,
+      "1": 1173438
+    },
+    "scope": "Four sequential fresh development videos; fixed parameter-free correction and equal-compute sham, no outcomes used for cohort selection or tuning.",
+    "registration_sha256": "99d6eab430e203a13b2c4dfec5584a41d97a967423fb0c2e9fc4376caf0dbdb2",
+    "memory_free_at_launch": "0, 4790\n1, 4825\n",
+    "started_utc": "2026-10-31T06:33:01.095129Z"
+  },
+  "aggregate": {
+    "complete": {
+      "native": {
+        "PR20": 75.59641278932872,
+        "SR": 62.662730680367915
+      },
+      "calibration_sham": {
+        "PR20": 75.59641278932872,
+        "SR": 62.662730680367915
+      },
+      "offset_corrected": {
+        "PR20": 75.59641278932872,
+        "SR": 62.662730680367915
+      }
+    },
+    "alternating_outage": {
+      "native": {
+        "PR20": 76.10929938854986,
+        "SR": 60.194491020815946
+      },
+      "calibration_sham": {
+        "PR20": 76.10929938854986,
+        "SR": 60.194491020815946
+      },
+      "offset_corrected": {
+        "PR20": 76.88986778877864,
+        "SR": 60.84488035765154
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 4,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 4,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "alternating_outage": {
+      "PR20": {
+        "mean_delta_pp": 0.7805684002287894,
+        "paired_sequence_bootstrap95_pp": [
+          -1.9516811020936995,
+          4.105839416058387
+        ],
+        "wins": 2,
+        "ties": 1,
+        "losses": 1,
+        "worst5": [
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": -2.7272727272727195
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.3750937734433606
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 5.474452554744516
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 5.474452554744516
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.3750937734433606
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": -2.7272727272727195
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.6503893368355875,
+        "paired_sequence_bootstrap95_pp": [
+          -1.3603806795854751,
+          3.278504714812698
+        ],
+        "wins": 2,
+        "ties": 0,
+        "losses": 2,
+        "worst5": [
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": -1.8614718614718555
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": -0.07680491551458601
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.14289286607366591
+          },
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 4.396941258255126
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "bikefromnorth",
+            "delta_pp": 4.396941258255126
+          },
+          {
+            "sequence": "leftredflag-lsz",
+            "delta_pp": 0.14289286607366591
+          },
+          {
+            "sequence": "10phone_boy",
+            "delta_pp": -0.07680491551458601
+          },
+          {
+            "sequence": "mototaking2boys",
+            "delta_pp": -1.8614718614718555
+          }
+        ]
+      }
+    }
+  },
+  "per_video": {
+    "leftredflag-lsz": {
+      "native": {
+        "complete": {
+          "PR20": 39.68492123030758,
+          "SR": 34.012074447183224,
+          "scored_frames": 1333
+        },
+        "alternating_outage": {
+          "PR20": 39.23480870217554,
+          "SR": 33.01182438466759,
+          "scored_frames": 1333
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 39.68492123030758,
+          "SR": 34.012074447183224,
+          "scored_frames": 1333
+        },
+        "alternating_outage": {
+          "PR20": 39.23480870217554,
+          "SR": 33.01182438466759,
+          "scored_frames": 1333
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 39.68492123030758,
+          "SR": 34.012074447183224,
+          "scored_frames": 1333
+        },
+        "alternating_outage": {
+          "PR20": 39.6099024756189,
+          "SR": 33.15471725074126,
+          "scored_frames": 1333
+        }
+      }
+    },
+    "10phone_boy": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 91.11257406188282,
+          "scored_frames": 434
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 89.54355935922756,
+          "scored_frames": 434
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 91.11257406188282,
+          "scored_frames": 434
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 89.54355935922756,
+          "scored_frames": 434
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 91.11257406188282,
+          "scored_frames": 434
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 89.46675444371297,
+          "scored_frames": 434
+        }
+      }
+    },
+    "mototaking2boys": {
+      "native": {
+        "complete": {
+          "PR20": 70.0,
+          "SR": 53.41991341991342,
+          "scored_frames": 110
+        },
+        "alternating_outage": {
+          "PR20": 84.54545454545455,
+          "SR": 61.77489177489177,
+          "scored_frames": 110
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 70.0,
+          "SR": 53.41991341991342,
+          "scored_frames": 110
+        },
+        "alternating_outage": {
+          "PR20": 84.54545454545455,
+          "SR": 61.77489177489177,
+          "scored_frames": 110
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 70.0,
+          "SR": 53.41991341991342,
+          "scored_frames": 110
+        },
+        "alternating_outage": {
+          "PR20": 81.81818181818183,
+          "SR": 59.913419913419915,
+          "scored_frames": 110
+        }
+      }
+    },
+    "bikefromnorth": {
+      "native": {
+        "complete": {
+          "PR20": 92.7007299270073,
+          "SR": 72.10636079249217,
+          "scored_frames": 274
+        },
+        "alternating_outage": {
+          "PR20": 80.65693430656934,
+          "SR": 56.447688564476884,
+          "scored_frames": 274
+        }
+      },
+      "calibration_sham": {
+        "complete": {
+          "PR20": 92.7007299270073,
+          "SR": 72.10636079249217,
+          "scored_frames": 274
+        },
+        "alternating_outage": {
+          "PR20": 80.65693430656934,
+          "SR": 56.447688564476884,
+          "scored_frames": 274
+        }
+      },
+      "offset_corrected": {
+        "complete": {
+          "PR20": 92.7007299270073,
+          "SR": 72.10636079249217,
+          "scored_frames": 274
+        },
+        "alternating_outage": {
+          "PR20": 86.13138686131386,
+          "SR": 60.84462982273201,
+          "scored_frames": 274
+        }
+      }
+    }
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "6ee3b74c92fc6e8e80c8e77b6cdb9b70b37f9ed98ec7f578dd0bfa287f94a590"
+    },
+    "1": {
+      "report_sha256": "828214a99f33d8ff628cc484349a27112a52752205f9f3b6b77dca67e65c70a3"
+    }
+  },
+  "trajectories_verified": 24,
+  "sham_and_complete_bitwise_equal": true,
+  "past_only_offsets_verified": true,
+  "analyzer_sha256": "55793dbe477e4ee6516a38560d19f9f298e001563b323f35664eb7ebe5ccd081",
+  "scope": "Four fresh full development videos, parameter-free offset calibration control; small paired-video uncertainty, no official result or novelty claim."
+}

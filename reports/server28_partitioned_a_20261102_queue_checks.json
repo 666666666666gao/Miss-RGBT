@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "arms": {
+    "utility": {
+      "plan_jobs": 10,
+      "full_scope_only": true,
+      "common_selected_checkpoint": true,
+      "strict_checkpoint_load": true,
+      "checkpoint_sha256": "e5f58f05d8e0c283c6054b2374b753cb4ef1c4edaafdeea921e3ebcb8524f09d",
+      "synthetic_outputs": [
+        {
+          "flags": [
+            1,
+            1
+          ],
+          "output": {
+            "target_bbox": [
+              85.6046028137207,
+              75.74124908447266,
+              43.595123291015625,
+              53.19587707519531
+            ],
+            "best_score": 0.3095373511314392
+          }
+        },
+        {
+          "flags": [
+            0,
+            1
+          ],
+          "output": {
+            "target_bbox": [
+              114.40459251403809,
+              93.3726806640625,
+              50.79946517944336,
+              78.32901000976562
+            ],
+            "best_score": 0.11935586482286453
+          }
+        },
+        {
+          "flags": [
+            1,
+            0
+          ],
+          "output": {
+            "target_bbox": [
+              58.838840484619126,
+              51.50773239135741,
+              75.67691040039064,
+              99.12908172607423
+            ],
+            "best_score": 0.11020055413246155
+          }
+        }
+      ],
+      "parameters_unchanged": true,
+      "gradients_absent": true
+    },
+    "random": {
+      "plan_jobs": 10,
+      "full_scope_only": true,
+      "common_selected_checkpoint": true,
+      "strict_checkpoint_load": true,
+      "checkpoint_sha256": "aa85c64128dbb37361f88dd6c1c18c98993f43cee5f5647cea922c96a3c3285a",
+      "synthetic_outputs": [
+        {
+          "flags": [
+            1,
+            1
+          ],
+          "output": {
+            "target_bbox": [
+              85.59285354614258,
+              75.73370933532715,
+              43.61695861816406,
+              53.220943450927734
+            ],
+            "best_score": 0.3094406723976135
+          }
+        },
+        {
+          "flags": [
+            0,
+            1
+          ],
+          "output": {
+            "target_bbox": [
+              114.42485618591309,
+              93.32281112670898,
+              50.77854537963867,
+              78.46072387695312
+            ],
+            "best_score": 0.1192716583609581
+          }
+        },
+        {
+          "flags": [
+            1,
+            0
+          ],
+          "output": {
+            "target_bbox": [
+              58.780117034912095,
+              51.520298004150376,
+              75.97290039062501,
+              99.37315368652345
+            ],
+            "best_score": 0.10955573618412018
+          }
+        }
+      ],
+      "parameters_unchanged": true,
+      "gradients_absent": true
+    }
+  },
+  "process_identity_checks": true,
+  "checkpoint_plan_jobs": 20,
+  "benchmark_jobs_executed": 0,
+  "physical_gpu": 0,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/verify_partitioned_queue_plan.py": "ac1cb24f932c01c3a5290df42486e67769816c7ce7257d8a190aa21073319a5d",
+    "/home/gaob/Miss-RGBT/scripts/partitioned_a_official_queue.py": "0399082b8aff0a3bad7baeac460c6fb611eaf7fd7f9a6d488e0cef9dde3689a2"
+  },
+  "scope": "Queue planning and synthetic-image inference only; no official/development metrics."
+}

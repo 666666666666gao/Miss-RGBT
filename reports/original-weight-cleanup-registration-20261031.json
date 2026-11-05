@@ -1,0 +1,88 @@
+{
+  "registered_utc": "2026-10-31T10:17:15.636098Z",
+  "source_sha256": "2685ec98c14d09d565709e1a8aa476c8b6f202fdf68946eb843e7c96c5acf7ab",
+  "witness_sha256": "33d8076fdd439682d40c2e1136f7fcb7f4ae05f11851e3a731b58bb8059aa541",
+  "labels": [
+    "a_utility_full20_seed2027",
+    "a_random_full20_seed2027",
+    "batch10_utility_seed2027",
+    "batch10_random_seed2027"
+  ],
+  "original_files": [
+    {
+      "label": "a_utility_full20_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/a_utility_full20_seed2027/epoch10.pth.tar",
+      "bytes": 1243917743,
+      "sha256": "064f5a8aeb27a1f2faff38c6f304ce7e43418bf4c027ad26a39a0d4604693cee"
+    },
+    {
+      "label": "a_random_full20_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/a_random_full20_seed2027/epoch10.pth.tar",
+      "bytes": 1243917743,
+      "sha256": "615c250c17ebd8ff8d4f887f6a9b4b564762ccb584afa6def606b13a935d509c"
+    },
+    {
+      "label": "batch10_utility_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch05.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "cb7933450daaf2b14fb787728f73315d52404a168a1396e68bddc3ff46a5ea10"
+    },
+    {
+      "label": "batch10_utility_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch06.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "ec9b4b087f2f44f71831ada45c3c34ee82efaad4d5344e048aaf9a7ce526a527"
+    },
+    {
+      "label": "batch10_utility_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch07.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "6177c8839acc58877692e3d93712c2abbb36c3a24df83116f58e4af326ff5d00"
+    },
+    {
+      "label": "batch10_utility_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch08.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "f75758e718a63823db09f5cb16fbda306127eca1ae5e3c2a58342513ae985632"
+    },
+    {
+      "label": "batch10_utility_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_utility_seed2027/epoch09.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "947e1a1350106e4cc93488ad84a819aaf568329adec86f0c1f5f331c0ccfd3b7"
+    },
+    {
+      "label": "batch10_random_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch06.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "66fa8175a6f000e711da8577903eba386c2a8b03c94b504e68e7a82c5f4577ee"
+    },
+    {
+      "label": "batch10_random_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch07.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "822e5a0436cb4e271d7806fb0c35b3203bdca9edf09a72b998a2ca8919e49ae8"
+    },
+    {
+      "label": "batch10_random_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch08.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "afd8451cee2cc690dec43cb2713d7ad4f17ee01a11326b890653de70ace12819"
+    },
+    {
+      "label": "batch10_random_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch09.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "58a8cefc7bf5643fe07a14cb65572f2da7a14576ad9aa6b66f8cc747d77ff505"
+    },
+    {
+      "label": "batch10_random_seed2027",
+      "path": "/home/gaob/Miss-RGBT/runs/server28/batch10_random_seed2027/epoch10.pth.tar",
+      "bytes": 1243917871,
+      "sha256": "185754d3698db52e9d69e7c99f9733ea651b16ec6f02f0a15bfdcda6a9cf563c"
+    }
+  ],
+  "verification_queue_sha256": "694aaa44aad2596b92bd91b3dbefd8caefa3e0de0fe06cc040b8ab1f7bead33e",
+  "poll_seconds": 300,
+  "scope": "Only registered original epoch weights from these four campaigns. Wait for all independent final-five and official evaluations; keep all four validation-selected recovery weights. No threshold or three-module certification."
+}

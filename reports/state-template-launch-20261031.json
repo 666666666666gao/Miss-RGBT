@@ -1,0 +1,11 @@
+{
+  "pid": 342664,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/run_state_template28.py",
+    "--mode",
+    "controller"
+  ],
+  "launched_utc": "2026-10-31T12:07:20.241783Z"
+}

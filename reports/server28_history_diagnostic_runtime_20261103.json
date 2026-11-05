@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "fresh_cpu_strict_checkpoint_load": true,
+  "cuda_initialized": false,
+  "model_module": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py",
+  "checkpoint_sha256": "fbeaf71a9b4bbfb46e926251b34c7fb1960c4ba41d3da75745342638fd4dc062",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/diagnose_history_stream.py": "3454305468df5311fa2123d3ca86c46bbf141cdef993643df0a60df6991ae1ef",
+    "/home/gaob/Miss-RGBT/scripts/launch_history_stream.py": "0923df098b1c8eafa96874d70fb15b7f686dbf2fbdd679d6ce6bafc46fcda659",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73"
+  },
+  "scope": "Frozen native A runtime import and actual Batch10 Utility ep17 CPU strict reload only; no images, optimizer, GPU, diagnostic decision or official score."
+}

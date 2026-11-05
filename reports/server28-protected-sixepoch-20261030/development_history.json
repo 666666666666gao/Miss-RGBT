@@ -1,0 +1,80 @@
+[
+  {
+    "epoch": 1,
+    "updates": 32,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.633757799863815,
+        "10": 3.4688829630613327
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 4.051320381462574
+    }
+  },
+  {
+    "epoch": 2,
+    "updates": 64,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.559440225362778,
+        "10": 3.3764098584651947
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 3.967925041913986
+    }
+  },
+  {
+    "epoch": 3,
+    "updates": 96,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.53538604080677,
+        "10": 3.2903538048267365
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 3.9128699228167534
+    }
+  },
+  {
+    "epoch": 4,
+    "updates": 128,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.5302615612745285,
+        "10": 3.5009796917438507
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 4.01562062650919
+    }
+  },
+  {
+    "epoch": 5,
+    "updates": 160,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.5581507831811905,
+        "10": 3.3558972477912903
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 3.9570240154862404
+    }
+  },
+  {
+    "epoch": 6,
+    "updates": 192,
+    "development": {
+      "task_loss": {
+        "11": 2.98817241191864,
+        "01": 4.534664615988731,
+        "10": 3.300384372472763
+      },
+      "complete_outputs_sha256": "e07039e0653cf7cad9104fcf69275a5331683e3614b26961f755efd1955e2f50",
+      "selection_score": 3.9175244942307472
+    }
+  }
+]

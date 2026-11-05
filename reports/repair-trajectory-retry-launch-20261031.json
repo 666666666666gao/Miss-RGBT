@@ -1,0 +1,11 @@
+{
+  "pid": 393144,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/run_repair_trajectory28.py",
+    "--mode",
+    "controller"
+  ],
+  "launched_utc": "2026-10-31T12:37:03.897013Z"
+}

@@ -1,0 +1,1936 @@
+{
+  "launch": {
+    "pid": 1132262,
+    "started_utc": "2026-10-31T06:08:47.085460Z",
+    "scope": "Next16 full train882 development videos; unchanged ordinary CV, no tuning or official test",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "development_indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "registration_sha256": "fd990cc8e7ef8e8bf5e6877e4104e535e0258559307ef2bf7334f1eab21205d3",
+    "sequences": 16,
+    "frames_per_arm_condition": 8611,
+    "total_tracking_frames": 34444,
+    "frame_block": 1,
+    "velocity_history": "availability",
+    "parts": {
+      "0": [
+        {
+          "name": "motocomeinrain",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/motocomeinrain",
+          "video_frames": 234,
+          "evaluated_frames": 234,
+          "gt_sha256": "7ca0d7e6d192603923567d3d6382c1a83fdf9cc064926f17bf5fbbdb8cb63527",
+          "development_index": 23
+        },
+        {
+          "name": "2girlinrain",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/2girlinrain",
+          "video_frames": 388,
+          "evaluated_frames": 388,
+          "gt_sha256": "7ced8e1b105d756bb9af8be6a1a9c4e574fe3aa4d8c94880c71e391a6cffc06e",
+          "development_index": 25
+        },
+        {
+          "name": "fallenbikeitself",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/fallenbikeitself",
+          "video_frames": 851,
+          "evaluated_frames": 851,
+          "gt_sha256": "e63180f66de671539e79a1ecf61b9396fb9eedf74f1f5e286acd1a00e227d5a0",
+          "development_index": 26
+        },
+        {
+          "name": "blkcarfollowingwhite",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkcarfollowingwhite",
+          "video_frames": 392,
+          "evaluated_frames": 392,
+          "gt_sha256": "ea76e3bfd8b3beef519f535b1fb886219867e6f1b713812885e66ba84075a466",
+          "development_index": 28
+        },
+        {
+          "name": "2ndblkboy1_quezhen",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/2ndblkboy1_quezhen",
+          "video_frames": 1918,
+          "evaluated_frames": 1918,
+          "gt_sha256": "519196adea036b9bbf6b02c716a1c1a49e3229ac68bbeede03c643f00df9de52",
+          "development_index": 29
+        },
+        {
+          "name": "whitecarinrain",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarinrain",
+          "video_frames": 127,
+          "evaluated_frames": 127,
+          "gt_sha256": "df0c3fe0f2d02ea6609ab9a251493eccf4b9662684ae8418577c6d82df5d3d3a",
+          "development_index": 30
+        },
+        {
+          "name": "7rightredboy",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/7rightredboy",
+          "video_frames": 204,
+          "evaluated_frames": 204,
+          "gt_sha256": "8bf1efc809cc6f1817466a59559fc65c29b399c2026ba4ec00f3d91fbbaacc1d",
+          "development_index": 32
+        },
+        {
+          "name": "blkmotocome",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/blkmotocome",
+          "video_frames": 129,
+          "evaluated_frames": 129,
+          "gt_sha256": "4d021e50f995f0a9e6f7d68b622f3813e8e34e4476f3b12f6f1da88a18263851",
+          "development_index": 34
+        }
+      ],
+      "1": [
+        {
+          "name": "bus2north111",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bus2north111",
+          "video_frames": 111,
+          "evaluated_frames": 111,
+          "gt_sha256": "bca85bf561e4fd5628ed25ba000526a6aeeccd2ecf01a3f22183d77c636a8ec2",
+          "development_index": 20
+        },
+        {
+          "name": "tworightbehindboy-gai",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/tworightbehindboy-gai",
+          "video_frames": 1904,
+          "evaluated_frames": 1904,
+          "gt_sha256": "553316c4dc3b830dd31febff89f2675910de637308bf16095a119e7706a64580",
+          "development_index": 21
+        },
+        {
+          "name": "bikeboy173",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeboy173",
+          "video_frames": 173,
+          "evaluated_frames": 173,
+          "gt_sha256": "129b3712f5ba69e16954fc9d83e7f851b045e05188145540e03cf08c2f2a73c7",
+          "development_index": 22
+        },
+        {
+          "name": "biketurndark",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/biketurndark",
+          "video_frames": 235,
+          "evaluated_frames": 235,
+          "gt_sha256": "3c85e3bc34484c239a22a0fe577ee8e5a5b90792b1c7b4c14cd8b4b3989d4bf0",
+          "development_index": 24
+        },
+        {
+          "name": "boyblackback",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyblackback",
+          "video_frames": 109,
+          "evaluated_frames": 109,
+          "gt_sha256": "9099240e7077460d016e654e32809f016e4d81f01005e94fa4f10fe6326cced1",
+          "development_index": 27
+        },
+        {
+          "name": "bikeumbrellacome",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/bikeumbrellacome",
+          "video_frames": 258,
+          "evaluated_frames": 258,
+          "gt_sha256": "f52fd9fd576c87435003a2b448ce16b3b68bfcb6a4b51166b41c9b3760a55a14",
+          "development_index": 31
+        },
+        {
+          "name": "Athe3rdboybesidescar",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/Athe3rdboybesidescar",
+          "video_frames": 208,
+          "evaluated_frames": 208,
+          "gt_sha256": "f9b0898bd032db8fe22e3259c90b65ba0f95cf2514311f285c09616a5e364619",
+          "development_index": 33
+        },
+        {
+          "name": "redcupatleft",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/redcupatleft",
+          "video_frames": 1370,
+          "evaluated_frames": 1370,
+          "gt_sha256": "52b098cb49f0accb129b8e8fada6ad7a405fcdecd9abc86a1927c7f593dd6e72",
+          "development_index": 35
+        }
+      ]
+    },
+    "part_frames": {
+      "0": 4243,
+      "1": 4368
+    },
+    "workers_per_gpu": 1,
+    "memory_free_at_launch": "0, 4790\n1, 4825\n",
+    "assignment": "Longest-video-first frame balancing, capacity8 videos per GPU; hold and velocity for a video always share one GPU",
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_blind_motion_cohort28.py": "3ff0619b625da31f100962248ca1ad9e00c140b69f6adfd0c0f25b53e19b9bf9",
+      "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "b9b69795e58a0b1cac1c97cba262268b552eafa0c6429e852f36160fab749da9",
+      "/home/gaob/Miss-RGBT/analyze_blind_motion28.py": "2d3f776afbdb12e762bca82be03d85c55b7e500b0871d9102b5288da98dfb1fb"
+    },
+    "children": {
+      "0": 1132272,
+      "1": 1132273
+    },
+    "poll_seconds": 300
+  },
+  "aggregate": {
+    "complete": {
+      "hold": {
+        "PR20": 83.86575050725574,
+        "SR": 69.62097771092138
+      },
+      "velocity": {
+        "PR20": 83.86575050725574,
+        "SR": 69.62097771092138
+      }
+    },
+    "alternating_outage": {
+      "hold": {
+        "PR20": 79.57204587269987,
+        "SR": 65.00989499430904
+      },
+      "velocity": {
+        "PR20": 87.30348096463158,
+        "SR": 69.97702290423997
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 16,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "7rightredboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "bikeboy173",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "alternating_outage": {
+      "PR20": {
+        "mean_delta_pp": 7.731435091931699,
+        "paired_sequence_bootstrap95_pp": [
+          -5.524627898127592,
+          24.113167283782825
+        ],
+        "wins": 9,
+        "ties": 2,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -46.588235294117645
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -5.624543462381297
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.5503875968992276
+          },
+          {
+            "sequence": "blkmotocome",
+            "delta_pp": -0.78125
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.31529164477140625
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 91.41630901287553
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 71.98067632850241
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 8.189880020865928
+          },
+          {
+            "sequence": "bikeumbrellacome",
+            "delta_pp": 1.9455252918287869
+          },
+          {
+            "sequence": "bus2north111",
+            "delta_pp": 1.8181818181818272
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 4.967127909930941,
+        "paired_sequence_bootstrap95_pp": [
+          -3.088746494168785,
+          15.122311740376675
+        ],
+        "wins": 11,
+        "ties": 0,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "fallenbikeitself",
+            "delta_pp": -26.610644257703093
+          },
+          {
+            "sequence": "redcupatleft",
+            "delta_pp": -4.6923371247695655
+          },
+          {
+            "sequence": "2girlinrain",
+            "delta_pp": -1.3658176448874073
+          },
+          {
+            "sequence": "whitecarinrain",
+            "delta_pp": -0.3023431594860142
+          },
+          {
+            "sequence": "tworightbehindboy-gai",
+            "delta_pp": -0.14263193453945178
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "motocomeinrain",
+            "delta_pp": 52.64663805436338
+          },
+          {
+            "sequence": "Athe3rdboybesidescar",
+            "delta_pp": 48.63123993558776
+          },
+          {
+            "sequence": "2ndblkboy1_quezhen",
+            "delta_pp": 2.6380505253744815
+          },
+          {
+            "sequence": "biketurndark",
+            "delta_pp": 2.5030525030525013
+          },
+          {
+            "sequence": "blkmotocome",
+            "delta_pp": 1.376488095238102
+          }
+        ]
+      }
+    }
+  },
+  "groups": {
+    "all_valid": {
+      "sequences": 16,
+      "frames": 8595,
+      "delta": {
+        "PR20": 7.731435091931699,
+        "SR": 4.967127909930943
+      }
+    },
+    "blind": {
+      "sequences": 16,
+      "frames": 1429,
+      "delta": {
+        "PR20": 7.955351550241261,
+        "SR": 6.2805299751285055
+      }
+    },
+    "observed_before_first_blind": {
+      "sequences": 16,
+      "frames": 64,
+      "delta": {
+        "PR20": 0.0,
+        "SR": 0.0
+      }
+    },
+    "observed_after_first_blind": {
+      "sequences": 16,
+      "frames": 7102,
+      "delta": {
+        "PR20": 7.905117489205465,
+        "SR": 4.843812505448193
+      }
+    },
+    "both_observed_after_first_blind": {
+      "sequences": 16,
+      "frames": 4261,
+      "delta": {
+        "PR20": 7.948016451461384,
+        "SR": 5.150749658658057
+      }
+    }
+  },
+  "per_sequence_groups": {
+    "all_valid": [
+      {
+        "sequence": "motocomeinrain",
+        "frames": 233,
+        "metrics": {
+          "hold": {
+            "PR20": 8.15450643776824,
+            "SR": 5.4772123441651335
+          },
+          "velocity": {
+            "PR20": 99.57081545064378,
+            "SR": 58.1238503985285
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 91.41630901287553,
+          "SR": 52.64663805436337
+        }
+      },
+      {
+        "sequence": "2girlinrain",
+        "frames": 387,
+        "metrics": {
+          "hold": {
+            "PR20": 53.746770025839794,
+            "SR": 40.999138673557276
+          },
+          "velocity": {
+            "PR20": 52.19638242894057,
+            "SR": 39.63332102866987
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -1.5503875968992276,
+          "SR": -1.3658176448874073
+        }
+      },
+      {
+        "sequence": "fallenbikeitself",
+        "frames": 850,
+        "metrics": {
+          "hold": {
+            "PR20": 78.94117647058823,
+            "SR": 67.59103641456582
+          },
+          "velocity": {
+            "PR20": 32.35294117647059,
+            "SR": 40.98039215686274
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -46.588235294117645,
+          "SR": -26.61064425770308
+        }
+      },
+      {
+        "sequence": "blkcarfollowingwhite",
+        "frames": 391,
+        "metrics": {
+          "hold": {
+            "PR20": 97.69820971867007,
+            "SR": 85.77517963707221
+          },
+          "velocity": {
+            "PR20": 98.20971867007673,
+            "SR": 86.00657654366096
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.511508951406654,
+          "SR": 0.231396906588742
+        }
+      },
+      {
+        "sequence": "2ndblkboy1_quezhen",
+        "frames": 1917,
+        "metrics": {
+          "hold": {
+            "PR20": 81.58581116327595,
+            "SR": 70.32317360955858
+          },
+          "velocity": {
+            "PR20": 89.77569118414189,
+            "SR": 72.96122413493305
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 8.189880020865942,
+          "SR": 2.6380505253744673
+        }
+      },
+      {
+        "sequence": "whitecarinrain",
+        "frames": 126,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 83.06878306878309
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.76643990929709
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.302343159486
+        }
+      },
+      {
+        "sequence": "7rightredboy",
+        "frames": 203,
+        "metrics": {
+          "hold": {
+            "PR20": 98.52216748768473,
+            "SR": 74.07928688716865
+          },
+          "velocity": {
+            "PR20": 99.01477832512315,
+            "SR": 75.20525451559934
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.49261083743841994,
+          "SR": 1.1259676284306863
+        }
+      },
+      {
+        "sequence": "blkmotocome",
+        "frames": 128,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 81.73363095238093
+          },
+          "velocity": {
+            "PR20": 99.21875,
+            "SR": 83.11011904761904
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.78125,
+          "SR": 1.376488095238102
+        }
+      },
+      {
+        "sequence": "bus2north111",
+        "frames": 110,
+        "metrics": {
+          "hold": {
+            "PR20": 96.36363636363636,
+            "SR": 84.41558441558443
+          },
+          "velocity": {
+            "PR20": 98.18181818181819,
+            "SR": 85.45454545454547
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.8181818181818272,
+          "SR": 1.038961038961034
+        }
+      },
+      {
+        "sequence": "tworightbehindboy-gai",
+        "frames": 1903,
+        "metrics": {
+          "hold": {
+            "PR20": 99.15922228060957,
+            "SR": 73.67064534694593
+          },
+          "velocity": {
+            "PR20": 98.84393063583815,
+            "SR": 73.52801341240648
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.31529164477142047,
+          "SR": -0.14263193453945178
+        }
+      },
+      {
+        "sequence": "bikeboy173",
+        "frames": 172,
+        "metrics": {
+          "hold": {
+            "PR20": 92.44186046511628,
+            "SR": 75.38759689922479
+          },
+          "velocity": {
+            "PR20": 92.44186046511628,
+            "SR": 76.71650055370985
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 1.3289036544850603
+        }
+      },
+      {
+        "sequence": "biketurndark",
+        "frames": 234,
+        "metrics": {
+          "hold": {
+            "PR20": 93.58974358974359,
+            "SR": 65.0997150997151
+          },
+          "velocity": {
+            "PR20": 94.87179487179488,
+            "SR": 67.6027676027676
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.2820512820512846,
+          "SR": 2.5030525030525013
+        }
+      },
+      {
+        "sequence": "boyblackback",
+        "frames": 108,
+        "metrics": {
+          "hold": {
+            "PR20": 99.07407407407408,
+            "SR": 83.95061728395063
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 84.83245149911818
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.9259259259259238,
+          "SR": 0.8818342151675438
+        }
+      },
+      {
+        "sequence": "bikeumbrellacome",
+        "frames": 257,
+        "metrics": {
+          "hold": {
+            "PR20": 95.71984435797665,
+            "SR": 74.37465258476931
+          },
+          "velocity": {
+            "PR20": 97.66536964980544,
+            "SR": 74.55994070780062
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.9455252918287869,
+          "SR": 0.18528812303131303
+        }
+      },
+      {
+        "sequence": "Athe3rdboybesidescar",
+        "frames": 207,
+        "metrics": {
+          "hold": {
+            "PR20": 12.560386473429952,
+            "SR": 9.569818265470438
+          },
+          "velocity": {
+            "PR20": 84.54106280193237,
+            "SR": 58.201058201058196
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 71.98067632850241,
+          "SR": 48.63123993558776
+        }
+      },
+      {
+        "sequence": "redcupatleft",
+        "frames": 1369,
+        "metrics": {
+          "hold": {
+            "PR20": 65.59532505478451,
+            "SR": 64.64224842603222
+          },
+          "velocity": {
+            "PR20": 59.97078159240321,
+            "SR": 59.94991130126266
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -5.624543462381297,
+          "SR": -4.6923371247695655
+        }
+      }
+    ],
+    "blind": [
+      {
+        "sequence": "motocomeinrain",
+        "frames": 39,
+        "metrics": {
+          "hold": {
+            "PR20": 7.6923076923076925,
+            "SR": 5.4945054945054945
+          },
+          "velocity": {
+            "PR20": 97.43589743589743,
+            "SR": 59.951159951159966
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 89.74358974358974,
+          "SR": 54.45665445665447
+        }
+      },
+      {
+        "sequence": "2girlinrain",
+        "frames": 64,
+        "metrics": {
+          "hold": {
+            "PR20": 54.6875,
+            "SR": 40.625
+          },
+          "velocity": {
+            "PR20": 51.5625,
+            "SR": 39.21130952380952
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -3.125,
+          "SR": -1.4136904761904816
+        }
+      },
+      {
+        "sequence": "fallenbikeitself",
+        "frames": 141,
+        "metrics": {
+          "hold": {
+            "PR20": 75.177304964539,
+            "SR": 69.23336710570753
+          },
+          "velocity": {
+            "PR20": 33.333333333333336,
+            "SR": 42.78959810874704
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -41.84397163120567,
+          "SR": -26.443768996960486
+        }
+      },
+      {
+        "sequence": "blkcarfollowingwhite",
+        "frames": 65,
+        "metrics": {
+          "hold": {
+            "PR20": 87.6923076923077,
+            "SR": 81.24542124542126
+          },
+          "velocity": {
+            "PR20": 90.76923076923077,
+            "SR": 82.71062271062272
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 3.07692307692308,
+          "SR": 1.46520146520146
+        }
+      },
+      {
+        "sequence": "2ndblkboy1_quezhen",
+        "frames": 319,
+        "metrics": {
+          "hold": {
+            "PR20": 80.56426332288402,
+            "SR": 69.87610091058365
+          },
+          "velocity": {
+            "PR20": 89.65517241379311,
+            "SR": 72.90640394088668
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 9.090909090909093,
+          "SR": 3.030303030303031
+        }
+      },
+      {
+        "sequence": "whitecarinrain",
+        "frames": 21,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 81.17913832199545
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.31292517006803
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 1.1337868480725746
+        }
+      },
+      {
+        "sequence": "7rightredboy",
+        "frames": 34,
+        "metrics": {
+          "hold": {
+            "PR20": 97.05882352941177,
+            "SR": 71.5686274509804
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 74.78991596638656
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 2.941176470588232,
+          "SR": 3.221288515406158
+        }
+      },
+      {
+        "sequence": "blkmotocome",
+        "frames": 21,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 70.29478458049887
+          },
+          "velocity": {
+            "PR20": 95.23809523809524,
+            "SR": 80.95238095238095
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -4.761904761904759,
+          "SR": 10.657596371882079
+        }
+      },
+      {
+        "sequence": "bus2north111",
+        "frames": 18,
+        "metrics": {
+          "hold": {
+            "PR20": 94.44444444444444,
+            "SR": 85.71428571428572
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 89.15343915343914
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 5.555555555555557,
+          "SR": 3.439153439153415
+        }
+      },
+      {
+        "sequence": "tworightbehindboy-gai",
+        "frames": 317,
+        "metrics": {
+          "hold": {
+            "PR20": 99.36908517350157,
+            "SR": 75.16899504281207
+          },
+          "velocity": {
+            "PR20": 98.73817034700315,
+            "SR": 74.31275349256421
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.6309148264984259,
+          "SR": -0.8562415502478586
+        }
+      },
+      {
+        "sequence": "bikeboy173",
+        "frames": 28,
+        "metrics": {
+          "hold": {
+            "PR20": 92.85714285714286,
+            "SR": 76.87074829931973
+          },
+          "velocity": {
+            "PR20": 92.85714285714286,
+            "SR": 78.74149659863947
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 1.870748299319743
+        }
+      },
+      {
+        "sequence": "biketurndark",
+        "frames": 39,
+        "metrics": {
+          "hold": {
+            "PR20": 89.74358974358974,
+            "SR": 62.51526251526251
+          },
+          "velocity": {
+            "PR20": 89.74358974358974,
+            "SR": 65.68986568986567
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 3.174603174603156
+        }
+      },
+      {
+        "sequence": "boyblackback",
+        "frames": 18,
+        "metrics": {
+          "hold": {
+            "PR20": 94.44444444444444,
+            "SR": 79.62962962962962
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.53968253968254
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 5.555555555555557,
+          "SR": 2.9100529100529258
+        }
+      },
+      {
+        "sequence": "bikeumbrellacome",
+        "frames": 43,
+        "metrics": {
+          "hold": {
+            "PR20": 97.67441860465117,
+            "SR": 73.86489479512737
+          },
+          "velocity": {
+            "PR20": 95.34883720930233,
+            "SR": 74.08637873754152
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -2.3255813953488342,
+          "SR": 0.22148394241415303
+        }
+      },
+      {
+        "sequence": "Athe3rdboybesidescar",
+        "frames": 34,
+        "metrics": {
+          "hold": {
+            "PR20": 14.705882352941176,
+            "SR": 9.943977591036415
+          },
+          "velocity": {
+            "PR20": 85.29411764705883,
+            "SR": 59.66386554621848
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 70.58823529411765,
+          "SR": 49.71988795518207
+        }
+      },
+      {
+        "sequence": "redcupatleft",
+        "frames": 228,
+        "metrics": {
+          "hold": {
+            "PR20": 60.08771929824562,
+            "SR": 63.99331662489556
+          },
+          "velocity": {
+            "PR20": 53.50877192982456,
+            "SR": 57.89473684210525
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -6.578947368421055,
+          "SR": -6.09857978279031
+        }
+      }
+    ],
+    "observed_before_first_blind": [
+      {
+        "sequence": "motocomeinrain",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 71.42857142857143
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 71.42857142857143
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "2girlinrain",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 79.76190476190476
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 79.76190476190476
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "fallenbikeitself",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 76.19047619047619
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 76.19047619047619
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "blkcarfollowingwhite",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 89.28571428571429
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 89.28571428571429
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "2ndblkboy1_quezhen",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 90.47619047619048
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 90.47619047619048
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "whitecarinrain",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 90.47619047619048
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 90.47619047619048
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "7rightredboy",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "blkmotocome",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 72.61904761904762
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 72.61904761904762
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "bus2north111",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 75.0,
+            "SR": 86.90476190476191
+          },
+          "velocity": {
+            "PR20": 75.0,
+            "SR": 86.90476190476191
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "tworightbehindboy-gai",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "bikeboy173",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 88.0952380952381
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 88.0952380952381
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "biketurndark",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 77.38095238095238
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 77.38095238095238
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "boyblackback",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 88.0952380952381
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 88.0952380952381
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "bikeumbrellacome",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.14285714285714
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "Athe3rdboybesidescar",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 85.71428571428571
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 85.71428571428571
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "redcupatleft",
+        "frames": 4,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 90.47619047619047
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 90.47619047619047
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0
+        }
+      }
+    ],
+    "observed_after_first_blind": [
+      {
+        "sequence": "motocomeinrain",
+        "frames": 190,
+        "metrics": {
+          "hold": {
+            "PR20": 6.315789473684211,
+            "SR": 4.0852130325814535
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 57.468671679197975
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 93.6842105263158,
+          "SR": 53.38345864661652
+        }
+      },
+      {
+        "sequence": "2girlinrain",
+        "frames": 319,
+        "metrics": {
+          "hold": {
+            "PR20": 52.97805642633229,
+            "SR": 40.588147484699206
+          },
+          "velocity": {
+            "PR20": 51.724137931034484,
+            "SR": 39.21480818032543
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -1.2539184952978033,
+          "SR": -1.3733393043737792
+        }
+      },
+      {
+        "sequence": "fallenbikeitself",
+        "frames": 705,
+        "metrics": {
+          "hold": {
+            "PR20": 79.57446808510639,
+            "SR": 67.21377912867274
+          },
+          "velocity": {
+            "PR20": 31.77304964539007,
+            "SR": 40.41877744005403
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -47.801418439716315,
+          "SR": -26.79500168861871
+        }
+      },
+      {
+        "sequence": "blkcarfollowingwhite",
+        "frames": 322,
+        "metrics": {
+          "hold": {
+            "PR20": 99.68944099378882,
+            "SR": 86.64596273291926
+          },
+          "velocity": {
+            "PR20": 99.68944099378882,
+            "SR": 86.63117420881395
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.014788524105313172
+        }
+      },
+      {
+        "sequence": "2ndblkboy1_quezhen",
+        "frames": 1594,
+        "metrics": {
+          "hold": {
+            "PR20": 81.74404015056462,
+            "SR": 70.362072055924
+          },
+          "velocity": {
+            "PR20": 89.77415307402761,
+            "SR": 72.92824281531935
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 8.030112923462994,
+          "SR": 2.566170759395348
+        }
+      },
+      {
+        "sequence": "whitecarinrain",
+        "frames": 101,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 83.16831683168319
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.55539839698255
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.6129184347006316
+        }
+      },
+      {
+        "sequence": "7rightredboy",
+        "frames": 165,
+        "metrics": {
+          "hold": {
+            "PR20": 98.78787878787878,
+            "SR": 74.4011544011544
+          },
+          "velocity": {
+            "PR20": 98.78787878787878,
+            "SR": 75.12265512265512
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.7215007215007176
+        }
+      },
+      {
+        "sequence": "blkmotocome",
+        "frames": 103,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 84.41978733240872
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 83.95746648173835
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.4623208506703662
+        }
+      },
+      {
+        "sequence": "bus2north111",
+        "frames": 88,
+        "metrics": {
+          "hold": {
+            "PR20": 97.72727272727273,
+            "SR": 84.03679653679654
+          },
+          "velocity": {
+            "PR20": 98.86363636363636,
+            "SR": 84.63203463203463
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.136363636363626,
+          "SR": 0.5952380952380878
+        }
+      },
+      {
+        "sequence": "tworightbehindboy-gai",
+        "frames": 1582,
+        "metrics": {
+          "hold": {
+            "PR20": 99.11504424778761,
+            "SR": 73.34898561194389
+          },
+          "velocity": {
+            "PR20": 98.8621997471555,
+            "SR": 73.34898561194389
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.25284450063210784,
+          "SR": 0.0
+        }
+      },
+      {
+        "sequence": "bikeboy173",
+        "frames": 140,
+        "metrics": {
+          "hold": {
+            "PR20": 92.14285714285714,
+            "SR": 74.72789115646259
+          },
+          "velocity": {
+            "PR20": 92.14285714285714,
+            "SR": 75.98639455782313
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 1.2585034013605423
+        }
+      },
+      {
+        "sequence": "biketurndark",
+        "frames": 191,
+        "metrics": {
+          "hold": {
+            "PR20": 94.24083769633508,
+            "SR": 65.37023186237845
+          },
+          "velocity": {
+            "PR20": 95.81151832460733,
+            "SR": 67.78858140114684
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 1.5706806282722567,
+          "SR": 2.418349538768396
+        }
+      },
+      {
+        "sequence": "boyblackback",
+        "frames": 86,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 84.66223698781837
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 85.16057585825027
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.49833887043189407
+        }
+      },
+      {
+        "sequence": "bikeumbrellacome",
+        "frames": 210,
+        "metrics": {
+          "hold": {
+            "PR20": 95.23809523809524,
+            "SR": 74.33106575963718
+          },
+          "velocity": {
+            "PR20": 98.0952380952381,
+            "SR": 74.5124716553288
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 2.857142857142861,
+          "SR": 0.18140589569161136
+        }
+      },
+      {
+        "sequence": "Athe3rdboybesidescar",
+        "frames": 169,
+        "metrics": {
+          "hold": {
+            "PR20": 10.059171597633137,
+            "SR": 7.692307692307691
+          },
+          "velocity": {
+            "PR20": 84.02366863905326,
+            "SR": 57.25556494787264
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 73.96449704142012,
+          "SR": 49.56325725556495
+        }
+      },
+      {
+        "sequence": "redcupatleft",
+        "frames": 1137,
+        "metrics": {
+          "hold": {
+            "PR20": 66.57871591908531,
+            "SR": 64.68149264983039
+          },
+          "velocity": {
+            "PR20": 61.12576956904134,
+            "SR": 60.25463835490221
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -5.452946350043973,
+          "SR": -4.426854294928177
+        }
+      }
+    ],
+    "both_observed_after_first_blind": [
+      {
+        "sequence": "motocomeinrain",
+        "frames": 114,
+        "metrics": {
+          "hold": {
+            "PR20": 6.140350877192983,
+            "SR": 4.344193817878028
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 60.86048454469507
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 93.85964912280701,
+          "SR": 56.51629072681704
+        }
+      },
+      {
+        "sequence": "2girlinrain",
+        "frames": 191,
+        "metrics": {
+          "hold": {
+            "PR20": 52.87958115183246,
+            "SR": 41.660433807030664
+          },
+          "velocity": {
+            "PR20": 52.35602094240838,
+            "SR": 40.56345051109449
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.5235602094240832,
+          "SR": -1.0969832959361767
+        }
+      },
+      {
+        "sequence": "fallenbikeitself",
+        "frames": 423,
+        "metrics": {
+          "hold": {
+            "PR20": 76.35933806146572,
+            "SR": 69.28965439603738
+          },
+          "velocity": {
+            "PR20": 31.914893617021278,
+            "SR": 42.159180457052784
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -44.44444444444444,
+          "SR": -27.130473938984593
+        }
+      },
+      {
+        "sequence": "blkcarfollowingwhite",
+        "frames": 193,
+        "metrics": {
+          "hold": {
+            "PR20": 99.48186528497409,
+            "SR": 88.20626696274365
+          },
+          "velocity": {
+            "PR20": 99.48186528497409,
+            "SR": 88.23094004441154
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.024673081667884844
+        }
+      },
+      {
+        "sequence": "2ndblkboy1_quezhen",
+        "frames": 956,
+        "metrics": {
+          "hold": {
+            "PR20": 81.06694560669456,
+            "SR": 71.28910141462443
+          },
+          "velocity": {
+            "PR20": 89.85355648535565,
+            "SR": 73.7646941621837
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 8.786610878661094,
+          "SR": 2.4755927475592756
+        }
+      },
+      {
+        "sequence": "whitecarinrain",
+        "frames": 61,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 83.91881342701012
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 82.98204527712724
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -0.9367681498828802
+        }
+      },
+      {
+        "sequence": "7rightredboy",
+        "frames": 99,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 76.43097643097641
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 76.7195767195767
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.28860028860027853
+        }
+      },
+      {
+        "sequence": "blkmotocome",
+        "frames": 62,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 86.71274961597545
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 86.78955453149003
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.0768049155145718
+        }
+      },
+      {
+        "sequence": "bus2north111",
+        "frames": 53,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 90.02695417789758
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 90.29649595687334
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.26954177897576415
+        }
+      },
+      {
+        "sequence": "tworightbehindboy-gai",
+        "frames": 949,
+        "metrics": {
+          "hold": {
+            "PR20": 99.15700737618546,
+            "SR": 75.0915750915751
+          },
+          "velocity": {
+            "PR20": 98.63013698630137,
+            "SR": 75.25716292839579
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.5268703898840954,
+          "SR": 0.16558783682069134
+        }
+      },
+      {
+        "sequence": "bikeboy173",
+        "frames": 84,
+        "metrics": {
+          "hold": {
+            "PR20": 94.04761904761905,
+            "SR": 77.89115646258503
+          },
+          "velocity": {
+            "PR20": 94.04761904761905,
+            "SR": 79.70521541950112
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 1.8140589569160852
+        }
+      },
+      {
+        "sequence": "biketurndark",
+        "frames": 115,
+        "metrics": {
+          "hold": {
+            "PR20": 99.1304347826087,
+            "SR": 68.6542443064182
+          },
+          "velocity": {
+            "PR20": 98.26086956521739,
+            "SR": 70.68322981366458
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -0.8695652173913118,
+          "SR": 2.028985507246375
+        }
+      },
+      {
+        "sequence": "boyblackback",
+        "frames": 52,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 85.98901098901098
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 86.44688644688644
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": 0.4578754578754598
+        }
+      },
+      {
+        "sequence": "bikeumbrellacome",
+        "frames": 126,
+        "metrics": {
+          "hold": {
+            "PR20": 100.0,
+            "SR": 79.78080120937265
+          },
+          "velocity": {
+            "PR20": 100.0,
+            "SR": 78.42025699168558
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 0.0,
+          "SR": -1.3605442176870781
+        }
+      },
+      {
+        "sequence": "Athe3rdboybesidescar",
+        "frames": 101,
+        "metrics": {
+          "hold": {
+            "PR20": 11.881188118811881,
+            "SR": 8.675153229608675
+          },
+          "velocity": {
+            "PR20": 90.0990099009901,
+            "SR": 62.4233851956624
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": 78.21782178217822,
+          "SR": 53.74823196605372
+        }
+      },
+      {
+        "sequence": "redcupatleft",
+        "frames": 682,
+        "metrics": {
+          "hold": {
+            "PR20": 70.82111436950147,
+            "SR": 66.5060745705907
+          },
+          "velocity": {
+            "PR20": 63.489736070381234,
+            "SR": 61.576595447563186
+          }
+        },
+        "velocity_minus_hold": {
+          "PR20": -7.331378299120239,
+          "SR": -4.929479123027512
+        }
+      }
+    ]
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "5786faf8a46f3e7fb179be12872564bcd22fb63202120a53897097bec02968b1",
+      "analysis_sha256": "dd8436c7456cde815eaea0530148fa3b877e67dbda3b524b06167825e134a6e6"
+    },
+    "1": {
+      "report_sha256": "f803eed54172bd765a338e4a730069ebeefe3e8db9081a449fc76daa9913e8d6",
+      "analysis_sha256": "e94d4bab96d8fc2c8dd6e0908b4e3775adb20a97427971ff8c905fa99711c38a"
+    }
+  },
+  "trajectories_verified": 64,
+  "source_sha256": "3ff0619b625da31f100962248ca1ad9e00c140b69f6adfd0c0f25b53e19b9bf9",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 2027,
+  "uncertainty_scope": "Paired video resampling on16 registered development videos; not training-seed uncertainty, official results or a novel module"
+}

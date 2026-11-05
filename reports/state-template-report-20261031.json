@@ -1,0 +1,1315 @@
+{
+  "launch": {
+    "pid": 342664,
+    "registered_utc": "2026-10-31T12:07:22.092866Z",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "development_indices": [
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "cohort": [
+      {
+        "name": "lefthandfoamboard",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/lefthandfoamboard",
+        "development_index": 68,
+        "video_frames": 154,
+        "gt_sha256": "be1e42e8a15b245be5d0760503664fe7309738f7a50061de677cb63e9a1870bf"
+      },
+      {
+        "name": "rightrunninglatterone",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightrunninglatterone",
+        "development_index": 69,
+        "video_frames": 639,
+        "gt_sha256": "b4856f957582585b2a2e70d3791879e4d8b3f6757d07b71242600564bca5849b"
+      },
+      {
+        "name": "1phoneblue",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/1phoneblue",
+        "development_index": 70,
+        "video_frames": 373,
+        "gt_sha256": "c2d4c95ac915e5eef9e32755184fde1636c3e3d84141f15ab28683a842655e6a"
+      },
+      {
+        "name": "leftgirlat1row",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftgirlat1row",
+        "development_index": 71,
+        "video_frames": 525,
+        "gt_sha256": "bd2dd28fb1364dc39d061b7304fb49708cc92dd1ba54d3130969f0ceea287dd7"
+      },
+      {
+        "name": "boyridesbesidesgirl",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyridesbesidesgirl",
+        "development_index": 72,
+        "video_frames": 302,
+        "gt_sha256": "410c3bc9287206ddc1316bb3b7d1f9d84159df7b98e68377a5567c6534762653"
+      },
+      {
+        "name": "girlshead",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/girlshead",
+        "development_index": 73,
+        "video_frames": 6024,
+        "gt_sha256": "6f411eefe54b1e950d630a4f6cecc24619d410644a39a979da592c564a006d75"
+      },
+      {
+        "name": "whitecarleave",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarleave",
+        "development_index": 74,
+        "video_frames": 127,
+        "gt_sha256": "4f9815b792c750f68ca1d849a542b1b6a824b6458ebaf7a6721d1f5784b9f335"
+      },
+      {
+        "name": "whiteTboy",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/whiteTboy",
+        "development_index": 75,
+        "video_frames": 254,
+        "gt_sha256": "ec9220581f17da1e3749721186f4003e070082ac08bdac444db1fb9cd3b0b21a"
+      }
+    ],
+    "parts": {
+      "0": [
+        {
+          "name": "girlshead",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/girlshead",
+          "development_index": 73,
+          "video_frames": 6024,
+          "gt_sha256": "6f411eefe54b1e950d630a4f6cecc24619d410644a39a979da592c564a006d75"
+        }
+      ],
+      "1": [
+        {
+          "name": "rightrunninglatterone",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightrunninglatterone",
+          "development_index": 69,
+          "video_frames": 639,
+          "gt_sha256": "b4856f957582585b2a2e70d3791879e4d8b3f6757d07b71242600564bca5849b"
+        },
+        {
+          "name": "leftgirlat1row",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftgirlat1row",
+          "development_index": 71,
+          "video_frames": 525,
+          "gt_sha256": "bd2dd28fb1364dc39d061b7304fb49708cc92dd1ba54d3130969f0ceea287dd7"
+        },
+        {
+          "name": "1phoneblue",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/1phoneblue",
+          "development_index": 70,
+          "video_frames": 373,
+          "gt_sha256": "c2d4c95ac915e5eef9e32755184fde1636c3e3d84141f15ab28683a842655e6a"
+        },
+        {
+          "name": "boyridesbesidesgirl",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyridesbesidesgirl",
+          "development_index": 72,
+          "video_frames": 302,
+          "gt_sha256": "410c3bc9287206ddc1316bb3b7d1f9d84159df7b98e68377a5567c6534762653"
+        },
+        {
+          "name": "whiteTboy",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whiteTboy",
+          "development_index": 75,
+          "video_frames": 254,
+          "gt_sha256": "ec9220581f17da1e3749721186f4003e070082ac08bdac444db1fb9cd3b0b21a"
+        },
+        {
+          "name": "lefthandfoamboard",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/lefthandfoamboard",
+          "development_index": 68,
+          "video_frames": 154,
+          "gt_sha256": "be1e42e8a15b245be5d0760503664fe7309738f7a50061de677cb63e9a1870bf"
+        },
+        {
+          "name": "whitecarleave",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarleave",
+          "development_index": 74,
+          "video_frames": 127,
+          "gt_sha256": "4f9815b792c750f68ca1d849a542b1b6a824b6458ebaf7a6721d1f5784b9f335"
+        }
+      ]
+    },
+    "loads": {
+      "0": 6024,
+      "1": 2374
+    },
+    "arms": [
+      "native",
+      "sham",
+      "matched"
+    ],
+    "conditions": [
+      "complete",
+      "block32_outage"
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_state_template28.py": "a4bbf19900df0aacf4992a1168454da64d033b61fe905305cef253835cfb2bc3",
+      "/home/gaob/Miss-RGBT/state_template_tracker28.py": "8f3c0b48ee40d74aca4925f1aeca23b867d38b82fb3d91631b013d8244276a4f",
+      "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+      "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+      "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "b9b69795e58a0b1cac1c97cba262268b552eafa0c6429e852f36160fab749da9",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+    },
+    "witness_sha256": "17e16924e0347ba507c7e762fa5d024bb4f22c8fdac4238798925d6ea506e1fd",
+    "pattern": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "frame_block": 32,
+    "update_interval": 5,
+    "update_threshold": 0.65,
+    "poll_seconds": 300,
+    "scope": "Sequential fresh indices68..75, no outcome/duration filtering. Each state bank initialized with the real complete initial template and availability11. Native write predicate unchanged; selected cache is read before any current write. No fitted gate, extra forward, optimizer or baseline runtime edit.",
+    "registration_sha256": "7b86360a23527e90e68ec73f2828cbebed6be54ca5f3f71364526a750a913f6e"
+  },
+  "aggregate": {
+    "complete": {
+      "native": {
+        "PR20": 92.12374293760814,
+        "SR": 74.99760059937304
+      },
+      "sham": {
+        "PR20": 92.12374293760814,
+        "SR": 74.99760059937304
+      },
+      "matched": {
+        "PR20": 92.12374293760814,
+        "SR": 74.99760059937304
+      }
+    },
+    "block32_outage": {
+      "native": {
+        "PR20": 80.07251807500543,
+        "SR": 65.6988453291305
+      },
+      "sham": {
+        "PR20": 80.07251807500543,
+        "SR": 65.6988453291305
+      },
+      "matched": {
+        "PR20": 73.12790242223154,
+        "SR": 59.989875972349274
+      }
+    }
+  },
+  "matched_minus_native": {
+    "complete": {
+      "PR20": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 8,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "1phoneblue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarleave",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "whiteTboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightrunninglatterone",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": 0.0
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": 0.0,
+        "paired_sequence_bootstrap95_pp": [
+          0.0,
+          0.0
+        ],
+        "wins": 0,
+        "ties": 8,
+        "losses": 0,
+        "worst5": [
+          {
+            "sequence": "1phoneblue",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 0.0
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "whitecarleave",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "whiteTboy",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightrunninglatterone",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": 0.0
+          }
+        ]
+      }
+    },
+    "block32_outage": {
+      "PR20": {
+        "mean_delta_pp": -6.944615652773898,
+        "paired_sequence_bootstrap95_pp": [
+          -18.35987378308191,
+          -0.14575684595517693
+        ],
+        "wins": 1,
+        "ties": 2,
+        "losses": 5,
+        "worst5": [
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": -45.038167938931295
+          },
+          {
+            "sequence": "1phoneblue",
+            "delta_pp": -4.838709677419359
+          },
+          {
+            "sequence": "whiteTboy",
+            "delta_pp": -4.347826086956516
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": -2.3255813953488484
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": -2.2746139797443163
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 3.267973856209153
+          },
+          {
+            "sequence": "whitecarleave",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "rightrunninglatterone",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": -2.2746139797443163
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": -2.3255813953488484
+          }
+        ]
+      },
+      "SR": {
+        "mean_delta_pp": -5.708969356781231,
+        "paired_sequence_bootstrap95_pp": [
+          -14.650757366811202,
+          -0.6894627736110985
+        ],
+        "wins": 1,
+        "ties": 1,
+        "losses": 6,
+        "worst5": [
+          {
+            "sequence": "leftgirlat1row",
+            "delta_pp": -35.79607415485278
+          },
+          {
+            "sequence": "whiteTboy",
+            "delta_pp": -4.366647844908705
+          },
+          {
+            "sequence": "1phoneblue",
+            "delta_pp": -1.9073220686124017
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": -1.8231699121621219
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": -1.771871539313409
+          }
+        ],
+        "best5": [
+          {
+            "sequence": "lefthandfoamboard",
+            "delta_pp": 0.031123560535320394
+          },
+          {
+            "sequence": "rightrunninglatterone",
+            "delta_pp": 0.0
+          },
+          {
+            "sequence": "whitecarleave",
+            "delta_pp": -0.03779289493574822
+          },
+          {
+            "sequence": "boyridesbesidesgirl",
+            "delta_pp": -1.771871539313409
+          },
+          {
+            "sequence": "girlshead",
+            "delta_pp": -1.8231699121621219
+          }
+        ]
+      }
+    }
+  },
+  "per_video": {
+    "girlshead": {
+      "native": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023
+        },
+        "block32_outage": {
+          "PR20": 82.63323924954342,
+          "SR": 65.3613529090866,
+          "scored_frames": 6023,
+          "current11": {
+            "PR20": 97.14759535655058,
+            "SR": 76.41317223406776,
+            "scored_frames": 3015
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023
+        },
+        "block32_outage": {
+          "PR20": 82.63323924954342,
+          "SR": 65.3613529090866,
+          "scored_frames": 6023,
+          "current11": {
+            "PR20": 97.14759535655058,
+            "SR": 76.41317223406776,
+            "scored_frames": 3015
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 98.7547733687531,
+          "SR": 77.22776973980693,
+          "scored_frames": 6023
+        },
+        "block32_outage": {
+          "PR20": 80.3586252697991,
+          "SR": 63.53818299692448,
+          "scored_frames": 6023,
+          "current11": {
+            "PR20": 96.81592039800995,
+            "SR": 75.9535655058043,
+            "scored_frames": 3015
+          }
+        }
+      }
+    },
+    "rightrunninglatterone": {
+      "native": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "current11": {
+            "PR20": 38.87147335423197,
+            "SR": 18.151962979549186,
+            "scored_frames": 319
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "current11": {
+            "PR20": 38.87147335423197,
+            "SR": 18.151962979549186,
+            "scored_frames": 319
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "current11": {
+            "PR20": 38.87147335423197,
+            "SR": 18.151962979549186,
+            "scored_frames": 319
+          }
+        }
+      }
+    },
+    "leftgirlat1row": {
+      "native": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524
+        },
+        "block32_outage": {
+          "PR20": 95.22900763358778,
+          "SR": 76.4903671392221,
+          "scored_frames": 524,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 81.96517412935323,
+            "scored_frames": 268
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524
+        },
+        "block32_outage": {
+          "PR20": 95.22900763358778,
+          "SR": 76.4903671392221,
+          "scored_frames": 524,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 81.96517412935323,
+            "scored_frames": 268
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524
+        },
+        "block32_outage": {
+          "PR20": 50.19083969465649,
+          "SR": 40.69429298436932,
+          "scored_frames": 524,
+          "current11": {
+            "PR20": 59.32835820895522,
+            "SR": 48.84506041222459,
+            "scored_frames": 268
+          }
+        }
+      }
+    },
+    "1phoneblue": {
+      "native": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372
+        },
+        "block32_outage": {
+          "PR20": 84.94623655913979,
+          "SR": 77.68817204301075,
+          "scored_frames": 372,
+          "current11": {
+            "PR20": 95.28795811518324,
+            "SR": 82.02443280977313,
+            "scored_frames": 191
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372
+        },
+        "block32_outage": {
+          "PR20": 84.94623655913979,
+          "SR": 77.68817204301075,
+          "scored_frames": 372,
+          "current11": {
+            "PR20": 95.28795811518324,
+            "SR": 82.02443280977313,
+            "scored_frames": 191
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372
+        },
+        "block32_outage": {
+          "PR20": 80.10752688172043,
+          "SR": 75.78084997439835,
+          "scored_frames": 372,
+          "current11": {
+            "PR20": 94.76439790575915,
+            "SR": 81.12690102218897,
+            "scored_frames": 191
+          }
+        }
+      }
+    },
+    "boyridesbesidesgirl": {
+      "native": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301
+        },
+        "block32_outage": {
+          "PR20": 85.04983388704319,
+          "SR": 74.10219901914255,
+          "scored_frames": 301,
+          "current11": {
+            "PR20": 98.74213836477988,
+            "SR": 85.1153039832285,
+            "scored_frames": 159
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301
+        },
+        "block32_outage": {
+          "PR20": 85.04983388704319,
+          "SR": 74.10219901914255,
+          "scored_frames": 301,
+          "current11": {
+            "PR20": 98.74213836477988,
+            "SR": 85.1153039832285,
+            "scored_frames": 159
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301
+        },
+        "block32_outage": {
+          "PR20": 82.72425249169434,
+          "SR": 72.33032747982914,
+          "scored_frames": 301,
+          "current11": {
+            "PR20": 98.74213836477988,
+            "SR": 84.87571129080564,
+            "scored_frames": 159
+          }
+        }
+      }
+    },
+    "whiteTboy": {
+      "native": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253
+        },
+        "block32_outage": {
+          "PR20": 77.4703557312253,
+          "SR": 63.09053265575004,
+          "scored_frames": 253,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 82.86464191976003,
+            "scored_frames": 127
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253
+        },
+        "block32_outage": {
+          "PR20": 77.4703557312253,
+          "SR": 63.09053265575004,
+          "scored_frames": 253,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 82.86464191976003,
+            "scored_frames": 127
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253
+        },
+        "block32_outage": {
+          "PR20": 73.12252964426878,
+          "SR": 58.723884810841334,
+          "scored_frames": 253,
+          "current11": {
+            "PR20": 86.61417322834646,
+            "SR": 71.8785151856018,
+            "scored_frames": 127
+          }
+        }
+      }
+    },
+    "lefthandfoamboard": {
+      "native": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 86.27450980392157,
+          "SR": 64.79925303454715,
+          "scored_frames": 153,
+          "current11": {
+            "PR20": 94.3820224719101,
+            "SR": 71.00053504547887,
+            "scored_frames": 89
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 86.27450980392157,
+          "SR": 64.79925303454715,
+          "scored_frames": 153,
+          "current11": {
+            "PR20": 94.3820224719101,
+            "SR": 71.00053504547887,
+            "scored_frames": 89
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153
+        },
+        "block32_outage": {
+          "PR20": 89.54248366013073,
+          "SR": 64.83037659508247,
+          "scored_frames": 153,
+          "current11": {
+            "PR20": 94.3820224719101,
+            "SR": 71.26805778491172,
+            "scored_frames": 89
+          }
+        }
+      }
+    },
+    "whitecarleave": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.36281179138322,
+          "scored_frames": 126,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 93.57520786092215,
+            "scored_frames": 63
+          }
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.36281179138322,
+          "scored_frames": 126,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 93.57520786092215,
+            "scored_frames": 63
+          }
+        }
+      },
+      "matched": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.32501889644747,
+          "scored_frames": 126,
+          "current11": {
+            "PR20": 100.0,
+            "SR": 93.42403628117914,
+            "scored_frames": 63
+          }
+        }
+      }
+    }
+  },
+  "exposures": {
+    "girlshead": {
+      "native": {
+        "complete": {
+          "calls": 6023,
+          "writes": 854,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 5031,
+          "writes": 560,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 6023,
+          "writes": 854,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 5031,
+          "writes": 560,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 6023,
+          "writes": 854,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 5031,
+          "writes": 527,
+          "selected_different_from_latest": 1606
+        }
+      }
+    },
+    "rightrunninglatterone": {
+      "native": {
+        "complete": {
+          "calls": 638,
+          "writes": 4,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 542,
+          "writes": 0,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 638,
+          "writes": 4,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 542,
+          "writes": 0,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 638,
+          "writes": 4,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 542,
+          "writes": 0,
+          "selected_different_from_latest": 0
+        }
+      }
+    },
+    "leftgirlat1row": {
+      "native": {
+        "complete": {
+          "calls": 524,
+          "writes": 94,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 460,
+          "writes": 64,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 524,
+          "writes": 94,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 460,
+          "writes": 64,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 524,
+          "writes": 94,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 460,
+          "writes": 34,
+          "selected_different_from_latest": 168
+        }
+      }
+    },
+    "1phoneblue": {
+      "native": {
+        "complete": {
+          "calls": 372,
+          "writes": 73,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 319,
+          "writes": 55,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 372,
+          "writes": 73,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 319,
+          "writes": 55,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 372,
+          "writes": 73,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 319,
+          "writes": 50,
+          "selected_different_from_latest": 69
+        }
+      }
+    },
+    "boyridesbesidesgirl": {
+      "native": {
+        "complete": {
+          "calls": 301,
+          "writes": 54,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 269,
+          "writes": 41,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 301,
+          "writes": 54,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 269,
+          "writes": 41,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 301,
+          "writes": 54,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 269,
+          "writes": 41,
+          "selected_different_from_latest": 60
+        }
+      }
+    },
+    "whiteTboy": {
+      "native": {
+        "complete": {
+          "calls": 253,
+          "writes": 27,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 221,
+          "writes": 20,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 253,
+          "writes": 27,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 221,
+          "writes": 20,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 253,
+          "writes": 27,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 221,
+          "writes": 15,
+          "selected_different_from_latest": 94
+        }
+      }
+    },
+    "lefthandfoamboard": {
+      "native": {
+        "complete": {
+          "calls": 153,
+          "writes": 6,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 153,
+          "writes": 6,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 153,
+          "writes": 6,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 153,
+          "writes": 6,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 153,
+          "writes": 6,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 153,
+          "writes": 8,
+          "selected_different_from_latest": 68
+        }
+      }
+    },
+    "whitecarleave": {
+      "native": {
+        "complete": {
+          "calls": 126,
+          "writes": 25,
+          "selected_different_from_latest": null
+        },
+        "block32_outage": {
+          "calls": 126,
+          "writes": 23,
+          "selected_different_from_latest": null
+        }
+      },
+      "sham": {
+        "complete": {
+          "calls": 126,
+          "writes": 25,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 126,
+          "writes": 23,
+          "selected_different_from_latest": 0
+        }
+      },
+      "matched": {
+        "complete": {
+          "calls": 126,
+          "writes": 25,
+          "selected_different_from_latest": 0
+        },
+        "block32_outage": {
+          "calls": 126,
+          "writes": 24,
+          "selected_different_from_latest": 11
+        }
+      }
+    }
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "fbedd72de4e5fc7c3faccdd70e9c210d5e92f8399fde6c86d400e69059629192",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    "1": {
+      "report_sha256": "7472ad2cd1b5f5ee7209102849f2e122acef6ab413700583e8ea5a2bbf196875",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    }
+  },
+  "current11_matched_minus_native": {
+    "PR20": {
+      "mean_delta_pp": -6.86408796633288,
+      "paired_sequence_bootstrap95_pp": [
+        -17.031998414094076,
+        -0.08291873963515783
+      ],
+      "wins": 0,
+      "ties": 4,
+      "losses": 4,
+      "worst5": [
+        {
+          "sequence": "leftgirlat1row",
+          "delta_pp": -40.67164179104478
+        },
+        {
+          "sequence": "whiteTboy",
+          "delta_pp": -13.38582677165354
+        },
+        {
+          "sequence": "1phoneblue",
+          "delta_pp": -0.5235602094240903
+        },
+        {
+          "sequence": "girlshead",
+          "delta_pp": -0.33167495854063134
+        },
+        {
+          "sequence": "boyridesbesidesgirl",
+          "delta_pp": 0.0
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "whitecarleave",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "rightrunninglatterone",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "lefthandfoamboard",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "boyridesbesidesgirl",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "girlshead",
+          "delta_pp": -0.33167495854063134
+        }
+      ]
+    },
+    "SR": {
+      "mean_delta_pp": -5.6983275624834375,
+      "paired_sequence_bootstrap95_pp": [
+        -14.003147537627827,
+        -0.15944391139701267
+      ],
+      "wins": 1,
+      "ties": 1,
+      "losses": 6,
+      "worst5": [
+        {
+          "sequence": "leftgirlat1row",
+          "delta_pp": -33.12011371712864
+        },
+        {
+          "sequence": "whiteTboy",
+          "delta_pp": -10.986126734158233
+        },
+        {
+          "sequence": "1phoneblue",
+          "delta_pp": -0.8975317875841569
+        },
+        {
+          "sequence": "girlshead",
+          "delta_pp": -0.45960672826345217
+        },
+        {
+          "sequence": "boyridesbesidesgirl",
+          "delta_pp": -0.2395926924228604
+        }
+      ],
+      "best5": [
+        {
+          "sequence": "lefthandfoamboard",
+          "delta_pp": 0.26752273943284877
+        },
+        {
+          "sequence": "rightrunninglatterone",
+          "delta_pp": 0.0
+        },
+        {
+          "sequence": "whitecarleave",
+          "delta_pp": -0.1511715797430071
+        },
+        {
+          "sequence": "boyridesbesidesgirl",
+          "delta_pp": -0.2395926924228604
+        },
+        {
+          "sequence": "girlshead",
+          "delta_pp": -0.45960672826345217
+        }
+      ]
+    }
+  },
+  "current11_aggregate": {
+    "native": {
+      "PR20": 90.55389845783196,
+      "SR": 73.8888038702666
+    },
+    "sham": {
+      "PR20": 90.55389845783196,
+      "SR": 73.8888038702666
+    },
+    "matched": {
+      "PR20": 83.68981049149909,
+      "SR": 68.19047630778317
+    }
+  },
+  "trajectories_verified": 48,
+  "past_only_bank_verified": true,
+  "controls_equal": true,
+  "scope": "Eight prospective development videos; paired-video resampling for one fixed E0. Ordinary state-history control, not official scores or novel module evidence. Template/crop histories evolve jointly; effects do not isolate template age."
+}

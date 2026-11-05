@@ -1,0 +1,635 @@
+{
+  "scope": "Descriptive existing fixed8 CPU trajectories of historical A. No intervention, causal effect, selected LocalRepair outcome or benchmark claim. Groups differ in frames, history and tracking state.",
+  "report_sha256": "a798da5eaf0c1d22f2a1f6bdf955a5bf91fb173d1afdee00ecef4aef51ada48e",
+  "source_sha256": "3b1d67d41c285fb84c892cb73f7fddb8f29a26ed1cd25bfdec7d5af915890d84",
+  "sequences": {
+    "boywalkinginsnow3": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 564,
+          "observed_frames": 564,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 564,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 93,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 564,
+            "valid_geometry_frames": 564,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8312570388975652
+          }
+        },
+        "trace_sha256": "a64cbd981662b722b54a2138f1f37f8c155d77e74471bf268cf31a04f678382d"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 564,
+          "observed_frames": 479,
+          "observed_with_missing_dynamic_template": 215,
+          "complete_search_frames": 287,
+          "complete_search_with_missing_dynamic_template": 50,
+          "single_search_with_missing_dynamic_template": 165,
+          "single_search_opposite_dynamic_modality": 32,
+          "template_writes": 72,
+          "single_modality_template_writes": 27
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 237,
+            "valid_geometry_frames": 237,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8526772165261091
+          },
+          "search01_dynamic11": {
+            "frames": 12,
+            "valid_geometry_frames": 12,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.9077548829640535
+          },
+          "search01_dynamic01": {
+            "frames": 84,
+            "valid_geometry_frames": 84,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8645085581917813
+          },
+          "search11_dynamic01": {
+            "frames": 44,
+            "valid_geometry_frames": 44,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.5143709194591903
+          },
+          "search10_dynamic01": {
+            "frames": 32,
+            "valid_geometry_frames": 32,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.6950682601725814
+          },
+          "search10_dynamic11": {
+            "frames": 15,
+            "valid_geometry_frames": 15,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.768930674131027
+          },
+          "search10_dynamic10": {
+            "frames": 49,
+            "valid_geometry_frames": 49,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8458820384639825
+          },
+          "search11_dynamic10": {
+            "frames": 6,
+            "valid_geometry_frames": 6,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.9299834271437372
+          }
+        },
+        "trace_sha256": "27cb059a47543a73a75c138c9573656bd87e11b6a124380a5f167738eb05b7a4"
+      }
+    },
+    "leftdrillmasterstanding": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 2191,
+          "observed_frames": 2191,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 2191,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 398,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 2191,
+            "valid_geometry_frames": 2191,
+            "zero_crop_overlap": 717,
+            "mean_iou": 0.34498935768973715
+          }
+        },
+        "trace_sha256": "94a259608e0db6f048772b9d1e2c298ad93a4c7d15ba5f38c3efc4921ac45e8f"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 2191,
+          "observed_frames": 1839,
+          "observed_with_missing_dynamic_template": 245,
+          "complete_search_frames": 1103,
+          "complete_search_with_missing_dynamic_template": 26,
+          "single_search_with_missing_dynamic_template": 219,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 138,
+          "single_modality_template_writes": 39
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 1077,
+            "valid_geometry_frames": 1077,
+            "zero_crop_overlap": 827,
+            "mean_iou": 0.1378445490807988
+          },
+          "search01_dynamic11": {
+            "frames": 300,
+            "valid_geometry_frames": 300,
+            "zero_crop_overlap": 260,
+            "mean_iou": 0.02448445789369439
+          },
+          "search01_dynamic01": {
+            "frames": 84,
+            "valid_geometry_frames": 84,
+            "zero_crop_overlap": 28,
+            "mean_iou": 0.5514516291576002
+          },
+          "search11_dynamic01": {
+            "frames": 11,
+            "valid_geometry_frames": 11,
+            "zero_crop_overlap": 2,
+            "mean_iou": 0.6189045813439603
+          },
+          "search10_dynamic11": {
+            "frames": 217,
+            "valid_geometry_frames": 217,
+            "zero_crop_overlap": 202,
+            "mean_iou": 0.04243034996566257
+          },
+          "search10_dynamic10": {
+            "frames": 135,
+            "valid_geometry_frames": 135,
+            "zero_crop_overlap": 54,
+            "mean_iou": 0.3145131125749843
+          },
+          "search11_dynamic10": {
+            "frames": 15,
+            "valid_geometry_frames": 15,
+            "zero_crop_overlap": 6,
+            "mean_iou": 0.34089974295644343
+          }
+        },
+        "trace_sha256": "8f1aab40c8e4566fe98668d681da88c82bd08cb88daad2eadd62697e507d4c7a"
+      }
+    },
+    "leftgirlunderthelamp": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 257,
+          "observed_frames": 257,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 257,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 37,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 257,
+            "valid_geometry_frames": 257,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7215266227177071
+          }
+        },
+        "trace_sha256": "7a87a48c399e5d838bec36fd434fc17f3abc71cb080d671566ee417f01fda903"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 257,
+          "observed_frames": 225,
+          "observed_with_missing_dynamic_template": 65,
+          "complete_search_frames": 129,
+          "complete_search_with_missing_dynamic_template": 10,
+          "single_search_with_missing_dynamic_template": 55,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 21,
+          "single_modality_template_writes": 8
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 119,
+            "valid_geometry_frames": 119,
+            "zero_crop_overlap": 34,
+            "mean_iou": 0.5805035996575797
+          },
+          "search01_dynamic11": {
+            "frames": 36,
+            "valid_geometry_frames": 36,
+            "zero_crop_overlap": 32,
+            "mean_iou": 0.08130358219539784
+          },
+          "search01_dynamic01": {
+            "frames": 28,
+            "valid_geometry_frames": 28,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.5972317370660454
+          },
+          "search11_dynamic01": {
+            "frames": 7,
+            "valid_geometry_frames": 7,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7156220189330543
+          },
+          "search10_dynamic11": {
+            "frames": 5,
+            "valid_geometry_frames": 5,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.6829760676629013
+          },
+          "search10_dynamic10": {
+            "frames": 27,
+            "valid_geometry_frames": 27,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7810470008347244
+          },
+          "search11_dynamic10": {
+            "frames": 3,
+            "valid_geometry_frames": 3,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8234632334974826
+          }
+        },
+        "trace_sha256": "ba5294274691f983b2f930084837a90fee5f9e4205ff4d160b10e96b62bebd48"
+      }
+    },
+    "girlridesbike": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 174,
+          "observed_frames": 174,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 174,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 31,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 174,
+            "valid_geometry_frames": 174,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8488768135010891
+          }
+        },
+        "trace_sha256": "aa3fb5493429b9dfb6e2513e52f35668cf0ee05160efcdf5d989574a17c8ef1c"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 174,
+          "observed_frames": 159,
+          "observed_with_missing_dynamic_template": 60,
+          "complete_search_frames": 95,
+          "complete_search_with_missing_dynamic_template": 5,
+          "single_search_with_missing_dynamic_template": 55,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 27,
+          "single_modality_template_writes": 11
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 90,
+            "valid_geometry_frames": 90,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8308166478892288
+          },
+          "search01_dynamic11": {
+            "frames": 4,
+            "valid_geometry_frames": 4,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.6982971069238788
+          },
+          "search01_dynamic01": {
+            "frames": 28,
+            "valid_geometry_frames": 28,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.5880032145751574
+          },
+          "search11_dynamic01": {
+            "frames": 2,
+            "valid_geometry_frames": 2,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8345581540300455
+          },
+          "search10_dynamic11": {
+            "frames": 5,
+            "valid_geometry_frames": 5,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.888430178483955
+          },
+          "search10_dynamic10": {
+            "frames": 27,
+            "valid_geometry_frames": 27,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8121268924033338
+          },
+          "search11_dynamic10": {
+            "frames": 3,
+            "valid_geometry_frames": 3,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8631124981606669
+          }
+        },
+        "trace_sha256": "b7f62b979bdf10e12863c7e763bcecc61a1b0d669aa70fcf7a325e1c53d073a6"
+      }
+    },
+    "midboyplayingphone": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 328,
+          "observed_frames": 328,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 328,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 56,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 328,
+            "valid_geometry_frames": 327,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7817168992464143
+          }
+        },
+        "trace_sha256": "c34eda4acb887e3cd61864e5a06702612fee752924c71c56aebdadcfea663de1"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 328,
+          "observed_frames": 296,
+          "observed_with_missing_dynamic_template": 125,
+          "complete_search_frames": 168,
+          "complete_search_with_missing_dynamic_template": 15,
+          "single_search_with_missing_dynamic_template": 110,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 49,
+          "single_modality_template_writes": 19
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 153,
+            "valid_geometry_frames": 152,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8380752411530479
+          },
+          "search01_dynamic11": {
+            "frames": 8,
+            "valid_geometry_frames": 8,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8132798491574417
+          },
+          "search01_dynamic01": {
+            "frames": 56,
+            "valid_geometry_frames": 56,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8400763166139847
+          },
+          "search11_dynamic01": {
+            "frames": 4,
+            "valid_geometry_frames": 4,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8668877670399489
+          },
+          "search10_dynamic11": {
+            "frames": 10,
+            "valid_geometry_frames": 10,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7215083207034002
+          },
+          "search10_dynamic10": {
+            "frames": 54,
+            "valid_geometry_frames": 54,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.6679689195237285
+          },
+          "search11_dynamic10": {
+            "frames": 11,
+            "valid_geometry_frames": 11,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8739277200526981
+          }
+        },
+        "trace_sha256": "c09aab3fb3c2b0e5b96d6b67a01b0ce87afc5fc931a909fcbf1e360aa2e5ad6e"
+      }
+    },
+    "boywithumbrella": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 908,
+          "observed_frames": 908,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 908,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 160,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 908,
+            "valid_geometry_frames": 908,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8470989864137606
+          }
+        },
+        "trace_sha256": "20570a25565d8683b19c862ecda29d19753a8fe127744b3707338953c41790d7"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 908,
+          "observed_frames": 780,
+          "observed_with_missing_dynamic_template": 250,
+          "complete_search_frames": 460,
+          "complete_search_with_missing_dynamic_template": 28,
+          "single_search_with_missing_dynamic_template": 222,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 132,
+          "single_modality_template_writes": 46
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 432,
+            "valid_geometry_frames": 432,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.855605825497571
+          },
+          "search01_dynamic11": {
+            "frames": 63,
+            "valid_geometry_frames": 63,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.7913715826421496
+          },
+          "search01_dynamic01": {
+            "frames": 97,
+            "valid_geometry_frames": 97,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.769104119369241
+          },
+          "search11_dynamic01": {
+            "frames": 8,
+            "valid_geometry_frames": 8,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8191646572180461
+          },
+          "search10_dynamic11": {
+            "frames": 35,
+            "valid_geometry_frames": 35,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8230094599725201
+          },
+          "search10_dynamic10": {
+            "frames": 125,
+            "valid_geometry_frames": 125,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8082060239504621
+          },
+          "search11_dynamic10": {
+            "frames": 20,
+            "valid_geometry_frames": 20,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8186230532836467
+          }
+        },
+        "trace_sha256": "0603701639e91fe5fcd04cc0ed2670a4454a234c9b2d2268252f5292c084ecf3"
+      }
+    },
+    "manrun": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 60,
+          "observed_frames": 60,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 60,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 9,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 60,
+            "valid_geometry_frames": 60,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.9178061107817135
+          }
+        },
+        "trace_sha256": "900a0130da3286e44752aa2c7e5e7248c9024613794bbf1617f37327cad25487"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 60,
+          "observed_frames": 60,
+          "observed_with_missing_dynamic_template": 25,
+          "complete_search_frames": 31,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 25,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 8,
+          "single_modality_template_writes": 4
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 31,
+            "valid_geometry_frames": 31,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.9126303060411936
+          },
+          "search01_dynamic11": {
+            "frames": 4,
+            "valid_geometry_frames": 4,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.882343152157443
+          },
+          "search01_dynamic01": {
+            "frames": 25,
+            "valid_geometry_frames": 25,
+            "zero_crop_overlap": 0,
+            "mean_iou": 0.8610279822908926
+          }
+        },
+        "trace_sha256": "0b84b13f681d8a6ce737f71a917cc6bf478807c5836231f18e5d7e7355f40fdb"
+      }
+    },
+    "ab_pingpongball": {
+      "complete": {
+        "counts": {
+          "video_frames_after_initialization": 112,
+          "observed_frames": 112,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 112,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 1,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 112,
+            "valid_geometry_frames": 87,
+            "zero_crop_overlap": 67,
+            "mean_iou": 0.07151991670968962
+          }
+        },
+        "trace_sha256": "9df82dfbf6ec4bdf596755670cdbca0f92103c377e985b224eaffe57f16eb33c"
+      },
+      "alternating_outage": {
+        "counts": {
+          "video_frames_after_initialization": 112,
+          "observed_frames": 112,
+          "observed_with_missing_dynamic_template": 0,
+          "complete_search_frames": 63,
+          "complete_search_with_missing_dynamic_template": 0,
+          "single_search_with_missing_dynamic_template": 0,
+          "single_search_opposite_dynamic_modality": 0,
+          "template_writes": 1,
+          "single_modality_template_writes": 0
+        },
+        "groups": {
+          "search11_dynamic11": {
+            "frames": 63,
+            "valid_geometry_frames": 48,
+            "zero_crop_overlap": 35,
+            "mean_iou": 0.11266601117046927
+          },
+          "search01_dynamic11": {
+            "frames": 32,
+            "valid_geometry_frames": 22,
+            "zero_crop_overlap": 13,
+            "mean_iou": 0.0
+          },
+          "search10_dynamic11": {
+            "frames": 17,
+            "valid_geometry_frames": 17,
+            "zero_crop_overlap": 13,
+            "mean_iou": 0.04486834620764162
+          }
+        },
+        "trace_sha256": "737b63b8301d7cd7c1f761673e5f3256d2a405adaa4ff78b12bd21341fe2ef91"
+      }
+    }
+  },
+  "alternating_counts": {
+    "video_frames_after_initialization": 4594,
+    "observed_frames": 3950,
+    "observed_with_missing_dynamic_template": 985,
+    "complete_search_frames": 2336,
+    "complete_search_with_missing_dynamic_template": 134,
+    "single_search_with_missing_dynamic_template": 851,
+    "single_search_opposite_dynamic_modality": 32,
+    "template_writes": 448,
+    "single_modality_template_writes": 154
+  },
+  "observed_missing_dynamic_percent": 24.936708860759495,
+  "complete_search_missing_dynamic_percent": 5.736301369863014,
+  "interpretation": "Complete current search is not equivalent to all-complete history. The frozen six-epoch pilot uses complete templates only. Its sampled complete-output hash therefore does not certify mixed-history tracking. Historical A formal training already samples dynamic-template outages."
+}

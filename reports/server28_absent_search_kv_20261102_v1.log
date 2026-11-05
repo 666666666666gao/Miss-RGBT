@@ -1,0 +1,14 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+Traceback (most recent call last):
+  File "/home/gaob/Miss-RGBT/scripts/diagnose_absent_search_kv.py", line 229, in <module>
+    main()
+  File "/home/gaob/Miss-RGBT/scripts/diagnose_absent_search_kv.py", line 162, in main
+    base_loss = task_loss([baseline], target.unsqueeze(0), cfg)
+  File "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py", line 16, in task_loss
+    giou, _ = generalized_box_iou(predicted, target)
+  File "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/utils/box_ops.py", line 75, in generalized_box_iou
+    iou, union = box_iou(boxes1, boxes2) # (N,)
+  File "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/utils/box_ops.py", line 46, in box_iou
+    lt = torch.max(boxes1[:, :2], boxes2[:, :2])  # (N,2)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

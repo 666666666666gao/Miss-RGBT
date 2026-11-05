@@ -16,7 +16,8 @@ class MissingTracker:
         config = saved['config']
         self.cfg = cfg
         self.network = MissingTrackerModel(build_cadtrack(cfg, training=False), repair=config['repair'],
-            width=config['repair_width'], repair_layer=config['repair_layer'])
+            width=config['repair_width'], repair_layer=config['repair_layer'],
+            task_utility=config.get('task_utility'))
         self.network.load_state_dict(saved['model'], strict=True)
         self.network.cuda().eval()
         self.preprocessor = PreprocessorMM(mean=cfg.DATA.MEAN, std=cfg.DATA.STD)
@@ -25,6 +26,8 @@ class MissingTracker:
         self.window = hann2d(torch.tensor([size, size]).long(), centered=True).cuda()
 
     def initialize(self, image, info):
+        if self.network.utility_repair is not None:
+            self.network.utility_repair.reset_selection()
         crop, _, _ = sample_target(image, info['init_bbox'], self.cfg.TEST.TEMPLATE_FACTOR,
                                    output_sz=self.cfg.TEST.TEMPLATE_SIZE)
         template = self.preprocessor.process(crop)

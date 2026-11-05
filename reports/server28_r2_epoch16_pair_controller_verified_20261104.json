@@ -1,0 +1,49 @@
+[
+  {
+    "epoch": 16,
+    "checkpoint_sha256": "ca916649ed209ccea7058542dedc98e0fafff1d19bd20a1d98f8320bd8b69764",
+    "development_selected": false,
+    "conditions": {
+      "complete": {
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 74.90846367654231,
+            "NPR": 71.0331263745959,
+            "SR": 59.53124171012887
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 91.38245547854804,
+            "MSR": 67.12076012251707
+          }
+        },
+        "independently_recomputed": true,
+        "output": "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_complete",
+        "completed_sha256": "8d19b885cbfdb319867f754ca2d2ba6fa34152ac9df4eee2eae52fb650784b37"
+      },
+      "miss": {
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 68.88084242836496,
+            "NPR": 63.407934084694574,
+            "SR": 54.55589712385138
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 85.82698625831365,
+            "MSR": 62.112798153309356
+          }
+        },
+        "independently_recomputed": true,
+        "output": "/home/gaob/Miss-RGBT/results/r1r2_20261103/r2/epoch16_miss",
+        "completed_sha256": "043ee1cdbfdd81374adfa9964263d664d6958cfe8aab15b978eaac015e74e21b"
+      }
+    }
+  }
+]

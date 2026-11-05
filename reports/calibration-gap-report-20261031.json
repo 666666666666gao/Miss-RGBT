@@ -1,0 +1,1996 @@
+{
+  "launch": {
+    "pid": 1320176,
+    "registered_utc": "2026-10-31T08:00:19.924087Z",
+    "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "development_indices": [
+      60,
+      61,
+      62,
+      63
+    ],
+    "cohort": [
+      {
+        "name": "boyaftertworunboys",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyaftertworunboys",
+        "development_index": 60,
+        "video_frames": 458,
+        "gt_sha256": "ba157f5efac9ad49e3f1104ded49a2b64fec2ac1c860453bd53b5e2943e7e417"
+      },
+      {
+        "name": "twopeople_0109",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/twopeople_0109",
+        "development_index": 61,
+        "video_frames": 450,
+        "gt_sha256": "931f3eebf4d518849294030bf0c5a03de33fb20db73bde2bd8014dc6737473de"
+      },
+      {
+        "name": "10rightblackboy",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/10rightblackboy",
+        "development_index": 62,
+        "video_frames": 333,
+        "gt_sha256": "3c7266877e5a0f9162273a630347d879769064d862ac005204be156031513cb1"
+      },
+      {
+        "name": "leftbottle",
+        "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftbottle",
+        "development_index": 63,
+        "video_frames": 1143,
+        "gt_sha256": "79fc02d3ec0c4a3b6deecb41d85cc9cf1a2b2904cbda1c28a899c0291eff3c4d"
+      }
+    ],
+    "parts": {
+      "0": [
+        {
+          "name": "leftbottle",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftbottle",
+          "development_index": 63,
+          "video_frames": 1143,
+          "gt_sha256": "79fc02d3ec0c4a3b6deecb41d85cc9cf1a2b2904cbda1c28a899c0291eff3c4d"
+        }
+      ],
+      "1": [
+        {
+          "name": "boyaftertworunboys",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyaftertworunboys",
+          "development_index": 60,
+          "video_frames": 458,
+          "gt_sha256": "ba157f5efac9ad49e3f1104ded49a2b64fec2ac1c860453bd53b5e2943e7e417"
+        },
+        {
+          "name": "twopeople_0109",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/twopeople_0109",
+          "development_index": 61,
+          "video_frames": 450,
+          "gt_sha256": "931f3eebf4d518849294030bf0c5a03de33fb20db73bde2bd8014dc6737473de"
+        },
+        {
+          "name": "10rightblackboy",
+          "folder": "/data/wangwj/dataset/LasHeR/trainingset/10rightblackboy",
+          "development_index": 62,
+          "video_frames": 333,
+          "gt_sha256": "3c7266877e5a0f9162273a630347d879769064d862ac005204be156031513cb1"
+        }
+      ]
+    },
+    "loads": {
+      "0": 1143,
+      "1": 1241
+    },
+    "arms": [
+      "native",
+      "sham",
+      "center",
+      "geometry"
+    ],
+    "conditions": [
+      "complete",
+      "alternating_outage",
+      "block32_outage",
+      "block128_outage"
+    ],
+    "frame_blocks": {
+      "complete": 0,
+      "alternating_outage": 1,
+      "block32_outage": 32,
+      "block128_outage": 128
+    },
+    "pattern": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/run_calibration_gap28.py": "9c1ae50b7a9efbad10d83480fe2e8db786d6d1a7512280c4a55ec5b53a56c06e",
+      "/home/gaob/Miss-RGBT/spatial_calibration_tracker28.py": "7f53a211e16b7e4f5c2e52021e8c63188d222b620b6a8d2161e443d0ef8283f8",
+      "/home/gaob/Miss-RGBT/state_offset_tracker28.py": "078973206eb4b070cbd2cbfce14118018b5748003fdb3826f745d23aac8d94c3",
+      "/home/gaob/Miss-RGBT/analyze_epoch05_health28.py": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+      "/home/gaob/Miss-RGBT/evaluate_val97_recovery28.py": "fba37b6ec3c49a9368f80ee897109bafd87a80d445248f406a80799ab07d159e",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+      "/home/gaob/Miss-RGBT/recover_evaluation_chain28.py": "0e737d3dc318123c51ee7a8b83b2f76600b5d1e83994e3be752c0e12aac8e99c"
+    },
+    "witness_sha256": "050a54f4f770ce7a638b9adca160a0c7e1e3c4077e80c9bd9964a63e22a3dd7e",
+    "poll_seconds": 300,
+    "previous_pid": 1256793,
+    "geometry_diagnostic_sha256": "9f556ba28a3258aa412c7ec3eab324262dbe8b694b680d035eabfe703967345f",
+    "calibration_age_diagnostic_sha256": "4cda9fa314e59d52ddc2264c7bd181fddb97b979d6ab6499d2caf4122da8a8d5",
+    "scope": "Sequential fresh videos, no outcome filtering. Fixed block1, existing block32, and fourfold block128 stress. Compare both missing states without fitted gate/decay/expiry/coefficient or weight updates; same video/hardware across arms.",
+    "registration_sha256": "e9260c3a032c2bc3395904d974066fb479639318020707a18aeee1b150f7a3b7",
+    "recovery_previous_report_sha256": "96be9ee99255d28ee98ccafb01f844c82cc49666ec074d0676fd8f2a1046242e",
+    "recovered_controller_pid": 72348
+  },
+  "aggregate": {
+    "complete": {
+      "native": {
+        "PR20": 85.40948928326442,
+        "SR": 64.1303330569794
+      },
+      "sham": {
+        "PR20": 85.40948928326442,
+        "SR": 64.1303330569794
+      },
+      "center": {
+        "PR20": 85.40948928326442,
+        "SR": 64.1303330569794
+      },
+      "geometry": {
+        "PR20": 85.40948928326442,
+        "SR": 64.1303330569794
+      }
+    },
+    "alternating_outage": {
+      "native": {
+        "PR20": 76.14012615588607,
+        "SR": 56.606727574278636
+      },
+      "sham": {
+        "PR20": 76.14012615588607,
+        "SR": 56.606727574278636
+      },
+      "center": {
+        "PR20": 75.21014803772414,
+        "SR": 56.92297088306105
+      },
+      "geometry": {
+        "PR20": 79.61056268131077,
+        "SR": 60.69064314899519
+      }
+    },
+    "block32_outage": {
+      "native": {
+        "PR20": 62.353446625501135,
+        "SR": 45.41538172146322
+      },
+      "sham": {
+        "PR20": 62.353446625501135,
+        "SR": 45.41538172146322
+      },
+      "center": {
+        "PR20": 56.97989231559903,
+        "SR": 42.56383198011128
+      },
+      "geometry": {
+        "PR20": 63.27279040029066,
+        "SR": 46.36521012071192
+      }
+    },
+    "block128_outage": {
+      "native": {
+        "PR20": 80.46308254166554,
+        "SR": 57.89261821790292
+      },
+      "sham": {
+        "PR20": 80.46308254166554,
+        "SR": 57.89261821790292
+      },
+      "center": {
+        "PR20": 78.14350232039456,
+        "SR": 56.187878348745336
+      },
+      "geometry": {
+        "PR20": 72.06884922992025,
+        "SR": 53.08664466138285
+      }
+    }
+  },
+  "paired_contrasts": {
+    "complete": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.0,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 4,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "alternating_outage": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta_pp": -0.9299781181619231,
+          "paired_sequence_bootstrap95_pp": [
+            -2.7899343544857693,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 3,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -3.7199124726476924
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -3.7199124726476924
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.31624330878241214,
+          "paired_sequence_bootstrap95_pp": [
+            -0.49702561417913316,
+            0.8960276358376476
+          ],
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -0.9065332916536448
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.37945125510799826
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.7314974182444018
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.0605578534308933
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.0605578534308933
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.7314974182444018
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 0.37945125510799826
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -0.9065332916536448
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 3.470436525424706,
+          "paired_sequence_bootstrap95_pp": [
+            -4.43107221006564,
+            14.842381786339757
+          ],
+          "wins": 1,
+          "ties": 2,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -5.90809628008752
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 19.789842381786343
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 19.789842381786343
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -5.90809628008752
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 4.083915574716565,
+          "paired_sequence_bootstrap95_pp": [
+            -1.5320303556257127,
+            11.896271601291328
+          ],
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -2.813379180994069
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.4629948364888037
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 2.312016120479356
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 15.37403052289217
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 15.37403052289217
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 2.312016120479356
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.4629948364888037
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -2.813379180994069
+            }
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta_pp": 4.400414643586629,
+          "paired_sequence_bootstrap95_pp": [
+            -1.6411378555798706,
+            14.842381786339757
+          ],
+          "wins": 1,
+          "ties": 2,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -2.1881838074398274
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 19.789842381786343
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 19.789842381786343
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -2.1881838074398274
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 3.767672265934153,
+          "paired_sequence_bootstrap95_pp": [
+            -1.1172698502432024,
+            11.428808805399228
+          ],
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -1.906845889340424
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.7314974182444018
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.2514582670484629
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 14.994579267784172
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 14.994579267784172
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.2514582670484629
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.7314974182444018
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -1.906845889340424
+            }
+          ]
+        }
+      }
+    },
+    "block32_outage": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta_pp": -5.373554309902104,
+          "paired_sequence_bootstrap95_pp": [
+            -14.442013129102845,
+            0.15060240963855165
+          ],
+          "wins": 1,
+          "ties": 1,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -19.25601750547046
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -2.5394045534150624
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.3012048192771033
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.3012048192771033
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -2.5394045534150624
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -19.25601750547046
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -2.851549741351938,
+          "paired_sequence_bootstrap95_pp": [
+            -6.392466047644341,
+            -0.357358882615777
+          ],
+          "wins": 1,
+          "ties": 0,
+          "losses": 3,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -7.939981244138792
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -1.8597281294304064
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": -1.749920458160986
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.14343086632243285
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.14343086632243285
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": -1.749920458160986
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -1.8597281294304064
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -7.939981244138792
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": 0.919343774789517,
+          "paired_sequence_bootstrap95_pp": [
+            0.0,
+            2.101576182136603
+          ],
+          "wins": 2,
+          "ties": 2,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.875273522975931
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 2.802101576182137
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 2.802101576182137
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 0.875273522975931
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 0.9498283992486993,
+          "paired_sequence_bootstrap95_pp": [
+            0.49387923685991275,
+            1.2519527916167321
+          ],
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.2868617326448657
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.0923745890338523
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 1.114931749505054
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 1.3051455258110254
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 1.3051455258110254
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 1.114931749505054
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 1.0923745890338523
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.2868617326448657
+            }
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta_pp": 6.292898084691622,
+          "paired_sequence_bootstrap95_pp": [
+            -0.15060240963855165,
+            15.098468271334793
+          ],
+          "wins": 2,
+          "ties": 1,
+          "losses": 1,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": -0.3012048192771033
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 5.3415061295971995
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 20.13129102844639
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 20.13129102844639
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 5.3415061295971995
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": -0.3012048192771033
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": 3.8013781406006375,
+          "paired_sequence_bootstrap95_pp": [
+            0.8987915635521826,
+            7.501758507031594
+          ],
+          "wins": 4,
+          "ties": 0,
+          "losses": 0,
+          "worst5": [
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.14343086632243285
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 2.8422950471948383
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 3.164873655241432
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 9.054912993643846
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": 9.054912993643846
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": 3.164873655241432
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 2.8422950471948383
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.14343086632243285
+            }
+          ]
+        }
+      }
+    },
+    "block128_outage": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta_pp": -2.3195802212709884,
+          "paired_sequence_bootstrap95_pp": [
+            -6.236323851203508,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 2,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -8.315098468271344
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -0.9632224168126093
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -0.9632224168126093
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -8.315098468271344
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -1.7047398691575877,
+          "paired_sequence_bootstrap95_pp": [
+            -4.88654367391416,
+            0.3960959970968858
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -6.606231113889756
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -1.0049203569343668
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.2725186460126281
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.5196733481811435
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.5196733481811435
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.2725186460126281
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -1.0049203569343668
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -6.606231113889756
+            }
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta_pp": -8.3942333117453,
+          "paired_sequence_bootstrap95_pp": [
+            -17.46935201401051,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 2,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -23.292469352014013
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -10.284463894967189
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -10.284463894967189
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -23.292469352014013
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -4.805973556520071,
+          "paired_sequence_bootstrap95_pp": [
+            -12.499397138215105,
+            2.405964935146251
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -17.096155449920772
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -6.939668646452013
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.2908777969018956
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 3.5210520733906066
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 3.5210520733906066
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.2908777969018956
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -6.939668646452013
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -17.096155449920772
+            }
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta_pp": -6.074653090474312,
+          "paired_sequence_bootstrap95_pp": [
+            -16.74693520140105,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 2,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -22.329246935201404
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -1.9693654266958447
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 0.0
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -1.9693654266958447
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -22.329246935201404
+            }
+          ]
+        },
+        "SR": {
+          "mean_delta_pp": -3.101233687362484,
+          "paired_sequence_bootstrap95_pp": [
+            -11.81383653201749,
+            2.167674660766533
+          ],
+          "wins": 2,
+          "ties": 0,
+          "losses": 2,
+          "worst5": [
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -16.09123509298641
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -0.3334375325622574
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.0183591508892675
+            },
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 3.001378725209463
+            }
+          ],
+          "best5": [
+            {
+              "sequence": "twopeople_0109",
+              "delta_pp": 3.001378725209463
+            },
+            {
+              "sequence": "10rightblackboy",
+              "delta_pp": 1.0183591508892675
+            },
+            {
+              "sequence": "boyaftertworunboys",
+              "delta_pp": -0.3334375325622574
+            },
+            {
+              "sequence": "leftbottle",
+              "delta_pp": -16.09123509298641
+            }
+          ]
+        }
+      }
+    }
+  },
+  "per_video": {
+    "leftbottle": {
+      "native": {
+        "complete": {
+          "PR20": 42.73204903677758,
+          "SR": 30.364439996664167,
+          "scored_frames": 1142
+        },
+        "alternating_outage": {
+          "PR20": 20.75306479859895,
+          "SR": 13.681094153948795,
+          "scored_frames": 1142
+        },
+        "block32_outage": {
+          "PR20": 10.42031523642732,
+          "SR": 7.8558919189392045,
+          "scored_frames": 1142
+        },
+        "block128_outage": {
+          "PR20": 32.57443082311734,
+          "SR": 24.44333249937453,
+          "scored_frames": 1142
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 42.73204903677758,
+          "SR": 30.364439996664167,
+          "scored_frames": 1142
+        },
+        "alternating_outage": {
+          "PR20": 20.75306479859895,
+          "SR": 13.681094153948795,
+          "scored_frames": 1142
+        },
+        "block32_outage": {
+          "PR20": 10.42031523642732,
+          "SR": 7.8558919189392045,
+          "scored_frames": 1142
+        },
+        "block128_outage": {
+          "PR20": 32.57443082311734,
+          "SR": 24.44333249937453,
+          "scored_frames": 1142
+        }
+      },
+      "center": {
+        "complete": {
+          "PR20": 42.73204903677758,
+          "SR": 30.364439996664167,
+          "scored_frames": 1142
+        },
+        "alternating_outage": {
+          "PR20": 20.75306479859895,
+          "SR": 14.060545409056793,
+          "scored_frames": 1142
+        },
+        "block32_outage": {
+          "PR20": 7.880910683012258,
+          "SR": 5.996163789508798,
+          "scored_frames": 1142
+        },
+        "block128_outage": {
+          "PR20": 31.61120840630473,
+          "SR": 23.438412142440164,
+          "scored_frames": 1142
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 42.73204903677758,
+          "SR": 30.364439996664167,
+          "scored_frames": 1142
+        },
+        "alternating_outage": {
+          "PR20": 40.54290718038529,
+          "SR": 29.055124676840965,
+          "scored_frames": 1142
+        },
+        "block32_outage": {
+          "PR20": 13.222416812609458,
+          "SR": 9.16103744475023,
+          "scored_frames": 1142
+        },
+        "block128_outage": {
+          "PR20": 9.281961471103326,
+          "SR": 7.347177049453757,
+          "scored_frames": 1142
+        }
+      }
+    },
+    "boyaftertworunboys": {
+      "native": {
+        "complete": {
+          "PR20": 98.90590809628009,
+          "SR": 67.47942065228717,
+          "scored_frames": 457
+        },
+        "alternating_outage": {
+          "PR20": 83.80743982494529,
+          "SR": 57.674273210378246,
+          "scored_frames": 457
+        },
+        "block32_outage": {
+          "PR20": 52.078774617067836,
+          "SR": 32.57267896217568,
+          "scored_frames": 457
+        },
+        "block128_outage": {
+          "PR20": 89.27789934354486,
+          "SR": 55.20475148483901,
+          "scored_frames": 457
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 98.90590809628009,
+          "SR": 67.47942065228717,
+          "scored_frames": 457
+        },
+        "alternating_outage": {
+          "PR20": 83.80743982494529,
+          "SR": 57.674273210378246,
+          "scored_frames": 457
+        },
+        "block32_outage": {
+          "PR20": 52.078774617067836,
+          "SR": 32.57267896217568,
+          "scored_frames": 457
+        },
+        "block128_outage": {
+          "PR20": 89.27789934354486,
+          "SR": 55.20475148483901,
+          "scored_frames": 457
+        }
+      },
+      "center": {
+        "complete": {
+          "PR20": 98.90590809628009,
+          "SR": 67.47942065228717,
+          "scored_frames": 457
+        },
+        "alternating_outage": {
+          "PR20": 80.0875273522976,
+          "SR": 56.7677399187246,
+          "scored_frames": 457
+        },
+        "block32_outage": {
+          "PR20": 32.822757111597376,
+          "SR": 24.632697718036887,
+          "scored_frames": 457
+        },
+        "block128_outage": {
+          "PR20": 80.96280087527352,
+          "SR": 48.59852037094925,
+          "scored_frames": 457
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 98.90590809628009,
+          "SR": 67.47942065228717,
+          "scored_frames": 457
+        },
+        "alternating_outage": {
+          "PR20": 77.89934354485777,
+          "SR": 54.86089402938418,
+          "scored_frames": 457
+        },
+        "block32_outage": {
+          "PR20": 52.95404814004377,
+          "SR": 33.68761071168073,
+          "scored_frames": 457
+        },
+        "block128_outage": {
+          "PR20": 78.99343544857767,
+          "SR": 48.265082838386995,
+          "scored_frames": 457
+        }
+      }
+    },
+    "twopeople_0109": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.70845264609184,
+          "scored_frames": 449
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 78.60854809629866,
+          "scored_frames": 449
+        },
+        "block32_outage": {
+          "PR20": 93.54120267260579,
+          "SR": 70.66496977410117,
+          "scored_frames": 449
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 75.66019726376074,
+          "scored_frames": 449
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.70845264609184,
+          "scored_frames": 449
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 78.60854809629866,
+          "scored_frames": 449
+        },
+        "block32_outage": {
+          "PR20": 93.54120267260579,
+          "SR": 70.66496977410117,
+          "scored_frames": 449
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 75.66019726376074,
+          "scored_frames": 449
+        }
+      },
+      "center": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.70845264609184,
+          "scored_frames": 449
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 79.66910594972956,
+          "scored_frames": 449
+        },
+        "block32_outage": {
+          "PR20": 93.54120267260579,
+          "SR": 68.91504931594018,
+          "scored_frames": 449
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 76.17987061194188,
+          "scored_frames": 449
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 80.70845264609184,
+          "scored_frames": 449
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 80.92056421677802,
+          "scored_frames": 449
+        },
+        "block32_outage": {
+          "PR20": 93.54120267260579,
+          "SR": 71.75734436313502,
+          "scored_frames": 449
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 79.18124933715134,
+          "scored_frames": 449
+        }
+      }
+    },
+    "10rightblackboy": {
+      "native": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 77.96901893287436,
+          "scored_frames": 332
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 76.46299483648882,
+          "scored_frames": 332
+        },
+        "block32_outage": {
+          "PR20": 93.37349397590361,
+          "SR": 70.56798623063683,
+          "scored_frames": 332
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 76.2621916236374,
+          "scored_frames": 332
+        }
+      },
+      "sham": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 77.96901893287436,
+          "scored_frames": 332
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 76.46299483648882,
+          "scored_frames": 332
+        },
+        "block32_outage": {
+          "PR20": 93.37349397590361,
+          "SR": 70.56798623063683,
+          "scored_frames": 332
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 76.2621916236374,
+          "scored_frames": 332
+        }
+      },
+      "center": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 77.96901893287436,
+          "scored_frames": 332
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 77.19449225473322,
+          "scored_frames": 332
+        },
+        "block32_outage": {
+          "PR20": 93.67469879518072,
+          "SR": 70.71141709695927,
+          "scored_frames": 332
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 76.53471026965003,
+          "scored_frames": 332
+        }
+      },
+      "geometry": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 77.96901893287436,
+          "scored_frames": 332
+        },
+        "alternating_outage": {
+          "PR20": 100.0,
+          "SR": 77.92598967297762,
+          "scored_frames": 332
+        },
+        "block32_outage": {
+          "PR20": 93.37349397590361,
+          "SR": 70.8548479632817,
+          "scored_frames": 332
+        },
+        "block128_outage": {
+          "PR20": 100.0,
+          "SR": 77.5530694205393,
+          "scored_frames": 332
+        }
+      }
+    }
+  },
+  "effect_change_from_block1": {
+    "block32_outage": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta": -4.443576191740181,
+          "paired_video_bootstrap95": [
+            -11.652078774617076,
+            0.15060240963855165
+          ]
+        },
+        "SR": {
+          "mean_delta": -3.16779305013435,
+          "paired_video_bootstrap95": [
+            -5.834880810498461,
+            -1.1436694918394466
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta": -2.5510927506351884,
+          "paired_video_bootstrap95": [
+            -12.740805604203153,
+            5.087527352297588
+          ]
+        },
+        "SR": {
+          "mean_delta": -3.134087175467866,
+          "paired_video_bootstrap95": [
+            -10.845697023771844,
+            2.641322815012966
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta": 1.892483441104993,
+          "paired_video_bootstrap95": [
+            -10.836252189141858,
+            16.66430492209539
+          ]
+        },
+        "SR": {
+          "mean_delta": 0.03370587466648445,
+          "paired_video_bootstrap95": [
+            -8.47457001437046,
+            8.07430252425771
+          ]
+        }
+      }
+    },
+    "block128_outage": {
+      "center_minus_native": {
+        "PR20": {
+          "mean_delta": -1.3896021031090653,
+          "paired_video_bootstrap95": [
+            -3.446389496717739,
+            0.0
+          ]
+        },
+        "SR": {
+          "mean_delta": -2.02098317794,
+          "paired_video_bootstrap95": [
+            -4.4099944929895205,
+            -0.49993163874076174
+          ]
+        }
+      },
+      "geometry_minus_native": {
+        "PR20": {
+          "mean_delta": -11.864669837170005,
+          "paired_video_bootstrap95": [
+            -32.31173380035027,
+            0.0
+          ]
+        },
+        "SR": {
+          "mean_delta": -8.889889131236636,
+          "paired_video_bootstrap95": [
+            -24.395668739506434,
+            0.5184594566621712
+          ]
+        }
+      },
+      "geometry_minus_center": {
+        "PR20": {
+          "mean_delta": -10.475067734060941,
+          "paired_video_bootstrap95": [
+            -31.58931698774081,
+            0.16411378555798706
+          ]
+        },
+        "SR": {
+          "mean_delta": -6.868905953296637,
+          "paired_video_bootstrap95": [
+            -22.921008681383395,
+            1.6616644074695834
+          ]
+        }
+      }
+    }
+  },
+  "calibration_age_by_video": {
+    "leftbottle": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "alternating_outage": {
+        "calibrated_single_frames": 380,
+        "uncalibrated_single_frames": 1,
+        "video_age_percentiles": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 384,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          31.0,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 384,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          64.5,
+          115.69999999999999,
+          122.0,
+          127.0,
+          128.0
+        ]
+      }
+    },
+    "boyaftertworunboys": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "alternating_outage": {
+        "calibrated_single_frames": 152,
+        "uncalibrated_single_frames": 1,
+        "video_age_percentiles": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 160,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          31.0,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 202,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          51.0,
+          107.9,
+          117.94999999999999,
+          125.99000000000001,
+          128.0
+        ]
+      }
+    },
+    "twopeople_0109": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "alternating_outage": {
+        "calibrated_single_frames": 149,
+        "uncalibrated_single_frames": 1,
+        "video_age_percentiles": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 160,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          31.0,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 194,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          49.0,
+          108.70000000000002,
+          118.35,
+          126.07,
+          128.0
+        ]
+      }
+    },
+    "10rightblackboy": {
+      "complete": {
+        "calibrated_single_frames": 0,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": []
+      },
+      "alternating_outage": {
+        "calibrated_single_frames": 110,
+        "uncalibrated_single_frames": 1,
+        "video_age_percentiles": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "block32_outage": {
+        "calibrated_single_frames": 128,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          16.5,
+          29.0,
+          31.0,
+          32.0,
+          32.0
+        ]
+      },
+      "block128_outage": {
+        "calibrated_single_frames": 128,
+        "uncalibrated_single_frames": 0,
+        "video_age_percentiles": [
+          64.5,
+          115.3,
+          121.64999999999999,
+          126.73,
+          128.0
+        ]
+      }
+    }
+  },
+  "worker_receipts": {
+    "0": {
+      "report_sha256": "33866b653a02ce6bcf99545d843c7cf01bb56441e2b6e21792149eb668775ef0",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    },
+    "1": {
+      "report_sha256": "24ce9da658754d3060589985ad8324a34436b8f39bb91f7e2577867955794608",
+      "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+    }
+  },
+  "trajectories_verified": 64,
+  "past_only_center_and_scale_verified": true,
+  "controls_bitwise_equal": true,
+  "scope": "Four prospectively registered fresh development videos, within-video block1/32/128 stress comparison. Gap interactions include changes to all modality histories, not isolated cache-age causal effects. Ordinary calibration control, not official benchmark or novel-module evidence."
+}

@@ -1,0 +1,20 @@
+{
+  "pid": 4123633,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "scripts/probe_fusion_adapter.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_fusion_adapter_pilot_20261102"
+  ],
+  "physical_gpu": 2,
+  "started_utc": "2026-11-01T23:23:25.535260Z",
+  "output": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_fusion_adapter_pilot_20261102",
+  "log": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/reports/server28_fusion_adapter_pilot_20261102.log",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/scripts/probe_fusion_adapter.py": "7c2be8663f090e5753010b091f8d41a33293c3726f51ed2ef6dd8d6a0581915f",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/scripts/launch_fusion_adapter_pilot.py": "cd82735114413fa1b8361005e39f7a3eeaafba084c670c3dfe84bded6f414983",
+    "/home/gaob/Miss-RGBT/docs/FUSION_ADAPTER_PILOT_20261102.md": "52ea854a190fbf95cf84bebd01668c8f173eed8a2d0adefc2d6cca2f230be962"
+  },
+  "poll_seconds": 300
+}

@@ -1,0 +1,759 @@
+{
+  "status": "passed",
+  "phase": "formal_official_queue",
+  "official_evaluations_recomputed": 20,
+  "sequences_per_evaluation": 479,
+  "frames_per_evaluation": 337353,
+  "trajectories_verified": 9580,
+  "frames_verified": 6747060,
+  "selected": {
+    "utility": {
+      "epoch": 14,
+      "checkpoint_sha256": "114571257d5f3cd34d954c6a2aab83607ad09f1c241f58eebfb0514603bec2f0",
+      "metrics": {
+        "complete": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 74.1587242173293,
+            "NPR": 70.54259502283841,
+            "SR": 59.154404672147365
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 87.47368261409893,
+            "MSR": 63.97265996967679
+          }
+        },
+        "miss": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.17417789503213,
+            "NPR": 61.863332338702115,
+            "SR": 53.31337445757654
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.73575095460953,
+            "MSR": 60.410308766992074
+          }
+        }
+      }
+    },
+    "random": {
+      "epoch": 15,
+      "checkpoint_sha256": "d9a0e88a1f88c786da33b11c85dbc63d1995a41b5746b28320a1a78430b8d29f",
+      "metrics": {
+        "complete": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.60203752946504,
+            "NPR": 70.00257361840036,
+            "SR": 58.640862822719384
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.4145585314501,
+            "MSR": 64.54880760753355
+          }
+        },
+        "miss": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.89054697110687,
+            "NPR": 62.76189485253943,
+            "SR": 53.76080157561359
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 83.89098349563685,
+            "MSR": 59.846600450547136
+          }
+        }
+      }
+    }
+  },
+  "arms": {
+    "utility": [
+      {
+        "selector": "utility",
+        "epoch": 13,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch13.pth.tar",
+        "checkpoint_sha256": "f569192cdfd99a6d8ad2135ad885e588d1429b38a40df3f800662e13dfcf610f",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.89132263478943,
+            "NPR": 70.52238851763542,
+            "SR": 59.02524316950263
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 87.45620502690161,
+            "MSR": 64.36916046571292
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 13,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch13.pth.tar",
+        "checkpoint_sha256": "f569192cdfd99a6d8ad2135ad885e588d1429b38a40df3f800662e13dfcf610f",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.79132649212146,
+            "NPR": 62.32042733270742,
+            "SR": 53.76333953112796
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.41870725349008,
+            "MSR": 60.71760029602902
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 14,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch14.pth.tar",
+        "checkpoint_sha256": "114571257d5f3cd34d954c6a2aab83607ad09f1c241f58eebfb0514603bec2f0",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_complete",
+        "development_selected": true,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 74.1587242173293,
+            "NPR": 70.54259502283841,
+            "SR": 59.154404672147365
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 87.47368261409893,
+            "MSR": 63.97265996967679
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 14,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch14.pth.tar",
+        "checkpoint_sha256": "114571257d5f3cd34d954c6a2aab83607ad09f1c241f58eebfb0514603bec2f0",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_miss",
+        "development_selected": true,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.17417789503213,
+            "NPR": 61.863332338702115,
+            "SR": 53.31337445757654
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.73575095460953,
+            "MSR": 60.410308766992074
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 15,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch15.pth.tar",
+        "checkpoint_sha256": "8da6b47cfb9bc79f77ab39ffb3b2d46e6466c8d8ec054146100efad76253e602",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.78718980769283,
+            "NPR": 70.37181444973565,
+            "SR": 58.977291524211594
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.50935478450207,
+            "MSR": 64.43044741816047
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 15,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch15.pth.tar",
+        "checkpoint_sha256": "8da6b47cfb9bc79f77ab39ffb3b2d46e6466c8d8ec054146100efad76253e602",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.51184803294656,
+            "NPR": 62.1925275887489,
+            "SR": 53.57276563907972
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.52262058198203,
+            "MSR": 60.18916913530282
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 16,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch16.pth.tar",
+        "checkpoint_sha256": "738f63f8fb959fd3487fe7e8052aa836f4228414372cd82658627cb216f6a317",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.4925398466157,
+            "NPR": 70.02463169008965,
+            "SR": 58.725722445452135
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 89.01347812156692,
+            "MSR": 64.69547014281997
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 16,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch16.pth.tar",
+        "checkpoint_sha256": "738f63f8fb959fd3487fe7e8052aa836f4228414372cd82658627cb216f6a317",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 68.59462926833521,
+            "NPR": 63.24174045790306,
+            "SR": 54.34794464067285
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.30811563987051,
+            "MSR": 60.12920074498035
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 17,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch17.pth.tar",
+        "checkpoint_sha256": "7938ae0334f95ca516f358fdf559f70e7a861df4f48ae8da9b16580f1a66561b",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.62384727948378,
+            "NPR": 70.05926756427002,
+            "SR": 58.753705689666845
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.30910372247148,
+            "MSR": 63.51644459007024
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "utility",
+        "epoch": 17,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch17.pth.tar",
+        "checkpoint_sha256": "7938ae0334f95ca516f358fdf559f70e7a861df4f48ae8da9b16580f1a66561b",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.03176581867112,
+            "NPR": 61.899275335981784,
+            "SR": 53.169379175258825
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.38074269692567,
+            "MSR": 59.492969335375314
+          }
+        },
+        "independently_recomputed": true
+      }
+    ],
+    "random": [
+      {
+        "selector": "random",
+        "epoch": 14,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch14.pth.tar",
+        "checkpoint_sha256": "8f67f35be145fcddd91503b4bfb70ba19a9318690319b6ea3465c1f484a98a48",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 74.00882909904973,
+            "NPR": 70.74638689469373,
+            "SR": 59.08793109758703
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 87.64706332072734,
+            "MSR": 64.24328233265875
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 14,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch14.pth.tar",
+        "checkpoint_sha256": "8f67f35be145fcddd91503b4bfb70ba19a9318690319b6ea3465c1f484a98a48",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.89015721976638,
+            "NPR": 63.09399853323933,
+            "SR": 53.84606023704504
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.70394936663361,
+            "MSR": 60.56858380849977
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 15,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch15.pth.tar",
+        "checkpoint_sha256": "d9a0e88a1f88c786da33b11c85dbc63d1995a41b5746b28320a1a78430b8d29f",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_complete",
+        "development_selected": true,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.60203752946504,
+            "NPR": 70.00257361840036,
+            "SR": 58.640862822719384
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.4145585314501,
+            "MSR": 64.54880760753355
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 15,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch15.pth.tar",
+        "checkpoint_sha256": "d9a0e88a1f88c786da33b11c85dbc63d1995a41b5746b28320a1a78430b8d29f",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_miss",
+        "development_selected": true,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.89054697110687,
+            "NPR": 62.76189485253943,
+            "SR": 53.76080157561359
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 83.89098349563685,
+            "MSR": 59.846600450547136
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 16,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch16.pth.tar",
+        "checkpoint_sha256": "b6c904e6ebe489341a7c4bd2b5a79ad38a3d3045f48fb210f4b86de581d39402",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.1545008714809,
+            "NPR": 69.60271897683926,
+            "SR": 58.39513882463682
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 89.19879296630339,
+            "MSR": 65.12660994736859
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 16,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch16.pth.tar",
+        "checkpoint_sha256": "b6c904e6ebe489341a7c4bd2b5a79ad38a3d3045f48fb210f4b86de581d39402",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.80598328295245,
+            "NPR": 62.65772502572096,
+            "SR": 53.763168221910405
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.3636681522963,
+            "MSR": 60.41455864322034
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 17,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch17.pth.tar",
+        "checkpoint_sha256": "6335ffc7a29bb92004f8b5dafa483b3e1b84ede7c7d36fbdd601eef43e41a7a0",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 73.54032980456476,
+            "NPR": 70.00307108737819,
+            "SR": 58.61091983912385
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.26787310371881,
+            "MSR": 63.729881094131436
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 17,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch17.pth.tar",
+        "checkpoint_sha256": "6335ffc7a29bb92004f8b5dafa483b3e1b84ede7c7d36fbdd601eef43e41a7a0",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.3164854714414,
+            "NPR": 62.32316874211716,
+            "SR": 53.497994394979095
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.16564159182988,
+            "MSR": 59.709256334558944
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 18,
+        "condition": "complete",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch18.pth.tar",
+        "checkpoint_sha256": "4e9a27b8efbd2c54b13bc2b2410936750d37e24b5b8bef54671079a48dee3aed",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_complete",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 71.46050505989224,
+            "NPR": 68.12433637808685,
+            "SR": 57.16767424203123
+          },
+          "RGBT234": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 88.10666756747146,
+            "MSR": 64.04776238561277
+          }
+        },
+        "independently_recomputed": true
+      },
+      {
+        "selector": "random",
+        "epoch": 18,
+        "condition": "miss",
+        "checkpoint": "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch18.pth.tar",
+        "checkpoint_sha256": "4e9a27b8efbd2c54b13bc2b2410936750d37e24b5b8bef54671079a48dee3aed",
+        "output": "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_miss",
+        "development_selected": false,
+        "expected_sequences": 479,
+        "expected_frames": 337353,
+        "metrics": {
+          "LasHeR-Miss": {
+            "sequences": 245,
+            "frames": 220703,
+            "PR": 67.53390706672376,
+            "NPR": 62.32084780575736,
+            "SR": 53.48944152252388
+          },
+          "RGBT234-Miss": {
+            "sequences": 234,
+            "frames": 116650,
+            "MPR": 84.85389591376972,
+            "MSR": 60.25789479278596
+          }
+        },
+        "independently_recomputed": true
+      }
+    ]
+  },
+  "evidence_sha256": {
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/completed.json": "1e538b14dbae18be2cf49c88c87d07b1dde7acb24ca5ff3e2f194588cff9cef7",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_formal/verification_v2.json": "eee73a6cb0f9d3cb3ec342b77eb09bb437175ba34b9c96fafd1ea2a110566419",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_completed.json": "6eab92105b4e44205dc9ef708069962218be70bc8679c5fbf95c258102fe6dbd",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_completed.json": "8beb8f718c93045a69c66b8f294f1aaf90a4c0b8d02829dac6a69c1e21deb2ab",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/source_sha256.json": "a7fd74a362dc5c50963e07ecc323af6cd59854e658ffe1211bd2366218ac7793",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch13_complete_exit.json": "8eade4a3774d5a80bdb9f977db3a8f77ef191f2a6058f2707560c7ce88ec5a07",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_complete/run.json": "2dde6b82ead0e514ece5669988f7598d832e009fbbaa89d2d96c48d2778cdac5",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_complete/completed.json": "793edd2c712406319401beb46ee020ccfcb3487e6d255d8b5a0506969d31f5a3",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_complete/metrics.json": "13282eb5df065f3cef9b7a2504753d90637759c1407e8b5dc37dd272d15a0754",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_complete/all_receipts.json": "f40937c1eb83564d79a45ec2000490935f20a7cda7294fb134ed8a20113e1537",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch13_miss_exit.json": "0e9a6fdcde9c1303cca666c7af4de7de438628796b62f002b17cb54736051372",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_miss/run.json": "5130d0ec4e0fcb7b5e324dca7b7f3d569a244172de2db9ab3110d80c2b6d1d46",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_miss/completed.json": "efdd6fd74088aa304d7ad84d8836a05be82e9684725f339dac90a01a351351d7",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_miss/metrics.json": "db5d0c3b8251ca49630d4c12301e94cdcd9e94895362268913d263cb2e4a45fb",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch13_miss/all_receipts.json": "e32acfdbb87d43f766d7726a48d96168b330330f259c1260a06cbd1821206053",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch14_complete_exit.json": "0ee1b9f574262beb31cc93359ebe24517a34a88f40017cb4b9147387c69c5333",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_complete/run.json": "1248116e9238d837357bc3afaa1d1c8f81b5c25301b589e6de177f0ad2789c80",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_complete/completed.json": "df0fa9055361d505b72963ee80f3bf7bc79c8c10fd2851102572bdd7b458bcf6",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_complete/metrics.json": "1c695d9beeb40752f419e3cfdd0883ab0b6b57f99089d1923d8db51107841079",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_complete/all_receipts.json": "99ffb2163444c9bc0f85278269bec7fcdbeecaee4507a19097cf96e84d69d3be",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch14_miss_exit.json": "c22b6c228df3d41c3ae4c83a929be76f69325dfa585c346bd978a6b4b7ec60c7",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_miss/run.json": "c9db6d4becffb66d6b76640fdd902b2a4e4983fde77651c2525cf8914cae3d01",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_miss/completed.json": "f5a2a5305c3027e48e409ab3417013833f919e5efa3c25738cd7be6e38a41af4",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_miss/metrics.json": "6d00efb6b36aa7be3ceb40c49a493a0b45ec6c644aee87da85edf3ee0e7ba2d7",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch14_miss/all_receipts.json": "f9a703830ba571c0af9086819666f6c2076a6df40ce89c3663cd2ef6df502154",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch15_complete_exit.json": "51d7997d86207afb1b8e5c406eef3cc1537a7c583d33d41f38f8836c6120f203",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_complete/run.json": "e4c07469fb16b77e072676aa31c25aa5a109b6401a13c62d07b35f73f295fae0",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_complete/completed.json": "f70f79798ffa702ffec4ef8d4aa7eb53381517e2f6099fa16d2f85ad3bd8d380",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_complete/metrics.json": "e582f91de94a7466f3c0374b4b8d55e1ef9911f23ca89ec05ee72ef260d0eb4c",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_complete/all_receipts.json": "4fa966965cb0ce687c266e49a8b94376d8f0fce99da96ddabb3e506941446789",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch15_miss_exit.json": "3417637d260a199ff3bdd586366e5d94f5c38876531173b216f785abb0b78dbd",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_miss/run.json": "819f84b591b45c9b51a7a9477c4bcab2eded069cffc7fabac86a01369d9cb6d0",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_miss/completed.json": "b71dbaa1018793c0e6a45c4bae8b211299d4317d4c84735ed4f4b1f09f08a478",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_miss/metrics.json": "e722afe3a2d416ded638eb37f3fb8a01f5d66166879f4bb90d08aa3be578a4cf",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch15_miss/all_receipts.json": "96f7569009d324227f554d48c1dc9ea6068e9ac625a52be359e2f8b4bb6f03b7",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch16_complete_exit.json": "b560814d740567eb0e79b28ce1dc17179ff7ef31efd32ec7fdb994dfd940b9fa",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_complete/run.json": "53871342a99a6dd1925e93fd9a0a575f86ca5c706fe4b4e3e42728aa854bef81",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_complete/completed.json": "ea4a95af5b9fee21b5ed3c3d05d428468ae6ffed0b81d2ba13f0e0f67a054242",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_complete/metrics.json": "9031f03e3edb6232d4b89c0b6d53e9adad1c9d8114094e3e0a55beffd85c9411",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_complete/all_receipts.json": "5ad38180090f5642f0eda0f7b9de4fdb9d5491153532ed3b13028e51585172d9",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch16_miss_exit.json": "47dcd996c2d4316c6cfd87903003688eb0a7e1d9b5510a7e8193d7b3a9769eb1",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_miss/run.json": "ab0a019dd22d90e1ffc6252399522e2d6b110d2d30f14e54748e819af511d0bf",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_miss/completed.json": "91a2ddb4946e9f48cb1bb75be6f6dfc6d60b6c106da6a1d05ed71b1d89fefdd8",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_miss/metrics.json": "44c6832acad59e1348d6830f2ddf22c8beb57d24313a6e4a875f639f1891249e",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch16_miss/all_receipts.json": "6c6b180c4d619cca9669888d86603c1cb17957f380ad3f1a7cf917ecdb6369ca",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch17_complete_exit.json": "f9396181349e5437a67c402aeb8e93bac763bb314e48625c5c98b4ba8839a37f",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_complete/run.json": "b1e551777f155bd74b3b662d9028f93bd4aa9480b8ee3533596549c79dc45bd3",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_complete/completed.json": "6caaf4d5c76e82ad0fdb1be4f39cd3b653aed631d25a3edab03d9f4163c8a436",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_complete/metrics.json": "cadbf849708ba4740abc94b656263598e94532bc9f73c793a7e5608f361bf1ed",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_complete/all_receipts.json": "ebcaddb23bd3c84d9c6d4610a637f4971aff7e07ba0d47f32c3349e49ccc8d0a",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_epoch17_miss_exit.json": "845ec37adb638ff6c0c72e8874050b832a7d8e30f191724b1272151afc3bbd59",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_miss/run.json": "e8c8e23c94dcf2bd9f620b21c6bf6b0fc62f002e1e06ddd6a51f1c745353e8f2",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_miss/completed.json": "0dda28a64f6b751c591aa73f0df853d03fa900821f6c86fb18ae1bcd8bf29cbf",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_miss/metrics.json": "508df90369056a9fb2d2dddb4aa7f6bc0364d12f171f4e63e871c087ddbeefaf",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/utility_epoch17_miss/all_receipts.json": "e02de4dc9e74e5ae3c03afade81908bc54bde03d9790106d5930676f476238e3",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch13.pth.tar": "f569192cdfd99a6d8ad2135ad885e588d1429b38a40df3f800662e13dfcf610f",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch14.pth.tar": "114571257d5f3cd34d954c6a2aab83607ad09f1c241f58eebfb0514603bec2f0",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch15.pth.tar": "8da6b47cfb9bc79f77ab39ffb3b2d46e6466c8d8ec054146100efad76253e602",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch16.pth.tar": "738f63f8fb959fd3487fe7e8052aa836f4228414372cd82658627cb216f6a317",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/epoch17.pth.tar": "7938ae0334f95ca516f358fdf559f70e7a861df4f48ae8da9b16580f1a66561b",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/completed.json": "bc378aa2598383926f0f3d9ed8fa828827ad8b2b2991061d22a3e97774d92e11",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/utility/development_history.json": "88f2abff9d6a36275ab766c44414fc1ce69e47e8508410d5a36aebadcbb87bd5",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_plan.json": "745295bf35d14caff4beb330db11ad7c6c709e5597221ebbed1b6b353830c700",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/utility_verified_metrics.json": "5ca1d5ed641131a2d63570f7d5a8edd8e8a072cf2f986f6cbf1f6540b1238aed",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch14_complete_exit.json": "a06f726ec75c5601fc6fb79d33a459231d65fcf24416dc995b45f9ec1fbb38f6",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_complete/run.json": "4e2ea78bad12ad43c08e07b71336d2837308a790ce4e2ee8fbb1521dbb5897ba",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_complete/completed.json": "aab83167142ebd0429bd0a91e039e7d08519a6f010d63fd18de72d07a30d4902",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_complete/metrics.json": "359cdd09579cf8af050f59483bf1f3737ac29f2f25d4c39064b6e12667074999",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_complete/all_receipts.json": "93fff949b050e5c6dbce3c6e64226ab1fb3ed3f29b5bb69c06adaf760d2483c8",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch14_miss_exit.json": "8d5239a468187d6f3a06a7ca0f90a69d39933b7d4a3990d3a117377895241d5f",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_miss/run.json": "d095572477dbd166a3492ea3a65f5e89c61f2da2e3ab0f11aa2731a1c7e42370",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_miss/completed.json": "06ba28adc40de9f487b3ee45cf7ae7c407193d0c06bc75b3b409dea71493a216",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_miss/metrics.json": "3899a466970b41b8a3ece0a7eda63158f7639a525c60bd856e2590023d75200e",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch14_miss/all_receipts.json": "a09810e43aa06aa3ed4a5b8da0c9264985c53f3c15561945dfc0c6b60328ee0c",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch15_complete_exit.json": "6718d321d23d04e0a5573a67ae00243a6da1be3797ce21343c19658fb4bdf423",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_complete/run.json": "89515d9ea06c36bb3ee2452f79fcd99de23ed2e5aad31d34167bb51492430fd8",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_complete/completed.json": "56d095cd62459b500f340b07cdeb69ea5063aabd1d947ff15a5f9b08d9b09f4f",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_complete/metrics.json": "dcde0dd4de995677e36f05ed8be80b64b8301ea831a867120b2e84c2e5c70932",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_complete/all_receipts.json": "bd5dad1fe49c03b43638dd73e76ea8c491118e92175a7fd3d855779af876d604",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch15_miss_exit.json": "67774c81521773bfe3f9dc329fe58d9ec4b8c503453a339eac6218d182d9be27",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_miss/run.json": "1d80fad9ef05c59c455ad524dbfcc82a6221f815f826c81f6992cec7c99e5d84",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_miss/completed.json": "a9406732c155a89c7e779a9750a6e60ef183f275c360533deddccfef60ce3205",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_miss/metrics.json": "cb8bb6f930bbc638c0071053f6d453d2b807dc8da082d598296f8b1d66ee322b",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch15_miss/all_receipts.json": "540f0ed450bf2666b9b9625a671f08d642815e648951269e612a86a0572fa4a4",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch16_complete_exit.json": "354c212fd6e565f2618e00ced27ce0d4504cd41dadd84695d93ce268a4ba7702",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_complete/run.json": "f75bcf9a5879d20a38a4035bad1df008d46bf9776613738ec0f0d72276800934",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_complete/completed.json": "7836f951afc32da5efbf7762ccbc72f4f96f8028296be9437f7cc5c234fc714d",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_complete/metrics.json": "4b02df36c21bf514c76905f528626df64ec8b6dc5ed76b11722331303aaaa04b",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_complete/all_receipts.json": "fcf0004c82c9b343821b33a2502a50aaceca918b79a0d9a99a017a3fc4943686",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch16_miss_exit.json": "a738478fe79871d45d754c95c4ea27085af174fdc61a088ba8fd7519e50f9ef8",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_miss/run.json": "47aef0fb60e6fef660aba8e4ba5d8954c46f008c7afd3d3abeab02dea2cd2946",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_miss/completed.json": "e260a848b8bc599885ca2a7cf82f45b26920afc366f68145dbf87ea75d0f9a43",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_miss/metrics.json": "e9ad4cf5b3a6eeeaf68c8901dbe67de522d706355c22c147627255091c24e21e",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch16_miss/all_receipts.json": "64fce08dcdf29e9743aea5c269bd7e5fc33209b4687b6041e65bc5c503a56354",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch17_complete_exit.json": "5755ab0d0bd042466d788ff45ad173764e8fbd9c79a535b3e85c433ea6b37a30",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_complete/run.json": "973eb5c9ee0595c020d6b9130af03be2e89eceeb12bf4fa5f1984887e0231166",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_complete/completed.json": "db6eff075d38afbb75bce485985b1f19509ea0ce5139d5fb4d5460978d235221",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_complete/metrics.json": "84839272f53398a2a1d359bac3589ec18a8b194260a7e089c386653f7b0076ed",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_complete/all_receipts.json": "5801ea196fbde2dd8289969bdf28e61823b84250c51e31f83a25548275c2fb85",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch17_miss_exit.json": "eadc744ab90e142dd7e4faf6bf89a609b66f2f57b98d4ae7960e744586e340b8",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_miss/run.json": "9421975ee2dbc569601681517a6562b0aebf21ed6e038d854ec1f96694b663c3",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_miss/completed.json": "80142cee5713b98c9380171e6a5ff66b1ea60a1d583bfb9dd0532da0be250edc",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_miss/metrics.json": "b72da326d3383027b6212517950eb99a15e4d84737a557bfa6fa4e430d51af4f",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch17_miss/all_receipts.json": "11f00d5fb819fcd265d430b61a52ed14ac8f6ccaec4202672e59de35559d19b8",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch18_complete_exit.json": "f905985eb001a9a5f389636f1e82358160d93d83dc1e1f589151d241d80c4554",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_complete/run.json": "efdc1385df859f74561baa323a2f6e30f0a2f874a348bd826c3b904f0afbf29a",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_complete/completed.json": "65d0903c2932500c84f2534c433f621bdf9eeda36e045faeac5c7a33d272b9ea",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_complete/metrics.json": "d38775f6536611d8f71f2ce92027c7a51aaafbf3a4e6c648593dbc055b4b3390",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_complete/all_receipts.json": "2086d07a82e0ce2867fa0a559199e26992750c4aadd9c19135bec8acd91b6c57",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_epoch18_miss_exit.json": "b49540fba7d5d243f3dd8543ed5a7ef553840ebb370d9f4ffc1b899cdaaef281",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_miss/run.json": "e3b7b31ee3f391d4d720f88706dfce9efff36be0e4a2e5378b767ab1e91cef26",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_miss/completed.json": "7c9b0ca46fdcab537adacb6192e17a510847500ad22d04eeebc944d5f2884156",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_miss/metrics.json": "622ef41d6e001381079fbcf9b6fd38f92f66a6a0b7028fc20464ce020739bcbf",
+    "/home/gaob/Miss-RGBT/results/server28_partitioned_a_20261102/random_epoch18_miss/all_receipts.json": "551dd0163b037c4ba7b1e515a6832d638434001f7f50ed789dd3e06eef3b00f6",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch14.pth.tar": "8f67f35be145fcddd91503b4bfb70ba19a9318690319b6ea3465c1f484a98a48",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch15.pth.tar": "d9a0e88a1f88c786da33b11c85dbc63d1995a41b5746b28320a1a78430b8d29f",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch16.pth.tar": "b6c904e6ebe489341a7c4bd2b5a79ad38a3d3045f48fb210f4b86de581d39402",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch17.pth.tar": "6335ffc7a29bb92004f8b5dafa483b3e1b84ede7c7d36fbdd601eef43e41a7a0",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/epoch18.pth.tar": "4e9a27b8efbd2c54b13bc2b2410936750d37e24b5b8bef54671079a48dee3aed",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/completed.json": "9fa0df303bdb7f805bcc8da3e43c4561f02c2ff94e086af297b30feaa6c9a38f",
+    "/home/gaob/Miss-RGBT/runs/server28_partitioned_a_20261102_formal/random/development_history.json": "03938cdaea88f087a7a661528cd5fa88f0ed87d7bb77d78eee211a2ebca99532",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_plan.json": "80f0ddf0d00238b09657bc9552d2242a19eebab2c33131f6defd57da2f1aeef7",
+    "/home/gaob/Miss-RGBT/reports/server28_partitioned_a_20261102_official_queue_v2/random_verified_metrics.json": "ee4f743c9bd3d6a33bbd03a313711779b203cc36fa3a0115bc93a2fdffc8aae3",
+    "/tmp/codex_a_official_audit_20261104.keD6BN/scripts/verify_partitioned_a_official.py": "0fb6420ec2625c65afc350068ef8cd25588058adbb898b68726398c3967439fa"
+  },
+  "all_checkpoints_retained": true,
+  "official_test_selection_used": false,
+  "dispatch_authorized": false,
+  "scope": "Actual terminal A queue and twenty full saved-output audits; not three-module efficacy or authorization to bypass other parent gates"
+}

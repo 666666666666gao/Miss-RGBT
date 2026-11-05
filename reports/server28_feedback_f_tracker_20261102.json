@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic uint8 frames and actual E0 network; no dataset",
+  "seed": 65302,
+  "checkpoint_sha256": "d20c8641e4263df3ceadf9e430d0ac96c181c13ad482bca28c2dddef592a8bb8",
+  "checks": {
+    "inherited_native_initialize_and_track": true,
+    "all_three_feedback_checkpoint_modes_strict_load": true,
+    "zero_residual_native_multiframe_box_template_availability_parity": [
+      {
+        "availability": [
+          1,
+          1
+        ],
+        "frame_id": 1,
+        "exact": true
+      },
+      {
+        "availability": [
+          0,
+          1
+        ],
+        "frame_id": 2,
+        "exact": true
+      },
+      {
+        "availability": [
+          1,
+          0
+        ],
+        "frame_id": 3,
+        "exact": true
+      }
+    ],
+    "single_state_and_conditional_template_commit": [
+      {
+        "allow_update": true,
+        "network_calls": 1,
+        "frame_id": 1,
+        "state_commits": 1,
+        "template_appends": 1,
+        "template_pops": 1,
+        "round2_decode_exact": true
+      },
+      {
+        "allow_update": false,
+        "network_calls": 1,
+        "frame_id": 1,
+        "state_commits": 1,
+        "template_appends": 0,
+        "template_pops": 0,
+        "round2_decode_exact": true
+      }
+    ]
+  },
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_tracker.py": "0a51fdca4da2ce6d08556a54dde2feb256ce469f4ea0f0b65fdc25c7ce2f6f36",
+    "/home/gaob/Miss-RGBT/research/feedback_f/tracker.py": "26bff93e87fe24f76f04dcb0f584d5d0424339671e3b86edad66b2c23c7d39a0",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f",
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_structure.py": "35e0850556fe360c74951c47dd013bde136e5343656e652613b07d8a1d9a3b52",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/tracker.py": "1d05274d2827de9a4e08044e5837fedaba971400162a72cb90e98c0d1679efa4",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73"
+  },
+  "seconds": 13.666719198226929,
+  "peak_gpu_bytes": 1258000384,
+  "limitations": [
+    "No real-image training or official metrics",
+    "Synthetic initialized repair and residual, not learned F weights",
+    "No formal trainer or official evaluator launcher",
+    "No actual-workload latency comparison or correction/destruction rates"
+  ]
+}

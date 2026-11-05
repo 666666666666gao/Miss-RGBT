@@ -1,0 +1,811 @@
+{
+  "scope": "Metadata only; no audit images or predictions inspected.",
+  "rows": [
+    {
+      "sequence": "blkcarinrain",
+      "frames": 101,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "smallmoto",
+      "frames": 114,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "guardman",
+      "frames": 116,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "redgirl2trees",
+      "frames": 538,
+      "eligible_starts": {
+        "96": 0,
+        "64": 25,
+        "48": 41
+      }
+    },
+    {
+      "sequence": "carturnleft109",
+      "frames": 109,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "leftthrowfoam",
+      "frames": 27,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girlleft2right2",
+      "frames": 401,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "leftof2girls",
+      "frames": 405,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 7
+      }
+    },
+    {
+      "sequence": "motosmall",
+      "frames": 252,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "large3-gai",
+      "frames": 1347,
+      "eligible_starts": {
+        "96": 0,
+        "64": 33,
+        "48": 107
+      }
+    },
+    {
+      "sequence": "bikeboyleft",
+      "frames": 481,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "umbellaatnight",
+      "frames": 605,
+      "eligible_starts": {
+        "96": 0,
+        "64": 29,
+        "48": 61
+      }
+    },
+    {
+      "sequence": "mototakinggirl",
+      "frames": 87,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girlwithblkbag",
+      "frames": 112,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "whitecarturnl2",
+      "frames": 98,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boydown",
+      "frames": 66,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "greenboywithgirl",
+      "frames": 257,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boyridesbike",
+      "frames": 203,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "actor_1202",
+      "frames": 627,
+      "eligible_starts": {
+        "96": 25,
+        "64": 59,
+        "48": 91
+      }
+    },
+    {
+      "sequence": "girl2-gai",
+      "frames": 3634,
+      "eligible_starts": {
+        "96": 1689,
+        "64": 2121,
+        "48": 2377
+      }
+    },
+    {
+      "sequence": "greengirls",
+      "frames": 312,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "right2nddrillmaster",
+      "frames": 591,
+      "eligible_starts": {
+        "96": 0,
+        "64": 19,
+        "48": 43
+      }
+    },
+    {
+      "sequence": "blackridebike",
+      "frames": 170,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "carturncome",
+      "frames": 253,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "bluemanof3",
+      "frames": 951,
+      "eligible_starts": {
+        "96": 21,
+        "64": 53,
+        "48": 85
+      }
+    },
+    {
+      "sequence": "9handlowboy",
+      "frames": 1408,
+      "eligible_starts": {
+        "96": 0,
+        "64": 16,
+        "48": 81
+      }
+    },
+    {
+      "sequence": "boy_1227",
+      "frames": 872,
+      "eligible_starts": {
+        "96": 0,
+        "64": 7,
+        "48": 30
+      }
+    },
+    {
+      "sequence": "rightbackcup",
+      "frames": 8574,
+      "eligible_starts": {
+        "96": 6561,
+        "64": 7002,
+        "48": 7301
+      }
+    },
+    {
+      "sequence": "boyshead509",
+      "frames": 509,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "2ndrunningboy",
+      "frames": 489,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightestblkboy",
+      "frames": 258,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "blackbetweengreenandorange",
+      "frames": 492,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 1
+      }
+    },
+    {
+      "sequence": "boyturn",
+      "frames": 143,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "manleftsmallwhitehouse",
+      "frames": 560,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "right2ndblkpantsboy",
+      "frames": 271,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "Acarlightcome",
+      "frames": 45,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "whitecarturn137",
+      "frames": 137,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "motostraught2east",
+      "frames": 78,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "2boysatblkcarend",
+      "frames": 252,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "carout",
+      "frames": 275,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "whiteboyright",
+      "frames": 467,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 27
+      }
+    },
+    {
+      "sequence": "rightboywithbackpackandumbrella",
+      "frames": 670,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girloutqueuewithbackpack",
+      "frames": 1410,
+      "eligible_starts": {
+        "96": 0,
+        "64": 8,
+        "48": 37
+      }
+    },
+    {
+      "sequence": "redbaggirlleftgreenbar",
+      "frames": 1556,
+      "eligible_starts": {
+        "96": 24,
+        "64": 116,
+        "48": 231
+      }
+    },
+    {
+      "sequence": "besom2-gai",
+      "frames": 1438,
+      "eligible_starts": {
+        "96": 106,
+        "64": 223,
+        "48": 315
+      }
+    },
+    {
+      "sequence": "blackcarturn183",
+      "frames": 183,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "mototurnright",
+      "frames": 68,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "girlbike156",
+      "frames": 156,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "left2ndgirl",
+      "frames": 588,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 3
+      }
+    },
+    {
+      "sequence": "leftrunningboy",
+      "frames": 198,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "2rdtribike",
+      "frames": 135,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boywalkinginsnow",
+      "frames": 373,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "leftblkboy",
+      "frames": 312,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightredcup_quezhen",
+      "frames": 1484,
+      "eligible_starts": {
+        "96": 137,
+        "64": 173,
+        "48": 219
+      }
+    },
+    {
+      "sequence": "boyfollowing",
+      "frames": 282,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "motoinrain56",
+      "frames": 56,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightblkgirlNo_11",
+      "frames": 3986,
+      "eligible_starts": {
+        "96": 1780,
+        "64": 2115,
+        "48": 2376
+      }
+    },
+    {
+      "sequence": "7rightblueboy",
+      "frames": 410,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "2boys",
+      "frames": 145,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "redminirtruck",
+      "frames": 40,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "whiteminibus197",
+      "frames": 197,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "7rightwhitegirl",
+      "frames": 505,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "boybehindbus",
+      "frames": 272,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "11runone",
+      "frames": 252,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "manrun250",
+      "frames": 250,
+      "eligible_starts": {
+        "96": 0,
+        "64": 9,
+        "48": 25
+      }
+    },
+    {
+      "sequence": "biketurnleft",
+      "frames": 188,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "carstart",
+      "frames": 154,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "farwhiteboy",
+      "frames": 149,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "left4thblkboyback",
+      "frames": 480,
+      "eligible_starts": {
+        "96": 0,
+        "64": 5,
+        "48": 38
+      }
+    },
+    {
+      "sequence": "bikeorange",
+      "frames": 51,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "4boys2left",
+      "frames": 778,
+      "eligible_starts": {
+        "96": 0,
+        "64": 22,
+        "48": 42
+      }
+    },
+    {
+      "sequence": "leftblkboy648",
+      "frames": 648,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 13
+      }
+    },
+    {
+      "sequence": "moto2north",
+      "frames": 337,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "righttallnine-gai",
+      "frames": 1602,
+      "eligible_starts": {
+        "96": 0,
+        "64": 31,
+        "48": 92
+      }
+    },
+    {
+      "sequence": "boyouttrees",
+      "frames": 83,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "minibuscome",
+      "frames": 104,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "twoperson_1202",
+      "frames": 911,
+      "eligible_starts": {
+        "96": 1,
+        "64": 46,
+        "48": 88
+      }
+    },
+    {
+      "sequence": "twopeopleelec-gai",
+      "frames": 430,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightredboy1227",
+      "frames": 484,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightholdball1096",
+      "frames": 1096,
+      "eligible_starts": {
+        "96": 0,
+        "64": 32,
+        "48": 104
+      }
+    },
+    {
+      "sequence": "greenboy",
+      "frames": 295,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "rightestblkboy2",
+      "frames": 369,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "lightcarcome",
+      "frames": 121,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "elegirl",
+      "frames": 1518,
+      "eligible_starts": {
+        "96": 408,
+        "64": 596,
+        "48": 724
+      }
+    },
+    {
+      "sequence": "boyunderthecolumn",
+      "frames": 264,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "ab_righthandfoamboard",
+      "frames": 169,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    },
+    {
+      "sequence": "1strowrightgirl",
+      "frames": 4088,
+      "eligible_starts": {
+        "96": 1629,
+        "64": 2069,
+        "48": 2403
+      }
+    },
+    {
+      "sequence": "whiteboy`head",
+      "frames": 12782,
+      "eligible_starts": {
+        "96": 7437,
+        "64": 8458,
+        "48": 9205
+      }
+    },
+    {
+      "sequence": "blackboy186",
+      "frames": 186,
+      "eligible_starts": {
+        "96": 0,
+        "64": 0,
+        "48": 0
+      }
+    }
+  ],
+  "eligible_sequences": {
+    "96": 12,
+    "64": 24,
+    "48": 29
+  }
+}

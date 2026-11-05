@@ -1,0 +1,196 @@
+{
+  "status": "verified",
+  "report_sha256": "e774a5ff4b4cdacffae53c286c25bed0116d0feb6175a777f66a3061d4a35cda",
+  "effects": {
+    "complete": {
+      "mean": 0.0530366845859969,
+      "ci95_low": 0.03238478554797567,
+      "ci95_high": 0.07835363750307521,
+      "sequences": 121,
+      "rows": 128
+    },
+    "rgb_missing": {
+      "mean": 0.07813025014220029,
+      "ci95_low": 0.056766794562273556,
+      "ci95_high": 0.10348883194573652,
+      "sequences": 121,
+      "rows": 384
+    },
+    "tir_missing": {
+      "mean": 0.07925488082603432,
+      "ci95_low": 0.052754905055300984,
+      "ci95_high": 0.1095093147046779,
+      "sequences": 121,
+      "rows": 384
+    }
+  },
+  "advance": true,
+  "descriptive": {
+    "complete": {
+      "raw_iou": {
+        "mean": 0.7929028207359236,
+        "ci95_low": 0.7595446801382648,
+        "ci95_high": 0.823050660581505,
+        "sequences": 121,
+        "rows": 128
+      },
+      "hann_iou": {
+        "mean": 0.7892981363722116,
+        "ci95_low": 0.7527906908014835,
+        "ci95_high": 0.82184611142359,
+        "sequences": 121,
+        "rows": 128
+      },
+      "top8_oracle_iou": {
+        "mean": 0.8423348209582084,
+        "ci95_low": 0.8217133330227423,
+        "ci95_high": 0.8617024191955397,
+        "sequences": 121,
+        "rows": 128
+      },
+      "top8_uniform_iou": {
+        "mean": 0.6650581995103689,
+        "ci95_low": 0.6309639460710743,
+        "ci95_high": 0.6977578220188556,
+        "sequences": 121,
+        "rows": 128
+      },
+      "raw_top8_oracle_iou": {
+        "mean": 0.8455944420877567,
+        "ci95_low": 0.8251485650758605,
+        "ci95_high": 0.8647457262393364,
+        "sequences": 121,
+        "rows": 128
+      },
+      "dense_oracle_iou": {
+        "mean": 0.8577070226354048,
+        "ci95_low": 0.8400955169223064,
+        "ci95_high": 0.8740867413765142,
+        "sequences": 121,
+        "rows": 128
+      },
+      "hann_minus_raw": {
+        "mean": -0.003604684363711964,
+        "ci95_low": -0.02494168299104064,
+        "ci95_high": 0.016978025873584192,
+        "sequences": 121,
+        "rows": 128
+      }
+    },
+    "rgb_missing": {
+      "raw_iou": {
+        "mean": 0.61713757777212,
+        "ci95_low": 0.5716872191848746,
+        "ci95_high": 0.6604310034022516,
+        "sequences": 121,
+        "rows": 384
+      },
+      "hann_iou": {
+        "mean": 0.5814493005769295,
+        "ci95_low": 0.5317294195391874,
+        "ci95_high": 0.6301922973680437,
+        "sequences": 121,
+        "rows": 384
+      },
+      "top8_oracle_iou": {
+        "mean": 0.6595795507191298,
+        "ci95_low": 0.6159340296125363,
+        "ci95_high": 0.7019492880343755,
+        "sequences": 121,
+        "rows": 384
+      },
+      "top8_uniform_iou": {
+        "mean": 0.4777434340802738,
+        "ci95_low": 0.43604960759022104,
+        "ci95_high": 0.5193121036546369,
+        "sequences": 121,
+        "rows": 384
+      },
+      "raw_top8_oracle_iou": {
+        "mean": 0.6848667172241067,
+        "ci95_low": 0.6447400072912945,
+        "ci95_high": 0.7224778211193807,
+        "sequences": 121,
+        "rows": 384
+      },
+      "dense_oracle_iou": {
+        "mean": 0.7106606416383722,
+        "ci95_low": 0.6757395385464361,
+        "ci95_high": 0.7438865113849483,
+        "sequences": 121,
+        "rows": 384
+      },
+      "hann_minus_raw": {
+        "mean": -0.03568827719519046,
+        "ci95_low": -0.06102445617195645,
+        "ci95_high": -0.012327033095254217,
+        "sequences": 121,
+        "rows": 384
+      }
+    },
+    "tir_missing": {
+      "raw_iou": {
+        "mean": 0.7031781106915315,
+        "ci95_low": 0.657258845561379,
+        "ci95_high": 0.7460064165473764,
+        "sequences": 121,
+        "rows": 384
+      },
+      "hann_iou": {
+        "mean": 0.6636327957573833,
+        "ci95_low": 0.6125899587945512,
+        "ci95_high": 0.7120017112157714,
+        "sequences": 121,
+        "rows": 384
+      },
+      "top8_oracle_iou": {
+        "mean": 0.7428876765834177,
+        "ci95_low": 0.7034777195528589,
+        "ci95_high": 0.7795279074034493,
+        "sequences": 121,
+        "rows": 384
+      },
+      "top8_uniform_iou": {
+        "mean": 0.5287914249482745,
+        "ci95_low": 0.48786181629371067,
+        "ci95_high": 0.5694407505491559,
+        "sequences": 121,
+        "rows": 384
+      },
+      "raw_top8_oracle_iou": {
+        "mean": 0.7631952121197029,
+        "ci95_low": 0.7273108070680342,
+        "ci95_high": 0.7960177678599463,
+        "sequences": 121,
+        "rows": 384
+      },
+      "dense_oracle_iou": {
+        "mean": 0.7785154777289093,
+        "ci95_low": 0.7467624692200137,
+        "ci95_high": 0.8077364588623286,
+        "sequences": 121,
+        "rows": 384
+      },
+      "hann_minus_raw": {
+        "mean": -0.03954531493414814,
+        "ci95_low": -0.0727486969776098,
+        "ci95_high": -0.010052835060532473,
+        "sequences": 121,
+        "rows": 384
+      }
+    }
+  },
+  "prior_reports_sha256": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89",
+    "server28_cross_stream_context_20261102_v2": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8",
+    "server28_tail_lowrank_20261102": "ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2"
+  },
+  "server_file_hashes_checked": false,
+  "map_replay": null
+}

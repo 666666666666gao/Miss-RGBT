@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "rejected": [
+    "partial_course",
+    "early_stopped",
+    "selection_outside_final5",
+    "nonfinite_loss",
+    "wrong_probability",
+    "wrong_final5",
+    "wrong_updates",
+    "pair_input_sha256",
+    "pair_patch_sha256",
+    "pair_masks_sha256",
+    "pair_microstep"
+  ],
+  "tested_lr_epochs": [
+    1,
+    10,
+    11,
+    16,
+    20
+  ],
+  "same_probability_requires_same_masks": true,
+  "different_probability_may_change_modality_masks": true,
+  "full_official_jobs_planned": 40,
+  "common_selected_checkpoint_for_both_conditions": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/curriculum_p/check_contracts.py": "88e3b06c9ea544a98642110852e339dae20f179921544bc481b813d9e53fc088",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/verify.py": "1a6406c0a50ff22d2a250d192c2321231887865aebbbcd4085fbfdfbd92d0e21",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/official.py": "3d49866b6d58309d90afad99bebc20dd8cd3d0cf6f47ab7a70ba94c5103a6d97"
+  },
+  "scope": "Synthetic verifier contracts only; no images, checkpoints or training evidence"
+}

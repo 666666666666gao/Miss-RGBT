@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "missing_modality": "rgb",
+      "shape": [
+        1,
+        256,
+        768
+      ],
+      "nonzero_elements": 196608,
+      "max_absolute_value": 38.507667541503906,
+      "root_mean_square": 1.965019702911377,
+      "native_equals_literal_zero": false
+    },
+    {
+      "missing_modality": "tir",
+      "shape": [
+        1,
+        256,
+        768
+      ],
+      "nonzero_elements": 196608,
+      "max_absolute_value": 38.507667541503906,
+      "root_mean_square": 1.965019702911377,
+      "native_equals_literal_zero": false
+    }
+  ],
+  "seconds": 7.540958881378174,
+  "checkpoint": "/home/gaob/Miss-RGBT/runs/server28-recovery-20261031/batch10_utility_seed2027/epoch17.pth.tar",
+  "checkpoint_sha256": "fbeaf71a9b4bbfb46e926251b34c7fb1960c4ba41d3da75745342638fd4dc062",
+  "strict_native_checkpoint_load": true,
+  "model_state_unchanged": true,
+  "gradients_absent": true,
+  "cuda_initialized": false,
+  "real_images_executed": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/check_history_zero_initialization.py": "0bb1359b5972a1342e0d8b23d16ffce4a178542c62fa0750fbee9c17cac2fe3e",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/cadtrack/vit_care.py": "ae74beb13742793524bf8c69c2ddc2bcdc175c983ce30d37d32d71be6872e13c",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+  },
+  "ohcas_data_gate_passed": false,
+  "ohcas_training_authorized": false,
+  "finding": "A zero-valued replacement at block3 is not the native missing path, even with synthetic all-zero normalized images. Zero initialization of a replacement map alone therefore cannot prove native parity.",
+  "scope": "Synthetic structural counterexample on the frozen registered model. No image intervention cohort, data-gate decision, module architecture change, optimization, convergence result or official tracking metric."
+}

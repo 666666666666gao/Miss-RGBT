@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "seed": 65303,
+  "scope": "Synthetic tensors; actual E0 network",
+  "shared_initial_state_exact": true,
+  "caller_cpu_rng_after_build_exact": true,
+  "arms": {
+    "single": [
+      {
+        "probe_view": "C",
+        "loss": 29.72463607788086,
+        "grad_norm": 183.98785400390625,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      },
+      {
+        "probe_view": "M",
+        "loss": 24.484764099121094,
+        "grad_norm": 125.54777526855469,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      }
+    ],
+    "none": [
+      {
+        "probe_view": "C",
+        "loss": 29.102357864379883,
+        "grad_norm": 175.803466796875,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      },
+      {
+        "probe_view": "M",
+        "loss": 23.630769729614258,
+        "grad_norm": 103.25048828125,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      }
+    ],
+    "shallow": [
+      {
+        "probe_view": "C",
+        "loss": 29.102357864379883,
+        "grad_norm": 175.81092834472656,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      },
+      {
+        "probe_view": "M",
+        "loss": 23.62901496887207,
+        "grad_norm": 103.31458282470703,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      }
+    ],
+    "deep": [
+      {
+        "probe_view": "C",
+        "loss": 29.102357864379883,
+        "grad_norm": 175.8147735595703,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      },
+      {
+        "probe_view": "M",
+        "loss": 23.62856674194336,
+        "grad_norm": 103.5381851196289,
+        "exact_objective": true,
+        "backbone_updated": true,
+        "bn_unchanged": true
+      }
+    ]
+  },
+  "seconds": 19.424350023269653,
+  "peak_gpu_bytes": 8434151424,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_training.py": "470a51f1630ef3007f8229d5e0714e488b17566f7f7b14ae49fc70355b8ee308",
+    "/home/gaob/Miss-RGBT/research/feedback_f/training.py": "b3926b168b30f13d3265580f8082a594dd2c114a419f71613fd6abe1fab32e13",
+    "/home/gaob/Miss-RGBT/research/feedback_f/model.py": "1bc5cf33a45a89af59f9fd2138d6e0cd4a02d10019778abf75ec5366dfa9111f"
+  },
+  "limitations": [
+    "No image training, convergence or official metrics",
+    "No formal trainer loop or benchmark launcher",
+    "No measured actual-workload latency or correction/destruction rates"
+  ]
+}

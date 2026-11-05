@@ -1,0 +1,20 @@
+{
+  "pid": 65200,
+  "gpu": 2,
+  "memory_used_mib": 1.0,
+  "temperature_c": 38.0,
+  "power_limit_w": 250.0,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/diagnose_absent_search_kv.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/reports/server28_absent_search_kv_20261102_v2"
+  ],
+  "cwd": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018",
+  "output": "/home/gaob/Miss-RGBT/reports/server28_absent_search_kv_20261102_v2",
+  "log": "/home/gaob/Miss-RGBT/reports/server28_absent_search_kv_20261102_v2.log",
+  "script_sha256": "d65de07c4772abe7e9590b6b889bc92dd8b1d40f7c5b5f89d59e3c43bed0689f",
+  "launcher_sha256": "f9ab6a24b8d28cf571cad29a05a9ce936b27505477cc1dea373174ddb0b0c149",
+  "launched_utc": "2026-11-02T00:38:09.446855Z"
+}

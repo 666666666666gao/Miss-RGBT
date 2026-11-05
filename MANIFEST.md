@@ -2,6 +2,266 @@
 
 > Generated artifacts; full model evidence is distinguished from smoke checks.
 
+2026-11-02 completed: frozen template-attention information diagnostic,
+`scripts/diagnose_template_attention.py`,`scripts/launch_template_attention.py`,
+`scripts/analyze_template_attention.py`,`docs/TEMPLATE_ATTENTION_EVIDENCE_20261102.md`.
+128freshfittingtuples117seq1152rows,51.497s;FG-BG concordance differences
+complete+.015090CI[-.030979,.060233],RGBmissing+.044031CI[.012752,.076987],
+TIRmissing-.018250CI[-.055731,.018017]. Gatefalse,exactsignalclosed.
+Server/localv2 analysis:9216boxes,allmaps/pairs/exclusions/hashesarithmetic;
+NumPy9qkv cases attentionerror1.4117185e-9;144normalizedimageforwardrows
+native mapsbitwise,9hookparitycalls. Notrawdecoder/fullimagereplay/
+independentidentity/modulevalidation/officialscore. Firstverifier hashdict
+keycomparisoncorrected,initialfailurelogretained,producer unchanged.
+ReportSHAa7e8afa27171abd35ea53d963ae11d71f25c2f7b8145d4b2cef0528d81bb18eb.
+Largecachesserveronly,nooptimizer/weights/cleanup/val97/official;goalunmet.
+
+2026-11-02 completed: last-observedtemplate diagnostic351.701s,
+32fresh128frameclips/1088rows/377writes,165incomplete. Retained-native
+RGBmissing+.008188CI[-.003180,.021454],TIRmissing+.005576CI[.001102,.012710],
+pooledmissing+.006703CI[.000943,.013224],complete-current+.001598
+CI[.000318,.003017];retained-complete-only pooledmissing-.000440
+CI[-.001530,.000563]. Gatefalse,exactpolicy/controlclosed.
+Server/localprovenance/math/hashespassed,96shams/731completehistoryparity;
+firstclip34rows/18events native-image replay exact,sharedpolicy/tracker.
+ReportSHAb0e0cbb393f4e449dde5df845aa104898b7a5cf55cf8cd03a6a086d7bffb7963.
+Nooptimization/officialscores/modulevalidated,fullgoalunmet.
+
+2026-11-02 06:44UTC: `scripts/diagnose_last_observed_template.py`,
+`scripts/launch_last_observed_template.py`,`scripts/analyze_last_observed_template.py`,
+`docs/LAST_OBSERVED_TEMPLATE_DIAGNOSTIC_20261102.md`:32fresh128frame fitting
+clips, frozenE0 last-observed per-sensor templates vs complete-only control
+under native crops/writes. GPU2PID1011087 live02:39/13clips,2208MiB/67C/250W.
+Metadata feasibility140eligible128frameseq;allpriorcropframes excluded.
+Nooutcome yet,analyzersyntaxcheckedonly;notclosedloop/official/module.
+MPTrack pinnedsource/mit review in ASYNCHRONOUS_TEMPLATE_SOURCE_REVIEW_20261102.md.
+
+2026-11-02 completed: amended24x64 full-image crop audit,346.833s,
+9072rows/24sequences,server+local analysis and378row firstclip image replay.
+All10finitefinal5weights/BN/source/base/cache/metadata verified; selected
+backbone151+head58tensors changed ineacharm. Promotion=false:
+RGBmissing+.005559CI[-.008252,.020946],TIRmissing-.003614CI[-.033199,.024765],
+causal-native-.002265CI[-.016638,.009103],complete-.002447CI[-.019433,.018133].
+Original16x96 protocol infeasible/incomplete; amended shorter audit is not
+originalsuccess or officialmetrics. Exactpilotclosed,allweightsretained.
+ReportSHA9502da9b3fcbaf14caf5c604fe2a29a7b1d308afa8563f1bb1fac32728147a02.
+Pinned DenseCL/DINOv2 correspondence source review in prior-artdoc;
+read-only,no code copied/installed/modulevalidated. Fullgoalunmet.
+
+2026-11-02 06:22UTC: original crop-training worker failed audit sampling
+after both selections; no audit predictions. New metadata inventory finds
+12 eligible96-frame audit sequences,24 at64frames; original16x96 infeasible.
+Prospective `docs/CAUSAL_CROP_AUDIT_AMENDMENT_20261102.md`,
+`scripts/inventory_crop_audit.py`,`scripts/resume_causal_crop_audit.py`,
+`scripts/launch_crop_audit_resume.py`: audit-only24x64 resume PID949348,
+same selections/partition/exclusions/seed/thresholds; no retraining.
+Original protocol incomplete; amended result pending, no official metrics.
+
+2026-11-02 UTC: `scripts/train_causal_crop_exposure.py`,
+`scripts/launch_causal_crop_training.py`,`scripts/analyze_causal_crop_training.py`,
+`docs/CAUSAL_CROP_TRAINING_20261102.md`: matched full-image training,
+305accepted imagepairs/32fresh96framefittingclips,8dev48frameclips,
+16delayedaudit96frameclips. GPU2PID877938 launched05:50:24Z,live05:12,
+nativeepoch1completed,batch32/LR4e-5/9updates,23350MiB/72C/250W.
+NoKD/patchdrop,bothfulloriginalparameters,samecompletebranch/different
+auxiliarycrop. Final5train-onlyselection;notofficialmetrics/module.
+Resultpending,analyzersyntaxcheckedonly.
+2026-11-02 followup: `scripts/verify_crop_training_inputs.py` plus
+`input_replay_first_clip.json`: GPU3firstfittingclip10acceptedpairs
+bitwise/1rejection/prediction+jitterboxes/templatehistory reproduced;
+independentNumPytargetmaxerror1.7149784e-7. Sharednativeutilities,
+notfullcache/optimizerreplay. Native12epochs/108updates selected11,
+causal7stilllive atworker19:20. Fullresultpending.
+
+2026-11-02 UTC: `scripts/diagnose_causal_crop_exposure.py`,
+`scripts/launch_causal_crop_exposure.py`, `scripts/analyze_causal_crop_exposure.py`,
+`docs/CAUSAL_CROP_EXPOSURE_20261102.md`,
+`docs/CAUSAL_CROP_PRIOR_ART_20261102.md`: frozenE0 causal previous-GT crop
+diagnostic under native template histories;48fresh96frame fitting clips.
+GPU2PID804850 launched05:22:22Z,confirmed live09:15 at44/48clips.
+COMPLETED594.422s,9120rows,mixedmissing IoU delta+.042196
+CI[.022036,.066595];registered gate=true only to separate trainingprotocol.
+Server/local math/partition/exclusion/schedules/sham/source/base passed;
+firstclip190row native exact replay,directshadow maxboxerror0.
+Sharednetwork/crop;notfullreport replay. Temporarylocaledit reverted,
+serverrunner unchanged andhashmatches launch. Nooptimizer/val97/official/
+cleanup;officialscoresunchanged. Fullgoalunmet.
+Evidence `reports/server28_causal_crop_exposure_20261102/`.
+
+2026-11-02 UTC: `scripts/diagnose_joint_gradients.py`,
+`scripts/launch_joint_gradients.py`, `scripts/analyze_joint_gradients.py`,
+`docs/JOINT_GRADIENT_DIAGNOSTIC_20261102.md`: originalE0 train-mode full
+complete/auxiliary parameter-gradient diagnostic,64fresh tuples/16batches.
+PID768965 completed37.670s,cosine .201456CI[.160851,.248108],negative0/16.
+Gatefalse,no projection training. Server/local saved Gram/bootstrap/hash
+verification passed;no independent neural-gradient replay or optimizer.
+Evidence `reports/server28_joint_gradients_20261102/`.
+
+2026-11-02 UTC: `scripts/diagnose_teacher_reliability.py`,
+`scripts/launch_teacher_reliability.py`, `scripts/analyze_teacher_reliability.py`,
+`docs/TEACHER_RELIABILITY_DIAGNOSTIC_20261102.md`: frozen E0 task/KD
+gradient diagnostic on128fresh fittingtuples/1152rows. PID728997 completed
+55.655s. Registered criterion=false;unreliable teacher gradient mean not
+established negative,fused cosine .004752CI[-.058037,.066890],
+projection .492476CI[.372922,.600634]. No reliability training promotion.
+Server/local saved evidence/hash/bootstrap checked;1152row native-head
+gradient replay exact,sharedmeasurement,notindependentimagereplay.
+Evidence `reports/server28_teacher_reliability_20261102/`.
+
+2026-11-02 UTC: `scripts/probe_window_training.py`,
+`scripts/launch_window_training.py`, `scripts/analyze_window_training.py`,
+`docs/WINDOW_TRAINING_PILOT_20261102.md`: matched raw/Hann regression
+supervision in identical native heads. GPU2PID654595 launched04:29:02Z,
+same frozen train882 feature caches,common Hann inference and delayed audit.
+Prior crop evidence motivates an ordinary training-alignment control,
+not a validated novel module or official score. Completed result below.
+Initial run stopped at a wrong auxiliary source path during report creation;
+failed worker source and log retained. Corrected module.__file__ lookup,
+same seeds/configuration/gate,exclusive_v2 retryPID679342 launched04:40:09Z.
+This retries a reporting failure,not an independent experiment or retuning.
+CorrectedPID679342 completed185.454s,batch256/LR0.00032,both10epochs/
+90updates,selected6 before delayed128tuple/66seq audit. Missing-direction
+E0 gains pass,but Hann/raw advantage and complete/recovery protection do
+not;advance=false. Server/local checks and3456row cached-head replay with
+independent Hann decode passed;not independent image/backbone replay.
+Evidence reports/server28_window_training_20261102_v2/. All weights retained.
+
+2026-11-02 UTC: `scripts/probe_chronology_training.py`,
+`scripts/launch_chronology_training.py`, `scripts/analyze_chronology_training.py`,
+and `docs/CHRONOLOGY_TRAINING_PILOT_20261102.md`: matched native versus
+chronological mask training using identical small native-tail adapters.
+GPU2 PID589499 completed704.600s,both10epochs/120updates,selected6/9.
+Original-order tensor digests verify exact fitting input pairing.
+Audit128tuples/69sequences; all registered contrasts' intervals cross0,
+advance=false. Server+local evidence/hash/stop/select/bootstrap verified;
+cached E0tail1152+selected2304rows replay exact,not independent image replay.
+Evidence `reports/server28_chronology_training_20261102/`.
+Train882 only,delayed audit,no official score or validated module claim.
+
+2026-11-02 UTC: `scripts/diagnose_template_chronology.py`,
+`scripts/launch_template_chronology.py`, `scripts/analyze_template_chronology.py`,
+and `docs/TEMPLATE_CHRONOLOGY_DIAGNOSTIC_20261102.md` register a frozen
+train882 template-age/missingness binding diagnostic, including a paired
+image+mask permutation control. GPU2PID538386 completed79.312s.
+Either-sign diagnostic criterion supported for missing searches, not
+improved policy or training efficacy. Saved evidence/3456boxIoUs/
+bootstrap/source/protocol hashes verified; no neural replay.
+Evidence `reports/server28_template_chronology_20261102/`.
+
+2026-11-02 UTC: `scripts/diagnose_candidate_quality.py`,
+`scripts/launch_candidate_quality.py`, `scripts/analyze_candidate_quality.py`,
+`docs/CANDIDATE_QUALITY_DIAGNOSTIC_20261102.md` and
+`reports/server28_candidate_quality_20261102_v2/` record verified fixed
+native top8 candidate GT-oracle headroom. Gate passed; no deployable method.
+Independent NumPy map replay checked294912boxes. Failed original launch
+traceback retained. Follow-up `scripts/probe_quality_ranker.py`,
+`scripts/launch_quality_ranker.py`, `scripts/analyze_quality_ranker.py`,
+and `docs/QUALITY_RANKER_PILOT_20261102.md` record the matched
+quality/response supervision pilot completed231.174s onGPU2.
+Both10epochs/180updates,selected9/10 from final-five6-10.
+Registered gate failed; saved-evidence and2304row cached-ranker replay
+verified,9216candidate IoUs independently checked.
+Evidence `reports/server28_quality_ranker_20261102/`.
+No official metric or module claim; weights preserved.
+
+2026-11-02 UTC: `scripts/probe_tail_lowrank.py`,
+`scripts/launch_tail_lowrank.py`, `scripts/analyze_tail_lowrank.py`, and
+`docs/TAIL_LOWRANK_PILOT_20261102.md` register a matched30720-parameter
+attention-versus-MLP adaptation pilot in native blocks10/11.
+GPU2 PID368156 completed584.557s,batch192/LR6e-4,both10epochs/120updates,
+selected8/7 from final-five6-10. Both registered gates failed despite a
+positive attention RGB-missing crop effect. Server file/weight checks and
+3456cached-tail replay records passed; no official result/module promotion.
+Evidence `reports/server28_tail_lowrank_20261102/`.
+Read-only pinned TOOD review:
+`docs/QUALITY_ALIGNMENT_SOURCE_REVIEW_20261102.md`; prospective only.
+
+2026-11-02 UTC: `scripts/probe_cross_stream_context.py`,
+`scripts/launch_cross_stream_context.py`,
+`scripts/analyze_cross_stream_context.py`,
+`scripts/check_cross_stream_layout.py`,
+`docs/CROSS_STREAM_CONTEXT_PILOT_20261102.md`, and
+`reports/server28_cross_stream_context_20261102_v2/` record completed
+matched199104-parameter train882 cross-stream context training.
+Both arms stopped10epochs/480updates,selected6 from final-five6-10.
+Registered promotion failed; saved-evidence verification and2304-record
+separate-process selected-adapter replay passed. Replay shares adapter/
+measurement code and cached maps; not independent image/backbone replay.
+No official results, val97, checkpoint cleanup or validated paper module.
+
+2026-11-02 UTC: `scripts/diagnose_late_fusion_streams.py`,
+`scripts/launch_late_fusion_streams.py`,
+`scripts/analyze_late_fusion_streams.py`, and
+`docs/LATE_FUSION_STREAM_DIAGNOSTIC_20261102.md` record a frozen-E0
+train882 fusion-input stream ablation over128 tuples/117 sequences.
+Saved evidence, source/protocol hashes, tuple exclusions and sequence
+bootstrap were verified. The registered advancement gate failed.
+No training, official benchmark, or module promotion.
+
+2026-11-02 UTC+08: `scripts/diagnose_absent_position.py`,
+`scripts/launch_absent_position.py`, `scripts/analyze_absent_position.py`,
+and `docs/ABSENT_POSITION_DIAGNOSTIC_20261102.md` register a frozen-E0
+train882 diagnostic of absolute position embeddings on unavailable search
+streams, paired with a matched available-stream position-removal control.
+The corrected run passed independent saved-evidence, bootstrap, source-hash,
+and complete-parity verification, but the registered gate failed. No training,
+official evaluation, or module promotion.
+
+2026-11-02 UTC+08: `scripts/diagnose_burst_mask_rollout.py`,
+`scripts/launch_burst_mask_rollout.py`, `scripts/analyze_burst_mask_rollout.py`,
+`docs/BURST_MASK_ROLLOUT_DIAGNOSTIC_20261102.md`, and
+`reports/server28_burst_mask_rollout_20261102/` record a frozen-E0 paired
+train882 IID-versus-clustered outage rollout over24 clips. All3,024 tracked
+rows, schedule/recovery labels, source/checkpoint hashes, box-IoU arithmetic,
+and sequence-bootstrap intervals were independently verified. Effects did
+not clear the registered gate; no training or official evaluation.
+
+2026-11-02 UTC+08: `scripts/diagnose_absent_search_kv.py`,
+`scripts/launch_absent_search_kv.py`, `scripts/analyze_absent_search_kv.py`,
+`docs/ABSENT_SEARCH_KV_DIAGNOSTIC_20261102.md`, and
+`reports/server28_absent_search_kv_20261102_v2/` record a completed frozen
+train882 attention K/V diagnostic. Independent saved-evidence verification
+passed; the registered improvement gate failed in both missing-search
+directions. No training, official evaluation, or module promotion.
+
+2026-11-02 UTC+08: `scripts/probe_modality_heads.py`,
+`scripts/launch_modality_heads.py`, `scripts/analyze_modality_heads.py`,
+`docs/MODALITY_HEAD_PILOT_20261102.md`, and
+`reports/server28_modality_heads_20261102/` record completed matched
+modality/random two-head training. Full promotion gate failed;3456 direct
+native cached-head replay records exact. No official metrics/module claim.
+
+2026-11-02 UTC+08: `scripts/probe_head_supervision.py`,
+`scripts/launch_head_supervision.py`, `scripts/analyze_head_supervision.py`,
+`docs/HEAD_SUPERVISION_PILOT_20261102.md`, and
+`reports/server28_head_supervision_20261102/` record completed matched
+native/target-position head training. Registered promotion gate failed.
+Saved arithmetic/hashes and direct3456-row native-head replay passed.
+No official benchmarks or contribution claims. All weights preserved.
+
+2026-11-02 UTC+08: `scripts/diagnose_response_geometry.py`,
+`scripts/launch_response_geometry.py`, `scripts/analyze_response_geometry.py`,
+`docs/RESPONSE_GEOMETRY_DIAGNOSTIC_20261102.md`, and
+`reports/server28_response_geometry_20261102/` record a completed fresh
+train882 response/geometry/gradient diagnostic and saved-evidence hashes/
+arithmetic checks. No training, official benchmark, or module promotion.
+
+2026-11-02 UTC+08: `scripts/probe_fusion_adapter.py`,
+`scripts/launch_fusion_adapter_pilot.py`,
+`scripts/analyze_fusion_adapter_pilot.py`,
+`docs/FUSION_ADAPTER_PILOT_20261102.md`, and
+`reports/server28_fusion_adapter_pilot_20261102/` record completed paired
+train882-only cached-head adaptation and saved-evidence/hash verification.
+Registered advancement gate failed. No full-tracker training, official
+evaluation or module promotion. All pilot and baseline weights preserved.
+
+2026-11-02 UTC+08: `scripts/diagnose_joint_utility_sets.py`,
+`scripts/analyze_joint_utility_sets.py`,
+`docs/JOINT_UTILITY_SET_DIAGNOSTIC_20261102.md`, and
+`reports/server28_joint_utility_sets_20261102/` record a completed train882-only
+frozen-checkpoint diagnostic and saved-arithmetic verification. Registered
+training gate failed; no training, official evaluation, or module promotion.
+
 | Timestamp | Skill | File | Stage | Description |
 |---|---|---|---|---|
 | 2026-10-13 | /experiment-plan + /run-experiment | README.md | implementation | 实际 E0、方案、环境；新训练效果待验证 |
@@ -53,3 +313,26 @@
 | 2026-10-13 | /experiment-audit | reports/e0/MISSING_DIAGNOSTICS_before_first_transition_fix.md | review | 初始化切换标签修正前真实历史；不覆盖原记录 |
 | 2026-10-13 | /run-experiment | scripts/validate_focal_normalization.py | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |
 | 2026-10-13 | /run-experiment | reports/focal_normalization_validation.json | implementation | 原生focal数学契约CPU检查；合成算术非模型指标 |
+2026-11-02 fixedboxconsensus completed50.036s,128freshfittingtuples117seq,
+1152rows. Weighted-native IoU complete-.061691,RGBmissing-.075441,
+TIRmissing-.117869;allCIbelowzero. Gatefalse,closeexacttop8estimator.
+scripts/diagnose_box_consensus.py,launch_box_consensus.py,
+analyze_box_consensus.py;docs/BOX_CONSENSUS_DIAGNOSTIC_20261102.md.
+Server/local9216boxes/1152aggregates/maps/exclusions/bootstrapverified;
+144normalizedimage replayrowsbitwiseexact,sharednetwork/notrawdecoder.
+ReportSHA dedaec020a61dea618dd8320bec459fc3ec03956e67631ac811f08eae150806b.
+Largecachesserveronly;notofficialgain/training/module. Fullgoalunmet.
+2026-11-02 matchedlocaldensegeometry completed280.274s. Fixed3x3 GT-peak
+neighborhood regression vs native peak,256/128/128 train/dev/audit tuples.
+Batch2304/LR.00288/1updateperepoch; native max20/selected17,lastfive16-20;
+dense stop14/selected13,lastfive10-14; peak9440MiB/arm.
+Audit74seq: dense-E0 RGBmissing-.006127CI[-.028993,.015274],
+TIRmissing+.022116CI[.001969,.046957]; dense-nativecontrol
+-.010682CI[-.019862,-.001967]. Gatefalse,closeexact3x3.
+Source/frame exclusion/full-state/finalfive/objectivegradient/replay checks
+passed;cached-head-not-fullnetwork,selected replay3456rows. Scripts:
+train_dense_geometry.py,launch_dense_geometry.py,analyze_dense_geometry.py.
+Docs DENSE_GEOMETRY_TRAINING_20261102.md, reportSHA
+de33c5b1912be26b4527df5bbdf579f995596680e1459d548ee675b21f308a70.
+All20 checkpoints and large caches retained server-only. Noofficial score/
+module. Next samplers exclude all this report's manifest frame IDs.

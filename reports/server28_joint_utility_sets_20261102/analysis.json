@@ -1,0 +1,154 @@
+{
+  "status": "saved_arithmetic_verified",
+  "diagnostic_sha256": "1a36cb0f3235fc5d2ad56821efe16d3a6e110a0bcc7ec17e806589b2ac37f0d7",
+  "condition_rows": 384,
+  "tuples": 128,
+  "summaries": {
+    "complete": {
+      "means": {
+        "off": 0.7696028223144822,
+        "utility_joint": 0.7694656631792895,
+        "random_joint": 0.7698167510679923,
+        "similarity_joint": 0.7693251902819611
+      },
+      "utility_minus_random_loss_improvement": {
+        "mean_sequence_macro": 0.00028486600366689393,
+        "ci95_low": -0.0004263838326905744,
+        "ci95_high": 0.0010475422729248718,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 59,
+        "zero_sequences": 0,
+        "negative_sequences": 59
+      },
+      "utility_minus_similarity_loss_improvement": {
+        "mean_sequence_macro": -0.00014893584332223667,
+        "ci95_low": -0.0007574771357289815,
+        "ci95_high": 0.00045542550920429854,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 57,
+        "zero_sequences": 1,
+        "negative_sequences": 60
+      },
+      "utility_joint_gain": {
+        "mean_sequence_macro": 2.368406976683665e-05,
+        "ci95_low": -0.0008670249227750099,
+        "ci95_high": 0.0008993161100325937,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 58,
+        "zero_sequences": 0,
+        "negative_sequences": 60
+      },
+      "utility_additivity_residual": {
+        "mean_sequence_macro": 2.67273793786259e-06,
+        "ci95_low": -4.903653920707056e-05,
+        "ci95_high": 5.390943043817906e-05,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 59,
+        "zero_sequences": 0,
+        "negative_sequences": 59
+      }
+    },
+    "rgb_only": {
+      "means": {
+        "off": 1.0077035852591507,
+        "utility_joint": 1.0076728872372769,
+        "random_joint": 1.0077311584027484,
+        "similarity_joint": 1.0075301817269064
+      },
+      "utility_minus_random_loss_improvement": {
+        "mean_sequence_macro": 6.929595591658252e-05,
+        "ci95_low": -0.0002817043387409994,
+        "ci95_high": 0.00047575197956067016,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 57,
+        "zero_sequences": 0,
+        "negative_sequences": 61
+      },
+      "utility_minus_similarity_loss_improvement": {
+        "mean_sequence_macro": -0.0001361406708167771,
+        "ci95_low": -0.0003829001259626979,
+        "ci95_high": 0.00010988835908346243,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 53,
+        "zero_sequences": 3,
+        "negative_sequences": 62
+      },
+      "utility_joint_gain": {
+        "mean_sequence_macro": 5.755762932664257e-05,
+        "ci95_low": -0.0002086063404962168,
+        "ci95_high": 0.0003533209279432133,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 48,
+        "zero_sequences": 0,
+        "negative_sequences": 70
+      },
+      "utility_additivity_residual": {
+        "mean_sequence_macro": -8.964248127856497e-06,
+        "ci95_low": -5.96286807903799e-05,
+        "ci95_high": 4.774825805324616e-05,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 44,
+        "zero_sequences": 0,
+        "negative_sequences": 74
+      }
+    },
+    "tir_only": {
+      "means": {
+        "off": 1.3004190670326352,
+        "utility_joint": 1.3044859487563372,
+        "random_joint": 1.3040621230611578,
+        "similarity_joint": 1.304519436438568
+      },
+      "utility_minus_random_loss_improvement": {
+        "mean_sequence_macro": -0.00037365987644357194,
+        "ci95_low": -0.003970124613556821,
+        "ci95_high": 0.003216369270141851,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 59,
+        "zero_sequences": 0,
+        "negative_sequences": 59
+      },
+      "utility_minus_similarity_loss_improvement": {
+        "mean_sequence_macro": 0.0001794498855784788,
+        "ci95_low": -0.004194709175597813,
+        "ci95_high": 0.0046321283047229544,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 57,
+        "zero_sequences": 0,
+        "negative_sequences": 61
+      },
+      "utility_joint_gain": {
+        "mean_sequence_macro": -0.002957444196030245,
+        "ci95_low": -0.007741889153938678,
+        "ci95_high": 0.0007139726857638961,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 55,
+        "zero_sequences": 0,
+        "negative_sequences": 63
+      },
+      "utility_additivity_residual": {
+        "mean_sequence_macro": -9.650579195911602e-05,
+        "ci95_low": -0.00044069845324098056,
+        "ci95_high": 0.0002850664290204895,
+        "sequences": 118,
+        "tuples": 128,
+        "positive_sequences": 56,
+        "zero_sequences": 0,
+        "negative_sequences": 62
+      }
+    }
+  },
+  "registered_gate": false,
+  "limitations": "Saved-record recomputation only; no independent neural replay, frozen-state digest or training-seed replication."
+}

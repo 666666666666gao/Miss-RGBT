@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "command": "python -m unittest research.localization_r3.check_control -v",
+  "tests": 7,
+  "seconds": 3.135,
+  "stage": "/tmp/codex_r3_control_20261104.uYfXia",
+  "mocked_child_commands": 22,
+  "mocked_training_commands": 2,
+  "mocked_full_evaluation_commands": 20,
+  "mocked_full_scorer_calls_including_collector": 40,
+  "synthetic_completed_arm_microsteps": 100000,
+  "checks": [
+    "Missing review returns before GPU query or worker creation",
+    "Both image smoke receipts are required before formal progression",
+    "One controller owns one training and ten Complete/Miss jobs",
+    "Duplicate launch fails before starting another worker",
+    "Nonzero child exit is recorded without retry",
+    "Collector waits until both official terminal receipts exist",
+    "Every selected row uses its internally selected checkpoint",
+    "Exact Miss target equality fails the strict greater-than condition"
+  ],
+  "training_and_evaluation_processes_mocked": true,
+  "gpu_preflight_mocked": true,
+  "full_scoring_mocked": true,
+  "review_is_synthetic_fixture": true,
+  "pair_verifier_mocked_in_collector_test": true,
+  "real_image_smokes_started": false,
+  "formal_training_started": false,
+  "independent_review": "REVIEW_UNAVAILABLE",
+  "scope": "CPU controller and collector fixtures only; no real training, review or score evidence"
+}

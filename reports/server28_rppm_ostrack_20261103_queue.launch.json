@@ -1,0 +1,10 @@
+{
+  "pid": 3539938,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/protocol_queue.py"
+  ],
+  "log": "/home/gaob/Miss-RGBT/reports/server28_rppm_ostrack_20261103_queue.log",
+  "started_utc": "2026-11-03T01:50:18.172918Z"
+}

@@ -1,0 +1,11 @@
+{
+  "label": "E0",
+  "condition": "complete",
+  "sequences": 97,
+  "frames": 54646,
+  "scored_frames": 54289,
+  "PR20": 75.87916370270696,
+  "SR": 61.654017215477666,
+  "seconds": 4391.126217842102,
+  "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e"
+}

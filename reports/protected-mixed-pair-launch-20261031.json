@@ -1,0 +1,30 @@
+{
+  "pid": 869785,
+  "started_utc": "2026-10-31T03:44:23.632920Z",
+  "device": "cpu",
+  "cpu_threads": 4,
+  "arms": [
+    "complete_templates",
+    "mixed_templates"
+  ],
+  "epochs_per_arm": 6,
+  "updates_per_arm": 192,
+  "effective_batch": 4,
+  "learning_rate": 0.0001,
+  "dynamic_template_probability": [
+    0.4,
+    0.3,
+    0.3
+  ],
+  "mask_seed_by_epoch": "50000+epoch",
+  "input_manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/probe_protected_mixed_pair28.py": "16da4b2b8304d4ea1a0d25f212f3efdd3b51c0a8557e773fcb799a3c6a3a06ff",
+    "/home/gaob/Miss-RGBT/probe_protected_sixepoch28.py": "361510db9175126835364b4032dfcff7b4008ca107b7bc5361008f90c23f5a53",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+    "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa"
+  },
+  "selection": "Lowest mean of six dynamic11/01/10 x search01/10 development losses among final five epochs2..6 for BOTH arms; earlier on ties",
+  "scope": "Matched ordinary LocalRepair control, train882 development only; no val97 scores, tracking, new contribution or official target claim"
+}

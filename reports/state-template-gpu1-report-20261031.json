@@ -1,0 +1,442 @@
+{
+  "records": {
+    "native": {
+      "rightrunninglatterone": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638,
+          "bbox_sha256": "3f4abf5bb57a9b8331ab0eb35a09f546fc14781c2aa41378adbba7b3fbccb065",
+          "trace_sha256": "f154aa180ef51762d34faac8b9488fdf7c49f34afc68a42d4226d004444b32d9",
+          "model_calls": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "bbox_sha256": "0f12b68a33429c2d1d0d1d4adafd3a78b5ea9e1e042352c841fed9d839058750",
+          "trace_sha256": "d617e6892de53c1c887d2dbb48eef0807ae956834421db819195c57bbfb6f6a6",
+          "model_calls": 542
+        }
+      },
+      "leftgirlat1row": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524,
+          "bbox_sha256": "ccec87782739437e8a9072d9c8b26f6d7eb3255fd46f97922ccf2591b25f9a79",
+          "trace_sha256": "e307c833e2385cc75cbf39f81f4f34fc649b82867ed9fa7f15fe4d329fadd38f",
+          "model_calls": 524
+        },
+        "block32_outage": {
+          "PR20": 95.22900763358778,
+          "SR": 76.4903671392221,
+          "scored_frames": 524,
+          "bbox_sha256": "6a5fdcad9571a8e389aee7d58fe8ab7c524e494d6999eae7c64706f5f94539bc",
+          "trace_sha256": "f2e11407e2868d84245d7873c6f4a60e011b26ae220c666245f341c38897838a",
+          "model_calls": 460
+        }
+      },
+      "1phoneblue": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372,
+          "bbox_sha256": "8c565455841c6861cb5e2602218b3ee965ad0a1cbf37bbf7a2e49725c20b6153",
+          "trace_sha256": "affb1ad34e7f429cc34889f0e26445306194e97c1a1b0ce3f0cb97ae1150a4ff",
+          "model_calls": 372
+        },
+        "block32_outage": {
+          "PR20": 84.94623655913979,
+          "SR": 77.68817204301075,
+          "scored_frames": 372,
+          "bbox_sha256": "5312fe9fdf09e1e19b1d7bd2f3cad67421b21f7b78296cbc5de5dc4ff32ff025",
+          "trace_sha256": "733918a79323d155b05afab28213ddb842f5fccbc000b9c2ae17ad1e443c6429",
+          "model_calls": 319
+        }
+      },
+      "boyridesbesidesgirl": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301,
+          "bbox_sha256": "f044d8d25cbb2f5a2ff888a90c10b077ab268d7a7dcf30334b51607af1539eb9",
+          "trace_sha256": "609bf881376929338c46e273473672e52866c4421ff50e47abdc2778be28942f",
+          "model_calls": 301
+        },
+        "block32_outage": {
+          "PR20": 85.04983388704319,
+          "SR": 74.10219901914255,
+          "scored_frames": 301,
+          "bbox_sha256": "797be4c2d6cead8844d53d03c24e777834e53ca5409eb10916ee9faa91f79f99",
+          "trace_sha256": "582cd39d51f77fb4e7cae1272ab0c81f8b5e7306810286334ce67b701ba369c6",
+          "model_calls": 269
+        }
+      },
+      "whiteTboy": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253,
+          "bbox_sha256": "47f1136dd571e33c63f9eebc31712482c50fd87c4989e32d52da8e6ef1b386e0",
+          "trace_sha256": "3b0b06e0d2df73769a55e21da4fce1a4a0bb01d0fd8e970ca624dbd6f600a635",
+          "model_calls": 253
+        },
+        "block32_outage": {
+          "PR20": 77.4703557312253,
+          "SR": 63.09053265575004,
+          "scored_frames": 253,
+          "bbox_sha256": "6b608425947f37d2cdaf9598a865744ee0388b372dc9b61f1d48806bf610c3a9",
+          "trace_sha256": "99b245cab0ae7686e39c361c7255073b452c168bc0d20d2ce3db2b184dfa06f8",
+          "model_calls": 221
+        }
+      },
+      "lefthandfoamboard": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153,
+          "bbox_sha256": "0a4619dce3491c0675793cff56ceb614be2a252e969c2223df24da484d430c9b",
+          "trace_sha256": "fe76d89328f2bf3abe8bb89280d221a1f2be839f32917cf0f150b47405db8af8",
+          "model_calls": 153
+        },
+        "block32_outage": {
+          "PR20": 86.27450980392157,
+          "SR": 64.79925303454715,
+          "scored_frames": 153,
+          "bbox_sha256": "3c1af9faa4249ca3e2cf0cd36960c9ce98de5b4d7bfe0e7d8d84071866a84115",
+          "trace_sha256": "1f8b5ab1102378b932a44961ee72e9fea5d274fbcb496da5aeb41b5627dd6d66",
+          "model_calls": 153
+        }
+      },
+      "whitecarleave": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126,
+          "bbox_sha256": "a04092cf952bafe943bbc231348fffe9eb5a1d038d797e1d862c5f9b2bba7ca4",
+          "trace_sha256": "e410d28c09e480fa3697a3b6413018a6994bdb3492d3d7367fafe01902e07c23",
+          "model_calls": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.36281179138322,
+          "scored_frames": 126,
+          "bbox_sha256": "6c4d275fd8912ef713ac1bd13fcc175db04306d255bdb4340ecaec74525935f1",
+          "trace_sha256": "72d8e46875680cd73fda801cd06143fd4dcaf62781fdedf9dcd84bf4e6cd7cad",
+          "model_calls": 126
+        }
+      }
+    },
+    "sham": {
+      "rightrunninglatterone": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638,
+          "bbox_sha256": "3f4abf5bb57a9b8331ab0eb35a09f546fc14781c2aa41378adbba7b3fbccb065",
+          "trace_sha256": "2b62115b57a830a85d033dcbc835725c1360dc2964578fc8243ac1a9cbbaf955",
+          "model_calls": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "bbox_sha256": "0f12b68a33429c2d1d0d1d4adafd3a78b5ea9e1e042352c841fed9d839058750",
+          "trace_sha256": "599a9e26caa46a199efbabb83ff973757b16e18da133302de6e26aa657a9be29",
+          "model_calls": 542
+        }
+      },
+      "leftgirlat1row": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524,
+          "bbox_sha256": "ccec87782739437e8a9072d9c8b26f6d7eb3255fd46f97922ccf2591b25f9a79",
+          "trace_sha256": "d104dbe1e8f37971f93085d7cff9cb7d5837e333cfdb189e950e8e01d47df3bb",
+          "model_calls": 524
+        },
+        "block32_outage": {
+          "PR20": 95.22900763358778,
+          "SR": 76.4903671392221,
+          "scored_frames": 524,
+          "bbox_sha256": "6a5fdcad9571a8e389aee7d58fe8ab7c524e494d6999eae7c64706f5f94539bc",
+          "trace_sha256": "409aaf9a5d90136c3ed8b0910b1a6ead897234e167749f341e772afea21ed42a",
+          "model_calls": 460
+        }
+      },
+      "1phoneblue": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372,
+          "bbox_sha256": "8c565455841c6861cb5e2602218b3ee965ad0a1cbf37bbf7a2e49725c20b6153",
+          "trace_sha256": "588aed1267329cab5c69a9b0fe3b2c7df59e56b2afb000688de8e8d7772cbbc7",
+          "model_calls": 372
+        },
+        "block32_outage": {
+          "PR20": 84.94623655913979,
+          "SR": 77.68817204301075,
+          "scored_frames": 372,
+          "bbox_sha256": "5312fe9fdf09e1e19b1d7bd2f3cad67421b21f7b78296cbc5de5dc4ff32ff025",
+          "trace_sha256": "1d76a9d07666912c0ce88ea06fe4160b855f9fa5582adcaee5e36cdfe56984a5",
+          "model_calls": 319
+        }
+      },
+      "boyridesbesidesgirl": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301,
+          "bbox_sha256": "f044d8d25cbb2f5a2ff888a90c10b077ab268d7a7dcf30334b51607af1539eb9",
+          "trace_sha256": "658431518c2febe2685d46b24264b3cda39b2b396bd6d3b4dd6fcdd18e07fe4f",
+          "model_calls": 301
+        },
+        "block32_outage": {
+          "PR20": 85.04983388704319,
+          "SR": 74.10219901914255,
+          "scored_frames": 301,
+          "bbox_sha256": "797be4c2d6cead8844d53d03c24e777834e53ca5409eb10916ee9faa91f79f99",
+          "trace_sha256": "32ff6ad7048f1d9a51bd099d0a4fc8a85f1c61b091d78cef7702322aca6fe792",
+          "model_calls": 269
+        }
+      },
+      "whiteTboy": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253,
+          "bbox_sha256": "47f1136dd571e33c63f9eebc31712482c50fd87c4989e32d52da8e6ef1b386e0",
+          "trace_sha256": "1a25492a44831bc0ca7b05ec536f298f22a1beca4cc7338d37f9b20b41cf136e",
+          "model_calls": 253
+        },
+        "block32_outage": {
+          "PR20": 77.4703557312253,
+          "SR": 63.09053265575004,
+          "scored_frames": 253,
+          "bbox_sha256": "6b608425947f37d2cdaf9598a865744ee0388b372dc9b61f1d48806bf610c3a9",
+          "trace_sha256": "3cbea5d0b759bccbf4146028083fe7c5195661a50aeb2633e0a572d43b1dfa9b",
+          "model_calls": 221
+        }
+      },
+      "lefthandfoamboard": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153,
+          "bbox_sha256": "0a4619dce3491c0675793cff56ceb614be2a252e969c2223df24da484d430c9b",
+          "trace_sha256": "06ae1001af6b8b04abf5e6828cbdb22cd7f44345003b48a09bc1b4da6f7ea1e5",
+          "model_calls": 153
+        },
+        "block32_outage": {
+          "PR20": 86.27450980392157,
+          "SR": 64.79925303454715,
+          "scored_frames": 153,
+          "bbox_sha256": "3c1af9faa4249ca3e2cf0cd36960c9ce98de5b4d7bfe0e7d8d84071866a84115",
+          "trace_sha256": "b97fc8b01b187560284d83307beb405627df188b261b40e60e2a621d939a6a02",
+          "model_calls": 153
+        }
+      },
+      "whitecarleave": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126,
+          "bbox_sha256": "a04092cf952bafe943bbc231348fffe9eb5a1d038d797e1d862c5f9b2bba7ca4",
+          "trace_sha256": "a4436d9e3c7ac7ed7c03a3fa5cd5124997fdff0df6cb17d8ef71a7879ff1b260",
+          "model_calls": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.36281179138322,
+          "scored_frames": 126,
+          "bbox_sha256": "6c4d275fd8912ef713ac1bd13fcc175db04306d255bdb4340ecaec74525935f1",
+          "trace_sha256": "603d65012c1abd09afd51e166a6f1ffec93e5fcaa8c06579f89a9e348b310281",
+          "model_calls": 126
+        }
+      }
+    },
+    "matched": {
+      "rightrunninglatterone": {
+        "complete": {
+          "PR20": 77.58620689655173,
+          "SR": 46.58904314076728,
+          "scored_frames": 638,
+          "bbox_sha256": "3f4abf5bb57a9b8331ab0eb35a09f546fc14781c2aa41378adbba7b3fbccb065",
+          "trace_sha256": "2b62115b57a830a85d033dcbc835725c1360dc2964578fc8243ac1a9cbbaf955",
+          "model_calls": 638
+        },
+        "block32_outage": {
+          "PR20": 30.56426332288401,
+          "SR": 13.696074040901626,
+          "scored_frames": 638,
+          "bbox_sha256": "0f12b68a33429c2d1d0d1d4adafd3a78b5ea9e1e042352c841fed9d839058750",
+          "trace_sha256": "599a9e26caa46a199efbabb83ff973757b16e18da133302de6e26aa657a9be29",
+          "model_calls": 542
+        }
+      },
+      "leftgirlat1row": {
+        "complete": {
+          "PR20": 99.80916030534351,
+          "SR": 81.49763722282806,
+          "scored_frames": 524,
+          "bbox_sha256": "ccec87782739437e8a9072d9c8b26f6d7eb3255fd46f97922ccf2591b25f9a79",
+          "trace_sha256": "d104dbe1e8f37971f93085d7cff9cb7d5837e333cfdb189e950e8e01d47df3bb",
+          "model_calls": 524
+        },
+        "block32_outage": {
+          "PR20": 50.19083969465649,
+          "SR": 40.69429298436932,
+          "scored_frames": 524,
+          "bbox_sha256": "382f2ce9a6592eda7b675ea23c7094f2f856fe04558ba716bd5f27ca3fddb402",
+          "trace_sha256": "cc04b00ff4cc2cbf179e68d4b0338cbcb5949315921d93171d2246bb10ccfb76",
+          "model_calls": 460
+        }
+      },
+      "1phoneblue": {
+        "complete": {
+          "PR20": 90.86021505376344,
+          "SR": 79.23707117255503,
+          "scored_frames": 372,
+          "bbox_sha256": "8c565455841c6861cb5e2602218b3ee965ad0a1cbf37bbf7a2e49725c20b6153",
+          "trace_sha256": "588aed1267329cab5c69a9b0fe3b2c7df59e56b2afb000688de8e8d7772cbbc7",
+          "model_calls": 372
+        },
+        "block32_outage": {
+          "PR20": 80.10752688172043,
+          "SR": 75.78084997439835,
+          "scored_frames": 372,
+          "bbox_sha256": "41708cbcd3a59f735fe3708102aff97fc9aab560918e6f088446be9595c90df0",
+          "trace_sha256": "1edae0f43a7b9171b0483f826d360b126e08775ef6bbc1c8c6cd47671d8c3439",
+          "model_calls": 319
+        }
+      },
+      "boyridesbesidesgirl": {
+        "complete": {
+          "PR20": 99.66777408637874,
+          "SR": 86.63186204714444,
+          "scored_frames": 301,
+          "bbox_sha256": "f044d8d25cbb2f5a2ff888a90c10b077ab268d7a7dcf30334b51607af1539eb9",
+          "trace_sha256": "658431518c2febe2685d46b24264b3cda39b2b396bd6d3b4dd6fcdd18e07fe4f",
+          "model_calls": 301
+        },
+        "block32_outage": {
+          "PR20": 82.72425249169434,
+          "SR": 72.33032747982914,
+          "scored_frames": 301,
+          "bbox_sha256": "24b97b01ccd529f35a11a63211d88d2f7c43e2ae328a74c9535cf679f49cea10",
+          "trace_sha256": "72e00f45d7c860ac368b9d1e7e66139498ee2133fdf3a876706df90a93e2caaf",
+          "model_calls": 269
+        }
+      },
+      "whiteTboy": {
+        "complete": {
+          "PR20": 81.42292490118577,
+          "SR": 67.41953698475439,
+          "scored_frames": 253,
+          "bbox_sha256": "47f1136dd571e33c63f9eebc31712482c50fd87c4989e32d52da8e6ef1b386e0",
+          "trace_sha256": "1a25492a44831bc0ca7b05ec536f298f22a1beca4cc7338d37f9b20b41cf136e",
+          "model_calls": 253
+        },
+        "block32_outage": {
+          "PR20": 73.12252964426878,
+          "SR": 58.723884810841334,
+          "scored_frames": 253,
+          "bbox_sha256": "c129b8296ff20884ffbb6c426f002876f62ff0196006788d6111faa8f3c12477",
+          "trace_sha256": "e504ff11e0a3f040f73e40682884be15d808dbb4808af081e7e4a797eeed4ccc",
+          "model_calls": 221
+        }
+      },
+      "lefthandfoamboard": {
+        "complete": {
+          "PR20": 88.88888888888889,
+          "SR": 68.0672268907563,
+          "scored_frames": 153,
+          "bbox_sha256": "0a4619dce3491c0675793cff56ceb614be2a252e969c2223df24da484d430c9b",
+          "trace_sha256": "06ae1001af6b8b04abf5e6828cbdb22cd7f44345003b48a09bc1b4da6f7ea1e5",
+          "model_calls": 153
+        },
+        "block32_outage": {
+          "PR20": 89.54248366013073,
+          "SR": 64.83037659508247,
+          "scored_frames": 153,
+          "bbox_sha256": "800c5d0a7940604d52c99db3460551bd1e22c555d9e274199126bc40511c5f42",
+          "trace_sha256": "c4836fa03f1d2d444077d8c5e89e70b4abc6ad0a5d0ca58f97ec73711c523731",
+          "model_calls": 153
+        }
+      },
+      "whitecarleave": {
+        "complete": {
+          "PR20": 100.0,
+          "SR": 93.31065759637188,
+          "scored_frames": 126,
+          "bbox_sha256": "a04092cf952bafe943bbc231348fffe9eb5a1d038d797e1d862c5f9b2bba7ca4",
+          "trace_sha256": "a4436d9e3c7ac7ed7c03a3fa5cd5124997fdff0df6cb17d8ef71a7879ff1b260",
+          "model_calls": 126
+        },
+        "block32_outage": {
+          "PR20": 98.4126984126984,
+          "SR": 90.32501889644747,
+          "scored_frames": 126,
+          "bbox_sha256": "59a6bd7de90cb5ca5c55db55b3d16b62f2f25042966f44db23365dcf89d29ccf",
+          "trace_sha256": "8cce5a034e1a7af40ca1598659f13a9b9783297744fb2e76489a46c9cea779dd",
+          "model_calls": 126
+        }
+      }
+    }
+  },
+  "cohort": [
+    {
+      "name": "rightrunninglatterone",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/rightrunninglatterone",
+      "development_index": 69,
+      "video_frames": 639,
+      "gt_sha256": "b4856f957582585b2a2e70d3791879e4d8b3f6757d07b71242600564bca5849b"
+    },
+    {
+      "name": "leftgirlat1row",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/leftgirlat1row",
+      "development_index": 71,
+      "video_frames": 525,
+      "gt_sha256": "bd2dd28fb1364dc39d061b7304fb49708cc92dd1ba54d3130969f0ceea287dd7"
+    },
+    {
+      "name": "1phoneblue",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/1phoneblue",
+      "development_index": 70,
+      "video_frames": 373,
+      "gt_sha256": "c2d4c95ac915e5eef9e32755184fde1636c3e3d84141f15ab28683a842655e6a"
+    },
+    {
+      "name": "boyridesbesidesgirl",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/boyridesbesidesgirl",
+      "development_index": 72,
+      "video_frames": 302,
+      "gt_sha256": "410c3bc9287206ddc1316bb3b7d1f9d84159df7b98e68377a5567c6534762653"
+    },
+    {
+      "name": "whiteTboy",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whiteTboy",
+      "development_index": 75,
+      "video_frames": 254,
+      "gt_sha256": "ec9220581f17da1e3749721186f4003e070082ac08bdac444db1fb9cd3b0b21a"
+    },
+    {
+      "name": "lefthandfoamboard",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/lefthandfoamboard",
+      "development_index": 68,
+      "video_frames": 154,
+      "gt_sha256": "be1e42e8a15b245be5d0760503664fe7309738f7a50061de677cb63e9a1870bf"
+    },
+    {
+      "name": "whitecarleave",
+      "folder": "/data/wangwj/dataset/LasHeR/trainingset/whitecarleave",
+      "development_index": 74,
+      "video_frames": 127,
+      "gt_sha256": "4f9815b792c750f68ca1d849a542b1b6a824b6458ebaf7a6721d1f5784b9f335"
+    }
+  ],
+  "frozen_network": true,
+  "controls_equal": true,
+  "seconds": 883.0471267700195
+}

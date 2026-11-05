@@ -1,0 +1,214 @@
+# R Input Prefix Provenance Witness
+
+## Native CPU Setup and Installed-Source Audit
+
+`scripts/audit_protocol_r_cpu_rng.py` ran in the frozen R runtime on CPU.
+The completed report is
+`reports/server28_protocol_r_cpu_rng_audit_v2_20261103.json`.
+It reconstructs the actual OSTrack-initialized native model and matches the
+initialization record of both original R arms. For each actual run configuration,
+it executes native loader construction, AdamW construction, loading the actual
+hash-bound development cache, model train/BN setup, and zeroing gradients.
+Each stage leaves the default CPU RNG unchanged at
+`50400c02bd9dfaf4b1c43eec7b1e48a99966bf9c145af5f20e9e5b639b2b40b0`,
+exactly matching the completed native epoch witness's initial RNG.
+The check also consumes CPU random values inside `fork_rng(devices=[])`
+and verifies exact restoration on exit.
+
+The report retains source text and hashes for all eighteen distinct native
+model forward types, the native modality/patch sampler, installed DropPath,
+installed AdamW initialization/step/functional implementations, and Torch RNG
+forking. The instantiated model's dropout probabilities are zero; its eleven
+DropPath modules use the input-device `new_empty(...).bernoulli_` implementation.
+Native masks derive their device from the actual search tensor. Installed
+AdamW sources contain no calls from the explicitly enumerated random-call
+inventory. The frozen original validation body wraps its forwards in `fork_rng`.
+This is inspectable source evidence, not exhaustive dynamic tracing of all
+framework internals or a proof inferred merely from an empty AST inventory.
+
+Execution took 6.622544 seconds; CUDA stayed uninitialized. No loader iterator,
+image decode, model forward/backward, optimizer step, or original-process RNG
+read was performed. These results close the measured **setup** uncertainty and
+document the stochastic-operation device paths. They do not independently
+record later original CUDA inputs, certify the entire historical exclusion
+union, or authorize OHCAS. The report retains explicit false values for these
+claims. Original trainers, frozen sources, queues, and checkpoints are untouched.
+
+Executed command:
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/protocol_r_20261103
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/protocol_r_20261103:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python \
+  /home/gaob/Miss-RGBT/scripts/audit_protocol_r_cpu_rng.py \
+  --output /home/gaob/Miss-RGBT/reports/server28_protocol_r_cpu_rng_audit_v2_20261103.json
+```
+
+## Measured Evidence
+
+The existing server Python 3.7 / Torch 1.12 environment executed
+`scripts/replay_protocol_r_input_witness.py` successfully. It replayed four
+native image-loader microbatches (16 returned tuples) on CPU in 2.146681
+seconds, without initializing CUDA.
+
+SHA256 of `template_images`, `search_images`, and `search_anno` exactly
+matched every saved first-optimizer-update input hash: two microbatches for
+R1 and four for R2. R1/R2 share microbatch size four, seed, dataset, workers,
+and samples per epoch, but accumulate two/four microbatches respectively.
+
+The replay used actual images, native sampling, crop rejection, transforms,
+collation, and worker seeding. `FrameCapture` adds frame-identity metadata
+after native processing without changing images, annotations, or random
+draws. Rejected crop attempts clear their identities. Worker prefetch may
+read additional images beyond the returned prefix.
+
+The report binds both saved run configurations and the imported native
+data, processing, sampler, transform, and LasHeR modules by SHA256. The
+script checked those five modules against the frozen R source manifest.
+
+| Artifact | SHA256 |
+|---|---|
+| `scripts/replay_protocol_r_input_witness.py` | `3d53e29f42fe512952a4560daf9d018008eff3cbf39b346df708f2849aebef09` |
+| `reports/server28_protocol_r_input_witness_20261103.json` | `5f06801ef5e25f3f59410f7d7849b461589ca81044c45e0259a2aa6c1c5fcd42` |
+
+Local and server copies of both artifacts have matching hashes.
+
+## Limits
+
+This establishes reproducibility and frame identities for the recorded
+prefix only. It is not a full-run input manifest, proof of RNG continuity
+across epochs, an OHCAS freshness-gate pass, training evidence, or an
+official score. It does not repair the full historical R provenance gap.
+
+Before accepting a complete reconstruction, audit main-process CPU RNG
+through optimizer setup, training, validation, checkpointing, and epoch
+transitions. Distinguish already-consumed inputs from future planned inputs.
+The recorded hashes verify only the first update and cannot independently
+certify later replayed batches. A metadata-only sampler omitting crop
+rejection and augmentation RNG draws is insufficient.
+
+The growing original A manifests also need completed-run verification.
+Missing provenance is not a negative diagnostic and cannot close OHCAS.
+No running source, seed, process, or environment was modified by this replay.
+
+## Executed Invocation
+
+```bash
+cd /home/gaob/Miss-RGBT/runtime/protocol_r_20261103
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=/home/gaob/Miss-RGBT/runtime/protocol_r_20261103:/home/gaob/Miss-RGBT \
+/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python -u \
+/home/gaob/Miss-RGBT/scripts/replay_protocol_r_input_witness.py \
+--output /home/gaob/Miss-RGBT/reports/server28_protocol_r_input_witness_20261103.json
+```
+
+The exclusive output path already exists; use a new path for a new observation.
+
+## Live Scheduling Observation
+
+At server time 2026-11-03 11:32:53 CST:
+
+| GPU | Original training process | Utilization | Temperature | Power cap |
+|---|---|---|---|---|
+| 0 | R1, PID 3388846 | 100% | 82 C | 250 W |
+| 1 | R2, PID 3395457 | 100% | 79 C | 250 W |
+| 2 | A Utility, PID 1288280 | 100% | 77 C | 250 W |
+| 3 | A Random, PID 1288281 | 100% | 74 C | 250 W |
+
+R1/R2 were in epoch two at cumulative microsteps 8050/7700. Each epoch has
+5000 microbatches. The estimated epoch-two boundary is 12:10--12:20 CST,
+not the end of the twenty-epoch campaigns.
+
+A official controller PID 1355742 and six-arm RPPM queue PID 3539938 were
+live. RPPM status at 03:30:21 UTC was `WAITING_FOR_R`, awaiting both R
+training verifications and both full official campaign receipts. Its
+dispatcher checks every 300 seconds and uses free GPUs after the gates pass.
+Each formal arm holds its GPU through ten full official evaluations.
+Do not duplicate the queue or edit frozen `curriculum_p` / `protocol_r` files.
+
+There is no new official score. Observed temperatures do not establish an
+85 C hardware temperature limit.
+
+## Completed Real-Image Epoch Transition Witness
+
+`scripts/replay_protocol_r_epoch_boundary.py` exhausted one native epoch:
+5,000 microbatches, 20,000 returned tuples, real images/augmentations/crop
+rejections and two native workers. Every saved original first-update hash
+matched. The main CPU RNG stayed equal to its post-prefetch state for all
+5,000 returned batches, including the exhausted iterator.
+
+It then compared two ways of reaching epoch two: consuming the complete
+native image epoch, and advancing the installed loader's worker-base seed
+plus its native batch sampler without reading dataset items. The next four
+real-image microbatches had identical tensor hashes and frame identities.
+Measured worker-base seeds were 5562934040544554675 and
+5177384581399083067. Total execution took 1459.473608 seconds, CPU only.
+
+The installed Torch1.12.1 source inspection found a main-process worker seed
+and a RandomSampler seed per epoch; RandomSampler uses a local generator
+after that. Native DropPath uses `x.new_empty(...).bernoulli_`, on the input's
+device. Original validation uses `torch.random.fork_rng`, which restores CPU
+state as well. The frozen training source must still be audited as a whole:
+this witness did not execute the original CUDA training operations or read
+their live RNG state. Original later-batch hashes were never recorded.
+
+Server evidence remains in
+`reports/server28_protocol_r_epoch_boundary_20261103/`:
+`epoch01_input_manifest.jsonl`, `report.json`, and `completed.json`.
+The publication copy of report.json is
+`reports/server28_protocol_r_epoch_boundary_20261103.json`, SHA256
+`1eba4e1cf437d7fa19d2c5e49b6035b17d4aef474cd71d62cde1ad244f51ce8b`.
+The epoch-one manifest SHA256 is
+`8d3166d345d2207be7599a75004a3f5f9e208672fb8516bedad9531d5b9c45ee`.
+
+This advances epoch-boundary reproducibility evidence. It does not turn
+the replay into an independently certified full original R manifest, or
+authorize OHCAS. The active trainer sources/processes were not modified.
+
+## Conditional Twenty-Epoch Reconstruction Running
+
+`scripts/reconstruct_protocol_r_frames.py` extends that completed witness
+without repeating epoch one. It advances the native loader's epoch-one seed
+boundary, verifies epoch two's first four actual image batches against the
+completed witness, then decodes/augments every returned native tuple through
+epochs2-20. It checks the main CPU RNG after each batch, hashes the frozen
+sources before every epoch, and writes separate immutable epoch manifests
+and completion receipts. It does not construct a model or allocate CUDA.
+
+At 2026-11-03 14:49:08 CST, PID200073 was live, epoch2 had passed500/5000
+microbatches, and the first four batches had therefore matched the witness.
+Measured speed was 145.323795 seconds per500batches, approximately24.2
+minutes per epoch. The nineteen-epoch replay is estimated to finish near
+22:25 CST on November3, excluding unexpected I/O changes.
+
+Server output is
+`reports/server28_protocol_r_full_reconstruction_20261103/`, with sibling
+`.log`; the publication registration copy is
+`reports/server28_protocol_r_full_reconstruction_registration_20261103.json`.
+Check the actual process plus `status.json` at a meaningful milestone.
+Do not duplicate/restart it solely because a query times out.
+
+This is a conditional reconstruction. It may include future planned inputs
+ahead of original training. Its registration and final report explicitly
+keep original-input independent certification and OHCAS authorization false.
+Completion alone does not close the data gate: original training's CPU-RNG
+noninterference, terminal state and the actual exclusion union still need
+audit. Active R/P sources, GPU trainers and queues remain unchanged.
+
+## Full Reconstruction Completed
+
+The registered CPU-only replay exited with `status=complete`: epochs 1-20
+were reconstructed, including 380,000 tuples replayed by this job for epochs
+2-20. CUDA was not initialized. The authoritative server report is
+`reports/server28_protocol_r_full_reconstruction_20261103/report.json`,
+SHA256
+`5ac52cde8a07af99e344ed4a672a2ef530ded77d7d4cadcd286f342fce96437d`.
+
+This completion does not certify what the live R1/R2 trainers actually
+consumed. The report records `actual_original_inputs_independently_certified
+= false`, `all_historical_frame_exclusions_verified = false`, and
+`ohcas_data_gate_passed = false`; at replay completion, both original
+trainers were only at epoch 8 and had no completion receipts. Do not use the
+reconstructed manifests as observed training provenance, and do not authorize
+OHCAS cache generation, diagnostic runs, or training from this replay.

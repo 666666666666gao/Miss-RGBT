@@ -1,0 +1,50 @@
+{
+  "status": "verified",
+  "report_sha256": "20cb927876ec418518b6d196e859f6e861b756c26284ce994817ae9fbb94ae79",
+  "effects": {
+    "11": {
+      "mean": -0.005528573578192016,
+      "ci95_low": -0.020216918844035116,
+      "ci95_high": 0.008643910459290102,
+      "sequences": 118,
+      "rows": 256
+    },
+    "01": {
+      "mean": -0.018250701207099325,
+      "ci95_low": -0.03511747157066011,
+      "ci95_high": -0.0010650806215796978,
+      "sequences": 118,
+      "rows": 256
+    },
+    "10": {
+      "mean": -0.015966537372027603,
+      "ci95_low": -0.031888668430388026,
+      "ci95_high": -0.0005919281081040013,
+      "sequences": 118,
+      "rows": 256
+    }
+  },
+  "sham_effect": {
+    "mean": -2.3392113293968342e-07,
+    "ci95_low": -9.223388195767467e-07,
+    "ci95_high": 4.2023119453530157e-07,
+    "sequences": 118,
+    "rows": 1152
+  },
+  "diagnostic_supported": true,
+  "prior_reports_sha256": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89",
+    "server28_cross_stream_context_20261102_v2": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8",
+    "server28_tail_lowrank_20261102": "ca7092a9dc1f1ef51513f7245fb4582f7311b5deb84d93a4683a98b41ae730e2",
+    "server28_candidate_quality_20261102_v2": "e774a5ff4b4cdacffae53c286c25bed0116d0feb6175a777f66a3061d4a35cda",
+    "server28_quality_ranker_20261102": "686d472292a7eb8a72e3a7ee168818b880cb601a0a353824f129cb73d5628bb7"
+  },
+  "server_file_hashes_checked": true,
+  "neural_replay": false
+}

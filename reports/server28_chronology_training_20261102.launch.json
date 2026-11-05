@@ -1,0 +1,21 @@
+{
+  "pid": 589499,
+  "gpu": 2,
+  "memory_mib": 1.0,
+  "temperature_c": 39.0,
+  "power_limit_w": 250.0,
+  "command": [
+    "/home/gaob/Miss-RGBT/conda-envs/miss_rgbt/bin/python",
+    "-u",
+    "/home/gaob/Miss-RGBT/scripts/probe_chronology_training.py",
+    "--output",
+    "/home/gaob/Miss-RGBT/reports/server28_chronology_training_20261102"
+  ],
+  "cwd": "/home/gaob/Miss-RGBT/runtime/task_utility_20261018",
+  "output": "/home/gaob/Miss-RGBT/reports/server28_chronology_training_20261102",
+  "log": "/home/gaob/Miss-RGBT/reports/server28_chronology_training_20261102.log",
+  "protocol_sha256": "a9a6f02e7797a6ad9064e4c3c4fdb9b531d78808318347c4ae37c720af4bcd45",
+  "script_sha256": "72b73d29dc8c7762796c90e5ecc525a7cac79fa91cbfde0b630ad61e5e2724f7",
+  "launcher_sha256": "c2c3e09bdb8b3e8ec14c496cc414e72d9998557007ce03d8a51df662ab37064c",
+  "launched_utc": "2026-11-02T04:02:16.275094Z"
+}

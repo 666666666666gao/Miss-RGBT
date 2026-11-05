@@ -1,0 +1,42 @@
+"""Launch one matched cross-stream pilot with immutable protocol receipt."""
+import datetime
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+root = Path('/home/gaob/Miss-RGBT')
+script = root / 'scripts/probe_cross_stream_context.py'
+protocol = root / 'docs/CROSS_STREAM_CONTEXT_PILOT_20261102.md'
+stem = 'server28_cross_stream_context_20261102_v2'
+output = root / 'reports' / stem
+receipt = root / 'reports' / (stem + '.launch.json')
+log_path = root / 'reports' / (stem + '.log')
+snapshot = root / 'reports' / (stem + '.preregistered_protocol.md')
+assert not any(path.exists() for path in [output, receipt, log_path, snapshot])
+rows = subprocess.check_output(['nvidia-smi',
+    '--query-gpu=index,memory.used,temperature.gpu,power.limit',
+    '--format=csv,noheader'], universal_newlines=True).splitlines()
+gpu = [row.split(',') for row in rows if row.split(',')[0].strip() == '2'][0]
+memory, temperature, power = [float(item.strip().split()[0]) for item in gpu[1:]]
+assert memory < 500 and temperature < 85 and power == 250
+runtime = root / 'runtime/task_utility_20261018'
+environment = dict(os.environ, CUDA_VISIBLE_DEVICES='2', OMP_NUM_THREADS='1',
+                   MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', PYTHONPATH=str(runtime))
+snapshot.write_bytes(protocol.read_bytes())
+command = [sys.executable, '-u', str(script), '--output', str(output)]
+with log_path.open('xb') as stream:
+    process = subprocess.Popen(command, cwd=str(runtime), env=environment,
+        stdout=stream, stderr=subprocess.STDOUT, start_new_session=True)
+record = dict(pid=process.pid, gpu=2, memory_mib=memory, temperature_c=temperature,
+    power_limit_w=power, command=command, cwd=str(runtime), output=str(output),
+    log=str(log_path), protocol_sha256=hashlib.sha256(snapshot.read_bytes()).hexdigest(),
+    script_sha256=hashlib.sha256(script.read_bytes()).hexdigest(),
+    launcher_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    launched_utc=datetime.datetime.utcnow().isoformat() + 'Z')
+with receipt.open('x') as stream:
+    json.dump(record, stream, indent=2)
+    stream.write('\n')
+print(json.dumps(record))

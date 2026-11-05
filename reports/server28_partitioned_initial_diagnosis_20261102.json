@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "preflight": {
+    "memory_mib": 1.0,
+    "temperature_c": 40.0,
+    "power_limit_w": 250.0
+  },
+  "tensors_and_identities_exact": true,
+  "initial_parameters_exact": true,
+  "epoch3_record_reproduced": true,
+  "samples": 128,
+  "initial": {
+    "samples": 128,
+    "task_loss": {
+      "11": 3.252416644245386,
+      "01": 5.764184460043907,
+      "10": 3.9764429219067097
+    },
+    "mean_task_loss": 4.331014675398667
+  },
+  "epoch3": {
+    "samples": 128,
+    "task_loss": {
+      "11": 3.8080334216356277,
+      "01": 5.488135740160942,
+      "10": 4.147694539278746
+    },
+    "mean_task_loss": 4.4812879003584385
+  },
+  "delta": {
+    "11": 0.5556167773902416,
+    "01": -0.2760487198829651,
+    "10": 0.17125161737203598
+  },
+  "mean_delta": 0.15027322495977113,
+  "seconds": 37.89246106147766,
+  "peak_gpu_bytes": 557701120,
+  "checkpoint_sha256": "9262d75051f55bc88ff304c18875addd5caec7d08d66ff4cfe471a95032da68e",
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/scripts/diagnose_partitioned_initial.py": "85214ce7de82b22de4202f6d5afa90e2c4092db1d1058bee4dd56e2ae8620538",
+    "/home/gaob/Miss-RGBT/scripts/train_partitioned_a.py": "5a387f95f46d3b0798e516cee03d1bb3609f901a79fd9d5d8a5483e9f91ef981"
+  },
+  "input_records_sha256": "92217675abe35725989543dbee5dde36061dc5de3e9a32d3e580e0f603d676be",
+  "scope": "Same fixed train882 development task loss; not official tracking accuracy, convergence, a new training run or a checkpoint-selection change"
+}

@@ -1,0 +1,11 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+{"stage": "batch", "samples": 16, "expected": 128}
+{"stage": "batch", "samples": 32, "expected": 128}
+{"stage": "batch", "samples": 48, "expected": 128}
+{"stage": "batch", "samples": 64, "expected": 128}
+{"stage": "batch", "samples": 80, "expected": 128}
+{"stage": "batch", "samples": 96, "expected": 128}
+{"stage": "batch", "samples": 112, "expected": 128}
+{"stage": "batch", "samples": 128, "expected": 128}
+{"stage": "complete", "effects": {"11": {"mean": -0.005528573578192016, "ci95_low": -0.020216918844035116, "ci95_high": 0.008643910459290102, "sequences": 118, "rows": 256}, "01": {"mean": -0.018250701207099325, "ci95_low": -0.03511747157066011, "ci95_high": -0.0010650806215796978, "sequences": 118, "rows": 256}, "10": {"mean": -0.015966537372027603, "ci95_low": -0.031888668430388026, "ci95_high": -0.0005919281081040013, "sequences": 118, "rows": 256}}, "sham_effect": {"mean": -2.3392113293968342e-07, "ci95_low": -9.223388195767467e-07, "ci95_high": 4.2023119453530157e-07, "sequences": 118, "rows": 1152}, "sham_small": true, "diagnostic_supported": true, "seconds": 79.31214785575867}

@@ -1,0 +1,20 @@
+{
+  "status": "live",
+  "observed_server_time": "2026-11-02 16:21:22 CST",
+  "arms": {
+    "utility": {"pid": 1288280, "gpu": 2, "observed_update": 25, "epoch": 1, "temperature_c": 74, "memory_used_mib": 22710, "power_limit_w": 250, "seconds_per_update_between_1_and_25": 3.0138020614782968},
+    "random": {"pid": 1288281, "gpu": 3, "observed_update": 25, "epoch": 1, "temperature_c": 73, "memory_used_mib": 22742, "power_limit_w": 250, "seconds_per_update_between_1_and_25": 3.0061353047688804}
+  },
+  "paired_first_50_microstep_inputs_and_masks_exact": true,
+  "initial_parameters_exact": true,
+  "partition_names_and_excluded_frame_sets_equal": true,
+  "prior_report_hashes_equal": true,
+  "boundary_json_bytes_equal": false,
+  "boundary_byte_difference_reason": "Dictionary key order only; all 879 excluded-sequence frame sets, prior hashes and partitions compared structurally equal.",
+  "worker_sha256": "5a387f95f46d3b0798e516cee03d1bb3609f901a79fd9d5d8a5483e9f91ef981",
+  "protocol_sha256": "f4faf12798647eff1bc50cc7a2bd6dcae12c3adcda3d65f056bba21f2c4084ce",
+  "scope": "Live process and startup pairing verification, not convergence or benchmark gain.",
+  "estimated_minutes_per_epoch": 101,
+  "estimated_hours_for_14_to_20_epochs": [24, 34],
+  "next_milestone": "First epoch around 2026-11-02 18:00 CST; inspect shortly before then."
+}

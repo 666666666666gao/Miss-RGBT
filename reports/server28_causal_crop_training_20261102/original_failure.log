@@ -1,0 +1,63 @@
+/home/gaob/Miss-RGBT/runtime/task_utility_20261018/lib/models/layers/head.py:143: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  idx_y = idx // self.feat_sz
+{"stage": "collect", "clips": 1, "accepted": 10}
+{"stage": "collect", "clips": 2, "accepted": 17}
+{"stage": "collect", "clips": 3, "accepted": 27}
+{"stage": "collect", "clips": 4, "accepted": 34}
+{"stage": "collect", "clips": 5, "accepted": 44}
+{"stage": "collect", "clips": 6, "accepted": 55}
+{"stage": "collect", "clips": 7, "accepted": 66}
+{"stage": "collect", "clips": 8, "accepted": 76}
+{"stage": "collect", "clips": 9, "accepted": 84}
+{"stage": "collect", "clips": 10, "accepted": 92}
+{"stage": "collect", "clips": 11, "accepted": 99}
+{"stage": "collect", "clips": 12, "accepted": 110}
+{"stage": "collect", "clips": 13, "accepted": 121}
+{"stage": "collect", "clips": 14, "accepted": 129}
+{"stage": "collect", "clips": 15, "accepted": 140}
+{"stage": "collect", "clips": 16, "accepted": 151}
+{"stage": "collect", "clips": 17, "accepted": 162}
+{"stage": "collect", "clips": 18, "accepted": 173}
+{"stage": "collect", "clips": 19, "accepted": 183}
+{"stage": "collect", "clips": 20, "accepted": 192}
+{"stage": "collect", "clips": 21, "accepted": 201}
+{"stage": "collect", "clips": 22, "accepted": 211}
+{"stage": "collect", "clips": 23, "accepted": 219}
+{"stage": "collect", "clips": 24, "accepted": 230}
+{"stage": "collect", "clips": 25, "accepted": 239}
+{"stage": "collect", "clips": 26, "accepted": 247}
+{"stage": "collect", "clips": 27, "accepted": 257}
+{"stage": "collect", "clips": 28, "accepted": 267}
+{"stage": "collect", "clips": 29, "accepted": 276}
+{"stage": "collect", "clips": 30, "accepted": 285}
+{"stage": "collect", "clips": 31, "accepted": 295}
+{"stage": "collect", "clips": 32, "accepted": 305}
+{"stage": "epoch", "mode": "native", "epoch": 1, "score": 0.6613113010047069, "stale": 0, "seconds": 62.687323570251465}
+{"stage": "epoch", "mode": "native", "epoch": 2, "score": 0.6764844236848275, "stale": 0, "seconds": 109.82840085029602}
+{"stage": "epoch", "mode": "native", "epoch": 3, "score": 0.6944225303592313, "stale": 0, "seconds": 156.8785698413849}
+{"stage": "epoch", "mode": "native", "epoch": 4, "score": 0.652729365017122, "stale": 0, "seconds": 203.52998399734497}
+{"stage": "epoch", "mode": "native", "epoch": 5, "score": 0.6525525224761547, "stale": 0, "seconds": 250.19156169891357}
+{"stage": "epoch", "mode": "native", "epoch": 6, "score": 0.6685995600989936, "stale": 0, "seconds": 297.1050064563751}
+{"stage": "epoch", "mode": "native", "epoch": 7, "score": 0.6554968969886699, "stale": 1, "seconds": 343.92186880111694}
+{"stage": "epoch", "mode": "native", "epoch": 8, "score": 0.6689710563979963, "stale": 2, "seconds": 391.3054506778717}
+{"stage": "epoch", "mode": "native", "epoch": 9, "score": 0.6900437771952515, "stale": 0, "seconds": 438.55827260017395}
+{"stage": "epoch", "mode": "native", "epoch": 10, "score": 0.6662117505389831, "stale": 1, "seconds": 485.2460472583771}
+{"stage": "epoch", "mode": "native", "epoch": 11, "score": 0.6914555555454944, "stale": 0, "seconds": 532.4589142799377}
+{"stage": "epoch", "mode": "native", "epoch": 12, "score": 0.6706592907302049, "stale": 1, "seconds": 579.615421295166}
+{"stage": "epoch", "mode": "causal", "epoch": 1, "score": 0.6606407303286611, "stale": 0, "seconds": 46.684980154037476}
+{"stage": "epoch", "mode": "causal", "epoch": 2, "score": 0.6721101937647724, "stale": 0, "seconds": 93.94014501571655}
+{"stage": "epoch", "mode": "causal", "epoch": 3, "score": 0.6871427309623549, "stale": 0, "seconds": 141.41348099708557}
+{"stage": "epoch", "mode": "causal", "epoch": 4, "score": 0.6997069070580546, "stale": 0, "seconds": 188.2710120677948}
+{"stage": "epoch", "mode": "causal", "epoch": 5, "score": 0.671972084904845, "stale": 0, "seconds": 235.54985785484314}
+{"stage": "epoch", "mode": "causal", "epoch": 6, "score": 0.7088742945964526, "stale": 0, "seconds": 283.23068165779114}
+{"stage": "epoch", "mode": "causal", "epoch": 7, "score": 0.6837152941365903, "stale": 1, "seconds": 330.1388940811157}
+{"stage": "epoch", "mode": "causal", "epoch": 8, "score": 0.6790711453550193, "stale": 2, "seconds": 377.24886870384216}
+{"stage": "epoch", "mode": "causal", "epoch": 9, "score": 0.7081378831422238, "stale": 3, "seconds": 424.5619316101074}
+Traceback (most recent call last):
+  File "/home/gaob/Miss-RGBT/scripts/train_causal_crop_exposure.py", line 385, in <module>
+    main()
+  File "/home/gaob/Miss-RGBT/scripts/train_causal_crop_exposure.py", line 354, in main
+    audit_clips = fresh_clips(dataset, partitions['audit'], 16, 96, 58103, used)
+  File "/home/gaob/Miss-RGBT/scripts/train_causal_crop_exposure.py", line 55, in fresh_clips
+    assert len(selected) == count
+AssertionError

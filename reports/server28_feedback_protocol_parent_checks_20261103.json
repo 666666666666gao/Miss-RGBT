@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "positive": "Six synthetic arms; sixty stubbed evaluations",
+  "selected_arm": "fixed50",
+  "selected_epoch": 16,
+  "official_metrics_used_for_selection": false,
+  "rejected": [
+    "partial_scope",
+    "wrong_selected_epoch",
+    "test_selected",
+    "missing_evaluation",
+    "duplicate_condition",
+    "wrong_checkpoint",
+    "wrong_checkpoint_path",
+    "wrong_selected_flag",
+    "unverified_scores",
+    "wrong_output",
+    "wrong_frame_budget",
+    "changed_training_evidence"
+  ],
+  "cuda_initialized": false,
+  "f_training_authorized": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_protocol_parent.py": "f8224e517956669f019eed381a4020ea4cd8ef0e820db6b0c703661e1f83d613",
+    "/home/gaob/Miss-RGBT/research/feedback_f/protocol_parent.py": "9cf0f4763fde83d188fd87458a025646c36b0db9db7a9d1f47dff15591a8e0a6"
+  },
+  "scope": "Synthetic gate contracts only. Official and paired verifiers stubbed; no actual P parent, training, images, GPU job or benchmark result."
+}

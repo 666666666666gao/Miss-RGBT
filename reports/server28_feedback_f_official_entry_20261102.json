@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Actual Python compile/import/CLI checks only",
+  "python": "3.7.16 (default, Jan 17 2023, 22:20:44) \n[GCC 11.2.0]",
+  "cli_help_both": true,
+  "subset_argument_rejected": true,
+  "rejection_created_no_output": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/evaluate.py": "73c6ad8bbe4e99a00180723e104d5d07d92b42e215325dafc1205f5902e99554",
+    "/home/gaob/Miss-RGBT/research/feedback_f/verify_official.py": "9bece6f8c0c99015e2fa62c6b0acb5d22108d30bc4f889c508706add9117c291"
+  },
+  "limitations": [
+    "No official dataset preparation or spawned evaluation execution",
+    "No actual F trajectory verification or benchmark score",
+    "Training campaign verification and final-five job queue still pending"
+  ]
+}

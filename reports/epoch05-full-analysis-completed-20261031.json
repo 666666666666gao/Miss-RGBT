@@ -1,0 +1,12 @@
+{
+  "queue": {
+    "pid": 613855,
+    "tracking_controller_pid": 570241,
+    "started_utc": "2026-10-31T00:34:26.295195Z",
+    "poll_seconds": 300,
+    "analyzer_sha256": "b08b486a8ff4194535f7a1b3c123b1145366cbfb33fe9c9f518c7f32eecb8ede",
+    "purpose": "One-shot postprocessing, no evaluation restart or checkpoint selection"
+  },
+  "paired_analysis_sha256": "7034c378efa3dd1430dd32dcd94e968aaa11832a3e333f8a95b922aa106f7c31",
+  "ended_utc": "2026-10-31T03:24:33.471631Z"
+}

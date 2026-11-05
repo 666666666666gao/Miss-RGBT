@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "report_sha256": "21034836239b90595e1ed72addd176679dac7247013ad371ed79ea529d1fc2f8",
+  "effects": {
+    "01": {
+      "mean": 0.013811264457046122,
+      "ci95_low": -0.00726427319984517,
+      "ci95_high": 0.03742532238503694,
+      "sequences": 69,
+      "rows": 384
+    },
+    "10": {
+      "mean": 0.008506127120439569,
+      "ci95_low": -0.01758341168962369,
+      "ci95_high": 0.031635080084508174,
+      "sequences": 69,
+      "rows": 384
+    },
+    "vs_shuffled": {
+      "mean": 0.001733505127887013,
+      "ci95_low": -0.017697228097373542,
+      "ci95_high": 0.019887192423337113,
+      "sequences": 69,
+      "rows": 768
+    }
+  },
+  "advance": false,
+  "prior_reports_sha256": {
+    "server28_fusion_adapter_pilot_20261102": "2ca07ff702becc2aa26dc646d05e911810ca18a360b42b8b00e94a5e7a36584f",
+    "server28_head_supervision_20261102": "5e67287881365117c978b89d382911d02d595fd7514ac344f0d00b845f95d4f9",
+    "server28_modality_heads_20261102": "ab2f1aca04d047e4d92432e56bc9714687c8890133e0238e104d925e355c3790",
+    "server28_response_geometry_20261102": "7521c438e18a80d4ec2a66881bf6d3907b06839439b148b8b7455314e27310e3",
+    "server28_absent_search_kv_20261102_v2": "192adfe78f833b1764c9ed49410449fd9348994ec33202b3b1a154142fa6b503",
+    "server28_absent_position_20261102_v4": "3383b6f752c4e61fb97e857fead2e847f31adb9225663e17df9c6fec6b7d0b41",
+    "server28_late_fusion_streams_20261102": "c523a537ecf00279548f2ed8bec2ea4ff88c256e51537086ed11950adf996e89"
+  },
+  "server_file_hashes_checked": false,
+  "replay": null
+}

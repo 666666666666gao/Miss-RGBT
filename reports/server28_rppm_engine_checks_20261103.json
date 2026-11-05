@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "scope": "CPU synthetic microbatch execution only; not a launch gate",
+  "execution": [
+    {
+      "arm": "fixed60",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "fixed60",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "fixed60",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "fixed50",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "fixed50",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "fixed50",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "progressive",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "progressive",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "progressive",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "shuffled",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "shuffled",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "shuffled",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": true,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced+norm",
+      "epoch": 1,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": false,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced+norm",
+      "epoch": 6,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": false,
+      "finite_gradient": true
+    },
+    {
+      "arm": "paced+norm",
+      "epoch": 16,
+      "native_mask_patch_rng_bitwise": true,
+      "norm_off_native_loss_gradient_bitwise": false,
+      "finite_gradient": true
+    }
+  ],
+  "checkpoint_state": [
+    {
+      "arm": "fixed60",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    },
+    {
+      "arm": "fixed50",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    },
+    {
+      "arm": "progressive",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    },
+    {
+      "arm": "shuffled",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    },
+    {
+      "arm": "paced",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    },
+    {
+      "arm": "paced+norm",
+      "state_roundtrip": true,
+      "next_microbatch_and_gradient_bitwise": true
+    }
+  ],
+  "c_before_masks_all_six_arms": true,
+  "utility_probe_routing": true,
+  "device": "cpu",
+  "cuda_initialized": false,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/curriculum_p/check_engine.py": "344c5a95bce354ac6242703e94cc1d0a2d8213c549344fc8ccefc81c38227ba5",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/engine.py": "706bd144653d5d5b80c064a6c796149cf2522d3376b80fc0c329f3b1ddf6c812",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/pacing.py": "d53780c537679878eb11c010c128d8f06bc3388990f3fbcdd14ec666a8411c1f",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/objectives.py": "6ae0953ceb6f1dcc277c0080dee329f127a43b2116c902c60245b3cbb343130f",
+    "/home/gaob/Miss-RGBT/research/curriculum_p/schedule.py": "41e468b0929bb4c14171f52977cdb7f8be802b9545d894c007b36b3a3327091a"
+  }
+}

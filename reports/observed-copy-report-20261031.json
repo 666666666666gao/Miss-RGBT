@@ -1,0 +1,3265 @@
+{
+  "launch": {
+    "pid": 220773,
+    "started_utc": "2026-10-31T10:31:17.217218Z",
+    "source_sha256": {
+      "/home/gaob/Miss-RGBT/audit_observed_copy28.py": "13ee19f1f82b0d8966c0ab2c2a63039a4b56063c25d1fa470231d2294127b431",
+      "/home/gaob/Miss-RGBT/evaluate_blind_motion28.py": "b9b69795e58a0b1cac1c97cba262268b552eafa0c6429e852f36160fab749da9",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/model.py": "5a22607266816f042f52fea152934a197fca19355b83f6be9f0593d2b0836b73",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/data.py": "78c18ee6a17cc1fbba8a1b345d901217bcc9c6f8348cd195c484b41c74a8dfdd",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/miss_rgbt/objectives.py": "12de96674e86faac3e8e771035b244f41279e44b07bac4cf7315b4ad884995aa",
+      "/home/gaob/Miss-RGBT/runtime/task_utility_20261018/experiments/cadtrack/cadtrack.yaml": "462a56bdba611aa60f1602c22f7d2794781caea55d9e17ba01294da0873aca1a"
+    },
+    "checkpoint": "/home/gaob/Miss-RGBT/checkpoints/e0_availability/epoch20.pth.tar",
+    "checkpoint_sha256": "c4cc43454f80d838db0130f8664b36e73063aadb99a3a645ee12bfee1fd5c20e",
+    "manifest_sha256": "f8176ad6dfa135e94774eafd11729049d5e728b6bd5ff294d013710f2fe1212e",
+    "samples": 16,
+    "batch_size": 4,
+    "seed": 1702,
+    "input_sha256": "52a5ac3b48bea5224dfbf46f53276b718041e1159fd889d1d5a9be0c37a5c7c9",
+    "candidate_sequences": [
+      "motocross",
+      "carturn",
+      "bluegirl",
+      "bike2",
+      "comebike",
+      "girlthroughtrees",
+      "leftcup",
+      "blkcarcome155",
+      "11runthree",
+      "boybehindtrees",
+      "farwhitecarturn",
+      "blackpantsman",
+      "basketballup",
+      "rightboywitjbag",
+      "nightboy",
+      "5runone",
+      "1whiteteacher",
+      "outerfoam",
+      "gonemoto_ab",
+      "rainblackcarcome",
+      "orangegirlwithumbrella",
+      "runninggreenboyafterwhite",
+      "motocomenight",
+      "girlalone",
+      "leftgirl1299",
+      "lightcarstart",
+      "takeoutmoto",
+      "carfarstart",
+      "stronggirl",
+      "motoprecede",
+      "boyinsnowfield_inf_white",
+      "ab_minibusstops",
+      "boycome",
+      "whitecarback",
+      "bouheadupstream",
+      "bluegirlriding",
+      "blackdownball",
+      "2runfour",
+      "agirl_1202",
+      "blkman2trees",
+      "boybetween2blkcar",
+      "motowithblack",
+      "bikecoming",
+      "leftbasketball",
+      "2runtwo",
+      "whitecar70",
+      "boyrightrubbish",
+      "3rdboy",
+      "blackboypushbike",
+      "rightgirlbikecome",
+      "notebook-gai",
+      "2boyscome",
+      "rightblkgirl",
+      "raincarstop",
+      "carfromnorth2",
+      "leftgirlchecking2",
+      "whiteboycome",
+      "whitecarturn",
+      "whitedown",
+      "boyindarkwithgirl",
+      "woman",
+      "threepeople",
+      "girlshakeinrain",
+      "2girlsridebikes",
+      "motoman",
+      "girlsheadwithhat",
+      "pinkbikeboy",
+      "blueboycome",
+      "girlwithredhat",
+      "girltakebag",
+      "manglass1",
+      "blkboywithblkbag",
+      "bolster_infwhite",
+      "Amotoinrain150",
+      "e-tribike",
+      "redshirtman",
+      "the4thboy",
+      "nightrightboy1",
+      "girlrightcomein",
+      "left11",
+      "2girlgoleft",
+      "mototurn102",
+      "redgirlafterwhitecar",
+      "boycomingwithumbrella",
+      "yellowgirlwithbowl",
+      "yellowtruck",
+      "leftlastgirl-yxb",
+      "bikecoming176",
+      "whiteshoesleftbottle-gai",
+      "redboywithblkumbrella",
+      "girlruns2right",
+      "4one",
+      "5runfour",
+      "raincarstop2",
+      "boyleft",
+      "blueboyopenbike",
+      "rightgreenboy",
+      "rightwhiteboy",
+      "girlback",
+      "bigbus",
+      "downmoto",
+      "girl",
+      "lover_1202",
+      "blkgirlfat_quezhen",
+      "firstleftrunning",
+      "blackcargo",
+      "mototake2boys123",
+      "whitebikebehind2",
+      "besom6",
+      "carbesidesmoto",
+      "2runfive",
+      "AQboywithumbrella415",
+      "2ndgirlmove",
+      "midgirl",
+      "maninfrontofbus",
+      "openthisexersicebook",
+      "motocometurn",
+      "leftboyleftblkbackpack",
+      "basketball",
+      "boyinsnowfield4",
+      "motofromdark",
+      "the2ndboyunderbasket",
+      "motocome2left",
+      "boyshorts",
+      "3whitemen",
+      "carcomeonlight2",
+      "boyinsnowfield2",
+      "ajiandan_catwhite",
+      "blkmaninrain",
+      "bikeboystrong",
+      "othersideoftheriver_1227",
+      "fatmancome",
+      "takeoutmototurn",
+      "browncar2east",
+      "rightholdball",
+      "whitecarturn85",
+      "redlittleboy",
+      "boy2_1227",
+      "moto2trees",
+      "4three",
+      "fardarkboyleftthe1stgirl",
+      "midpinkblkglasscup",
+      "carturnleft",
+      "ab_motoinrain",
+      "blackphoneboy",
+      "manwait1",
+      "ninboy-gai",
+      "girlgoleft",
+      "e-tricycle",
+      "stubesideswhitecar",
+      "blackcar",
+      "moto2north2",
+      "whiteshirt",
+      "5two",
+      "meituanbike2",
+      "boyleave",
+      "manafetrtrees",
+      "boytakebox",
+      "leftboy-gai",
+      "nearstrongboy",
+      "leftmirror2",
+      "foamboardatlefthand",
+      "blkteacher`shead",
+      "yellowumbrellagirl",
+      "rightboyleader",
+      "easy_rightblkboywithgirl",
+      "trashtruck",
+      "man_head",
+      "twopeople",
+      "rightboyatwindow",
+      "blackcar131",
+      "whiteboy1_quezhen",
+      "boy_0109",
+      "blackbagbike",
+      "2sisiters",
+      "boyplayingphone366",
+      "7two",
+      "righthunchblack",
+      "basketballshooting",
+      "boyputtinghandup",
+      "redgirl",
+      "moto2ground",
+      "moto2trees2",
+      "left3rdrunwaygirlbesideswhitepants",
+      "boycoming",
+      "whitegirl",
+      "carstarts",
+      "whiteman",
+      "rightmirrorbackwards",
+      "lonelyman",
+      "doginrain",
+      "blkboywithumbrella",
+      "boybikeblueumbrella",
+      "shunfengtribike",
+      "pingpongpad2",
+      "whitehatgirl`sheadleftwhiteumbrella",
+      "cycleman",
+      "leftaloneboy-gai",
+      "suitcase",
+      "firstrightflagcoming",
+      "girloutreading",
+      "backpackboyhead",
+      "bikefromwest",
+      "pinkgirl",
+      "strongboy`head",
+      "whitecat",
+      "redgirlsits",
+      "girlintrees",
+      "7runtwo",
+      "whiteboyphone",
+      "2boysbesidesblkcar",
+      "manatwhiteright",
+      "boywithwhitebackpack",
+      "minibus152",
+      "2runone",
+      "whiteboyback",
+      "blackof4bikes",
+      "boytoleft_inf_white",
+      "Amotowithbluetop",
+      "manfromcar",
+      "bolster",
+      "besom5-sq",
+      "rightshiningmirror",
+      "singleboywalking",
+      "right4thboy",
+      "rightbottle-gai",
+      "manwalkincars",
+      "leftconerbattle-gai",
+      "agirl1_1202",
+      "blackridebike2",
+      "ab_redboyatbike",
+      "3blackboys",
+      "minibusback",
+      "boytakepath",
+      "cameraman_1202",
+      "stripeman",
+      "whitecarafterbike",
+      "mototurntous",
+      "schoolofeconomics-yxb",
+      "blkcarcomeinrain",
+      "folddenumbrellainhand",
+      "occludedmoto",
+      "greenboyafterwhite",
+      "blktakeoutmoto",
+      "4two",
+      "rightof2boys",
+      "fogboyscoming1_quezhen_inf_heiying",
+      "bikeboygo",
+      "blkgirlfromcolumn1_quezhen",
+      "downwhite_1227",
+      "4boysbesidesblkcar",
+      "carfromnorth",
+      "redwhitegirl",
+      "greenfaceback",
+      "pingpongball",
+      "blackthree_1227",
+      "blkboywithwhitebackpack",
+      "leftshortgirl",
+      "blackcar126",
+      "blkbikecomes",
+      "boyrightthelightbrown",
+      "yellowexcesicebook",
+      "rightgirlplayingphone",
+      "whitewoman",
+      "aboyleft_1202",
+      "peoplefromright_0109",
+      "bikeout",
+      "blackdresswithwhitefar",
+      "Ahercarstart",
+      "blkboyback636",
+      "blkboywithglasses",
+      "tallboyblack",
+      "aboy_1202",
+      "rightbottle2-gai",
+      "glassesboyhead",
+      "car",
+      "manbesideslight",
+      "bike2trees86",
+      "mototurnleft",
+      "blacktallman",
+      "blkboywillstand",
+      "greenrightblack",
+      "pinkgirl285",
+      "boyright",
+      "leftboy",
+      "whiteboy395",
+      "right2ndblkboy",
+      "easy_runninggirls",
+      "bus2north",
+      "boyrideoutandin",
+      "lightcarfromnorth",
+      "whitegirlundertheumbrella",
+      "4runeight",
+      "1boygo",
+      "whiteblcakwoman",
+      "whitecarfromnorth",
+      "Awhiteleftbike",
+      "rightboywithbluebackpack",
+      "lastof4boys",
+      "bikeblkbag",
+      "blackbaggirl",
+      "Aab_whitecarturn",
+      "blkcarstart",
+      "boywithshorts",
+      "carclosedoor",
+      "boybesidesblkcarrunning",
+      "minibus125",
+      "bluebike",
+      "blkcarinrain107",
+      "openningumbrella",
+      "motolightturnright",
+      "2ndbus",
+      "bluemoto",
+      "moto2",
+      "whitesuvstop",
+      "lightredboy",
+      "blkboyatbike",
+      "whitebikebehind172",
+      "boyrunning",
+      "motocominginlight",
+      "ajiandan_boyleft2right",
+      "4four",
+      "rightgirlwithumbrella",
+      "AQwhiteminibus",
+      "whiteboy242",
+      "takeoutmanleave",
+      "left_two_0109",
+      "boyshead",
+      "righthand`sfoam",
+      "leftdrillmasterstandsundertree",
+      "umbrellainyellowhand",
+      "boyplayingphone",
+      "blklittlebag",
+      "girlinfrontofcars",
+      "2gointrees",
+      "nikeatbike",
+      "bord",
+      "bikeboycome",
+      "bluecar",
+      "7runthree",
+      "boywithblkbackpack",
+      "11righttwoboy",
+      "orange",
+      "blkridesbike",
+      "blackaftertrees",
+      "blkboycoming",
+      "whiteboyatbike",
+      "ab_mototurn",
+      "ab_leftmirrordancing",
+      "manglass2",
+      "whitecarcomes",
+      "rightredboy954",
+      "basketballatboysrighthand",
+      "yellowgirl",
+      "umbrellainblack",
+      "darkredcarturn",
+      "Take_an_umbrella_1202",
+      "bikefromnorth2",
+      "right2ndgirl",
+      "1handsth",
+      "whiteboywait",
+      "left4throwboy",
+      "manaftercars",
+      "boyunderleftbar",
+      "rightof2cominggirls",
+      "whitecarstart",
+      "redup",
+      "trolleywith2boxes1_quezhen",
+      "whitemotoout",
+      "basketballshooting2",
+      "boysumbrella3",
+      "rightofth3boys",
+      "2boyscome245",
+      "1strowleft3rdgirl",
+      "redbaginbike",
+      "dogunderthelamp",
+      "schoolbus",
+      "sitleftboy",
+      "AQtaxi",
+      "whitecarturn178",
+      "ajiandan_blkdog",
+      "bluemanatbike",
+      "lastblkboy1_quezhen",
+      "boyatbluegirlleft",
+      "boyfromdark2",
+      "camonflageatbike",
+      "girlbesidesboy",
+      "blkmoto",
+      "leftgirl",
+      "manopendoor",
+      "ab_hyalinepaperatground",
+      "take-out-motocoming",
+      "girlleft2right1",
+      "moto2north101",
+      "motocome122",
+      "shotmaker",
+      "boybikewithbag",
+      "leftlastboy-sq",
+      "whiteboyup",
+      "boy1227",
+      "etrike",
+      "rightstripeblack",
+      "elector_0115",
+      "5runthree",
+      "whitacatfrombush",
+      "outer2leftmirrorback",
+      "car2north2",
+      "womanongrass",
+      "skirtwoman",
+      "boywithshorts2",
+      "rightfirstgirl-gai",
+      "ab_rightcupcoming_infwhite_quezhen",
+      "bluegirlcoming",
+      "left_first_0109",
+      "biked",
+      "whiteatright",
+      "lastgirl-qzc",
+      "carlight",
+      "boygointrees",
+      "4thgirl",
+      "nearestleftblack",
+      "umbrellabikegirl",
+      "bus",
+      "blackboy256",
+      "rightofthe4girls",
+      "redcarturn",
+      "boysback",
+      "manaftertrees",
+      "redmotocome",
+      "basketballbyNo_9boyplaying",
+      "mototake2boys",
+      "blackcarturn175",
+      "besom4",
+      "whitegirl_0115",
+      "manfromcar302",
+      "girlpickboy",
+      "drillmaster",
+      "boy",
+      "biketurn",
+      "boyalone",
+      "darkleftboy2left",
+      "2outdark",
+      "greyboysit1_quezhen",
+      "boyshead2",
+      "swan2_0109",
+      "left_leader",
+      "blkboygoleft",
+      "carstart2east",
+      "motowithtopcoming",
+      "blkboy198",
+      "theleftboytakingball",
+      "girlatleft",
+      "manupstairs",
+      "man",
+      "collegeofmaterial-gai",
+      "basketboyblack",
+      "rainysuitcase",
+      "ab_leftfoam",
+      "whiteboycome598",
+      "rightumbrella_quezhen",
+      "blkboyonleft",
+      "lastrowrightboy",
+      "blkumbrella",
+      "redumbrellagirlcome",
+      "whitecargo",
+      "checkedshirt",
+      "AQraincarturn2",
+      "5runtwo",
+      "ab_girlrideintrees",
+      "bikefromnorth257",
+      "blackmanleft",
+      "manstarttreecar",
+      "blackruning",
+      "leftblkboyunderbasketballhoop",
+      "manphone",
+      "treeboy",
+      "farredcar",
+      "ab_boyfromtrees",
+      "mirrorfront",
+      "jeepleave",
+      "ab_catescapes",
+      "silvercarcome",
+      "whitecarstart126",
+      "jeepblack",
+      "takeoutman",
+      "leftwhiteblack",
+      "rightbattle",
+      "elector_1227",
+      "tallwhiteboy",
+      "1rowleft2ndgirl",
+      "leftmen-chong1",
+      "man2startmoto",
+      "leftmirrorshining",
+      "boyalonecoming",
+      "bluelittletruck",
+      "boyride2trees",
+      "boyscome",
+      "moto78",
+      "girlaftertree",
+      "rightboystand",
+      "boysumbrella2",
+      "boytakingcamera",
+      "midflag-qzc",
+      "rightboy`shead",
+      "left3boycoming",
+      "girlblack",
+      "rightblkboy",
+      "midblkbike",
+      "3bike2",
+      "whitecarcome",
+      "girlwithumbrella",
+      "runningwhiteboy",
+      "ab_motocometurn",
+      "6walkgirl",
+      "blkcarcome115",
+      "whiteaftertree",
+      "leftbrowngirlfat",
+      "basketman",
+      "mototurn",
+      "whitewoman_1202",
+      "whiteboybike",
+      "mancarstart",
+      "rightblkboy188",
+      "dogouttrees",
+      "2ndcarcome",
+      "motobike",
+      "rainywhitecar",
+      "yellowcar",
+      "whitemoto",
+      "1strowright1stboy",
+      "1rightboy",
+      "pingpongball2",
+      "leftlightsweaterboy",
+      "left3rdgirlbesideswhitepants",
+      "man_with_black_clothes3",
+      "whitecarturnright248",
+      "rightblkboy2",
+      "truckcoming",
+      "trimototurn",
+      "blackturnr",
+      "greenboy438",
+      "cargirl2",
+      "girlfoldumbrella",
+      "bus2",
+      "biketonorth",
+      "2boysup",
+      "tallboyNumber_9",
+      "waiterontheothersideofwindow",
+      "leftorangeboy",
+      "whitebikebehind",
+      "man_0109",
+      "frontmirror",
+      "unbrellainbike",
+      "AQmidof3boys",
+      "whitecarleave198",
+      "greenleftbackblack",
+      "The_girl_with_the_cup_1202",
+      "mototurn134",
+      "lightcarstop",
+      "girlcoat",
+      "Aredtopmoto",
+      "ab_bikeboycoming",
+      "whitecarcome192",
+      "the4thwhiteboy",
+      "leftgirlchecking",
+      "manaftercar",
+      "rightbluegirl",
+      "Abluemotoinrain",
+      "whitegirlcoming",
+      "agirl",
+      "manaftercar114",
+      "sisterswithbags",
+      "rightdrillmasterunderthebar",
+      "midwhitegirl",
+      "AQwhitetruck",
+      "umbregirl",
+      "1righttwogreen",
+      "redbackpackgirl",
+      "dogforward",
+      "ab_rightmirror",
+      "car2north",
+      "whiteaftertrees",
+      "Awoman2openthecardoor",
+      "abeauty_1202",
+      "blueboywalking",
+      "rightboybesidesredcar",
+      "carstart189",
+      "1strow3rdboymid",
+      "ab_pingpongball3",
+      "blkcarcome",
+      "whiteskirtgirl",
+      "catbrown",
+      "leftclosedexersicebook",
+      "blkmototurn",
+      "whitegirl2_0115",
+      "bowblkboy1-quezhen",
+      "girltakingmoto",
+      "blkcargo",
+      "10crosswhite",
+      "5one",
+      "blackcarcoming",
+      "boyleft161",
+      "The_one_on_the_left_in_black_1202",
+      "large2-gai",
+      "browncarturn",
+      "twoperpson_1202",
+      "boytakesuicase",
+      "rightgreen",
+      "motolight",
+      "whitegirl1227",
+      "twoleft",
+      "whitegirl209",
+      "camera_1202",
+      "umbrellainred",
+      "girlatwindow",
+      "rightblkgirlrunning",
+      "abreastinnerboy",
+      "motoslow",
+      "bikewithbag",
+      "4sisters",
+      "easy_whiterignt2left",
+      "carleaves",
+      "blueboy85",
+      "dogfollowinggirl",
+      "yellowatright",
+      "firstboythroughtrees",
+      "whitecarstart183",
+      "right2ndfarboytakinglight2left",
+      "blkcar2north",
+      "carleaveturnleft",
+      "mengointrees",
+      "1strowright2ndgirl",
+      "bookatfloor",
+      "4runone",
+      "boysumbrella",
+      "womanaroundcar",
+      "whiteof2boys",
+      "goaftrtrees",
+      "whiteboy-gai",
+      "womanopendoor",
+      "Ablkboybike77",
+      "two_1227",
+      "rightredboy",
+      "rightwhite_1227",
+      "huggirl",
+      "mancrossroad",
+      "easy_4women",
+      "lefthyalinepaper",
+      "2ndbikecoming",
+      "boysitbike",
+      "foundsecondpeople_0109",
+      "boystandinglefttree",
+      "the4thboystandby",
+      "boybackpack",
+      "Blue_in_line_1202",
+      "redcar",
+      "biketurnleft2",
+      "midtallboycoming",
+      "rightwhitegirl",
+      "belowyellow-gai",
+      "rightbottle",
+      "boyumbrella4",
+      "pingpongpad",
+      "ab_moto2north0",
+      "5numone",
+      "manatmoto",
+      "10rightboy",
+      "mirroratleft",
+      "rightexercisebookwillfly",
+      "9whitegirl",
+      "girlbikeinlight",
+      "girltakingblkumbrella",
+      "ab_shorthairgirlbike",
+      "rightbiggreenboy",
+      "motowithtop",
+      "rainyboyaftertrees",
+      "takeoutmoto521",
+      "leftredcup",
+      "girlleaveboys",
+      "guardatbike_ab",
+      "blkgirlbike",
+      "runningwhiteboy249",
+      "womanstartbike",
+      "blkbagontheleftgirl",
+      "blkboybike",
+      "boybehindtrees2",
+      "boy2_0115",
+      "leftgirlafterlamppost",
+      "boyof2leaders",
+      "lovers_1227",
+      "folderinrighthand",
+      "toulan-ly",
+      "meituanbike",
+      "blkboywithbluebag",
+      "leftlastgirl2",
+      "blkboylefttheredbagboy",
+      "motocoming",
+      "comecar",
+      "2ndboyfarintheforest2right",
+      "whitecatjump",
+      "darkgiratbike",
+      "boy_0115",
+      "small2-gai",
+      "motoinrain",
+      "battlerightblack"
+    ],
+    "template_frames": 2,
+    "search_frames": 3,
+    "intervention_layer": 6,
+    "device": "cpu",
+    "threads": 4,
+    "arms": [
+      "native",
+      "observed_copy"
+    ],
+    "scope": "Fixed16 tuples sampled from existing705 training sequences with val-mode transforms. No outcome filtering, optimization or new-seed/video independence. Both arms use native input-level availability masking. GT constructs native offline crops and scores loss, but does not choose copied features. This is an ordinary zero-parameter control, not a proposed novel module."
+  },
+  "records": [
+    {
+      "batch": 0,
+      "state": "11_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            5.239241600036621,
+            0.7483531832695007,
+            5.923839569091797,
+            2.2262895107269287
+          ],
+          "output_sha256": "b759fe6fdce786cf4df8294a7eb6f80e4780f390a4ed5055480c9147cb2deef2",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            5.239241600036621,
+            0.7483531832695007,
+            5.923839569091797,
+            2.2262895107269287
+          ],
+          "output_sha256": "b759fe6fdce786cf4df8294a7eb6f80e4780f390a4ed5055480c9147cb2deef2",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "11_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            8.45450210571289,
+            7.7552032470703125,
+            3.9220681190490723,
+            6.606464385986328
+          ],
+          "output_sha256": "629744dfd7309ed6d8c671fc219805616764b81b9ae60fd52f63806f36297399",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            7.86722993850708,
+            8.690305709838867,
+            5.515218734741211,
+            6.2271833419799805
+          ],
+          "output_sha256": "f3f311d60fd332aec74f2a1d9a008af7194b5a8971ec0424a6676bf0275dbec1",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "11_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.46311092376709,
+            0.6572301387786865,
+            6.451942443847656,
+            2.3709259033203125
+          ],
+          "output_sha256": "e103f93de4e7fd9b7982cfb8de40faf47442ceb7224c15f5831affa4c35f3b69",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            9.126839637756348,
+            0.6746934652328491,
+            6.202720642089844,
+            2.5101218223571777
+          ],
+          "output_sha256": "b2559b7c2b761177da93e5a0cd27a24e2ca669925afc67a8d9d5bcebbf43e4a3",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "01_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.067451477050781,
+            0.7695966362953186,
+            5.914748668670654,
+            2.5672757625579834
+          ],
+          "output_sha256": "74424e7a8bf2dc599c620148d56be1cf041c11dc306bdd706838107a4bfab318",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.03532600402832,
+            0.8658252954483032,
+            6.039344787597656,
+            2.1516225337982178
+          ],
+          "output_sha256": "a1d5d37d5682666ed3641820189a6548803c6440d178af4676b6fa2dd04173a9",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "01_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            8.607075691223145,
+            8.578004837036133,
+            3.82820463180542,
+            6.668242931365967
+          ],
+          "output_sha256": "a67f4570850048037e491b97e39fc44d98776d27896401cc7d168adf5ed5527d",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            8.45263671875,
+            7.750486373901367,
+            3.205901622772217,
+            9.914956092834473
+          ],
+          "output_sha256": "bc8489e66af974023c3c4ee0e71ba584ae0181904633d0a800ea45ed0b18e1f4",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "01_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.410120964050293,
+            0.7000746130943298,
+            6.659226417541504,
+            2.4717838764190674
+          ],
+          "output_sha256": "9244f149b4836f4abf2aca718e63bf7835c6fdcf6963eccf68986f7da024cac0",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            5.793498992919922,
+            0.9599461555480957,
+            6.492523193359375,
+            2.6633386611938477
+          ],
+          "output_sha256": "fa5595c4ce881f435820ac0c2bd4e3a5009ce76dc95bbdac083a2b0886e64812",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "10_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            4.849936485290527,
+            0.665033221244812,
+            6.0214619636535645,
+            2.0371341705322266
+          ],
+          "output_sha256": "a890b235271ab81af83e27e1f7e24b1a6356911325248533a8de981856f0cfba",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            4.932222843170166,
+            0.7115773558616638,
+            5.938047409057617,
+            2.275444269180298
+          ],
+          "output_sha256": "721c505e240849b2666176f034133e81fc8f77b0c9a76198891eee80abd027de",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "10_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            10.360254287719727,
+            10.294820785522461,
+            7.176298141479492,
+            9.082484245300293
+          ],
+          "output_sha256": "2a61d98504a7cc22e96414c5eb8921c443e6d12d2c0b4ebb4edde02e7722127c",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            9.492502212524414,
+            11.904581069946289,
+            9.297411918640137,
+            6.654686450958252
+          ],
+          "output_sha256": "a1c76c65db38685271a7dd6b94e04d5d24cd5077c49b1c6265ca1d9348cac59f",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 0,
+      "state": "10_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.440881729125977,
+            0.6643474102020264,
+            6.532912254333496,
+            2.4489612579345703
+          ],
+          "output_sha256": "d1858faaf2c10b7c7a28c35fa1297b8087c677b5323a1444c215228d4f18aaae",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            9.030149459838867,
+            0.7652735114097595,
+            6.119766712188721,
+            2.7271292209625244
+          ],
+          "output_sha256": "0ec72c3cd78e3e19bb4c3b108c9229b276cad30856f217902abeebeff7dda574",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "11_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            4.412639141082764,
+            1.0664101839065552,
+            1.8418431282043457,
+            1.4927409887313843
+          ],
+          "output_sha256": "6e79b7eebd74fa9a00cd91f8b2a4695a7fbc92aa61d9efc01866da123f12e8e6",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            4.412639141082764,
+            1.0664101839065552,
+            1.8418431282043457,
+            1.4927409887313843
+          ],
+          "output_sha256": "6e79b7eebd74fa9a00cd91f8b2a4695a7fbc92aa61d9efc01866da123f12e8e6",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "11_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            11.704106330871582,
+            1.0505987405776978,
+            2.6243104934692383,
+            2.8222546577453613
+          ],
+          "output_sha256": "eff2822a0f3d9e13027c128e59534575eab32d510e6a71665d6e48d0d22d3012",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            13.061090469360352,
+            1.0965840816497803,
+            2.1816067695617676,
+            3.1036739349365234
+          ],
+          "output_sha256": "4ecfdee00ff9928dba81a64e30c0f2e8464c9e3a0be806ca7891a84c63c489ba",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "11_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.7657928466796875,
+            9.86266803741455,
+            3.844254970550537,
+            1.6813366413116455
+          ],
+          "output_sha256": "188241e32b2073639216078781b45b86042c19ee19c4cda20382488ff25f555b",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.887278079986572,
+            8.469746589660645,
+            3.8425517082214355,
+            1.6377065181732178
+          ],
+          "output_sha256": "8a030ddd5aacbbf82b72742038cae3bf290317c3039e982cd49fab2e41eb8155",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "01_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            4.340217113494873,
+            1.0200823545455933,
+            1.7565205097198486,
+            1.51078200340271
+          ],
+          "output_sha256": "7738343476cf9eea66d1cc74ec05293b00d04949b2675df4ed8ea286491fcaaa",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            4.370733737945557,
+            1.5059289932250977,
+            2.060852527618408,
+            1.5665671825408936
+          ],
+          "output_sha256": "9ee51a0ae88b1cd905f5f5846db2a2b2391484cbbd0db887e87ea4b3a562a385",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "01_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            11.90205192565918,
+            1.0527257919311523,
+            2.5321969985961914,
+            2.84604549407959
+          ],
+          "output_sha256": "0b5fd574287440abcb0f57fb922ff0770f0e5d0210aaaf19592c810c07448902",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            12.77945327758789,
+            1.1488192081451416,
+            2.165780782699585,
+            3.0800986289978027
+          ],
+          "output_sha256": "793fea3d8dc9b8f1aa039803b68692f73c634ef19b2a8f40b8ab53eb6947bce8",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "01_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            4.818061828613281,
+            10.669984817504883,
+            3.6012485027313232,
+            1.5076706409454346
+          ],
+          "output_sha256": "5ac0aaaf85307a28860dc593a22b5cb0a3ceee93bf1e9c6602ddc452a35c2a34",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            4.581798076629639,
+            13.74177074432373,
+            3.8739113807678223,
+            6.511234760284424
+          ],
+          "output_sha256": "2b8c4ecf18c7d531cf9b9fa5aa3651aae7bb0677556ff838d95d7b59baeefce0",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "10_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.561577320098877,
+            1.1645902395248413,
+            2.0572423934936523,
+            1.5405359268188477
+          ],
+          "output_sha256": "44ebd5b29364badb47a0c54cc38708b04463851cdc6c53f39ffc9abffb18a499",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.707030296325684,
+            1.0852986574172974,
+            2.052490234375,
+            1.671015739440918
+          ],
+          "output_sha256": "9d2f1128c5ac6729849984d3a5d15d32ff6e5a7bf7797552eea35f3fea88af4d",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "10_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            13.087587356567383,
+            1.041020154953003,
+            2.876009464263916,
+            3.739614486694336
+          ],
+          "output_sha256": "c0edf4d3bdaa3c2bcf55c51088d6084a656ad65ce5f479b3e6fa1bc96fd4bf97",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            15.554496765136719,
+            1.0806713104248047,
+            2.1700007915496826,
+            3.592863082885742
+          ],
+          "output_sha256": "0b69ae6ef25817670e3d48f4875c6ce4c8762c16b9582f0eddafed2f8dcf7b4b",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 1,
+      "state": "10_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.735082149505615,
+            11.248747825622559,
+            3.8508801460266113,
+            1.5730299949645996
+          ],
+          "output_sha256": "05adaac26eb380245b5ae810cf49cb862fffa57926faf09637d9faae385ad5a0",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            7.267663955688477,
+            12.36134147644043,
+            3.8776333332061768,
+            1.4596447944641113
+          ],
+          "output_sha256": "9b3198f769903bbbb323a8782a132f91449e3e587e4cd283bbc27bb5b5fd666c",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "11_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            5.725245475769043,
+            1.868351936340332,
+            1.5169286727905273,
+            1.2555574178695679
+          ],
+          "output_sha256": "381e24550db8ae665f78a06ad37cc85eb1b241eb75bec238daf58cbdaaec2741",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            5.725245475769043,
+            1.868351936340332,
+            1.5169286727905273,
+            1.2555574178695679
+          ],
+          "output_sha256": "381e24550db8ae665f78a06ad37cc85eb1b241eb75bec238daf58cbdaaec2741",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "11_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            7.197475910186768,
+            1.829864263534546,
+            4.4055023193359375,
+            1.2435338497161865
+          ],
+          "output_sha256": "eb4b7bd2858f618042097e6993b8290a4944642cd8d1201ec0df0b5a87cf9dec",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.909267902374268,
+            2.1450629234313965,
+            4.020030498504639,
+            1.8175671100616455
+          ],
+          "output_sha256": "e0a3cf2017b88c71ef49502ae37b98d7ac2feb40402c44d84aeb01c60c8e5b4e",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "11_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.269873142242432,
+            2.246229410171509,
+            1.6555075645446777,
+            7.846308708190918
+          ],
+          "output_sha256": "dc11836ca566debfe86488a1aec616bf9e623015971e300b02e3c696f0af644e",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.282217502593994,
+            2.107027769088745,
+            1.957184910774231,
+            12.522624969482422
+          ],
+          "output_sha256": "d03ca9c271b2a6f8506c5283a689be3ced57528ee7a2c682a9d07f54290507e5",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "01_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.592681884765625,
+            1.733538031578064,
+            1.670163631439209,
+            1.3901373147964478
+          ],
+          "output_sha256": "95e2c787ff6b2939784aa092c6d018e61391af50dd0fd784a7a410540103e097",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.134739875793457,
+            1.6659634113311768,
+            1.5441563129425049,
+            1.2694579362869263
+          ],
+          "output_sha256": "d9c5e7142ada738e58058867787a628b653bb97018f3f706962f4cec624946af",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "01_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            7.144365310668945,
+            1.8380162715911865,
+            4.25891637802124,
+            1.3191173076629639
+          ],
+          "output_sha256": "1c1737a1d3d0c10d8be87ce6e83dcd90bf9e3613454c2277645c546b8870fd2d",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.5658860206604,
+            2.069026231765747,
+            3.78017258644104,
+            1.890241026878357
+          ],
+          "output_sha256": "1995e6f8c31327e07ffcf1287da15766df721b6b568fb57828b9989049688618",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "01_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            10.77490234375,
+            2.7132186889648438,
+            1.7082798480987549,
+            5.820831298828125
+          ],
+          "output_sha256": "a881ba4961be58675b5837b7abdd8040001af3afb92c40f24c0a3b0ea17e1abc",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            7.007390022277832,
+            5.241084098815918,
+            2.0232338905334473,
+            3.7731199264526367
+          ],
+          "output_sha256": "cbc75ee8baa31dc18bb6e5a47528ec96b205cf0a5da1444d4e79bbc63b42fd40",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "10_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            5.99871301651001,
+            1.9885793924331665,
+            1.5493128299713135,
+            1.6206649541854858
+          ],
+          "output_sha256": "0d537dee07bc953e50ea8c307c8d1a46fb17cd5f645c04c96bc0457bffd8cb39",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            6.05897331237793,
+            1.7952450513839722,
+            1.6186505556106567,
+            1.6268880367279053
+          ],
+          "output_sha256": "e7130075b443224ae42b8bebfde2719e2f4f8ff55c985ee02d8d1ec5eb78d7b0",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "10_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            10.589044570922852,
+            2.3733839988708496,
+            8.589171409606934,
+            1.7489800453186035
+          ],
+          "output_sha256": "fca17e8d405c503c3322cdadf2ffc380675b98e1249c4138e5f06ace90361f52",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            10.353399276733398,
+            2.086399555206299,
+            7.909942626953125,
+            2.6216483116149902
+          ],
+          "output_sha256": "e2189c67292e339f1dd1a60798cb85e7eede914a336eac7d291ed3626b2c2c71",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 2,
+      "state": "10_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            6.218523025512695,
+            2.234232187271118,
+            1.6698471307754517,
+            7.597296237945557
+          ],
+          "output_sha256": "4ed32356adefc72c7140be96e2a39a29f75137b753daf9531914bd9c4413379e",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            5.852453708648682,
+            5.111307144165039,
+            1.8656282424926758,
+            10.331926345825195
+          ],
+          "output_sha256": "0c5d42e30edce48ef5c9b31ab187881f614ede4151ebef6cfb96cda1468191a6",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "11_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.1014997959136963,
+            11.633586883544922,
+            1.6506984233856201,
+            2.6722214221954346
+          ],
+          "output_sha256": "99cb3c46056aff300c9fc953455ba9e20e638e617a88fcaa34aa7715ed073ad6",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.1014997959136963,
+            11.633586883544922,
+            1.6506984233856201,
+            2.6722214221954346
+          ],
+          "output_sha256": "99cb3c46056aff300c9fc953455ba9e20e638e617a88fcaa34aa7715ed073ad6",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "11_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.143455505371094,
+            11.453803062438965,
+            2.596803903579712,
+            4.19137716293335
+          ],
+          "output_sha256": "a35fbe47235d8d43c7e23c057f2406e377605c5ba8d1940297d044c4d4462f4c",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            14.588547706604004,
+            11.322879791259766,
+            2.0703041553497314,
+            5.184142589569092
+          ],
+          "output_sha256": "028f36810bd5e9bf4582306d9a1915f3140f67eeb334ba55c9f79c6da13200f9",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "11_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.8222100734710693,
+            13.110028266906738,
+            1.905699610710144,
+            2.4103686809539795
+          ],
+          "output_sha256": "566d00c131e6e59adde4ee9a5833e9209cedf0910b35be25ee36ac05990ac42c",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.6253900527954102,
+            13.709416389465332,
+            1.8243134021759033,
+            2.673161506652832
+          ],
+          "output_sha256": "7c12261325f944ed3f42c1c8f05ddface06a5fbd06fb1d6665759367fcd08269",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "01_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.018604040145874,
+            11.26894760131836,
+            1.501029372215271,
+            3.6424453258514404
+          ],
+          "output_sha256": "c1776cbdb727c411d94ab7aa0ed7b883828036d8f8ec50ff7c8b07929e767e2e",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.050171971321106,
+            11.943563461303711,
+            1.6561020612716675,
+            3.2693028450012207
+          ],
+          "output_sha256": "aaa601e7672cdcec7b997be765f9791617e23f2f73f6ef2e3fff5ddaa8091ab4",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "01_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.1087646484375,
+            10.962600708007812,
+            2.556854009628296,
+            4.166291236877441
+          ],
+          "output_sha256": "de20134413735ef3f042776fc7e2d3b6aa2ee3988cd64fecc1632f67f036fa3f",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            9.565084457397461,
+            11.122182846069336,
+            2.074686050415039,
+            5.438076972961426
+          ],
+          "output_sha256": "c1ebf21b7d7f0f7550729aa8637cf19efb082f87fbeb2d7a2d4f411356897c50",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "rgb": [
+                320,
+                320,
+                320,
+                320
+              ],
+              "tir": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "01_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.983569622039795,
+            12.396749496459961,
+            2.4296915531158447,
+            9.923047065734863
+          ],
+          "output_sha256": "fca04c5d617f5b8fe2fabd970a7131a86e4ba38f0a485d6e7528010d5a0ad327",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.816870927810669,
+            14.029754638671875,
+            1.7819386720657349,
+            4.173694610595703
+          ],
+          "output_sha256": "9a6b0fcd03c30d107c446f97e7f6b1dbfbf10365b97638bcd1ab0b5a13b34d3d",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            },
+            {
+              "rgb": [
+                64,
+                64,
+                64,
+                64
+              ],
+              "tir": [
+                256,
+                256,
+                256,
+                256
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "10_11",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.1071083545684814,
+            12.852058410644531,
+            1.618718147277832,
+            2.4713335037231445
+          ],
+          "output_sha256": "1a474311f62836a325dbdc14ce33471cd0a643176ca44340f1bcc196019004ae",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.1374168395996094,
+            12.932755470275879,
+            1.5510575771331787,
+            2.677612543106079
+          ],
+          "output_sha256": "003d5c26ceaf57e3b3362ad1b468c8f6223e8423e2fe7a0ad75d41b6ea28ccfb",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "10_01",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            9.37317943572998,
+            14.042561531066895,
+            2.0553975105285645,
+            3.722632884979248
+          ],
+          "output_sha256": "4aa9cfcd67b521c2839521fbed731751d87a1b6bf565907ad6326dcb37f1dbb7",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            17.629873275756836,
+            12.997503280639648,
+            1.9743759632110596,
+            3.7763214111328125
+          ],
+          "output_sha256": "4fec8068ae72a2bea4b903ea3952f82e93c8c4e5e5ccc4d38e6ac8d7c2b9c698",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            },
+            {
+              "rgb": [
+                256,
+                256,
+                256,
+                256
+              ],
+              "tir": [
+                64,
+                64,
+                64,
+                64
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "batch": 3,
+      "state": "10_10",
+      "samples": 4,
+      "arms": {
+        "native": {
+          "losses": [
+            1.808861255645752,
+            13.247886657714844,
+            1.8095508813858032,
+            2.35554838180542
+          ],
+          "output_sha256": "569fc6df0b096b0774b55cf641c92d08fe3dce7b5a7368746305e5ff530b5f45",
+          "copied_tokens_per_search": []
+        },
+        "observed_copy": {
+          "losses": [
+            1.5086909532546997,
+            13.825206756591797,
+            1.6964387893676758,
+            2.4876396656036377
+          ],
+          "output_sha256": "474bbab5a9f53a804abdba9db12cac77d7bfe3c5a1475592b52c77f6b39b9138",
+          "copied_tokens_per_search": [
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            },
+            {
+              "rgb": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "tir": [
+                320,
+                320,
+                320,
+                320
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_state_digest": "4d64b467b82ff76963a8c32d13cb0e60980fef236df14546e7bceaddffdb6eb6",
+  "model_state_unchanged": true,
+  "complete_history_outputs_bitwise_equal": true,
+  "observed_positions_unchanged_at_intervention": true,
+  "seconds": 360.5969843864441
+}

@@ -1,0 +1,634 @@
+{
+  "source_report_sha256": "c522e6a898ebfc2f88a145bc41c9c317afc1c380efbddf397f1c36f35dccf32f",
+  "audit_sha256": "0d258bf2e36bfe2c701eaa4613ae823e2722badc1311b7f736d5aa619e69f96f",
+  "videos": 4,
+  "new_model_calls": 0,
+  "immediate_same_history": {
+    "01": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 73,
+          "before": {
+            "center_error_px": 3.169114632011088,
+            "PR20": 100.0,
+            "SR": 81.27853881278538
+          },
+          "after": {
+            "center_error_px": 2.00686771311773,
+            "PR20": 100.0,
+            "SR": 81.93085453359424
+          }
+        },
+        "bikefromnorth": {
+          "frames": 46,
+          "before": {
+            "center_error_px": 7.965176490529059,
+            "PR20": 89.1304347826087,
+            "SR": 54.8654244306418
+          },
+          "after": {
+            "center_error_px": 8.20507998933133,
+            "PR20": 86.95652173913044,
+            "SR": 54.03726708074533
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 223,
+          "before": {
+            "center_error_px": 176.61705183109444,
+            "PR20": 37.219730941704036,
+            "SR": 29.2547512278454
+          },
+          "after": {
+            "center_error_px": 172.0849472606455,
+            "PR20": 39.46188340807175,
+            "SR": 30.151612214392483
+          }
+        },
+        "mototaking2boys": {
+          "frames": 19,
+          "before": {
+            "center_error_px": 15.375126454001382,
+            "PR20": 68.42105263157895,
+            "SR": 46.11528822055138
+          },
+          "after": {
+            "center_error_px": 13.119999772505881,
+            "PR20": 73.6842105263158,
+            "SR": 47.36842105263158
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 50.78161735190899,
+          "video_macro_after": 48.85422368390011,
+          "mean_delta": -1.9273936680088846,
+          "paired_video_bootstrap95": [
+            -3.6896401575600524,
+            -0.38385404627217223
+          ],
+          "negative_videos": 3,
+          "zero_videos": 0,
+          "positive_videos": 1
+        },
+        "PR20": {
+          "video_macro_before": 73.69280458897292,
+          "video_macro_after": 75.02565391837949,
+          "mean_delta": 1.3328493294065744,
+          "paired_video_bootstrap95": [
+            -1.0869565217391326,
+            3.947368421052637
+          ],
+          "negative_videos": 1,
+          "zero_videos": 1,
+          "positive_videos": 2
+        },
+        "SR": {
+          "video_macro_before": 52.87850067295599,
+          "video_macro_after": 53.37203872034091,
+          "mean_delta": 0.49353804738491824,
+          "paired_video_bootstrap95": [
+            -0.39690276578558326,
+            1.102928554262368
+          ],
+          "negative_videos": 1,
+          "zero_videos": 0,
+          "positive_videos": 3
+        }
+      }
+    },
+    "10": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 72,
+          "before": {
+            "center_error_px": 2.027499478255047,
+            "PR20": 100.0,
+            "SR": 90.93915343915343
+          },
+          "after": {
+            "center_error_px": 1.9448395179827753,
+            "PR20": 100.0,
+            "SR": 90.74074074074072
+          }
+        },
+        "bikefromnorth": {
+          "frames": 46,
+          "before": {
+            "center_error_px": 8.18963988262264,
+            "PR20": 84.78260869565217,
+            "SR": 62.21532091097308
+          },
+          "after": {
+            "center_error_px": 7.776812048736923,
+            "PR20": 80.43478260869566,
+            "SR": 61.49068322981366
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 222,
+          "before": {
+            "center_error_px": 170.97609209827638,
+            "PR20": 39.63963963963964,
+            "SR": 33.46203346203346
+          },
+          "after": {
+            "center_error_px": 170.5017411846745,
+            "PR20": 39.63963963963964,
+            "SR": 33.65508365508366
+          }
+        },
+        "mototaking2boys": {
+          "frames": 18,
+          "before": {
+            "center_error_px": 8.619955631789791,
+            "PR20": 83.33333333333333,
+            "SR": 62.96296296296296
+          },
+          "after": {
+            "center_error_px": 8.722407091702657,
+            "PR20": 83.33333333333333,
+            "SR": 62.96296296296296
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 47.45329677273597,
+          "video_macro_after": 47.23644996077421,
+          "mean_delta": -0.21684681196175093,
+          "paired_video_bootstrap95": [
+            -0.4435893737437988,
+            0.00989574982029695
+          ],
+          "negative_videos": 3,
+          "zero_videos": 0,
+          "positive_videos": 1
+        },
+        "PR20": {
+          "video_macro_before": 76.93889541715629,
+          "video_macro_after": 75.85193889541715,
+          "mean_delta": -1.086956521739129,
+          "paired_video_bootstrap95": [
+            -3.260869565217387,
+            0.0
+          ],
+          "negative_videos": 1,
+          "zero_videos": 3,
+          "positive_videos": 0
+        },
+        "SR": {
+          "video_macro_before": 62.39486769378073,
+          "video_macro_after": 62.21236764715025,
+          "mean_delta": -0.1825000466304818,
+          "paired_video_bootstrap95": [
+            -0.543478260869561,
+            0.09652509652509877
+          ],
+          "negative_videos": 2,
+          "zero_videos": 1,
+          "positive_videos": 1
+        }
+      }
+    }
+  },
+  "closed_loop_state_slices": {
+    "11": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 217,
+          "before": {
+            "center_error_px": 1.808534046682216,
+            "PR20": 100.0,
+            "SR": 91.31007241606318
+          },
+          "after": {
+            "center_error_px": 1.8574474626180917,
+            "PR20": 100.0,
+            "SR": 91.20035110818522
+          }
+        },
+        "bikefromnorth": {
+          "frames": 137,
+          "before": {
+            "center_error_px": 10.232963865453218,
+            "PR20": 81.75182481751825,
+            "SR": 59.610705596107046
+          },
+          "after": {
+            "center_error_px": 6.390300698809598,
+            "PR20": 87.5912408759124,
+            "SR": 64.0597844977407
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 666,
+          "before": {
+            "center_error_px": 170.90624180156445,
+            "PR20": 39.63963963963964,
+            "SR": 34.205634205634205
+          },
+          "after": {
+            "center_error_px": 170.9293036950559,
+            "PR20": 39.63963963963964,
+            "SR": 34.12698412698413
+          }
+        },
+        "mototaking2boys": {
+          "frames": 55,
+          "before": {
+            "center_error_px": 6.6861920189634665,
+            "PR20": 89.0909090909091,
+            "SR": 66.92640692640691
+          },
+          "after": {
+            "center_error_px": 8.002729164153376,
+            "PR20": 85.45454545454545,
+            "SR": 64.93506493506493
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 47.408482933165836,
+          "video_macro_after": 46.79494525515924,
+          "mean_delta": -0.6135376780065978,
+          "paired_video_bootstrap95": [
+            -2.8697690209987465,
+            0.9931683322652931
+          ],
+          "negative_videos": 1,
+          "zero_videos": 0,
+          "positive_videos": 3
+        },
+        "PR20": {
+          "video_macro_before": 77.62059338701675,
+          "video_macro_after": 78.17135649252437,
+          "mean_delta": 0.5507631055076274,
+          "paired_video_bootstrap95": [
+            -2.72727272727273,
+            4.379562043795612
+          ],
+          "negative_videos": 1,
+          "zero_videos": 2,
+          "positive_videos": 1
+        },
+        "SR": {
+          "video_macro_before": 63.01320478605283,
+          "video_macro_after": 63.58054616699374,
+          "mean_delta": 0.5673413809409062,
+          "paired_video_bootstrap95": [
+            -1.5131690131690068,
+            3.3093788492557454
+          ],
+          "negative_videos": 3,
+          "zero_videos": 0,
+          "positive_videos": 1
+        }
+      }
+    },
+    "01": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 73,
+          "before": {
+            "center_error_px": 3.236165103102676,
+            "PR20": 100.0,
+            "SR": 81.27853881278538
+          },
+          "after": {
+            "center_error_px": 2.00686771311773,
+            "PR20": 100.0,
+            "SR": 81.93085453359424
+          }
+        },
+        "bikefromnorth": {
+          "frames": 46,
+          "before": {
+            "center_error_px": 12.27426581000905,
+            "PR20": 80.43478260869566,
+            "SR": 48.24016563146997
+          },
+          "after": {
+            "center_error_px": 8.20507998933133,
+            "PR20": 86.95652173913044,
+            "SR": 54.03726708074533
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 223,
+          "before": {
+            "center_error_px": 176.53249629502923,
+            "PR20": 37.219730941704036,
+            "SR": 29.1693358957933
+          },
+          "after": {
+            "center_error_px": 172.0849472606455,
+            "PR20": 39.46188340807175,
+            "SR": 30.151612214392483
+          }
+        },
+        "mototaking2boys": {
+          "frames": 19,
+          "before": {
+            "center_error_px": 12.135006189380066,
+            "PR20": 73.6842105263158,
+            "SR": 48.120300751879704
+          },
+          "after": {
+            "center_error_px": 13.119999772505881,
+            "PR20": 73.6842105263158,
+            "SR": 47.36842105263158
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 51.04448334938026,
+          "video_macro_after": 48.85422368390011,
+          "mean_delta": -2.190259665480148,
+          "paired_video_bootstrap95": [
+            -4.258367427530731,
+            -0.12215190342956528
+          ],
+          "negative_videos": 3,
+          "zero_videos": 0,
+          "positive_videos": 1
+        },
+        "PR20": {
+          "video_macro_before": 72.83468101917887,
+          "video_macro_after": 75.02565391837949,
+          "mean_delta": 2.1909728992006237,
+          "paired_video_bootstrap95": [
+            0.0,
+            4.891304347826086
+          ],
+          "negative_videos": 0,
+          "zero_videos": 2,
+          "positive_videos": 2
+        },
+        "SR": {
+          "video_macro_before": 51.70208527298209,
+          "video_macro_after": 53.37203872034091,
+          "mean_delta": 1.6699534473588198,
+          "paired_video_bootstrap95": [
+            -0.31834069478629523,
+            4.510905017158734
+          ],
+          "negative_videos": 1,
+          "zero_videos": 0,
+          "positive_videos": 3
+        }
+      }
+    },
+    "10": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 72,
+          "before": {
+            "center_error_px": 1.9893112804883333,
+            "PR20": 100.0,
+            "SR": 91.13756613756613
+          },
+          "after": {
+            "center_error_px": 1.9448395179827753,
+            "PR20": 100.0,
+            "SR": 90.74074074074072
+          }
+        },
+        "bikefromnorth": {
+          "frames": 46,
+          "before": {
+            "center_error_px": 10.239114470148026,
+            "PR20": 80.43478260869566,
+            "SR": 60.45548654244306
+          },
+          "after": {
+            "center_error_px": 7.776812048736923,
+            "PR20": 80.43478260869566,
+            "SR": 61.49068322981366
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 222,
+          "before": {
+            "center_error_px": 170.9994281793976,
+            "PR20": 39.63963963963964,
+            "SR": 33.526383526383526
+          },
+          "after": {
+            "center_error_px": 170.5017411846745,
+            "PR20": 39.63963963963964,
+            "SR": 33.65508365508366
+          }
+        },
+        "mototaking2boys": {
+          "frames": 18,
+          "before": {
+            "center_error_px": 6.206810290837288,
+            "PR20": 88.88888888888889,
+            "SR": 67.46031746031746
+          },
+          "after": {
+            "center_error_px": 8.722407091702657,
+            "PR20": 83.33333333333333,
+            "SR": 62.96296296296296
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 47.35866605521781,
+          "video_macro_after": 47.23644996077421,
+          "mean_delta": -0.12221609444359727,
+          "paired_video_bootstrap95": [
+            -1.8578447566847165,
+            1.762275851968252
+          ],
+          "negative_videos": 3,
+          "zero_videos": 0,
+          "positive_videos": 1
+        },
+        "PR20": {
+          "video_macro_before": 77.24082778430605,
+          "video_macro_after": 75.85193889541715,
+          "mean_delta": -1.3888888888888893,
+          "paired_video_bootstrap95": [
+            -4.166666666666668,
+            0.0
+          ],
+          "negative_videos": 1,
+          "zero_videos": 3,
+          "positive_videos": 0
+        },
+        "SR": {
+          "video_macro_before": 63.14493841667755,
+          "video_macro_after": 62.21236764715025,
+          "mean_delta": -0.9325707695272918,
+          "paired_video_bootstrap95": [
+            -3.340840840840837,
+            0.6771911663215988
+          ],
+          "negative_videos": 2,
+          "zero_videos": 0,
+          "positive_videos": 2
+        }
+      }
+    },
+    "00": {
+      "per_video": {
+        "10phone_boy": {
+          "frames": 72,
+          "before": {
+            "center_error_px": 1.9100168123347419,
+            "PR20": 100.0,
+            "SR": 91.005291005291
+          },
+          "after": {
+            "center_error_px": 1.9836053235725781,
+            "PR20": 100.0,
+            "SR": 90.6084656084656
+          }
+        },
+        "bikefromnorth": {
+          "frames": 45,
+          "before": {
+            "center_error_px": 12.24291283476112,
+            "PR20": 77.77777777777777,
+            "SR": 51.111111111111114
+          },
+          "after": {
+            "center_error_px": 7.904642357214004,
+            "PR20": 86.66666666666667,
+            "SR": 57.35449735449736
+          }
+        },
+        "leftredflag-lsz": {
+          "frames": 222,
+          "before": {
+            "center_error_px": 171.73642531855685,
+            "PR20": 39.63963963963964,
+            "SR": 32.77563277563277
+          },
+          "after": {
+            "center_error_px": 171.78644232421212,
+            "PR20": 39.63963963963964,
+            "SR": 32.75418275418276
+          }
+        },
+        "mototaking2boys": {
+          "frames": 18,
+          "before": {
+            "center_error_px": 13.003549108818948,
+            "PR20": 77.77777777777777,
+            "SR": 54.76190476190476
+          },
+          "after": {
+            "center_error_px": 12.783672347790347,
+            "PR20": 77.77777777777777,
+            "SR": 54.76190476190476
+          }
+        }
+      },
+      "contrasts": {
+        "center_error_px": {
+          "video_macro_before": 49.72322601861792,
+          "video_macro_after": 48.61459058819726,
+          "mean_delta": -1.1086354304206543,
+          "paired_video_bootstrap95": [
+            -3.2411986067465204,
+            0.06180275844654981
+          ],
+          "negative_videos": 2,
+          "zero_videos": 0,
+          "positive_videos": 2
+        },
+        "PR20": {
+          "video_macro_before": 73.7987987987988,
+          "video_macro_after": 76.02102102102103,
+          "mean_delta": 2.222222222222225,
+          "paired_video_bootstrap95": [
+            0.0,
+            6.666666666666675
+          ],
+          "negative_videos": 0,
+          "zero_videos": 3,
+          "positive_videos": 1
+        },
+        "SR": {
+          "video_macro_before": 57.413484913484915,
+          "video_macro_after": 58.86976261976262,
+          "mean_delta": 1.4562777062777066,
+          "paired_video_bootstrap95": [
+            -0.29761904761905456,
+            4.677177177177182
+          ],
+          "negative_videos": 2,
+          "zero_videos": 1,
+          "positive_videos": 1
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "leftredflag-lsz": {
+      "trajectory_changed_frames": 1331,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 195,
+        "offset_corrected": 195
+      },
+      "template_write_decision_changes": [
+        300,
+        414,
+        684,
+        1068
+      ],
+      "nonzero_offset_frames": 444
+    },
+    "10phone_boy": {
+      "trajectory_changed_frames": 432,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 72,
+        "offset_corrected": 72
+      },
+      "template_write_decision_changes": [],
+      "nonzero_offset_frames": 144
+    },
+    "mototaking2boys": {
+      "trajectory_changed_frames": 108,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 2,
+        "offset_corrected": 2
+      },
+      "template_write_decision_changes": [],
+      "nonzero_offset_frames": 36
+    },
+    "bikefromnorth": {
+      "trajectory_changed_frames": 272,
+      "first_trajectory_change": [
+        3
+      ],
+      "template_write_counts": {
+        "native": 16,
+        "offset_corrected": 15
+      },
+      "template_write_decision_changes": [
+        144,
+        162,
+        204
+      ],
+      "nonzero_offset_frames": 91
+    }
+  },
+  "scope": "Post-hoc saved-trajectory mechanism audit. Immediate comparisons use the same corrected tracker history, comparing the clipped no-offset and clipped offset boxes from one raw prediction. Closed-loop state slices include all prior crop/template effects. Template write counts do not isolate a causal template mechanism. GT is evaluation-only. Correlated frame strata and video bootstrap do not establish new-seed, official or independent prospective efficacy; no algorithm parameter is selected."
+}

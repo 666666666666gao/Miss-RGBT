@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "observed_valid": 3924,
+    "native_unsupported": 1505,
+    "previous": {
+      "support_restored": 888,
+      "center_restored": 728
+    },
+    "initial": {
+      "support_restored": 694,
+      "center_restored": 503
+    },
+    "combined": {
+      "support_restored": 909,
+      "center_restored": 744
+    }
+  },
+  "per_sequence": {
+    "boywalkinginsnow3": {
+      "observed_valid": 479,
+      "native_unsupported": 0,
+      "previous": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "initial": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "combined": {
+        "support_restored": 0,
+        "center_restored": 0
+      }
+    },
+    "leftdrillmasterstanding": {
+      "observed_valid": 1839,
+      "native_unsupported": 1378,
+      "previous": {
+        "support_restored": 761,
+        "center_restored": 601
+      },
+      "initial": {
+        "support_restored": 590,
+        "center_restored": 411
+      },
+      "combined": {
+        "support_restored": 782,
+        "center_restored": 617
+      }
+    },
+    "leftgirlunderthelamp": {
+      "observed_valid": 225,
+      "native_unsupported": 66,
+      "previous": {
+        "support_restored": 66,
+        "center_restored": 66
+      },
+      "initial": {
+        "support_restored": 66,
+        "center_restored": 66
+      },
+      "combined": {
+        "support_restored": 66,
+        "center_restored": 66
+      }
+    },
+    "girlridesbike": {
+      "observed_valid": 159,
+      "native_unsupported": 0,
+      "previous": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "initial": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "combined": {
+        "support_restored": 0,
+        "center_restored": 0
+      }
+    },
+    "midboyplayingphone": {
+      "observed_valid": 295,
+      "native_unsupported": 0,
+      "previous": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "initial": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "combined": {
+        "support_restored": 0,
+        "center_restored": 0
+      }
+    },
+    "boywithumbrella": {
+      "observed_valid": 780,
+      "native_unsupported": 0,
+      "previous": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "initial": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "combined": {
+        "support_restored": 0,
+        "center_restored": 0
+      }
+    },
+    "manrun": {
+      "observed_valid": 60,
+      "native_unsupported": 0,
+      "previous": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "initial": {
+        "support_restored": 0,
+        "center_restored": 0
+      },
+      "combined": {
+        "support_restored": 0,
+        "center_restored": 0
+      }
+    },
+    "ab_pingpongball": {
+      "observed_valid": 87,
+      "native_unsupported": 61,
+      "previous": {
+        "support_restored": 61,
+        "center_restored": 61
+      },
+      "initial": {
+        "support_restored": 38,
+        "center_restored": 26
+      },
+      "combined": {
+        "support_restored": 61,
+        "center_restored": 61
+      }
+    }
+  },
+  "scope": "Pure crop geometry, all observed valid first8-cohort GPU trajectory frames. Same fixed5x5 centers and previous/initial sizes as native-grid neural audit. No proposal quality, identity, acceptance, closed-loop or benchmark evidence. Image dimensions assumed constant within each sequence; source frames and ground truth are existing fixed audit assets."
+}

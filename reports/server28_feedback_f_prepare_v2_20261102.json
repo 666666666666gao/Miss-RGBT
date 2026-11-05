@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "curricula": [
+    "fixed60",
+    "fixed50",
+    "progressive",
+    "shuffled"
+  ],
+  "arms": [
+    "single",
+    "none",
+    "shallow",
+    "deep"
+  ],
+  "updates_per_arm": 40,
+  "formal_configs_matched": true,
+  "formal_missing_smoke_rejected": true,
+  "matched_configs": true,
+  "missing_parent_rejected_before_output": true,
+  "source_sha256": {
+    "/home/gaob/Miss-RGBT/research/feedback_f/check_prepare.py": "0669fb058a7e98e0ec18501b09793ee74b3f10e1b555880273ba8df3c9543c80",
+    "/home/gaob/Miss-RGBT/research/feedback_f/prepare.py": "0adf2715a84c31fb2454d99026cd1e5bae671739f313510be36cc10a22920fed",
+    "/home/gaob/Miss-RGBT/research/feedback_f/train.py": "4fb9f864834f95789edffc75b2de6b21064908d9547533520d6423968d8da71a"
+  },
+  "scope": "Synthetic parent metadata/config arithmetic only; no real P/F training"
+}
