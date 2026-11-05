@@ -6646,3 +6646,27 @@ exited after normal campaign completion (`r1_status` COMPLETE, ended
 plus P3539938 live at03:53:08UTC. GPUs38/78/39/38C,
 22.13/248.91/23.60/25.00W. No duplicate work, selection/P-gate change or
 R3 prerequisite bypass.
+
+## 2026-11-05 04:54 UTC - R2 epoch20 pair verified; both arms complete
+
+Original `r2_status.json` is `COMPLETE`, ended04:53:24.229391UTC.
+Original `r2_verified_official.json` marks Complete and Miss independently
+recomputed for epochs16-20; all five pairs use full LasHeR245/220703 and
+RGBT234234/116650 evaluation. Epoch20 remains unselected; R2 selection17
+is unchanged. Epoch20 checkpoint SHA256:
+bf35b74e59242785cc2030480a4a830393c692889c88466b143b03795a2fdbee.
+Complete LasHeR PR/NPR/SR75.475564485/71.941764108/60.207365112 and
+RGBT234 MPR/MSR90.470034567/66.909786134. Miss LasHeR PR/NPR/SR
+68.864525383/63.816745975/55.016247423 and RGBT234 MPR/MSR
+85.452586213/62.098272208. Complete receipt SHA256:
+302959df5b9528adbd367e7910a330a7179a6aff71afec52b36189b03fd3021f.
+Miss receipt SHA256:78e607f7d945248006f3eb655ee68a84a79036459927f9a198e531bca931f6de.
+Miss full-run `completed.json` and `metrics.json` SHA256:
+78e607f7d945248006f3eb655ee68a84a79036459927f9a198e531bca931f6de /
+b104b9e571be8a8644ab55e51523accfdd95202f4151f3a2fa2bc475433faa4a.
+R2 controller3395402 has exited; original P3539938 remains live.
+At04:54:57UTC GPUs0-3 were36/37/37/36C and22.71/24.42/22.43/24.70W.
+Both campaigns' final-five full pairs are closed. The selected checkpoints
+remain R1-16/R2-17; epoch20 was not promoted. Strict Miss targets are still
+not jointly met; overall gains/module efficacy remain unproven. No duplicate
+evaluation, dispatch, restart, source/config change, or checkpoint cleanup.
