@@ -6597,3 +6597,12 @@ owns transition. R2 Complete3190784, controllers3388832/3395402/P3539938
 live. GPU0 released; GPUs42/78/40/38C,22.81/249.20/23.47/25.03W.
 No duplicate scoring/dispatch/restart. Original P failure and R3 review plus
 paired real-image-smoke prerequisites remain unchanged; gains unproven.
+
+## 2026-11-05 02:09 UTC - Original R1 epoch20 Miss dispatch
+
+Original controller3388832 started Miss3266908/GPU0 at02:05:15.109622UTC.
+Status/actual ps02:09:32UTC confirm it, R2 Complete3190784/GPU1,
+controllers3388832/3395402 and P3539938 live.
+GPUs79/77/39/37C,249.08/248.83/23.45/25.20W.
+No duplicate dispatch/restart or pair verification claim. R1 selection16,
+original P failure and R3 review/paired-smoke prerequisites unchanged.
