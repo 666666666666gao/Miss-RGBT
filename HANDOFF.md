@@ -6754,3 +6754,9 @@ cards. Validate the actual multi-GPU path and paired real-image smokes
 before formal dispatch. Do not present the existing R3 results as four-GPU
 training or dispatch a new experiment before its registered prerequisites
 are met.
+
+At `11:45:53Z`, the same trainer/controller/loader PIDs were still live.
+Compared with the `11:42:36Z` read, `complete_only` advanced from update
+2982 to3244 and `complete_missing` from1561 to1640. GPU2/3 were73/75C,
+241.45/245.35W. No failure or terminal receipt was observed; keep monitoring
+the original jobs without intervention.
